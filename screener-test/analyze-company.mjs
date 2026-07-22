@@ -204,12 +204,15 @@ async function analyzeTicker(page, context, ticker, baseStore) {
     return;
   }
 
-  // industry/country: prefer what the Worker stored in tracked.json at queue time.
+  // Industry: the SCRAPER-captured value is authoritative; fall back to the
+  // search-API industry passed via env (INDUSTRY) or stored in tracked.json.
   const trackedEntry = baseStore.tracked.companies.find(
     (c) => (c.ticker || "").toUpperCase() === T
   );
-  const industry = trackedEntry?.industry ?? null;
+  const industry =
+    scrape.industry || process.env.INDUSTRY || trackedEntry?.industry || null;
   const country = trackedEntry?.country ?? "India";
+  log(`${T} industry -> ${industry || "(none)"}`);
 
   // 3) classify latest + history, oldest -> newest so guidance deltas compute.
   const chronological = [...(scrape.history || [])].reverse().concat([scrape]);

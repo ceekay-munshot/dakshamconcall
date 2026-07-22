@@ -14,8 +14,11 @@
 const OPENAI_URL = "https://api.openai.com/v1/chat/completions";
 const FIRECRAWL_URL = "https://api.firecrawl.dev/v1/scrape";
 
-/** The single pinned model. Swappable via env, defaults to gpt-4o-mini. */
-export const MODEL = process.env.OPENAI_MODEL || "gpt-4o-mini";
+/** The single pinned model. Swappable via env. Defaults to gpt-4o — a stronger
+ *  current model with Structured Outputs support, for materially more faithful
+ *  organization of the (short) Screener summaries. Inputs are small so cost
+ *  stays low; still ONE pinned model at temperature 0 for determinism. */
+export const MODEL = process.env.OPENAI_MODEL || "gpt-4o";
 
 /** Small sleep for retry backoff. */
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));

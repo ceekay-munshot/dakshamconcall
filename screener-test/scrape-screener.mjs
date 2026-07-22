@@ -23,7 +23,10 @@ import { firecrawlScrape } from "./llm.mjs";
 
 const BASE = "https://www.screener.in";
 const ARTIFACTS = process.env.ARTIFACTS_DIR || "screener-test/output";
-const MAX_TEXT = 26000; // cap chars sent downstream to control tokens
+// Generous cap so short AI summaries are NEVER truncated (they're a few KB);
+// only very long transcript PDFs would ever hit this. The display handles
+// compactness — we preserve the full source for the classifier.
+const MAX_TEXT = 80000;
 
 const log = (...a) => console.log("[scrape]", ...a);
 const warn = (...a) => console.warn("[scrape]", ...a);
@@ -151,6 +154,50 @@ async function resolveCompanyUrl(context, ticker) {
   return null;
 }
 
+/**
+ * Best-effort INDUSTRY/SECTOR capture from the Screener company page. Screener
+ * shows the industry as a peer-comparison link near the ratios/peers area. This
+ * is defensive (multiple strategies) and LOGS its candidates so the exact DOM
+ * can be refined from the run logs; analyze-company backfills from env when null.
+ */
+async function extractIndustry(page) {
+  try {
+    const res = await page.evaluate(() => {
+      const norm = (s) => (s || "").replace(/\s+/g, " ").trim();
+      const candidates = [];
+      // 1) Explicit "Industry:" / "Sector:" label text (most reliable).
+      const bodyText = norm(document.body.innerText).slice(0, 8000);
+      for (const label of ["Industry", "Sector"]) {
+        const m = bodyText.match(
+          new RegExp(label + "\\s*[:\\-]\\s*([A-Za-z][A-Za-z0-9 &/,'()\\-]{2,60})")
+        );
+        if (m) candidates.push({ src: label.toLowerCase() + "-label", value: norm(m[1]) });
+      }
+      // 2) Peer-comparison links usually carry the industry name.
+      for (const a of document.querySelectorAll('a[href*="/company/compare/"]')) {
+        const t = norm(a.textContent);
+        if (t && t.length >= 3 && t.length <= 60 && !/compare|peers|view|more|add/i.test(t))
+          candidates.push({ src: "compare-link", value: t });
+      }
+      // 3) Sector/market classification links.
+      for (const a of document.querySelectorAll('a[href*="/market/"]')) {
+        const t = norm(a.textContent);
+        if (t && t.length >= 3 && t.length <= 60) candidates.push({ src: "market-link", value: t });
+      }
+      return candidates.slice(0, 12);
+    });
+    log("industry candidates: " + JSON.stringify(res));
+    const pick =
+      res.find((c) => c.src.endsWith("-label")) ||
+      res.find((c) => c.src === "compare-link") ||
+      res.find((c) => c.src === "market-link");
+    return pick ? pick.value : null;
+  } catch (e) {
+    warn("industry extract failed", e.message);
+    return null;
+  }
+}
+
 async function openCompany(page, context, ticker) {
   const url = await resolveCompanyUrl(context, ticker);
   if (!url) throw new Error(`Could not resolve a Screener page for ${ticker}`);
@@ -164,7 +211,10 @@ async function openCompany(page, context, ticker) {
     (await page.title().catch(() => ""))?.split("|")[0]?.trim() ||
     ticker;
 
-  return { url, company };
+  const industry = await extractIndustry(page);
+  log(`industry for ${ticker}: ${industry || "(not found — will backfill from env/tracked)"}`);
+
+  return { url, company, industry };
 }
 
 /* ============================================================================
@@ -295,6 +345,34 @@ function parseSummaryText(fullText) {
   return { sections, takeaways, questions };
 }
 
+/** Open a concall entry's Screener-hosted summary/notes link and read it.
+ *  Reusable for BOTH the latest quarter and prior quarters (history). */
+async function fetchHostedSummary(context, entry) {
+  const cat = categorize(entry.links);
+  const hosted = [cat.summary, cat.notes].find(
+    (l) => l && (l.href.startsWith("/") || l.href.includes("screener.in"))
+  );
+  if (!hosted) return null;
+  const url = hosted.href.startsWith("http") ? hosted.href : BASE + hosted.href;
+  try {
+    const sub = await context.newPage();
+    await sub.goto(url, { waitUntil: "domcontentloaded", timeout: 45000 });
+    await sub.waitForTimeout(1000);
+    const txt = await sub.evaluate(() => {
+      const main = document.querySelector("main, article, .card, #main, .container") || document.body;
+      return (main.innerText || "").trim();
+    });
+    await sub.close();
+    if (txt && txt.length > 300) {
+      const parsed = parseSummaryText(txt);
+      return finishSummary(txt, parsed, url);
+    }
+  } catch (e) {
+    warn("hosted summary fetch failed", e.message);
+  }
+  return null;
+}
+
 /**
  * Try to obtain the AI summary for the latest concall. Multiple strategies;
  * returns { raw_text, screener_sections, key_takeaways, pressing_questions, source_url } or null.
@@ -343,28 +421,10 @@ async function extractAiSummary(page, context, entry, companyUrl) {
   }
 
   // Strategy A: a Screener-hosted "summary"/"notes" link -> open + read it.
-  const hosted = [cat.summary, cat.notes].find(
-    (l) => l && (l.href.startsWith("/") || l.href.includes("screener.in"))
-  );
-  if (hosted) {
-    const url = hosted.href.startsWith("http") ? hosted.href : BASE + hosted.href;
-    try {
-      const sub = await context.newPage();
-      await sub.goto(url, { waitUntil: "domcontentloaded", timeout: 45000 });
-      await sub.waitForTimeout(1000);
-      const txt = await sub.evaluate(() => {
-        const main = document.querySelector("main, article, .card, #main, .container") || document.body;
-        return (main.innerText || "").trim();
-      });
-      await sub.close();
-      if (txt && txt.length > 300) {
-        const parsed = parseSummaryText(txt);
-        log("AI summary via hosted link", url);
-        return finishSummary(txt, parsed, url);
-      }
-    } catch (e) {
-      warn("hosted summary fetch failed", e.message);
-    }
+  const hostedResult = await fetchHostedSummary(context, entry);
+  if (hostedResult) {
+    log("AI summary via hosted link");
+    return hostedResult;
   }
 
   // Strategy B: summary rendered inline on the company page. Anchor on the LEAF
@@ -533,7 +593,7 @@ function toIsoDate(monthYear) {
 export async function scrapeCompany(page, context, ticker, opts = {}) {
   const maxHistory = opts.maxHistory ?? 4;
   try {
-    const { url, company } = await openCompany(page, context, ticker);
+    const { url, company, industry } = await openCompany(page, context, ticker);
     const { entries } = await findConcalls(page, ticker);
 
     // Keep only rows with a real "Mon YYYY" date — drops the "Add Missing"
@@ -561,18 +621,16 @@ export async function scrapeCompany(page, context, ticker, opts = {}) {
       log("AI SUMMARY TEXT (first 1500 chars):\n" + summary.raw_text.slice(0, 1500));
     }
 
-    // Best-effort history (older quarters) for guidance-vs-delivery comparison.
+    // Best-effort history (older quarters). PREFER each quarter's AI summary
+    // (cleaner, avoids transcript-PDF parse failures); fall back to the PDF.
     const history = [];
     for (let i = 1; i < Math.min(dated.length, maxHistory); i++) {
       try {
-        let h = await extractTranscript(context, dated[i]); // history via transcript is fine
+        let h = await fetchHostedSummary(context, dated[i]);
+        if (h) log(`history[${i}] ${dated[i].date}: via ai_summary`);
+        if (!h) h = await extractTranscript(context, dated[i]);
         if (h) {
-          history.push({
-            concall_date: toIsoDate(dated[i].date),
-            ...h,
-            company,
-            ticker,
-          });
+          history.push({ concall_date: toIsoDate(dated[i].date), ...h, company, ticker });
         }
       } catch (e) {
         warn("history quarter failed", e.message);
@@ -582,6 +640,7 @@ export async function scrapeCompany(page, context, ticker, opts = {}) {
     return {
       ticker,
       company,
+      industry: industry || null,
       concall_date: toIsoDate(latest.date),
       source: summary.source,
       source_url: summary.source_url,

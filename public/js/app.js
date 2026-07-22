@@ -1136,6 +1136,19 @@ function cleanField(v) {
   return s && s.toLowerCase() !== "null" && s.toLowerCase() !== "undefined" ? s : "";
 }
 
+/** Bullet points, collapsing a long list behind a native <details> toggle so a
+ *  richer section stays scannable. (exportPdf opens all details before capture.) */
+function pointsHtml(points) {
+  const pts = (points || []).filter(Boolean);
+  if (pts.length <= 6) return `<ul>${pts.map((p) => `<li>${escapeHtml(p)}</li>`).join("")}</ul>`;
+  const head = pts.slice(0, 4);
+  const rest = pts.slice(4);
+  return `<ul>${head.map((p) => `<li>${escapeHtml(p)}</li>`).join("")}</ul>
+    <details class="more-points"><summary>Show ${rest.length} more</summary>
+      <ul>${rest.map((p) => `<li>${escapeHtml(p)}</li>`).join("")}</ul>
+    </details>`;
+}
+
 function sectionCardHtml(s) {
   const meta = SECTION_BY_ID[s.id] || { title: s.title, icon: "dot", grad: SECTION_GRADS[0] };
   const figs = (s.key_figures || []).filter(Boolean);
@@ -1164,7 +1177,7 @@ function sectionCardHtml(s) {
         .map(
           (ss) => `<div class="subsec">
             ${ss.label ? `<div class="subsec-label">${escapeHtml(ss.label)}</div>` : ""}
-            <ul>${ss.points.map((p) => `<li>${escapeHtml(p)}</li>`).join("")}</ul>
+            ${pointsHtml(ss.points)}
           </div>`
         )
         .join("")}</div>`
@@ -1271,6 +1284,9 @@ async function exportPdf(row) {
   sheetEl.style.maxHeight = "none";
   scrollEl.style.overflow = "visible";
   scrollEl.style.maxHeight = "none";
+  // Open any collapsed detail blocks so the PDF captures ALL content.
+  const collapsed = qsa("details.more-points", sheetEl).filter((d) => !d.open);
+  collapsed.forEach((d) => (d.open = true));
 
   try {
     const canvas = await window.html2canvas(sheetEl, {
@@ -1305,6 +1321,7 @@ async function exportPdf(row) {
     sheetEl.style.maxHeight = saved.maxH;
     scrollEl.style.overflow = saved.scrollOverflow;
     scrollEl.style.maxHeight = saved.scrollMaxH;
+    collapsed.forEach((d) => (d.open = false)); // restore the collapsed state
     if (btn) {
       btn.disabled = false;
       btn.innerHTML = orig;
