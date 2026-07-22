@@ -87,7 +87,7 @@ export const SECTOR_MAP = [
   { sector: "Pharma & Healthcare", match: ["pharma", "healthcare", "hospital", "drug", "biotech", "diagnostic", "life science"] },
   { sector: "Financials", match: ["bank", "finance", "nbfc", "financial", "insurance", "housing finance", "broking", "asset management"] },
   { sector: "IT & Software", match: ["software", "it -", "it services", "information technology", "computers - software", "consulting"] },
-  { sector: "Auto & Ancillaries", match: ["automobile", "auto ancillar", "tyre", "two wheeler", "commercial vehicle", "passenger vehicle"] },
+  { sector: "Auto & Ancillaries", match: ["automobile", "auto ancillar", "auto compon", "auto part", "tyre", "wheeler", "commercial vehicle", "passenger vehicle", "passenger car", "utility vehicle", "truck", "tractor"] },
   { sector: "Infra & Realty", match: ["cement", "construction", "infrastructure", "realty", "real estate"] },
   { sector: "Energy & Utilities", match: ["refineries", "oil", "gas", "petroleum", "energy", "power generation", "coal", "utilities"] },
   { sector: "Metals & Mining", match: ["steel", "metal", "mining", "aluminium", "zinc", "copper"] },
