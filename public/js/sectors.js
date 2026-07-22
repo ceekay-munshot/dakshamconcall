@@ -68,8 +68,11 @@ const QUIET_WEEKS = 6; // no call in ~6 weeks -> flag "quiet / watch"
  *  so measuring quiet from month-END avoids flagging a late-in-the-month call
  *  as quiet almost a month early. */
 const endOfMonth = (iso) => {
-  const d = new Date(iso);
-  return isNaN(d) ? null : new Date(d.getFullYear(), d.getMonth() + 1, 0).getTime();
+  // Parse Y-M straight from the string and build in UTC — using local getMonth()
+  // on a UTC-parsed "YYYY-01" date rolls back a month for viewers west of UTC.
+  const m = /^(\d{4})-(\d{2})/.exec(String(iso || ""));
+  if (!m) return null;
+  return Date.UTC(+m[1], +m[2], 0); // day 0 of the next (1-indexed) month = last day of this month
 };
 
 /* ============================================================================
@@ -639,7 +642,7 @@ function heatmapHtml(sec) {
   const head = `<th class="hm-corner">Theme \\ Co.</th>` + cols.map((t) => `<th class="hm-co">${escapeHtml(t)}</th>`).join("");
   const rows = sec.themes
     .map((t) => {
-      const tkey = t.label.toLowerCase();
+      const tkey = themeKey(t.label); // cells are stored under the canonical key
       const cells = cols
         .map((tk) => {
           const dir = sec.cell[`${tk}|${tkey}`];
