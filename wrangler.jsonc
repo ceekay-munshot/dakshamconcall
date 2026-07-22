@@ -1,0 +1,43 @@
+{
+  // Daksham Capital · Concall Tracker — Cloudflare Worker config.
+  //
+  // The Worker (worker/index.js) does two jobs:
+  //   1. Serves the static site in ./public via the ASSETS binding.
+  //   2. Handles dynamic /api/* routes (search proxy + analyze plumbing).
+  // Everything that is not /api/* falls through to the static assets.
+  //
+  // NO build step: plain HTML/CSS/vanilla JS is served as-is.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "daksham-concall-tracker",
+  "main": "worker/index.js",
+  "compatibility_date": "2025-01-01",
+
+  // Serve ./public and expose it to the Worker as `env.ASSETS`.
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    // Single static entry point; unknown non-API paths return index.html
+    // so deep links / refreshes never 404.
+    "not_found_handling": "single-page-application"
+  },
+
+  "observability": {
+    "enabled": true
+  }
+
+  // ---------------------------------------------------------------------------
+  // SECRETS / ENV — set these in the Cloudflare dashboard (Workers > Settings >
+  // Variables) or via `wrangler secret put <NAME>`. NEVER hardcode them here.
+  //
+  //   MUNS_TOKEN        Bearer token for the Muns stock-search API (search
+  //                     works as soon as this is set).
+  //   GITHUB_TOKEN      Fine-grained PAT for THIS repo: Contents read/write +
+  //                     Actions read/write. Enables the Analyze action.
+  //   GITHUB_REPO       "owner/repo" (e.g. "ceekay-munshot/dakshamconcall").
+  //   GITHUB_BRANCH     Branch to read/commit data on (e.g. "main").
+  //   ANALYZE_PASSCODE  Shared passcode that gates the Analyze action.
+  //
+  // Search needs only MUNS_TOKEN. If the GitHub vars / passcode are missing the
+  // Worker degrades gracefully with a friendly message — it never 500s the page.
+  // ---------------------------------------------------------------------------
+}

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daksham Capital · Concall Tracker</title>
+    <meta
+      name="description"
+      content="Daksham Capital — a live tracker of Indian companies' earnings-call (concall) analysis. Search any listed company and generate a one-page tear sheet."
+    />
+
+    <!--
+      Libraries via CDN (no build step). Each load is optional / graceful:
+      the app checks `typeof <lib>` before using it and degrades if a CDN is
+      blocked. See public/js/app.js.
+    -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind (utility helper; the signature look lives in styles.css) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide icons (pinned — `@latest` can jump majors and change the API) -->
+    <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+
+    <!-- ECharts (data-viz) -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+
+    <!-- PDF export -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <!--
+      Munshot Dashboard SDK (OPTIONAL). If this dashboard is ever embedded in
+      the Munshot host, the SDK lets it consume host context (e.g. a selected
+      ticker). Loaded non-blocking; the app works fully standalone without it.
+    -->
+    <script
+      src="https://munshot.s3.ap-south-1.amazonaws.com/SDK+script/munshot-dashboard-sdk.v1.0.0.min.js"
+      onerror="window.__munshotSdkBlocked=true"
+    ></script>
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%237c3aed'/><stop offset='1' stop-color='%2306b6d4'/></linearGradient></defs><rect width='100' height='100' rx='24' fill='url(%23g)'/><text x='50' y='68' font-size='58' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'>D</text></svg>"
+    />
+  </head>
+  <body>
+    <!-- Gradient-mesh background -->
+    <div class="mesh" aria-hidden="true"></div>
+    <div class="mesh-veil" aria-hidden="true"></div>
+
+    <div class="app">
+      <!-- ============================ ZONE 1: HEADER / HERO ================ -->
+      <header class="topbar">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">◆</div>
+          <div class="brand-text">
+            <span class="brand-name">Daksham Capital</span>
+            <span class="brand-sub">Concall Tracker</span>
+          </div>
+        </div>
+
+        <!-- The star: live company search -->
+        <div class="search-wrap">
+          <div class="search-box" id="searchBox">
+            <span class="search-ico"><i data-lucide="search"></i></span>
+            <input
+              id="searchInput"
+              type="text"
+              autocomplete="off"
+              spellcheck="false"
+              placeholder="Search any listed company — e.g. Reliance, Infosys, TCS…"
+              aria-label="Search companies"
+            />
+            <div class="search-spinner" aria-hidden="true"></div>
+            <span class="search-hint-kbd">⌘K</span>
+          </div>
+          <!-- Live results dropdown (populated by app.js) -->
+          <div class="search-dropdown" id="searchDropdown" role="listbox"></div>
+        </div>
+
+        <!-- Selected-company chip + Analyze (hidden until a pick) -->
+        <div class="selection hidden" id="selection">
+          <div class="sel-chip">
+            <span class="ticker-pill" id="selTicker">—</span>
+            <span class="sel-name" id="selName">—</span>
+          </div>
+          <button class="btn" id="analyzeBtn">
+            <i data-lucide="sparkles" class="i16"></i>
+            <span>Analyze</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- ============================ ZONE 2: CONTENT (scrolls) =========== -->
+      <main class="content">
+        <div class="content-inner">
+          <!-- KPI strip -->
+          <section class="kpi-grid fade-up d1" id="kpiStrip">
+            <div class="kpi k1">
+              <div class="kpi-top">
+                <span class="kpi-label">Companies Tracked</span>
+                <span class="kpi-ico"><i data-lucide="building-2"></i></span>
+              </div>
+              <div class="kpi-value" id="kpiTracked">0</div>
+              <div class="kpi-delta" id="kpiTrackedSub">
+                <i data-lucide="minus" class="i16"></i> None yet — search to begin
+              </div>
+            </div>
+            <div class="kpi k2">
+              <div class="kpi-top">
+                <span class="kpi-label">Calls This Quarter</span>
+                <span class="kpi-ico"><i data-lucide="phone-call"></i></span>
+              </div>
+              <div class="kpi-value" id="kpiCalls">0</div>
+              <div class="kpi-delta">
+                <i data-lucide="calendar" class="i16"></i> Current quarter
+              </div>
+            </div>
+            <div class="kpi k3">
+              <div class="kpi-top">
+                <span class="kpi-label">Sectors Covered</span>
+                <span class="kpi-ico"><i data-lucide="layout-grid"></i></span>
+              </div>
+              <div class="kpi-value" id="kpiSectors">0</div>
+              <div class="kpi-delta">
+                <i data-lucide="git-branch" class="i16"></i> Across tracked names
+              </div>
+            </div>
+            <div class="kpi k4">
+              <div class="kpi-top">
+                <span class="kpi-label">Last Updated</span>
+                <span class="kpi-ico"><i data-lucide="refresh-cw"></i></span>
+              </div>
+              <div class="kpi-value" id="kpiUpdated" style="font-size: 22px">—</div>
+              <div class="kpi-delta">
+                <i data-lucide="database" class="i16"></i> Auto-refreshes quarterly
+              </div>
+            </div>
+          </section>
+
+          <!-- Main split: live feed (left) + insight rail (right) -->
+          <section class="layout-main fade-up d2">
+            <!-- LEFT: Live feed -->
+            <div class="card lift">
+              <div class="card-head">
+                <div>
+                  <h3>
+                    <span class="card-ico" style="background: var(--grad-primary)">
+                      <i data-lucide="activity" class="i16"></i>
+                    </span>
+                    Latest Analyzed Calls
+                  </h3>
+                  <div class="sub">Newest first · click a row for its tear sheet</div>
+                </div>
+                <span class="badge india">India</span>
+              </div>
+              <div class="card-body pad0">
+                <div id="feedContainer">
+                  <!-- table or empty state injected by app.js -->
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT: insight rail -->
+            <div class="stack">
+              <!-- Sector coverage donut -->
+              <div class="card lift">
+                <div class="card-head">
+                  <div>
+                    <h3>
+                      <span class="card-ico" style="background: var(--grad-cool)">
+                        <i data-lucide="pie-chart" class="i16"></i>
+                      </span>
+                      Sector Coverage
+                    </h3>
+                  </div>
+                  <span class="badge sector">Sector</span>
+                </div>
+                <div class="card-body">
+                  <div id="sectorChart" class="chart-box" style="display: none"></div>
+                  <div id="sectorChartEmpty" class="chart-empty">
+                    <i data-lucide="pie-chart"></i>
+                    <span>Sector mix appears as you analyze companies</span>
+                  </div>
+                  <div class="donut-legend" id="sectorLegend"></div>
+                </div>
+              </div>
+
+              <!-- How it works -->
+              <div class="card lift">
+                <div class="card-head">
+                  <div>
+                    <h3>
+                      <span class="card-ico" style="background: var(--grad-warm)">
+                        <i data-lucide="route" class="i16"></i>
+                      </span>
+                      How It Works
+                    </h3>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="steps">
+                    <div class="step">
+                      <div class="step-num">1</div>
+                      <div class="step-body">
+                        <h5>Search a company</h5>
+                        <p>Type any listed name above — results are live.</p>
+                      </div>
+                    </div>
+                    <div class="step">
+                      <div class="step-num">2</div>
+                      <div class="step-body">
+                        <h5>Click Analyze</h5>
+                        <p>We queue its latest earnings concall for analysis.</p>
+                      </div>
+                    </div>
+                    <div class="step">
+                      <div class="step-num">3</div>
+                      <div class="step-body">
+                        <h5>Read the tear sheet</h5>
+                        <p>An 11-section one-pager lands on the board.</p>
+                      </div>
+                    </div>
+                    <div class="step">
+                      <div class="step-num">4</div>
+                      <div class="step-body">
+                        <h5>Track over time</h5>
+                        <p>Tracked names auto-refresh every quarter.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Framework + guidance-vs-delivery preview -->
+          <section class="grid fade-up d3">
+            <div class="card lift" style="grid-column: span 1">
+              <div class="card-head">
+                <div>
+                  <h3>
+                    <span class="card-ico" style="background: var(--grad-primary)">
+                      <i data-lucide="layers" class="i16"></i>
+                    </span>
+                    The 11-Section Framework
+                  </h3>
+                  <div class="sub">Every tear sheet, same shape — quarter to quarter</div>
+                </div>
+                <span class="badge analytics">Framework</span>
+              </div>
+              <div class="card-body">
+                <div class="chip-cloud" id="frameworkChips"><!-- injected --></div>
+              </div>
+            </div>
+
+            <div class="card lift">
+              <div class="card-head">
+                <div>
+                  <h3>
+                    <span class="card-ico" style="background: linear-gradient(135deg,var(--brand-emerald),var(--brand-cyan))">
+                      <i data-lucide="scale" class="i16"></i>
+                    </span>
+                    Guidance vs Delivery
+                  </h3>
+                  <div class="sub">Ledger builds up across quarters</div>
+                </div>
+                <span class="badge markets">Soon</span>
+              </div>
+              <div class="card-body">
+                <div class="guidance-band">
+                  <div class="g-chip">
+                    <div class="g-label">Promised</div>
+                    <div class="g-val">Awaiting data</div>
+                  </div>
+                  <div class="g-chip">
+                    <div class="g-label">Delivered</div>
+                    <div class="g-val">Awaiting data</div>
+                  </div>
+                  <div class="g-chip">
+                    <div class="g-label">Verdict</div>
+                    <div class="g-val">—</div>
+                  </div>
+                </div>
+                <p style="font-size: 12.5px; color: var(--text-4); margin: 14px 0 0; line-height: 1.55">
+                  Once two or more quarters are analyzed, this ledger scores what
+                  each management promised against what they delivered.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <!-- ============================ ZONE 3: FOOTER ====================== -->
+      <footer class="footer">
+        <div class="f-left">
+          <span class="live-dot" aria-hidden="true"></span>
+          <span>Daksham Capital · Concall Tracker</span>
+          <span class="hide-sm" style="color: var(--text-4)">— Step 1 · Foundation</span>
+        </div>
+        <div class="f-right">
+          <span class="hide-sm" id="footStatus">Search ready</span>
+          <span>Data: <span class="mono" id="footUpdated">—</span></span>
+        </div>
+      </footer>
+    </div>
+
+    <!-- ============================ TEAR-SHEET MODAL ===================== -->
+    <div class="modal-scrim" id="sheetModal">
+      <div class="sheet" id="sheetEl">
+        <div class="sheet-hero">
+          <div class="sh-top">
+            <div>
+              <h2 id="sheetName">Company</h2>
+              <div class="sh-meta" id="sheetMeta"><!-- pills injected --></div>
+            </div>
+            <button class="sheet-close" id="sheetClose" aria-label="Close">
+              <i data-lucide="x"></i>
+            </button>
+          </div>
+        </div>
+        <div class="sheet-scroll" id="sheetScroll"><!-- body injected --></div>
+      </div>
+    </div>
+
+    <!-- ============================ PASSCODE MODAL ======================= -->
+    <div class="modal-scrim pass-modal" id="passModal">
+      <div class="sheet">
+        <div class="sheet-hero" style="background: var(--grad-cool)">
+          <div class="sh-top">
+            <div>
+              <h2 style="font-size: 20px">Confirm Analyze</h2>
+              <div class="sh-meta">
+                <span class="sh-pill"><i data-lucide="lock" class="i16"></i> Passcode required</span>
+              </div>
+            </div>
+            <button class="sheet-close" id="passClose" aria-label="Close">
+              <i data-lucide="x"></i>
+            </button>
+          </div>
+        </div>
+        <div class="pass-body">
+          <label for="passInput">Enter the shared analyze passcode</label>
+          <input
+            class="pass-input"
+            id="passInput"
+            type="password"
+            autocomplete="off"
+            placeholder="••••••••"
+          />
+          <div class="pass-actions">
+            <button class="btn ghost" id="passCancel">Cancel</button>
+            <button class="btn" id="passSubmit">
+              <i data-lucide="sparkles" class="i16"></i> Queue Analysis
+            </button>
+          </div>
+          <div class="pass-note">
+            <i data-lucide="info" class="i16" style="flex-shrink: 0; margin-top: 1px"></i>
+            <span>
+              The passcode is verified by the server and never stored in your
+              browser. Ask your Daksham admin if you don't have it.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toasts -->
+    <div class="toast-wrap" id="toastWrap"></div>
+
+    <!-- App logic (ES modules) -->
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>
