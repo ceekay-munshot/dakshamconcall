@@ -187,10 +187,20 @@ async function extractIndustry(page) {
       return candidates.slice(0, 12);
     });
     log("industry candidates: " + JSON.stringify(res));
+    // Screener's market-classification breadcrumb runs BROAD -> SPECIFIC
+    // (macro-sector -> sector -> industry -> basic industry). Prefer the most
+    // specific classification link (the LAST market-link) so we store e.g.
+    // "Refineries & Marketing" rather than the generic "Energy", and
+    // "Computers - Software & Consulting" rather than "Information Technology".
+    // Both map to the same broad sector in the UI, but the specific label is far
+    // more informative on the tear sheet. Explicit "Industry:"/compare labels,
+    // when present, are already specific and take precedence.
+    const marketLinks = res.filter((c) => c.src === "market-link");
     const pick =
       res.find((c) => c.src.endsWith("-label")) ||
       res.find((c) => c.src === "compare-link") ||
-      res.find((c) => c.src === "market-link");
+      marketLinks[marketLinks.length - 1] ||
+      null;
     return pick ? pick.value : null;
   } catch (e) {
     warn("industry extract failed", e.message);
@@ -598,10 +608,26 @@ export async function scrapeCompany(page, context, ticker, opts = {}) {
 
     // Keep only rows with a real "Mon YYYY" date — drops the "Add Missing"
     // button row and any header noise. Screener lists concalls newest-first.
-    const dated = entries.filter((e) => e.date);
-    if (!dated.length) {
+    const datedAll = entries.filter((e) => e.date);
+    if (!datedAll.length) {
       await saveShot(page, `no-concalls-${ticker}.png`);
       return { ticker, error: "No dated concall rows found on the company page." };
+    }
+
+    // Collapse rows that resolve to the SAME month. Screener's broad row scan can
+    // capture nested wrappers of a single concall as separate "rows" (and a month
+    // can also appear in unrelated blocks), which would otherwise classify the
+    // SAME quarter twice under one date — wasting an LLM call and, because the
+    // tear-sheet store is keyed by concall_date, silently dropping a real prior
+    // quarter from the timeline. Newest-first order is preserved; the first
+    // (richest, top-most) occurrence of each month wins.
+    const dated = [];
+    const seenMonth = new Set();
+    for (const e of datedAll) {
+      const iso = toIsoDate(e.date);
+      if (!iso || seenMonth.has(iso)) continue;
+      seenMonth.add(iso);
+      dated.push(e);
     }
 
     const latest = dated[0];
