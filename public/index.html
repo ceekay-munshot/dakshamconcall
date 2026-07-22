@@ -67,6 +67,16 @@
           </div>
         </div>
 
+        <!-- View switcher: Overview (dashboard) / Sectors -->
+        <div class="viewtabs" id="viewtabs">
+          <button class="vtab active" data-view="overview">
+            <i data-lucide="layout-dashboard" class="i16"></i><span>Overview</span>
+          </button>
+          <button class="vtab" data-view="sectors">
+            <i data-lucide="grid-2x2" class="i16"></i><span>Sectors</span>
+          </button>
+        </div>
+
         <!-- The star: live company search -->
         <div class="search-wrap">
           <div class="search-box" id="searchBox">
@@ -102,6 +112,7 @@
       <!-- ============================ ZONE 2: CONTENT (scrolls) =========== -->
       <main class="content">
         <div class="content-inner">
+          <div id="viewOverview" class="view">
           <!-- KPI strip -->
           <section class="kpi-grid fade-up d1" id="kpiStrip">
             <div class="kpi k1">
@@ -297,6 +308,13 @@
               </div>
             </div>
           </section>
+          </div><!-- /viewOverview -->
+
+          <!-- Sector Intelligence view (rendered by sectors.js) -->
+          <div id="viewSectors" class="view hidden">
+            <section class="kpi-grid fade-up d1" id="sectorKpis"></section>
+            <div id="sectorsBody"></div>
+          </div>
         </div>
       </main>
 

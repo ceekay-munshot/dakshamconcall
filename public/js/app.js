@@ -25,6 +25,7 @@ import {
   relTime,
   toast,
 } from "./ui.js";
+import * as Sectors from "./sectors.js";
 
 /* ============================================================================
    Config & constants
@@ -101,10 +102,11 @@ const state = {
   tearsheets: { companies: {} },
   jobs: { jobs: {} },
   metadata: { updated_at: null, count: 0 },
-  // charts / polling
+  // charts / polling / views
   sectorChart: null,
   pollTimer: null,
   currentSheet: null,
+  view: "overview", // "overview" | "sectors"
 };
 
 // CDN capability flags (graceful degradation if a script was blocked).
@@ -125,6 +127,8 @@ async function init() {
   wireAnalyze();
   wireModals();
   wireShortcuts();
+  wireViewTabs();
+  Sectors.initSectors({ onOpenCompany: openCompanyByTicker });
   initMunshotSdk();
 
   await loadData();
@@ -154,6 +158,48 @@ async function checkHealth() {
   } catch {
     /* health is informational only */
   }
+}
+
+/* ============================================================================
+   VIEW SWITCHER — Overview (dashboard) / Sectors
+   ========================================================================== */
+function wireViewTabs() {
+  qsa(".vtab").forEach((t) =>
+    t.addEventListener("click", () => setView(t.getAttribute("data-view")))
+  );
+}
+
+function setView(view) {
+  state.view = view;
+  qs("#viewOverview").classList.toggle("hidden", view !== "overview");
+  qs("#viewSectors").classList.toggle("hidden", view !== "sectors");
+  qsa(".vtab").forEach((t) =>
+    t.classList.toggle("active", t.getAttribute("data-view") === view)
+  );
+  const content = qs(".content");
+  if (content) content.scrollTop = 0;
+  if (view === "sectors") Sectors.showOverview(state.tearsheets.companies);
+  // ECharts can't size while hidden — resize the donut when returning.
+  else if (state.sectorChart) setTimeout(() => state.sectorChart.resize(), 40);
+}
+
+/** Deep-link into a sector's detail (used by the donut + tear-sheet tie-ins). */
+function goToSector(key) {
+  state.view = "sectors";
+  qs("#viewOverview").classList.add("hidden");
+  qs("#viewSectors").classList.remove("hidden");
+  qsa(".vtab").forEach((t) =>
+    t.classList.toggle("active", t.getAttribute("data-view") === "sectors")
+  );
+  const content = qs(".content");
+  if (content) content.scrollTop = 0;
+  Sectors.showDetail(key, state.tearsheets.companies);
+}
+
+/** Open a company's tear sheet by ticker (from the sector view). */
+function openCompanyByTicker(ticker) {
+  const row = buildFeed().find((r) => r.ticker === ticker);
+  if (row) openTearSheet(row);
 }
 
 /* ============================================================================
@@ -514,8 +560,10 @@ async function fetchJson(url, fallback) {
 /** The most useful one-line guidance statement for the feed headline. */
 function topGuidanceHeadline(ledger) {
   if (!Array.isArray(ledger) || !ledger.length) return null;
-  const specific = ledger.find((g) => g.specificity === "specific");
-  return (specific || ledger[0])?.statement || null;
+  // Skip carried-forward (no_mention) guidance — it's historical, not current.
+  const items = ledger.filter((g) => g && g.status !== "no_mention");
+  const specific = items.find((g) => g.specificity === "specific");
+  return (specific || items[0])?.statement || null;
 }
 
 function buildFeed() {
@@ -578,6 +626,7 @@ function buildFeed() {
       status,
       hasTearsheet: Boolean(q0),
       failMessage: status === "failed" ? job?.message || job?.error || null : null,
+      themes: q0?.themes || [],
       fresh: state.freshTickers.has(t),
       sortKey,
     };
@@ -596,6 +645,7 @@ function renderAll() {
   renderFeed(feed);
   renderKpis(feed);
   renderSectorChart(feed);
+  if (state.view === "sectors") Sectors.refresh(state.tearsheets.companies);
   renderIcons();
 }
 
@@ -637,6 +687,13 @@ function renderFeed(rows) {
       if (row) openTearSheet(row);
     });
   });
+  // Sector cell -> open that sector (don't also open the tear sheet).
+  qsa(".sector-link[data-goto-sector]", container).forEach((el) =>
+    el.addEventListener("click", (e) => {
+      e.stopPropagation();
+      goToSector(el.getAttribute("data-goto-sector"));
+    })
+  );
   refreshIcons();
 }
 
@@ -666,16 +723,33 @@ function feedRowHtml(r) {
       </td>
       <td class="hide-sm">${
         r.industry
-          ? `<span style="color:var(--text-3)">${escapeHtml(r.industry)}</span>`
+          ? `<span class="sector-link" data-goto-sector="${escapeHtml(
+              Sectors.sectorKeyFor(r.industry)
+            )}" title="Open sector">${escapeHtml(r.industry)}</span>`
           : `<span style="color:var(--text-4)">—</span>`
       }</td>
       <td class="hide-sm mono" style="color:var(--text-3)">${
         r.concallDate ? escapeHtml(fmtDate(r.concallDate)) : "—"
       }</td>
-      <td>${headline}</td>
+      <td>${headline}${feedThemeChip(r.themes)}</td>
       <td class="hide-sm">${sourceChip}</td>
       <td>${statusChip}</td>
     </tr>`;
+}
+
+/** Compact first-theme chip for the feed headline cell. */
+function feedThemeChip(themes) {
+  const items = (themes || []).filter(Boolean);
+  if (!items.length) return "";
+  const t = items[0];
+  const cls =
+    { positive: "dir-pos", negative: "dir-neg", mixed: "dir-mix", neutral: "dir-neu" }[
+      t.direction
+    ] || "dir-neu";
+  const more = items.length > 1 ? `<span class="theme-more">+${items.length - 1}</span>` : "";
+  return `<span class="theme-chip sm ${cls}" title="${escapeHtml(
+    t.note || ""
+  )}"><span class="tc-dot"></span>${escapeHtml(t.label)}</span>${more}`;
 }
 
 function statusChipHtml(status, failMessage) {
@@ -762,10 +836,12 @@ function renderSectorChart(rows) {
   const emptyEl = qs("#sectorChartEmpty");
   const legendEl = qs("#sectorLegend");
 
-  // Aggregate by industry.
+  // Aggregate ANALYZED companies by broad sector (so a slice always maps to a
+  // sector detail — queued/failed companies have no sector model yet).
+  const analyzed = rows.filter((r) => r.hasTearsheet);
   const counts = {};
-  for (const r of rows) {
-    const key = r.industry || "Uncategorised";
+  for (const r of analyzed) {
+    const key = Sectors.sectorKeyFor(r.industry);
     counts[key] = (counts[key] || 0) + 1;
   }
   const entries = Object.entries(counts).sort((a, b) => b[1] - a[1]);
@@ -798,6 +874,11 @@ function renderSectorChart(rows) {
   if (!state.sectorChart) {
     state.sectorChart = window.echarts.init(chartEl, null, { renderer: "canvas" });
     window.addEventListener("resize", () => state.sectorChart?.resize());
+    // Click a slice -> open that sector's detail.
+    state.sectorChart.on("click", (p) => {
+      if (p?.name) goToSector(p.name);
+    });
+    chartEl.style.cursor = "pointer";
   }
 
   const data = entries.map(([name, value], i) => ({
@@ -818,7 +899,7 @@ function renderSectorChart(rows) {
         label: {
           show: true,
           position: "center",
-          formatter: () => `{a|${rows.length}}\n{b|Tracked}`,
+          formatter: () => `{a|${analyzed.length}}\n{b|Analyzed}`,
           rich: {
             a: { fontSize: 26, fontWeight: 700, color: "#0f172a", fontFamily: "Space Grotesk" },
             b: { fontSize: 11, color: "#94a3b8", padding: [4, 0, 0, 0] },
@@ -875,7 +956,13 @@ function openTearSheet(row) {
   pills.push(`<span class="sh-pill mono">${escapeHtml(row.ticker)}</span>`);
   const industry = comp?.industry || row.industry;
   if (industry)
-    pills.push(`<span class="sh-pill"><i data-lucide="layers" class="i16"></i>${escapeHtml(industry)}</span>`);
+    pills.push(
+      `<span class="sh-pill link" data-goto-sector="${escapeHtml(
+        Sectors.sectorKeyFor(industry)
+      )}"><i data-lucide="layers" class="i16"></i>${escapeHtml(
+        industry
+      )}<i data-lucide="arrow-up-right" class="i16"></i></span>`
+    );
   const country = comp?.country || row.country;
   if (country)
     pills.push(`<span class="sh-pill"><i data-lucide="map-pin" class="i16"></i>${escapeHtml(country)}</span>`);
@@ -891,6 +978,12 @@ function openTearSheet(row) {
   else if (source === "transcript")
     pills.push(`<span class="sh-pill"><i data-lucide="file-text" class="i16"></i>Transcript</span>`);
   qs("#sheetMeta").innerHTML = pills.join("");
+  qsa("[data-goto-sector]", qs("#sheetMeta")).forEach((el) =>
+    el.addEventListener("click", () => {
+      qs("#sheetModal").classList.remove("open");
+      goToSector(el.getAttribute("data-goto-sector"));
+    })
+  );
 
   qs("#sheetScroll").innerHTML = q ? tearSheetRealHtml(q, comp) : tearSheetPendingHtml(row);
   qs("#sheetModal").classList.add("open");
@@ -908,12 +1001,31 @@ function tearSheetRealHtml(q, comp) {
     : "";
   return (
     summary +
+    themesBandHtml(q.themes) +
     guidanceBandHtml(q.guidance_ledger, isFirst) +
     riskBandHtml(q.risk_register) +
     sectionsHtml(q.sections) +
     insightsHtml(q.key_takeaways, q.pressing_questions) +
     pdfActionsHtml()
   );
+}
+
+/* Themes chips (each colored by direction). */
+function themesBandHtml(themes) {
+  const items = (themes || []).filter(Boolean);
+  if (!items.length) return "";
+  const chips = items
+    .map((t) => {
+      const cls =
+        { positive: "dir-pos", negative: "dir-neg", mixed: "dir-mix", neutral: "dir-neu" }[
+          t.direction
+        ] || "dir-neu";
+      return `<span class="theme-chip ${cls}" title="${escapeHtml(t.note || "")}"><span class="tc-dot"></span>${escapeHtml(
+        t.label
+      )}</span>`;
+    })
+    .join("");
+  return `<div class="band-title"><i data-lucide="hash" class="i16"></i> Themes</div><div class="theme-cloud">${chips}</div>`;
 }
 
 /* Guidance vs Delivery band — the ledger as colorful status chips. */

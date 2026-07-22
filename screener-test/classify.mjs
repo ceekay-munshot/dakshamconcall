@@ -33,7 +33,7 @@ const SECTION_IDS = SECTIONS.map((s) => s.id);
 const SCHEMA = {
   type: "object",
   additionalProperties: false,
-  required: ["summary", "sections", "guidance_ledger", "risk_register", "key_takeaways", "pressing_questions"],
+  required: ["summary", "sections", "guidance_ledger", "risk_register", "key_takeaways", "pressing_questions", "themes"],
   properties: {
     summary: { type: "string", description: "One-sentence forward outlook, organized from the source (no new opinion)." },
     sections: {
@@ -109,6 +109,26 @@ const SCHEMA = {
     },
     key_takeaways: { type: "array", items: { type: "string" }, description: "Screener's Key Takeaways, VERBATIM." },
     pressing_questions: { type: "array", items: { type: "string" } },
+    themes: {
+      type: "array",
+      description:
+        "3-7 short, reusable themes running through this call (the topics a sector is tracked on). Reuse a prior quarter's label when the same topic recurs — labels are cross-quarter join keys.",
+      items: {
+        type: "object",
+        additionalProperties: false,
+        required: ["label", "direction", "note", "section_ref"],
+        properties: {
+          label: {
+            type: "string",
+            description:
+              'Short reusable topic, e.g. "Input-cost inflation", "Export tailwind", "Capacity expansion", "Demand recovery", "Pricing power".',
+          },
+          direction: { type: "string", enum: ["positive", "negative", "neutral", "mixed"] },
+          note: { type: "string", description: "One line, faithful to the source (no new opinion)." },
+          section_ref: { type: "string", enum: SECTION_IDS },
+        },
+      },
+    },
   },
 };
 
@@ -119,6 +139,7 @@ const SYSTEM_PROMPT = [
   "Preserve the source's Key Takeaways verbatim.",
   "Classify each disclosure into exactly one best-fit section.",
   "Keep numbers exact, with unit and period.",
+  "Also surface 3-7 short, reusable THEMES running through the call; reuse a prior quarter's theme label whenever the same topic recurs (labels are cross-quarter join keys).",
   "Output only the schema.",
 ].join(" ");
 
@@ -129,7 +150,7 @@ const SYSTEM_PROMPT = [
  * @param {object|null} priorGuidance  the prior quarter's guidance_ledger (for context)
  * @returns {Promise<object>} { summary, sections, guidance_ledger, risk_register, key_takeaways, pressing_questions, model }
  */
-export async function classifyQuarter(scrape, priorGuidance = null) {
+export async function classifyQuarter(scrape, priorGuidance = null, priorThemes = null) {
   const sectionMenu = SECTIONS.map((s) => `${s.id} — ${s.title}: ${s.scope}`).join("\n");
 
   const takeaways = (scrape.key_takeaways || []).filter(Boolean);
@@ -141,6 +162,12 @@ export async function classifyQuarter(scrape, priorGuidance = null) {
         null,
         2
       )}`
+    : "";
+
+  const priorThemesContext = priorThemes?.length
+    ? `\n\nPRIOR QUARTER THEME LABELS (reuse these EXACT labels when the same topic recurs, so themes track across quarters):\n${priorThemes
+        .map((t) => `- ${t.label}`)
+        .join("\n")}`
     : "";
 
   const user = [
@@ -160,7 +187,10 @@ export async function classifyQuarter(scrape, priorGuidance = null) {
     "",
     "CONCALL SUMMARY TEXT (organize this into the sections; keep the source's headings/labels where possible):",
     scrape.raw_text || "(none)",
+    "",
+    "THEMES: also surface 3-7 short, reusable themes running through this call — each with a direction (positive/negative/neutral/mixed), a one-line note faithful to the source, and the section it ties to. Keep labels short and reusable so they track across quarters.",
     priorContext,
+    priorThemesContext,
   ].join("\n");
 
   const out = await openaiStructured({
