@@ -52,6 +52,16 @@ const DIR = {
 };
 const dirMeta = (d) => DIR[d] || DIR.neutral;
 
+/* Guidance DIRECTION is directional, not sentiment (up isn't always "good" —
+   think costs / debt / attrition), so it gets literal Up/Down labels and a
+   neutral, non-red/green palette. */
+const GUIDE_DIR = {
+  up: { cls: "gdir-up", label: "Up", icon: "trending-up" },
+  down: { cls: "gdir-down", label: "Down", icon: "trending-down" },
+  flat: { cls: "gdir-flat", label: "Flat", icon: "minus" },
+  unclear: { cls: "gdir-neu", label: "Unclear", icon: "help-circle" },
+};
+
 const QUIET_WEEKS = 6; // no call in ~6 weeks -> flag "quiet / watch"
 
 /* ============================================================================
@@ -59,18 +69,21 @@ const QUIET_WEEKS = 6; // no call in ~6 weeks -> flag "quiet / watch"
    peer-group list). Keys are lowercase substrings matched against the stored
    industry; first match wins, else the raw industry is its own sector.
    ========================================================================== */
+// Ordered SPECIFIC-first (e.g. Pharma/biotech before the generic IT terms) and
+// with over-broad substrings (like a bare "technology") removed, so industries
+// such as "Biotechnology" don't fall into "IT & Software".
 export const SECTOR_MAP = [
-  { sector: "IT & Software", match: ["software", "it -", "information technology", "computers", "technology"] },
-  { sector: "Financials", match: ["bank", "finance", "nbfc", "financial", "insurance", "housing finance", "broking"] },
-  { sector: "Pharma & Healthcare", match: ["pharma", "healthcare", "hospital", "drug", "biotech", "diagnostic"] },
-  { sector: "Auto & Ancillaries", match: ["auto", "automobile", "tyre", "ancillary", "vehicle"] },
+  { sector: "Pharma & Healthcare", match: ["pharma", "healthcare", "hospital", "drug", "biotech", "diagnostic", "life science"] },
+  { sector: "Financials", match: ["bank", "finance", "nbfc", "financial", "insurance", "housing finance", "broking", "asset management"] },
+  { sector: "IT & Software", match: ["software", "it -", "it services", "information technology", "computers - software", "consulting"] },
+  { sector: "Auto & Ancillaries", match: ["automobile", "auto ancillar", "tyre", "two wheeler", "commercial vehicle", "passenger vehicle"] },
   { sector: "Infra & Realty", match: ["cement", "construction", "infrastructure", "realty", "real estate"] },
-  { sector: "Energy & Utilities", match: ["refineries", "oil", "gas", "petroleum", "energy", "power", "coal", "utilities"] },
+  { sector: "Energy & Utilities", match: ["refineries", "oil", "gas", "petroleum", "energy", "power generation", "coal", "utilities"] },
   { sector: "Metals & Mining", match: ["steel", "metal", "mining", "aluminium", "zinc", "copper"] },
   { sector: "Consumer", match: ["fmcg", "consumer", "food", "beverage", "personal product", "retail", "textile", "apparel", "footwear"] },
-  { sector: "Chemicals", match: ["chemical", "fertiliser", "fertilizer", "paint", "specialty"] },
+  { sector: "Chemicals", match: ["chemical", "fertiliser", "fertilizer", "paint", "specialty chemical"] },
   { sector: "Telecom & Media", match: ["telecom", "media", "entertainment", "broadcast"] },
-  { sector: "Industrials", match: ["capital goods", "engineering", "electrical", "industrial", "machinery", "defence", "logistics"] },
+  { sector: "Industrials", match: ["capital goods", "engineering", "electrical equipment", "industrial", "machinery", "defence", "logistics"] },
 ];
 
 export function sectorKeyFor(industry) {
@@ -107,6 +120,31 @@ const riskDir = (status) =>
   ({ new: "negative", escalated: "negative", stable: "neutral", easing: "positive", resolved: "positive", no_mention: "neutral" }[status] ||
   "neutral");
 
+/**
+ * A company's themes across its RETAINED quarters (newest first). Themes that
+ * were discussed last quarter but omitted this quarter carry forward (stamped
+ * with when they were last mentioned), and a direction change vs the prior
+ * mention is flagged (`flip`) so the sector "catches when something flips".
+ */
+function companyThemeTimeline(comp) {
+  const quarters = comp.quarters || [];
+  const map = new Map();
+  for (const q of quarters) {
+    for (const th of q.themes || []) {
+      const label = (th.label || "").trim();
+      if (!label) continue;
+      const k = label.toLowerCase();
+      if (!map.has(k)) {
+        map.set(k, { label, direction: th.direction, note: th.note, date: q.concall_date, section_ref: th.section_ref, _dirs: [th.direction] });
+      } else {
+        map.get(k)._dirs.push(th.direction); // an older occurrence of the same theme
+      }
+    }
+  }
+  for (const v of map.values()) v.flip = v._dirs.length > 1 && v._dirs[0] !== v._dirs[1];
+  return map;
+}
+
 export function computeSectors(companies) {
   const map = new Map();
   const blank = (key) => ({
@@ -128,6 +166,8 @@ export function computeSectors(companies) {
     const sec = map.get(key);
 
     const guid = topGuidance(q0.guidance_ledger);
+    // Themes across the company's retained quarters (carry-forward + flip flags).
+    const cthemes = companyThemeTimeline(comp);
     const co = {
       ticker: comp.ticker,
       name: comp.company || comp.ticker,
@@ -136,36 +176,36 @@ export function computeSectors(companies) {
       source: q0.source || null,
       guidance_headline: guid?.statement || q0.summary || null,
       guidance_direction: guid?.direction || null,
-      themes: q0.themes || [],
+      themes: [...cthemes.values()].map((t) => ({ label: t.label, direction: t.direction, note: t.note })),
       key_figures: topKeyFigures(q0.sections, 2),
     };
     sec.companies.push(co);
 
     for (const g of q0.guidance_ledger || []) {
+      if (g.status === "no_mention") continue; // dropped guidance shouldn't tilt the current distribution
       if (g.direction === "up") sec.guidance.up++;
       else if (g.direction === "down") sec.guidance.down++;
       else if (g.direction === "flat") sec.guidance.flat++;
       if (g.specificity === "specific") {
+        // guidance direction is directional, NOT sentiment -> keep the chip neutral
         sec.watchRaw.push({
-          kind: "guidance", label: g.metric, dir: g.direction === "up" ? "positive" : g.direction === "down" ? "negative" : "neutral",
+          kind: "guidance", label: g.metric, dir: "neutral", gdir: g.direction,
           note: g.statement, date: co.concall_date, ticker: co.ticker,
           flip: ["raised", "lowered"].includes(g.status), status: g.status,
         });
       }
     }
 
-    for (const th of q0.themes || []) {
-      const label = (th.label || "").trim();
-      if (!label) continue;
-      const tkey = label.toLowerCase();
-      if (!sec.themeMap.has(tkey)) sec.themeMap.set(tkey, { label, companies: [], directions: [], notes: [], last: null, section_ref: th.section_ref });
+    for (const th of cthemes.values()) {
+      const tkey = th.label.toLowerCase();
+      if (!sec.themeMap.has(tkey)) sec.themeMap.set(tkey, { label: th.label, companies: [], directions: [], notes: [], last: null, section_ref: th.section_ref });
       const tm = sec.themeMap.get(tkey);
       if (!tm.companies.includes(co.ticker)) tm.companies.push(co.ticker);
       tm.directions.push(th.direction);
-      if (th.note) tm.notes.push({ ticker: co.ticker, note: th.note, date: co.concall_date });
-      if (!tm.last || (co.concall_date && co.concall_date > tm.last)) tm.last = co.concall_date;
+      if (th.note) tm.notes.push({ ticker: co.ticker, note: th.note, date: th.date });
+      if (th.date && (!tm.last || th.date > tm.last)) tm.last = th.date;
       sec.cell[`${co.ticker}|${tkey}`] = th.direction;
-      sec.watchRaw.push({ kind: "theme", label, dir: th.direction, note: th.note, date: co.concall_date, ticker: co.ticker });
+      sec.watchRaw.push({ kind: "theme", label: th.label, dir: th.direction, note: th.note, date: th.date, ticker: co.ticker, flip: th.flip });
     }
 
     for (const r of q0.risk_register || []) {
@@ -185,7 +225,7 @@ export function computeSectors(companies) {
   const out = [];
   for (const sec of map.values()) {
     sec.themes = [...sec.themeMap.values()]
-      .map((tm) => ({ label: tm.label, companies: tm.companies, net: netDirection(tm.directions), last: tm.last, notes: tm.notes, section_ref: tm.section_ref, count: tm.companies.length }))
+      .map((tm) => ({ label: tm.label, companies: tm.companies, net: netDirection(tm.directions), dirs: tm.directions, last: tm.last, notes: tm.notes, section_ref: tm.section_ref, count: tm.companies.length }))
       .sort((a, b) => b.count - a.count || String(b.last || "").localeCompare(String(a.last || "")));
     delete sec.themeMap;
 
@@ -323,9 +363,10 @@ function universeSectionHtml(sectors) {
   for (const s of sectors) {
     for (const t of s.themes) {
       const k = t.label.toLowerCase();
-      if (!tmap.has(k)) tmap.set(k, { label: t.label, count: 0, net: t.net, sectors: new Set(), last: t.last });
+      if (!tmap.has(k)) tmap.set(k, { label: t.label, count: 0, dirs: [], sectors: new Set(), last: t.last });
       const e = tmap.get(k);
       e.count += t.count;
+      e.dirs.push(...(t.dirs || []));
       e.sectors.add(s.key);
       if (t.last && (!e.last || t.last > e.last)) e.last = t.last;
     }
@@ -334,7 +375,7 @@ function universeSectionHtml(sectors) {
   const themesBody = topThemes.length
     ? `<div class="uni-themes">${topThemes
         .map((t) => {
-          const d = dirMeta(t.net);
+          const d = dirMeta(netDirection(t.dirs)); // net across ALL sectors, not first-seen
           return `<div class="uni-theme"><span class="theme-chip ${d.cls}"><span class="tc-dot"></span>${escapeHtml(
             t.label
           )}<span class="tc-n">${t.count}</span></span><span class="uni-sectors">${[...t.sectors]
@@ -487,7 +528,7 @@ function companyTableCard(sec) {
   const rows = sec.companies
     .map((c) => {
       const grad = gradientFor(c.ticker);
-      const dir = c.guidance_direction ? dirMeta(c.guidance_direction === "up" ? "positive" : c.guidance_direction === "down" ? "negative" : "neutral") : null;
+      const gd = c.guidance_direction ? GUIDE_DIR[c.guidance_direction] : null;
       const themes = (c.themes || []).slice(0, 2).map((t) => themeChip(t, true)).join("") || `<span class="muted-xs">—</span>`;
       const kf = (c.key_figures || []).map((f) => `<span class="kf-inline">${escapeHtml(f.label)}: <b>${escapeHtml(f.value)}</b>${f.unit ? ` ${escapeHtml(f.unit)}` : ""}</span>`).join("") || `<span class="muted-xs">—</span>`;
       const src = c.source === "ai_summary" ? `<span class="chip src-ai"><i data-lucide="sparkles" class="i16"></i>AI</span>` : c.source === "transcript" ? `<span class="chip src-transcript"><i data-lucide="file-text" class="i16"></i>Transcript</span>` : `<span class="chip src-none">—</span>`;
@@ -501,7 +542,7 @@ function companyTableCard(sec) {
           </td>
           <td class="hide-sm mono" style="color:var(--text-3)">${c.concall_date ? fmtDate(c.concall_date) : "—"}</td>
           <td class="hide-sm">${src}</td>
-          <td><div class="cell-headline">${c.guidance_headline ? escapeHtml(c.guidance_headline) : '<span class="muted-xs">Awaiting analysis…</span>'}</div>${dir ? `<span class="dirtag ${dir.cls}"><i data-lucide="${dir.icon}" class="i16"></i>${dir.label}</span>` : ""}</td>
+          <td><div class="cell-headline">${c.guidance_headline ? escapeHtml(c.guidance_headline) : '<span class="muted-xs">Awaiting analysis…</span>'}</div>${gd ? `<span class="dirtag ${gd.cls}"><i data-lucide="${gd.icon}" class="i16"></i>${gd.label}</span>` : ""}</td>
           <td class="hide-sm">${themes}</td>
           <td class="hide-md">${kf}</td>
         </tr>`;

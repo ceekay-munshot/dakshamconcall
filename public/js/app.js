@@ -834,9 +834,11 @@ function renderSectorChart(rows) {
   const emptyEl = qs("#sectorChartEmpty");
   const legendEl = qs("#sectorLegend");
 
-  // Aggregate by BROAD sector (so the donut matches the Sectors view).
+  // Aggregate ANALYZED companies by broad sector (so a slice always maps to a
+  // sector detail — queued/failed companies have no sector model yet).
+  const analyzed = rows.filter((r) => r.hasTearsheet);
   const counts = {};
-  for (const r of rows) {
+  for (const r of analyzed) {
     const key = Sectors.sectorKeyFor(r.industry);
     counts[key] = (counts[key] || 0) + 1;
   }
@@ -895,7 +897,7 @@ function renderSectorChart(rows) {
         label: {
           show: true,
           position: "center",
-          formatter: () => `{a|${rows.length}}\n{b|Tracked}`,
+          formatter: () => `{a|${analyzed.length}}\n{b|Analyzed}`,
           rich: {
             a: { fontSize: 26, fontWeight: 700, color: "#0f172a", fontFamily: "Space Grotesk" },
             b: { fontSize: 11, color: "#94a3b8", padding: [4, 0, 0, 0] },
