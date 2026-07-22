@@ -198,6 +198,15 @@ async function findConcalls(page, ticker) {
   // Always capture the concalls DOM for discovery / debugging.
   saveArtifact(`concalls-${ticker}.html`, data.domSample || "(empty)");
   log(`found ${data.entries.length} concall-ish rows for ${ticker}`);
+
+  // Echo discovery info into the job logs so selectors can be refined without
+  // downloading the artifact zip (the live DOM is what we iterate against).
+  data.entries.slice(0, 4).forEach((e, i) => {
+    log(`  row[${i}] date=${e.date} :: ` + e.links.map((l) => `[${l.tag}] "${l.text}" -> ${l.href}`).join("  |  "));
+  });
+  if (!data.entries.length) {
+    log("CONCALLS DOM SAMPLE (first 3500 chars):\n" + (data.domSample || "").slice(0, 3500));
+  }
   return data;
 }
 
