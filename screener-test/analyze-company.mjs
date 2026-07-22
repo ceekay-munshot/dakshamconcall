@@ -301,12 +301,19 @@ async function main() {
   if (single) {
     tickers = [single];
   } else {
-    // refresh mode: tracked companies whose latest quarter is stale/missing
-    tickers = (base.tracked.companies || [])
+    // Refresh mode (blank ticker). A MANUAL dispatch force-reprocesses EVERY
+    // tracked company (so new pipeline logic is applied to all); the scheduled
+    // daily run only touches STALE companies (keeps the cron cheap).
+    const forceAll = (process.env.EVENT_NAME || "") === "workflow_dispatch";
+    const all = (base.tracked.companies || [])
       .map((c) => (c.ticker || "").toUpperCase())
-      .filter(Boolean)
-      .filter((t) => isStale(base, t));
-    log(`refresh mode: ${tickers.length} stale ticker(s)`, tickers);
+      .filter(Boolean);
+    tickers = forceAll ? all : all.filter((t) => isStale(base, t));
+    log(
+      `refresh mode (${forceAll ? "manual: force ALL" : "scheduled: stale only"}): ` +
+        `${tickers.length} ticker(s)`,
+      tickers
+    );
   }
 
   if (!tickers.length) {
