@@ -40,21 +40,23 @@ const SEARCH_MIN = 2;
 const SEARCH_DEBOUNCE = 300;
 const POLL_MS = 20000;
 
-// The FIXED 11-section framework. Order is intentional and stays constant so
-// tear sheets read the same quarter to quarter. (Prompt 3 fills the content.)
+// The FIXED 11-section framework. Order + ids stay constant so tear sheets read
+// the same quarter to quarter. `id`s match the classifier (screener-test/classify.mjs).
 const SECTIONS = [
-  { key: "financials", title: "Financials", icon: "bar-chart-3" },
-  { key: "orderbook", title: "Order Book & Demand", icon: "clipboard-list" },
-  { key: "segments", title: "Segments", icon: "layers" },
-  { key: "product", title: "Product & Technology", icon: "cpu" },
-  { key: "manufacturing", title: "Manufacturing & Capacity", icon: "factory" },
-  { key: "geography", title: "Geography & Distribution", icon: "map" },
-  { key: "supplychain", title: "Supply Chain & Operations", icon: "truck" },
-  { key: "market", title: "Market & Customer", icon: "users" },
-  { key: "strategy", title: "Strategy & M&A", icon: "target" },
-  { key: "risks", title: "Risks", icon: "shield-alert" },
-  { key: "guidance", title: "Guidance & Outlook", icon: "compass" },
+  { id: "FIN", title: "Financial Performance", icon: "bar-chart-3" },
+  { id: "ORD", title: "Order Book & Demand", icon: "clipboard-list" },
+  { id: "SEG", title: "Segment & Product Performance", icon: "layers" },
+  { id: "TECH", title: "Product & Technology", icon: "cpu" },
+  { id: "MFG", title: "Manufacturing & Capacity", icon: "factory" },
+  { id: "GEO", title: "Geography & Distribution", icon: "map" },
+  { id: "SUP", title: "Supply Chain & Operations", icon: "truck" },
+  { id: "MKT", title: "Market & Customer Strategy", icon: "users" },
+  { id: "STRAT", title: "Strategic Initiatives & M&A", icon: "target" },
+  { id: "RISK", title: "Risks & External Factors", icon: "shield-alert" },
+  { id: "GUID", title: "Guidance & Outlook", icon: "compass" },
 ];
+// Fast id -> { title, icon, grad } lookup for tear-sheet rendering.
+const SECTION_BY_ID = {};
 
 // Cohesive palette (matches the CSS gradient tokens) for charts + section icons.
 const PALETTE = [
@@ -75,6 +77,9 @@ const SECTION_GRADS = [
   "linear-gradient(135deg,#8b5cf6,#6366f1)",
   "linear-gradient(135deg,#0ea5e9,#7c3aed)",
 ];
+SECTIONS.forEach((s, i) => {
+  SECTION_BY_ID[s.id] = { ...s, grad: SECTION_GRADS[i % SECTION_GRADS.length] };
+});
 
 /* ============================================================================
    State
@@ -506,6 +511,13 @@ async function fetchJson(url, fallback) {
 /* ============================================================================
    FEED MODEL — merge tracked + jobs + tearsheets (+ optimistic) into rows
    ========================================================================== */
+/** The most useful one-line guidance statement for the feed headline. */
+function topGuidanceHeadline(ledger) {
+  if (!Array.isArray(ledger) || !ledger.length) return null;
+  const specific = ledger.find((g) => g.specificity === "specific");
+  return (specific || ledger[0])?.statement || null;
+}
+
 function buildFeed() {
   const map = new Map();
 
@@ -521,34 +533,41 @@ function buildFeed() {
     if (!map.has(t)) map.set(t, { ...o, ticker: t, _sort: o.queued_at });
   }
 
-  // Attach status / tearsheet / job info.
+  // Attach status / tearsheet / job info. The tear-sheet store is keyed by
+  // ticker -> { company, ticker, industry, country, quarters:[newest..] }.
   const rows = [...map.values()].map((entry) => {
     const t = entry.ticker;
-    const ts = state.tearsheets.companies?.[t] || null;
+    const comp = state.tearsheets.companies?.[t] || null;
+    const q0 = comp?.quarters?.[0] || null;
     const job = state.jobs.jobs?.[t] || null;
 
     let status = "queued";
-    if (ts) status = "done";
+    if (q0) status = "done";
     else if (job?.status) status = job.status;
     else if (entry.status) status = entry.status;
 
-    const concallDate = ts?.concall_date || entry.concall_date || null;
-    const headline = ts?.guidance_headline || entry.guidance_headline || null;
-    const source = ts?.source || entry.source || null;
+    const concallDate = q0?.concall_date || entry.concall_date || null;
+    const headline =
+      topGuidanceHeadline(q0?.guidance_ledger) ||
+      q0?.summary ||
+      entry.guidance_headline ||
+      null;
+    const source = q0?.source || entry.source || null;
+
     const sortKey =
       concallDate || entry._sort || job?.queued_at || entry.added_at || "";
 
     return {
       ticker: t,
-      name: entry.name || t,
-      industry: entry.industry || null,
-      country: entry.country || null,
+      name: comp?.company || entry.name || t,
+      industry: comp?.industry || entry.industry || null,
+      country: comp?.country || entry.country || null,
       concallDate,
       headline,
       source,
       status,
-      hasTearsheet: Boolean(ts),
-      tearsheet: ts,
+      hasTearsheet: Boolean(q0),
+      failMessage: status === "failed" ? job?.message || job?.error || null : null,
       fresh: state.freshTickers.has(t),
       sortKey,
     };
@@ -613,7 +632,7 @@ function renderFeed(rows) {
 
 function feedRowHtml(r) {
   const grad = gradientFor(r.ticker);
-  const statusChip = statusChipHtml(r.status);
+  const statusChip = statusChipHtml(r.status, r.failMessage);
   const sourceChip = sourceChipHtml(r.source);
   const headline = r.headline
     ? `<span class="headline">${escapeHtml(r.headline)}</span>`
@@ -649,7 +668,7 @@ function feedRowHtml(r) {
     </tr>`;
 }
 
-function statusChipHtml(status) {
+function statusChipHtml(status, failMessage) {
   const map = {
     done: ["done", "check-circle-2", "Done"],
     queued: ["queued", "clock", "Queued"],
@@ -657,7 +676,9 @@ function statusChipHtml(status) {
     failed: ["failed", "x-circle", "Failed"],
   };
   const [cls, icon, label] = map[status] || map.queued;
-  return `<span class="chip ${cls}"><span class="cdot"></span>${escapeHtml(
+  const title =
+    status === "failed" && failMessage ? ` title="${escapeHtml(failMessage)}"` : "";
+  return `<span class="chip ${cls}"${title}><span class="cdot"></span>${escapeHtml(
     label
   )}</span>`;
 }
@@ -829,53 +850,253 @@ function renderFrameworkChips() {
 }
 
 /* ============================================================================
-   TEAR SHEET (placeholder layout — real data arrives in Prompt 3)
+   TEAR SHEET — renders the latest quarter (quarters[0]) from tearsheets.json.
+   Falls back to a designed pending / failed state while analysis runs.
    ========================================================================== */
 function openTearSheet(row) {
-  state.currentSheet = row;
-  qs("#sheetName").textContent = row.name;
+  const comp = state.tearsheets.companies?.[row.ticker] || null;
+  const q = comp?.quarters?.[0] || null;
+  state.currentSheet = { row, comp, q };
+
+  qs("#sheetName").textContent = comp?.company || row.name;
 
   // Header meta pills.
   const pills = [];
   pills.push(`<span class="sh-pill mono">${escapeHtml(row.ticker)}</span>`);
-  if (row.industry)
-    pills.push(`<span class="sh-pill"><i data-lucide="layers" class="i16"></i>${escapeHtml(row.industry)}</span>`);
-  if (row.country)
-    pills.push(`<span class="sh-pill"><i data-lucide="map-pin" class="i16"></i>${escapeHtml(row.country)}</span>`);
+  const industry = comp?.industry || row.industry;
+  if (industry)
+    pills.push(`<span class="sh-pill"><i data-lucide="layers" class="i16"></i>${escapeHtml(industry)}</span>`);
+  const country = comp?.country || row.country;
+  if (country)
+    pills.push(`<span class="sh-pill"><i data-lucide="map-pin" class="i16"></i>${escapeHtml(country)}</span>`);
+  const date = q?.concall_date || row.concallDate;
   pills.push(
     `<span class="sh-pill"><i data-lucide="calendar" class="i16"></i>${
-      row.concallDate ? escapeHtml(fmtDate(row.concallDate)) : "Latest concall — pending"
+      date ? escapeHtml(fmtDate(date)) : "Latest concall — pending"
     }</span>`
   );
-  if (row.source === "ai_summary")
+  const source = q?.source || row.source;
+  if (source === "ai_summary")
     pills.push(`<span class="sh-pill"><i data-lucide="sparkles" class="i16"></i>AI summary</span>`);
-  else if (row.source === "transcript")
+  else if (source === "transcript")
     pills.push(`<span class="sh-pill"><i data-lucide="file-text" class="i16"></i>Transcript</span>`);
   qs("#sheetMeta").innerHTML = pills.join("");
 
-  qs("#sheetScroll").innerHTML = tearSheetBodyHtml(row);
+  qs("#sheetScroll").innerHTML = q ? tearSheetRealHtml(q, comp) : tearSheetPendingHtml(row);
   qs("#sheetModal").classList.add("open");
 
-  // Wire the PDF button.
   const pdfBtn = qs("#sheetPdfBtn");
   if (pdfBtn) pdfBtn.addEventListener("click", () => exportPdf(row));
-
   refreshIcons();
 }
 
-function tearSheetBodyHtml(row) {
-  const isDone = row.hasTearsheet;
+/* ---- Real tear sheet ---- */
+function tearSheetRealHtml(q, comp) {
+  const isFirst = (comp?.quarters?.length || 1) <= 1;
+  const summary = q.summary
+    ? `<div class="ts-summary"><i data-lucide="sparkles" class="i16"></i><span>${escapeHtml(q.summary)}</span></div>`
+    : "";
+  return (
+    summary +
+    guidanceBandHtml(q.guidance_ledger, isFirst) +
+    riskBandHtml(q.risk_register) +
+    sectionsHtml(q.sections) +
+    insightsHtml(q.key_takeaways, q.pressing_questions) +
+    pdfActionsHtml()
+  );
+}
 
-  // Guidance vs Delivery band (placeholder chips until the ledger exists).
-  const band = `
-    <div class="band-title"><i data-lucide="scale" class="i16"></i> Guidance vs Delivery</div>
-    <div class="guidance-band" style="margin-bottom:22px">
-      <div class="g-chip"><div class="g-label">Promised</div><div class="g-val">Will populate after analysis</div></div>
-      <div class="g-chip"><div class="g-label">Delivered</div><div class="g-val">Will populate after analysis</div></div>
-      <div class="g-chip"><div class="g-label">Verdict</div><div class="g-val">—</div></div>
+/* Guidance vs Delivery band — the ledger as colorful status chips. */
+function guidanceBandHtml(ledger, isFirst) {
+  const items = (ledger || []).filter(Boolean);
+  const head = `<div class="band-title"><i data-lucide="scale" class="i16"></i> Guidance vs Delivery</div>`;
+  if (!items.length)
+    return head + `<div class="ts-empty-inline">No explicit forward guidance this quarter.</div>`;
+  const note = isFirst
+    ? `<div class="ts-firstq"><i data-lucide="info" class="i16"></i> First tracked quarter — deltas appear next quarter.</div>`
+    : "";
+  const chips = items.map(guidanceItemHtml).join("");
+  return head + note + `<div class="ledger-grid">${chips}</div>`;
+}
+
+function guidanceItemHtml(g) {
+  const st = guidanceStatusMeta(g.status);
+  const dir = directionMeta(g.direction);
+  return `
+    <div class="ledger-item spec-${escapeHtml(g.specificity || "vague")}">
+      <div class="ledger-top">
+        <span class="ledger-metric">${escapeHtml(g.metric)}</span>
+        <span class="chip ${st.cls}"><span class="cdot"></span>${st.label}</span>
+      </div>
+      <div class="ledger-statement">${escapeHtml(g.statement)}</div>
+      <div class="ledger-meta">
+        <span class="ltag"><i data-lucide="${dir.icon}" class="i16"></i>${dir.label}</span>
+        ${g.horizon ? `<span class="ltag">${escapeHtml(g.horizon)}</span>` : ""}
+        <span class="ltag spec">${escapeHtml(g.specificity || "")}</span>
+      </div>
     </div>`;
+}
 
-  // 11 section cards.
+function guidanceStatusMeta(status) {
+  const m = {
+    new: ["gl-new", "New"],
+    reiterated: ["gl-flat", "Reiterated"],
+    raised: ["gl-up", "Raised"],
+    lowered: ["gl-down", "Lowered"],
+    achieved: ["gl-up", "Achieved"],
+    missed: ["gl-down", "Missed"],
+    pushed_out: ["gl-warn", "Pushed out"],
+    dropped: ["gl-warn", "Dropped"],
+    no_mention: ["gl-muted", "No mention"],
+  };
+  const [cls, label] = m[status] || m.new;
+  return { cls, label };
+}
+
+function directionMeta(direction) {
+  const m = {
+    up: ["trending-up", "Up"],
+    down: ["trending-down", "Down"],
+    flat: ["minus", "Flat"],
+    unclear: ["help-circle", "Unclear"],
+  };
+  const [icon, label] = m[direction] || m.unclear;
+  return { icon, label };
+}
+
+/* Risk register — status-chipped list (deltas across quarters). */
+function riskBandHtml(risks) {
+  const items = (risks || []).filter(Boolean);
+  if (!items.length) return "";
+  const head = `<div class="band-title"><i data-lucide="shield-alert" class="i16"></i> Risk Register</div>`;
+  const chips = items
+    .map((r) => {
+      const st = riskStatusMeta(r.status);
+      return `
+        <div class="risk-item">
+          <span class="chip ${st.cls}"><span class="cdot"></span>${st.label}</span>
+          <div class="risk-body">
+            <div class="risk-name">${escapeHtml(r.risk)}</div>
+            ${r.note ? `<div class="risk-note">${escapeHtml(r.note)}</div>` : ""}
+          </div>
+        </div>`;
+    })
+    .join("");
+  return head + `<div class="risk-grid">${chips}</div>`;
+}
+
+function riskStatusMeta(status) {
+  const m = {
+    new: ["gl-down", "New"],
+    escalated: ["gl-down", "Escalated"],
+    stable: ["gl-warn", "Stable"],
+    easing: ["gl-up", "Easing"],
+    resolved: ["gl-up", "Resolved"],
+    no_mention: ["gl-muted", "No mention"],
+  };
+  const [cls, label] = m[status] || m.new;
+  return { cls, label };
+}
+
+/* The 11 sections — render only those with content. */
+function sectionsHtml(sections) {
+  const list = (sections || []).filter(
+    (s) => s && (s.key_figures?.length || s.subsections?.some((x) => x.points?.length))
+  );
+  if (!list.length) return "";
+  const head = `<div class="band-title"><i data-lucide="layout-grid" class="i16"></i> The 11-Section Tear Sheet</div>`;
+  return head + `<div class="ts-sections">${list.map(sectionCardHtml).join("")}</div>`;
+}
+
+function sectionCardHtml(s) {
+  const meta = SECTION_BY_ID[s.id] || { title: s.title, icon: "dot", grad: SECTION_GRADS[0] };
+  const figs = (s.key_figures || []).filter(Boolean);
+  const subs = (s.subsections || []).filter((x) => x.points?.length);
+
+  const figTable = figs.length
+    ? `<table class="kf-table">
+        <thead><tr><th>Metric</th><th>Value</th><th>Period</th><th>Type</th></tr></thead>
+        <tbody>${figs
+          .map(
+            (f) => `<tr>
+            <td class="kf-label">${escapeHtml(f.label)}</td>
+            <td class="kf-value">${escapeHtml(f.value)}${
+              f.unit ? ` <span class="kf-unit">${escapeHtml(f.unit)}</span>` : ""
+            }</td>
+            <td class="kf-period">${f.period ? escapeHtml(f.period) : "—"}</td>
+            <td>${kindChip(f.kind)}</td>
+          </tr>`
+          )
+          .join("")}</tbody>
+      </table>`
+    : "";
+
+  const subsHtml = subs.length
+    ? `<div class="subsecs">${subs
+        .map(
+          (ss) => `<div class="subsec">
+            ${ss.label ? `<div class="subsec-label">${escapeHtml(ss.label)}</div>` : ""}
+            <ul>${ss.points.map((p) => `<li>${escapeHtml(p)}</li>`).join("")}</ul>
+          </div>`
+        )
+        .join("")}</div>`
+    : "";
+
+  return `
+    <div class="ts-section">
+      <div class="ts-sec-head">
+        <span class="sec-ico" style="background:${meta.grad}"><i data-lucide="${meta.icon}" class="i16"></i></span>
+        <h4>${escapeHtml(s.title || meta.title)}</h4>
+      </div>
+      ${figTable}${subsHtml}
+    </div>`;
+}
+
+function kindChip(kind) {
+  const m = {
+    reported: ["kc-reported", "Reported"],
+    guidance: ["kc-guidance", "Guidance"],
+    target: ["kc-target", "Target"],
+    market_size: ["kc-market", "Market size"],
+  };
+  const [cls, label] = m[kind] || m.reported;
+  return `<span class="kchip ${cls}">${label}</span>`;
+}
+
+/* Key Takeaways (Screener's words, verbatim) + Pressing Questions. */
+function insightsHtml(takeaways, questions) {
+  const t = (takeaways || []).filter(Boolean);
+  const q = (questions || []).filter(Boolean);
+  if (!t.length && !q.length) return "";
+  const head = `<div class="band-title"><i data-lucide="lightbulb" class="i16"></i> Analyst Read</div>`;
+  const tCard = `
+    <div class="insight-card takeaways">
+      <h4><i data-lucide="check-check" class="i16"></i> Key Takeaways <span class="verbatim">Screener · verbatim</span></h4>
+      ${t.length ? `<ul>${t.map((x) => `<li>${escapeHtml(x)}</li>`).join("")}</ul>` : `<div class="ts-empty-inline">None provided.</div>`}
+    </div>`;
+  const qCard = `
+    <div class="insight-card questions">
+      <h4><i data-lucide="help-circle" class="i16"></i> Pressing Questions</h4>
+      ${q.length ? `<ul>${q.map((x) => `<li>${escapeHtml(x)}</li>`).join("")}</ul>` : `<div class="ts-empty-inline">None highlighted.</div>`}
+    </div>`;
+  return head + `<div class="two-col">${tCard}${qCard}</div>`;
+}
+
+function pdfActionsHtml() {
+  return `
+    <div style="display:flex;justify-content:flex-end;gap:10px;margin-top:24px">
+      <button class="btn ghost sm" id="sheetPdfBtn"><i data-lucide="download" class="i16"></i> Download PDF</button>
+    </div>`;
+}
+
+/* ---- Pending / failed state (designed, never blank) ---- */
+function tearSheetPendingHtml(row) {
+  const failed = row.status === "failed";
+  const note = failed
+    ? `<div class="ts-note err"><i data-lucide="alert-triangle" class="i16"></i><div><strong>Analysis failed.</strong> ${escapeHtml(
+        row.failMessage || "Please retry from the Analyze button."
+      )}</div></div>`
+    : `<div class="ts-note"><i data-lucide="loader" class="i16"></i><div><strong>Analysis is running.</strong> This usually takes a few minutes — the tear sheet appears here automatically when it lands.</div></div>`;
   const sections = `
     <div class="band-title"><i data-lucide="layout-grid" class="i16"></i> The 11-Section Tear Sheet</div>
     <div class="sheet-grid">
@@ -886,45 +1107,14 @@ function tearSheetBodyHtml(row) {
             <i data-lucide="${s.icon}" class="i16"></i>
           </div>
           <h4>${escapeHtml(s.title)}</h4>
-          <div class="placeholder"><i data-lucide="clock" class="i16"></i> Will populate after analysis</div>
+          <div class="placeholder"><i data-lucide="clock" class="i16"></i> ${
+            failed ? "No data" : "Will populate after analysis"
+          }</div>
           <div class="placeholder-lines"><div class="pl"></div><div class="pl"></div><div class="pl"></div></div>
         </div>`
       ).join("")}
     </div>`;
-
-  // Key Takeaways + Pressing Questions.
-  const insights = `
-    <div class="band-title"><i data-lucide="lightbulb" class="i16"></i> Analyst Read</div>
-    <div class="two-col">
-      <div class="insight-card takeaways">
-        <h4><i data-lucide="check-check" class="i16"></i> Key Takeaways</h4>
-        <ul>
-          <li>Populated from the concall once analysis completes.</li>
-          <li>Three to five crisp, decision-useful points.</li>
-        </ul>
-      </div>
-      <div class="insight-card questions">
-        <h4><i data-lucide="help-circle" class="i16"></i> Pressing Questions</h4>
-        <ul>
-          <li>Open questions an analyst should ask next quarter.</li>
-          <li>Gaps between guidance and disclosure.</li>
-        </ul>
-      </div>
-    </div>`;
-
-  const statusNote = isDone
-    ? ""
-    : `<div style="margin-top:22px;padding:14px 16px;border-radius:14px;background:rgba(99,102,241,.08);border:1px solid rgba(99,102,241,.18);font-size:12.5px;color:var(--text-2);display:flex;gap:9px;align-items:center">
-        <i data-lucide="info" class="i16" style="color:var(--brand-indigo);flex-shrink:0"></i>
-        This is a live placeholder. The analysis engine (Screener AI summary → 11-section classifier) fills every card in a later step. The layout you see now is exactly how it will render.
-      </div>`;
-
-  const actions = `
-    <div style="display:flex;justify-content:flex-end;gap:10px;margin-top:24px">
-      <button class="btn ghost sm" id="sheetPdfBtn"><i data-lucide="download" class="i16"></i> Download PDF</button>
-    </div>`;
-
-  return band + sections + insights + statusNote + actions;
+  return note + sections + pdfActionsHtml();
 }
 
 /* ============================================================================

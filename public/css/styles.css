@@ -1587,3 +1587,179 @@ tr.fresh {
   }
   .mesh::after { animation: none; }
 }
+
+/* =============================================================================
+   Tear-sheet: REAL data (Step 2) — summary, guidance ledger, risk register,
+   11-section cards with key-figure tables + subsections, verbatim insights.
+   ========================================================================== */
+.ts-summary {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  border-radius: var(--r-md);
+  background: linear-gradient(120deg, rgba(124, 58, 237, 0.08), rgba(6, 182, 212, 0.06));
+  border: 1px solid rgba(99, 102, 241, 0.16);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-1);
+  line-height: 1.5;
+}
+.ts-summary [data-lucide] { color: var(--brand-violet); flex-shrink: 0; margin-top: 2px; }
+
+.ts-firstq {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  color: var(--text-3);
+  background: rgba(99, 102, 241, 0.08);
+  border: 1px solid rgba(99, 102, 241, 0.16);
+  padding: 7px 12px;
+  border-radius: var(--r-pill);
+  margin-bottom: 12px;
+}
+.ts-empty-inline { font-size: 13px; color: var(--text-4); padding: 6px 2px 16px; }
+
+/* ---- Guidance ledger ---- */
+.ledger-grid {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 22px;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+.ledger-item {
+  border-radius: var(--r-md);
+  border: 1px solid var(--hairline);
+  border-left-width: 3px;
+  background: rgba(255, 255, 255, 0.55);
+  padding: 13px 14px;
+}
+.ledger-item.spec-specific { border-left-color: var(--brand-indigo); }
+.ledger-item.spec-vague { border-left-color: var(--brand-amber); }
+.ledger-item.spec-refused { border-left-color: var(--text-4); }
+.ledger-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.ledger-metric { font-weight: 600; font-size: 13px; color: var(--text-1); }
+.ledger-statement { font-size: 12.5px; color: var(--text-2); margin: 6px 0 8px; line-height: 1.45; }
+.ledger-meta { display: flex; flex-wrap: wrap; gap: 6px; }
+.ltag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: var(--text-3);
+  background: rgba(100, 116, 139, 0.08);
+  border: 1px solid var(--hairline);
+  padding: 2px 8px;
+  border-radius: var(--r-pill);
+  text-transform: capitalize;
+}
+
+/* Shared status-chip color variants (guidance + risk). */
+.chip.gl-new { color: var(--brand-indigo); background: rgba(99,102,241,.12); border-color: rgba(99,102,241,.24); }
+.chip.gl-up { color: var(--ok); background: rgba(16,185,129,.12); border-color: rgba(16,185,129,.24); }
+.chip.gl-down { color: var(--err); background: rgba(244,63,94,.12); border-color: rgba(244,63,94,.24); }
+.chip.gl-flat { color: var(--brand-blue); background: rgba(59,130,246,.1); border-color: rgba(59,130,246,.22); }
+.chip.gl-warn { color: var(--warn); background: rgba(245,158,11,.12); border-color: rgba(245,158,11,.24); }
+.chip.gl-muted { color: var(--text-4); background: rgba(100,116,139,.1); border-color: rgba(100,116,139,.18); }
+
+/* ---- Risk register ---- */
+.risk-grid {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 22px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+.risk-item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--hairline);
+  background: rgba(255, 255, 255, 0.5);
+  padding: 11px 13px;
+}
+.risk-body { min-width: 0; }
+.risk-name { font-size: 13px; font-weight: 600; color: var(--text-1); }
+.risk-note { font-size: 12px; color: var(--text-3); margin-top: 3px; line-height: 1.45; }
+
+/* ---- 11 sections (full-width, stacked) ---- */
+.ts-sections { display: flex; flex-direction: column; gap: 14px; margin-bottom: 22px; }
+.ts-section {
+  border-radius: var(--r-md);
+  border: 1px solid var(--hairline);
+  background: rgba(255, 255, 255, 0.55);
+  padding: 15px 16px;
+}
+.ts-sec-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.ts-sec-head .sec-ico { width: 30px; height: 30px; border-radius: 9px; margin: 0; }
+.ts-sec-head h4 { margin: 0; font-size: 14px; font-weight: 600; color: var(--text-1); }
+
+/* key-figure table */
+.kf-table { width: 100%; border-collapse: collapse; font-size: 12.5px; margin-bottom: 4px; }
+.kf-table thead th {
+  text-align: left;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-4);
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--hairline);
+}
+.kf-table td { padding: 8px 10px; border-bottom: 1px solid var(--hairline); vertical-align: top; }
+.kf-table tr:last-child td { border-bottom: none; }
+.kf-label { color: var(--text-2); font-weight: 500; }
+.kf-value { color: var(--text-1); font-weight: 600; font-family: var(--font-mono); }
+.kf-unit { color: var(--text-4); font-weight: 500; font-size: 11px; }
+.kf-period { color: var(--text-3); font-family: var(--font-mono); font-size: 11.5px; white-space: nowrap; }
+.kchip {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 2px 7px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+.kchip.kc-reported { color: var(--text-3); background: rgba(100,116,139,.1); }
+.kchip.kc-guidance { color: var(--brand-indigo); background: rgba(99,102,241,.12); }
+.kchip.kc-target { color: var(--brand-violet); background: rgba(124,58,237,.12); }
+.kchip.kc-market { color: var(--brand-teal); background: rgba(20,184,166,.12); }
+
+/* subsections */
+.subsecs { display: flex; flex-direction: column; gap: 10px; margin-top: 10px; }
+.subsec-label { font-size: 12px; font-weight: 700; color: var(--text-2); margin-bottom: 4px; }
+.subsec ul { margin: 0; padding-left: 18px; color: var(--text-2); font-size: 12.5px; line-height: 1.6; }
+
+.verbatim {
+  font-size: 9.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--brand-teal);
+  background: rgba(20, 184, 166, 0.1);
+  border: 1px solid rgba(20, 184, 166, 0.2);
+  padding: 2px 7px;
+  border-radius: 6px;
+  margin-left: 8px;
+}
+
+/* ---- Pending / failed note ---- */
+.ts-note {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 14px 16px;
+  border-radius: var(--r-md);
+  margin-bottom: 20px;
+  background: rgba(99, 102, 241, 0.08);
+  border: 1px solid rgba(99, 102, 241, 0.18);
+  font-size: 12.5px;
+  color: var(--text-2);
+  line-height: 1.5;
+}
+.ts-note [data-lucide] { color: var(--brand-indigo); flex-shrink: 0; margin-top: 1px; }
+.ts-note.err { background: rgba(244, 63, 94, 0.07); border-color: rgba(244, 63, 94, 0.2); }
+.ts-note.err [data-lucide] { color: var(--err); }

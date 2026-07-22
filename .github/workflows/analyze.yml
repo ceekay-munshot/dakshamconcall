@@ -1,32 +1,14 @@
 # =============================================================================
-# Daksham Capital · Concall Tracker — Analyze pipeline
+# Daksham Capital · Concall Tracker — Analyze pipeline (Step 2)
 #
-# STEP 1 (this file): STUB ONLY. It accepts a `ticker` input (dispatched by the
-# Worker's /api/analyze route), echoes it, and exits. It does NOT scrape or call
-# any AI yet. The Worker + UI plumbing is fully wired so that once this workflow
-# does real work and commits JSON back to public/data/, the dashboard lights up
-# with zero front-end changes.
+# Dispatched by the Worker's /api/analyze route (or manually from the Actions
+# tab) with a `ticker`. It logs into Screener, fetches the latest concall AI
+# summary (transcript-PDF fallback), classifies it into the fixed 11-section
+# tear sheet with OpenAI, and commits the JSON back to the branch it ran on so
+# Cloudflare auto-deploys and the dashboard lights up.
 #
-# -----------------------------------------------------------------------------
-# TODO(Prompt 2): Fetch the concall analysis and commit it.
-#   - Log in to Screener.in using the GitHub Actions secrets
-#       SCREENER_EMAIL / SCREENER_PASSWORD
-#   - Pull the company's LATEST earnings-call AI summary (fast, trusted path).
-#   - Fallback: download the concall transcript PDF and extract its text.
-#   - Write the raw result somewhere the next step can read it.
-#   - Update public/data/jobs.json  -> jobs[ticker].status = "running" | "failed"
-#
-# TODO(Prompt 3): Classify the summary into the FIXED 11-section tear sheet.
-#   - Single pinned model, temperature 0, fixed JSON schema (quarter-to-quarter
-#     consistency). LLM API key comes from a GitHub Actions secret added later.
-#   - Sections: Financials · Order Book & Demand · Segments · Product &
-#     Technology · Manufacturing & Capacity · Geography & Distribution · Supply
-#     Chain & Operations · Market & Customer · Strategy & M&A · Risks ·
-#     Guidance & Outlook  (+ Key Takeaways, Pressing Questions, Guidance band).
-#   - Write public/data/tearsheets.json -> companies[ticker] = { ...tearsheet }
-#   - Update public/data/metadata.json (updated_at, count) and tracked.json.
-#   - Set jobs[ticker].status = "done".
-#   - Commit + push so Cloudflare auto-deploys.
+# Also runs daily in "refresh mode" (empty ticker) to re-analyze tracked
+# companies whose latest quarter has gone stale.
 # =============================================================================
 
 name: Analyze Concall
@@ -35,41 +17,64 @@ on:
   workflow_dispatch:
     inputs:
       ticker:
-        description: "Ticker / symbol of the company to analyze (e.g. RELIANCE)"
-        required: true
+        description: "Ticker / symbol to analyze (leave blank for refresh mode)"
+        required: false
         type: string
+  schedule:
+    # Daily refresh of stale tracked companies (03:30 IST ≈ 22:00 UTC).
+    - cron: "0 22 * * *"
 
-# Least-privilege by default. Prompt 2/3 will need `contents: write` to commit
-# the generated JSON back into public/data/.
+# The commit back to the repo uses the built-in Actions token.
 permissions:
   contents: write
 
-# Never run two analyses for the same ticker at once; let the newest win.
+# Don't run the same ticker twice at once; let the newest finish.
 concurrency:
-  group: analyze-${{ github.event.inputs.ticker }}
+  group: analyze-${{ github.event.inputs.ticker || 'refresh' }}
   cancel-in-progress: false
 
 jobs:
   analyze:
     runs-on: ubuntu-latest
     steps:
-      - name: Announce (STUB — no real work yet)
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # full history so the push rebase-retry loop can rebase
+
+      - name: Set up Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install deps (no-save) + Chromium
         run: |
-          echo "=============================================="
-          echo " Daksham Concall Tracker — analyze.yml (STUB)"
-          echo "=============================================="
-          echo "Requested ticker : ${{ github.event.inputs.ticker }}"
-          echo ""
-          echo "This is a placeholder. Prompt 2 will add Screener scraping +"
-          echo "AI-summary fetch, Prompt 3 will add the 11-section classifier,"
-          echo "and both will commit JSON back to public/data/ so the dashboard"
-          echo "updates automatically on push."
+          npm install --no-save playwright pdfjs-dist
+          npx playwright install --with-deps chromium
 
-      # TODO(Prompt 2): checkout, set up Python/Node, install deps.
-      # - uses: actions/checkout@v4
-      # - uses: actions/setup-python@v5
-      #   with: { python-version: "3.12" }
+      - name: Configure git identity
+        run: |
+          git config user.name "daksham-bot"
+          git config user.email "actions@github.com"
 
-      # TODO(Prompt 2): run the Screener scraper (uses SCREENER_EMAIL/PASSWORD).
-      # TODO(Prompt 3): run the LLM classifier into the fixed 11-section schema.
-      # TODO(Prompt 2/3): commit updated public/data/*.json and push.
+      - name: Analyze
+        env:
+          SCREENER_EMAIL: ${{ secrets.SCREENER_EMAIL }}
+          SCREENER_PASSWORD: ${{ secrets.SCREENER_PASSWORD }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }} # optional; classify.mjs defaults to gpt-4o-mini
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+          TICKER: ${{ github.event.inputs.ticker }}
+          TARGET_BRANCH: ${{ github.ref_name }}
+        run: node screener-test/analyze-company.mjs
+
+      # Screenshots + DOM samples for debugging the scrape (always, since the
+      # live Screener DOM is what we iterate against).
+      - name: Upload scrape artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scrape-artifacts-${{ github.event.inputs.ticker || 'refresh' }}
+          path: screener-test/output
+          if-no-files-found: ignore
+          retention-days: 7
