@@ -541,10 +541,20 @@ function buildFeed() {
     const q0 = comp?.quarters?.[0] || null;
     const job = state.jobs.jobs?.[t] || null;
 
-    let status = "queued";
-    if (q0) status = "done";
+    // Prefer an ACTIVE job (queued/running/failed) over a cached tear sheet when
+    // the job is newer — so a re-analysis shows its state and keeps polling
+    // instead of being masked as "done" by the previous quarter.
+    const jobTs = job?.finished_at || job?.started_at || job?.queued_at || null;
+    const q0Ts = q0?.generated_at || q0?.concall_date || null;
+    const jobActive = job && ["queued", "running", "failed"].includes(job.status);
+    const jobNewer = jobTs && q0Ts ? String(jobTs) > String(q0Ts) : Boolean(job && !q0);
+
+    let status;
+    if (jobActive && (jobNewer || !q0)) status = job.status;
+    else if (q0) status = "done";
     else if (job?.status) status = job.status;
     else if (entry.status) status = entry.status;
+    else status = "queued";
 
     const concallDate = q0?.concall_date || entry.concall_date || null;
     const headline =

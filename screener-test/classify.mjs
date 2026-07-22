@@ -175,6 +175,16 @@ export async function classifyQuarter(scrape, priorGuidance = null) {
     .filter((s) => SECTION_IDS.includes(s.id))
     .sort((a, b) => SECTION_IDS.indexOf(a.id) - SECTION_IDS.indexOf(b.id));
 
+  // Preserve the source's Key Takeaways / questions VERBATIM. The dashboard
+  // labels them "Screener · verbatim", so overwrite the model's arrays with the
+  // scraped originals whenever the source provided them (no paraphrasing).
+  if (Array.isArray(scrape.key_takeaways) && scrape.key_takeaways.length) {
+    out.key_takeaways = scrape.key_takeaways.slice();
+  }
+  if (Array.isArray(scrape.pressing_questions) && scrape.pressing_questions.length) {
+    out.pressing_questions = scrape.pressing_questions.slice();
+  }
+
   out.model = MODEL;
   return out;
 }
@@ -195,10 +205,32 @@ function normMetric(s = "") {
     .trim();
 }
 
-/** Pull the first numeric value (handles %, decimals, ranges → low end). */
-function firstNumber(s = "") {
-  const m = String(s).match(/-?\d+(?:\.\d+)?/);
-  return m ? parseFloat(m[0]) : null;
+/**
+ * Extract the guidance TARGET value, ignoring fiscal-year / quarter / calendar
+ * tokens (FY25, Q1, H2, 2026) that would otherwise be misread as the value.
+ * Prefers a percentage, else the first remaining number.
+ */
+function targetNumber(s = "") {
+  if (!s) return null;
+  const cleaned = String(s)
+    .replace(/\bFY\s?\d{2,4}\b/gi, " ")
+    .replace(/\bQ[1-4]\b/gi, " ")
+    .replace(/\bH[12]\b/gi, " ")
+    .replace(/\b(?:19|20)\d{2}\b/g, " ");
+  const pct = cleaned.match(/(-?\d+(?:\.\d+)?)\s*%/);
+  if (pct) return parseFloat(pct[1]);
+  const num = cleaned.match(/-?\d+(?:\.\d+)?/);
+  return num ? parseFloat(num[0]) : null;
+}
+
+/** Normalize a risk description for matching across quarters. */
+function normRisk(s = "") {
+  return s
+    .toLowerCase()
+    .replace(/[^a-z0-9 ]+/g, " ")
+    .replace(/\b(risk|risks|of|the|to|a|an|in|by|and|due|from)\b/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 /**
@@ -237,12 +269,19 @@ export function diffGuidance(current = [], prior = null) {
     }
     matchedPriorKeys.add(normMetric(match.metric));
 
-    const cn = firstNumber(g.statement) ?? firstNumber(g.metric);
-    const pn = firstNumber(match.statement) ?? firstNumber(match.metric);
-    if (cn != null && pn != null && cn !== pn) {
-      g.status = cn > pn ? "raised" : "lowered";
+    // Preserve an explicit delivery outcome the model read from the call text
+    // (grounded in a tracked prior guidance); otherwise compute the numeric
+    // delta from the target values (fiscal-year tokens excluded).
+    if (["achieved", "missed", "pushed_out", "dropped"].includes(g.status)) {
+      // keep the model's delivery status
     } else {
-      g.status = "reiterated";
+      const cn = targetNumber(g.statement) ?? targetNumber(g.metric);
+      const pn = targetNumber(match.statement) ?? targetNumber(match.metric);
+      if (cn != null && pn != null && cn !== pn) {
+        g.status = cn > pn ? "raised" : "lowered";
+      } else {
+        g.status = "reiterated";
+      }
     }
   }
 
@@ -257,6 +296,54 @@ export function diffGuidance(current = [], prior = null) {
         direction: p.direction || "unclear",
         status: "no_mention",
       });
+    }
+  }
+
+  return cur;
+}
+
+/**
+ * Deterministic risk-register diff across quarters (mirrors diffGuidance).
+ * Matched risks keep the model's escalated/easing/resolved delta or default to
+ * "stable"; unmatched current risks -> "new"; prior risks absent this quarter
+ * are appended as "no_mention" so they don't silently vanish.
+ * First tracked quarter (no prior) -> everything "new".
+ */
+export function diffRisks(current = [], prior = null) {
+  const cur = (current || []).map((r) => ({ ...r }));
+
+  if (!prior || !prior.length) {
+    for (const r of cur) if (!r.status || r.status === "no_mention") r.status = "new";
+    return cur;
+  }
+
+  const priorByKey = new Map();
+  for (const p of prior) priorByKey.set(normRisk(p.risk), p);
+  const matched = new Set();
+
+  for (const r of cur) {
+    const key = normRisk(r.risk);
+    let m = priorByKey.get(key);
+    if (!m) {
+      for (const [pk, pv] of priorByKey) {
+        if (pk && (pk.includes(key) || key.includes(pk))) {
+          m = pv;
+          break;
+        }
+      }
+    }
+    if (m) {
+      matched.add(normRisk(m.risk));
+      // keep an explicit escalation/easing/resolution the model read; else stable
+      if (!["escalated", "easing", "resolved"].includes(r.status)) r.status = "stable";
+    } else {
+      r.status = "new";
+    }
+  }
+
+  for (const p of prior) {
+    if (!matched.has(normRisk(p.risk))) {
+      cur.push({ risk: p.risk, status: "no_mention", note: p.note ?? null });
     }
   }
 

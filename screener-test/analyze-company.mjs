@@ -17,7 +17,7 @@
 import { execSync } from "node:child_process";
 import fs from "node:fs";
 import { launchAndLogin, scrapeCompany } from "./scrape-screener.mjs";
-import { classifyQuarter, diffGuidance } from "./classify.mjs";
+import { classifyQuarter, diffGuidance, diffRisks } from "./classify.mjs";
 import { MODEL } from "./llm.mjs";
 
 const DIR = "public/data";
@@ -31,6 +31,7 @@ const FILES = {
 // branch during testing). GITHUB_REF_NAME is set by Actions.
 const BRANCH = process.env.TARGET_BRANCH || process.env.GITHUB_REF_NAME || "main";
 const STALE_DAYS = 80;
+const REFRESH_THROTTLE_DAYS = 3; // don't re-scrape a stale name more often than this
 const MAX_QUARTERS = 4;
 
 const log = (...a) => console.log("[analyze]", ...a);
@@ -170,7 +171,13 @@ function isStale(store, ticker) {
   const latest = comp?.quarters?.[0];
   if (!latest?.concall_date) return true; // never analyzed
   const ageDays = (Date.now() - new Date(latest.concall_date).getTime()) / 86400000;
-  return ageDays > STALE_DAYS;
+  if (ageDays <= STALE_DAYS) return false; // latest quarter still fresh
+
+  // Stale by quarter age — but throttle so we don't re-scrape + re-classify the
+  // same company daily while Screener has no newer call (avoids API cost/churn).
+  const checked = comp?.checked_at ? new Date(comp.checked_at).getTime() : 0;
+  const checkedDaysAgo = (Date.now() - checked) / 86400000;
+  return checkedDaysAgo > REFRESH_THROTTLE_DAYS;
 }
 
 /* ============================================================================
@@ -206,16 +213,26 @@ async function analyzeTicker(page, context, ticker, baseStore) {
 
   // 3) classify latest + history, oldest -> newest so guidance deltas compute.
   const chronological = [...(scrape.history || [])].reverse().concat([scrape]);
-  // seed prior guidance from the oldest already-stored quarter, if any
+  const oldestScrapedDate = chronological.find((q) => q.concall_date)?.concall_date || null;
+
+  // Seed deltas only from a STORED quarter strictly older than the first scraped
+  // quarter (else we'd compute backwards raised/lowered against a newer quarter).
   const stored = baseStore.tearsheets.companies[T]?.quarters || [];
-  let priorGuidance = stored.length ? stored[stored.length - 1].guidance_ledger : null;
+  const seed =
+    stored
+      .filter((qq) => qq.concall_date && oldestScrapedDate && qq.concall_date < oldestScrapedDate)
+      .sort((a, b) => String(b.concall_date).localeCompare(String(a.concall_date)))[0] || null;
+  let priorGuidance = seed?.guidance_ledger || null;
+  let priorRisks = seed?.risk_register || null;
 
   const classifiedNewestFirst = [];
   for (const q of chronological) {
     log(`classifying ${T} @ ${q.concall_date || "?"} (${q.source})`);
     const c = await classifyQuarter(q, priorGuidance);
     c.guidance_ledger = diffGuidance(c.guidance_ledger, priorGuidance);
+    c.risk_register = diffRisks(c.risk_register, priorRisks);
     priorGuidance = c.guidance_ledger;
+    priorRisks = c.risk_register;
 
     classifiedNewestFirst.unshift({
       company: scrape.company,
@@ -244,6 +261,7 @@ async function analyzeTicker(page, context, ticker, baseStore) {
     ticker: T,
     industry,
     country,
+    checked_at: nowIso(), // throttles the daily stale-refresh loop
     quarters: classifiedNewestFirst,
   });
   pending.tracked.set(T, {
@@ -290,7 +308,28 @@ async function main() {
     return;
   }
 
-  const { browser, context, page } = await launchAndLogin();
+  // If the browser can't launch or Screener login fails, the target tickers
+  // would otherwise sit "queued" forever. Mark them failed and exit cleanly.
+  let session;
+  try {
+    session = await launchAndLogin();
+  } catch (err) {
+    log("browser/login init failed:", err.message);
+    for (const t of tickers) {
+      pending.jobs.set(t.toUpperCase(), {
+        status: "failed",
+        finished_at: nowIso(),
+        error: err.message,
+        message: `Setup failed (${err.message}). Please retry.`,
+      });
+    }
+    try {
+      persistAndPush("analyze: setup failed");
+    } catch {}
+    process.exit(1);
+  }
+
+  const { browser, context, page } = session;
   try {
     for (const t of tickers) {
       try {

@@ -294,17 +294,36 @@ async function extractAiSummary(page, context, entry, companyUrl) {
     }
   }
 
-  // Strategy B: summary rendered inline on the company page (look for "Key Takeaways").
+  // Strategy B: summary rendered inline on the company page. Anchor on the LEAF
+  // element whose OWN text says "Key Takeaways" (i.e. the heading itself), then
+  // climb only to a bounded summary container — never the whole page (otherwise
+  // navigation, financial tables and unrelated concalls leak into the classifier).
   try {
     const inline = await page.evaluate(() => {
-      const marker = [...document.querySelectorAll("h1,h2,h3,h4,strong,b,p,div")].find((el) =>
-        /key takeaways/i.test(el.textContent || "")
-      );
-      if (!marker) return null;
-      // climb to a reasonably large container
-      let node = marker;
-      for (let i = 0; i < 5 && node?.parentElement; i++) node = node.parentElement;
-      return (node?.innerText || "").trim();
+      const candidates = [
+        ...document.querySelectorAll("h1,h2,h3,h4,h5,strong,b,summary,span,p,li,div"),
+      ];
+      const leaf = candidates
+        .filter((el) => {
+          const own = [...el.childNodes]
+            .filter((n) => n.nodeType === 3)
+            .map((n) => n.textContent)
+            .join(" ");
+          return /key takeaways/i.test(own);
+        })
+        .sort((a, b) => (a.textContent || "").length - (b.textContent || "").length)[0];
+      if (!leaf) return null;
+      // climb to a reasonably-sized (bounded) summary section
+      let node = leaf;
+      for (let i = 0; i < 4; i++) {
+        const parent = node.parentElement;
+        if (!parent || parent.tagName === "BODY" || parent.tagName === "HTML") break;
+        node = parent;
+        const len = (node.innerText || "").length;
+        if (len > 400 && len < 20000) break;
+      }
+      const text = (node.innerText || "").trim();
+      return text.length > 22000 ? null : text; // reject a whole-page grab
     });
     if (inline && inline.length > 300) {
       const parsed = parseSummaryText(inline);

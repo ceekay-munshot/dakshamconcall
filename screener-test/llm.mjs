@@ -59,6 +59,9 @@ export async function openaiStructured({ system, user, schemaName, schema }) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(body),
+        // Bound each attempt so a stalled connection still hits the retry loop
+        // (else the ticker sits "running" until GitHub's much longer job limit).
+        signal: AbortSignal.timeout(120000),
       });
 
       if (res.status === 429 || res.status >= 500) {
