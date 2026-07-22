@@ -70,19 +70,52 @@ export async function launchAndLogin() {
 
   log("logging in…");
   await page.goto(`${BASE}/login/`, { waitUntil: "domcontentloaded", timeout: 60000 });
-  await page.fill('input[name="username"]', email);
-  await page.fill('input[name="password"]', password);
-  await Promise.all([
-    page.waitForLoadState("domcontentloaded").catch(() => {}),
-    page.click('button[type="submit"], input[type="submit"]').catch(() => page.press('input[name="password"]', "Enter")),
-  ]);
-  await page.waitForTimeout(2500);
 
-  const loggedIn = await page.locator('a[href*="logout"]').count().catch(() => 0);
+  const uField = 'input[name="username"], input[type="email"], #id_username';
+  const pField = 'input[name="password"], input[type="password"], #id_password';
+  await page.fill(uField, email).catch(() => {});
+  await page.fill(pField, password).catch(() => {});
+
+  // Submit, then wait for the redirect away from /login/ (best-effort).
+  await Promise.all([
+    page.waitForURL((u) => !/\/login\//.test(u.toString()), { timeout: 15000 }).catch(() => {}),
+    (async () => {
+      const btn = page
+        .locator('button[type="submit"], input[type="submit"], button:has-text("Login")')
+        .first();
+      if (await btn.count().catch(() => 0)) await btn.click().catch(() => {});
+      else await page.press(pField, "Enter").catch(() => {});
+    })(),
+  ]);
+  await page.waitForTimeout(1500);
+
+  // Robust success detection. Screener's logout control is not always a plain
+  // <a href*="logout"> (it can be a form POST / behind an account menu), so the
+  // PRIMARY signal is: the password form is gone AND we're no longer on /login/.
+  const finalUrl = page.url();
+  const stillOnLogin = /\/login\//.test(finalUrl);
+  const passwordLeft = await page.locator(pField).count().catch(() => 0);
+  const logout = await page
+    .locator('a[href*="logout"], form[action*="logout"], button:has-text("Logout"), a:has-text("Logout")')
+    .count()
+    .catch(() => 0);
+  const loggedIn = logout > 0 || (!stillOnLogin && passwordLeft === 0);
+
+  log(
+    `login check: url=${finalUrl} onLogin=${stillOnLogin} pwFields=${passwordLeft} logout=${logout} -> ${
+      loggedIn ? "OK" : "FAIL"
+    }`
+  );
+
   if (!loggedIn) {
     await saveShot(page, "login-failed.png");
     saveArtifact("login-failed.html", await page.content().catch(() => ""));
-    throw new Error("Screener login failed (no logout link found)");
+    // Surface any inline error (e.g. wrong credentials) into the job logs.
+    const bodyText = await page
+      .evaluate(() => (document.body.innerText || "").slice(0, 1200))
+      .catch(() => "");
+    log("LOGIN PAGE TEXT (first 1200 chars):\n" + bodyText);
+    throw new Error("Screener login failed (form still present / no logout link)");
   }
   log("login OK");
   return { browser, context, page };
