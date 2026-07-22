@@ -70,6 +70,7 @@ jobs:
           FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
           TICKER: ${{ github.event.inputs.ticker }}
           INDUSTRY: ${{ github.event.inputs.industry }} # optional search-API backfill
+          EVENT_NAME: ${{ github.event_name }} # workflow_dispatch = force ALL; schedule = stale only
           TARGET_BRANCH: ${{ github.ref_name }}
         run: node screener-test/analyze-company.mjs
 
