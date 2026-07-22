@@ -1753,7 +1753,7 @@
       "ticker": "INFY",
       "industry": "Computers - Software & Consulting",
       "country": "India",
-      "checked_at": "2026-07-22T19:06:17.128Z",
+      "checked_at": "2026-07-22T19:53:46.560Z",
       "quarters": [
         {
           "company": "Infosys Ltd",
@@ -1764,8 +1764,8 @@
           "source": "ai_summary",
           "source_url": "https://www.screener.in/company/INFY/consolidated/",
           "model": "gpt-4o",
-          "generated_at": "2026-07-22T19:06:17.128Z",
-          "summary": "Infosys anticipates a challenging FY27 with a revenue growth guidance of 1.5%-3.5% CC YoY, factoring in macroeconomic headwinds and strategic decisions to not pursue certain deals. The company remains focused on AI-driven growth and maintaining stable margins despite expected wage hikes and productivity pass-throughs.",
+          "generated_at": "2026-07-22T19:53:46.560Z",
+          "summary": "Infosys anticipates a challenging FY27 with revenue growth guidance of 1.5%-3.5% CC YoY, factoring in macroeconomic headwinds and strategic decisions to not pursue certain deals. The company remains focused on AI-driven growth and strategic partnerships, while managing risks from geopolitical tensions and competitive pressures.",
           "sections": [
             {
               "id": "FIN",
@@ -1835,6 +1835,13 @@
                   "kind": "reported"
                 },
                 {
+                  "label": "DSO",
+                  "value": "78",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
                   "label": "Capital Return to Shareholders",
                   "value": "4",
                   "unit": "bn USD",
@@ -1861,32 +1868,28 @@
                   "unit": "% YoY",
                   "period": "FY26",
                   "kind": "reported"
-                },
-                {
-                  "label": "DSO",
-                  "value": "78",
-                  "unit": null,
-                  "period": "FY26",
-                  "kind": "reported"
                 }
               ],
               "subsections": [
                 {
                   "label": "Margins",
                   "points": [
-                    "FY26 operating margin was 21%; Q4 was 20.9%. Gains from currency and Project Maximus were reinvested in talent, AI, and sales and marketing."
+                    "FY26 operating margin was 21%; Q4 was 20.9%.",
+                    "Gains from currency and Project Maximus were reinvested in talent, AI, and sales and marketing."
                   ]
                 },
                 {
                   "label": "Cash & Working Capital",
                   "points": [
-                    "DSO was 78, the lowest in 7 years. FY26 FCF was $3.5bn (adjusted), with FCF conversion at 106% for the year and 111% for Q4."
+                    "DSO was 78, the lowest in 7 years.",
+                    "FY26 FCF was $3.5bn (adjusted), with FCF conversion at 106% for the year and 111% for Q4."
                   ]
                 },
                 {
                   "label": "Capital Return",
                   "points": [
-                    "Returned over $4 bn to shareholders in FY26; proposed final dividend of INR 25, total INR 48 (+11.6% YoY)."
+                    "Returned over $4 bn to shareholders in FY26.",
+                    "Proposed final dividend of INR 25, total INR 48, which is a 11.6% increase YoY."
                   ]
                 }
               ]
@@ -1928,7 +1931,9 @@
                 {
                   "label": "Large Deals",
                   "points": [
-                    "FY26 TCV for large deals was $14.9–$15.0bn, a 28% YoY increase, with 55% net new. Q4 TCV was $3.2bn across 19 large deals. Management emphasized the strength of the large deal pipeline."
+                    "FY26 TCV for large deals was $14.9–$15.0bn, a 28% YoY increase, with 55% net new.",
+                    "Q4 TCV was $3.2bn across 19 large deals.",
+                    "Management emphasized that the large deal pipeline continues to remain strong."
                   ]
                 }
               ]
@@ -1949,13 +1954,46 @@
                 {
                   "label": "Vertical/Geography Mix",
                   "points": [
-                    "Outperformance in Financial Services, Communications, Manufacturing, and Europe. Communications, Manufacturing, and Europe grew more than double the company average, driven by large deal wins."
+                    "Outperformance in Financial Services, Communications, Manufacturing, and Europe.",
+                    "Communications, Manufacturing, and Europe grew more than double the company average, led by large deal wins."
                   ]
                 },
                 {
-                  "label": "Growth Quality/Realization",
+                  "label": "Financial Services",
                   "points": [
-                    "Volumes for the year were flattish; growth was led by an increase in realization due to Project Maximus."
+                    "FS grew 4.4% in FY26, driven by large-deal ramps, AI-led transformation, legacy modernization, and vendor consolidation.",
+                    "Market sentiment remains positive with continued consumer spending across US banking, capital markets, and Europe.",
+                    "CY26 budgets are expected to grow in the US.",
+                    "Infosys is a strategic AI partner for 18 out of the top 20 clients.",
+                    "Signed a large GCC deal for a regional bank in the US and a large AI-first GCC deal."
+                  ]
+                },
+                {
+                  "label": "EURS (Energy/Utilities/Resources/Services)",
+                  "points": [
+                    "Demand is constructive, supported by a strong large deal pipeline and vendor consolidation driven by cost takeout.",
+                    "Energy sector sees increased outsourcing leading to healthy deal momentum.",
+                    "Utilities face structurally higher demand due to grid constraints, renewables integration, and acceleration of electricity needs for data centers.",
+                    "80% of the large deal TCV of FY26 was net new, positioned as a driver of FY27 acceleration."
+                  ]
+                },
+                {
+                  "label": "Manufacturing",
+                  "points": [
+                    "Cautious amid softer demand, particularly in automotive and parts of Europe.",
+                    "Tariffs and ongoing Middle East conflict are causing delayed decisions.",
+                    "Focus on cost optimization and operational resilience.",
+                    "Near term and FY27 growth will be impacted due to low revenue from one large client."
+                  ]
+                },
+                {
+                  "label": "Retail & Communications",
+                  "points": [
+                    "Retail budgets are tightly controlled, with discretionary spending under pressure.",
+                    "Clients want AI productivity to do more with similar budgets.",
+                    "Communications budgets are flat to negative, with discretionary spending impacted.",
+                    "Shift from Generative to Agentic AI, with clients consolidating IT+BPM to cut costs.",
+                    "Uptick in AI deals in IT operations, software replacement, and mainframe migration."
                   ]
                 }
               ]
@@ -1976,32 +2014,40 @@
                 {
                   "label": "AI Strategy",
                   "points": [
-                    "Infosys reiterated its AI thesis from Investor Day, highlighting a large addressable market for AI services across six areas. Core platforms include Topaz Fabric (AI) and Cobalt (cloud)."
+                    "Infosys reiterated its AI thesis from Investor Day, highlighting a large addressable market for AI services across six areas: AI strategy & engineering, data, process, legacy modernization, physical AI, and trust.",
+                    "Core platforms Topaz Fabric (AI) and Cobalt (cloud) are operational today.",
+                    "Management pushed back on 'pilot-only' narratives, citing production-scale examples."
                   ]
                 },
                 {
                   "label": "Proof Points",
                   "points": [
-                    "Ralph Lauren's AI tool increased revenue by 12% and customer engagement by 50%. Hertz migrated 3 mn lines of COBOL code to microservices, reducing cost by 60% and timeline by 60%. BP's 50 AI agent initiatives improved payment accuracy by 95%, contract validation speed by 50%, and IT operations efficiency by 18%."
+                    "Ralph Lauren: conversational/personalized AI tool increased revenue by 12% and customer engagement by 50%.",
+                    "Hertz: migrated 3 mn lines of COBOL code to microservices using foundation models, reducing cost by 60% and timeline by 60%.",
+                    "BP: 50 AI agent initiatives across multiple functions, achieving 95% payment accuracy, 50% faster contract validation, and 18% improvement in IT operations efficiency."
+                  ]
+                },
+                {
+                  "label": "Partner Ecosystem and Internal Rollout",
+                  "points": [
+                    "New partnerships with OpenAI, Anthropic, Google Gemini, NVIDIA, Microsoft, AWS, Google Cloud, and Intel.",
+                    "30,000+ developers on GitHub Copilot.",
+                    "90%+ of employees skilled on different AI platforms.",
+                    "Fresher program includes tiered compensation for AI-aligned skills and a 'forward deployed engineer' construct for client-facing AI build work."
                   ]
                 },
                 {
                   "label": "AI Revenue Disclosure",
                   "points": [
-                    "AI contribution is above the prior disclosed 5.5%, but management withheld updated percentages."
+                    "AI contribution is above the prior disclosed 5.5%, but management withheld updated percentages.",
+                    "Management shared 5.5% at Investor Day to show materiality and growth, but are not sharing updated numbers now."
                   ]
-                }
-              ]
-            },
-            {
-              "id": "MKT",
-              "title": "Market & Customer Strategy",
-              "key_figures": [],
-              "subsections": [
+                },
                 {
-                  "label": "Vertical Operating Signals",
+                  "label": "AI Spend Compression vs Growth",
                   "points": [
-                    "Financial Services grew 4.4% in FY26, driven by large-deal ramps, AI-led transformation, legacy modernization, and vendor consolidation. Market sentiment remains positive with expected budget growth in US banking and capital markets."
+                    "Management described a two-sided ledger: compression in some tech services and BPM due to efficient foundation models/tooling, and growth in AI-first work, net new large deals, and footprint expansion.",
+                    "Productivity pass-through is acknowledged as a margin headwind, but growth currently exceeds compression."
                   ]
                 }
               ]
@@ -2009,12 +2055,21 @@
             {
               "id": "STRAT",
               "title": "Strategic Initiatives & M&A",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "Stratus Contribution to FY27 Growth",
+                  "value": "25",
+                  "unit": "bps",
+                  "period": "FY27",
+                  "kind": "guidance"
+                }
+              ],
               "subsections": [
                 {
                   "label": "Acquisitions/JV in Guidance",
                   "points": [
-                    "Stratus (insurance-related) is included in guidance, contributing ~25 bps to FY27 growth. Optimum Healthcare and Versent JV are excluded as they are pending regulatory approvals."
+                    "Stratus (insurance-related) is included in guidance, contributing ~25 bps to FY27 growth.",
+                    "Optimum Healthcare and Versent JV are excluded as they are pending regulatory approvals."
                   ]
                 }
               ]
@@ -2025,9 +2080,29 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Risk Flags and Notable Management Stances",
+                  "label": "Geopolitics",
                   "points": [
-                    "Geopolitics (Middle East/Iran war) acknowledged as changing the economic environment, but management sees paths towards stabilization. Competitive intensity and 'irrational' bids noted, with Infosys walking away from deals not aligned with ROIC expectations. AI security/vulnerability angle highlighted as a services opportunity."
+                    "Management acknowledged a change in economic environment after Middle East/Iran conflict escalation, but sees paths towards stabilization.",
+                    "Macro stability is tied to tech spend recovery."
+                  ]
+                },
+                {
+                  "label": "Competitive Intensity & 'Irrational' Bids",
+                  "points": [
+                    "Management acknowledged occasional competitor proposals outside the range of what models can deliver.",
+                    "Infosys may walk away from deals not aligned with ROIC discipline, as seen in the European manufacturing case."
+                  ]
+                },
+                {
+                  "label": "AI Security/Vulnerability Angle (Mythos)",
+                  "points": [
+                    "CEO described Mythos as exposing more vulnerabilities than expected, framing it as a services opportunity to help clients protect vulnerabilities."
+                  ]
+                },
+                {
+                  "label": "Leadership/Succession Questions",
+                  "points": [
+                    "CEO gave 'No comment' on tenure/succession-related queries."
                   ]
                 }
               ]
@@ -2069,7 +2144,12 @@
                 {
                   "label": "FY27 Outlook",
                   "points": [
-                    "Revenue guidance is 1.5%–3.5% CC YoY. The lower end assumes higher deterioration in the environment, while the upper end assumes improvement. Operating margin guidance is 20%–22%. Known headwinds include a 0.75%–1% revenue reduction from a large European manufacturing client and an expected onsite mix reduction of 0.75%–1%."
+                    "Revenue guidance is 1.5%–3.5% CC YoY, with the lower end assuming higher deterioration in the environment and the upper end assuming an improved environment.",
+                    "Operating margin guidance is 20%–22%.",
+                    "Guidance includes contribution from Stratus but excludes Optimum Healthcare and Versent JV.",
+                    "Known headwind of 0.75%–1% revenue reduction due to lower revenue from a large European manufacturing client.",
+                    "Additional onsite mix reduction of 0.75%–1% and similar third-party costs to FY26 levels are expected.",
+                    "Guidance range is narrower than last year due to better clarity on the environment and client behavior."
                   ]
                 }
               ]
@@ -2079,9 +2159,9 @@
             {
               "metric": "Revenue Growth",
               "horizon": "FY27",
-              "statement": "Revenue guidance is 1.5%–3.5% CC YoY.",
+              "statement": "Revenue guidance is 1.5%–3.5% CC YoY, with the lower end assuming higher deterioration in the environment and the upper end assuming an improved environment.",
               "specificity": "specific",
-              "direction": "flat",
+              "direction": "unclear",
               "status": "lowered"
             },
             {
@@ -2095,7 +2175,7 @@
             {
               "metric": "Revenue Reduction from European Client",
               "horizon": "FY27",
-              "statement": "0.75%–1% revenue reduction due to lower revenue from one of our large European manufacturing clients.",
+              "statement": "0.75%–1% revenue reduction due to lower revenue from a large European manufacturing client.",
               "specificity": "specific",
               "direction": "down",
               "status": "lowered"
@@ -2109,7 +2189,7 @@
               "status": "new"
             },
             {
-              "metric": "AI Services Market Size",
+              "metric": "AI Services Market Opportunity",
               "horizon": "2030",
               "statement": "The opportunity is between $300 bn and $400 bn in the year getting to 2030.",
               "specificity": "specific",
@@ -2131,79 +2211,84 @@
             {
               "risk": "AI security/vulnerability angle (Mythos)",
               "status": "new",
-              "note": "Framed as a services opportunity to help clients protect vulnerabilities."
+              "note": "CEO described Mythos as exposing more vulnerabilities than expected, framing it as a services opportunity."
             },
             {
-              "risk": "Security breaches",
-              "status": "no_mention",
-              "note": "Security breaches are increasing, necessitating modernization of legacy systems to enhance security."
+              "risk": "Leadership/succession questions",
+              "status": "new",
+              "note": "CEO gave 'No comment' on tenure/succession-related queries."
             },
             {
-              "risk": "Deployment gap",
+              "risk": "Execution Risk",
               "status": "no_mention",
-              "note": "The deployment gap between AI technology and enterprise capacity to use it is a significant challenge."
+              "note": "Companies need effective change management to leverage AI opportunities."
+            },
+            {
+              "risk": "Deployment Gap",
+              "status": "no_mention",
+              "note": "The gap between AI technology advancement and enterprise implementation capabilities."
+            },
+            {
+              "risk": "Security Breaches",
+              "status": "no_mention",
+              "note": "Increasing breaches with AI used by state and non-state actors."
             },
             {
               "risk": "Labor Code Impact",
               "status": "no_mention",
-              "note": "The results for Q3 FY'26 include a charge associated with change in labor codes in India, impacting operating profit, net profit, EPS and free cash flow."
+              "note": "The results for Q3 FY'26 include a charge associated with change in labor codes in India, impacting operating profit, net profit, EPS, and free cash flow."
             },
             {
-              "risk": "Geopolitical and Regulatory Risks",
+              "risk": "Macroeconomic Uncertainty",
               "status": "no_mention",
-              "note": "Retail and CPG clients continue to experience uncertainty due to the ongoing tariff negotiations and evolving geopolitical equations."
+              "note": "The environment remains uncertain with macroeconomic challenges impacting client spending."
             },
             {
               "risk": "H-1B Visa Issue",
               "status": "no_mention",
-              "note": "Infosys has reduced its dependence on H-1B visas by increasing local hiring and establishing nearshore centers."
+              "note": "Majority of U.S. workforce does not require Infosys sponsorship for immigration."
             }
           ],
           "themes": [
             {
               "label": "AI Deployment",
               "direction": "positive",
-              "note": "Infosys is leveraging AI to drive growth, with significant contributions from AI projects.",
+              "note": "Infosys reiterated its AI thesis and highlighted production-scale examples and partnerships.",
+              "section_ref": "TECH"
+            },
+            {
+              "label": "Legacy Modernization",
+              "direction": "positive",
+              "note": "AI-led transformation and legacy modernization are key growth drivers in Financial Services.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Talent Transformation",
+              "direction": "neutral",
+              "note": "Reinvestment in talent and AI skills development is ongoing, with a focus on AI-aligned skills.",
               "section_ref": "TECH"
             },
             {
               "label": "Strategic Partnerships",
               "direction": "positive",
-              "note": "New partnerships with OpenAI, Anthropic, and others enhance Infosys' AI capabilities.",
+              "note": "New partnerships with OpenAI, Anthropic, and others enhance AI capabilities.",
               "section_ref": "TECH"
             },
             {
-              "label": "Security Challenges",
-              "direction": "neutral",
-              "note": "AI security vulnerabilities present both challenges and opportunities for Infosys.",
+              "label": "Execution Risk",
+              "direction": "mixed",
+              "note": "Geopolitical tensions and competitive pressures pose risks, but management sees paths to stabilization.",
               "section_ref": "RISK"
-            },
-            {
-              "label": "AI Services Growth",
-              "direction": "positive",
-              "note": "AI services are a key growth driver, with contributions exceeding previous disclosures.",
-              "section_ref": "TECH"
-            },
-            {
-              "label": "Client Engagement",
-              "direction": "positive",
-              "note": "Infosys is expanding its footprint with net new large deals and AI-first projects.",
-              "section_ref": "ORD"
             }
           ],
           "key_takeaways": [
-            "Revenue growth: FY26 +3.1% CC, Q4 +4.1% CC YoY; Q4 -1.3% CC QoQ driven by “seasonality and slower decision making in the month of March.”",
-            "Scale milestone: FY26 revenues “crossed $20 bn.”",
-            "Vertical/geography mix: Outperformance called out in Financial Services (FS), Communications, Manufacturing, and Europe (CEO); CFO added Communications, Manufacturing and Europe grew more than double the company average, led by “ramp-up of the large deal wins.”",
-            "Large deals: $14.9–$15.0bn FY26 TCV (mgmt uses both), +28% YoY, 55% net new; Q4 $3.2bn, 19 large deals. Management emphasized “Large deal pipeline continues to remain strong.”",
-            "Growth quality/realization: “Volumes for the year were flattish, growth was led by increase in realization thanks to Project Maximus,” i.e., pricing/realization rather than volume.",
-            "Margins: FY26 operating margin 21%; Q4 20.9%. Company stressed reinvestment: “Gains from currency and Maximus were reinvested in talent, AI and sales and marketing.”",
-            "Cash & working capital: DSO 78 (lowest in 7 years); FY26 FCF $3.5bn (adjusted), FCF conversion 106% (FY) / 111% (Q4).",
-            "Capital return: Returned “over $4 bn to shareholders in FY26”; proposed final dividend INR 25, total INR 48 (+11.6% YoY).",
-            "Talent: End headcount ~328k; voluntary attrition 12.6% (down 1.5%). Q4 headcount down ~8k sequentially; CFO framed as demand/utilization-driven with seasonality; FY headcount still +5k YoY. Fresher intake: >20k in FY26, expects ~20k in FY27 again.",
-            "FY27 outlook: guidance mechanics and what is embedded",
-            "Revenue guidance: 1.5%–3.5% CC YoY (2-pt range). CFO: lower end assumes “higher deterioration in the environment,” upper end assumes “improved environment.”",
-            "Seasonality view: CEO: “We expect H1 to be stronger than H2 consistent with our normal seasonality.”"
+            "Revenue growth for FY26 was 3.1% in constant currency, with Q4 growth at 4.1% YoY and a decline of 1.3% QoQ due to seasonality and slower decision making.",
+            "FY26 revenues crossed $20 billion, with strong performance in Financial Services, Communications, Manufacturing, and Europe.",
+            "Large deals totaled $14.9–$15.0 billion in FY26, a 28% YoY increase, with 55% net new.",
+            "Operating margin for FY26 was 21%, with Q4 at 20.9%, and gains reinvested in talent, AI, and sales and marketing.",
+            "FY27 revenue guidance is 1.5%–3.5% CC YoY, with operating margin guidance at 20%–22%.",
+            "AI strategy focuses on a large addressable market across six areas, with core platforms Topaz Fabric and Cobalt operational.",
+            "Management highlighted AI-driven growth and strategic partnerships, while managing risks from geopolitical tensions and competitive pressures."
           ],
           "pressing_questions": []
         },
@@ -2216,8 +2301,8 @@
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b4632b94-2a41-4103-876d-cdb1f6848d64.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-22T19:05:43.947Z",
-          "summary": "Infosys is focusing on AI-driven transformation across various sectors, emphasizing modernization, talent transformation, and strategic partnerships to leverage AI opportunities.",
+          "generated_at": "2026-07-22T19:53:26.991Z",
+          "summary": "Infosys is focusing on AI-driven transformation across its services, emphasizing modernization, talent transformation, and strategic partnerships to leverage AI opportunities.",
           "sections": [
             {
               "id": "TECH",
@@ -2225,34 +2310,16 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "AI Transition",
+                  "label": "Tech Transitions",
                   "points": [
                     "AI transition is faster than previous tech shifts, reaching 1 billion users in a couple of years compared to 10 years for the Internet and 5 years for smartphones.",
-                    "AI is a fundamental change in business operations, not just a layer of technology.",
-                    "Modernization of legacy systems is crucial to leverage AI effectively.",
-                    "AI speed is facilitated by existing ubiquitous infrastructure like the Internet and smartphones."
-                  ]
-                },
-                {
-                  "label": "AI Strategy and Engineering",
-                  "points": [
-                    "Infosys is engaged in AI strategy work, building agents, and orchestrating platforms.",
-                    "AI strategy involves creating an AI blueprint and transformation office, focusing on unlocking AI value in specific business units."
-                  ]
-                },
-                {
-                  "label": "AI Augmented Services",
-                  "points": [
-                    "Infosys is infusing AI into traditional services like application development, testing, and modernization.",
-                    "Partnerships with leading AI models and tools are crucial for delivering AI-augmented services.",
-                    "Infosys has created agents for specific services and developed enterprise context to enhance AI tools."
-                  ]
-                },
-                {
-                  "label": "AI-first Services",
-                  "points": [
-                    "Infosys has identified six growth areas for AI services: AI strategy and engineering, data for AI, process reimagination, legacy modernization, physical AI, and AI trust.",
-                    "AI-first services involve creating new roles and reskilling talent to handle AI-driven tasks."
+                    "AI is a fundamental change in business operations, requiring AI-native architecture and changes in customer journeys.",
+                    "Modernization of legacy systems is crucial to leverage AI, as many large companies spend 60% to 80% of IT budgets on maintenance.",
+                    "AI allows for faster and more economical modernization, addressing accumulated tech debt.",
+                    "The balance of advantage is shifting towards 'build' rather than 'buy' due to AI's simplicity in building applications.",
+                    "Foundational systems will become systems of record with agentic interfaces, simplifying user interaction.",
+                    "The pace of AI change is unprecedented, with models growing from 100 billion to 1 trillion parameters in a few years.",
+                    "AI technology is advancing faster than enterprise deployment capabilities, creating a deployment gap."
                   ]
                 }
               ]
@@ -2264,31 +2331,28 @@
                 {
                   "label": "AI work for large clients",
                   "value": "90%",
-                  "unit": "percentage",
+                  "unit": "%",
                   "period": "current",
                   "kind": "reported"
                 },
                 {
                   "label": "AI revenue contribution",
                   "value": "5.5%",
-                  "unit": "percentage",
+                  "unit": "%",
                   "period": "Q3",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Client Engagement",
+                  "label": "AI Services Strategy",
                   "points": [
-                    "Infosys is trusted by clients for driving and delivering AI work, with AI projects for 90% of its large 200 clients.",
-                    "The AI-first value framework is used to engage clients, focusing on revenue growth, cost optimization, and innovation."
-                  ]
-                },
-                {
-                  "label": "AI Demand in Communications, Media, and Tech",
-                  "points": [
-                    "AI is becoming a core operating model for telecom, media, and tech companies, driving customer experience, engineering, and operational efficiency.",
-                    "AI is helping telecom companies reimagine customer journeys and go-to-market strategies."
+                    "Infosys is trusted by clients for AI work, with AI services contributing 5.5% of revenue in Q3.",
+                    "The AI-first value framework identifies six growth areas: AI strategy and engineering, data for AI, process transformation, legacy modernization, physical AI, and AI trust.",
+                    "Infosys is executing AI projects for 90% of its top 200 clients, using a Hexagon framework to structure AI services.",
+                    "The company is focusing on AI strategy and engineering, data readiness, process transformation, legacy modernization, physical AI, and AI trust.",
+                    "Infosys is leveraging partnerships with major AI players and open-source models to enhance AI services.",
+                    "The company is reskilling its workforce, hiring 20,000 college graduates annually, and focusing on AI training."
                   ]
                 }
               ]
@@ -2299,10 +2363,13 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Strategic Partnerships",
+                  "label": "Strategic Partnerships and Initiatives",
                   "points": [
-                    "Infosys is working with AI native partners and universities for joint research and innovation.",
-                    "Partnerships with companies like Telstra and Microsoft are crucial for expanding AI services and capabilities."
+                    "Infosys is forming strategic partnerships, such as a joint venture with Telstra for B2B non-connectivity solutions in Australia.",
+                    "The company is leveraging partnerships with AI-native partners and universities for joint research and innovation.",
+                    "Infosys is focusing on AI-first and AI-augmented services, integrating AI into traditional services and creating new AI-driven offerings.",
+                    "The company is working with partners like Microsoft to build IT systems and enhance cloud services.",
+                    "Infosys is using its Topaz Fabric to integrate IP and platforms, providing clients with modular and composable AI solutions."
                   ]
                 }
               ]
@@ -2313,10 +2380,11 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Security and Modernization Challenges",
+                  "label": "Execution Risk",
                   "points": [
-                    "Security breaches are increasing, necessitating modernization of legacy systems to enhance security.",
-                    "The deployment gap between AI technology and enterprise capacity to use it is a significant challenge."
+                    "There is an execution risk in AI deployment, as companies need effective change management to leverage AI opportunities.",
+                    "The deployment gap between AI technology advancement and enterprise implementation capabilities poses a challenge.",
+                    "Security breaches are increasing, with AI being used by state and non-state actors, highlighting the need for robust security measures."
                   ]
                 }
               ]
@@ -2327,10 +2395,11 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "AI Services Growth",
+                  "label": "AI Opportunity and Strategy",
                   "points": [
                     "Infosys sees a large opportunity in AI services, with an estimated market size of $300 billion to $400 billion by 2030.",
-                    "The focus is on unlocking AI value for clients and driving growth through AI-first and AI-augmented services."
+                    "The company is focusing on AI-first services, AI-augmented services, and foundational components to drive growth.",
+                    "Infosys is committed to reskilling its workforce and recruiting new talent to support AI initiatives."
                   ]
                 }
               ]
@@ -2338,7 +2407,7 @@
           ],
           "guidance_ledger": [
             {
-              "metric": "AI Services Market Size",
+              "metric": "AI Services Market Opportunity",
               "horizon": "2030",
               "statement": "The opportunity is between $300 bn and $400 bn in the year getting to 2030.",
               "specificity": "specific",
@@ -2348,7 +2417,7 @@
             {
               "metric": "Revenue Growth",
               "horizon": "FY26",
-              "statement": "The new revenue growth guidance for this financial year is 3% to 3.5% growth in constant currency.",
+              "statement": "Revenue growth guidance for the financial year is 3% to 3.5% growth in constant currency.",
               "specificity": "specific",
               "direction": "up",
               "status": "no_mention"
@@ -2356,7 +2425,7 @@
             {
               "metric": "Operating Margin",
               "horizon": "FY26",
-              "statement": "Our operating margin guidance for the financial year remains the same at 20% to 22%.",
+              "statement": "Operating margin guidance for the financial year remains the same at 20% to 22%.",
               "specificity": "specific",
               "direction": "flat",
               "status": "no_mention"
@@ -2364,76 +2433,76 @@
           ],
           "risk_register": [
             {
-              "risk": "Security breaches",
+              "risk": "Execution Risk",
               "status": "new",
-              "note": "Security breaches are increasing, necessitating modernization of legacy systems to enhance security."
+              "note": "Companies need effective change management to leverage AI opportunities."
             },
             {
-              "risk": "Deployment gap",
+              "risk": "Deployment Gap",
               "status": "new",
-              "note": "The deployment gap between AI technology and enterprise capacity to use it is a significant challenge."
+              "note": "The gap between AI technology advancement and enterprise implementation capabilities."
+            },
+            {
+              "risk": "Security Breaches",
+              "status": "new",
+              "note": "Increasing breaches with AI used by state and non-state actors."
             },
             {
               "risk": "Labor Code Impact",
               "status": "no_mention",
-              "note": "The results for Q3 FY'26 include a charge associated with change in labor codes in India, impacting operating profit, net profit, EPS and free cash flow."
+              "note": "The results for Q3 FY'26 include a charge associated with change in labor codes in India, impacting operating profit, net profit, EPS, and free cash flow."
             },
             {
-              "risk": "Geopolitical and Regulatory Risks",
+              "risk": "Macroeconomic Uncertainty",
               "status": "no_mention",
-              "note": "Retail and CPG clients continue to experience uncertainty due to the ongoing tariff negotiations and evolving geopolitical equations."
+              "note": "The environment remains uncertain with macroeconomic challenges impacting client spending."
             },
             {
               "risk": "H-1B Visa Issue",
               "status": "no_mention",
-              "note": "Infosys has reduced its dependence on H-1B visas by increasing local hiring and establishing nearshore centers."
+              "note": "Majority of U.S. workforce does not require Infosys sponsorship for immigration."
             }
           ],
           "themes": [
             {
               "label": "AI Deployment",
               "direction": "positive",
-              "note": "Infosys is focusing on AI-driven transformation across various sectors.",
+              "note": "Infosys is executing AI projects for 90% of its top 200 clients, using a Hexagon framework to structure AI services.",
+              "section_ref": "MKT"
+            },
+            {
+              "label": "Legacy Modernization",
+              "direction": "positive",
+              "note": "Modernization of legacy systems is crucial to leverage AI, addressing accumulated tech debt.",
               "section_ref": "TECH"
+            },
+            {
+              "label": "Talent Transformation",
+              "direction": "positive",
+              "note": "Infosys is reskilling its workforce and hiring 20,000 college graduates annually for AI training.",
+              "section_ref": "MKT"
             },
             {
               "label": "Strategic Partnerships",
               "direction": "positive",
-              "note": "Partnerships with AI native partners and universities are crucial for innovation.",
+              "note": "Infosys is forming strategic partnerships and leveraging AI-native partners for innovation.",
               "section_ref": "STRAT"
             },
             {
-              "label": "Security Challenges",
+              "label": "Execution Risk",
               "direction": "negative",
-              "note": "Increasing security breaches necessitate modernization of legacy systems.",
+              "note": "There is an execution risk in AI deployment, requiring effective change management.",
               "section_ref": "RISK"
-            },
-            {
-              "label": "AI Services Growth",
-              "direction": "positive",
-              "note": "Large opportunity in AI services with a market size of $300 billion to $400 billion by 2030.",
-              "section_ref": "GUID"
-            },
-            {
-              "label": "Client Engagement",
-              "direction": "positive",
-              "note": "Infosys is trusted by clients for AI work, with projects for 90% of large clients.",
-              "section_ref": "MKT"
             }
           ],
           "key_takeaways": [
             "AI transition is faster than previous tech shifts, reaching 1 billion users in a couple of years compared to 10 years for the Internet and 5 years for smartphones.",
-            "AI is a fundamental change in business operations, not just a layer of technology.",
-            "Modernization of legacy systems is crucial to leverage AI effectively.",
-            "AI speed is facilitated by existing ubiquitous infrastructure like the Internet and smartphones.",
-            "Infosys is trusted by clients for driving and delivering AI work, with AI projects for 90% of its large 200 clients.",
-            "The AI-first value framework is used to engage clients, focusing on revenue growth, cost optimization, and innovation.",
-            "AI is becoming a core operating model for telecom, media, and tech companies, driving customer experience, engineering, and operational efficiency.",
-            "AI is helping telecom companies reimagine customer journeys and go-to-market strategies.",
-            "Infosys is working with AI native partners and universities for joint research and innovation.",
-            "Partnerships with companies like Telstra and Microsoft are crucial for expanding AI services and capabilities.",
-            "Security breaches are increasing, necessitating modernization of legacy systems to enhance security.",
-            "The deployment gap between AI technology and enterprise capacity to use it is a significant challenge."
+            "AI is a fundamental change in business operations, requiring AI-native architecture and changes in customer journeys.",
+            "Modernization of legacy systems is crucial to leverage AI, as many large companies spend 60% to 80% of IT budgets on maintenance.",
+            "Infosys is trusted by clients for AI work, with AI services contributing 5.5% of revenue in Q3.",
+            "Infosys sees a large opportunity in AI services, with an estimated market size of $300 billion to $400 billion by 2030.",
+            "There is an execution risk in AI deployment, as companies need effective change management to leverage AI opportunities.",
+            "The deployment gap between AI technology advancement and enterprise implementation capabilities poses a challenge."
           ],
           "pressing_questions": []
         },
@@ -2446,8 +2515,8 @@
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=373b3501-e2a7-4ba4-bdd1-83f6bc21c25c.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-22T19:05:31.722Z",
-          "summary": "Infosys has revised its revenue growth guidance upwards to 3% to 3.5% for FY26, driven by strong large deal wins and AI adoption across its client base. The company remains focused on expanding its AI capabilities and strategic partnerships to capture market share in emerging AI-led value pools.",
+          "generated_at": "2026-07-22T19:53:16.777Z",
+          "summary": "Infosys has revised its revenue growth guidance upwards to 3% to 3.5% for FY26, driven by strong large deal wins and AI adoption, while maintaining its operating margin guidance at 20% to 22%.",
           "sections": [
             {
               "id": "FIN",
@@ -2536,15 +2605,15 @@
                   "label": "Margin Analysis",
                   "points": [
                     "Adjusted operating margins increased by 20 basis points sequentially to 21.2%.",
-                    "Operating margins including the impact of change in labor codes stands at 18.4%, adjusting for the same, it is at 21.2%.",
-                    "The puts and takes of 20 basis point expansion this quarter is 40 basis points came from currency, 50 basis points came from Project Maximus, offset by the furloughs and lower working days."
+                    "Operating margins including the impact of change in labor codes stands at 18.4%.",
+                    "The puts and takes of 20 basis point expansion this quarter include 40 basis points from currency, 50 basis points from Project Maximus, offset by furloughs and lower working days."
                   ]
                 },
                 {
                   "label": "Cash Flow and Capital Allocation",
                   "points": [
                     "Free cash flow generation adjusted for labor codes remained robust at $965 mn, which is 113% of adjusted net profit.",
-                    "During the quarter, Infosys successfully completed its largest ever buyback, returning INR18,000 crores to shareholders."
+                    "During the quarter, Infosys completed its largest ever buyback, returning INR18,000 crores to shareholders."
                   ]
                 }
               ]
@@ -2561,21 +2630,21 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Net New Large Deal TCV",
+                  "label": "Net New Large Deal Percentage",
                   "value": "57",
                   "unit": "%",
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Total Large Deal TCV (9 months)",
+                  "label": "Total Large Deal TCV for 9 months",
                   "value": "11.7",
                   "unit": "bn USD",
                   "period": "9 months FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Net New Deal TCV Growth",
+                  "label": "Net New Deal TCV Increase",
                   "value": "40",
                   "unit": "%",
                   "period": "9 months FY26",
@@ -2611,64 +2680,15 @@
                   "unit": "%",
                   "period": "Year-on-Year",
                   "kind": "reported"
-                },
-                {
-                  "label": "Utilization (Excluding Trainees)",
-                  "value": "84.1",
-                  "unit": "%",
-                  "period": "Q3 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Utilization (Including Trainees)",
-                  "value": "80",
-                  "unit": "%",
-                  "period": "Q3 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Net Headcount Increase",
-                  "value": "5,000",
-                  "unit": "employees",
-                  "period": "Q3 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "LTM Attrition Decline (Sequential)",
-                  "value": "2",
-                  "unit": "%",
-                  "period": "Q3 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "LTM Attrition Decline (Year-on-Year)",
-                  "value": "1.4",
-                  "unit": "%",
-                  "period": "Q3 FY26",
-                  "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Financial Services",
+                  "label": "Vertical Performance",
                   "points": [
                     "Momentum in Financial Services continues with 3.9% year-on-year growth in constant currency terms.",
-                    "We are now a preferred AI partner for top 15 out of 25 banking clients.",
-                    "Uptick in discretionary spend in aforementioned sub-verticals and deal wins in recent quarters positions us favorably for better growth in FY'27."
-                  ]
-                },
-                {
-                  "label": "Geographical Performance",
-                  "points": [
-                    "Among geos, Europe continued to lead the growth by 7.2% year-on-year in constant currency terms."
-                  ]
-                },
-                {
-                  "label": "Utilization and Headcount",
-                  "points": [
-                    "Utilization, excluding trainees was down by 1% sequentially at 84.1% and including trainees, was down by 2.2% to 80% as we continue to create capacity for future growth opportunities.",
-                    "Net headcount increased by 5,000 to 337,000 employees.",
-                    "LTM attrition declined by 2% sequentially and 1.4% on a year-on-year basis, reflecting both market conditions and our focus on employee retention and upskilling."
+                    "Among geos, Europe continued to lead the growth by 7.2% year-on-year in constant currency terms.",
+                    "Healthcare benefited from the contribution from the NHS deal."
                   ]
                 }
               ]
@@ -2681,34 +2701,54 @@
                   "label": "AI Projects",
                   "value": "4,600",
                   "unit": null,
-                  "period": "Q3 FY26",
+                  "period": "current",
                   "kind": "reported"
                 },
                 {
                   "label": "Lines of Code Generated Using AI",
                   "value": "28",
                   "unit": "mn",
-                  "period": "Q3 FY26",
+                  "period": "current",
                   "kind": "reported"
                 },
                 {
                   "label": "AI Agents Built",
                   "value": "500",
                   "unit": null,
-                  "period": "Q3 FY26",
+                  "period": "current",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "AI Deployment",
+                  "label": "AI Initiatives",
                   "points": [
-                    "We have deepened our Topaz AI capability with an agent services suite called Topaz Fabric.",
-                    "We are currently working on 4,600 AI projects.",
-                    "Our teams have generated over 28 mn lines of code using AI.",
-                    "We have built over 500 agents.",
-                    "We are scaling our forward deployed engineer team.",
-                    "We are witnessing six AI-led value pools emerging that could unlock a large incremental opportunity."
+                    "Infosys has deepened its Topaz AI capability with an agent services suite called Topaz Fabric.",
+                    "Infosys is working on 4,600 AI projects and has generated over 28 mn lines of code using AI.",
+                    "Infosys has built over 500 AI agents and is scaling its forward deployed engineer team.",
+                    "Infosys is witnessing six AI-led value pools emerging that could unlock a large incremental opportunity."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [
+                {
+                  "label": "Top 200 Clients AI Work",
+                  "value": "90",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "AI Adoption",
+                  "points": [
+                    "Infosys works with 90% of its largest 200 clients to unlock value with AI.",
+                    "Infosys is a preferred AI partner for top 15 out of 25 banking clients."
                   ]
                 }
               ]
@@ -2716,14 +2756,28 @@
             {
               "id": "STRAT",
               "title": "Strategic Initiatives & M&A",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "Headcount Increase",
+                  "value": "5,000",
+                  "unit": "employees",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total Employees",
+                  "value": "337,000",
+                  "unit": "employees",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                }
+              ],
               "subsections": [
                 {
-                  "label": "Strategic Partnerships",
+                  "label": "Partnerships and Acquisitions",
                   "points": [
-                    "We are expanding our strategic partnerships with AI companies.",
-                    "We recently announced a partnership with Cognition. Here, we will combine Cognition's Devin software agent with Infosys' knowledge of the client landscape and industry expertise.",
-                    "We have a good pipeline of possible companies that we are looking at and discussions."
+                    "Infosys announced a partnership with Cognition to combine Cognition's Devin software agent with Infosys' knowledge of the client landscape and industry expertise.",
+                    "Infosys has a good pipeline of possible companies for acquisition and discussions."
                   ]
                 }
               ]
@@ -2731,20 +2785,50 @@
             {
               "id": "RISK",
               "title": "Risks & External Factors",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "Labor Code Impact",
+                  "value": "1,289",
+                  "unit": "crores INR",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                }
+              ],
               "subsections": [
                 {
                   "label": "Labor Code Impact",
                   "points": [
-                    "The results for Q3 FY'26 include a charge associated with change in labor codes in India, which had an impact on operating profit, net profit, EPS and free cash flow for the quarter.",
-                    "There will be an ongoing impact of roughly around 15 basis points."
+                    "The results for Q3 FY'26 include a charge associated with change in labor codes in India, impacting operating profit, net profit, EPS, and free cash flow.",
+                    "The ongoing impact of the labor code will be roughly around 15 basis points annually."
                   ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [
+                {
+                  "label": "Revenue Growth Guidance",
+                  "value": "3% to 3.5%",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "guidance"
                 },
                 {
-                  "label": "Geopolitical and Regulatory Risks",
+                  "label": "Operating Margin Guidance",
+                  "value": "20% to 22%",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Revised Guidance",
                   "points": [
-                    "Retail and CPG clients continue to experience uncertainty due to the ongoing tariff negotiations and evolving geopolitical equations.",
-                    "Communication sector continues to be impacted by geopolitical uncertainty."
+                    "Infosys has revised its revenue growth guidance for the financial year to 3% to 3.5% growth in constant currency.",
+                    "Operating margin guidance for the financial year remains the same at 20% to 22%."
                   ]
                 }
               ]
@@ -2754,7 +2838,7 @@
             {
               "metric": "Revenue Growth",
               "horizon": "FY26",
-              "statement": "The new revenue growth guidance for this financial year is 3% to 3.5% growth in constant currency.",
+              "statement": "Revenue growth guidance for the financial year is 3% to 3.5% growth in constant currency.",
               "specificity": "specific",
               "direction": "up",
               "status": "raised"
@@ -2762,7 +2846,7 @@
             {
               "metric": "Operating Margin",
               "horizon": "FY26",
-              "statement": "Our operating margin guidance for the financial year remains the same at 20% to 22%.",
+              "statement": "Operating margin guidance for the financial year remains the same at 20% to 22%.",
               "specificity": "specific",
               "direction": "flat",
               "status": "reiterated"
@@ -2772,67 +2856,61 @@
             {
               "risk": "Labor Code Impact",
               "status": "new",
-              "note": "The results for Q3 FY'26 include a charge associated with change in labor codes in India, impacting operating profit, net profit, EPS and free cash flow."
+              "note": "The results for Q3 FY'26 include a charge associated with change in labor codes in India, impacting operating profit, net profit, EPS, and free cash flow."
             },
             {
-              "risk": "Geopolitical and Regulatory Risks",
-              "status": "new",
-              "note": "Retail and CPG clients continue to experience uncertainty due to the ongoing tariff negotiations and evolving geopolitical equations."
+              "risk": "Macroeconomic Uncertainty",
+              "status": "no_mention",
+              "note": "The environment remains uncertain with macroeconomic challenges impacting client spending."
             },
             {
               "risk": "H-1B Visa Issue",
               "status": "no_mention",
-              "note": "Infosys has reduced its dependence on H-1B visas by increasing local hiring and establishing nearshore centers."
+              "note": "Majority of U.S. workforce does not require Infosys sponsorship for immigration."
             }
           ],
           "themes": [
             {
               "label": "AI Deployment",
               "direction": "positive",
-              "note": "Infosys is expanding its AI capabilities with Topaz Fabric and strategic partnerships, working on 4,600 AI projects.",
+              "note": "Infosys is expanding its AI capabilities with Topaz Fabric and partnerships like Cognition.",
               "section_ref": "TECH"
             },
             {
-              "label": "Revenue Growth Guidance",
+              "label": "Large Deal Momentum",
               "direction": "positive",
-              "note": "Infosys raised its revenue growth guidance to 3% to 3.5% for FY26 due to strong large deal wins.",
-              "section_ref": "GUID"
-            },
-            {
-              "label": "Large Deal Activity",
-              "direction": "positive",
-              "note": "Large deal TCV was robust at $4.8 billion in Q3 with 57% net new.",
+              "note": "Infosys reported a robust large deal TCV of $4.8 bn in Q3 with 57% net new.",
               "section_ref": "ORD"
             },
             {
-              "label": "Labor Code Impact",
-              "direction": "negative",
-              "note": "The change in labor codes in India impacted operating profit, net profit, EPS and free cash flow.",
-              "section_ref": "RISK"
+              "label": "Talent Acquisition",
+              "direction": "neutral",
+              "note": "Infosys increased its headcount by 5,000 to 337,000 employees in Q3 FY26.",
+              "section_ref": "STRAT"
             },
             {
-              "label": "Strategic Partnerships",
-              "direction": "positive",
-              "note": "Infosys is expanding strategic partnerships with AI companies, including a partnership with Cognition.",
-              "section_ref": "STRAT"
+              "label": "Macroeconomic Uncertainty",
+              "direction": "neutral",
+              "note": "Infosys is navigating uncertainties with revised guidance and strategic initiatives.",
+              "section_ref": "GUID"
+            },
+            {
+              "label": "H-1B Visa Strategy",
+              "direction": "neutral",
+              "note": "Infosys continues its approach with a mix of U.S. and India-based workforces.",
+              "section_ref": "RISK"
             }
           ],
           "key_takeaways": [
-            "Infosys has revised its revenue growth guidance upwards to 3% to 3.5% for FY26, driven by strong large deal wins and AI adoption across its client base.",
-            "The company reported a sequential revenue growth of 0.6% and a year-on-year growth of 1.7% in constant currency terms for Q3 FY26.",
-            "Large deal TCV was robust at $4.8 billion in Q3 with 57% net new, and the total large deal TCV for 9 months stood at $11.7 billion, exceeding the total large deal TCV of full year FY'25.",
-            "Infosys has deepened its Topaz AI capability with an agent services suite called Topaz Fabric, and is currently working on 4,600 AI projects.",
-            "The company has expanded its strategic partnerships with AI companies, including a recent partnership with Cognition.",
-            "The results for Q3 FY'26 include a charge associated with change in labor codes in India, impacting operating profit, net profit, EPS and free cash flow.",
-            "Infosys completed its largest ever buyback, returning INR18,000 crores to shareholders."
+            "Infosys has revised its revenue growth guidance for the financial year to 3% to 3.5% growth in constant currency.",
+            "Operating margin guidance for the financial year remains the same at 20% to 22%.",
+            "Large deal TCV was robust at $4.8 bn in Q3 with 57% net new.",
+            "Infosys works with 90% of its largest 200 clients to unlock value with AI.",
+            "Infosys announced a partnership with Cognition to combine Cognition's Devin software agent with Infosys' knowledge of the client landscape and industry expertise.",
+            "The results for Q3 FY'26 include a charge associated with change in labor codes in India, impacting operating profit, net profit, EPS, and free cash flow.",
+            "Infosys has deepened its Topaz AI capability with an agent services suite called Topaz Fabric."
           ],
-          "pressing_questions": [
-            "How much of the revenue growth guidance upgrade is due to large deals like NHS being factored in?",
-            "What is the outlook for next year now that Infosys is completing the 20,000 fresher hires for the year?",
-            "How will the wage hikes impact margins from here on?",
-            "What are the pricing models evolving with the newer AI technologies?",
-            "What is the impact of the labor code changes on profit margins and appraisals going forward?"
-          ]
+          "pressing_questions": []
         },
         {
           "company": "Infosys Ltd",
@@ -2843,8 +2921,8 @@
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=cf4a6179-8e43-4959-b055-91f1f7f4f076.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-22T19:05:09.549Z",
-          "summary": "Infosys has increased its revenue growth guidance for FY26 to 2-3% in constant currency terms, maintaining operating margin guidance at 20-22%. The company is focusing on AI deployment across enterprises and continues to scale its team of forward-deployed engineers.",
+          "generated_at": "2026-07-22T19:53:03.521Z",
+          "summary": "Infosys reported strong Q2 FY26 performance with revenue growth and increased guidance, driven by large deals and AI initiatives, despite macroeconomic uncertainties.",
           "sections": [
             {
               "id": "FIN",
@@ -2900,9 +2978,23 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Return on Equity (ROE)",
+                  "label": "ROE",
                   "value": "29.1",
                   "unit": "%",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "DSO",
+                  "value": "71",
+                  "unit": "days",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "DSO including Net Unbilled",
+                  "value": "87",
+                  "unit": "days",
                   "period": "Q2 FY26",
                   "kind": "reported"
                 }
@@ -2913,7 +3005,8 @@
                   "points": [
                     "Revenues for the quarter grew 2.2% sequentially and 2.9% year-on-year in constant currency terms.",
                     "Operating margin was 21%.",
-                    "Free cash flow stood at $1.1 billion, which is 131% of the net profit."
+                    "Free cash flow stood at $1.1 billion, which is 131% of the net profit.",
+                    "EPS in rupee terms grew by 13% year-on-year to Rs. 17.6."
                   ]
                 },
                 {
@@ -2930,17 +3023,10 @@
               "title": "Order Book & Demand",
               "key_figures": [
                 {
-                  "label": "Large Deals Total Contract Value (TCV)",
+                  "label": "Large Deals",
                   "value": "3.1",
                   "unit": "billion USD",
                   "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Mega Deal Value",
-                  "value": "1.6",
-                  "unit": "billion USD",
-                  "period": "post-Q2 FY26",
                   "kind": "reported"
                 },
                 {
@@ -2949,13 +3035,20 @@
                   "unit": "%",
                   "period": "Q2 FY26",
                   "kind": "reported"
+                },
+                {
+                  "label": "Mega Deal",
+                  "value": "1.6",
+                  "unit": "billion USD",
+                  "period": "post-Q2 FY26",
+                  "kind": "reported"
                 }
               ],
               "subsections": [
                 {
                   "label": "Deal Activity",
                   "points": [
-                    "Large deals were at $3.1 billion, with 67% net new work.",
+                    "Large deals were at $3.1 billion with 67% net new.",
                     "A mega deal worth $1.6 billion was announced after the close of the quarter."
                   ]
                 }
@@ -2978,7 +3071,22 @@
                   "unit": "%",
                   "period": "Year-on-Year",
                   "kind": "reported"
-                },
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Industry Performance",
+                  "points": [
+                    "Financial Services and Manufacturing grew above 5% year-on-year in constant currency.",
+                    "Retail clients remain cautious due to tariff-related uncertainties."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [
                 {
                   "label": "Europe Growth",
                   "value": "5",
@@ -2989,61 +3097,39 @@
               ],
               "subsections": [
                 {
-                  "label": "Industry Performance",
+                  "label": "Regional Performance",
                   "points": [
-                    "Financial Services and Manufacturing grew above 5% year-on-year in constant currency.",
-                    "Europe also grew greater than 5% year-on-year in constant currency terms."
+                    "Europe grew greater than 5% year-on-year in constant currency terms.",
+                    "The U.S. market remains a strong focus for growth and investment."
                   ]
                 }
               ]
             },
             {
-              "id": "TECH",
-              "title": "Product & Technology",
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
               "key_figures": [
                 {
-                  "label": "Generative AI and AI Projects",
-                  "value": "2500",
-                  "unit": "projects",
-                  "period": "ongoing",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Agentic AI Projects",
-                  "value": "200",
-                  "unit": "projects",
-                  "period": "ongoing",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "AI Initiatives",
-                  "points": [
-                    "Infosys is delivering more than 2,500 Generative AI and AI projects and 200-plus agentic AI projects for clients.",
-                    "The company is scaling its team of forward-deployed engineers to support AI deployment across enterprises."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "GEO",
-              "title": "Geography & Distribution",
-              "key_figures": [
-                {
-                  "label": "Employee Headcount Increase",
-                  "value": "8000",
+                  "label": "Employee Additions",
+                  "value": "8,000",
                   "unit": "employees",
                   "period": "Q2 FY26",
                   "kind": "reported"
+                },
+                {
+                  "label": "Fresher Hiring",
+                  "value": "12,000",
+                  "unit": "freshers",
+                  "period": "H1 FY26",
+                  "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Regional Performance",
+                  "label": "Hiring and Talent Strategy",
                   "points": [
-                    "Europe has been a strong performer, with significant investments in different countries.",
-                    "The U.S. market remains a focus for growth and investment."
+                    "Added 8,000 employees during the quarter.",
+                    "Hired over 12,000 freshers in the last 6 months."
                   ]
                 }
               ]
@@ -3056,7 +3142,7 @@
                   "label": "Versent Group Acquisition",
                   "value": "210",
                   "unit": "million AUD",
-                  "period": "last year",
+                  "period": "Last Year",
                   "kind": "reported"
                 }
               ],
@@ -3064,8 +3150,8 @@
                 {
                   "label": "Acquisitions and Joint Ventures",
                   "points": [
-                    "Infosys announced a joint venture with Versent in Australia, pending regulatory approvals.",
-                    "The company is actively looking at other acquisition opportunities."
+                    "Announced a joint venture with Versent in Australia, pending regulatory approvals.",
+                    "Focus on strategic acquisitions to enhance capabilities in digital, AI, and cloud."
                   ]
                 }
               ]
@@ -3076,10 +3162,16 @@
               "key_figures": [],
               "subsections": [
                 {
+                  "label": "Macroeconomic Uncertainty",
+                  "points": [
+                    "The environment remains uncertain with macroeconomic challenges impacting client spending."
+                  ]
+                },
+                {
                   "label": "H-1B Visa Issue",
                   "points": [
-                    "Infosys has reduced its dependence on H-1B visas by increasing local hiring and establishing nearshore centers.",
-                    "The company does not share specific numbers on employees dependent on H-1B visas."
+                    "Majority of U.S. workforce does not require Infosys sponsorship for immigration.",
+                    "No specific numbers shared on H-1B visa dependency."
                   ]
                 }
               ]
@@ -3118,7 +3210,7 @@
             {
               "metric": "Revenue Growth",
               "horizon": "FY26",
-              "statement": "The new guidance is growth between 2% and 3% in constant currency terms for the full year.",
+              "statement": "Revenue growth guidance for the financial year is 2% to 3% in constant currency terms.",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
@@ -3126,7 +3218,7 @@
             {
               "metric": "Operating Margin",
               "horizon": "FY26",
-              "statement": "Our operating margin guidance remains the same as in the past quarter at 20% to 22% for the full year.",
+              "statement": "Operating margin guidance remains at 20% to 22% for the full year.",
               "specificity": "specific",
               "direction": "flat",
               "status": "new"
@@ -3134,57 +3226,59 @@
           ],
           "risk_register": [
             {
+              "risk": "Macroeconomic Uncertainty",
+              "status": "stable",
+              "note": "The environment remains uncertain with macroeconomic challenges impacting client spending."
+            },
+            {
               "risk": "H-1B Visa Issue",
               "status": "stable",
-              "note": "Infosys has reduced its dependence on H-1B visas by increasing local hiring and establishing nearshore centers."
+              "note": "Majority of U.S. workforce does not require Infosys sponsorship for immigration."
             }
           ],
           "themes": [
             {
               "label": "AI Deployment",
               "direction": "positive",
-              "note": "Infosys is focusing on deploying AI across enterprises for growth and cost efficiency.",
+              "note": "Strong focus on deploying AI across enterprises for growth and cost efficiency.",
               "section_ref": "TECH"
             },
             {
-              "label": "Revenue Growth Guidance",
+              "label": "Large Deal Momentum",
               "direction": "positive",
-              "note": "Revenue growth guidance for FY26 has been raised to 2-3% in constant currency terms.",
-              "section_ref": "GUID"
+              "note": "Continued strong performance in securing large deals, including a mega deal.",
+              "section_ref": "ORD"
+            },
+            {
+              "label": "Macroeconomic Uncertainty",
+              "direction": "mixed",
+              "note": "Uncertain macro environment impacting client spending and guidance.",
+              "section_ref": "RISK"
             },
             {
               "label": "H-1B Visa Strategy",
               "direction": "neutral",
-              "note": "Infosys has reduced its dependence on H-1B visas by increasing local hiring and establishing nearshore centers.",
+              "note": "Majority of U.S. workforce does not require Infosys sponsorship for immigration.",
               "section_ref": "RISK"
             },
             {
-              "label": "Large Deal Activity",
+              "label": "Talent Acquisition",
               "direction": "positive",
-              "note": "Large deals totaled $3.1 billion, with 67% net new work, and a mega deal worth $1.6 billion was announced post-quarter.",
-              "section_ref": "ORD"
-            },
-            {
-              "label": "Segment Performance",
-              "direction": "positive",
-              "note": "Financial Services and Manufacturing grew above 5% year-on-year in constant currency.",
-              "section_ref": "SEG"
+              "note": "Significant hiring of freshers and overall employee additions.",
+              "section_ref": "MKT"
             }
           ],
           "key_takeaways": [
-            "Infosys has increased its revenue growth guidance for FY26 to 2-3% in constant currency terms, maintaining operating margin guidance at 20-22%.",
-            "The company reported a strong Q2 performance with a 2.2% sequential revenue growth and a 21% operating margin.",
-            "Large deals totaled $3.1 billion, with 67% net new work, and a mega deal worth $1.6 billion was announced post-quarter.",
-            "Infosys is focusing on AI deployment across enterprises and continues to scale its team of forward-deployed engineers.",
-            "The company has reduced its dependence on H-1B visas by increasing local hiring and establishing nearshore centers."
+            "Revenues for the quarter grew 2.2% sequentially and 2.9% year-on-year in constant currency terms.",
+            "Operating margin was 21%.",
+            "Large deals were at $3.1 billion with 67% net new.",
+            "A mega deal worth $1.6 billion was announced after the close of the quarter.",
+            "Revenue growth guidance for the financial year is 2% to 3% in constant currency terms.",
+            "Operating margin guidance remains at 20% to 22% for the full year.",
+            "Added 8,000 employees during the quarter.",
+            "Hired over 12,000 freshers in the last 6 months."
           ],
-          "pressing_questions": [
-            "Are you not seeing a meaningful recovery, especially when it comes to your Manufacturing, Retail, these kind of verticals?",
-            "Could you give us in percentage terms, how many of your employees that you were sending abroad were on these visas?",
-            "What kind of contribution to revenue do you expect from the Versent acquisition?",
-            "In terms of the AI talk that is going on, could you tell us if you would be looking at anything of this sort this year in the next quarter or fourth quarter?",
-            "Do you think it is viable to continue sending your employees on these visas? Are you going to participate in the next cycle or is there going to be a significant pullback even in this minority number that you currently have?"
-          ]
+          "pressing_questions": []
         }
       ]
     }
