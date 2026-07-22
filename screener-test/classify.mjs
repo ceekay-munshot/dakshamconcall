@@ -188,7 +188,7 @@ export async function classifyQuarter(scrape, priorGuidance = null, priorThemes 
     takeaways.length
       ? "SCREENER KEY TAKEAWAYS (copy these into key_takeaways VERBATIM — do not reword):\n" +
         takeaways.map((t) => `- ${t}`).join("\n")
-      : "SCREENER KEY TAKEAWAYS: not separately extracted — if the CONCALL SUMMARY TEXT below contains a 'Key Takeaways' / 'Highlights' block, reproduce those bullets VERBATIM into key_takeaways.",
+      : "SCREENER KEY TAKEAWAYS: not separately extracted. If the CONCALL SUMMARY TEXT below contains an explicit 'Key Takeaways' / 'Highlights' block, reproduce those bullets VERBATIM. OTHERWISE select the 5-8 MOST MATERIAL takeaways in the source's own words — do NOT treat every sentence, heading or section as a takeaway (this is a scannable digest; the full detail already lives in the sections).",
     "",
     questions.length
       ? "PRESSING / HIGHLIGHTED QUESTIONS (copy into pressing_questions):\n" +
@@ -219,7 +219,13 @@ export async function classifyQuarter(scrape, priorGuidance = null, priorThemes 
   // labels them "Screener · verbatim", so overwrite the model's arrays with the
   // scraped originals whenever the source provided them (no paraphrasing).
   if (Array.isArray(scrape.key_takeaways) && scrape.key_takeaways.length) {
-    out.key_takeaways = scrape.key_takeaways.slice();
+    out.key_takeaways = scrape.key_takeaways.slice(); // Screener's own digest, verbatim
+  } else {
+    // No explicit Key Takeaways block in the source: the model derived them from
+    // the summary and can over-extract (e.g. dumping the whole summary line by
+    // line — 76 "takeaways" observed). Bound to a scannable digest; no real
+    // disclosure is lost because the full detail lives in the sections.
+    out.key_takeaways = (out.key_takeaways || []).filter(Boolean).slice(0, 12);
   }
   if (Array.isArray(scrape.pressing_questions) && scrape.pressing_questions.length) {
     out.pressing_questions = scrape.pressing_questions.slice();
