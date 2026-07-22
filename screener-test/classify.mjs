@@ -185,6 +185,18 @@ export async function classifyQuarter(scrape, priorGuidance = null) {
     out.pressing_questions = scrape.pressing_questions.slice();
   }
 
+  // Normalize model artifacts: a literal "null"/"" unit or period -> real null.
+  const clean = (v) => {
+    const s = (v ?? "").toString().trim();
+    return s && s.toLowerCase() !== "null" && s.toLowerCase() !== "undefined" ? s : null;
+  };
+  for (const sec of out.sections) {
+    for (const f of sec.key_figures || []) {
+      f.unit = clean(f.unit);
+      f.period = clean(f.period);
+    }
+  }
+
   out.model = MODEL;
   return out;
 }
