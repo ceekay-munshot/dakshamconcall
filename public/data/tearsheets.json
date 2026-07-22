@@ -3,95 +3,100 @@
     "RELIANCE": {
       "company": "Reliance Industries Ltd",
       "ticker": "RELIANCE",
-      "industry": null,
+      "industry": "Energy",
       "country": "India",
-      "checked_at": "2026-07-22T14:46:25.936Z",
+      "checked_at": "2026-07-22T18:43:51.204Z",
       "quarters": [
         {
           "company": "Reliance Industries Ltd",
           "ticker": "RELIANCE",
-          "industry": null,
+          "industry": "Energy",
           "country": "India",
           "concall_date": "2026-07-01",
           "source": "ai_summary",
           "source_url": "https://www.screener.in/company/RELIANCE/consolidated/",
-          "model": "gpt-4o-mini",
-          "generated_at": "2026-07-22T14:46:25.936Z",
-          "summary": "Management framed the quarter as 'extraordinary' due to macro volatility and positioned RIL’s response as 'agility' and 'incredible.'",
+          "model": "gpt-4o",
+          "generated_at": "2026-07-22T18:43:51.204Z",
+          "summary": "Reliance Industries Ltd. reported a strong Q1 FY26-27 performance driven by oil prices, with significant contributions from Jio and Retail. The company navigated macroeconomic challenges with agility, maintaining operational resilience and strategic positioning despite geopolitical volatility.",
           "sections": [
             {
               "id": "FIN",
               "title": "Financial Performance",
               "key_figures": [
                 {
-                  "label": "Revenue",
-                  "value": "+25%",
-                  "unit": "null",
+                  "label": "Revenue growth",
+                  "value": "25%",
+                  "unit": "%",
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Jio revenue growth",
+                  "value": "12%",
+                  "unit": "%",
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Retail revenue growth",
+                  "value": "12%",
+                  "unit": "%",
                   "period": "YoY",
                   "kind": "reported"
                 },
                 {
                   "label": "EBITDA",
-                  "value": "Rs. 54,000 Cr",
-                  "unit": "INR",
+                  "value": "54,000",
+                  "unit": "Cr",
                   "period": "Q1 FY26-27",
                   "kind": "reported"
                 },
                 {
                   "label": "PAT",
-                  "value": "~Rs. 23,200 Cr",
-                  "unit": "INR",
+                  "value": "23,200",
+                  "unit": "Cr",
                   "period": "Q1 FY26-27",
                   "kind": "reported"
                 },
                 {
                   "label": "Net debt",
-                  "value": "~Rs. 1.23 lakh Cr",
-                  "unit": "INR",
-                  "period": "Q1",
+                  "value": "1.23 lakh",
+                  "unit": "Cr",
+                  "period": "Q1 FY26-27",
                   "kind": "reported"
                 },
                 {
                   "label": "Q1 capex",
-                  "value": "~Rs. 39,000 Cr",
-                  "unit": "INR",
-                  "period": "Q1",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Balance sheet/cash flow",
-                  "points": [
-                    "Capex funded by cash profit."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "ORD",
-              "title": "Order Book & Demand",
-              "key_figures": [
-                {
-                  "label": "O2C revenue",
-                  "value": "+30%",
-                  "unit": "null",
-                  "period": "YoY",
+                  "value": "39,000",
+                  "unit": "Cr",
+                  "period": "Q1 FY26-27",
                   "kind": "reported"
                 },
                 {
-                  "label": "EBITDA",
-                  "value": "~Rs. 17,000 Cr",
-                  "unit": "INR",
+                  "label": "Finance cost increase",
+                  "value": "19%",
+                  "unit": "%",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Depreciation increase",
+                  "value": "9%",
+                  "unit": "%",
                   "period": "Q1 FY26-27",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Demand",
+                  "label": "Consolidated performance and what drove it",
                   "points": [
-                    "Asia-Pacific and Africa curtailed buying due to high prices; India demand stayed 'reasonably strong.'"
+                    "Management framed the quarter as 'extraordinary' due to macro volatility, energy market shock, and supply chain dislocation.",
+                    "Revenue increased by 25% YoY, driven by oil prices, with Jio and Retail also contributing significantly.",
+                    "EBITDA exceeded Rs. 54,000 Cr, a 10% increase, while PAT was approximately Rs. 23,200 Cr, a 6% increase.",
+                    "The consumer businesses now constitute about 50% of the overall mix.",
+                    "Capex was funded by cash profit, with net debt slightly lower QoQ at approximately Rs. 1.23 lakh Cr.",
+                    "Moody's upgraded the company's rating to Baa1, and S&P to A-."
                   ]
                 }
               ]
@@ -101,66 +106,88 @@
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
-                  "label": "Jio Platforms Revenue",
-                  "value": "Rs. 39,173 Cr",
-                  "unit": "INR",
+                  "label": "O2C revenue growth",
+                  "value": "30%",
+                  "unit": "%",
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "O2C EBITDA",
+                  "value": "17,000",
+                  "unit": "Cr",
                   "period": "Q1 FY26-27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Jio Platforms EBITDA",
-                  "value": "Rs. 20,865 Cr",
-                  "unit": "INR",
+                  "label": "JPL Revenue",
+                  "value": "39,173",
+                  "unit": "Cr",
                   "period": "Q1 FY26-27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Reliance Retail Revenue",
-                  "value": "~Rs. 90,000 Cr",
-                  "unit": "INR",
+                  "label": "JPL EBITDA",
+                  "value": "20,865",
+                  "unit": "Cr",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "JPL margin",
+                  "value": "53.3%",
+                  "unit": "%",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Retail Q1 revenue",
+                  "value": "90,000",
+                  "unit": "Cr",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Retail EBITDA",
+                  "value": "6,309",
+                  "unit": "Cr",
                   "period": "Q1 FY26-27",
                   "kind": "reported"
                 },
                 {
                   "label": "RCPL Revenue",
-                  "value": "Rs. 8,600 Cr",
-                  "unit": "INR",
+                  "value": "8,600",
+                  "unit": "Cr",
                   "period": "Q1 FY26-27",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
+                  "label": "Oil-to-Chemicals (Refining & Marketing + Petrochem)",
+                  "points": [
+                    "O2C revenue increased by 30% YoY, with EBITDA up 17% to approximately Rs. 17,000 Cr.",
+                    "Management noted that headline cracks/deltas overstate realizable economics due to shock costs.",
+                    "RIL maintained 96-97% throughput despite a logistics/availability crisis.",
+                    "Crude diversification and trade/logistics optimization were key mitigation actions."
+                  ]
+                },
+                {
                   "label": "Jio Platforms",
                   "points": [
-                    "Subscribers 533m; net add 35.2m in 12 months. 5G users 285m (add 73m)."
+                    "JPL revenue was Rs. 39,173 Cr, up 11.8%, with EBITDA at Rs. 20,865 Cr, a 15.1% increase.",
+                    "Subscribers reached 533m, with 5G users at 285m.",
+                    "Digital services revenue grew ~20% YoY, outpacing connectivity.",
+                    "JPL's PAT was Rs. 764 Cr, with finance costs higher due to accounting shifts."
                   ]
                 },
                 {
                   "label": "Reliance Retail",
                   "points": [
-                    "Underlying growth +11.6%; reported +7.4% due to RCPL demerger base effect."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "TECH",
-              "title": "Product & Technology",
-              "key_figures": [
-                {
-                  "label": "FWA market share",
-                  "value": "78%",
-                  "unit": "null",
-                  "period": "null",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Digital services and enterprise strategy",
-                  "points": [
-                    "Digital services revenue growth ~20% YoY."
+                    "Q1 revenue was approximately Rs. 90,000 Cr, with underlying growth of 11.6%.",
+                    "EBITDA was Rs. 6,309 Cr, slightly down YoY, with a margin of 7.9%.",
+                    "The company is trading near-term margins for digital scale and infrastructure moats.",
+                    "RCPL revenue was Rs. 8,600 Cr, with rapid scale and supply-chain buildout."
                   ]
                 }
               ]
@@ -168,20 +195,13 @@
             {
               "id": "MFG",
               "title": "Manufacturing & Capacity",
-              "key_figures": [
-                {
-                  "label": "LPG production increase",
-                  "value": "almost fourfold",
-                  "unit": "null",
-                  "period": "null",
-                  "kind": "reported"
-                }
-              ],
+              "key_figures": [],
               "subsections": [
                 {
                   "label": "Manufacturing",
                   "points": [
-                    "Commissioned one of the largest beverage plants in Asia."
+                    "RIL commissioned one of the largest beverage plants in Asia as part of an integrated food park.",
+                    "The company is exploring an edible oil facility in West Bengal."
                   ]
                 }
               ]
@@ -192,9 +212,12 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Headwinds",
+                  "label": "Headwinds called out explicitly",
                   "points": [
-                    "SAED drag and domestic under-recoveries."
+                    "SAED drag and domestic under-recoveries, including sales to PSUs.",
+                    "Planned turnaround lowered production meant for sale by 10%.",
+                    "LPG diversion under government direction impacted petchem feed slate.",
+                    "Advertising hit by real-money gaming ban and US-Iran war."
                   ]
                 }
               ]
@@ -207,109 +230,267 @@
                 {
                   "label": "Forward view",
                   "points": [
-                    "Management tone constructive but contingent."
+                    "Management maintains confidence in structural positioning despite geopolitical volatility.",
+                    "Structural support for cracks from lost capacity and Russia's reduced output.",
+                    "Management refused near-term profitability calls due to renewed SOH volatility."
                   ]
                 }
               ]
             }
           ],
-          "guidance_ledger": [],
+          "guidance_ledger": [
+            {
+              "metric": "KGD6 ceiling price",
+              "horizon": "2H FY26-27",
+              "statement": "Expected to rise to ~$9.9 in 2H.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Integrated solar chain",
+              "horizon": null,
+              "statement": "Progress towards achieving 10-gigawatts of integrated solar chain.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            }
+          ],
           "risk_register": [
             {
               "risk": "SAED drag and domestic under-recoveries",
               "status": "new",
-              "note": null
+              "note": "Including sales to PSUs."
+            },
+            {
+              "risk": "Planned turnaround",
+              "status": "new",
+              "note": "Lowered production meant for sale by 10%."
+            },
+            {
+              "risk": "LPG diversion under government direction",
+              "status": "new",
+              "note": "Impacted petchem feed slate."
+            },
+            {
+              "risk": "Advertising hit by real-money gaming ban and US-Iran war",
+              "status": "new",
+              "note": "Adverse impact on the overall ad market."
+            },
+            {
+              "risk": "Rupee depreciation",
+              "status": "no_mention",
+              "note": "11% depreciation for the year and 4% in March."
+            },
+            {
+              "risk": "Supply shock",
+              "status": "no_mention",
+              "note": "Impact on industry and consumer confidence."
+            },
+            {
+              "risk": "Middle East conflict",
+              "status": "no_mention",
+              "note": "Impact on oil supply and prices."
+            },
+            {
+              "risk": "SAED reintroduction",
+              "status": "no_mention",
+              "note": "Poses a risk to the business."
+            },
+            {
+              "risk": "Natural decline in KG D6 fields",
+              "status": "no_mention",
+              "note": "Efforts to slow decline, productivity improvements in CBM."
+            },
+            {
+              "risk": "Higher feedstock costs",
+              "status": "no_mention",
+              "note": "Increased OSPs and freight rates due to sanctions."
+            },
+            {
+              "risk": "Oversupply in oil market",
+              "status": "no_mention",
+              "note": "OPEC unwound 2 million barrels of cuts, China's stock build-up supported prices."
+            },
+            {
+              "risk": "LNG price movement",
+              "status": "no_mention",
+              "note": "Prices have moved from $11 to $9.5, impacting overall realizations."
+            },
+            {
+              "risk": "Geopolitical environment and tariffs",
+              "status": "no_mention",
+              "note": "Challenges to supply chain security and sufficiency."
             }
           ],
-          "key_takeaways": [],
+          "themes": [
+            {
+              "label": "Geopolitical challenges",
+              "direction": "mixed",
+              "note": "Management maintains confidence despite geopolitical volatility.",
+              "section_ref": "RISK"
+            },
+            {
+              "label": "Retail expansion",
+              "direction": "positive",
+              "note": "RIL is trading margins for digital scale and infrastructure moats.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "5G expansion",
+              "direction": "positive",
+              "note": "Jio Platforms continues to grow with significant subscriber additions.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Diversified growth",
+              "direction": "positive",
+              "note": "Revenue growth driven by oil prices, Jio, and Retail contributions.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "New energy initiatives",
+              "direction": "neutral",
+              "note": "Structural support for cracks from lost capacity and Russia's reduced output.",
+              "section_ref": "GUID"
+            }
+          ],
+          "key_takeaways": [
+            "RIL is explicitly trading near-term consumer margins for digital scale (Retail) and building new infrastructure moats (dark stores; data centers; AI/media tooling).",
+            "In Energy/O2C, management stresses realizable margin is constrained by procurement/logistics friction even when market cracks are extreme; nonetheless, RIL demonstrated operational resilience (near-full runs) and feedstock advantage (ethane-heavy slate).",
+            "Forward commentary is deliberately non-committal on near-term O2C earnings due to geopolitical volatility ('a lot of imponderables'), but management maintains confidence in structural positioning: 'structurally… we are in a good place right through.'"
+          ],
           "pressing_questions": []
         },
         {
           "company": "Reliance Industries Ltd",
           "ticker": "RELIANCE",
-          "industry": null,
+          "industry": "Energy",
           "country": "India",
           "concall_date": "2026-04-01",
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=971d8c86-397a-4780-b843-5a84d3006d0b.pdf",
-          "model": "gpt-4o-mini",
-          "generated_at": "2026-07-22T14:46:16.885Z",
-          "summary": "The company reported strong growth across its segments, with a focus on digital services and retail, despite facing challenges in the oil and gas sector due to supply shocks and rupee depreciation.",
+          "model": "gpt-4o",
+          "generated_at": "2026-07-22T18:43:36.031Z",
+          "summary": "Reliance Industries Ltd anticipates continued growth across its diverse business segments, with a focus on expanding its 5G network, retail operations, and new energy initiatives, despite geopolitical challenges impacting the oil and gas sector.",
           "sections": [
             {
               "id": "FIN",
               "title": "Financial Performance",
               "key_figures": [
                 {
-                  "label": "Revenue Growth",
-                  "value": "10",
-                  "unit": "%",
+                  "label": "Revenue growth FY2025-26",
+                  "value": "10%",
+                  "unit": null,
                   "period": "FY2025-26",
                   "kind": "reported"
                 },
                 {
-                  "label": "EBITDA Growth",
-                  "value": "13.5",
-                  "unit": "%",
+                  "label": "EBITDA growth FY2025-26",
+                  "value": "13.5%",
+                  "unit": null,
                   "period": "FY2025-26",
                   "kind": "reported"
                 },
                 {
-                  "label": "PAT Growth",
-                  "value": "24",
-                  "unit": "%",
+                  "label": "Rupee depreciation",
+                  "value": "11%",
+                  "unit": null,
                   "period": "FY2025-26",
                   "kind": "reported"
                 },
                 {
-                  "label": "JPL PAT Increase",
-                  "value": "15",
-                  "unit": "%",
-                  "period": "year-on-year",
+                  "label": "Rupee depreciation in March",
+                  "value": "4%",
+                  "unit": null,
+                  "period": "March 2026",
                   "kind": "reported"
                 },
                 {
-                  "label": "RRVL PAT Increase",
-                  "value": "12",
-                  "unit": "%",
-                  "period": "year-on-year",
+                  "label": "JPL PAT increase",
+                  "value": "15%",
+                  "unit": null,
+                  "period": "FY2025-26",
                   "kind": "reported"
                 },
                 {
-                  "label": "RIL PAT Increase",
-                  "value": "24",
-                  "unit": "%",
-                  "period": "year-on-year",
+                  "label": "RRVL PAT increase",
+                  "value": "12%",
+                  "unit": null,
+                  "period": "FY2025-26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Digital Services Growth",
-                  "value": "18",
-                  "unit": "%",
-                  "period": "year-on-year",
+                  "label": "RIL PAT increase",
+                  "value": "24%",
+                  "unit": null,
+                  "period": "FY2025-26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Retail EBITDA Growth",
-                  "value": "8",
-                  "unit": "%",
-                  "period": "year-on-year",
+                  "label": "Digital growth",
+                  "value": "18%",
+                  "unit": null,
+                  "period": "FY2025-26",
                   "kind": "reported"
                 },
                 {
-                  "label": "O2C Growth",
-                  "value": "10",
-                  "unit": "%",
-                  "period": "year-on-year",
+                  "label": "Retail EBITDA growth",
+                  "value": "8%",
+                  "unit": null,
+                  "period": "FY2025-26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "O2C growth",
+                  "value": "10%",
+                  "unit": null,
+                  "period": "FY2025-26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Overall EBITDA growth for the quarter",
+                  "value": "flat",
+                  "unit": null,
+                  "period": "Q4 FY2025-26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consumer segment growth",
+                  "value": "14%",
+                  "unit": null,
+                  "period": "Q4 FY2025-26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Digital services growth",
+                  "value": "16%",
+                  "unit": null,
+                  "period": "Q4 FY2025-26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "5G user base growth",
+                  "value": "40%",
+                  "unit": null,
+                  "period": "Q4 FY2025-26",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Quarterly Performance",
+                  "label": "Group Performance",
                   "points": [
-                    "Overall EBITDA growth is flat, with consumer businesses up 14%.",
-                    "Oil-to-Chemicals down 4% due to lower throughput and crude availability."
+                    "The first 11 months showed robust domestic activity and significant growth in telecom traffic on the 5G network.",
+                    "Rupee depreciation was a concern, with an 11% drop for the year and 4% in March.",
+                    "Revenue grew by 10% and EBITDA by 13.5% for FY2025-26, including a one-time gain from the sale of listed shares.",
+                    "Consumer businesses contributed more than 55% of EBITDA.",
+                    "JPL and RRVL showed PAT increases of 15% and 12% respectively, with RIL close to 24%.",
+                    "Digital services showed strong growth with an 18% increase, while retail EBITDA grew by 8%.",
+                    "O2C grew by 10% despite challenges, and Oil and Gas faced production declines.",
+                    "Overall EBITDA growth was flat for the quarter, with consumer segments (Jio and retail) up 14%.",
+                    "Depreciation and interest impacted PAT due to 5G asset capitalization.",
+                    "Oil-to-Chemicals was down 4%, reflecting a challenging environment with crude supply issues and high logistics costs."
                   ]
                 }
               ]
@@ -319,38 +500,122 @@
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
-                  "label": "Jio Platforms Revenue",
-                  "value": "1,46,085",
-                  "unit": "Crores",
+                  "label": "Jio Platforms subscribers",
+                  "value": "524 million",
+                  "unit": null,
+                  "period": "FY2025-26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "5G user base",
+                  "value": "268 million",
+                  "unit": null,
+                  "period": "FY2025-26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Fixed broadband connects",
+                  "value": "27 million",
+                  "unit": null,
+                  "period": "FY2025-26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "JioAirFiber homes",
+                  "value": "12.9 million",
+                  "unit": null,
+                  "period": "FY2025-26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Jio Platforms revenue",
+                  "value": "Rs.1,46,085 Crores",
+                  "unit": null,
                   "period": "FY2025-26",
                   "kind": "reported"
                 },
                 {
                   "label": "Jio Platforms EBITDA",
-                  "value": "76,255",
-                  "unit": "Crores",
+                  "value": "Rs.76,255 Crores",
+                  "unit": null,
                   "period": "FY2025-26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Retail Revenue",
-                  "value": "98,000",
-                  "unit": "Crores",
-                  "period": "Q4",
+                  "label": "Jio Platforms EBITDA margin",
+                  "value": "52%",
+                  "unit": null,
+                  "period": "FY2025-26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Retail EBITDA",
-                  "value": "6,900",
-                  "unit": "Crores",
-                  "period": "Q4",
+                  "label": "Data traffic increase",
+                  "value": "241 Exabytes",
+                  "unit": null,
+                  "period": "FY2025-26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Retail PAT",
-                  "value": "3,500",
-                  "unit": "Crores",
-                  "period": "Q4",
+                  "label": "Retail revenue for the quarter",
+                  "value": "Rs.98,000 Crores",
+                  "unit": null,
+                  "period": "Q4 FY2025-26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Retail EBITDA for the quarter",
+                  "value": "Rs.6,900 Crores",
+                  "unit": null,
+                  "period": "Q4 FY2025-26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Retail PAT for the quarter",
+                  "value": "Rs.3,500 Crores",
+                  "unit": null,
+                  "period": "Q4 FY2025-26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "FMCG revenue for 2026",
+                  "value": "Rs.22,000 Crores",
+                  "unit": null,
+                  "period": "FY2025-26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "FMCG Q4 revenue",
+                  "value": "Rs.7350 Crores",
+                  "unit": null,
+                  "period": "Q4 FY2025-26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Campa brand revenue",
+                  "value": "Rs.4700 Crores",
+                  "unit": null,
+                  "period": "FY2025-26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Independence brand revenue",
+                  "value": "Rs.2600 Crores",
+                  "unit": null,
+                  "period": "FY2025-26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "JioStar monthly active users",
+                  "value": "550 million",
+                  "unit": null,
+                  "period": "March 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Concurrent streams record",
+                  "value": "72.5 million",
+                  "unit": null,
+                  "period": "March 2026",
                   "kind": "reported"
                 }
               ],
@@ -358,15 +623,88 @@
                 {
                   "label": "Jio Platforms",
                   "points": [
-                    "524 million subscribers, net add of 36.3 million during the year.",
-                    "268 million 5G user base, addition of 77 million during the year."
+                    "Jio Platforms ended the year with 524 million subscribers, adding 36.3 million during the year.",
+                    "The 5G user base reached 268 million, with 77 million added during the year.",
+                    "Fixed broadband connects reached 27 million, with 10 million added during the year.",
+                    "JioAirFiber homes reached 12.9 million, with 75% of connections through AirFiber.",
+                    "Revenue for the year was Rs.1,46,085 Crores, up 14.6% year-on-year.",
+                    "EBITDA was Rs.76,255 Crores, up 19% year-on-year, with a margin of 52%.",
+                    "Data traffic increased to 241 Exabytes for the year, a 31% increase year-on-year."
                   ]
                 },
                 {
-                  "label": "Retail Performance",
+                  "label": "Retail",
                   "points": [
-                    "11% growth year-on-year for Q4, 12% growth for the full year.",
-                    "300% growth in hyperlocal commerce on a year-on-year basis."
+                    "Retail business had the highest ever revenues of Rs.98,000 Crores for the quarter, with 11% growth year-on-year.",
+                    "EBITDA for the quarter was Rs.6,900 Crores, with a margin of 7.9%.",
+                    "Hyperlocal commerce showed 30% growth in average daily orders quarter-on-quarter and 300% year-on-year.",
+                    "The number of registered customers grew by 11% year-on-year, with transactions growing 39%.",
+                    "333 new stores were opened during the quarter, crossing 20,000 stores in total.",
+                    "Grocery and fashion segments showed strong double-digit growth.",
+                    "JioMart serves 1200+ cities with 3100 stores, offering two-hour delivery."
+                  ]
+                },
+                {
+                  "label": "FMCG",
+                  "points": [
+                    "FMCG business closed with a revenue of Rs.22,000 Crores in 2026, with Q4 revenue at Rs.7350 Crores.",
+                    "Campa brand delivered Rs.4700 Crores, becoming the fourth largest carbonated soft drink brand in India.",
+                    "Independence brand delivered Rs.2600 Crores, becoming a promising and trusted brand.",
+                    "Package drinking water business became the third largest in India.",
+                    "International presence expanded to 40 countries."
+                  ]
+                },
+                {
+                  "label": "JioStar",
+                  "points": [
+                    "JioStar achieved a monthly active user reach of 550 million in March, driven by sports and entertainment.",
+                    "Broke a world record for concurrent streams at 72.5 million during the T20 World Cup.",
+                    "Launched AI-driven technologies like Tadka, ChatGPT integration, and in-app commerce with Swiggy.",
+                    "Sports properties like the Women's Premier League and T20 World Cup drove engagement.",
+                    "Entertainment content like Bigg Boss and Chiraiya showed strong viewership growth."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MFG",
+              "title": "Manufacturing & Capacity",
+              "key_figures": [
+                {
+                  "label": "Retail new stores opened",
+                  "value": "333",
+                  "unit": null,
+                  "period": "Q4 FY2025-26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total retail stores",
+                  "value": "20,000",
+                  "unit": null,
+                  "period": "Q4 FY2025-26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "FMCG plants across India",
+                  "value": "12",
+                  "unit": null,
+                  "period": "FY2025-26",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Retail Expansion",
+                  "points": [
+                    "Opened 333 new stores during the quarter, crossing the milestone of 20,000 stores.",
+                    "Grocery segment crossed 1000 big box hypermarket supermarkets, the fastest rollout globally."
+                  ]
+                },
+                {
+                  "label": "FMCG Manufacturing",
+                  "points": [
+                    "Investing in manufacturing capabilities to become one of the largest manufacturers of cooldrinks in India.",
+                    "Expanding with 12 plants across India and setting up integrated food parks for cost efficiencies."
                   ]
                 }
               ]
@@ -374,13 +712,30 @@
             {
               "id": "RISK",
               "title": "Risks & External Factors",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "Rupee depreciation",
+                  "value": "11%",
+                  "unit": null,
+                  "period": "FY2025-26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Rupee depreciation in March",
+                  "value": "4%",
+                  "unit": null,
+                  "period": "March 2026",
+                  "kind": "reported"
+                }
+              ],
               "subsections": [
                 {
-                  "label": "Concerns",
+                  "label": "Geopolitical Challenges",
                   "points": [
-                    "Supply shock impacting industry and consumer confidence.",
-                    "Rupee depreciation of 11% for the year and 4% in March."
+                    "Rupee depreciation of 11% for the year and 4% in March is a concern.",
+                    "Supply shock and its impact on industry and consumer confidence are major concerns.",
+                    "Middle East conflict and its impact on oil supply and prices are significant challenges.",
+                    "SAED reintroduction poses a risk to the business."
                   ]
                 }
               ]
@@ -391,36 +746,167 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Future Focus Areas",
+                  "label": "Outlook",
                   "points": [
-                    "Continued growth in digital services and retail.",
-                    "Expansion of 5G services and customer engagement."
+                    "Continued focus on expanding 5G network, retail operations, and new energy initiatives.",
+                    "Geopolitical challenges in the oil and gas sector remain a concern."
                   ]
                 }
               ]
             }
           ],
-          "guidance_ledger": [],
-          "risk_register": [],
-          "key_takeaways": [],
-          "pressing_questions": []
+          "guidance_ledger": [
+            {
+              "metric": "Integrated solar chain",
+              "horizon": null,
+              "statement": "Progress towards achieving 10-gigawatts of integrated solar chain.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "Rupee depreciation",
+              "status": "new",
+              "note": "11% depreciation for the year and 4% in March."
+            },
+            {
+              "risk": "Supply shock",
+              "status": "new",
+              "note": "Impact on industry and consumer confidence."
+            },
+            {
+              "risk": "Middle East conflict",
+              "status": "new",
+              "note": "Impact on oil supply and prices."
+            },
+            {
+              "risk": "SAED reintroduction",
+              "status": "new",
+              "note": "Poses a risk to the business."
+            },
+            {
+              "risk": "Natural decline in KG D6 fields",
+              "status": "no_mention",
+              "note": "Efforts to slow decline, productivity improvements in CBM."
+            },
+            {
+              "risk": "Higher feedstock costs",
+              "status": "no_mention",
+              "note": "Increased OSPs and freight rates due to sanctions."
+            },
+            {
+              "risk": "Oversupply in oil market",
+              "status": "no_mention",
+              "note": "OPEC unwound 2 million barrels of cuts, China's stock build-up supported prices."
+            },
+            {
+              "risk": "LNG price movement",
+              "status": "no_mention",
+              "note": "Prices have moved from $11 to $9.5, impacting overall realizations."
+            },
+            {
+              "risk": "Geopolitical environment and tariffs",
+              "status": "no_mention",
+              "note": "Challenges to supply chain security and sufficiency."
+            }
+          ],
+          "themes": [
+            {
+              "label": "5G expansion",
+              "direction": "positive",
+              "note": "Significant growth in 5G user base and network expansion.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Retail expansion",
+              "direction": "positive",
+              "note": "Strong growth in retail revenue and store expansion.",
+              "section_ref": "MFG"
+            },
+            {
+              "label": "New energy initiatives",
+              "direction": "positive",
+              "note": "Progress in green energy projects and new contracts.",
+              "section_ref": "MFG"
+            },
+            {
+              "label": "Geopolitical challenges",
+              "direction": "negative",
+              "note": "Middle East conflict impacting oil supply and prices.",
+              "section_ref": "RISK"
+            },
+            {
+              "label": "Diversified growth",
+              "direction": "positive",
+              "note": "Continued growth across diverse business segments.",
+              "section_ref": "FIN"
+            }
+          ],
+          "key_takeaways": [
+            "The first 11 months seem pretty different from what happened in March and in 11 months it seemed like fastest growing economy, domestic activity was fairly robust, and from our own telecom point of view significant growth in traffic on the 5G network and so on.",
+            "All the measures taken on GST rationalization, the easing rate cycle, monsoons were good and that gave broadly consumption tailwinds were decent there, energy prices also give or take, was range bound and even growth in both fuel and refined products remained steady and then you go into March.",
+            "We all know the numbers almost doubling of 70% higher in some cases, even in gas it went up to double, of course the concern for everybody and all of us is the fact that the supply shock and its impact on industry and consumer confidence, that is something that as it is happening, everybody is grappling with it.",
+            "Rupee depreciation obviously is an area of concern, 11% for the year and 4% just in March and the bias will be there if this situation were to persist because on the back of widening gap, these are concern areas, it all depends on what is the outcome of the war, when does the settlement happen, but were it not these are really the immediate concern areas in everybody’s mind.",
+            "In this context, when I just look at FY2025-26 the full year and before I go into the quarter 10% up on revenue, 13.5% on EBITDA, this of course includes the one time that we had in the sale of listed shares.",
+            "Now, with the consumer businesses contributing more than 55% of EBITDA and PAT growth was also good, and I have provided the details of the standalone profitability of RIL, JPL and RRVL.",
+            "So, JPL at year-on-year PAT increase is about 15% and RRVL about 12%, RIL close to 24 and this is really the mix.",
+            "Overall growth 13%, digital very strong 18%, subscribers, 5G subscriptions, broadband mix, customer engagement, all these metrics are very good strong numbers.",
+            "Retail 8% growth on EBITDA and this is muted because of the scale up of the hyperlocal e-commerce.",
+            "Also, fashion and lifestyle demand was a bit soft.",
+            "O2C up 10% despite everything and as Srini will talk through in the presentations about what happened there and Oil and Gas has been more about the fall in overall production, the reservoir reserves coming down.",
+            "This I just thought, just put a five- year context.",
+            "Overall is up more than 2x, but digital is again more than 2x, retail two and a half times, O2C close to two.",
+            "So, in a more broader timeframe I just wanted to emphasize this more than doubling is something that we have been doing and this is again another indication.",
+            "Just going into for the quarter, as you can see overall EBITDA growth is flat and actually it is about consumer.",
+            "When I say consumer here I am taking both Jio and retail that is up 14%, which really negates the impact of energy, which has been lower and more on PAT has been on a quarter-on-quarter lower because of depreciation and interest on the back of the capitalization of the 5G assets, and more specifically on Oil-to-Chemicals down 4% and actually the 4% does not bring the overall context of how difficult the environment was.",
+            "One, of course, last year, year back, same time the overall numbers were strong and when you",
+            "look at what happened in terms of just physical inability to get crude, in fact if you see the throughput for us it was lower by 4% and just getting physical crude, the premium which was trading on top of the benchmarks, logistics cost, insurance cost, the sheer volatility that we saw there and coupled with under recoveries on fuel retailing, the introduction of SAED, there are million things which have happened in this quarter and that is what I meant by saying that 4% number really does not capture what the environment was and in that sense",
+            "I am very happy or delighted to look at this performance and the quality of the performance is very strong.",
+            "Oil and Gas because of gas volumes, digital services has been good, 16% on the back of subscriber additions, which was up 7.5%, and the 5G user base has been growing at about 40% and retail more broad based consumption that we have seen and the hyperscale expansion, which Dinesh will talk through in the retail presentations and this is again, same five year perspective I just thought to put that overall still net debt we have been able to keep that in control or continuing the capex vis a vis what is the cash profit, all of those trends have remained fairly strong and these numbers say that the EBITDA has been at about 0.64, which against what we have been talking about below one."
+          ],
+          "pressing_questions": [
+            "Now, my understanding is if alternate crudes continue to be sort of the only option that we have, the dispute sustains for a while longer, now the chemical composition of crudes from the US and Africa and even Venezuela are markedly different in terms of sulfur content, API and others. So, how much of distillate yield can actually change because obviously, US crudes and Venezuelan crudes are geared towards more of light distillates. I think Russian and Middle East crudes are obviously something that are more optimal from our Indian distillate yield perspective, so do you see that as a risk at all? If, those are the only crudes that are available for us?",
+            "The second question that I had, Sir, was with respect to the fuel retail, where I think it was mentioned very clearly that we have unlike earlier occasions when margins were turned negative, operations would be curtailed. We have managed to continue our operations. But is there some sort of a level at which we sort of look at then, sort of price increases, because obviously losses are significant even for us, I would presume, in this quarter. So how are we looking at that business in terms of?",
+            "My question is again on the refining side only. So, as you had indicated that in the month of March, in the Q4, we did see some volatility in terms of procurement, freight, and other factors. So how is the situation now in the Q1? How comfortable we are in terms of managing our procurement, freight, and other costs? And how should we see the margin environment panning out for us, particularly on both refining and petrochemical side for the rest of the year?",
+            "What percentage of our production is impacted by SAED?",
+            "One question on telecom. Anshuman, in your statement, you talked about differentiated services through network slicing. What are we looking there? And what is the opportunity in terms of increasing the realization or increasing the subscriber? How are we looking there?",
+            "We are not looking at anything on B2C kind of a business in the mobility?",
+            "In the voice or data, we are not looking to do?",
+            "There seems to be a fair bit of competition in the market. Horizontal e-commerce players seem to be adding a fair bit of dark stores. And of course, you have the three quick commerce players. In that scenario, how do you see the industry consolidating in the next few years and what are your ambitions about the quick commerce industry? Do you, like a dark store target, a market share target, a user target and would you be like a consolidator in the industry if the opportunity comes? That would be my first question."
+          ]
         },
         {
           "company": "Reliance Industries Ltd",
           "ticker": "RELIANCE",
-          "industry": null,
+          "industry": "Energy",
           "country": "India",
           "concall_date": "2026-01-01",
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=26290395-526a-441f-a347-c8ac12e4adf3.pdf",
-          "model": "gpt-4o-mini",
-          "generated_at": "2026-07-22T14:46:08.878Z",
-          "summary": "Reliance Industries Ltd reported strong growth across its consumer businesses, with significant customer additions and revenue increases in various segments.",
+          "model": "gpt-4o",
+          "generated_at": "2026-07-22T18:43:01.253Z",
+          "summary": "Reliance Industries Ltd continues to show strong growth across its diversified businesses, with significant progress in new energy initiatives and 5G expansion, despite global uncertainties.",
           "sections": [
             {
               "id": "FIN",
               "title": "Financial Performance",
               "key_figures": [
+                {
+                  "label": "Revenue growth",
+                  "value": "10%",
+                  "unit": null,
+                  "period": "Q3 2025-2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA growth",
+                  "value": "6%",
+                  "unit": null,
+                  "period": "Q3 2025-2026",
+                  "kind": "reported"
+                },
                 {
                   "label": "PAT",
                   "value": "22,290",
@@ -429,49 +915,41 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Revenue",
-                  "value": "10",
-                  "unit": "%",
-                  "period": "Q3 2025-2026",
+                  "label": "Capex",
+                  "value": "33,000",
+                  "unit": "Crores",
+                  "period": null,
                   "kind": "reported"
                 },
                 {
-                  "label": "EBITDA",
-                  "value": "6",
-                  "unit": "%",
-                  "period": "Q3 2025-2026",
+                  "label": "Net debt",
+                  "value": "no change",
+                  "unit": null,
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "S&P rating upgrade",
+                  "value": "BBB Plus to A Minus",
+                  "unit": null,
+                  "period": null,
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Nine Months Performance",
+                  "label": "Group Performance",
                   "points": [
-                    "9% growth in revenues",
-                    "18% increase in EBITDA",
-                    "28% increase in PAT"
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "ORD",
-              "title": "Order Book & Demand",
-              "key_figures": [
-                {
-                  "label": "New Orders Run Rate",
-                  "value": "1.6 million",
-                  "unit": "orders",
-                  "period": "December 2025",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Retail Business Growth",
-                  "points": [
-                    "Highest ever revenue at 97,600 Crores",
-                    "Revenue up 8.1%"
+                    "Customer addition strong at about 9 million, total 515 million customers.",
+                    "Retail revenue growth 8%, EBITDA growth 1.3%, store count close to 20,000.",
+                    "Quick commerce run rate at 1.6 million orders, on track to be second largest QC player.",
+                    "FMCG turnover more than 5,000 Crores, 60% up year-on-year.",
+                    "Energy business growth 15%, transportation fuel deltas strong, 60% to 100% growth year-on-year.",
+                    "Jio-bp volumes growth 24% for gas oil and gasoline.",
+                    "EBITDA lower on E&P due to lower volumes and price.",
+                    "Revenue up 10%, EBITDA up 6%, PAT at 22,290 Crores, up 1.6%.",
+                    "Digital services revenue up 16%, EBITDA driven by strong O2C performance, 15% higher.",
+                    "Consol profit muted due to higher finance and depreciation, primarily from Jio 5G assets."
                   ]
                 }
               ]
@@ -481,15 +959,85 @@
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
-                  "label": "Retail Revenue Growth",
-                  "value": "8",
-                  "unit": "%",
+                  "label": "Retail revenue",
+                  "value": "97,600",
+                  "unit": "Crores",
                   "period": "Q3 2025-2026",
                   "kind": "reported"
                 },
                 {
-                  "label": "FMCG Turnover",
-                  "value": "5,000",
+                  "label": "Retail revenue growth",
+                  "value": "8.1%",
+                  "unit": null,
+                  "period": "Q3 2025-2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Retail EBITDA",
+                  "value": "6,915",
+                  "unit": "Crores",
+                  "period": "Q3 2025-2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Retail EBITDA margin",
+                  "value": "8%",
+                  "unit": null,
+                  "period": "Q3 2025-2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Jio Platforms revenue",
+                  "value": "37,262",
+                  "unit": "Crores",
+                  "period": "Q3 2025-2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Jio Platforms EBITDA",
+                  "value": "19,303",
+                  "unit": "Crores",
+                  "period": "Q3 2025-2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Jio Platforms EBITDA margin",
+                  "value": "51.8%",
+                  "unit": null,
+                  "period": "Q3 2025-2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "JioStar operating revenue",
+                  "value": "6,896",
+                  "unit": "Crores",
+                  "period": "Q3 2025-2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "JioStar EBITDA",
+                  "value": "1,303",
+                  "unit": "Crores",
+                  "period": "Q3 2025-2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "O2C EBITDA",
+                  "value": "16,507",
+                  "unit": "Crores",
+                  "period": "Q3 2025-2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "O2C EBITDA growth",
+                  "value": "15%",
+                  "unit": null,
+                  "period": "Q3 2025-2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "E&P EBITDA",
+                  "value": "4,850",
                   "unit": "Crores",
                   "period": "Q3 2025-2026",
                   "kind": "reported"
@@ -497,10 +1045,60 @@
               ],
               "subsections": [
                 {
-                  "label": "Digital Services",
+                  "label": "Retail",
                   "points": [
-                    "16% growth in digital services revenue",
-                    "EBITDA margin at 56.2%"
+                    "Highest ever revenue at 97,600 Crores, up 8.1%.",
+                    "Factors impacting margin: festive offers, hyperlocal commerce investments, new labour code.",
+                    "Hyperlocal commerce growth: 1.6 million orders, 53% QoQ growth, 360% YoY growth.",
+                    "Exclusive partnership with Fabletics, American women's athleisure brand.",
+                    "Grocery big box key driver of growth, strong LFL growth.",
+                    "JioMart largest quick commerce footprint, 5,000+ pin codes, 1,000+ cities.",
+                    "Ajio digital fashion business, average value up 21% YoY.",
+                    "Shein app installs crossed 6.5 million, portfolio 50,000+ options.",
+                    "Jewels business, average bill values up 73%, best ever Dhanteras with 21% LFL growth."
+                  ]
+                },
+                {
+                  "label": "Jio Platforms",
+                  "points": [
+                    "515 million subscribers, 8.9 million net adds.",
+                    "5G user base 253 million+, 65% share of 5G subscribers in India.",
+                    "Revenues crossed 37,000 Crores, EBITDA margin 52%.",
+                    "5G deployment helping win more customers, 53% of network traffic on 5G.",
+                    "Partnerships like JioHotstar and Google Gemini Pro enhancing offerings.",
+                    "Enterprise side offering managed services beyond connectivity."
+                  ]
+                },
+                {
+                  "label": "JioStar",
+                  "points": [
+                    "Platform growth in entertainment and sports content.",
+                    "Bigg Boss franchise posted highest ever ad revenues, 40% growth in digital watch time.",
+                    "Women's World Cup live watch time 10x over previous, final match viewership on par with men's cricket.",
+                    "Kabaddi viewership doubled, second biggest sport after cricket.",
+                    "450 million average monthly active users, 13% growth over previous quarter.",
+                    "Record high monetization on digital entertainment."
+                  ]
+                },
+                {
+                  "label": "O2C - Refining & Marketing",
+                  "points": [
+                    "Fuel cracks up 60% to 100%, strong domestic market placement through Jio-bp.",
+                    "Diesel sales up 25%, gasoline MS sales up 21%.",
+                    "EBITDA 16,507 Crores, 15% growth.",
+                    "Challenges: higher feedstock costs, low petrochemical deltas, high freight rates.",
+                    "Crude throughput 20.6, maximizing throughput in strong market environment.",
+                    "Domestic market focus, innovative products, fleet and driver programs."
+                  ]
+                },
+                {
+                  "label": "O2C - Petrochemicals",
+                  "points": [
+                    "Ethane prices up 21%, naphtha prices down 14%.",
+                    "Ethylene capacity increase, operating rates down to 80%.",
+                    "Domestic market focus, inventory management, sales discipline.",
+                    "Industry restructuring in Far East Asia, capacity rationalization expected.",
+                    "Domestic demand: polyethylene and polypropylene growth, PVC demand reduction due to prolonged monsoon."
                   ]
                 }
               ]
@@ -510,41 +1108,87 @@
               "title": "Product & Technology",
               "key_figures": [
                 {
-                  "label": "5G Subscribers",
+                  "label": "5G subscribers",
                   "value": "253 million",
-                  "unit": "subscribers",
+                  "unit": null,
+                  "period": "Q3 2025-2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "5G network traffic",
+                  "value": "53%",
+                  "unit": null,
                   "period": "Q3 2025-2026",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Proprietary Technologies",
+                  "label": "Jio Platforms Technology",
                   "points": [
-                    "Developed in-house technologies for 4G and 5G",
-                    "Fixed wireless solutions technology deployed"
+                    "Proprietary technologies developed for Indian customers, suitable for global scale.",
+                    "4G and 5G core run on in-house stack, world's largest fixed wireless operator.",
+                    "Home OS and tele OS scaled to over 25 million homes.",
+                    "Innovations in devices and OS, applications developed and launched.",
+                    "99% population reach, million plus touch points for scaling technologies."
                   ]
                 }
               ]
             },
             {
-              "id": "MKT",
-              "title": "Market & Customer Strategy",
+              "id": "MFG",
+              "title": "Manufacturing & Capacity",
               "key_figures": [
                 {
-                  "label": "Market Share of 5G Subscribers",
-                  "value": "65",
-                  "unit": "%",
-                  "period": "Q3 2025-2026",
+                  "label": "Solar manufacturing capacity",
+                  "value": "10-gigawatt peak",
+                  "unit": "annual",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Battery manufacturing capacity",
+                  "value": "40-gigawatt hour",
+                  "unit": null,
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Kutch solar power generation",
+                  "value": "125 to 150-gigawatt peak",
+                  "unit": null,
+                  "period": null,
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Customer Base Growth",
+                  "label": "New Energy Manufacturing",
                   "points": [
-                    "515 million total customers",
-                    "8.9 million net adds during the quarter"
+                    "Fully integrated 10-gigawatt peak annual solar manufacturing gigafactory on track.",
+                    "Solar module manufacturing expanded, high yield of 94%-95%.",
+                    "Solar cell manufacturing based on heterojunction technology, ramping up to full capacity.",
+                    "Pilot facility for ingot and wafer, expanding to giga scale.",
+                    "Polysilicon and glass facilities world-class, commissioning during current year.",
+                    "Battery manufacturing progressing, 40-gigawatt hour capacity, expanding to 100-gigawatt hour.",
+                    "Kutch site development for solar and battery installation, significant progress."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "FMCG Strategic Moves",
+                  "points": [
+                    "RCPL became direct subsidiary of RIL from 1st December 2025.",
+                    "Acquisition of Udhaiyam, expanding pan-India staples business.",
+                    "Acquisition of global brands like Brylcreem, Toni and Guy, Badedas, and Matey.",
+                    "Entry into pet categories, high-quality, science-backed products.",
+                    "Relaunch of SIL, entry into noodle segment."
                   ]
                 }
               ]
@@ -555,9 +1199,21 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "S&P Rating Change",
+                  "label": "Oil & Gas Exploration & Production",
                   "points": [
-                    "S&P changed rating from BBB Plus to A Minus"
+                    "Natural decline in KG D6 fields, efforts to slow decline.",
+                    "LNG prices moved from $11 to $9.5, impacting realizations.",
+                    "CBM productivity improved, better performance in recent campaign.",
+                    "Gas prices stable, Indian demand robust, PNGRB uniform tariff policy positive."
+                  ]
+                },
+                {
+                  "label": "O2C - Refining & Marketing",
+                  "points": [
+                    "Higher feedstock costs due to increased OSPs and freight rates.",
+                    "Sanctions on vessels reduced VLCC availability, increasing freight costs.",
+                    "Oversupply in market, OPEC unwound 2 million barrels of cuts.",
+                    "China's stock build-up supported prices, refinery operating rates high."
                   ]
                 }
               ]
@@ -568,17 +1224,96 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Future Growth Expectations",
+                  "label": "New Energy Outlook",
                   "points": [
-                    "Expect continued earnings growth outpacing capex"
+                    "Progress on integrated solar and battery manufacturing, commissioning during current year.",
+                    "Kutch solar power generation to deliver significant capacity annually.",
+                    "Expansion plans for solar and battery manufacturing to 20-gigawatt peak and 100-gigawatt hour respectively."
                   ]
                 }
               ]
             }
           ],
-          "guidance_ledger": [],
-          "risk_register": [],
-          "key_takeaways": [],
+          "guidance_ledger": [
+            {
+              "metric": "Integrated solar chain",
+              "horizon": null,
+              "statement": "Progress towards achieving 10-gigawatts of integrated solar chain.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "reiterated"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "Natural decline in KG D6 fields",
+              "status": "stable",
+              "note": "Efforts to slow decline, productivity improvements in CBM."
+            },
+            {
+              "risk": "Higher feedstock costs",
+              "status": "new",
+              "note": "Increased OSPs and freight rates due to sanctions."
+            },
+            {
+              "risk": "Oversupply in oil market",
+              "status": "new",
+              "note": "OPEC unwound 2 million barrels of cuts, China's stock build-up supported prices."
+            },
+            {
+              "risk": "LNG price movement",
+              "status": "no_mention",
+              "note": "Prices have moved from $11 to $9.5, impacting overall realizations."
+            },
+            {
+              "risk": "Geopolitical environment and tariffs",
+              "status": "no_mention",
+              "note": "Challenges to supply chain security and sufficiency."
+            }
+          ],
+          "themes": [
+            {
+              "label": "Diversified growth",
+              "direction": "positive",
+              "note": "Strong growth across diversified businesses, despite global uncertainties.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "New energy initiatives",
+              "direction": "positive",
+              "note": "Significant progress in integrated solar and battery manufacturing.",
+              "section_ref": "MFG"
+            },
+            {
+              "label": "5G expansion",
+              "direction": "positive",
+              "note": "Continued growth in 5G subscribers and network traffic.",
+              "section_ref": "TECH"
+            },
+            {
+              "label": "Retail expansion",
+              "direction": "positive",
+              "note": "Retail business shows strong revenue growth and strategic partnerships.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Geopolitical challenges",
+              "direction": "mixed",
+              "note": "Impact on feedstock costs and freight rates due to sanctions and oversupply.",
+              "section_ref": "RISK"
+            }
+          ],
+          "key_takeaways": [
+            "Customer addition strong at about 9 million, taking the total to about 515 million customers.",
+            "Retail revenue growth has been about 8%, and overall EBITDA growth has been 1.3%.",
+            "Quick commerce is progressing with a run rate of 1.6 million orders, on track to be the second largest QC player.",
+            "FMCG turnover more than 5,000 Crores, 60% up on a year-on-year basis.",
+            "Energy business side, strong growth, 15% and transportation fuel deltas strong, 60% to 100% growth year on year.",
+            "Jio-bp continues to do well with 24% growth in volumes for both gas oil and gasoline.",
+            "Revenue is up 10%, EBITDA up about 6%, and overall, PAT at 22,290 crores, which was also up about 1.6%.",
+            "Digital service up 16%.",
+            "Consol profit was muted because of higher finance and depreciation, Jio depreciation with capitalization of 5G assets was the primary driver for higher depreciation."
+          ],
           "pressing_questions": []
         }
       ]
