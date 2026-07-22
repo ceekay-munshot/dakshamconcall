@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Local env / secrets (never commit real tokens)
+.env
+.env.*
+.dev.vars
+
+# Screener test scraping output (used by later prompts)
+screener-test/output/
+
+# Build / tooling caches
+.wrangler/
+dist/
+.DS_Store
+*.log
