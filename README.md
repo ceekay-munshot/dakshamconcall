@@ -8,11 +8,13 @@ colorful PDF. Once analyzed, a company stays **tracked** and auto-refreshes ever
 quarter, so the board grows into a live tracker across companies and sectors
 ("guidance vs delivery", sector themes).
 
-> **Status: Step 1 — Foundation.** This repo currently ships the full project
-> scaffold, the finished visual shell, and a **fully working live company
-> search**. The analysis engine (Screener scraping + AI classification) is
-> stubbed with clear `TODO`s and lands in later steps. See
-> [Build roadmap](#build-roadmap).
+> **Status: Step 2 — Analysis engine live.** On top of the Step 1 foundation
+> (scaffold, visual shell, live search), Analyze now works **end-to-end**: a
+> GitHub Actions pipeline logs into Screener, fetches a company's latest concall
+> AI summary (transcript-PDF fallback), classifies it with OpenAI into the fixed
+> 11-section tear sheet + guidance/risk ledgers, commits the JSON, and the
+> dashboard renders it live. See [Build roadmap](#build-roadmap) and
+> [The analysis pipeline](#the-analysis-pipeline).
 
 ---
 
@@ -154,15 +156,20 @@ Variables and Secrets**) or via `wrangler secret put <NAME>`:
 | `GITHUB_BRANCH` | Analyze | Branch to read/commit data on (e.g. `main`). |
 | `ANALYZE_PASSCODE` | Analyze | Shared passcode that gates the Analyze action. |
 
-### GitHub Actions secrets (used by later steps — set them now if you like)
+### GitHub Actions secrets (used by the analyze pipeline)
 
 Set in **Repo → Settings → Secrets and variables → Actions**:
 
-| Secret | Used by | Description |
+| Secret | Required | Description |
 | --- | --- | --- |
-| `SCREENER_EMAIL` | Step 2 | Screener.in login email. |
-| `SCREENER_PASSWORD` | Step 2 | Screener.in login password. |
-| *(LLM API key)* | Step 3 | Added later for the 11-section classifier. |
+| `SCREENER_EMAIL` | yes | Screener.in login email. |
+| `SCREENER_PASSWORD` | yes | Screener.in login password. |
+| `OPENAI_API_KEY` | yes | Powers the 11-section classifier. |
+| `FIRECRAWL_API_KEY` | recommended | Fallback fetch for pages/PDFs that block direct access (exchange PDFs). |
+| `OPENAI_MODEL` | optional | The single pinned model. Defaults to `gpt-4o-mini`; swappable. |
+
+The pipeline commits results back with the built-in Actions token
+(`permissions: contents: write`) — no extra token needed inside the workflow.
 
 ---
 
@@ -212,35 +219,52 @@ dashboard updates itself.
 
 ---
 
+## The analysis pipeline
+
+Runs in GitHub Actions (`.github/workflows/analyze.yml`) and commits JSON back
+to the branch Cloudflare deploys. The **AI organizes, it does not opine** — we
+reformat Screener's trusted summary into our schema and keep Screener's own Key
+Takeaways verbatim. One pinned model, temperature 0, a fixed strict JSON schema:
+same input → same structure every quarter.
+
+| File (`screener-test/`) | Role |
+| --- | --- |
+| `analyze-company.mjs` | Orchestrator: take a `TICKER` (or refresh all tracked), run the flow, update the JSON stores, commit with a conflict-proof push loop. |
+| `scrape-screener.mjs` | Screener login + fetch the latest concall AI summary (transcript-PDF fallback via authenticated fetch → Firecrawl). Defensive: saves screenshots + DOM samples to artifacts on trouble. |
+| `classify.mjs` | OpenAI Structured-Outputs classifier into the 11 sections + the deterministic guidance-vs-delivery diff. |
+| `llm.mjs` | Thin OpenAI (`json_schema`, temp 0, pinned model) + Firecrawl clients. |
+
+**Run it:** Actions tab → *Analyze Concall* → Run workflow → enter a ticker
+(e.g. `RELIANCE`). Or click **Analyze** in the dashboard. Leave the ticker blank
+(or wait for the daily schedule) to refresh stale tracked companies.
+
 ## Build roadmap
 
-- **Step 1 — Foundation (this):** scaffold + working live search + the visual
-  shell (KPIs, live feed, tear-sheet placeholder, PDF export, empty data files).
-- **Step 2 — Analyze pipeline (`analyze.yml`):** Screener.in login → pull the
-  company's latest concall **AI summary** (fast, trusted), transcript-PDF
-  fallback; commit the raw result + update `jobs.json`.
-- **Step 3 — AI classification:** reorganize the summary into the **fixed
-  11-section** tear sheet (single pinned model, temperature 0, fixed schema for
-  quarter-to-quarter consistency); commit `tearsheets.json`.
-- **Step 4 — Guidance-vs-delivery ledger** + a risk register across quarters.
+- ✅ **Step 1 — Foundation:** scaffold + working live search + the visual shell.
+- ✅ **Step 2 — Analyze pipeline (`analyze.yml`):** Screener login → latest
+  concall AI summary (transcript-PDF fallback); commit + `jobs.json` states.
+- ✅ **Step 3 — AI classification:** organize the summary into the fixed
+  11-section tear sheet (single pinned model, temperature 0, strict schema).
+- ✅ **Step 4 — Guidance-vs-delivery ledger** + a risk register across quarters
+  (deltas computed deterministically from the prior quarter).
 - **Step 5 — Sector rollups** + a between-quarter "watch" view.
-- **Step 6 — Rich colorful PDF report.**
+- **Step 6 — Rich colorful PDF report** (a basic export works today).
 
 ### The fixed 11-section framework
 
 Every tear sheet renders the same sections, in the same order, quarter to
 quarter:
 
-1. Financials
+1. Financial Performance
 2. Order Book & Demand
-3. Segments
+3. Segment & Product Performance
 4. Product & Technology
 5. Manufacturing & Capacity
 6. Geography & Distribution
 7. Supply Chain & Operations
-8. Market & Customer
-9. Strategy & M&A
-10. Risks
+8. Market & Customer Strategy
+9. Strategic Initiatives & M&A
+10. Risks & External Factors
 11. Guidance & Outlook
 
 Plus **Key Takeaways**, **Pressing Questions**, and a **Guidance vs Delivery**
