@@ -1018,6 +1018,12 @@ function sectionsHtml(sections) {
   return head + `<div class="ts-sections">${list.map(sectionCardHtml).join("")}</div>`;
 }
 
+/** Treat empty / literal "null"/"undefined" strings as absent (model artifacts). */
+function cleanField(v) {
+  const s = (v ?? "").toString().trim();
+  return s && s.toLowerCase() !== "null" && s.toLowerCase() !== "undefined" ? s : "";
+}
+
 function sectionCardHtml(s) {
   const meta = SECTION_BY_ID[s.id] || { title: s.title, icon: "dot", grad: SECTION_GRADS[0] };
   const figs = (s.key_figures || []).filter(Boolean);
@@ -1031,9 +1037,9 @@ function sectionCardHtml(s) {
             (f) => `<tr>
             <td class="kf-label">${escapeHtml(f.label)}</td>
             <td class="kf-value">${escapeHtml(f.value)}${
-              f.unit ? ` <span class="kf-unit">${escapeHtml(f.unit)}</span>` : ""
+              cleanField(f.unit) ? ` <span class="kf-unit">${escapeHtml(cleanField(f.unit))}</span>` : ""
             }</td>
-            <td class="kf-period">${f.period ? escapeHtml(f.period) : "—"}</td>
+            <td class="kf-period">${cleanField(f.period) ? escapeHtml(cleanField(f.period)) : "—"}</td>
             <td>${kindChip(f.kind)}</td>
           </tr>`
           )

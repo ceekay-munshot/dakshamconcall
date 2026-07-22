@@ -269,7 +269,7 @@ function parseSummaryText(fullText) {
   for (const line of lines) {
     if (!line) continue;
     const isHeading = /^[A-Z][A-Za-z0-9 &/'-]{2,60}:?$/.test(line) && line.split(" ").length <= 8 && !/[.!?]$/.test(line);
-    if (/key takeaways/i.test(line)) {
+    if (/^\s*(key takeaways|key highlights|takeaways|highlights)\s*:?\s*$/i.test(line) || /key takeaways/i.test(line)) {
       if (cur.text.trim()) sections.push(cur);
       cur = { heading: "Key Takeaways", text: "" };
       mode = "takeaways";
@@ -551,6 +551,14 @@ export async function scrapeCompany(page, context, ticker, opts = {}) {
     if (!summary) {
       await saveShot(page, `no-summary-${ticker}.png`);
       return { ticker, error: "Found concalls but could not extract an AI summary or transcript." };
+    }
+
+    // Diagnostic: how much did we extract, and what does the AI summary look like?
+    log(
+      `extracted ${summary.source}: ${summary.raw_text.length} chars, ${summary.key_takeaways.length} takeaways, ${summary.pressing_questions.length} questions`
+    );
+    if (summary.source === "ai_summary") {
+      log("AI SUMMARY TEXT (first 1500 chars):\n" + summary.raw_text.slice(0, 1500));
     }
 
     // Best-effort history (older quarters) for guidance-vs-delivery comparison.
