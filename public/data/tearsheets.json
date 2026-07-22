@@ -1,3 +1,587 @@
 {
-  "companies": {}
+  "companies": {
+    "RELIANCE": {
+      "company": "Reliance Industries Ltd",
+      "ticker": "RELIANCE",
+      "industry": null,
+      "country": "India",
+      "checked_at": "2026-07-22T14:46:25.936Z",
+      "quarters": [
+        {
+          "company": "Reliance Industries Ltd",
+          "ticker": "RELIANCE",
+          "industry": null,
+          "country": "India",
+          "concall_date": "2026-07-01",
+          "source": "ai_summary",
+          "source_url": "https://www.screener.in/company/RELIANCE/consolidated/",
+          "model": "gpt-4o-mini",
+          "generated_at": "2026-07-22T14:46:25.936Z",
+          "summary": "Management framed the quarter as 'extraordinary' due to macro volatility and positioned RIL’s response as 'agility' and 'incredible.'",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "Revenue",
+                  "value": "+25%",
+                  "unit": "null",
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA",
+                  "value": "Rs. 54,000 Cr",
+                  "unit": "INR",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT",
+                  "value": "~Rs. 23,200 Cr",
+                  "unit": "INR",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net debt",
+                  "value": "~Rs. 1.23 lakh Cr",
+                  "unit": "INR",
+                  "period": "Q1",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Q1 capex",
+                  "value": "~Rs. 39,000 Cr",
+                  "unit": "INR",
+                  "period": "Q1",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Balance sheet/cash flow",
+                  "points": [
+                    "Capex funded by cash profit."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ORD",
+              "title": "Order Book & Demand",
+              "key_figures": [
+                {
+                  "label": "O2C revenue",
+                  "value": "+30%",
+                  "unit": "null",
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA",
+                  "value": "~Rs. 17,000 Cr",
+                  "unit": "INR",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Demand",
+                  "points": [
+                    "Asia-Pacific and Africa curtailed buying due to high prices; India demand stayed 'reasonably strong.'"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "Jio Platforms Revenue",
+                  "value": "Rs. 39,173 Cr",
+                  "unit": "INR",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Jio Platforms EBITDA",
+                  "value": "Rs. 20,865 Cr",
+                  "unit": "INR",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Reliance Retail Revenue",
+                  "value": "~Rs. 90,000 Cr",
+                  "unit": "INR",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "RCPL Revenue",
+                  "value": "Rs. 8,600 Cr",
+                  "unit": "INR",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Jio Platforms",
+                  "points": [
+                    "Subscribers 533m; net add 35.2m in 12 months. 5G users 285m (add 73m)."
+                  ]
+                },
+                {
+                  "label": "Reliance Retail",
+                  "points": [
+                    "Underlying growth +11.6%; reported +7.4% due to RCPL demerger base effect."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "TECH",
+              "title": "Product & Technology",
+              "key_figures": [
+                {
+                  "label": "FWA market share",
+                  "value": "78%",
+                  "unit": "null",
+                  "period": "null",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Digital services and enterprise strategy",
+                  "points": [
+                    "Digital services revenue growth ~20% YoY."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MFG",
+              "title": "Manufacturing & Capacity",
+              "key_figures": [
+                {
+                  "label": "LPG production increase",
+                  "value": "almost fourfold",
+                  "unit": "null",
+                  "period": "null",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Manufacturing",
+                  "points": [
+                    "Commissioned one of the largest beverage plants in Asia."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Headwinds",
+                  "points": [
+                    "SAED drag and domestic under-recoveries."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Forward view",
+                  "points": [
+                    "Management tone constructive but contingent."
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [],
+          "risk_register": [
+            {
+              "risk": "SAED drag and domestic under-recoveries",
+              "status": "new",
+              "note": null
+            }
+          ],
+          "key_takeaways": [],
+          "pressing_questions": []
+        },
+        {
+          "company": "Reliance Industries Ltd",
+          "ticker": "RELIANCE",
+          "industry": null,
+          "country": "India",
+          "concall_date": "2026-04-01",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=971d8c86-397a-4780-b843-5a84d3006d0b.pdf",
+          "model": "gpt-4o-mini",
+          "generated_at": "2026-07-22T14:46:16.885Z",
+          "summary": "The company reported strong growth across its segments, with a focus on digital services and retail, despite facing challenges in the oil and gas sector due to supply shocks and rupee depreciation.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "Revenue Growth",
+                  "value": "10",
+                  "unit": "%",
+                  "period": "FY2025-26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA Growth",
+                  "value": "13.5",
+                  "unit": "%",
+                  "period": "FY2025-26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT Growth",
+                  "value": "24",
+                  "unit": "%",
+                  "period": "FY2025-26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "JPL PAT Increase",
+                  "value": "15",
+                  "unit": "%",
+                  "period": "year-on-year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "RRVL PAT Increase",
+                  "value": "12",
+                  "unit": "%",
+                  "period": "year-on-year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "RIL PAT Increase",
+                  "value": "24",
+                  "unit": "%",
+                  "period": "year-on-year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Digital Services Growth",
+                  "value": "18",
+                  "unit": "%",
+                  "period": "year-on-year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Retail EBITDA Growth",
+                  "value": "8",
+                  "unit": "%",
+                  "period": "year-on-year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "O2C Growth",
+                  "value": "10",
+                  "unit": "%",
+                  "period": "year-on-year",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Quarterly Performance",
+                  "points": [
+                    "Overall EBITDA growth is flat, with consumer businesses up 14%.",
+                    "Oil-to-Chemicals down 4% due to lower throughput and crude availability."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "Jio Platforms Revenue",
+                  "value": "1,46,085",
+                  "unit": "Crores",
+                  "period": "FY2025-26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Jio Platforms EBITDA",
+                  "value": "76,255",
+                  "unit": "Crores",
+                  "period": "FY2025-26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Retail Revenue",
+                  "value": "98,000",
+                  "unit": "Crores",
+                  "period": "Q4",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Retail EBITDA",
+                  "value": "6,900",
+                  "unit": "Crores",
+                  "period": "Q4",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Retail PAT",
+                  "value": "3,500",
+                  "unit": "Crores",
+                  "period": "Q4",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Jio Platforms",
+                  "points": [
+                    "524 million subscribers, net add of 36.3 million during the year.",
+                    "268 million 5G user base, addition of 77 million during the year."
+                  ]
+                },
+                {
+                  "label": "Retail Performance",
+                  "points": [
+                    "11% growth year-on-year for Q4, 12% growth for the full year.",
+                    "300% growth in hyperlocal commerce on a year-on-year basis."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Concerns",
+                  "points": [
+                    "Supply shock impacting industry and consumer confidence.",
+                    "Rupee depreciation of 11% for the year and 4% in March."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Future Focus Areas",
+                  "points": [
+                    "Continued growth in digital services and retail.",
+                    "Expansion of 5G services and customer engagement."
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [],
+          "risk_register": [],
+          "key_takeaways": [],
+          "pressing_questions": []
+        },
+        {
+          "company": "Reliance Industries Ltd",
+          "ticker": "RELIANCE",
+          "industry": null,
+          "country": "India",
+          "concall_date": "2026-01-01",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=26290395-526a-441f-a347-c8ac12e4adf3.pdf",
+          "model": "gpt-4o-mini",
+          "generated_at": "2026-07-22T14:46:08.878Z",
+          "summary": "Reliance Industries Ltd reported strong growth across its consumer businesses, with significant customer additions and revenue increases in various segments.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "PAT",
+                  "value": "22,290",
+                  "unit": "Crores",
+                  "period": "Q3 2025-2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue",
+                  "value": "10",
+                  "unit": "%",
+                  "period": "Q3 2025-2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA",
+                  "value": "6",
+                  "unit": "%",
+                  "period": "Q3 2025-2026",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Nine Months Performance",
+                  "points": [
+                    "9% growth in revenues",
+                    "18% increase in EBITDA",
+                    "28% increase in PAT"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ORD",
+              "title": "Order Book & Demand",
+              "key_figures": [
+                {
+                  "label": "New Orders Run Rate",
+                  "value": "1.6 million",
+                  "unit": "orders",
+                  "period": "December 2025",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Retail Business Growth",
+                  "points": [
+                    "Highest ever revenue at 97,600 Crores",
+                    "Revenue up 8.1%"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "Retail Revenue Growth",
+                  "value": "8",
+                  "unit": "%",
+                  "period": "Q3 2025-2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "FMCG Turnover",
+                  "value": "5,000",
+                  "unit": "Crores",
+                  "period": "Q3 2025-2026",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Digital Services",
+                  "points": [
+                    "16% growth in digital services revenue",
+                    "EBITDA margin at 56.2%"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "TECH",
+              "title": "Product & Technology",
+              "key_figures": [
+                {
+                  "label": "5G Subscribers",
+                  "value": "253 million",
+                  "unit": "subscribers",
+                  "period": "Q3 2025-2026",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Proprietary Technologies",
+                  "points": [
+                    "Developed in-house technologies for 4G and 5G",
+                    "Fixed wireless solutions technology deployed"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [
+                {
+                  "label": "Market Share of 5G Subscribers",
+                  "value": "65",
+                  "unit": "%",
+                  "period": "Q3 2025-2026",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Customer Base Growth",
+                  "points": [
+                    "515 million total customers",
+                    "8.9 million net adds during the quarter"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "S&P Rating Change",
+                  "points": [
+                    "S&P changed rating from BBB Plus to A Minus"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Future Growth Expectations",
+                  "points": [
+                    "Expect continued earnings growth outpacing capex"
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [],
+          "risk_register": [],
+          "key_takeaways": [],
+          "pressing_questions": []
+        }
+      ]
+    }
+  }
 }
