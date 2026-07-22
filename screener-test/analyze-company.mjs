@@ -224,15 +224,17 @@ async function analyzeTicker(page, context, ticker, baseStore) {
       .sort((a, b) => String(b.concall_date).localeCompare(String(a.concall_date)))[0] || null;
   let priorGuidance = seed?.guidance_ledger || null;
   let priorRisks = seed?.risk_register || null;
+  let priorThemes = seed?.themes || null; // stable theme labels across quarters
 
   const classifiedNewestFirst = [];
   for (const q of chronological) {
     log(`classifying ${T} @ ${q.concall_date || "?"} (${q.source})`);
-    const c = await classifyQuarter(q, priorGuidance);
+    const c = await classifyQuarter(q, priorGuidance, priorThemes);
     c.guidance_ledger = diffGuidance(c.guidance_ledger, priorGuidance);
     c.risk_register = diffRisks(c.risk_register, priorRisks);
     priorGuidance = c.guidance_ledger;
     priorRisks = c.risk_register;
+    if (Array.isArray(c.themes) && c.themes.length) priorThemes = c.themes;
 
     classifiedNewestFirst.unshift({
       company: scrape.company,
@@ -248,6 +250,7 @@ async function analyzeTicker(page, context, ticker, baseStore) {
       sections: c.sections,
       guidance_ledger: c.guidance_ledger,
       risk_register: c.risk_register,
+      themes: Array.isArray(c.themes) ? c.themes : [],
       key_takeaways: c.key_takeaways,
       pressing_questions: c.pressing_questions,
     });
