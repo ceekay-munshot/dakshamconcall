@@ -35,10 +35,10 @@ const SCHEMA = {
   additionalProperties: false,
   required: ["summary", "sections", "guidance_ledger", "risk_register", "key_takeaways", "pressing_questions", "themes"],
   properties: {
-    summary: { type: "string", description: "One-sentence forward outlook, organized from the source (no new opinion)." },
+    summary: { type: "string", description: "One or two sentences capturing the forward outlook, organized from the source (no new opinion)." },
     sections: {
       type: "array",
-      description: "Include ONLY sections that have content. Reuse the source's labels where possible.",
+      description: "Include ONLY sections that have content, but move EVERY disclosure into its best-fit section and PRESERVE all detail. Reuse the source's labels where possible.",
       items: {
         type: "object",
         additionalProperties: false,
@@ -48,6 +48,8 @@ const SCHEMA = {
           title: { type: "string" },
           key_figures: {
             type: "array",
+            description:
+              "EVERY quantitative disclosure in this section. If the summary states a number, it MUST appear here — never summarize numbers away.",
             items: {
               type: "object",
               additionalProperties: false,
@@ -63,13 +65,15 @@ const SCHEMA = {
           },
           subsections: {
             type: "array",
+            description:
+              "The section's thematic detail as full points; reuse the source's own headings as labels. Do not boil multi-point detail down to a single line.",
             items: {
               type: "object",
               additionalProperties: false,
               required: ["label", "points"],
               properties: {
                 label: { type: "string" },
-                points: { type: "array", items: { type: "string" } },
+                points: { type: "array", items: { type: "string" }, description: "Full detail points — keep every specific." },
               },
             },
           },
@@ -78,7 +82,7 @@ const SCHEMA = {
     },
     guidance_ledger: {
       type: "array",
-      description: "Every forward-looking company target. Status is finalized in code — set your best guess.",
+      description: "EVERY forward-looking company target in the call — include all of them, do not cap or drop any. Status is finalized in code — set your best guess.",
       items: {
         type: "object",
         additionalProperties: false,
@@ -134,12 +138,14 @@ const SCHEMA = {
 
 const SYSTEM_PROMPT = [
   "You are a data organizer for an equity-research tracker.",
-  "You ORGANIZE the provided earnings-call summary into a fixed schema.",
+  "You REORGANIZE the provided earnings-call summary into a fixed schema and PRESERVE its detail — you do NOT summarize the summary.",
+  "Move EVERY disclosure in the source into its single best-fit section. Do not drop specifics, and do not paraphrase away detail.",
   "You do NOT add opinions or analysis of your own.",
-  "Preserve the source's Key Takeaways verbatim.",
-  "Classify each disclosure into exactly one best-fit section.",
-  "Keep numbers exact, with unit and period.",
+  "key_figures must carry EVERY quantitative disclosure in that section — every number the summary states, with its exact value, unit, period and kind. If the summary states a number, it MUST appear.",
+  "subsections must carry the real thematic detail as full points (reuse the source's own headings as labels where possible), not one-line boil-downs.",
+  "Reproduce the source's Key Takeaways, and any highlighted/unanswered questions, VERBATIM — do not reword, shorten or drop them. If the summary text contains a Key Takeaways / Highlights block, copy those bullets exactly.",
   "Also surface 3-7 short, reusable THEMES running through the call; reuse a prior quarter's theme label whenever the same topic recurs (labels are cross-quarter join keys).",
+  "Compactness is the DISPLAY's job, never yours — never omit content to save space.",
   "Output only the schema.",
 ].join(" ");
 
@@ -176,16 +182,20 @@ export async function classifyQuarter(scrape, priorGuidance = null, priorThemes 
     `CONCALL DATE: ${scrape.concall_date || "unknown"}`,
     `SOURCE: ${scrape.source}`,
     "",
-    "THE 11 SECTIONS (classify each disclosure into exactly one best-fit id):",
+    "THE 11 SECTIONS (move each disclosure into exactly one best-fit id; preserve ALL detail):",
     sectionMenu,
     "",
-    "SCREENER KEY TAKEAWAYS (copy these into key_takeaways VERBATIM — do not reword):",
-    takeaways.length ? takeaways.map((t) => `- ${t}`).join("\n") : "(none provided)",
+    takeaways.length
+      ? "SCREENER KEY TAKEAWAYS (copy these into key_takeaways VERBATIM — do not reword):\n" +
+        takeaways.map((t) => `- ${t}`).join("\n")
+      : "SCREENER KEY TAKEAWAYS: not separately extracted — if the CONCALL SUMMARY TEXT below contains a 'Key Takeaways' / 'Highlights' block, reproduce those bullets VERBATIM into key_takeaways.",
     "",
-    "PRESSING / HIGHLIGHTED QUESTIONS (copy into pressing_questions):",
-    questions.length ? questions.map((q) => `- ${q}`).join("\n") : "(none provided)",
+    questions.length
+      ? "PRESSING / HIGHLIGHTED QUESTIONS (copy into pressing_questions):\n" +
+        questions.map((q) => `- ${q}`).join("\n")
+      : "PRESSING / HIGHLIGHTED QUESTIONS: if the summary highlights unanswered/pressing analyst questions, reproduce them into pressing_questions.",
     "",
-    "CONCALL SUMMARY TEXT (organize this into the sections; keep the source's headings/labels where possible):",
+    "CONCALL SUMMARY TEXT — REORGANIZE this into the sections and PRESERVE every disclosure (every number into key_figures with unit+period; every thematic detail into subsections). Keep the source's headings/labels where possible. Do NOT summarize it further:",
     scrape.raw_text || "(none)",
     "",
     "THEMES: also surface 3-7 short, reusable themes running through this call — each with a direction (positive/negative/neutral/mixed), a one-line note faithful to the source, and the section it ties to. Keep labels short and reusable so they track across quarters.",
@@ -226,6 +236,16 @@ export async function classifyQuarter(scrape, priorGuidance = null, priorThemes 
       f.period = clean(f.period);
     }
   }
+
+  // Diagnostic: how rich did this come out? Empty takeaways/thin output show here.
+  const kfCount = (out.sections || []).reduce((n, s) => n + (s.key_figures?.length || 0), 0);
+  console.log(
+    `[classify] ${scrape.ticker} @ ${scrape.concall_date || "?"} (${MODEL}): ` +
+      `sections=${out.sections.length} keyFigures=${kfCount} ` +
+      `guidance=${out.guidance_ledger?.length || 0} risks=${out.risk_register?.length || 0} ` +
+      `takeaways=${out.key_takeaways?.length || 0} questions=${out.pressing_questions?.length || 0} ` +
+      `themes=${out.themes?.length || 0}`
+  );
 
   out.model = MODEL;
   return out;

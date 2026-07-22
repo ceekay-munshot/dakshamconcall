@@ -166,7 +166,7 @@ Set in **Repo → Settings → Secrets and variables → Actions**:
 | `SCREENER_PASSWORD` | yes | Screener.in login password. |
 | `OPENAI_API_KEY` | yes | Powers the 11-section classifier. |
 | `FIRECRAWL_API_KEY` | recommended | Fallback fetch for pages/PDFs that block direct access (exchange PDFs). |
-| `OPENAI_MODEL` | optional | The single pinned model. Defaults to `gpt-4o-mini`; swappable. |
+| `OPENAI_MODEL` | optional | The single pinned model. Defaults to `gpt-4o`; swappable (temperature 0). |
 
 The pipeline commits results back with the built-in Actions token
 (`permissions: contents: write`) — no extra token needed inside the workflow.

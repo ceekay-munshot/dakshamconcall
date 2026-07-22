@@ -339,7 +339,11 @@ async function handleAnalyze(request, env) {
     );
 
     // 4) Dispatch the workflow (stub in Step 1, real work later).
-    await ghDispatchWorkflow(env, owner, repo, branch, { ticker });
+    // Pass the search-API industry as a backfill (the scraper value is primary).
+    await ghDispatchWorkflow(env, owner, repo, branch, {
+      ticker,
+      industry: industry || "",
+    });
 
     return json({
       ok: true,
