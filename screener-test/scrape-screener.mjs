@@ -302,6 +302,46 @@ function parseSummaryText(fullText) {
 async function extractAiSummary(page, context, entry, companyUrl) {
   const cat = categorize(entry.links);
 
+  // Strategy A0: Screener's AI concall summary opens from a BUTTON (no href).
+  // Click it to reveal the content, then read the modal / expanded block.
+  if (cat.summary && cat.summary.tag === "button") {
+    try {
+      const btn = page
+        .locator('button:has-text("AI Summary"), button:has-text("Summary")')
+        .first();
+      if (await btn.count().catch(() => 0)) {
+        await btn.scrollIntoViewIfNeeded().catch(() => {});
+        await btn.click({ timeout: 8000 }).catch(() => {});
+        await page.waitForTimeout(2200);
+        log("clicked AI Summary button");
+      }
+    } catch (e) {
+      warn("AI Summary click failed", e.message);
+    }
+    // If a modal/dialog opened, read it directly.
+    try {
+      const modalText = await page.evaluate(() => {
+        const nodes = [
+          ...document.querySelectorAll(
+            '[role="dialog"], dialog[open], .modal, .modal-content, .popup, .drawer, .ReactModal__Content'
+          ),
+        ];
+        const best = nodes
+          .map((n) => (n.innerText || "").trim())
+          .filter((t) => t.length > 300 && t.length < 40000)
+          .sort((a, b) => b.length - a.length)[0];
+        return best || null;
+      });
+      if (modalText && /key takeaways|guidance|revenue|margin|ebitda/i.test(modalText)) {
+        const parsed = parseSummaryText(modalText);
+        log("AI summary via modal");
+        return finishSummary(modalText, parsed, companyUrl);
+      }
+    } catch (e) {
+      warn("modal summary read failed", e.message);
+    }
+  }
+
   // Strategy A: a Screener-hosted "summary"/"notes" link -> open + read it.
   const hosted = [cat.summary, cat.notes].find(
     (l) => l && (l.href.startsWith("/") || l.href.includes("screener.in"))
@@ -496,13 +536,15 @@ export async function scrapeCompany(page, context, ticker, opts = {}) {
     const { url, company } = await openCompany(page, context, ticker);
     const { entries } = await findConcalls(page, ticker);
 
-    if (!entries.length) {
+    // Keep only rows with a real "Mon YYYY" date — drops the "Add Missing"
+    // button row and any header noise. Screener lists concalls newest-first.
+    const dated = entries.filter((e) => e.date);
+    if (!dated.length) {
       await saveShot(page, `no-concalls-${ticker}.png`);
-      return { ticker, error: "No concall rows found on the company page." };
+      return { ticker, error: "No dated concall rows found on the company page." };
     }
 
-    // Newest first is how Screener lists them; take the latest with links.
-    const latest = entries[0];
+    const latest = dated[0];
 
     let summary = await extractAiSummary(page, context, latest, url);
     if (!summary) summary = await extractTranscript(context, latest);
@@ -513,12 +555,12 @@ export async function scrapeCompany(page, context, ticker, opts = {}) {
 
     // Best-effort history (older quarters) for guidance-vs-delivery comparison.
     const history = [];
-    for (let i = 1; i < Math.min(entries.length, maxHistory); i++) {
+    for (let i = 1; i < Math.min(dated.length, maxHistory); i++) {
       try {
-        let h = await extractTranscript(context, entries[i]); // history via transcript is fine
+        let h = await extractTranscript(context, dated[i]); // history via transcript is fine
         if (h) {
           history.push({
-            concall_date: toIsoDate(entries[i].date),
+            concall_date: toIsoDate(dated[i].date),
             ...h,
             company,
             ticker,
