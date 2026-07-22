@@ -64,6 +64,14 @@ const GUIDE_DIR = {
 
 const QUIET_WEEKS = 6; // no call in ~6 weeks -> flag "quiet / watch"
 
+/** End-of-month timestamp. Screener stores "Mon YYYY" as the 1st of the month,
+ *  so measuring quiet from month-END avoids flagging a late-in-the-month call
+ *  as quiet almost a month early. */
+const endOfMonth = (iso) => {
+  const d = new Date(iso);
+  return isNaN(d) ? null : new Date(d.getFullYear(), d.getMonth() + 1, 0).getTime();
+};
+
 /* ============================================================================
    Editable industry -> broad sector mapping (swappable for the client's own
    peer-group list). Keys are lowercase substrings matched against the stored
@@ -97,7 +105,8 @@ export function sectorKeyFor(industry) {
    Aggregation (pure)
    ========================================================================== */
 const topGuidance = (ledger) => {
-  const items = (ledger || []).filter(Boolean);
+  // Skip carried-forward guidance (no_mention) — it's historical, not current.
+  const items = (ledger || []).filter(Boolean).filter((g) => g.status !== "no_mention");
   return items.find((g) => g.specificity === "specific") || items[0] || null;
 };
 
@@ -120,6 +129,26 @@ const riskDir = (status) =>
   ({ new: "negative", escalated: "negative", stable: "neutral", easing: "positive", resolved: "positive", no_mention: "neutral" }[status] ||
   "neutral");
 
+const THEME_STOP = new Set(["the", "a", "an", "of", "in", "on", "and", "to", "for", "by", "with"]);
+/**
+ * Light canonical key so trivial label variants (punctuation, plurals, gerunds,
+ * filler words) merge into one theme. NOTE: this is deliberately conservative —
+ * word order is preserved and it does NOT do semantic clustering, so synonymous
+ * phrasings across companies ("Demand recovery" vs "Recovering demand") still
+ * key separately; a shared taxonomy would be the next step. (Over-merging is
+ * worse than under-merging here, so we keep it minimal.)
+ */
+function themeKey(label) {
+  return (label || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9 ]+/g, " ")
+    .split(/\s+/)
+    .filter((w) => w && !THEME_STOP.has(w))
+    .map((w) => w.replace(/(ing|ed|es|s)$/, ""))
+    .filter(Boolean)
+    .join(" ");
+}
+
 /**
  * A company's themes across its RETAINED quarters (newest first). Themes that
  * were discussed last quarter but omitted this quarter carry forward (stamped
@@ -133,7 +162,8 @@ function companyThemeTimeline(comp) {
     for (const th of q.themes || []) {
       const label = (th.label || "").trim();
       if (!label) continue;
-      const k = label.toLowerCase();
+      const k = themeKey(label);
+      if (!k) continue;
       if (!map.has(k)) {
         map.set(k, { label, direction: th.direction, note: th.note, date: q.concall_date, section_ref: th.section_ref, _dirs: [th.direction] });
       } else {
@@ -197,7 +227,7 @@ export function computeSectors(companies) {
     }
 
     for (const th of cthemes.values()) {
-      const tkey = th.label.toLowerCase();
+      const tkey = themeKey(th.label);
       if (!sec.themeMap.has(tkey)) sec.themeMap.set(tkey, { label: th.label, companies: [], directions: [], notes: [], last: null, section_ref: th.section_ref });
       const tm = sec.themeMap.get(tkey);
       if (!tm.companies.includes(co.ticker)) tm.companies.push(co.ticker);
@@ -229,9 +259,10 @@ export function computeSectors(companies) {
       .sort((a, b) => b.count - a.count || String(b.last || "").localeCompare(String(a.last || "")));
     delete sec.themeMap;
 
-    const weeks = sec.latest ? (Date.now() - new Date(sec.latest).getTime()) / (7 * 864e5) : Infinity;
+    const eom = sec.latest ? endOfMonth(sec.latest) : null;
+    const weeks = eom ? (Date.now() - eom) / (7 * 864e5) : Infinity;
     sec.quiet = weeks > QUIET_WEEKS;
-    sec.quietWeeks = isFinite(weeks) ? Math.floor(weeks) : null;
+    sec.quietWeeks = isFinite(weeks) ? Math.max(0, Math.floor(weeks)) : null;
 
     // watch points: newest first; flips (direction changes) bubble up.
     sec.watch = sec.watchRaw
@@ -577,7 +608,9 @@ function runningThemesCard(sec) {
     .map((t) => {
       const d = dirMeta(t.net);
       const cos = t.companies.map((tk) => `<span class="mini-ticker" data-open-co="${escapeHtml(tk)}">${escapeHtml(tk)}</span>`).join("");
-      const note = t.notes[0]?.note ? `<div class="theme-note">${escapeHtml(t.notes[0].note)}</div>` : "";
+      // Show the note from the most-recent mention (matches t.last), not JSON order.
+      const latestNote = (t.notes || []).slice().sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")))[0];
+      const note = latestNote?.note ? `<div class="theme-note">${escapeHtml(latestNote.note)}</div>` : "";
       return `
         <div class="theme-row">
           <div class="theme-row-head">

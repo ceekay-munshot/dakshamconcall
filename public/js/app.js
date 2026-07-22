@@ -560,8 +560,10 @@ async function fetchJson(url, fallback) {
 /** The most useful one-line guidance statement for the feed headline. */
 function topGuidanceHeadline(ledger) {
   if (!Array.isArray(ledger) || !ledger.length) return null;
-  const specific = ledger.find((g) => g.specificity === "specific");
-  return (specific || ledger[0])?.statement || null;
+  // Skip carried-forward (no_mention) guidance — it's historical, not current.
+  const items = ledger.filter((g) => g && g.status !== "no_mention");
+  const specific = items.find((g) => g.specificity === "specific");
+  return (specific || items[0])?.statement || null;
 }
 
 function buildFeed() {
