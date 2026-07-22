@@ -79,8 +79,10 @@
       "source": "transcript"
     },
     "MRF": {
-      "status": "running",
-      "started_at": "2026-07-22T20:07:17.484Z"
+      "status": "failed",
+      "finished_at": "2026-07-22T20:07:23.074Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Couldn't fetch MRF's latest concall. Found concalls but could not extract an AI summary or transcript."
     }
   }
 }
