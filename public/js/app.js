@@ -27,7 +27,7 @@ import {
 } from "./ui.js";
 import * as Sectors from "./sectors.js";
 import { initProgress, registerJob } from "./progress.js";
-import { exportReportPdf, buildReportModel, fileName } from "./report.js";
+import { exportReportPdf, buildReportModel, fileName, quarterMatrix } from "./report.js";
 import { exportTearSheetXlsx } from "./export-xlsx.js";
 
 /* ============================================================================
@@ -114,6 +114,7 @@ const state = {
   feedShown: 5, // visible feed rows (grows +5 via "show more")
   feedQuery: "", // feed table search filter
   pendingAnalyze: null,
+  sheetMode: "single", // tear-sheet key figures: "single" (latest) | "multi" (last 4 concalls)
 };
 
 // CDN capability flags (graceful degradation if a script was blocked).
@@ -1108,18 +1109,34 @@ function openTearSheet(row) {
     })
   );
 
-  qs("#sheetScroll").innerHTML = q ? tearSheetRealHtml(q, comp) : tearSheetPendingHtml(row);
+  state.sheetMode = "single"; // every freshly-opened sheet starts on the latest concall
   qs("#sheetModal").classList.add("open");
+  renderSheetBody(row, comp, q);
+}
+
+/** (Re)render the tear-sheet body for the current state.sheetMode, and wire its
+ *  export buttons + the "This concall / Last N concalls" toggle. Re-called when
+ *  the toggle flips so exports and tables follow the on-screen selection. */
+function renderSheetBody(row, comp, q) {
+  qs("#sheetScroll").innerHTML = q ? tearSheetRealHtml(q, comp, state.sheetMode) : tearSheetPendingHtml(row);
 
   const pdfBtn = qs("#sheetPdfBtn");
   if (pdfBtn) pdfBtn.addEventListener("click", () => exportPdf(row));
   const xlsxBtn = qs("#sheetXlsxBtn");
   if (xlsxBtn) xlsxBtn.addEventListener("click", () => exportExcel(row));
+  qsa(".ts-mode", qs("#sheetScroll")).forEach((b) =>
+    b.addEventListener("click", () => {
+      const mode = b.getAttribute("data-mode") === "multi" ? "multi" : "single";
+      if (mode === state.sheetMode) return;
+      state.sheetMode = mode;
+      renderSheetBody(row, comp, q);
+    })
+  );
   refreshIcons();
 }
 
 /* ---- Real tear sheet ---- */
-function tearSheetRealHtml(q, comp) {
+function tearSheetRealHtml(q, comp, mode = "single") {
   const isFirst = (comp?.quarters?.length || 1) <= 1;
   const summary = q.summary
     ? `<div class="ts-summary"><i data-lucide="sparkles" class="i16"></i><span>${escapeHtml(q.summary)}</span></div>`
@@ -1129,7 +1146,7 @@ function tearSheetRealHtml(q, comp) {
     themesBandHtml(q.themes) +
     guidanceBandHtml(q.guidance_ledger, isFirst) +
     riskBandHtml(q.risk_register) +
-    sectionsHtml(q.sections, q.source_url) +
+    sectionsHtml(q.sections, q.source_url, comp, mode) +
     insightsHtml(q.key_takeaways) +
     pdfActionsHtml()
   );
@@ -1254,13 +1271,22 @@ function riskStatusMeta(status) {
 }
 
 /* The 11 sections — render only those with content. */
-function sectionsHtml(sections, sourceUrl) {
+function sectionsHtml(sections, sourceUrl, comp, mode = "single") {
   const list = (sections || []).filter(
     (s) => s && (s.key_figures?.length || s.subsections?.some((x) => x.points?.length))
   );
   if (!list.length) return "";
-  const head = `<div class="band-title"><i data-lucide="layout-grid" class="i16"></i> The 11-Section Tear Sheet</div>`;
-  return head + `<div class="ts-sections">${list.map((s) => sectionCardHtml(s, sourceUrl)).join("")}</div>`;
+  // Toggle only when there's history to compare against.
+  const nQ = (comp?.quarters || []).length;
+  const toggle =
+    nQ > 1
+      ? `<div class="ts-modes" role="tablist" aria-label="Key figures range">
+          <button class="ts-mode ${mode !== "multi" ? "on" : ""}" data-mode="single" role="tab" aria-selected="${mode !== "multi"}">This concall</button>
+          <button class="ts-mode ${mode === "multi" ? "on" : ""}" data-mode="multi" role="tab" aria-selected="${mode === "multi"}">Last ${Math.min(4, nQ)} concalls</button>
+        </div>`
+      : "";
+  const head = `<div class="band-title band-title-row"><span class="bt-label"><i data-lucide="layout-grid" class="i16"></i> The 11-Section Tear Sheet</span>${toggle}</div>`;
+  return head + `<div class="ts-sections">${list.map((s) => sectionCardHtml(s, sourceUrl, comp, mode)).join("")}</div>`;
 }
 
 /** Treat empty / literal "null"/"undefined" strings as absent (model artifacts). */
@@ -1282,7 +1308,7 @@ function pointsHtml(points) {
     </details>`;
 }
 
-function sectionCardHtml(s, sourceUrl) {
+function sectionCardHtml(s, sourceUrl, comp, mode = "single") {
   const meta = SECTION_BY_ID[s.id] || { title: s.title, icon: "dot", grad: SECTION_GRADS[0] };
   const figs = (s.key_figures || []).filter(Boolean);
   const subs = (s.subsections || []).filter((x) => x.points?.length);
@@ -1292,8 +1318,13 @@ function sectionCardHtml(s, sourceUrl) {
     ? `<a class="kf-src" href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener" title="Cross-verify this figure at the source concall"><i data-lucide="external-link" class="i16"></i></a>`
     : "";
 
-  const figTable = figs.length
-    ? `<table class="kf-table">
+  let figTable = "";
+  if (mode === "multi" && (comp?.quarters || []).length > 1) {
+    // Last-4-concalls view: one value column per concall, metrics matched by label.
+    const mx = quarterMatrix(comp.quarters, s.id);
+    figTable = mx.rows.length ? kfMatrixHtml(mx) : "";
+  } else if (figs.length) {
+    figTable = `<table class="kf-table">
         <thead><tr><th>Metric</th><th>Value</th><th class="hide-sm">Period</th><th>Type</th><th class="kf-src-h" title="Verify at source">Src</th></tr></thead>
         <tbody>${figs
           .map(
@@ -1306,8 +1337,8 @@ function sectionCardHtml(s, sourceUrl) {
           </tr>`
           )
           .join("")}</tbody>
-      </table>`
-    : "";
+      </table>`;
+  }
 
   const subsHtml = subs.length
     ? `<div class="subsecs">${subs
@@ -1328,6 +1359,26 @@ function sectionCardHtml(s, sourceUrl) {
       </div>
       ${figTable}${subsHtml}
     </div>`;
+}
+
+/** Last-4-concalls key-figure matrix: Metric + one value column per concall,
+ *  latest on the right and emphasised. Cells absent in a quarter show a dot. */
+function kfMatrixHtml(mx) {
+  const last = mx.cols.length - 1;
+  const head = mx.cols
+    .map((c, i) => `<th class="kf-q${i === last ? " kf-q-latest" : ""}">${escapeHtml(c.label)}</th>`)
+    .join("");
+  const body = mx.rows
+    .map(
+      (r) => `<tr><td class="kf-label">${escapeHtml(r.label)}</td>${r.cells
+        .map((v, i) => `<td class="kf-value kf-q${i === last ? " kf-q-latest" : ""}">${v == null ? `<span class="kf-na">·</span>` : escapeHtml(v)}</td>`)
+        .join("")}</tr>`
+    )
+    .join("");
+  return `<div class="kf-mx-wrap"><table class="kf-table kf-matrix">
+      <thead><tr><th>Metric</th>${head}</tr></thead>
+      <tbody>${body}</tbody>
+    </table></div>`;
 }
 
 /** Render the unit chip, but skip a unit the value already carries
@@ -1433,7 +1484,7 @@ async function exportPdf(row) {
     btn.innerHTML = `<span class="btn-spin"></span> Preparing…`;
   }
   try {
-    const model = buildReportModel(row.ticker, comp, q);
+    const model = buildReportModel(row.ticker, comp, q, { mode: state.sheetMode });
     await exportReportPdf(model, {
       onStage: (s) => {
         if (btn) btn.innerHTML = `<span class="btn-spin"></span> ${escapeHtml(s)}`;
@@ -1464,7 +1515,7 @@ async function exportExcel(row) {
     btn.innerHTML = `<span class="btn-spin"></span> Building…`;
   }
   try {
-    const model = buildReportModel(row.ticker, comp, q);
+    const model = buildReportModel(row.ticker, comp, q, { mode: state.sheetMode });
     await exportTearSheetXlsx(model);
     const ext = typeof window.ExcelJS !== "undefined" ? "xlsx" : "csv";
     toast("ok", "Excel ready", `Saved ${fileName(model, ext)}`);
