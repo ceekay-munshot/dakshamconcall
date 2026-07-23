@@ -26,6 +26,7 @@ import {
   toast,
 } from "./ui.js";
 import * as Sectors from "./sectors.js";
+import { initProgress, registerJob } from "./progress.js";
 
 /* ============================================================================
    Config & constants
@@ -122,13 +123,22 @@ const HAS = {
 document.addEventListener("DOMContentLoaded", init);
 
 async function init() {
-  renderFrameworkChips();
   wireSearch();
   wireAnalyze();
   wireModals();
   wireShortcuts();
   wireViewTabs();
   Sectors.initSectors({ onOpenCompany: openCompanyByTicker });
+  initProgress({
+    refresh: async () => {
+      await loadData();
+      renderAll();
+    },
+    getJob: (t) => state.jobs.jobs?.[t] || null,
+    getSheet: (t) => state.tearsheets.companies?.[t] || null,
+    onViewReport: (t) => openCompanyByTicker(t),
+    onRetry: (job) => retryAnalyze(job),
+  });
   initMunshotSdk();
 
   await loadData();
@@ -309,10 +319,9 @@ function renderResults(rows) {
   const intlRows = rows.filter((r) => !isIndia(r.country));
   let html = "";
 
-  if (indiaRows.length) {
-    html += `<div class="dd-group-label"><i data-lucide="map-pin" class="i16"></i> India</div>`;
-    html += indiaRows.map((r) => rowHtml(r, false)).join("");
-  }
+  // No "India" divider — India IS the universe. India rows lead; an
+  // "International" divider only appears when there are non-India results.
+  if (indiaRows.length) html += indiaRows.map((r) => rowHtml(r, false)).join("");
   if (intlRows.length) {
     html += `<div class="dd-group-label"><i data-lucide="globe" class="i16"></i> International</div>`;
     html += intlRows.map((r) => rowHtml(r, true)).join("");
@@ -332,11 +341,11 @@ function rowHtml(r, secondary) {
   const industry = r.industry
     ? `<span>${escapeHtml(r.industry)}</span>`
     : `<span style="opacity:.6">Industry n/a</span>`;
-  const country = r.country
-    ? `<span class="country-tag ${isIndia(r.country) ? "" : "intl"}">${escapeHtml(
-        r.country
-      )}</span>`
-    : "";
+  // India is the default universe — only tag a NON-India result to distinguish it.
+  const country =
+    r.country && !isIndia(r.country)
+      ? `<span class="country-tag intl">${escapeHtml(r.country)}</span>`
+      : "";
   return `
     <div class="dd-row ${secondary ? "secondary" : ""}" role="option">
       <div class="dd-main">
@@ -452,8 +461,7 @@ function closePassModal() {
   qs("#passModal").classList.remove("open");
 }
 
-async function runAnalyze(passcode) {
-  const company = state.selected;
+async function runAnalyze(passcode, company = state.selected) {
   if (!company) return;
 
   const btn = qs("#analyzeBtn");
@@ -476,13 +484,14 @@ async function runAnalyze(passcode) {
     const data = await res.json().catch(() => ({}));
 
     if (data.ok && data.queued) {
-      // Success — remember passcode for the session, add an optimistic row.
+      // Success — remember passcode for the session and open a progress card.
       state.passcode = passcode;
+      state.pendingAnalyze = null;
       closePassModal();
       addOptimistic(company);
+      registerJob(company); // global, tab-independent progress panel + poller
       toast("ok", "Analysis queued", data.message || `${company.name} is processing.`);
       renderAll();
-      startPolling();
     } else if (res.status === 401 || data.reason === "bad_passcode") {
       state.passcode = null;
       openPassModal(data.message || "That passcode didn't match.");
@@ -516,6 +525,22 @@ function addOptimistic(company) {
       queued_at: new Date().toISOString(),
       status: "queued",
     });
+  }
+}
+
+/** Retry a failed run from the progress panel (re-dispatch the same ticker). */
+function retryAnalyze(job) {
+  const company = {
+    ticker: job.ticker,
+    name: job.name,
+    industry: null,
+    country: "India",
+  };
+  registerJob(company); // instant "queued" feedback in the panel
+  if (state.passcode) runAnalyze(state.passcode, company);
+  else {
+    state.pendingAnalyze = company;
+    openPassModal();
   }
 }
 
@@ -642,9 +667,12 @@ function buildFeed() {
    ========================================================================== */
 function renderAll() {
   const feed = buildFeed();
-  renderFeed(feed);
-  renderKpis(feed);
-  renderSectorChart(feed);
+  // The board shows ONLY successfully analyzed companies. In-flight / failed
+  // runs live in the global progress dock — never as ghost rows on the board.
+  const board = feed.filter((r) => r.hasTearsheet);
+  renderFeed(board);
+  renderKpis(board);
+  renderSectorChart(board);
   if (state.view === "sectors") Sectors.refresh(state.tearsheets.companies);
   renderIcons();
 }
@@ -857,7 +885,7 @@ function renderSectorChart(rows) {
   }
 
   // We have data -> always render the legend (works even without ECharts).
-  renderSectorLegend(legendEl, entries);
+  renderSectorLegend(legendEl, entries, analyzed.length);
 
   // ECharts blocked -> keep the legend, note the chart is unavailable.
   if (!HAS.echarts()) {
@@ -888,24 +916,54 @@ function renderSectorChart(rows) {
   }));
 
   state.sectorChart.setOption({
-    tooltip: { trigger: "item", formatter: "{b}: {c} ({d}%)" },
+    tooltip: {
+      trigger: "item",
+      formatter: (p) =>
+        `${p.name}<br/><b>${p.value}</b> ${p.value === 1 ? "company" : "companies"} · ${p.percent}%`,
+      backgroundColor: "rgba(15,23,42,0.92)",
+      borderWidth: 0,
+      textStyle: { color: "#fff", fontSize: 12 },
+      extraCssText: "border-radius:10px;padding:8px 12px;box-shadow:0 8px 24px rgba(2,6,23,.28)",
+    },
     series: [
       {
         type: "pie",
-        radius: ["58%", "82%"],
+        radius: ["62%", "88%"],
         center: ["50%", "50%"],
+        startAngle: 90,
+        minAngle: 12, // keep 1-company sectors visible even when Auto dominates
         avoidLabelOverlap: true,
-        itemStyle: { borderRadius: 8, borderColor: "#fff", borderWidth: 3 },
+        itemStyle: {
+          borderRadius: 6,
+          borderColor: "rgba(255,255,255,0.92)",
+          borderWidth: 3,
+        },
         label: {
           show: true,
           position: "center",
           formatter: () => `{a|${analyzed.length}}\n{b|Analyzed}`,
           rich: {
-            a: { fontSize: 26, fontWeight: 700, color: "#0f172a", fontFamily: "Space Grotesk" },
-            b: { fontSize: 11, color: "#94a3b8", padding: [4, 0, 0, 0] },
+            a: {
+              fontSize: 32,
+              fontWeight: 700,
+              color: "#0f172a",
+              fontFamily: "Space Grotesk",
+              lineHeight: 34,
+            },
+            b: {
+              fontSize: 11,
+              fontWeight: 600,
+              color: "#94a3b8",
+              letterSpacing: 1,
+              padding: [3, 0, 0, 0],
+            },
           },
         },
-        emphasis: { scale: true, scaleSize: 6 },
+        emphasis: {
+          scale: true,
+          scaleSize: 7,
+          itemStyle: { shadowBlur: 16, shadowColor: "rgba(2,6,23,0.20)" },
+        },
         labelLine: { show: false },
         data,
       },
@@ -914,30 +972,28 @@ function renderSectorChart(rows) {
   state.sectorChart.resize();
 }
 
-/** Legend list (top 5 sectors) — independent of ECharts. */
-function renderSectorLegend(legendEl, entries) {
+/** Legend (top 6 sectors) with count + % — independent of ECharts, and each
+ *  row deep-links into that sector's detail (mirrors clicking a donut slice). */
+function renderSectorLegend(legendEl, entries, total) {
+  const t = total || entries.reduce((n, [, v]) => n + v, 0) || 1;
   legendEl.innerHTML = entries
-    .slice(0, 5)
-    .map(
-      ([name, value], i) => `
-      <div class="legend-row">
+    .slice(0, 6)
+    .map(([name, value], i) => {
+      const pct = Math.round((value / t) * 100);
+      return `
+      <div class="legend-row" data-goto-sector="${escapeHtml(name)}" title="Open ${escapeHtml(
+        name
+      )}">
         <span class="legend-swatch" style="background:${PALETTE[i % PALETTE.length]}"></span>
-        <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${escapeHtml(
-          name
-        )}</span>
-        <span class="mono" style="color:var(--text-3)">${value}</span>
-      </div>`
-    )
+        <span class="legend-name">${escapeHtml(name)}</span>
+        <span class="legend-count mono">${value}</span>
+        <span class="legend-pct">${pct}%</span>
+      </div>`;
+    })
     .join("");
-}
-
-/* ---- Framework chips ---- */
-function renderFrameworkChips() {
-  qs("#frameworkChips").innerHTML = SECTIONS.map(
-    (s, i) => `
-    <span class="fw-chip"><span class="n">${i + 1}</span>${escapeHtml(s.title)}</span>`
-  ).join("");
-  refreshIcons();
+  legendEl.querySelectorAll(".legend-row[data-goto-sector]").forEach((el) =>
+    el.addEventListener("click", () => goToSector(el.getAttribute("data-goto-sector")))
+  );
 }
 
 /* ============================================================================
@@ -1357,7 +1413,7 @@ function submitPass() {
     toast("err", "Passcode required", "Please enter the analyze passcode.");
     return;
   }
-  runAnalyze(pass);
+  runAnalyze(pass, state.pendingAnalyze || state.selected);
 }
 
 function closeSheet() {
@@ -1382,27 +1438,10 @@ function wireShortcuts() {
 }
 
 /* ============================================================================
-   POLLING — refresh JSON every ~20s while anything is pending
+   POLLING — the global progress manager (progress.js) owns the single ~11s
+   poller now: it refreshes the committed JSON, re-renders the board, and drives
+   the progress dock. It stops itself once no run is in flight.
    ========================================================================== */
-function hasPending() {
-  const feed = buildFeed();
-  return feed.some((r) => r.status !== "done" && r.status !== "failed");
-}
-
-function startPolling() {
-  if (state.pollTimer) return;
-  state.pollTimer = setInterval(async () => {
-    await loadData();
-    renderAll();
-    if (!hasPending()) stopPolling();
-  }, POLL_MS);
-}
-function stopPolling() {
-  if (state.pollTimer) {
-    clearInterval(state.pollTimer);
-    state.pollTimer = null;
-  }
-}
 
 /* ============================================================================
    MUNSHOT DASHBOARD SDK — OPTIONAL progressive enhancement
