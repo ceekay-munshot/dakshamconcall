@@ -538,7 +538,7 @@ function loadLogo() {
 /** Logo mark at a given pixel height — PNG if present, else the inline SVG. */
 function logoMark(logo, px, cls = "") {
   return logo && logo.png
-    ? `<img src="${logo.png}" class="${cls}" style="height:${px}px;width:auto;display:block" alt="Munshot"/>`
+    ? `<img src="${logo.png}" class="${cls}" style="height:${px}px;width:${px}px;object-fit:cover;display:block;border-radius:${Math.max(3, Math.round(px * 0.2))}px" alt="Munshot"/>`
     : `<span class="rpt-mono ${cls}" style="width:${px}px;height:${px}px">${MONOGRAM}</span>`;
 }
 
