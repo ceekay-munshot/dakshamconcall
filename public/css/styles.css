@@ -1589,6 +1589,7 @@ tr.fresh {
   .kpi-value { font-size: 24px; }
   .brand-sub { display: none; }
   .feed-table .hide-sm { display: none; }
+  .kf-table .hide-sm { display: none; } /* drop the Period column on narrow tear-sheet modals */
   .footer .f-right .hide-sm { display: none; }
 }
 

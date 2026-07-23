@@ -45,6 +45,16 @@ const unitSpan = (value, unit, cls = "u") => {
   if (v && v.toLowerCase().endsWith(u.toLowerCase())) return "";
   return ` <span class="${cls}">${escapeHtml(u)}</span>`;
 };
+/** Trim to a bounded length at a word boundary. The cover is a fixed-height
+ *  page with overflow:hidden, so long model output (summary, theme labels) must
+ *  be capped or it overlaps the absolutely-positioned note/footer. */
+const clip = (v, n) => {
+  const s = clean(v);
+  if (s.length <= n) return s;
+  const cut = s.slice(0, n);
+  const sp = cut.lastIndexOf(" ");
+  return (sp > n * 0.6 ? cut.slice(0, sp) : cut).replace(/[\s,;:.–—-]+$/, "") + "…";
+};
 
 /* ------------------------------------------------------------------ entry -- */
 export async function exportReportPdf(model, { onStage } = {}) {
@@ -437,7 +447,7 @@ function coverPage(m, logo, total) {
   const themesHtml = m.themes.length
     ? `<div class="rpt-cover-themes">${m.themes
         .slice(0, 5)
-        .map((t) => `<span class="rpt-ct d-${escapeHtml(t.direction || "neutral")}">${escapeHtml(t.label)}</span>`)
+        .map((t) => `<span class="rpt-ct d-${escapeHtml(t.direction || "neutral")}">${escapeHtml(clip(t.label, 34))}</span>`)
         .join("")}</div>`
     : "";
 
@@ -455,13 +465,14 @@ function coverPage(m, logo, total) {
       <div class="rpt-cover-pills">${pills}</div>
       <div class="rpt-cover-glance">
         <div class="rpt-cover-glance-h">At a glance</div>
-        ${m.summary ? `<p>${escapeHtml(m.summary)}</p>` : ""}
+        ${m.summary ? `<p>${escapeHtml(clip(m.summary, 340))}</p>` : ""}
         ${figsHtml}
         ${themesHtml}
       </div>
     </div>
-    <div class="rpt-cover-note">The AI organises — it does not opine. Every figure is reproduced from the source concall,
-      reorganised into Daksham's fixed 11-section framework; cross-verify any figure at the source from each row.</div>
+    <div class="rpt-cover-note">The AI organises — it does not opine. Every figure is reproduced verbatim from the
+      source concall and reorganised into Daksham's fixed 11-section framework — each figure traceable to the call it was
+      drawn from. Open the live tear sheet to cross-verify any figure at its source.</div>
     ${footer}
   </div>`);
 }
