@@ -104,8 +104,18 @@ export async function exportReportPdf(model, { onStage } = {}) {
         cx.drawImage(batch, 0, k * ph, pw, ph, 0, 0, pw, ph);
         if (done > 0) pdf.addPage();
         pdf.addImage(slice.toDataURL("image/png"), "PNG", 0, 0, 210, 297, undefined, "FAST");
-        // Clickable www.muns.io over the footer's centre link.
-        pdf.link(84, 285, 42, 6.5, { url: "https://www.muns.io" });
+        // Clickable www.muns.io — derive the rect from the rendered footer link
+        // itself. The footer is justify-content:space-between, so the link's x
+        // shifts with the side text; a fixed rectangle would miss it.
+        const pageEl = pageEls[start + k];
+        const linkEl = pageEl.querySelector(".rpt-foot-link");
+        if (linkEl) {
+          const pr = pageEl.getBoundingClientRect();
+          const lr = linkEl.getBoundingClientRect();
+          const mmX = 210 / PAGE_W, mmY = 297 / PAGE_H;
+          const padY = 1.3; // small vertical cushion → friendlier click target
+          pdf.link((lr.left - pr.left) * mmX, (lr.top - pr.top) * mmY - padY, lr.width * mmX, lr.height * mmY + 2 * padY, { url: "https://www.muns.io" });
+        }
         done++;
       }
     }
@@ -417,7 +427,10 @@ function frame(pageNo, total, m, logo) {
 }
 /** Top key figures for the cover "at a glance" (Financials first). */
 function topFigures(m, n) {
-  const fin = m.sections.find((s) => s.id === "FIN") || m.sections.find((s) => (s.key_figures || []).length);
+  // Prefer Financials, but only if it actually carries figures — otherwise fall
+  // back to the first section that does (FIN may hold narrative-only subsections).
+  const hasFigs = (s) => (s.key_figures || []).filter(Boolean).length;
+  const fin = m.sections.find((s) => s.id === "FIN" && hasFigs(s)) || m.sections.find(hasFigs);
   return (fin?.key_figures || []).filter(Boolean).slice(0, n);
 }
 

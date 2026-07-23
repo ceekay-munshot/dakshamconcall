@@ -736,7 +736,7 @@ function renderFeed(rows) {
             <th class="hide-sm">Sector</th>
             <th class="hide-sm">Concall</th>
             <th>Guidance Headline</th>
-            <th class="hide-sm">Source</th>
+            <th class="hide-sm" title="Analysis source">Src</th>
           </tr>
         </thead>
         <tbody>${bodyHtml}</tbody>
@@ -860,12 +860,14 @@ function statusChipHtml(status, failMessage) {
   )}</span>`;
 }
 
+// Compact icon-only source indicator for the feed's narrow Source column; the
+// full label is exposed via the tooltip (a text pill clips at tablet widths).
 function sourceChipHtml(source) {
   if (source === "ai_summary")
-    return `<span class="chip src-ai"><i data-lucide="sparkles" class="i16"></i>AI summary</span>`;
+    return `<span class="chip src-ai src-ico" title="AI concall summary"><i data-lucide="sparkles" class="i16"></i></span>`;
   if (source === "transcript")
-    return `<span class="chip src-transcript"><i data-lucide="file-text" class="i16"></i>Transcript</span>`;
-  return `<span class="chip src-none">—</span>`;
+    return `<span class="chip src-transcript src-ico" title="Full transcript"><i data-lucide="file-text" class="i16"></i></span>`;
+  return `<span class="chip src-none src-ico" title="Source pending">—</span>`;
 }
 
 function emptyFeedHtml() {

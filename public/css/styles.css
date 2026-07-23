@@ -831,12 +831,9 @@ button {
    which shares .feed-table but has 6 columns + its own table-layout: auto. */
 .feed-table:not(.sector-table) th:nth-child(1), .feed-table:not(.sector-table) td:nth-child(1) { width: 30%; }
 .feed-table:not(.sector-table) th:nth-child(2), .feed-table:not(.sector-table) td:nth-child(2) { width: 18%; }
-.feed-table:not(.sector-table) th:nth-child(3), .feed-table:not(.sector-table) td:nth-child(3) { width: 11%; }
-.feed-table:not(.sector-table) th:nth-child(4), .feed-table:not(.sector-table) td:nth-child(4) { width: 26%; }
-.feed-table:not(.sector-table) th:nth-child(5), .feed-table:not(.sector-table) td:nth-child(5) { width: 15%; }
-/* Source pill must never clip at the card edge. */
-.feed-table:not(.sector-table) td:nth-child(5) { overflow: visible; white-space: nowrap; }
-.feed-table:not(.sector-table) td:nth-child(5) .chip { max-width: 100%; }
+.feed-table:not(.sector-table) th:nth-child(3), .feed-table:not(.sector-table) td:nth-child(3) { width: 12%; }
+.feed-table:not(.sector-table) th:nth-child(4), .feed-table:not(.sector-table) td:nth-child(4) { width: 30%; }
+.feed-table:not(.sector-table) th:nth-child(5), .feed-table:not(.sector-table) td:nth-child(5) { width: 10%; }
 .feed-table thead th {
   position: sticky;
   top: 0;
@@ -955,6 +952,9 @@ button {
 .chip.src-ai { color: var(--brand-violet); background: rgba(124,58,237,.1); border-color: rgba(124,58,237,.2); }
 .chip.src-transcript { color: var(--brand-teal); background: rgba(20,184,166,.1); border-color: rgba(20,184,166,.2); }
 .chip.src-none { color: var(--text-4); background: rgba(100,116,139,.08); border-color: rgba(100,116,139,.16); }
+/* Icon-only source indicator (full label lives in the title tooltip) — compact
+   so it fits the narrow Source column at any width; a text pill would clip. */
+.chip.src-ico { padding: 5px; gap: 0; }
 
 /* pulsing dot for running / NEW */
 .chip.running .cdot,
