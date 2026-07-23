@@ -204,8 +204,9 @@ export function computeSectors(companies) {
     latest: null,
     // Sector momentum accumulators (bucketed by calendar quarter, all quarters).
     momBuckets: new Map(), // bucketKey -> {key,sort,label}
-    momThemes: new Map(),  // themeKey -> {label, byBucket: Map(bkey->Set(ticker)), dirByBucket: Map(bkey->[dir])}
+    momThemes: new Map(),  // themeKey -> {label, byBucket: Map(bkey->Set(ticker)), dirByBucket: Map(bkey->Map(ticker->dir))}
     momGuid: new Map(),    // bucketKey -> {up,down,flat}
+    momReporters: new Map(), // bucketKey -> Set(ticker) — how many companies actually reported that quarter
   });
 
   for (const comp of Object.values(companies || {})) {
@@ -276,14 +277,20 @@ export function computeSectors(companies) {
       const b = calBucket(q.concall_date);
       if (!b) continue;
       if (!sec.momBuckets.has(b.key)) sec.momBuckets.set(b.key, b);
+      if (!sec.momReporters.has(b.key)) sec.momReporters.set(b.key, new Set());
+      sec.momReporters.get(b.key).add(comp.ticker);
       for (const th of q.themes || []) {
         if (!th || !th.label) continue;
         const tk = themeKey(th.label);
         if (!sec.momThemes.has(tk)) sec.momThemes.set(tk, { label: th.label, byBucket: new Map(), dirByBucket: new Map() });
         const mt = sec.momThemes.get(tk);
-        if (!mt.byBucket.has(b.key)) { mt.byBucket.set(b.key, new Set()); mt.dirByBucket.set(b.key, []); }
+        if (!mt.byBucket.has(b.key)) { mt.byBucket.set(b.key, new Set()); mt.dirByBucket.set(b.key, new Map()); }
         mt.byBucket.get(b.key).add(comp.ticker);
-        mt.dirByBucket.get(b.key).push(th.direction);
+        // One direction per company per bucket (first-seen = latest call, since
+        // quarters iterate newest-first) so a firm listing a theme twice in a
+        // call can't skew the net tilt.
+        const dm = mt.dirByBucket.get(b.key);
+        if (!dm.has(comp.ticker)) dm.set(comp.ticker, th.direction);
       }
       for (const g of q.guidance_ledger || []) {
         if (!g || g.status === "no_mention") continue;
@@ -305,13 +312,21 @@ export function computeSectors(companies) {
 
     // Finalize momentum: last 4 calendar-quarter buckets (oldest→newest); top
     // themes by total company-mentions across those buckets; guidance per bucket.
-    const mbuckets = [...sec.momBuckets.values()].sort((a, b) => a.sort - b.sort).slice(-4);
+    const mbuckets = [...sec.momBuckets.values()].sort((a, b) => a.sort - b.sort).slice(-4)
+      .map((b) => ({ ...b, cos: sec.momReporters.get(b.key)?.size || 0 }));
+    // Companies report on different dates, so the newest calendar quarter is
+    // often incomplete — flag it when materially fewer firms have reported than
+    // the prior bucket, so a low count reads as "not in yet", not a collapse.
+    if (mbuckets.length >= 2) {
+      const lb = mbuckets[mbuckets.length - 1], pb = mbuckets[mbuckets.length - 2];
+      lb.partial = lb.cos < pb.cos;
+    }
     const bkeys = mbuckets.map((b) => b.key);
     const mthemes = [...sec.momThemes.values()]
       .map((mt) => {
         const cells = bkeys.map((bk) => {
           const set = mt.byBucket.get(bk);
-          return { count: set ? set.size : 0, net: set && set.size ? netDirection(mt.dirByBucket.get(bk) || []) : null };
+          return { count: set ? set.size : 0, net: set && set.size ? netDirection([...(mt.dirByBucket.get(bk)?.values() || [])]) : null };
         });
         return { label: mt.label, cells, total: cells.reduce((n, c) => n + c.count, 0) };
       })
@@ -319,7 +334,7 @@ export function computeSectors(companies) {
       .sort((a, b) => b.total - a.total)
       .slice(0, 6);
     sec.momentum = { buckets: mbuckets, themes: mthemes, guidance: bkeys.map((bk) => sec.momGuid.get(bk) || { up: 0, down: 0, flat: 0 }) };
-    delete sec.momBuckets; delete sec.momThemes; delete sec.momGuid;
+    delete sec.momBuckets; delete sec.momThemes; delete sec.momGuid; delete sec.momReporters;
 
     const eom = sec.latest ? endOfMonth(sec.latest) : null;
     const weeks = eom ? (Date.now() - eom) / (7 * 864e5) : Infinity;
@@ -782,10 +797,17 @@ function riskRegisterCard(sec) {
  *  calendar quarters (companies bucketed onto one shared timeline). */
 function sectorMomentumCard(sec) {
   const m = sec.momentum;
-  if (!m || m.buckets.length < 2 || !m.themes.length) return ""; // no trend to show yet
+  if (!m || m.buckets.length < 2) return "";
+  const hasThemes = m.themes.length > 0;
+  const hasGuid = m.guidance.some((g) => g.up + g.down + g.flat > 0);
+  if (!hasThemes && !hasGuid) return ""; // nothing to trend yet
   const last = m.buckets.length - 1;
   const head = m.buckets
-    .map((b, i) => `<th class="sm-qh${i === last ? " sm-latest" : ""}">${escapeHtml(b.label)}</th>`)
+    .map((b, i) => {
+      const cos = b.cos ? `<span class="sm-cos">${b.cos} co${b.cos === 1 ? "" : "s"}${b.partial ? " · partial" : ""}</span>` : "";
+      const tip = b.partial ? ` title="Only ${b.cos} of the sector's companies have reported for ${escapeHtml(b.label)} so far — this quarter is still filling in, so treat the counts as incomplete"` : "";
+      return `<th class="sm-qh${i === last ? " sm-latest" : ""}${b.partial ? " sm-partial" : ""}"${tip}>${escapeHtml(b.label)}${cos}</th>`;
+    })
     .join("");
   const themeRows = m.themes
     .map((t) => {
@@ -800,7 +822,7 @@ function sectorMomentumCard(sec) {
       return `<tr><td class="sm-theme">${escapeHtml(t.label)}</td>${cells}</tr>`;
     })
     .join("");
-  const guidRow = m.guidance
+  const guidCells = m.guidance
     .map((g, i) => {
       const lc = i === last ? " sm-latest" : "";
       if (!(g.up + g.down + g.flat)) return `<td class="sm-cell sm-none${lc}">·</td>`;
@@ -808,14 +830,12 @@ function sectorMomentumCard(sec) {
       return `<td class="sm-gcell${lc}" title="${g.up} up · ${g.flat} flat · ${g.down} down"><span class="sm-bar">${seg(g.up, "up")}${seg(g.flat, "flat")}${seg(g.down, "down")}</span><span class="sm-gnum">${g.up}▲ ${g.down}▼</span></td>`;
     })
     .join("");
+  const guidRow = hasGuid ? `<tr class="sm-guid-row"><td class="sm-theme">Guidance tilt</td>${guidCells}</tr>` : "";
   const body = `
-    <table class="sm-table">
-      <thead><tr><th class="sm-theme-h">Theme · companies flagging it</th>${head}</tr></thead>
-      <tbody>
-        ${themeRows}
-        <tr class="sm-guid-row"><td class="sm-theme">Guidance tilt</td>${guidRow}</tr>
-      </tbody>
-    </table>`;
+    <div class="table-scroll"><table class="sm-table">
+      <thead><tr><th class="sm-theme-h">${hasThemes ? "Theme · companies flagging it" : "Guidance direction"}</th>${head}</tr></thead>
+      <tbody>${themeRows}${guidRow}</tbody>
+    </table></div>`;
   return card("Sector Momentum", "trending-up", "var(--grad-primary)", body, `How the sector has moved across the last ${m.buckets.length} quarters`);
 }
 
