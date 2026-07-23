@@ -76,25 +76,41 @@ export function shortConcall(date) {
   const mon = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][+m[2] - 1] || m[2];
   return `${mon} '${m[1].slice(2)}`;
 }
+/** Canonical metric key for lining a figure up across quarters. Strips only
+ *  PERIOD/temporal qualifiers (FY26, FY2025-26, Q1–Q4, bare years, "for the
+ *  quarter"), lower-cases and drops punctuation — while keeping every meaning-
+ *  bearing token (growth, margin, YoY/QoQ, entity names like JPL/RRVL). So
+ *  "Revenue growth" ≡ "Revenue growth FY2025-26" but "EBITDA" ≠ "EBITDA margin"
+ *  ≠ "EBITDA growth", and YoY ≠ QoQ. Validated across the tracked names to
+ *  merge only same-metric variants, never two distinct metrics. */
+export function metricKey(label) {
+  let s = " " + String(label || "").toLowerCase() + " ";
+  s = s.replace(/\bfy\s?\d{2,4}\s?[-–]?\s?\d{0,4}\b/g, " "); // FY26, FY2025-26, FY25-26
+  s = s.replace(/\bcy\s?\d{2,4}\b/g, " "); // CY25
+  s = s.replace(/\bq[1-4]\b/g, " "); // Q1..Q4  (leaves yoy / qoq intact)
+  s = s.replace(/\b(19|20)\d{2}\s?[-–]?\s?\d{0,4}\b/g, " "); // 2025, 2025-26
+  s = s.replace(/\bfor the (quarter|year|period|half)\b/g, " ");
+  return s.replace(/[^a-z0-9%&]+/g, " ").replace(/\s+/g, " ").trim();
+}
 /** Pivot one section's key figures across up to `maxCols` most-recent quarters.
  *  Quarters arrive newest-first; columns come back oldest→newest so the latest
- *  sits on the right. Metrics are lined up by normalised label (label-match). */
+ *  sits on the right. Metrics are lined up by canonical key (see metricKey). */
 export function quarterMatrix(quarters, sectionId, maxCols = 4) {
   const qs = (quarters || []).filter(Boolean).slice(0, maxCols).reverse(); // oldest → newest
   const cols = qs.map((q) => ({ date: q.concall_date || null, label: shortConcall(q.concall_date) }));
-  const norm = (l) => String(l || "").toLowerCase().replace(/\s+/g, " ").trim();
   const order = [];
   const byKey = new Map();
   const figsOf = (q) => ((q.sections || []).find((s) => s.id === sectionId)?.key_figures || []).filter(Boolean);
-  // Seed row order from the latest quarter first so its metrics lead.
+  // Seed row order from the latest quarter first so its metrics lead, and its
+  // wording is what labels the row.
   for (let ci = qs.length - 1; ci >= 0; ci--)
     for (const f of figsOf(qs[ci])) {
-      const k = norm(f.label);
+      const k = metricKey(f.label);
       if (k && !byKey.has(k)) { byKey.set(k, { label: f.label, cells: new Array(qs.length).fill(null) }); order.push(k); }
     }
   qs.forEach((q, ci) => {
     for (const f of figsOf(q)) {
-      const row = byKey.get(norm(f.label));
+      const row = byKey.get(metricKey(f.label));
       if (row && row.cells[ci] == null) row.cells[ci] = figureText(f.value, f.unit);
     }
   });
