@@ -827,15 +827,16 @@ button {
   font-size: 13.5px;
   table-layout: fixed; /* keep Source + Status chips always in view */
 }
-/* Column widths (5 cols; hidden .hide-sm columns redistribute on mobile). */
-.feed-table th:nth-child(1), .feed-table td:nth-child(1) { width: 30%; }
-.feed-table th:nth-child(2), .feed-table td:nth-child(2) { width: 18%; }
-.feed-table th:nth-child(3), .feed-table td:nth-child(3) { width: 11%; }
-.feed-table th:nth-child(4), .feed-table td:nth-child(4) { width: 26%; }
-.feed-table th:nth-child(5), .feed-table td:nth-child(5) { width: 15%; }
+/* Column widths — overview feed only (5 cols). Scoped away from .sector-table,
+   which shares .feed-table but has 6 columns + its own table-layout: auto. */
+.feed-table:not(.sector-table) th:nth-child(1), .feed-table:not(.sector-table) td:nth-child(1) { width: 30%; }
+.feed-table:not(.sector-table) th:nth-child(2), .feed-table:not(.sector-table) td:nth-child(2) { width: 18%; }
+.feed-table:not(.sector-table) th:nth-child(3), .feed-table:not(.sector-table) td:nth-child(3) { width: 11%; }
+.feed-table:not(.sector-table) th:nth-child(4), .feed-table:not(.sector-table) td:nth-child(4) { width: 26%; }
+.feed-table:not(.sector-table) th:nth-child(5), .feed-table:not(.sector-table) td:nth-child(5) { width: 15%; }
 /* Source pill must never clip at the card edge. */
-.feed-table td:nth-child(5) { overflow: visible; white-space: nowrap; }
-.feed-table td:nth-child(5) .chip { max-width: 100%; }
+.feed-table:not(.sector-table) td:nth-child(5) { overflow: visible; white-space: nowrap; }
+.feed-table:not(.sector-table) td:nth-child(5) .chip { max-width: 100%; }
 .feed-table thead th {
   position: sticky;
   top: 0;
