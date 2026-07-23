@@ -2317,3 +2317,25 @@ tr.fresh {
   .progress-dock { right: 12px; left: 12px; width: auto; bottom: 60px; }
   .prog-slabel { display: none; }
 }
+
+/* Tear-sheet export bar (Parts E/F) */
+.ts-export-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 26px;
+  padding-top: 16px;
+  border-top: 1px solid var(--hairline);
+}
+.ts-export-note {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-3);
+}
+.ts-export-note .i16 { color: var(--brand-emerald); }
+.ts-export-btns { display: flex; gap: 10px; }

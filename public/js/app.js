@@ -27,6 +27,8 @@ import {
 } from "./ui.js";
 import * as Sectors from "./sectors.js";
 import { initProgress, registerJob } from "./progress.js";
+import { exportReportPdf, buildReportModel, fileName } from "./report.js";
+import { exportTearSheetXlsx } from "./export-xlsx.js";
 
 /* ============================================================================
    Config & constants
@@ -1046,6 +1048,8 @@ function openTearSheet(row) {
 
   const pdfBtn = qs("#sheetPdfBtn");
   if (pdfBtn) pdfBtn.addEventListener("click", () => exportPdf(row));
+  const xlsxBtn = qs("#sheetXlsxBtn");
+  if (xlsxBtn) xlsxBtn.addEventListener("click", () => exportExcel(row));
   refreshIcons();
 }
 
@@ -1281,8 +1285,12 @@ function insightsHtml(takeaways, questions) {
 
 function pdfActionsHtml() {
   return `
-    <div style="display:flex;justify-content:flex-end;gap:10px;margin-top:24px">
-      <button class="btn ghost sm" id="sheetPdfBtn"><i data-lucide="download" class="i16"></i> Download PDF</button>
+    <div class="ts-export-bar">
+      <span class="ts-export-note"><i data-lucide="shield-check" class="i16"></i> Munshot · Prepared for Daksham Capital</span>
+      <div class="ts-export-btns">
+        <button class="btn ghost sm" id="sheetXlsxBtn"><i data-lucide="sheet" class="i16"></i> Excel</button>
+        <button class="btn sm" id="sheetPdfBtn"><i data-lucide="file-down" class="i16"></i> Download PDF</button>
+      </div>
     </div>`;
 }
 
@@ -1311,73 +1319,74 @@ function tearSheetPendingHtml(row) {
         </div>`
       ).join("")}
     </div>`;
-  return note + sections + pdfActionsHtml();
+  return note + sections;
 }
 
 /* ============================================================================
-   PDF EXPORT (basic but working — richer report comes in Prompt 6)
+   EXPORTS — a dedicated, print-optimised report (report.js) + branded Excel
+   (export-xlsx.js). Neither screenshots the dashboard.
    ========================================================================== */
+function currentQuarter(row) {
+  const comp = state.tearsheets.companies?.[row.ticker] || null;
+  const q = comp?.quarters?.[0] || null;
+  return { comp, q };
+}
+
 async function exportPdf(row) {
+  const { comp, q } = currentQuarter(row);
+  if (!q) {
+    toast("info", "Nothing to export", "This tear sheet has no analyzed quarter yet.");
+    return;
+  }
   if (!HAS.jspdf() || !HAS.html2canvas()) {
     toast("info", "PDF unavailable", "The PDF libraries didn't load. Check your connection and reopen.");
     return;
   }
-  const sheetEl = qs("#sheetEl");
-  const scrollEl = qs("#sheetScroll");
   const btn = qs("#sheetPdfBtn");
   const orig = btn ? btn.innerHTML : "";
   if (btn) {
     btn.disabled = true;
     btn.innerHTML = `<span class="btn-spin"></span> Preparing…`;
   }
-
-  // Temporarily expand the sheet so the whole tear sheet is captured.
-  const saved = {
-    maxH: sheetEl.style.maxHeight,
-    scrollOverflow: scrollEl.style.overflow,
-    scrollMaxH: scrollEl.style.maxHeight,
-  };
-  sheetEl.style.maxHeight = "none";
-  scrollEl.style.overflow = "visible";
-  scrollEl.style.maxHeight = "none";
-  // Open any collapsed detail blocks so the PDF captures ALL content.
-  const collapsed = qsa("details.more-points", sheetEl).filter((d) => !d.open);
-  collapsed.forEach((d) => (d.open = true));
-
   try {
-    const canvas = await window.html2canvas(sheetEl, {
-      backgroundColor: "#ffffff",
-      scale: 2,
-      useCORS: true,
-      logging: false,
+    const model = buildReportModel(row.ticker, comp, q);
+    await exportReportPdf(model, {
+      onStage: (s) => {
+        if (btn) btn.innerHTML = `<span class="btn-spin"></span> ${escapeHtml(s)}`;
+      },
     });
-    const { jsPDF } = window.jspdf;
-    const pdf = new jsPDF("p", "mm", "a4");
-    const pageW = pdf.internal.pageSize.getWidth();
-    const pageH = pdf.internal.pageSize.getHeight();
-    const imgW = pageW;
-    const imgH = (canvas.height * imgW) / canvas.width;
-
-    let heightLeft = imgH;
-    let position = 0;
-    const imgData = canvas.toDataURL("image/png");
-    pdf.addImage(imgData, "PNG", 0, position, imgW, imgH);
-    heightLeft -= pageH;
-    while (heightLeft > 0) {
-      position -= pageH;
-      pdf.addPage();
-      pdf.addImage(imgData, "PNG", 0, position, imgW, imgH);
-      heightLeft -= pageH;
-    }
-    pdf.save(`${row.ticker}-Daksham-concall-tearsheet.pdf`);
-    toast("ok", "PDF ready", `Saved ${row.ticker}-Daksham-concall-tearsheet.pdf`);
+    toast("ok", "PDF ready", `Saved ${fileName(model, "pdf")}`);
   } catch (err) {
     toast("err", "Export failed", "Couldn't build the PDF. Please try again.");
   } finally {
-    sheetEl.style.maxHeight = saved.maxH;
-    scrollEl.style.overflow = saved.scrollOverflow;
-    scrollEl.style.maxHeight = saved.scrollMaxH;
-    collapsed.forEach((d) => (d.open = false)); // restore the collapsed state
+    if (btn) {
+      btn.disabled = false;
+      btn.innerHTML = orig;
+      refreshIcons();
+    }
+  }
+}
+
+async function exportExcel(row) {
+  const { comp, q } = currentQuarter(row);
+  if (!q) {
+    toast("info", "Nothing to export", "This tear sheet has no analyzed quarter yet.");
+    return;
+  }
+  const btn = qs("#sheetXlsxBtn");
+  const orig = btn ? btn.innerHTML : "";
+  if (btn) {
+    btn.disabled = true;
+    btn.innerHTML = `<span class="btn-spin"></span> Building…`;
+  }
+  try {
+    const model = buildReportModel(row.ticker, comp, q);
+    await exportTearSheetXlsx(model);
+    const ext = typeof window.ExcelJS !== "undefined" ? "xlsx" : "csv";
+    toast("ok", "Excel ready", `Saved ${fileName(model, ext)}`);
+  } catch (err) {
+    toast("err", "Export failed", "Couldn't build the Excel file. Please try again.");
+  } finally {
     if (btn) {
       btn.disabled = false;
       btn.innerHTML = orig;
