@@ -624,21 +624,21 @@ button {
 .kpi-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 22px;
   align-items: stretch;
 }
 .kpi {
   position: relative;
-  padding: 20px 22px;
-  min-height: 132px;
+  padding: 22px 24px;
+  min-height: 138px;
   display: flex;
   flex-direction: column;
   border-radius: var(--r-md);
-  background: var(--surface);
-  border: 1px solid var(--glass-border);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  box-shadow: var(--shadow-sm);
+  /* Solid card on the mesh so each one reads as a distinct, clearly-separated
+     panel (the translucent fill made adjacent cards blur into each other). */
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06), 0 1px 3px rgba(15, 23, 42, 0.05);
   overflow: hidden;
   transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
 }
@@ -827,27 +827,25 @@ button {
   font-size: 13.5px;
   table-layout: fixed; /* keep Source + Status chips always in view */
 }
-/* Column widths (hidden .hide-sm columns redistribute on mobile). */
-.feed-table th:nth-child(1), .feed-table td:nth-child(1) { width: 25%; }
-.feed-table th:nth-child(2), .feed-table td:nth-child(2) { width: 14%; }
-.feed-table th:nth-child(3), .feed-table td:nth-child(3) { width: 10%; }
-.feed-table th:nth-child(4), .feed-table td:nth-child(4) { width: 24%; }
-.feed-table th:nth-child(5), .feed-table td:nth-child(5) { width: 14%; }
-.feed-table th:nth-child(6), .feed-table td:nth-child(6) { width: 13%; }
-.feed-table td:nth-child(5), .feed-table td:nth-child(6) { overflow: visible; }
+/* Column widths — overview feed only (5 cols). Scoped away from .sector-table,
+   which shares .feed-table but has 6 columns + its own table-layout: auto. */
+.feed-table:not(.sector-table) th:nth-child(1), .feed-table:not(.sector-table) td:nth-child(1) { width: 30%; }
+.feed-table:not(.sector-table) th:nth-child(2), .feed-table:not(.sector-table) td:nth-child(2) { width: 18%; }
+.feed-table:not(.sector-table) th:nth-child(3), .feed-table:not(.sector-table) td:nth-child(3) { width: 12%; }
+.feed-table:not(.sector-table) th:nth-child(4), .feed-table:not(.sector-table) td:nth-child(4) { width: 30%; }
+.feed-table:not(.sector-table) th:nth-child(5), .feed-table:not(.sector-table) td:nth-child(5) { width: 10%; }
 .feed-table thead th {
   position: sticky;
   top: 0;
   text-align: left;
-  font-size: 11px;
-  font-weight: 700;
+  font-size: 11.5px;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.07em;
-  color: var(--text-4);
-  padding: 12px 18px;
-  background: rgba(255, 255, 255, 0.72);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--hairline);
+  letter-spacing: 0.06em;
+  color: var(--text-2);
+  padding: 13px 18px;
+  background: #fbfbfe;
+  border-bottom: 2px solid var(--hairline-strong);
   white-space: nowrap;
   z-index: 1;
 }
@@ -954,6 +952,9 @@ button {
 .chip.src-ai { color: var(--brand-violet); background: rgba(124,58,237,.1); border-color: rgba(124,58,237,.2); }
 .chip.src-transcript { color: var(--brand-teal); background: rgba(20,184,166,.1); border-color: rgba(20,184,166,.2); }
 .chip.src-none { color: var(--text-4); background: rgba(100,116,139,.08); border-color: rgba(100,116,139,.16); }
+/* Icon-only source indicator (full label lives in the title tooltip) — compact
+   so it fits the narrow Source column at any width; a text pill would clip. */
+.chip.src-ico { padding: 5px; gap: 0; }
 
 /* pulsing dot for running / NEW */
 .chip.running .cdot,
@@ -1589,6 +1590,7 @@ tr.fresh {
   .kpi-value { font-size: 24px; }
   .brand-sub { display: none; }
   .feed-table .hide-sm { display: none; }
+  .kf-table .hide-sm { display: none; } /* drop the Period column on narrow tear-sheet modals */
   .footer .f-right .hide-sm { display: none; }
 }
 
@@ -1706,12 +1708,24 @@ tr.fresh {
   background: rgba(255, 255, 255, 0.55);
   padding: 15px 16px;
 }
-.ts-sec-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
-.ts-sec-head .sec-ico { width: 30px; height: 30px; border-radius: 9px; margin: 0; }
-.ts-sec-head h4 { margin: 0; font-size: 14px; font-weight: 600; color: var(--text-1); }
+.ts-sec-head { display: flex; align-items: center; gap: 11px; margin-bottom: 12px; }
+.ts-sec-head .sec-ico {
+  width: 30px; height: 30px; border-radius: 9px; margin: 0;
+  flex: 0 0 30px; display: grid; place-items: center; overflow: hidden; color: #fff;
+}
+.ts-sec-head .sec-ico .i16 { width: 16px; height: 16px; }
+.ts-sec-head h4 { margin: 0; font-size: 15px; font-weight: 700; color: var(--text-1); letter-spacing: -0.01em; min-width: 0; }
 
 /* key-figure table */
-.kf-table { width: 100%; border-collapse: collapse; font-size: 12.5px; margin-bottom: 4px; }
+.kf-table { width: 100%; border-collapse: collapse; font-size: 12.5px; margin-bottom: 4px; table-layout: fixed; }
+.kf-table th:nth-child(1), .kf-table td:nth-child(1) { width: 42%; }
+.kf-table th:nth-child(2), .kf-table td:nth-child(2) { width: 22%; }
+.kf-table th:nth-child(4), .kf-table td:nth-child(4) { width: 15%; }
+.kf-table th.kf-src-h, .kf-table td.kf-src-cell { width: 34px; text-align: center; }
+.kf-table th.kf-src-h { font-size: 9px; color: var(--text-4); }
+.kf-label, .kf-value { overflow-wrap: anywhere; word-break: break-word; }
+.kf-src { display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 7px; color: var(--text-4); transition: background .15s, color .15s; }
+.kf-src:hover { background: rgba(99,102,241,.12); color: var(--brand-indigo); }
 .kf-table thead th {
   text-align: left;
   font-size: 10px;
@@ -2341,3 +2355,47 @@ tr.fresh {
 }
 .ts-export-note .i16 { color: var(--brand-emerald); }
 .ts-export-btns { display: flex; gap: 10px; }
+
+/* ---- Feed: search toolbar + paged "show more" (round 2 polish) ---- */
+.feed-toolbar {
+  display: flex; align-items: center; justify-content: space-between; gap: 14px;
+  padding: 12px 18px; border-bottom: 1px solid var(--hairline);
+}
+.feed-search {
+  display: flex; align-items: center; gap: 9px; flex: 1; max-width: 420px;
+  padding: 9px 13px; border-radius: 11px;
+  background: #fff; border: 1px solid var(--hairline-strong);
+  transition: border-color .15s, box-shadow .15s;
+}
+.feed-search:focus-within { border-color: var(--brand-indigo); box-shadow: 0 0 0 3px rgba(99,102,241,.14); }
+.feed-search .i16 { color: var(--text-4); flex-shrink: 0; }
+.feed-search input {
+  flex: 1; border: none; outline: none; background: transparent;
+  font-family: var(--font-body); font-size: 13.5px; color: var(--text-1); min-width: 0;
+}
+.feed-search input::-webkit-search-cancel-button { cursor: pointer; }
+.feed-count { font-size: 12px; font-weight: 600; color: var(--text-4); white-space: nowrap; }
+.feed-scroll { }
+.feed-nomatch { text-align: center; color: var(--text-3); padding: 26px 18px; font-size: 13.5px; }
+.feed-foot { display: flex; justify-content: center; padding: 6px; }
+.feed-foot:empty { display: none; }
+.feed-more {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 9px 18px; margin: 6px auto; border-radius: 999px; cursor: pointer;
+  font-family: var(--font-body); font-weight: 600; font-size: 12.5px; color: var(--brand-indigo);
+  background: rgba(99,102,241,.08); border: 1px solid rgba(99,102,241,.2);
+  transition: background .15s, transform .15s;
+}
+.feed-more:hover { background: rgba(99,102,241,.14); transform: translateY(-1px); }
+.feed-more.ghost { color: var(--text-3); background: transparent; border-color: var(--hairline-strong); }
+.feed-more .fm-rest { color: var(--text-4); font-weight: 500; }
+
+/* ---- Risk register (chip only for real changes; a dot otherwise) ---- */
+.risk-item { display: flex; gap: 11px; align-items: flex-start; }
+.risk-dot { flex: 0 0 8px; width: 8px; height: 8px; border-radius: 50%; margin-top: 6px; background: linear-gradient(135deg, var(--brand-rose), var(--brand-amber)); }
+.chip.sm { padding: 1px 8px; font-size: 10px; vertical-align: middle; }
+
+/* ---- Key Takeaways full-width card ---- */
+.insight-card.takeaways.full { width: 100%; }
+.insight-card.takeaways.full ul { columns: 2; column-gap: 26px; }
+@media (max-width: 720px) { .insight-card.takeaways.full ul { columns: 1; } }

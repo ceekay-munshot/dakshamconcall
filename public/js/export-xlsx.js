@@ -5,7 +5,8 @@
  * Two sheets:
  *   - "Tear Sheet": branded header, summary, coloured section bands each with a
  *     Key Figures table + sub-topic bullets, then Guidance / Risks / Themes /
- *     Key Takeaways / Pressing Questions. Gridlines off, thin borders.
+ *     Key Takeaways. Gridlines off; every table cell, band and header carries a
+ *     soft thin border box for a clean, ruled look.
  *   - "Key Figures": one flat, analyst-friendly table (Section/Metric/Value/…)
  *     with a frozen header row + autofilter.
  */
@@ -15,9 +16,17 @@ import { fileName } from "./report.js";
 const V = "FF7C3AED"; // violet
 const INK = "FF0F172A";
 const MUTE = "FF64748B";
-const HAIR = "FFE6E8F0";
 const BAND = "FFEDE9FE";
 const HEADFILL = "FFF1F5F9";
+const BORDER = "FFD2D8E3"; // soft slate hairline for cell boxes
+
+// Reusable style fragments. `box()` returns a full four-side thin border; for a
+// merged range ExcelJS shares one style object across every constituent cell, so
+// setting the box on any cell of the merge yields a clean perimeter (Excel hides
+// the interior rules automatically).
+const thin = () => ({ style: "thin", color: { argb: BORDER } });
+const box = () => ({ top: thin(), left: thin(), bottom: thin(), right: thin() });
+const solid = (argb) => ({ type: "pattern", pattern: "solid", fgColor: { argb } });
 
 const KIND_LABEL = { reported: "Reported", guidance: "Guidance", target: "Target", market_size: "Market size" };
 const statusLabel = (s) =>
@@ -66,7 +75,8 @@ function buildTearSheet(wb, m) {
 
   if (m.summary) {
     band(ws, r++, "Outlook", NCOL);
-    const c = merge(r++, m.summary, { font: { size: 10.5, color: { argb: "FF334155" } } });
+    const c = merge(r++, m.summary, { font: { size: 10.5, color: { argb: "FF334155" } }, align: { indent: 1 } });
+    c.border = box();
     ws.getRow(c.row).height = Math.min(120, 18 + Math.ceil(m.summary.length / 90) * 15);
     r++;
   }
@@ -162,7 +172,6 @@ function buildTearSheet(wb, m) {
     r++;
   };
   list("Key Takeaways (verbatim)", m.key_takeaways);
-  list("Pressing Questions", m.pressing_questions);
 }
 
 /* ------------------------------------------------------------ sheet 2 ------ */
@@ -179,17 +188,17 @@ function buildKeyFigures(wb, m) {
   const head = ws.addRow(["Section", "Metric", "Value", "Unit", "Period", "Type"]);
   head.eachCell((c) => {
     c.font = { bold: true, color: { argb: "FFFFFFFF" }, size: 10.5 };
-    c.fill = { type: "pattern", pattern: "solid", fgColor: { argb: V } };
-    c.alignment = { vertical: "middle" };
-    c.border = { bottom: { style: "thin", color: { argb: HAIR } } };
+    c.fill = solid(V);
+    c.alignment = { vertical: "middle", indent: 1 };
+    c.border = box();
   });
   ws.getRow(1).height = 22;
   rows.forEach((rvals) => {
     const row = ws.addRow(rvals);
     row.eachCell((c, col) => {
       c.font = { size: 10, color: { argb: col === 3 ? INK : "FF334155" }, bold: col === 3 };
-      c.alignment = { vertical: "top", wrapText: col === 2 };
-      c.border = { bottom: { style: "thin", color: { argb: "FFEEF1F6" } } };
+      c.alignment = { vertical: "top", wrapText: col === 2, indent: col === 1 ? 1 : 0 };
+      c.border = box();
     });
   });
   ws.autoFilter = { from: { row: 1, column: 1 }, to: { row: 1, column: 6 } };
@@ -201,20 +210,32 @@ function band(ws, r, text, ncol) {
   const c = ws.getCell(r, 1);
   c.value = text;
   c.font = { bold: true, size: 11.5, color: { argb: V }, name: "Calibri" };
-  c.fill = { type: "pattern", pattern: "solid", fgColor: { argb: BAND } };
+  c.fill = solid(BAND);
   c.alignment = { vertical: "middle", indent: 1 };
+  c.border = box();
   ws.getRow(r).height = 22;
 }
 function tableHeader(ws, r, labels, ncol) {
   const row = ws.getRow(r);
-  labels.forEach((l, i) => {
-    const c = row.getCell(i + 1);
-    c.value = l;
+  // Paint + box every column so the header frame lines up with the data below,
+  // even where the data merges trailing columns.
+  for (let i = 1; i <= ncol; i++) {
+    const c = row.getCell(i);
+    c.value = labels[i - 1] || "";
     c.font = { bold: true, size: 9, color: { argb: MUTE } };
-    c.fill = { type: "pattern", pattern: "solid", fgColor: { argb: HEADFILL } };
-    c.border = { bottom: { style: "thin", color: { argb: HAIR } } };
-    c.alignment = { vertical: "middle" };
-  });
+    c.fill = solid(HEADFILL);
+    c.border = box();
+    c.alignment = { vertical: "middle", indent: i === 1 ? 1 : 0 };
+  }
+  // Empty labels flag a continuation of the previous heading → merge to mirror
+  // the data-row merges (e.g. a wide "Statement" or "Note" column).
+  let p = 1;
+  while (p <= ncol) {
+    let q = p;
+    while (q + 1 <= ncol && !(labels[q] || "")) q++;
+    if (q > p) ws.mergeCells(r, p, r, q);
+    p = q + 1;
+  }
   row.height = 18;
 }
 function styleDataRow(row, ncol) {
@@ -222,8 +243,8 @@ function styleDataRow(row, ncol) {
     const c = row.getCell(i);
     if (!c.font) c.font = {};
     c.font = { size: 10, color: { argb: i === 2 ? INK : "FF334155" }, ...(i === 1 ? { bold: true } : {}) };
-    c.alignment = { vertical: "top", wrapText: true };
-    c.border = { bottom: { style: "thin", color: { argb: "FFEEF1F6" } } };
+    c.alignment = { vertical: "top", wrapText: true, indent: i === 1 ? 1 : 0 };
+    c.border = box();
   }
 }
 /** Row height for wrapped merged cells (spreadsheets don't auto-fit merges).

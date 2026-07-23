@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none" role="img" aria-label="Munshot">
+  <defs>
+    <linearGradient id="munGold" x1="30" y1="26" x2="100" y2="104" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FCE58F"/>
+      <stop offset=".42" stop-color="#EBAE3A"/>
+      <stop offset="1" stop-color="#B4761A"/>
+    </linearGradient>
+  </defs>
+  <!-- Two interlocking hairpin loops = the Munshot M/U monogram -->
+  <path d="M38 99 V51 A17 17 0 0 1 72 51 V81" stroke="url(#munGold)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M56 29 V77 A17 17 0 0 0 90 77 V29" stroke="url(#munGold)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -37,6 +37,27 @@ const clean = (v) => {
   const s = (v ?? "").toString().trim();
   return s && s.toLowerCase() !== "null" && s.toLowerCase() !== "undefined" ? s : "";
 };
+/** A unit span, unless the value already ends with that unit (e.g. "25%"+"%"). */
+const unitSpan = (value, unit, cls = "u") => {
+  const u = clean(unit);
+  if (!u) return "";
+  const v = String(value ?? "").trim().toLowerCase();
+  const uu = u.toLowerCase();
+  // Skip a unit the value already carries — as a suffix ("25%" + "%") or a
+  // prefix ("INR50,000 crores" + "INR", common for currency tokens).
+  if (v && (v.endsWith(uu) || v.startsWith(uu))) return "";
+  return ` <span class="${cls}">${escapeHtml(u)}</span>`;
+};
+/** Trim to a bounded length at a word boundary. The cover is a fixed-height
+ *  page with overflow:hidden, so long model output (summary, theme labels) must
+ *  be capped or it overlaps the absolutely-positioned note/footer. */
+const clip = (v, n) => {
+  const s = clean(v);
+  if (s.length <= n) return s;
+  const cut = s.slice(0, n);
+  const sp = cut.lastIndexOf(" ");
+  return (sp > n * 0.6 ? cut.slice(0, sp) : cut).replace(/[\s,;:.–—-]+$/, "") + "…";
+};
 
 /* ------------------------------------------------------------------ entry -- */
 export async function exportReportPdf(model, { onStage } = {}) {
@@ -86,6 +107,18 @@ export async function exportReportPdf(model, { onStage } = {}) {
         cx.drawImage(batch, 0, k * ph, pw, ph, 0, 0, pw, ph);
         if (done > 0) pdf.addPage();
         pdf.addImage(slice.toDataURL("image/png"), "PNG", 0, 0, 210, 297, undefined, "FAST");
+        // Clickable www.muns.io — derive the rect from the rendered footer link
+        // itself. The footer is justify-content:space-between, so the link's x
+        // shifts with the side text; a fixed rectangle would miss it.
+        const pageEl = pageEls[start + k];
+        const linkEl = pageEl.querySelector(".rpt-foot-link");
+        if (linkEl) {
+          const pr = pageEl.getBoundingClientRect();
+          const lr = linkEl.getBoundingClientRect();
+          const mmX = 210 / PAGE_W, mmY = 297 / PAGE_H;
+          const padY = 1.3; // small vertical cushion → friendlier click target
+          pdf.link((lr.left - pr.left) * mmX, (lr.top - pr.top) * mmY - padY, lr.width * mmX, lr.height * mmY + 2 * padY, { url: "https://www.muns.io" });
+        }
         done++;
       }
     }
@@ -144,9 +177,10 @@ function composePages(model, logo, root) {
   }
   if (cur.length) pagesBlocks.push(cur);
 
-  const totalPages = pagesBlocks.length + 1;
+  const totalPages = pagesBlocks.length + 2; // cover + body pages + thank-you
   const pageEls = [coverPage(model, logo, totalPages)];
   pagesBlocks.forEach((bl, i) => pageEls.push(bodyPage(model, logo, bl, i + 2, totalPages)));
+  pageEls.push(thankYouPage(model, logo, totalPages));
   pageEls.forEach((p) => root.appendChild(p));
   return pageEls;
 }
@@ -308,23 +342,33 @@ function bodyBlocks(m) {
       }</span>`)
       .join("")}</div></div>`));
 
-  if (m.guidance_ledger.length) {
-    push(el(`<div class="rpt-block rpt-keep"><div class="rpt-h">Guidance vs Delivery</div></div>`));
-    for (const g of m.guidance_ledger)
+  // Guidance — drop carried-forward "no mention" rows; a first-time item shows
+  // no chip (only real deltas Raised/Lowered/… carry one), matching the board.
+  const guid = m.guidance_ledger.filter((g) => g.status !== "no_mention");
+  if (guid.length) {
+    push(el(`<div class="rpt-block rpt-keep"><div class="rpt-h">Guidance &amp; Outlook</div></div>`));
+    for (const g of guid) {
+      const showChip = g.status && g.status !== "new";
       push(el(`<div class="rpt-block rpt-card">
-        <div class="rpt-card-top"><span class="rpt-metric">${escapeHtml(g.metric || "")}</span><span class="rpt-status s-${escapeHtml(g.status || "new")}">${escapeHtml(statusLabel(g.status))}</span></div>
+        <div class="rpt-card-top"><span class="rpt-metric">${escapeHtml(g.metric || "")}</span>${showChip ? `<span class="rpt-status s-${escapeHtml(g.status)}">${escapeHtml(statusLabel(g.status))}</span>` : ""}</div>
         <div class="rpt-card-body">${escapeHtml(g.statement || "")}</div>
-        <div class="rpt-card-meta">${[g.direction && dirLabel(g.direction), g.horizon, g.specificity].filter(Boolean).map((x) => `<span>${escapeHtml(x)}</span>`).join("")}</div>
+        <div class="rpt-card-meta">${[g.direction && dirLabel(g.direction), g.horizon].filter(Boolean).map((x) => `<span>${escapeHtml(x)}</span>`).join("")}</div>
       </div>`));
+    }
   }
 
-  if (m.risk_register.length) {
+  // Risks flagged this quarter; carried-forward "no mention" hidden, "new" chip
+  // suppressed. A dot anchors each row so first-time risks don't read as bare.
+  const risks = m.risk_register.filter((r) => r.status !== "no_mention");
+  if (risks.length) {
     push(el(`<div class="rpt-block rpt-keep"><div class="rpt-h">Risk Register</div></div>`));
-    for (const r of m.risk_register)
+    for (const r of risks) {
+      const showChip = r.status && r.status !== "new";
       push(el(`<div class="rpt-block rpt-risk">
-        <span class="rpt-status s-${escapeHtml(r.status || "new")}">${escapeHtml(statusLabel(r.status))}</span>
-        <div><div class="rpt-risk-name">${escapeHtml(r.risk || "")}</div>${r.note ? `<div class="rpt-risk-note">${escapeHtml(r.note)}</div>` : ""}</div>
+        <span class="rpt-risk-dot"></span>
+        <div><div class="rpt-risk-name">${escapeHtml(r.risk || "")}${showChip ? ` <span class="rpt-status s-${escapeHtml(r.status)}">${escapeHtml(statusLabel(r.status))}</span>` : ""}</div>${r.note ? `<div class="rpt-risk-note">${escapeHtml(r.note)}</div>` : ""}</div>
       </div>`));
+    }
   }
 
   // The 11 sections.
@@ -354,12 +398,6 @@ function bodyBlocks(m) {
       push(el(`<div class="rpt-block rpt-list"><ul>${group.map((t) => `<li>${escapeHtml(t)}</li>`).join("")}</ul></div>`))
     );
   }
-  if (m.pressing_questions.length) {
-    push(el(`<div class="rpt-block rpt-keep"><div class="rpt-h">Pressing Questions</div></div>`));
-    chunk(m.pressing_questions, 14).forEach((group) =>
-      push(el(`<div class="rpt-block rpt-list q"><ul>${group.map((t) => `<li>${escapeHtml(t)}</li>`).join("")}</ul></div>`))
-    );
-  }
   return blocks;
 }
 
@@ -369,7 +407,7 @@ function kfTable(figs, cont) {
     <tbody>${figs
       .map((f) => `<tr>
         <td class="l">${escapeHtml(f.label || "")}</td>
-        <td class="v">${escapeHtml(f.value ?? "")}${clean(f.unit) ? ` <span class="u">${escapeHtml(clean(f.unit))}</span>` : ""}</td>
+        <td class="v">${escapeHtml(f.value ?? "")}${unitSpan(f.value, f.unit)}</td>
         <td class="p">${clean(f.period) ? escapeHtml(clean(f.period)) : "—"}</td>
         <td><span class="k k-${escapeHtml(f.kind || "reported")}">${escapeHtml(KIND_LABEL[f.kind] || "Reported")}</span></td>
       </tr>`)
@@ -379,18 +417,24 @@ function kfTable(figs, cont) {
 
 /* --------------------------------------------------------------- pages ----- */
 function frame(pageNo, total, m, logo) {
-  const wm = logo
-    ? `<img src="${logo}" class="rpt-wm-logo" alt="Munshot"/>`
-    : `<span class="rpt-wm-text">MUNSHOT</span>`;
   const header = `<div class="rpt-header">
       <div class="rpt-hd-co">${escapeHtml(m.company)}${m.industry ? ` · <span>${escapeHtml(m.industry)}</span>` : ""}</div>
-      <div class="rpt-hd-wm">${wm}</div>
+      <div class="rpt-hd-wm">${logoMark(logo, 20)}<span class="rpt-wm-text">Munshot</span></div>
     </div>`;
   const footer = `<div class="rpt-footer">
       <span>Prepared by Munshot · Daksham Capital${m.concall_date ? ` · ${escapeHtml(fmtDate(m.concall_date))}` : ""}</span>
+      <span class="rpt-foot-link">www.muns.io</span>
       <span>Page ${pageNo} of ${total}</span>
     </div>`;
   return { header, footer };
+}
+/** Top key figures for the cover "at a glance" (Financials first). */
+function topFigures(m, n) {
+  // Prefer Financials, but only if it actually carries figures — otherwise fall
+  // back to the first section that does (FIN may hold narrative-only subsections).
+  const hasFigs = (s) => (s.key_figures || []).filter(Boolean).length;
+  const fin = m.sections.find((s) => s.id === "FIN" && hasFigs(s)) || m.sections.find(hasFigs);
+  return (fin?.key_figures || []).filter(Boolean).slice(0, n);
 }
 
 function bodyPage(m, logo, blockEls, pageNo, total) {
@@ -403,28 +447,63 @@ function bodyPage(m, logo, blockEls, pageNo, total) {
 
 function coverPage(m, logo, total) {
   const { footer } = frame(1, total, m, logo);
-  const brand = logo
-    ? `<img src="${logo}" class="rpt-cover-logo" alt="Munshot"/>`
-    : `<div class="rpt-cover-word">MUNSHOT</div>`;
   const pills = [
     m.ticker && `<span>${escapeHtml(m.ticker)}</span>`,
     m.industry && `<span>${escapeHtml(m.industry)}</span>`,
     m.country && `<span>${escapeHtml(m.country)}</span>`,
     m.source === "ai_summary" ? `<span>AI concall summary</span>` : m.source === "transcript" ? `<span>Transcript</span>` : null,
   ].filter(Boolean).join("");
+
+  const figs = topFigures(m, 4);
+  const figsHtml = figs.length
+    ? `<div class="rpt-cover-figs">${figs
+        .map((f) => `<div class="rpt-cf"><div class="rpt-cf-v">${escapeHtml(f.value ?? "")}${unitSpan(f.value, f.unit, "")}</div><div class="rpt-cf-l">${escapeHtml(f.label || "")}</div></div>`)
+        .join("")}</div>`
+    : "";
+  const themesHtml = m.themes.length
+    ? `<div class="rpt-cover-themes">${m.themes
+        .slice(0, 5)
+        .map((t) => `<span class="rpt-ct d-${escapeHtml(t.direction || "neutral")}">${escapeHtml(clip(t.label, 34))}</span>`)
+        .join("")}</div>`
+    : "";
+
   return el(`<div class="rpt-page rpt-cover">
     <div class="rpt-cover-hero">
-      <div class="rpt-cover-brand">${brand}</div>
-      <div class="rpt-cover-prep">Prepared by Munshot for Daksham Capital</div>
+      <div class="rpt-cover-brandrow">
+        ${logoMark(logo, 46, "rpt-cover-logo")}
+        <div class="rpt-cover-brandtx"><div class="rpt-cover-word">MUNSHOT</div><div class="rpt-cover-prep">Prepared for Daksham Capital</div></div>
+      </div>
     </div>
     <div class="rpt-cover-mid">
       <div class="rpt-cover-eyebrow">Earnings Concall · Tear Sheet</div>
       <h1 class="rpt-cover-co">${escapeHtml(m.company)}</h1>
       <div class="rpt-cover-date">${m.concall_date ? escapeHtml(fmtDate(m.concall_date)) : "Latest concall"}</div>
       <div class="rpt-cover-pills">${pills}</div>
+      <div class="rpt-cover-glance">
+        <div class="rpt-cover-glance-h">At a glance</div>
+        ${m.summary ? `<p>${escapeHtml(clip(m.summary, 340))}</p>` : ""}
+        ${figsHtml}
+        ${themesHtml}
+      </div>
     </div>
-    <div class="rpt-cover-foot">The AI organises — it does not opine. Every figure is reproduced from the source concall,
-      reorganised into Daksham's fixed 11-section framework.</div>
+    <div class="rpt-cover-note">The AI organises — it does not opine. Every figure is reproduced verbatim from the
+      source concall and reorganised into Daksham's fixed 11-section framework — each figure traceable to the call it was
+      drawn from. Open the live tear sheet to cross-verify any figure at its source.</div>
+    ${footer}
+  </div>`);
+}
+
+function thankYouPage(m, logo, total) {
+  const { footer } = frame(total, total, m, logo);
+  return el(`<div class="rpt-page rpt-thanks">
+    <div class="rpt-thanks-mid">
+      ${logoMark(logo, 66, "rpt-thanks-logo")}
+      <div class="rpt-thanks-word">MUNSHOT</div>
+      <h2 class="rpt-thanks-h">Thank you.</h2>
+      <p class="rpt-thanks-p">This tear sheet was prepared by <b>Munshot</b> for <b>Daksham Capital</b>.<br/>
+        Concall intelligence, organised — never opined.</p>
+      <div class="rpt-thanks-link">www.muns.io</div>
+    </div>
     ${footer}
   </div>`);
 }
@@ -438,13 +517,29 @@ function dirLabel(d) {
   return { up: "Up", down: "Down", flat: "Flat", unclear: "Unclear" }[d] || d;
 }
 
+/* The Munshot monogram, inlined so it rasterises reliably in html2canvas
+   (an <img src=*.svg> often doesn't). A real PNG at the path below wins. */
+const MONOGRAM = `<svg viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="rmgGold" x1="30" y1="26" x2="100" y2="104" gradientUnits="userSpaceOnUse">
+  <stop offset="0" stop-color="#FCE58F"/><stop offset=".42" stop-color="#EBAE3A"/><stop offset="1" stop-color="#B4761A"/></linearGradient></defs>
+  <path d="M38 99 V51 A17 17 0 0 1 72 51 V81" stroke="url(#rmgGold)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M56 29 V77 A17 17 0 0 0 90 77 V29" stroke="url(#rmgGold)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>`;
+
 function loadLogo() {
+  // Prefer a real PNG if the user dropped one in; else use the inline monogram.
   return new Promise((resolve) => {
     const img = new Image();
-    img.onload = () => resolve("./assets/munshot-logo.png");
-    img.onerror = () => resolve(null);
+    img.onload = () => resolve({ png: "./assets/munshot-logo.png" });
+    img.onerror = () => resolve({ png: null });
     img.src = "./assets/munshot-logo.png";
   });
+}
+/** Logo mark at a given pixel height — PNG if present, else the inline SVG. */
+function logoMark(logo, px, cls = "") {
+  return logo && logo.png
+    ? `<img src="${logo.png}" class="${cls}" style="height:${px}px;width:auto;display:block" alt="Munshot"/>`
+    : `<span class="rpt-mono ${cls}" style="width:${px}px;height:${px}px">${MONOGRAM}</span>`;
 }
 
 /* --------------------------------------------------------------- styles ---- */
@@ -459,8 +554,11 @@ function injectStyles() {
   .dk-report .rpt-header { position: absolute; left: ${PAD_X}px; right: ${PAD_X}px; top: 30px; display: flex; justify-content: space-between; align-items: center; padding-bottom: 12px; border-bottom: 1px solid #e6e8f0; }
   .dk-report .rpt-hd-co { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 12.5px; color: #0f172a; }
   .dk-report .rpt-hd-co span { color: #64748b; font-weight: 500; }
-  .dk-report .rpt-wm-text { font-family: 'Space Grotesk', sans-serif; font-weight: 700; letter-spacing: 2px; font-size: 12px; color: #7c3aed; }
-  .dk-report .rpt-wm-logo { height: 22px; width: auto; display: block; }
+  .dk-report .rpt-hd-wm { display: flex; align-items: center; gap: 8px; }
+  .dk-report .rpt-wm-text { font-family: 'Space Grotesk', sans-serif; font-weight: 700; letter-spacing: 1.5px; font-size: 12px; color: #7c3aed; }
+  .dk-report .rpt-mono { display: inline-block; line-height: 0; }
+  .dk-report .rpt-mono svg { width: 100%; height: 100%; display: block; }
+  .dk-report .rpt-footer .rpt-foot-link { color: #b8791a; font-weight: 700; }
   .dk-report .rpt-footer { position: absolute; left: ${PAD_X}px; right: ${PAD_X}px; bottom: 28px; display: flex; justify-content: space-between; align-items: center; padding-top: 11px; border-top: 1px solid #e6e8f0; font-size: 10px; color: #94a3b8; }
 
   .dk-report .rpt-block { margin-bottom: ${BLOCK_GAP}px; }
@@ -474,7 +572,11 @@ function injectStyles() {
   .dk-report .rpt-sec-h { display: flex; align-items: center; gap: 10px; font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 700; color: #0f172a; margin: 6px 0 8px; }
   .dk-report .rpt-sec-n { flex: none; width: 22px; height: 22px; border-radius: 7px; display: inline-flex; align-items: center; justify-content: center; font-size: 11px; color: #fff; background: linear-gradient(135deg,#7c3aed,#6366f1); }
 
-  .dk-report .rpt-kf { width: 100%; border-collapse: collapse; font-size: 11px; }
+  .dk-report .rpt-kf { width: 100%; border-collapse: collapse; font-size: 11px; table-layout: fixed; }
+  .dk-report .rpt-kf th:nth-child(1), .dk-report .rpt-kf td.l { width: 45%; }
+  .dk-report .rpt-kf th:nth-child(2), .dk-report .rpt-kf td.v { width: 24%; }
+  .dk-report .rpt-kf th:nth-child(3), .dk-report .rpt-kf td.p { width: 17%; }
+  .dk-report .rpt-kf td.l, .dk-report .rpt-kf td.v { overflow-wrap: anywhere; word-break: break-word; }
   .dk-report .rpt-kf th { text-align: left; font-size: 9px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; color: #94a3b8; padding: 7px 10px; border-bottom: 1.5px solid #e6e8f0; }
   .dk-report .rpt-kf td { padding: 7px 10px; border-bottom: 1px solid #eef1f6; vertical-align: top; }
   .dk-report .rpt-kf tbody tr:nth-child(even) { background: #fafbfe; }
@@ -515,24 +617,47 @@ function injectStyles() {
   .dk-report .s-no_mention { background: #f1f5f9; color: #94a3b8; }
 
   .dk-report .rpt-risk { display: flex; gap: 11px; align-items: flex-start; border: 1px solid #eef1f6; border-radius: 10px; padding: 10px 13px; }
+  .dk-report .rpt-risk-dot { flex: 0 0 auto; width: 7px; height: 7px; border-radius: 50%; background: #f97316; margin-top: 5px; }
   .dk-report .rpt-risk-name { font-weight: 600; font-size: 12px; color: #0f172a; }
+  .dk-report .rpt-risk-name .rpt-status { margin-left: 6px; vertical-align: middle; }
   .dk-report .rpt-risk-note { font-size: 11px; color: #64748b; margin-top: 2px; line-height: 1.45; }
 
   /* Cover */
   .dk-report .rpt-cover { display: block; }
-  .dk-report .rpt-cover-hero { position: relative; height: 300px; background: linear-gradient(135deg,#7c3aed 0%,#6366f1 40%,#3b82f6 72%,#06b6d4 100%); padding: ${PAD_X}px; color: #fff; overflow: hidden; }
-  .dk-report .rpt-cover-hero::after { content: ""; position: absolute; right: -80px; top: -80px; width: 360px; height: 360px; border-radius: 50%; background: rgba(255,255,255,.12); }
-  .dk-report .rpt-cover-brand { position: relative; z-index: 1; }
-  .dk-report .rpt-cover-logo { height: 62px; width: auto; display: block; filter: drop-shadow(0 6px 16px rgba(0,0,0,.25)); }
+  .dk-report .rpt-cover-hero { position: relative; height: 158px; background: linear-gradient(120deg,#7c3aed 0%,#6366f1 42%,#3b82f6 74%,#06b6d4 100%); padding: 34px ${PAD_X}px; color: #fff; overflow: hidden; display: flex; align-items: center; }
+  .dk-report .rpt-cover-hero::after { content: ""; position: absolute; right: -70px; top: -90px; width: 320px; height: 320px; border-radius: 50%; background: rgba(255,255,255,.12); }
+  .dk-report .rpt-cover-brandrow { position: relative; z-index: 1; display: flex; align-items: center; gap: 18px; }
+  .dk-report .rpt-cover-logo { filter: drop-shadow(0 6px 16px rgba(0,0,0,.28)); }
+  .dk-report .rpt-cover-brandtx { line-height: 1.15; }
   .dk-report .rpt-cover-word { font-family: 'Space Grotesk', sans-serif; font-weight: 700; letter-spacing: 5px; font-size: 30px; }
-  .dk-report .rpt-cover-prep { position: absolute; left: ${PAD_X}px; bottom: 30px; z-index: 1; font-size: 15px; font-weight: 600; opacity: .95; }
-  .dk-report .rpt-cover-mid { padding: 54px ${PAD_X}px 0; }
+  .dk-report .rpt-cover-prep { font-size: 13.5px; font-weight: 600; opacity: .95; margin-top: 4px; }
+  .dk-report .rpt-cover-mid { padding: 38px ${PAD_X}px 0; }
   .dk-report .rpt-cover-eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #7c3aed; }
-  .dk-report .rpt-cover-co { font-family: 'Space Grotesk', sans-serif; font-size: 44px; font-weight: 700; letter-spacing: -1px; color: #0f172a; margin: 14px 0 8px; line-height: 1.05; }
-  .dk-report .rpt-cover-date { font-size: 17px; color: #475569; font-weight: 500; }
-  .dk-report .rpt-cover-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; }
+  .dk-report .rpt-cover-co { font-family: 'Space Grotesk', sans-serif; font-size: 42px; font-weight: 700; letter-spacing: -1px; color: #0f172a; margin: 12px 0 8px; line-height: 1.04; }
+  .dk-report .rpt-cover-date { font-size: 16px; color: #475569; font-weight: 500; }
+  .dk-report .rpt-cover-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
   .dk-report .rpt-cover-pills span { font-size: 12px; font-weight: 600; color: #4f46e5; background: #eef2ff; border: 1px solid #e0e7ff; padding: 6px 14px; border-radius: 999px; }
-  .dk-report .rpt-cover-foot { position: absolute; left: ${PAD_X}px; right: ${PAD_X}px; bottom: 92px; font-size: 11px; line-height: 1.6; color: #94a3b8; border-top: 1px solid #eef1f6; padding-top: 14px; }
+  .dk-report .rpt-cover-glance { margin-top: 30px; border: 1px solid #e6e8f0; border-radius: 16px; padding: 20px 22px; background: linear-gradient(180deg,#fbfaff,#f4f6ff); }
+  .dk-report .rpt-cover-glance-h { font-family: 'Space Grotesk', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #7c3aed; margin-bottom: 10px; }
+  .dk-report .rpt-cover-glance p { margin: 0 0 16px; font-size: 13px; line-height: 1.6; color: #334155; }
+  .dk-report .rpt-cover-figs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 14px; }
+  .dk-report .rpt-cf { background: #fff; border: 1px solid #eef1f6; border-radius: 11px; padding: 12px 13px; }
+  .dk-report .rpt-cf-v { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 19px; color: #0f172a; line-height: 1.1; }
+  .dk-report .rpt-cf-v span { font-size: 11px; font-weight: 600; color: #94a3b8; }
+  .dk-report .rpt-cf-l { font-size: 10px; color: #64748b; margin-top: 4px; line-height: 1.3; }
+  .dk-report .rpt-cover-themes { display: flex; flex-wrap: wrap; gap: 7px; }
+  .dk-report .rpt-ct { font-size: 11px; font-weight: 600; color: #475569; background: #fff; border: 1px solid #e6e8f0; border-left: 3px solid #94a3b8; padding: 5px 11px; border-radius: 7px; }
+  .dk-report .rpt-ct.d-positive { border-left-color: #10b981; } .dk-report .rpt-ct.d-negative { border-left-color: #f43f5e; } .dk-report .rpt-ct.d-mixed { border-left-color: #f59e0b; }
+  .dk-report .rpt-cover-note { position: absolute; left: ${PAD_X}px; right: ${PAD_X}px; bottom: 92px; font-size: 10.5px; line-height: 1.6; color: #94a3b8; border-top: 1px solid #eef1f6; padding-top: 14px; }
+
+  /* Thank-you closing page */
+  .dk-report .rpt-thanks { display: flex; align-items: center; justify-content: center; background: linear-gradient(160deg,#faf9ff 0%,#eef2ff 100%); }
+  .dk-report .rpt-thanks-mid { text-align: center; padding: 0 60px; }
+  .dk-report .rpt-thanks-logo { margin: 0 auto 18px; filter: drop-shadow(0 8px 20px rgba(180,121,26,.28)); }
+  .dk-report .rpt-thanks-word { font-family: 'Space Grotesk', sans-serif; font-weight: 700; letter-spacing: 6px; font-size: 24px; color: #b8791a; }
+  .dk-report .rpt-thanks-h { font-family: 'Space Grotesk', sans-serif; font-size: 40px; font-weight: 700; color: #0f172a; margin: 22px 0 12px; }
+  .dk-report .rpt-thanks-p { font-size: 14px; line-height: 1.7; color: #475569; margin: 0 0 22px; }
+  .dk-report .rpt-thanks-link { display: inline-block; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 15px; color: #fff; background: linear-gradient(135deg,#7c3aed,#3b82f6); padding: 11px 26px; border-radius: 999px; }
   `;
   const style = document.createElement("style");
   style.id = "dk-report-styles";

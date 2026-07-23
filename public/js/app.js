@@ -110,6 +110,10 @@ const state = {
   pollTimer: null,
   currentSheet: null,
   view: "overview", // "overview" | "sectors"
+  boardRows: [], // done-only rows on the board (source for feed search/paging)
+  feedShown: 5, // visible feed rows (grows +5 via "show more")
+  feedQuery: "", // feed table search filter
+  pendingAnalyze: null,
 };
 
 // CDN capability flags (graceful degradation if a script was blocked).
@@ -678,6 +682,7 @@ function renderAll() {
   // The board shows ONLY successfully analyzed companies. In-flight / failed
   // runs live in the global progress dock — never as ghost rows on the board.
   const board = feed.filter((r) => r.hasTearsheet);
+  state.boardRows = board;
   renderFeed(board);
   renderKpis(board);
   renderSectorChart(board);
@@ -700,42 +705,95 @@ function renderFeed(rows) {
     return;
   }
 
-  const body = rows.map((r) => feedRowHtml(r)).join("");
-  container.innerHTML = `
-    <table class="feed-table">
-      <thead>
-        <tr>
-          <th>Company</th>
-          <th class="hide-sm">Sector</th>
-          <th class="hide-sm">Concall</th>
-          <th>Guidance Headline</th>
-          <th class="hide-sm">Source</th>
-          <th>Status</th>
-        </tr>
-      </thead>
-      <tbody>${body}</tbody>
-    </table>`;
+  // Filter by the table search, then reveal in pages of 5 (no long scroll).
+  const q = (state.feedQuery || "").toLowerCase().trim();
+  const filtered = q
+    ? rows.filter((r) => `${r.name} ${r.ticker} ${r.industry || ""}`.toLowerCase().includes(q))
+    : rows;
+  const shown = Math.max(5, Math.min(state.feedShown || 5, filtered.length));
+  const visible = filtered.slice(0, shown);
+  const remaining = filtered.length - visible.length;
 
-  qsa(".feed-table tbody tr", container).forEach((tr) => {
+  const bodyHtml = visible.length
+    ? visible.map((r) => feedRowHtml(r)).join("")
+    : `<tr><td colspan="5" class="feed-nomatch">No companies match “${escapeHtml(state.feedQuery)}”.</td></tr>`;
+
+  container.innerHTML = `
+    <div class="feed-toolbar">
+      <div class="feed-search">
+        <i data-lucide="search" class="i16"></i>
+        <input id="feedSearch" type="search" name="daksham-feed-filter" autocomplete="off"
+          autocorrect="off" autocapitalize="off" spellcheck="false" data-1p-ignore data-lpignore="true"
+          placeholder="Search concalls — company, ticker or sector…" value="${escapeHtml(state.feedQuery || "")}" />
+      </div>
+      <span class="feed-count">${filtered.length} ${filtered.length === 1 ? "company" : "companies"}</span>
+    </div>
+    <div class="feed-scroll">
+      <table class="feed-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th class="hide-sm">Sector</th>
+            <th class="hide-sm">Concall</th>
+            <th>Guidance Headline</th>
+            <th class="hide-sm" title="Analysis source">Src</th>
+          </tr>
+        </thead>
+        <tbody>${bodyHtml}</tbody>
+      </table>
+    </div>
+    <div class="feed-foot">${
+      remaining > 0
+        ? `<button class="feed-more" id="feedMore"><i data-lucide="chevron-down" class="i16"></i> Show ${Math.min(
+            5,
+            remaining
+          )} more <span class="fm-rest">${remaining} left</span></button>`
+        : shown > 5
+        ? `<button class="feed-more ghost" id="feedLess"><i data-lucide="chevron-up" class="i16"></i> Show less</button>`
+        : ""
+    }</div>`;
+
+  qsa(".feed-table tbody tr[data-ticker]", container).forEach((tr) => {
     tr.addEventListener("click", () => {
       const t = tr.getAttribute("data-ticker");
       const row = rows.find((r) => r.ticker === t);
       if (row) openTearSheet(row);
     });
   });
-  // Sector cell -> open that sector (don't also open the tear sheet).
   qsa(".sector-link[data-goto-sector]", container).forEach((el) =>
     el.addEventListener("click", (e) => {
       e.stopPropagation();
       goToSector(el.getAttribute("data-goto-sector"));
     })
   );
+
+  // Table search — filters + resets paging; keeps focus across re-render.
+  const search = qs("#feedSearch");
+  if (search) {
+    const wasFocused = state._feedSearchFocused;
+    search.addEventListener("input", (e) => {
+      state.feedQuery = e.target.value;
+      state.feedShown = 5;
+      state._feedSearchFocused = true;
+      renderFeed(state.boardRows);
+    });
+    search.addEventListener("blur", () => (state._feedSearchFocused = false));
+    if (wasFocused) {
+      search.focus();
+      const v = search.value;
+      search.setSelectionRange(v.length, v.length);
+    }
+  }
+  const more = qs("#feedMore");
+  if (more) more.addEventListener("click", () => { state.feedShown = shown + 5; renderFeed(state.boardRows); });
+  const less = qs("#feedLess");
+  if (less) less.addEventListener("click", () => { state.feedShown = 5; renderFeed(state.boardRows); });
+
   refreshIcons();
 }
 
 function feedRowHtml(r) {
   const grad = gradientFor(r.ticker);
-  const statusChip = statusChipHtml(r.status, r.failMessage);
   const sourceChip = sourceChipHtml(r.source);
   const headline = r.headline
     ? `<span class="headline">${escapeHtml(r.headline)}</span>`
@@ -769,7 +827,6 @@ function feedRowHtml(r) {
       }</td>
       <td>${headline}${feedThemeChip(r.themes)}</td>
       <td class="hide-sm">${sourceChip}</td>
-      <td>${statusChip}</td>
     </tr>`;
 }
 
@@ -803,12 +860,14 @@ function statusChipHtml(status, failMessage) {
   )}</span>`;
 }
 
+// Compact icon-only source indicator for the feed's narrow Source column; the
+// full label is exposed via the tooltip (a text pill clips at tablet widths).
 function sourceChipHtml(source) {
   if (source === "ai_summary")
-    return `<span class="chip src-ai"><i data-lucide="sparkles" class="i16"></i>AI summary</span>`;
+    return `<span class="chip src-ai src-ico" title="AI concall summary"><i data-lucide="sparkles" class="i16"></i></span>`;
   if (source === "transcript")
-    return `<span class="chip src-transcript"><i data-lucide="file-text" class="i16"></i>Transcript</span>`;
-  return `<span class="chip src-none">—</span>`;
+    return `<span class="chip src-transcript src-ico" title="Full transcript"><i data-lucide="file-text" class="i16"></i></span>`;
+  return `<span class="chip src-none src-ico" title="Source pending">—</span>`;
 }
 
 function emptyFeedHtml() {
@@ -1070,8 +1129,8 @@ function tearSheetRealHtml(q, comp) {
     themesBandHtml(q.themes) +
     guidanceBandHtml(q.guidance_ledger, isFirst) +
     riskBandHtml(q.risk_register) +
-    sectionsHtml(q.sections) +
-    insightsHtml(q.key_takeaways, q.pressing_questions) +
+    sectionsHtml(q.sections, q.source_url) +
+    insightsHtml(q.key_takeaways) +
     pdfActionsHtml()
   );
 }
@@ -1094,14 +1153,17 @@ function themesBandHtml(themes) {
   return `<div class="band-title"><i data-lucide="hash" class="i16"></i> Themes</div><div class="theme-cloud">${chips}</div>`;
 }
 
-/* Guidance vs Delivery band — the ledger as colorful status chips. */
+/* Guidance vs Delivery band. Carried-forward "no_mention" items are hidden (they
+   clutter and confuse), and the "new" chip is suppressed — a plain first-time
+   guidance item needs no jargon label; only real deltas (Raised/Lowered/…) get a
+   chip so the "vs delivery" signal stays clear. */
 function guidanceBandHtml(ledger, isFirst) {
-  const items = (ledger || []).filter(Boolean);
-  const head = `<div class="band-title"><i data-lucide="scale" class="i16"></i> Guidance vs Delivery</div>`;
+  const items = (ledger || []).filter(Boolean).filter((g) => g.status !== "no_mention");
+  const head = `<div class="band-title"><i data-lucide="scale" class="i16"></i> Guidance &amp; Outlook</div>`;
   if (!items.length)
     return head + `<div class="ts-empty-inline">No explicit forward guidance this quarter.</div>`;
   const note = isFirst
-    ? `<div class="ts-firstq"><i data-lucide="info" class="i16"></i> First tracked quarter — deltas appear next quarter.</div>`
+    ? `<div class="ts-firstq"><i data-lucide="info" class="i16"></i> First tracked quarter — “raised / lowered / met” deltas start next quarter.</div>`
     : "";
   const chips = items.map(guidanceItemHtml).join("");
   return head + note + `<div class="ledger-grid">${chips}</div>`;
@@ -1110,17 +1172,17 @@ function guidanceBandHtml(ledger, isFirst) {
 function guidanceItemHtml(g) {
   const st = guidanceStatusMeta(g.status);
   const dir = directionMeta(g.direction);
+  const showChip = g.status && g.status !== "new";
   return `
     <div class="ledger-item spec-${escapeHtml(g.specificity || "vague")}">
       <div class="ledger-top">
         <span class="ledger-metric">${escapeHtml(g.metric)}</span>
-        <span class="chip ${st.cls}"><span class="cdot"></span>${st.label}</span>
+        ${showChip ? `<span class="chip ${st.cls}"><span class="cdot"></span>${st.label}</span>` : ""}
       </div>
       <div class="ledger-statement">${escapeHtml(g.statement)}</div>
       <div class="ledger-meta">
         <span class="ltag"><i data-lucide="${dir.icon}" class="i16"></i>${dir.label}</span>
         ${g.horizon ? `<span class="ltag">${escapeHtml(g.horizon)}</span>` : ""}
-        <span class="ltag spec">${escapeHtml(g.specificity || "")}</span>
       </div>
     </div>`;
 }
@@ -1152,19 +1214,24 @@ function directionMeta(direction) {
   return { icon, label };
 }
 
-/* Risk register — status-chipped list (deltas across quarters). */
+/* Risk register — only risks actually flagged THIS quarter (carried-forward
+   "no_mention" items are hidden). A chip appears only for a real change
+   (Escalated / Easing / Resolved); a first-time risk shows plain. */
 function riskBandHtml(risks) {
-  const items = (risks || []).filter(Boolean);
+  const items = (risks || []).filter(Boolean).filter((r) => r.status !== "no_mention");
   if (!items.length) return "";
   const head = `<div class="band-title"><i data-lucide="shield-alert" class="i16"></i> Risk Register</div>`;
   const chips = items
     .map((r) => {
       const st = riskStatusMeta(r.status);
+      const showChip = r.status && r.status !== "new";
       return `
         <div class="risk-item">
-          <span class="chip ${st.cls}"><span class="cdot"></span>${st.label}</span>
+          <span class="risk-dot" aria-hidden="true"></span>
           <div class="risk-body">
-            <div class="risk-name">${escapeHtml(r.risk)}</div>
+            <div class="risk-name">${escapeHtml(r.risk)}${
+              showChip ? ` <span class="chip ${st.cls} sm"><span class="cdot"></span>${st.label}</span>` : ""
+            }</div>
             ${r.note ? `<div class="risk-note">${escapeHtml(r.note)}</div>` : ""}
           </div>
         </div>`;
@@ -1187,13 +1254,13 @@ function riskStatusMeta(status) {
 }
 
 /* The 11 sections — render only those with content. */
-function sectionsHtml(sections) {
+function sectionsHtml(sections, sourceUrl) {
   const list = (sections || []).filter(
     (s) => s && (s.key_figures?.length || s.subsections?.some((x) => x.points?.length))
   );
   if (!list.length) return "";
   const head = `<div class="band-title"><i data-lucide="layout-grid" class="i16"></i> The 11-Section Tear Sheet</div>`;
-  return head + `<div class="ts-sections">${list.map(sectionCardHtml).join("")}</div>`;
+  return head + `<div class="ts-sections">${list.map((s) => sectionCardHtml(s, sourceUrl)).join("")}</div>`;
 }
 
 /** Treat empty / literal "null"/"undefined" strings as absent (model artifacts). */
@@ -1215,23 +1282,27 @@ function pointsHtml(points) {
     </details>`;
 }
 
-function sectionCardHtml(s) {
+function sectionCardHtml(s, sourceUrl) {
   const meta = SECTION_BY_ID[s.id] || { title: s.title, icon: "dot", grad: SECTION_GRADS[0] };
   const figs = (s.key_figures || []).filter(Boolean);
   const subs = (s.subsections || []).filter((x) => x.points?.length);
 
+  // A per-row "verify at source" link (opens the concall the figure came from).
+  const srcCell = sourceUrl
+    ? `<a class="kf-src" href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener" title="Cross-verify this figure at the source concall"><i data-lucide="external-link" class="i16"></i></a>`
+    : "";
+
   const figTable = figs.length
     ? `<table class="kf-table">
-        <thead><tr><th>Metric</th><th>Value</th><th>Period</th><th>Type</th></tr></thead>
+        <thead><tr><th>Metric</th><th>Value</th><th class="hide-sm">Period</th><th>Type</th><th class="kf-src-h" title="Verify at source">Src</th></tr></thead>
         <tbody>${figs
           .map(
             (f) => `<tr>
             <td class="kf-label">${escapeHtml(f.label)}</td>
-            <td class="kf-value">${escapeHtml(f.value)}${
-              cleanField(f.unit) ? ` <span class="kf-unit">${escapeHtml(cleanField(f.unit))}</span>` : ""
-            }</td>
-            <td class="kf-period">${cleanField(f.period) ? escapeHtml(cleanField(f.period)) : "—"}</td>
+            <td class="kf-value">${escapeHtml(f.value)}${kfUnitHtml(f.value, f.unit)}</td>
+            <td class="kf-period hide-sm">${cleanField(f.period) ? escapeHtml(cleanField(f.period)) : "—"}</td>
             <td>${kindChip(f.kind)}</td>
+            <td class="kf-src-cell">${srcCell}</td>
           </tr>`
           )
           .join("")}</tbody>
@@ -1259,6 +1330,19 @@ function sectionCardHtml(s) {
     </div>`;
 }
 
+/** Render the unit chip, but skip a unit the value already carries
+ *  (e.g. value "25%" + unit "%", or "54,000 Cr" + unit "Cr"). */
+function kfUnitHtml(value, unit) {
+  const u = cleanField(unit);
+  if (!u) return "";
+  const v = String(value ?? "").trim().toLowerCase();
+  const uu = u.toLowerCase();
+  // Skip a unit the value already carries — suffix ("25%" + "%") or prefix
+  // ("INR50,000 crores" + "INR", common for currency tokens).
+  if (v && (v.endsWith(uu) || v.startsWith(uu))) return "";
+  return ` <span class="kf-unit">${escapeHtml(u)}</span>`;
+}
+
 function kindChip(kind) {
   const m = {
     reported: ["kc-reported", "Reported"],
@@ -1270,23 +1354,17 @@ function kindChip(kind) {
   return `<span class="kchip ${cls}">${label}</span>`;
 }
 
-/* Key Takeaways (Screener's words, verbatim) + Pressing Questions. */
-function insightsHtml(takeaways, questions) {
+/* Key Takeaways — the verbatim highlights from the concall (full width). */
+function insightsHtml(takeaways) {
   const t = (takeaways || []).filter(Boolean);
-  const q = (questions || []).filter(Boolean);
-  if (!t.length && !q.length) return "";
-  const head = `<div class="band-title"><i data-lucide="lightbulb" class="i16"></i> Analyst Read</div>`;
-  const tCard = `
-    <div class="insight-card takeaways">
-      <h4><i data-lucide="check-check" class="i16"></i> Key Takeaways <span class="verbatim">Screener · verbatim</span></h4>
-      ${t.length ? `<ul>${t.map((x) => `<li>${escapeHtml(x)}</li>`).join("")}</ul>` : `<div class="ts-empty-inline">None provided.</div>`}
-    </div>`;
-  const qCard = `
-    <div class="insight-card questions">
-      <h4><i data-lucide="help-circle" class="i16"></i> Pressing Questions</h4>
-      ${q.length ? `<ul>${q.map((x) => `<li>${escapeHtml(x)}</li>`).join("")}</ul>` : `<div class="ts-empty-inline">None highlighted.</div>`}
-    </div>`;
-  return head + `<div class="two-col">${tCard}${qCard}</div>`;
+  if (!t.length) return "";
+  const head = `<div class="band-title"><i data-lucide="lightbulb" class="i16"></i> Key Takeaways</div>`;
+  return (
+    head +
+    `<div class="insight-card takeaways full">
+      <ul>${t.map((x) => `<li>${escapeHtml(x)}</li>`).join("")}</ul>
+    </div>`
+  );
 }
 
 function pdfActionsHtml() {
