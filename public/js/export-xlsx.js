@@ -11,7 +11,7 @@
  *     with a frozen header row + autofilter.
  */
 import { fmtDate } from "./ui.js";
-import { fileName } from "./report.js";
+import { fileName, quarterMatrix } from "./report.js";
 
 const V = "FF7C3AED"; // violet
 const INK = "FF0F172A";
@@ -81,22 +81,37 @@ function buildTearSheet(wb, m) {
     r++;
   }
 
-  // 11 sections, each a coloured band + Key Figures table + bullets
+  // 11 sections, each a coloured band + Key Figures table + bullets.
+  // In "multi" mode the Key Figures become a matrix: Metric + one column per concall.
   m.sections.forEach((s, i) => {
     band(ws, r++, `${i + 1}.  ${s.title || s.id}`, NCOL);
-    const figs = (s.key_figures || []).filter(Boolean);
-    if (figs.length) {
-      tableHeader(ws, r++, ["Metric", "Value", "Unit", "Period", "Type"], NCOL);
-      for (const f of figs) {
-        const row = ws.getRow(r++);
-        row.getCell(1).value = f.label || "";
-        row.getCell(2).value = f.value ?? "";
-        row.getCell(3).value = clean(f.unit);
-        row.getCell(4).value = clean(f.period);
-        row.getCell(5).value = KIND_LABEL[f.kind] || "Reported";
-        styleDataRow(row, NCOL);
-        ws.mergeCells(row.number, 5, row.number, NCOL);
-        row.height = narrativeHeight([[f.label, 36]]);
+    if (m.mode === "multi") {
+      const mx = quarterMatrix(m.quarters, s.id);
+      if (mx.rows.length) {
+        tableHeader(ws, r++, ["Metric", ...mx.cols.map((c) => c.label)], NCOL, true);
+        for (const mr of mx.rows) {
+          const row = ws.getRow(r++);
+          row.getCell(1).value = mr.label || "";
+          mx.cols.forEach((_, ci) => (row.getCell(2 + ci).value = mr.cells[ci] == null ? "" : mr.cells[ci]));
+          styleDataRow(row, NCOL);
+          row.height = narrativeHeight([[mr.label, 36]]);
+        }
+      }
+    } else {
+      const figs = (s.key_figures || []).filter(Boolean);
+      if (figs.length) {
+        tableHeader(ws, r++, ["Metric", "Value", "Unit", "Period", "Type"], NCOL);
+        for (const f of figs) {
+          const row = ws.getRow(r++);
+          row.getCell(1).value = f.label || "";
+          row.getCell(2).value = f.value ?? "";
+          row.getCell(3).value = clean(f.unit);
+          row.getCell(4).value = clean(f.period);
+          row.getCell(5).value = KIND_LABEL[f.kind] || "Reported";
+          styleDataRow(row, NCOL);
+          ws.mergeCells(row.number, 5, row.number, NCOL);
+          row.height = narrativeHeight([[f.label, 36]]);
+        }
       }
     }
     for (const ss of (s.subsections || []).filter((x) => x.points?.length)) {
@@ -175,18 +190,37 @@ function buildTearSheet(wb, m) {
 }
 
 /* ------------------------------------------------------------ sheet 2 ------ */
+/** Flat, analyst-friendly Key Figures grid. In "multi" mode it becomes a
+ *  Section × Metric pivot with one value column per concall. */
 function buildKeyFigures(wb, m) {
-  const rows = [];
-  m.sections.forEach((s) => {
-    (s.key_figures || []).filter(Boolean).forEach((f) => {
-      rows.push([s.title || s.id, f.label || "", f.value ?? "", clean(f.unit), clean(f.period), KIND_LABEL[f.kind] || "Reported"]);
-    });
-  });
+  const multi = m.mode === "multi";
+  let head, rows, widths;
+  if (multi) {
+    const cols = quarterMatrix(m.quarters, "__cols__").cols; // section id irrelevant for columns
+    head = ["Section", "Metric", ...cols.map((c) => c.label)];
+    widths = [30, 34, ...cols.map(() => 14)];
+    rows = [];
+    m.sections.forEach((s) =>
+      quarterMatrix(m.quarters, s.id).rows.forEach((mr) =>
+        rows.push([s.title || s.id, mr.label || "", ...mr.cells.map((v) => (v == null ? "" : v))])
+      )
+    );
+  } else {
+    head = ["Section", "Metric", "Value", "Unit", "Period", "Type"];
+    widths = [30, 34, 16, 12, 14, 14];
+    rows = [];
+    m.sections.forEach((s) =>
+      (s.key_figures || []).filter(Boolean).forEach((f) =>
+        rows.push([s.title || s.id, f.label || "", f.value ?? "", clean(f.unit), clean(f.period), KIND_LABEL[f.kind] || "Reported"])
+      )
+    );
+  }
   if (!rows.length) return;
+  const ncol = head.length;
   const ws = wb.addWorksheet("Key Figures", { views: [{ showGridLines: false, state: "frozen", ySplit: 1 }] });
-  ws.columns = [{ width: 30 }, { width: 34 }, { width: 16 }, { width: 12 }, { width: 14 }, { width: 14 }];
-  const head = ws.addRow(["Section", "Metric", "Value", "Unit", "Period", "Type"]);
-  head.eachCell((c) => {
+  ws.columns = widths.map((w) => ({ width: w }));
+  const headRow = ws.addRow(head);
+  headRow.eachCell((c) => {
     c.font = { bold: true, color: { argb: "FFFFFFFF" }, size: 10.5 };
     c.fill = solid(V);
     c.alignment = { vertical: "middle", indent: 1 };
@@ -196,12 +230,13 @@ function buildKeyFigures(wb, m) {
   rows.forEach((rvals) => {
     const row = ws.addRow(rvals);
     row.eachCell((c, col) => {
-      c.font = { size: 10, color: { argb: col === 3 ? INK : "FF334155" }, bold: col === 3 };
+      const emph = !multi && col === 3; // single mode bolds the Value column
+      c.font = { size: 10, color: { argb: emph ? INK : "FF334155" }, bold: emph };
       c.alignment = { vertical: "top", wrapText: col === 2, indent: col === 1 ? 1 : 0 };
       c.border = box();
     });
   });
-  ws.autoFilter = { from: { row: 1, column: 1 }, to: { row: 1, column: 6 } };
+  ws.autoFilter = { from: { row: 1, column: 1 }, to: { row: 1, column: ncol } };
 }
 
 /* --------------------------------------------------------------- style ----- */
@@ -215,7 +250,7 @@ function band(ws, r, text, ncol) {
   c.border = box();
   ws.getRow(r).height = 22;
 }
-function tableHeader(ws, r, labels, ncol) {
+function tableHeader(ws, r, labels, ncol, noMerge) {
   const row = ws.getRow(r);
   // Paint + box every column so the header frame lines up with the data below,
   // even where the data merges trailing columns.
@@ -228,13 +263,16 @@ function tableHeader(ws, r, labels, ncol) {
     c.alignment = { vertical: "middle", indent: i === 1 ? 1 : 0 };
   }
   // Empty labels flag a continuation of the previous heading → merge to mirror
-  // the data-row merges (e.g. a wide "Statement" or "Note" column).
-  let p = 1;
-  while (p <= ncol) {
-    let q = p;
-    while (q + 1 <= ncol && !(labels[q] || "")) q++;
-    if (q > p) ws.mergeCells(r, p, r, q);
-    p = q + 1;
+  // the data-row merges (e.g. a wide "Statement" or "Note" column). The matrix
+  // has independent columns, so it opts out via noMerge.
+  if (!noMerge) {
+    let p = 1;
+    while (p <= ncol) {
+      let q = p;
+      while (q + 1 <= ncol && !(labels[q] || "")) q++;
+      if (q > p) ws.mergeCells(r, p, r, q);
+      p = q + 1;
+    }
   }
   row.height = 18;
 }
@@ -270,12 +308,22 @@ function exportCsv(m) {
   lines.push(["Munshot · Prepared for Daksham Capital"].map(esc).join(","));
   lines.push([m.company, m.ticker, m.industry || "", m.concall_date ? fmtDate(m.concall_date) : ""].map(esc).join(","));
   lines.push("");
-  lines.push(["Section", "Metric", "Value", "Unit", "Period", "Type"].map(esc).join(","));
-  m.sections.forEach((s) =>
-    (s.key_figures || []).filter(Boolean).forEach((f) =>
-      lines.push([s.title || s.id, f.label || "", f.value ?? "", clean(f.unit), clean(f.period), KIND_LABEL[f.kind] || "Reported"].map(esc).join(","))
-    )
-  );
+  if (m.mode === "multi") {
+    const cols = quarterMatrix(m.quarters, "__cols__").cols;
+    lines.push(["Section", "Metric", ...cols.map((c) => c.label)].map(esc).join(","));
+    m.sections.forEach((s) =>
+      quarterMatrix(m.quarters, s.id).rows.forEach((mr) =>
+        lines.push([s.title || s.id, mr.label || "", ...mr.cells.map((v) => (v == null ? "" : v))].map(esc).join(","))
+      )
+    );
+  } else {
+    lines.push(["Section", "Metric", "Value", "Unit", "Period", "Type"].map(esc).join(","));
+    m.sections.forEach((s) =>
+      (s.key_figures || []).filter(Boolean).forEach((f) =>
+        lines.push([s.title || s.id, f.label || "", f.value ?? "", clean(f.unit), clean(f.period), KIND_LABEL[f.kind] || "Reported"].map(esc).join(","))
+      )
+    );
+  }
   download(new Blob(["﻿" + lines.join("\n")], { type: "text/csv;charset=utf-8" }), fileName(m, "csv"));
 }
 

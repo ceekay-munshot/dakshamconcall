@@ -59,6 +59,48 @@ const clip = (v, n) => {
   return (sp > n * 0.6 ? cut.slice(0, sp) : cut).replace(/[\s,;:.–—-]+$/, "") + "…";
 };
 
+/* ---- Multi-quarter pivot (shared by tear sheet, PDF and Excel) ------------- */
+/** Plain-text figure value with its unit, de-duplicated whether the unit sits
+ *  as a suffix ("25%"+"%") or prefix ("INR50,000 cr"+"INR"). */
+export function figureText(value, unit) {
+  const v = String(value ?? "").trim();
+  const u = clean(unit);
+  if (!u) return v;
+  const lv = v.toLowerCase(), lu = u.toLowerCase();
+  return v && (lv.endsWith(lu) || lv.startsWith(lu)) ? v : `${v} ${u}`.trim();
+}
+/** Compact concall label for a column header, e.g. "Jul '26". */
+export function shortConcall(date) {
+  const m = String(date || "").slice(0, 10).match(/^(\d{4})-(\d{2})/);
+  if (!m) return String(date || "").slice(0, 10) || "—";
+  const mon = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][+m[2] - 1] || m[2];
+  return `${mon} '${m[1].slice(2)}`;
+}
+/** Pivot one section's key figures across up to `maxCols` most-recent quarters.
+ *  Quarters arrive newest-first; columns come back oldest→newest so the latest
+ *  sits on the right. Metrics are lined up by normalised label (label-match). */
+export function quarterMatrix(quarters, sectionId, maxCols = 4) {
+  const qs = (quarters || []).filter(Boolean).slice(0, maxCols).reverse(); // oldest → newest
+  const cols = qs.map((q) => ({ date: q.concall_date || null, label: shortConcall(q.concall_date) }));
+  const norm = (l) => String(l || "").toLowerCase().replace(/\s+/g, " ").trim();
+  const order = [];
+  const byKey = new Map();
+  const figsOf = (q) => ((q.sections || []).find((s) => s.id === sectionId)?.key_figures || []).filter(Boolean);
+  // Seed row order from the latest quarter first so its metrics lead.
+  for (let ci = qs.length - 1; ci >= 0; ci--)
+    for (const f of figsOf(qs[ci])) {
+      const k = norm(f.label);
+      if (k && !byKey.has(k)) { byKey.set(k, { label: f.label, cells: new Array(qs.length).fill(null) }); order.push(k); }
+    }
+  qs.forEach((q, ci) => {
+    for (const f of figsOf(q)) {
+      const row = byKey.get(norm(f.label));
+      if (row && row.cells[ci] == null) row.cells[ci] = figureText(f.value, f.unit);
+    }
+  });
+  return { cols, rows: order.map((k) => byKey.get(k)) };
+}
+
 /* ------------------------------------------------------------------ entry -- */
 export async function exportReportPdf(model, { onStage } = {}) {
   if (typeof window.jspdf === "undefined" || typeof window.html2canvas === "undefined") {
@@ -201,10 +243,11 @@ export function fileName(model, ext) {
 
 /* ---------------------------------------------------------------- model ---- */
 /** Normalise a tear-sheet quarter into a rendering model. */
-export function buildReportModel(ticker, comp, q) {
+export function buildReportModel(ticker, comp, q, opts = {}) {
   const sections = (q.sections || [])
     .filter((s) => s && (s.key_figures?.length || s.subsections?.some((x) => x.points?.length)))
     .sort((a, b) => ORDER.indexOf(a.id) - ORDER.indexOf(b.id));
+  const quarters = (comp?.quarters || []).filter(Boolean);
   return {
     ticker,
     company: comp?.company || ticker,
@@ -219,6 +262,9 @@ export function buildReportModel(ticker, comp, q) {
     themes: (q.themes || []).filter(Boolean),
     key_takeaways: (q.key_takeaways || []).filter(Boolean),
     pressing_questions: (q.pressing_questions || []).filter(Boolean),
+    // Multi-quarter view: raw quarters + selected mode ("single" | "multi").
+    quarters,
+    mode: opts.mode === "multi" && quarters.length > 1 ? "multi" : "single",
   };
 }
 
@@ -378,10 +424,17 @@ function bodyBlocks(m) {
     const subs = (s.subsections || []).filter((x) => x.points?.length);
     // section heading (kept with its first content on the same page via ordering)
     push(el(`<div class="rpt-block rpt-keep"><div class="rpt-sec-h"><span class="rpt-sec-n">${idx + 1}</span>${escapeHtml(title)}</div></div>`));
-    // key-figures table, pre-chunked so no single table exceeds a page
-    chunk(figs, 16).forEach((group, gi) =>
-      push(el(`<div class="rpt-block">${kfTable(group, gi > 0)}</div>`))
-    );
+    // key figures: a 4-quarter matrix in "multi" mode, else the single table.
+    if (m.mode === "multi") {
+      const mx = quarterMatrix(m.quarters, s.id);
+      chunk(mx.rows, 18).forEach((group, gi) =>
+        push(el(`<div class="rpt-block">${matrixTable(mx.cols, group, gi > 0)}</div>`))
+      );
+    } else {
+      chunk(figs, 16).forEach((group, gi) =>
+        push(el(`<div class="rpt-block">${kfTable(group, gi > 0)}</div>`))
+      );
+    }
     // subsections (each bullet list chunked)
     subs.forEach((ss) => {
       const pts = (ss.points || []).filter(Boolean);
@@ -413,6 +466,18 @@ function kfTable(figs, cont) {
       </tr>`)
       .join("")}</tbody>
   </table>${cont ? `<div class="rpt-cont">continued</div>` : ""}`;
+}
+
+/** Multi-quarter key-figure matrix: Metric + one value column per concall. */
+function matrixTable(cols, rows, cont) {
+  const last = cols.length - 1;
+  const th = cols.map((c, i) => `<th class="mxq${i === last ? " mxq-latest" : ""}">${escapeHtml(c.label)}</th>`).join("");
+  const body = rows
+    .map((r) => `<tr><td class="l">${escapeHtml(r.label || "")}</td>${r.cells
+      .map((v, i) => `<td class="v mxq${i === last ? " mxq-latest" : ""}">${v == null ? "·" : escapeHtml(v)}</td>`)
+      .join("")}</tr>`)
+    .join("");
+  return `<table class="rpt-kf rpt-mx"><thead><tr><th>Metric</th>${th}</tr></thead><tbody>${body}</tbody></table>${cont ? `<div class="rpt-cont">continued</div>` : ""}`;
 }
 
 /* --------------------------------------------------------------- pages ----- */
@@ -585,6 +650,14 @@ function injectStyles() {
   .dk-report .rpt-kf td.v .u { color: #94a3b8; font-weight: 500; font-size: 10px; }
   .dk-report .rpt-kf td.p { color: #64748b; }
   .dk-report .rpt-kf .k { font-size: 9px; font-weight: 600; padding: 2px 7px; border-radius: 999px; white-space: nowrap; }
+  /* 4-quarter matrix */
+  .dk-report .rpt-mx { table-layout: auto; }
+  .dk-report .rpt-mx th:first-child, .dk-report .rpt-mx td.l { width: 34%; }
+  .dk-report .rpt-mx th.mxq { text-align: right; color: #64748b; }
+  .dk-report .rpt-mx td.v.mxq { text-align: right; white-space: nowrap; color: #334155; font-weight: 600; width: auto; }
+  .dk-report .rpt-mx .mxq-latest { color: #0f172a; }
+  .dk-report .rpt-mx th.mxq-latest { color: #4f46e5; }
+  .dk-report .rpt-mx td.v.mxq-latest { font-weight: 700; background: #faf8ff; }
   .dk-report .k-reported { background: #eef2ff; color: #4f46e5; }
   .dk-report .k-guidance { background: #e7f8f1; color: #059669; }
   .dk-report .k-target { background: #fff4e5; color: #d97706; }
