@@ -2066,6 +2066,33 @@ tr.fresh {
 .sd-main, .sd-rail { display: flex; flex-direction: column; gap: 20px; }
 .sector-block .card-body { padding: 16px 18px; }
 
+/* ---- Sector Momentum (theme + guidance trend across calendar quarters) ---- */
+.sm-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+.sm-table th, .sm-table td { padding: 8px 10px; }
+.sm-theme-h { text-align: left; font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-4); }
+.sm-qh { text-align: center; font-size: 11.5px; font-weight: 700; color: var(--text-3); font-variant-numeric: tabular-nums; white-space: nowrap; width: 62px; }
+.sm-qh.sm-latest { color: var(--brand-violet); }
+.sm-cos { display: block; margin-top: 2px; font-size: 9.5px; font-weight: 600; letter-spacing: 0.01em; color: var(--text-4); text-transform: none; }
+.sm-qh.sm-partial { color: var(--text-4); }
+.sm-qh.sm-partial .sm-cos { color: #d97706; }
+.sm-table tbody tr { border-top: 1px solid var(--hairline); }
+.sm-theme { text-align: left; font-weight: 600; color: var(--text-2); }
+.sm-legend { font-weight: 500; color: var(--text-4); font-size: 10px; }
+.sm-cell { text-align: center; font-weight: 700; font-variant-numeric: tabular-nums; }
+.sm-cell.sm-none { color: var(--text-4); font-weight: 400; }
+.sm-cell.sm-pos { color: #059669; background: rgba(16, 185, 129, 0.12); }
+.sm-cell.sm-neg { color: #e11d48; background: rgba(244, 63, 94, 0.12); }
+.sm-cell.sm-neu { color: var(--text-2); background: rgba(100, 116, 139, 0.1); }
+.sm-cell.sm-mix { color: #d97706; background: rgba(245, 158, 11, 0.14); }
+.sm-guid-row td { border-top: 2px solid var(--hairline-strong); }
+.sm-gcell { text-align: center; }
+.sm-bar { display: flex; height: 7px; width: 46px; margin: 0 auto 3px; border-radius: 999px; overflow: hidden; background: var(--hairline); }
+.sm-seg { display: block; height: 100%; }
+.sm-seg.sm-up { background: #10b981; }
+.sm-seg.sm-flat { background: #94a3b8; }
+.sm-seg.sm-down { background: #f43f5e; }
+.sm-gnum { font-size: 10px; color: var(--text-3); white-space: nowrap; }
+
 /* consolidated company table */
 .table-scroll { overflow-x: auto; }
 .sector-table { table-layout: auto; }

@@ -182,6 +182,15 @@ function companyThemeTimeline(comp) {
   return map;
 }
 
+/** Bucket a concall date into a calendar quarter so a sector — whose companies
+ *  report on different dates — gets one shared timeline. */
+function calBucket(date) {
+  const m = String(date || "").match(/^(\d{4})-(\d{2})/);
+  if (!m) return null;
+  const y = +m[1], q = Math.ceil(+m[2] / 3);
+  return { key: `${y}Q${q}`, sort: y * 4 + q, label: `Q${q} '${String(y).slice(2)}` };
+}
+
 export function computeSectors(companies) {
   const map = new Map();
   const blank = (key) => ({
@@ -193,6 +202,11 @@ export function computeSectors(companies) {
     risks: [],
     watchRaw: [],
     latest: null,
+    // Sector momentum accumulators (bucketed by calendar quarter, all quarters).
+    momBuckets: new Map(), // bucketKey -> {key,sort,label}
+    momThemes: new Map(),  // themeKey -> {label, byBucket: Map(bkey->Set(ticker)), dirByBucket: Map(bkey->Map(ticker->dir))}
+    momGuid: new Map(),    // bucketKey -> {up,down,flat}
+    momReporters: new Map(), // bucketKey -> Set(ticker) — how many companies actually reported that quarter
   });
 
   for (const comp of Object.values(companies || {})) {
@@ -257,6 +271,36 @@ export function computeSectors(companies) {
     }
 
     if (co.concall_date && (!sec.latest || co.concall_date > sec.latest)) sec.latest = co.concall_date;
+
+    // Momentum: bucket every retained quarter's raw themes + guidance by calendar quarter.
+    for (const q of comp.quarters || []) {
+      const b = calBucket(q.concall_date);
+      if (!b) continue;
+      if (!sec.momBuckets.has(b.key)) sec.momBuckets.set(b.key, b);
+      if (!sec.momReporters.has(b.key)) sec.momReporters.set(b.key, new Set());
+      sec.momReporters.get(b.key).add(comp.ticker);
+      for (const th of q.themes || []) {
+        if (!th || !th.label) continue;
+        const tk = themeKey(th.label);
+        if (!sec.momThemes.has(tk)) sec.momThemes.set(tk, { label: th.label, byBucket: new Map(), dirByBucket: new Map() });
+        const mt = sec.momThemes.get(tk);
+        if (!mt.byBucket.has(b.key)) { mt.byBucket.set(b.key, new Set()); mt.dirByBucket.set(b.key, new Map()); }
+        mt.byBucket.get(b.key).add(comp.ticker);
+        // One direction per company per bucket (first-seen = latest call, since
+        // quarters iterate newest-first) so a firm listing a theme twice in a
+        // call can't skew the net tilt.
+        const dm = mt.dirByBucket.get(b.key);
+        if (!dm.has(comp.ticker)) dm.set(comp.ticker, th.direction);
+      }
+      for (const g of q.guidance_ledger || []) {
+        if (!g || g.status === "no_mention") continue;
+        if (!sec.momGuid.has(b.key)) sec.momGuid.set(b.key, { up: 0, down: 0, flat: 0 });
+        const gg = sec.momGuid.get(b.key);
+        if (g.direction === "up") gg.up++;
+        else if (g.direction === "down") gg.down++;
+        else if (g.direction === "flat") gg.flat++;
+      }
+    }
   }
 
   const out = [];
@@ -265,6 +309,32 @@ export function computeSectors(companies) {
       .map((tm) => ({ label: tm.label, companies: tm.companies, net: netDirection(tm.directions), dirs: tm.directions, last: tm.last, notes: tm.notes, section_ref: tm.section_ref, count: tm.companies.length }))
       .sort((a, b) => b.count - a.count || String(b.last || "").localeCompare(String(a.last || "")));
     delete sec.themeMap;
+
+    // Finalize momentum: last 4 calendar-quarter buckets (oldest→newest); top
+    // themes by total company-mentions across those buckets; guidance per bucket.
+    const mbuckets = [...sec.momBuckets.values()].sort((a, b) => a.sort - b.sort).slice(-4)
+      .map((b) => ({ ...b, cos: sec.momReporters.get(b.key)?.size || 0 }));
+    // Companies report on different dates, so the newest calendar quarter is
+    // often incomplete — flag it when materially fewer firms have reported than
+    // the prior bucket, so a low count reads as "not in yet", not a collapse.
+    if (mbuckets.length >= 2) {
+      const lb = mbuckets[mbuckets.length - 1], pb = mbuckets[mbuckets.length - 2];
+      lb.partial = lb.cos < pb.cos;
+    }
+    const bkeys = mbuckets.map((b) => b.key);
+    const mthemes = [...sec.momThemes.values()]
+      .map((mt) => {
+        const cells = bkeys.map((bk) => {
+          const set = mt.byBucket.get(bk);
+          return { count: set ? set.size : 0, net: set && set.size ? netDirection([...(mt.dirByBucket.get(bk)?.values() || [])]) : null };
+        });
+        return { label: mt.label, cells, total: cells.reduce((n, c) => n + c.count, 0) };
+      })
+      .filter((t) => t.total > 0)
+      .sort((a, b) => b.total - a.total)
+      .slice(0, 6);
+    sec.momentum = { buckets: mbuckets, themes: mthemes, guidance: bkeys.map((bk) => sec.momGuid.get(bk) || { up: 0, down: 0, flat: 0 }) };
+    delete sec.momBuckets; delete sec.momThemes; delete sec.momGuid; delete sec.momReporters;
 
     const eom = sec.latest ? endOfMonth(sec.latest) : null;
     const weeks = eom ? (Date.now() - eom) / (7 * 864e5) : Infinity;
@@ -525,6 +595,7 @@ function renderDetail(sec, sectorCount) {
     detailHeaderHtml(sec) +
     `<div class="sector-detail-grid">
        <div class="sd-main">
+         ${sectorMomentumCard(sec)}
          ${companyTableCard(sec)}
          ${runningThemesCard(sec)}
        </div>
@@ -722,6 +793,52 @@ function riskRegisterCard(sec) {
 }
 
 /* ---- shared card shell (matches the existing .card look) ---- */
+/** Sector Momentum — how themes and guidance have moved across the last ~4
+ *  calendar quarters (companies bucketed onto one shared timeline). */
+function sectorMomentumCard(sec) {
+  const m = sec.momentum;
+  if (!m || m.buckets.length < 2) return "";
+  const hasThemes = m.themes.length > 0;
+  const hasGuid = m.guidance.some((g) => g.up + g.down + g.flat > 0);
+  if (!hasThemes && !hasGuid) return ""; // nothing to trend yet
+  const last = m.buckets.length - 1;
+  const head = m.buckets
+    .map((b, i) => {
+      const cos = b.cos ? `<span class="sm-cos">${b.cos} co${b.cos === 1 ? "" : "s"}${b.partial ? " · partial" : ""}</span>` : "";
+      const tip = b.partial ? ` title="Only ${b.cos} of the sector's companies have reported for ${escapeHtml(b.label)} so far — this quarter is still filling in, so treat the counts as incomplete"` : "";
+      return `<th class="sm-qh${i === last ? " sm-latest" : ""}${b.partial ? " sm-partial" : ""}"${tip}>${escapeHtml(b.label)}${cos}</th>`;
+    })
+    .join("");
+  const themeRows = m.themes
+    .map((t) => {
+      const cells = t.cells
+        .map((c, i) => {
+          const lc = i === last ? " sm-latest" : "";
+          if (!c.count) return `<td class="sm-cell sm-none${lc}">·</td>`;
+          const cls = c.net === "positive" ? "sm-pos" : c.net === "negative" ? "sm-neg" : c.net === "mixed" ? "sm-mix" : "sm-neu";
+          return `<td class="sm-cell ${cls}${lc}" title="${c.count} compan${c.count === 1 ? "y" : "ies"}">${c.count}</td>`;
+        })
+        .join("");
+      return `<tr><td class="sm-theme">${escapeHtml(t.label)}</td>${cells}</tr>`;
+    })
+    .join("");
+  const guidCells = m.guidance
+    .map((g, i) => {
+      const lc = i === last ? " sm-latest" : "";
+      if (!(g.up + g.down + g.flat)) return `<td class="sm-cell sm-none${lc}">·</td>`;
+      const seg = (n, cls) => (n ? `<span class="sm-seg sm-${cls}" style="flex:${n}"></span>` : "");
+      return `<td class="sm-gcell${lc}" title="${g.up} up · ${g.flat} flat · ${g.down} down"><span class="sm-bar">${seg(g.up, "up")}${seg(g.flat, "flat")}${seg(g.down, "down")}</span><span class="sm-gnum">${g.up}▲ ${g.down}▼</span></td>`;
+    })
+    .join("");
+  const guidRow = hasGuid ? `<tr class="sm-guid-row"><td class="sm-theme">Guidance tilt</td>${guidCells}</tr>` : "";
+  const body = `
+    <div class="table-scroll"><table class="sm-table">
+      <thead><tr><th class="sm-theme-h">${hasThemes ? "Theme · companies flagging it" : "Guidance direction"}</th>${head}</tr></thead>
+      <tbody>${themeRows}${guidRow}</tbody>
+    </table></div>`;
+  return card("Sector Momentum", "trending-up", "var(--grad-primary)", body, `How the sector has moved across the last ${m.buckets.length} quarters`);
+}
+
 function card(title, icon, iconBg, bodyHtml, sub) {
   return `
     <div class="card lift sector-block">
