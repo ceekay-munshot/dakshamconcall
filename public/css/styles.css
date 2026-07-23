@@ -2193,7 +2193,9 @@ tr.fresh {
   position: fixed;
   right: 20px;
   bottom: 66px;
-  z-index: 90; /* above content, below modals (scrim=100) so a report modal covers it */
+  /* Above page content, but BELOW the topbar stacking context (40) so an open
+     search dropdown always covers the dock, and below modals (scrim=100). */
+  z-index: 30;
   width: min(384px, calc(100vw - 32px));
   display: none;
   flex-direction: column;

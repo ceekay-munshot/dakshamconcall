@@ -385,9 +385,11 @@ function setDropdown(html) {
 }
 function openDropdown() {
   qs("#searchDropdown").classList.add("open");
+  qs("#searchInput")?.setAttribute("aria-expanded", "true");
 }
 function closeDropdown() {
   qs("#searchDropdown").classList.remove("open");
+  qs("#searchInput")?.setAttribute("aria-expanded", "false");
   state.activeIndex = -1;
 }
 
@@ -461,6 +463,8 @@ function openPassModal(error) {
 }
 function closePassModal() {
   qs("#passModal").classList.remove("open");
+  // Drop any canceled retry context so it can't hijack the next normal Analyze.
+  state.pendingAnalyze = null;
 }
 
 async function runAnalyze(passcode, company = state.selected) {
@@ -538,7 +542,9 @@ function retryAnalyze(job) {
     industry: null,
     country: "India",
   };
-  registerJob(company); // instant "queued" feedback in the panel
+  // Don't register a job (or start polling) until the request actually queues —
+  // runAnalyze registers on a successful queue. Registering up-front would leave
+  // a phantom, forever-polling card if the user cancels the passcode prompt.
   if (state.passcode) runAnalyze(state.passcode, company);
   else {
     state.pendingAnalyze = company;

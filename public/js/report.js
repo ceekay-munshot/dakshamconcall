@@ -54,17 +54,13 @@ export async function exportReportPdf(model, { onStage } = {}) {
   try {
     const pageEls = composePages(model, logo, root);
     const N = pageEls.length;
-    root.style.width = PAGE_W + "px"; // stacked pages, no gaps → capture once
-    // Rasterise ALL pages in ONE html2canvas pass (avoids per-page clone/style
-    // overhead), then slice the tall canvas into A4 pages. Scale is capped so the
-    // canvas never exceeds the browser's ~16k px limit even for long reports.
-    onStage?.(`Rendering ${N} page${N === 1 ? "" : "s"}…`);
-    const S = Math.max(1.3, Math.min(2, Math.floor((15800 / (PAGE_H * N)) * 100) / 100));
-    const full = await window.html2canvas(root, {
-      scale: S, backgroundColor: "#ffffff", useCORS: true, logging: false,
-      width: PAGE_W, height: PAGE_H * N, windowWidth: PAGE_W, windowHeight: PAGE_H * N,
-    });
+    root.style.width = PAGE_W + "px"; // stacked pages, no gaps
 
+    // Crisp fixed scale, rendered in page-batches that each stay under the
+    // browser's ~16k px canvas-height cap. Non-batch pages are hidden so each
+    // pass only rasterises its own pages (fast) — and any report length is safe.
+    const S = 2;
+    const perBatch = Math.max(1, Math.floor(15800 / (PAGE_H * S)));
     const { jsPDF } = window.jspdf;
     const pdf = new jsPDF("p", "mm", "a4");
     const pw = Math.round(PAGE_W * S);
@@ -73,12 +69,27 @@ export async function exportReportPdf(model, { onStage } = {}) {
     slice.width = pw;
     slice.height = ph;
     const cx = slice.getContext("2d");
-    for (let i = 0; i < N; i++) {
-      cx.clearRect(0, 0, pw, ph);
-      cx.drawImage(full, 0, i * ph, pw, ph, 0, 0, pw, ph);
-      if (i > 0) pdf.addPage();
-      pdf.addImage(slice.toDataURL("image/png"), "PNG", 0, 0, 210, 297, undefined, "FAST");
+
+    let done = 0;
+    for (let start = 0; start < N; start += perBatch) {
+      const count = Math.min(perBatch, N - start);
+      onStage?.(`Rendering page ${start + 1}${count > 1 ? "–" + (start + count) : ""} of ${N}…`);
+      pageEls.forEach((p, idx) => {
+        p.style.display = idx >= start && idx < start + count ? "" : "none";
+      });
+      const batch = await window.html2canvas(root, {
+        scale: S, backgroundColor: "#ffffff", useCORS: true, logging: false,
+        width: PAGE_W, height: count * PAGE_H, windowWidth: PAGE_W, windowHeight: count * PAGE_H,
+      });
+      for (let k = 0; k < count; k++) {
+        cx.clearRect(0, 0, pw, ph);
+        cx.drawImage(batch, 0, k * ph, pw, ph, 0, 0, pw, ph);
+        if (done > 0) pdf.addPage();
+        pdf.addImage(slice.toDataURL("image/png"), "PNG", 0, 0, 210, 297, undefined, "FAST");
+        done++;
+      }
     }
+    pageEls.forEach((p) => (p.style.display = ""));
     pdf.save(fileName(model, "pdf"));
   } finally {
     document.body.removeChild(root);
@@ -91,26 +102,38 @@ function composePages(model, logo, root) {
   const meas = document.createElement("div");
   meas.style.cssText = `position:absolute;left:0;top:0;width:${CONTENT_W}px;visibility:hidden;`;
   root.appendChild(meas);
-  const blocks = bodyBlocks(model);
-  for (const b of blocks) {
-    meas.appendChild(b.el);
-    b.h = b.el.offsetHeight;
-    meas.removeChild(b.el);
+  const measure = (el) => {
+    meas.appendChild(el);
+    const h = el.offsetHeight;
+    meas.removeChild(el);
+    return h;
+  };
+
+  // Measure each block; any block taller than a page is split by MEASURED height
+  // (lists by item, text by word) so nothing is ever clipped by overflow:hidden.
+  const blocks = [];
+  for (const b of bodyBlocks(model)) {
+    const h = measure(b.el);
+    if (h <= CONTENT_H) {
+      blocks.push({ el: b.el, h, keep: b.el.classList?.contains("rpt-keep") });
+      continue;
+    }
+    for (const part of splitToFit(b.el, measure)) {
+      blocks.push({ el: part, h: measure(part), keep: part.classList?.contains("rpt-keep") });
+    }
   }
   root.removeChild(meas);
 
-  // Greedy-pack blocks into pages (each block already fits a page on its own).
-  // A ".rpt-keep" heading uses keep-with-next: it won't be left orphaned at the
-  // bottom of a page — if its following block wouldn't also fit, break first.
+  // Greedy-pack blocks into pages. A ".rpt-keep" heading uses keep-with-next: it
+  // won't be left orphaned at the bottom of a page — if its following block
+  // wouldn't also fit, break first.
   const pagesBlocks = [];
   let cur = [];
   let runH = 0;
   for (let i = 0; i < blocks.length; i++) {
     const b = blocks[i];
     let need = b.h;
-    if (b.el.classList?.contains("rpt-keep") && blocks[i + 1]) {
-      need += blocks[i + 1].h + BLOCK_GAP;
-    }
+    if (b.keep && blocks[i + 1]) need += blocks[i + 1].h + BLOCK_GAP;
     if (cur.length && runH + need > CONTENT_H) {
       pagesBlocks.push(cur);
       cur = [];
@@ -177,6 +200,99 @@ const chunk = (arr, n) => {
   for (let i = 0; i < arr.length; i += n) out.push(arr.slice(i, i + n));
   return out;
 };
+
+/* ---- Oversized-block splitting: a safety net so a block taller than a page is
+   never silently clipped by .rpt-page's overflow:hidden (lists split by item,
+   text by word — all by MEASURED height). ------------------------------------ */
+function splitToFit(el, measure) {
+  const ul = el.querySelector("ul");
+  if (ul && ul.children.length) return splitList(el, measure);
+  return splitText(el, measure);
+}
+function shellWithEmptyList(el) {
+  const clone = el.cloneNode(true);
+  const ul = clone.querySelector("ul");
+  if (ul) ul.innerHTML = "";
+  return clone;
+}
+function splitList(el, measure) {
+  const items = [...el.querySelector("ul").children].map((li) => li.outerHTML);
+  const parts = [];
+  let i = 0, guard = 0;
+  while (i < items.length && guard++ < 4000) {
+    const clone = shellWithEmptyList(el);
+    const ul = clone.querySelector("ul");
+    let added = 0;
+    while (i < items.length) {
+      ul.insertAdjacentHTML("beforeend", items[i]);
+      if (added > 0 && measure(clone) > CONTENT_H) {
+        ul.removeChild(ul.lastElementChild);
+        break;
+      }
+      added++;
+      i++;
+    }
+    if (added === 0) {
+      splitLongItem(el, items[i], measure).forEach((p) => parts.push(p));
+      i++;
+      continue;
+    }
+    parts.push(clone);
+  }
+  return parts;
+}
+function splitLongItem(el, liHtml, measure) {
+  const tmp = document.createElement("div");
+  tmp.innerHTML = liHtml;
+  const words = (tmp.textContent || "").split(/\s+/).filter(Boolean);
+  return fillByWords(
+    () => {
+      const c = shellWithEmptyList(el);
+      c.querySelector("ul").appendChild(document.createElement("li"));
+      return c;
+    },
+    (c, t) => (c.querySelector("li").textContent = t),
+    words,
+    measure
+  );
+}
+function splitText(el, measure) {
+  const sel = "p, .rpt-card-body, .rpt-risk-note";
+  const target = el.querySelector(sel) || el;
+  const words = (target.textContent || "").split(/\s+/).filter(Boolean);
+  if (words.length < 2) return [el];
+  return fillByWords(
+    () => el.cloneNode(true),
+    (c, t) => ((c.querySelector(sel) || c).textContent = t),
+    words,
+    measure
+  );
+}
+function fillByWords(makeEmpty, setText, words, measure) {
+  const parts = [];
+  let i = 0, guard = 0;
+  while (i < words.length && guard++ < 8000) {
+    const clone = makeEmpty();
+    let text = "", added = 0;
+    while (i < words.length) {
+      const next = text ? text + " " + words[i] : words[i];
+      setText(clone, next);
+      if (added > 0 && measure(clone) > CONTENT_H) {
+        setText(clone, text);
+        break;
+      }
+      text = next;
+      added++;
+      i++;
+    }
+    if (added === 0) {
+      setText(clone, words[i]);
+      i++;
+    }
+    parts.push(clone);
+  }
+  return parts;
+}
 
 function bodyBlocks(m) {
   const blocks = [];

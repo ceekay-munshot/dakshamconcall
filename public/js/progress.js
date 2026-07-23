@@ -58,6 +58,10 @@ export function registerJob(company) {
   const t = (company.ticker || "").toUpperCase();
   if (!t) return;
   const now = Date.now();
+  // Snapshot the CURRENT output stamps so a re-analysis of an already-tracked
+  // name waits for NEW output rather than instantly resolving to the old one.
+  const sheet0 = cbs.getSheet?.(t) || null;
+  const job0 = cbs.getJob?.(t) || null;
   const base = {
     ticker: t,
     name: company.name || t,
@@ -68,6 +72,8 @@ export function registerJob(company) {
     failMsg: null,
     concallDate: null,
     dismissed: false,
+    baseGen: sheet0?.quarters?.[0]?.generated_at || null,
+    baseFin: job0?.finished_at || null,
   };
   const existing = jobs.find((j) => j.ticker === t);
   if (existing) Object.assign(existing, base);
@@ -105,24 +111,34 @@ async function tick() {
     if (j.dismissed || j.done || j.status === "failed") continue;
     const rec = cbs.getJob?.(j.ticker) || null;
     const sheet = cbs.getSheet?.(j.ticker) || null;
-    const hasQuarter = Boolean(sheet?.quarters?.[0]);
+    const q0 = sheet?.quarters?.[0] || null;
     const realStart = rec?.started_at ? Date.parse(rec.started_at) : j.startedAt;
 
-    if (rec?.status === "failed") {
+    // Completion/failure only count when the output is DEMONSTRABLY NEW vs the
+    // baseline captured at registration — so re-analysing a name never resolves
+    // to its previous (stale) tear sheet or old job record.
+    const genAt = q0?.generated_at || null;
+    const finAt = rec?.finished_at || null;
+    const freshDone =
+      (genAt && genAt !== j.baseGen) ||
+      (rec?.status === "done" && finAt && finAt !== j.baseFin);
+    const freshFail = rec?.status === "failed" && finAt && finAt !== j.baseFin;
+
+    if (freshFail) {
       j.status = "failed";
       j.stage = "failed";
       j.failMsg = rec.message || rec.error || "The run failed. Please try again.";
-    } else if (rec?.status === "done" || hasQuarter) {
+    } else if (freshDone) {
       j.status = "done";
       j.stage = "done";
       j.done = true;
       j.doneAt = Date.now();
-      j.concallDate = sheet?.quarters?.[0]?.concall_date || null;
+      j.concallDate = q0?.concall_date || null;
     } else if (rec?.status === "running") {
       j.status = "running";
       j.stage = estimateStage(realStart);
     } else {
-      // Worker seeded "queued" (or nothing visible yet) — hold at queued.
+      // Seeded "queued", or an old record with no fresh output yet — hold.
       j.status = "queued";
       j.stage = "queued";
     }

@@ -86,6 +86,7 @@ function buildTearSheet(wb, m) {
         row.getCell(5).value = KIND_LABEL[f.kind] || "Reported";
         styleDataRow(row, NCOL);
         ws.mergeCells(row.number, 5, row.number, NCOL);
+        row.height = narrativeHeight([[f.label, 36]]);
       }
     }
     for (const ss of (s.subsections || []).filter((x) => x.points?.length)) {
@@ -111,6 +112,7 @@ function buildTearSheet(wb, m) {
       row.getCell(5).value = g.horizon || "";
       row.getCell(6).value = statusLabel(g.status);
       styleDataRow(row, NCOL);
+      row.height = narrativeHeight([[g.statement, 33], [g.metric, 33]]);
     }
     r++;
   }
@@ -127,6 +129,7 @@ function buildTearSheet(wb, m) {
       row.getCell(4).value = rk.note || "";
       ws.mergeCells(row.number, 4, row.number, NCOL);
       styleDataRow(row, NCOL);
+      row.height = narrativeHeight([[rk.note, 63], [rk.risk, 55]]);
     }
     r++;
   }
@@ -143,6 +146,7 @@ function buildTearSheet(wb, m) {
       row.getCell(4).value = t.note || "";
       ws.mergeCells(row.number, 4, row.number, NCOL);
       styleDataRow(row, NCOL);
+      row.height = narrativeHeight([[t.note, 63], [t.label, 55]]);
     }
     r++;
   }
@@ -222,10 +226,25 @@ function styleDataRow(row, ncol) {
     c.border = { bottom: { style: "thin", color: { argb: "FFEEF1F6" } } };
   }
 }
+/** Row height for wrapped merged cells (spreadsheets don't auto-fit merges).
+ *  pairs = [[text, approxCharsPerLine], …]; the tallest cell wins. */
+function narrativeHeight(pairs) {
+  let lines = 1;
+  for (const [text, cpl] of pairs) {
+    lines = Math.max(lines, Math.ceil((String(text || "").length + 2) / cpl));
+  }
+  return Math.min(170, Math.max(16, lines * 15));
+}
 
 /* --------------------------------------------------------------- csv -------- */
 function exportCsv(m) {
-  const esc = (v) => `"${String(v ?? "").replace(/"/g, '""')}"`;
+  const esc = (v) => {
+    let s = String(v ?? "");
+    // Neutralise spreadsheet formula injection — cells beginning with = + - @
+    // (or tab/CR) are interpreted as formulas by Excel/Sheets even when quoted.
+    if (/^[=+\-@\t\r]/.test(s)) s = "'" + s;
+    return `"${s.replace(/"/g, '""')}"`;
+  };
   const lines = [];
   lines.push(["Munshot · Prepared for Daksham Capital"].map(esc).join(","));
   lines.push([m.company, m.ticker, m.industry || "", m.concall_date ? fmtDate(m.concall_date) : ""].map(esc).join(","));
