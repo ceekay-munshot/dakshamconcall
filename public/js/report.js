@@ -41,8 +41,11 @@ const clean = (v) => {
 const unitSpan = (value, unit, cls = "u") => {
   const u = clean(unit);
   if (!u) return "";
-  const v = String(value ?? "").trim();
-  if (v && v.toLowerCase().endsWith(u.toLowerCase())) return "";
+  const v = String(value ?? "").trim().toLowerCase();
+  const uu = u.toLowerCase();
+  // Skip a unit the value already carries — as a suffix ("25%" + "%") or a
+  // prefix ("INR50,000 crores" + "INR", common for currency tokens).
+  if (v && (v.endsWith(uu) || v.startsWith(uu))) return "";
   return ` <span class="${cls}">${escapeHtml(u)}</span>`;
 };
 /** Trim to a bounded length at a word boundary. The cover is a fixed-height

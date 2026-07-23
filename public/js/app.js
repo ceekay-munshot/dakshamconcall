@@ -1335,8 +1335,11 @@ function sectionCardHtml(s, sourceUrl) {
 function kfUnitHtml(value, unit) {
   const u = cleanField(unit);
   if (!u) return "";
-  const v = String(value ?? "").trim();
-  if (v && v.toLowerCase().endsWith(u.toLowerCase())) return "";
+  const v = String(value ?? "").trim().toLowerCase();
+  const uu = u.toLowerCase();
+  // Skip a unit the value already carries — suffix ("25%" + "%") or prefix
+  // ("INR50,000 crores" + "INR", common for currency tokens).
+  if (v && (v.endsWith(uu) || v.startsWith(uu))) return "";
   return ` <span class="kf-unit">${escapeHtml(u)}</span>`;
 }
 
