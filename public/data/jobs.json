@@ -103,8 +103,10 @@
       "message": "Couldn't fetch TMCV's latest concall. Found concalls but could not extract an AI summary or transcript."
     },
     "TMPV": {
-      "status": "running",
-      "started_at": "2026-07-24T22:57:55.398Z"
+      "status": "failed",
+      "finished_at": "2026-07-24T22:58:02.691Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Couldn't fetch TMPV's latest concall. Found concalls but could not extract an AI summary or transcript."
     },
     "DEVYANI": {
       "status": "done",
