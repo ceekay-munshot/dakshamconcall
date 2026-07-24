@@ -11,7 +11,7 @@
  *     with a frozen header row + autofilter.
  */
 import { fmtDate } from "./ui.js";
-import { fileName, quarterMatrix } from "./report.js";
+import { fileName, quarterMatrix, explainerSubsections, normPeriod } from "./report.js";
 
 const V = "FF7C3AED"; // violet
 const INK = "FF0F172A";
@@ -83,6 +83,7 @@ function buildTearSheet(wb, m) {
 
   // 11 sections, each a coloured band + Key Figures table + bullets.
   // In "multi" mode the Key Figures become a matrix: Metric + one column per concall.
+  const seen = new Set(); // de-dup explainer points across sections (same as tear sheet/PDF)
   m.sections.forEach((s, i) => {
     band(ws, r++, `${i + 1}.  ${s.title || s.id}`, NCOL);
     if (m.mode === "multi") {
@@ -97,6 +98,8 @@ function buildTearSheet(wb, m) {
           row.height = narrativeHeight([[mr.label, 36]]);
         }
       }
+      if (mx.hiddenCount)
+        merge(r++, `+${mx.hiddenCount} metric${mx.hiddenCount > 1 ? "s" : ""} reported in a single call — see the single-concall export`, { font: { size: 9, italic: true, color: { argb: "FF94A3B8" } } });
     } else {
       const figs = (s.key_figures || []).filter(Boolean);
       if (figs.length) {
@@ -106,7 +109,7 @@ function buildTearSheet(wb, m) {
           row.getCell(1).value = f.label || "";
           row.getCell(2).value = f.value ?? "";
           row.getCell(3).value = clean(f.unit);
-          row.getCell(4).value = clean(f.period);
+          row.getCell(4).value = normPeriod(f.period);
           row.getCell(5).value = KIND_LABEL[f.kind] || "Reported";
           styleDataRow(row, NCOL);
           ws.mergeCells(row.number, 5, row.number, NCOL);
@@ -114,7 +117,7 @@ function buildTearSheet(wb, m) {
         }
       }
     }
-    for (const ss of (s.subsections || []).filter((x) => x.points?.length)) {
+    for (const ss of explainerSubsections(s, seen)) {
       if (ss.label) merge(r++, ss.label, { font: { bold: true, size: 10, color: { argb: "FF6366F1" } } });
       for (const p of ss.points.filter(Boolean)) {
         const c = merge(r++, "•  " + p, { font: { size: 10, color: { argb: "FF334155" } }, align: { indent: 1 } });
@@ -211,7 +214,7 @@ function buildKeyFigures(wb, m) {
     rows = [];
     m.sections.forEach((s) =>
       (s.key_figures || []).filter(Boolean).forEach((f) =>
-        rows.push([s.title || s.id, f.label || "", f.value ?? "", clean(f.unit), clean(f.period), KIND_LABEL[f.kind] || "Reported"])
+        rows.push([s.title || s.id, f.label || "", f.value ?? "", clean(f.unit), normPeriod(f.period), KIND_LABEL[f.kind] || "Reported"])
       )
     );
   }
@@ -320,7 +323,7 @@ function exportCsv(m) {
     lines.push(["Section", "Metric", "Value", "Unit", "Period", "Type"].map(esc).join(","));
     m.sections.forEach((s) =>
       (s.key_figures || []).filter(Boolean).forEach((f) =>
-        lines.push([s.title || s.id, f.label || "", f.value ?? "", clean(f.unit), clean(f.period), KIND_LABEL[f.kind] || "Reported"].map(esc).join(","))
+        lines.push([s.title || s.id, f.label || "", f.value ?? "", clean(f.unit), normPeriod(f.period), KIND_LABEL[f.kind] || "Reported"].map(esc).join(","))
       )
     );
   }

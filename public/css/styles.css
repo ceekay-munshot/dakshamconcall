@@ -1768,6 +1768,8 @@ tr.fresh {
 .kf-matrix .kf-q-latest { color: var(--text-1); }
 .kf-matrix td.kf-value.kf-q-latest { font-weight: 800; background: rgba(124, 58, 237, 0.05); }
 .kf-matrix .kf-na { color: var(--text-4); }
+.kf-mx-note { font-size: 11.5px; color: var(--text-4); margin: 6px 2px 0; }
+.kf-mx-note strong { color: var(--brand-violet); font-weight: 600; }
 .kf-src { display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 7px; color: var(--text-4); transition: background .15s, color .15s; }
 .kf-src:hover { background: rgba(99,102,241,.12); color: var(--brand-indigo); }
 .kf-table thead th {
@@ -1816,7 +1818,9 @@ tr.fresh {
 }
 .more-points > summary::-webkit-details-marker { display: none; }
 .more-points > summary::before { content: "▾ "; }
+.more-points > summary::after { content: attr(data-more); }
 .more-points[open] > summary::before { content: "▴ "; }
+.more-points[open] > summary::after { content: attr(data-less); }
 .more-points[open] > summary { color: var(--text-4); }
 
 .verbatim {
@@ -2093,6 +2097,28 @@ tr.fresh {
 .sm-seg.sm-down { background: #f43f5e; }
 .sm-gnum { font-size: 10px; color: var(--text-3); white-space: nowrap; }
 
+/* Sector Insights — cross-company read (agreements / splits / leaders / watch) */
+.si-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 30px; }
+@media (max-width: 720px) { .si-grid { grid-template-columns: 1fr; } }
+.si-block { min-width: 0; }
+.si-h { font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-4); margin-bottom: 9px; }
+.si-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 9px; }
+.si-item { display: flex; gap: 9px; align-items: flex-start; }
+.si-item > div { min-width: 0; display: flex; flex-direction: column; gap: 1px; }
+.si-dot { flex: none; width: 7px; height: 7px; border-radius: 999px; margin-top: 5px; }
+.si-dot.si-pos { background: #10b981; }
+.si-dot.si-neg { background: #f43f5e; }
+.si-dot.si-split { background: #f59e0b; }
+.si-dot.si-watch { background: #fb7185; }
+.si-theme, .si-name { font-size: 12.5px; font-weight: 600; color: var(--text-2); line-height: 1.3; }
+.si-who { font-size: 11px; color: var(--text-4); line-height: 1.35; }
+.si-up { color: #059669; font-weight: 600; }
+.si-dn { color: #e11d48; font-weight: 600; }
+.si-arrow { font-size: 10px; }
+.si-arrow.up { color: #10b981; }
+.si-arrow.dn { color: #f43f5e; }
+.si-none { font-size: 11.5px; color: var(--text-4); line-height: 1.4; }
+
 /* consolidated company table */
 .table-scroll { overflow-x: auto; }
 .sector-table { table-layout: auto; }
@@ -2291,6 +2317,33 @@ tr.fresh {
   pointer-events: none;
 }
 .progress-dock.has-jobs { display: flex; }
+/* Centered "focus" mode — a fresh Analyze pops the progress up front-and-centre;
+   "Continue in background" (or a click on the scrim) collapses it to the corner
+   dock above, so a multi-minute run never blocks the UI. */
+.progress-scrim {
+  position: fixed; inset: 0; z-index: 149;
+  background: rgba(15, 23, 42, 0.5); backdrop-filter: blur(3px);
+  opacity: 0; visibility: hidden; transition: opacity 0.25s var(--ease), visibility 0.25s var(--ease);
+}
+.progress-scrim.show { opacity: 1; visibility: visible; }
+.progress-dock.is-modal {
+  right: auto; bottom: auto; left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 150; pointer-events: auto;
+  width: min(460px, calc(100vw - 32px));
+  max-height: calc(100vh - 80px);
+  background: #fff; border-radius: var(--r-lg);
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.28);
+  padding: 18px;
+}
+.prog-modal-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 4px; }
+.prog-modal-title { display: inline-flex; align-items: center; gap: 7px; font-weight: 800; font-size: 15px; color: var(--text-1); }
+.prog-bg {
+  border: 1px solid var(--hairline-strong); background: var(--surface-2, #f8fafc);
+  color: var(--text-3); font-size: 12px; font-weight: 600; padding: 6px 12px;
+  border-radius: 999px; cursor: pointer; white-space: nowrap; transition: background 0.2s var(--ease), color 0.2s var(--ease);
+}
+.prog-bg:hover { background: #eef2f7; color: var(--text-1); }
 .prog-card {
   pointer-events: auto;
   position: relative;

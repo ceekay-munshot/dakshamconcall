@@ -27,7 +27,7 @@ import {
 } from "./ui.js";
 import * as Sectors from "./sectors.js";
 import { initProgress, registerJob } from "./progress.js";
-import { exportReportPdf, buildReportModel, fileName, quarterMatrix } from "./report.js";
+import { exportReportPdf, buildReportModel, fileName, quarterMatrix, explainerSubsections, normPeriod } from "./report.js";
 import { exportTearSheetXlsx } from "./export-xlsx.js";
 
 /* ============================================================================
@@ -1096,10 +1096,10 @@ function openTearSheet(row) {
       date ? escapeHtml(fmtDate(date)) : "Latest concall — pending"
     }</span>`
   );
+  // Source is always the concall AI summary — announcing "AI summary" on every
+  // card is noise (client: remove it). Only flag the exception (a transcript).
   const source = q?.source || row.source;
-  if (source === "ai_summary")
-    pills.push(`<span class="sh-pill"><i data-lucide="sparkles" class="i16"></i>AI summary</span>`);
-  else if (source === "transcript")
+  if (source === "transcript")
     pills.push(`<span class="sh-pill"><i data-lucide="file-text" class="i16"></i>Transcript</span>`);
   qs("#sheetMeta").innerHTML = pills.join("");
   qsa("[data-goto-sector]", qs("#sheetMeta")).forEach((el) =>
@@ -1199,7 +1199,7 @@ function guidanceItemHtml(g) {
       <div class="ledger-statement">${escapeHtml(g.statement)}</div>
       <div class="ledger-meta">
         <span class="ltag"><i data-lucide="${dir.icon}" class="i16"></i>${dir.label}</span>
-        ${g.horizon ? `<span class="ltag">${escapeHtml(g.horizon)}</span>` : ""}
+        ${normPeriod(g.horizon) ? `<span class="ltag">${escapeHtml(normPeriod(g.horizon))}</span>` : ""}
       </div>
     </div>`;
 }
@@ -1286,7 +1286,9 @@ function sectionsHtml(sections, sourceUrl, comp, mode = "single") {
         </div>`
       : "";
   const head = `<div class="band-title band-title-row"><span class="bt-label"><i data-lucide="layout-grid" class="i16"></i> The 11-Section Tear Sheet</span>${toggle}</div>`;
-  return head + `<div class="ts-sections">${list.map((s) => sectionCardHtml(s, sourceUrl, comp, mode)).join("")}</div>`;
+  // One shared "seen" set across sections so a repeated explainer point drops.
+  const seen = new Set();
+  return head + `<div class="ts-sections">${list.map((s) => sectionCardHtml(s, sourceUrl, comp, mode, seen)).join("")}</div>`;
 }
 
 /** Treat empty / literal "null"/"undefined" strings as absent (model artifacts). */
@@ -1303,15 +1305,16 @@ function pointsHtml(points) {
   const head = pts.slice(0, 4);
   const rest = pts.slice(4);
   return `<ul>${head.map((p) => `<li>${escapeHtml(p)}</li>`).join("")}</ul>
-    <details class="more-points"><summary>Show ${rest.length} more</summary>
+    <details class="more-points"><summary data-more="Show ${rest.length} more" data-less="Show less"></summary>
       <ul>${rest.map((p) => `<li>${escapeHtml(p)}</li>`).join("")}</ul>
     </details>`;
 }
 
-function sectionCardHtml(s, sourceUrl, comp, mode = "single") {
+function sectionCardHtml(s, sourceUrl, comp, mode = "single", seen = new Set()) {
   const meta = SECTION_BY_ID[s.id] || { title: s.title, icon: "dot", grad: SECTION_GRADS[0] };
   const figs = (s.key_figures || []).filter(Boolean);
-  const subs = (s.subsections || []).filter((x) => x.points?.length);
+  const subs = explainerSubsections(s, seen); // drop table-echoes & cross-section repeats
+  const showKind = figs.some((f) => f.kind && f.kind !== "reported"); // hide "Reported" noise
 
   // A per-row "verify at source" link (opens the concall the figure came from).
   const srcCell = sourceUrl
@@ -1325,14 +1328,14 @@ function sectionCardHtml(s, sourceUrl, comp, mode = "single") {
     figTable = mx.rows.length ? kfMatrixHtml(mx) : "";
   } else if (figs.length) {
     figTable = `<table class="kf-table">
-        <thead><tr><th>Metric</th><th>Value</th><th class="hide-sm">Period</th><th>Type</th><th class="kf-src-h" title="Verify at source">Src</th></tr></thead>
+        <thead><tr><th>Metric</th><th>Value</th><th class="hide-sm">Period</th>${showKind ? "<th>Type</th>" : ""}<th class="kf-src-h" title="Verify at source">Src</th></tr></thead>
         <tbody>${figs
           .map(
             (f) => `<tr>
             <td class="kf-label">${escapeHtml(f.label)}</td>
             <td class="kf-value">${escapeHtml(f.value)}${kfUnitHtml(f.value, f.unit)}</td>
-            <td class="kf-period hide-sm">${cleanField(f.period) ? escapeHtml(cleanField(f.period)) : "—"}</td>
-            <td>${kindChip(f.kind)}</td>
+            <td class="kf-period hide-sm">${normPeriod(f.period) ? escapeHtml(normPeriod(f.period)) : "—"}</td>
+            ${showKind ? `<td>${kindChip(f.kind)}</td>` : ""}
             <td class="kf-src-cell">${srcCell}</td>
           </tr>`
           )
@@ -1375,10 +1378,13 @@ function kfMatrixHtml(mx) {
         .join("")}</tr>`
     )
     .join("");
+  const note = mx.hiddenCount
+    ? `<div class="kf-mx-note">+${mx.hiddenCount} metric${mx.hiddenCount > 1 ? "s" : ""} reported in only one of these calls — see <strong>This concall</strong> for those.</div>`
+    : "";
   return `<div class="kf-mx-wrap"><table class="kf-table kf-matrix">
       <thead><tr><th>Metric</th>${head}</tr></thead>
       <tbody>${body}</tbody>
-    </table></div>`;
+    </table></div>${note}`;
 }
 
 /** Render the unit chip, but skip a unit the value already carries
@@ -1395,14 +1401,14 @@ function kfUnitHtml(value, unit) {
 }
 
 function kindChip(kind) {
+  // "Reported" is understood — only forward-looking kinds earn a chip.
   const m = {
-    reported: ["kc-reported", "Reported"],
     guidance: ["kc-guidance", "Guidance"],
     target: ["kc-target", "Target"],
     market_size: ["kc-market", "Market size"],
   };
-  const [cls, label] = m[kind] || m.reported;
-  return `<span class="kchip ${cls}">${label}</span>`;
+  const hit = m[kind];
+  return hit ? `<span class="kchip ${hit[0]}">${hit[1]}</span>` : "";
 }
 
 /* Key Takeaways — the verbatim highlights from the concall (full width). */
