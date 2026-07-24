@@ -11,7 +11,7 @@
  *     with a frozen header row + autofilter.
  */
 import { fmtDate } from "./ui.js";
-import { fileName, quarterMatrix } from "./report.js";
+import { fileName, quarterMatrix, explainerSubsections } from "./report.js";
 
 const V = "FF7C3AED"; // violet
 const INK = "FF0F172A";
@@ -83,6 +83,7 @@ function buildTearSheet(wb, m) {
 
   // 11 sections, each a coloured band + Key Figures table + bullets.
   // In "multi" mode the Key Figures become a matrix: Metric + one column per concall.
+  const seen = new Set(); // de-dup explainer points across sections (same as tear sheet/PDF)
   m.sections.forEach((s, i) => {
     band(ws, r++, `${i + 1}.  ${s.title || s.id}`, NCOL);
     if (m.mode === "multi") {
@@ -114,7 +115,7 @@ function buildTearSheet(wb, m) {
         }
       }
     }
-    for (const ss of (s.subsections || []).filter((x) => x.points?.length)) {
+    for (const ss of explainerSubsections(s, seen)) {
       if (ss.label) merge(r++, ss.label, { font: { bold: true, size: 10, color: { argb: "FF6366F1" } } });
       for (const p of ss.points.filter(Boolean)) {
         const c = merge(r++, "•  " + p, { font: { size: 10, color: { argb: "FF334155" } }, align: { indent: 1 } });
