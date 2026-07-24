@@ -1768,6 +1768,8 @@ tr.fresh {
 .kf-matrix .kf-q-latest { color: var(--text-1); }
 .kf-matrix td.kf-value.kf-q-latest { font-weight: 800; background: rgba(124, 58, 237, 0.05); }
 .kf-matrix .kf-na { color: var(--text-4); }
+.kf-mx-note { font-size: 11.5px; color: var(--text-4); margin: 6px 2px 0; }
+.kf-mx-note strong { color: var(--brand-violet); font-weight: 600; }
 .kf-src { display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 7px; color: var(--text-4); transition: background .15s, color .15s; }
 .kf-src:hover { background: rgba(99,102,241,.12); color: var(--brand-indigo); }
 .kf-table thead th {

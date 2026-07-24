@@ -27,7 +27,7 @@ import {
 } from "./ui.js";
 import * as Sectors from "./sectors.js";
 import { initProgress, registerJob } from "./progress.js";
-import { exportReportPdf, buildReportModel, fileName, quarterMatrix, explainerSubsections } from "./report.js";
+import { exportReportPdf, buildReportModel, fileName, quarterMatrix, explainerSubsections, normPeriod } from "./report.js";
 import { exportTearSheetXlsx } from "./export-xlsx.js";
 
 /* ============================================================================
@@ -1199,7 +1199,7 @@ function guidanceItemHtml(g) {
       <div class="ledger-statement">${escapeHtml(g.statement)}</div>
       <div class="ledger-meta">
         <span class="ltag"><i data-lucide="${dir.icon}" class="i16"></i>${dir.label}</span>
-        ${g.horizon ? `<span class="ltag">${escapeHtml(g.horizon)}</span>` : ""}
+        ${normPeriod(g.horizon) ? `<span class="ltag">${escapeHtml(normPeriod(g.horizon))}</span>` : ""}
       </div>
     </div>`;
 }
@@ -1334,7 +1334,7 @@ function sectionCardHtml(s, sourceUrl, comp, mode = "single", seen = new Set()) 
             (f) => `<tr>
             <td class="kf-label">${escapeHtml(f.label)}</td>
             <td class="kf-value">${escapeHtml(f.value)}${kfUnitHtml(f.value, f.unit)}</td>
-            <td class="kf-period hide-sm">${cleanField(f.period) ? escapeHtml(cleanField(f.period)) : "—"}</td>
+            <td class="kf-period hide-sm">${normPeriod(f.period) ? escapeHtml(normPeriod(f.period)) : "—"}</td>
             ${showKind ? `<td>${kindChip(f.kind)}</td>` : ""}
             <td class="kf-src-cell">${srcCell}</td>
           </tr>`
@@ -1378,10 +1378,13 @@ function kfMatrixHtml(mx) {
         .join("")}</tr>`
     )
     .join("");
+  const note = mx.hiddenCount
+    ? `<div class="kf-mx-note">+${mx.hiddenCount} metric${mx.hiddenCount > 1 ? "s" : ""} reported in only one of these calls — see <strong>This concall</strong> for those.</div>`
+    : "";
   return `<div class="kf-mx-wrap"><table class="kf-table kf-matrix">
       <thead><tr><th>Metric</th>${head}</tr></thead>
       <tbody>${body}</tbody>
-    </table></div>`;
+    </table></div>${note}`;
 }
 
 /** Render the unit chip, but skip a unit the value already carries

@@ -69,6 +69,19 @@ export function figureText(value, unit) {
   const lv = v.toLowerCase(), lu = u.toLowerCase();
   return v && (lv.endsWith(lu) || lv.startsWith(lu)) ? v : `${v} ${u}`.trim();
 }
+/** Normalize a period label to the client's house style: "Q1 FY26-27" → "1Q FY27",
+ *  "2H FY26-27" → "2H FY27", "FY2026-27"/"FY26-27" → "FY27". Indian fiscal years
+ *  are named by the ending year. Change bases (YoY/QoQ) and anything unrecognized
+ *  pass through unchanged. */
+export function normPeriod(period) {
+  let s = clean(period);
+  if (!s) return "";
+  s = s.replace(/\bFY\s?'?(\d{2,4})\s?[-–]\s?'?(\d{2,4})\b/gi, (_, a, b) => `FY${b.slice(-2)}`); // FY26-27→FY27
+  s = s.replace(/\bFY\s?'?(\d{4})\b/gi, (_, y) => `FY${y.slice(-2)}`); // FY2027→FY27
+  s = s.replace(/\bFY\s?'?(\d{2})\b/gi, (_, y) => `FY${y}`); // normalize spacing
+  s = s.replace(/\bQ([1-4])\b/gi, (_, q) => `${q}Q`); // Q1 FY27 → 1Q FY27
+  return s.replace(/\s+/g, " ").trim();
+}
 /** Compact concall label for a column header, e.g. "Jul '26". */
 export function shortConcall(date) {
   const m = String(date || "").slice(0, 10).match(/^(\d{4})-(\d{2})/);
@@ -114,7 +127,16 @@ export function quarterMatrix(quarters, sectionId, maxCols = 4) {
       if (row && row.cells[ci] == null) row.cells[ci] = figureText(f.value, f.unit);
     }
   });
-  return { cols, rows: order.map((k) => byKey.get(k)) };
+  const all = order.map((k) => byKey.get(k));
+  // Trend view: keep metrics reported in ≥2 of these calls, fullest first, so the
+  // matrix reads as a trend instead of a sparse grid of one-off mentions. Those
+  // one-offs are not lost — they remain in the single "This concall" view; we
+  // just report how many were set aside. Fall back to all rows if none recur.
+  const fill = (r) => r.cells.filter((c) => c != null).length;
+  const recurring = all.filter((r) => fill(r) >= 2).sort((a, b) => fill(b) - fill(a));
+  const rows = recurring.length ? recurring : all;
+  const hiddenCount = recurring.length ? all.length - recurring.length : 0;
+  return { cols, rows, hiddenCount };
 }
 
 /* ---- Redundancy filter (shared by tear sheet, PDF and Excel) ---------------
@@ -441,7 +463,7 @@ function bodyBlocks(m) {
       push(el(`<div class="rpt-block rpt-card">
         <div class="rpt-card-top"><span class="rpt-metric">${escapeHtml(g.metric || "")}</span>${showChip ? `<span class="rpt-status s-${escapeHtml(g.status)}">${escapeHtml(statusLabel(g.status))}</span>` : ""}</div>
         <div class="rpt-card-body">${escapeHtml(g.statement || "")}</div>
-        <div class="rpt-card-meta">${[g.direction && dirLabel(g.direction), g.horizon].filter(Boolean).map((x) => `<span>${escapeHtml(x)}</span>`).join("")}</div>
+        <div class="rpt-card-meta">${[g.direction && dirLabel(g.direction), normPeriod(g.horizon)].filter(Boolean).map((x) => `<span>${escapeHtml(x)}</span>`).join("")}</div>
       </div>`));
     }
   }
@@ -475,6 +497,8 @@ function bodyBlocks(m) {
       chunk(mx.rows, 18).forEach((group, gi) =>
         push(el(`<div class="rpt-block">${matrixTable(mx.cols, group, gi > 0)}</div>`))
       );
+      if (mx.hiddenCount)
+        push(el(`<div class="rpt-block rpt-mxnote">+${mx.hiddenCount} metric${mx.hiddenCount > 1 ? "s" : ""} reported in a single call — shown in the This-concall view</div>`));
     } else {
       chunk(figs, 16).forEach((group, gi) =>
         push(el(`<div class="rpt-block">${kfTable(group, gi > 0, showKind)}</div>`))
@@ -506,7 +530,7 @@ function kfTable(figs, cont, showKind = false) {
       .map((f) => `<tr>
         <td class="l">${escapeHtml(f.label || "")}</td>
         <td class="v">${escapeHtml(f.value ?? "")}${unitSpan(f.value, f.unit)}</td>
-        <td class="p">${clean(f.period) ? escapeHtml(clean(f.period)) : "—"}</td>
+        <td class="p">${normPeriod(f.period) ? escapeHtml(normPeriod(f.period)) : "—"}</td>
         ${showKind ? `<td>${f.kind && f.kind !== "reported" ? `<span class="k k-${escapeHtml(f.kind)}">${escapeHtml(KIND_LABEL[f.kind] || "")}</span>` : ""}</td>` : ""}
       </tr>`)
       .join("")}</tbody>
@@ -708,6 +732,7 @@ function injectStyles() {
   .dk-report .k-target { background: #fff4e5; color: #d97706; }
   .dk-report .k-market_size { background: #fce7f3; color: #db2777; }
   .dk-report .rpt-cont { font-size: 9px; color: #94a3b8; font-style: italic; padding: 4px 0 0; }
+  .dk-report .rpt-mxnote { font-size: 9.5px; color: #94a3b8; padding: 3px 0 2px; }
 
   .dk-report .rpt-sub { padding-left: 2px; }
   .dk-report .rpt-sub-label { font-size: 11px; font-weight: 700; color: #6366f1; margin-bottom: 4px; }
