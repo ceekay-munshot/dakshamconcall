@@ -41,6 +41,7 @@ const EST_TOTAL = 130; // s, for the continuous bar while running
 let cbs = {};
 let jobs = []; // { ticker, name, startedAt, status, stage, done, failMsg, concallDate, dismissed }
 let timer = null;
+let focused = false; // true = show the progress CENTERED (a fresh run pops it up)
 
 /* ------------------------------------------------------------------ boot --- */
 export function initProgress(callbacks) {
@@ -78,6 +79,7 @@ export function registerJob(company) {
   const existing = jobs.find((j) => j.ticker === t);
   if (existing) Object.assign(existing, base);
   else jobs.push(base);
+  focused = true; // pop the progress up front-and-centre on a fresh run
   saveLS();
   render();
   ensurePolling();
@@ -174,6 +176,11 @@ function progressPct(j) {
 /* ---------------------------------------------------------------- render --- */
 function ensureDock() {
   if (qs("#progressDock")) return;
+  const scrim = document.createElement("div");
+  scrim.id = "progressScrim";
+  scrim.className = "progress-scrim";
+  scrim.addEventListener("click", background); // click-away → run in background
+  document.body.appendChild(scrim);
   const dock = document.createElement("div");
   dock.id = "progressDock";
   dock.className = "progress-dock";
@@ -181,18 +188,40 @@ function ensureDock() {
   document.body.appendChild(dock);
 }
 
+/** Collapse the centered modal to the corner dock; the run keeps going. */
+function background() {
+  focused = false;
+  render();
+}
+
 function render() {
   const dock = qs("#progressDock");
   if (!dock) return;
+  const scrim = qs("#progressScrim");
   const visible = jobs.filter((j) => !j.dismissed);
+  const modal = focused && visible.length > 0;
+  const active = visible.some((j) => j.status !== "done" && j.status !== "failed");
   dock.classList.toggle("has-jobs", visible.length > 0);
-  dock.innerHTML = visible.map(cardHtml).join("");
+  dock.classList.toggle("is-modal", modal);
+  scrim?.classList.toggle("show", modal);
 
+  // In modal mode, a header names what's happening and offers a way to background it.
+  const head = modal
+    ? `<div class="prog-modal-head">
+         <span class="prog-modal-title"><i data-lucide="sparkles" class="i16"></i> ${active ? "Analyzing concalls…" : "Analysis complete"}</span>
+         <button class="prog-bg" type="button">${active ? "Continue in background" : "Close"}</button>
+       </div>`
+    : "";
+  dock.innerHTML = head + visible.map(cardHtml).join("");
+
+  dock.querySelector(".prog-bg")?.addEventListener("click", background);
   visible.forEach((j) => {
     const el = dock.querySelector(`[data-ticker="${cssEsc(j.ticker)}"]`);
     if (!el) return;
     el.querySelector(".prog-x")?.addEventListener("click", () => dismiss(j.ticker));
     el.querySelector(".prog-view")?.addEventListener("click", () => {
+      focused = false; // leave the modal when opening the report
+      render();
       cbs.onViewReport?.(j.ticker);
     });
     el.querySelector(".prog-retry")?.addEventListener("click", () => {

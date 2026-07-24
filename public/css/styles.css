@@ -1818,7 +1818,9 @@ tr.fresh {
 }
 .more-points > summary::-webkit-details-marker { display: none; }
 .more-points > summary::before { content: "▾ "; }
+.more-points > summary::after { content: attr(data-more); }
 .more-points[open] > summary::before { content: "▴ "; }
+.more-points[open] > summary::after { content: attr(data-less); }
 .more-points[open] > summary { color: var(--text-4); }
 
 .verbatim {
@@ -2315,6 +2317,33 @@ tr.fresh {
   pointer-events: none;
 }
 .progress-dock.has-jobs { display: flex; }
+/* Centered "focus" mode — a fresh Analyze pops the progress up front-and-centre;
+   "Continue in background" (or a click on the scrim) collapses it to the corner
+   dock above, so a multi-minute run never blocks the UI. */
+.progress-scrim {
+  position: fixed; inset: 0; z-index: 149;
+  background: rgba(15, 23, 42, 0.5); backdrop-filter: blur(3px);
+  opacity: 0; visibility: hidden; transition: opacity 0.25s var(--ease), visibility 0.25s var(--ease);
+}
+.progress-scrim.show { opacity: 1; visibility: visible; }
+.progress-dock.is-modal {
+  right: auto; bottom: auto; left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 150; pointer-events: auto;
+  width: min(460px, calc(100vw - 32px));
+  max-height: calc(100vh - 80px);
+  background: #fff; border-radius: var(--r-lg);
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.28);
+  padding: 18px;
+}
+.prog-modal-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 4px; }
+.prog-modal-title { display: inline-flex; align-items: center; gap: 7px; font-weight: 800; font-size: 15px; color: var(--text-1); }
+.prog-bg {
+  border: 1px solid var(--hairline-strong); background: var(--surface-2, #f8fafc);
+  color: var(--text-3); font-size: 12px; font-weight: 600; padding: 6px 12px;
+  border-radius: 999px; cursor: pointer; white-space: nowrap; transition: background 0.2s var(--ease), color 0.2s var(--ease);
+}
+.prog-bg:hover { background: #eef2f7; color: var(--text-1); }
 .prog-card {
   pointer-events: auto;
   position: relative;

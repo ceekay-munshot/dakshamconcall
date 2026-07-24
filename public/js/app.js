@@ -1305,7 +1305,7 @@ function pointsHtml(points) {
   const head = pts.slice(0, 4);
   const rest = pts.slice(4);
   return `<ul>${head.map((p) => `<li>${escapeHtml(p)}</li>`).join("")}</ul>
-    <details class="more-points"><summary>Show ${rest.length} more</summary>
+    <details class="more-points"><summary data-more="Show ${rest.length} more" data-less="Show less"></summary>
       <ul>${rest.map((p) => `<li>${escapeHtml(p)}</li>`).join("")}</ul>
     </details>`;
 }
