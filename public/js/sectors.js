@@ -595,6 +595,7 @@ function renderDetail(sec, sectorCount) {
     detailHeaderHtml(sec) +
     `<div class="sector-detail-grid">
        <div class="sd-main">
+         ${sectorInsightsCard(sec)}
          ${sectorMomentumCard(sec)}
          ${companyTableCard(sec)}
          ${runningThemesCard(sec)}
@@ -850,4 +851,147 @@ function card(title, icon, iconBg, bodyHtml, sub) {
       </div>
       <div class="card-body">${bodyHtml}</div>
     </div>`;
+}
+
+/* ---------------------------------------------------------------------------
+   Sector Insights — the cross-company read Amit asked for ("who's leading, who's
+   lagging; where the calls agree, where they split"). Everything below is
+   ORGANIZED from what companies actually stated (their direction on each theme +
+   flagged risks) — no opinion is added. Generic business "axes" line up the same
+   topic across firms even when each labels it differently ("Commodity inflation"
+   vs "Raw-material cost pressure"); named themes not on an axis are matched by
+   their own key. Semantic alignment beyond keywords is the pipeline's job later. */
+const INSIGHT_AXES = [
+  ["Demand", /\b(demand|volume|off-?take|footfall|order intake|order book)\b/i],
+  ["Exports", /\b(export|overseas|international (sales|market))\b/i],
+  ["Margins", /\b(margin|profitab|ebitda)\b/i],
+  ["Input costs", /\b(raw material|commodity|input cost|inflation)\b/i],
+  ["Pricing", /\b(pricing|price (hike|increase|realis)|realisation|realization)\b/i],
+  ["Capacity", /\b(capacity|utilis|utiliz|expansion|capex)\b/i],
+  ["EV / electrification", /\b(ev|electric|electrificat|new energy)\b/i],
+  ["Rural demand", /\b(rural|semi-?urban|agri)\b/i],
+  ["Debt & financing", /\b(debt|leverage|financing|liquidity|working capital)\b/i],
+];
+
+function sectorInsights(sec) {
+  const companies = sec.companies || [];
+  const nameOf = (t) => companies.find((c) => c.ticker === t)?.name || t;
+
+  // Net sentiment per company across the themes it flagged (leaders vs laggards).
+  const score = new Map();
+  const bump = (t, n) => score.set(t, (score.get(t) || 0) + n);
+
+  // Axis buckets: for each generic topic, who reads it up vs cautious.
+  const axisUp = new Map(), axisDn = new Map();
+  for (const [axis] of INSIGHT_AXES) { axisUp.set(axis, new Set()); axisDn.set(axis, new Set()); }
+  const onAxis = (label) => INSIGHT_AXES.filter(([, re]) => re.test(label)).map(([a]) => a);
+
+  // Named-theme consensus (for themes that don't fall on an axis).
+  const themes = new Map();
+
+  for (const c of companies) for (const th of c.themes || []) {
+    const dir = th.direction;
+    if (dir === "positive") bump(c.ticker, 1);
+    else if (dir === "negative") bump(c.ticker, -1);
+    const axes = onAxis(th.label || "");
+    if (axes.length) {
+      for (const a of axes) {
+        if (dir === "positive") axisUp.get(a).add(c.ticker);
+        else if (dir === "negative" || dir === "mixed") axisDn.get(a).add(c.ticker);
+      }
+    } else {
+      const k = themeKey(th.label); if (!k) continue;
+      if (!themes.has(k)) themes.set(k, { label: th.label, pos: new Set(), neg: new Set() });
+      const t = themes.get(k);
+      if (dir === "positive") t.pos.add(c.ticker);
+      else if (dir === "negative" || dir === "mixed") t.neg.add(c.ticker);
+    }
+  }
+
+  const agreements = [], concerns = [], splits = [];
+  // Axis-level reads.
+  for (const [axis] of INSIGHT_AXES) {
+    const up = [...axisUp.get(axis)].filter((t) => !axisDn.get(axis).has(t));
+    const dn = [...axisDn.get(axis)].filter((t) => !axisUp.get(axis).has(t));
+    if (up.length && dn.length) splits.push({ label: axis, up, dn, n: up.length + dn.length });
+    else if (up.length >= 2) agreements.push({ label: axis, dir: "up", who: up, n: up.length });
+    else if (dn.length >= 2) concerns.push({ label: axis, axis, who: dn, n: dn.length });
+  }
+  // Named-theme consensus (positive → agree, cautious → concern).
+  for (const t of themes.values()) {
+    if (t.pos.size >= 2 && t.neg.size === 0) agreements.push({ label: t.label, dir: "up", who: [...t.pos], n: t.pos.size });
+    else if (t.neg.size >= 2 && t.pos.size === 0) concerns.push({ label: t.label, who: [...t.neg], n: t.neg.size });
+  }
+  agreements.sort((a, b) => b.n - a.n);
+  concerns.sort((a, b) => b.n - a.n);
+  splits.sort((a, b) => b.n - a.n);
+
+  // Leaders / laggards with the theme(s) behind each read.
+  const standout = (t, positive) => {
+    const c = companies.find((x) => x.ticker === t);
+    return (c?.themes || []).filter((th) => th.direction === (positive ? "positive" : "negative")).map((th) => th.label).slice(0, 2);
+  };
+  const ranked = [...score.entries()].filter(([, s]) => s !== 0).sort((a, b) => b[1] - a[1]);
+  const leaders = ranked.filter(([, s]) => s > 0).slice(0, 3).map(([t]) => ({ name: nameOf(t), why: standout(t, true) }));
+  const laggards = ranked.filter(([, s]) => s < 0).slice(-3).reverse().map(([t]) => ({ name: nameOf(t), why: standout(t, false) }));
+
+  // What to watch: shared concerns + risks flagged by ≥2 companies, de-duplicated.
+  const norm = (s) => String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+  const watch = concerns.map((c) => ({ label: c.label, n: c.n, who: c.who, axis: c.axis }));
+  const risk = new Map();
+  for (const r of sec.risks || []) {
+    if (!r.risk || r.status === "no_mention") continue;
+    const k = norm(r.risk); if (!k) continue;
+    if (!risk.has(k)) risk.set(k, { label: r.risk, who: new Set() });
+    risk.get(k).who.add(r.ticker);
+  }
+  for (const v of risk.values()) if (v.who.size >= 2) watch.push({ label: v.label, n: v.who.size, who: [...v.who] });
+  // Collapse a risk onto the axis concern it restates (e.g. "Commodity inflation"
+  // risk ≡ the "Input costs" concern) so the same worry isn't listed twice.
+  const watchKey = (w) => { if (w.axis) return `axis:${w.axis}`; const ax = INSIGHT_AXES.find(([, re]) => re.test(w.label)); return ax ? `axis:${ax[0]}` : norm(w.label); };
+  const wseen = new Map();
+  for (const w of watch.sort((a, b) => b.n - a.n)) { const k = watchKey(w); if (!wseen.has(k)) wseen.set(k, w); }
+
+  return {
+    agreements: agreements.slice(0, 5),
+    splits: splits.slice(0, 4),
+    leaders, laggards,
+    watch: [...wseen.values()].slice(0, 5),
+    nameOf,
+  };
+}
+
+function sectorInsightsCard(sec) {
+  if ((sec.companies || []).length < 2) return ""; // need cross-company signal
+  const ins = sectorInsights(sec);
+  const names = (arr, max = 3) => {
+    const ns = (arr || []).map(ins.nameOf);
+    return ns.length > max ? `${ns.slice(0, max).join(", ")} +${ns.length - max}` : ns.join(", ");
+  };
+  const agreeRows = ins.agreements
+    .map((a) => `<li class="si-item"><span class="si-dot si-pos"></span><div><span class="si-theme">${escapeHtml(a.label)}</span><span class="si-who">${a.n} companies aligned · ${escapeHtml(names(a.who))}</span></div></li>`)
+    .join("");
+  const splitRows = ins.splits
+    .map((s) => `<li class="si-item"><span class="si-dot si-split"></span><div><span class="si-theme">${escapeHtml(s.label)}</span><span class="si-who"><span class="si-up">${escapeHtml(names(s.up, 2))} ▲</span> &nbsp;vs&nbsp; <span class="si-dn">${escapeHtml(names(s.dn, 2))} ▼</span></span></div></li>`)
+    .join("");
+  const leadRows = ins.leaders
+    .map((l) => `<li class="si-item"><span class="si-dot si-pos"></span><div><span class="si-name">${escapeHtml(l.name)} <span class="si-arrow up">▲</span></span>${l.why.length ? `<span class="si-who">${escapeHtml(l.why.join(" · "))}</span>` : ""}</div></li>`)
+    .join("");
+  const lagRows = ins.laggards
+    .map((l) => `<li class="si-item"><span class="si-dot si-neg"></span><div><span class="si-name">${escapeHtml(l.name)} <span class="si-arrow dn">▼</span></span>${l.why.length ? `<span class="si-who">${escapeHtml(l.why.join(" · "))}</span>` : ""}</div></li>`)
+    .join("");
+  const watchRows = ins.watch
+    .map((w) => `<li class="si-item"><span class="si-dot si-watch"></span><div><span class="si-theme">${escapeHtml(w.label)}</span><span class="si-who">${w.n} companies · ${escapeHtml(names(w.who))}</span></div></li>`)
+    .join("");
+
+  const block = (title, rows) => (rows ? `<div class="si-block"><div class="si-h">${title}</div><ul class="si-list">${rows}</ul></div>` : "");
+  const ll = leadRows || lagRows ? `<div class="si-block"><div class="si-h">Leaders &amp; laggards</div><ul class="si-list">${leadRows}${lagRows}</ul></div>` : "";
+  // Always surface the "split" bucket when there's anything to say — a note when
+  // reads are aligned tells the client we checked, rather than leaving a gap.
+  const splitBlock = agreeRows || leadRows || watchRows
+    ? `<div class="si-block"><div class="si-h">Where they split</div>${splitRows ? `<ul class="si-list">${splitRows}</ul>` : `<div class="si-none">No material disagreement this quarter — reads are broadly aligned.</div>`}</div>`
+    : "";
+  const blocks = block("Where the sector agrees", agreeRows) + splitBlock + ll + block("What to watch", watchRows);
+  if (!blocks) return "";
+  return card("Sector Insights", "lightbulb", "var(--grad-primary)", `<div class="si-grid">${blocks}</div>`, "How the calls line up — agreements, splits and who's ahead");
 }
