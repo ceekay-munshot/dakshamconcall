@@ -142,7 +142,10 @@ const SYSTEM_PROMPT = [
   "Move EVERY disclosure in the source into its single best-fit section. Do not drop specifics, and do not paraphrase away detail.",
   "You do NOT add opinions or analysis of your own.",
   "key_figures must carry EVERY quantitative disclosure in that section — every number the summary states, with its exact value, unit, period and kind. If the summary states a number, it MUST appear.",
+  "For the Financial Performance section, capture the standard result rows as separate key_figures whenever the source gives them: revenue (quarter and full-year), revenue growth (YoY and, if stated, QoQ), EBITDA, EBITDA margin, EBITDA growth, PAT and PAT growth. Do not fold a growth or margin figure into another row — each is its own key_figure.",
+  "Classify every disclosure by its MEANING, not by a keyword in its heading: a telecom or digital-services BUSINESS update belongs in Segment & Product Performance (not Product & Technology); a green-energy or plant CAPACITY note belongs in Manufacturing & Capacity; a financing/telecom-business number is a Segment figure, not a Product & Technology one.",
   "subsections must carry the real thematic detail as full points (reuse the source's own headings as labels where possible), not one-line boil-downs.",
+  "A subsections point should EXPLAIN a figure (the driver, cause or 'why'), not merely restate a number that already appears in key_figures. Never assert a causal claim the source does not support (e.g. do not attribute one movement to two contradictory causes).",
   "Reproduce the source's Key Takeaways, and any highlighted/unanswered questions, VERBATIM — do not reword, shorten or drop them. If the summary text contains a Key Takeaways / Highlights block, copy those bullets exactly.",
   "Also surface 3-7 short, reusable THEMES running through the call; reuse a prior quarter's theme label whenever the same topic recurs (labels are cross-quarter join keys).",
   "Compactness is the DISPLAY's job, never yours — never omit content to save space.",
@@ -255,6 +258,87 @@ export async function classifyQuarter(scrape, priorGuidance = null, priorThemes 
 
   out.model = MODEL;
   return out;
+}
+
+/* ============================================================================
+   Governing "editor" pass.
+   Client: "put one governing LLM on top of this which removes all redundant
+   information ... it needs to just ruthlessly remove everything." A SECOND model
+   call that curates ONLY the prose points — dedupes, drops bare restatements &
+   filler, fixes incoherent causal claims, re-files each point by MEANING and
+   ranks most-important-first. It never returns key_figures: those are re-attached
+   from the first pass, so NO number can be lost. Best-effort: any failure returns
+   the first-pass sections unchanged (never worse than today).
+   ========================================================================== */
+const EDITED_SECTION = {
+  type: "object",
+  additionalProperties: false,
+  required: ["id", "subsections"],
+  properties: {
+    id: { type: "string", enum: SECTION_IDS },
+    subsections: SCHEMA.properties.sections.items.properties.subsections,
+  },
+};
+const EDITED_SCHEMA = {
+  type: "object",
+  additionalProperties: false,
+  required: ["sections"],
+  properties: { sections: { type: "array", items: EDITED_SECTION } },
+};
+
+const EDITOR_SYSTEM = [
+  "You are a meticulous equity-research EDITOR. You are given a company's earnings-call tear sheet already organized into sections, each with a key_figures table (for CONTEXT only) and prose 'points'.",
+  "Return ONLY the curated prose (subsections) for each section — never the key_figures.",
+  "Your job is to REMOVE REDUNDANCY and improve organization, never to add opinion or drop real information:",
+  "1. Drop a point that merely restates a number already in that section's key_figures. If the point also gives a driver/cause/comparison (the 'why'), keep ONLY that explanatory part.",
+  "2. If the same point appears in more than one section, keep it once — in its single best-fit section — and drop the rest.",
+  "3. Drop filler that carries no specific, decision-relevant information.",
+  "4. If a causal claim is logically inconsistent, correct it to what the source supports or drop it — never keep an incoherent statement.",
+  "5. Put each point in the section that fits its MEANING, not a keyword (a telecom/digital-services business point belongs in Segment & Product Performance, not Product & Technology; a green-energy capacity note belongs in Manufacturing & Capacity).",
+  "6. Order the sections and the points within each MOST-IMPORTANT FIRST.",
+  "PRESERVE every specific number, named entity and distinct fact that is not a pure duplicate. Reuse the source's own sub-topic labels. Output only the schema.",
+].join(" ");
+
+/**
+ * Governing editor pass over ONE quarter's sections. Curates prose only;
+ * key_figures are preserved verbatim from the input. Returns edited sections in
+ * canonical order. On any error, returns the input sections unchanged.
+ */
+export async function editTearSheet(sections, meta = {}) {
+  if (!Array.isArray(sections) || !sections.length) return sections;
+  const hasProse = sections.some((s) => (s.subsections || []).some((x) => x.points?.length));
+  if (!hasProse) return sections; // nothing to curate
+
+  const user = [
+    `COMPANY: ${meta.company || meta.ticker || ""}`,
+    "The tear sheet's sections follow as JSON (key_figures included for context — do NOT return them).",
+    "Return the curated subsections for each section per the rules.",
+    JSON.stringify({ sections }, null, 2),
+  ].join("\n");
+
+  let editedById;
+  try {
+    const out = await openaiStructured({ system: EDITOR_SYSTEM, user, schemaName: "edited_tearsheet", schema: EDITED_SCHEMA });
+    editedById = new Map((out.sections || []).map((s) => [s.id, (s.subsections || []).filter((x) => x.points?.length)]));
+  } catch (e) {
+    console.log(`[editor] pass skipped for ${meta.ticker || "?"}: ${e.message}`);
+    return sections;
+  }
+
+  const origIds = new Set(sections.map((s) => s.id));
+  // Preserve every section + its key_figures; swap in curated prose where returned.
+  const result = sections.map((s) => ({ ...s, subsections: editedById.get(s.id) ?? s.subsections }));
+  // A point the editor re-filed INTO a section that had no prose before.
+  for (const [id, subs] of editedById) {
+    if (!origIds.has(id) && subs.length) {
+      const m = SECTIONS.find((x) => x.id === id);
+      if (m) result.push({ id, title: m.title, key_figures: [], subsections: subs });
+    }
+  }
+  result.sort((a, b) => SECTION_IDS.indexOf(a.id) - SECTION_IDS.indexOf(b.id));
+  const kfKept = result.reduce((n, s) => n + (s.key_figures?.length || 0), 0);
+  console.log(`[editor] ${meta.ticker || "?"}: sections ${sections.length}→${result.length}, key_figures preserved=${kfKept}`);
+  return result;
 }
 
 /* ============================================================================

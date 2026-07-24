@@ -594,6 +594,47 @@ function toIsoDate(monthYear) {
   return d.toISOString().slice(0, 10);
 }
 
+const MONTH_NUM = {
+  jan: 1, january: 1, feb: 2, february: 2, mar: 3, march: 3, apr: 4, april: 4,
+  may: 5, jun: 6, june: 6, jul: 7, july: 7, aug: 8, august: 8, sep: 9, sept: 9,
+  september: 9, oct: 10, october: 10, nov: 11, november: 11, dec: 12, december: 12,
+};
+
+/**
+ * Extract the ACTUAL day-level concall date from text (the call happened on a
+ * specific day, e.g. 17 July — not the 1st, which is all the "Mon YYYY" listing
+ * row gives). GUARD: only accept a date whose month+year matches the concall's
+ * listing month (`monthIso`), so we grab the real call date and never a stray
+ * date from the body (a guidance horizon, a prior-year comparison, etc.). The
+ * date sits near the top of a filing/summary, so the scan is bounded. Returns an
+ * ISO date or null (caller then keeps the month-level fallback).
+ */
+function preciseConcallDate(text, monthIso) {
+  if (!text || !monthIso) return null;
+  const want = { y: +monthIso.slice(0, 4), m: +monthIso.slice(5, 7) };
+  const hay = String(text).slice(0, 6000);
+  const hits = [];
+  let m;
+  // "17 July 2026" / "17th July 2026"
+  const re1 = /\b(\d{1,2})(?:st|nd|rd|th)?\s+(jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\.?\s*,?\s*(\d{4})\b/gi;
+  while ((m = re1.exec(hay))) hits.push({ d: +m[1], mo: MONTH_NUM[m[2].toLowerCase()], y: +m[3] });
+  // "July 17, 2026"
+  const re2 = /\b(jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\.?\s+(\d{1,2})(?:st|nd|rd|th)?\s*,?\s*(\d{4})\b/gi;
+  while ((m = re2.exec(hay))) hits.push({ d: +m[2], mo: MONTH_NUM[m[1].toLowerCase()], y: +m[3] });
+  // "17-07-2026" / "17/07/2026" / "17.07.2026"
+  const re3 = /\b(\d{1,2})[-/.](\d{1,2})[-/.](\d{4})\b/g;
+  while ((m = re3.exec(hay))) hits.push({ d: +m[1], mo: +m[2], y: +m[3] });
+  // "2026-07-17"
+  const re4 = /\b(\d{4})-(\d{2})-(\d{2})\b/g;
+  while ((m = re4.exec(hay))) hits.push({ d: +m[3], mo: +m[2], y: +m[1] });
+
+  const pick = hits.find(
+    (h) => h.mo === want.m && h.y === want.y && h.d >= 1 && h.d <= 31
+  );
+  if (!pick) return null;
+  return `${pick.y}-${String(pick.mo).padStart(2, "0")}-${String(pick.d).padStart(2, "0")}`;
+}
+
 /**
  * @param {import('playwright').Page} page
  * @param {import('playwright').BrowserContext} context
@@ -656,18 +697,28 @@ export async function scrapeCompany(page, context, ticker, opts = {}) {
         if (h) log(`history[${i}] ${dated[i].date}: via ai_summary`);
         if (!h) h = await extractTranscript(context, dated[i]);
         if (h) {
-          history.push({ concall_date: toIsoDate(dated[i].date), ...h, company, ticker });
+          const hMonth = toIsoDate(dated[i].date);
+          const hPrecise = preciseConcallDate(h.raw_text, hMonth) || preciseConcallDate(dated[i].rowText, hMonth);
+          history.push({ concall_date: hPrecise || hMonth, ...h, company, ticker });
         }
       } catch (e) {
         warn("history quarter failed", e.message);
       }
     }
 
+    // Refine the month-level listing date to the ACTUAL call day when the text
+    // states it (guarded to the listing month); otherwise keep the month default.
+    const latestMonth = toIsoDate(latest.date);
+    const latestPrecise =
+      preciseConcallDate(summary.raw_text, latestMonth) ||
+      preciseConcallDate(latest.rowText, latestMonth);
+    if (latestPrecise && latestPrecise !== latestMonth) log(`precise concall date: ${latestPrecise} (listing ${latestMonth})`);
+
     return {
       ticker,
       company,
       industry: industry || null,
-      concall_date: toIsoDate(latest.date),
+      concall_date: latestPrecise || latestMonth,
       source: summary.source,
       source_url: summary.source_url,
       raw_text: summary.raw_text,

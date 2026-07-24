@@ -17,7 +17,7 @@
 import { execSync } from "node:child_process";
 import fs from "node:fs";
 import { launchAndLogin, scrapeCompany } from "./scrape-screener.mjs";
-import { classifyQuarter, diffGuidance, diffRisks } from "./classify.mjs";
+import { classifyQuarter, diffGuidance, diffRisks, editTearSheet } from "./classify.mjs";
 import { MODEL } from "./llm.mjs";
 
 const DIR = "public/data";
@@ -91,12 +91,20 @@ function applyPending(stores) {
 }
 
 function mergeQuarters(baseQuarters, newQuarters) {
-  const byDate = new Map();
+  // Dedup by MONTH (one earnings call per quarter), so a newly precise call date
+  // (e.g. 2026-07-17) doesn't sit alongside its own older month-level record
+  // (2026-07-01) as a duplicate quarter. When both exist for a month, keep the
+  // one with the precise (non "-01") day. New (freshly-scraped) quarters win ties.
+  const byMonth = new Map();
+  const monthKey = (q) => (q.concall_date || q.generated_at || "").slice(0, 7) || Math.random().toString();
+  const day = (q) => +String(q.concall_date || "").slice(8, 10) || 1;
   for (const q of [...newQuarters, ...baseQuarters]) {
-    const key = q.concall_date || q.generated_at || Math.random().toString();
-    if (!byDate.has(key)) byDate.set(key, q);
+    const key = monthKey(q);
+    const cur = byMonth.get(key);
+    if (!cur) byMonth.set(key, q);
+    else if (day(q) > 1 && day(cur) === 1) byMonth.set(key, q); // upgrade to the precise-dated record
   }
-  return [...byDate.values()]
+  return [...byMonth.values()]
     .sort((a, b) => String(b.concall_date || "").localeCompare(String(a.concall_date || "")))
     .slice(0, MAX_QUARTERS);
 }
@@ -256,6 +264,17 @@ async function analyzeTicker(page, context, ticker, baseStore) {
       themes: Array.isArray(c.themes) ? c.themes : [],
       key_takeaways: c.key_takeaways,
       pressing_questions: c.pressing_questions,
+    });
+  }
+
+  // Governing editor pass on the DISPLAYED (latest) quarter — curate the prose,
+  // preserve every figure. Historical quarters only feed the numeric trend
+  // matrix, so we pay for the editor once, on the quarter whose prose is shown.
+  // editTearSheet is best-effort (returns the first-pass sections on any error).
+  if (classifiedNewestFirst[0] && process.env.TEARSHEET_EDITOR !== "0") {
+    classifiedNewestFirst[0].sections = await editTearSheet(classifiedNewestFirst[0].sections, {
+      company: scrape.company,
+      ticker: T,
     });
   }
 
