@@ -21657,18 +21657,18 @@
       "ticker": "APOLLOTYRE",
       "industry": "Tyres & Rubber Products",
       "country": "India",
-      "checked_at": "2026-07-22T20:09:45.682Z",
+      "checked_at": "2026-07-25T23:00:52.770Z",
       "quarters": [
         {
           "company": "Apollo Tyres Ltd",
           "ticker": "APOLLOTYRE",
           "industry": "Tyres & Rubber Products",
           "country": "India",
-          "concall_date": "2026-05-01",
+          "concall_date": "2026-05-18",
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=bd54bac7-9a0e-4651-b1d0-915a346b358b.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-22T20:09:45.682Z",
+          "generated_at": "2026-07-25T23:00:47.801Z",
           "summary": "Apollo Tyres expects to sustain and accelerate top-line growth in India and Europe despite geopolitical and macroeconomic challenges, with a focus on disciplined cost control and strategic capacity expansion.",
           "sections": [
             {
@@ -21676,59 +21676,129 @@
               "title": "Financial Performance",
               "key_figures": [
                 {
-                  "label": "Consolidated revenue for Q4 FY26",
-                  "value": "INR 73.4 billion",
-                  "unit": null,
+                  "label": "Consolidated revenue for Q4",
+                  "value": "73.4",
+                  "unit": "billion INR",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Consolidated EBITDA for Q4 FY26",
-                  "value": "INR 10.7 billion",
-                  "unit": null,
+                  "label": "Consolidated revenue growth YoY",
+                  "value": "14",
+                  "unit": "%",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Consolidated EBITDA margin for Q4 FY26",
-                  "value": "14.6%",
-                  "unit": null,
+                  "label": "Consolidated EBITDA for Q4",
+                  "value": "10.7",
+                  "unit": "billion INR",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Consolidated ROCE for FY26",
-                  "value": "13.4%",
-                  "unit": null,
+                  "label": "Consolidated EBITDA margin for Q4",
+                  "value": "14.6",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated EBITDA margin for full year",
+                  "value": "14.6",
+                  "unit": "%",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Net debt to EBITDA ratio as of March 2026",
-                  "value": "0.4x",
+                  "label": "Net debt to EBITDA ratio",
+                  "value": "0.4",
                   "unit": null,
                   "period": "March 2026",
                   "kind": "reported"
                 },
                 {
-                  "label": "Net debt to EBITDA ratio as of March 2025",
-                  "value": "0.7x",
-                  "unit": null,
-                  "period": "March 2025",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Net debt to EBITDA ratio as of March 2020",
-                  "value": "3.2x",
-                  "unit": null,
-                  "period": "March 2020",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Deferred tax liabilities impact",
-                  "value": "INR 570 crores",
-                  "unit": null,
+                  "label": "Consolidated ROCE",
+                  "value": "13.4",
+                  "unit": "%",
                   "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue for India Operations for Q4",
+                  "value": "52.4",
+                  "unit": "billion INR",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue growth for India Operations YoY",
+                  "value": "14.3",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA for India Operations for Q4",
+                  "value": "7.6",
+                  "unit": "billion INR",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin for India Operations for Q4",
+                  "value": "14.6",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net debt to EBITDA for India Operations",
+                  "value": "0.7",
+                  "unit": null,
+                  "period": "March 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Deferred tax impact",
+                  "value": "570",
+                  "unit": "crores INR",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue for Europe Operations for Q4",
+                  "value": "170",
+                  "unit": "million EUR",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue decline for Europe Operations YoY",
+                  "value": "1",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA for Europe Operations for Q4",
+                  "value": "25",
+                  "unit": "million EUR",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin for Europe Operations for Q4",
+                  "value": "14.6",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Non-cash write-off for Enschede plant",
+                  "value": "43",
+                  "unit": "million EUR",
+                  "period": "Q4 FY26",
                   "kind": "reported"
                 }
               ],
@@ -21736,8 +21806,14 @@
                 {
                   "label": "Balance Sheet and Leverage",
                   "points": [
-                    "Net debt to EBITDA ratio improved significantly from 3.2x in March 2020 to 0.4x in March 2026.",
-                    "The balance sheet remains strong, providing financial strength to navigate future uncertainties."
+                    "Net debt to EBITDA ratio improved from 3.2x to 0.4x by March 2026, indicating strong financial health.",
+                    "Consolidated ROCE improved by 240 basis points compared to FY25."
+                  ]
+                },
+                {
+                  "label": "Tax Regime Transition",
+                  "points": [
+                    "Transition to concessional tax regime effective FY27, reducing applicable tax rate from 34% to 25%."
                   ]
                 }
               ]
@@ -21747,48 +21823,40 @@
               "title": "Order Book & Demand",
               "key_figures": [
                 {
-                  "label": "Volume growth in India for replacement and OE segments",
+                  "label": "Volume growth in India OE and replacement",
                   "value": "high teens",
-                  "unit": null,
+                  "unit": "%",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Revenue for India Operations in Q4 FY26",
-                  "value": "INR 52.4 billion",
-                  "unit": null,
+                  "label": "Export volume growth",
+                  "value": "mid-single-digit",
+                  "unit": "%",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Revenue growth for India Operations in Q4 FY26",
-                  "value": "14.3%",
-                  "unit": null,
+                  "label": "TBR replacement growth",
+                  "value": "20",
+                  "unit": "%",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Revenue for Europe Operations in Q4 FY26",
-                  "value": "EUR 170 million",
-                  "unit": null,
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Revenue decline for Europe Operations in Q4 FY26",
-                  "value": "1%",
-                  "unit": null,
+                  "label": "PCR replacement growth",
+                  "value": "single digit",
+                  "unit": "%",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Demand Trends",
+                  "label": "Demand Outlook",
                   "points": [
-                    "Strong double-digit growth in replacement and OE markets in India.",
-                    "Slow, low single-digit growth in volumes in Europe.",
-                    "April shows strong volume growth, expected to continue through Q1."
+                    "Strong demand across categories and channels with April showing strong volume growth.",
+                    "Geopolitical developments in West Asia add volatility to costs, impacting margins in the near term."
                   ]
                 }
               ]
@@ -21798,26 +21866,26 @@
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
-                  "label": "TBR replacement growth",
-                  "value": "20% plus",
-                  "unit": null,
+                  "label": "Revenue for Reifencom",
+                  "value": "40",
+                  "unit": "million EUR",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "PCR replacement growth",
-                  "value": "single digit",
-                  "unit": null,
+                  "label": "Reifencom EBITDA margin",
+                  "value": "2",
+                  "unit": "%",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Segment Performance",
+                  "label": "Segment Growth",
                   "points": [
-                    "Growth across all product categories has been encouraging, with some segments ahead of market performance.",
-                    "In Europe, passenger car tyre category outperformed the market, while truck tyre sales were impacted by supply issues from India."
+                    "Strong double-digit growth in replacement and OE markets in India.",
+                    "Low single-digit growth in European volumes due to geopolitical impacts."
                   ]
                 }
               ]
@@ -21830,15 +21898,15 @@
                 {
                   "label": "R&D and Product Approvals",
                   "points": [
-                    "Secured fresh approval from leading OEMs, including BMW, MINI, Genesis, KIA, and Mahindra for passenger vehicle tyres.",
+                    "Secured fresh approvals from leading OEMs including BMW, MINI, Genesis, KIA, and Mahindra.",
                     "Introduced upgraded premium products across India and Europe Operations."
                   ]
                 },
                 {
                   "label": "Digital Initiatives",
                   "points": [
-                    "Rolled out new B2B e-commerce platform in Europe and continued work in India to improve customer experience, inventory visibility, and service efficiency.",
-                    "Scaling the use of artificial intelligence across business functions to drive efficiency and cost optimisation."
+                    "Rolled out new B2B e-commerce platform in Europe and continued improvements in India.",
+                    "Scaling use of AI across business functions for efficiency and cost optimization."
                   ]
                 }
               ]
@@ -21848,26 +21916,26 @@
               "title": "Manufacturing & Capacity",
               "key_figures": [
                 {
-                  "label": "Capacity utilisation",
-                  "value": "90%",
-                  "unit": null,
+                  "label": "Capacity utilization",
+                  "value": "90",
+                  "unit": "%",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
                   "label": "CapEx for FY27",
-                  "value": "INR 35 billion",
-                  "unit": null,
+                  "value": "35",
+                  "unit": "billion INR",
                   "period": "FY27",
-                  "kind": "reported"
+                  "kind": "guidance"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Capacity and Expansion",
+                  "label": "Capacity Expansion",
                   "points": [
-                    "Capacity utilisation was at a high of 90% across both India and Europe Operations.",
-                    "Planned CapEx of INR 35 billion for FY27, with nearly 80% towards growth and capacity expansion projects."
+                    "Full capacity utilization expected due to healthy demand outlook.",
+                    "Planned expansion initiatives to continue with 80% of CapEx towards growth and capacity expansion projects."
                   ]
                 }
               ]
@@ -21878,10 +21946,10 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Geographical Performance",
+                  "label": "Market Performance",
                   "points": [
-                    "In Europe, revenue for the quarter was EUR 170 million, down 1% Y-on-Y.",
-                    "Growth in certain international markets was impacted by geopolitical developments in West Asia."
+                    "India and Europe remain priority markets due to strong demand.",
+                    "Export markets like the U.S. currently show weak demand."
                   ]
                 }
               ]
@@ -21894,7 +21962,7 @@
                 {
                   "label": "Operational Efficiency",
                   "points": [
-                    "Closely monitoring the evolving geopolitical situation and responding with agility while maintaining disciplined cost controls."
+                    "Focus on cost control and efficiency to mitigate raw material and logistics cost volatility."
                   ]
                 }
               ]
@@ -21907,8 +21975,8 @@
                 {
                   "label": "Brand and Marketing",
                   "points": [
-                    "The BCCI partnership and 'Har Safar Mein Dum Hai' campaign strengthened brand connect and enhanced overall brand equity.",
-                    "Advertisement and sales promotion expenses were higher than usual due to recent sponsorships."
+                    "BCCI partnership and 'Har Safar Mein Dum Hai' campaign strengthened brand equity.",
+                    "Increased A&P spends due to sponsorships, expected to normalize slightly higher than previous trends."
                   ]
                 }
               ]
@@ -21919,9 +21987,9 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Strategic Focus",
+                  "label": "Sustainability Initiatives",
                   "points": [
-                    "Proactively preparing for emerging challenges and opportunities with a focus on long-term value creation across core markets."
+                    "Climate targets validated by the Science-Based Targets Initiative, reaffirming commitment to net zero."
                   ]
                 }
               ]
@@ -21934,7 +22002,7 @@
                 {
                   "label": "Geopolitical and Macroeconomic Risks",
                   "points": [
-                    "Geopolitical developments in West Asia continue to create significant uncertainty and add volatility to raw materials, energy, and logistics costs."
+                    "Geopolitical developments in West Asia create uncertainty and add volatility to raw materials, energy, and logistics costs."
                   ]
                 }
               ]
@@ -21942,14 +22010,21 @@
             {
               "id": "GUID",
               "title": "Guidance & Outlook",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "Price increases for Q1",
+                  "value": "6-8",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "guidance"
+                }
+              ],
               "subsections": [
                 {
                   "label": "Outlook",
                   "points": [
-                    "Expect to sustain and accelerate top-line growth in India and Europe despite geopolitical and macroeconomic challenges.",
-                    "Demand remains strong across categories and channels, with April already showing strong volume growth.",
-                    "Raw material costs are expected to rise in high teens on a sequential basis, with price increases of 6% to 8% announced for the current quarter."
+                    "Expect to sustain and accelerate top-line growth in India and Europe.",
+                    "Raw material costs expected to rise in high teens on a sequential basis."
                   ]
                 }
               ]
@@ -21967,69 +22042,58 @@
             {
               "metric": "Raw material costs",
               "horizon": "Q1 FY27",
-              "statement": "Raw material costs are expected to rise in high teens on a sequential basis.",
+              "statement": "Raw material costs expected to rise in high teens on a sequential basis.",
               "specificity": "specific",
               "direction": "up",
               "status": "reiterated"
             },
             {
-              "metric": "Price increases",
-              "horizon": "Q1 FY27",
-              "statement": "Price increases of 6% to 8% announced for the current quarter.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "new"
-            },
-            {
               "metric": "CapEx",
               "horizon": "FY27",
-              "statement": "Planned CapEx of INR 35 billion, with nearly 80% towards growth and capacity expansion projects.",
+              "statement": "CapEx for FY27 outlined at INR 35 billion, with nearly 80% towards growth and capacity expansion projects.",
               "specificity": "specific",
               "direction": "flat",
               "status": "raised"
             },
             {
-              "metric": "Demand momentum",
-              "horizon": "Q4 FY26",
-              "statement": "Anticipate healthy demand momentum to continue into Q4 of the fiscal year.",
-              "specificity": "vague",
+              "metric": "Price increases",
+              "horizon": "Q1 FY27",
+              "statement": "Price increases of 6% to 8% announced for Q1.",
+              "specificity": "specific",
               "direction": "up",
-              "status": "no_mention"
-            },
-            {
-              "metric": "Replacement demand",
-              "horizon": "H2 FY26",
-              "statement": "Expect replacement demand to start moving up to mid-to-high single digits.",
-              "specificity": "vague",
-              "direction": "up",
-              "status": "no_mention"
+              "status": "new"
             }
           ],
           "risk_register": [
             {
               "risk": "Geopolitical developments in West Asia",
               "status": "new",
-              "note": "Continue to create significant uncertainty and add volatility to raw materials, energy, and logistics costs."
+              "note": "Create uncertainty and add volatility to raw materials, energy, and logistics costs."
             },
             {
               "risk": "Muted demand in Europe",
               "status": "no_mention",
-              "note": "Demand environment continued to be muted across key categories in Europe."
+              "note": "Demand environment in Europe remained muted across key categories."
+            },
+            {
+              "risk": "Raw material and currency fluctuations",
+              "status": "no_mention",
+              "note": "Potential impact of global events on raw material costs and currency fluctuations."
             },
             {
               "risk": "Challenging demand environment in Europe",
               "status": "no_mention",
-              "note": null
+              "note": "Low single-digit growth expected."
             },
             {
-              "risk": "Competitive intensity in India with new entrants targeting TBR and PCR segments",
+              "risk": "Increased competitive intensity in India",
               "status": "no_mention",
-              "note": null
+              "note": "New entrants could increase competition."
             },
             {
               "risk": "Inflationary pressures in Europe",
               "status": "no_mention",
-              "note": "Inflationary pressures in energy and salary costs have impacted margins."
+              "note": "Higher than normal inflationary pressures in energy and salary costs."
             },
             {
               "risk": "Raw material cost volatility",
@@ -22041,42 +22105,42 @@
             {
               "label": "Topline growth",
               "direction": "positive",
-              "note": "Strong consolidated top-line growth of nearly 14% Y-on-Y in Q4.",
-              "section_ref": "FIN"
-            },
-            {
-              "label": "Raw material costs",
-              "direction": "negative",
-              "note": "Raw material costs expected to rise in high teens on a sequential basis.",
-              "section_ref": "RISK"
+              "note": "Strong demand across categories and channels with April showing strong volume growth.",
+              "section_ref": "ORD"
             },
             {
               "label": "Capacity expansion",
               "direction": "positive",
-              "note": "Planned CapEx of INR 35 billion for FY27 with focus on growth and capacity expansion.",
+              "note": "Full capacity utilization expected with continued expansion initiatives.",
               "section_ref": "MFG"
             },
             {
-              "label": "Brand visibility",
+              "label": "Product innovation",
               "direction": "positive",
-              "note": "BCCI partnership and 'Har Safar Mein Dum Hai' campaign enhanced brand equity.",
+              "note": "Secured fresh approvals from leading OEMs and introduced upgraded premium products.",
+              "section_ref": "TECH"
+            },
+            {
+              "label": "Competitive intensity",
+              "direction": "neutral",
+              "note": "Price increases announced by competitors; Apollo slightly ahead in implementation.",
               "section_ref": "MKT"
             },
             {
-              "label": "Geopolitical impact",
+              "label": "Raw material costs",
               "direction": "negative",
-              "note": "Geopolitical developments in West Asia impacting international market growth.",
+              "note": "Expected to rise in high teens on a sequential basis, impacting margins.",
               "section_ref": "RISK"
             }
           ],
           "key_takeaways": [
-            "We closed quarter four with a very strong consolidated top-line growth of nearly 14% Y-on-Y, and an EBITDA margin of 14.6%.",
-            "For our Indian Operations in Q4, we saw a strong double-digit growth in the replacement and OE markets as compared to last year.",
-            "In Europe Operations, we witnessed a slow, low single-digit growth in volumes.",
-            "Despite the tough macroeconomic environment, we expect to sustain and accelerate top-line growth in India and Europe.",
-            "Our balance sheet remains very strong, and despite the turbulent macro environment, we have continued to improve our leverage profile.",
-            "The capacity utilisation was at a high of 90% across both our India and Europe Operations.",
-            "For FY'27, we have outlined a CapEx of INR 35 billion, with nearly 80% towards growth and capacity expansion projects."
+            "Consolidated top-line growth of nearly 14% YoY in Q4, with an EBITDA margin of 14.6%.",
+            "Strong double-digit growth in replacement and OE markets in India.",
+            "Geopolitical developments in West Asia impact international market growth and add cost volatility.",
+            "Net debt to EBITDA ratio improved significantly to 0.4x by March 2026.",
+            "Capacity utilization at a high of 90% across India and Europe Operations.",
+            "CapEx for FY27 outlined at INR 35 billion, with 80% towards growth and capacity expansion.",
+            "Price increases of 6% to 8% announced for Q1 to mitigate cost pressures."
           ],
           "pressing_questions": []
         },
@@ -22085,12 +22149,12 @@
           "ticker": "APOLLOTYRE",
           "industry": "Tyres & Rubber Products",
           "country": "India",
-          "concall_date": "2026-02-01",
+          "concall_date": "2026-02-10",
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7e1044ca-a3f6-4b92-ab46-e529a7d8c8c2.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-22T20:09:31.125Z",
-          "summary": "Apollo Tyres expects to sustain and accelerate topline growth in India and Europe, with a focus on premiumisation, cost initiatives, and strategic capacity expansion.",
+          "generated_at": "2026-07-25T23:00:29.797Z",
+          "summary": "Apollo Tyres anticipates continued strong demand and plans significant capacity expansion to meet future growth, while maintaining focus on profitability and strategic investments.",
           "sections": [
             {
               "id": "FIN",
@@ -22104,6 +22168,13 @@
                   "kind": "reported"
                 },
                 {
+                  "label": "Consolidated revenue growth",
+                  "value": "12%",
+                  "unit": null,
+                  "period": "YoY Q3 FY26",
+                  "kind": "reported"
+                },
+                {
                   "label": "Consolidated EBITDA",
                   "value": "INR 11.9 billion",
                   "unit": null,
@@ -22111,7 +22182,7 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "EBITDA margin",
+                  "label": "Consolidated EBITDA margin",
                   "value": "15.3%",
                   "unit": null,
                   "period": "Q3 FY26",
@@ -22139,6 +22210,13 @@
                   "kind": "reported"
                 },
                 {
+                  "label": "Standalone revenue growth",
+                  "value": "13%+",
+                  "unit": null,
+                  "period": "YoY Q3 FY26",
+                  "kind": "reported"
+                },
+                {
                   "label": "Standalone EBITDA",
                   "value": "INR 7.5 billion",
                   "unit": null,
@@ -22148,6 +22226,20 @@
                 {
                   "label": "Standalone EBITDA margin",
                   "value": "14.5%",
+                  "unit": null,
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Standalone net debt",
+                  "value": "INR 18 billion",
+                  "unit": null,
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net debt to EBITDA (India Operations)",
+                  "value": "0.7x",
                   "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
@@ -22197,27 +22289,21 @@
               ],
               "subsections": [
                 {
-                  "label": "Quarterly Performance",
+                  "label": "Revenue and Profitability",
                   "points": [
+                    "Achieved highest ever quarterly revenue on both standalone and consolidated basis.",
                     "Consolidated topline growth of nearly 12% with an EBITDA margin of 15.3%.",
-                    "Highest ever quarterly revenue recorded on both standalone and consolidated basis.",
+                    "Standalone revenue grew by 13%+ over the same quarter last year.",
+                    "Standalone EBITDA margin was 14.5%, impacted by timing of BCCI sponsorship spend.",
+                    "Europe revenue was flattish, but EBITDA margin improved to 17.9%."
+                  ]
+                },
+                {
+                  "label": "Debt and Cash Flow",
+                  "points": [
                     "Consolidated net debt reduced to INR 13 billion from INR 26 billion in the previous quarter.",
-                    "Net debt to EBITDA ratio improved to 0.4x from 0.8x in the previous quarter."
-                  ]
-                },
-                {
-                  "label": "India Operations",
-                  "points": [
-                    "Standalone revenue for the quarter was INR 51.4 billion, a growth of 13%+ over the same quarter last year.",
-                    "Standalone EBITDA margin was 14.5%, compared to 15.3% in the last quarter, but higher than 11.1% in the same quarter last year.",
-                    "Exceptional item charge of INR 259 million due to new labour code obligations."
-                  ]
-                },
-                {
-                  "label": "Europe Operations",
-                  "points": [
-                    "Revenue for the quarter was Euro 180 million, flattish compared to the same quarter last year.",
-                    "EBITDA margin improved to 17.9% from 17.7% in the same quarter last year and 12.7% in the last quarter."
+                    "Net debt to EBITDA ratio improved to 0.4x from 0.8x in the previous quarter.",
+                    "Standalone net debt reduced to INR 18 billion, with net debt to EBITDA at 0.7x."
                   ]
                 }
               ]
@@ -22227,27 +22313,35 @@
               "title": "Order Book & Demand",
               "key_figures": [
                 {
-                  "label": "India revenue growth",
-                  "value": "13%+",
+                  "label": "India revenue",
+                  "value": "INR 51.4 billion",
                   "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Q3 volume growth YoY",
+                  "label": "India volume growth",
                   "value": "mid-teens",
                   "unit": null,
-                  "period": "Q3 FY26",
+                  "period": "YoY Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Exports volume growth",
+                  "value": "just short of 20%",
+                  "unit": null,
+                  "period": "YoY Q3 FY26",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Demand Momentum",
+                  "label": "Demand Drivers",
                   "points": [
                     "Robust demand momentum in Q3, leading to highest ever revenues.",
-                    "Double-digit YoY growth in standalone and consolidated revenue, highest in the last 12 quarters.",
-                    "Strong demand across all categories: replacement, OE, and exports."
+                    "Double-digit YoY growth in standalone and consolidated revenue, highest in last 12 quarters.",
+                    "Strong demand across all categories: replacement, OE, and exports.",
+                    "Positive demand environment in India, aided by reduced GST rates."
                   ]
                 }
               ]
@@ -22268,8 +22362,9 @@
                 {
                   "label": "Product Categories",
                   "points": [
-                    "Premium brand Vredestein achieved highest ever volumes in this quarter.",
-                    "UHP mix for the quarter increased to 52% from 48% in the same quarter last year."
+                    "Strong double-digit growth across all product categories in India.",
+                    "Vredestein brand achieved highest ever volumes in the quarter.",
+                    "In Europe, UHP mix increased to 52% from 48% in the same quarter last year."
                   ]
                 }
               ]
@@ -22282,8 +22377,14 @@
                 {
                   "label": "R&D and Product Excellence",
                   "points": [
-                    "Secured additional model approvals from marquee passenger vehicle manufacturers across India and Europe.",
+                    "Secured additional model approvals from marquee passenger vehicle manufacturers.",
                     "Achieved podium positions in independent European tests, underscoring product excellence."
+                  ]
+                },
+                {
+                  "label": "Digitalisation",
+                  "points": [
+                    "Investments in Artificial Intelligence to improve customer service and drive efficiencies."
                   ]
                 }
               ]
@@ -22293,6 +22394,13 @@
               "title": "Manufacturing & Capacity",
               "key_figures": [
                 {
+                  "label": "Capacity utilisation (India)",
+                  "value": "high 80s",
+                  "unit": "%",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
                   "label": "Capex for AP plant",
                   "value": "INR 5,800 crores",
                   "unit": null,
@@ -22300,27 +22408,27 @@
                   "kind": "guidance"
                 },
                 {
-                  "label": "Growth capex for FY'27",
+                  "label": "Growth capex for FY27",
                   "value": "INR 2,000 crores",
                   "unit": null,
                   "period": "FY27",
                   "kind": "guidance"
                 },
                 {
-                  "label": "Current capacity utilisation in India",
-                  "value": "high 80s",
+                  "label": "Overall capex for next year",
+                  "value": "INR 3,000 crores",
                   "unit": null,
-                  "period": "Q3 FY26",
-                  "kind": "reported"
+                  "period": "FY27",
+                  "kind": "guidance"
                 }
               ],
               "subsections": [
                 {
                   "label": "Capacity Expansion",
                   "points": [
-                    "PCR capacity expansion in Hungary is progressing as planned.",
-                    "Board approved INR 5,800 crores capex for AP plant to expand PCR and TBR capacities over the next three financial years.",
-                    "Current capacity utilisation levels in India are in the high 80s."
+                    "Current capacity utilisation in India is in the high 80s, necessitating expansion.",
+                    "Board approved INR 5,800 crores capex for AP plant to expand PCR and TBR capacities.",
+                    "Capex spread over FY'27, '28, and '29, with INR 2,000 crores growth capex in FY'27."
                   ]
                 }
               ]
@@ -22334,20 +22442,7 @@
                   "label": "Regional Performance",
                   "points": [
                     "In India, robust double-digit growth in all channels.",
-                    "In Europe, demand environment continued to be muted across key categories, with flattish topline YoY."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "SUP",
-              "title": "Supply Chain & Operations",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Digitalisation and Efficiency",
-                  "points": [
-                    "Investments in Artificial Intelligence to improve customer service and drive efficiencies in plants."
+                    "In Europe, demand environment remained muted with flattish topline YoY."
                   ]
                 }
               ]
@@ -22361,7 +22456,8 @@
                   "label": "Branding and Sponsorship",
                   "points": [
                     "Strong brand equity anchored in superior product quality and customer satisfaction.",
-                    "Sponsorship of the official Indian Cricket Team jersey has driven unparalleled brand reach and visibility."
+                    "Sponsorship of Indian Cricket Team jersey increased brand reach and visibility.",
+                    "Positive business outcomes from strategic sponsorship, especially in consumer tyres."
                   ]
                 }
               ]
@@ -22372,10 +22468,10 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Sustainability and Partnerships",
+                  "label": "Strategic Focus",
                   "points": [
-                    "Won multiple accolades for sustainability efforts, including first prize in the 6th National Water Awards.",
-                    "Partnered with the UN Development Programme to advance biodiversity conservation."
+                    "Focus on profitable growth, premiumisation, and disciplined cost initiatives.",
+                    "Partnership with UN Development Programme to advance biodiversity conservation."
                   ]
                 }
               ]
@@ -22388,7 +22484,8 @@
                 {
                   "label": "Market Dynamics",
                   "points": [
-                    "Muted demand environment in Europe across key categories."
+                    "Muted demand environment in Europe across key categories.",
+                    "Potential impact of global events on raw material costs and currency fluctuations."
                   ]
                 }
               ]
@@ -22412,65 +22509,54 @@
           "guidance_ledger": [
             {
               "metric": "Topline growth",
-              "horizon": "FY26",
+              "horizon": "Q4 FY26",
               "statement": "Expect to sustain and accelerate topline growth in India and Europe.",
               "specificity": "vague",
               "direction": "up",
               "status": "reiterated"
             },
             {
-              "metric": "Demand momentum",
-              "horizon": "Q4 FY26",
-              "statement": "Anticipate healthy demand momentum to continue into Q4 of the fiscal year.",
-              "specificity": "vague",
-              "direction": "up",
-              "status": "new"
-            },
-            {
               "metric": "Raw material costs",
               "horizon": "Q4 FY26",
-              "statement": "Expect the raw material cost to be steady in Q4.",
+              "statement": "Raw material costs expected to be steady.",
               "specificity": "vague",
               "direction": "flat",
               "status": "reiterated"
             },
             {
               "metric": "Capex",
-              "horizon": "FY27-FY29",
-              "statement": "Board approved INR 5,800 crores capex for AP plant for expanding both the PCR and TBR capacities, spread over the next three financial years.",
+              "horizon": "FY27",
+              "statement": "Capex for AP plant approved at INR 5,800 crores, with INR 2,000 crores growth capex in FY27.",
               "specificity": "specific",
               "direction": "up",
-              "status": "lowered"
-            },
-            {
-              "metric": "Replacement demand",
-              "horizon": "H2 FY26",
-              "statement": "Expect replacement demand to start moving up to mid-to-high single digits.",
-              "specificity": "vague",
-              "direction": "up",
-              "status": "no_mention"
+              "status": "reiterated"
             }
           ],
           "risk_register": [
             {
               "risk": "Muted demand in Europe",
               "status": "new",
-              "note": "Demand environment continued to be muted across key categories in Europe."
+              "note": "Demand environment in Europe remained muted across key categories."
+            },
+            {
+              "risk": "Raw material and currency fluctuations",
+              "status": "new",
+              "note": "Potential impact of global events on raw material costs and currency fluctuations."
             },
             {
               "risk": "Challenging demand environment in Europe",
               "status": "no_mention",
-              "note": null
+              "note": "Low single-digit growth expected."
             },
             {
-              "risk": "Competitive intensity in India with new entrants targeting TBR and PCR segments",
+              "risk": "Increased competitive intensity in India",
               "status": "no_mention",
-              "note": null
+              "note": "New entrants could increase competition."
             },
             {
               "risk": "Inflationary pressures in Europe",
               "status": "no_mention",
-              "note": "Inflationary pressures in energy and salary costs have impacted margins."
+              "note": "Higher than normal inflationary pressures in energy and salary costs."
             },
             {
               "risk": "Raw material cost volatility",
@@ -22482,41 +22568,42 @@
             {
               "label": "Topline growth",
               "direction": "positive",
-              "note": "Apollo Tyres recorded highest ever quarterly revenue and expects to sustain growth.",
-              "section_ref": "FIN"
-            },
-            {
-              "label": "Raw material costs",
-              "direction": "neutral",
-              "note": "Raw material costs expected to be steady in Q4.",
-              "section_ref": "GUID"
-            },
-            {
-              "label": "Product innovation",
-              "direction": "positive",
-              "note": "Secured additional model approvals and achieved podium positions in European tests.",
-              "section_ref": "TECH"
-            },
-            {
-              "label": "Brand visibility",
-              "direction": "positive",
-              "note": "Sponsorship of the Indian Cricket Team jersey enhanced brand reach.",
-              "section_ref": "MKT"
+              "note": "Strong demand momentum in India and plans to sustain growth in Europe.",
+              "section_ref": "ORD"
             },
             {
               "label": "Capacity expansion",
               "direction": "positive",
-              "note": "Board approved significant capex for capacity expansion in India.",
+              "note": "Significant capex approved for capacity expansion in India to meet future demand.",
               "section_ref": "MFG"
+            },
+            {
+              "label": "Product innovation",
+              "direction": "positive",
+              "note": "Continued focus on R&D and securing model approvals to drive premiumisation.",
+              "section_ref": "TECH"
+            },
+            {
+              "label": "Competitive intensity",
+              "direction": "neutral",
+              "note": "Stable pricing environment with strong brand equity and strategic sponsorships.",
+              "section_ref": "MKT"
+            },
+            {
+              "label": "Raw material costs",
+              "direction": "neutral",
+              "note": "Raw material costs expected to remain steady in the near term.",
+              "section_ref": "RISK"
             }
           ],
           "key_takeaways": [
             "Consolidated topline growth of nearly 12% with an EBITDA margin of 15.3%.",
-            "Highest ever quarterly revenue recorded on both standalone and consolidated basis.",
+            "Achieved highest ever quarterly revenue on both standalone and consolidated basis.",
             "Robust demand momentum in Q3, leading to highest ever revenues.",
-            "Board approved INR 5,800 crores capex for AP plant to expand PCR and TBR capacities over the next three financial years.",
-            "Sponsorship of the official Indian Cricket Team jersey has driven unparalleled brand reach and visibility.",
-            "Muted demand environment in Europe across key categories."
+            "Board approved INR 5,800 crores capex for AP plant to expand PCR and TBR capacities.",
+            "Sponsorship of Indian Cricket Team jersey increased brand reach and visibility.",
+            "Muted demand environment in Europe across key categories.",
+            "Raw material costs expected to be steady in Q4."
           ],
           "pressing_questions": []
         },
@@ -22525,11 +22612,11 @@
           "ticker": "APOLLOTYRE",
           "industry": "Tyres & Rubber Products",
           "country": "India",
-          "concall_date": "2025-11-01",
+          "concall_date": "2025-11-18",
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=376ce6ec-cb72-49d0-97b6-d28f2a3aae33.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-22T20:09:15.981Z",
+          "generated_at": "2026-07-25T23:00:11.960Z",
           "summary": "Apollo Tyres anticipates maintaining and accelerating top-line growth in India and Europe, with a focus on profitability, free cash flows, and return ratios.",
           "sections": [
             {
@@ -22540,6 +22627,13 @@
                   "label": "Consolidated revenue",
                   "value": "INR 68.3 billion",
                   "unit": null,
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated revenue growth",
+                  "value": "6%",
+                  "unit": "YoY",
                   "period": "Q2 FY26",
                   "kind": "reported"
                 },
@@ -22561,11 +22655,11 @@
                   "label": "Consolidated net debt",
                   "value": "INR 26 billion",
                   "unit": null,
-                  "period": "as of September 25, 2025",
+                  "period": "September 2025",
                   "kind": "reported"
                 },
                 {
-                  "label": "Net debt to EBITDA ratio (consolidated)",
+                  "label": "Net debt to EBITDA ratio",
                   "value": "0.8x",
                   "unit": null,
                   "period": "Q2 FY26",
@@ -22575,6 +22669,13 @@
                   "label": "India revenue",
                   "value": "INR 47.1 billion",
                   "unit": null,
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India revenue growth",
+                  "value": "6%",
+                  "unit": "YoY",
                   "period": "Q2 FY26",
                   "kind": "reported"
                 },
@@ -22593,7 +22694,14 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Net debt to EBITDA ratio (India)",
+                  "label": "India net debt",
+                  "value": "INR 27 billion",
+                  "unit": null,
+                  "period": "September 2025",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India net debt to EBITDA ratio",
                   "value": "1.1x",
                   "unit": null,
                   "period": "Q2 FY26",
@@ -22603,6 +22711,20 @@
                   "label": "European revenue",
                   "value": "EUR 177 million",
                   "unit": null,
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "European revenue growth",
+                  "value": "4%",
+                  "unit": "YoY",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "European revenue growth",
+                  "value": "21%",
+                  "unit": "QoQ",
                   "period": "Q2 FY26",
                   "kind": "reported"
                 },
@@ -22619,25 +22741,29 @@
                   "unit": null,
                   "period": "Q2 FY26",
                   "kind": "reported"
+                },
+                {
+                  "label": "Exceptional item cost for Enschede closure",
+                  "value": "EUR 17 million",
+                  "unit": null,
+                  "period": "Q2 FY26",
+                  "kind": "reported"
                 }
               ],
               "subsections": [
                 {
                   "label": "Revenue and Profitability",
                   "points": [
-                    "Consolidated top-line growth of 6% Y-on-Y in Q2 FY26.",
                     "Achieved highest revenue growth in the last 10 quarters on both standalone and consolidated basis.",
-                    "India revenue grew by 6% Y-on-Y to INR 47.1 billion.",
-                    "European revenue grew by 4% Y-on-Y to EUR 177 million."
+                    "GST rationalisation by the Government of India is expected to have a far-reaching impact on India's consumption story.",
+                    "Focus remains on profitability, free cash flows, and return ratios."
                   ]
                 },
                 {
-                  "label": "Margins and Debt",
+                  "label": "Balance Sheet",
                   "points": [
-                    "Consolidated EBITDA margin improved to 14.9% from 13.2% last quarter.",
-                    "India EBITDA margin increased to 15.3% from 13.6% last quarter.",
-                    "Net debt to EBITDA ratio for consolidated operations stood at 0.8x.",
-                    "Net debt to EBITDA ratio for India operations was 1.1x."
+                    "Consolidated net debt stood at INR 26 billion, similar to March 2025 levels.",
+                    "Net debt to EBITDA for consolidated operations was 0.8x at the end of the quarter."
                   ]
                 }
               ]
@@ -22666,15 +22792,21 @@
                   "unit": null,
                   "period": "Q2 FY26",
                   "kind": "reported"
+                },
+                {
+                  "label": "Exports growth",
+                  "value": "double digits",
+                  "unit": null,
+                  "period": "Q2 FY26",
+                  "kind": "reported"
                 }
               ],
               "subsections": [
                 {
                   "label": "Demand Drivers",
                   "points": [
-                    "Volume growth in the Replacement and OEM segments in India.",
-                    "Strong recovery in export markets.",
-                    "Continued demand acceleration in October with healthy Y-on-Y growth."
+                    "Volume growth in the Replacement and OEM segments in India, with a strong recovery in export markets.",
+                    "Expect to maintain healthy demand momentum in H2 FY26 with the new GST regime and rebound in infrastructure and mining segments post-monsoon."
                   ]
                 }
               ]
@@ -22684,15 +22816,15 @@
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
-                  "label": "UHP mix increase",
-                  "value": "49%",
+                  "label": "Vredestein volumes",
+                  "value": "10,000 tyres/month",
                   "unit": null,
                   "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Vredestein volumes",
-                  "value": "10,000 tyres/month",
+                  "label": "UHP mix in Europe",
+                  "value": "49%",
                   "unit": null,
                   "period": "Q2 FY26",
                   "kind": "reported"
@@ -22700,11 +22832,10 @@
               ],
               "subsections": [
                 {
-                  "label": "Premiumisation and Brand Performance",
+                  "label": "Product Performance",
                   "points": [
-                    "Vredestein achieved highest ever volumes in Q2 FY26.",
-                    "UHP mix in Europe increased to 49% from 46% last year.",
-                    "Continued strong traction for premium brand Vredestein in India."
+                    "Vredestein continues to gain traction in India with highest ever volumes in Q2 FY26.",
+                    "UHP mix in Europe increased to 49% from 46% in the same quarter last year."
                   ]
                 }
               ]
@@ -22715,10 +22846,10 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "R&D and Product Capabilities",
+                  "label": "R&D and Product Development",
                   "points": [
-                    "Secured additional model wins from marquee German OEM manufacturers.",
-                    "Continued to win podium positions in Europe at independent test results."
+                    "Secured additional model wins from marquee German OEM manufacturers, supporting premiumization journey.",
+                    "Winning podium positions in Europe at independent test results, reinforcing product strengths."
                   ]
                 }
               ]
@@ -22731,8 +22862,8 @@
                 {
                   "label": "Capacity Expansion",
                   "points": [
-                    "PCR capacity expansion in Hungary is underway.",
-                    "Settlement reached with Works Council in Netherlands for Enschede plant closure."
+                    "PCR capacity expansion in Hungary is underway, expected to accelerate demand momentum.",
+                    "Settlement reached with Works Council in Netherlands for Enschede plant closure, expected by end June 2026."
                   ]
                 }
               ]
@@ -22745,22 +22876,8 @@
                 {
                   "label": "Regional Performance",
                   "points": [
-                    "Challenging demand environment in Europe across key categories.",
-                    "Strong recovery in export markets."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "SUP",
-              "title": "Supply Chain & Operations",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Raw Material Costs",
-                  "points": [
-                    "Raw material costs in Q2 were down 3% sequentially from Q1.",
-                    "Expect raw material costs to be stable to slightly down in Q3."
+                    "In Europe, demand environment remains challenging across key categories, but registered a 4% Y-on-Y growth in top-line.",
+                    "In India, strong brand awareness and distribution network expansion are key focus areas."
                   ]
                 }
               ]
@@ -22773,22 +22890,8 @@
                 {
                   "label": "Branding and Sponsorship",
                   "points": [
-                    "Apollo Tyres became the lead title and jersey sponsor of the Indian cricket team.",
-                    "Strong brand awareness and robust brand equity maintained."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "STRAT",
-              "title": "Strategic Initiatives & M&A",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Strategic Positioning",
-                  "points": [
-                    "Focus on increasing dealer network in India and expanding distribution network.",
-                    "Proactively positioning to navigate emerging challenges and seize new opportunities."
+                    "Apollo Tyres became the lead title and jersey sponsor of the Indian cricket team, enhancing brand visibility.",
+                    "Focus on increasing dealer network in India and expanding distribution network."
                   ]
                 }
               ]
@@ -22801,8 +22904,8 @@
                 {
                   "label": "Market Challenges",
                   "points": [
-                    "Challenging demand environment in Europe.",
-                    "Competitive intensity in India with new entrants targeting TBR and PCR segments."
+                    "European market continues to be challenging, with low single-digit growth expected.",
+                    "Competitive intensity in India remains stable, but new entrants could increase competition."
                   ]
                 }
               ]
@@ -22813,11 +22916,10 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Future Outlook",
+                  "label": "Outlook",
                   "points": [
                     "Anticipate maintaining and accelerating top-line growth in India and Europe.",
-                    "Expect replacement demand to start moving up to mid-to-high single digits.",
-                    "Expect raw material costs to be stable to slightly down in Q3."
+                    "Expect raw material costs to be stable to slightly down in Q3 FY26."
                   ]
                 }
               ]
@@ -22826,52 +22928,44 @@
           "guidance_ledger": [
             {
               "metric": "Topline growth",
-              "horizon": "FY26",
-              "statement": "Anticipate maintaining and accelerating top-line growth in India and Europe.",
+              "horizon": "H2 FY26",
+              "statement": "Anticipate maintaining and accelerating top-line growth in both India and Europe.",
               "specificity": "vague",
               "direction": "up",
               "status": "reiterated"
             },
             {
-              "metric": "Replacement demand",
-              "horizon": "H2 FY26",
-              "statement": "Expect replacement demand to start moving up to mid-to-high single digits.",
-              "specificity": "vague",
-              "direction": "up",
-              "status": "new"
-            },
-            {
               "metric": "Raw material costs",
               "horizon": "Q3 FY26",
-              "statement": "Expect raw material costs to be stable to slightly down in Q3.",
+              "statement": "Expect raw material costs to be stable to slightly down.",
               "specificity": "vague",
-              "direction": "down",
+              "direction": "flat",
               "status": "reiterated"
             },
             {
               "metric": "Capex",
               "horizon": "FY26",
-              "statement": "No change in capex guidance for FY’26.",
+              "statement": "No change in capex guidance for FY26.",
               "specificity": "specific",
               "direction": "flat",
-              "status": "no_mention"
+              "status": "reiterated"
             }
           ],
           "risk_register": [
             {
               "risk": "Challenging demand environment in Europe",
               "status": "new",
-              "note": null
+              "note": "Low single-digit growth expected."
             },
             {
-              "risk": "Competitive intensity in India with new entrants targeting TBR and PCR segments",
+              "risk": "Increased competitive intensity in India",
               "status": "new",
-              "note": null
+              "note": "New entrants could increase competition."
             },
             {
               "risk": "Inflationary pressures in Europe",
               "status": "no_mention",
-              "note": "Inflationary pressures in energy and salary costs have impacted margins."
+              "note": "Higher than normal inflationary pressures in energy and salary costs."
             },
             {
               "risk": "Raw material cost volatility",
@@ -22883,14 +22977,14 @@
             {
               "label": "Topline growth",
               "direction": "positive",
-              "note": "Anticipate maintaining and accelerating top-line growth in India and Europe.",
-              "section_ref": "GUID"
+              "note": "Achieved highest revenue growth in the last 10 quarters.",
+              "section_ref": "FIN"
             },
             {
               "label": "Raw material costs",
               "direction": "neutral",
-              "note": "Expect raw material costs to be stable to slightly down in Q3.",
-              "section_ref": "SUP"
+              "note": "Expect raw material costs to be stable to slightly down in Q3 FY26.",
+              "section_ref": "ORD"
             },
             {
               "label": "Product innovation",
@@ -22900,25 +22994,25 @@
             },
             {
               "label": "Competitive intensity",
-              "direction": "mixed",
-              "note": "Competitive intensity in India with new entrants targeting TBR and PCR segments.",
+              "direction": "neutral",
+              "note": "Stable competitive environment, but new entrants could increase competition.",
               "section_ref": "RISK"
             },
             {
-              "label": "Brand visibility",
+              "label": "Capacity expansion",
               "direction": "positive",
-              "note": "Apollo Tyres became the lead title and jersey sponsor of the Indian cricket team.",
-              "section_ref": "MKT"
+              "note": "PCR capacity expansion in Hungary is underway.",
+              "section_ref": "MFG"
             }
           ],
           "key_takeaways": [
-            "Consolidated top-line growth of 6% Y-on-Y in Q2 FY26, with the highest revenue growth in the last 10 quarters.",
-            "India revenue grew by 6% Y-on-Y to INR 47.1 billion, with a strong recovery in export markets.",
-            "European revenue grew by 4% Y-on-Y to EUR 177 million, despite a challenging demand environment.",
-            "Vredestein achieved highest ever volumes in Q2 FY26, continuing strong traction in India.",
-            "Apollo Tyres became the lead title and jersey sponsor of the Indian cricket team, enhancing brand visibility.",
-            "Settlement reached for Enschede plant closure, with expected positive long-term impact on European profitability.",
-            "Expect replacement demand to start moving up to mid-to-high single digits in H2 FY26."
+            "Consolidated revenue for Q2 FY26 stood at INR 68.3 billion, a growth of 6% YoY.",
+            "Consolidated EBITDA margin improved to 14.9% in Q2 FY26.",
+            "GST rationalisation is expected to positively impact India's consumption story.",
+            "Vredestein brand achieved highest ever volumes in India in Q2 FY26.",
+            "Apollo Tyres became the lead title and jersey sponsor of the Indian cricket team.",
+            "Settlement reached for Enschede plant closure, expected by end June 2026.",
+            "European market remains challenging, but growth is expected to return."
           ],
           "pressing_questions": []
         },
@@ -22927,70 +23021,84 @@
           "ticker": "APOLLOTYRE",
           "industry": "Tyres & Rubber Products",
           "country": "India",
-          "concall_date": "2025-08-01",
+          "concall_date": "2025-08-08",
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=0470081b-d0fd-4454-bffc-898da3e29465.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-22T20:09:03.204Z",
-          "summary": "Apollo Tyres anticipates stronger topline growth in both India and Europe, with a focus on the replacement segment in India and cost optimization in Europe.",
+          "generated_at": "2026-07-25T22:59:58.170Z",
+          "summary": "Apollo Tyres anticipates stronger topline growth in both India and Europe, with a focus on replacement segments and cost optimization.",
           "sections": [
             {
               "id": "FIN",
               "title": "Financial Performance",
               "key_figures": [
                 {
-                  "label": "Consolidated topline growth",
-                  "value": "3.6",
-                  "unit": "%",
+                  "label": "Consolidated revenue",
+                  "value": "65.6",
+                  "unit": "INR billion",
                   "period": "Q1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "EBITDA margin",
+                  "label": "Consolidated revenue growth",
+                  "value": "3.6",
+                  "unit": "%",
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated EBITDA",
+                  "value": "8.7",
+                  "unit": "INR billion",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated EBITDA margin",
                   "value": "13.2",
                   "unit": "%",
                   "period": "Q1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Consolidated revenue",
-                  "value": "65.6",
-                  "unit": "billion INR",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Consolidated EBITDA",
-                  "value": "8.7",
-                  "unit": "billion INR",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Net debt reduction",
+                  "label": "Consolidated net debt reduction",
                   "value": "3.9",
-                  "unit": "billion INR",
+                  "unit": "INR billion",
                   "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated net debt",
+                  "value": "21",
+                  "unit": "INR billion",
+                  "period": "end of June 2025",
                   "kind": "reported"
                 },
                 {
                   "label": "Net debt to EBITDA ratio",
                   "value": "0.7",
-                  "unit": null,
-                  "period": "June 2025",
+                  "unit": "x",
+                  "period": "end of June 2025",
                   "kind": "reported"
                 },
                 {
                   "label": "India revenue",
                   "value": "47.3",
-                  "unit": "billion INR",
+                  "unit": "INR billion",
                   "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India revenue growth",
+                  "value": "3",
+                  "unit": "%",
+                  "period": "YoY",
                   "kind": "reported"
                 },
                 {
                   "label": "India EBITDA",
                   "value": "6.4",
-                  "unit": "billion INR",
+                  "unit": "INR billion",
                   "period": "Q1 FY26",
                   "kind": "reported"
                 },
@@ -23004,14 +23112,14 @@
                 {
                   "label": "Europe revenue",
                   "value": "146",
-                  "unit": "million EUR",
+                  "unit": "EUR million",
                   "period": "Q1 FY26",
                   "kind": "reported"
                 },
                 {
                   "label": "Europe EBITDA",
                   "value": "16",
-                  "unit": "million EUR",
+                  "unit": "EUR million",
                   "period": "Q1 FY26",
                   "kind": "reported"
                 },
@@ -23023,28 +23131,29 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Exceptional restructuring cost",
+                  "label": "Exceptional item related to restructuring",
                   "value": "3.7",
-                  "unit": "billion INR",
+                  "unit": "INR billion",
                   "period": "Q1 FY26",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "India Financial Performance",
+                  "label": "Revenue and EBITDA Performance",
                   "points": [
-                    "India revenue for the quarter was INR 47.3 billion, a growth of 3% over the same quarter last year.",
-                    "The EBITDA for India stood at INR 6.4 billion, a margin of 13.6%, a substantial improvement compared to the 11.2% in the last quarter.",
-                    "Volume growth in India was flattish, led by a low single-digit growth in replacement and a mid-single-digit growth in OE volumes, negated by a significant decline in exports."
+                    "Consolidated revenue for Q1 FY26 was INR 65.6 billion, a growth of 3.6% YoY.",
+                    "Consolidated EBITDA for the quarter was INR 8.7 billion, with a margin of 13.2%.",
+                    "India revenue for the quarter was INR 47.3 billion, a growth of 3% YoY.",
+                    "India EBITDA margin improved to 13.6% from 11.2% in the last quarter.",
+                    "Europe revenue was EUR 146 million, flat YoY, with an EBITDA margin of 10.8%."
                   ]
                 },
                 {
-                  "label": "Europe Financial Performance",
+                  "label": "Debt and Cash Flow",
                   "points": [
-                    "Revenue for Europe was EUR 146 million, flattish over the same period last year, but significantly lower than the previous quarter due to a weak market and seasonality.",
-                    "The EBITDA for Europe was EUR 16 million, with an EBITDA margin of 10.8% compared to 13.7% for the same quarter last year.",
-                    "Margins were impacted due to negative market growth across product segments and adverse operating leverage."
+                    "Reduced consolidated net debt by INR 3.9 billion in Q1, bringing it to INR 21 billion.",
+                    "Net debt to EBITDA ratio for consolidated operations stood at 0.7x at the end of June 2025."
                   ]
                 }
               ]
@@ -23055,10 +23164,10 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Demand Outlook",
+                  "label": "Demand Drivers",
                   "points": [
-                    "Anticipate stronger topline growth in both India and Europe, with India growth likely led by the replacement segment.",
-                    "Expect demand momentum to improve in the second half of the fiscal year, with a rebound in infrastructure and mining segments post-monsoon."
+                    "In India, growth in the OEM segment was driven by pre-buying due to mandatory AC cabin regulation in the heavy commercial segment.",
+                    "In Europe, the demand environment was challenging, leading to a decline in industry volumes in key categories."
                   ]
                 }
               ]
@@ -23066,13 +23175,56 @@
             {
               "id": "SEG",
               "title": "Segment & Product Performance",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "India volume growth",
+                  "value": "flattish",
+                  "unit": null,
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India replacement segment growth",
+                  "value": "low single-digit",
+                  "unit": "%",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India OE volumes growth",
+                  "value": "mid single-digit",
+                  "unit": "%",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Europe passenger car replacement tyres performance",
+                  "value": "negative",
+                  "unit": null,
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Europe spacemaster tyres decline",
+                  "value": "40",
+                  "unit": "%",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                }
+              ],
               "subsections": [
                 {
-                  "label": "Segment Performance",
+                  "label": "India Segment Performance",
                   "points": [
-                    "In India, truck OEM volumes grew, but there was a decline in passenger car OEM volumes.",
-                    "In Europe, performed better than the market in passenger car replacement tyres, but still in negative territory due to declines in other segments like spacemaster and agri tyres."
+                    "Volume growth in India was flattish, with low single-digit growth in replacement and mid-single-digit growth in OE volumes.",
+                    "Truck OEM volumes grew, but passenger car OEM volumes declined."
+                  ]
+                },
+                {
+                  "label": "Europe Segment Performance",
+                  "points": [
+                    "In Europe, passenger car replacement tyres performed better than the market but were still negative.",
+                    "Spacemaster tyres saw a significant decline of almost 40%."
                   ]
                 }
               ]
@@ -23083,11 +23235,10 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Product Developments",
+                  "label": "Product Innovation",
                   "points": [
-                    "Received approvals for supplies to a prominent German passenger vehicle manufacturer in both India and Europe.",
                     "Launched ultra-high performance tyre Apollo Aspire 5 for the premium car and SUV category.",
-                    "Vredestein brand recorded highest ever volumes in Q1."
+                    "Received approvals for supplies to a prominent German passenger vehicle manufacturer in both India and Europe."
                   ]
                 }
               ]
@@ -23098,10 +23249,24 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Manufacturing Developments",
+                  "label": "Sustainability Initiatives",
                   "points": [
-                    "Intended decision to close production at Enschede plant in summer 2026, with consultation process ongoing.",
-                    "Obtained ISCC certification for Hungary facility in May 2025."
+                    "Achieved a 35% reduction in Scope 1 and 39% reduction in Scope 2 emissions intensity, surpassing FY’26 targets.",
+                    "Obtained first ISCC certification for the Hungary facility in May 2025."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Regional Performance",
+                  "points": [
+                    "In India, growth was seen in the OEM segment, while in Europe, the demand environment was challenging.",
+                    "Sequential decline in revenue in Europe was due to seasonality."
                   ]
                 }
               ]
@@ -23114,8 +23279,7 @@
                 {
                   "label": "Inflationary Pressures",
                   "points": [
-                    "Inflationary pressures in Europe, particularly in energy and salary costs, have impacted margins.",
-                    "Raw materials in Europe were up 3% Y-o-Y, affecting margins."
+                    "Inflationary pressures in Europe, particularly in energy and salary costs, impacted margins."
                   ]
                 }
               ]
@@ -23126,10 +23290,10 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Guidance",
+                  "label": "Outlook",
                   "points": [
-                    "Expect raw material costs to be slightly lower in Q2 vis-a-vis current levels, with some uncertainty due to exchange rates.",
-                    "No change in capex guidance for FY’26."
+                    "Anticipate stronger topline growth in both India and Europe, led by the replacement segment in India.",
+                    "Expect raw material costs to be slightly lower in Q2 vis-a-vis current levels."
                   ]
                 }
               ]
@@ -23142,15 +23306,15 @@
               "statement": "Anticipate stronger topline growth in both India and Europe.",
               "specificity": "vague",
               "direction": "up",
-              "status": "new"
+              "status": "reiterated"
             },
             {
               "metric": "Raw material costs",
               "horizon": "Q2 FY26",
               "statement": "Expect raw material costs to be slightly lower in Q2 vis-a-vis current levels.",
-              "specificity": "specific",
+              "specificity": "vague",
               "direction": "down",
-              "status": "new"
+              "status": "reiterated"
             },
             {
               "metric": "Capex",
@@ -23158,18 +23322,18 @@
               "statement": "No change in capex guidance for FY’26.",
               "specificity": "specific",
               "direction": "flat",
-              "status": "new"
+              "status": "reiterated"
             }
           ],
           "risk_register": [
             {
               "risk": "Inflationary pressures in Europe",
               "status": "escalated",
-              "note": "Inflationary pressures in energy and salary costs have impacted margins."
+              "note": "Higher than normal inflationary pressures in energy and salary costs."
             },
             {
               "risk": "Raw material cost volatility",
-              "status": "stable",
+              "status": "no_mention",
               "note": "Expect raw material costs to be slightly lower in Q2, with some uncertainty due to exchange rates."
             }
           ],
@@ -23177,25 +23341,25 @@
             {
               "label": "Topline growth",
               "direction": "positive",
-              "note": "Anticipate stronger topline growth in both India and Europe.",
-              "section_ref": "ORD"
+              "note": "Anticipate stronger topline growth in both India and Europe, led by replacement segment.",
+              "section_ref": "GUID"
             },
             {
               "label": "Inflationary pressures",
               "direction": "negative",
-              "note": "Inflationary pressures in Europe have impacted margins.",
+              "note": "Inflationary pressures in Europe impacted margins, particularly in energy and salary costs.",
               "section_ref": "RISK"
             },
             {
               "label": "Raw material costs",
               "direction": "mixed",
-              "note": "Expect raw material costs to be slightly lower in Q2, with some uncertainty due to exchange rates.",
+              "note": "Expect raw material costs to be slightly lower in Q2, but with uncertainty due to exchange rates.",
               "section_ref": "GUID"
             },
             {
               "label": "Product innovation",
               "direction": "positive",
-              "note": "Launched ultra-high performance tyre Apollo Aspire 5 and received approvals for supplies to a German manufacturer.",
+              "note": "Launch of Apollo Aspire 5 and approvals for supplies to a German manufacturer.",
               "section_ref": "TECH"
             },
             {
@@ -23207,12 +23371,12 @@
           ],
           "key_takeaways": [
             "Consolidated topline growth of nearly 3.6% Y-o-Y with an EBITDA margin of 13.2%.",
-            "India saw growth in the OEM segment, driven by pre-buying due to mandatory AC cabin regulation in heavy commercial segment.",
-            "Europe faced a challenging demand environment, leading to a decline in industry volumes in key categories.",
+            "India saw growth in the OEM segment due to pre-buying from mandatory AC cabin regulation.",
+            "Europe faced a challenging demand environment, leading to a decline in industry volumes.",
             "Reduced consolidated net debt by over 15% in Q1 compared to Q4 of last year.",
-            "Received approvals for supplies to a prominent German passenger vehicle manufacturer in both India and Europe.",
-            "Launched ultra-high performance tyre Apollo Aspire 5 for the premium car and SUV category.",
-            "Achieved a 35% reduction in Scope 1 and 39% reduction in Scope 2 emissions intensity, surpassing FY’26 targets."
+            "Achieved a 35% reduction in Scope 1 and 39% reduction in Scope 2 emissions intensity.",
+            "Launched ultra-high performance tyre Apollo Aspire 5 for premium car and SUV category.",
+            "Obtained first ISCC certification for Hungary facility in May 2025."
           ],
           "pressing_questions": []
         }
