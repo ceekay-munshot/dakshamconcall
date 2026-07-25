@@ -15654,7 +15654,7 @@
       "ticker": "MOTHERSON",
       "industry": "Auto Components & Equipments",
       "country": "India",
-      "checked_at": "2026-07-22T20:04:16.921Z",
+      "checked_at": "2026-07-25T22:56:09.179Z",
       "quarters": [
         {
           "company": "Samvardhana Motherson International Ltd",
@@ -15665,8 +15665,8 @@
           "source": "ai_summary",
           "source_url": "https://www.screener.in/company/MOTHERSON/consolidated/",
           "model": "gpt-4o",
-          "generated_at": "2026-07-22T20:04:16.921Z",
-          "summary": "Samvardhana Motherson International Ltd achieved record revenues in FY26, with significant growth in emerging businesses and strategic acquisitions, while maintaining a strong order book and focusing on capacity expansion.",
+          "generated_at": "2026-07-25T22:56:03.569Z",
+          "summary": "Samvardhana Motherson International Ltd achieved record revenues in FY26, with significant growth in emerging businesses and a strong order book providing future growth visibility. The company continues to focus on capacity expansion and strategic partnerships to drive growth.",
           "sections": [
             {
               "id": "FIN",
@@ -15708,6 +15708,20 @@
                   "kind": "reported"
                 },
                 {
+                  "label": "FY26 EBITDA Growth",
+                  "value": "11",
+                  "unit": "%",
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "FY26 EBITDA Margin",
+                  "value": "9.5",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
                   "label": "Q4 Normalized PAT Growth",
                   "value": "66",
                   "unit": "%",
@@ -15743,13 +15757,6 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "FY26 EBITDA Margin",
-                  "value": "9.5",
-                  "unit": "%",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
                   "label": "Leverage Ratio",
                   "value": "0.8",
                   "unit": "x",
@@ -15764,14 +15771,6 @@
                     "Record scale: FY26 delivered the highest ever quarterly and annual revenues.",
                     "Profitability inflection in Q4 attributed to improving profitability in emerging businesses, particularly lighting and electronics and aerospace.",
                     "Margins held despite inflation due to operational excellence initiatives, cost optimization programs, and improving efficiencies across plants."
-                  ]
-                },
-                {
-                  "label": "PAT progression and normalization adjustments",
-                  "points": [
-                    "Q4 normalized PAT +66% YoY due to operating leverage and mix.",
-                    "Reported PAT included exceptional provisions for business transformative measures in Central and Western Europe.",
-                    "FY26 also had new Labor Code impact and accelerated amortization of intangibles."
                   ]
                 },
                 {
@@ -15794,7 +15793,7 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "EV Programs Order Book",
+                  "label": "EV Programs Order Book Share",
                   "value": "22",
                   "unit": "%",
                   "period": "FY26",
@@ -15808,7 +15807,7 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Non-Automotive Revenue",
+                  "label": "Non-Automotive Revenue Share",
                   "value": "3",
                   "unit": "%",
                   "period": "FY26",
@@ -15820,9 +15819,8 @@
                   "label": "Order book, portfolio mix, and strategic roadmap (Vision 2030 / 3CX10 / D.E.M.A.L.)",
                   "points": [
                     "All-time-high book business of USD 96 billion, providing strong visibility for future growth.",
-                    "EV programs account for ~22% of the order book; current EV revenue is ~11%.",
-                    "Non-automotive accounts for ~3% and continues to grow steadily.",
-                    "Diversified across PV, CV, off-highway, rolling stock, 2W, and geographies; emerging markets rising in the mix due to growth and manufacturing ecosystems supporting exports under 'globally local'."
+                    "Diversified across PV, CV, off-highway, rolling stock, 2W, and geographies.",
+                    "Management emphasized emerging markets rising in the mix due to growth and manufacturing ecosystems supporting exports under 'globally local'."
                   ]
                 }
               ]
@@ -15832,7 +15830,7 @@
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
-                  "label": "Consumer Electronics Revenue Growth FY26",
+                  "label": "Consumer Electronics FY26 Revenue Growth",
                   "value": "7.5",
                   "unit": "x",
                   "period": "YoY",
@@ -15842,32 +15840,25 @@
                   "label": "Consumer Electronics Q4 Revenue Growth",
                   "value": "46",
                   "unit": "%",
-                  "period": "sequentially",
+                  "period": "QoQ",
                   "kind": "reported"
                 },
                 {
-                  "label": "Aerospace Revenue Growth FY26",
+                  "label": "Aerospace FY26 Revenue Growth",
                   "value": "40",
                   "unit": "%",
                   "period": "YoY",
                   "kind": "reported"
                 },
                 {
-                  "label": "Aerospace Order Book Increase",
+                  "label": "Aerospace Order Book Growth",
                   "value": "20",
                   "unit": "%",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Aerospace Order Book",
-                  "value": "1.6",
-                  "unit": "billion USD",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Wiring Harness Margin Expansion Q4",
+                  "label": "Wiring Harness Margin Expansion",
                   "value": "170",
                   "unit": "bps",
                   "period": "QoQ",
@@ -15880,18 +15871,14 @@
                   "points": [
                     "FY26 revenues increased ~7.5x YoY; Q4 revenues +46% sequentially after the second facility went live in Q3.",
                     "Achieved Q4 production run-rate aligned to annual guidance of 14–16 million units.",
-                    "The business achieved EBITDA profitability during FY26.",
-                    "Third facility (GF3) commissioning remains on track for Q3 FY27, adding additional upstream integration capabilities.",
-                    "Management emphasized electronics ramps faster than auto; orders can move straight 0 to 100 once the season/program starts.",
-                    "GF1+GF2 are almost practically fully used up; the meaningful kick will come as soon as the third plant is operational.",
-                    "GF3 described as the group’s largest facility—a size of 33 football fields."
+                    "Third facility (GF3) commissioning remains on track for Q3 FY27.",
+                    "GF3 described as the group’s largest facility, a size of 33 football fields."
                   ]
                 },
                 {
                   "label": "Aerospace (non-automotive adjacency with accelerating scale)",
                   "points": [
-                    "FY26 revenues +40% YoY; nearly 10x over the last 3 years.",
-                    "Order book increased >20% to USD 1.6bn, giving multi-year visibility.",
+                    "FY26 revenues +40% YoY; order book increased >20% to USD 1.6bn.",
                     "Won orders across metallic parts, subassemblies, and wire harness for business jets and rotary wing aircraft.",
                     "Two new India facilities expected to come up in Q1 FY27 to serve the existing USD 1.6bn backlog."
                   ]
@@ -15899,22 +15886,8 @@
                 {
                   "label": "Wiring harness and broader automotive operations",
                   "points": [
-                    "Wiring harness division saw ~170 bps QoQ margin expansion despite copper inflation and weaker margins in Motherson Wiring India.",
+                    "Wiring harness division saw ~170 bps QoQ margin expansion despite copper inflation.",
                     "North America recovery optionality expected to support further improvement."
-                  ]
-                },
-                {
-                  "label": "Integrated Assemblies / MSAS",
-                  "points": [
-                    "Management credited MSAS for leveraging Motherson ecosystem and customer relationships.",
-                    "Focus areas included converting small red units, winning new programs, and diversifying product groups."
-                  ]
-                },
-                {
-                  "label": "Precision metal & modules",
-                  "points": [
-                    "Strong growth attributed largely to Atsumitec integration.",
-                    "Machining positioned as a core focus with cross-sector applicability (automotive + aerospace + potential future electronics)."
                   ]
                 }
               ]
@@ -15947,21 +15920,18 @@
               ],
               "subsections": [
                 {
-                  "label": "Capacity and ramp characteristics (material difference vs automotive)",
+                  "label": "Capacity and ramp characteristics",
                   "points": [
-                    "Third facility (GF3) commissioning remains on track for Q3 FY27 and will add additional upstream integration capabilities.",
-                    "Management emphasized electronics ramps faster than auto; orders can move straight 0 to 100 once the season/program starts.",
-                    "GF1+GF2 are almost practically fully used up; the meaningful kick will come as soon as the third plant is operational.",
-                    "GF3 described as the group’s largest facility—a size of 33 football fields."
+                    "Third facility (GF3) commissioning remains on track for Q3 FY27.",
+                    "Management emphasized electronics ramps faster than auto: orders can move 'straight 0 to 100' once the season/program starts."
                   ]
                 },
                 {
                   "label": "Capital allocation, capex pipeline, and shareholder returns",
                   "points": [
                     "FY26 capex: INR 5,911 crore (~49% of EBITDA), allocated to growth, backward integration, and maintenance.",
-                    "FY27 capex guidance: ~INR 6,000 crore ±10%, with 50% growth / 50% maintenance; growth skewed toward emerging businesses, especially consumer electronics.",
-                    "Facility pipeline: 16 facilities under development globally, 13 scheduled to come on stream in FY27; all are in emerging markets.",
-                    "Final dividend INR 0.25/share; total FY26 dividend INR 0.60/share; payout ratio 16.4%, with an aspiration to move toward up to 40% by Vision 2030."
+                    "FY27 capex guidance: ~INR 6,000 crore ±10%, with 50% growth / 50% maintenance.",
+                    "16 facilities under development globally, 13 scheduled to come on stream in FY27; all are in emerging markets."
                   ]
                 }
               ]
@@ -15974,8 +15944,9 @@
                 {
                   "label": "Supply chain risk mitigation",
                   "points": [
-                    "Globally local manufacturing strategy reduced dependence on long-distance supply chains; Red Sea disruptions had minimal impact.",
-                    "For customer-nominated components: back-to-back supply arrangements to mitigate escalation."
+                    "'Globally local manufacturing strategy' reduced dependence on long-distance supply chains.",
+                    "Red Sea disruptions had minimal impact.",
+                    "For customer-nominated components: 'back-to-back supply arrangements' to mitigate escalation."
                   ]
                 }
               ]
@@ -15991,15 +15962,7 @@
                     "Atsumitec integration: FY26 was the full first year, progress pleased.",
                     "Completed acquisition of another Honda San asset.",
                     "Yutaka Giken acquisition on track to close by end of H1 FY27.",
-                    "Nexans automotive harness business positioned as materially enhancing PV/CV harness capabilities globally and enabling cross-selling.",
-                    "Closing expected end of June, beginning of July, with consolidation thereafter."
-                  ]
-                },
-                {
-                  "label": "Logistics",
-                  "points": [
-                    "Partnership with Hellmann framed as a move from 3PL to 4PL and more integrated customer solutions.",
-                    "Capex update included two new wiring harness facilities and two logistics facilities announced since last update."
+                    "Nexans automotive harness business closing expected end of June, beginning of July."
                   ]
                 }
               ]
@@ -16007,31 +15970,16 @@
             {
               "id": "RISK",
               "title": "Risks & External Factors",
-              "key_figures": [
-                {
-                  "label": "Copper Price Increase Q4",
-                  "value": "16",
-                  "unit": "%",
-                  "period": "sequentially",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Copper Price Increase YoY",
-                  "value": "38",
-                  "unit": "%",
-                  "period": "YoY",
-                  "kind": "reported"
-                }
-              ],
+              "key_figures": [],
               "subsections": [
                 {
                   "label": "Cost headwinds, pass-through mechanics, and operational resilience",
                   "points": [
                     "Copper prices increased 16% sequentially in Q4, ~38% YoY.",
                     "Middle East tensions led to crude-linked inflation late in the quarter.",
-                    "Polymer prices in Germany rose significantly post conflict escalation; freight/container costs also increased.",
+                    "Polymer prices in Germany rose significantly post conflict escalation.",
                     "Raw materials have long-term pass-through arrangements with major customers; timing lag of 1–2 quarters acknowledged.",
-                    "Energy/gas/freight and some overhead-type costs are a matter of negotiations, but management expressed confidence in recovering most due to strong OEM relationships."
+                    "Energy/gas/freight and some overhead-type costs are a matter of negotiations, but management expressed confidence in recovery due to strong OEM relationships."
                   ]
                 }
               ]
@@ -16039,22 +15987,35 @@
             {
               "id": "GUID",
               "title": "Guidance & Outlook",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "Vision 2030 Revenue Target",
+                  "value": "108",
+                  "unit": "billion USD",
+                  "period": "2030",
+                  "kind": "target"
+                },
+                {
+                  "label": "ROCE Aspiration",
+                  "value": "40",
+                  "unit": "%",
+                  "period": "2030",
+                  "kind": "target"
+                },
+                {
+                  "label": "FY27 Capex Guidance",
+                  "value": "6,000",
+                  "unit": "crore INR",
+                  "period": "FY27",
+                  "kind": "guidance"
+                }
+              ],
               "subsections": [
                 {
                   "label": "Vision 2030 framing",
                   "points": [
-                    "FY26 gross revenue disclosed as USD 22.9bn; FY25 restated to USD 21.2bn using constant FX INR 84.55/USD for comparability.",
-                    "Target reiterated: USD 108bn gross revenues by 2030; management stressed broader discipline: top line is vanity, bottom line is sanity, cash in the bank is reality.",
-                    "ROCE moderated to 16.1% (from 17.2%) due to capacity build; aspiration reiterated: 40% ROCE across businesses over time."
-                  ]
-                },
-                {
-                  "label": "Management’s view on industry shifts (EV, Europe, and customer behavior)",
-                  "points": [
-                    "Management reiterated engine agnostic positioning; does not expect a rapid shift to all-EV, citing multi-powertrain futures driven by market pull and policy.",
-                    "Despite weak macro/volume growth, management expects FY27 European launches to be content heavy and value increasing.",
-                    "Restructuring in Europe is a big chunk done, but further resizing/efficiency actions may continue alongside acquisitions."
+                    "Target reiterated: USD 108bn gross revenues by 2030.",
+                    "ROCE moderated to 16.1% due to capacity build; aspiration reiterated: 40% ROCE across businesses over time."
                   ]
                 }
               ]
@@ -16064,7 +16025,7 @@
             {
               "metric": "Revenue",
               "horizon": "2030",
-              "statement": "Target reiterated: USD 108bn gross revenues by 2030.",
+              "statement": "Targeting 108 billion in gross revenues by 2030.",
               "specificity": "specific",
               "direction": "up",
               "status": "reiterated"
@@ -16072,13 +16033,13 @@
             {
               "metric": "ROCE",
               "horizon": "2030",
-              "statement": "Aspiration reiterated: 40% ROCE across businesses over time.",
+              "statement": "Aiming for a 40% ROCE for the group.",
               "specificity": "specific",
               "direction": "up",
               "status": "reiterated"
             },
             {
-              "metric": "Capex",
+              "metric": "CAPEX",
               "horizon": "FY27",
               "statement": "FY27 capex guidance: ~INR 6,000 crore ±10%, with 50% growth / 50% maintenance.",
               "specificity": "specific",
@@ -16086,17 +16047,17 @@
               "status": "reiterated"
             },
             {
-              "metric": "Consumer Electronics Capacity",
-              "horizon": "FY27",
-              "statement": "Third facility (GF3) commissioning remains on track for Q3 FY27.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "reiterated"
-            },
-            {
               "metric": "Greenfield Projects",
               "horizon": "FY27",
-              "statement": "Majority of Greenfields are expected to come on stream by the second half of FY27 and will contribute towards growth in the FY27 year.",
+              "statement": "The majority of Greenfields are expected to come on stream by the second half of FY27 and will contribute towards growth in the FY27 year.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Consumer Electronics Capacity",
+              "horizon": "FY27",
+              "statement": "The third plant is expected to commence operations in the third quarter of FY27, doubling current capacity.",
               "specificity": "specific",
               "direction": "up",
               "status": "no_mention"
@@ -16104,7 +16065,7 @@
             {
               "metric": "Leverage Ratio",
               "horizon": "FY26",
-              "statement": "We expect the leverage ratio to be around 0.9 by the end of the year.",
+              "statement": "Expect the leverage ratio to be around 0.9 by the end of the year.",
               "specificity": "specific",
               "direction": "down",
               "status": "no_mention"
@@ -16122,19 +16083,29 @@
               "note": "Led to crude-linked inflation late in the quarter."
             },
             {
-              "risk": "Polymer prices in Germany",
+              "risk": "Polymer price increase in Germany",
               "status": "new",
-              "note": "Rose significantly post conflict escalation; freight/container costs also increased."
+              "note": "Prices rose significantly post conflict escalation."
             },
             {
-              "risk": "Global PV production volumes de-grown year-on-year",
+              "risk": "Dynamic Industry Conditions",
               "status": "no_mention",
-              "note": "Emerging economies drove healthy production growth, offsetting platform mix-driven softness in developed markets."
+              "note": "Despite dynamic industry conditions, SAMIL delivered strong financial performance."
+            },
+            {
+              "risk": "Global PV Production De-growth",
+              "status": "no_mention",
+              "note": "Global PV production volumes have de-grown YoY, but emerging economies drove healthy production growth."
             },
             {
               "risk": "Tariff-related costs",
               "status": "no_mention",
-              "note": "$10 million impact on P&L, discussions with OEMs for cost recovery."
+              "note": "$10 million impact with ongoing discussions for cost-sharing with OEMs."
+            },
+            {
+              "risk": "Automotive industry production challenges",
+              "status": "no_mention",
+              "note": "Loss of over 60 million cars in production volumes due to various crises."
             },
             {
               "risk": "Multiple industry crises including COVID, semiconductor shortages, and geopolitical issues.",
@@ -16146,42 +16117,42 @@
             {
               "label": "Financial Performance",
               "direction": "positive",
-              "note": "Record revenues and profitability inflection in FY26.",
+              "note": "Record revenues and significant EBITDA growth in FY26.",
               "section_ref": "FIN"
             },
             {
               "label": "Capacity Expansion",
               "direction": "positive",
-              "note": "Significant facility pipeline with 16 facilities under development.",
+              "note": "New facilities and capex plans to support growth in emerging markets.",
               "section_ref": "MFG"
             },
             {
               "label": "Diversification",
               "direction": "positive",
-              "note": "Strong growth in non-automotive sectors like aerospace and consumer electronics.",
+              "note": "Strong growth in non-automotive segments like aerospace and consumer electronics.",
               "section_ref": "SEG"
             },
             {
-              "label": "Strategic Acquisitions",
+              "label": "Strategic Partnerships",
               "direction": "positive",
-              "note": "Progress in integrating Atsumitec and other acquisitions.",
+              "note": "Inorganic growth through acquisitions and partnerships like Hellmann.",
               "section_ref": "STRAT"
             },
             {
               "label": "Operational Excellence",
               "direction": "positive",
-              "note": "Margins held despite inflation due to operational excellence initiatives.",
+              "note": "Operational improvements and cost optimization initiatives helped maintain margins.",
               "section_ref": "FIN"
             }
           ],
           "key_takeaways": [
             "FY26 delivered the highest ever quarterly and annual revenues, with Q4 revenue growing 17% YoY.",
-            "Q4 EBITDA increased by 42% YoY with a 200 bps margin expansion, driven by emerging businesses like lighting and electronics and aerospace.",
-            "The order book reached an all-time high of USD 96 billion, with EV programs making up ~22% of it.",
+            "Q4 EBITDA increased by 42% YoY with a 200 bps margin expansion, driven by emerging businesses.",
+            "The order book reached an all-time high of USD 96 billion, with EV programs comprising 22% of the order book.",
             "Consumer electronics revenues increased ~7.5x YoY, achieving EBITDA profitability during FY26.",
-            "Aerospace revenues grew 40% YoY, with a significant order book increase providing multi-year visibility.",
-            "Management reiterated their target of USD 108bn gross revenues by 2030 and a 40% ROCE across businesses over time.",
-            "Copper prices increased significantly, but management is confident in recovering costs through strong OEM relationships."
+            "Aerospace revenues grew 40% YoY, with a 20% increase in the order book to USD 1.6bn.",
+            "FY26 capex was INR 5,911 crore, with FY27 guidance set at ~INR 6,000 crore ±10%.",
+            "Management reiterated the Vision 2030 target of USD 108bn in gross revenues."
           ],
           "pressing_questions": []
         },
@@ -16190,12 +16161,12 @@
           "ticker": "MOTHERSON",
           "industry": "Auto Components & Equipments",
           "country": "India",
-          "concall_date": "2026-02-01",
+          "concall_date": "2026-02-16",
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=cbbae2de-f35d-472a-81cc-3198e82e13b9.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-22T20:03:53.092Z",
-          "summary": "Samvardhana Motherson International Ltd reported its highest ever quarterly revenues in Q3 FY26, driven by diversified operations and strategic expansions, while maintaining financial discipline with a net leverage of 1.1x.",
+          "generated_at": "2026-07-25T22:55:49.736Z",
+          "summary": "Samvardhana Motherson International Ltd reported its highest ever quarterly revenue and EBITDA in Q3 FY26, driven by organic growth, acquisitions, and favorable forex movements. The company is expanding its capacity with new Greenfield projects and acquisitions, while maintaining a strong financial position with a net leverage of 1.1x.",
           "sections": [
             {
               "id": "FIN",
@@ -16209,17 +16180,17 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "EBITDA",
+                  "label": "Quarterly EBITDA",
                   "value": "3,042",
                   "unit": "INR Crores",
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Revenue Growth",
+                  "label": "Revenue Growth YoY",
                   "value": "14",
                   "unit": "%",
-                  "period": "year-on-year",
+                  "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
@@ -16230,7 +16201,14 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Net Leverage",
+                  "label": "PAT Growth YoY",
+                  "value": "21",
+                  "unit": "%",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net Leverage Ratio",
                   "value": "1.1",
                   "unit": "x",
                   "period": "Q3 FY26",
@@ -16242,24 +16220,21 @@
                   "unit": "INR Crores",
                   "period": "Q3 FY26",
                   "kind": "reported"
-                },
-                {
-                  "label": "Capex",
-                  "value": "4,200",
-                  "unit": "INR Crores",
-                  "period": "9 months FY26",
-                  "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Financial Highlights",
+                  "label": "Revenue and Profitability",
                   "points": [
-                    "Reported highest ever quarterly revenues with a double-digit growth.",
-                    "Net leverage stands at 1.1x, well before the stated financial policy.",
-                    "Normalized Q3 PAT stood at approximately INR 1,061 crores, reflecting a 21% year-on-year growth.",
-                    "Savings from transformative measures in Europe and higher contributions from JVs supported PAT growth.",
-                    "Disciplined capital allocation with approximately INR 1,594 crores reinvested into the business for capex."
+                    "SAMIL delivered the highest ever quarterly revenue and EBITDA, driven by organic growth, Atsumitec consolidation, and favorable forex movements.",
+                    "Normalized PAT grew 21% YoY, supported by savings from transformative measures in Europe, reduced finance costs, and higher JV contributions."
+                  ]
+                },
+                {
+                  "label": "Financial Discipline",
+                  "points": [
+                    "The company maintains a net leverage ratio of 1.1x, providing financial strength and flexibility.",
+                    "Approximately INR 1,594 crores were reinvested into the business for capex."
                   ]
                 }
               ]
@@ -16269,27 +16244,26 @@
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
-                  "label": "Consumer Electronics Revenue Growth",
+                  "label": "Consumer Electronics Revenue Growth QoQ",
                   "value": "75",
                   "unit": "%",
-                  "period": "quarter-on-quarter",
+                  "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Aerospace Business Growth",
+                  "label": "Aerospace Revenue Growth YoY",
                   "value": "41",
                   "unit": "%",
-                  "period": "year-on-year",
+                  "period": "Q3 FY26",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Emerging Business Performance",
+                  "label": "Emerging Business Growth",
                   "points": [
-                    "Consumer electronics business recorded a 75% quarter-on-quarter revenue growth.",
-                    "Aerospace businesses continue to gain traction, growing at a 41% year-on-year growth rate.",
-                    "Aerospace order book consistently growing, supported by product portfolio expansion."
+                    "Consumer electronics and aerospace businesses are gaining traction, with consumer electronics growing 75% QoQ and aerospace 41% YoY.",
+                    "The aerospace order book is growing, supported by product portfolio expansion."
                   ]
                 }
               ]
@@ -16302,17 +16276,16 @@
                   "label": "Greenfield Projects",
                   "value": "12",
                   "unit": null,
-                  "period": "current",
+                  "period": "Q3 FY26",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Greenfield Projects",
+                  "label": "Greenfield Expansion",
                   "points": [
-                    "Announced two new Greenfield projects, taking the total to 12 across emerging markets.",
-                    "New Greenfield facilities in Vision Systems in India and Wiring Harness in Morocco.",
-                    "Majority of Greenfields expected to come on stream by the second half of FY27."
+                    "Two new Greenfield facilities were added in Q3, one in Vision Systems in India and another in Wiring Harness in Morocco.",
+                    "The majority of Greenfields are expected to come on stream by H2 FY27, contributing to growth in FY27."
                   ]
                 }
               ]
@@ -16320,15 +16293,21 @@
             {
               "id": "STRAT",
               "title": "Strategic Initiatives & M&A",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "Wiring Harness Business Acquisition",
+                  "value": "100",
+                  "unit": "%",
+                  "period": "H1 FY26",
+                  "kind": "reported"
+                }
+              ],
               "subsections": [
                 {
                   "label": "Acquisitions and Partnerships",
                   "points": [
-                    "Signed an agreement to acquire 100% of the wiring harness business of Nexans Autoelectric.",
-                    "Acquisition of Yutaka Giken in Japan expected to close in the first half of FY26.",
-                    "Joint venture with Egtronics Company Limited focused on manufacturing clean mobility electronics.",
-                    "Development of a dedicated RoRo terminal at Dighi Port, Maharashtra."
+                    "SAMIL signed an agreement to acquire 100% of the wiring harness business of Nexans Autoelectric, expected to complete by H1 FY26.",
+                    "Strategic partnerships include a RoRo terminal at Dighi Port and a JV with Egtronics for clean mobility electronics."
                   ]
                 }
               ]
@@ -16341,8 +16320,8 @@
                 {
                   "label": "Industry Conditions",
                   "points": [
-                    "Global PV production volumes have de-grown on a year-on-year basis.",
-                    "Emerging economies drove healthy production growth, offsetting platform mix-driven softness in developed markets."
+                    "Despite dynamic industry conditions, SAMIL delivered strong financial performance.",
+                    "Global PV production volumes have de-grown YoY, but emerging economies drove healthy production growth."
                   ]
                 }
               ]
@@ -16355,9 +16334,8 @@
                 {
                   "label": "Future Outlook",
                   "points": [
-                    "Confident in ability to deliver long-term sustainable value for stakeholders.",
-                    "Majority of Greenfields expected to contribute towards growth in FY27.",
-                    "Consumer electronics capacity expected to double by Q3 FY27."
+                    "The company expects the majority of Greenfields to contribute to growth in FY27.",
+                    "The third consumer electronics plant is expected to commence operations in Q3 FY27, doubling current capacity."
                   ]
                 }
               ]
@@ -16367,7 +16345,7 @@
             {
               "metric": "Greenfield Projects",
               "horizon": "FY27",
-              "statement": "Majority of Greenfields are expected to come on stream by the second half of FY27 and will contribute towards growth in the FY27 year.",
+              "statement": "The majority of Greenfields are expected to come on stream by the second half of FY27 and will contribute towards growth in the FY27 year.",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
@@ -16375,7 +16353,7 @@
             {
               "metric": "Consumer Electronics Capacity",
               "horizon": "FY27",
-              "statement": "The third plant is expected to commence operations in the third quarter of FY27, doubling the current capacity.",
+              "statement": "The third plant is expected to commence operations in the third quarter of FY27, doubling current capacity.",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
@@ -16383,7 +16361,7 @@
             {
               "metric": "Leverage Ratio",
               "horizon": "FY26",
-              "statement": "We expect the leverage ratio to be around 0.9 by the end of the year.",
+              "statement": "Expect the leverage ratio to be around 0.9 by the end of the year.",
               "specificity": "specific",
               "direction": "down",
               "status": "no_mention"
@@ -16393,7 +16371,7 @@
               "horizon": "FY26",
               "statement": "For the full year would still be within our annual guidance that we provided earlier, although we would be on the upper end of the scale, Rs. 6,000 crores plus 10%.",
               "specificity": "specific",
-              "direction": "up",
+              "direction": "flat",
               "status": "no_mention"
             },
             {
@@ -16415,14 +16393,24 @@
           ],
           "risk_register": [
             {
-              "risk": "Global PV production volumes de-grown year-on-year",
+              "risk": "Dynamic Industry Conditions",
               "status": "new",
-              "note": "Emerging economies drove healthy production growth, offsetting platform mix-driven softness in developed markets."
+              "note": "Despite dynamic industry conditions, SAMIL delivered strong financial performance."
+            },
+            {
+              "risk": "Global PV Production De-growth",
+              "status": "new",
+              "note": "Global PV production volumes have de-grown YoY, but emerging economies drove healthy production growth."
             },
             {
               "risk": "Tariff-related costs",
               "status": "no_mention",
-              "note": "$10 million impact on P&L, discussions with OEMs for cost recovery."
+              "note": "$10 million impact with ongoing discussions for cost-sharing with OEMs."
+            },
+            {
+              "risk": "Automotive industry production challenges",
+              "status": "no_mention",
+              "note": "Loss of over 60 million cars in production volumes due to various crises."
             },
             {
               "risk": "Multiple industry crises including COVID, semiconductor shortages, and geopolitical issues.",
@@ -16434,42 +16422,42 @@
             {
               "label": "Financial Performance",
               "direction": "positive",
-              "note": "Highest ever quarterly revenues with strong growth and financial discipline.",
+              "note": "SAMIL reported its highest ever quarterly revenue and EBITDA, with strong YoY growth.",
               "section_ref": "FIN"
             },
             {
               "label": "Capacity Expansion",
               "direction": "positive",
-              "note": "12 Greenfield projects across emerging markets to support future growth.",
+              "note": "The company is expanding with new Greenfield projects and acquisitions.",
               "section_ref": "MFG"
             },
             {
               "label": "Diversification",
               "direction": "positive",
-              "note": "Strong growth in consumer electronics and aerospace businesses.",
+              "note": "Growth in consumer electronics and aerospace segments shows successful diversification.",
               "section_ref": "SEG"
             },
             {
-              "label": "Strategic Acquisitions",
+              "label": "Strategic Partnerships",
               "direction": "positive",
-              "note": "Acquisitions and partnerships to enhance global presence and capabilities.",
+              "note": "New acquisitions and partnerships are set to enhance growth and capabilities.",
               "section_ref": "STRAT"
             },
             {
               "label": "Operational Excellence",
               "direction": "positive",
-              "note": "Operational improvements and restructuring measures driving margin expansion.",
+              "note": "Transformative measures in Europe have supported PAT growth and operational improvements.",
               "section_ref": "FIN"
             }
           ],
           "key_takeaways": [
-            "Q3 FY '26 has been a strong quarter for Motherson, delivering in a dynamic environment.",
-            "Reported highest ever quarterly revenues with a double-digit growth.",
-            "Net leverage stands at 1.1x, well before the stated financial policy.",
-            "Consumer electronics business recorded a 75% quarter-on-quarter revenue growth.",
-            "Aerospace businesses continue to gain traction, growing at a 41% year-on-year growth rate.",
-            "Signed an agreement to acquire 100% of the wiring harness business of Nexans Autoelectric.",
-            "Majority of Greenfields expected to come on stream by the second half of FY '27."
+            "SAMIL reported its highest ever quarterly revenue and EBITDA in Q3 FY26.",
+            "Revenue grew 14% YoY, driven by organic growth, acquisitions, and favorable forex movements.",
+            "Normalized PAT grew 21% YoY, supported by savings from transformative measures in Europe.",
+            "The company maintains a net leverage ratio of 1.1x, providing financial strength and flexibility.",
+            "Two new Greenfield facilities were added in Q3, with a total of 12 under development.",
+            "Consumer electronics and aerospace businesses are gaining traction, with significant revenue growth.",
+            "SAMIL signed an agreement to acquire 100% of the wiring harness business of Nexans Autoelectric."
           ],
           "pressing_questions": []
         },
@@ -16478,11 +16466,11 @@
           "ticker": "MOTHERSON",
           "industry": "Auto Components & Equipments",
           "country": "India",
-          "concall_date": "2025-11-01",
+          "concall_date": "2025-11-20",
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=3bd493c1-7b04-46a7-a401-4ee59afc9d39.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-22T20:03:43.875Z",
+          "generated_at": "2026-07-25T22:55:40.198Z",
           "summary": "Samvardhana Motherson International Ltd anticipates continued growth and operational improvements, with a focus on expanding capabilities in consumer electronics and aerospace, while maintaining a balanced approach to EV and ICE markets.",
           "sections": [
             {
@@ -16511,31 +16499,17 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Revenue Growth",
+                  "label": "Revenue Growth YoY",
                   "value": "8.5",
                   "unit": "%",
-                  "period": "YoY",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Tariff-related costs",
-                  "value": "10",
-                  "unit": "million USD",
                   "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Provisions",
-                  "value": "36",
-                  "unit": "crores",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Provisions",
-                  "value": "136",
-                  "unit": "crores",
-                  "period": "Q1 FY26",
+                  "label": "ROCE",
+                  "value": "14.2",
+                  "unit": "%",
+                  "period": "September 2025",
                   "kind": "reported"
                 },
                 {
@@ -16546,19 +16520,34 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "ROCE",
-                  "value": "14.2",
-                  "unit": "%",
-                  "period": "September 2025",
+                  "label": "Tariff-related Costs",
+                  "value": "10",
+                  "unit": "million USD",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Provisions Booked",
+                  "value": "36",
+                  "unit": "crores",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Provisions Booked",
+                  "value": "136",
+                  "unit": "crores",
+                  "period": "Q1 FY26",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Profitability",
+                  "label": "Profitability and Leverage",
                   "points": [
-                    "The profitability of the polymer business improved from 6.4% to 7.4% sequentially.",
-                    "ROCE impacted by transitionary effects and early-stage ramp-ups, expected to improve in H2."
+                    "The company has maintained a stable leverage ratio of 1.1x net effective debt to EBITDA, with expectations to reduce it to 0.9 by year-end.",
+                    "ROCE is at 14.2% as of September 2025, impacted by early-stage ramp-ups and inflated working capital.",
+                    "Tariff-related costs of $10 million are impacting the P&L, with discussions ongoing for cost-sharing with OEMs."
                   ]
                 }
               ]
@@ -16580,14 +16569,28 @@
                   "unit": "billion USD",
                   "period": "September 2025",
                   "kind": "reported"
+                },
+                {
+                  "label": "EV Share in Revenue",
+                  "value": "11",
+                  "unit": "%",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV Share in Order Book",
+                  "value": "22",
+                  "unit": "%",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
                 }
               ],
               "subsections": [
                 {
                   "label": "Order Book Composition",
                   "points": [
-                    "Order book includes both new and replacement orders.",
-                    "Current EV share in revenue is 11%, with order book share at 22%."
+                    "The order book stands at $87.2 billion, with a significant portion attributed to new and replacement orders.",
+                    "EV share in the order book has decreased from 24% to 22%, reflecting a recalibration of volume trajectories."
                   ]
                 }
               ]
@@ -16597,26 +16600,47 @@
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
+                  "label": "Polymer Business Profitability",
+                  "value": "7.4",
+                  "unit": "%",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Polymer Business Profitability",
+                  "value": "6.4",
+                  "unit": "%",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Emerging Business Profitability",
+                  "value": "9.5",
+                  "unit": "%",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
                   "label": "Aerospace Revenue Growth",
                   "value": "37",
                   "unit": "%",
                   "period": "H1 FY26",
                   "kind": "reported"
-                },
-                {
-                  "label": "Consumer Electronics Revenue Growth",
-                  "value": "36",
-                  "unit": "%",
-                  "period": "Q2 FY26 over Q1 FY26",
-                  "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Emerging Business Profitability",
+                  "label": "Polymer and Modules Division",
                   "points": [
-                    "Profitability improved to 9.5%, a 110 bps improvement QoQ.",
-                    "Improvement driven by ramp-up in consumer electronics and Atsumitec business."
+                    "Profitability in the polymer business improved from 6.4% to 7.4% sequentially, driven by transformative measures in Western and Central Europe.",
+                    "The division has undergone significant restructuring, with 75%-80% of transformative work completed."
+                  ]
+                },
+                {
+                  "label": "Emerging Business Performance",
+                  "points": [
+                    "Emerging business profitability improved to 9.5%, with contributions from Atsumitec and consumer electronics ramp-up.",
+                    "Aerospace business achieved a 37% revenue growth in H1 FY26, with ongoing CAPEX investments to enhance capabilities."
                   ]
                 }
               ]
@@ -16624,13 +16648,21 @@
             {
               "id": "TECH",
               "title": "Product & Technology",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "Engineers to be Added",
+                  "value": "5,000",
+                  "unit": "engineers",
+                  "period": "next five years",
+                  "kind": "target"
+                }
+              ],
               "subsections": [
                 {
                   "label": "Technology and Engineering Expansion",
                   "points": [
-                    "Plan to add more than 5,000 engineers in the next five years.",
-                    "Focus on building AI platform and enhancing global business services."
+                    "The company plans to add more than 5,000 engineers over the next five years to bolster competencies in AI and global business services.",
+                    "A new building will be established to support this growth, enhancing the company's technological capabilities."
                   ]
                 }
               ]
@@ -16647,9 +16679,9 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Expected Full Year CAPEX",
-                  "value": "6,000",
-                  "unit": "crores plus 10%",
+                  "label": "Full Year CAPEX Guidance",
+                  "value": "6,000 plus 10%",
+                  "unit": "crores",
                   "period": "FY26",
                   "kind": "guidance"
                 }
@@ -16658,8 +16690,8 @@
                 {
                   "label": "Capacity Expansion",
                   "points": [
-                    "Two new green fields operationalized in the quarter, with 10 more at various stages of completion.",
-                    "Majority of new facilities expected to come on stream in FY'27."
+                    "Two new greenfield facilities have been operationalized, with 10 more at various stages of completion, expected to come on stream by FY'27.",
+                    "Significant CAPEX investments are being made to support growth ambitions, particularly in consumer electronics and aerospace."
                   ]
                 }
               ]
@@ -16670,9 +16702,10 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Tariff Impact",
+                  "label": "Tariff and Trade Dynamics",
                   "points": [
-                    "$10 million tariff-related costs on P&L, discussions with OEMs ongoing for cost recovery."
+                    "The company faces $10 million in tariff-related costs, with ongoing discussions with OEMs for cost-sharing.",
+                    "Trade dynamics are evolving, with a greater degree of clarity and stability emerging within the manufacturing ecosystem."
                   ]
                 }
               ]
@@ -16685,8 +16718,8 @@
                 {
                   "label": "Future Outlook",
                   "points": [
-                    "Production momentum expected to strengthen with new model rollouts by premium automakers.",
-                    "Continued investment in growth avenues with a focus on consumer electronics and aerospace."
+                    "The company expects production momentum to strengthen as premium automakers complete platform transitions and roll out new models.",
+                    "Operational improvements and restructuring are expected to drive better performance in the second half of the year."
                   ]
                 }
               ]
@@ -16696,7 +16729,7 @@
             {
               "metric": "Leverage Ratio",
               "horizon": "FY26",
-              "statement": "We expect the leverage ratio to be around 0.9 by the end of the year.",
+              "statement": "Expect the leverage ratio to be around 0.9 by the end of the year.",
               "specificity": "specific",
               "direction": "down",
               "status": "new"
@@ -16706,7 +16739,7 @@
               "horizon": "FY26",
               "statement": "For the full year would still be within our annual guidance that we provided earlier, although we would be on the upper end of the scale, Rs. 6,000 crores plus 10%.",
               "specificity": "specific",
-              "direction": "up",
+              "direction": "flat",
               "status": "new"
             },
             {
@@ -16730,7 +16763,12 @@
             {
               "risk": "Tariff-related costs",
               "status": "new",
-              "note": "$10 million impact on P&L, discussions with OEMs for cost recovery."
+              "note": "$10 million impact with ongoing discussions for cost-sharing with OEMs."
+            },
+            {
+              "risk": "Automotive industry production challenges",
+              "status": "no_mention",
+              "note": "Loss of over 60 million cars in production volumes due to various crises."
             },
             {
               "risk": "Multiple industry crises including COVID, semiconductor shortages, and geopolitical issues.",
@@ -16742,42 +16780,42 @@
             {
               "label": "Operational Excellence",
               "direction": "positive",
-              "note": "Strong operating performance across all business divisions.",
-              "section_ref": "FIN"
+              "note": "Significant improvements in profitability and operational efficiency across divisions.",
+              "section_ref": "SEG"
             },
             {
               "label": "Capacity Expansion",
               "direction": "positive",
-              "note": "Two new green fields operationalized, with more expected by FY'27.",
+              "note": "Ongoing investments in new facilities to support growth in consumer electronics and aerospace.",
               "section_ref": "MFG"
-            },
-            {
-              "label": "Diversification",
-              "direction": "positive",
-              "note": "Growth in consumer electronics and aerospace segments.",
-              "section_ref": "SEG"
             },
             {
               "label": "Financial Performance",
               "direction": "positive",
-              "note": "8.5% revenue growth YoY, with improved profitability in polymer business.",
+              "note": "Strong revenue and profitability growth, with stable leverage and improving ROCE.",
               "section_ref": "FIN"
             },
             {
-              "label": "Technology and Engineering Expansion",
+              "label": "Diversification",
               "direction": "positive",
-              "note": "Plan to add 5,000 engineers and enhance AI capabilities.",
+              "note": "Expansion into consumer electronics and aerospace, with a balanced approach to EV and ICE markets.",
+              "section_ref": "ORD"
+            },
+            {
+              "label": "Technology and Innovation",
+              "direction": "positive",
+              "note": "Plans to add 5,000 engineers to enhance AI and technology capabilities.",
               "section_ref": "TECH"
             }
           ],
           "key_takeaways": [
-            "The company has delivered a strong operating performance across all business divisions.",
+            "The company reported revenues of Rs. 30,173 crores, EBITDA of Rs. 2,719 crores and a normalised PAT of Rs. 856 crores.",
             "SAMIL has outperformed the industry during the quarter with an 8.5% growth on revenue on a year-on-year basis.",
-            "The profitability of the polymer business moved from 6.4% to 7.4% on a sequential basis.",
-            "Global light vehicles industry grew by approximately 3% year-on-year, reaching a production volume of 22.2 million vehicles.",
-            "We have also spent approximately Rs. 2,600 crores of total CAPEX in the first half.",
-            "Aerospace business delivered a 37% revenue growth in the first half of FY'26 on a year-on-year basis.",
-            "Booked business between consumer electronics and aerospace is already now at a whopping 3 billion up from 2.7 billion in March 2025."
+            "The order book stands at $87.2 billion as of September 2025.",
+            "Emerging business profitability improved to 9.5%, with contributions from Atsumitec and consumer electronics ramp-up.",
+            "Aerospace business achieved a 37% revenue growth in H1 FY26.",
+            "The company plans to add more than 5,000 engineers over the next five years to bolster competencies in AI and global business services.",
+            "Two new greenfield facilities have been operationalized, with 10 more at various stages of completion, expected to come on stream by FY'27."
           ],
           "pressing_questions": []
         },
@@ -16786,76 +16824,62 @@
           "ticker": "MOTHERSON",
           "industry": "Auto Components & Equipments",
           "country": "India",
-          "concall_date": "2025-09-01",
+          "concall_date": "2025-09-12",
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=52763e10-5ff5-49dd-bb00-3f519df3db3c.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-22T20:03:30.973Z",
-          "summary": "Samvardhana Motherson International Ltd is focused on achieving its Vision 2030 targets, including a significant revenue goal and maintaining strong ROCE, while expanding into new industries and enhancing operational excellence.",
+          "generated_at": "2026-07-25T22:55:26.080Z",
+          "summary": "Samvardhana Motherson International Ltd is focused on achieving its Vision 2030 targets, including a revenue goal of 108 billion and maintaining a 40% ROCE, while continuing to diversify its customer base and expand its non-automotive business.",
           "sections": [
             {
               "id": "FIN",
               "title": "Financial Performance",
               "key_figures": [
                 {
-                  "label": "Revenue Growth",
-                  "value": "2.5 times",
-                  "unit": null,
+                  "label": "Revenue growth",
+                  "value": "2.5",
+                  "unit": "times",
                   "period": "2020-2025",
                   "kind": "reported"
                 },
                 {
-                  "label": "EBIT Growth",
-                  "value": "3x",
-                  "unit": null,
+                  "label": "EBIT growth",
+                  "value": "3",
+                  "unit": "times",
                   "period": "2020-2025",
                   "kind": "reported"
                 },
                 {
-                  "label": "PAT Growth",
-                  "value": "~5x",
-                  "unit": null,
+                  "label": "PAT growth",
+                  "value": "~5",
+                  "unit": "times",
                   "period": "2020-2025",
                   "kind": "reported"
                 },
                 {
                   "label": "ROCE",
-                  "value": "18.5%",
+                  "value": "18.5",
+                  "unit": "%",
+                  "period": "2020-2025",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ROCE growth",
+                  "value": "doubled",
                   "unit": null,
                   "period": "2020-2025",
                   "kind": "reported"
                 },
                 {
-                  "label": "Dividends Paid",
+                  "label": "Dividends paid",
                   "value": "record number",
                   "unit": null,
                   "period": "FY25",
                   "kind": "reported"
                 },
                 {
-                  "label": "Net Debt to Leverage Ratio",
+                  "label": "Net debt to leverage ratio",
                   "value": "lowest in a decade",
-                  "unit": null,
-                  "period": "2020-2025",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Investment in Greenfields",
-                  "value": "37",
-                  "unit": "facilities",
-                  "period": "2020-2025",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Acquisitions",
-                  "value": "23",
-                  "unit": "acquisitions",
-                  "period": "2020-2025",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Investment",
-                  "value": "over 15,000 crores",
                   "unit": null,
                   "period": "2020-2025",
                   "kind": "reported"
@@ -16865,10 +16889,9 @@
                 {
                   "label": "Financial Achievements",
                   "points": [
-                    "Motherson grew 2.5 times in revenue from 2020 to 2025.",
-                    "EBIT grew 3x and PAT grew ~5x during the same period.",
-                    "ROCE doubled from 10% to 18.5%.",
-                    "Record dividends were paid, including during COVID.",
+                    "Motherson grew 2.5 times from 2020, with a 3x growth in EBIT and ~5x growth in PAT.",
+                    "ROCE doubled from 10% to 18.5% over the five-year period.",
+                    "Record dividends were paid, including during COVID, with the highest in FY25.",
                     "The company maintained a strong balance sheet with the lowest net debt to leverage ratio in a decade."
                   ]
                 }
@@ -16879,14 +16902,14 @@
               "title": "Order Book & Demand",
               "key_figures": [
                 {
-                  "label": "Non-Automotive Business",
-                  "value": "just under 5%",
-                  "unit": "of total business",
+                  "label": "Non-automotive business share",
+                  "value": "just under 5",
+                  "unit": "%",
                   "period": "2020-2025",
                   "kind": "reported"
                 },
                 {
-                  "label": "Non-Automotive Order Book",
+                  "label": "Non-automotive business order book",
                   "value": "multi billions",
                   "unit": null,
                   "period": "2020-2025",
@@ -16895,10 +16918,10 @@
               ],
               "subsections": [
                 {
-                  "label": "Order Book Expansion",
+                  "label": "Non-Automotive Business",
                   "points": [
-                    "Non-automotive business is just under 5% of total business but has a multi-billion order book.",
-                    "The company added 40 marquee customers in different industries during the five-year plan."
+                    "The non-automotive business, though currently under 5% of total business, is expected to grow significantly in the next five years.",
+                    "The business has a multi-billion dollar order book to be executed in the next five-year period."
                   ]
                 }
               ]
@@ -16908,27 +16931,42 @@
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
-                  "label": "Wire Harness Business",
-                  "value": "largest chunk",
+                  "label": "Greenfields built",
+                  "value": "37",
                   "unit": null,
                   "period": "2020-2025",
                   "kind": "reported"
                 },
                 {
-                  "label": "Aerospace Growth",
-                  "value": "550 times",
+                  "label": "Acquisitions",
+                  "value": "23",
                   "unit": null,
+                  "period": "2020-2025",
+                  "kind": "reported"
+                },
+                {
+                  "label": "New customers added",
+                  "value": "40",
+                  "unit": null,
+                  "period": "2020-2025",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Red units reduced",
+                  "value": "80",
+                  "unit": "%",
                   "period": "2020-2025",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Product Diversification",
+                  "label": "Segment Achievements",
                   "points": [
-                    "Wire harness remains the largest part of the business.",
-                    "New products added include sunroofs and fuel tanks.",
-                    "Aerospace business grew 550 times in the last five-year plan."
+                    "37 Greenfields were built based on order wins, with 36 in emerging markets.",
+                    "23 acquisitions were completed, many in the latter part of the five-year plan.",
+                    "40 new marquee customers were added in different industries.",
+                    "80% reduction in red units from FY20, with plans to convert remaining units to green."
                   ]
                 }
               ]
@@ -16938,15 +16976,15 @@
               "title": "Manufacturing & Capacity",
               "key_figures": [
                 {
-                  "label": "Greenfields Built",
-                  "value": "37",
-                  "unit": "facilities",
+                  "label": "Facilities in India",
+                  "value": "160+",
+                  "unit": null,
                   "period": "2020-2025",
                   "kind": "reported"
                 },
                 {
-                  "label": "Red Units Reduction",
-                  "value": "80%",
+                  "label": "Employees added",
+                  "value": "85,000",
                   "unit": null,
                   "period": "2020-2025",
                   "kind": "reported"
@@ -16956,8 +16994,8 @@
                 {
                   "label": "Manufacturing Expansion",
                   "points": [
-                    "Built 37 Greenfields based on orders won.",
-                    "Achieved an 80% reduction in red units over five years."
+                    "Significant growth in India with over 160 facilities and tripling of sales turnover.",
+                    "85,000 employees were added in the five-year plan."
                   ]
                 }
               ]
@@ -16967,9 +17005,9 @@
               "title": "Supply Chain & Operations",
               "key_figures": [
                 {
-                  "label": "3PL Logistics Cost Reduction",
-                  "value": "12% lower",
-                  "unit": null,
+                  "label": "3PL logistics cost reduction",
+                  "value": "12",
+                  "unit": "%",
                   "period": "2020-2025",
                   "kind": "reported"
                 }
@@ -16979,8 +17017,7 @@
                   "label": "Logistics and Supply Chain Innovations",
                   "points": [
                     "3PL logistics costs are 12% lower than historical averages.",
-                    "Implemented foldable large containers (FLCs) to reduce damages and improve efficiency.",
-                    "Developed proprietary technologies for real-time supply chain monitoring."
+                    "Innovative supply chain models were developed during the Red Sea crisis to reduce transit times by 50%."
                   ]
                 }
               ]
@@ -16992,7 +17029,7 @@
                 {
                   "label": "Acquisitions",
                   "value": "23",
-                  "unit": "acquisitions",
+                  "unit": null,
                   "period": "2020-2025",
                   "kind": "reported"
                 }
@@ -17001,8 +17038,8 @@
                 {
                   "label": "Strategic Growth",
                   "points": [
-                    "Completed 23 acquisitions, many in the last two years of the plan.",
-                    "Focused on acquisitions to solve customer supply chain issues."
+                    "23 acquisitions were made, focusing on strengthening the balance sheet and operational performance.",
+                    "The company plans to create more independent companies from SAMIL to unlock shareholder value."
                   ]
                 }
               ]
@@ -17015,8 +17052,8 @@
                 {
                   "label": "Industry Challenges",
                   "points": [
-                    "Faced multiple crises including COVID, semiconductor shortages, and geopolitical issues.",
-                    "Automotive industry predictions were not met, with a loss of over 60 million cars in volume."
+                    "The automotive industry faced significant challenges, including a loss of over 60 million cars in production volumes due to various crises.",
+                    "Despite these challenges, Motherson did not change its targets and focused on internal improvements."
                   ]
                 }
               ]
@@ -17026,16 +17063,16 @@
               "title": "Guidance & Outlook",
               "key_figures": [
                 {
-                  "label": "Vision 2030 Revenue Target",
+                  "label": "Revenue target",
                   "value": "108",
                   "unit": "billion",
                   "period": "2030",
                   "kind": "target"
                 },
                 {
-                  "label": "ROCE Target",
-                  "value": "40%",
-                  "unit": null,
+                  "label": "ROCE target",
+                  "value": "40",
+                  "unit": "%",
                   "period": "2030",
                   "kind": "target"
                 }
@@ -17045,9 +17082,8 @@
                   "label": "Vision 2030 Targets",
                   "points": [
                     "Targeting 108 billion in gross revenues by 2030.",
-                    "Aiming for a 40% ROCE for the group.",
-                    "No country, customer, or component to be more than 10% of revenues.",
-                    "Plan to pay out up to 40% of consolidated profit as dividends."
+                    "Aiming for a 40% ROCE for the group by 2030.",
+                    "Maintaining diversification with no country, customer, or component exceeding 10% of revenues."
                   ]
                 }
               ]
@@ -17060,7 +17096,7 @@
               "statement": "Targeting 108 billion in gross revenues by 2030.",
               "specificity": "specific",
               "direction": "up",
-              "status": "new"
+              "status": "reiterated"
             },
             {
               "metric": "ROCE",
@@ -17068,13 +17104,18 @@
               "statement": "Aiming for a 40% ROCE for the group.",
               "specificity": "specific",
               "direction": "flat",
-              "status": "new"
+              "status": "reiterated"
             }
           ],
           "risk_register": [
             {
+              "risk": "Automotive industry production challenges",
+              "status": "new",
+              "note": "Loss of over 60 million cars in production volumes due to various crises."
+            },
+            {
               "risk": "Multiple industry crises including COVID, semiconductor shortages, and geopolitical issues.",
-              "status": "escalated",
+              "status": "no_mention",
               "note": "Faced multiple crises including COVID, semiconductor shortages, and geopolitical issues."
             }
           ],
@@ -17082,42 +17123,42 @@
             {
               "label": "Vision 2030",
               "direction": "positive",
-              "note": "Ambitious targets set for 2030, including significant revenue growth.",
+              "note": "Ambitious targets set for 2030, including 108 billion in revenue and 40% ROCE.",
               "section_ref": "GUID"
             },
             {
               "label": "Operational Excellence",
               "direction": "positive",
-              "note": "Focus on improving operational efficiency and reducing costs.",
+              "note": "Focus on improving operational efficiency and reducing costs across the supply chain.",
               "section_ref": "SUP"
             },
             {
               "label": "Diversification",
               "direction": "positive",
-              "note": "Expansion into new industries and products, including aerospace.",
-              "section_ref": "SEG"
+              "note": "Continued diversification with no single customer, country, or component exceeding 10% of revenues.",
+              "section_ref": "ORD"
             },
             {
               "label": "Sustainability",
               "direction": "positive",
-              "note": "Commitment to sustainability and reducing environmental impact.",
+              "note": "Significant improvements in energy intensity, emissions, and water management.",
               "section_ref": "RISK"
             },
             {
               "label": "Financial Performance",
               "direction": "positive",
-              "note": "Strong financial growth and focus on ROCE and cash flow.",
+              "note": "Strong financial performance with significant growth in revenue, EBIT, and PAT.",
               "section_ref": "FIN"
             }
           ],
           "key_takeaways": [
             "Vision 2025 has concluded, and Vision 2030 has been launched with ambitious targets.",
-            "Motherson has achieved significant growth despite industry challenges, including a 2.5x increase in revenue.",
-            "The company has diversified its customer base and product offerings, including significant growth in aerospace.",
-            "Motherson has maintained strong financial performance, with a focus on ROCE and cash flow.",
-            "The company has made 23 acquisitions and built 37 Greenfields in the last five years.",
-            "Motherson is focusing on sustainability and operational excellence as key drivers for future growth.",
-            "The company aims to achieve 108 billion in revenue by 2030, with a 40% ROCE target."
+            "Motherson has achieved significant growth despite industry challenges, with a 2.5x increase in revenue since 2020.",
+            "The company has reduced its red units by 80% and plans to convert the remaining to green.",
+            "Motherson has built 37 Greenfields and completed 23 acquisitions in the last five years.",
+            "The company aims to achieve 108 billion in gross revenues and a 40% ROCE by 2030.",
+            "Motherson's non-automotive business is expected to grow significantly, with a multi-billion dollar order book.",
+            "The company has maintained a strong balance sheet with the lowest net debt to leverage ratio in a decade."
           ],
           "pressing_questions": []
         }
