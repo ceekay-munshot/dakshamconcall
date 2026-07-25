@@ -97,8 +97,10 @@
       "source": "transcript"
     },
     "TMCV": {
-      "status": "running",
-      "started_at": "2026-07-25T23:02:33.696Z"
+      "status": "failed",
+      "finished_at": "2026-07-25T23:02:41.399Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Couldn't fetch TMCV's latest concall. Found concalls but could not extract an AI summary or transcript."
     },
     "TMPV": {
       "status": "failed",
