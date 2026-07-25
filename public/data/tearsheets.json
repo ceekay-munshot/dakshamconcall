@@ -20308,18 +20308,18 @@
       "ticker": "BALKRISIND",
       "industry": "Tyres & Rubber Products",
       "country": "India",
-      "checked_at": "2026-07-22T20:08:37.159Z",
+      "checked_at": "2026-07-25T22:59:33.007Z",
       "quarters": [
         {
           "company": "Balkrishna Industries Ltd",
           "ticker": "BALKRISIND",
           "industry": "Tyres & Rubber Products",
           "country": "India",
-          "concall_date": "2026-05-01",
+          "concall_date": "2026-05-09",
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f04b4362-5754-422c-8519-2d9f812b0d92.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-22T20:08:37.159Z",
+          "generated_at": "2026-07-25T22:59:28.972Z",
           "summary": "Balkrishna Industries remains focused on volume growth with margin discipline, leveraging carbon black capabilities, and scaling up the On-Highway business despite macroeconomic uncertainties.",
           "sections": [
             {
@@ -20369,14 +20369,14 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Q4 Profit After Tax",
+                  "label": "Q4 Profit After Tax (PAT)",
                   "value": "295",
                   "unit": "INR Crores",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "FY26 Profit After Tax",
+                  "label": "FY26 Profit After Tax (PAT)",
                   "value": "1,222",
                   "unit": "INR Crores",
                   "period": "FY26",
@@ -20393,21 +20393,21 @@
                   "label": "Gross Debt",
                   "value": "4,049",
                   "unit": "INR Crores",
-                  "period": "31st March FY26",
+                  "period": "as of 31st March",
                   "kind": "reported"
                 },
                 {
                   "label": "Cash and Cash Equivalents",
                   "value": "3,154",
                   "unit": "INR Crores",
-                  "period": "31st March FY26",
+                  "period": "as of 31st March",
                   "kind": "reported"
                 },
                 {
                   "label": "Net Debt",
                   "value": "895",
                   "unit": "INR Crores",
-                  "period": "31st March FY26",
+                  "period": "as of 31st March",
                   "kind": "reported"
                 },
                 {
@@ -20416,22 +20416,14 @@
                   "unit": "INR per equity share",
                   "period": "FY26",
                   "kind": "reported"
-                },
-                {
-                  "label": "Previous Dividend",
-                  "value": "12",
-                  "unit": "INR per share",
-                  "period": "FY26",
-                  "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Financial Overview",
+                  "label": "Operational Highlights",
                   "points": [
-                    "Balkrishna Industries delivered its highest ever quarterly volumes in Q4 and highest ever volumes annually in FY26.",
-                    "The company faced realized losses on foreign exchange amounting to INR47 crores in Q4 and INR164 crores for FY26.",
-                    "The EBITDA margin was impacted by geopolitical scenarios and supply chain issues towards the end of the quarter."
+                    "OHT sales volume for the quarter was 85,820 metric tons, a growth of 5% year-on-year.",
+                    "FY26 volumes stood at 317,356 metric tons."
                   ]
                 }
               ]
@@ -20439,29 +20431,14 @@
             {
               "id": "ORD",
               "title": "Order Book & Demand",
-              "key_figures": [
-                {
-                  "label": "OHT Sales Volume",
-                  "value": "85,820",
-                  "unit": "metric tons",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "FY26 OHT Sales Volume",
-                  "value": "317,356",
-                  "unit": "metric tons",
-                  "period": "FY26",
-                  "kind": "reported"
-                }
-              ],
+              "key_figures": [],
               "subsections": [
                 {
-                  "label": "Demand Overview",
+                  "label": "Market Recovery",
                   "points": [
-                    "The company saw continued sequential improvements in volumes, supported by normalization across key markets.",
-                    "H2 performance was significantly better than H1, with strong operational results.",
-                    "India outperformed all markets with sustained momentum."
+                    "Europe showed good recovery in H2 over H1, driven by easing in channel inventories.",
+                    "In the Americas, improving traction supported by higher channel activity was observed.",
+                    "India continues to outperform all markets with sustained momentum."
                   ]
                 }
               ]
@@ -20474,7 +20451,7 @@
                   "label": "Carbon Black Capacity",
                   "value": "265,000",
                   "unit": "MTPA",
-                  "period": "FY26",
+                  "period": "as of December '25",
                   "kind": "reported"
                 },
                 {
@@ -20485,9 +20462,16 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Specialty Carbon Black Approvals",
-                  "value": "secured",
-                  "unit": null,
+                  "label": "OHT Sales Volume",
+                  "value": "85,820",
+                  "unit": "metric tons",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "OHT Annual Volume",
+                  "value": "317,356",
+                  "unit": "metric tons",
                   "period": "FY26",
                   "kind": "reported"
                 }
@@ -20496,18 +20480,16 @@
                 {
                   "label": "Carbon Black Business",
                   "points": [
-                    "The carbon black business recorded marginal revenue growth with third-party sales at ~9% of overall business.",
-                    "A new line for carbon black was commissioned in December '25, increasing capacity to 265,000 MTPA.",
-                    "Full utilization levels for the new lines were achieved, supported by internal consumption and external sales.",
-                    "The company targets the balance part of carbon black capacity to come on stream in Q1 FY27."
+                    "Recorded marginal revenue growth year-on-year with third-party sales at ~9% of overall business.",
+                    "New line for carbon black commissioned in December '25, taking total capacity to 265,000 MTPA.",
+                    "Full utilization levels for new lines supported by internal consumption and external sales."
                   ]
                 },
                 {
                   "label": "On-Highway Business",
                   "points": [
-                    "Progress was made on product diversification and market expansion.",
-                    "The company entered the truck bus radial segment with new product launches in February '26.",
-                    "Re-launched 2-wheeler tyres targeting the domestic market with encouraging early market response.",
+                    "Entered the truck bus radial segment with new product launches in February '26.",
+                    "Re-launched 2-wheeler tyres targeting the domestic market.",
                     "Plans to introduce passenger car radial tyres by the end of the current calendar year."
                   ]
                 }
@@ -20518,24 +20500,31 @@
               "title": "Manufacturing & Capacity",
               "key_figures": [
                 {
-                  "label": "Bhuj Power Plant Capacity",
+                  "label": "Carbon Black Capacity",
+                  "value": "265,000",
+                  "unit": "MTPA",
+                  "period": "as of December '25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Power Plant Capacity at Bhuj",
                   "value": "64",
                   "unit": "MW",
-                  "period": "February '26",
+                  "period": "as of February '26",
                   "kind": "reported"
                 },
                 {
                   "label": "Commercial Vehicle Radial Tyre Project Capex",
                   "value": "750",
                   "unit": "INR Crores",
-                  "period": "February '26",
+                  "period": "as of February '26",
                   "kind": "reported"
                 },
                 {
-                  "label": "CVR and OHT Fungible Capacity",
+                  "label": "Commercial Vehicle Radial Tyre Capacity",
                   "value": "800",
                   "unit": "tyres per day",
-                  "period": "February '26",
+                  "period": "Phase 1",
                   "kind": "reported"
                 }
               ],
@@ -20543,10 +20532,9 @@
                 {
                   "label": "Capacity Expansion",
                   "points": [
-                    "Increased the captive power plant capacity at Bhuj to 64 MW.",
-                    "Completed Phase 1 of the commercial vehicle radial tyre project with a capex of INR750 crores, adding fungible capacity of 800 tyres per day for CVR and OHT.",
-                    "Working on the completion of the balance carbon black project to increase capacity to 360,000 MTPA.",
-                    "Phase 2 of the commercial radial vehicle tyre project and the PCR tyre project are scheduled to launch in FY '27."
+                    "New line of carbon black facility in Bhuj completed, increasing capacity to 265,000 MTPA.",
+                    "Power plant capacity in Bhuj increased from 40 MW to 64 MW.",
+                    "Phase 1 of the commercial vehicle radial tyre project completed with a capex of INR750 crores, adding fungible capacity of 800 tyres per day for CVR and OHT."
                   ]
                 }
               ]
@@ -20554,22 +20542,14 @@
             {
               "id": "GEO",
               "title": "Geography & Distribution",
-              "key_figures": [
-                {
-                  "label": "U.S. Volume Contribution",
-                  "value": "just short of 10%",
-                  "unit": "%",
-                  "period": "FY26",
-                  "kind": "reported"
-                }
-              ],
+              "key_figures": [],
               "subsections": [
                 {
                   "label": "Geographical Performance",
                   "points": [
                     "In Europe, H2 showed good recovery over H1, driven by easing in channel inventories.",
-                    "In the Americas, improving traction was supported by higher channel activity.",
-                    "The company has a sharper focus on the go-to-market strategy for the Americas to realize the potential of the BKT product range."
+                    "In the Americas, improving traction supported by higher channel activity was observed.",
+                    "India continues to outperform all markets with sustained momentum."
                   ]
                 }
               ]
@@ -20577,35 +20557,14 @@
             {
               "id": "SUP",
               "title": "Supply Chain & Operations",
-              "key_figures": [
-                {
-                  "label": "Raw Material Price Increase",
-                  "value": "4% to 5%",
-                  "unit": "%",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Expected Raw Material Price Increase",
-                  "value": "7% to 8%",
-                  "unit": "%",
-                  "period": "Q1 FY27",
-                  "kind": "guidance"
-                },
-                {
-                  "label": "Freight Cost",
-                  "value": "4.5% to 5%",
-                  "unit": "% of revenue",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                }
-              ],
+              "key_figures": [],
               "subsections": [
                 {
-                  "label": "Supply Chain Challenges",
+                  "label": "Raw Material and Freight Costs",
                   "points": [
-                    "Raw material prices increased by approximately 4% to 5% in Q4 FY26 and are expected to rise by 7% to 8% in Q1 FY27.",
-                    "Freight costs were about 4.5% to 5% of revenue in Q4 FY26 and are expected to rise marginally."
+                    "Raw material prices increased by approximately 4% to 5% in Q4.",
+                    "Expected raw material price increase of 7% to 8% in the June quarter.",
+                    "Freight cost in Q4 was about 4.5% to 5% of revenue, expected to go up marginally."
                   ]
                 }
               ]
@@ -20618,9 +20577,8 @@
                 {
                   "label": "Brand and Marketing Initiatives",
                   "points": [
-                    "Repositioned the BKT brand architecture by differentiating corporate and product branding.",
-                    "Integrated product and brand-building initiatives under the campaign \"Elevate Your Drive\" with brand ambassador Ranveer Singh received strong engagement.",
-                    "These initiatives enhanced brand recall and supported new product launches."
+                    "Repositioning of the BKT brand architecture by differentiating corporate and regular lines.",
+                    "Integrated product and brand-building initiatives under the campaign \"Elevate Your Drive\" with brand ambassador Ranveer Singh."
                   ]
                 }
               ]
@@ -20628,21 +20586,19 @@
             {
               "id": "STRAT",
               "title": "Strategic Initiatives & M&A",
-              "key_figures": [
-                {
-                  "label": "Additional Capex Approved",
-                  "value": "2,000",
-                  "unit": "INR Crores",
-                  "period": "FY27",
-                  "kind": "guidance"
-                }
-              ],
+              "key_figures": [],
               "subsections": [
                 {
-                  "label": "Strategic Investments",
+                  "label": "Sustainability and CSR",
                   "points": [
-                    "The Board approved an additional capex of INR2,000 crores for capacity expansion and infrastructure development across OHT and on-highway tyre categories.",
-                    "AI-enabled automation and sustainability initiatives are part of the strategic investments."
+                    "S&P Global Corporate Sustainability Assessment score improved to 58.",
+                    "Partnership for establishing Narsee Monjee Skilltech University in Mumbai with a committed contribution of INR25 crores."
+                  ]
+                },
+                {
+                  "label": "Governance",
+                  "points": [
+                    "Appointment of Deloitte Haskins & Sells Chartered Accountants LLP as joint statutory auditor."
                   ]
                 }
               ]
@@ -20653,10 +20609,9 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Macroeconomic and Geopolitical Risks",
+                  "label": "Macroeconomic Uncertainties",
                   "points": [
-                    "Macroeconomic uncertainties and geopolitical scenarios continue to pose challenges.",
-                    "Raw material price upticks due to supply chain disruptions are being closely monitored."
+                    "Macroeconomic uncertainties continue to persist, impacting the business environment."
                   ]
                 }
               ]
@@ -20667,11 +20622,11 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Outlook and Guidance",
+                  "label": "Future Focus Areas",
                   "points": [
-                    "The company remains focused on volume growth with margin discipline, leveraging carbon black capabilities, and scaling up the On-Highway business.",
-                    "The company stopped giving specific volume guidance due to geopolitical scenarios and uncertainties.",
-                    "The Board of Directors recommended a final dividend of INR4 per equity share, subject to shareholder approval."
+                    "Focus on volume growth with margin discipline.",
+                    "Leverage carbon black capabilities to improve efficiency and quality.",
+                    "Progressively scale up the On-Highway business."
                   ]
                 }
               ]
@@ -20679,17 +20634,9 @@
           ],
           "guidance_ledger": [
             {
-              "metric": "Raw Material Prices",
-              "horizon": "Q1 FY27",
-              "statement": "Raw material prices may go up around 7% to 8%.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "new"
-            },
-            {
               "metric": "Capex",
               "horizon": "FY27",
-              "statement": "Additional capex of INR2,000 crores approved for capacity expansion and infrastructure development.",
+              "statement": "Total capex for FY27 expected to be between INR1,500 crores to INR1,800 crores.",
               "specificity": "specific",
               "direction": "up",
               "status": "lowered"
@@ -20700,108 +20647,94 @@
               "statement": "Achieve INR23,000 crores in revenue by 2030.",
               "specificity": "specific",
               "direction": "up",
-              "status": "no_mention"
+              "status": "reiterated"
             },
             {
-              "metric": "EBITDA Margin",
+              "metric": "EBITDA margin",
               "horizon": "FY26",
-              "statement": "We strive to maintain EBITDA margins in the range of 24% to 25%.",
+              "statement": "Full year margin guidance remains at 24%-25%.",
               "specificity": "specific",
               "direction": "flat",
-              "status": "no_mention"
+              "status": "missed"
             }
           ],
           "risk_register": [
             {
               "risk": "Macroeconomic uncertainties",
               "status": "new",
-              "note": "Macroeconomic uncertainties continue to persist."
+              "note": "Macroeconomic uncertainties continue to persist, impacting the business environment."
             },
             {
-              "risk": "Geopolitical scenarios",
-              "status": "new",
-              "note": "Geopolitical scenarios impact supply chain and margins."
-            },
-            {
-              "risk": "Raw material price upticks",
-              "status": "new",
-              "note": "Raw material price upticks due to supply chain disruptions."
-            },
-            {
-              "risk": "Geopolitical and macroeconomic environment",
+              "risk": "Geopolitical and macroeconomic challenges",
               "status": "no_mention",
-              "note": "Geopolitical and macroeconomic environment continues to remain challenged."
+              "note": "The geopolitical and macroeconomic environment remains challenged."
             },
             {
               "risk": "U.S. tariffs",
               "status": "no_mention",
-              "note": "Situation with U.S. tariffs remains unchanged."
+              "note": "The situation with U.S. tariffs remains unchanged."
             },
             {
               "risk": "U.S. tariff increase to 50%",
               "status": "no_mention",
-              "note": "Severely impacting U.S. sales."
+              "note": "Severely impacting U.S. sales, which accounted for approximately 10% of last year's sales volume."
             },
             {
               "risk": "Geopolitical and macro environment uncertainty",
               "status": "no_mention",
-              "note": "Particularly outside India, warrants cautious optimism."
+              "note": "Particularly outside India, remains uncertain and warrants cautious optimism."
             },
             {
-              "risk": "Geopolitical environment and macroeconomic scenario",
+              "risk": "Tariff uncertainty",
               "status": "no_mention",
-              "note": "Continues to present significant challenges across key export markets."
+              "note": "Continued tariff uncertainty has compounded challenges in international markets."
             },
             {
-              "risk": "Ongoing conflicts, trade tensions, and economic uncertainties",
+              "risk": "Geopolitical tensions",
               "status": "no_mention",
-              "note": "Influence cautious sentiments among customers."
-            },
-            {
-              "risk": "Continued tariff uncertainty",
-              "status": "no_mention",
-              "note": "Further compounded the situation."
+              "note": "Ongoing conflicts and trade tensions influence cautious sentiments among customers."
             }
           ],
           "themes": [
             {
-              "label": "Geopolitical Challenges",
-              "direction": "negative",
-              "note": "Geopolitical scenarios impact supply chain and margins.",
+              "label": "Macroeconomic uncertainties",
+              "direction": "mixed",
+              "note": "Macroeconomic uncertainties continue to persist, impacting the business environment.",
               "section_ref": "RISK"
             },
             {
-              "label": "India Market Strength",
+              "label": "Capacity expansion",
+              "direction": "positive",
+              "note": "New capex of INR2,000 crores approved for capacity expansion and infrastructure development.",
+              "section_ref": "MFG"
+            },
+            {
+              "label": "India growth",
               "direction": "positive",
               "note": "India continues to outperform all markets with sustained momentum.",
-              "section_ref": "ORD"
+              "section_ref": "GEO"
             },
             {
-              "label": "Capex Execution",
-              "direction": "positive",
-              "note": "Additional capex of INR2,000 crores approved for capacity expansion.",
-              "section_ref": "STRAT"
-            },
-            {
-              "label": "EBITDA Margin Stability",
+              "label": "Margin guidance",
               "direction": "mixed",
-              "note": "EBITDA margin impacted by geopolitical scenarios and supply chain issues.",
-              "section_ref": "FIN"
+              "note": "Full year margin guidance remains at 24%-25%, but pressures are expected due to raw material costs.",
+              "section_ref": "GUID"
             },
             {
-              "label": "Raw Material Cost Pressure",
-              "direction": "negative",
-              "note": "Raw material prices increased and are expected to rise further.",
-              "section_ref": "SUP"
+              "label": "Carbon black utilization",
+              "direction": "positive",
+              "note": "Full utilization levels for new carbon black lines achieved, supporting internal and external sales.",
+              "section_ref": "SEG"
             }
           ],
           "key_takeaways": [
-            "Balkrishna Industries delivered its highest ever quarterly volumes in Q4 and highest ever volumes annually in FY26.",
-            "The company faced realized losses on foreign exchange amounting to INR47 crores in Q4 and INR164 crores for FY26.",
-            "Raw material prices increased by approximately 4% to 5% in Q4 FY26 and are expected to rise by 7% to 8% in Q1 FY27.",
-            "The Board approved an additional capex of INR2,000 crores for capacity expansion and infrastructure development.",
-            "The company remains focused on volume growth with margin discipline, leveraging carbon black capabilities, and scaling up the On-Highway business.",
-            "The company stopped giving specific volume guidance due to geopolitical scenarios and uncertainties."
+            "Balkrishna Industries remains confident in delivering sustainable and profitable growth despite macroeconomic uncertainties.",
+            "The company achieved its highest ever quarterly and annual volumes in FY26.",
+            "Carbon black business recorded marginal revenue growth with full utilization of new capacity.",
+            "The On-Highway business is expanding with new product launches and market entry strategies.",
+            "A new capex of INR2,000 crores has been approved for capacity expansion and infrastructure development.",
+            "Raw material prices increased by 4% to 5% in Q4, with further increases expected in the June quarter.",
+            "The company is focused on volume growth with margin discipline and leveraging carbon black capabilities."
           ],
           "pressing_questions": []
         },
@@ -20814,129 +20747,165 @@
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=186fe7e8-b8b2-43a3-bfa1-829414e48ac7.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-22T20:08:20.313Z",
-          "summary": "Balkrishna Industries Ltd. is navigating geopolitical challenges and U.S. tariffs while maintaining strong sales momentum, particularly in India, and progressing with capex plans.",
+          "generated_at": "2026-07-25T22:59:16.483Z",
+          "summary": "Balkrishna Industries anticipates continued challenges from geopolitical factors and U.S. tariffs but remains optimistic about growth in India and Europe. The company is progressing with its capex plans and expects to maintain its long-term vision for 2030.",
           "sections": [
             {
               "id": "FIN",
               "title": "Financial Performance",
               "key_figures": [
                 {
-                  "label": "Standalone Revenue for Q3",
+                  "label": "Standalone revenue (Q3 FY26)",
                   "value": "2,682",
                   "unit": "INR Crores",
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Standalone Revenue for 9M",
+                  "label": "Standalone revenue growth (YoY)",
+                  "value": "4",
+                  "unit": "%",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Standalone revenue (9M FY26)",
                   "value": "7,762",
                   "unit": "INR Crores",
                   "period": "9M FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Standalone EBITDA for Q3",
+                  "label": "Standalone EBITDA (Q3 FY26)",
                   "value": "605",
                   "unit": "INR Crores",
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Standalone EBITDA Margin for Q3",
+                  "label": "Standalone EBITDA margin (Q3 FY26)",
                   "value": "22.5",
                   "unit": "%",
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Standalone EBITDA for 9M",
+                  "label": "Standalone EBITDA (9M FY26)",
                   "value": "1,760",
                   "unit": "INR Crores",
                   "period": "9M FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Standalone EBITDA Margin for 9M",
+                  "label": "Standalone EBITDA margin (9M FY26)",
                   "value": "22.7",
                   "unit": "%",
                   "period": "9M FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Profit After Tax for Q3",
+                  "label": "Standalone EBITDA growth (YoY)",
+                  "value": "-11",
+                  "unit": "%",
+                  "period": "9M FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Profit after tax (Q3 FY26)",
                   "value": "375",
                   "unit": "INR Crores",
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Profit After Tax for 9M",
+                  "label": "Profit after tax (9M FY26)",
                   "value": "927",
                   "unit": "INR Crores",
                   "period": "9M FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Capex Spend for 9M",
+                  "label": "Capex spend (9M FY26)",
                   "value": "2,200",
                   "unit": "INR Crores",
                   "period": "9M FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Gross Debt",
+                  "label": "Gross debt (as of 31st December '25)",
                   "value": "3,649",
                   "unit": "INR Crores",
-                  "period": "As of 31st December 2025",
+                  "period": "as of 31st December '25",
                   "kind": "reported"
                 },
                 {
-                  "label": "Cash and Cash Equivalents",
+                  "label": "Cash and cash equivalents (as of 31st December '25)",
                   "value": "3,012",
                   "unit": "INR Crores",
-                  "period": "As of 31st December 2025",
+                  "period": "as of 31st December '25",
                   "kind": "reported"
                 },
                 {
-                  "label": "Net Debt",
+                  "label": "Net debt (as of 31st December '25)",
                   "value": "637",
                   "unit": "INR Crores",
-                  "period": "As of 31st December 2025",
+                  "period": "as of 31st December '25",
                   "kind": "reported"
                 },
                 {
-                  "label": "Third Interim Dividend",
+                  "label": "Third interim dividend",
                   "value": "4",
                   "unit": "INR per equity share",
                   "period": "Q3 FY26",
                   "kind": "reported"
                 }
               ],
-              "subsections": []
+              "subsections": [
+                {
+                  "label": "Forex Impact",
+                  "points": [
+                    "Standalone revenue includes a realized loss of INR47 crores on forex pertaining to sales for the quarter.",
+                    "For 9 months, the realized loss on foreign exchange pertaining to sales was INR117 crores."
+                  ]
+                }
+              ]
             },
             {
               "id": "ORD",
               "title": "Order Book & Demand",
               "key_figures": [
                 {
-                  "label": "Sales Volume Growth QoQ",
+                  "label": "Sales volume growth (QoQ)",
                   "value": "15",
                   "unit": "%",
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Volumes for Q3",
+                  "label": "Sales volume (Q3 FY26)",
                   "value": "80,620",
-                  "unit": "Metric Tons",
+                  "unit": "metric tons",
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Volumes for 9M",
+                  "label": "Sales volume growth (YoY)",
+                  "value": "6",
+                  "unit": "%",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Sales volume (9M FY26)",
                   "value": "231,536",
-                  "unit": "Metric Tons",
+                  "unit": "metric tons",
+                  "period": "9M FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Sales volume growth (YoY)",
+                  "value": "-1",
+                  "unit": "%",
                   "period": "9M FY26",
                   "kind": "reported"
                 }
@@ -20946,30 +20915,30 @@
                   "label": "Demand Drivers",
                   "points": [
                     "India continues to outperform all markets, supported by broad-based demand across channels and product segments.",
-                    "Positive momentum in India sustained into Q3 post GST reduction.",
-                    "Europe market turned positive this quarter, with good growth in markets like Germany."
+                    "Positive momentum in India sustained into Q3 post the GST reduction.",
+                    "In the U.S. market, strong product quality and brand positioning helped regain some sales momentum despite tariffs."
                   ]
                 }
               ]
             },
             {
-              "id": "MFG",
-              "title": "Manufacturing & Capacity",
+              "id": "SEG",
+              "title": "Segment & Product Performance",
               "key_figures": [
                 {
-                  "label": "Carbon Black Capacity",
+                  "label": "Carbon black capacity",
                   "value": "265,000",
-                  "unit": "Metric Tons per annum",
+                  "unit": "metric tons per annum",
                   "period": "Q3 FY26",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Capex Execution",
+                  "label": "Carbon Black",
                   "points": [
-                    "Commissioned a new line of carbon black, taking total capacity to 265,000 metric tons per annum.",
-                    "All remaining capex is progressing as per schedule."
+                    "A new line of carbon black was commissioned, increasing total capacity to 265,000 metric tons per annum.",
+                    "The entire incremental quantity of carbon black is for outside sale, with margins expected to be as per industry average."
                   ]
                 }
               ]
@@ -20977,14 +20946,23 @@
             {
               "id": "GEO",
               "title": "Geography & Distribution",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "Euro-INR rate (Q3 FY26)",
+                  "value": "97",
+                  "unit": "INR",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                }
+              ],
               "subsections": [
                 {
-                  "label": "Geographical Performance",
+                  "label": "Regional Performance",
                   "points": [
-                    "In the U.S. market, despite ongoing tariff situation, regained some sales momentum by sharing tariff impact with channel partners.",
-                    "Europe market turned positive this quarter, with good growth in markets like Germany.",
-                    "India continues to outperform all markets."
+                    "Europe market turned positive this quarter, with some markets like Germany performing well.",
+                    "The EUDR norms implementation has been deferred to 1st Jan '27.",
+                    "The U.S. market saw a decline in sales due to tariffs, but some momentum was regained in Q3.",
+                    "Southern part of America and Asia faced declines."
                   ]
                 }
               ]
@@ -20995,10 +20973,10 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Geopolitical and Macroeconomic Environment",
+                  "label": "Geopolitical and Macroeconomic Challenges",
                   "points": [
-                    "Geopolitical and macroeconomic environment continues to remain challenged.",
-                    "Situation with U.S. tariffs remains unchanged."
+                    "The geopolitical and macroeconomic environment remains challenged.",
+                    "The situation with U.S. tariffs remains unchanged."
                   ]
                 }
               ]
@@ -21011,7 +20989,7 @@
                 {
                   "label": "Capex Guidance",
                   "points": [
-                    "Capex for the full year now expected to be about INR300-400 crores more in the current financial year, with the balance in the next year."
+                    "Capex for the current financial year is expected to be about INR300-400 crores more, with the balance in the next year."
                   ]
                 }
               ]
@@ -21021,10 +20999,10 @@
             {
               "metric": "Capex",
               "horizon": "FY26",
-              "statement": "Capex for the full year now expected to be about INR300-400 crores more in the current financial year, with the balance in the next year.",
+              "statement": "Capex for the current financial year is expected to be about INR300-400 crores more, with the balance in the next year.",
               "specificity": "specific",
               "direction": "up",
-              "status": "new"
+              "status": "raised"
             },
             {
               "metric": "Revenue",
@@ -21035,9 +21013,9 @@
               "status": "no_mention"
             },
             {
-              "metric": "EBITDA Margin",
+              "metric": "EBITDA margin",
               "horizon": "FY26",
-              "statement": "We strive to maintain EBITDA margins in the range of 24% to 25%.",
+              "statement": "Full year margin guidance remains at 24%-25%.",
               "specificity": "specific",
               "direction": "flat",
               "status": "no_mention"
@@ -21045,82 +21023,77 @@
           ],
           "risk_register": [
             {
-              "risk": "Geopolitical and macroeconomic environment",
+              "risk": "Geopolitical and macroeconomic challenges",
               "status": "new",
-              "note": "Geopolitical and macroeconomic environment continues to remain challenged."
+              "note": "The geopolitical and macroeconomic environment remains challenged."
             },
             {
               "risk": "U.S. tariffs",
               "status": "new",
-              "note": "Situation with U.S. tariffs remains unchanged."
+              "note": "The situation with U.S. tariffs remains unchanged."
             },
             {
               "risk": "U.S. tariff increase to 50%",
               "status": "no_mention",
-              "note": "Severely impacting U.S. sales."
+              "note": "Severely impacting U.S. sales, which accounted for approximately 10% of last year's sales volume."
             },
             {
               "risk": "Geopolitical and macro environment uncertainty",
               "status": "no_mention",
-              "note": "Particularly outside India, warrants cautious optimism."
+              "note": "Particularly outside India, remains uncertain and warrants cautious optimism."
             },
             {
-              "risk": "Geopolitical environment and macroeconomic scenario",
+              "risk": "Tariff uncertainty",
               "status": "no_mention",
-              "note": "Continues to present significant challenges across key export markets."
+              "note": "Continued tariff uncertainty has compounded challenges in international markets."
             },
             {
-              "risk": "Ongoing conflicts, trade tensions, and economic uncertainties",
+              "risk": "Geopolitical tensions",
               "status": "no_mention",
-              "note": "Influence cautious sentiments among customers."
-            },
-            {
-              "risk": "Continued tariff uncertainty",
-              "status": "no_mention",
-              "note": "Further compounded the situation."
+              "note": "Ongoing conflicts and trade tensions influence cautious sentiments among customers."
             }
           ],
           "themes": [
             {
-              "label": "Tariff Impact",
+              "label": "Tariff impact",
               "direction": "negative",
-              "note": "U.S. tariffs remain unchanged, impacting sales momentum.",
+              "note": "U.S. tariffs continue to impact sales, though some momentum was regained.",
               "section_ref": "GEO"
             },
             {
-              "label": "Geopolitical Challenges",
+              "label": "Geopolitical challenges",
               "direction": "negative",
               "note": "Geopolitical and macroeconomic environment remains challenged.",
               "section_ref": "RISK"
             },
             {
-              "label": "India Market Strength",
+              "label": "India growth",
               "direction": "positive",
-              "note": "India continues to outperform all markets with sustained positive momentum.",
+              "note": "India continues to outperform all markets with sustained demand.",
               "section_ref": "ORD"
             },
             {
-              "label": "Capex Execution",
+              "label": "Capex execution",
               "direction": "positive",
-              "note": "Capex progressing as per schedule with new carbon black line commissioned.",
-              "section_ref": "MFG"
+              "note": "Capex plans are progressing as per schedule with new carbon black capacity added.",
+              "section_ref": "SEG"
             },
             {
-              "label": "EBITDA Margin Stability",
+              "label": "Margin guidance",
               "direction": "neutral",
-              "note": "EBITDA margin for Q3 at 22.5%, slightly below prior guidance range.",
+              "note": "EBITDA margins remain stable despite challenges.",
               "section_ref": "FIN"
             }
           ],
           "key_takeaways": [
             "The geopolitical and macroeconomic environment continues to remain challenged and the situation with U.S. tariffs remain unchanged.",
-            "Despite these headwinds, we delivered a strong sequential improvement during the quarter.",
             "Our overall sales volume increased by around 15% quarter-on-quarter.",
-            "India continues to outperform all markets.",
-            "The positive momentum witnessed in Q2 post the GST reduction has sustained into Q3 as well.",
-            "For Europe, it is important to note that the EUDR norms, which were to get implemented from 1st January '26, the same has now been deferred by 1 year and is now likely to be implemented from 1st Jan '27.",
-            "Our standalone revenue for the quarter stood at INR2,682 crores, registering a growth of 4% year-on-year.",
-            "The standalone EBITDA for the quarter was at INR605 crores, a margin of 22.5%."
+            "India continues to outperform all markets, supported by broad-based demand across channels and product segments.",
+            "The EUDR norms implementation has been deferred to 1st Jan '27.",
+            "Standalone revenue for the quarter stood at INR2,682 crores, registering a growth of 4% year-on-year.",
+            "Standalone EBITDA for the quarter was at INR605 crores, a margin of 22.5%.",
+            "Profit after tax for the quarter was recorded at INR375 crores.",
+            "Capex spend for the 9 months of this financial year was approximately INR2,200 crores."
           ],
           "pressing_questions": []
         },
@@ -21133,7 +21106,7 @@
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=eb471bc6-e7ce-496b-bc62-58fa54403ee1.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-22T20:08:09.394Z",
+          "generated_at": "2026-07-25T22:59:05.715Z",
           "summary": "Balkrishna Industries is navigating significant challenges, including increased U.S. tariffs and geopolitical uncertainties, but remains optimistic about long-term growth, focusing on strengthening its market position in India and Europe.",
           "sections": [
             {
@@ -21141,87 +21114,87 @@
               "title": "Financial Performance",
               "key_figures": [
                 {
-                  "label": "Stand-alone revenue for Q2 FY26",
-                  "value": "2360",
+                  "label": "Standalone revenue (Q2 FY26)",
+                  "value": "2,360",
                   "unit": "INR crore",
                   "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Stand-alone revenue for H1 FY26",
-                  "value": "5079",
+                  "label": "Standalone revenue (H1 FY26)",
+                  "value": "5,079",
                   "unit": "INR crore",
                   "period": "H1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Stand-alone EBITDA for Q2 FY26",
+                  "label": "Standalone EBITDA (Q2 FY26)",
                   "value": "500",
                   "unit": "INR crore",
                   "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "EBITDA margin for Q2 FY26",
+                  "label": "EBITDA margin (Q2 FY26)",
                   "value": "21.5",
                   "unit": "%",
                   "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Stand-alone EBITDA for H1 FY26",
-                  "value": "1155",
+                  "label": "Standalone EBITDA (H1 FY26)",
+                  "value": "1,155",
                   "unit": "INR crore",
                   "period": "H1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "EBITDA margin for H1 FY26",
+                  "label": "EBITDA margin (H1 FY26)",
                   "value": "22.7",
                   "unit": "%",
                   "period": "H1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Profit after tax for Q2 FY26",
+                  "label": "Profit after tax (Q2 FY26)",
                   "value": "265",
                   "unit": "INR crore",
                   "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Profit after tax for H1 FY26",
+                  "label": "Profit after tax (H1 FY26)",
                   "value": "552",
                   "unit": "INR crore",
                   "period": "H1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Capex spend for H1 FY26",
-                  "value": "1737",
+                  "label": "Capex spend (H1 FY26)",
+                  "value": "1,737",
                   "unit": "INR crore",
                   "period": "H1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Gross debt as of 30th September '25",
-                  "value": "3615",
+                  "label": "Gross debt (30th September '25)",
+                  "value": "3,615",
                   "unit": "INR crore",
-                  "period": "as of 30th September '25",
+                  "period": "30th September '25",
                   "kind": "reported"
                 },
                 {
-                  "label": "Cash equivalents as of 30th September '25",
-                  "value": "3159",
+                  "label": "Cash equivalents (30th September '25)",
+                  "value": "3,159",
                   "unit": "INR crore",
-                  "period": "as of 30th September '25",
+                  "period": "30th September '25",
                   "kind": "reported"
                 },
                 {
-                  "label": "Net debt as of 30th September '25",
+                  "label": "Net debt (30th September '25)",
                   "value": "456",
                   "unit": "INR crore",
-                  "period": "as of 30th September '25",
+                  "period": "30th September '25",
                   "kind": "reported"
                 },
                 {
@@ -21234,25 +21207,261 @@
               ],
               "subsections": [
                 {
-                  "label": "Revenue and Profit",
+                  "label": "Operational Highlights",
                   "points": [
-                    "Stand-alone revenue for Q2 FY26 was INR2,360 crore, including a realized loss of foreign exchange pertaining to sales of INR68 crores.",
-                    "For H1 FY26, stand-alone revenue was INR5,079 crores, with a realized loss on foreign exchange pertaining to sales of INR70 crores.",
-                    "Profit after tax for Q2 FY26 was INR265 crores, while for H1 FY26, it was INR552 crores."
+                    "Volume for the quarter stood at 70,252 MT, a de-growth of 4% year-on-year.",
+                    "Volume for the first half of the year stood at 150,916 MT, a de-growth of 4% year-on-year.",
+                    "The quarter's revenue includes a realized loss of foreign exchange pertaining to sales of INR68 crores.",
+                    "For the first half, the realized loss on foreign exchange pertaining to sales was INR70 crores."
                   ]
+                }
+              ]
+            },
+            {
+              "id": "ORD",
+              "title": "Order Book & Demand",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Tariff Impact on U.S. Sales",
+                  "points": [
+                    "U.S. increased import duties on India to 50%, severely impacting U.S. sales, which accounted for approximately 10% of last year's sales volume.",
+                    "The overall sales volume and performance for the quarter reflect the decline in shipments to U.S. markets."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Carbon Black Business",
+                  "points": [
+                    "The carbon black sales for the quarter were around 55% of total production, less than 10% from a turnover point of view."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MFG",
+              "title": "Manufacturing & Capacity",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Capex and Expansion Plans",
+                  "points": [
+                    "Capex for the year is expected to be close to INR2,000 crores to INR2,200 crores, with the balance to be spent in the next year.",
+                    "The announced projects are going as per schedule and are expected to be completed as per planned timelines."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Market Focus",
+                  "points": [
+                    "Strategic focus remains on strengthening market position in India and Europe, while driving incremental growth from rest of the world markets.",
+                    "Efforts to increase market share in the U.S. will continue once the tariff situation eases."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Tariff and Geopolitical Challenges",
+                  "points": [
+                    "Tariff-related headwinds intensified with the U.S. increasing import duties on India to 50%.",
+                    "Geopolitical and macro environment, particularly outside India, remains uncertain and warrants cautious optimism."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Long-term Revenue Target",
+                  "points": [
+                    "The company is well-positioned for long-term growth momentum and aims to achieve INR23,000 crores in revenue by 2030."
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "Capex",
+              "horizon": "FY26",
+              "statement": "Capex for the year is expected to be close to INR2,000 crores to INR2,200 crores.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Revenue",
+              "horizon": "2030",
+              "statement": "Achieve INR23,000 crores in revenue by 2030.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "EBITDA margin",
+              "horizon": "FY26",
+              "statement": "Full year margin guidance remains at 24%-25%.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "no_mention"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "U.S. tariff increase to 50%",
+              "status": "new",
+              "note": "Severely impacting U.S. sales, which accounted for approximately 10% of last year's sales volume."
+            },
+            {
+              "risk": "Geopolitical and macro environment uncertainty",
+              "status": "new",
+              "note": "Particularly outside India, remains uncertain and warrants cautious optimism."
+            },
+            {
+              "risk": "Tariff uncertainty",
+              "status": "no_mention",
+              "note": "Continued tariff uncertainty has compounded challenges in international markets."
+            },
+            {
+              "risk": "Geopolitical tensions",
+              "status": "no_mention",
+              "note": "Ongoing conflicts and trade tensions influence cautious sentiments among customers."
+            }
+          ],
+          "themes": [
+            {
+              "label": "Tariff impact",
+              "direction": "negative",
+              "note": "U.S. increased import duties on India to 50%, impacting sales.",
+              "section_ref": "ORD"
+            },
+            {
+              "label": "Geopolitical challenges",
+              "direction": "mixed",
+              "note": "Uncertainty in geopolitical and macro environment outside India.",
+              "section_ref": "RISK"
+            },
+            {
+              "label": "India growth",
+              "direction": "positive",
+              "note": "Focus on strengthening market position in India and Europe.",
+              "section_ref": "GEO"
+            },
+            {
+              "label": "Capex execution",
+              "direction": "neutral",
+              "note": "Capex projects are on schedule, expected to complete as planned.",
+              "section_ref": "MFG"
+            },
+            {
+              "label": "Margin guidance",
+              "direction": "neutral",
+              "note": "EBITDA margin impacted by geographic and product mix changes.",
+              "section_ref": "FIN"
+            }
+          ],
+          "key_takeaways": [
+            "Tariff-related headwinds intensified with the U.S. increasing import duties on India to 50%, severely impacting U.S. sales.",
+            "The company remains cautiously optimistic in the near term but is confident about the long-term outlook.",
+            "Strategic focus remains on strengthening market position in India and Europe, while driving incremental growth from rest of the world markets.",
+            "Capex for the year is expected to be close to INR2,000 crores to INR2,200 crores, with the balance to be spent in the next year.",
+            "The company aims to achieve INR23,000 crores in revenue by 2030."
+          ],
+          "pressing_questions": []
+        },
+        {
+          "company": "Balkrishna Industries Ltd",
+          "ticker": "BALKRISIND",
+          "industry": "Tyres & Rubber Products",
+          "country": "India",
+          "concall_date": "2025-08-01",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=be482f02-176d-4e58-a386-3e8eaa174edc.pdf",
+          "model": "gpt-4o",
+          "generated_at": "2026-07-25T22:58:56.244Z",
+          "summary": "Balkrishna Industries anticipates a stable demand environment and aims to improve market share, despite challenges in international markets and tariff uncertainties.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "Stand-alone revenue (Q1 FY26)",
+                  "value": "2,759",
+                  "unit": "INR crore",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
                 },
                 {
-                  "label": "EBITDA and Margins",
-                  "points": [
-                    "Stand-alone EBITDA for Q2 FY26 was INR500 crores with a margin of 21.5%.",
-                    "For H1 FY26, the standalone EBITDA was INR1,155 crores with a margin of 22.7%."
-                  ]
+                  "label": "Stand-alone EBITDA (Q1 FY26)",
+                  "value": "655",
+                  "unit": "INR crore",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
                 },
                 {
-                  "label": "Capex and Debt",
+                  "label": "EBITDA margin (Q1 FY26)",
+                  "value": "23.8",
+                  "unit": "%",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Profit after tax (Q1 FY26)",
+                  "value": "287",
+                  "unit": "INR crore",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT decline",
+                  "value": "40",
+                  "unit": "%",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "M2M loss",
+                  "value": "154",
+                  "unit": "INR crore",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "First interim dividend",
+                  "value": "4",
+                  "unit": "INR per equity share",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Forex and Tariff Impact",
                   "points": [
-                    "Capex spend for H1 FY26 was approximately INR1,737 crores.",
-                    "Gross debt as of 30th September '25 was INR3,615 crores, and cash equivalents were INR3,159 crores, resulting in a net debt of INR456 crores."
+                    "Realized loss on forex pertaining to sales was INR1 crore.",
+                    "The gross profit margin was lower due to product mix and higher India sales contribution.",
+                    "Partial absorption of tariffs for U.S. geography impacted EBITDA margin."
                   ]
                 }
               ]
@@ -21262,107 +21471,78 @@
               "title": "Order Book & Demand",
               "key_figures": [
                 {
-                  "label": "Sales volume for Q2 FY26",
-                  "value": "70252",
-                  "unit": "MT",
-                  "period": "Q2 FY26",
+                  "label": "Sales volume (Q1 FY26)",
+                  "value": "80,664",
+                  "unit": "metric tons",
+                  "period": "Q1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Sales volume for H1 FY26",
-                  "value": "150916",
-                  "unit": "MT",
-                  "period": "H1 FY26",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Sales Volume",
-                  "points": [
-                    "For Q2 FY26, sales volume stood at 70,252 MT, a de-growth of 4% year-on-year.",
-                    "For H1 FY26, sales volumes were 150,916 MT, also a de-growth of 4% year-on-year."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "GEO",
-              "title": "Geography & Distribution",
-              "key_figures": [
-                {
-                  "label": "U.S. sales volume impact",
-                  "value": "10",
+                  "label": "India sales volume contribution",
+                  "value": "35",
                   "unit": "%",
-                  "period": "last year",
+                  "period": "Q1 FY26",
                   "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "U.S. Market Challenges",
-                  "points": [
-                    "U.S. sales accounted for approximately 10% of last year's sales volume, impacted by increased tariffs.",
-                    "The U.S. increased import duties on India to 50%, severely impacting sales.",
-                    "There is optimism regarding the early conclusion of a trade agreement between India and the U.S."
-                  ]
                 },
                 {
-                  "label": "European Market",
-                  "points": [
-                    "The European market is facing challenges, but there is hope for easing headwinds.",
-                    "Balkrishna Industries is focusing on strengthening its market position in Europe."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "SUP",
-              "title": "Supply Chain & Operations",
-              "key_figures": [
-                {
-                  "label": "Freight cost as a percentage of sales",
-                  "value": "6-7",
+                  "label": "India sales volume growth",
+                  "value": "14.4",
                   "unit": "%",
-                  "period": "Q2 FY26",
+                  "period": "YoY",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Inventory and Regulations",
+                  "label": "Demand Environment",
                   "points": [
-                    "Created inventory of raw materials to comply with EUDR regulations effective from 1st Jan '26.",
-                    "Freight cost is around 6% to 7% of total sales."
+                    "The ordering cycle was volatile due to tariff-related disruptions.",
+                    "A 90-day pause on tariffs led to a gradual return to normalcy.",
+                    "Complete normalcy is expected once a permanent tariff structure is in place."
                   ]
                 }
               ]
             },
             {
-              "id": "MKT",
-              "title": "Market & Customer Strategy",
-              "key_figures": [],
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "Europe sales decline",
+                  "value": "20",
+                  "unit": "%",
+                  "period": "YoY",
+                  "kind": "reported"
+                }
+              ],
               "subsections": [
                 {
-                  "label": "Brand and Market Position",
+                  "label": "Geographical Performance",
                   "points": [
-                    "BKT received the Excellence level award from Caterpillar's Global Supplier Excellence recognition program for the fourth consecutive year.",
-                    "BKT has been named the title sponsor for the Australia, India Men's ODI and T20s International Series.",
-                    "The company is focusing on strengthening its leadership across regions and end segments."
+                    "Americas witnessed a slight degrowth due to macroeconomic conditions.",
+                    "Europe experienced a decline due to weak farmer sentiments and higher input costs."
                   ]
                 }
               ]
             },
             {
-              "id": "STRAT",
-              "title": "Strategic Initiatives & M&A",
-              "key_figures": [],
+              "id": "MFG",
+              "title": "Manufacturing & Capacity",
+              "key_figures": [
+                {
+                  "label": "Capex plan",
+                  "value": "3,500",
+                  "unit": "INR crore",
+                  "period": "next 3 years",
+                  "kind": "guidance"
+                }
+              ],
               "subsections": [
                 {
-                  "label": "Strategic Focus",
+                  "label": "Capex and Expansion",
                   "points": [
-                    "Strategic initiatives include enhancing presence in the Indian market and expanding the carbon black business.",
-                    "The company is investing in branding, infrastructure, and manpower to strengthen its foundation."
+                    "Capex for OTR, Carbon Black, PCR, and CVR is expected to operationalize as per schedule.",
+                    "The Bhuj OTR facility and expanded rubber track line are in the testing phase."
                   ]
                 }
               ]
@@ -21375,8 +21555,8 @@
                 {
                   "label": "Tariff and Geopolitical Risks",
                   "points": [
-                    "Tariff-related headwinds intensified with the U.S. increasing import duties on India to 50%.",
-                    "Geopolitical and macro environment outside India remains uncertain, warranting cautious optimism."
+                    "Tariff uncertainty and geopolitical tensions present significant challenges.",
+                    "The U.S. tariff is currently 10%, shared between customers and the company."
                   ]
                 }
               ]
@@ -21387,10 +21567,10 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Long-term Vision",
+                  "label": "Market Outlook",
                   "points": [
-                    "The company aims to achieve INR23,000 crores in revenue by 2030.",
-                    "Balkrishna Industries is well-positioned for long-term growth with continued expansion of market reach and additional product lines."
+                    "The company expects to outperform and improve market share as demand stabilizes.",
+                    "Full year margin guidance remains at 24%-25%."
                   ]
                 }
               ]
@@ -21398,308 +21578,17 @@
           ],
           "guidance_ledger": [
             {
-              "metric": "Revenue",
-              "horizon": "2030",
-              "statement": "Achieve INR23,000 crores in revenue by 2030.",
+              "metric": "Capex operationalization",
+              "horizon": "next 3 years",
+              "statement": "Capex for OTR, Carbon Black, PCR, and CVR are expected to operationalize as per schedule.",
               "specificity": "specific",
-              "direction": "up",
+              "direction": "flat",
               "status": "new"
             },
             {
-              "metric": "EBITDA Margin",
+              "metric": "EBITDA margin",
               "horizon": "FY26",
-              "statement": "We strive to maintain EBITDA margins in the range of 24% to 25%.",
-              "specificity": "specific",
-              "direction": "flat",
-              "status": "no_mention"
-            }
-          ],
-          "risk_register": [
-            {
-              "risk": "U.S. tariff increase to 50%",
-              "status": "new",
-              "note": "Severely impacting U.S. sales."
-            },
-            {
-              "risk": "Geopolitical and macro environment uncertainty",
-              "status": "new",
-              "note": "Particularly outside India, warrants cautious optimism."
-            },
-            {
-              "risk": "Geopolitical environment and macroeconomic scenario",
-              "status": "no_mention",
-              "note": "Continues to present significant challenges across key export markets."
-            },
-            {
-              "risk": "Ongoing conflicts, trade tensions, and economic uncertainties",
-              "status": "no_mention",
-              "note": "Influence cautious sentiments among customers."
-            },
-            {
-              "risk": "Continued tariff uncertainty",
-              "status": "no_mention",
-              "note": "Further compounded the situation."
-            }
-          ],
-          "themes": [
-            {
-              "label": "Tariff Impact",
-              "direction": "negative",
-              "note": "U.S. tariffs increased to 50%, impacting sales.",
-              "section_ref": "GEO"
-            },
-            {
-              "label": "Geopolitical Challenges",
-              "direction": "mixed",
-              "note": "Uncertainty outside India warrants cautious optimism.",
-              "section_ref": "RISK"
-            },
-            {
-              "label": "India Market Strength",
-              "direction": "positive",
-              "note": "Focus on strengthening market position in India.",
-              "section_ref": "GEO"
-            },
-            {
-              "label": "Capex Execution",
-              "direction": "neutral",
-              "note": "Capex projects are on schedule with significant spend in H1 FY26.",
-              "section_ref": "FIN"
-            },
-            {
-              "label": "EBITDA Margin Stability",
-              "direction": "neutral",
-              "note": "Margins impacted by geographic and product mix changes.",
-              "section_ref": "FIN"
-            }
-          ],
-          "key_takeaways": [
-            "Tariff-related headwinds intensified with the U.S. increasing import duties on India to 50%, severely impacting U.S. sales.",
-            "The company received the Excellence level award from Caterpillar's Global Supplier Excellence recognition program for the fourth consecutive year.",
-            "BKT has been named the title sponsor for the Australia, India Men's ODI and T20s International Series.",
-            "The company aims to achieve INR23,000 crores in revenue by 2030.",
-            "Stand-alone revenue for Q2 FY26 was INR2,360 crore, with a stand-alone EBITDA of INR500 crores and a margin of 21.5%.",
-            "Capex spend for H1 FY26 was approximately INR1,737 crores, with projects going as per schedule.",
-            "The company is focusing on strengthening its market position in India and Europe, while driving incremental growth from the rest of the world markets."
-          ],
-          "pressing_questions": [
-            "How soon can volumes in the U.S. market recover once tariffs normalize?",
-            "What is the expected capex for the next 2 years given the plan of INR35 billion?",
-            "How is the end market in the U.S. reacting to differential tariffs?",
-            "What is the impact of EUDR regulations on margins?"
-          ]
-        },
-        {
-          "company": "Balkrishna Industries Ltd",
-          "ticker": "BALKRISIND",
-          "industry": "Tyres & Rubber Products",
-          "country": "India",
-          "concall_date": "2025-08-01",
-          "source": "transcript",
-          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=be482f02-176d-4e58-a386-3e8eaa174edc.pdf",
-          "model": "gpt-4o",
-          "generated_at": "2026-07-22T20:07:48.898Z",
-          "summary": "Balkrishna Industries Ltd. anticipates a stable demand environment and aims to improve market share despite challenges in international markets, with ongoing capex projects expected to operationalize as scheduled.",
-          "sections": [
-            {
-              "id": "FIN",
-              "title": "Financial Performance",
-              "key_figures": [
-                {
-                  "label": "Sales Volume",
-                  "value": "80,664",
-                  "unit": "metric tons",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Stand-alone Revenue",
-                  "value": "2,759",
-                  "unit": "INR crores",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Gross Profit Margin",
-                  "value": "35",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Stand-alone EBITDA",
-                  "value": "655",
-                  "unit": "INR crores",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "EBITDA Margin",
-                  "value": "23.8",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Profit After Tax",
-                  "value": "287",
-                  "unit": "INR crores",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "M2M Loss",
-                  "value": "154",
-                  "unit": "INR crores",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "First Interim Dividend",
-                  "value": "4",
-                  "unit": "INR per equity share",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Euro-INR Realization",
-                  "value": "93.60",
-                  "unit": "INR",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Financial Highlights",
-                  "points": [
-                    "Stand-alone revenue for the quarter stood at INR2,759 crores, including realized loss on forex pertaining to sales of INR1 crores.",
-                    "The gross profit margin in Q1 was lower due to product mix impact and 35% of sales volume from India.",
-                    "Stand-alone EBITDA for the quarter was INR655 crores with a margin of 23.8%.",
-                    "Profit after tax for the quarter was INR287 crores, down approximately 40% due to M2M loss of INR154 crores.",
-                    "The Board of Directors declared a first interim dividend of INR4 per equity share."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "ORD",
-              "title": "Order Book & Demand",
-              "key_figures": [
-                {
-                  "label": "India Sales Volume Contribution",
-                  "value": "35",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "India Sales Volume Growth",
-                  "value": "14.4",
-                  "unit": "%",
-                  "period": "YoY",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Demand Environment",
-                  "points": [
-                    "Q1 FY26 was volatile due to tariff-related disruptions, with a volatile ordering cycle in April.",
-                    "Post 90-day pause announcement on tariffs, there was a gradual return to normalcy.",
-                    "India business continues to be strong, contributing approximately 35% to sales volumes and 14.4% growth YoY."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "MFG",
-              "title": "Manufacturing & Capacity",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Capex and Operational Highlights",
-                  "points": [
-                    "The earlier announced capex of OTR, along with newly announced capex for Carbon Black, PCR, and CVR are expected to operationalize as per schedule.",
-                    "The new Bhuj OTR facility and expanded rubber track line went live in Q1 '26, currently in testing phase."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "GEO",
-              "title": "Geography & Distribution",
-              "key_figures": [
-                {
-                  "label": "Europe Sales Decline",
-                  "value": "20",
-                  "unit": "%",
-                  "period": "YoY",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Geographical Performance",
-                  "points": [
-                    "Americas witnessed a slight degrowth due to macroeconomic conditions.",
-                    "Europe saw a 20% YoY decline due to weak farmer sentiments and higher input costs.",
-                    "The geopolitical environment and macroeconomic scenario present significant challenges across key export markets."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "SUP",
-              "title": "Supply Chain & Operations",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Tariff Impact",
-                  "points": [
-                    "Pre-tariff announcements, the company was subject to a nominal tariff charge, now increased to a little over 10%.",
-                    "In the U.S., the current tariff is 10%, shared by customers and the company.",
-                    "The tariff impact in the U.S. is shared 60% by customers and 40% by the company."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "RISK",
-              "title": "Risks & External Factors",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "External Challenges",
-                  "points": [
-                    "The geopolitical environment and macroeconomic scenario continue to present significant challenges.",
-                    "Ongoing conflicts, trade tensions, and economic uncertainties influence cautious sentiments among customers.",
-                    "Continued tariff uncertainty has compounded the situation."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "GUID",
-              "title": "Guidance & Outlook",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Outlook",
-                  "points": [
-                    "The company expects to further outperform and improve market share as demand stabilizes.",
-                    "Too early to provide a specific number for FY '26 outlook due to uncertainties.",
-                    "The company strives to maintain EBITDA margins in the range of 24% to 25%."
-                  ]
-                }
-              ]
-            }
-          ],
-          "guidance_ledger": [
-            {
-              "metric": "EBITDA Margin",
-              "horizon": "FY26",
-              "statement": "We strive to maintain EBITDA margins in the range of 24% to 25%.",
+              "statement": "Full year margin guidance remains at 24%-25%.",
               "specificity": "specific",
               "direction": "flat",
               "status": "new"
@@ -21707,61 +21596,57 @@
           ],
           "risk_register": [
             {
-              "risk": "Geopolitical environment and macroeconomic scenario",
+              "risk": "Tariff uncertainty",
               "status": "escalated",
-              "note": "Continues to present significant challenges across key export markets."
+              "note": "Continued tariff uncertainty has compounded challenges in international markets."
             },
             {
-              "risk": "Ongoing conflicts, trade tensions, and economic uncertainties",
-              "status": "escalated",
-              "note": "Influence cautious sentiments among customers."
-            },
-            {
-              "risk": "Continued tariff uncertainty",
-              "status": "escalated",
-              "note": "Further compounded the situation."
+              "risk": "Geopolitical tensions",
+              "status": "stable",
+              "note": "Ongoing conflicts and trade tensions influence cautious sentiments among customers."
             }
           ],
           "themes": [
             {
-              "label": "Tariff Impact",
+              "label": "Tariff impact",
               "direction": "negative",
-              "note": "Tariff-related disruptions affected the ordering cycle and increased costs.",
-              "section_ref": "SUP"
-            },
-            {
-              "label": "Geopolitical Challenges",
-              "direction": "negative",
-              "note": "Geopolitical environment and macroeconomic scenario present significant challenges.",
+              "note": "Tariff-related disruptions affected the ordering cycle and margins.",
               "section_ref": "RISK"
             },
             {
-              "label": "India Market Strength",
+              "label": "Geopolitical challenges",
+              "direction": "negative",
+              "note": "Geopolitical tensions and macroeconomic conditions impacted key export markets.",
+              "section_ref": "RISK"
+            },
+            {
+              "label": "India growth",
               "direction": "positive",
-              "note": "India business continues to be strong with significant sales volume contribution and growth.",
+              "note": "India sales volumes grew by 14.4% year-on-year, contributing significantly to overall sales.",
               "section_ref": "ORD"
             },
             {
-              "label": "Capex Execution",
+              "label": "Capex execution",
               "direction": "neutral",
-              "note": "Capex projects are expected to operationalize as per schedule.",
+              "note": "Capex projects are on track to operationalize as per schedule.",
               "section_ref": "MFG"
             },
             {
-              "label": "EBITDA Margin Stability",
+              "label": "Margin guidance",
               "direction": "neutral",
-              "note": "The company aims to maintain EBITDA margins in the range of 24% to 25%.",
+              "note": "The company maintains its full year margin guidance of 24%-25%.",
               "section_ref": "GUID"
             }
           ],
           "key_takeaways": [
             "Q1 FY26 was a volatile quarter due to tariff-related disruptions, but normalcy is gradually returning.",
             "Sales volume for the quarter was 80,664 metric tons, showing resilience despite global headwinds.",
-            "India business remains strong, contributing 35% to sales volumes with 14.4% growth YoY.",
-            "Stand-alone revenue for the quarter was INR2,759 crores, with EBITDA at INR655 crores and a margin of 23.8%.",
-            "Profit after tax was INR287 crores, down 40% due to M2M loss of INR154 crores.",
-            "The Board declared a first interim dividend of INR4 per equity share.",
-            "The company expects to maintain EBITDA margins in the range of 24% to 25%."
+            "India contributed approximately 35% to sales volumes with a 14.4% growth year-on-year.",
+            "Stand-alone revenue for the quarter was INR2,759 crores, with an EBITDA margin of 23.8%.",
+            "Profit after tax stood at INR287 crores, down 40% primarily due to M2M loss of INR154 crores.",
+            "The U.S. tariff is currently 10%, shared between customers and the company.",
+            "Capex for OTR, Carbon Black, PCR, and CVR is expected to operationalize as per schedule.",
+            "Full year margin guidance remains at 24%-25%."
           ],
           "pressing_questions": []
         }
