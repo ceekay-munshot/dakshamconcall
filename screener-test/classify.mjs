@@ -143,6 +143,7 @@ const SYSTEM_PROMPT = [
   "You do NOT add opinions or analysis of your own.",
   "key_figures must carry EVERY quantitative disclosure in that section — every number the summary states, with its exact value, unit, period and kind. If the summary states a number, it MUST appear.",
   "For the Financial Performance section, capture the standard result rows as separate key_figures whenever the source gives them: revenue (quarter and full-year), revenue growth (YoY and, if stated, QoQ), EBITDA, EBITDA margin, EBITDA growth, PAT and PAT growth. Do not fold a growth or margin figure into another row — each is its own key_figure.",
+  "OPERATIONAL KPIs ARE AS IMPORTANT AS P&L FIGURES — capture every one the source states as its own key_figure and never drop it to save space: subscriber / customer / user / member / account counts, ARPU, net adds, churn, volumes and realizations, usage / data-per-user, utilization, occupancy, order book / backlog / pipeline, store / outlet / branch counts, capacity (installed and planned), patents, and any per-segment or per-brand operating metric. If the summary states such a number anywhere, it MUST appear in key_figures — a missing subscriber count, ARPU or volume is a FAILURE, exactly as a missing revenue figure would be.",
   "Classify every disclosure by its MEANING, not by a keyword in its heading: a telecom or digital-services BUSINESS update belongs in Segment & Product Performance (not Product & Technology); a green-energy or plant CAPACITY note belongs in Manufacturing & Capacity; a financing/telecom-business number is a Segment figure, not a Product & Technology one.",
   "subsections must carry the real thematic detail as full points (reuse the source's own headings as labels where possible), not one-line boil-downs.",
   "A subsections point should EXPLAIN a figure (the driver, cause or 'why'), not merely restate a number that already appears in key_figures. Never assert a causal claim the source does not support (e.g. do not attribute one movement to two contradictory causes).",
@@ -289,14 +290,15 @@ const EDITED_SCHEMA = {
 const EDITOR_SYSTEM = [
   "You are a meticulous equity-research EDITOR. You are given a company's earnings-call tear sheet already organized into sections, each with a key_figures table (for CONTEXT only) and prose 'points'.",
   "Return ONLY the curated prose (subsections) for each section — never the key_figures.",
-  "Your job is to REMOVE REDUNDANCY and improve organization, never to add opinion or drop real information:",
-  "1. Drop a point that merely restates a number already in that section's key_figures. If the point also gives a driver/cause/comparison (the 'why'), keep ONLY that explanatory part.",
-  "2. If the same point appears in more than one section, keep it once — in its single best-fit section — and drop the rest.",
-  "3. Drop filler that carries no specific, decision-relevant information.",
-  "4. If a causal claim is logically inconsistent, correct it to what the source supports or drop it — never keep an incoherent statement.",
-  "5. Put each point in the section that fits its MEANING, not a keyword (a telecom/digital-services business point belongs in Segment & Product Performance, not Product & Technology; a green-energy capacity note belongs in Manufacturing & Capacity).",
-  "6. Order the sections and the points within each MOST-IMPORTANT FIRST.",
-  "PRESERVE every specific number, named entity and distinct fact that is not a pure duplicate. Reuse the source's own sub-topic labels. Output only the schema.",
+  "OVERRIDING RULE — PRESERVE INFORMATION. Losing a specific fact is far worse than leaving some repetition. When in ANY doubt about a point, KEEP IT. A little redundancy is acceptable; dropping information is not. Bias heavily toward keeping.",
+  "You may remove a point ONLY when it is truly redundant, i.e. one of these two cases:",
+  "1. It is a near-verbatim DUPLICATE of another point you are keeping (same fact, no new specific) — keep one copy, drop the exact duplicate.",
+  "2. It does NOTHING but restate a number already in this section's key_figures AND adds no driver, cause, comparison, or any other specific. If it adds even a little 'why' or any extra detail, KEEP it.",
+  "NEVER drop a point that carries a unique number, named entity, date, place, product, brand, segment, KPI, or causal driver that is not already present in a point you keep. If you are unsure whether a detail is unique, treat it as unique and KEEP the point.",
+  "Do NOT compress, merge-away, or shorten points to save space — fidelity to the source's specifics is the goal, not compactness.",
+  "If a causal claim is plainly self-contradictory, correct it to what the source supports — do not drop the underlying fact.",
+  "You SHOULD still improve ORGANIZATION, which never removes information: put each point in the section that fits its MEANING (a telecom/digital-services business point belongs in Segment & Product Performance, not Product & Technology; a green-energy capacity note belongs in Manufacturing & Capacity), and order the sections and the points within each MOST-IMPORTANT FIRST.",
+  "PRESERVE every specific number, named entity and distinct fact. Reuse the source's own sub-topic labels. Output only the schema.",
 ].join(" ");
 
 /**

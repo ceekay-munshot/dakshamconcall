@@ -84,25 +84,40 @@ opinions of our own.
   dedups by month so the date upgrade never creates a duplicate quarter.
 
 ## Open items / what's next (start here)
-1. **PR #22 (BPCL scraper fix) — OPEN, merge + verify.** BPCL failed because its
-   latest call is audio-only (no transcript PDF) and the AI-summary button loads
-   an async modal we read too early. Fix: read the button's
-   `data-url="/concalls/summary/<id>/"` and fetch that endpoint directly (with
-   `X-Requested-With: XMLHttpRequest`), first, before the click path. Additive
-   with fallback (can't regress working companies). **Merge it, then re-run BPCL**
-   through the analyze workflow to confirm (endpoint needs Screener auth → CI only).
-2. **Validate the editor pass (PR #21) on ONE company** before it reprocesses
-   everything: trigger the analyze workflow on RELIANCE or UltraTech, eyeball the
-   tear sheet (tighter prose, no restated numbers, every figure intact, real
-   date), then tune the editor prompt in `classify.mjs` if it's too aggressive or
-   not enough. Kill switch: `TEARSHEET_EDITOR=0`.
-3. **Screener free-tier quota.** The free account gets **10 concall AI-summary
+PRs #21 (editor pass + real dates) and #22 (BPCL scraper fix) are **both merged to
+`main`**. RELIANCE was validated live (run on the review branch, 2026-07-27) — see
+below. Current work continues on branch
+**`claude/daksham-concall-tracker-handoff-pm9vc1`** (restart from `main` after each
+merge, same as before).
+
+1. **Editor pass validated on RELIANCE — works, but the first pass lost data.**
+   The editor did its job: prose 85→25 points, "Product & Technology" re-filed into
+   "Segment & Product Performance" by meaning, **all 22 figures preserved**, no
+   errors; new P&L rows (EBITDA/PAT growth, margins) captured. BUT the **first-pass
+   extraction** (gpt-4o, upstream of the editor) dropped ~11 real **Jio operational
+   KPIs** vs the prior run (27→22 figs): 5G users 285m, ARPU 215.6, home-broadband
+   28.6m, AirFiber 14m, usage, patents 4,500, RCPL rev 8,600. **Client directive:
+   do NOT lose data — a little repetition is fine.** Fix applied in `classify.mjs`
+   (this branch): (a) first-pass `SYSTEM_PROMPT` now makes **operational KPIs as
+   mandatory as P&L rows**; (b) `EDITOR_SYSTEM` rewritten **conservative** — remove
+   only near-verbatim duplicates / pure figure-restatements, keep on any doubt.
+   **NEXT: re-run RELIANCE** and confirm the Jio KPIs return (figs back toward 27)
+   and prose stays complete. Kill switch still `TEARSHEET_EDITOR=0`.
+2. **Displayed-quarter date still month-default.** `preciseConcallDate()` works —
+   the 3 history quarters now show real days (2026-04-24, 2026-01-16, 2025-10-17,
+   from transcripts). But the **latest** quarter uses the AI summary, which lacks
+   the call date, so it stays `2026-07-01`. TODO: for `ai_summary` latest quarters,
+   also read the day from the latest **transcript PDF** as a date-only source.
+3. **BPCL re-run still pending.** The RELIANCE run already proved PR #22's direct
+   `/concalls/summary/<id>/` fetch works live (12,694 chars). Still worth a BPCL
+   dispatch to formally confirm; it draws 1 metered summary view.
+4. **Screener free-tier quota.** The free account gets **10 concall AI-summary
    views / 30 days** — the `/concalls/summary/<id>/` endpoint is metered. Our data
    is **10 summaries + 59 free BSE transcript PDFs**; the transcript fallback is
    what covers all ~20 companies. PR #22 fetches the *metered* endpoint, so it
-   draws down the 10/month. Decide: add a **transcript fallback for BPCL** when
-   the summary quota is exhausted, or move the `SCREENER_EMAIL` account to
-   Screener Premium.
+   draws down the 10/month. BPCL's latest call is **audio-only (no transcript)**, so
+   its latest quarter can ONLY come from the metered endpoint. Decide: transcript
+   fallback where possible, or move `SCREENER_EMAIL` to Screener Premium.
 
 ## Client's north-star (from the 41-min review)
 Reverse-engineering / "deselection": keep everything but ruthlessly remove
