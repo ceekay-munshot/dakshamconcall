@@ -97,12 +97,18 @@ merge, same as before).
    extraction** (gpt-4o, upstream of the editor) dropped ~11 real **Jio operational
    KPIs** vs the prior run (27→22 figs): 5G users 285m, ARPU 215.6, home-broadband
    28.6m, AirFiber 14m, usage, patents 4,500, RCPL rev 8,600. **Client directive:
-   do NOT lose data — a little repetition is fine.** Fix applied in `classify.mjs`
-   (this branch): (a) first-pass `SYSTEM_PROMPT` now makes **operational KPIs as
-   mandatory as P&L rows**; (b) `EDITOR_SYSTEM` rewritten **conservative** — remove
-   only near-verbatim duplicates / pure figure-restatements, keep on any doubt.
-   **NEXT: re-run RELIANCE** and confirm the Jio KPIs return (figs back toward 27)
-   and prose stays complete. Kill switch still `TEARSHEET_EDITOR=0`.
+   do NOT lose data — keep the fullest qualitative detail; a little repetition is
+   fine; strip repeats ONLY.** Fix applied in `classify.mjs` (this branch):
+   (a) first-pass `SYSTEM_PROMPT` now says **capture EVERY number of ANY kind** —
+   the financial/operational lists are explicitly ILLUSTRATIVE examples, **not a
+   closed checklist** (an example list must never become a filter that drops an
+   unlisted metric); (b) new **consolidated-vs-standalone** rule: when the source
+   gives both for the same metric, keep **consolidated only**; use standalone only
+   when no consolidated is given; (c) `EDITOR_SYSTEM` rewritten **conservative** —
+   the only thing it strips is repetition (a near-verbatim duplicate, or prose that
+   only restates a table figure); keep on any doubt. **NEXT: re-run RELIANCE** and
+   confirm the Jio KPIs return (figs back toward 27) and prose stays complete. Kill
+   switch still `TEARSHEET_EDITOR=0`.
 2. **Displayed-quarter date still month-default.** `preciseConcallDate()` works —
    the 3 history quarters now show real days (2026-04-24, 2026-01-16, 2025-10-17,
    from transcripts). But the **latest** quarter uses the AI summary, which lacks
