@@ -277,10 +277,13 @@ async function findConcalls(page, ticker) {
       const links = [...r.querySelectorAll("a, button")].map((a) => ({
         text: (a.textContent || "").replace(/\s+/g, " ").trim(),
         href: a.getAttribute("href") || "",
+        // Screener's "AI Summary" button is a <button> with no href — it carries
+        // the summary endpoint in data-url and opens it in a modal via JS.
+        dataUrl: a.getAttribute("data-url") || "",
         tag: a.tagName.toLowerCase(),
       }));
       if (!links.length) continue;
-      const key = (dm ? dm[0] : "") + "|" + links.map((l) => l.href || l.text).join(",");
+      const key = (dm ? dm[0] : "") + "|" + links.map((l) => l.href || l.dataUrl || l.text).join(",");
       if (seen.has(key)) continue;
       seen.add(key);
       entries.push({ date: dm ? dm[0] : null, links, rowText: text.slice(0, 200) });
@@ -359,15 +362,36 @@ function parseSummaryText(fullText) {
  *  Reusable for BOTH the latest quarter and prior quarters (history). */
 async function fetchHostedSummary(context, entry) {
   const cat = categorize(entry.links);
-  const hosted = [cat.summary, cat.notes].find(
-    (l) => l && (l.href.startsWith("/") || l.href.includes("screener.in"))
-  );
-  if (!hosted) return null;
-  const url = hosted.href.startsWith("http") ? hosted.href : BASE + hosted.href;
+  // Screener serves each concall's AI summary at /concalls/summary/<id>/. The
+  // "AI Summary" button carries that in data-url and opens it in a modal via JS;
+  // fetching the endpoint directly is far more robust than clicking and racing
+  // the async drawer to render. Prefer that; fall back to any hosted summary URL.
+  const summaryUrl =
+    entry.links.map((l) => l.dataUrl || l.href).find((u) => u && /\/concalls\/summary\//.test(u)) ||
+    [cat.summary, cat.notes]
+      .map((l) => l && (l.dataUrl || l.href))
+      .find((u) => u && (u.startsWith("/") || u.includes("screener.in")));
+  if (!summaryUrl) return null;
+  const url = summaryUrl.startsWith("http") ? summaryUrl : BASE + summaryUrl;
   try {
+    // Fetch the way the modal does — an AJAX request (a plain navigation can 302
+    // back to the company page) — then render the returned fragment in a
+    // throwaway page to read clean, structured text. Fall back to navigation.
+    let html = "";
+    try {
+      const res = await context.request.get(url, {
+        headers: { "X-Requested-With": "XMLHttpRequest", Referer: BASE + "/", accept: "text/html,*/*" },
+        timeout: 45000,
+      });
+      if (res.ok()) html = await res.text();
+      else warn("summary fragment status", res.status());
+    } catch (e) {
+      warn("summary fragment fetch failed", e.message);
+    }
     const sub = await context.newPage();
-    await sub.goto(url, { waitUntil: "domcontentloaded", timeout: 45000 });
-    await sub.waitForTimeout(1000);
+    if (html && html.length > 200) await sub.setContent(html, { waitUntil: "domcontentloaded" });
+    else await sub.goto(url, { waitUntil: "domcontentloaded", timeout: 45000 });
+    await sub.waitForTimeout(600);
     const txt = await sub.evaluate(() => {
       const main = document.querySelector("main, article, .card, #main, .container") || document.body;
       return (main.innerText || "").trim();
@@ -389,6 +413,14 @@ async function fetchHostedSummary(context, entry) {
  */
 async function extractAiSummary(page, context, entry, companyUrl) {
   const cat = categorize(entry.links);
+
+  // Strategy A (preferred): fetch the /concalls/summary/<id>/ endpoint directly
+  // from the button's data-url — deterministic, with no modal render to race.
+  const direct = await fetchHostedSummary(context, entry);
+  if (direct) {
+    log("AI summary via direct /concalls/summary/ fetch");
+    return direct;
+  }
 
   // Strategy A0: Screener's AI concall summary opens from a BUTTON (no href).
   // Click it to reveal the content, then read the modal / expanded block.
@@ -428,13 +460,6 @@ async function extractAiSummary(page, context, entry, companyUrl) {
     } catch (e) {
       warn("modal summary read failed", e.message);
     }
-  }
-
-  // Strategy A: a Screener-hosted "summary"/"notes" link -> open + read it.
-  const hostedResult = await fetchHostedSummary(context, entry);
-  if (hostedResult) {
-    log("AI summary via hosted link");
-    return hostedResult;
   }
 
   // Strategy B: summary rendered inline on the company page. Anchor on the LEAF
