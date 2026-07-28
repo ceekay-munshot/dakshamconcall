@@ -106,9 +106,18 @@ merge, same as before).
    gives both for the same metric, keep **consolidated only**; use standalone only
    when no consolidated is given; (c) `EDITOR_SYSTEM` rewritten **conservative** —
    the only thing it strips is repetition (a near-verbatim duplicate, or prose that
-   only restates a table figure); keep on any doubt. **NEXT: re-run RELIANCE** and
-   confirm the Jio KPIs return (figs back toward 27) and prose stays complete. Kill
-   switch still `TEARSHEET_EDITOR=0`.
+   only restates a table figure); keep on any doubt.
+   BUT prompt-tuning alone did NOT fix it — a re-run swung to **18 figs** and the
+   Jio KPIs were still missing, because single-pass gpt-4o extraction on a long
+   source is inherently incomplete/variable (27→22→18 across runs). **Real fix
+   shipped:** a **key_figures completeness ("double-check") pass** in `classify.mjs`
+   (`completeKeyFigures`, wired into `classifyQuarter`, runs on EVERY quarter): a
+   second focused LLM call re-reads the source for numbers MISSING from the first
+   pass and merges them back — **only ADDS (deduped), never removes**; loops up to 2
+   rounds, stops when nothing new; safe on error. Gated by **`FIGURES_COMPLETENESS`**
+   (set `0` to disable). Offline-tested 12/12. **NEXT: re-run RELIANCE** and confirm
+   the Jio KPIs are captured (figs ≥ prior runs) and stable. Editor kill switch still
+   `TEARSHEET_EDITOR=0`.
 2. **Displayed-quarter date still month-default.** `preciseConcallDate()` works —
    the 3 history quarters now show real days (2026-04-24, 2026-01-16, 2025-10-17,
    from transcripts). But the **latest** quarter uses the AI summary, which lacks
