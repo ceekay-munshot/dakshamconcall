@@ -190,6 +190,7 @@ const COMPLETION_SYSTEM = [
   "You are given a company's earnings-call SOURCE TEXT and the list of key_figures ALREADY extracted from it.",
   "Your ONLY job: return every quantitative disclosure that is present in the SOURCE but MISSING from the extracted list. Be exhaustive — you are the safety net against lost data.",
   "Treat a figure as MISSING unless the same metric with the same value is already in the extracted list (ignore trivial wording differences in the label).",
+  "A figure's VALUE must be a genuine QUANTITY — a number, percentage, currency amount, ratio, multiple, or count. Do NOT return qualitative statements, product or feature names, or narrative descriptions as figures; those belong in prose, not the numbers table.",
   "Hunt operational metrics as hard as financial ones: subscriber / customer / user / member counts, ARPU, net adds, churn, volumes, realizations, usage, utilization, occupancy, order book / backlog / pipeline, store / outlet counts, capacity, patents, and ANY per-segment or per-brand number — alongside every financial figure (revenue, growth, EBITDA, margins, PAT, debt, capex, ratios).",
   "CONSOLIDATED vs STANDALONE: if a metric appears on both bases, only the consolidated value belongs — do NOT surface the standalone duplicate as missing.",
   "For each missing figure return its value EXACTLY as stated, its unit and period if stated (else null), its kind, and the section id it best fits by MEANING.",
@@ -344,10 +345,12 @@ export async function classifyQuarter(scrape, priorGuidance = null, priorThemes 
     .filter((s) => SECTION_IDS.includes(s.id))
     .sort((a, b) => SECTION_IDS.indexOf(a.id) - SECTION_IDS.indexOf(b.id));
 
-  // Completeness ("double-check") pass: a single extraction is incomplete and
-  // varies run-to-run on long sources, so re-read the source and recover any
-  // figures it missed. Only ADDS (deduped) — can never lose a first-pass figure.
-  if (process.env.FIGURES_COMPLETENESS !== "0") {
+  // Completeness ("double-check") pass — only for ai_summary sources. Those are
+  // CONDENSED digests where a single extraction pass misses granular figures, so
+  // re-read and recover them. Full transcripts already surface plenty on the first
+  // pass, and over-asking on 80k chars overflows the JSON response, so skip them.
+  // Only ADDS (deduped) — can never lose a first-pass figure.
+  if (process.env.FIGURES_COMPLETENESS !== "0" && scrape.source === "ai_summary") {
     out.sections = await completeKeyFigures(out.sections, scrape.raw_text, {
       company: scrape.company,
       ticker: scrape.ticker,

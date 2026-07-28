@@ -115,9 +115,18 @@ merge, same as before).
    second focused LLM call re-reads the source for numbers MISSING from the first
    pass and merges them back — **only ADDS (deduped), never removes**; loops up to 2
    rounds, stops when nothing new; safe on error. Gated by **`FIGURES_COMPLETENESS`**
-   (set `0` to disable). Offline-tested 12/12. **NEXT: re-run RELIANCE** and confirm
-   the Jio KPIs are captured (figs ≥ prior runs) and stable. Editor kill switch still
-   `TEARSHEET_EDITOR=0`.
+   (set `0` to disable). Offline-tested 12/12. **VALIDATED LIVE** (run 30378981039):
+   the displayed quarter recovered **+57 figs → 73**, and ALL the missing Jio KPIs
+   are back (5G users 285m, ARPU ₹215.6, broadband 28.6m, AirFiber 14m, per-capita
+   43.7GB, patents ~4,500) plus much more real segment/operational detail. Two rough
+   edges seen + **tuned**: (i) on 80k-char transcripts the pass over-asked (Jan →143)
+   and overflowed the JSON response — so completeness now runs **only on `ai_summary`
+   sources** (condensed digests that actually miss figures; transcripts already
+   capture plenty on the first pass); (ii) a few qualitative notes were miscast as
+   figures — `COMPLETION_SYSTEM` now requires each value to be a **genuine quantity**
+   (number/%/currency/ratio/count), not a description. Editor kill switch still
+   `TEARSHEET_EDITOR=0`. NEXT: one confirming re-run (⚠️ watch the 10/mo Screener
+   quota — several views already spent this cycle).
 2. **Displayed-quarter date still month-default.** `preciseConcallDate()` works —
    the 3 history quarters now show real days (2026-04-24, 2026-01-16, 2025-10-17,
    from transcripts). But the **latest** quarter uses the AI summary, which lacks
