@@ -132,9 +132,18 @@ merge, same as before).
    from transcripts). But the **latest** quarter uses the AI summary, which lacks
    the call date, so it stays `2026-07-01`. TODO: for `ai_summary` latest quarters,
    also read the day from the latest **transcript PDF** as a date-only source.
-3. **BPCL re-run still pending.** The RELIANCE run already proved PR #22's direct
-   `/concalls/summary/<id>/` fetch works live (12,694 chars). Still worth a BPCL
-   dispatch to formally confirm; it draws 1 metered summary view.
+3. **BPCL — run 30383439638 FAILED, almost certainly the Screener free quota (not
+   a code bug).** Downloaded the run's `concalls-BPCL.html` artifact: BPCL's latest
+   (Jul 2026) "AI Summary" button markup is **identical** to RELIANCE's working one
+   (`class="concall-link" data-url="/concalls/summary/23251060/" data-is-bottom-modal`)
+   — so PR #22's direct fetch found the right URL. But the metered endpoint returned
+   <300 chars of readable text (silent null) → fell to the flaky click path → the
+   `no-summary-BPCL.png` shows the bottom-modal opening with content not yet loaded →
+   failed. RELIANCE fetched the SAME way ~1h earlier and worked, and we spent several
+   summary views on the RELIANCE re-runs — so the free-tier **10 views/30d quota is
+   the overwhelming likely cause**. BPCL's latest is audio-only (no transcript), so it
+   has NO free fallback. Added a clear log in `fetchHostedSummary` so a quota stub now
+   says so explicitly instead of a vague "failed". **Decision needed (item 4).**
 4. **Screener free-tier quota.** The free account gets **10 concall AI-summary
    views / 30 days** — the `/concalls/summary/<id>/` endpoint is metered. Our data
    is **10 summaries + 59 free BSE transcript PDFs**; the transcript fallback is
