@@ -63,6 +63,10 @@ jobs:
 
       - name: Analyze
         env:
+          # Paid/premium account first (no free-tier AI-summary quota); the free
+          # account below stays as the automatic fallback.
+          SCREENER_PREMIUM_EMAIL: ${{ secrets.SCREENER_PREMIUM_EMAIL }}
+          SCREENER_PREMIUM_PASSWORD: ${{ secrets.SCREENER_PREMIUM_PASSWORD }}
           SCREENER_EMAIL: ${{ secrets.SCREENER_EMAIL }}
           SCREENER_PASSWORD: ${{ secrets.SCREENER_PASSWORD }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}

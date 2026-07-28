@@ -149,8 +149,13 @@ merge, same as before).
    is **10 summaries + 59 free BSE transcript PDFs**; the transcript fallback is
    what covers all ~20 companies. PR #22 fetches the *metered* endpoint, so it
    draws down the 10/month. BPCL's latest call is **audio-only (no transcript)**, so
-   its latest quarter can ONLY come from the metered endpoint. Decide: transcript
-   fallback where possible, or move `SCREENER_EMAIL` to Screener Premium.
+   its latest quarter can ONLY come from the metered endpoint. **Resolution in
+   progress:** the pipeline now supports a **paid account with the free one as
+   fallback** — `launchAndLogin()` tries **`SCREENER_PREMIUM_EMAIL` /
+   `SCREENER_PREMIUM_PASSWORD`** first, then falls back to the existing
+   `SCREENER_EMAIL` / `SCREENER_PASSWORD` (old free creds untouched; free-only setups
+   still work). Add the two premium secrets in GitHub → Settings → Secrets → Actions,
+   then re-run BPCL. Premium removes the 10/month cap entirely.
 
 ## Client's north-star (from the 41-min review)
 Reverse-engineering / "deselection": keep everything but ruthlessly remove

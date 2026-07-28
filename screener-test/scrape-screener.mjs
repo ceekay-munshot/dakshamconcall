@@ -59,19 +59,48 @@ async function saveShot(page, name) {
    Browser + login
    ========================================================================== */
 export async function launchAndLogin() {
-  const email = process.env.SCREENER_EMAIL;
-  const password = process.env.SCREENER_PASSWORD;
-  if (!email || !password) throw new Error("SCREENER_EMAIL / SCREENER_PASSWORD not set");
+  // Prefer the PAID/premium account (no free-tier AI-summary quota), then fall back
+  // to the free account. The old free creds are left untouched — they're just the
+  // fallback. Order = premium first, free second; only the pairs that are set are
+  // tried. Credentials are never logged (only the tier name).
+  const creds = [
+    { email: process.env.SCREENER_PREMIUM_EMAIL, password: process.env.SCREENER_PREMIUM_PASSWORD, tier: "premium" },
+    { email: process.env.SCREENER_EMAIL, password: process.env.SCREENER_PASSWORD, tier: "free" },
+  ].filter((c) => c.email && c.password);
+  if (!creds.length) {
+    throw new Error(
+      "No Screener credentials set (need SCREENER_PREMIUM_EMAIL/SCREENER_PREMIUM_PASSWORD or SCREENER_EMAIL/SCREENER_PASSWORD)"
+    );
+  }
 
   const browser = await chromium.launch({ args: ["--no-sandbox", "--disable-dev-shm-usage"] });
-  const context = await browser.newContext({
-    userAgent:
-      "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
-    viewport: { width: 1440, height: 1200 },
-  });
-  const page = await context.newPage();
 
-  log("logging in…");
+  for (let i = 0; i < creds.length; i++) {
+    const { email, password, tier } = creds[i];
+    const context = await browser.newContext({
+      userAgent:
+        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+      viewport: { width: 1440, height: 1200 },
+    });
+    const page = await context.newPage();
+    log(`logging in… (${tier} account)`);
+    const loggedIn = await attemptScreenerLogin(page, email, password);
+    if (loggedIn) {
+      log(`login OK (${tier} account)`);
+      return { browser, context, page };
+    }
+    const more = i < creds.length - 1;
+    log(`login FAILED (${tier} account)${more ? " — falling back to the next credentials" : ""}`);
+    await context.close().catch(() => {});
+  }
+
+  await browser.close().catch(() => {});
+  throw new Error("Screener login failed for all configured accounts");
+}
+
+/** Attempt a login on `page` with one credential pair. Returns true on success.
+ *  Never throws (returns false) and never logs the credentials themselves. */
+async function attemptScreenerLogin(page, email, password) {
   await page.goto(`${BASE}/login/`, { waitUntil: "domcontentloaded", timeout: 60000 });
 
   const uField = 'input[name="username"], input[type="email"], #id_username';
@@ -118,10 +147,8 @@ export async function launchAndLogin() {
       .evaluate(() => (document.body.innerText || "").slice(0, 1200))
       .catch(() => "");
     log("LOGIN PAGE TEXT (first 1200 chars):\n" + bodyText);
-    throw new Error("Screener login failed (form still present / no logout link)");
   }
-  log("login OK");
-  return { browser, context, page };
+  return loggedIn;
 }
 
 /* ============================================================================
