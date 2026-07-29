@@ -262,20 +262,63 @@ export async function completeKeyFiguresOnce(sections, rawText, meta = {}) {
   return { sections, added };
 }
 
+/** Max source chars per completeness call. A whole 50-80k transcript asked for
+ *  "every missing number" at once overflows the model's response (observed:
+ *  "Unterminated string in JSON at position 61748"), which throws away the entire
+ *  round. Chunking bounds each answer so nothing is lost to truncation. */
+const COMPLETION_CHUNK_CHARS = 24000;
+const COMPLETION_CHUNK_OVERLAP = 500; // so a number split across a boundary is still seen
+
+/** Split text into overlapping chunks, preferring paragraph boundaries. */
+function chunkText(text, size = COMPLETION_CHUNK_CHARS, overlap = COMPLETION_CHUNK_OVERLAP) {
+  const s = String(text || "");
+  if (s.length <= size) return s ? [s] : [];
+  const out = [];
+  let i = 0;
+  while (i < s.length) {
+    let end = Math.min(i + size, s.length);
+    if (end < s.length) {
+      // back off to the last paragraph/sentence break in the final 20% of the window
+      const win = s.slice(i, end);
+      const cut = Math.max(win.lastIndexOf("\n\n"), win.lastIndexOf("\n"), win.lastIndexOf(". "));
+      if (cut > size * 0.8) end = i + cut;
+    }
+    out.push(s.slice(i, end));
+    if (end >= s.length) break;
+    i = Math.max(end - overlap, i + 1);
+  }
+  return out;
+}
+
 /**
- * Run the completeness pass until a round finds nothing new (or maxRounds hit).
- * On any error mid-way, whatever has been recovered so far is kept (never worse).
+ * Run the completeness pass over the whole source, chunking long text so no
+ * response is lost to truncation. Each chunk sees the figures recovered so far,
+ * so overlaps and repeats de-dupe instead of piling up. Short sources may repeat
+ * a round until nothing new appears. Only ADDS; on any error whatever has been
+ * recovered so far is kept (never worse than the first pass).
  */
 export async function completeKeyFigures(sections, rawText, meta = {}, maxRounds = 2) {
+  const chunks = chunkText(rawText);
+  if (!chunks.length) return sections;
   let cur = sections;
   let total = 0;
-  for (let r = 1; r <= maxRounds; r++) {
-    const { sections: next, added } = await completeKeyFiguresOnce(cur, rawText, meta);
-    cur = next;
-    total += added;
-    if (!added) break; // converged — nothing left to recover
+  // A chunked source is already swept piece by piece — one pass per chunk. A
+  // single-chunk source is cheap, so let it repeat until it converges.
+  const rounds = chunks.length > 1 ? 1 : maxRounds;
+  for (const chunk of chunks) {
+    for (let r = 1; r <= rounds; r++) {
+      const { sections: next, added } = await completeKeyFiguresOnce(cur, chunk, meta);
+      cur = next;
+      total += added;
+      if (!added) break; // converged for this chunk
+    }
   }
-  if (total) console.log(`[completeness] ${meta.ticker || "?"} @ ${meta.concall_date || "?"}: +${total} figure(s) recovered`);
+  if (total) {
+    console.log(
+      `[completeness] ${meta.ticker || "?"} @ ${meta.concall_date || "?"}: +${total} figure(s) recovered` +
+        (chunks.length > 1 ? ` (${chunks.length} chunks)` : "")
+    );
+  }
   return cur;
 }
 
@@ -345,12 +388,13 @@ export async function classifyQuarter(scrape, priorGuidance = null, priorThemes 
     .filter((s) => SECTION_IDS.includes(s.id))
     .sort((a, b) => SECTION_IDS.indexOf(a.id) - SECTION_IDS.indexOf(b.id));
 
-  // Completeness ("double-check") pass — only for ai_summary sources. Those are
-  // CONDENSED digests where a single extraction pass misses granular figures, so
-  // re-read and recover them. Full transcripts already surface plenty on the first
-  // pass, and over-asking on 80k chars overflows the JSON response, so skip them.
+  // Completeness ("double-check") pass — for EVERY source. A single extraction
+  // pass is incomplete and varies run to run on both condensed summaries AND long
+  // transcripts (a refresh moved HEROMOTOCO 45->28 and EICHERMOT 35->21 figures on
+  // transcript sources alone), so re-read the source and recover what it missed.
+  // Long text is chunked, which is what makes transcripts safe here.
   // Only ADDS (deduped) — can never lose a first-pass figure.
-  if (process.env.FIGURES_COMPLETENESS !== "0" && scrape.source === "ai_summary") {
+  if (process.env.FIGURES_COMPLETENESS !== "0") {
     out.sections = await completeKeyFigures(out.sections, scrape.raw_text, {
       company: scrape.company,
       ticker: scrape.ticker,

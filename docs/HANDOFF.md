@@ -120,13 +120,22 @@ merge, same as before).
    are back (5G users 285m, ARPU ₹215.6, broadband 28.6m, AirFiber 14m, per-capita
    43.7GB, patents ~4,500) plus much more real segment/operational detail. Two rough
    edges seen + **tuned**: (i) on 80k-char transcripts the pass over-asked (Jan →143)
-   and overflowed the JSON response — so completeness now runs **only on `ai_summary`
-   sources** (condensed digests that actually miss figures; transcripts already
-   capture plenty on the first pass); (ii) a few qualitative notes were miscast as
+   and overflowed the JSON response; (ii) a few qualitative notes were miscast as
    figures — `COMPLETION_SYSTEM` now requires each value to be a **genuine quantity**
    (number/%/currency/ratio/count), not a description. Editor kill switch still
-   `TEARSHEET_EDITOR=0`. NEXT: one confirming re-run (⚠️ watch the 10/mo Screener
-   quota — several views already spent this cycle).
+   `TEARSHEET_EDITOR=0`.
+   **The full refresh (run 30433378527) then exposed the remaining gap.** Restricting
+   completeness to `ai_summary` left transcript companies on the old one-pass
+   lottery, and 8 came back **poorer than before**: HEROMOTOCO 45→28, EICHERMOT
+   35→21, ASHOKLEY 49→40, JKCEMENT 26→18, BAJAJ-AUTO 25→19, APOLLOTYRE 27→24, INFY
+   22→21, UNOMINDA 34→33 — while the two WITH completeness jumped (RELIANCE 27→84,
+   BPCL →70). **Fixed:** `completeKeyFigures` now **chunks** the source
+   (`COMPLETION_CHUNK_CHARS` 24k + 500 overlap, split on paragraph breaks) so a long
+   transcript is swept piece by piece and no answer is lost to truncation — and it
+   runs on **every source again, transcripts included**. Chunk-tested 8/8 (bounded
+   chunks, full coverage, overlap de-dupes, mid-sweep error keeps what was
+   recovered). **NEXT: re-run the full refresh** (blank ticker) and confirm every
+   company is **≥ its pre-refresh figure count** (baseline = commit 53362d0).
 2. **Displayed-quarter date still month-default.** `preciseConcallDate()` works —
    the 3 history quarters now show real days (2026-04-24, 2026-01-16, 2025-10-17,
    from transcripts). But the **latest** quarter uses the AI summary, which lacks
