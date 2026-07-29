@@ -30417,7 +30417,7 @@
       "ticker": "JKCEMENT",
       "industry": "Cement & Cement Products",
       "country": "India",
-      "checked_at": "2026-07-24T16:59:01.948Z",
+      "checked_at": "2026-07-29T08:42:48.292Z",
       "quarters": [
         {
           "company": "J K Cements Ltd",
@@ -30428,8 +30428,8 @@
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ce6a4ed4-39c4-43b3-8108-3846b38dfefd.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-24T16:58:57.504Z",
-          "summary": "JK Cement Limited is focused on capacity expansion and maintaining market share, with plans to achieve 40 million tons by FY28 and 50 million tons by FY30. The company is also working on cost management amidst rising fuel costs and geopolitical challenges.",
+          "generated_at": "2026-07-29T08:42:44.380Z",
+          "summary": "JK Cement Limited is on track with its expansion plans, aiming for significant volume growth and maintaining its market share despite cost pressures and geopolitical challenges.",
           "sections": [
             {
               "id": "FIN",
@@ -30443,22 +30443,22 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Net Sales Growth (Standalone)",
-                  "value": "23",
-                  "unit": "%",
-                  "period": "YoY",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Net Sales Growth (Standalone)",
-                  "value": "5",
-                  "unit": "%",
-                  "period": "QoQ",
+                  "label": "Net Sales (Consolidated)",
+                  "value": "3,962",
+                  "unit": "INR Crores",
+                  "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
                   "label": "EBITDA (Standalone)",
                   "value": "639",
+                  "unit": "INR Crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA (Consolidated)",
+                  "value": "648",
                   "unit": "INR Crores",
                   "period": "Q1 FY27",
                   "kind": "reported"
@@ -30478,50 +30478,15 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Profit After Tax (Standalone)",
-                  "value": "291",
-                  "unit": "INR Crores",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Per Ton EBITDA (Standalone)",
-                  "value": "982",
-                  "unit": "INR",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Net Sales (Consolidated)",
-                  "value": "3,962",
-                  "unit": "INR Crores",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Net Sales Growth (Consolidated)",
-                  "value": "22",
-                  "unit": "%",
-                  "period": "YoY",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Net Sales Growth (Consolidated)",
-                  "value": "4",
-                  "unit": "%",
-                  "period": "QoQ",
-                  "kind": "reported"
-                },
-                {
-                  "label": "EBITDA (Consolidated)",
-                  "value": "648",
-                  "unit": "INR Crores",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
                   "label": "Profit Before Tax (Consolidated)",
                   "value": "406",
+                  "unit": "INR Crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Profit After Tax (Standalone)",
+                  "value": "291",
                   "unit": "INR Crores",
                   "period": "Q1 FY27",
                   "kind": "reported"
@@ -30566,16 +30531,9 @@
                 {
                   "label": "Quarterly Performance",
                   "points": [
-                    "Standalone net sales increased by 23% YoY and 5% QoQ, driven by product mix and price improvement.",
-                    "Standalone EBITDA margin was 16.9%, down from 18.5% in the previous quarter.",
-                    "Consolidated EBITDA was INR 648 crores, with a profit before tax of INR 406 crores."
-                  ]
-                },
-                {
-                  "label": "Debt Profile",
-                  "points": [
-                    "Gross debt stood at INR 5,551 crores as of 30th June, with a net debt of INR 3,864 crores.",
-                    "Net debt to EBITDA ratio was 1.69, and net debt to equity was 0.53."
+                    "Net sales increased by 23% YoY and 5% QoQ on a standalone basis, driven by product mix and price improvement.",
+                    "EBITDA margins decreased to 16.9% from 18.5% in the previous quarter and 21.9% in the previous year.",
+                    "Profit before tax decreased to INR423 crores from INR460 crores in the previous quarter and INR498 crores in the previous year."
                   ]
                 }
               ]
@@ -30583,35 +30541,14 @@
             {
               "id": "ORD",
               "title": "Order Book & Demand",
-              "key_figures": [
-                {
-                  "label": "Volume Growth (Grey Business)",
-                  "value": "19",
-                  "unit": "%",
-                  "period": "YoY",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Volume Growth (White Business)",
-                  "value": "11",
-                  "unit": "%",
-                  "period": "YoY",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Combined Volume Growth",
-                  "value": "18",
-                  "unit": "%",
-                  "period": "YoY",
-                  "kind": "reported"
-                }
-              ],
+              "key_figures": [],
               "subsections": [
                 {
                   "label": "Volume Growth",
                   "points": [
-                    "Grey business saw a 19% YoY growth in volumes, while white business grew by 11% YoY.",
-                    "Combined volume growth was 18% YoY, with a marginal 3% decline QoQ."
+                    "Grey business volumes grew by 19% YoY but were 2% lower QoQ.",
+                    "White business volumes grew by 11% YoY but were 5% lower QoQ.",
+                    "Combined volume growth was 18% YoY and 3% down QoQ."
                   ]
                 }
               ]
@@ -30621,6 +30558,13 @@
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
+                  "label": "Per Ton EBITDA",
+                  "value": "982",
+                  "unit": "INR",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
                   "label": "RMC Revenue",
                   "value": "35-40",
                   "unit": "INR Crores",
@@ -30628,7 +30572,7 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Paints Revenue",
+                  "label": "Paint Revenue",
                   "value": "125",
                   "unit": "INR Crores",
                   "period": "Q1 FY27",
@@ -30639,15 +30583,15 @@
                 {
                   "label": "RMC Business",
                   "points": [
-                    "RMC revenue was INR 35-40 crores in Q1, with plans to reach INR 100 crores quarterly by year-end.",
-                    "The company aims to have 100 RMC plants by FY28, with 17 currently operational."
+                    "17 RMC plants are operational with a target of 50 by FY27 and 100 by FY28.",
+                    "RMC business is expected to reach INR100 crores quarterly by year-end."
                   ]
                 },
                 {
-                  "label": "Paints Business",
+                  "label": "Paint Business",
                   "points": [
-                    "Paints revenue was INR 125 crores, achieving breakeven at the EBITDA level.",
-                    "The company expects to reach INR 500-550 crores in paints revenue for FY27."
+                    "Paint business achieved breakeven at EBITDA level in Q1 FY27.",
+                    "Targeting INR500 crores to INR550 crores in revenue for FY27."
                   ]
                 }
               ]
@@ -30657,47 +30601,27 @@
               "title": "Manufacturing & Capacity",
               "key_figures": [
                 {
-                  "label": "Greenfield Project at Jaisalmer",
-                  "value": "H1 FY28",
-                  "unit": null,
-                  "period": "target",
-                  "kind": "target"
+                  "label": "Gross Debt",
+                  "value": "5,551",
+                  "unit": "INR Crores",
+                  "period": "30th June 2026",
+                  "kind": "reported"
                 },
                 {
-                  "label": "Grinding Unit at Bhatinda",
-                  "value": "Q2 FY27",
-                  "unit": null,
-                  "period": "target",
-                  "kind": "target"
-                },
-                {
-                  "label": "Wall Putty Expansion in Rajasthan",
-                  "value": "Q2 FY27",
-                  "unit": null,
-                  "period": "target",
-                  "kind": "target"
+                  "label": "Net Debt",
+                  "value": "3,864",
+                  "unit": "INR Crores",
+                  "period": "30th June 2026",
+                  "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Capacity Expansion",
+                  "label": "Expansion Projects",
                   "points": [
-                    "The greenfield project at Jaisalmer is progressing well, expected to be commissioned in H1 FY28.",
-                    "The grinding unit at Bhatinda and wall putty expansion in Rajasthan are on track for Q2 FY27 completion."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "GEO",
-              "title": "Geography & Distribution",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Regional Performance",
-                  "points": [
-                    "Major volume growth driven by expansion in Central India, including the grinding unit in Bihar.",
-                    "Market share gains in Central India, with stable market share in North and South regions."
+                    "Greenfield project at Jaisalmer is progressing well, expected to be commissioned in H1 FY28.",
+                    "Grinding unit at Bhatinda is progressing well, with land acquired for a second split grinding location in Punjab.",
+                    "Wall putty expansion in Rajasthan is near completion, expected to be commissioned in Q2 FY27."
                   ]
                 }
               ]
@@ -30711,7 +30635,7 @@
                   "label": "Geopolitical Impact",
                   "points": [
                     "Geopolitical situations have affected fuel costs and availability, impacting operations.",
-                    "Imports from UAE were limited, affecting white cement availability."
+                    "Imports from UAE were limited, affecting white cement volumes."
                   ]
                 }
               ]
@@ -30722,10 +30646,10 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Future Plans",
+                  "label": "Future Outlook",
                   "points": [
-                    "The company plans to achieve 40 million tons by FY28 and 50 million tons by FY30.",
-                    "No plans to reschedule or delay capacity expansion despite competition's cautious stance."
+                    "Expecting to achieve 22.5 to 23 million tons in volume for FY27.",
+                    "No plans to reschedule or delay capacity expansion targets of 40 million by FY28 and 50 million by FY30."
                   ]
                 }
               ]
@@ -30733,52 +30657,28 @@
           ],
           "guidance_ledger": [
             {
-              "metric": "Volume Growth",
+              "metric": "Volume growth",
               "horizon": "FY27",
-              "statement": "The company expects double-digit volume growth.",
-              "specificity": "vague",
+              "statement": "We are expecting closer to 22.5 to 23 million in this year.",
+              "specificity": "specific",
               "direction": "up",
               "status": "reiterated"
             },
             {
-              "metric": "Capex",
+              "metric": "CapEx",
               "horizon": "FY27",
-              "statement": "Capex should be in the range of INR 3,500 crores to INR 4,000 crores.",
+              "statement": "For FY27, the capex should be around INR3,500 crores.",
               "specificity": "specific",
               "direction": "flat",
               "status": "raised"
             },
             {
-              "metric": "Paints Revenue",
+              "metric": "Paint revenue",
               "horizon": "FY27",
-              "statement": "The company expects a top line of INR 500 crores to INR 550 crores in this fiscal.",
+              "statement": "We expect a top line of INR500 crores to INR550 crores in this fiscal.",
               "specificity": "specific",
-              "direction": "up",
+              "direction": "flat",
               "status": "reiterated"
-            },
-            {
-              "metric": "Incentive Income",
-              "horizon": "FY27",
-              "statement": "The company expects incentive income to be around INR 250 crores.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "no_mention"
-            },
-            {
-              "metric": "Net Debt-to-EBITDA Ratio",
-              "horizon": "FY27",
-              "statement": "The net debt-to-EBITDA ratio is expected to reach around 2.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "no_mention"
-            },
-            {
-              "metric": "Cost Savings",
-              "horizon": "FY26",
-              "statement": "The company aims for Rs. 150 to Rs. 200 per ton cost savings, with Rs. 75 to Rs. 90 per ton expected by FY26 end.",
-              "specificity": "specific",
-              "direction": "down",
-              "status": "no_mention"
             }
           ],
           "risk_register": [
@@ -30788,17 +30688,17 @@
               "note": "Geopolitical situations have affected fuel costs and availability, impacting operations."
             },
             {
-              "risk": "Geopolitical Situation",
+              "risk": "Geopolitical tensions",
               "status": "no_mention",
-              "note": "Current geopolitical tensions are impacting input costs and supply chains."
+              "note": "Impacting input costs and supply chains, particularly affecting White Cement supply from the UAE."
             },
             {
               "risk": "Labour Code Liability",
               "status": "no_mention",
-              "note": "The profit after tax for the quarter considers a new Labour Code liability of INR 47.8 crores."
+              "note": "The new Labour Code liability impacted the profit after tax by INR 47.8 crores."
             },
             {
-              "risk": "Pricing Pressure",
+              "risk": "Pricing pressure due to GST reduction and competition",
               "status": "no_mention",
               "note": "There is pressure on pricing due to GST reduction and increased competition."
             }
@@ -30807,37 +30707,36 @@
             {
               "label": "Capacity expansion",
               "direction": "positive",
-              "note": "JK Cement is focused on achieving 40 million tons by FY28 and 50 million tons by FY30.",
+              "note": "Expansion projects are on track with no plans to delay targets.",
               "section_ref": "MFG"
             },
             {
               "label": "Volume growth",
               "direction": "positive",
-              "note": "The company achieved strong volume growth, driven by expansion in Central India.",
+              "note": "Strong volume growth driven by new capacity in Central India.",
               "section_ref": "ORD"
             },
             {
               "label": "Geopolitical impact",
               "direction": "negative",
-              "note": "Geopolitical situations have affected fuel costs and availability, impacting operations.",
+              "note": "Geopolitical situations have affected fuel costs and availability.",
               "section_ref": "RISK"
             },
             {
-              "label": "Cost reduction",
-              "direction": "neutral",
-              "note": "The company is managing costs amidst rising fuel prices and geopolitical challenges.",
+              "label": "Cost management",
+              "direction": "mixed",
+              "note": "Cost pressures from fuel and diesel prices are expected to increase.",
               "section_ref": "FIN"
             }
           ],
           "key_takeaways": [
-            "During this quarter, we saw a good growth in the grey business, year-on-year 19% growth in volumes.",
-            "The net sale during this quarter was higher by 23% year-on-year at INR3,786 crores.",
-            "The EBITDA during this quarter was INR639 crores, this is the standalone position.",
-            "The profit after tax was INR291 crores as compared to INR345 crores and INR333 crores in the previous year.",
-            "The greenfield project at Jaisalmer is progressing well and we are confident that it will get commissioned within the targeted timeframe of first half of FY28.",
-            "We have acquired the land for the grinding -- the second split grinding location in Punjab.",
-            "The gross debt stood at INR5,551 crores as compared to INR5,136 crores as on 31st March.",
-            "The net debt is higher at INR3,864 crores as on 30th June compared to INR3,370 crores as on 31st March."
+            "Net sales increased by 23% YoY and 5% QoQ on a standalone basis, driven by product mix and price improvement.",
+            "EBITDA margins decreased to 16.9% from 18.5% in the previous quarter and 21.9% in the previous year.",
+            "Grey business volumes grew by 19% YoY but were 2% lower QoQ.",
+            "White business volumes grew by 11% YoY but were 5% lower QoQ.",
+            "Greenfield project at Jaisalmer is progressing well, expected to be commissioned in H1 FY28.",
+            "Paint business achieved breakeven at EBITDA level in Q1 FY27.",
+            "Geopolitical situations have affected fuel costs and availability, impacting operations."
           ],
           "pressing_questions": []
         },
@@ -30850,176 +30749,113 @@
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=50893fb0-cc12-4275-b98f-3e5963630fec.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-24T16:58:23.818Z",
-          "summary": "JK Cement Limited expects to continue its growth trajectory with significant capacity expansions and a focus on cost reduction, despite facing geopolitical challenges and input cost pressures.",
+          "generated_at": "2026-07-29T08:42:25.863Z",
+          "summary": "JK Cement is focused on expanding its capacity and maintaining its market position despite geopolitical challenges and cost pressures.",
           "sections": [
             {
               "id": "FIN",
               "title": "Financial Performance",
               "key_figures": [
                 {
-                  "label": "Quarterly Revenue",
+                  "label": "Net sales (Q4)",
                   "value": "3,614",
                   "unit": "INR Crores",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Quarterly Revenue Growth (YoY)",
-                  "value": "11",
-                  "unit": "%",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Quarterly Revenue Growth (QoQ)",
-                  "value": "15",
-                  "unit": "%",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Annual Revenue",
+                  "label": "Net sales (YoY)",
                   "value": "12,568",
                   "unit": "INR Crores",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Annual Revenue Growth (YoY)",
-                  "value": "16",
-                  "unit": "%",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Quarterly EBITDA",
+                  "label": "EBITDA (Q4)",
                   "value": "670",
                   "unit": "INR Crores",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Quarterly EBITDA Growth (QoQ)",
-                  "value": "25",
-                  "unit": "%",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Quarterly EBITDA Growth (YoY)",
-                  "value": "-9",
-                  "unit": "%",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Annual EBITDA",
+                  "label": "EBITDA (YoY)",
                   "value": "2,318",
                   "unit": "INR Crores",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Annual EBITDA Growth (YoY)",
-                  "value": "18",
-                  "unit": "%",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Quarterly EBITDA Margin",
+                  "label": "EBITDA margin (Q4)",
                   "value": "18.5",
                   "unit": "%",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Annual EBITDA Margin",
+                  "label": "EBITDA margin (YoY)",
                   "value": "18.5",
                   "unit": "%",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Quarterly PAT",
+                  "label": "Profit after tax (Q4)",
                   "value": "345",
                   "unit": "INR Crores",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Quarterly PAT Growth (QoQ)",
-                  "value": "91",
-                  "unit": "%",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Quarterly PAT Growth (YoY)",
-                  "value": "-17",
-                  "unit": "%",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Annual PAT",
+                  "label": "Profit after tax (YoY)",
                   "value": "1,033",
                   "unit": "INR Crores",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Annual PAT Growth (YoY)",
-                  "value": "21",
-                  "unit": "%",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Earnings Per Share (Quarterly)",
+                  "label": "Earnings per share (Q4)",
                   "value": "44.50",
                   "unit": "INR",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Earnings Per Share (Annual)",
+                  "label": "Earnings per share (YoY)",
                   "value": "133.70",
                   "unit": "INR",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Proposed Dividend",
+                  "label": "Dividend per share",
                   "value": "20",
-                  "unit": "INR per share",
+                  "unit": "INR",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Gross Debt",
+                  "label": "Gross debt",
                   "value": "5,136",
                   "unit": "INR Crores",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Net Cash",
+                  "label": "Net cash",
                   "value": "1,765",
                   "unit": "INR Crores",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Net Debt",
+                  "label": "Net debt",
                   "value": "3,370",
                   "unit": "INR Crores",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Net Debt to EBITDA Ratio",
+                  "label": "Net debt to EBITDA",
                   "value": "1.45",
                   "unit": null,
                   "period": "FY26",
@@ -31033,7 +30869,7 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Net Debt to Equity Ratio",
+                  "label": "Net debt to equity",
                   "value": "0.48",
                   "unit": null,
                   "period": "FY26",
@@ -31045,22 +30881,21 @@
                   "label": "Employee Expenses",
                   "points": [
                     "Employee expenses grew 25% YoY due to commissioning of new plants and increased business requirements.",
-                    "Normal increments and impacts from the Labor Code contributed to the rise.",
-                    "A sustainable run rate of around INR 250 crores is expected, with a 12% to 14% increase YoY."
+                    "Normal increments and Labor Code impacts contributed to the rise.",
+                    "A one-time liability for leave travel assistance was also provided."
                   ]
                 },
                 {
                   "label": "Other Expenses",
                   "points": [
                     "Other expenses increased due to higher advertising and packing costs.",
-                    "Packing costs increased by INR 30 crores due to volume and price changes."
+                    "Packing costs rose by INR30 crores due to volume and price increases."
                   ]
                 },
                 {
                   "label": "Incentive Income",
                   "points": [
-                    "Incentive income was lower than expected due to full utilization of incentives at the Aligarh unit and GST input credit issues in Rajasthan.",
-                    "The company expects incentive income to be around INR 250 crores for FY27."
+                    "Incentive income was lower than expected due to the end of incentives at the Aligarh unit and GST input credit issues in Rajasthan."
                   ]
                 }
               ]
@@ -31070,32 +30905,18 @@
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
-                  "label": "Paints Revenue",
-                  "value": "380",
-                  "unit": "INR Crores",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Paints EBITDA Loss",
-                  "value": "40",
-                  "unit": "INR Crores",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Paints Revenue Guidance",
-                  "value": "500 to 550",
-                  "unit": "INR Crores",
+                  "label": "White Cement volume growth expectation",
+                  "value": "8-10",
+                  "unit": "%",
                   "period": "FY27",
                   "kind": "guidance"
                 }
               ],
               "subsections": [
                 {
-                  "label": "White Cement and Wall Putty",
+                  "label": "White Cement Outlook",
                   "points": [
-                    "Domestic White Cement demand is being met from local production despite geopolitical issues affecting UAE supply.",
+                    "Domestic White Cement demand will be met from domestic production despite geopolitical issues affecting UAE supply.",
                     "Prices for White Cement and Wall Putty have increased due to higher input costs."
                   ]
                 }
@@ -31106,43 +30927,29 @@
               "title": "Manufacturing & Capacity",
               "key_figures": [
                 {
-                  "label": "Buxar Plant Capacity Expansion",
-                  "value": "6",
-                  "unit": "million tons",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Muddapur Plant Capacity Increase",
+                  "label": "Capacity expansion at Muddapur",
                   "value": "1",
-                  "unit": "million tons",
+                  "unit": "Million tons",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Jaisalmer Project Cost",
+                  "label": "Project cost for Jaisalmer integrated unit",
                   "value": "3,630",
                   "unit": "INR Crores",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Jaisalmer Project Spend",
-                  "value": "742",
-                  "unit": "INR Crores",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Capex Guidance FY27",
-                  "value": "3,500 to 4,000",
+                  "label": "Capex guidance for FY27",
+                  "value": "3,500-4,000",
                   "unit": "INR Crores",
                   "period": "FY27",
                   "kind": "guidance"
                 },
                 {
-                  "label": "Capex Guidance FY28",
-                  "value": "1,500 to 2,000",
+                  "label": "Capex guidance for FY28",
+                  "value": "1,500-2,000",
                   "unit": "INR Crores",
                   "period": "FY28",
                   "kind": "guidance"
@@ -31152,16 +30959,12 @@
                 {
                   "label": "Capacity Expansion",
                   "points": [
-                    "Commissioned greenfield expansion at Buxar, Bihar, adding 6 million tons capacity.",
-                    "Increased Muddapur plant capacity by 1 million tons, from 3.5 to 4.5 million tons.",
-                    "Started work on a new greenfield project at Jaisalmer, with a 7 million ton plant and 4 million ton integrated clinker capacity.",
-                    "The Jaisalmer project is expected to be commissioned in H1 FY28."
-                  ]
-                },
-                {
-                  "label": "Wall Putty Plant",
-                  "points": [
-                    "A 6 lakh ton Wall Putty plant at Nathdwara, Rajasthan, is in advanced stages of completion, expected to be commissioned by September."
+                    "Commissioned greenfield expansion at Buxar, Bihar, completing a 6 million ton capacity expansion in Central India.",
+                    "Increased capacity at Muddapur by 1 million tons.",
+                    "Started work on a new greenfield project at Jaisalmer with a 7 million ton plant.",
+                    "The Jaisalmer project includes a 4 million ton integrated clinker capacity and 3 million ton grinding units at Bikaner and Punjab.",
+                    "The project cost for the integrated unit is expected to be around INR3,630 crores, with INR742 crores already spent.",
+                    "Commissioning of the Jaisalmer project is expected in H1 FY28."
                   ]
                 }
               ]
@@ -31174,7 +30977,7 @@
                 {
                   "label": "Geopolitical Situation",
                   "points": [
-                    "Current geopolitical tensions are impacting input costs and supply chains, particularly affecting fuel and chemical costs."
+                    "Current geopolitical tensions are impacting input costs and supply chains, particularly affecting White Cement supply from the UAE."
                   ]
                 }
               ]
@@ -31184,15 +30987,15 @@
               "title": "Guidance & Outlook",
               "key_figures": [
                 {
-                  "label": "Volume Growth Expectation",
+                  "label": "Volume growth expectation",
                   "value": "Double-digit",
                   "unit": "%",
                   "period": "FY27",
                   "kind": "guidance"
                 },
                 {
-                  "label": "Incentive Income Expectation",
-                  "value": "250",
+                  "label": "Paint revenue expectation",
+                  "value": "500-550",
                   "unit": "INR Crores",
                   "period": "FY27",
                   "kind": "guidance"
@@ -31200,9 +31003,9 @@
               ],
               "subsections": [
                 {
-                  "label": "Cost Reduction",
+                  "label": "Cost Reduction Initiatives",
                   "points": [
-                    "The company aims for INR 50 per ton cost savings in FY27, driven by green power and alternative fuel usage."
+                    "Expecting INR50 per ton cost savings in FY27 from green power and AFR initiatives."
                   ]
                 }
               ]
@@ -31210,75 +31013,51 @@
           ],
           "guidance_ledger": [
             {
-              "metric": "Volume Growth",
+              "metric": "Volume growth",
               "horizon": "FY27",
-              "statement": "The company expects double-digit volume growth.",
+              "statement": "We should be growing in a double-digit growth.",
               "specificity": "vague",
               "direction": "up",
               "status": "reiterated"
             },
             {
-              "metric": "Incentive Income",
+              "metric": "CapEx",
               "horizon": "FY27",
-              "statement": "The company expects incentive income to be around INR 250 crores.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "new"
-            },
-            {
-              "metric": "Capex",
-              "horizon": "FY27",
-              "statement": "Capex should be in the range of INR 3,500 crores to INR 4,000 crores.",
+              "statement": "For this year, the capex should be in the range of INR3,500 crores to INR4,000 crores.",
               "specificity": "specific",
               "direction": "flat",
-              "status": "new"
+              "status": "reiterated"
             },
             {
-              "metric": "Capex",
+              "metric": "CapEx",
               "horizon": "FY28",
-              "statement": "Capex should be in the range of INR 1,500 crores to INR 2,000 crores.",
+              "statement": "Next year, it would be INR1,500 crores to INR2,000 crores.",
               "specificity": "specific",
               "direction": "flat",
-              "status": "new"
+              "status": "lowered"
             },
             {
-              "metric": "Paints Revenue",
+              "metric": "Paint revenue",
               "horizon": "FY27",
-              "statement": "The company expects a top line of INR 500 crores to INR 550 crores in this fiscal.",
+              "statement": "We expect a top line of INR500 crores to INR550 crores in this fiscal.",
               "specificity": "specific",
               "direction": "up",
-              "status": "new"
-            },
-            {
-              "metric": "Net Debt-to-EBITDA Ratio",
-              "horizon": "FY27",
-              "statement": "The net debt-to-EBITDA ratio is expected to reach around 2.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "no_mention"
-            },
-            {
-              "metric": "Cost Savings",
-              "horizon": "FY26",
-              "statement": "The company aims for Rs. 150 to Rs. 200 per ton cost savings, with Rs. 75 to Rs. 90 per ton expected by FY26 end.",
-              "specificity": "specific",
-              "direction": "down",
-              "status": "no_mention"
+              "status": "raised"
             }
           ],
           "risk_register": [
             {
-              "risk": "Geopolitical Situation",
+              "risk": "Geopolitical tensions",
               "status": "new",
-              "note": "Current geopolitical tensions are impacting input costs and supply chains."
+              "note": "Impacting input costs and supply chains, particularly affecting White Cement supply from the UAE."
             },
             {
               "risk": "Labour Code Liability",
               "status": "no_mention",
-              "note": "The profit after tax for the quarter considers a new Labour Code liability of INR 47.8 crores."
+              "note": "The new Labour Code liability impacted the profit after tax by INR 47.8 crores."
             },
             {
-              "risk": "Pricing Pressure",
+              "risk": "Pricing pressure due to GST reduction and competition",
               "status": "no_mention",
               "note": "There is pressure on pricing due to GST reduction and increased competition."
             }
@@ -31287,42 +31066,42 @@
             {
               "label": "Capacity expansion",
               "direction": "positive",
-              "note": "Significant capacity expansions are underway, including new projects in Jaisalmer and Buxar.",
+              "note": "Commissioned new capacities and started work on Jaisalmer project.",
               "section_ref": "MFG"
             },
             {
               "label": "Volume growth",
               "direction": "positive",
-              "note": "The company expects double-digit volume growth in FY27.",
+              "note": "Expecting double-digit growth in FY27.",
               "section_ref": "GUID"
             },
             {
               "label": "Pricing pressure",
               "direction": "mixed",
-              "note": "Input cost increases are being partially passed on to customers, affecting pricing strategies.",
+              "note": "Increased prices for White Cement and Wall Putty due to input costs.",
               "section_ref": "SEG"
-            },
-            {
-              "label": "Cost reduction",
-              "direction": "positive",
-              "note": "The company aims for INR 50 per ton cost savings in FY27 through green power and alternative fuels.",
-              "section_ref": "GUID"
             },
             {
               "label": "Geopolitical impact",
               "direction": "negative",
-              "note": "Geopolitical tensions are impacting input costs and supply chains, particularly fuel and chemicals.",
+              "note": "Geopolitical tensions affecting supply chains and input costs.",
               "section_ref": "RISK"
+            },
+            {
+              "label": "Cost management",
+              "direction": "positive",
+              "note": "Expecting cost savings from green power and AFR initiatives.",
+              "section_ref": "GUID"
             }
           ],
           "key_takeaways": [
-            "Net sales increased by 15% to INR 3,614 crores in Q4 FY26 compared to the previous quarter, and by 11% year-on-year.",
-            "EBITDA for the quarter was INR 670 crores, a 25% increase from the previous quarter but a 9% decrease year-on-year.",
+            "Net sales increased by 15% in Q4 to INR3,614 crores, and by 16% YoY to INR12,568 crores.",
+            "EBITDA for Q4 was INR670 crores, up 25% from the previous quarter but down 9% YoY.",
+            "Profit after tax for Q4 was INR345 crores, up 91% from the previous quarter but down 17% YoY.",
             "The company commissioned a greenfield expansion at Buxar, Bihar, and increased capacity at Muddapur by 1 million tons.",
-            "A new greenfield project at Jaisalmer is underway, with expected commissioning in H1 FY28.",
-            "The company expects double-digit volume growth in FY27, with a focus on cost reduction and capacity expansion.",
-            "Geopolitical tensions are impacting input costs, particularly fuel and chemicals, affecting profitability.",
-            "The Board proposed a dividend of INR 20 per share, subject to shareholder approval."
+            "Capex for FY27 is expected to be in the range of INR3,500 crores to INR4,000 crores, with FY28 projected at INR1,500 crores to INR2,000 crores.",
+            "White Cement prices have increased due to higher input costs, and the company expects 8-10% volume growth in FY27.",
+            "The company expects INR50 per ton cost savings in FY27 from green power and AFR initiatives."
           ],
           "pressing_questions": []
         },
@@ -31335,148 +31114,141 @@
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ebabbe7c-1d63-45a6-ae57-4a3082c3ba69.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-24T16:57:54.446Z",
-          "summary": "JK Cement is confident about its ongoing expansion projects and expects to maintain strong volume growth, with a focus on Central India and new markets.",
+          "generated_at": "2026-07-29T08:42:08.025Z",
+          "summary": "JK Cement Limited is focusing on capacity expansion with new projects in Central India and Jaisalmer, while maintaining a positive outlook on volume growth and pricing improvements.",
           "sections": [
             {
               "id": "FIN",
               "title": "Financial Performance",
               "key_figures": [
                 {
-                  "label": "Standalone Net Sales (Q3)",
+                  "label": "Standalone Net Sales Q3",
                   "value": "3,132",
                   "unit": "INR Crores",
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Standalone Net Sales (YoY Growth)",
+                  "label": "Standalone Net Sales YoY Growth",
                   "value": "19",
                   "unit": "%",
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Standalone Net Sales (9 Months)",
+                  "label": "Standalone Net Sales 9M",
                   "value": "8,555",
                   "unit": "INR Crores",
                   "period": "9M FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Standalone EBITDA (Q3)",
+                  "label": "Standalone EBITDA Q3",
                   "value": "536",
                   "unit": "INR Crores",
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Standalone EBITDA (QoQ Growth)",
-                  "value": "22",
-                  "unit": "%",
-                  "period": "Q3 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Standalone EBITDA (YoY Growth)",
+                  "label": "Standalone EBITDA YoY Growth",
                   "value": "10",
                   "unit": "%",
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Standalone EBITDA (9 Months)",
+                  "label": "Standalone EBITDA 9M",
                   "value": "1,648",
                   "unit": "INR Crores",
                   "period": "9M FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Standalone EBITDA Margin (Q3)",
+                  "label": "Standalone EBITDA Margin Q3",
                   "value": "17.1",
                   "unit": "%",
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Standalone Profit Before Tax (Q3)",
+                  "label": "Standalone Profit Before Tax Q3",
                   "value": "276",
                   "unit": "INR Crores",
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Standalone Profit Before Tax (YoY Growth)",
+                  "label": "Standalone Profit Before Tax YoY Growth",
                   "value": "-5",
                   "unit": "%",
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Standalone Profit Before Tax (9 Months)",
+                  "label": "Standalone Profit Before Tax 9M",
                   "value": "1,034",
                   "unit": "INR Crores",
                   "period": "9M FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Standalone EPS (Q3)",
+                  "label": "Standalone EPS Q3",
                   "value": "23.30",
                   "unit": "INR",
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Standalone EPS (9 Months)",
+                  "label": "Standalone EPS 9M",
                   "value": "89.10",
                   "unit": "INR",
                   "period": "9M FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Consolidated Net Sales (Q3)",
+                  "label": "Consolidated Net Sales Q3",
                   "value": "3,383",
                   "unit": "INR Crores",
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Consolidated Net Sales (YoY Growth)",
+                  "label": "Consolidated Net Sales YoY Growth",
                   "value": "20",
                   "unit": "%",
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Consolidated Net Sales (9 Months)",
+                  "label": "Consolidated Net Sales 9M",
                   "value": "9,565",
                   "unit": "INR Crores",
                   "period": "9M FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Consolidated EBITDA (Q3)",
+                  "label": "Consolidated EBITDA Q3",
                   "value": "558",
                   "unit": "INR Crores",
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Consolidated EBITDA (YoY Growth)",
-                  "value": "13",
-                  "unit": "%",
-                  "period": "Q3 FY26",
+                  "label": "Consolidated EBITDA 9M",
+                  "value": "1,692",
+                  "unit": "INR Crores",
+                  "period": "9M FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Consolidated Profit Before Tax (Q3)",
+                  "label": "Consolidated Profit Before Tax Q3",
                   "value": "268",
                   "unit": "INR Crores",
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Consolidated Profit Before Tax (9 Months)",
+                  "label": "Consolidated Profit Before Tax 9M",
                   "value": "1,000",
                   "unit": "INR Crores",
                   "period": "9M FY26",
@@ -31490,7 +31262,7 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Incentives (Q3)",
+                  "label": "Incentives Q3",
                   "value": "60",
                   "unit": "INR Crores",
                   "period": "Q3 FY26",
@@ -31501,13 +31273,50 @@
                 {
                   "label": "Incentives Impact",
                   "points": [
-                    "Incentives for Q3 were lower due to a GST rate cut, impacting the quarter by INR 25 crores."
+                    "Incentives booked in Q3 were lower due to the GST rate cut, impacting by around INR 25 crores."
                   ]
+                }
+              ]
+            },
+            {
+              "id": "ORD",
+              "title": "Order Book & Demand",
+              "key_figures": [
+                {
+                  "label": "Grey Cement Volume Growth QoQ",
+                  "value": "20",
+                  "unit": "%",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
                 },
                 {
-                  "label": "Cost Management",
+                  "label": "Grey Cement Volume Growth YoY",
+                  "value": "23",
+                  "unit": "%",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "White Cement Volume Growth QoQ",
+                  "value": "15",
+                  "unit": "%",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "White Cement Volume Growth YoY",
+                  "value": "13",
+                  "unit": "%",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Demand Trends",
                   "points": [
-                    "Other expenses declined sharply in Q3, partly due to lower marketing spend, especially in the white business."
+                    "The March quarter is expected to be one of the best quarters with strong demand.",
+                    "Year-on-year growth for the industry is expected to be 7% - 8%."
                   ]
                 }
               ]
@@ -31517,39 +31326,25 @@
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
-                  "label": "Grey Cement Volume Growth (QoQ)",
-                  "value": "20",
-                  "unit": "%",
+                  "label": "EBITDA per Tonne Q3",
+                  "value": "9.28",
+                  "unit": "INR",
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Grey Cement Volume Growth (YoY)",
-                  "value": "23",
-                  "unit": "%",
-                  "period": "Q3 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "White Cement Volume Growth (QoQ)",
-                  "value": "15",
-                  "unit": "%",
-                  "period": "Q3 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "White Cement Volume Growth (YoY)",
-                  "value": "13",
-                  "unit": "%",
-                  "period": "Q3 FY26",
+                  "label": "EBITDA per Tonne 9M",
+                  "value": "1,022",
+                  "unit": "INR",
+                  "period": "9M FY26",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Volume Growth",
+                  "label": "Volume and Pricing",
                   "points": [
-                    "Grey cement volumes increased by 20% QoQ and 23% YoY, while white cement volumes grew by 15% QoQ and 13% YoY."
+                    "Non-trade sales prices have seen major recovery, contributing to improved realizations."
                   ]
                 }
               ]
@@ -31578,15 +31373,22 @@
                   "unit": "Million Tonnes",
                   "period": null,
                   "kind": "reported"
+                },
+                {
+                  "label": "Buxar Greenfield Grinding Completion Timeline",
+                  "value": "30",
+                  "unit": "Days",
+                  "period": "Q4 FY26",
+                  "kind": "guidance"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Expansion Projects",
+                  "label": "Capacity Expansion",
                   "points": [
-                    "The Brownfield expansion in Central India includes a clinkerization unit of 3.3 million tonnes and 3 million tonnes of grinding capacity, with units at Panna, Hamirpur, and Prayagraj already commissioned.",
+                    "The Brownfield expansion in Central India includes a clinkerization unit and grinding units at Panna, Hamirpur, and Prayagraj.",
                     "The Buxar Greenfield grinding unit is in the advanced stage of completion, expected to be commissioned within 30 days.",
-                    "The Greenfield expansion at Jaisalmer is underway, with main plant and equipment orders placed and civil work started, aiming for completion by September 2027."
+                    "The Jaisalmer Greenfield expansion is underway, with commissioning expected by September 2027."
                   ]
                 }
               ]
@@ -31599,7 +31401,7 @@
                 {
                   "label": "Labour Code Liability",
                   "points": [
-                    "The profit after tax for the quarter considers a new Labour Code liability of INR 47.8 crores."
+                    "The new Labour Code liability impacted the profit after tax by INR 47.8 crores."
                   ]
                 }
               ]
@@ -31610,15 +31412,16 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Volume Growth Target",
+                  "label": "Volume Growth",
                   "points": [
-                    "The company expects double-digit volume growth, targeting 22.5 to 23 million tonnes in FY27 and 25.5 million tonnes in FY28."
+                    "The company expects double-digit growth, with early teens growth projected for FY27 and FY28."
                   ]
                 },
                 {
-                  "label": "CAPEX and Debt",
+                  "label": "CapEx Plans",
                   "points": [
-                    "The company plans to add INR 2,000 crores of net debt during FY27 due to the Jaisalmer CAPEX, with a net debt-to-EBITDA ratio expected to reach around 2."
+                    "CapEx for FY26 is expected to be INR 2,500 crores to INR 2,800 crores, with Jaisalmer contributing INR 600 crores.",
+                    "FY27 CapEx is projected at INR 3,500 crores, including INR 3,000 crores for the 7 million tonne expansion."
                   ]
                 }
               ]
@@ -31626,35 +31429,35 @@
           ],
           "guidance_ledger": [
             {
-              "metric": "Volume Growth",
+              "metric": "Volume growth",
               "horizon": "FY27",
-              "statement": "The company expects double-digit volume growth, targeting 22.5 to 23 million tonnes.",
-              "specificity": "specific",
+              "statement": "We expect the growth to be in double-digits, with early teens growth projected.",
+              "specificity": "vague",
               "direction": "up",
-              "status": "raised"
+              "status": "reiterated"
             },
             {
-              "metric": "Volume Growth",
-              "horizon": "FY28",
-              "statement": "The company targets 25.5 million tonnes, with growth ranging between 12% to 15%.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "raised"
-            },
-            {
-              "metric": "Net Debt-to-EBITDA Ratio",
-              "horizon": "FY27",
-              "statement": "The net debt-to-EBITDA ratio is expected to reach around 2.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "new"
-            },
-            {
-              "metric": "Cost Savings",
+              "metric": "CapEx",
               "horizon": "FY26",
-              "statement": "The company aims for Rs. 150 to Rs. 200 per ton cost savings, with Rs. 75 to Rs. 90 per ton expected by FY26 end.",
+              "statement": "CapEx for FY26 is expected to be INR 2,500 crores to INR 2,800 crores, with Jaisalmer contributing INR 600 crores.",
               "specificity": "specific",
-              "direction": "down",
+              "direction": "flat",
+              "status": "lowered"
+            },
+            {
+              "metric": "CapEx",
+              "horizon": "FY27",
+              "statement": "FY27 CapEx is projected at INR 3,500 crores, including INR 3,000 crores for the 7 million tonne expansion.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Paint revenue",
+              "horizon": "FY26",
+              "statement": "We are working, and we should be closer to Rs. 400 crores.",
+              "specificity": "specific",
+              "direction": "flat",
               "status": "no_mention"
             }
           ],
@@ -31662,10 +31465,10 @@
             {
               "risk": "Labour Code Liability",
               "status": "new",
-              "note": "The profit after tax for the quarter considers a new Labour Code liability of INR 47.8 crores."
+              "note": "The new Labour Code liability impacted the profit after tax by INR 47.8 crores."
             },
             {
-              "risk": "Pricing Pressure",
+              "risk": "Pricing pressure due to GST reduction and competition",
               "status": "no_mention",
               "note": "There is pressure on pricing due to GST reduction and increased competition."
             }
@@ -31674,34 +31477,42 @@
             {
               "label": "Capacity expansion",
               "direction": "positive",
-              "note": "Ongoing expansions in Central India and Jaisalmer are on track, with significant capacity additions expected.",
+              "note": "JK Cement is expanding capacity with new projects in Central India and Jaisalmer.",
               "section_ref": "MFG"
             },
             {
               "label": "Volume growth",
               "direction": "positive",
-              "note": "Strong volume growth in grey and white cement segments, with double-digit growth expected to continue.",
-              "section_ref": "SEG"
+              "note": "The company expects double-digit growth, with early teens growth projected for FY27 and FY28.",
+              "section_ref": "GUID"
             },
             {
               "label": "Pricing pressure",
               "direction": "neutral",
-              "note": "Non-trade pricing improved, but trade pricing remains under pressure.",
-              "section_ref": "FIN"
+              "note": "Non-trade sales prices have seen major recovery, contributing to improved realizations.",
+              "section_ref": "SEG"
             },
             {
-              "label": "Cost reduction",
+              "label": "Labour Code impact",
+              "direction": "negative",
+              "note": "The new Labour Code liability impacted the profit after tax by INR 47.8 crores.",
+              "section_ref": "RISK"
+            },
+            {
+              "label": "Regional sales growth",
               "direction": "positive",
-              "note": "Cost management efforts led to a decline in other expenses, with further savings expected.",
-              "section_ref": "FIN"
+              "note": "Major growth is coming from Central India, with strong demand expected in the March quarter.",
+              "section_ref": "ORD"
             }
           ],
           "key_takeaways": [
-            "Standalone net sales increased by 19% YoY to INR 3,132 crores in Q3 FY26.",
-            "Standalone EBITDA grew by 22% QoQ to INR 536 crores in Q3 FY26.",
-            "The company is undertaking a Greenfield expansion at Jaisalmer, expected to be completed by September 2027.",
-            "The Buxar Greenfield grinding unit is in the advanced stage of completion, expected to be commissioned within 30 days.",
-            "The company expects double-digit volume growth, targeting 22.5 to 23 million tonnes in FY27 and 25.5 million tonnes in FY28."
+            "Standalone net sales increased by 19% year-on-year to INR 3,132 crores in Q3 FY26.",
+            "Consolidated net sales for Q3 FY26 were INR 3,383 crores, up 20% year-on-year.",
+            "EBITDA margin for the standalone business improved to 17.1% in Q3 FY26.",
+            "The Brownfield expansion in Central India is progressing, with the Buxar unit expected to be commissioned within 30 days.",
+            "The Jaisalmer Greenfield expansion is underway, with commissioning expected by September 2027.",
+            "The new Labour Code liability impacted the profit after tax by INR 47.8 crores.",
+            "The company expects double-digit volume growth, with early teens growth projected for FY27 and FY28."
           ],
           "pressing_questions": []
         },
@@ -31714,151 +31525,389 @@
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7c63584c-a50a-47dc-a22d-969899bba11c.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-24T16:57:27.855Z",
-          "summary": "JK Cement is focused on completing its ongoing expansion projects, including the Panna and Jaisalmer plants, while maintaining a growth strategy that balances volume and profitability.",
+          "generated_at": "2026-07-29T08:41:49.488Z",
+          "summary": "JK Cement is focused on completing its ongoing expansion projects, including the Panna and Jaisalmer plants, while maintaining a balance between volume growth and profitability.",
           "sections": [
             {
               "id": "FIN",
               "title": "Financial Performance",
               "key_figures": [
                 {
-                  "label": "Quarterly Revenue",
+                  "label": "Revenue from operations (Q2 FY26)",
                   "value": "2,859",
                   "unit": "crores",
                   "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Quarterly Revenue Growth (YoY)",
-                  "value": "19",
-                  "unit": "%",
-                  "period": "Q2 FY26",
+                  "label": "Revenue from operations (Q2 FY25)",
+                  "value": "2,410",
+                  "unit": "crores",
+                  "period": "Q2 FY25",
                   "kind": "reported"
                 },
                 {
-                  "label": "Quarterly Revenue Growth (QoQ)",
-                  "value": "-10",
-                  "unit": "%",
-                  "period": "Q2 FY26",
+                  "label": "Revenue from operations (Q1 FY26)",
+                  "value": "3,190",
+                  "unit": "crores",
+                  "period": "Q1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Half-Year Revenue",
+                  "label": "Revenue from operations (H1 FY26)",
                   "value": "6,049",
                   "unit": "crores",
                   "period": "H1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Half-Year Revenue Growth (YoY)",
-                  "value": "19",
-                  "unit": "%",
-                  "period": "H1 FY26",
+                  "label": "Revenue from operations (H1 FY25)",
+                  "value": "5,070",
+                  "unit": "crores",
+                  "period": "H1 FY25",
                   "kind": "reported"
                 },
                 {
-                  "label": "Quarterly EBITDA",
+                  "label": "EBITDA (Q2 FY26)",
                   "value": "440",
                   "unit": "crores",
                   "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Quarterly EBITDA Growth (YoY)",
-                  "value": "62.3",
-                  "unit": "%",
-                  "period": "Q2 FY26",
+                  "label": "EBITDA (Q2 FY25)",
+                  "value": "271",
+                  "unit": "crores",
+                  "period": "Q2 FY25",
                   "kind": "reported"
                 },
                 {
-                  "label": "Quarterly EBITDA Margin",
-                  "value": "15.9",
-                  "unit": "%",
-                  "period": "Q2 FY26",
+                  "label": "EBITDA (Q1 FY26)",
+                  "value": "673",
+                  "unit": "crores",
+                  "period": "Q1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Half-Year EBITDA",
+                  "label": "EBITDA (H1 FY26)",
                   "value": "1,113",
                   "unit": "crores",
                   "period": "H1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Half-Year EBITDA Growth (YoY)",
-                  "value": "49",
-                  "unit": "%",
-                  "period": "H1 FY26",
+                  "label": "EBITDA (H1 FY25)",
+                  "value": "746",
+                  "unit": "crores",
+                  "period": "H1 FY25",
                   "kind": "reported"
                 },
                 {
-                  "label": "Half-Year EBITDA Margin",
+                  "label": "EBITDA margin (Q2 FY26)",
+                  "value": "15.9",
+                  "unit": "%",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin (Q2 FY25)",
+                  "value": "11.5",
+                  "unit": "%",
+                  "period": "Q2 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin (Q1 FY26)",
+                  "value": "21.9",
+                  "unit": "%",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin (H1 FY26)",
                   "value": "19.1",
                   "unit": "%",
                   "period": "H1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Quarterly PAT",
+                  "label": "EBITDA margin (H1 FY25)",
+                  "value": "15.2",
+                  "unit": "%",
+                  "period": "H1 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Profit before tax (Q2 FY26)",
+                  "value": "261",
+                  "unit": "crores",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Profit before tax (Q2 FY25)",
+                  "value": "60",
+                  "unit": "crores",
+                  "period": "Q2 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Profit before tax (Q1 FY26)",
+                  "value": "498",
+                  "unit": "crores",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Profit before tax (H1 FY26)",
+                  "value": "758",
+                  "unit": "crores",
+                  "period": "H1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Profit before tax (H1 FY25)",
+                  "value": "348",
+                  "unit": "crores",
+                  "period": "H1 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA per ton (Q2 FY26)",
+                  "value": "902",
+                  "unit": "crores/ton",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA per ton (Q2 FY25)",
+                  "value": "639",
+                  "unit": "crores/ton",
+                  "period": "Q2 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA per ton (Q1 FY26)",
+                  "value": "1,229",
+                  "unit": "crores/ton",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA per ton (H1 FY26)",
+                  "value": "1,075",
+                  "unit": "crores/ton",
+                  "period": "H1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA per ton (H1 FY25)",
+                  "value": "830",
+                  "unit": "crores/ton",
+                  "period": "H1 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated revenue from operations (Q2 FY26)",
+                  "value": "3,019",
+                  "unit": "crores",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated revenue from operations (Q2 FY25)",
+                  "value": "2,560",
+                  "unit": "crores",
+                  "period": "Q2 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated revenue from operations (Q1 FY26)",
+                  "value": "3,353",
+                  "unit": "crores",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated revenue from operations (H1 FY26)",
+                  "value": "6,372",
+                  "unit": "crores",
+                  "period": "H1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated revenue from operations (H1 FY25)",
+                  "value": "5,368",
+                  "unit": "crores",
+                  "period": "H1 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated EBITDA (Q2 FY26)",
+                  "value": "447",
+                  "unit": "crores",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated EBITDA (Q2 FY25)",
+                  "value": "284",
+                  "unit": "crores",
+                  "period": "Q2 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated EBITDA (Q1 FY26)",
+                  "value": "688",
+                  "unit": "crores",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated EBITDA (H1 FY26)",
+                  "value": "1,134",
+                  "unit": "crores",
+                  "period": "H1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated EBITDA (H1 FY25)",
+                  "value": "770",
+                  "unit": "crores",
+                  "period": "H1 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Profit after tax (Q2 FY26)",
                   "value": "159",
                   "unit": "crores",
                   "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Quarterly PAT Growth (YoY)",
-                  "value": "16.9",
-                  "unit": "%",
-                  "period": "Q2 FY26",
+                  "label": "Profit after tax (Q2 FY25)",
+                  "value": "136",
+                  "unit": "crores",
+                  "period": "Q2 FY25",
                   "kind": "reported"
                 },
                 {
-                  "label": "Half-Year PAT",
+                  "label": "Profit after tax (Q1 FY26)",
+                  "value": "324",
+                  "unit": "crores",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Profit after tax (H1 FY26)",
                   "value": "483",
                   "unit": "crores",
                   "period": "H1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Half-Year PAT Growth (YoY)",
-                  "value": "50.5",
-                  "unit": "%",
-                  "period": "H1 FY26",
+                  "label": "Profit after tax (H1 FY25)",
+                  "value": "321",
+                  "unit": "crores",
+                  "period": "H1 FY25",
                   "kind": "reported"
                 },
                 {
-                  "label": "Quarterly EPS",
+                  "label": "Earnings per share (Q2 FY26)",
                   "value": "20.7",
-                  "unit": null,
+                  "unit": "INR",
                   "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Half-Year EPS",
-                  "value": "62.7",
-                  "unit": null,
+                  "label": "Earnings per share (Q2 FY25)",
+                  "value": "16.2",
+                  "unit": "INR",
+                  "period": "Q2 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Earnings per share (Q1 FY26)",
+                  "value": "41.90",
+                  "unit": "INR",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Earnings per share (H1 FY26)",
+                  "value": "62.70",
+                  "unit": "INR",
                   "period": "H1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Gross Debt",
+                  "label": "Earnings per share (H1 FY25)",
+                  "value": "40.20",
+                  "unit": "INR",
+                  "period": "H1 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gross debt (30th September 2025)",
                   "value": "5,289",
                   "unit": "crores",
                   "period": "30th September 2025",
                   "kind": "reported"
                 },
                 {
-                  "label": "Net Debt",
+                  "label": "Gross debt (31st March 2025)",
+                  "value": "5,103",
+                  "unit": "crores",
+                  "period": "31st March 2025",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net debt (30th September 2025)",
                   "value": "3,139",
                   "unit": "crores",
                   "period": "30th September 2025",
                   "kind": "reported"
                 },
                 {
-                  "label": "Net Debt to EBITDA",
+                  "label": "Net debt (31st March 2025)",
+                  "value": "2,551",
+                  "unit": "crores",
+                  "period": "31st March 2025",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net debt to EBITDA (30th September 2025)",
                   "value": "1.34",
                   "unit": null,
                   "period": "30th September 2025",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net debt to EBITDA (31st March 2025)",
+                  "value": "1.3",
+                  "unit": null,
+                  "period": "31st March 2025",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Paint revenue (Q2 FY26)",
+                  "value": "95",
+                  "unit": "crores",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Paint revenue (H1 FY26)",
+                  "value": "182",
+                  "unit": "crores",
+                  "period": "H1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Paint EBITDA loss (Q2 FY26)",
+                  "value": "14",
+                  "unit": "crores",
+                  "period": "Q2 FY26",
                   "kind": "reported"
                 }
               ],
@@ -31866,9 +31915,16 @@
                 {
                   "label": "Debt Profile",
                   "points": [
-                    "The gross debt as of 30th September was Rs. 5,289 crores compared to Rs. 5,103 crores.",
-                    "Net debt was Rs. 3,139 crores compared to Rs. 2,551 crores.",
-                    "Net debt to EBITDA as of 30th September was 1.34 compared to 1.3 as of 31st March."
+                    "The gross debt as of 30th September was Rs. 5,289 crores compared to Rs. 5,103 crores on 31st March.",
+                    "The net debt was Rs. 3,139 crores as compared to Rs. 2,551 crores.",
+                    "Net debt to EBITDA ratio was 1.34 as of 30th September, compared to 1.3 as of 31st March."
+                  ]
+                },
+                {
+                  "label": "Paint Business",
+                  "points": [
+                    "Paint revenue was Rs. 95 crores in Q2 FY26 and Rs. 182 crores for H1 FY26.",
+                    "The paint business incurred an EBITDA loss of Rs. 14 crores in Q2 FY26."
                   ]
                 }
               ]
@@ -31878,40 +31934,19 @@
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
-                  "label": "Quarterly EBITDA per Ton",
-                  "value": "902",
-                  "unit": "crores per ton",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Half-Year EBITDA per Ton",
-                  "value": "1,075",
-                  "unit": "crores per ton",
-                  "period": "H1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Paint Revenue",
-                  "value": "95",
+                  "label": "Incentive quantum (Q2 FY26)",
+                  "value": "70",
                   "unit": "crores",
                   "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Paint Revenue (Half-Year)",
-                  "value": "182",
-                  "unit": "crores",
-                  "period": "H1 FY26",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Paint Business",
+                  "label": "Incentives and Expenses",
                   "points": [
-                    "Paint revenue was Rs. 95 crores in Q2 and Rs. 182 crores for the half-year.",
-                    "The company is working towards achieving Rs. 400 crores in paint revenue for FY26."
+                    "The incentive quantum for Q2 FY26 was around Rs. 70 crores.",
+                    "Other expenses were higher due to maintenance work on kilns and branding activities."
                   ]
                 }
               ]
@@ -31921,42 +31956,42 @@
               "title": "Manufacturing & Capacity",
               "key_figures": [
                 {
-                  "label": "Panna Project Capacity",
+                  "label": "Panna project capacity",
                   "value": "6",
                   "unit": "million tons",
                   "period": null,
                   "kind": "reported"
                 },
                 {
-                  "label": "Prayagraj Grinding Unit Commissioned",
+                  "label": "Prayagraj grinding unit capacity",
                   "value": "1",
                   "unit": "million tons",
                   "period": "October 2025",
                   "kind": "reported"
                 },
                 {
-                  "label": "Buxar Grinding Unit Completion",
+                  "label": "Buxar grinding unit capacity",
                   "value": "3",
                   "unit": "million tons",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Jaisalmer Clinker Capacity",
+                  "label": "Jaisalmer clinker capacity",
                   "value": "4",
                   "unit": "million tons",
                   "period": "Q2 FY28",
                   "kind": "reported"
                 },
                 {
-                  "label": "Jaisalmer Grinding Capacity",
+                  "label": "Jaisalmer grinding capacity",
                   "value": "3",
                   "unit": "million tons",
                   "period": "Q2 FY28",
                   "kind": "reported"
                 },
                 {
-                  "label": "Nathdwara Wall Putty Plant Capacity",
+                  "label": "Nathdwara wall putty plant capacity",
                   "value": "6",
                   "unit": "lakh tons",
                   "period": "Q2 FY27",
@@ -31970,8 +32005,30 @@
                     "The Panna project is at an advanced stage of completion.",
                     "A 1 million ton grinding unit at Prayagraj was commissioned in October.",
                     "The Buxar grinding unit is expected to be completed in Q4 FY26.",
-                    "The Jaisalmer project has started, with major civil and mechanical contractors finalized.",
+                    "The Jaisalmer project has started, with orders placed for most equipment and work progressing.",
                     "The Nathdwara wall putty plant is expected to be commissioned by Q2 FY27."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [
+                {
+                  "label": "Sales growth in South and Central India",
+                  "value": "high teens",
+                  "unit": "%",
+                  "period": "H1 FY26",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Regional Sales Split",
+                  "points": [
+                    "Major sales growth was seen in South and Central India due to previous maintenance and investments.",
+                    "The North region saw flattish growth of about 5% to 6%."
                   ]
                 }
               ]
@@ -31984,7 +32041,8 @@
                 {
                   "label": "Pricing Pressure",
                   "points": [
-                    "There is pressure on pricing due to GST reduction and increased competition."
+                    "There is pressure on pricing due to GST reduction and increased competition.",
+                    "The company is monitoring the situation and expects some pressure on prices in the short term."
                   ]
                 }
               ]
@@ -31995,15 +32053,18 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Volume Growth",
+                  "label": "Volume and Revenue Guidance",
                   "points": [
-                    "The company maintains a guidance of around 10% volume growth for FY26, targeting close to 20 million tons."
+                    "The company maintains a guidance of around 20 million tons volume for FY26.",
+                    "Paint revenue guidance for FY26 is closer to Rs. 400 crores."
                   ]
                 },
                 {
-                  "label": "Cost Reduction Program",
+                  "label": "CapEx and Expansion Plans",
                   "points": [
-                    "The company aims for Rs. 150 to Rs. 200 per ton cost savings, with Rs. 75 to Rs. 90 per ton expected by FY26 end."
+                    "CapEx for FY26 is expected to be in the range of Rs. 2,800 crores to Rs. 3,000 crores.",
+                    "CapEx for FY27 is expected to be over Rs. 3,500 crores.",
+                    "The Jaisalmer project will see about Rs. 700 crores to Rs. 800 crores spent in FY26."
                   ]
                 }
               ]
@@ -32011,25 +32072,41 @@
           ],
           "guidance_ledger": [
             {
-              "metric": "Volume Growth",
+              "metric": "Volume growth",
               "horizon": "FY26",
-              "statement": "The company maintains a guidance of around 10% volume growth for FY26, targeting close to 20 million tons.",
+              "statement": "We still maintain an overall growth of about 10%.",
               "specificity": "specific",
-              "direction": "up",
+              "direction": "flat",
               "status": "new"
             },
             {
-              "metric": "Cost Savings",
+              "metric": "Paint revenue",
               "horizon": "FY26",
-              "statement": "The company aims for Rs. 150 to Rs. 200 per ton cost savings, with Rs. 75 to Rs. 90 per ton expected by FY26 end.",
+              "statement": "We are working, and we should be closer to Rs. 400 crores.",
               "specificity": "specific",
-              "direction": "down",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "CapEx",
+              "horizon": "FY26",
+              "statement": "This year, it should be in the range of Rs. 2,800 crores to Rs. 3,000 crores.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "CapEx",
+              "horizon": "FY27",
+              "statement": "Next year, it will be over Rs. 3,500 crores.",
+              "specificity": "specific",
+              "direction": "flat",
               "status": "new"
             }
           ],
           "risk_register": [
             {
-              "risk": "Pricing Pressure",
+              "risk": "Pricing pressure due to GST reduction and competition",
               "status": "escalated",
               "note": "There is pressure on pricing due to GST reduction and increased competition."
             }
@@ -32038,7 +32115,7 @@
             {
               "label": "Capacity expansion",
               "direction": "positive",
-              "note": "JK Cement is progressing with its Panna and Jaisalmer projects, aiming to increase capacity.",
+              "note": "JK Cement is progressing with its Panna and Jaisalmer projects, aiming for completion by FY28.",
               "section_ref": "MFG"
             },
             {
@@ -32049,23 +32126,28 @@
             },
             {
               "label": "Volume growth",
-              "direction": "positive",
-              "note": "The company maintains a guidance of around 10% volume growth for FY26.",
+              "direction": "neutral",
+              "note": "The company maintains a guidance of around 20 million tons volume for FY26.",
               "section_ref": "GUID"
             },
             {
-              "label": "Cost reduction",
+              "label": "Paint business performance",
+              "direction": "neutral",
+              "note": "The paint business incurred an EBITDA loss but aims for Rs. 400 crores revenue in FY26.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Regional sales growth",
               "direction": "positive",
-              "note": "The company aims for significant cost savings per ton by FY26 end.",
-              "section_ref": "GUID"
+              "note": "Major sales growth was seen in South and Central India due to previous maintenance and investments.",
+              "section_ref": "GEO"
             }
           ],
           "key_takeaways": [
             "The revenue from operations during this quarter was Rs. 2,859 crores, an increase of 19% YoY, though it was lower by 10% compared to the previous quarter.",
-            "The EBITDA during this quarter was Rs. 440 crores, an increase of 62.3% YoY, with a margin of 15.9%.",
-            "The Panna project is at an advanced stage of completion, with a 1 million ton grinding unit at Prayagraj commissioned in October.",
-            "The Jaisalmer project has started, with major civil and mechanical contractors finalized, expected to come on stream in Q2 FY28.",
-            "The company maintains a guidance of around 10% volume growth for FY26, targeting close to 20 million tons.",
+            "The EBITDA during this quarter was Rs. 440 crores, with a margin of 15.9%, compared to 11.5% last year.",
+            "The Panna project is at an advanced stage of completion, with several other projects progressing as planned.",
+            "The company maintains a guidance of around 20 million tons volume for FY26.",
             "There is pressure on pricing due to GST reduction and increased competition."
           ],
           "pressing_questions": []
