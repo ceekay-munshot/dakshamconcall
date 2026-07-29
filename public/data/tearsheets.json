@@ -5339,19 +5339,19 @@
       "ticker": "M&M",
       "industry": "Passenger Cars & Utility Vehicles",
       "country": "India",
-      "checked_at": "2026-07-25T22:52:02.558Z",
+      "checked_at": "2026-07-29T08:14:32.463Z",
       "quarters": [
         {
           "company": "Mahindra & Mahindra Ltd",
           "ticker": "M&M",
           "industry": "Passenger Cars & Utility Vehicles",
           "country": "India",
-          "concall_date": "2026-05-01",
-          "source": "ai_summary",
-          "source_url": "https://www.screener.in/company/M&M/consolidated/",
+          "concall_date": "2026-05-05",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6d65d81e-ab74-4196-8fc3-f78ef9e3af9d.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-25T22:51:56.167Z",
-          "summary": "Mahindra & Mahindra Ltd anticipates continued growth across its segments, with a focus on expanding its EV market share and maintaining strong performance in its auto and farm divisions. The company is also addressing supply chain challenges and planning strategic capacity expansions.",
+          "generated_at": "2026-07-29T08:14:25.360Z",
+          "summary": "Mahindra & Mahindra Ltd expects strong growth across its segments, driven by robust demand, capacity expansion, and strategic initiatives, despite challenges such as commodity price inflation and supply chain disruptions.",
           "sections": [
             {
               "id": "FIN",
@@ -5359,70 +5359,154 @@
               "key_figures": [
                 {
                   "label": "Q4 PAT growth",
-                  "value": "42",
-                  "unit": "%",
-                  "period": "YoY",
+                  "value": "42%",
+                  "unit": null,
+                  "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
                   "label": "FY26 PAT growth",
-                  "value": "35",
-                  "unit": "%",
-                  "period": "YoY",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Q4 Revenue growth",
-                  "value": "29",
-                  "unit": "%",
-                  "period": "YoY",
-                  "kind": "reported"
-                },
-                {
-                  "label": "FY26 Revenue growth",
-                  "value": "25",
-                  "unit": "%",
-                  "period": "YoY",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Net cash generation from business",
-                  "value": "16000",
-                  "unit": "crore",
+                  "value": "35%",
+                  "unit": null,
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Cash balance after dividend",
-                  "value": "41000",
-                  "unit": "crore",
+                  "label": "Auto profit growth",
+                  "value": "33%",
+                  "unit": null,
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Dividend growth",
-                  "value": "30",
-                  "unit": "%",
-                  "period": "YoY",
+                  "label": "Farm profit growth",
+                  "value": "13%",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Auto volume growth",
+                  "value": "19%",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Auto margin increase",
+                  "value": "80",
+                  "unit": "basis points",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Farm volume growth",
+                  "value": "24%",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Farm margin increase",
+                  "value": "150",
+                  "unit": "basis points",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Mahindra Finance profit growth",
+                  "value": "60%",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Growth Gems profit growth",
+                  "value": "50%",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "TechM profit growth",
+                  "value": "14%",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue growth Q4",
+                  "value": "29%",
+                  "unit": null,
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue growth FY26",
+                  "value": "25%",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ROE",
+                  "value": "20%",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EPS growth over 5 years",
+                  "value": "57%",
+                  "unit": "annualized",
+                  "period": "5 years",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Dividend increase",
+                  "value": "30%",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net cash generation",
+                  "value": "16,000",
+                  "unit": "crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cash balance",
+                  "value": "41,000",
+                  "unit": "crores",
+                  "period": "FY26",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Key FY26 profit growth contributors",
+                  "label": "Profit and Revenue Growth",
                   "points": [
-                    "Auto PAT growth of 33%.",
-                    "Farm PAT growth of 13%, impacted by international exits/impairments.",
-                    "Mahindra Finance profit growth of ~60%, excluding prior-year provision release.",
-                    "TechM PAT growth of 14% YoY.",
-                    "Growth Gems profit growth of 50% YoY, with Q4 PAT up 94%.",
-                    "Higher gains from sale of investments compared to last year."
+                    "Profit after tax for Q4 is up 42%.",
+                    "Profit after tax for FY26 is up 35%.",
+                    "Revenue for Q4 is up 29%, and for the year, it is up 25%."
                   ]
                 },
                 {
-                  "label": "Capital return / liquidity",
+                  "label": "Segment Contributions",
                   "points": [
-                    "Dividend increased by 30% YoY, linked to profit growth and cash availability."
+                    "Auto profit growth is 33%, Farm profit growth is 13%.",
+                    "Mahindra Finance has a 60% profit growth year-over-year.",
+                    "Growth Gems collectively increased profit by 50% year-over-year.",
+                    "TechM is on a solid path, up 14% year-over-year."
+                  ]
+                },
+                {
+                  "label": "ROE and EPS",
+                  "points": [
+                    "ROE is at 20% for the full year.",
+                    "EPS growth over the last five years is 57% annualized."
                   ]
                 }
               ]
@@ -5432,24 +5516,18 @@
               "title": "Order Book & Demand",
               "key_figures": [
                 {
-                  "label": "SUV volume growth FY26",
-                  "value": "19",
-                  "unit": "%",
-                  "period": "FY26",
+                  "label": "Aero structures orders",
+                  "value": "1 billion",
+                  "unit": "dollars",
+                  "period": "over a year",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Demand, mix, and market share",
+                  "label": "Aero Structures",
                   "points": [
-                    "SUV volume growth for FY26 was 19%, meeting earlier guidance of mid-to-high teens.",
-                    "Management claims capacity is a bigger constraint than demand.",
-                    "XUV 7XO achieved ~9,500 units/month, currently supply-constrained.",
-                    "Bolero/Bolero Neo running at ~9–10k/month post-refresh.",
-                    "Scorpio-N, Thar 3D & ROXX cited as having huge demand.",
-                    "Revenue market share increased by 260 bps; LCV share increased by 60 bps.",
-                    "M&M became the 5th largest exporter, close to being 4th, indicating international scaling potential."
+                    "Aero structures have close to a billion dollars of orders in a little over a year."
                   ]
                 }
               ]
@@ -5459,122 +5537,115 @@
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
-                  "label": "EV penetration FY26",
-                  "value": "9.6",
-                  "unit": "%",
+                  "label": "EV penetration",
+                  "value": "9.6%",
+                  "unit": null,
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "EV market share volume",
-                  "value": "31.4",
-                  "unit": "%",
+                  "label": "Revenue market share increase",
+                  "value": "260",
+                  "unit": "basis points",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "LCV market share increase",
+                  "value": "60",
+                  "unit": "basis points",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Farm machinery growth",
+                  "value": "32%",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Tractor market share",
+                  "value": "43.6%",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Auto margin",
+                  "value": "10.9%",
+                  "unit": null,
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "EV market share revenue",
-                  "value": "37.7",
-                  "unit": "%",
+                  "label": "EV market share",
+                  "value": "31.4%",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV revenue market share",
+                  "value": "37.7%",
+                  "unit": null,
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Q4 EV PBIT",
+                  "label": "Mahindra Electric PBIT",
                   "value": "227",
-                  "unit": "crore",
+                  "unit": "crores",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "FY26 EV EBITDA",
-                  "value": "1314",
-                  "unit": "crore",
+                  "label": "Mahindra Electric EBITDA",
+                  "value": "1,314",
+                  "unit": "crores",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "FY26 EV PBIT",
+                  "label": "Mahindra Electric PBIT full year",
                   "value": "287",
-                  "unit": "crore",
+                  "unit": "crores",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Standalone Auto margin Q4",
-                  "value": "10.9",
-                  "unit": "%",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Reported Auto margin Q4",
-                  "value": "9.5",
-                  "unit": "%",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "FY26 Auto margin excluding contract manufacturing",
-                  "value": "10.4",
-                  "unit": "%",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Reported FY26 Auto margin",
-                  "value": "9.3",
-                  "unit": "%",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Q4 tractor volumes growth",
-                  "value": "36",
-                  "unit": "%",
-                  "period": "YoY",
-                  "kind": "reported"
-                },
-                {
-                  "label": "FY26 tractor market share",
-                  "value": "43.6",
-                  "unit": "%",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Q4 core tractor margins",
-                  "value": "20.4",
-                  "unit": "%",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "FY26 core tractor margins",
-                  "value": "20.8",
-                  "unit": "%",
+                  "label": "Trucks and buses market share",
+                  "value": "22.9%",
+                  "unit": null,
                   "period": "FY26",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Auto: growth engine, margin resilience, and EV profitability inflection",
+                  "label": "Auto and Farm Performance",
                   "points": [
-                    "EV penetration reached 9.6% for FY26, exceeding 10% in the last two months.",
-                    "EV market share was 31.4% by volume and 37.7% by revenue in Q4.",
-                    "Mahindra Electric's profitability was ahead of expectations, with Q4 EV PBIT at ₹227 crore and FY26 EV EBITDA at ₹1,314 crore.",
-                    "Standalone Auto margin for Q4 was 10.9%, excluding EV contract manufacturing.",
-                    "Reported Auto margin for Q4 was 9.5% due to near pass-through nature of contract manufacturing."
+                    "Auto volume up 19%, margin up 80 basis points.",
+                    "Farm volume up 24%, margins up 150 basis points.",
+                    "EV penetration of 9.6%, hitting more than 10% for the last two months of the year.",
+                    "Revenue market shares up 260 basis points.",
+                    "LCV market share up 60 basis points."
                   ]
                 },
                 {
-                  "label": "Farm: strong domestic execution; international pruning resets earnings base",
+                  "label": "Farm Business",
                   "points": [
-                    "Q4 tractor volumes grew by 36% YoY, with market share gains.",
-                    "FY26 tractor market share reached 43.6%, the highest ever.",
-                    "Core tractor margins were 20.4% in Q4 and 20.8% for FY26.",
-                    "Management aims to maintain an 18–21% margin band, even in down years."
+                    "Farm machinery up 32%.",
+                    "Tractor market share at 43.6%, the highest ever.",
+                    "Core tractor margins for Q4 at 20.4%, and for the year at 20.8%."
+                  ]
+                },
+                {
+                  "label": "Auto Business",
+                  "points": [
+                    "Auto margin at 10.9% excluding contract manufacturing.",
+                    "Mahindra Electric operations sold 55,000 vehicles since launch.",
+                    "EV market share at 31.4%, revenue market share at 37.7% in Q4."
                   ]
                 }
               ]
@@ -5584,71 +5655,34 @@
               "title": "Manufacturing & Capacity",
               "key_figures": [
                 {
-                  "label": "SUV capacity roadmap FY25 exit",
-                  "value": "54",
-                  "unit": "k/month",
-                  "period": "FY25",
-                  "kind": "reported"
-                },
-                {
-                  "label": "EV capacity roadmap FY25 exit",
-                  "value": "5",
-                  "unit": "k/month",
-                  "period": "FY25",
-                  "kind": "reported"
-                },
-                {
-                  "label": "SUV capacity roadmap FY26",
-                  "value": "56.5",
-                  "unit": "k/month",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "EV capacity roadmap FY26",
-                  "value": "8",
-                  "unit": "k/month",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "SUV capacity roadmap H1 FY27 exit",
-                  "value": "60",
-                  "unit": "k/month",
+                  "label": "ICE capacity expansion",
+                  "value": "60,000",
+                  "unit": "units",
                   "period": "H1 FY27",
-                  "kind": "reported"
+                  "kind": "target"
                 },
                 {
-                  "label": "EV capacity roadmap H1 FY27 exit",
-                  "value": "8",
-                  "unit": "k/month",
+                  "label": "EV capacity expansion",
+                  "value": "8,000",
+                  "unit": "units",
                   "period": "H1 FY27",
-                  "kind": "reported"
+                  "kind": "target"
                 },
                 {
-                  "label": "SUV capacity roadmap FY27 end",
-                  "value": "70",
-                  "unit": "k/month",
-                  "period": "FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "EV capacity roadmap FY27 end",
-                  "value": "12",
-                  "unit": "k/month",
-                  "period": "FY27",
-                  "kind": "reported"
+                  "label": "Nagpur plant start",
+                  "value": "2028",
+                  "unit": null,
+                  "period": null,
+                  "kind": "target"
                 }
               ],
               "subsections": [
                 {
-                  "label": "SUV capacity roadmap (key constraint management)",
+                  "label": "Capacity Expansion",
                   "points": [
-                    "FY25 exit capacities: ICE 54k/month, EV 5k/month.",
-                    "FY26 capacities: ICE 56.5k/month, EV 8k/month.",
-                    "H1 FY27 exit: ICE 60k/month, EV 8k/month.",
-                    "FY27 end: add +10k ICE and +4k EV capacity.",
-                    "Nagpur plant targeted to start mid-2028, with land acquisition nearing completion."
+                    "ICE capacity to increase to 60,000 units by H1 FY27.",
+                    "EV capacity to remain at 8,000 units by H1 FY27.",
+                    "Nagpur plant is on track to start in mid-2028."
                   ]
                 }
               ]
@@ -5656,32 +5690,36 @@
             {
               "id": "SUP",
               "title": "Supply Chain & Operations",
-              "key_figures": [],
-              "subsections": [
+              "key_figures": [
                 {
-                  "label": "Supply chain headwinds (near-term) and mitigation",
-                  "points": [
-                    "Gas supply issues have improved in the last 2–3 weeks, though challenges remain.",
-                    "DRAM/memory chips are a structural constraint, requiring inventory build and aftermarket purchases.",
-                    "Management likens the situation to semiconductors during COVID."
-                  ]
+                  "label": "Purchases",
+                  "value": "1,06,000",
+                  "unit": "crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Parts",
+                  "value": "1,00,000",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Commodities",
+                  "value": "40",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
                 }
-              ]
-            },
-            {
-              "id": "STRAT",
-              "title": "Strategic Initiatives & M&A",
-              "key_figures": [],
+              ],
               "subsections": [
                 {
-                  "label": "Growth Gems: operational turnarounds + scale-up vectors",
+                  "label": "Supply Chain Resilience",
                   "points": [
-                    "Aero structures have nearly a billion dollars in orders within a year, with ambitions to be a Top-5 global player.",
-                    "Logistics has improved execution, with a senior leadership move to capture value creation.",
-                    "Advanced Technologies (defence) is gaining momentum with higher armed forces spend.",
-                    "Trucks & buses/SML acquisition integrated well, with marginal market share gains.",
-                    "Real Estate profit was ₹298 crore, with expectations of sustained high profit levels.",
-                    "Powerol and Accelo profits were ₹276 crore and ₹224 crore, respectively, with Accelo holding ~50% share in organized auto recycling."
+                    "1,06,000 crores of purchases, 1,00,000 parts, 40 commodities analyzed for risk.",
+                    "82-part families and 9 commodities identified at high risk.",
+                    "Actions taken include increasing inventory, localizing alternate suppliers, and creating an intelligence desk."
                   ]
                 }
               ]
@@ -5692,12 +5730,15 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "What management is explicitly worried about (and how they’re positioning)",
+                  "label": "Commodity Price Inflation",
                   "points": [
-                    "Persistent uncertainty with macro shocks accelerating in frequency.",
-                    "Inflation/commodities acknowledged, with a calibrated pricing approach.",
-                    "Supply chain issues with DRAM/memory chips and gas, though gas has stabilized.",
-                    "Tractor seasonality and rainfall pose downside risks, especially in H2."
+                    "Short-term greater increase in commodity prices expected, with some inflation impact over the next year."
+                  ]
+                },
+                {
+                  "label": "Supply Chain Disruptions",
+                  "points": [
+                    "Supply chain problems managed despite challenges, with resilience built across the group."
                   ]
                 }
               ]
@@ -5705,16 +5746,112 @@
             {
               "id": "GUID",
               "title": "Guidance & Outlook",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "Tractor market growth",
+                  "value": "5%",
+                  "unit": null,
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "SUV growth",
+                  "value": "mid-to-high teens",
+                  "unit": null,
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "LCV growth",
+                  "value": "high single digits",
+                  "unit": null,
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Mahindra Finance AUM growth",
+                  "value": "12%",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "TechM revenue growth",
+                  "value": "1.5 to 2X",
+                  "unit": null,
+                  "period": "F31",
+                  "kind": "target"
+                },
+                {
+                  "label": "Mahindra Finance AUM growth",
+                  "value": "5X",
+                  "unit": null,
+                  "period": "F31",
+                  "kind": "target"
+                },
+                {
+                  "label": "Hospitality room inventory growth",
+                  "value": "5X",
+                  "unit": null,
+                  "period": "F31",
+                  "kind": "target"
+                },
+                {
+                  "label": "Logistics revenue growth",
+                  "value": "4X",
+                  "unit": null,
+                  "period": "F31",
+                  "kind": "target"
+                },
+                {
+                  "label": "Residential pre-sales growth",
+                  "value": "14X",
+                  "unit": null,
+                  "period": "F31",
+                  "kind": "target"
+                },
+                {
+                  "label": "Susten asset portfolio growth",
+                  "value": "5X",
+                  "unit": null,
+                  "period": "F31",
+                  "kind": "target"
+                },
+                {
+                  "label": "Last Mile Mobility growth",
+                  "value": "10X",
+                  "unit": null,
+                  "period": "F31",
+                  "kind": "target"
+                },
+                {
+                  "label": "Truck and Bus growth",
+                  "value": "4X",
+                  "unit": null,
+                  "period": "F31",
+                  "kind": "target"
+                }
+              ],
               "subsections": [
                 {
-                  "label": "FY27 operational outlook, capacity roadmap, and product cadence",
+                  "label": "Growth Outlook",
                   "points": [
-                    "Tractor growth expected at mid-single digit (~5%).",
-                    "SUV growth expected in mid-to-high teens.",
-                    "<3.5T LCV growth expected in high single digits.",
-                    "Product pipeline updates include expanded LCV and SUV launches by FY31.",
-                    "CAFE/EV penetration requirement of 13%–21% over the block, with platform fungibility providing comfort."
+                    "Tractor market expected to grow mid-single digit, around 5%.",
+                    "SUV growth expected in mid-to-high teens for FY27.",
+                    "LCV growth expected in high single digits for FY27."
+                  ]
+                },
+                {
+                  "label": "Long-term Growth Targets",
+                  "points": [
+                    "TechM revenue expected to grow 1.5 to 2X by F31.",
+                    "Mahindra Finance AUM expected to grow 5X by F31.",
+                    "Hospitality room inventory expected to grow 5X by F31.",
+                    "Logistics revenue expected to grow 4X by F31.",
+                    "Residential pre-sales expected to grow 14X by F31.",
+                    "Susten asset portfolio expected to grow 5X by F31.",
+                    "Last Mile Mobility expected to grow 10X by F31.",
+                    "Truck and Bus expected to grow 4X by F31."
                   ]
                 }
               ]
@@ -5722,9 +5859,9 @@
           ],
           "guidance_ledger": [
             {
-              "metric": "Tractor growth",
+              "metric": "Tractor market growth",
               "horizon": "FY27",
-              "statement": "Tractor growth mid-single digit (~5%).",
+              "statement": "Tractor market expected to grow mid-single digit, around 5%.",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
@@ -5732,47 +5869,87 @@
             {
               "metric": "SUV growth",
               "horizon": "FY27",
-              "statement": "SUV growth expected in mid-to-high teens.",
+              "statement": "SUV growth expected in mid-to-high teens for FY27.",
               "specificity": "specific",
               "direction": "up",
               "status": "reiterated"
             },
             {
-              "metric": "<3.5T LCV growth",
+              "metric": "LCV growth",
               "horizon": "FY27",
-              "statement": "<3.5T LCV growth expected in high single digits.",
+              "statement": "LCV growth expected in high single digits for FY27.",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
             },
             {
-              "metric": "SUV capacity expansion",
-              "horizon": "FY27",
-              "statement": "SUV capacity roadmap includes ICE 60k/month and EV 8k/month by H1 FY27 exit, with further expansion by FY27 end.",
+              "metric": "TechM revenue growth",
+              "horizon": "F31",
+              "statement": "TechM revenue expected to grow 1.5 to 2X by F31.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Mahindra Finance AUM growth",
+              "horizon": "F31",
+              "statement": "Mahindra Finance AUM expected to grow 5X by F31.",
               "specificity": "specific",
               "direction": "up",
               "status": "reiterated"
             },
             {
-              "metric": "Nagpur plant start",
-              "horizon": "mid-2028",
-              "statement": "Nagpur plant targeted start mid-2028.",
+              "metric": "Hospitality room inventory growth",
+              "horizon": "F31",
+              "statement": "Hospitality room inventory expected to grow 5X by F31.",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
             },
             {
-              "metric": "Mahindra Finance growth",
-              "horizon": "next 3 years",
-              "statement": "Mahindra Finance will pivot to growth with a focus on diversification and technology.",
-              "specificity": "vague",
+              "metric": "Logistics revenue growth",
+              "horizon": "F31",
+              "statement": "Logistics revenue expected to grow 4X by F31.",
+              "specificity": "specific",
               "direction": "up",
-              "status": "no_mention"
+              "status": "new"
+            },
+            {
+              "metric": "Residential pre-sales growth",
+              "horizon": "F31",
+              "statement": "Residential pre-sales expected to grow 14X by F31.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Susten asset portfolio growth",
+              "horizon": "F31",
+              "statement": "Susten asset portfolio expected to grow 5X by F31.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Last Mile Mobility growth",
+              "horizon": "F31",
+              "statement": "Last Mile Mobility expected to grow 10X by F31.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Truck and Bus growth",
+              "horizon": "F31",
+              "statement": "Truck and Bus expected to grow 4X by F31.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
             },
             {
               "metric": "Tech Mahindra EBIT margin",
               "horizon": "FY27",
-              "statement": "Tech Mahindra on track for a 15% EBIT margin by FY27.",
+              "statement": "Tech Mahindra to achieve a 15% EBIT margin by FY27.",
               "specificity": "specific",
               "direction": "up",
               "status": "no_mention"
@@ -5780,100 +5957,94 @@
             {
               "metric": "Auto capacity expansion",
               "horizon": "FY27",
-              "statement": "Auto capacity to increase by 7,000 to 8,000 units in FY27, with further expansion in Nagpur.",
+              "statement": "Add 7,000 to 8,000 units in ICE capacity by FY27.",
               "specificity": "specific",
               "direction": "up",
               "status": "no_mention"
             },
             {
-              "metric": "Electric SUV launches",
-              "horizon": "early 2026",
-              "statement": "Two new Electric SUVs to be launched in early 2026.",
+              "metric": "Electric Vehicles PLI",
+              "horizon": "Q2/Q3 FY26",
+              "statement": "Awaiting final technical audit certification for XEV 9e PLI.",
               "specificity": "specific",
-              "direction": "up",
+              "direction": "unclear",
               "status": "no_mention"
             }
           ],
           "risk_register": [
             {
-              "risk": "Persistent uncertainty",
+              "risk": "Commodity price inflation",
               "status": "new",
-              "note": "CEO’s macro view: shocks accelerating in frequency."
+              "note": "Short-term greater increase in commodity prices expected, with some inflation impact over the next year."
             },
             {
-              "risk": "Inflation/commodities",
+              "risk": "Supply chain disruptions",
               "status": "new",
-              "note": "Acknowledged recent inflation; pricing approach is calibrated."
-            },
-            {
-              "risk": "Supply chain issues",
-              "status": "new",
-              "note": "DRAM/memory chips treated as long-duration structural tightness; gas stabilized."
-            },
-            {
-              "risk": "Tractor seasonality and rainfall",
-              "status": "new",
-              "note": "Downside risk skewed to H2 if rainfall deficit manifests later in the year."
+              "note": "Supply chain problems managed despite challenges, with resilience built across the group."
             },
             {
               "risk": "Commodity inflation",
               "status": "no_mention",
-              "note": "Steep inflation in precious metals, with limited hedging coverage."
+              "note": "Steep inflation in precious metals impacting costs."
             },
             {
-              "risk": "Potential El Nino impact on tractor demand",
+              "risk": "Memory chip shortage",
               "status": "no_mention",
-              "note": "Concerns about El Nino affecting tractor demand, but positive enablers present."
+              "note": "Affecting both ICE and EV production; mitigating actions in place."
             },
             {
               "risk": "Steel price inflation",
               "status": "no_mention",
-              "note": "Steel prices have risen by 6% over the last quarter, impacting costs."
+              "note": "Steel prices have risen by about 6% over the last quarter."
             }
           ],
           "themes": [
             {
-              "label": "Capacity expansion",
+              "label": "Market share gains",
               "direction": "positive",
-              "note": "SUV and EV capacity expansions planned through FY27.",
-              "section_ref": "MFG"
+              "note": "Mahindra & Mahindra achieved significant market share gains in EVs and LCVs.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Commodity cost inflation",
+              "direction": "negative",
+              "note": "Short-term greater increase in commodity prices expected, impacting future quarters.",
+              "section_ref": "RISK"
             },
             {
               "label": "Electric vehicle growth",
               "direction": "positive",
-              "note": "EV penetration and market share exceeded expectations, with profitability ahead of schedule.",
+              "note": "EV penetration reached 9.6%, with strong market share gains.",
               "section_ref": "SEG"
             },
             {
-              "label": "Market share expansion",
+              "label": "Capacity expansion",
               "direction": "positive",
-              "note": "Increased market share in SUVs and tractors, with strong export performance.",
-              "section_ref": "ORD"
+              "note": "ICE and EV capacity expansions are planned to meet growing demand.",
+              "section_ref": "MFG"
             },
             {
-              "label": "Supply chain constraints",
-              "direction": "negative",
-              "note": "DRAM/memory chips and gas supply issues pose ongoing challenges.",
-              "section_ref": "SUP"
-            },
-            {
-              "label": "Inflation management",
-              "direction": "neutral",
-              "note": "Calibrated pricing approach to manage inflation and commodity costs.",
-              "section_ref": "RISK"
+              "label": "Tech Mahindra margin recovery",
+              "direction": "positive",
+              "note": "TechM is on a solid path with 14% profit growth year-over-year.",
+              "section_ref": "FIN"
             }
           ],
           "key_takeaways": [
-            "PAT for Q4 grew by 42% YoY and for FY26 by 35% YoY, exceeding internal expectations.",
-            "Revenue for Q4 increased by 29% YoY and for FY26 by 25% YoY.",
-            "SUV volume growth for FY26 was 19%, meeting earlier guidance of mid-to-high teens.",
-            "EV penetration reached 9.6% for FY26, exceeding 10% in the last two months.",
-            "Standalone Auto margin for Q4 was 10.9%, excluding EV contract manufacturing.",
-            "Q4 tractor volumes grew by 36% YoY, with market share gains.",
-            "Nagpur plant targeted to start mid-2028, with land acquisition nearing completion.",
-            "Persistent uncertainty with macro shocks accelerating in frequency."
+            "Profit after tax for Q4 is up 42%, and for the fiscal year is up 35%.",
+            "Auto profit growth is 33%, and Farm profit growth is 13% for the year.",
+            "Revenue for Q4 is up 29%, and for the year, it is up 25%.",
+            "EV penetration reached 9.6%, hitting more than 10% for the last two months of the year.",
+            "Mahindra Finance has a 60% profit growth year-over-year.",
+            "Growth Gems collectively increased profit by 50% year-over-year.",
+            "TechM is on a solid path, up 14% year-over-year.",
+            "ROE is at 20% for the full year."
           ],
-          "pressing_questions": []
+          "pressing_questions": [
+            "What are the building blocks of the SUV growth guidance expectation for this year?",
+            "How has the visibility on DRAMs progressed through the quarter?",
+            "Does commodity price inflation imply openness to possibly pass some of that on in future quarters?"
+          ]
         },
         {
           "company": "Mahindra & Mahindra Ltd",
@@ -5884,8 +6055,8 @@
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=5ceb5575-dd97-489b-9c43-5e0c1deff006.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-25T22:51:37.489Z",
-          "summary": "Mahindra & Mahindra Ltd anticipates continued strong performance across its businesses, with a focus on growth in Mahindra Finance and strategic capacity expansions in the auto sector.",
+          "generated_at": "2026-07-29T08:13:51.640Z",
+          "summary": "Mahindra & Mahindra Ltd anticipates continued strong performance across its businesses, with a focus on growth in Mahindra Finance and strategic capacity expansions in the auto and farm sectors.",
           "sections": [
             {
               "id": "FIN",
@@ -5893,85 +6064,71 @@
               "key_figures": [
                 {
                   "label": "Operating PAT growth",
-                  "value": "66",
-                  "unit": "%",
+                  "value": "66%",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
                   "label": "Reported PAT growth",
-                  "value": "47",
-                  "unit": "%",
+                  "value": "47%",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
                   "label": "Consolidated revenue growth",
-                  "value": "26",
-                  "unit": "%",
+                  "value": "26%",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
                   "label": "Consolidated revenue growth excluding Labour Code",
-                  "value": "54",
-                  "unit": "%",
+                  "value": "54%",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
                   "label": "Consolidated reported revenue growth",
-                  "value": "47",
-                  "unit": "%",
-                  "period": "Q3 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Auto margin increase",
-                  "value": "90",
-                  "unit": "basis points",
-                  "period": "Q3 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Farm margin increase",
-                  "value": "240",
-                  "unit": "basis points",
+                  "value": "47%",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
                   "label": "ROE",
-                  "value": "20.1",
-                  "unit": "%",
+                  "value": "20.1%",
+                  "unit": null,
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Topline",
+                  "value": "50,000 crores",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
                   "label": "Labour Code impact",
-                  "value": "220",
-                  "unit": "crores",
+                  "value": "220 crores",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Labour Code gross impact across group",
-                  "value": "565",
-                  "unit": "crores",
+                  "label": "Labour Code gross amount",
+                  "value": "565 crores",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
                   "label": "Standalone Labour Code impact",
                   "value": "73",
-                  "unit": "crores",
-                  "period": "Q3 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Topline milestone",
-                  "value": "50,000",
-                  "unit": "crores",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 }
@@ -5980,16 +6137,15 @@
                 {
                   "label": "Breakthrough Performances",
                   "points": [
-                    "Mahindra Finance operating performance up 97%, reported down 9% due to focus on asset quality, controls, and technology.",
-                    "Lifespaces profits up 5x, driven by project completions and strong land acquisition.",
+                    "Mahindra Finance operating performance up 97%, reported down 9%.",
+                    "Lifespaces profits up 5x, driven by project completions and land acquisition.",
                     "Logistics first profitable quarter after 11 quarters, driven by strong execution."
                   ]
                 },
                 {
                   "label": "Operating Profit Growth",
                   "points": [
-                    "Operating profit growth of 66%, 54% excluding Mahindra Finance one-time reserve release, and 47% after Labour Code impact.",
-                    "Lifespaces up 5x, Logistics up 2x, Mahindra Finance 97%, Auto 42%, TechM 35%, Farm 7%."
+                    "66% operating profit growth, 54% without Mahindra Finance one-time reserve release, 47% after Labour Code impact."
                   ]
                 }
               ]
@@ -6000,36 +6156,36 @@
               "key_figures": [
                 {
                   "label": "SUV volume growth",
-                  "value": "26",
-                  "unit": "%",
+                  "value": "26%",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
                   "label": "Farm export volume growth",
-                  "value": "36",
-                  "unit": "%",
+                  "value": "36%",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
                   "label": "Farm Machinery revenue growth",
-                  "value": "45",
-                  "unit": "%",
+                  "value": "45%",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
                   "label": "e-SUVs sold",
                   "value": "41,000",
-                  "unit": "units",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
                   "label": "e-SUV kilometers run",
-                  "value": "32.5",
-                  "unit": "crore kilometers",
+                  "value": "32.5 crore",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 }
@@ -6039,15 +6195,13 @@
                   "label": "Auto Demand",
                   "points": [
                     "SUV volume up 26%, maintaining number one position.",
-                    "LCV share increased by 10 basis points to 51.9%.",
-                    "Strong order pipeline for 7XOs, with a skew towards top-end versions."
+                    "LCV share increased by 10 basis points to 51.9%."
                   ]
                 },
                 {
                   "label": "Farm Demand",
                   "points": [
                     "Farm volume up 36% from an export standpoint.",
-                    "Market share down slightly, but recovered in January.",
                     "Farm Machinery revenue up 45%, indicating faster growth."
                   ]
                 }
@@ -6058,61 +6212,84 @@
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
-                  "label": "Auto volume growth",
-                  "value": "23",
-                  "unit": "%",
+                  "label": "Auto margin growth",
+                  "value": "90 basis points",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Farm volume growth",
-                  "value": "23",
-                  "unit": "%",
+                  "label": "Farm margin growth",
+                  "value": "240 basis points",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Mahindra Finance assets under management growth",
-                  "value": "12",
-                  "unit": "%",
+                  "label": "Mahindra Finance operating performance growth",
+                  "value": "97%",
+                  "unit": null,
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Mahindra Finance reported performance decline",
+                  "value": "9%",
+                  "unit": null,
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Lifespaces profit growth",
+                  "value": "5x",
+                  "unit": null,
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Logistics profit growth",
+                  "value": "2x",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
                   "label": "TechM growth",
-                  "value": "35",
-                  "unit": "%",
+                  "value": "35%",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Logistics growth",
-                  "value": "2",
-                  "unit": "x",
+                  "label": "Farm growth",
+                  "value": "7%",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Lifespaces growth",
-                  "value": "5",
-                  "unit": "x",
+                  "label": "Auto growth",
+                  "value": "42%",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Auto and Farm Performance",
+                  "label": "Auto Performance",
                   "points": [
-                    "Auto volume up 23%, margin up 90 basis points.",
-                    "Farm volume up 23%, margin up 240 basis points despite international impairments."
+                    "Auto margins robust at 10.4% without contract manufacturing.",
+                    "Contract manufacturing contributed 10 crores to Auto standalone.",
+                    "Standalone Auto margin reported at 9.5%."
                   ]
                 },
                 {
-                  "label": "Mahindra Finance Performance",
+                  "label": "Farm Performance",
                   "points": [
-                    "Assets under management up 12%, with a focus on asset quality and technology.",
-                    "Pivot to growth announced, with a focus on diversification."
+                    "Farm volumes grew 23% in the quarter.",
+                    "Farm Machinery crossed 100 crores monthly average, showing strong momentum.",
+                    "Co-tractor margin at 21.2%, close to best performance."
                   ]
                 }
               ]
@@ -6122,27 +6299,41 @@
               "title": "Manufacturing & Capacity",
               "key_figures": [
                 {
-                  "label": "Additional capacity in FY27",
+                  "label": "Additional capacity in ICE",
+                  "value": "5,000 to 6,000",
+                  "unit": "units",
+                  "period": "FY26",
+                  "kind": "target"
+                },
+                {
+                  "label": "Additional capacity in EVs",
+                  "value": "3,000",
+                  "unit": "units",
+                  "period": "FY26",
+                  "kind": "target"
+                },
+                {
+                  "label": "Additional capacity in ICE",
                   "value": "7,000 to 8,000",
                   "unit": "units",
                   "period": "FY27",
-                  "kind": "guidance"
+                  "kind": "target"
                 },
                 {
-                  "label": "Nagpur Greenfield capacity addition",
+                  "label": "Nagpur Greenfield capacity",
                   "value": "100,000",
                   "unit": "units",
                   "period": "FY27",
-                  "kind": "guidance"
+                  "kind": "target"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Capacity Expansion Plans",
+                  "label": "Capacity Expansion",
                   "points": [
-                    "In 2026, de-bottlenecking to add 3,000 to 5,000 units per month for certain products.",
-                    "In 2027, new capacity in Chakan for the IQ platform.",
-                    "Nagpur facility to focus on the new IQ platform, with potential additional capacity at Igatpuri or Nagpur."
+                    "De-bottlenecking current capacity products in 2026, adding 3,000 to 5,000 units per month.",
+                    "New capacity in Chakan for IQ platform in 2027.",
+                    "Nagpur facility to focus on new IQ platform, Vision X, and other new products."
                   ]
                 }
               ]
@@ -6155,14 +6346,15 @@
                 {
                   "label": "Commodity Inflation",
                   "points": [
-                    "Steep commodity inflation, particularly in precious metals, with hedging in place but limited coverage.",
-                    "Potential impact on pricing and margins, with a 1% price increase already taken."
+                    "Steep commodity inflation, particularly in precious metals, impacting costs.",
+                    "Hedges have worked but only cover a portion of exposure."
                   ]
                 },
                 {
-                  "label": "Tractor Industry Concerns",
+                  "label": "Supply Chain Risks",
                   "points": [
-                    "Potential El Nino scenario could affect tractor demand, but current enablers like reservoir levels and government spending are positive."
+                    "Memory chip shortage affecting both ICE and EV production.",
+                    "Mitigating actions in place to manage supply chain disruptions."
                   ]
                 }
               ]
@@ -6173,11 +6365,10 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Future Growth Projections",
+                  "label": "Future Growth",
                   "points": [
-                    "Mahindra Finance to pivot to growth with a focus on diversification and technology.",
-                    "Tech Mahindra on track for a 15% EBIT margin by FY27.",
-                    "Auto capacity to increase by 7,000 to 8,000 units in FY27, with further expansion in Nagpur."
+                    "Mahindra Finance to pivot to growth with a focus on asset quality and technology.",
+                    "Tech Mahindra on track for FY27 path with deal wins and margin expansion."
                   ]
                 }
               ]
@@ -6187,7 +6378,7 @@
             {
               "metric": "Mahindra Finance growth",
               "horizon": "next 3 years",
-              "statement": "Mahindra Finance will pivot to growth with a focus on diversification and technology.",
+              "statement": "Mahindra Finance will pivot to growth with a focus on asset quality and technology.",
               "specificity": "vague",
               "direction": "up",
               "status": "new"
@@ -6195,7 +6386,7 @@
             {
               "metric": "Tech Mahindra EBIT margin",
               "horizon": "FY27",
-              "statement": "Tech Mahindra on track for a 15% EBIT margin by FY27.",
+              "statement": "Tech Mahindra to achieve a 15% EBIT margin by FY27.",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
@@ -6203,25 +6394,25 @@
             {
               "metric": "Auto capacity expansion",
               "horizon": "FY27",
-              "statement": "Auto capacity to increase by 7,000 to 8,000 units in FY27, with further expansion in Nagpur.",
+              "statement": "Add 7,000 to 8,000 units in ICE capacity by FY27.",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
             },
             {
-              "metric": "SUV growth",
+              "metric": "SUV Growth",
               "horizon": "FY26",
-              "statement": "Mid to high teens growth percentage for SUVs expected.",
+              "statement": "We’ll stay with the mid to high teens as a growth percentage.",
               "specificity": "specific",
               "direction": "up",
               "status": "no_mention"
             },
             {
-              "metric": "Electric SUV launches",
-              "horizon": "early 2026",
-              "statement": "Two new Electric SUVs to be launched in early 2026.",
+              "metric": "Electric Vehicles PLI",
+              "horizon": "Q2/Q3 FY26",
+              "statement": "Awaiting final technical audit certification for XEV 9e PLI.",
               "specificity": "specific",
-              "direction": "up",
+              "direction": "unclear",
               "status": "no_mention"
             }
           ],
@@ -6229,49 +6420,49 @@
             {
               "risk": "Commodity inflation",
               "status": "escalated",
-              "note": "Steep inflation in precious metals, with limited hedging coverage."
+              "note": "Steep inflation in precious metals impacting costs."
             },
             {
-              "risk": "Potential El Nino impact on tractor demand",
+              "risk": "Memory chip shortage",
               "status": "new",
-              "note": "Concerns about El Nino affecting tractor demand, but positive enablers present."
+              "note": "Affecting both ICE and EV production; mitigating actions in place."
             },
             {
               "risk": "Steel price inflation",
               "status": "no_mention",
-              "note": "Steel prices have risen by 6% over the last quarter, impacting costs."
+              "note": "Steel prices have risen by about 6% over the last quarter."
             }
           ],
           "themes": [
             {
-              "label": "Commodity cost inflation",
-              "direction": "negative",
-              "note": "Steep inflation in precious metals with limited hedging coverage.",
-              "section_ref": "RISK"
+              "label": "Market share gains",
+              "direction": "positive",
+              "note": "SUV volume up 26%, maintaining number one position.",
+              "section_ref": "ORD"
             },
             {
-              "label": "Capacity expansion",
-              "direction": "positive",
-              "note": "Significant capacity expansions planned in auto sector.",
-              "section_ref": "MFG"
+              "label": "Commodity cost inflation",
+              "direction": "negative",
+              "note": "Steep inflation in precious metals impacting costs.",
+              "section_ref": "RISK"
             },
             {
               "label": "Electric vehicle growth",
               "direction": "positive",
-              "note": "Strong demand and sales for e-SUVs, with strategic focus on EV growth.",
+              "note": "41,000 e-SUVs sold, indicating strong demand.",
               "section_ref": "ORD"
             },
             {
-              "label": "Market share expansion",
+              "label": "Capacity expansion",
               "direction": "positive",
-              "note": "Continued leadership in SUV and LCV segments with strong volume growth.",
-              "section_ref": "ORD"
+              "note": "Significant capacity additions planned for ICE and EVs.",
+              "section_ref": "MFG"
             },
             {
-              "label": "Rural vs urban sentiment",
-              "direction": "mixed",
-              "note": "Tractor demand influenced by potential El Nino but supported by positive enablers.",
-              "section_ref": "RISK"
+              "label": "Tech Mahindra margin recovery",
+              "direction": "positive",
+              "note": "On track for FY27 path with deal wins and margin expansion.",
+              "section_ref": "GUID"
             }
           ],
           "key_takeaways": [
@@ -6284,12 +6475,7 @@
             "SUV volume up 26%, continue to be number one there.",
             "Farm volume up, from an export standpoint, 36%."
           ],
-          "pressing_questions": [
-            "What is the outlook for next year's growth for each of the segments, LCVs, Tractors and Autos?",
-            "How do you see the impact of commodity inflation as we look into next year?",
-            "What are your thoughts on the potential recurrence of an El Nino scenario affecting the Tractor business?",
-            "What is the strategy for increasing margins in the automotive business?"
-          ]
+          "pressing_questions": []
         },
         {
           "company": "Mahindra & Mahindra Ltd",
@@ -6300,30 +6486,30 @@
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=3152798e-bca7-4df3-97e9-1078ff0ce061.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-25T22:51:19.045Z",
-          "summary": "Mahindra & Mahindra Ltd expects continued strong performance across its segments, with a focus on maintaining market share and expanding its electric vehicle offerings.",
+          "generated_at": "2026-07-29T08:13:28.682Z",
+          "summary": "Mahindra & Mahindra Ltd reported strong Q1 FY26 results with significant growth in consolidated PAT and revenue, driven by market share gains in SUVs and tractors, and robust performance across segments including Tech Mahindra and Mahindra Finance.",
           "sections": [
             {
               "id": "FIN",
               "title": "Financial Performance",
               "key_figures": [
                 {
-                  "label": "Consolidated Profit After Tax growth",
-                  "value": "24",
+                  "label": "Consolidated Profit After Tax",
+                  "value": "24%",
                   "unit": "%",
                   "period": "Q1 FY26",
                   "kind": "reported"
                 },
                 {
                   "label": "ROE",
-                  "value": "20.6",
+                  "value": "20.6%",
                   "unit": "%",
                   "period": "Q1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Revenue growth",
-                  "value": "22",
+                  "label": "Revenue",
+                  "value": "22%",
                   "unit": "%",
                   "period": "Q1 FY26",
                   "kind": "reported"
@@ -6336,143 +6522,19 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Auto Profit After Tax growth",
-                  "value": "32",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Farm PBIT margin",
-                  "value": "19.8",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Tech Mahindra EBIT margin",
-                  "value": "11.1",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Mahindra Finance asset quality",
-                  "value": "3.8",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Assets Under Management growth",
-                  "value": "15",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Auto Revenue growth",
-                  "value": "31",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Farm Revenue growth",
-                  "value": "12",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Financial Services growth",
-                  "value": "16",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Accelo growth",
-                  "value": "34",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Mahindra Logistics growth",
-                  "value": "14",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Auto standalone PBIT margin",
-                  "value": "10",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Auto consolidated Revenue growth",
-                  "value": "31",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Auto consolidated PBIT growth",
-                  "value": "15",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
                   "label": "EPS",
-                  "value": "36.4",
-                  "unit": "INR",
+                  "value": "₹36.4",
+                  "unit": null,
                   "period": "Q1 FY26",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Overall Performance",
+                  "label": "Key highlights",
                   "points": [
-                    "Consolidated Profit After Tax is up 24%.",
-                    "ROE is at 20.6%, surpassing the target of 18%.",
-                    "Revenue is up 22% at the consolidated level.",
-                    "Profit After Tax is up 24% to 4,083 crores."
-                  ]
-                },
-                {
-                  "label": "Segment Contributions",
-                  "points": [
-                    "Auto Profit After Tax is up 32% this quarter.",
-                    "Farm has seen market share gains and margin expansion.",
-                    "Tech Mahindra's EBIT margin recovery is on track at 11.1%.",
-                    "Mahindra Finance's asset quality at 3.8% is within thresholds.",
-                    "Assets Under Management are up 15%."
-                  ]
-                },
-                {
-                  "label": "Growth Gems",
-                  "points": [
-                    "Accelo has seen 34% growth.",
-                    "Mahindra Logistics had 14% growth."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "ORD",
-              "title": "Order Book & Demand",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Rural vs Urban Sentiment",
-                  "points": [
-                    "Rural sentiment is better than urban, impacting Tractor business positively.",
-                    "Urban sentiment is weaker but expected to improve with upcoming festivals."
+                    "Revenue up 22% at the consolidated level.",
+                    "Profit After Tax up 24% to 4,083 crores."
                   ]
                 }
               ]
@@ -6482,64 +6544,106 @@
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
-                  "label": "SUV volume growth",
-                  "value": "22",
+                  "label": "SUV Volume Growth",
+                  "value": "22%",
                   "unit": "%",
                   "period": "Q1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "SUV revenue market share",
-                  "value": "27.3",
+                  "label": "SUV Revenue Market Share",
+                  "value": "27.3%",
                   "unit": "%",
                   "period": "Q1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Tractor volume growth",
-                  "value": "10",
+                  "label": "Tractor Volume Growth",
+                  "value": "10%",
                   "unit": "%",
                   "period": "Q1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Tractor market share",
-                  "value": "45.2",
+                  "label": "Tractor Market Share",
+                  "value": "45.2%",
                   "unit": "%",
                   "period": "Q1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "LCV volume growth",
-                  "value": "4",
+                  "label": "Auto PBIT Margin",
+                  "value": "10%",
                   "unit": "%",
                   "period": "Q1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Electric SUV penetration",
-                  "value": "8",
+                  "label": "Farm PBIT Margin",
+                  "value": "19.8%",
                   "unit": "%",
                   "period": "Q1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Electric SUV volume market share",
-                  "value": "31",
+                  "label": "Tech Mahindra EBIT Margin",
+                  "value": "11.1%",
                   "unit": "%",
                   "period": "Q1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Electric Passenger Vehicles revenue market share",
-                  "value": "40.9",
+                  "label": "Mahindra Finance Asset Quality",
+                  "value": "3.8%",
                   "unit": "%",
                   "period": "Q1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Last Mile Mobility growth",
-                  "value": "20",
+                  "label": "Assets Under Management Growth",
+                  "value": "15%",
+                  "unit": "%",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Auto Profit After Tax Growth",
+                  "value": "32%",
+                  "unit": "%",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Farm Revenue Growth",
+                  "value": "12%",
+                  "unit": "%",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Farm PBIT Growth",
+                  "value": "6%",
+                  "unit": "%",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Auto Revenue Growth",
+                  "value": "31%",
+                  "unit": "%",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Auto PBIT Growth",
+                  "value": "15%",
+                  "unit": "%",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Tech Mahindra Growth",
+                  "value": "34%",
                   "unit": "%",
                   "period": "Q1 FY26",
                   "kind": "reported"
@@ -6547,20 +6651,27 @@
               ],
               "subsections": [
                 {
-                  "label": "Auto and Farm Performance",
+                  "label": "Auto and Farm",
                   "points": [
-                    "SUV volume is up 22% with a revenue market share of 27.3%.",
-                    "Tractor volumes are up 10% with a market share gain to 45.2%.",
-                    "LCV volume is up 4% in a tough market.",
-                    "Electric SUV penetration is close to 8%.",
-                    "Electric SUV volume market share is at 31%."
+                    "Significant market share expansion for SUVs and tractors.",
+                    "Auto continuing at a 10% margin, excluding Electric SUVs.",
+                    "Farm PBIT margin is 19.8%."
                   ]
                 },
                 {
-                  "label": "Electric Vehicles",
+                  "label": "Tech Mahindra and Mahindra Finance",
                   "points": [
-                    "Electric Passenger Vehicles revenue market share is 40.9%.",
-                    "Last Mile Mobility category penetration is at 28% with a growth of 20%."
+                    "Tech Mahindra's EBIT margin recovery on track at 11.1%.",
+                    "Mahindra Finance focuses on asset quality at 3.8%.",
+                    "Assets Under Management are up 15%."
+                  ]
+                },
+                {
+                  "label": "Growth Gems",
+                  "points": [
+                    "Lifespaces or MLDL has acquired Rs 3,500 crores of GDV.",
+                    "Susten has commissioned 70 megawatts.",
+                    "Accelo has seen very strong growth in revenue and profitability."
                   ]
                 }
               ]
@@ -6570,50 +6681,21 @@
               "title": "Manufacturing & Capacity",
               "key_figures": [
                 {
-                  "label": "Farm Machinery revenue",
-                  "value": "300",
-                  "unit": "crores",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Farm Machinery market share",
-                  "value": "25",
+                  "label": "ICE Capacity Utilization",
+                  "value": "80%",
                   "unit": "%",
                   "period": "Q1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Core Tractor PBIT margin",
-                  "value": "20.7",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Farm consolidated revenue growth",
-                  "value": "12",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Farm consolidated PBIT growth",
-                  "value": "6",
+                  "label": "Electric Vehicles Capacity Utilization",
+                  "value": "70%",
                   "unit": "%",
                   "period": "Q1 FY26",
                   "kind": "reported"
                 }
               ],
               "subsections": [
-                {
-                  "label": "Farm Equipment and Machinery",
-                  "points": [
-                    "Farm Machinery business had a 300 crore plus quarter with a market share of 25%.",
-                    "Core Tractor PBIT margin is at 20.7%.",
-                    "Farm consolidated revenue growth is 12% and PBIT growth is 6%, impacted by Sampo impairment."
-                  ]
-                },
                 {
                   "label": "Capacity Utilization",
                   "points": [
@@ -6624,75 +6706,15 @@
               ]
             },
             {
-              "id": "SUP",
-              "title": "Supply Chain & Operations",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Rare Earths and Inventory Management",
-                  "points": [
-                    "Comfortably covered on Rare Earth Magnet issue with no production disruption.",
-                    "Actions taken include substituting Rare Earth with Light Earth and using ferrites."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "MKT",
-              "title": "Market & Customer Strategy",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Customer Feedback and Market Strategy",
-                  "points": [
-                    "High Net Promoter Score for Electric Vehicles, above global benchmark.",
-                    "Electric Vehicles have the highest women ownership among Mahindra's product portfolio.",
-                    "80% of Electric Vehicle customers are not previous Mahindra customers."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "STRAT",
-              "title": "Strategic Initiatives & M&A",
-              "key_figures": [
-                {
-                  "label": "Lifespaces GDV acquisition",
-                  "value": "3,500",
-                  "unit": "crores",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Susten commissioned capacity",
-                  "value": "70",
-                  "unit": "megawatts",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Growth Gems and Strategic Initiatives",
-                  "points": [
-                    "Lifespaces has acquired Rs 3,500 crores of GDV.",
-                    "Susten has commissioned 70 megawatts.",
-                    "Accelo has seen strong growth in revenue and profitability."
-                  ]
-                }
-              ]
-            },
-            {
               "id": "RISK",
               "title": "Risks & External Factors",
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Commodity Costs and Inflation",
+                  "label": "Commodity Costs",
                   "points": [
-                    "Concern about steel prices rising by 6% over the last quarter.",
-                    "Hedging and inventory carryovers mitigated some impact in Q1.",
-                    "Inflationary environment is more than expected, impacting future quarters."
+                    "Concern about steel prices rising by about 6% over the last quarter.",
+                    "Inflationary environment is more than expected."
                   ]
                 }
               ]
@@ -6705,15 +6727,15 @@
                 {
                   "label": "SUV Growth Guidance",
                   "points": [
-                    "Mid to high teens growth percentage for SUVs expected.",
-                    "Two new Electric SUVs to be launched in early 2026."
+                    "Mid to high teens growth percentage for SUVs.",
+                    "Aggressive launch calendar over 2026."
                   ]
                 },
                 {
-                  "label": "Electric Vehicle Profitability",
+                  "label": "Electric Vehicles",
                   "points": [
                     "No PLI accrued yet; awaiting final technical audit certification.",
-                    "Higher end versions sold so far; mix will include lower end versions in future."
+                    "Plan to apply for BE 6 PLI in Q4."
                   ]
                 }
               ]
@@ -6721,19 +6743,19 @@
           ],
           "guidance_ledger": [
             {
-              "metric": "SUV growth",
+              "metric": "SUV Growth",
               "horizon": "FY26",
-              "statement": "Mid to high teens growth percentage for SUVs expected.",
+              "statement": "We’ll stay with the mid to high teens as a growth percentage.",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
             },
             {
-              "metric": "Electric SUV launches",
-              "horizon": "early 2026",
-              "statement": "Two new Electric SUVs to be launched in early 2026.",
+              "metric": "Electric Vehicles PLI",
+              "horizon": "Q2/Q3 FY26",
+              "statement": "Awaiting final technical audit certification for XEV 9e PLI.",
               "specificity": "specific",
-              "direction": "up",
+              "direction": "unclear",
               "status": "new"
             }
           ],
@@ -6741,56 +6763,62 @@
             {
               "risk": "Steel price inflation",
               "status": "escalated",
-              "note": "Steel prices have risen by 6% over the last quarter, impacting costs."
+              "note": "Steel prices have risen by about 6% over the last quarter."
             },
             {
               "risk": "Commodity inflation",
               "status": "escalated",
-              "note": "Inflationary environment is more than expected, impacting future quarters."
+              "note": "Inflationary environment is more than expected."
             }
           ],
           "themes": [
             {
-              "label": "Market share expansion",
+              "label": "Market share gains",
               "direction": "positive",
-              "note": "Significant market share gains in SUVs and tractors.",
-              "section_ref": "SEG"
-            },
-            {
-              "label": "Electric vehicle growth",
-              "direction": "positive",
-              "note": "Strong penetration and market share in electric SUVs.",
+              "note": "Significant market share expansion for SUVs and tractors.",
               "section_ref": "SEG"
             },
             {
               "label": "Commodity cost inflation",
               "direction": "negative",
-              "note": "Rising steel prices and inflationary pressures are a concern.",
+              "note": "Concern about rising steel prices and overall inflationary environment.",
               "section_ref": "RISK"
             },
             {
-              "label": "Rural vs urban sentiment",
-              "direction": "mixed",
-              "note": "Rural sentiment is better than urban, impacting Tractor business positively.",
-              "section_ref": "ORD"
+              "label": "Electric vehicle growth",
+              "direction": "positive",
+              "note": "Strong performance and future growth plans for Electric SUVs.",
+              "section_ref": "GUID"
             },
             {
               "label": "Capacity utilization",
               "direction": "neutral",
-              "note": "ICE and Electric Vehicles capacity utilization is around 80% and 70% respectively.",
+              "note": "ICE and Electric Vehicles capacity utilization at 80% and 70% respectively.",
               "section_ref": "MFG"
+            },
+            {
+              "label": "Tech Mahindra margin recovery",
+              "direction": "positive",
+              "note": "EBIT margin recovery on track at 11.1%.",
+              "section_ref": "SEG"
             }
           ],
           "key_takeaways": [
             "Consolidated Profit After Tax is up 24%.",
-            "ROE is at 20.6%, surpassing the target of 18%.",
-            "SUV volume is up 22% with a revenue market share of 27.3%.",
-            "Tractor volumes are up 10% with a market share gain to 45.2%.",
-            "Electric SUV penetration is close to 8%.",
-            "Farm Machinery business had a 300 crore plus quarter with a market share of 25%.",
-            "Concern about steel prices rising by 6% over the last quarter."
+            "ROE is north of 20% for the first time, 20.6%.",
+            "SUV volume is up 22% and revenue market share is at 27.3%, up 570 basis points.",
+            "Tractor volumes up 10%. A 50 basis point market share gain to 45.2%.",
+            "Tech Mahindra has its EBIT margin recovery on track at 11.1% this quarter.",
+            "Mahindra Finance continues to focus on asset quality at 3.8%.",
+            "Revenue up 22% at the consolidated level.",
+            "Profit After Tax up 24% to 4,083 crores."
           ],
-          "pressing_questions": []
+          "pressing_questions": [
+            "What is the update and how are we placed with regards to Rare Earths Magnets inventory across segments?",
+            "Is there a risk to SUV growth guidance given the tougher demand environment?",
+            "What is driving the EV profitability improvement?",
+            "How should one see DNA evolving for Auto-consolidated going ahead?"
+          ]
         }
       ]
     },
