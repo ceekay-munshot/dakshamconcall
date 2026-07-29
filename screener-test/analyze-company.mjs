@@ -38,13 +38,25 @@ const log = (...a) => console.log("[analyze]", ...a);
 
 /* ---- JSON store helpers ---- */
 const readJson = (f, fallback) => {
+  if (!fs.existsSync(f)) return fallback; // genuinely absent (e.g. first run) -> safe default
   try {
     return JSON.parse(fs.readFileSync(f, "utf8"));
-  } catch {
-    return fallback;
+  } catch (e) {
+    // The file EXISTS but won't parse. Do NOT fall back to an empty store — that
+    // would drop every other company on the next write. Abort loudly instead, so
+    // the last good committed data is left completely untouched.
+    throw new Error(`refusing to overwrite ${f}: it exists but is not valid JSON (${e.message})`);
   }
 };
-const writeJson = (f, obj) => fs.writeFileSync(f, JSON.stringify(obj, null, 2) + "\n");
+// Atomic write: serialize to a temp file, then rename it over the target. rename
+// is atomic on the same filesystem, so a process killed mid-write can never leave
+// a half-written (corrupt) store behind — the file is always the whole old or the
+// whole new version, never a partial one.
+const writeJson = (f, obj) => {
+  const tmp = `${f}.tmp`;
+  fs.writeFileSync(tmp, JSON.stringify(obj, null, 2) + "\n");
+  fs.renameSync(tmp, f);
+};
 
 function loadStores() {
   return {
