@@ -115,8 +115,10 @@
       "message": "Couldn't fetch DEVYANI's latest concall. Found concalls but could not extract an AI summary or transcript."
     },
     "CESC": {
-      "status": "running",
-      "started_at": "2026-07-29T08:36:59.645Z"
+      "status": "failed",
+      "finished_at": "2026-07-29T08:37:04.563Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Couldn't fetch CESC's latest concall. Found concalls but could not extract an AI summary or transcript."
     },
     "ULTRACEMCO": {
       "status": "done",
