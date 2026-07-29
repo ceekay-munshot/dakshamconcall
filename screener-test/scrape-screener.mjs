@@ -726,6 +726,9 @@ function preciseConcallDate(text, monthIso) {
  */
 export async function scrapeCompany(page, context, ticker, opts = {}) {
   const maxHistory = opts.maxHistory ?? 4;
+  // Set once Screener's daily summary cap is known to be spent: go straight to the
+  // transcript instead of burning more capped requests that can only fail.
+  const skipSummary = !!opts.skipSummary;
   try {
     const { url, company, industry } = await openCompany(page, context, ticker);
     const { entries } = await findConcalls(page, ticker);
@@ -756,7 +759,7 @@ export async function scrapeCompany(page, context, ticker, opts = {}) {
 
     const latest = dated[0];
 
-    let summary = await extractAiSummary(page, context, latest, url);
+    let summary = skipSummary ? null : await extractAiSummary(page, context, latest, url);
     if (!summary) summary = await extractTranscript(context, latest);
     if (!summary) {
       await saveShot(page, `no-summary-${ticker}.png`);
@@ -776,7 +779,7 @@ export async function scrapeCompany(page, context, ticker, opts = {}) {
     const history = [];
     for (let i = 1; i < Math.min(dated.length, maxHistory); i++) {
       try {
-        let h = await fetchHostedSummary(context, dated[i]);
+        let h = skipSummary ? null : await fetchHostedSummary(context, dated[i]);
         if (h) log(`history[${i}] ${dated[i].date}: via ai_summary`);
         if (!h) h = await extractTranscript(context, dated[i]);
         if (h) {

@@ -166,10 +166,20 @@ merge, same as before).
    `scrapeCompany` returns `{rateLimited:true}`, and `analyze-company.mjs` marks the
    company failed **without touching its stored tear sheet** and **stops the whole
    run**, logging which companies were left untouched. Rationale: the cap is
-   TEMPORARY (resets daily) — continuing would rebuild every remaining company from
-   transcripts and overwrite good summary-derived data with thinner data. Tested
-   9/9. **Efficiency idea (not built):** re-fetch only quarters not already stored
-   (~1–2 summaries/company instead of 4) so a refresh costs ~20–40 of the 80/day.
+   TEMPORARY (resets daily). Tested 9/9.
+   **Behaviour on cap = CONTINUE (client wants full coverage for the demo).** The
+   downgrade risk is instead handled structurally in `mergeQuarters`: a stored
+   `ai_summary` quarter is **never replaced by a transcript** quarter for the same
+   call, while a new summary always upgrades a stored transcript (a one-way
+   quality ratchet, tested 6/6). On the cap the company is re-scraped with
+   `skipSummary:true` so it goes straight to the transcript instead of burning more
+   capped requests. Set **`ON_RATE_LIMIT=stop`** to halt and leave the rest for
+   tomorrow instead.
+   **Pacing:** **`MAX_PER_RUN`** caps companies per run and takes the
+   **least-recently-checked** first, so consecutive runs ROTATE through the
+   universe. Exposed as the `max_per_run` workflow input; the nightly cron uses
+   **4** (≤16 summaries/day), refreshing everything over a few days well inside the
+   80/day cap.
 5. **Screener free-tier quota (historical note).** The free account gets **10
    concall AI-summary views / 30 days** — the `/concalls/summary/<id>/` endpoint is metered. Our data
    is **10 summaries + 59 free BSE transcript PDFs**; the transcript fallback is

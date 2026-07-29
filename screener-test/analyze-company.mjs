@@ -110,11 +110,18 @@ function mergeQuarters(baseQuarters, newQuarters) {
   const byMonth = new Map();
   const monthKey = (q) => (q.concall_date || q.generated_at || "").slice(0, 7) || Math.random().toString();
   const day = (q) => +String(q.concall_date || "").slice(8, 10) || 1;
+  // The client's source of record is the Screener AI SUMMARY; a transcript is only
+  // a fallback for when the summary can't be read (e.g. Screener's 80/day cap).
+  // So never let a transcript re-run REPLACE a stored ai_summary quarter for the
+  // same call — that would quietly downgrade the tear sheet for a temporary reason.
+  const isSummary = (q) => q?.source === "ai_summary";
   for (const q of [...newQuarters, ...baseQuarters]) {
     const key = monthKey(q);
     const cur = byMonth.get(key);
     if (!cur) byMonth.set(key, q);
-    else if (day(q) > 1 && day(cur) === 1) byMonth.set(key, q); // upgrade to the precise-dated record
+    else if (isSummary(cur) !== isSummary(q)) {
+      if (isSummary(q)) byMonth.set(key, q); // summary always beats transcript
+    } else if (day(q) > 1 && day(cur) === 1) byMonth.set(key, q); // upgrade to the precise-dated record
   }
   return [...byMonth.values()]
     .sort((a, b) => String(b.concall_date || "").localeCompare(String(a.concall_date || "")))
@@ -214,28 +221,40 @@ async function analyzeTicker(page, context, ticker, baseStore) {
   // 2) scrape
   const scrape = await scrapeCompany(page, context, T);
   if (scrape.error) {
-    // Screener's daily AI-summary cap (80/day) is TEMPORARY: the summary exists,
-    // we just can't read it today. Continuing would rebuild this company (and
-    // every company after it) from transcripts and overwrite good summary-derived
-    // tear sheets with thinner data. Leave the stored data untouched and stop.
+    // Screener's daily AI-summary cap (80/day) is TEMPORARY. Downgrading is now
+    // prevented in mergeQuarters (a stored ai_summary quarter is never replaced by
+    // a transcript one), so it is safe to CARRY ON and cover the company from its
+    // transcript — coverage today, and the summary upgrade lands on a later run.
+    // Set ON_RATE_LIMIT=stop to halt instead and leave the rest for tomorrow.
     if (scrape.rateLimited) {
+      log(`${T}: Screener's daily AI-summary cap reached — using the transcript fallback for now.`);
+      if ((process.env.ON_RATE_LIMIT || "").toLowerCase() === "stop") {
+        pending.jobs.set(T, {
+          status: "failed",
+          finished_at: nowIso(),
+          error: scrape.error,
+          message: `Screener's daily AI-summary limit was reached, so ${T} was left unchanged. It resets daily — re-run tomorrow.`,
+        });
+        persistAndPush(`analyze: ${T} skipped (Screener daily limit)`);
+        return "rate_limited";
+      }
+      // Re-scrape with the summary path disabled so it goes straight to the
+      // transcript instead of burning another capped request.
+      const viaTranscript = await scrapeCompany(page, context, T, { skipSummary: true });
+      if (!viaTranscript.error) {
+        Object.assign(scrape, viaTranscript, { error: undefined, rateLimited: false });
+      }
+    }
+    if (scrape.error) {
       pending.jobs.set(T, {
         status: "failed",
         finished_at: nowIso(),
         error: scrape.error,
-        message: `Screener's daily AI-summary limit was reached, so ${T} was left unchanged. It resets daily — re-run tomorrow.`,
+        message: `Couldn't fetch ${T}'s latest concall. ${scrape.error}`,
       });
-      persistAndPush(`analyze: ${T} skipped (Screener daily limit)`);
-      return "rate_limited";
+      persistAndPush(`analyze: ${T} failed`);
+      return;
     }
-    pending.jobs.set(T, {
-      status: "failed",
-      finished_at: nowIso(),
-      error: scrape.error,
-      message: `Couldn't fetch ${T}'s latest concall. ${scrape.error}`,
-    });
-    persistAndPush(`analyze: ${T} failed`);
-    return;
   }
 
   // Industry: the SCRAPER-captured value is authoritative; fall back to the
@@ -354,6 +373,20 @@ async function main() {
       .map((c) => (c.ticker || "").toUpperCase())
       .filter(Boolean);
     tickers = forceAll ? all : all.filter((t) => isStale(base, t));
+
+    // MAX_PER_RUN paces a run against Screener's 80-summaries/day cap: each
+    // company costs up to 4 summary requests, so ~1-5 companies/run stays well
+    // inside it. Least-recently-checked first, so consecutive runs ROTATE through
+    // the universe instead of re-doing the same names.
+    const maxPerRun = parseInt(process.env.MAX_PER_RUN || "", 10);
+    if (Number.isFinite(maxPerRun) && maxPerRun > 0 && tickers.length > maxPerRun) {
+      const checkedAt = (t) => {
+        const v = base.tearsheets.companies[t]?.checked_at;
+        return v ? new Date(v).getTime() : 0; // never analyzed -> first in line
+      };
+      tickers = [...tickers].sort((a, b) => checkedAt(a) - checkedAt(b)).slice(0, maxPerRun);
+      log(`MAX_PER_RUN=${maxPerRun} -> this run takes the ${tickers.length} least-recently-checked:`, tickers);
+    }
     log(
       `refresh mode (${forceAll ? "manual: force ALL" : "scheduled: stale only"}): ` +
         `${tickers.length} ticker(s)`,
