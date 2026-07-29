@@ -59,19 +59,48 @@ async function saveShot(page, name) {
    Browser + login
    ========================================================================== */
 export async function launchAndLogin() {
-  const email = process.env.SCREENER_EMAIL;
-  const password = process.env.SCREENER_PASSWORD;
-  if (!email || !password) throw new Error("SCREENER_EMAIL / SCREENER_PASSWORD not set");
+  // Prefer the PAID/premium account (no free-tier AI-summary quota), then fall back
+  // to the free account. The old free creds are left untouched — they're just the
+  // fallback. Order = premium first, free second; only the pairs that are set are
+  // tried. Credentials are never logged (only the tier name).
+  const creds = [
+    { email: process.env.SCREENER_PREMIUM_EMAIL, password: process.env.SCREENER_PREMIUM_PASSWORD, tier: "premium" },
+    { email: process.env.SCREENER_EMAIL, password: process.env.SCREENER_PASSWORD, tier: "free" },
+  ].filter((c) => c.email && c.password);
+  if (!creds.length) {
+    throw new Error(
+      "No Screener credentials set (need SCREENER_PREMIUM_EMAIL/SCREENER_PREMIUM_PASSWORD or SCREENER_EMAIL/SCREENER_PASSWORD)"
+    );
+  }
 
   const browser = await chromium.launch({ args: ["--no-sandbox", "--disable-dev-shm-usage"] });
-  const context = await browser.newContext({
-    userAgent:
-      "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
-    viewport: { width: 1440, height: 1200 },
-  });
-  const page = await context.newPage();
 
-  log("logging in…");
+  for (let i = 0; i < creds.length; i++) {
+    const { email, password, tier } = creds[i];
+    const context = await browser.newContext({
+      userAgent:
+        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+      viewport: { width: 1440, height: 1200 },
+    });
+    const page = await context.newPage();
+    log(`logging in… (${tier} account)`);
+    const loggedIn = await attemptScreenerLogin(page, email, password);
+    if (loggedIn) {
+      log(`login OK (${tier} account)`);
+      return { browser, context, page };
+    }
+    const more = i < creds.length - 1;
+    log(`login FAILED (${tier} account)${more ? " — falling back to the next credentials" : ""}`);
+    await context.close().catch(() => {});
+  }
+
+  await browser.close().catch(() => {});
+  throw new Error("Screener login failed for all configured accounts");
+}
+
+/** Attempt a login on `page` with one credential pair. Returns true on success.
+ *  Never throws (returns false) and never logs the credentials themselves. */
+async function attemptScreenerLogin(page, email, password) {
   await page.goto(`${BASE}/login/`, { waitUntil: "domcontentloaded", timeout: 60000 });
 
   const uField = 'input[name="username"], input[type="email"], #id_username';
@@ -118,10 +147,8 @@ export async function launchAndLogin() {
       .evaluate(() => (document.body.innerText || "").slice(0, 1200))
       .catch(() => "");
     log("LOGIN PAGE TEXT (first 1200 chars):\n" + bodyText);
-    throw new Error("Screener login failed (form still present / no logout link)");
   }
-  log("login OK");
-  return { browser, context, page };
+  return loggedIn;
 }
 
 /* ============================================================================
@@ -358,6 +385,22 @@ function parseSummaryText(fullText) {
   return { sections, takeaways, questions };
 }
 
+/** Screener's daily AI-summary cap was hit ("Limit exceeded — Please try again
+ *  later. Premium users can request 80 summaries each day."). Distinct from a
+ *  missing summary: the summary EXISTS, we just may not read it right now. Never
+ *  swallow this — falling back to a transcript here would overwrite good
+ *  summary-derived data with thinner data for a purely temporary reason. */
+export class ScreenerRateLimitError extends Error {
+  constructor(msg) {
+    super(msg);
+    this.name = "ScreenerRateLimitError";
+    this.rateLimited = true;
+  }
+}
+// Distinctive phrases only. "try again later" alone is too generic — ordinary
+// management commentary can contain it, and a false positive would halt the run.
+const RATE_LIMIT_RE = /limit exceeded|summaries each day/i;
+
 /** Open a concall entry's Screener-hosted summary/notes link and read it.
  *  Reusable for BOTH the latest quarter and prior quarters (history). */
 async function fetchHostedSummary(context, entry) {
@@ -397,11 +440,26 @@ async function fetchHostedSummary(context, entry) {
       return (main.innerText || "").trim();
     });
     await sub.close();
+    // Screener's daily cap — the summary exists but is temporarily unreadable.
+    // Raise it so the caller can STOP rather than quietly using a transcript.
+    if (txt && txt.length < 1000 && RATE_LIMIT_RE.test(txt)) {
+      throw new ScreenerRateLimitError(txt.replace(/\s+/g, " ").trim().slice(0, 200));
+    }
     if (txt && txt.length > 300) {
       const parsed = parseSummaryText(txt);
       return finishSummary(txt, parsed, url);
     }
+    // The /concalls/summary/ endpoint responded but yielded almost no readable
+    // text — Screener returned a short MESSAGE instead of a summary (quota/paywall
+    // stub, "not available yet", login wall, ...). Log the message VERBATIM: it is
+    // the only thing that distinguishes those causes, and guessing has been wrong
+    // before. Falls through to the transcript fallback either way.
+    warn(
+      `summary endpoint returned no usable summary (${txt ? txt.length : 0} chars) @ ${url}\n` +
+        `      SCREENER SAID: ${JSON.stringify((txt || "(empty)").slice(0, 300))}`
+    );
   } catch (e) {
+    if (e instanceof ScreenerRateLimitError) throw e; // never swallow the daily cap
     warn("hosted summary fetch failed", e.message);
   }
   return null;
@@ -668,6 +726,9 @@ function preciseConcallDate(text, monthIso) {
  */
 export async function scrapeCompany(page, context, ticker, opts = {}) {
   const maxHistory = opts.maxHistory ?? 4;
+  // Set once Screener's daily summary cap is known to be spent: go straight to the
+  // transcript instead of burning more capped requests that can only fail.
+  const skipSummary = !!opts.skipSummary;
   try {
     const { url, company, industry } = await openCompany(page, context, ticker);
     const { entries } = await findConcalls(page, ticker);
@@ -698,7 +759,7 @@ export async function scrapeCompany(page, context, ticker, opts = {}) {
 
     const latest = dated[0];
 
-    let summary = await extractAiSummary(page, context, latest, url);
+    let summary = skipSummary ? null : await extractAiSummary(page, context, latest, url);
     if (!summary) summary = await extractTranscript(context, latest);
     if (!summary) {
       await saveShot(page, `no-summary-${ticker}.png`);
@@ -718,7 +779,7 @@ export async function scrapeCompany(page, context, ticker, opts = {}) {
     const history = [];
     for (let i = 1; i < Math.min(dated.length, maxHistory); i++) {
       try {
-        let h = await fetchHostedSummary(context, dated[i]);
+        let h = skipSummary ? null : await fetchHostedSummary(context, dated[i]);
         if (h) log(`history[${i}] ${dated[i].date}: via ai_summary`);
         if (!h) h = await extractTranscript(context, dated[i]);
         if (h) {
@@ -727,6 +788,7 @@ export async function scrapeCompany(page, context, ticker, opts = {}) {
           history.push({ concall_date: hPrecise || hMonth, ...h, company, ticker });
         }
       } catch (e) {
+        if (e instanceof ScreenerRateLimitError) throw e; // stop; don't degrade history to transcripts
         warn("history quarter failed", e.message);
       }
     }
@@ -753,6 +815,13 @@ export async function scrapeCompany(page, context, ticker, opts = {}) {
       history,
     };
   } catch (err) {
+    if (err instanceof ScreenerRateLimitError) {
+      // Surface as a distinct, RETRYABLE outcome. The caller must leave this
+      // company's existing tear sheet alone and stop the run — the cap resets
+      // daily, so the right move is to try again later, not to store worse data.
+      warn(`Screener daily AI-summary cap reached: ${err.message}`);
+      return { ticker, error: `Screener daily AI-summary limit reached. ${err.message}`, rateLimited: true };
+    }
     warn("scrapeCompany error", err.message);
     await saveShot(page, `error-${ticker}.png`).catch(() => {});
     return { ticker, error: err.message || String(err) };

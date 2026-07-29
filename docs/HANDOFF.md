@@ -84,25 +84,114 @@ opinions of our own.
   dedups by month so the date upgrade never creates a duplicate quarter.
 
 ## Open items / what's next (start here)
-1. **PR #22 (BPCL scraper fix) — OPEN, merge + verify.** BPCL failed because its
-   latest call is audio-only (no transcript PDF) and the AI-summary button loads
-   an async modal we read too early. Fix: read the button's
-   `data-url="/concalls/summary/<id>/"` and fetch that endpoint directly (with
-   `X-Requested-With: XMLHttpRequest`), first, before the click path. Additive
-   with fallback (can't regress working companies). **Merge it, then re-run BPCL**
-   through the analyze workflow to confirm (endpoint needs Screener auth → CI only).
-2. **Validate the editor pass (PR #21) on ONE company** before it reprocesses
-   everything: trigger the analyze workflow on RELIANCE or UltraTech, eyeball the
-   tear sheet (tighter prose, no restated numbers, every figure intact, real
-   date), then tune the editor prompt in `classify.mjs` if it's too aggressive or
-   not enough. Kill switch: `TEARSHEET_EDITOR=0`.
-3. **Screener free-tier quota.** The free account gets **10 concall AI-summary
-   views / 30 days** — the `/concalls/summary/<id>/` endpoint is metered. Our data
+PRs #21 (editor pass + real dates) and #22 (BPCL scraper fix) are **both merged to
+`main`**. RELIANCE was validated live (run on the review branch, 2026-07-27) — see
+below. Current work continues on branch
+**`claude/daksham-concall-tracker-handoff-pm9vc1`** (restart from `main` after each
+merge, same as before).
+
+1. **Editor pass validated on RELIANCE — works, but the first pass lost data.**
+   The editor did its job: prose 85→25 points, "Product & Technology" re-filed into
+   "Segment & Product Performance" by meaning, **all 22 figures preserved**, no
+   errors; new P&L rows (EBITDA/PAT growth, margins) captured. BUT the **first-pass
+   extraction** (gpt-4o, upstream of the editor) dropped ~11 real **Jio operational
+   KPIs** vs the prior run (27→22 figs): 5G users 285m, ARPU 215.6, home-broadband
+   28.6m, AirFiber 14m, usage, patents 4,500, RCPL rev 8,600. **Client directive:
+   do NOT lose data — keep the fullest qualitative detail; a little repetition is
+   fine; strip repeats ONLY.** Fix applied in `classify.mjs` (this branch):
+   (a) first-pass `SYSTEM_PROMPT` now says **capture EVERY number of ANY kind** —
+   the financial/operational lists are explicitly ILLUSTRATIVE examples, **not a
+   closed checklist** (an example list must never become a filter that drops an
+   unlisted metric); (b) new **consolidated-vs-standalone** rule: when the source
+   gives both for the same metric, keep **consolidated only**; use standalone only
+   when no consolidated is given; (c) `EDITOR_SYSTEM` rewritten **conservative** —
+   the only thing it strips is repetition (a near-verbatim duplicate, or prose that
+   only restates a table figure); keep on any doubt.
+   BUT prompt-tuning alone did NOT fix it — a re-run swung to **18 figs** and the
+   Jio KPIs were still missing, because single-pass gpt-4o extraction on a long
+   source is inherently incomplete/variable (27→22→18 across runs). **Real fix
+   shipped:** a **key_figures completeness ("double-check") pass** in `classify.mjs`
+   (`completeKeyFigures`, wired into `classifyQuarter`, runs on EVERY quarter): a
+   second focused LLM call re-reads the source for numbers MISSING from the first
+   pass and merges them back — **only ADDS (deduped), never removes**; loops up to 2
+   rounds, stops when nothing new; safe on error. Gated by **`FIGURES_COMPLETENESS`**
+   (set `0` to disable). Offline-tested 12/12. **VALIDATED LIVE** (run 30378981039):
+   the displayed quarter recovered **+57 figs → 73**, and ALL the missing Jio KPIs
+   are back (5G users 285m, ARPU ₹215.6, broadband 28.6m, AirFiber 14m, per-capita
+   43.7GB, patents ~4,500) plus much more real segment/operational detail. Two rough
+   edges seen + **tuned**: (i) on 80k-char transcripts the pass over-asked (Jan →143)
+   and overflowed the JSON response; (ii) a few qualitative notes were miscast as
+   figures — `COMPLETION_SYSTEM` now requires each value to be a **genuine quantity**
+   (number/%/currency/ratio/count), not a description. Editor kill switch still
+   `TEARSHEET_EDITOR=0`.
+   **The full refresh (run 30433378527) then exposed the remaining gap.** Restricting
+   completeness to `ai_summary` left transcript companies on the old one-pass
+   lottery, and 8 came back **poorer than before**: HEROMOTOCO 45→28, EICHERMOT
+   35→21, ASHOKLEY 49→40, JKCEMENT 26→18, BAJAJ-AUTO 25→19, APOLLOTYRE 27→24, INFY
+   22→21, UNOMINDA 34→33 — while the two WITH completeness jumped (RELIANCE 27→84,
+   BPCL →70). **Fixed:** `completeKeyFigures` now **chunks** the source
+   (`COMPLETION_CHUNK_CHARS` 24k + 500 overlap, split on paragraph breaks) so a long
+   transcript is swept piece by piece and no answer is lost to truncation — and it
+   runs on **every source again, transcripts included**. Chunk-tested 8/8 (bounded
+   chunks, full coverage, overlap de-dupes, mid-sweep error keeps what was
+   recovered). **NEXT: re-run the full refresh** (blank ticker) and confirm every
+   company is **≥ its pre-refresh figure count** (baseline = commit 53362d0).
+2. **Displayed-quarter date still month-default.** `preciseConcallDate()` works —
+   the 3 history quarters now show real days (2026-04-24, 2026-01-16, 2025-10-17,
+   from transcripts). But the **latest** quarter uses the AI summary, which lacks
+   the call date, so it stays `2026-07-01`. TODO: for `ai_summary` latest quarters,
+   also read the day from the latest **transcript PDF** as a date-only source.
+3. **BPCL — run 30383439638 FAILED, almost certainly the Screener free quota (not
+   a code bug).** Downloaded the run's `concalls-BPCL.html` artifact: BPCL's latest
+   (Jul 2026) "AI Summary" button markup is **identical** to RELIANCE's working one
+   (`class="concall-link" data-url="/concalls/summary/23251060/" data-is-bottom-modal`)
+   — so PR #22's direct fetch found the right URL. But the metered endpoint returned
+   <300 chars of readable text (silent null) → fell to the flaky click path → the
+   `no-summary-BPCL.png` shows the bottom-modal opening with content not yet loaded →
+   failed. RELIANCE fetched the SAME way ~1h earlier and worked, and we spent several
+   summary views on the RELIANCE re-runs — so the free-tier **10 views/30d quota is
+   the overwhelming likely cause**. BPCL's latest is audio-only (no transcript), so it
+   has NO free fallback. Added a clear log in `fetchHostedSummary` so a quota stub now
+   says so explicitly instead of a vague "failed". **Decision needed (item 4).**
+4. **⚠️ Screener's PREMIUM cap is 80 AI summaries per DAY — this is the binding
+   constraint.** Confirmed from Screener's own modal: *"Limit exceeded — Please try
+   again later. Premium users can request 80 summaries each day."* (that message is
+   the 89-char body we kept seeing). Premium IS active (`login OK (premium account)`
+   in the logs). **A full refresh of 20 companies × 4 quarters = exactly 80 requests
+   — the entire daily allowance in one run**, so any extra run that day (a single
+   ticker, a retry) guarantees the cap is hit partway. That is why 72 of 76 quarters
+   fell back to transcripts. **Guard shipped:** `ScreenerRateLimitError` +
+   `RATE_LIMIT_RE` in `scrape-screener.mjs` detect the cap, and it is never
+   swallowed (rethrown at the fetch, history and scrapeCompany catch sites);
+   `scrapeCompany` returns `{rateLimited:true}`, and `analyze-company.mjs` marks the
+   company failed **without touching its stored tear sheet** and **stops the whole
+   run**, logging which companies were left untouched. Rationale: the cap is
+   TEMPORARY (resets daily). Tested 9/9.
+   **Behaviour on cap = CONTINUE (client wants full coverage for the demo).** The
+   downgrade risk is instead handled structurally in `mergeQuarters`: a stored
+   `ai_summary` quarter is **never replaced by a transcript** quarter for the same
+   call, while a new summary always upgrades a stored transcript (a one-way
+   quality ratchet, tested 6/6). On the cap the company is re-scraped with
+   `skipSummary:true` so it goes straight to the transcript instead of burning more
+   capped requests. Set **`ON_RATE_LIMIT=stop`** to halt and leave the rest for
+   tomorrow instead.
+   **Pacing:** **`MAX_PER_RUN`** caps companies per run and takes the
+   **least-recently-checked** first, so consecutive runs ROTATE through the
+   universe. Exposed as the `max_per_run` workflow input; the nightly cron uses
+   **4** (≤16 summaries/day), refreshing everything over a few days well inside the
+   80/day cap.
+5. **Screener free-tier quota (historical note).** The free account gets **10
+   concall AI-summary views / 30 days** — the `/concalls/summary/<id>/` endpoint is metered. Our data
    is **10 summaries + 59 free BSE transcript PDFs**; the transcript fallback is
    what covers all ~20 companies. PR #22 fetches the *metered* endpoint, so it
-   draws down the 10/month. Decide: add a **transcript fallback for BPCL** when
-   the summary quota is exhausted, or move the `SCREENER_EMAIL` account to
-   Screener Premium.
+   draws down the 10/month. BPCL's latest call is **audio-only (no transcript)**, so
+   its latest quarter can ONLY come from the metered endpoint. **Resolution in
+   progress:** the pipeline now supports a **paid account with the free one as
+   fallback** — `launchAndLogin()` tries **`SCREENER_PREMIUM_EMAIL` /
+   `SCREENER_PREMIUM_PASSWORD`** first, then falls back to the existing
+   `SCREENER_EMAIL` / `SCREENER_PASSWORD` (old free creds untouched; free-only setups
+   still work). Add the two premium secrets in GitHub → Settings → Secrets → Actions,
+   then re-run BPCL. Premium removes the 10/month cap entirely.
 
 ## Client's north-star (from the 41-min review)
 Reverse-engineering / "deselection": keep everything but ruthlessly remove
