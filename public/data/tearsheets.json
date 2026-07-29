@@ -12197,69 +12197,90 @@
       "ticker": "TVSMOTOR",
       "industry": "2/3 Wheelers",
       "country": "India",
-      "checked_at": "2026-07-22T20:01:08.203Z",
+      "checked_at": "2026-07-29T08:23:48.781Z",
       "quarters": [
         {
           "company": "TVS Motor Company Ltd",
           "ticker": "TVSMOTOR",
           "industry": "2/3 Wheelers",
           "country": "India",
-          "concall_date": "2026-07-01",
-          "source": "ai_summary",
-          "source_url": "https://www.screener.in/company/TVSMOTOR/consolidated/",
+          "concall_date": "2026-07-21",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=e99280ca-79c3-4fa1-8188-f0f34294abfa.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-22T20:01:08.203Z",
-          "summary": "TVS Motor Company Ltd expects continued strong growth in both domestic and international markets, with a focus on expanding EV penetration and capacity to meet rising demand.",
+          "generated_at": "2026-07-29T08:23:44.272Z",
+          "summary": "TVS Motor Company expects continued strong growth in both domestic and international markets, with a focus on expanding capacity and leveraging product innovation to drive performance.",
           "sections": [
             {
               "id": "FIN",
               "title": "Financial Performance",
               "key_figures": [
                 {
-                  "label": "Volumes",
-                  "value": "1.63m",
-                  "unit": "units",
+                  "label": "Revenue",
+                  "value": "INR 13,896 crores",
+                  "unit": null,
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Revenue",
-                  "value": "₹13,896cr",
+                  "label": "Revenue Growth",
+                  "value": "38%",
                   "unit": null,
-                  "period": "Q1 FY27",
+                  "period": "YoY",
                   "kind": "reported"
                 },
                 {
                   "label": "Operating EBITDA",
-                  "value": "₹1,779cr",
+                  "value": "INR 1,779 crores",
                   "unit": null,
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "EBITDA Margin",
+                  "label": "Operating EBITDA Growth",
+                  "value": "41%",
+                  "unit": null,
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operating EBITDA Margin",
                   "value": "12.8%",
                   "unit": null,
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "PBT",
-                  "value": "₹1,589cr",
+                  "label": "Operating PBT",
+                  "value": "INR 1,439 crores",
                   "unit": null,
                   "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operating PBT Growth",
+                  "value": "41%",
+                  "unit": null,
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Profit After Tax",
+                  "value": "INR 1,174 crores",
+                  "unit": null,
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Profit After Tax Growth",
+                  "value": "51%",
+                  "unit": null,
+                  "period": "YoY",
                   "kind": "reported"
                 },
                 {
                   "label": "Fair Valuation Gain",
-                  "value": "~₹150cr",
-                  "unit": null,
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "PAT",
-                  "value": "₹1,174–1,176cr",
+                  "value": "INR 150 crores",
                   "unit": null,
                   "period": "Q1 FY27",
                   "kind": "reported"
@@ -12270,26 +12291,82 @@
                   "unit": null,
                   "period": null,
                   "kind": "reported"
+                },
+                {
+                  "label": "TVS Credit Book Size",
+                  "value": "INR 32,053 crores",
+                  "unit": null,
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "TVS Credit Profit Before Tax",
+                  "value": "INR 283 crores",
+                  "unit": null,
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "TVS Credit Profit Before Tax Growth",
+                  "value": "16%",
+                  "unit": null,
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Spare Parts Revenue",
+                  "value": "INR 1,173 crores",
+                  "unit": null,
+                  "period": "Q1 FY27",
+                  "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Performance Drivers",
+                  "label": "Credit Performance",
                   "points": [
-                    "Management attributed performance to 'customer centricity… strong brands… sustained focus on cost reduction initiatives.'"
+                    "TVS Credit Services reported sustained growth in disbursement supported by improved consumption demand and traction across key retail financing segments."
                   ]
                 }
               ]
             },
             {
-              "id": "SEG",
-              "title": "Segment & Product Performance",
+              "id": "ORD",
+              "title": "Order Book & Demand",
               "key_figures": [
                 {
-                  "label": "Domestic 2W ICE Sales Growth",
-                  "value": "+21%",
-                  "unit": "YoY",
-                  "period": "Q1 FY27",
+                  "label": "2-Wheeler Domestic ICE Sales Growth",
+                  "value": "21%",
+                  "unit": null,
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "2-Wheeler International ICE Sales Growth",
+                  "value": "31%",
+                  "unit": null,
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "2-Wheeler Overall ICE Sales Growth",
+                  "value": "23%",
+                  "unit": null,
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "2-Wheeler EV Sales Growth",
+                  "value": "86%",
+                  "unit": null,
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "3-Wheeler Sales Growth",
+                  "value": "48%",
+                  "unit": null,
+                  "period": "YoY",
                   "kind": "reported"
                 },
                 {
@@ -12300,564 +12377,10 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Export Revenue",
-                  "value": "₹3,634cr",
-                  "unit": null,
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "2W EV Sales Growth",
-                  "value": "+86%",
-                  "unit": "YoY",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "EV Revenue",
-                  "value": "~₹1,780cr",
-                  "unit": null,
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "3W Sales",
-                  "value": "67k units",
-                  "unit": null,
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "3W EV Penetration",
-                  "value": "40%",
-                  "unit": null,
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Domestic 2W (ICE)",
-                  "points": [
-                    "Management emphasized scooters as a structural growth segment.",
-                    "Brand/portfolio strategy in scooters highlighted as a key driver (Jupiter, NTorq across displacements), with a focus on frequent upgrades."
-                  ]
-                },
-                {
-                  "label": "International 2W (ICE) and Overall Exports",
-                  "points": [
-                    "Africa remains the largest engine for export growth.",
-                    "LatAm described as an emerging growth pillar.",
-                    "Asia also positive with continued growth ahead of the industry.",
-                    "HLX series called out as a standout export platform, with a major milestone of crossing 5 million cumulative units.",
-                    "Premium export push with Apache and Ronin expected to do well internationally."
-                  ]
-                },
-                {
-                  "label": "EV (2W and 3W)",
-                  "points": [
-                    "EV adoption broadened beyond early adopters, now reaching semi-urban and rural areas.",
-                    "Notable consumer behavior shift with customers agnostic to technology, favoring iQ.",
-                    "Key milestone of crossing one million iQ units.",
-                    "EV profitability trend improving with scale."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "MFG",
-              "title": "Manufacturing & Capacity",
-              "key_figures": [
-                {
-                  "label": "EV Capacity",
-                  "value": "40,000 to 50,000 plus",
-                  "unit": "units/month",
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "3W Capacity",
-                  "value": "20,000 to 30,000",
-                  "unit": "units/month",
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "2W Capacity Expansion Target",
-                  "value": "6.8m to 8.3m",
-                  "unit": "annual capacity",
-                  "period": "by Q4",
-                  "kind": "target"
-                },
-                {
-                  "label": "3W Capacity",
-                  "value": "0.25m to 0.42m",
-                  "unit": "annual capacity",
-                  "period": null,
-                  "kind": "target"
-                },
-                {
-                  "label": "Investment",
-                  "value": "~₹3,500cr",
-                  "unit": null,
-                  "period": null,
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Overall Manufacturing Ramp",
-                  "points": [
-                    "Continued review to match demand with capacity expansion."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "SUP",
-              "title": "Supply Chain & Operations",
-              "key_figures": [
-                {
-                  "label": "Commodity Cost Increase",
-                  "value": "~3.5%",
-                  "unit": null,
-                  "period": "Q1",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Additional Quarterly Adjustment",
-                  "value": "~0.5%",
-                  "unit": null,
-                  "period": "Q1",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Price Actions",
-                  "value": "~1.5% in Q1, ~0.5% in Q2",
-                  "unit": null,
-                  "period": null,
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Supply Chain & Input-Cost Headwinds",
-                  "points": [
-                    "Q1 disruptions linked to geopolitical volatility.",
-                    "Volatility in commodity prices and intermittent supply chain disruptions, especially in April.",
-                    "Margin management playbook reiterated to sustain/expand 12.8% EBITDA despite volatility."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "STRAT",
-              "title": "Strategic Initiatives & M&A",
-              "key_figures": [
-                {
-                  "label": "Prior Investment in Norton",
-                  "value": "₹2,000–2,500cr",
-                  "unit": null,
-                  "period": "last 4–5 years",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Norton Motorcycles",
-                  "points": [
-                    "Product lineup includes Manx, Superbike, Naked and Sport, Atlas and Atlas GT.",
-                    "Production has started for Manx and Atlas models.",
-                    "Launch markets include UK, France, Italy, Germany, Spain, India, and later the US.",
-                    "Atlas/Atlas GT positioned in adventure and sport touring segments.",
-                    "Go-to-market strategy involves a mix of independent premium dealers and multi-brand premium outlets.",
-                    "Strategic framing leverages British design engineering capability with Indian manufacturing excellence."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "RISK",
-              "title": "Risks & External Factors",
-              "key_figures": [],
-              "subsections": []
-            },
-            {
-              "id": "GUID",
-              "title": "Guidance & Outlook",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Outlook, Guidance Signals, and Management Confidence",
-                  "points": [
-                    "Q2 outlook expects same or slightly better momentum than Q1 for domestic; exports same growth rate or slightly better.",
-                    "FY outlook guides industry growth in double digits for ICE; EV expected to remain strong with rising penetration.",
-                    "EV penetration indicator cited from June as evidence of accelerating consumer consideration.",
-                    "Festive season/product cadence with planned launches in October and November.",
-                    "Management concluded Q2 will be a much better quarter than Q1."
-                  ]
-                }
-              ]
-            }
-          ],
-          "guidance_ledger": [
-            {
-              "metric": "Domestic Market Momentum",
-              "horizon": "Q2",
-              "statement": "Management expects same momentum or slightly better momentum than Q1 for domestic.",
-              "specificity": "vague",
-              "direction": "up",
-              "status": "new"
-            },
-            {
-              "metric": "Export Market Growth",
-              "horizon": "Q2",
-              "statement": "Exports same growth rate or slightly better.",
-              "specificity": "vague",
-              "direction": "up",
-              "status": "new"
-            },
-            {
-              "metric": "Industry Growth",
-              "horizon": "FY27",
-              "statement": "Management guided industry growth in double digits for ICE.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "reiterated"
-            },
-            {
-              "metric": "EV Market Strength",
-              "horizon": "FY27",
-              "statement": "EV expected to remain strong with rising penetration.",
-              "specificity": "vague",
-              "direction": "up",
-              "status": "new"
-            },
-            {
-              "metric": "EV Penetration",
-              "horizon": "FY '27",
-              "statement": "EV 2-wheeler will continue to increase penetration and momentum this year.",
-              "specificity": "vague",
-              "direction": "up",
-              "status": "no_mention"
-            },
-            {
-              "metric": "Production Capacity",
-              "horizon": "next 12 months",
-              "statement": "Increasing capacity by another 1.5 million to go to around 8.3 million.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "no_mention"
-            },
-            {
-              "metric": "International Market Performance",
-              "horizon": "Q4 FY26",
-              "statement": "International markets are expected to continue doing well in Q4.",
-              "specificity": "vague",
-              "direction": "up",
-              "status": "no_mention"
-            },
-            {
-              "metric": "ICE segment growth",
-              "horizon": "Q3 and Q4 FY26",
-              "statement": "Expecting about 8% growth in the ICE segment.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "no_mention"
-            },
-            {
-              "metric": "EV two-wheeler business",
-              "horizon": "Q4 FY26",
-              "statement": "Very confident that TVS Orbiter will be available all India by start of Q4.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "no_mention"
-            }
-          ],
-          "risk_register": [
-            {
-              "risk": "Geopolitical volatility",
-              "status": "new",
-              "note": "Linked to West Asia conflict causing volatility in commodity prices and supply chain disruptions."
-            },
-            {
-              "risk": "Geopolitical issues",
-              "status": "no_mention",
-              "note": "Ongoing West Asia conflict affecting commodity prices and supply chain."
-            },
-            {
-              "risk": "Commodity price pressures",
-              "status": "no_mention",
-              "note": "Challenges with steel, aluminum, and crude oil derivatives."
-            },
-            {
-              "risk": "Supply chain disruptions",
-              "status": "no_mention",
-              "note": "Issues with labor availability and raw material delays."
-            },
-            {
-              "risk": "Commodity Inflation",
-              "status": "no_mention",
-              "note": "Increases in aluminum, copper, zinc, platinum, palladium, and rhodium are noted."
-            },
-            {
-              "risk": "Commodity Prices",
-              "status": "no_mention",
-              "note": "Higher commodity prices impacted margins, but offset by top line growth and cost optimization."
-            },
-            {
-              "risk": "Magnet Availability",
-              "status": "no_mention",
-              "note": "Challenges in magnet availability affecting EV production and sales."
-            }
-          ],
-          "themes": [
-            {
-              "label": "Product Innovation",
-              "direction": "positive",
-              "note": "Focus on frequent upgrades and new technologies in scooters and EVs.",
-              "section_ref": "TECH"
-            },
-            {
-              "label": "International Expansion",
-              "direction": "positive",
-              "note": "Strong growth in international markets, especially Africa and LatAm.",
-              "section_ref": "GEO"
-            },
-            {
-              "label": "Supply Chain Challenges",
-              "direction": "negative",
-              "note": "Geopolitical volatility causing supply chain disruptions and commodity price volatility.",
-              "section_ref": "SUP"
-            },
-            {
-              "label": "Profitability Improvement",
-              "direction": "positive",
-              "note": "Improved EBITDA margin and better EV profitability trend.",
-              "section_ref": "FIN"
-            },
-            {
-              "label": "Strategic Partnerships",
-              "direction": "positive",
-              "note": "Leveraging British design with Indian manufacturing for Norton Motorcycles.",
-              "section_ref": "STRAT"
-            }
-          ],
-          "key_takeaways": [
-            "Volumes: 1.63m units vs 1.28m (+28% YoY).",
-            "Revenue: ₹13,896cr vs ₹10,081cr (+38% YoY).",
-            "Operating EBITDA: ₹1,779cr vs ₹1,260cr (+41% YoY); margin 12.8% (up 30 bps from 12.5%).",
-            "PBT: management cited “highest PBT”; disclosed ₹1,589cr (+51% YoY) and separately referenced a prior figure of ₹1,050cr (transcript has internal inconsistencies on the exact base PBT).",
-            "Management attributed performance to “customer centricity… strong brands… sustained focus on cost reduction initiatives.”",
-            "Domestic 2W ICE sales: +21% YoY vs industry +13% (share gains implied).",
-            "International business (IB) Q1 sales: 4.68 lakh units, +33% YoY, described as “highest ever international business sales.”",
-            "2W EV sales: +86% YoY; volume cited ~130k units vs ~70k (management referred to last year/last quarter ambiguously, but directionally a sharp increase)."
-          ],
-          "pressing_questions": []
-        },
-        {
-          "company": "TVS Motor Company Ltd",
-          "ticker": "TVSMOTOR",
-          "industry": "2/3 Wheelers",
-          "country": "India",
-          "concall_date": "2026-05-01",
-          "source": "transcript",
-          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=d60c3c01-cbb0-4df1-9cba-9e23ccc6fc27.pdf",
-          "model": "gpt-4o",
-          "generated_at": "2026-07-22T20:00:55.977Z",
-          "summary": "TVS Motor Company anticipates strong growth in both domestic and international markets, with a focus on expanding EV capacity and leveraging strategic partnerships.",
-          "sections": [
-            {
-              "id": "FIN",
-              "title": "Financial Performance",
-              "key_figures": [
-                {
-                  "label": "Sales Volume Growth",
-                  "value": "5.9 million units",
-                  "unit": "units",
-                  "period": "FY '25-'26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Revenue Growth",
-                  "value": "INR47,270 crores",
-                  "unit": "INR",
-                  "period": "FY '25-'26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Operating PBT Growth",
-                  "value": "INR4,975 crores",
-                  "unit": "INR",
-                  "period": "FY '25-'26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "EBITDA Growth",
-                  "value": "INR6,079 crores",
-                  "unit": "INR",
-                  "period": "FY '25-'26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "EBITDA Margin",
-                  "value": "12.9%",
-                  "unit": null,
-                  "period": "FY '25-'26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Operating Free Cash Flow",
-                  "value": "INR3,805 crores",
-                  "unit": "INR",
-                  "period": "FY '25-'26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Q4 Revenue",
-                  "value": "INR12,808 crores",
-                  "unit": "INR",
-                  "period": "Q4 FY '26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Q4 EBITDA",
-                  "value": "13.1%",
-                  "unit": null,
-                  "period": "Q4 FY '26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Q4 Operating EBITDA",
-                  "value": "INR1,679 crores",
-                  "unit": "INR",
-                  "period": "Q4 FY '26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Q4 PBT",
-                  "value": "INR1,358 crores",
-                  "unit": "INR",
-                  "period": "Q4 FY '26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "TVS Credit PBT",
-                  "value": "INR1,248 crores",
-                  "unit": "INR",
-                  "period": "FY '25-'26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "TVS Credit Book Size",
-                  "value": "INR30,631 crores",
-                  "unit": "INR",
-                  "period": "FY '25-'26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "TVS Credit Q4 PBT",
-                  "value": "INR348 crores",
-                  "unit": "INR",
-                  "period": "Q4 FY '26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "International Business Sales",
-                  "value": "15.8 lakhs",
-                  "unit": "units",
-                  "period": "FY '26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Q4 International Revenue",
-                  "value": "INR2,999 crores",
-                  "unit": "INR",
-                  "period": "Q4 FY '26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Q4 Spare Parts Revenue",
-                  "value": "INR1,122 crores",
-                  "unit": "INR",
-                  "period": "Q4 FY '26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "EV Revenue",
-                  "value": "INR5,000 crores",
-                  "unit": "INR",
-                  "period": "FY '26",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Financial Highlights",
-                  "points": [
-                    "TVS Motor Company achieved record sales volume, revenue, and profit in FY '25-'26.",
-                    "Sales volume grew by 24%, revenue by 30%, and operating PBT by 40%.",
-                    "EBITDA grew by 37% with a margin improvement of 60 basis points to 12.9%.",
-                    "Operating free cash flow increased by 47% to INR3,805 crores.",
-                    "Q4 revenue was the highest ever at INR12,808 crores, with a 36% growth year-on-year.",
-                    "Q4 EBITDA margin reached 13.1%, with operating EBITDA at INR1,679 crores.",
-                    "TVS Credit achieved a record PBT of INR1,248 crores with a book size of INR30,631 crores.",
-                    "International business recorded highest ever sales of 15.8 lakhs units, a 33% growth."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "ORD",
-              "title": "Order Book & Demand",
-              "key_figures": [
-                {
-                  "label": "2-wheeler ICE Growth",
-                  "value": "19%",
-                  "unit": null,
-                  "period": "FY '25-'26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "2-wheeler International Sales Growth",
-                  "value": "31%",
-                  "unit": null,
-                  "period": "FY '25-'26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "EV 2-wheeler Sales Growth",
+                  "label": "International Business Sales Growth",
                   "value": "33%",
                   "unit": null,
-                  "period": "FY '25-'26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "3-wheeler Sales Growth",
-                  "value": "63%",
-                  "unit": null,
-                  "period": "FY '25-'26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Q4 2-wheeler Domestic ICE Sales Growth",
-                  "value": "26%",
-                  "unit": null,
-                  "period": "Q4 FY '26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Q4 EV 2-wheeler Sales Growth",
-                  "value": "51%",
-                  "unit": null,
-                  "period": "Q4 FY '26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Q4 3-wheeler Sales Growth",
-                  "value": "65%",
-                  "unit": null,
-                  "period": "Q4 FY '26",
+                  "period": "YoY",
                   "kind": "reported"
                 }
               ],
@@ -12865,12 +12388,7 @@
                 {
                   "label": "Demand Drivers",
                   "points": [
-                    "2-wheeler ICE sales grew by 19% over the previous year, outperforming the industry growth of 10%.",
-                    "International 2-wheeler sales grew by 31%, compared to industry growth of 23%.",
-                    "EV 2-wheeler sales increased by 33%, reaching 3.7 lakh units.",
-                    "3-wheeler sales grew by 63% to 220,000 units.",
-                    "Q4 domestic 2-wheeler ICE sales grew by 26%, with international sales up by 23%.",
-                    "Q4 EV 2-wheeler sales grew by 51%, and 3-wheeler sales by 65%."
+                    "The demand is driven by sustained demand across key international markets and continued strengthening of distribution."
                   ]
                 }
               ]
@@ -12880,17 +12398,596 @@
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
-                  "label": "EV Penetration Q4",
-                  "value": "7.8%",
+                  "label": "Total Sales Volume",
+                  "value": "1.63 million",
                   "unit": null,
-                  "period": "Q4 FY '26",
+                  "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "EV Penetration FY",
-                  "value": "6.6%",
+                  "label": "Total Sales Volume Growth",
+                  "value": "28%",
                   "unit": null,
-                  "period": "FY '25-'26",
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV Penetration in 2-Wheeler Market",
+                  "value": "10.6%",
+                  "unit": null,
+                  "period": "June",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV Penetration in 3-Wheeler Market",
+                  "value": "40%",
+                  "unit": null,
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV Revenue",
+                  "value": "INR 1,780 crores",
+                  "unit": null,
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Product Highlights",
+                  "points": [
+                    "TVS HLX has crossed 5 million units, with the last 1 million achieved in the last year.",
+                    "TVS Apache 160 4V and Ronin Monotone and Agonda variants launched in more markets.",
+                    "Norton Motorcycles launched Manx R and Manx, Atlas and Atlas GT models."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MFG",
+              "title": "Manufacturing & Capacity",
+              "key_figures": [
+                {
+                  "label": "2-Wheeler Capacity",
+                  "value": "8.3 million",
+                  "unit": null,
+                  "period": "FY27",
+                  "kind": "target"
+                },
+                {
+                  "label": "3-Wheeler Capacity",
+                  "value": "0.42 million",
+                  "unit": null,
+                  "period": "FY27",
+                  "kind": "target"
+                },
+                {
+                  "label": "EV Capacity",
+                  "value": "50,000+",
+                  "unit": null,
+                  "period": "FY27",
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Capacity Expansion",
+                  "points": [
+                    "Investing in capacity to meet increased demand, with a focus on both 2-wheelers and 3-wheelers."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [
+                {
+                  "label": "International Business Revenue",
+                  "value": "INR 3,634 crores",
+                  "unit": null,
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Regional Performance",
+                  "points": [
+                    "Africa continues to be a key driver of export growth, supported by robust demand for 2-wheelers and 3-wheelers.",
+                    "LATAM region is performing well, with growth ahead of the industry.",
+                    "Asia performance has been strong, with continued growth expected."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SUP",
+              "title": "Supply Chain & Operations",
+              "key_figures": [
+                {
+                  "label": "TVS Credit Touch Points",
+                  "value": "62,000",
+                  "unit": null,
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Supply Chain Challenges",
+                  "points": [
+                    "Volatility in commodity prices, including steel and aluminium, affected material costs.",
+                    "Intermittent supply chain disruptions affected availability, especially in April."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [
+                {
+                  "label": "TVS Credit Customer Base",
+                  "value": "2.6 crores",
+                  "unit": null,
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "TVS Credit Loans Disbursed",
+                  "value": "14 lakh new customers",
+                  "unit": null,
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Customer Engagement",
+                  "points": [
+                    "TVS Credit enhanced capabilities in AI, data analytics, and technology to drive better risk assessment, customer experience, and operational efficiency."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Commodity Price Volatility",
+                  "points": [
+                    "Volatility in commodity prices, including steel and aluminium, affected material costs."
+                  ]
+                },
+                {
+                  "label": "Supply Chain Disruptions",
+                  "points": [
+                    "Intermittent supply chain disruptions affected availability, especially in April."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Outlook",
+                  "points": [
+                    "Q2 industry is likely to do very well, with double-digit growth expected in the 2-wheeler industry.",
+                    "Domestic demand supported by GST rationalization and income tax releases.",
+                    "International market growth expected to continue or improve slightly in Q2."
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "Industry Growth",
+              "horizon": "Q2 FY27",
+              "statement": "Q2 industry is likely to do very well, with double-digit growth expected in the 2-wheeler industry.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Domestic Demand",
+              "horizon": "Q2 FY27",
+              "statement": "Domestic demand supported by GST rationalization and income tax releases.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "International Market Growth",
+              "horizon": "Q2 FY27",
+              "statement": "International market growth expected to continue or improve slightly in Q2.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "EV Growth",
+              "horizon": "Q2 FY27",
+              "statement": "EV growth momentum will continue in Q2.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Capacity Expansion",
+              "horizon": "next 12 months",
+              "statement": "Looking at increasing the capacity by another 1.5 million to go to somewhere around 8.3 million.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "ICE segment growth",
+              "horizon": "FY26",
+              "statement": "Expecting about 9% growth for the year as a whole, with Q4 growth upwards of 15%.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "Commodity Price Volatility",
+              "status": "new",
+              "note": "Volatility in commodity prices, including steel and aluminium, affected material costs."
+            },
+            {
+              "risk": "Supply Chain Disruptions",
+              "status": "stable",
+              "note": "Intermittent supply chain disruptions affected availability, especially in April."
+            },
+            {
+              "risk": "West Asia conflict",
+              "status": "no_mention",
+              "note": "Ongoing conflict poses challenges."
+            },
+            {
+              "risk": "Commodity price pressures",
+              "status": "no_mention",
+              "note": "Challenges in terms of commodity prices, steel, aluminum, crude oil derivatives."
+            },
+            {
+              "risk": "Commodity price increases",
+              "status": "no_mention",
+              "note": "Increases in aluminum, copper, zinc, platinum, palladium, and rhodium noted."
+            },
+            {
+              "risk": "Challenges in Europe",
+              "status": "no_mention",
+              "note": "Europe continues to face challenges and may take a few more quarters for performance to improve."
+            },
+            {
+              "risk": "EV production challenges",
+              "status": "no_mention",
+              "note": "Challenges due to magnet availability are improving."
+            },
+            {
+              "risk": "Magnet availability",
+              "status": "no_mention",
+              "note": "Continues to pose challenges in the short and medium term for EV production."
+            },
+            {
+              "risk": "Commodity Prices",
+              "status": "no_mention",
+              "note": "Higher commodity prices impacted margins, but offset by top line growth and cost optimization."
+            }
+          ],
+          "themes": [
+            {
+              "label": "Product Innovation",
+              "direction": "positive",
+              "note": "New product launches and upgrades are driving growth across segments.",
+              "section_ref": "TECH"
+            },
+            {
+              "label": "International Expansion",
+              "direction": "positive",
+              "note": "Strong growth in international markets, particularly in Africa and LATAM.",
+              "section_ref": "GEO"
+            },
+            {
+              "label": "Supply Chain Challenges",
+              "direction": "negative",
+              "note": "Volatility in commodity prices and supply chain disruptions impacted operations.",
+              "section_ref": "SUP"
+            },
+            {
+              "label": "Profitability Improvement",
+              "direction": "positive",
+              "note": "Significant growth in operating EBITDA and profit after tax.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Capacity Expansion",
+              "direction": "positive",
+              "note": "Investments in capacity to meet increased demand across 2-wheelers and 3-wheelers.",
+              "section_ref": "MFG"
+            }
+          ],
+          "key_takeaways": [
+            "The overall sales volume has grown to 1.63 million from last year's 1.28 million of the same quarter, 28% growth.",
+            "The revenue is at INR13,896 crores, a growth of 38%.",
+            "Operating EBITDA grew from INR 1,260 crores to INR1,779 crores, 41% growth.",
+            "Profit after tax grew from INR 776 crores to INR 1,174, 51% growth.",
+            "2-wheeler EV sales grew by 86%.",
+            "Total sales of 3-wheeler also grew by 48%.",
+            "International business sales of 4.68 lakh units, a growth of 33% year-on-year growth.",
+            "TVS Credit disbursed loans over 14 lakh new customers, bringing the total customer base to nearly 2.6 crores."
+          ],
+          "pressing_questions": [
+            "What is our capacity? How much that capacity we are ramping up over the next 1, 2 years?",
+            "What is the dealer inventory what you're carrying right now, included transit?",
+            "Can you just give us some guidance on the gearing?",
+            "What's the target segment and the competitors that you're looking at when launching these four models?"
+          ]
+        },
+        {
+          "company": "TVS Motor Company Ltd",
+          "ticker": "TVSMOTOR",
+          "industry": "2/3 Wheelers",
+          "country": "India",
+          "concall_date": "2026-05-13",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=d60c3c01-cbb0-4df1-9cba-9e23ccc6fc27.pdf",
+          "model": "gpt-4o",
+          "generated_at": "2026-07-29T08:23:24.184Z",
+          "summary": "TVS Motor Company anticipates continued growth in both domestic and international markets, with a focus on expanding EV capacity and leveraging strategic partnerships.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "Revenue",
+                  "value": "INR47,270 crores",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue Growth",
+                  "value": "30%",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operating PBT",
+                  "value": "INR4,975 crores",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operating PBT Growth",
+                  "value": "40%",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA",
+                  "value": "INR6,079 crores",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA Growth",
+                  "value": "37%",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA Margin",
+                  "value": "12.9%",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operating Free Cash Flow",
+                  "value": "INR3,805 crores",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Q4 Revenue",
+                  "value": "INR12,808 crores",
+                  "unit": null,
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Q4 EBITDA",
+                  "value": "INR1,679 crores",
+                  "unit": null,
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Q4 PBT",
+                  "value": "INR1,358 crores",
+                  "unit": null,
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "TVS Credit PBT",
+                  "value": "INR1,248 crores",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "TVS Credit Book Size",
+                  "value": "INR30,631 crores",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Q4 International Revenue",
+                  "value": "INR2,999 crores",
+                  "unit": null,
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Q4 Spare Parts Revenue",
+                  "value": "INR1,122 crores",
+                  "unit": null,
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV Revenue",
+                  "value": "INR5,000 crores",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "TVS Credit Performance",
+                  "points": [
+                    "TVS Credit services achieved a record level of PBT at INR1,248 crores.",
+                    "The book size is now INR30,631 crores.",
+                    "Q4 TVS credit reported sustained growth in disbursements supported by improved consumption sentiment and traction across all retail financing segments."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ORD",
+              "title": "Order Book & Demand",
+              "key_figures": [
+                {
+                  "label": "Sales Volume Growth",
+                  "value": "24%",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "2-wheeler ICE Growth",
+                  "value": "19%",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "2-wheeler International Market Sales Growth",
+                  "value": "31%",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV 2-wheeler Sales",
+                  "value": "3.7 lakh units",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV 2-wheeler Sales Growth",
+                  "value": "33%",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "3-wheeler Sales Growth",
+                  "value": "63%",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Q4 2-wheeler Domestic ICE Sales Growth",
+                  "value": "26%",
+                  "unit": null,
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Q4 EV 2-wheeler Sales",
+                  "value": "115,000 units",
+                  "unit": null,
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Q4 EV 2-wheeler Sales Growth",
+                  "value": "51%",
+                  "unit": null,
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Q4 3-wheeler Sales",
+                  "value": "60,000 units",
+                  "unit": null,
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Q4 3-wheeler Sales Growth",
+                  "value": "65%",
+                  "unit": null,
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Demand Drivers",
+                  "points": [
+                    "The demand for TVS products remains strong both domestically and internationally.",
+                    "The company is confident about demand despite supply chain challenges."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "2-wheeler ICE Sales Growth",
+                  "value": "22%",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Industry Growth for 2-wheeler ICE",
+                  "value": "12%",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Q4 Total 2-wheeler ICE Sales Growth",
+                  "value": "26%",
+                  "unit": null,
+                  "period": "Q4 FY26",
                   "kind": "reported"
                 }
               ],
@@ -12898,10 +12995,9 @@
                 {
                   "label": "Product Performance",
                   "points": [
-                    "EV penetration increased from 6.2% to 6.6% over the year.",
-                    "TVS iQube S launched with a 4.7 kilowatt battery, offering a range of 175 km.",
-                    "TVS King Kargo Heavy Duty CNG launched, receiving positive initial responses.",
-                    "Norton brand to release new models: Manx, Manx R, Atlas, and Atlas GT."
+                    "The 2-wheeler ICE segment grew by 19% over the previous year, outperforming the industry growth of 10%.",
+                    "The EV 2-wheeler segment saw a 33% growth, reaching 3.7 lakh units.",
+                    "The 3-wheeler segment grew by 63% to 220,000 units."
                   ]
                 }
               ]
@@ -12909,14 +13005,22 @@
             {
               "id": "TECH",
               "title": "Product & Technology",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "TVS iQube S Range",
+                  "value": "175 km",
+                  "unit": null,
+                  "period": null,
+                  "kind": "reported"
+                }
+              ],
               "subsections": [
                 {
-                  "label": "New Products and Innovations",
+                  "label": "New Product Launches",
                   "points": [
-                    "Launch of TVS iQube S with 4.7 kilowatt battery, enhancing electric mobility.",
-                    "Introduction of TVS King Kargo Heavy Duty CNG, targeting the cargo vehicle market.",
-                    "Norton brand to unveil new models, focusing on super-premium class globally."
+                    "Launched TVS iQube S with a range of 175 km and new color graphics.",
+                    "Introduced TVS King Kargo Heavy Duty CNG with robust features.",
+                    "Launched Orbiter V1 with 1.8 kilowatt battery, available in two ranges."
                   ]
                 }
               ]
@@ -12928,7 +13032,14 @@
                 {
                   "label": "Planned Capacity Increase",
                   "value": "1.5 million units",
-                  "unit": "units",
+                  "unit": null,
+                  "period": "next 12 months",
+                  "kind": "target"
+                },
+                {
+                  "label": "Total Production Capacity Target",
+                  "value": "8.3 million units",
+                  "unit": null,
                   "period": "next 12 months",
                   "kind": "target"
                 }
@@ -12937,8 +13048,8 @@
                 {
                   "label": "Capacity Expansion",
                   "points": [
-                    "TVS plans to increase production capacity by 1.5 million units to meet demand.",
-                    "Work on capacity expansion started in the last quarter of the previous financial year."
+                    "The company plans to increase capacity by 1.5 million units to meet demand.",
+                    "Work on capacity expansion started in the last quarter of FY25."
                   ]
                 }
               ]
@@ -12946,14 +13057,29 @@
             {
               "id": "GEO",
               "title": "Geography & Distribution",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "International Business Sales",
+                  "value": "15.8 lakh units",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "International Business Sales Growth",
+                  "value": "33%",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                }
+              ],
               "subsections": [
                 {
-                  "label": "International Market Focus",
+                  "label": "International Market Performance",
                   "points": [
-                    "Highest ever international business sales recorded at 15.8 lakhs units.",
-                    "Focus on Africa, Asia, and LatAm regions, with strong performance in Africa.",
-                    "Sri Lanka and Nepal showing strong recovery; Bangladesh exports to resume soon."
+                    "Recorded highest ever international business sales of 15.8 lakh units, a growth of 33% year-on-year.",
+                    "Africa, Asia, and LatAm remain key markets with strong performance.",
+                    "Sri Lanka and Nepal are performing well, with Bangladesh exports to start soon."
                   ]
                 }
               ]
@@ -12961,27 +13087,21 @@
             {
               "id": "SUP",
               "title": "Supply Chain & Operations",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "Channel Stock Range",
+                  "value": "21 to 30 days",
+                  "unit": null,
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
               "subsections": [
                 {
                   "label": "Supply Chain Challenges",
                   "points": [
-                    "Challenges in supply chain due to geopolitical unrest affecting gas and raw material availability.",
-                    "Labor availability issues, particularly with Tier 2 suppliers, impacting production."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "MKT",
-              "title": "Market & Customer Strategy",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Market Strategy",
-                  "points": [
-                    "Strong demand for TVS products in both domestic and international markets.",
-                    "Focus on leveraging technology and innovation to enhance customer relationships."
+                    "Faced challenges with labor availability and raw material supply.",
+                    "Supply chain disruptions are being addressed, with improvements expected by the end of May."
                   ]
                 }
               ]
@@ -12989,13 +13109,28 @@
             {
               "id": "STRAT",
               "title": "Strategic Initiatives & M&A",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "Investment in Norton",
+                  "value": "INR2,400 crores",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Investment in Dubai",
+                  "value": "INR300 crores",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                }
+              ],
               "subsections": [
                 {
-                  "label": "Strategic Partnerships",
+                  "label": "Strategic Investments",
                   "points": [
-                    "Joint development agreement with Hyundai Motor Company for electric 3-wheelers.",
-                    "Investment in Norton brand to redefine the super-premium class globally."
+                    "Invested INR2,400 crores in Norton for product development.",
+                    "Established infrastructure in Dubai with an investment of INR300 crores to focus on international markets."
                   ]
                 }
               ]
@@ -13006,10 +13141,10 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Headwinds",
+                  "label": "Geopolitical and Economic Risks",
                   "points": [
-                    "Geopolitical issues and commodity price pressures pose challenges.",
-                    "Supply chain disruptions and labor availability issues noted."
+                    "Ongoing West Asia conflict and commodity price pressures pose challenges.",
+                    "Supply chain disruptions due to geopolitical unrest and energy costs."
                   ]
                 }
               ]
@@ -13022,8 +13157,8 @@
                 {
                   "label": "Growth Outlook",
                   "points": [
-                    "Expecting good single-digit growth in the industry for FY '27.",
-                    "Focus on expanding EV capacity and leveraging strategic partnerships for growth."
+                    "Expecting good single-digit growth in the industry for FY27.",
+                    "Confident in maintaining growth momentum despite challenges."
                   ]
                 }
               ]
@@ -13032,40 +13167,24 @@
           "guidance_ledger": [
             {
               "metric": "Industry Growth",
-              "horizon": "FY '27",
-              "statement": "Expecting a good single-digit growth on the industry this year.",
+              "horizon": "FY27",
+              "statement": "Expecting good single-digit growth on the industry this year.",
               "specificity": "vague",
               "direction": "up",
-              "status": "reiterated"
+              "status": "new"
             },
             {
-              "metric": "EV Penetration",
-              "horizon": "FY '27",
-              "statement": "EV 2-wheeler will continue to increase penetration and momentum this year.",
-              "specificity": "vague",
-              "direction": "up",
-              "status": "reiterated"
-            },
-            {
-              "metric": "Production Capacity",
+              "metric": "Capacity Expansion",
               "horizon": "next 12 months",
-              "statement": "Increasing capacity by another 1.5 million to go to around 8.3 million.",
+              "statement": "Looking at increasing the capacity by another 1.5 million to go to somewhere around 8.3 million.",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
             },
             {
-              "metric": "International Market Performance",
-              "horizon": "Q4 FY26",
-              "statement": "International markets are expected to continue doing well in Q4.",
-              "specificity": "vague",
-              "direction": "up",
-              "status": "no_mention"
-            },
-            {
               "metric": "ICE segment growth",
-              "horizon": "Q3 and Q4 FY26",
-              "statement": "Expecting about 8% growth in the ICE segment.",
+              "horizon": "FY26",
+              "statement": "Expecting about 9% growth for the year as a whole, with Q4 growth upwards of 15%.",
               "specificity": "specific",
               "direction": "up",
               "status": "no_mention"
@@ -13073,7 +13192,15 @@
             {
               "metric": "EV two-wheeler business",
               "horizon": "Q4 FY26",
-              "statement": "Very confident that TVS Orbiter will be available all India by start of Q4.",
+              "statement": "Expecting EV penetration to improve going forward, with products like iQube and Orbiter doing well.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "International market performance",
+              "horizon": "FY26",
+              "statement": "Confident of growing ahead of the industry in international markets, with continued growth in Africa and LatAm.",
               "specificity": "specific",
               "direction": "up",
               "status": "no_mention"
@@ -13081,82 +13208,86 @@
           ],
           "risk_register": [
             {
-              "risk": "Geopolitical issues",
+              "risk": "West Asia conflict",
               "status": "new",
-              "note": "Ongoing West Asia conflict affecting commodity prices and supply chain."
+              "note": "Ongoing conflict poses challenges."
             },
             {
               "risk": "Commodity price pressures",
               "status": "new",
-              "note": "Challenges with steel, aluminum, and crude oil derivatives."
+              "note": "Challenges in terms of commodity prices, steel, aluminum, crude oil derivatives."
             },
             {
               "risk": "Supply chain disruptions",
               "status": "new",
-              "note": "Issues with labor availability and raw material delays."
+              "note": "Disruptions due to geopolitical unrest and energy costs."
             },
             {
-              "risk": "Commodity Inflation",
+              "risk": "Commodity price increases",
               "status": "no_mention",
-              "note": "Increases in aluminum, copper, zinc, platinum, palladium, and rhodium are noted."
+              "note": "Increases in aluminum, copper, zinc, platinum, palladium, and rhodium noted."
+            },
+            {
+              "risk": "Challenges in Europe",
+              "status": "no_mention",
+              "note": "Europe continues to face challenges and may take a few more quarters for performance to improve."
+            },
+            {
+              "risk": "EV production challenges",
+              "status": "no_mention",
+              "note": "Challenges due to magnet availability are improving."
+            },
+            {
+              "risk": "Magnet availability",
+              "status": "no_mention",
+              "note": "Continues to pose challenges in the short and medium term for EV production."
             },
             {
               "risk": "Commodity Prices",
               "status": "no_mention",
               "note": "Higher commodity prices impacted margins, but offset by top line growth and cost optimization."
-            },
-            {
-              "risk": "Magnet Availability",
-              "status": "no_mention",
-              "note": "Challenges in magnet availability affecting EV production and sales."
             }
           ],
           "themes": [
             {
               "label": "Product Innovation",
               "direction": "positive",
-              "note": "Launch of new EV models and Norton brand expansion.",
+              "note": "New product launches like TVS iQube S and Orbiter V1 are driving growth.",
               "section_ref": "TECH"
             },
             {
               "label": "International Expansion",
               "direction": "positive",
-              "note": "Strong performance in Africa, Asia, and LatAm regions.",
+              "note": "Strong growth in international markets, especially in Africa and LatAm.",
               "section_ref": "GEO"
             },
             {
               "label": "Supply Chain Challenges",
               "direction": "negative",
-              "note": "Geopolitical unrest affecting gas and raw material availability.",
+              "note": "Facing challenges with labor availability and raw material supply.",
               "section_ref": "SUP"
             },
             {
               "label": "Profitability Improvement",
               "direction": "positive",
-              "note": "Record financial performance with strong EBITDA growth.",
+              "note": "Achieved highest ever EBITDA margin of 13.1% in Q4 FY26.",
               "section_ref": "FIN"
             },
             {
-              "label": "Strategic Partnerships",
+              "label": "Capacity Expansion",
               "direction": "positive",
-              "note": "Joint development agreement with Hyundai for electric 3-wheelers.",
-              "section_ref": "STRAT"
+              "note": "Plans to increase production capacity by 1.5 million units.",
+              "section_ref": "MFG"
             }
           ],
           "key_takeaways": [
-            "TVS Motor Company achieved record sales volume, revenue, and profit in FY '25-'26.",
-            "Sales volume grew by 24%, revenue by 30%, and operating PBT by 40%.",
-            "EV penetration increased from 6.2% to 6.6% over the year.",
-            "TVS plans to increase production capacity by 1.5 million units to meet demand.",
-            "Joint development agreement with Hyundai Motor Company for electric 3-wheelers.",
-            "Focus on expanding EV capacity and leveraging strategic partnerships for growth.",
-            "Challenges in supply chain due to geopolitical unrest affecting gas and raw material availability."
+            "TVS Motor Company achieved record performance in FY26 with highest ever sales volume, revenue, and profit.",
+            "Sales volume grew by 24% to 5.9 million units, and revenue grew by 30% to INR47,270 crores.",
+            "The company plans to increase production capacity by 1.5 million units to meet demand.",
+            "International business recorded highest ever sales of 15.8 lakh units, a growth of 33% year-on-year.",
+            "TVS Credit services achieved a record level of PBT at INR1,248 crores."
           ],
-          "pressing_questions": [
-            "What kind of growth is expected for domestic and international markets in FY '27?",
-            "How much is the commodity inflation expected in the first quarter?",
-            "What is the strategic rationale behind the Hyundai TVS partnership in the 3-wheeler EV segment?"
-          ]
+          "pressing_questions": []
         },
         {
           "company": "TVS Motor Company Ltd",
@@ -13167,119 +13298,140 @@
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=53c3b829-4568-4cca-a559-e584d7253eed.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-22T20:00:35.778Z",
-          "summary": "TVS Motor Company anticipates continued growth in Q4 FY26, driven by strong domestic and international demand, with a focus on premiumization and cost management to sustain profitability.",
+          "generated_at": "2026-07-29T08:22:50.024Z",
+          "summary": "TVS Motor Company expects continued growth in Q4 FY26, driven by strong domestic and international demand, premiumization, and a focus on cost reduction and product mix.",
           "sections": [
             {
               "id": "FIN",
               "title": "Financial Performance",
               "key_figures": [
                 {
-                  "label": "Sales Volume Growth",
-                  "value": "27",
-                  "unit": "%",
+                  "label": "Quarterly sales volume growth",
+                  "value": "27%",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Revenue Growth",
-                  "value": "37",
-                  "unit": "%",
+                  "label": "Quarterly revenue growth",
+                  "value": "37%",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Operating EBITDA Growth",
-                  "value": "51",
-                  "unit": "%",
+                  "label": "Quarterly operating EBITDA growth",
+                  "value": "51%",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Operating PBT Growth",
-                  "value": "56",
-                  "unit": "%",
+                  "label": "Quarterly operating PBT growth",
+                  "value": "56%",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Operating Revenue",
-                  "value": "12,476",
-                  "unit": "INR Crores",
+                  "label": "Quarterly operating revenue",
+                  "value": "INR12,476 crores",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Operating EBITDA",
-                  "value": "1,634",
-                  "unit": "INR Crores",
+                  "label": "Quarterly operating EBITDA",
+                  "value": "INR1,634 crores",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Operating EBITDA Margin",
-                  "value": "13.1",
-                  "unit": "%",
+                  "label": "Quarterly operating EBITDA margin",
+                  "value": "13.1%",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "PBT Before Exceptional Items",
-                  "value": "1,315",
-                  "unit": "INR Crores",
+                  "label": "Quarterly PBT before exceptional items",
+                  "value": "INR1,315 crores",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Profit After Tax",
-                  "value": "940",
-                  "unit": "INR Crores",
+                  "label": "Quarterly profit after tax",
+                  "value": "INR940 crores",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Operating Revenue (9 months)",
-                  "value": "34,463",
-                  "unit": "INR Crores",
+                  "label": "First 9 months operating revenue growth",
+                  "value": "29%",
+                  "unit": null,
                   "period": "9M FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "PBT Before Exceptional Items (9 months)",
-                  "value": "3,594",
-                  "unit": "INR Crores",
+                  "label": "First 9 months operating revenue",
+                  "value": "INR34,463 crores",
+                  "unit": null,
                   "period": "9M FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Profit After Tax (9 months)",
-                  "value": "2,625",
-                  "unit": "INR Crores",
+                  "label": "First 9 months PBT before exceptional items",
+                  "value": "INR3,594 crores",
+                  "unit": null,
                   "period": "9M FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "TVS Credit PBT Before Exceptional Items",
-                  "value": "390",
-                  "unit": "INR Crores",
+                  "label": "First 9 months profit after tax",
+                  "value": "INR2,625 crores",
+                  "unit": null,
+                  "period": "9M FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "TVS Credit PBT before exceptional items",
+                  "value": "INR390 crores",
+                  "unit": null,
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "TVS Credit book size",
+                  "value": "INR29,678 crores",
+                  "unit": null,
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "International business revenue",
+                  "value": "INR2,909 crores",
+                  "unit": null,
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Spare parts revenue",
+                  "value": "INR1,183 crores",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Profitability",
+                  "label": "Profitability and Cost Management",
                   "points": [
                     "Operating EBITDA margin improved by 120 basis points to 13.1% from 11.9% in Q3 of last year.",
-                    "Profit after tax for the quarter is INR940 crores, up from INR618 crores last year."
-                  ]
-                },
-                {
-                  "label": "Nine-Month Performance",
-                  "points": [
-                    "Operating revenue for the first 9 months grew by 29% to INR34,463 crores.",
-                    "PBT before exceptional items for the first 9 months is INR3,594 crores, a growth of 43%.",
-                    "Profit after tax for the first 9 months is INR2,625 crores, up from INR1,858 crores last year."
+                    "On a normalized basis, Q3 FY '25 EBITDA would have been at 12.4%, indicating a year-on-year margin improvement of 70 basis points.",
+                    "The company recognized INR41 crores as an exceptional item towards the past service cost arising from the new labor codes."
                   ]
                 }
               ]
@@ -13289,37 +13441,44 @@
               "title": "Order Book & Demand",
               "key_figures": [
                 {
-                  "label": "Two-wheeler Domestic ICE Sales Growth",
-                  "value": "21",
-                  "unit": "%",
+                  "label": "Two-wheeler domestic ICE sales growth",
+                  "value": "21%",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "International Market Sales Growth",
-                  "value": "35",
-                  "unit": "%",
+                  "label": "International market sales growth",
+                  "value": "35%",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Total Two-wheeler ICE Sales Growth",
-                  "value": "25",
-                  "unit": "%",
+                  "label": "Total two-wheeler ICE sales growth",
+                  "value": "25%",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "EV Two-wheeler Sales Growth",
-                  "value": "40",
-                  "unit": "%",
+                  "label": "EV two-wheeler sales growth",
+                  "value": "40%",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Total Three-wheeler Sales",
-                  "value": "60,000",
-                  "unit": "units",
+                  "label": "EV two-wheeler units sold",
+                  "value": "1,06,000 units",
+                  "unit": null,
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total three-wheeler sales",
+                  "value": "60,000 units",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 }
@@ -13328,9 +13487,8 @@
                 {
                   "label": "Demand Drivers",
                   "points": [
-                    "Domestic ICE sales grew by 21% compared to Q3 of last year, outperforming industry growth of 16%.",
-                    "International market sales grew by 35%, surpassing industry growth of 23%.",
-                    "EV two-wheeler sales grew by 40%, crossing 1,06,000 units this year."
+                    "The low inflation drove demand across product categories, leading to increased sales, deeper market penetration, and enhanced market share.",
+                    "Successful festive season with robust demand contributed to sales growth."
                   ]
                 }
               ]
@@ -13340,17 +13498,31 @@
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
-                  "label": "EV Two-wheeler Sales",
-                  "value": "1,06,000",
-                  "unit": "units",
+                  "label": "EV penetration in two-wheeler and three-wheeler",
+                  "value": "32%",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Total Three-wheeler Sales",
-                  "value": "60,000",
-                  "unit": "units",
+                  "label": "VAHAN EV industry growth",
+                  "value": "7.5%",
+                  "unit": null,
                   "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "TVS Credit loans disbursed",
+                  "value": "41 lakh new customers",
+                  "unit": null,
+                  "period": "9M FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "TVS Credit total customer base",
+                  "value": "2.3 crores",
+                  "unit": null,
+                  "period": "9M FY26",
                   "kind": "reported"
                 }
               ],
@@ -13358,8 +13530,9 @@
                 {
                   "label": "Product Performance",
                   "points": [
-                    "EV two-wheeler sales grew by 40%, reaching 1,06,000 units.",
-                    "Total sales of three-wheelers more than doubled to 60,000 units."
+                    "Scooters have performed extremely well, capturing a 40% category share of the overall two-wheeler industry.",
+                    "Premium and super-premium segments are growing faster than the industry average.",
+                    "The entry-level segment is not growing as much as other segments."
                   ]
                 }
               ]
@@ -13370,10 +13543,10 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Norton Motorcycles",
+                  "label": "Norton Developments",
                   "points": [
-                    "Norton is building a lineup unveiled at EICMA 2025, targeting the super premium category.",
-                    "New Norton products are set to launch in Indian markets with a differentiated strategy."
+                    "Norton is building a lineup unveiled at EICMA 2025, positioning TVS in the premium luxury motorcycle segment.",
+                    "New Norton products are being prepared for launch in the Indian market with a differentiated strategy."
                   ]
                 }
               ]
@@ -13381,13 +13554,28 @@
             {
               "id": "MFG",
               "title": "Manufacturing & Capacity",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "EV production capacity for iQube",
+                  "value": "30,000 to 32,000 units",
+                  "unit": "per month",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV production capacity for Orbiter",
+                  "value": "10,000 units",
+                  "unit": "per month",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
               "subsections": [
                 {
                   "label": "Capacity Management",
                   "points": [
-                    "Capacity increases take about 2 to 3 months, and proactive investments are being made.",
-                    "EV production is recovering from magnet availability issues, with full supplies expected soon."
+                    "Capacity increases take about 2 to 3 months, and the company is proactive in investing behind capacity expansion.",
+                    "There were some challenges due to maintenance and holidays, but overall supply is being managed effectively."
                   ]
                 }
               ]
@@ -13397,9 +13585,9 @@
               "title": "Geography & Distribution",
               "key_figures": [
                 {
-                  "label": "International Business Revenue",
-                  "value": "2,909",
-                  "unit": "INR Crores",
+                  "label": "Exports growth from India",
+                  "value": "23%",
+                  "unit": null,
                   "period": "Q3 FY26",
                   "kind": "reported"
                 }
@@ -13408,9 +13596,8 @@
                 {
                   "label": "Regional Performance",
                   "points": [
-                    "Exports from India grew by 23% in Q3.",
-                    "Demand in Africa and LatAm continues to grow, with Sri Lanka and Nepal performing well.",
-                    "Europe faces challenges and may take a few more quarters to improve."
+                    "Demand in Africa continues to grow quarter-on-quarter, with LatAm also showing growth over last year.",
+                    "Asia region is performing well, with Sri Lanka and Nepal contributing positively, while Europe continues to face challenges."
                   ]
                 }
               ]
@@ -13421,10 +13608,10 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Supply Chain Challenges",
+                  "label": "Commodity Inflation",
                   "points": [
-                    "Magnet availability for EVs has improved, with full recovery expected soon.",
-                    "End of December maintenance and holidays caused temporary supply challenges."
+                    "Increases in aluminum, copper, zinc, platinum, palladium, and rhodium are noted, with a total impact of about 0.4%.",
+                    "The company has taken price increases of about 0.2% to 0.3% to offset commodity inflation."
                   ]
                 }
               ]
@@ -13432,21 +13619,13 @@
             {
               "id": "MKT",
               "title": "Market & Customer Strategy",
-              "key_figures": [
-                {
-                  "label": "Spare Parts Revenue",
-                  "value": "1,183",
-                  "unit": "INR Crores",
-                  "period": "Q3 FY26",
-                  "kind": "reported"
-                }
-              ],
+              "key_figures": [],
               "subsections": [
                 {
                   "label": "Market Strategy",
                   "points": [
-                    "TVS Credit disbursed loans to over 41 lakh new customers, expanding its customer base to nearly 2.3 crores.",
-                    "The book size of TVS Credit grew by 9% over last year Q3."
+                    "TVS Credit is focusing on risk-calibrated growth across product categories, building a diversified book.",
+                    "The company is driving penetration of existing products, expanding product offerings, and scaling up distribution while enhancing customer experience and operational efficiency."
                   ]
                 }
               ]
@@ -13454,13 +13633,35 @@
             {
               "id": "STRAT",
               "title": "Strategic Initiatives & M&A",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "Investment in TVS Credit Services",
+                  "value": "INR200 crores",
+                  "unit": null,
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Investment in Norton",
+                  "value": "INR60 crores",
+                  "unit": null,
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Investment in ION PT TVS project",
+                  "value": "INR100 crores",
+                  "unit": null,
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                }
+              ],
               "subsections": [
                 {
-                  "label": "Strategic Investments",
+                  "label": "Investment Strategy",
                   "points": [
-                    "Investments in Norton and TVS Credit Services are ongoing, with INR200 crores invested in TVS Credit this quarter.",
-                    "INR60-70 crores invested in Norton for pre-marketing and EICMA show participation."
+                    "Investments are focused on strategic areas such as Norton, TVS Credit Services, and the ION PT TVS project.",
+                    "The company is also investing in international market expansion, including a strategic investment in Dubai."
                   ]
                 }
               ]
@@ -13471,10 +13672,10 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Commodity Inflation",
+                  "label": "External Challenges",
                   "points": [
-                    "Increases in aluminum, copper, zinc, platinum, palladium, and rhodium are noted.",
-                    "The company is managing inflation through scale benefits, cost reduction, and selective price increases."
+                    "Europe continues to face challenges and may take a few more quarters for performance to improve.",
+                    "There were challenges in EV production due to magnet availability, but the situation is improving."
                   ]
                 }
               ]
@@ -13487,8 +13688,8 @@
                 {
                   "label": "Q4 Outlook",
                   "points": [
-                    "Expecting Q4 to perform well, driven by GST benefits and strong domestic and international demand.",
-                    "EV penetration is expected to improve, with products like iQube and Orbiter performing well."
+                    "The company expects Q4 to perform extremely well, driven by GST benefits, good rainfall, and higher reservoir levels supporting rural sentiments.",
+                    "The GDP growth for this financial year is estimated at about 7%, reinforcing India's position as the world's fastest-growing major economy."
                   ]
                 }
               ]
@@ -13496,92 +13697,86 @@
           ],
           "guidance_ledger": [
             {
-              "metric": "Q4 Industry Growth",
-              "horizon": "Q4 FY26",
-              "statement": "Expecting Q4 industry growth upwards of 15%.",
+              "metric": "ICE segment growth",
+              "horizon": "FY26",
+              "statement": "Expecting about 9% growth for the year as a whole, with Q4 growth upwards of 15%.",
               "specificity": "specific",
               "direction": "up",
-              "status": "new"
+              "status": "raised"
             },
             {
-              "metric": "EV Penetration",
+              "metric": "EV two-wheeler business",
               "horizon": "Q4 FY26",
-              "statement": "EV penetration is expected to improve going forward.",
-              "specificity": "vague",
-              "direction": "up",
-              "status": "new"
-            },
-            {
-              "metric": "International Market Performance",
-              "horizon": "Q4 FY26",
-              "statement": "International markets are expected to continue doing well in Q4.",
+              "statement": "Expecting EV penetration to improve going forward, with products like iQube and Orbiter doing well.",
               "specificity": "vague",
               "direction": "up",
               "status": "reiterated"
             },
             {
-              "metric": "ICE segment growth",
-              "horizon": "Q3 and Q4 FY26",
-              "statement": "Expecting about 8% growth in the ICE segment.",
+              "metric": "International market performance",
+              "horizon": "FY26",
+              "statement": "Confident of growing ahead of the industry in international markets, with continued growth in Africa and LatAm.",
               "specificity": "specific",
               "direction": "up",
-              "status": "no_mention"
-            },
-            {
-              "metric": "EV two-wheeler business",
-              "horizon": "Q4 FY26",
-              "statement": "Very confident that TVS Orbiter will be available all India by start of Q4.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "no_mention"
+              "status": "reiterated"
             }
           ],
           "risk_register": [
             {
-              "risk": "Commodity Inflation",
+              "risk": "Commodity price increases",
               "status": "new",
-              "note": "Increases in aluminum, copper, zinc, platinum, palladium, and rhodium are noted."
+              "note": "Increases in aluminum, copper, zinc, platinum, palladium, and rhodium noted."
+            },
+            {
+              "risk": "Challenges in Europe",
+              "status": "new",
+              "note": "Europe continues to face challenges and may take a few more quarters for performance to improve."
+            },
+            {
+              "risk": "EV production challenges",
+              "status": "new",
+              "note": "Challenges due to magnet availability are improving."
+            },
+            {
+              "risk": "Magnet availability",
+              "status": "no_mention",
+              "note": "Continues to pose challenges in the short and medium term for EV production."
             },
             {
               "risk": "Commodity Prices",
               "status": "no_mention",
               "note": "Higher commodity prices impacted margins, but offset by top line growth and cost optimization."
-            },
-            {
-              "risk": "Magnet Availability",
-              "status": "no_mention",
-              "note": "Challenges in magnet availability affecting EV production and sales."
             }
           ],
           "themes": [
             {
               "label": "Product Innovation",
               "direction": "positive",
-              "note": "Norton is building a lineup targeting the super premium category.",
+              "note": "Norton is building a premium lineup, and new products like iQube and Orbiter are performing well.",
               "section_ref": "TECH"
             },
             {
               "label": "International Expansion",
               "direction": "positive",
-              "note": "Exports from India grew by 23% in Q3, with strong demand in Africa and LatAm.",
+              "note": "Strong growth in Africa and LatAm, with strategic investments in Dubai for international market focus.",
               "section_ref": "GEO"
             },
             {
               "label": "Supply Chain Challenges",
-              "direction": "neutral",
-              "note": "Magnet availability for EVs has improved, with full recovery expected soon.",
+              "direction": "mixed",
+              "note": "Commodity price increases and EV production challenges due to magnet availability are noted.",
               "section_ref": "SUP"
             },
             {
               "label": "GST Impact",
               "direction": "positive",
-              "note": "GST benefits are expected to drive strong Q4 performance.",
-              "section_ref": "GUID"
+              "note": "GST benefits are driving strong domestic demand and growth in Q4 FY26.",
+              "section_ref": "ORD"
             },
             {
               "label": "Profitability Improvement",
               "direction": "positive",
-              "note": "Operating EBITDA margin improved by 120 basis points to 13.1% in Q3 FY26.",
+              "note": "Operating EBITDA margin improved by 120 basis points, with a focus on cost reduction and premiumization.",
               "section_ref": "FIN"
             }
           ],
@@ -13590,9 +13785,9 @@
             "Two-wheeler domestic ICE sales grew by 21%, international market sales by 35%, and EV two-wheeler sales by 40% in Q3 FY26.",
             "Total sales of three-wheelers more than doubled to 60,000 units in Q3 FY26.",
             "Operating EBITDA margin improved by 120 basis points to 13.1% in Q3 FY26.",
-            "TVS Credit disbursed loans to over 41 lakh new customers, expanding its customer base to nearly 2.3 crores.",
-            "Norton is building a lineup unveiled at EICMA 2025, targeting the super premium category.",
-            "Exports from India grew by 23% in Q3, with strong demand in Africa and LatAm."
+            "TVS Credit disbursed loans to over 41 lakh new customers, with a total customer base of nearly 2.3 crores.",
+            "The company expects Q4 to perform extremely well, driven by GST benefits and strong domestic and international demand.",
+            "Investments are focused on strategic areas such as Norton, TVS Credit Services, and the ION PT TVS project."
           ],
           "pressing_questions": []
         },
@@ -13601,84 +13796,49 @@
           "ticker": "TVSMOTOR",
           "industry": "2/3 Wheelers",
           "country": "India",
-          "concall_date": "2025-10-01",
+          "concall_date": "2025-10-28",
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b229be02-d7b5-472f-a675-4eef6177031f.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-22T20:00:19.477Z",
-          "summary": "TVS Motor Company anticipates continued growth in both ICE and EV segments, supported by new product launches and favorable GST reforms, with a focus on expanding international markets and enhancing customer experience.",
+          "generated_at": "2026-07-29T08:22:15.957Z",
+          "summary": "TVS Motor Company anticipates continued growth in both ICE and EV segments, supported by new product launches and GST benefits, despite challenges in magnet availability for EVs.",
           "sections": [
             {
               "id": "FIN",
               "title": "Financial Performance",
               "key_figures": [
                 {
-                  "label": "Sales Volume Growth",
+                  "label": "Sales volume growth",
                   "value": "23",
                   "unit": "%",
                   "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Revenue Growth",
+                  "label": "Revenue growth",
                   "value": "29",
                   "unit": "%",
                   "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Operating EBITDA Growth",
+                  "label": "Operating EBITDA growth",
                   "value": "40",
                   "unit": "%",
                   "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Operating PBT Growth",
+                  "label": "Operating PBT growth",
                   "value": "44",
                   "unit": "%",
                   "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Operating Revenue",
+                  "label": "Operating revenue",
                   "value": "11,905",
                   "unit": "INR Crores",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Domestic ICE Sales Growth",
-                  "value": "21",
-                  "unit": "%",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "International Market Sales Growth",
-                  "value": "31",
-                  "unit": "%",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Total ICE Sales Growth",
-                  "value": "23",
-                  "unit": "%",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "EV Two-Wheeler Sales",
-                  "value": "80,000",
-                  "unit": "units",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Three-Wheeler Sales Growth",
-                  "value": "41",
-                  "unit": "%",
                   "period": "Q2 FY26",
                   "kind": "reported"
                 },
@@ -13690,7 +13850,7 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Operating EBITDA Margin",
+                  "label": "Operating EBITDA margin",
                   "value": "12.7",
                   "unit": "%",
                   "period": "Q2 FY26",
@@ -13704,44 +13864,72 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Profit After Tax",
+                  "label": "PAT",
                   "value": "906",
                   "unit": "INR Crores",
                   "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "H1 Operating Revenue Growth",
+                  "label": "Operating revenue growth",
                   "value": "25",
                   "unit": "%",
                   "period": "H1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "H1 PBT Growth",
+                  "label": "PBT growth",
                   "value": "36",
                   "unit": "%",
                   "period": "H1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "H1 Profit After Tax Growth",
+                  "label": "PAT growth",
                   "value": "36",
                   "unit": "%",
                   "period": "H1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "TVS Credit Book Size",
+                  "label": "TVS Credit disbursed loans",
+                  "value": "25",
+                  "unit": "lakh new customers",
+                  "period": "H1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "TVS Credit customer base",
+                  "value": "2.13",
+                  "unit": "crores",
+                  "period": "H1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "TVS Credit book size",
                   "value": "27,807",
+                  "unit": "INR Crores",
+                  "period": "H1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "TVS Credit PBT growth",
+                  "value": "28",
+                  "unit": "%",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Spare parts revenue",
+                  "value": "1,073",
                   "unit": "INR Crores",
                   "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "TVS Credit PBT Growth",
-                  "value": "28",
-                  "unit": "%",
+                  "label": "Exports revenue",
+                  "value": "2,885",
+                  "unit": "INR Crores",
                   "period": "Q2 FY26",
                   "kind": "reported"
                 }
@@ -13750,17 +13938,15 @@
                 {
                   "label": "Profitability",
                   "points": [
-                    "Operating EBITDA grew by 40% to INR 1,509 crores, with a margin improvement of 100 basis points to 12.7%.",
-                    "PBT increased by 37% to INR 1,226 crores, and profit after tax grew by 37% to INR 906 crores.",
-                    "H1 operating revenue grew by 25% to INR 21,986 crores, with PBT and profit after tax both growing by 36%."
+                    "The company's operating EBITDA margin improved by 100 basis points to 12.7% from 11.7% last year.",
+                    "On a normalized basis, Q2 last year, EBITDA would have been at 12.2%, so year-on-year, if you normalize PLI, the EBITDA margin improvement is 50 basis points."
                   ]
                 },
                 {
                   "label": "TVS Credit Performance",
                   "points": [
-                    "TVS Credit achieved significant growth in consumer and retail financing, driven by GST 2.0 implementation and increased sales.",
-                    "TVS Credit disbursed loans to over 25 lakh new customers, with a total customer base of over 2.13 crores.",
-                    "TVS Credit's book size is INR 27,807 crores, with PBT growing by 28% to INR 277 crores."
+                    "TVS Credit achieved significant growth in consumer and retail financing driven by GST 2.0 implementation and increased sales of consumer products.",
+                    "TVS Credit maintained its focus on risk-calibrated growth across product categories and is working to build a diversified group by scaling up and increasing penetration of existing products."
                   ]
                 }
               ]
@@ -13770,50 +13956,60 @@
               "title": "Order Book & Demand",
               "key_figures": [
                 {
-                  "label": "Domestic ICE Sales Growth",
+                  "label": "Two-wheeler domestic ICE sales growth",
                   "value": "21",
                   "unit": "%",
                   "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "International Market Sales Growth",
+                  "label": "Two-wheeler international market sales growth",
                   "value": "31",
                   "unit": "%",
                   "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Total ICE Sales Growth",
+                  "label": "Total ICE sales growth",
                   "value": "23",
                   "unit": "%",
                   "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "EV Two-Wheeler Sales",
+                  "label": "EV two-wheeler sales growth",
+                  "value": "7",
+                  "unit": "%",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV two-wheeler sales",
                   "value": "80,000",
                   "unit": "units",
                   "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Three-Wheeler Sales Growth",
+                  "label": "Total sales of 3-wheelers growth",
                   "value": "41",
                   "unit": "%",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total sales of 3-wheelers",
+                  "value": "53,000",
+                  "unit": "units",
                   "period": "Q2 FY26",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Demand Drivers",
+                  "label": "Festive Season Impact",
                   "points": [
-                    "Domestic ICE sales grew by 21%, outperforming the industry growth of 8%.",
-                    "International market sales grew by 31%, against an industry growth of 26%.",
-                    "Total ICE sales grew by 23%, compared to an industry growth of 11%.",
-                    "EV two-wheeler sales grew by 7% to 80,000 units despite challenges in magnet availability.",
-                    "Three-wheeler sales grew by 41% to 53,000 units."
+                    "The festive season has shown very good positive momentum, with VAHAN industry growth at 24% and TVS exceeding growth above 32%."
                   ]
                 }
               ]
@@ -13823,26 +14019,70 @@
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
-                  "label": "EV Two-Wheeler Sales",
-                  "value": "80,000",
-                  "unit": "units",
-                  "period": "Q2 FY26",
+                  "label": "TVS Ntorq 150 top speed",
+                  "value": "104",
+                  "unit": "km/h",
+                  "period": "current",
                   "kind": "reported"
                 },
                 {
-                  "label": "Three-Wheeler Sales Growth",
-                  "value": "41",
-                  "unit": "%",
-                  "period": "Q2 FY26",
+                  "label": "TVS Ntorq 150 acceleration",
+                  "value": "6.3",
+                  "unit": "seconds (0 to 50 km/h)",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "TVS Orbiter price",
+                  "value": "99,900",
+                  "unit": "INR",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "TVS Orbiter range",
+                  "value": "158",
+                  "unit": "km IDC",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "TVS King Kargo HD EV range",
+                  "value": "156",
+                  "unit": "km",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "TVS King Kargo HD EV top speed",
+                  "value": "60",
+                  "unit": "km/h",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Apache RTX market",
+                  "value": "20",
+                  "unit": "years of legacy",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Apache global community",
+                  "value": "6.5",
+                  "unit": "million riders",
+                  "period": "current",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Product Performance",
+                  "label": "New Product Launches",
                   "points": [
-                    "EV two-wheeler sales grew by 7% to 80,000 units.",
-                    "Three-wheeler sales grew by 41% to 53,000 units."
+                    "TVS launched the Orbiter, a smart, sustainable urban EV commute with a range of 158 km, priced at INR 99,900.",
+                    "TVS King Kargo HD EV was launched for urban logistics, offering a range of 156 km and a top speed of 60 km/h.",
+                    "TVS Ntorq 150, the most powerful TVS scooter, offers a top speed of 104 km/h and accelerates from 0 to 50 km/h in 6.3 seconds.",
+                    "Apache RTX, an adventure rally tourer, was launched to enhance the world of adventure touring."
                   ]
                 }
               ]
@@ -13852,56 +14092,19 @@
               "title": "Product & Technology",
               "key_figures": [
                 {
-                  "label": "TVS Orbiter Price",
-                  "value": "99,900",
-                  "unit": "INR",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "TVS Orbiter IDC Range",
-                  "value": "158",
-                  "unit": "kilometers",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "TVS King Kargo HD EV Top Speed",
-                  "value": "60",
-                  "unit": "kilometers per hour",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "TVS King Kargo HD EV Range",
-                  "value": "156",
-                  "unit": "kilometers",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "TVS Ntorq 150 Top Speed",
-                  "value": "104",
-                  "unit": "kilometers per hour",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "TVS Ntorq 150 Acceleration",
-                  "value": "6.3",
-                  "unit": "seconds",
-                  "period": "Q2 FY26",
+                  "label": "TVS Orbiter boot space",
+                  "value": "34",
+                  "unit": "liters",
+                  "period": "current",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "New Product Launches",
+                  "label": "Product Features",
                   "points": [
-                    "Launched TVS Orbiter, a smart, sustainable urban EV commute with a range of 158 kilometers, priced at INR 99,900.",
-                    "Introduced TVS King Kargo HD EV for urban logistics with a top speed of 60 km/h and a range of 156 kilometers.",
-                    "Launched TVS Ntorq 150, India's quickest Hyper Sport Scooter, with a top speed of 104 km/h and 0-50 km/h in 6.3 seconds.",
-                    "Introduced Apache RTX, an adventure rally tourer, enhancing the Apache brand's legacy."
+                    "TVS Orbiter offers segment-first features such as Cruise Control, Hill Hold Assist, and a spacious 34 liters boot space.",
+                    "TVS Ntorq 150 includes advanced connectivity and several first-in-segment features that enhance safety controls."
                   ]
                 }
               ]
@@ -13914,7 +14117,7 @@
                 {
                   "label": "Capacity Expansion",
                   "points": [
-                    "Increasing capacity to meet high demand for TVS products, especially in the EV segment."
+                    "TVS is increasing capacity to meet high demand for its products, especially in the EV segment."
                   ]
                 }
               ]
@@ -13924,7 +14127,7 @@
               "title": "Geography & Distribution",
               "key_figures": [
                 {
-                  "label": "International Sales Volume",
+                  "label": "International sales milestone",
                   "value": "400,000",
                   "unit": "units",
                   "period": "Q2 FY26",
@@ -13935,9 +14138,8 @@
                 {
                   "label": "International Market Performance",
                   "points": [
-                    "Posted highest ever quarterly international sales, crossing 400,000 units.",
-                    "Strong growth in Africa and LatAm regions, with plans to strengthen network in Bangladesh.",
-                    "Planning to launch Norton products in India by April 2026, with a differentiated retail strategy."
+                    "TVS posted highest ever quarterly sales in international markets, driven by strong growth in Africa and LatAm regions.",
+                    "TVS is strengthening its network in Bangladesh to improve presence in Asia."
                   ]
                 }
               ]
@@ -13945,13 +14147,35 @@
             {
               "id": "SUP",
               "title": "Supply Chain & Operations",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "Packing and freight expenses increase",
+                  "value": "120",
+                  "unit": "INR Crores",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "R&D expenses increase",
+                  "value": "20-25",
+                  "unit": "INR Crores",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Marketing expenses increase",
+                  "value": "65",
+                  "unit": "INR Crores",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                }
+              ],
               "subsections": [
                 {
-                  "label": "Supply Chain Challenges",
+                  "label": "Cost Management",
                   "points": [
-                    "Facing challenges in magnet availability affecting EV production.",
-                    "Efforts to optimize operations with TVS Connect Fleet platform for enhanced vehicle operation."
+                    "Other expenses include variable expenses such as packing and freight, which increased by INR 120 crores due to the festive season.",
+                    "R&D expenses increased by INR 20-25 crores, and marketing expenses increased by INR 65 crores due to new product launches."
                   ]
                 }
               ]
@@ -13962,11 +14186,10 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Customer Strategy",
+                  "label": "Customer Focus",
                   "points": [
-                    "Focus on delighting customers with new technology, features, and products.",
-                    "Investing in digital and software teams to enhance customer experience.",
-                    "Expanding international presence with a Dubai office for deeper customer understanding."
+                    "TVS is investing in digital and software teams to enhance customer experience and product offerings.",
+                    "TVS is focusing on customer service and network viability, adding 100 touch points in 3-wheelers this year."
                   ]
                 }
               ]
@@ -13977,10 +14200,10 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Strategic Investments",
+                  "label": "Norton Strategy",
                   "points": [
-                    "Investments in Norton e-bikes and setting up a Dubai office to enhance international business.",
-                    "Plans to unveil new Norton products at EICMA in Italy, with a global launch strategy."
+                    "TVS plans to launch Norton products in India by April 2026, with a differentiated retail strategy.",
+                    "Norton will reveal new motorcycles at EICMA in Italy, signaling a new design direction."
                   ]
                 }
               ]
@@ -13991,15 +14214,9 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Commodity Prices",
-                  "points": [
-                    "Higher commodity prices impacted margins, but offset by top line growth and cost optimization."
-                  ]
-                },
-                {
                   "label": "Magnet Availability",
                   "points": [
-                    "Challenges in magnet availability affecting EV production and sales."
+                    "Magnet availability continues to pose challenges in the short and medium term for EV production."
                   ]
                 }
               ]
@@ -14010,11 +14227,11 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Outlook",
+                  "label": "Growth Expectations",
                   "points": [
-                    "Expecting continued growth in ICE and EV segments, supported by GST reforms and new product launches.",
-                    "Anticipating 8% growth in the ICE segment for Q3 and Q4.",
-                    "Confident in outperforming the industry in both domestic and international markets."
+                    "TVS expects about 8% growth in the ICE segment for Q3 and Q4 FY26.",
+                    "TVS is confident that the GST benefit will help maintain growth momentum in Q3 and Q4.",
+                    "TVS anticipates continued growth in international markets, aiming to outperform the industry."
                   ]
                 }
               ]
@@ -14027,7 +14244,7 @@
               "statement": "Expecting about 8% growth in the ICE segment.",
               "specificity": "specific",
               "direction": "up",
-              "status": "new"
+              "status": "reiterated"
             },
             {
               "metric": "EV two-wheeler business",
@@ -14035,70 +14252,67 @@
               "statement": "Very confident that TVS Orbiter will be available all India by start of Q4.",
               "specificity": "specific",
               "direction": "up",
-              "status": "new"
+              "status": "reiterated"
             },
             {
               "metric": "International market performance",
               "horizon": "FY26",
               "statement": "Confident of growing ahead of the industry in international markets.",
-              "specificity": "vague",
+              "specificity": "specific",
               "direction": "up",
-              "status": "new"
+              "status": "reiterated"
             }
           ],
           "risk_register": [
             {
-              "risk": "Commodity Prices",
-              "status": "escalated",
-              "note": "Higher commodity prices impacted margins, but offset by top line growth and cost optimization."
+              "risk": "Magnet availability",
+              "status": "stable",
+              "note": "Continues to pose challenges in the short and medium term for EV production."
             },
             {
-              "risk": "Magnet Availability",
-              "status": "escalated",
-              "note": "Challenges in magnet availability affecting EV production and sales."
+              "risk": "Commodity Prices",
+              "status": "no_mention",
+              "note": "Higher commodity prices impacted margins, but offset by top line growth and cost optimization."
             }
           ],
           "themes": [
             {
               "label": "Product Innovation",
               "direction": "positive",
-              "note": "New product launches like TVS Orbiter and Apache RTX enhance market offerings.",
+              "note": "TVS launched several new products including the Orbiter and Ntorq 150, enhancing its portfolio.",
               "section_ref": "TECH"
             },
             {
               "label": "International Expansion",
               "direction": "positive",
-              "note": "Strong growth in Africa and LatAm regions with plans for Norton launch in India.",
+              "note": "TVS posted highest ever quarterly sales in international markets, driven by growth in Africa and LatAm.",
               "section_ref": "GEO"
             },
             {
               "label": "Supply Chain Challenges",
               "direction": "negative",
-              "note": "Magnet availability issues affecting EV production.",
-              "section_ref": "SUP"
+              "note": "Magnet availability continues to pose challenges for EV production.",
+              "section_ref": "RISK"
             },
             {
               "label": "GST Impact",
               "direction": "positive",
-              "note": "GST reforms expected to boost demand and growth in ICE and EV segments.",
-              "section_ref": "GUID"
+              "note": "GST reduction is expected to accelerate consumption and growth in Q3 and Q4.",
+              "section_ref": "ORD"
             },
             {
               "label": "Profitability Improvement",
               "direction": "positive",
-              "note": "EBITDA margin improved by 100 basis points to 12.7%.",
+              "note": "Operating EBITDA margin improved by 100 basis points to 12.7% in Q2 FY26.",
               "section_ref": "FIN"
             }
           ],
           "key_takeaways": [
             "The company continued its growth momentum and posted highest ever quarterly phase, both in ICE and EV.",
-            "Sales volume grew by 23%, revenue by 29%, operating EBITDA by 40%, and operating PBT by 44%.",
-            "Domestic ICE sales grew by 21% compared to Q2 of last year, against an industry growth of 8%.",
-            "International market sales grew by 31% over last year against an industry growth of 26%.",
-            "EV two-wheeler sales grew by 7% to 80,000 units despite challenges in magnet availability.",
-            "Three-wheeler sales grew by 41% to 53,000 units as against last year, 38,000 units during the last year's second quarter.",
-            "Operating EBITDA margin improved by 100 basis points to 12.7% as against 11.7% during last year.",
-            "The company registered PBT of INR 1,226 crores, recording a growth of 37% during this quarter as against INR 897 crores in the second quarter of last year."
+            "Revenue grew by 29% to INR 11,905 crores in Q2 FY26.",
+            "Operating EBITDA grew by 40% to INR 1,509 crores in Q2 FY26.",
+            "TVS Credit disbursed loans to over 25 lakh new customers, bringing its total customer base to over 2.13 crores.",
+            "TVS launched new products including the Orbiter, King Kargo HD EV, and Ntorq 150."
           ],
           "pressing_questions": []
         }
