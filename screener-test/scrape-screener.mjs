@@ -428,13 +428,14 @@ async function fetchHostedSummary(context, entry) {
       const parsed = parseSummaryText(txt);
       return finishSummary(txt, parsed, url);
     }
-    // The metered /concalls/summary/ endpoint responded but yielded almost no
-    // readable text. On a FREE Screener account this is the classic signature of
-    // the AI-summary quota (10 views / 30 days) being spent -> a paywall stub. Say
-    // so plainly so the "failed" reason is unambiguous in the job log.
+    // The /concalls/summary/ endpoint responded but yielded almost no readable
+    // text — Screener returned a short MESSAGE instead of a summary (quota/paywall
+    // stub, "not available yet", login wall, ...). Log the message VERBATIM: it is
+    // the only thing that distinguishes those causes, and guessing has been wrong
+    // before. Falls through to the transcript fallback either way.
     warn(
-      "summary endpoint returned little/no content — likely Screener free-tier AI-summary quota exhausted (10 views/30d); upgrade the account to Screener Premium to remove the cap",
-      `${txt ? txt.length : 0} chars @ ${url}`
+      `summary endpoint returned no usable summary (${txt ? txt.length : 0} chars) @ ${url}\n` +
+        `      SCREENER SAID: ${JSON.stringify((txt || "(empty)").slice(0, 300))}`
     );
   } catch (e) {
     warn("hosted summary fetch failed", e.message);
