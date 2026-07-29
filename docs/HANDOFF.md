@@ -153,8 +153,25 @@ merge, same as before).
    the overwhelming likely cause**. BPCL's latest is audio-only (no transcript), so it
    has NO free fallback. Added a clear log in `fetchHostedSummary` so a quota stub now
    says so explicitly instead of a vague "failed". **Decision needed (item 4).**
-4. **Screener free-tier quota.** The free account gets **10 concall AI-summary
-   views / 30 days** — the `/concalls/summary/<id>/` endpoint is metered. Our data
+4. **⚠️ Screener's PREMIUM cap is 80 AI summaries per DAY — this is the binding
+   constraint.** Confirmed from Screener's own modal: *"Limit exceeded — Please try
+   again later. Premium users can request 80 summaries each day."* (that message is
+   the 89-char body we kept seeing). Premium IS active (`login OK (premium account)`
+   in the logs). **A full refresh of 20 companies × 4 quarters = exactly 80 requests
+   — the entire daily allowance in one run**, so any extra run that day (a single
+   ticker, a retry) guarantees the cap is hit partway. That is why 72 of 76 quarters
+   fell back to transcripts. **Guard shipped:** `ScreenerRateLimitError` +
+   `RATE_LIMIT_RE` in `scrape-screener.mjs` detect the cap, and it is never
+   swallowed (rethrown at the fetch, history and scrapeCompany catch sites);
+   `scrapeCompany` returns `{rateLimited:true}`, and `analyze-company.mjs` marks the
+   company failed **without touching its stored tear sheet** and **stops the whole
+   run**, logging which companies were left untouched. Rationale: the cap is
+   TEMPORARY (resets daily) — continuing would rebuild every remaining company from
+   transcripts and overwrite good summary-derived data with thinner data. Tested
+   9/9. **Efficiency idea (not built):** re-fetch only quarters not already stored
+   (~1–2 summaries/company instead of 4) so a refresh costs ~20–40 of the 80/day.
+5. **Screener free-tier quota (historical note).** The free account gets **10
+   concall AI-summary views / 30 days** — the `/concalls/summary/<id>/` endpoint is metered. Our data
    is **10 summaries + 59 free BSE transcript PDFs**; the transcript fallback is
    what covers all ~20 companies. PR #22 fetches the *metered* endpoint, so it
    draws down the 10/month. BPCL's latest call is **audio-only (no transcript)**, so

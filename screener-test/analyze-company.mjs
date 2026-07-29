@@ -214,6 +214,20 @@ async function analyzeTicker(page, context, ticker, baseStore) {
   // 2) scrape
   const scrape = await scrapeCompany(page, context, T);
   if (scrape.error) {
+    // Screener's daily AI-summary cap (80/day) is TEMPORARY: the summary exists,
+    // we just can't read it today. Continuing would rebuild this company (and
+    // every company after it) from transcripts and overwrite good summary-derived
+    // tear sheets with thinner data. Leave the stored data untouched and stop.
+    if (scrape.rateLimited) {
+      pending.jobs.set(T, {
+        status: "failed",
+        finished_at: nowIso(),
+        error: scrape.error,
+        message: `Screener's daily AI-summary limit was reached, so ${T} was left unchanged. It resets daily — re-run tomorrow.`,
+      });
+      persistAndPush(`analyze: ${T} skipped (Screener daily limit)`);
+      return "rate_limited";
+    }
     pending.jobs.set(T, {
       status: "failed",
       finished_at: nowIso(),
@@ -377,7 +391,18 @@ async function main() {
   try {
     for (const t of tickers) {
       try {
-        await analyzeTicker(page, context, t, base);
+        const outcome = await analyzeTicker(page, context, t, base);
+        if (outcome === "rate_limited") {
+          // Every remaining company would hit the same cap and be rebuilt from
+          // transcripts. Stop here so they keep their existing data intact.
+          const left = tickers.slice(tickers.indexOf(t) + 1);
+          log(
+            `STOPPING: Screener's daily AI-summary limit (80/day) was reached. ` +
+              `${left.length} company(ies) left untouched: ${left.join(", ") || "(none)"}. ` +
+              `The cap resets daily — re-run then to finish.`
+          );
+          break;
+        }
       } catch (err) {
         log(`ticker ${t} crashed:`, err.message);
         pending.jobs.set(t.toUpperCase(), {

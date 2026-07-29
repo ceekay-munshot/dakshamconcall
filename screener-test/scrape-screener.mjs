@@ -385,6 +385,22 @@ function parseSummaryText(fullText) {
   return { sections, takeaways, questions };
 }
 
+/** Screener's daily AI-summary cap was hit ("Limit exceeded — Please try again
+ *  later. Premium users can request 80 summaries each day."). Distinct from a
+ *  missing summary: the summary EXISTS, we just may not read it right now. Never
+ *  swallow this — falling back to a transcript here would overwrite good
+ *  summary-derived data with thinner data for a purely temporary reason. */
+export class ScreenerRateLimitError extends Error {
+  constructor(msg) {
+    super(msg);
+    this.name = "ScreenerRateLimitError";
+    this.rateLimited = true;
+  }
+}
+// Distinctive phrases only. "try again later" alone is too generic — ordinary
+// management commentary can contain it, and a false positive would halt the run.
+const RATE_LIMIT_RE = /limit exceeded|summaries each day/i;
+
 /** Open a concall entry's Screener-hosted summary/notes link and read it.
  *  Reusable for BOTH the latest quarter and prior quarters (history). */
 async function fetchHostedSummary(context, entry) {
@@ -424,6 +440,11 @@ async function fetchHostedSummary(context, entry) {
       return (main.innerText || "").trim();
     });
     await sub.close();
+    // Screener's daily cap — the summary exists but is temporarily unreadable.
+    // Raise it so the caller can STOP rather than quietly using a transcript.
+    if (txt && txt.length < 1000 && RATE_LIMIT_RE.test(txt)) {
+      throw new ScreenerRateLimitError(txt.replace(/\s+/g, " ").trim().slice(0, 200));
+    }
     if (txt && txt.length > 300) {
       const parsed = parseSummaryText(txt);
       return finishSummary(txt, parsed, url);
@@ -438,6 +459,7 @@ async function fetchHostedSummary(context, entry) {
         `      SCREENER SAID: ${JSON.stringify((txt || "(empty)").slice(0, 300))}`
     );
   } catch (e) {
+    if (e instanceof ScreenerRateLimitError) throw e; // never swallow the daily cap
     warn("hosted summary fetch failed", e.message);
   }
   return null;
@@ -763,6 +785,7 @@ export async function scrapeCompany(page, context, ticker, opts = {}) {
           history.push({ concall_date: hPrecise || hMonth, ...h, company, ticker });
         }
       } catch (e) {
+        if (e instanceof ScreenerRateLimitError) throw e; // stop; don't degrade history to transcripts
         warn("history quarter failed", e.message);
       }
     }
@@ -789,6 +812,13 @@ export async function scrapeCompany(page, context, ticker, opts = {}) {
       history,
     };
   } catch (err) {
+    if (err instanceof ScreenerRateLimitError) {
+      // Surface as a distinct, RETRYABLE outcome. The caller must leave this
+      // company's existing tear sheet alone and stop the run — the cap resets
+      // daily, so the right move is to try again later, not to store worse data.
+      warn(`Screener daily AI-summary cap reached: ${err.message}`);
+      return { ticker, error: `Screener daily AI-summary limit reached. ${err.message}`, rateLimited: true };
+    }
     warn("scrapeCompany error", err.message);
     await saveShot(page, `error-${ticker}.png`).catch(() => {});
     return { ticker, error: err.message || String(err) };
