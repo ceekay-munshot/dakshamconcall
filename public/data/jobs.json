@@ -97,8 +97,10 @@
       "source": "transcript"
     },
     "TMCV": {
-      "status": "running",
-      "started_at": "2026-07-29T22:57:08.708Z"
+      "status": "failed",
+      "finished_at": "2026-07-29T22:57:18.627Z",
+      "error": "Screener daily AI-summary limit reached. Limit exceeded - Please try again later Premium users can request 80 summaries each day.",
+      "message": "Couldn't fetch TMCV's latest concall. Screener daily AI-summary limit reached. Limit exceeded - Please try again later Premium users can request 80 summaries each day."
     },
     "TMPV": {
       "status": "failed",
