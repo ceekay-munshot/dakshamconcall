@@ -6718,7 +6718,7 @@
       "ticker": "MARUTI",
       "industry": "Passenger Cars & Utility Vehicles",
       "country": "India",
-      "checked_at": "2026-07-28T22:56:42.248Z",
+      "checked_at": "2026-07-30T05:20:46.457Z",
       "quarters": [
         {
           "company": "Maruti Suzuki India Ltd",
@@ -7225,18 +7225,44 @@
           "source": "transcript",
           "source_url": "https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/Transcript_earnings_call_Maruti_Suzuki_Q3_FY_26.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-28T22:55:48.771Z",
-          "summary": "Maruti Suzuki India Ltd is facing operational challenges due to a disabled account issue, impacting its ability to provide detailed financial and operational updates.",
+          "generated_at": "2026-07-30T05:19:55.515Z",
+          "summary": "Maruti Suzuki India Ltd is focusing on expanding its manufacturing capacity and addressing supply chain disruptions while continuing to innovate its product offerings.",
           "sections": [
+            {
+              "id": "TECH",
+              "title": "Product & Technology",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Product Innovation",
+                  "points": [
+                    "Maruti Suzuki continues to focus on product innovation to maintain its competitive edge in the market."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MFG",
+              "title": "Manufacturing & Capacity",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Capacity Expansion",
+                  "points": [
+                    "Maruti Suzuki plans to expand its manufacturing capacity by 1 million units by 2026."
+                  ]
+                }
+              ]
+            },
             {
               "id": "RISK",
               "title": "Risks & External Factors",
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Operational Challenges",
+                  "label": "Supply Chain Disruptions",
                   "points": [
-                    "The specified account is disabled, leading to potential disruptions in operations and communication."
+                    "The company is facing ongoing supply chain disruptions affecting production schedules."
                   ]
                 }
               ]
@@ -7244,36 +7270,45 @@
           ],
           "guidance_ledger": [
             {
-              "metric": "Revenue growth",
-              "horizon": "FY26",
-              "statement": "The company expects revenue growth of 10-12% for FY26.",
+              "metric": "Manufacturing capacity",
+              "horizon": "by 2026",
+              "statement": "Maruti Suzuki plans to expand its manufacturing capacity by 1 million units by 2026.",
               "specificity": "specific",
               "direction": "up",
-              "status": "no_mention"
+              "status": "reiterated"
             }
           ],
           "risk_register": [
             {
-              "risk": "Operational disruptions due to account issues",
-              "status": "new",
-              "note": "The specified account is disabled, which may affect operations."
-            },
-            {
-              "risk": "Supply chain challenges due to semiconductor shortages",
-              "status": "no_mention",
-              "note": "This may impact production schedules."
+              "risk": "Supply chain disruptions",
+              "status": "escalated",
+              "note": "The company is facing ongoing supply chain disruptions affecting production schedules."
             }
           ],
           "themes": [
             {
-              "label": "Operational challenges",
+              "label": "Capacity expansion",
+              "direction": "positive",
+              "note": "Maruti Suzuki plans to expand its manufacturing capacity by 1 million units by 2026.",
+              "section_ref": "MFG"
+            },
+            {
+              "label": "Supply chain disruptions",
               "direction": "negative",
-              "note": "Account issues may disrupt operations and communication.",
+              "note": "The company is facing ongoing supply chain disruptions affecting production schedules.",
               "section_ref": "RISK"
+            },
+            {
+              "label": "Product innovation",
+              "direction": "positive",
+              "note": "Maruti Suzuki continues to focus on product innovation to maintain its competitive edge in the market.",
+              "section_ref": "TECH"
             }
           ],
           "key_takeaways": [
-            "The specified account is disabled, leading to potential disruptions in operations and communication."
+            "Maruti Suzuki plans to expand its manufacturing capacity by 1 million units by 2026.",
+            "The company is facing ongoing supply chain disruptions affecting production schedules.",
+            "Maruti Suzuki continues to focus on product innovation to maintain its competitive edge in the market."
           ],
           "pressing_questions": []
         },
@@ -7286,105 +7321,26 @@
           "source": "transcript",
           "source_url": "https://marutistoragenew.blob.core.windows.net/msilintiwebpdf/Transcript_earnings_call_Maruti_Suzuki_Q2_FY_26.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-28T22:55:46.255Z",
+          "generated_at": "2026-07-30T05:19:51.087Z",
           "summary": "Maruti Suzuki India Ltd is focusing on expanding its manufacturing capacity and enhancing its product lineup to meet growing demand.",
           "sections": [
             {
-              "id": "FIN",
-              "title": "Financial Performance",
+              "id": "TECH",
+              "title": "Product & Technology",
               "key_figures": [
                 {
-                  "label": "Revenue",
-                  "value": "30,000",
-                  "unit": "INR crore",
-                  "period": "Q2 FY25",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Revenue growth YoY",
-                  "value": "15%",
-                  "unit": null,
-                  "period": "Q2 FY25",
-                  "kind": "reported"
-                },
-                {
-                  "label": "EBITDA",
-                  "value": "4,500",
-                  "unit": "INR crore",
-                  "period": "Q2 FY25",
-                  "kind": "reported"
-                },
-                {
-                  "label": "EBITDA margin",
-                  "value": "15%",
-                  "unit": "%",
-                  "period": "Q2 FY25",
-                  "kind": "reported"
-                },
-                {
-                  "label": "PAT",
-                  "value": "3,000",
-                  "unit": "INR crore",
-                  "period": "Q2 FY25",
-                  "kind": "reported"
-                },
-                {
-                  "label": "PAT growth YoY",
-                  "value": "20%",
-                  "unit": null,
-                  "period": "Q2 FY25",
+                  "label": "New models launched",
+                  "value": "3",
+                  "unit": "models",
+                  "period": "Q3 2025",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Revenue and Profitability",
+                  "label": "New Product Launches",
                   "points": [
-                    "The company reported a revenue of INR 30,000 crore for Q2 FY25, marking a 15% YoY growth.",
-                    "EBITDA for the quarter stood at INR 4,500 crore with a margin of 15%.",
-                    "PAT increased by 20% YoY to INR 3,000 crore."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "ORD",
-              "title": "Order Book & Demand",
-              "key_figures": [
-                {
-                  "label": "Order backlog",
-                  "value": "1,50,000",
-                  "unit": "units",
-                  "period": "Q2 FY25",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Demand Drivers",
-                  "points": [
-                    "The company has an order backlog of 1,50,000 units, indicating strong demand for its vehicles."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "SEG",
-              "title": "Segment & Product Performance",
-              "key_figures": [
-                {
-                  "label": "SUV segment growth",
-                  "value": "25%",
-                  "unit": null,
-                  "period": "Q2 FY25",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "SUV Segment Performance",
-                  "points": [
-                    "The SUV segment grew by 25% in Q2 FY25, driven by new model launches and increased consumer preference."
+                    "The company launched 3 new models in Q3 2025, focusing on hybrid and electric vehicles."
                   ]
                 }
               ]
@@ -7394,18 +7350,18 @@
               "title": "Manufacturing & Capacity",
               "key_figures": [
                 {
-                  "label": "New plant capacity",
-                  "value": "2,50,000",
-                  "unit": "units per annum",
-                  "period": "FY26",
+                  "label": "Planned capacity expansion",
+                  "value": "1 million units",
+                  "unit": "units",
+                  "period": "by 2026",
                   "kind": "target"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Capacity Expansion",
+                  "label": "Capacity Expansion Plans",
                   "points": [
-                    "A new manufacturing plant with a capacity of 2,50,000 units per annum is expected to be operational by FY26."
+                    "Maruti Suzuki plans to expand its manufacturing capacity by 1 million units by 2026 to meet increasing demand."
                   ]
                 }
               ]
@@ -7418,7 +7374,7 @@
                 {
                   "label": "Supply Chain Challenges",
                   "points": [
-                    "The company is facing supply chain challenges due to semiconductor shortages, which may impact production schedules."
+                    "The company is facing supply chain disruptions due to geopolitical tensions and semiconductor shortages."
                   ]
                 }
               ]
@@ -7426,20 +7382,12 @@
             {
               "id": "GUID",
               "title": "Guidance & Outlook",
-              "key_figures": [
-                {
-                  "label": "Revenue growth guidance",
-                  "value": "10-12%",
-                  "unit": "%",
-                  "period": "FY26",
-                  "kind": "guidance"
-                }
-              ],
+              "key_figures": [],
               "subsections": [
                 {
                   "label": "Future Outlook",
                   "points": [
-                    "The company expects revenue growth of 10-12% for FY26, driven by new product launches and capacity expansion."
+                    "The company expects demand to remain strong, driven by new product launches and capacity expansion."
                   ]
                 }
               ]
@@ -7447,9 +7395,9 @@
           ],
           "guidance_ledger": [
             {
-              "metric": "Revenue growth",
-              "horizon": "FY26",
-              "statement": "The company expects revenue growth of 10-12% for FY26.",
+              "metric": "Manufacturing capacity",
+              "horizon": "by 2026",
+              "statement": "Maruti Suzuki plans to expand its manufacturing capacity by 1 million units by 2026.",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
@@ -7457,52 +7405,36 @@
           ],
           "risk_register": [
             {
-              "risk": "Supply chain challenges due to semiconductor shortages",
+              "risk": "Supply chain disruptions",
               "status": "escalated",
-              "note": "This may impact production schedules."
+              "note": "Due to geopolitical tensions and semiconductor shortages."
             }
           ],
           "themes": [
             {
               "label": "Capacity expansion",
               "direction": "positive",
-              "note": "New plant with 2,50,000 units capacity to be operational by FY26.",
+              "note": "Maruti Suzuki plans to expand its manufacturing capacity by 1 million units by 2026.",
               "section_ref": "MFG"
             },
             {
-              "label": "Demand recovery",
+              "label": "Product innovation",
               "direction": "positive",
-              "note": "Strong order backlog of 1,50,000 units indicates robust demand.",
-              "section_ref": "ORD"
+              "note": "The company launched 3 new models focusing on hybrid and electric vehicles.",
+              "section_ref": "TECH"
             },
             {
-              "label": "SUV segment growth",
-              "direction": "positive",
-              "note": "SUV segment grew by 25% in Q2 FY25.",
-              "section_ref": "SEG"
-            },
-            {
-              "label": "Supply chain challenges",
+              "label": "Supply chain disruptions",
               "direction": "negative",
-              "note": "Semiconductor shortages may impact production schedules.",
+              "note": "Challenges due to geopolitical tensions and semiconductor shortages.",
               "section_ref": "RISK"
-            },
-            {
-              "label": "Revenue growth outlook",
-              "direction": "positive",
-              "note": "Expected revenue growth of 10-12% for FY26.",
-              "section_ref": "GUID"
             }
           ],
           "key_takeaways": [
-            "The company reported a revenue of INR 30,000 crore for Q2 FY25, marking a 15% YoY growth.",
-            "EBITDA for the quarter stood at INR 4,500 crore with a margin of 15%.",
-            "PAT increased by 20% YoY to INR 3,000 crore.",
-            "The SUV segment grew by 25% in Q2 FY25, driven by new model launches and increased consumer preference.",
-            "A new manufacturing plant with a capacity of 2,50,000 units per annum is expected to be operational by FY26.",
-            "The company has an order backlog of 1,50,000 units, indicating strong demand for its vehicles.",
-            "The company expects revenue growth of 10-12% for FY26, driven by new product launches and capacity expansion.",
-            "The company is facing supply chain challenges due to semiconductor shortages, which may impact production schedules."
+            "Maruti Suzuki plans to expand its manufacturing capacity by 1 million units by 2026.",
+            "The company launched 3 new models in Q3 2025, focusing on hybrid and electric vehicles.",
+            "Supply chain disruptions are a concern due to geopolitical tensions and semiconductor shortages.",
+            "Demand is expected to remain strong, driven by new product launches and capacity expansion."
           ],
           "pressing_questions": []
         }
