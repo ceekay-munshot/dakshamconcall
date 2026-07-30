@@ -12354,7 +12354,7 @@
       "ticker": "HEROMOTOCO",
       "industry": "2/3 Wheelers",
       "country": "India",
-      "checked_at": "2026-07-28T23:01:50.403Z",
+      "checked_at": "2026-07-30T05:36:12.059Z",
       "quarters": [
         {
           "company": "Hero MotoCorp Ltd",
@@ -13058,8 +13058,8 @@
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=44e93808-a650-473d-a86f-1b15c18e9cb9.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-28T23:00:59.816Z",
-          "summary": "Hero MotoCorp anticipates continued strong demand across segments, with a focus on expanding market share in scooters, premium motorcycles, and EVs, while managing commodity cost pressures through pricing and operational efficiencies.",
+          "generated_at": "2026-07-30T05:35:13.549Z",
+          "summary": "Hero MotoCorp anticipates continued growth in the two-wheeler industry, driven by strong demand across segments, despite commodity price pressures.",
           "sections": [
             {
               "id": "FIN",
@@ -13094,17 +13094,10 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "PAT",
+                  "label": "Reported PAT",
                   "value": "1,349",
                   "unit": "INR Crores",
                   "period": "Q3 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "PAT Growth",
-                  "value": "12",
-                  "unit": "%",
-                  "period": "YoY",
                   "kind": "reported"
                 },
                 {
@@ -13119,6 +13112,13 @@
                   "value": "20",
                   "unit": "%",
                   "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Exceptional Item - New Labour Code Provision",
+                  "value": "119",
+                  "unit": "INR Crores",
+                  "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
@@ -13167,25 +13167,25 @@
                   "label": "ICE Business EBITDA Margin",
                   "value": "17",
                   "unit": "%",
-                  "period": "YoY",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Overall EBITDA Margin Improvement",
-                  "value": "20",
-                  "unit": "bps",
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Average Selling Price Increase",
+                  "label": "Overall EBITDA Margin",
+                  "value": "14.7",
+                  "unit": "%",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Average Selling Price Increase YoY",
                   "value": "4.2",
                   "unit": "%",
                   "period": "YoY",
                   "kind": "reported"
                 },
                 {
-                  "label": "Average Selling Price Increase",
+                  "label": "Average Selling Price Increase QoQ",
                   "value": "1.3",
                   "unit": "%",
                   "period": "QoQ",
@@ -13213,19 +13213,74 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Exceptional Item Provision",
-                  "value": "119",
-                  "unit": "INR Crores",
+                  "label": "Reported PAT Growth",
+                  "value": "12",
+                  "unit": "%",
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ICE Business EBITDA Margin Expansion",
+                  "value": "100",
+                  "unit": "bps",
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Overall EBITDA Margin Improvement",
+                  "value": "20",
+                  "unit": "bps",
+                  "period": "QoQ",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Commodity Impact",
+                  "value": "40 to 50",
+                  "unit": "bps",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Price Hike",
+                  "value": "300",
+                  "unit": "INR per vehicle",
+                  "period": "January '26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VIDA Investment Previous Quarter",
+                  "value": "252",
+                  "unit": "INR crores",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Industry Growth Expectation",
+                  "value": "double digit",
+                  "unit": null,
+                  "period": "Q4 FY26",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Industry Growth Expectation",
+                  "value": "high single digits",
+                  "unit": null,
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "LEAP Savings",
+                  "value": "120",
+                  "unit": "basis points",
                   "period": "Q3 FY26",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Commodity Cost Management",
+                  "label": "Commodity Impact",
                   "points": [
-                    "Inflationary trends in aluminum and precious metals impacted margins by 40-50 bps in Q3 FY26.",
-                    "A price increase of INR300 per vehicle was implemented in January to mitigate commodity cost pressures."
+                    "Commodity prices, particularly aluminum and precious metals, have increased, impacting margins by approximately 40 to 50 basis points in Q3 FY26."
                   ]
                 }
               ]
@@ -13246,8 +13301,7 @@
                 {
                   "label": "Demand Drivers",
                   "points": [
-                    "Post festive demand remains strong, supported by GST rate reduction.",
-                    "Positive demand trend expected to continue in the coming months."
+                    "Post festive demand remains strong, with expectations for continued positive demand trends in the coming months."
                   ]
                 }
               ]
@@ -13257,14 +13311,21 @@
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
-                  "label": "HF Deluxe Pro Contribution",
+                  "label": "Dispatches",
+                  "value": "6.1",
+                  "unit": "Million",
+                  "period": "CY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "HF Deluxe Pro Contribution to HF Retail Volumes",
                   "value": "20",
                   "unit": "%",
                   "period": "January '26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Deluxe 100cc Market Share",
+                  "label": "Splendor Market Share in Deluxe 100cc",
                   "value": "91",
                   "unit": "%",
                   "period": "Q3 FY26",
@@ -13278,7 +13339,7 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Xtreme 125R Dual Channel Variant Contribution",
+                  "label": "Xtreme 125R Dual Channel Variant Retail Volumes",
                   "value": "35",
                   "unit": "%",
                   "period": "January '26",
@@ -13292,9 +13353,30 @@
                   "kind": "reported"
                 },
                 {
+                  "label": "Premia Stores",
+                  "value": "106",
+                  "unit": "Stores",
+                  "period": "End of December '25",
+                  "kind": "reported"
+                },
+                {
                   "label": "VIDA Market Share",
                   "value": "10.8",
                   "unit": "%",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VIDA Market Share Expansion",
+                  "value": "6",
+                  "unit": "%",
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VIDA Investment",
+                  "value": "208",
+                  "unit": "INR Crores",
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
@@ -13311,16 +13393,105 @@
                   "unit": "%",
                   "period": "Q3 FY26",
                   "kind": "reported"
+                },
+                {
+                  "label": "Premium Portfolio Contribution to Global Volumes",
+                  "value": "40",
+                  "unit": "%",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Product Performance",
+                  "label": "Product Launches and Market Share",
                   "points": [
-                    "Strong customer acceptance of new launches across segments, including HF Deluxe Pro, Splendor, Glamour X, Destini 125, VIDA VX2.",
-                    "Market share expansion in entry segment led by HF Deluxe Pro.",
-                    "Glamour X campaign contributed to significant retail growth.",
-                    "Xtreme 125R dual channel variant saw strong demand."
+                    "Recent launches like HF Deluxe Pro, Splendor, Glamour X, Destini 125, and VIDA VX2 have received strong customer demand.",
+                    "In the Deluxe 125cc segment, Glamour X and Xtreme 125R are driving market share gains.",
+                    "The ICE scooter segment's market share increased due to new launches in the Destini and Xoom portfolio."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "TECH",
+              "title": "Product & Technology",
+              "key_figures": [
+                {
+                  "label": "EV Revenue",
+                  "value": "450",
+                  "unit": "crores",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": []
+            },
+            {
+              "id": "MFG",
+              "title": "Manufacturing & Capacity",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Capacity Planning",
+                  "points": [
+                    "The company is identifying capacity enhancements needed by model to support growth in high-demand categories."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [
+                {
+                  "label": "Colombia Business Volume Growth",
+                  "value": "200",
+                  "unit": "%",
+                  "period": "9M FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Colombia Market Share",
+                  "value": "9",
+                  "unit": "%",
+                  "period": "9M FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Colombia PAT",
+                  "value": "5",
+                  "unit": "million",
+                  "period": "9M FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Global Business YTD Growth",
+                  "value": "50",
+                  "unit": "%",
+                  "period": "YTD FY26",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Global Expansion",
+                  "points": [
+                    "Hero MotoCorp is expanding in Europe, Latin America, and Africa, with new dealerships and partnerships in West and North Africa.",
+                    "The company has started operations in the Philippines, focusing on local-for-local localization partnerships."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SUP",
+              "title": "Supply Chain & Operations",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Supply Chain Resilience",
+                  "points": [
+                    "Hero MotoCorp is focused on ensuring a flexible, robust, and resilient supply chain to navigate potential disruptions."
                   ]
                 }
               ]
@@ -13330,26 +13501,40 @@
               "title": "Market & Customer Strategy",
               "key_figures": [
                 {
-                  "label": "Premia Stores",
-                  "value": "106",
+                  "label": "First-time buyer contribution increase",
+                  "value": "75% to 80%",
                   "unit": null,
-                  "period": "End of December '25",
+                  "period": "January '26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Premia Store Coverage",
-                  "value": "50",
-                  "unit": "%",
-                  "period": "Premium Industry Footprint",
+                  "label": "VIDA sales trend",
+                  "value": "over 10,000",
+                  "unit": null,
+                  "period": "last 6 months",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Rural market share",
+                  "value": "57%",
+                  "unit": null,
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Rural market share expansion",
+                  "value": "4%",
+                  "unit": null,
+                  "period": "Q3 FY26",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Market Strategy",
+                  "label": "Customer Engagement",
                   "points": [
-                    "Focus on expanding market share in scooters, premium motorcycles, and EVs.",
-                    "Premia stores expansion to enhance customer experience in premium category."
+                    "The company is focused on customer centricity in pre-sales, post-sales, and product experience.",
+                    "Hero MotoCorp is leveraging its large vehicle park size to grow its parts and accessories business."
                   ]
                 }
               ]
@@ -13360,10 +13545,9 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "External Factors",
+                  "label": "Commodity Price Inflation",
                   "points": [
-                    "Geopolitical tensions, commodity price volatility, and shifting trade policies create uncertainty.",
-                    "Indian economy remains a bright spot with projected GDP growth of 7.3% for '26."
+                    "Inflationary trends in commodity prices, particularly aluminum and precious metals, are impacting costs."
                   ]
                 }
               ]
@@ -13374,10 +13558,9 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Industry Outlook",
+                  "label": "Industry Growth Outlook",
                   "points": [
-                    "Hero MotoCorp expects the 2-wheeler industry to grow by double digits during the current quarter.",
-                    "Overall industry growth for the next financial year is likely to be in high single digits."
+                    "Hero MotoCorp expects the two-wheeler industry to grow by double digits during the current quarter."
                   ]
                 }
               ]
@@ -13385,23 +13568,15 @@
           ],
           "guidance_ledger": [
             {
-              "metric": "2-wheeler industry growth",
-              "horizon": "Q4 FY26",
-              "statement": "Hero MotoCorp expects the 2-wheeler industry to grow by double digits during the current quarter.",
-              "specificity": "vague",
-              "direction": "up",
-              "status": "lowered"
-            },
-            {
-              "metric": "2-wheeler industry growth",
+              "metric": "Industry growth",
               "horizon": "FY27",
-              "statement": "Overall industry growth for the next financial year is likely to be in high single digits.",
+              "statement": "The industry for the next financial year is likely to grow in high single digits.",
               "specificity": "vague",
-              "direction": "up",
-              "status": "lowered"
+              "direction": "unclear",
+              "status": "reiterated"
             },
             {
-              "metric": "EBITDA Margin",
+              "metric": "EBITDA margin",
               "horizon": "short term",
               "statement": "Margins will operate between 14% and 16%.",
               "specificity": "specific",
@@ -13411,72 +13586,66 @@
           ],
           "risk_register": [
             {
-              "risk": "Geopolitical tensions",
+              "risk": "Commodity Price Inflation",
               "status": "new",
-              "note": "Persistent geopolitical tensions create uncertainty."
+              "note": "Prices of aluminum and precious metals are rising, impacting costs."
             },
             {
-              "risk": "Commodity price volatility",
-              "status": "new",
-              "note": "Volatility in commodity prices impacts margins."
-            },
-            {
-              "risk": "Shifting trade policies",
-              "status": "new",
-              "note": "Shifting trade policies across major economies create uncertainty."
-            },
-            {
-              "risk": "Commodity Inflation",
+              "risk": "Commodity inflation",
               "status": "no_mention",
-              "note": "Expected to be range-bound within 1% to 2% in Q3."
+              "note": "Expected to be range bound within 1% to 2% in Q3."
+            },
+            {
+              "risk": "Rare earth situation",
+              "status": "no_mention",
+              "note": "The company is covered in the short run for both ICE and EV and continues to work on alternatives."
             },
             {
               "risk": "Geopolitical and supply uncertainties",
               "status": "no_mention",
-              "note": "Ongoing geopolitical and supply uncertainties could impact future performance."
+              "note": "Ongoing uncertainties noted, but the company remains confident due to product launches and market strategies."
             }
           ],
           "themes": [
             {
               "label": "Market share recovery",
               "direction": "positive",
-              "note": "Hero MotoCorp continues to expand market share across segments, particularly in scooters and EVs.",
+              "note": "Hero MotoCorp continues to gain market share across segments, particularly in the Deluxe 100cc and 125cc categories.",
               "section_ref": "SEG"
             },
             {
-              "label": "EV market expansion",
+              "label": "EV business growth",
               "direction": "positive",
-              "note": "VIDA market share expanded to 10.8% in Q3 FY26, driven by new product launches.",
+              "note": "The VIDA brand is expanding its market share, supported by new product launches and improved unit economics.",
               "section_ref": "SEG"
             },
             {
-              "label": "Commodity cost management",
-              "direction": "mixed",
-              "note": "Commodity price volatility impacts margins, but mitigated by pricing actions and operational efficiencies.",
-              "section_ref": "FIN"
-            },
-            {
-              "label": "Festive season demand",
-              "direction": "positive",
-              "note": "Post festive demand remains strong, supported by GST rate reduction.",
-              "section_ref": "ORD"
+              "label": "Commodity prices",
+              "direction": "negative",
+              "note": "Rising prices of aluminum and precious metals are impacting margins.",
+              "section_ref": "RISK"
             },
             {
               "label": "Product innovation",
               "direction": "positive",
-              "note": "Strong customer acceptance of new launches across segments, including HF Deluxe Pro and VIDA VX2.",
+              "note": "Recent product launches across segments have received strong customer demand, driving market share gains.",
               "section_ref": "SEG"
+            },
+            {
+              "label": "Global expansion",
+              "direction": "positive",
+              "note": "Hero MotoCorp is expanding its presence in Europe, Latin America, and Africa, with significant growth in global business volumes.",
+              "section_ref": "GEO"
             }
           ],
           "key_takeaways": [
-            "Hero MotoCorp recorded its highest ever quarterly revenue of INR12,328 crores, reflecting year-on-year growth of 21%.",
-            "EBITDA stood at INR1,810 crores, growth of 23% and reported PAT of INR1,349 crores, growth of 12% year-on-year.",
-            "The company has taken cognizance of the new labour code and has made provision of INR119 crores, which is reported as an exceptional item.",
-            "ICE business EBITDA margin expanded by 100 bps year-on-year to 17%, driven by pricing, LEAP savings and operating leverage.",
-            "The company reported highest quarterly revenue from parts, accessories and merchandise business at INR1,673 crores, which is a growth of 8% year-on-year.",
-            "Market share for VIDA expanded by 6% year-on-year to 10.8% in quarter 3 financial year '26, led by the recently introduced VIDA VX2 portfolio.",
-            "Global business volumes grew by 41% year-on-year and market share of 7.5% was up 100 basis points year-on-year.",
-            "Hero MotoCorp was recognized as an ESG leader amongst automobile companies by NSE Sustainability Rating and Analytics Limited."
+            "Hero MotoCorp recorded its highest ever quarterly revenue of INR12,328 crores, reflecting a year-on-year growth of 21%.",
+            "EBITDA stood at INR1,810 crores, with a growth of 23% year-on-year.",
+            "The company reported PAT of INR1,349 crores, with normalized PAT at INR1,489 crores, a growth of 20% year-on-year.",
+            "Hero MotoCorp's market share in the Deluxe 100cc category reached 91%, the highest level since FY18.",
+            "The company reported the highest quarterly revenue from parts, accessories, and merchandise business at INR1,673 crores, a growth of 8% year-on-year.",
+            "Global business volumes grew by 41% year-on-year, with a market share of 7.5%, up 100 basis points year-on-year.",
+            "Hero MotoCorp was recognized as an ESG leader among automobile companies by NSE Sustainability Rating and Analytics Limited."
           ],
           "pressing_questions": []
         },
@@ -13489,8 +13658,8 @@
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=408ef9b9-d7cf-4ce5-af37-f00ebe363170.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-28T23:00:02.556Z",
-          "summary": "Hero MotoCorp anticipates continued growth driven by strong festive demand, market share gains across segments, and strategic investments in EV and premium products.",
+          "generated_at": "2026-07-30T05:34:44.645Z",
+          "summary": "Hero MotoCorp anticipates continued growth driven by strong festive demand, GST reforms, and a robust product portfolio, with expectations to outperform the market in the second half of FY26.",
           "sections": [
             {
               "id": "FIN",
@@ -13506,7 +13675,7 @@
                 {
                   "label": "Quarterly Revenue Growth",
                   "value": "16%",
-                  "unit": "%",
+                  "unit": null,
                   "period": "YoY",
                   "kind": "reported"
                 },
@@ -13520,7 +13689,7 @@
                 {
                   "label": "Quarterly EBITDA Growth",
                   "value": "20%",
-                  "unit": "%",
+                  "unit": null,
                   "period": "YoY",
                   "kind": "reported"
                 },
@@ -13534,7 +13703,7 @@
                 {
                   "label": "Quarterly PAT Growth",
                   "value": "16%",
-                  "unit": "%",
+                  "unit": null,
                   "period": "YoY",
                   "kind": "reported"
                 },
@@ -13548,7 +13717,7 @@
                 {
                   "label": "Half-Year Revenue Growth",
                   "value": "5.3%",
-                  "unit": "%",
+                  "unit": null,
                   "period": "YoY",
                   "kind": "reported"
                 },
@@ -13562,7 +13731,7 @@
                 {
                   "label": "Half-Year EBITDA Growth",
                   "value": "7.7%",
-                  "unit": "%",
+                  "unit": null,
                   "period": "YoY",
                   "kind": "reported"
                 },
@@ -13576,47 +13745,40 @@
                 {
                   "label": "Half-Year PAT Growth",
                   "value": "8%",
-                  "unit": "%",
+                  "unit": null,
                   "period": "YoY",
                   "kind": "reported"
                 },
                 {
                   "label": "Quarterly EBITDA Margin for ICE Business",
                   "value": "17.7%",
-                  "unit": "%",
+                  "unit": null,
                   "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Quarterly EBITDA Margin Improvement",
-                  "value": "121 basis points",
-                  "unit": "bps",
-                  "period": "YoY",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Overall EBITDA Margin Improvement",
-                  "value": "54 bps",
-                  "unit": "bps",
+                  "label": "Quarterly Overall EBITDA Margin",
+                  "value": "15%",
+                  "unit": null,
                   "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
                   "label": "Average Selling Price Increase",
                   "value": "4.2%",
-                  "unit": "%",
+                  "unit": null,
                   "period": "YoY",
                   "kind": "reported"
                 },
                 {
                   "label": "Average Selling Price Increase",
                   "value": "2.4%",
-                  "unit": "%",
+                  "unit": null,
                   "period": "QoQ",
                   "kind": "reported"
                 },
                 {
-                  "label": "Revenue from Parts, Accessories and Merchandise",
+                  "label": "Quarterly Revenue from Parts, Accessories and Merchandise",
                   "value": "₹ 1,533 crores",
                   "unit": null,
                   "period": "Q2 FY26",
@@ -13628,22 +13790,29 @@
                   "unit": null,
                   "period": "H1 FY26",
                   "kind": "reported"
+                },
+                {
+                  "label": "Quarterly Investment in EV Business",
+                  "value": "₹ 252 crores",
+                  "unit": null,
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Advertisement Spend Growth",
+                  "value": "10%",
+                  "unit": null,
+                  "period": "H1 FY26",
+                  "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Quarterly Performance",
+                  "label": "Financial Highlights",
                   "points": [
                     "Hero MotoCorp recorded its highest ever quarterly revenue, EBITDA, and PAT in Q2 FY26.",
                     "The EBITDA margin for the ICE business improved due to lower material costs, cost efficiencies, and mix improvement.",
-                    "The overall EBITDA margin improved by 54 bps to 15% for the quarter, despite investments in the EV business."
-                  ]
-                },
-                {
-                  "label": "Half-Year Performance",
-                  "points": [
-                    "Revenue for H1 FY26 showed a year-on-year growth of 5.3%, with EBITDA and PAT also showing positive growth.",
-                    "The company maintained strong cash management, generating significant operating cash in the first half."
+                    "The company continues to invest in brand building, new businesses, and new products."
                   ]
                 }
               ]
@@ -13662,32 +13831,60 @@
                 {
                   "label": "VAHAN Market Share",
                   "value": "31.6%",
-                  "unit": "%",
+                  "unit": null,
                   "period": "October 2025",
                   "kind": "reported"
                 },
                 {
-                  "label": "Market Share Gain",
-                  "value": "3.7%",
-                  "unit": "%",
-                  "period": "YoY",
+                  "label": "Market Share Gain in Entry Segment",
+                  "value": "3%",
+                  "unit": null,
+                  "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Growth in ICE VAHAN Registration",
-                  "value": "16.2%",
-                  "unit": "%",
-                  "period": "Festive Season 2025",
+                  "label": "Market Share Gain in Entry Segment",
+                  "value": "5%",
+                  "unit": null,
+                  "period": "H1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Scooter Market Share in 125cc Segment",
+                  "value": "10%",
+                  "unit": null,
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Xpulse Retail Growth",
+                  "value": "31%",
+                  "unit": null,
+                  "period": "Festival Period",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV Business Market Share",
+                  "value": "11.7%",
+                  "unit": null,
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Global Business Dispatch Growth",
+                  "value": "77%",
+                  "unit": null,
+                  "period": "Q2 FY26",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Festive Season Demand",
+                  "label": "Festive Season Performance",
                   "points": [
-                    "The festive season concluded with nearly 1 million retail sales on VAHAN in October 2025.",
-                    "VAHAN market share expanded by 3.7% year-on-year to 31.6% in October.",
-                    "The growth in ICE VAHAN registration during the festive season was 16.2%, ahead of the industry growth of 14.7%."
+                    "Hero MotoCorp concluded the festive season with nearly 1 million retails on VAHAN in October 2025.",
+                    "The company's VAHAN market share in October expanded by 3.7% year-on-year to 31.6%.",
+                    "Consumer sentiment remained buoyant post-festive season, with expectations for sustained retail momentum."
                   ]
                 }
               ]
@@ -13697,76 +13894,37 @@
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
-                  "label": "Market Share Gain in Entry Segment",
-                  "value": "3%",
-                  "unit": "%",
+                  "label": "Market Share Gain in Deluxe 100 Category",
+                  "value": "Not specified",
+                  "unit": null,
                   "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Market Share Gain in Entry Segment",
-                  "value": "5%",
-                  "unit": "%",
-                  "period": "H1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Scooter Market Share in 125cc Segment",
-                  "value": "10%",
-                  "unit": "%",
+                  "label": "Scooter Retail Growth",
+                  "value": "53%",
+                  "unit": null,
                   "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Xpulse Retail Growth",
-                  "value": "31%",
-                  "unit": "%",
-                  "period": "Festival Period 2025",
-                  "kind": "reported"
-                },
-                {
-                  "label": "EV Business Market Share",
-                  "value": "11.7%",
-                  "unit": "%",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "EV Business Market Share Growth",
-                  "value": "6.8%",
-                  "unit": "%",
-                  "period": "YoY",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Global Business Dispatch Growth",
-                  "value": "77%",
-                  "unit": "%",
+                  "label": "Participation of scooter sales in EV category",
+                  "value": "25%",
+                  "unit": null,
                   "period": "Q2 FY26",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Market Share Gains",
+                  "label": "Segment Highlights",
                   "points": [
                     "Hero MotoCorp gained market share across all key segments including Entry, Deluxe, Premium, Scooters, EVs, and Global Business.",
-                    "The entry segment share expanded for the second consecutive quarter, driven by the launch of HF Deluxe Pro and customer campaigns.",
-                    "In scooters, recent launches led to a 10% market share in the 125cc segment, with strong performance in key markets like Kerala, Karnataka, Maharashtra, and Gujarat."
-                  ]
-                },
-                {
-                  "label": "Premium and EV Segments",
-                  "points": [
-                    "The premium network expansion reached 100 stores, covering 50% of the upper premium market.",
-                    "Xpulse retails grew by 31% during the festival period.",
-                    "The EV business achieved its highest ever quarterly market share of 11.7%, driven by the success of Vida VX2."
-                  ]
-                },
-                {
-                  "label": "Global Business Performance",
-                  "points": [
-                    "Global business dispatches grew by 77%, nearly 3x the industry growth, with strong performance in Bangladesh, Nepal, Sri Lanka, and Colombia."
+                    "The entry segment share in the overall 2-wheeler industry expanded for the second consecutive quarter.",
+                    "The Deluxe 125cc space saw sequential market share gains driven by the new launch Glamour X.",
+                    "In scooters, recent launches led to approximately 10% market share in the 125cc segment.",
+                    "The EV business delivered its highest ever quarterly market share of 11.7%, driven by Vida VX2.",
+                    "Global business dispatches grew by 77%, nearly 3x the industry growth."
                   ]
                 }
               ]
@@ -13779,7 +13937,7 @@
                   "label": "New Models and Variants Launched",
                   "value": "12",
                   "unit": null,
-                  "period": "Festive Season 2025",
+                  "period": "Q2 FY26",
                   "kind": "reported"
                 }
               ],
@@ -13787,8 +13945,8 @@
                 {
                   "label": "Product Launches",
                   "points": [
-                    "During the quarter, 12 new models and variants were launched, marking the highest ever for a festive season.",
-                    "New launches like Glamour X and Xtreme 125R received excellent responses, contributing to market share gains."
+                    "During the quarter, Hero MotoCorp launched 12 new models and variants, the highest ever for a festive season.",
+                    "The company continues to invest in new product introductions across categories."
                   ]
                 }
               ]
@@ -13807,9 +13965,10 @@
               ],
               "subsections": [
                 {
-                  "label": "Global Expansion",
+                  "label": "Geographical Expansion",
                   "points": [
-                    "Hero MotoCorp marked its entry into Europe and the U.K. markets, expanding its presence to 52 countries."
+                    "Hero MotoCorp marked its entry into Europe and the U.K. markets, expanding its presence to 52 countries.",
+                    "The company holds over 20% market share in 48 towns and is among the top 2 players in 56 towns."
                   ]
                 }
               ]
@@ -13819,29 +13978,182 @@
               "title": "Market & Customer Strategy",
               "key_figures": [
                 {
-                  "label": "Premium Network Stores",
-                  "value": "100",
+                  "label": "Festive Growth in ICE VAHAN Registration",
+                  "value": "16.2%",
+                  "unit": null,
+                  "period": "Festival Period",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Industry Growth in ICE VAHAN Registration",
+                  "value": "14.7%",
+                  "unit": null,
+                  "period": "Festival Period",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Market Share Gain in ICE VAHAN Registration",
+                  "value": "40 bps",
+                  "unit": null,
+                  "period": "Festival Period",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Post-Festive Inventory Level",
+                  "value": "Lowest in recent years",
+                  "unit": null,
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Post-Festive Receivables Level",
+                  "value": "Lowest in recent years",
+                  "unit": null,
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Festive First-Time Buyers Increase",
+                  "value": "81%",
+                  "unit": null,
+                  "period": "Festival Period",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Festive First-Time Buyers Average",
+                  "value": "70% to 72%",
+                  "unit": null,
+                  "period": "Average",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Festive Receivables in Indian Business",
+                  "value": "12 days",
+                  "unit": null,
+                  "period": "Festival Period",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Previous Festive Receivables in Indian Business",
+                  "value": "30 days",
+                  "unit": null,
+                  "period": "Previous Years",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Festive Growth from Ganesh Chaturthi",
+                  "value": "17%",
+                  "unit": null,
+                  "period": "Festival Period",
+                  "kind": "reported"
+                },
+                {
+                  "label": "GST Price Cut Range",
+                  "value": "₹ 5,500 to ₹ 15,000",
+                  "unit": null,
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Top 10 Markets Market Share",
+                  "value": "12%",
+                  "unit": null,
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Premium Product Contribution in Global Markets",
+                  "value": "40%+",
+                  "unit": null,
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "YTD Industry Growth",
+                  "value": "12%",
+                  "unit": null,
+                  "period": "YTD September 2025",
+                  "kind": "reported"
+                },
+                {
+                  "label": "YTD Industry Growth",
+                  "value": "2%",
+                  "unit": null,
+                  "period": "YTD September 2025",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Industry Growth in October",
+                  "value": "30 lakhs",
+                  "unit": "units",
+                  "period": "October 2025",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Global Business Market Share",
+                  "value": "8.6%",
                   "unit": null,
                   "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Market Share in Top 10 Global Markets",
-                  "value": "12%",
-                  "unit": "%",
+                  "label": "Global Business Market Share Improvement",
+                  "value": "250 bps",
+                  "unit": null,
                   "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Battery-as-a-Service Market Share",
+                  "value": "20%",
+                  "unit": null,
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Battery-as-a-Service Market Share",
+                  "value": "50+ towns and cities",
+                  "unit": null,
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Post-Festive Inserts",
+                  "value": "150",
+                  "unit": null,
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Entry Segment Market Share",
+                  "value": "9.2%",
+                  "unit": null,
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Entry Segment Market Share",
+                  "value": "7.9%",
+                  "unit": null,
+                  "period": "Q4 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Entry Segment Market Share Gain",
+                  "value": "3.1%",
+                  "unit": null,
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "DJSI Score",
+                  "value": "75",
+                  "unit": null,
+                  "period": null,
                   "kind": "reported"
                 }
               ],
-              "subsections": [
-                {
-                  "label": "Market Strategy",
-                  "points": [
-                    "The premium network expansion has reached 100 stores, covering 50% of the upper premium market.",
-                    "In the top 10 global markets, Hero MotoCorp holds a 12% market share, with significant gains in several regions."
-                  ]
-                }
-              ]
+              "subsections": []
             },
             {
               "id": "RISK",
@@ -13849,10 +14161,10 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Commodity Costs",
+                  "label": "Commodity Prices",
                   "points": [
-                    "Commodity costs were largely flat during the quarter, with aluminum prices rising but steel prices falling.",
-                    "There is an expectation of some level of commodity inflation in Q3, but it is expected to be range-bound within 1% to 2%."
+                    "Commodity costs during the quarter were largely flat, with aluminum prices rising but steel prices falling.",
+                    "There is an expectation of some level of commodity inflation in Q3, but it will be range bound within 1% to 2%."
                   ]
                 }
               ]
@@ -13864,7 +14176,7 @@
                 {
                   "label": "Expected Industry Growth in H2 FY26",
                   "value": "8% to 10%",
-                  "unit": "%",
+                  "unit": null,
                   "period": "H2 FY26",
                   "kind": "guidance"
                 }
@@ -13873,7 +14185,8 @@
                 {
                   "label": "Outlook",
                   "points": [
-                    "Hero MotoCorp expects the 2-wheeler industry to grow 8% to 10% in the second half of FY26, with the company poised to outperform the overall market and continue to gain market share."
+                    "Hero MotoCorp expects the 2-wheeler industry to grow 8% to 10% in the second half of FY26.",
+                    "The company is poised to outperform the overall market and continue to gain market share."
                   ]
                 }
               ]
@@ -13881,7 +14194,7 @@
           ],
           "guidance_ledger": [
             {
-              "metric": "Industry Growth",
+              "metric": "Industry growth",
               "horizon": "H2 FY26",
               "statement": "Hero MotoCorp expects the 2-wheeler industry to grow 8% to 10% in the second half of FY26.",
               "specificity": "specific",
@@ -13889,7 +14202,7 @@
               "status": "raised"
             },
             {
-              "metric": "EBITDA Margin",
+              "metric": "EBITDA margin",
               "horizon": "short term",
               "statement": "Margins will operate between 14% and 16%.",
               "specificity": "specific",
@@ -13899,14 +14212,19 @@
           ],
           "risk_register": [
             {
-              "risk": "Commodity Inflation",
+              "risk": "Commodity inflation",
               "status": "new",
-              "note": "Expected to be range-bound within 1% to 2% in Q3."
+              "note": "Expected to be range bound within 1% to 2% in Q3."
+            },
+            {
+              "risk": "Rare earth situation",
+              "status": "no_mention",
+              "note": "The company is covered in the short run for both ICE and EV and continues to work on alternatives."
             },
             {
               "risk": "Geopolitical and supply uncertainties",
               "status": "no_mention",
-              "note": "Ongoing geopolitical and supply uncertainties could impact future performance."
+              "note": "Ongoing uncertainties noted, but the company remains confident due to product launches and market strategies."
             }
           ],
           "themes": [
@@ -13917,38 +14235,38 @@
               "section_ref": "SEG"
             },
             {
-              "label": "EV market expansion",
+              "label": "EV business growth",
               "direction": "positive",
-              "note": "The EV business achieved its highest ever quarterly market share of 11.7%, driven by the success of Vida VX2.",
+              "note": "The EV business delivered its highest ever quarterly market share of 11.7%, driven by Vida VX2.",
               "section_ref": "SEG"
-            },
-            {
-              "label": "Festive season demand",
-              "direction": "positive",
-              "note": "The festive season concluded with nearly 1 million retail sales on VAHAN in October 2025.",
-              "section_ref": "ORD"
             },
             {
               "label": "Product innovation",
               "direction": "positive",
-              "note": "12 new models and variants were launched during the festive season, marking the highest ever for a season.",
+              "note": "Hero MotoCorp launched 12 new models and variants during the quarter, the highest ever for a festive season.",
               "section_ref": "TECH"
             },
             {
-              "label": "Commodity cost management",
+              "label": "Festive season outlook",
+              "direction": "positive",
+              "note": "Hero MotoCorp concluded the festive season with nearly 1 million retails on VAHAN in October 2025, with expectations for sustained retail momentum.",
+              "section_ref": "ORD"
+            },
+            {
+              "label": "Commodity prices",
               "direction": "neutral",
-              "note": "Commodity costs were largely flat during the quarter, with some expected inflation in Q3.",
+              "note": "Commodity costs were largely flat during the quarter, with expectations of range-bound inflation in Q3.",
               "section_ref": "RISK"
             }
           ],
           "key_takeaways": [
             "Hero MotoCorp recorded its highest ever quarterly revenue, EBITDA, and PAT in Q2 FY26.",
-            "The festive season concluded with nearly 1 million retail sales on VAHAN in October 2025.",
-            "Hero MotoCorp gained market share across all key segments including Entry, Deluxe, Premium, Scooters, EVs, and Global Business.",
-            "The EV business achieved its highest ever quarterly market share of 11.7%, driven by the success of Vida VX2.",
-            "Global business dispatches grew by 77%, nearly 3x the industry growth.",
+            "The company gained market share across all key segments including Entry, Deluxe, Premium, Scooters, EVs, and Global Business.",
+            "Hero MotoCorp concluded the festive season with nearly 1 million retails on VAHAN in October 2025.",
+            "The company's VAHAN market share in October expanded by 3.7% year-on-year to 31.6%.",
             "Hero MotoCorp marked its entry into Europe and the U.K. markets, expanding its presence to 52 countries.",
-            "Hero MotoCorp expects the 2-wheeler industry to grow 8% to 10% in the second half of FY26, with the company poised to outperform the overall market and continue to gain market share."
+            "The EV business delivered its highest ever quarterly market share of 11.7%, driven by Vida VX2.",
+            "Hero MotoCorp expects the 2-wheeler industry to grow 8% to 10% in the second half of FY26."
           ],
           "pressing_questions": []
         },
@@ -13961,92 +14279,121 @@
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=28567a33-3070-4bd3-9315-fa2e16fb4ffb.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-28T22:59:14.590Z",
-          "summary": "Hero MotoCorp anticipates strong growth in the two-wheeler market driven by new product launches, increased market share in key segments, and a positive economic outlook with favorable monsoons and festive season demand.",
+          "generated_at": "2026-07-30T05:34:17.092Z",
+          "summary": "Hero MotoCorp anticipates strong growth in the upcoming festive season, driven by new product launches and increased market share in key segments.",
           "sections": [
             {
               "id": "FIN",
               "title": "Financial Performance",
               "key_figures": [
                 {
-                  "label": "Quarterly Revenue",
-                  "value": "9,579",
-                  "unit": "crores",
+                  "label": "Quarterly revenue",
+                  "value": "₹ 9,579 crores",
+                  "unit": "INR",
                   "period": "Q1 FY26",
                   "kind": "reported"
                 },
                 {
                   "label": "EBITDA",
-                  "value": "1,382",
-                  "unit": "crores",
+                  "value": "₹ 1,382 crores",
+                  "unit": "INR",
                   "period": "Q1 FY26",
                   "kind": "reported"
                 },
                 {
                   "label": "PAT",
-                  "value": "1,126",
-                  "unit": "crores",
+                  "value": "₹ 1,126 crores",
+                  "unit": "INR",
                   "period": "Q1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "EBITDA Margin for ICE Business",
-                  "value": "16.8",
-                  "unit": "%",
+                  "label": "EBITDA margin for ICE business",
+                  "value": "16.8%",
+                  "unit": null,
                   "period": "Q1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Overall EBITDA Margin",
-                  "value": "14.4",
-                  "unit": "%",
+                  "label": "Overall EBITDA margin",
+                  "value": "14.4%",
+                  "unit": null,
                   "period": "Q1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Average Selling Price Increase YoY",
-                  "value": "6",
-                  "unit": "%",
+                  "label": "Average selling price increase YoY",
+                  "value": "6%",
+                  "unit": null,
                   "period": "Q1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Revenue from Parts, Accessories and Merchandise",
-                  "value": "1,296",
-                  "unit": "crores",
+                  "label": "Quarterly revenue from parts, accessories and merchandise",
+                  "value": "₹ 1,296 crores",
+                  "unit": "INR",
                   "period": "Q1 FY26",
                   "kind": "reported"
                 },
                 {
                   "label": "Consolidated PAT",
-                  "value": "1,706",
-                  "unit": "crores",
+                  "value": "₹ 1,706 crores",
+                  "unit": "INR",
                   "period": "Q1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "One-time Gain from Investment Dilution",
-                  "value": "722",
-                  "unit": "crores",
+                  "label": "Share of onetime gain",
+                  "value": "₹ 722 crores",
+                  "unit": "INR",
                   "period": "Q1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Loan Book for HFCL",
-                  "value": "54,735",
-                  "unit": "crores",
+                  "label": "Investments behind EV business",
+                  "value": "₹ 189 crores",
+                  "unit": null,
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Loan book for HFCL",
+                  "value": "₹ 54,735 crores",
+                  "unit": null,
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Financing penetration in July",
+                  "value": "65%",
+                  "unit": null,
+                  "period": "July",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Quarter-on-quarter ASP decrease",
+                  "value": "₹ 1,900",
+                  "unit": null,
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Commodity price increase",
+                  "value": "0.5%",
+                  "unit": null,
                   "period": "Q1 FY26",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Financial Highlights",
+                  "label": "Financial Performance Overview",
                   "points": [
-                    "The company maintained a flat overall EBITDA margin at 14.4% despite investments in the EV business.",
-                    "The average selling price increased by 6% year-on-year, driven by mix and price adjustments.",
-                    "Consolidated PAT includes a one-time gain of ₹ 722 crores from investment dilution.",
-                    "Strong cash management resulted in robust cash from operations."
+                    "The company recorded strong financial performance with a quarterly revenue of ₹ 9,579 crores and an EBITDA of ₹ 1,382 crores.",
+                    "The EBITDA margin for the ICE business improved to 16.8%, driven by mix improvement, price, and LEAP savings.",
+                    "Overall EBITDA margin remained flat at 14.4% after accounting for investments in the EV business.",
+                    "The average selling price increased by 6% year-on-year, driven by mix and price.",
+                    "Consolidated PAT for the quarter stood at ₹ 1,706 crores, including a one-time gain of ₹ 722 crores from the dilution of investment in associate companies."
                   ]
                 }
               ]
@@ -14056,31 +14403,31 @@
               "title": "Order Book & Demand",
               "key_figures": [
                 {
-                  "label": "Vahan Market Share",
-                  "value": "30.9",
-                  "unit": "%",
+                  "label": "Vahan market share",
+                  "value": "30.9%",
+                  "unit": null,
                   "period": "Q1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Market Share in Scooters 125cc",
-                  "value": "9.7",
-                  "unit": "%",
-                  "period": "June 2025",
+                  "label": "Market share in Scooters 125cc",
+                  "value": "9.7%",
+                  "unit": null,
+                  "period": "June",
                   "kind": "reported"
                 },
                 {
-                  "label": "Market Share in EV",
-                  "value": "7",
-                  "unit": "%",
+                  "label": "EV market share",
+                  "value": "7%",
+                  "unit": null,
                   "period": "Q1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Market Share in EV",
-                  "value": "10",
-                  "unit": "%",
-                  "period": "July 2025",
+                  "label": "EV market share in July",
+                  "value": "10%",
+                  "unit": null,
+                  "period": "July",
                   "kind": "reported"
                 }
               ],
@@ -14088,9 +14435,8 @@
                 {
                   "label": "Demand Drivers",
                   "points": [
-                    "The economic landscape is optimistic with low inflation, RBI rate cuts, and favorable monsoons expected to boost demand.",
-                    "Festive season starting with Onam and Ganesh Chaturthi is anticipated to drive two-wheeler demand.",
-                    "The company gained market share in entry 100cc Deluxe, Scooters, and EV business."
+                    "The economic landscape is optimistic with multiyear low inflation, RBI rate cuts, and favorable monsoon expected to boost demand.",
+                    "Two-wheeler demand is expected to continue its upward trajectory as the festive season approaches."
                   ]
                 }
               ]
@@ -14100,42 +14446,58 @@
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
-                  "label": "Market Share in Entry Segment",
-                  "value": "11",
-                  "unit": "quarters high",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Market Share in EV",
-                  "value": "7",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Market Share in EV",
-                  "value": "10",
-                  "unit": "%",
-                  "period": "July 2025",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Dispatch Growth in Global Business",
-                  "value": "27",
-                  "unit": "%",
+                  "label": "Market share in entry 100cc Deluxe",
+                  "value": "800 bps increase",
+                  "unit": null,
                   "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Market share in Scooters 125cc",
+                  "value": "9.7%",
+                  "unit": null,
+                  "period": "June",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Premia channel stores",
+                  "value": "90 stores",
+                  "unit": null,
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Market share in EV business",
+                  "value": "7%",
+                  "unit": null,
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Market share in EV business in July",
+                  "value": "10%",
+                  "unit": null,
+                  "period": "July",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Dispatch growth in global business",
+                  "value": "27%",
+                  "unit": "YoY",
+                  "period": "Q1 FY26",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Segment Highlights",
+                  "label": "Segment Performance",
                   "points": [
-                    "HF Deluxe spearheaded category expansion, gaining 800 bps market share year-on-year.",
-                    "In Scooters 125cc, new Destini 125 and Xoom 125 led to the highest market share in June.",
-                    "The EV business achieved its highest ever market share, doubling year-on-year.",
-                    "Global business gained market share across focus markets."
+                    "Hero MotoCorp gained market share in entry 100cc Deluxe, Scooters, and EV business.",
+                    "The HF Deluxe spearheaded category expansion, gaining 800 bps market share year-on-year.",
+                    "In Scooters 125cc, the company reached its highest market share in June at 9.7%, led by new Destini 125 and Xoom 125.",
+                    "The EV business reported its highest ever market share, with a quarterly market share of 7%, more than doubling year-on-year.",
+                    "The Premia channel scale-up is progressing well, reaching 90 stores by Q1 FY '26, covering more than 40% of the premium industry's footprint.",
+                    "Global business continued to gain market share, driven by gains across the majority of focus markets."
                   ]
                 }
               ]
@@ -14146,11 +14508,11 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Product Launches",
+                  "label": "Product Launches and Innovations",
                   "points": [
-                    "Launch of HF Deluxe Pro with first-in-segment features.",
-                    "Upcoming launch of a new 125cc with best-in-class technology and a refreshed sporty 125cc variant.",
-                    "Launch of VIDA VX2 with Battery-as-a-Service model to accelerate EV growth."
+                    "The company launched the HF Deluxe Pro with first-in-segment features.",
+                    "In the Deluxe 125cc segment, Hero MotoCorp plans to launch a new 125cc with best-in-class technology, features, and style, along with a refreshed sporty 125cc variant.",
+                    "The VIDA VX2 was launched with a pioneering Battery-as-a-Service model."
                   ]
                 }
               ]
@@ -14161,9 +14523,10 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Production Update",
+                  "label": "Production and Supply Chain",
                   "points": [
-                    "The company temporarily paused production in April '25, impacting dispatch and volumes, but has since normalized."
+                    "The company temporarily paused production in April '25, impacting overall dispatch and volumes during the quarter, which has since normalized.",
+                    "Supplies normalized during the quarter, and the company is covered in the short run for both ICE and EV."
                   ]
                 }
               ]
@@ -14171,13 +14534,35 @@
             {
               "id": "GEO",
               "title": "Geography & Distribution",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "Premia channel stores",
+                  "value": "90 stores",
+                  "unit": null,
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Market share in 27 towns",
+                  "value": "20%",
+                  "unit": null,
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Top 2 position in 54 towns",
+                  "value": "54 towns",
+                  "unit": null,
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                }
+              ],
               "subsections": [
                 {
-                  "label": "Market Expansion",
+                  "label": "Geographical Expansion",
                   "points": [
-                    "Premia channel scale-up reached 90 stores by Q1 FY '26, covering more than 40% of the premium industry's footprint.",
-                    "Global business continued to gain market share, driven by gains across majority of focus markets."
+                    "The Premia channel scale-up is progressing well, reaching 90 stores by Q1 FY '26, covering more than 40% of the premium industry's footprint.",
+                    "The company achieved over 20% market share in 27 towns and secured a top 2 position in 54 towns."
                   ]
                 }
               ]
@@ -14188,10 +14573,9 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Supply Chain Update",
+                  "label": "Supply Chain Management",
                   "points": [
-                    "Supplies normalized during the quarter despite the evolving rare earth situation.",
-                    "The company is covered in the short run for both ICE and EV and continues to work on alternatives."
+                    "The rare earth situation is evolving, but the company is covered in the short run for both ICE and EV and continues to work on alternatives."
                   ]
                 }
               ]
@@ -14199,13 +14583,133 @@
             {
               "id": "MKT",
               "title": "Market & Customer Strategy",
+              "key_figures": [
+                {
+                  "label": "Premia channel stores",
+                  "value": "125 stores",
+                  "unit": null,
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VIDA network touch points",
+                  "value": "600 touch points",
+                  "unit": null,
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VIDA presence in cities",
+                  "value": "400 cities",
+                  "unit": null,
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Overall sales and service touch points",
+                  "value": "more than 6,000",
+                  "unit": null,
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Premia outlets covering premium industry",
+                  "value": "47% to 48%",
+                  "unit": null,
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Premia outlets",
+                  "value": "close to 124-125",
+                  "unit": null,
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Market share in entry space",
+                  "value": "67%",
+                  "unit": null,
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Market share improvement in entry space",
+                  "value": "600 basis points",
+                  "unit": null,
+                  "period": "previous quarter",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Market share improvement in entry space",
+                  "value": "800 basis points",
+                  "unit": null,
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Scooter market share",
+                  "value": "north of 6%",
+                  "unit": null,
+                  "period": "last couple of months",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Exports growth target",
+                  "value": "over 40%",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "target"
+                },
+                {
+                  "label": "Global business revenue and volume target",
+                  "value": "10%",
+                  "unit": null,
+                  "period": "future",
+                  "kind": "target"
+                },
+                {
+                  "label": "Exports growth",
+                  "value": "40% plus",
+                  "unit": null,
+                  "period": "last year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Retail number for EVs in July",
+                  "value": "10,000+",
+                  "unit": null,
+                  "period": "July",
+                  "kind": "reported"
+                },
+                {
+                  "label": "First-time buyers percentage",
+                  "value": "74%",
+                  "unit": null,
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Market Strategy",
+                  "points": [
+                    "Hero MotoCorp is ramping up marketing efforts with high visibility campaigns for HF Deluxe Pro and Xtreme 250.",
+                    "The company is focusing on expanding its EV business with the launch of VIDA VX2 and the Battery-as-a-Service model."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Marketing Initiatives",
+                  "label": "Strategic Partnerships",
                   "points": [
-                    "Ramped up marketing efforts with high visibility campaigns for HF Deluxe Pro and Xtreme 250.",
-                    "VIDA VX2 EVOOTER campaign targets evolving Indian consumer needs for reliable scooters and modern EV technology."
+                    "The company introduced Ms. Kausalya Nandakumar as the Chief Business Officer for the EV business, bringing nearly 2 decades of leadership experience.",
+                    "Hero MotoCorp continues to strengthen its leadership and capabilities across the organization."
                   ]
                 }
               ]
@@ -14216,9 +14720,10 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Market Risks",
+                  "label": "External Factors",
                   "points": [
-                    "Ongoing geopolitical and supply uncertainties could impact future performance."
+                    "The rare earth situation is evolving, but the company is covered in the short run for both ICE and EV.",
+                    "Ongoing geopolitical and supply uncertainties are noted, but the company remains confident due to product launches and market strategies."
                   ]
                 }
               ]
@@ -14231,8 +14736,8 @@
                 {
                   "label": "Outlook",
                   "points": [
-                    "The company expects to grow ahead of the industry with new product launches and strong investment in building power brands.",
-                    "Positive economic indicators and festive season demand are expected to drive growth."
+                    "Hero MotoCorp expects two-wheeler demand to continue its upward trajectory as the festive season approaches.",
+                    "The company is confident about strong growth momentum in the business, driven by new product launches and increased market share."
                   ]
                 }
               ]
@@ -14240,7 +14745,7 @@
           ],
           "guidance_ledger": [
             {
-              "metric": "EBITDA Margin",
+              "metric": "EBITDA margin",
               "horizon": "short term",
               "statement": "Margins will operate between 14% and 16%.",
               "specificity": "specific",
@@ -14248,7 +14753,7 @@
               "status": "new"
             },
             {
-              "metric": "Industry Growth",
+              "metric": "Industry growth",
               "horizon": "FY26",
               "statement": "Industry growth expected to be about 6% to 7%.",
               "specificity": "specific",
@@ -14258,9 +14763,14 @@
           ],
           "risk_register": [
             {
+              "risk": "Rare earth situation",
+              "status": "stable",
+              "note": "The company is covered in the short run for both ICE and EV and continues to work on alternatives."
+            },
+            {
               "risk": "Geopolitical and supply uncertainties",
               "status": "stable",
-              "note": "Ongoing geopolitical and supply uncertainties could impact future performance."
+              "note": "Ongoing uncertainties noted, but the company remains confident due to product launches and market strategies."
             }
           ],
           "themes": [
@@ -14271,38 +14781,38 @@
               "section_ref": "ORD"
             },
             {
-              "label": "EV market expansion",
+              "label": "EV business growth",
               "direction": "positive",
-              "note": "The EV business achieved its highest ever market share, doubling year-on-year.",
+              "note": "The EV business reported its highest ever market share, with a quarterly market share of 7%.",
               "section_ref": "SEG"
-            },
-            {
-              "label": "Festive season demand",
-              "direction": "positive",
-              "note": "Positive economic indicators and festive season demand are expected to drive growth.",
-              "section_ref": "ORD"
             },
             {
               "label": "Product innovation",
               "direction": "positive",
-              "note": "Launch of new products like HF Deluxe Pro and VIDA VX2 to enhance market position.",
+              "note": "Launch of HF Deluxe Pro and VIDA VX2 with Battery-as-a-Service model.",
               "section_ref": "TECH"
             },
             {
-              "label": "Supply chain normalization",
+              "label": "Supply chain stability",
               "direction": "neutral",
-              "note": "Supplies normalized during the quarter despite the evolving rare earth situation.",
+              "note": "The rare earth situation is evolving, but the company is covered in the short run.",
               "section_ref": "SUP"
+            },
+            {
+              "label": "Festive season outlook",
+              "direction": "positive",
+              "note": "Two-wheeler demand is expected to continue its upward trajectory as the festive season approaches.",
+              "section_ref": "GUID"
             }
           ],
           "key_takeaways": [
-            "Hero MotoCorp's Vahan market share recovered to 30.9% in Q1 FY '26, a sequential increase of 1%.",
+            "Hero MotoCorp's Vahan market share recovered to 30.9% in Q1 FY '26, representing a sequential increase of 1%.",
             "The company gained market share in entry 100cc Deluxe, Scooters, and EV business.",
-            "The EV business achieved its highest ever market share, doubling year-on-year.",
-            "The company temporarily paused production in April '25, impacting dispatch and volumes, but has since normalized.",
-            "The economic landscape is optimistic with low inflation, RBI rate cuts, and favorable monsoons expected to boost demand.",
-            "The company expects to grow ahead of the industry with new product launches and strong investment in building power brands.",
-            "Ongoing geopolitical and supply uncertainties could impact future performance."
+            "The HF Deluxe spearheaded category expansion, gaining 800 bps market share year-on-year.",
+            "In Scooters 125cc, the company reached its highest market share in June at 9.7%, led by new Destini 125 and Xoom 125.",
+            "The EV business reported its highest ever market share, with a quarterly market share of 7%, more than doubling year-on-year.",
+            "The Premia channel scale-up is progressing well, reaching 90 stores by Q1 FY '26, covering more than 40% of the premium industry's footprint.",
+            "Global business continued to gain market share, driven by gains across the majority of focus markets."
           ],
           "pressing_questions": []
         }
