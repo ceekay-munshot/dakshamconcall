@@ -693,14 +693,13 @@ function runningThemesCard(sec) {
     );
   }
 
-  const list = sec.themes
-    .map((t) => {
-      const d = dirMeta(t.net);
-      const cos = t.companies.map((tk) => `<span class="mini-ticker" data-open-co="${escapeHtml(tk)}">${escapeHtml(tk)}</span>`).join("");
-      // Show the note from the most-recent mention (matches t.last), not JSON order.
-      const latestNote = (t.notes || []).slice().sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")))[0];
-      const note = latestNote?.note ? `<div class="theme-note">${escapeHtml(latestNote.note)}</div>` : "";
-      return `
+  const themeRow = (t) => {
+    const d = dirMeta(t.net);
+    const cos = t.companies.map((tk) => `<span class="mini-ticker" data-open-co="${escapeHtml(tk)}">${escapeHtml(tk)}</span>`).join("");
+    // Show the note from the most-recent mention (matches t.last), not JSON order.
+    const latestNote = (t.notes || []).slice().sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")))[0];
+    const note = latestNote?.note ? `<div class="theme-note">${escapeHtml(latestNote.note)}</div>` : "";
+    return `
         <div class="theme-row">
           <div class="theme-row-head">
             <span class="theme-chip ${d.cls}"><span class="tc-dot"></span>${escapeHtml(t.label)}</span>
@@ -709,15 +708,25 @@ function runningThemesCard(sec) {
           ${note}
           <div class="theme-cos">${cos}</div>
         </div>`;
-    })
-    .join("");
+  };
+
+  // A sector can run 30-40 themes, which turned this card into most of the page's
+  // scroll. Lead with the TOP few (sec.themes is sorted by how many companies
+  // flagged the theme, then recency) and collapse the tail behind the same native
+  // <details> toggle the tear sheet uses — compact by default, nothing lost.
+  const TOP_N = 5;
+  const head = sec.themes.slice(0, TOP_N).map(themeRow).join("");
+  const rest = sec.themes.slice(TOP_N);
+  const more = rest.length
+    ? `<details class="more-points more-themes"><summary data-more="Show ${rest.length} more theme${rest.length === 1 ? "" : "s"}" data-less="Show less"></summary>${rest.map(themeRow).join("")}</details>`
+    : "";
 
   return card(
     "Running Themes",
     "hash",
     "var(--grad-cool)",
-    `${list}${heatmapHtml(sec)}`,
-    "What's running through the sector — read across companies"
+    `${head}${more}${heatmapHtml(sec)}`,
+    `What's running through the sector — read across companies${rest.length ? ` · top ${TOP_N} of ${sec.themes.length}` : ""}`
   );
 }
 
