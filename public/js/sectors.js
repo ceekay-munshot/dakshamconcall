@@ -310,17 +310,27 @@ export function computeSectors(companies) {
       .sort((a, b) => b.count - a.count || String(b.last || "").localeCompare(String(a.last || "")));
     delete sec.themeMap;
 
-    // Finalize momentum: last 4 calendar-quarter buckets (oldest→newest); top
+    // Finalize momentum: the last 4 calendar-quarter buckets (oldest→newest); top
     // themes by total company-mentions across those buckets; guidance per bucket.
-    const mbuckets = [...sec.momBuckets.values()].sort((a, b) => a.sort - b.sort).slice(-4)
+    //
+    // Companies report on different dates, so the NEWEST calendar quarter is
+    // usually barely started — e.g. 2 of 14 auto names had held a Jul-Sep 2026
+    // call by 30 Jul. Showing it made the trend look like it had collapsed (a
+    // near-empty column of dots) and read as a bug, so an in-progress quarter is
+    // now DROPPED rather than flagged: the table only shows quarters where the
+    // sector has actually reported. `dropped` records it for the caption.
+    const allBuckets = [...sec.momBuckets.values()].sort((a, b) => a.sort - b.sort)
       .map((b) => ({ ...b, cos: sec.momReporters.get(b.key)?.size || 0 }));
-    // Companies report on different dates, so the newest calendar quarter is
-    // often incomplete — flag it when materially fewer firms have reported than
-    // the prior bucket, so a low count reads as "not in yet", not a collapse.
-    if (mbuckets.length >= 2) {
-      const lb = mbuckets[mbuckets.length - 1], pb = mbuckets[mbuckets.length - 2];
-      lb.partial = lb.cos < pb.cos;
+    // "In progress" = materially fewer reporters than the busiest recent quarter.
+    const peak = Math.max(0, ...allBuckets.slice(-5).map((b) => b.cos));
+    let dropped = null;
+    while (allBuckets.length >= 2) {
+      const lb = allBuckets[allBuckets.length - 1];
+      if (peak >= 3 && lb.cos < peak / 2) dropped = allBuckets.pop();
+      else break;
     }
+    const mbuckets = allBuckets.slice(-4);
+    sec.momDropped = dropped ? { label: dropped.label, cos: dropped.cos } : null;
     const bkeys = mbuckets.map((b) => b.key);
     const mthemes = [...sec.momThemes.values()]
       .map((mt) => {
@@ -333,7 +343,7 @@ export function computeSectors(companies) {
       .filter((t) => t.total > 0)
       .sort((a, b) => b.total - a.total)
       .slice(0, 6);
-    sec.momentum = { buckets: mbuckets, themes: mthemes, guidance: bkeys.map((bk) => sec.momGuid.get(bk) || { up: 0, down: 0, flat: 0 }) };
+    sec.momentum = { buckets: mbuckets, themes: mthemes, guidance: bkeys.map((bk) => sec.momGuid.get(bk) || { up: 0, down: 0, flat: 0 }), dropped: sec.momDropped };
     delete sec.momBuckets; delete sec.momThemes; delete sec.momGuid; delete sec.momReporters;
 
     const eom = sec.latest ? endOfMonth(sec.latest) : null;
@@ -824,9 +834,10 @@ function sectorMomentumCard(sec) {
   const last = m.buckets.length - 1;
   const head = m.buckets
     .map((b, i) => {
-      const cos = b.cos ? `<span class="sm-cos">${b.cos} co${b.cos === 1 ? "" : "s"}${b.partial ? " · partial" : ""}</span>` : "";
-      const tip = b.partial ? ` title="Only ${b.cos} of the sector's companies have reported for ${escapeHtml(b.label)} so far — this quarter is still filling in, so treat the counts as incomplete"` : "";
-      return `<th class="sm-qh${i === last ? " sm-latest" : ""}${b.partial ? " sm-partial" : ""}"${tip}>${escapeHtml(b.label)}${cos}</th>`;
+      // An in-progress quarter is dropped upstream, so every column shown here is
+      // a quarter the sector has actually reported — no "partial" caveat needed.
+      const cos = b.cos ? `<span class="sm-cos">${b.cos} co${b.cos === 1 ? "" : "s"}</span>` : "";
+      return `<th class="sm-qh${i === last ? " sm-latest" : ""}">${escapeHtml(b.label)}${cos}</th>`;
     })
     .join("");
   const themeRows = m.themes
@@ -856,7 +867,12 @@ function sectorMomentumCard(sec) {
       <thead><tr><th class="sm-theme-h">${hasThemes ? "Theme · companies flagging it" : "Guidance direction"}</th>${head}</tr></thead>
       <tbody>${themeRows}${guidRow}</tbody>
     </table></div>`;
-  return card("Sector Momentum", "trending-up", "var(--grad-primary)", body, `How the sector has moved across the last ${m.buckets.length} quarters`);
+  // Say plainly that a just-started quarter is excluded, so a reader who knows a
+  // company has already reported doesn't read the omission as missing data.
+  const sub = m.dropped
+    ? `How the sector has moved across the last ${m.buckets.length} reported quarters · ${escapeHtml(m.dropped.label)} is still in progress (${m.dropped.cos} of ${sec.companies.length} reported) and is excluded`
+    : `How the sector has moved across the last ${m.buckets.length} quarters`;
+  return card("Sector Momentum", "trending-up", "var(--grad-primary)", body, sub);
 }
 
 function card(title, icon, iconBg, bodyHtml, sub) {
