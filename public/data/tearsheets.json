@@ -26106,7 +26106,7 @@
       "ticker": "BHARATFORG",
       "industry": "Auto Components & Equipments",
       "country": "India",
-      "checked_at": "2026-07-25T22:58:35.004Z",
+      "checked_at": "2026-07-30T05:57:09.238Z",
       "quarters": [
         {
           "company": "Bharat Forge Ltd",
@@ -26117,8 +26117,8 @@
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=79d30263-5564-4bc9-9ee2-afe775518d5e.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-25T22:58:31.872Z",
-          "summary": "Bharat Forge anticipates strong growth in its India operations, driven by aerospace and defense sectors, with a focus on strategic acquisitions and capacity expansion.",
+          "generated_at": "2026-07-30T05:57:04.544Z",
+          "summary": "Bharat Forge anticipates strong growth in its India operations, driven by aerospace and defense segments, with a focus on expanding its product portfolio and leveraging new business opportunities.",
           "sections": [
             {
               "id": "FIN",
@@ -26155,82 +26155,82 @@
                 {
                   "label": "Net Debt-to-Equity Ratio",
                   "value": "0.41",
-                  "unit": null,
+                  "unit": "x",
                   "period": "March 2026",
                   "kind": "reported"
                 },
                 {
-                  "label": "Stand-alone Revenue",
+                  "label": "Standalone Revenue",
                   "value": "8,396",
                   "unit": "INR Crores",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Stand-alone Revenue Growth",
-                  "value": "-5",
+                  "label": "Standalone Revenue Decline",
+                  "value": "5",
                   "unit": "%",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Stand-alone EBITDA",
+                  "label": "Standalone EBITDA",
                   "value": "2,312",
                   "unit": "INR Crores",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Stand-alone EBITDA Margin",
+                  "label": "Standalone EBITDA Margin",
                   "value": "27.5",
                   "unit": "%",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Stand-alone PBT before exceptional items",
+                  "label": "Standalone PBT before Exceptional Items",
                   "value": "1,826",
                   "unit": "INR Crores",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Stand-alone PBT Growth",
-                  "value": "-8",
+                  "label": "Standalone PBT Decline",
+                  "value": "8",
                   "unit": "%",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Quarterly Stand-alone Revenue",
+                  "label": "Standalone Quarterly Revenue",
                   "value": "2,260",
                   "unit": "INR Crores",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Quarterly Stand-alone Revenue Growth",
+                  "label": "Standalone Quarterly Revenue Growth",
                   "value": "8.5",
                   "unit": "%",
                   "period": "QoQ",
                   "kind": "reported"
                 },
                 {
-                  "label": "Quarterly Stand-alone EBITDA",
+                  "label": "Standalone Quarterly EBITDA",
                   "value": "610",
                   "unit": "INR Crores",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Quarterly Stand-alone EBITDA Margin",
+                  "label": "Standalone Quarterly EBITDA Margin",
                   "value": "27",
                   "unit": "%",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Quarterly Stand-alone PBT before exceptional items",
+                  "label": "Standalone Quarterly PBT before Exceptional Items",
                   "value": "486",
                   "unit": "INR Crores",
                   "period": "Q4 FY26",
@@ -26239,7 +26239,7 @@
                 {
                   "label": "Net Debt-to-Equity Ratio",
                   "value": "0.18",
-                  "unit": null,
+                  "unit": "x",
                   "period": "FY26",
                   "kind": "reported"
                 },
@@ -26290,14 +26290,10 @@
                 {
                   "label": "Quarterly Performance",
                   "points": [
-                    "Quarter-on-quarter improvement driven by recovery in exports and strong domestic automotive performance.",
-                    "Quarterly EBITDA margin was 27%, impacted by a one-time retrospective cost by MSEDCL of INR 11 crores."
-                  ]
-                },
-                {
-                  "label": "Balance Sheet",
-                  "points": [
-                    "Balance sheet remains robust with net debt-to-equity at 0.18x for the year."
+                    "Standalone revenue for the quarter was up by 8.5% quarter-over-quarter at INR 2,260 crores.",
+                    "The quarter-on-quarter improvement in performance was driven by all-around recovery in exports and strong performance in the domestic automotive segment.",
+                    "Q4 EBITDA was up at 7.2% sequentially at INR 610 crores, translating in EBITDA margin of 27%.",
+                    "This includes a one-time retrospective cost by MSEDCL of about INR 11 crores. Without that, the margin would have been closer to 28%."
                   ]
                 }
               ]
@@ -26344,10 +26340,10 @@
               ],
               "subsections": [
                 {
-                  "label": "Defense Orders",
+                  "label": "Defense Order Book",
                   "points": [
-                    "Recent order wins in defense with an order book of close to INR 11,000 crores.",
-                    "ATAGS and CQB carbine production to start in the second half of the year."
+                    "The defense order book is close to INR 11,000 crores, expected to see stable revenue accretion over the next 3-4 years.",
+                    "Recent order wins include naval and drone systems, with multiple new products developed and fielded."
                   ]
                 }
               ]
@@ -26375,18 +26371,109 @@
                 {
                   "label": "Aerospace Business",
                   "points": [
-                    "Aerospace is now 26% of the last quarter's non-Auto exports.",
-                    "Multiple new business wins in aerospace, including jet engine structures and landing systems."
+                    "Aerospace is now a meaningful part of industrial exports, contributing 26% of the last quarter's non-auto exports.",
+                    "The segment has seen multiple new business wins across jet engine structures and landing systems from global OEMs."
                   ]
                 },
                 {
                   "label": "Defense Business",
                   "points": [
-                    "Defense business includes artillery, vehicles, small arms, naval solutions, and unmanned platforms.",
-                    "Recent order wins in naval and drone systems."
+                    "The defense business is spread beyond artillery and vehicles to include small arms, naval solutions, and unmanned platforms.",
+                    "Key milestones include the ATAGS FOPM and CQB carbine production starting this year."
                   ]
                 }
               ]
+            },
+            {
+              "id": "TECH",
+              "title": "Product & Technology",
+              "key_figures": [
+                {
+                  "label": "Initial capacity for ATAGS",
+                  "value": "5",
+                  "unit": "guns per month",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Jet engine thrust range",
+                  "value": "40-150",
+                  "unit": "kilos of thrust",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "AMCA first prototype year",
+                  "value": "2032",
+                  "unit": null,
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "Timeframe for manned jet engine development",
+                  "value": "5-10",
+                  "unit": "years",
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "Timeframe for Andhra Pradesh facility readiness",
+                  "value": "24",
+                  "unit": "months",
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "Timeframe for Andhra Pradesh facility construction start",
+                  "value": "end of this year",
+                  "unit": null,
+                  "period": "2026",
+                  "kind": "target"
+                },
+                {
+                  "label": "Timeframe for Andhra Pradesh facility pilot production start",
+                  "value": "6-8",
+                  "unit": "months after readiness",
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "K-mobility business growth potential",
+                  "value": "2X",
+                  "unit": null,
+                  "period": "3-4 years",
+                  "kind": "target"
+                },
+                {
+                  "label": "K-mobility business peak margin goal",
+                  "value": "mid-teens",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "K-mobility business scalability opportunity",
+                  "value": "3X",
+                  "unit": null,
+                  "period": "medium term",
+                  "kind": "target"
+                },
+                {
+                  "label": "Machining facility EBITDA margin",
+                  "value": "mid-teens",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "U.S. passenger car market size",
+                  "value": "16-16.1",
+                  "unit": "million vehicles",
+                  "period": "last year",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": []
             },
             {
               "id": "MFG",
@@ -26397,15 +26484,15 @@
                   "value": "800-850",
                   "unit": "INR Crores",
                   "period": "15-18 months",
-                  "kind": "guidance"
+                  "kind": "target"
                 }
               ],
               "subsections": [
                 {
                   "label": "Capacity Expansion",
                   "points": [
-                    "Ongoing capex programs across forging, casting, and products platform.",
-                    "Recent capital raise from Premji Invest to drive capacity expansion."
+                    "Ongoing capex programs across forging, casting, and products platform will translate into INR 800-850 crores capex in a 15-18 month period.",
+                    "The recent capital raise from Premji Invest will help drive capacity expansion and make the casting business an independent growth driver."
                   ]
                 }
               ]
@@ -26438,10 +26525,10 @@
               ],
               "subsections": [
                 {
-                  "label": "Strategic Acquisitions",
+                  "label": "Acquisitions and Investments",
                   "points": [
-                    "Acquired 30% stake in Fortuna Engineering for INR 130 crores.",
-                    "Fortuna Engineering complements Bharat Forge's machining capabilities."
+                    "Acquired a 30% stake in Fortuna Engineering for INR 130 crores, which has a revenue of about INR 380 crores and a net cash position of about INR 20 crores.",
+                    "The acquisition of K Drive is making significant progress and has won new business from OEMs, expected to start panning out from this year."
                   ]
                 }
               ]
@@ -26452,10 +26539,10 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Tariff and Geopolitical Risks",
+                  "label": "Geopolitical and Economic Uncertainties",
                   "points": [
-                    "Uncertainty due to tariffs and geopolitical tensions, including a war in the Middle East.",
-                    "Energy costs have increased substantially, impacting cost structures."
+                    "2026 was marked by uncertainties, especially related to tariffs and geopolitical tensions, including a war in the Middle East.",
+                    "Energy costs have risen substantially, impacting cost structures."
                   ]
                 }
               ]
@@ -26465,19 +26552,19 @@
               "title": "Guidance & Outlook",
               "key_figures": [
                 {
-                  "label": "India Business Growth",
+                  "label": "India Business Growth Target",
                   "value": "25",
                   "unit": "%",
-                  "period": "FY27",
-                  "kind": "guidance"
+                  "period": "2027",
+                  "kind": "target"
                 }
               ],
               "subsections": [
                 {
                   "label": "Growth Outlook",
                   "points": [
-                    "Expecting strong growth in India operations, driven by aerospace and defense sectors.",
-                    "Focus on expanding product portfolio and participating in new programs for stable revenue accretion."
+                    "Bharat Forge expects a strong year for its India manufacturing operations, with a growth target of close to 25% for 2027.",
+                    "Higher growth is anticipated from the aerospace and defense businesses, followed by the components business."
                   ]
                 }
               ]
@@ -26486,40 +26573,32 @@
           "guidance_ledger": [
             {
               "metric": "India Business Growth",
-              "horizon": "FY27",
-              "statement": "Expecting a close to 25% growth in our India business.",
+              "horizon": "2027",
+              "statement": "Bharat Forge expects a close to 25% growth in its India business.",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
             },
             {
-              "metric": "Capex Program",
-              "horizon": "15-18 months",
-              "statement": "Ongoing capex programs across forging, casting, and products platform will translate into INR800 crores to INR850 crores capex.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "new"
-            },
-            {
-              "metric": "Defense Revenue Growth",
+              "metric": "Aerospace Segment Growth",
               "horizon": "next year",
-              "statement": "Defense business is expected to see a 30%-40% growth next year.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "no_mention"
-            },
-            {
-              "metric": "Aerospace Revenue Growth",
-              "horizon": "next year",
-              "statement": "Aerospace segment is expected to see strong growth next year and the year after.",
+              "statement": "Aerospace segment to see strong growth next year.",
               "specificity": "vague",
               "direction": "up",
-              "status": "no_mention"
+              "status": "reiterated"
             },
             {
-              "metric": "CV Sector Growth",
-              "horizon": "Q4 FY26 and H1 FY27",
-              "statement": "The CV sector for Q4 India looks very strong and may continue into the first half of next year.",
+              "metric": "Defense Business Growth",
+              "horizon": "next year",
+              "statement": "Defense business expected to grow by 30%-40% next year.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "CV Sector Outlook",
+              "horizon": "Q4 and first half of next year",
+              "statement": "CV sector in India looks strong for Q4 and may continue into the first half of next year.",
               "specificity": "vague",
               "direction": "up",
               "status": "no_mention"
@@ -26527,21 +26606,29 @@
             {
               "metric": "Export Recovery",
               "horizon": "next year",
-              "statement": "Exports seem to have bottomed out and should see a gradual improvement.",
+              "statement": "Exports have bottomed out and should see gradual improvement.",
               "specificity": "vague",
               "direction": "up",
               "status": "no_mention"
             },
             {
-              "metric": "North American Market Recovery",
-              "horizon": "Q4 FY26",
-              "statement": "CV exports should show signs of recovery by Q4.",
-              "specificity": "vague",
+              "metric": "Aerospace Revenue",
+              "horizon": "FY26",
+              "statement": "Aerospace revenue should exceed INR 350 crores this year.",
+              "specificity": "specific",
               "direction": "up",
               "status": "no_mention"
             },
             {
-              "metric": "American Axles Contribution to Topline",
+              "metric": "Fundraising for Growth",
+              "horizon": "FY26",
+              "statement": "Raising funds up to INR 2,000 crores for organic and inorganic growth in India.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "American Axles Contribution",
               "horizon": "FY26",
               "statement": "American Axles should add Rs. 1,000 crores to the consolidated topline for the year.",
               "specificity": "specific",
@@ -26551,71 +26638,74 @@
           ],
           "risk_register": [
             {
-              "risk": "Tariff and Geopolitical Risks",
+              "risk": "Geopolitical and Economic Uncertainties",
               "status": "new",
-              "note": "Uncertainty due to tariffs and geopolitical tensions, including a war in the Middle East."
+              "note": "2026 was marked by uncertainties, especially related to tariffs and geopolitical tensions, including a war in the Middle East."
             },
             {
-              "risk": "Energy Cost Increase",
+              "risk": "Rising Energy Costs",
               "status": "new",
-              "note": "Energy costs have increased substantially, impacting cost structures."
+              "note": "Energy costs have risen substantially, impacting cost structures."
             },
             {
               "risk": "Tariff Impact on US Aluminum Business",
               "status": "no_mention",
-              "note": "The tariff on aluminum into the US is impacting profitability and demand in this business."
+              "note": "Tariff on aluminum into the US is impacting profitability and demand."
             },
             {
-              "risk": "Demand uncertainty in North America",
+              "risk": "European Market Challenges",
               "status": "no_mention",
-              "note": "Due to trade policies and constant changes."
+              "note": "European operations face challenges due to patchy demand and high costs."
+            },
+            {
+              "risk": "North American Market Uncertainty",
+              "status": "no_mention",
+              "note": "Demand uncertainty due to trade policies and constant changes."
             },
             {
               "risk": "Tariff-related uncertainty",
               "status": "no_mention",
-              "note": "Tariffs are affecting competitiveness and causing Rs. 14 crores impact in Q1."
+              "note": "Tariff-related uncertainty is impacting global outlook and order inflows."
             }
           ],
           "themes": [
             {
-              "label": "Defense Sector Growth",
+              "label": "Aerospace Growth",
               "direction": "positive",
-              "note": "Defense business is expanding with new orders and a strong order book.",
-              "section_ref": "ORD"
-            },
-            {
-              "label": "Aerospace Expansion",
-              "direction": "positive",
-              "note": "Aerospace segment is growing rapidly, contributing significantly to exports.",
+              "note": "Aerospace is now a significant part of industrial exports, with strong growth expected.",
               "section_ref": "SEG"
             },
             {
+              "label": "Defense Orders",
+              "direction": "positive",
+              "note": "The defense order book is robust, with stable revenue accretion expected.",
+              "section_ref": "ORD"
+            },
+            {
+              "label": "Indian Manufacturing Expansion",
+              "direction": "positive",
+              "note": "Bharat Forge plans significant capex to expand its manufacturing capacity in India.",
+              "section_ref": "MFG"
+            },
+            {
               "label": "Tariff Impact",
-              "direction": "negative",
-              "note": "Tariff uncertainties continue to pose challenges.",
+              "direction": "mixed",
+              "note": "Tariff uncertainties have impacted performance, but the company has managed to weather the storm.",
               "section_ref": "RISK"
             },
             {
-              "label": "Strategic Acquisitions",
-              "direction": "positive",
-              "note": "Acquisition of Fortuna Engineering enhances machining capabilities.",
-              "section_ref": "STRAT"
-            },
-            {
-              "label": "Manufacturing Utilization",
-              "direction": "positive",
-              "note": "Capacity expansion and capex programs are underway to support growth.",
-              "section_ref": "MFG"
+              "label": "Energy Cost Inflation",
+              "direction": "negative",
+              "note": "Rising energy costs have significantly impacted cost structures.",
+              "section_ref": "RISK"
             }
           ],
           "key_takeaways": [
-            "Bharat Forge ended FY26 with consolidated revenues of INR 16,812 crores and EBITDA of INR 2,921 crores, marking an 11% growth in revenues and 6% in EBITDA.",
-            "The company secured new businesses worth INR 4,814 crores across key sectors, including defense and aerospace.",
-            "Stand-alone revenue for FY26 was INR 8,396 crores, a 5% decline YoY, mainly due to regulatory uncertainties in North America and demand challenges in the U.S. CV market.",
-            "The aerospace business now constitutes 26% of the last quarter's non-auto exports, with significant new business wins.",
-            "Bharat Forge has acquired a 30% stake in Fortuna Engineering, enhancing its machining capabilities.",
-            "The company anticipates a 25% growth in its India business for FY27, driven by aerospace and defense sectors.",
-            "Ongoing capex programs are expected to result in INR 800-850 crores of investment over the next 15-18 months."
+            "Bharat Forge ended the year with consolidated revenues of INR 16,812 crores and EBITDA of INR 2,921 crores, marking a growth of 11% in revenues and about 6% in EBITDA.",
+            "The company secured new businesses worth INR 4,814 crores across all key segments, including defense and traditional businesses.",
+            "Aerospace has become a significant part of industrial exports, contributing 26% of the last quarter's non-auto exports.",
+            "The defense order book is close to INR 11,000 crores, with stable revenue accretion expected over the next 3-4 years.",
+            "Bharat Forge anticipates a strong year for its India manufacturing operations, with a growth target of close to 25% for 2027."
           ],
           "pressing_questions": []
         },
@@ -26628,36 +26718,29 @@
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b619aff6-67d3-4fb0-bbe7-9e01b887cf47.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-25T22:58:18.514Z",
-          "summary": "Bharat Forge anticipates strong growth in its defense and aerospace segments, with new orders and capacity expansions driving future performance. The company is also focusing on restructuring its European operations and expanding its manufacturing capabilities in India.",
+          "generated_at": "2026-07-30T05:51:18.880Z",
+          "summary": "Bharat Forge is optimistic about growth in defense and aerospace segments, with new orders and capacity expansions planned. The company is also focusing on restructuring its European operations and expanding its domestic manufacturing capabilities.",
           "sections": [
             {
               "id": "FIN",
               "title": "Financial Performance",
               "key_figures": [
                 {
-                  "label": "Standalone Revenue (Q3 FY26)",
+                  "label": "Standalone Revenue Q3 FY26",
                   "value": "2,084",
                   "unit": "INR Crores",
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Standalone Revenue Growth (QoQ)",
-                  "value": "7",
-                  "unit": "%",
-                  "period": "Q3 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Standalone EBITDA (Q3 FY26)",
+                  "label": "Standalone EBITDA Q3 FY26",
                   "value": "569",
                   "unit": "INR Crores",
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Standalone EBITDA Margin (Q3 FY26)",
+                  "label": "Standalone EBITDA Margin Q3 FY26",
                   "value": "27.3",
                   "unit": "%",
                   "period": "Q3 FY26",
@@ -26678,14 +26761,14 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Standalone Revenue (9M FY26)",
+                  "label": "Standalone Revenue 9M FY26",
                   "value": "6,135",
                   "unit": "INR Crores",
                   "period": "9M FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Standalone EBITDA Margin (9M FY26)",
+                  "label": "Standalone EBITDA Margin 9M FY26",
                   "value": "27.7",
                   "unit": "%",
                   "period": "9M FY26",
@@ -26699,35 +26782,35 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Long-term Debt",
+                  "label": "Long-term Debt End of FY26",
                   "value": "600",
                   "unit": "INR Crores",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Consolidated Revenue (Q3 FY26)",
+                  "label": "Consolidated Revenue Q3 FY26",
                   "value": "4,343",
                   "unit": "INR Crores",
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Consolidated EBITDA Margin (Q3 FY26)",
+                  "label": "Consolidated EBITDA Margin Q3 FY26",
                   "value": "17.3",
                   "unit": "%",
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Consolidated Revenue (9M FY26)",
+                  "label": "Consolidated Revenue 9M FY26",
                   "value": "12,284",
                   "unit": "INR Crores",
                   "period": "9M FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Consolidated EBITDA Margin (9M FY26)",
+                  "label": "Consolidated EBITDA Margin 9M FY26",
                   "value": "17.5",
                   "unit": "%",
                   "period": "9M FY26",
@@ -26753,22 +26836,71 @@
                   "unit": "%",
                   "period": "Q3 FY26",
                   "kind": "reported"
+                },
+                {
+                  "label": "Standalone Revenue Growth Q3 FY26",
+                  "value": "7",
+                  "unit": "%",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Standalone EBITDA Growth Q3 FY26",
+                  "value": "4.6",
+                  "unit": "%",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "US Losses Reduction 9M FY26",
+                  "value": "50",
+                  "unit": "%",
+                  "period": "9M FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Defense Business Growth Next Year",
+                  "value": "30-40",
+                  "unit": "%",
+                  "period": "Next Year",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "European Defense Budget Increase",
+                  "value": "EUR 350 billion to 800 billion",
+                  "unit": null,
+                  "period": null,
+                  "kind": "market_size"
+                },
+                {
+                  "label": "India Defense Budget Growth",
+                  "value": "21",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "Defense Business Revenue Share Target",
+                  "value": "20-30",
+                  "unit": "%",
+                  "period": "2-3 years",
+                  "kind": "target"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Standalone Performance",
+                  "label": "Standalone Business Highlights",
                   "points": [
                     "Standalone revenues were up 7% sequentially to INR2,084 crores.",
-                    "EBITDA at INR569 crores, showing a growth of 4.6% QoQ with an EBITDA margin of 27.3%.",
-                    "Includes a tariff cost impact of INR31 crores.",
+                    "EBITDA at INR569 crores, showing a growth of 4.6% quarter on quarter.",
+                    "EBITDA margin was 27.3%, including a tariff cost impact of INR31 crores.",
                     "One-time impact of INR487 million due to changes in labor code."
                   ]
                 },
                 {
                   "label": "Consolidated Performance",
                   "points": [
-                    "Quarter three consolidated revenues came in at INR4,343 crores with an EBITDA margin of 17.3%.",
+                    "Consolidated revenues for Q3 were INR4,343 crores with an EBITDA margin of 17.3%.",
                     "For nine months, consolidated revenue was INR12,284 crores with an EBITDA margin of 17.5%."
                   ]
                 }
@@ -26779,7 +26911,7 @@
               "title": "Order Book & Demand",
               "key_figures": [
                 {
-                  "label": "New Business Secured",
+                  "label": "New Business Secured Last Quarter",
                   "value": "2,388",
                   "unit": "INR Crores",
                   "period": "Q3 FY26",
@@ -26818,8 +26950,8 @@
                 {
                   "label": "Order Book Highlights",
                   "points": [
-                    "In the last quarter, the company secured new business worth INR2,388 crores across all key businesses.",
-                    "This includes component business orders of INR378 crores, defense orders of INR1,878 crores, casting orders of INR78 crores, and K Drive orders of INR55 crores."
+                    "New business worth INR2,388 crores secured across key businesses.",
+                    "Defense orders amounted to INR1,878 crores."
                   ]
                 }
               ]
@@ -26832,7 +26964,7 @@
                   "label": "North American Truck Market Revenue Decline",
                   "value": "51",
                   "unit": "%",
-                  "period": "Q3 FY26",
+                  "period": "YoY Q3 FY26",
                   "kind": "reported"
                 },
                 {
@@ -26841,26 +26973,25 @@
                   "unit": "%",
                   "period": "Q3 FY26",
                   "kind": "reported"
-                }
-              ],
-              "subsections": [
+                },
                 {
-                  "label": "Segment Performance",
-                  "points": [
-                    "North American truck market revenues are down 51% compared to Q3 of last year.",
-                    "The industrial sector witnessed sharp 11% growth, mainly due to improved business in Oil and Gas and Aerospace."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "MFG",
-              "title": "Manufacturing & Capacity",
-              "key_figures": [
+                  "label": "Auto Sector Decline",
+                  "value": "13",
+                  "unit": "%",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
                 {
                   "label": "European Operations Utilization Levels",
                   "value": "60-65",
                   "unit": "%",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "European Operations EBITDA",
+                  "value": "39",
+                  "unit": "INR Crores",
                   "period": "Q3 FY26",
                   "kind": "reported"
                 },
@@ -26870,14 +27001,65 @@
                   "unit": "%",
                   "period": "Q3 FY26",
                   "kind": "reported"
+                },
+                {
+                  "label": "US Operations EBITDA",
+                  "value": "10",
+                  "unit": "INR Crores",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "American Axle Margin Growth",
+                  "value": "200",
+                  "unit": "basis points",
+                  "period": null,
+                  "kind": "reported"
                 }
               ],
               "subsections": [
                 {
+                  "label": "Segment Performance",
+                  "points": [
+                    "North American truck market revenues are down 51% YoY.",
+                    "Industrial sector witnessed 11% growth, driven by Oil and Gas, Aerospace.",
+                    "Auto sector was down 13%."
+                  ]
+                },
+                {
                   "label": "Overseas Subsidiaries",
                   "points": [
-                    "European operations were stable amidst patchy demand due to the holiday season, with utilization levels at 60% to 65%.",
-                    "US Aluminum had a stable quarter with a utilization level of about 65%."
+                    "European operations were stable with utilization levels at 60-65%.",
+                    "US Aluminum had a stable quarter with utilization at 65%."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MFG",
+              "title": "Manufacturing & Capacity",
+              "key_figures": [
+                {
+                  "label": "Specialty Steel Plant Capacity",
+                  "value": "700,000",
+                  "unit": "tons",
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "Bharat Forge Capex for Odisha Project",
+                  "value": "3,000",
+                  "unit": "INR Crores",
+                  "period": null,
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Capacity Expansion Plans",
+                  "points": [
+                    "Specialty steel plant by Kalyani Steel with a capacity of 700,000 tons.",
+                    "Bharat Forge plans to invest up to INR3,000 crores in the Odisha project."
                   ]
                 }
               ]
@@ -26905,8 +27087,8 @@
                 {
                   "label": "Strategic Investments",
                   "points": [
-                    "Premji Invest has taken a 23% stake in JSA at a valuation of INR1,300 crores.",
-                    "The acquisition of JSA has been successful, with the investment valued at three and a half to four times the purchase price."
+                    "Premji Invest took a 23% stake in JSA at a valuation of INR1,300 crores.",
+                    "The acquisition of JSA has been beneficial, with significant growth in value."
                   ]
                 }
               ]
@@ -26919,7 +27101,15 @@
                 {
                   "label": "Tariff Impact",
                   "points": [
-                    "The tariff on aluminum into the US is impacting profitability and demand in this business."
+                    "Tariff on aluminum into the US is impacting profitability and demand.",
+                    "The removal of the punitive 25% tariff has improved the competitive position."
+                  ]
+                },
+                {
+                  "label": "European Market Challenges",
+                  "points": [
+                    "European operations face challenges due to patchy demand and high costs.",
+                    "Restructuring of European steel business is being evaluated."
                   ]
                 }
               ]
@@ -26932,10 +27122,10 @@
                 {
                   "label": "Future Outlook",
                   "points": [
-                    "The CV sector for Q4 India looks very strong and may continue into the first half of next year.",
-                    "Exports seem to have bottomed out and should see a gradual improvement.",
-                    "Defense business is expected to see a 30%-40% growth next year.",
-                    "Aerospace segment is expected to see strong growth next year and the year after."
+                    "Defense business expected to grow by 30%-40% next year.",
+                    "Aerospace segment to see strong growth with new programs and capacities.",
+                    "CV sector in India looks strong for Q4 and may continue into the first half of next year.",
+                    "Exports have bottomed out and should see gradual improvement."
                   ]
                 }
               ]
@@ -26943,25 +27133,25 @@
           ],
           "guidance_ledger": [
             {
-              "metric": "Defense Revenue Growth",
+              "metric": "Defense Business Growth",
               "horizon": "next year",
-              "statement": "Defense business is expected to see a 30%-40% growth next year.",
+              "statement": "Defense business expected to grow by 30%-40% next year.",
               "specificity": "specific",
               "direction": "up",
-              "status": "reiterated"
+              "status": "raised"
             },
             {
-              "metric": "Aerospace Revenue Growth",
+              "metric": "Aerospace Segment Growth",
               "horizon": "next year",
-              "statement": "Aerospace segment is expected to see strong growth next year and the year after.",
+              "statement": "Aerospace segment to see strong growth next year.",
               "specificity": "vague",
               "direction": "up",
-              "status": "reiterated"
+              "status": "new"
             },
             {
-              "metric": "CV Sector Growth",
-              "horizon": "Q4 FY26 and H1 FY27",
-              "statement": "The CV sector for Q4 India looks very strong and may continue into the first half of next year.",
+              "metric": "CV Sector Outlook",
+              "horizon": "Q4 and first half of next year",
+              "statement": "CV sector in India looks strong for Q4 and may continue into the first half of next year.",
               "specificity": "vague",
               "direction": "up",
               "status": "new"
@@ -26969,21 +27159,29 @@
             {
               "metric": "Export Recovery",
               "horizon": "next year",
-              "statement": "Exports seem to have bottomed out and should see a gradual improvement.",
+              "statement": "Exports have bottomed out and should see gradual improvement.",
               "specificity": "vague",
               "direction": "up",
               "status": "new"
             },
             {
-              "metric": "North American Market Recovery",
-              "horizon": "Q4 FY26",
-              "statement": "CV exports should show signs of recovery by Q4.",
-              "specificity": "vague",
+              "metric": "Aerospace Revenue",
+              "horizon": "FY26",
+              "statement": "Aerospace revenue should exceed INR 350 crores this year.",
+              "specificity": "specific",
               "direction": "up",
               "status": "no_mention"
             },
             {
-              "metric": "American Axles Contribution to Topline",
+              "metric": "Fundraising for Growth",
+              "horizon": "FY26",
+              "statement": "Raising funds up to INR 2,000 crores for organic and inorganic growth in India.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "American Axles Contribution",
               "horizon": "FY26",
               "statement": "American Axles should add Rs. 1,000 crores to the consolidated topline for the year.",
               "specificity": "specific",
@@ -26995,58 +27193,64 @@
             {
               "risk": "Tariff Impact on US Aluminum Business",
               "status": "new",
-              "note": "The tariff on aluminum into the US is impacting profitability and demand in this business."
+              "note": "Tariff on aluminum into the US is impacting profitability and demand."
             },
             {
-              "risk": "Demand uncertainty in North America",
+              "risk": "European Market Challenges",
+              "status": "new",
+              "note": "European operations face challenges due to patchy demand and high costs."
+            },
+            {
+              "risk": "North American Market Uncertainty",
               "status": "no_mention",
-              "note": "Due to trade policies and constant changes."
+              "note": "Demand uncertainty due to trade policies and constant changes."
             },
             {
               "risk": "Tariff-related uncertainty",
               "status": "no_mention",
-              "note": "Tariffs are affecting competitiveness and causing Rs. 14 crores impact in Q1."
+              "note": "Tariff-related uncertainty is impacting global outlook and order inflows."
             }
           ],
           "themes": [
             {
-              "label": "Defense Sector Growth",
-              "direction": "positive",
-              "note": "Defense business is expected to see a 30%-40% growth next year with new orders and execution.",
-              "section_ref": "GUID"
-            },
-            {
-              "label": "Aerospace Expansion",
-              "direction": "positive",
-              "note": "Aerospace segment is expected to see strong growth next year and the year after.",
-              "section_ref": "GUID"
-            },
-            {
               "label": "Tariff Impact",
-              "direction": "negative",
-              "note": "The tariff on aluminum into the US is impacting profitability and demand.",
+              "direction": "mixed",
+              "note": "Tariff on aluminum into the US is impacting profitability and demand, but removal of punitive tariffs improves position.",
               "section_ref": "RISK"
             },
             {
-              "label": "Strategic Acquisitions",
+              "label": "Defense Orders",
               "direction": "positive",
-              "note": "Premji Invest's stake in JSA reflects successful strategic investment.",
-              "section_ref": "STRAT"
+              "note": "Defense business expected to grow significantly with new orders and opportunities.",
+              "section_ref": "ORD"
             },
             {
-              "label": "Manufacturing Utilization",
-              "direction": "neutral",
-              "note": "European operations and US Aluminum business have stable utilization levels.",
+              "label": "Aerospace Growth",
+              "direction": "positive",
+              "note": "Aerospace segment to see strong growth with new programs and capacities.",
+              "section_ref": "GUID"
+            },
+            {
+              "label": "Export Strategy",
+              "direction": "positive",
+              "note": "Exports have bottomed out and should see gradual improvement.",
+              "section_ref": "GUID"
+            },
+            {
+              "label": "Indian Manufacturing Expansion",
+              "direction": "positive",
+              "note": "Plans for significant investment in Odisha project and capacity expansion.",
               "section_ref": "MFG"
             }
           ],
           "key_takeaways": [
-            "Standalone revenues were up 7% sequentially to INR2,084 crores with an EBITDA margin of 27.3%.",
-            "North American truck market revenues are down 51% compared to Q3 of last year.",
-            "Premji Invest has taken a 23% stake in JSA at a valuation of INR1,300 crores.",
-            "The CV sector for Q4 India looks very strong and may continue into the first half of next year.",
-            "Defense business is expected to see a 30%-40% growth next year.",
-            "Aerospace segment is expected to see strong growth next year and the year after."
+            "Standalone revenues were up 7% sequentially to INR2,084 crores.",
+            "Consolidated revenues for Q3 were INR4,343 crores with an EBITDA margin of 17.3%.",
+            "New business worth INR2,388 crores secured across key businesses.",
+            "Defense business expected to grow by 30%-40% next year.",
+            "Premji Invest took a 23% stake in JSA at a valuation of INR1,300 crores.",
+            "Tariff on aluminum into the US is impacting profitability and demand.",
+            "European operations face challenges due to patchy demand and high costs."
           ],
           "pressing_questions": []
         },
@@ -27059,8 +27263,8 @@
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=500fea5f-8edb-4e4b-b877-16672e02b4ad.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-25T22:58:03.068Z",
-          "summary": "Bharat Forge anticipates a challenging near-term outlook due to demand uncertainty in North America but expects recovery in CV exports and growth in aerospace and defense sectors.",
+          "generated_at": "2026-07-30T05:50:59.302Z",
+          "summary": "Bharat Forge anticipates a challenging near-term outlook due to demand uncertainty in North America but expects growth in aerospace, defense, and JS Auto to offset declines. The company is focusing on expanding its Indian manufacturing capabilities and exploring inorganic growth opportunities.",
           "sections": [
             {
               "id": "FIN",
@@ -27074,10 +27278,10 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Standalone Revenue Growth",
+                  "label": "Standalone Revenue Growth QoQ",
                   "value": "-7.5",
                   "unit": "%",
-                  "period": "QoQ",
+                  "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
@@ -27095,10 +27299,10 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Standalone EBITDA Growth",
+                  "label": "Standalone EBITDA Growth QoQ",
                   "value": "-7.3",
                   "unit": "%",
-                  "period": "QoQ",
+                  "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
@@ -27135,23 +27339,78 @@
                   "unit": "INR Crores",
                   "period": "H1 FY26",
                   "kind": "reported"
+                },
+                {
+                  "label": "Standalone Revenue",
+                  "value": "4,052",
+                  "unit": "INR Crores",
+                  "period": "H1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Standalone EBITDA Margin",
+                  "value": "27.9",
+                  "unit": "%",
+                  "period": "H1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Tariff Charges",
+                  "value": "24",
+                  "unit": "INR Crores",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Defense Order Book",
+                  "value": "11,000",
+                  "unit": "INR Crores",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Carbine Order",
+                  "value": "1,400",
+                  "unit": "INR Crores",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Aerospace Revenue",
+                  "value": "250",
+                  "unit": "INR Crores",
+                  "period": "FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Aerospace Revenue",
+                  "value": "350",
+                  "unit": "INR Crores",
+                  "period": "FY26",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Defense Order",
+                  "value": "250",
+                  "unit": "INR Crores",
+                  "period": null,
+                  "kind": "reported"
                 }
               ],
               "subsections": [
                 {
                   "label": "Standalone Business Highlights",
                   "points": [
-                    "Standalone revenues were INR 1,947 crores, a QoQ degrowth of 7.5%.",
-                    "Standalone EBITDA was INR 545 crores with 28% margins, lower by 7.3% sequentially.",
-                    "Tariff charges accounted for INR 24 crores."
+                    "Standalone revenues were impacted by a rapid degrowth in the North American CV market and inventory destocking.",
+                    "Passenger vehicle and other industrial segments showed resilience, limiting the impact on profitability.",
+                    "Tariff charges accounted for INR 24 crores in the standalone EBITDA."
                   ]
                 },
                 {
                   "label": "Consolidated Performance",
                   "points": [
-                    "Quarterly consolidated revenues were INR 4,032 crores with EBITDA margins of 17.7%.",
-                    "H1 consolidated revenues were INR 7,941 crores with EBITDA margin of 17.6%.",
-                    "Cash on a consolidated basis was INR 2,300 crores."
+                    "Steady performance in overseas subsidiaries and strong execution in defense helped the bottomline.",
+                    "First-time consolidation of K Drive Mobility contributed to the quarterly numbers."
                   ]
                 }
               ]
@@ -27163,6 +27422,13 @@
                 {
                   "label": "New Business Secured",
                   "value": "1,582",
+                  "unit": "INR Crores",
+                  "period": "H1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bharat Forge Component and Industrial Business",
+                  "value": "823",
                   "unit": "INR Crores",
                   "period": "H1 FY26",
                   "kind": "reported"
@@ -27184,10 +27450,9 @@
               ],
               "subsections": [
                 {
-                  "label": "New Business Wins",
+                  "label": "Defense Order Book",
                   "points": [
-                    "The company secured new business worth INR 1,582 crores across key businesses.",
-                    "Defense business secured INR 559 crores, and casting business secured INR 200 crores."
+                    "The defense order book includes a carbine order worth INR 1,400 crores, to be executed over a 4-year period."
                   ]
                 }
               ]
@@ -27197,44 +27462,30 @@
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
-                  "label": "CV Exports to North America",
+                  "label": "CV Exports to North America QoQ",
                   "value": "-48",
-                  "unit": "%",
-                  "period": "QoQ",
-                  "kind": "reported"
-                },
-                {
-                  "label": "CV Exports to North America",
-                  "value": "-67",
-                  "unit": "%",
-                  "period": "YoY",
-                  "kind": "reported"
-                },
-                {
-                  "label": "European Aluminum Operations Utilization",
-                  "value": "60-65",
                   "unit": "%",
                   "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "European Aluminum Operations EBITDA",
+                  "label": "CV Exports to North America YoY",
+                  "value": "-67",
+                  "unit": "%",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "European Operations EBITDA",
                   "value": "32",
                   "unit": "INR Crores",
                   "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "US Aluminum Operations EBITDA",
+                  "label": "US Operations EBITDA",
                   "value": "16",
                   "unit": "INR Crores",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "US Aluminum Utilization",
-                  "value": "65",
-                  "unit": "%",
                   "period": "Q2 FY26",
                   "kind": "reported"
                 },
@@ -27251,28 +27502,27 @@
                   "unit": "%",
                   "period": "Q2 FY26",
                   "kind": "reported"
+                },
+                {
+                  "label": "BFISL margin expansion",
+                  "value": "14",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "North American CV Market Impact",
-                  "points": [
-                    "Rapid degrowth in North American CV market and inventory destocking impacted export performance.",
-                    "CV exports to North America were down 48% sequentially and 67% YoY."
-                  ]
-                },
-                {
-                  "label": "Overseas Subsidiaries Performance",
+                  "label": "Overseas Subsidiaries",
                   "points": [
                     "European aluminum operations were stable with utilization levels at 60%-65%.",
-                    "US aluminum operations had a benign quarter with EBITDA of INR 16 crores and utilization at 65%."
+                    "US aluminum operations had a benign quarter with a 65% utilization level."
                   ]
                 },
                 {
                   "label": "JS Auto Performance",
                   "points": [
-                    "JS Auto saw a sales growth of 26% and EBITDA growth of 44% in Q2.",
-                    "Continued growth and better topline and EBITDA performance expected in the second half."
+                    "JS Auto continues to receive strong business inquiries and traction in export markets."
                   ]
                 }
               ]
@@ -27283,10 +27533,10 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Integration and Restructuring",
+                  "label": "Indian Manufacturing",
                   "points": [
-                    "Integration of K Drive Mobility is on track.",
-                    "Evaluating restructuring options for European steel operations with updates expected by fiscal year-end."
+                    "Indian manufacturing, including forging, defense, casting, and axle aggregates, accounts for about two-thirds of consolidated revenues.",
+                    "The company is increasing capacities in India to address opportunities in new sectors, including aerospace and engineering."
                   ]
                 }
               ]
@@ -27294,21 +27544,13 @@
             {
               "id": "STRAT",
               "title": "Strategic Initiatives & M&A",
-              "key_figures": [
-                {
-                  "label": "Enabling Approval for Fund Raising",
-                  "value": "2,000",
-                  "unit": "INR Crores",
-                  "period": "FY26",
-                  "kind": "reported"
-                }
-              ],
+              "key_figures": [],
               "subsections": [
                 {
-                  "label": "Growth Strategy and Fund Raising",
+                  "label": "Acquisition and Growth Strategy",
                   "points": [
-                    "The company is raising funds through debt and NCDs for organic and inorganic growth in India.",
-                    "An enabling approval of up to INR 2,000 crores has been taken for this purpose."
+                    "The company is raising funds up to INR 2,000 crores for organic and inorganic growth in India.",
+                    "Focus is on expanding the Indian manufacturing portfolio and increasing content per customer."
                   ]
                 }
               ]
@@ -27316,10 +27558,46 @@
             {
               "id": "RISK",
               "title": "Risks & External Factors",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "Non-compete period in North America",
+                  "value": "5",
+                  "unit": "years",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "ATAG order execution period",
+                  "value": "3",
+                  "unit": "years",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "ATAG order delivery start year",
+                  "value": "2026",
+                  "unit": null,
+                  "period": "calendar year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ATAG order total guns to deliver",
+                  "value": "187",
+                  "unit": "guns",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "ATAG order delivery period",
+                  "value": "4",
+                  "unit": "years",
+                  "period": null,
+                  "kind": "reported"
+                }
+              ],
               "subsections": [
                 {
-                  "label": "Demand Uncertainty",
+                  "label": "North American Market Uncertainty",
                   "points": [
                     "Demand uncertainty in the North American market due to trade policies and constant changes."
                   ]
@@ -27334,15 +27612,14 @@
                 {
                   "label": "Outlook for Defense and Aerospace",
                   "points": [
-                    "Momentum in defense expected to pick up as execution improves.",
-                    "Aerospace expected to record strong growth over last year with new orders from global aero engine majors."
+                    "Momentum in defense is expected to pick up as execution improves.",
+                    "Aerospace is expected to record strong growth over last year with new orders from global aero engine majors."
                   ]
                 },
                 {
-                  "label": "Near-term Market Outlook",
+                  "label": "Near-term Outlook",
                   "points": [
-                    "Near-term outlook for the North American market remains uncertain, but recovery expected in CV exports.",
-                    "Multiple growth engines like aerospace, defense, and JS Auto expected to offset declines."
+                    "Q2 and Q3 are expected to be similar, with an uptick anticipated by Q4."
                   ]
                 }
               ]
@@ -27350,31 +27627,31 @@
           ],
           "guidance_ledger": [
             {
-              "metric": "Defense Revenue Growth",
-              "horizon": "next 2 years",
-              "statement": "Defense business expected to grow with new wins and execution starting for ATAGs and other orders.",
-              "specificity": "vague",
+              "metric": "Defense Business Execution",
+              "horizon": "next 3 years",
+              "statement": "ATAGs execution should start in about 6 to 9 months and continue ramping up.",
+              "specificity": "specific",
               "direction": "up",
               "status": "new"
             },
             {
               "metric": "Aerospace Revenue",
               "horizon": "FY26",
-              "statement": "Aerospace revenue expected to exceed INR 350 crores this year.",
+              "statement": "Aerospace revenue should exceed INR 350 crores this year.",
               "specificity": "specific",
               "direction": "up",
               "status": "raised"
             },
             {
-              "metric": "North American Market Recovery",
-              "horizon": "Q4 FY26",
-              "statement": "CV exports should show signs of recovery by Q4.",
-              "specificity": "vague",
+              "metric": "Fundraising for Growth",
+              "horizon": "FY26",
+              "statement": "Raising funds up to INR 2,000 crores for organic and inorganic growth in India.",
+              "specificity": "specific",
               "direction": "up",
               "status": "new"
             },
             {
-              "metric": "American Axles Contribution to Topline",
+              "metric": "American Axles Contribution",
               "horizon": "FY26",
               "statement": "American Axles should add Rs. 1,000 crores to the consolidated topline for the year.",
               "specificity": "specific",
@@ -27384,14 +27661,14 @@
           ],
           "risk_register": [
             {
-              "risk": "Demand uncertainty in North America",
+              "risk": "North American Market Uncertainty",
               "status": "new",
-              "note": "Due to trade policies and constant changes."
+              "note": "Demand uncertainty due to trade policies and constant changes."
             },
             {
               "risk": "Tariff-related uncertainty",
               "status": "no_mention",
-              "note": "Tariffs are affecting competitiveness and causing Rs. 14 crores impact in Q1."
+              "note": "Tariff-related uncertainty is impacting global outlook and order inflows."
             }
           ],
           "themes": [
@@ -27402,38 +27679,38 @@
               "section_ref": "FIN"
             },
             {
-              "label": "Defense Sector Growth",
+              "label": "Aerospace Growth",
               "direction": "positive",
-              "note": "Momentum in defense expected to pick up with new orders and execution improvements.",
+              "note": "Aerospace is expected to record strong growth with new orders from global aero engine majors.",
               "section_ref": "GUID"
             },
             {
-              "label": "Aerospace Expansion",
+              "label": "Defense Orders",
               "direction": "positive",
-              "note": "Aerospace expected to record strong growth with new orders from global aero engine majors.",
-              "section_ref": "GUID"
+              "note": "Defense order book includes significant new orders, with execution expected to ramp up.",
+              "section_ref": "ORD"
             },
             {
-              "label": "Manufacturing Utilization",
-              "direction": "neutral",
-              "note": "European and US aluminum operations had stable utilization levels.",
+              "label": "Export Strategy",
+              "direction": "mixed",
+              "note": "CV exports to North America declined significantly, but other industrial segments showed resilience.",
               "section_ref": "SEG"
             },
             {
-              "label": "Strategic Acquisitions",
+              "label": "Indian Manufacturing Expansion",
               "direction": "positive",
-              "note": "Fund raising for organic and inorganic growth in India with enabling approval of INR 2,000 crores.",
-              "section_ref": "STRAT"
+              "note": "Increasing capacities in India to address new sector opportunities, including aerospace and engineering.",
+              "section_ref": "MFG"
             }
           ],
           "key_takeaways": [
-            "Standalone revenues were INR 1,947 crores, a QoQ degrowth of 7.5%.",
-            "CV exports to North America were down 48% sequentially and 67% YoY.",
-            "Consolidated revenues were INR 4,032 crores with EBITDA margins of 17.7%.",
-            "The company secured new business worth INR 1,582 crores across key businesses.",
-            "Momentum in defense expected to pick up as execution improves.",
-            "Aerospace expected to record strong growth over last year with new orders from global aero engine majors.",
-            "Near-term outlook for the North American market remains uncertain, but recovery expected in CV exports."
+            "Standalone revenues were at INR 1,947 crores, a QoQ degrowth of 7.5%, impacted by North American CV market degrowth and inventory destocking.",
+            "Consolidated revenues for Q2 were INR 4,032 crores with EBITDA margins at 17.7%.",
+            "The company secured new business worth INR 1,582 crores across key segments in H1 FY26.",
+            "Defense order book includes a carbine order worth INR 1,400 crores, to be executed over 4 years.",
+            "Momentum in defense is expected to pick up as execution improves, with aerospace recording strong growth over last year.",
+            "The company is raising funds up to INR 2,000 crores for organic and inorganic growth in India.",
+            "Near-term outlook for North American market remains uncertain, but growth in aerospace, defense, and JS Auto is expected to offset declines."
           ],
           "pressing_questions": []
         },
@@ -27446,8 +27723,8 @@
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=274a3025-71f0-4682-a159-8813e92fd8c8.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-25T22:57:51.746Z",
-          "summary": "Bharat Forge anticipates a stronger second half of FY26, driven by improved aerospace growth and contributions from American Axles, despite current tariff challenges.",
+          "generated_at": "2026-07-30T05:50:37.723Z",
+          "summary": "Bharat Forge anticipates a stronger second half of FY26, driven by improved performance in aerospace and defense sectors, despite current challenges from tariffs and global uncertainties.",
           "sections": [
             {
               "id": "FIN",
@@ -27461,7 +27738,7 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Standalone Revenue Growth",
+                  "label": "Standalone Q1 Revenue Growth",
                   "value": "-2.7",
                   "unit": "%",
                   "period": "Q1 FY26",
@@ -27475,9 +27752,16 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Standalone EBITDA Growth",
+                  "label": "Standalone Q1 EBITDA Growth",
                   "value": "-6.5",
                   "unit": "%",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Tariff-related Expense",
+                  "value": "14",
+                  "unit": "crores",
                   "period": "Q1 FY26",
                   "kind": "reported"
                 },
@@ -27489,7 +27773,7 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Consolidated Revenue Growth",
+                  "label": "Consolidated Q1 Revenue Growth",
                   "value": "1.5",
                   "unit": "%",
                   "period": "QoQ",
@@ -27503,27 +27787,67 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Consolidated EBITDA Margin",
+                  "label": "Consolidated Q1 EBITDA Margin",
                   "value": "17.4",
                   "unit": "%",
                   "period": "Q1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Tariff-related Expense",
-                  "value": "14",
+                  "label": "Consolidated Q1 EBITDA Margin",
+                  "value": "6.1",
+                  "unit": "%",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EU Aluminum Operations EBITDA",
+                  "value": "33",
+                  "unit": null,
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "American Axles Consolidated Topline Contribution",
+                  "value": "1,000",
+                  "unit": "crores",
+                  "period": "FY26",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "JSA Q1 Revenue",
+                  "value": "149",
                   "unit": "crores",
                   "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bharat Forge Q1 Revenue",
+                  "value": "429",
+                  "unit": "crores",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Defense Q1 Revenue",
+                  "value": "269",
+                  "unit": "crores",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Artillery Order Book",
+                  "value": "4,000",
+                  "unit": "crores",
+                  "period": null,
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Revenue and EBITDA Performance",
+                  "label": "Tariff Impact",
                   "points": [
-                    "Standalone revenue decreased by 2.7% due to global automotive disruptions and seasonality in aerospace.",
-                    "Standalone EBITDA decreased by 6.5% due to low utilization and different product mix.",
-                    "Consolidated revenue increased by 1.5% QoQ, driven by better overseas profitability and reduced losses in Kalyani Powertrain."
+                    "The company absorbed Rs. 14 crores worth of tariff-related expenses in Q1."
                   ]
                 }
               ]
@@ -27540,26 +27864,25 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Defense Business Pipeline",
+                  "label": "Defense RFQ Pipeline",
                   "value": "9,000",
                   "unit": "crores",
-                  "period": "ongoing",
+                  "period": "FY26",
                   "kind": "reported"
                 },
                 {
                   "label": "Pending Defense Order",
                   "value": "1,400",
                   "unit": "crores",
-                  "period": "ongoing",
+                  "period": "FY26",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Order Inflows and Pipeline",
+                  "label": "Defense Business",
                   "points": [
-                    "Secured new business worth Rs. 850 crores across Bharat Forge, Defense, and JSA.",
-                    "Defense business has a strong pipeline with Rs. 9,000 crores and an additional Rs. 1,400 crores pending order."
+                    "The company has a strong RFQ pipeline in the defense sector, expecting some orders to be finalized this fiscal."
                   ]
                 }
               ]
@@ -27569,26 +27892,18 @@
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
-                  "label": "EU Aluminum Operations Utilization",
-                  "value": "70",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "U.S. Aluminum Business EBITDA Margin",
-                  "value": "6.1",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
+                  "label": "American Axles Contribution",
+                  "value": "1,000",
+                  "unit": "crores",
+                  "period": "FY26",
+                  "kind": "guidance"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Overseas Subsidiaries Performance",
+                  "label": "Aerospace Growth",
                   "points": [
-                    "EU aluminum operations were stable with 70% utilization and Rs. 33 crores EBITDA.",
-                    "U.S. aluminum business showed positive EBITDA for the second consecutive quarter with 6.1% margin."
+                    "Aerospace is expected to continue its 20% plus growth annually YOY."
                   ]
                 }
               ]
@@ -27597,6 +27912,13 @@
               "id": "MFG",
               "title": "Manufacturing & Capacity",
               "key_figures": [
+                {
+                  "label": "EU Aluminum Operations Utilization",
+                  "value": "70",
+                  "unit": "%",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
                 {
                   "label": "U.S. Aluminum Business Utilization",
                   "value": "70",
@@ -27607,9 +27929,9 @@
               ],
               "subsections": [
                 {
-                  "label": "Manufacturing Utilization",
+                  "label": "U.S. Aluminum Business",
                   "points": [
-                    "U.S. aluminum business utilization at 70% of Phase-1 volumes, contributing to positive EBITDA."
+                    "The U.S. aluminum business had a positive EBITDA with margins of 6.1% in Q1."
                   ]
                 }
               ]
@@ -27619,7 +27941,7 @@
               "title": "Geography & Distribution",
               "key_figures": [
                 {
-                  "label": "Exports to United States",
+                  "label": "Exports to U.S. from India",
                   "value": "33",
                   "unit": "%",
                   "period": "Q1 FY26",
@@ -27628,7 +27950,7 @@
               ],
               "subsections": [
                 {
-                  "label": "Export Distribution",
+                  "label": "Export Strategy",
                   "points": [
                     "One-third of exports from Indian manufacturing were to the United States in Q1."
                   ]
@@ -27636,35 +27958,35 @@
               ]
             },
             {
-              "id": "STRAT",
-              "title": "Strategic Initiatives & M&A",
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
               "key_figures": [
                 {
-                  "label": "American Axle India CV Assets Contribution",
-                  "value": "1,000",
-                  "unit": "crores",
-                  "period": "FY26",
-                  "kind": "guidance"
+                  "label": "Server Market Size",
+                  "value": "20,000",
+                  "unit": "units",
+                  "period": "year",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "Server Market Size",
+                  "value": "75,000",
+                  "unit": "units",
+                  "period": "year",
+                  "kind": "market_size"
                 }
               ],
-              "subsections": [
-                {
-                  "label": "Strategic Acquisitions",
-                  "points": [
-                    "Acquisition of American Axle India CV Assets to enhance India operations and add value-added products."
-                  ]
-                }
-              ]
+              "subsections": []
             },
             {
               "id": "RISK",
               "title": "Risks & External Factors",
               "key_figures": [
                 {
-                  "label": "Tariff Impact",
+                  "label": "Tariff Rate",
                   "value": "25",
                   "unit": "%",
-                  "period": "ongoing",
+                  "period": "Q1 FY26",
                   "kind": "reported"
                 }
               ],
@@ -27672,8 +27994,7 @@
                 {
                   "label": "Tariff Uncertainty",
                   "points": [
-                    "Tariff-related uncertainty is a significant challenge, with Rs. 14 crores absorbed in Q1.",
-                    "Tariffs are applicable at 25%, affecting competitiveness of Indian exports."
+                    "Tariff-related uncertainty is a significant challenge, impacting global outlook and order inflows."
                   ]
                 }
               ]
@@ -27686,16 +28007,15 @@
                   "label": "Aerospace Growth Expectation",
                   "value": "20",
                   "unit": "%",
-                  "period": "FY26",
+                  "period": "annually YOY",
                   "kind": "guidance"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Outlook for FY26",
+                  "label": "Second Half Outlook",
                   "points": [
-                    "Aerospace expected to grow over 20% annually YOY.",
-                    "American Axles expected to add Rs. 1,000 crores to consolidated topline for the year."
+                    "The second half of FY26 is expected to be better than the first half, driven by improved performance in aerospace and defense sectors."
                   ]
                 }
               ]
@@ -27703,70 +28023,70 @@
           ],
           "guidance_ledger": [
             {
-              "metric": "Aerospace Growth",
+              "metric": "American Axles Contribution",
               "horizon": "FY26",
-              "statement": "Aerospace should continue its 20% plus growth annually YOY.",
+              "statement": "American Axles should add Rs. 1,000 crores to the consolidated topline for the year.",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
             },
             {
-              "metric": "American Axles Contribution to Topline",
-              "horizon": "FY26",
-              "statement": "American Axles should add Rs. 1,000 crores to the consolidated topline for the year.",
+              "metric": "Aerospace Growth",
+              "horizon": "annually YOY",
+              "statement": "Aerospace should continue its 20% plus growth annually YOY.",
               "specificity": "specific",
               "direction": "up",
-              "status": "reiterated"
+              "status": "new"
             }
           ],
           "risk_register": [
             {
               "risk": "Tariff-related uncertainty",
               "status": "escalated",
-              "note": "Tariffs are affecting competitiveness and causing Rs. 14 crores impact in Q1."
+              "note": "Tariff-related uncertainty is impacting global outlook and order inflows."
             }
           ],
           "themes": [
             {
               "label": "Tariff Impact",
               "direction": "negative",
-              "note": "Tariffs are affecting competitiveness and causing financial impact.",
+              "note": "Tariff-related expenses and uncertainties are affecting performance and outlook.",
               "section_ref": "RISK"
             },
             {
-              "label": "Defense Sector Growth",
+              "label": "Aerospace Growth",
               "direction": "positive",
-              "note": "Strong pipeline with significant pending orders in defense sector.",
+              "note": "Aerospace sector expected to grow over 20% annually YOY.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Defense Orders",
+              "direction": "positive",
+              "note": "Strong RFQ pipeline in defense with expected order finalizations.",
               "section_ref": "ORD"
             },
             {
-              "label": "Aerospace Expansion",
+              "label": "U.S. Aluminum Business",
               "direction": "positive",
-              "note": "Aerospace expected to grow over 20% annually YOY.",
-              "section_ref": "GUID"
-            },
-            {
-              "label": "Manufacturing Utilization",
-              "direction": "positive",
-              "note": "High utilization rates in U.S. aluminum business contributing to positive EBITDA.",
+              "note": "Improved utilization and positive EBITDA in U.S. aluminum operations.",
               "section_ref": "MFG"
             },
             {
-              "label": "Strategic Acquisitions",
-              "direction": "positive",
-              "note": "Acquisition of American Axle India CV Assets to enhance India operations.",
-              "section_ref": "STRAT"
+              "label": "Export Strategy",
+              "direction": "neutral",
+              "note": "Significant portion of exports directed to the U.S. market.",
+              "section_ref": "GEO"
             }
           ],
           "key_takeaways": [
             "Q1 revenue for Bharat Forge on a standalone was Rs. 2,105 crores, down by 2.7%.",
             "Standalone EBITDA in Q1 was Rs. 588 crores, 6.5% lower due to low utilization and a different product mix.",
-            "Consolidated Q1 revenue was Rs. 3,909 crores, 1.5% higher quarter-on-quarter.",
-            "Consolidated EBITDA moved up to Rs. 682 crores, with a margin of 17.4%.",
-            "New business worth about Rs. 850 crores was secured during the quarter.",
-            "Tariff-related uncertainty is a significant challenge, with Rs. 14 crores absorbed in Q1.",
-            "Aerospace expected to grow over 20% annually YOY.",
-            "American Axles expected to add Rs. 1,000 crores to consolidated topline for the year."
+            "At a consolidated level, Q1 revenue was Rs. 3,909 crores, 1.5% higher quarter-on-quarter.",
+            "The company absorbed Rs. 14 crores worth of tariff-related expense in Q1.",
+            "The U.S. aluminum business had a positive EBITDA with margins of 6.1% in Q1.",
+            "One-third of exports from Indian manufacturing were to the United States in Q1.",
+            "Aerospace is expected to continue its 20% plus growth annually YOY.",
+            "American Axles should add Rs. 1,000 crores to the consolidated topline for the year."
           ],
           "pressing_questions": []
         }
