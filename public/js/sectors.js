@@ -878,8 +878,10 @@ function sectorMomentumCard(sec) {
     </table></div>`;
   // Say plainly that a just-started quarter is excluded, so a reader who knows a
   // company has already reported doesn't read the omission as missing data.
+  // NOTE: card() escapes `sub` itself — do NOT escape here or apostrophes in a
+  // quarter label ("Q3 '26") render as a literal &#39;.
   const sub = m.dropped
-    ? `How the sector has moved across the last ${m.buckets.length} reported quarters · ${escapeHtml(m.dropped.label)} is still in progress (${m.dropped.cos} of ${sec.companies.length} reported) and is excluded`
+    ? `How the sector has moved across the last ${m.buckets.length} reported quarters · ${m.dropped.label} is still in progress (${m.dropped.cos} of ${sec.companies.length} reported) and is excluded`
     : `How the sector has moved across the last ${m.buckets.length} quarters`;
   return card("Sector Momentum", "trending-up", "var(--grad-primary)", body, sub);
 }
