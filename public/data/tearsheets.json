@@ -19410,7 +19410,7 @@
       "ticker": "ASHOKLEY",
       "industry": "Commercial Vehicles",
       "country": "India",
-      "checked_at": "2026-07-22T20:02:59.471Z",
+      "checked_at": "2026-07-30T05:42:28.554Z",
       "quarters": [
         {
           "company": "Ashok Leyland Ltd",
@@ -20123,96 +20123,200 @@
           "ticker": "ASHOKLEY",
           "industry": "Commercial Vehicles",
           "country": "India",
-          "concall_date": "2026-02-01",
+          "concall_date": "2026-02-17",
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=410a36e5-83ff-4aec-9393-43663d6e0bd8.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-22T20:02:29.770Z",
-          "summary": "Ashok Leyland is optimistic about the CV industry's growth, driven by GST rationalization and infrastructure momentum, and is confident in its product innovation and market share gains.",
+          "generated_at": "2026-07-30T05:41:58.559Z",
+          "summary": "Ashok Leyland is optimistic about continued strong volume growth in the CV industry, driven by favorable macroeconomic conditions and a new replacement cycle.",
           "sections": [
             {
               "id": "FIN",
               "title": "Financial Performance",
               "key_figures": [
                 {
-                  "label": "Q3 Revenue",
+                  "label": "Revenue for Q3",
                   "value": "11,534",
                   "unit": "INR Crores",
-                  "period": "Q3 FY '26",
+                  "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Q3 EBITDA",
+                  "label": "Revenue growth",
+                  "value": "21.7",
+                  "unit": "%",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA for Q3",
                   "value": "1,535",
                   "unit": "INR Crores",
-                  "period": "Q3 FY '26",
+                  "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Q3 EBITDA Margin",
+                  "label": "EBITDA growth",
+                  "value": "26.7",
+                  "unit": "%",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin for Q3",
                   "value": "13.3",
                   "unit": "%",
-                  "period": "Q3 FY '26",
+                  "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Q3 PBT before exceptional items",
+                  "label": "EBITDA margin growth",
+                  "value": "50",
+                  "unit": "basis points",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PBT before exceptional items for Q3",
                   "value": "1,373",
                   "unit": "INR Crores",
-                  "period": "Q3 FY '26",
+                  "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Q3 PAT before exceptional items",
+                  "label": "PBT growth",
+                  "value": "38",
+                  "unit": "%",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT before exceptional items for Q3",
                   "value": "1,105",
                   "unit": "INR Crores",
-                  "period": "Q3 FY '26",
+                  "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Q3 Material Cost as % of Revenue",
+                  "label": "PAT growth",
+                  "value": "45",
+                  "unit": "%",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Material cost as a percentage of revenue for Q3",
                   "value": "72.2",
                   "unit": "%",
-                  "period": "Q3 FY '26",
+                  "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Q3 Capex",
+                  "label": "Capex for Q3",
                   "value": "186",
                   "unit": "INR Crores",
-                  "period": "Q3 FY '26",
+                  "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "9-month Capex",
+                  "label": "Capex for 9-month period",
                   "value": "844",
                   "unit": "INR Crores",
-                  "period": "9 months FY '26",
+                  "period": "9M FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Q3 Investments in Subsidiaries",
+                  "label": "Investments in subsidiaries for Q3",
                   "value": "16",
                   "unit": "INR Crores",
-                  "period": "Q3 FY '26",
+                  "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Net Cash Position",
+                  "label": "Net cash position at end of Q3",
                   "value": "2,619",
                   "unit": "INR Crores",
-                  "period": "Q3 FY '26",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net cash increase Y-o-Y",
+                  "value": "1,660",
+                  "unit": "INR Crores",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Reduction in staff costs",
+                  "value": "20",
+                  "unit": "INR Crores",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Wage code amount",
+                  "value": "308",
+                  "unit": "INR Crores",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Investment in OHM",
+                  "value": "300",
+                  "unit": "INR Crores",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Earmarked investment for OHM",
+                  "value": "300",
+                  "unit": "INR Crores",
+                  "period": "future",
+                  "kind": "target"
+                },
+                {
+                  "label": "HLFL standalone profit for Q3",
+                  "value": "130",
+                  "unit": "INR crores",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "HLFL standalone profit for Q3 last year",
+                  "value": "107-108",
+                  "unit": "INR crores",
+                  "period": "Q3 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Financial services segment profit for Q3 last year",
+                  "value": "231",
+                  "unit": "INR crores",
+                  "period": "Q3 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "AUM growth",
+                  "value": "20",
+                  "unit": "%",
+                  "period": null,
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Financial Highlights",
+                  "label": "Commodity Impact",
                   "points": [
-                    "Achieved all-time high Q3 revenue, EBITDA, EBITDA margin, PBT, and PAT.",
-                    "Material cost as a percentage of revenue for Q3 was 72.2%, higher by 70 basis points Y-o-Y.",
-                    "Capex for the quarter was INR186 crores and cumulatively INR844 crores for the 9-month period.",
-                    "Net cash position, net of debt, increased by more than INR1,660 crores Y-o-Y."
+                    "Material cost as a percentage of revenue for Q3 was 72.2%, higher by 70 basis points Y-o-Y and 100 basis points sequentially.",
+                    "Gross margin compression was due to product mix and escalations in nonferrous commodities like PGM, copper, and aluminium.",
+                    "Q3 suffered a 50 basis points impact due to commodity price increases."
+                  ]
+                },
+                {
+                  "label": "Cost Management",
+                  "points": [
+                    "Cost saving efforts continue with the same rigor while pushing for improvement in price realizations to recover commodity cost increases.",
+                    "Reduction in discounts is being used to mitigate commodity cost increases."
                   ]
                 }
               ]
@@ -20222,49 +20326,75 @@
               "title": "Order Book & Demand",
               "key_figures": [
                 {
-                  "label": "Domestic MHCV Truck Volume Growth",
-                  "value": "23.4",
+                  "label": "Domestic MHCV truck industry volume growth",
+                  "value": "24",
                   "unit": "%",
-                  "period": "Q3 FY '26",
+                  "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Domestic MHCV Market Share",
-                  "value": "30.9",
+                  "label": "Overall MHCV industry growth",
+                  "value": "21",
                   "unit": "%",
-                  "period": "YTD FY '26",
+                  "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Domestic LCV Volume Growth",
-                  "value": "30",
+                  "label": "LCV industry volume growth",
+                  "value": "23",
                   "unit": "%",
-                  "period": "Q3 FY '26",
+                  "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "LCV VAHAN Market Share",
-                  "value": "12.1",
-                  "unit": "%",
-                  "period": "Q3 FY '26",
+                  "label": "Domestic MHCV truck volume for Q3",
+                  "value": "27,615",
+                  "unit": "units",
+                  "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Exports Volume Growth",
+                  "label": "MHCV bus volume for Q3",
+                  "value": "5,314",
+                  "unit": "units",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Domestic LCV volume for Q3",
+                  "value": "20,518",
+                  "unit": "units",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Exports volume for Q3",
+                  "value": "4,965",
+                  "unit": "units",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Exports volume growth for Q3",
                   "value": "20",
                   "unit": "%",
-                  "period": "Q3 FY '26",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Exports volume growth for 9-month period",
+                  "value": "30",
+                  "unit": "%",
+                  "period": "9M FY26",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Demand Drivers",
+                  "label": "GST Impact",
                   "points": [
-                    "GST reset triggered a fresh CV replacement cycle, boosting demand.",
-                    "Domestic MHCV truck industry volume grew 24% in Q3.",
-                    "LCV industry volume grew by 23% in Q3.",
-                    "Exports volume for Q3 was higher by 20% Y-o-Y."
+                    "The GST reset triggered a fresh CV replacement cycle, lowering CV prices and boosting consumption and freight demand.",
+                    "Retail and bulk buyers showed strong volume growth due to GST rate rationalization."
                   ]
                 }
               ]
@@ -20274,34 +20404,97 @@
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
-                  "label": "Domestic MHCV Truck Volume",
-                  "value": "27,615",
-                  "unit": "units",
-                  "period": "Q3 FY '26",
+                  "label": "Domestic MHCV volume growth for Q3",
+                  "value": "23.4",
+                  "unit": "%",
+                  "period": "Q3 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Domestic MHCV Bus Volume",
-                  "value": "5,314",
-                  "unit": "units",
-                  "period": "Q3 FY '26",
+                  "label": "Domestic MHCV market share on YTD basis",
+                  "value": "30.9",
+                  "unit": "%",
+                  "period": "YTD FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Domestic LCV Volume",
-                  "value": "20,518",
-                  "unit": "units",
-                  "period": "Q3 FY '26",
+                  "label": "Domestic MHCV market share gain",
+                  "value": "60",
+                  "unit": "basis points",
+                  "period": "YTD FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "LCV VAHAN market share for Q3",
+                  "value": "12.1",
+                  "unit": "%",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "LCV VAHAN market share gain",
+                  "value": "70",
+                  "unit": "basis points",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Domestic LCV market share for 9-month period",
+                  "value": "12.7",
+                  "unit": "%",
+                  "period": "9M FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Domestic LCV market share gain",
+                  "value": "40",
+                  "unit": "basis points",
+                  "period": "9M FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Aftermarket revenue growth for Q3",
+                  "value": "10",
+                  "unit": "%",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Power Solutions revenue growth for Q3",
+                  "value": "45",
+                  "unit": "%",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Defense business revenue growth for Q3",
+                  "value": "84",
+                  "unit": "%",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "MAV segment growth",
+                  "value": "34",
+                  "unit": "%",
+                  "period": "Q3 FY26",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Segment Performance",
+                  "label": "Market Share Gains",
                   "points": [
-                    "Domestic MHCV volume growth was 23.4% Y-o-Y, better than industry growth.",
-                    "Domestic LCV volume for Q3 was higher by 30% Y-o-Y, beating industry growth.",
-                    "Non-CV businesses grew as per plan with aftermarket revenues higher by 10% Y-o-Y."
+                    "Ashok Leyland's domestic MHCV volume growth for the quarter was better than the industry growth, resulting in market share gains.",
+                    "LCV VAHAN market share for Q3 was at 12.1%, with a gain of 70 basis points Y-o-Y."
+                  ]
+                },
+                {
+                  "label": "Non-CV Business Growth",
+                  "points": [
+                    "Aftermarket revenues for Q3 were higher by 10% year-on-year.",
+                    "Revenue from Power Solutions business was higher by 45% year-on-year.",
+                    "Revenue from defense business was higher by 84% year-on-year."
                   ]
                 }
               ]
@@ -20309,14 +20502,36 @@
             {
               "id": "TECH",
               "title": "Product & Technology",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "New MHCV powertrain",
+                  "value": "320-360",
+                  "unit": "HP",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "New multi-axle vehicle powertrain",
+                  "value": "280",
+                  "unit": "HP",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
               "subsections": [
                 {
-                  "label": "Product Innovation",
+                  "label": "Product Launches",
                   "points": [
                     "Launched HIPPO tractor and TAURUS tipper range with industry-best power and torque.",
                     "Introduced new 4.1-ton Bada Dost with industry-best payload capacity.",
-                    "Product pipeline remains strong with many new products planned in the next 6 months."
+                    "Launched new 100 KMPH Bada Dost or Phoenix for IO markets."
+                  ]
+                },
+                {
+                  "label": "Greener Technologies",
+                  "points": [
+                    "Ashok Leyland is ready with products on greener technologies, such as CNG, LNG, and hydrogen.",
+                    "Two models of light electric trucks, three nodes of MHCV electric trucks, and several models and variants of electric buses are commercially available."
                   ]
                 }
               ]
@@ -20326,7 +20541,7 @@
               "title": "Manufacturing & Capacity",
               "key_figures": [
                 {
-                  "label": "Bus Body Building Capacity",
+                  "label": "Bus body building capacity",
                   "value": "20,000",
                   "unit": "units per year",
                   "period": "future",
@@ -20335,10 +20550,9 @@
               ],
               "subsections": [
                 {
-                  "label": "Manufacturing Expansion",
+                  "label": "New Plant Inauguration",
                   "points": [
-                    "Inaugurated a modern electric vehicle manufacturing plant built in 14 months.",
-                    "With the new Lucknow plant, bus body building capacity will soon reach 20,000 units per year."
+                    "Inaugurated a modern electric vehicle manufacturing plant built from ground zero in just 14 months."
                   ]
                 }
               ]
@@ -20348,19 +20562,34 @@
               "title": "Geography & Distribution",
               "key_figures": [
                 {
-                  "label": "International Market Expansion",
-                  "value": "4",
-                  "unit": "new territories",
-                  "period": "recent",
+                  "label": "Total network touch points at end of Q3 FY26",
+                  "value": "2,041",
+                  "unit": "touch points",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "MHCV touch points added during 9-month period",
+                  "value": "75",
+                  "unit": "touch points",
+                  "period": "9M FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "LCV touch points added during 9-month period",
+                  "value": "77",
+                  "unit": "touch points",
+                  "period": "9M FY26",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Geographical Expansion",
+                  "label": "International Expansion",
                   "points": [
-                    "Expanded network to 4 new territories internationally.",
-                    "Signed an MOU with PT Pindad of Indonesia for joint development of electric buses and defense vehicles."
+                    "Expanded network to 4 new territories.",
+                    "Signed an MOU with PT Pindad of Indonesia for joint development of electric buses and defense vehicles for the Indonesian market.",
+                    "Establishing ASEAN as the fourth home market outside India with distributor partners in Malaysia and Philippines."
                   ]
                 }
               ]
@@ -20371,24 +20600,10 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Service Reach",
+                  "label": "Service Network Expansion",
                   "points": [
-                    "Added 75 MHCV and 77 LCV touch points during the 9-month period.",
-                    "Ashok Leyland network has a total of 2,041 touch points at the end of Q3 FY '26."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "MKT",
-              "title": "Market & Customer Strategy",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Market Strategy",
-                  "points": [
-                    "Strong volume growth driven by GST rationalization and infrastructure momentum.",
-                    "Focus on product innovation for differentiation and premiumization."
+                    "Added 75 MHCV touch points and 77 LCV touch points during the 9-month period.",
+                    "45% of the MHCV touch point additions were in the North and Northeast."
                   ]
                 }
               ]
@@ -20399,10 +20614,12 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Strategic Partnerships",
+                  "label": "Subsidiary Performance",
                   "points": [
-                    "Signed an MOU with PT Pindad of Indonesia for joint development of electric buses and defense vehicles.",
-                    "Distributor partners lined up in Malaysia and Philippines to establish ASEAN as a fourth home market outside India."
+                    "Switch India sold 850 buses and about 1,200 ELCVs with positive EBITDA and PAT for the 9-month period.",
+                    "OHM is operating more than 1,400 electric buses, adding more than 300 buses to the operating fleet in Q3.",
+                    "Hinduja Leyland Finance stand-alone AUM was at INR56,470 crores, higher 18% Y-o-Y.",
+                    "Hinduja Housing Finance AUM was at INR15,454 crores, higher 16% Y-o-Y."
                   ]
                 }
               ]
@@ -20413,10 +20630,10 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Commodity Risks",
+                  "label": "Commodity Price Volatility",
                   "points": [
-                    "Material cost as a percentage of revenue increased due to product mix and escalations in nonferrous commodities.",
-                    "Commodity pressure continues to build up, impacting gross margins."
+                    "Escalations in nonferrous commodities like PGM, copper, and aluminium impacted gross margins.",
+                    "Commodity pressure may lead to future price hikes if it continues to build up."
                   ]
                 }
               ]
@@ -20427,10 +20644,10 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Outlook",
+                  "label": "Market Outlook",
                   "points": [
-                    "Confident of posting good volume growth in the coming quarters.",
-                    "Current environment is conducive to CV volume growth with favorable macros and pro-growth policies."
+                    "The company is confident that the current environment is conducive to CV volume growth with favorable macros and pro-growth policies.",
+                    "The GST reset is seen as a trigger for a new replacement cycle in the CV industry."
                   ]
                 }
               ]
@@ -20438,66 +20655,26 @@
           ],
           "guidance_ledger": [
             {
-              "metric": "CV Industry Growth",
-              "horizon": "FY '27",
-              "statement": "We are confident that this could be a start of a new replacement cycle in the CV industry.",
-              "specificity": "vague",
-              "direction": "up",
+              "metric": "Switch India Free Cash Flow",
+              "horizon": "FY27",
+              "statement": "Switch India is progressing well on its target of becoming free cash flow positive by FY '27.",
+              "specificity": "specific",
+              "direction": "flat",
               "status": "reiterated"
             },
             {
-              "metric": "Ashok Leyland Volumes and Margins",
-              "horizon": "FY '27",
-              "statement": "We believe that the industry is going to stay strong next year.",
-              "specificity": "vague",
-              "direction": "up",
-              "status": "reiterated"
-            },
-            {
-              "metric": "OHM Fleet Expansion",
+              "metric": "OHM Bus Operations",
               "horizon": "next 12 months",
               "statement": "OHM is progressing well on its target of operating 2,500 plus buses within the next 12 months.",
               "specificity": "specific",
-              "direction": "up",
-              "status": "lowered"
-            },
-            {
-              "metric": "Switch India Free Cash Flow",
-              "horizon": "FY '27",
-              "statement": "Switch India is progressing well on its target of becoming free cash flow positive by FY '27.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "no_mention"
-            },
-            {
-              "metric": "Export Volume",
-              "horizon": "FY '26",
-              "statement": "We are targeting about 18,000 units in the exports for this year.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "no_mention"
-            },
-            {
-              "metric": "Export Volume Mid-term Target",
-              "horizon": "next 3 years",
-              "statement": "Our mid-term target is going to be 25,000 units for exports.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "no_mention"
-            },
-            {
-              "metric": "CAPEX",
-              "horizon": "FY '26",
-              "statement": "CAPEX for the year is expected to be between Rs. 800 and Rs. 1,000 crores.",
-              "specificity": "specific",
               "direction": "flat",
-              "status": "no_mention"
+              "status": "reiterated"
             },
             {
               "metric": "Revenue Growth",
-              "horizon": "FY'26",
-              "statement": "Confident to post a double-digit revenue growth in FY'26.",
-              "specificity": "specific",
+              "horizon": "H2 FY26",
+              "statement": "Optimistic about growth prospects in the CV industry for both MHCV and LCV segments in H2 FY26.",
+              "specificity": "vague",
               "direction": "up",
               "status": "no_mention"
             },
@@ -20508,41 +20685,28 @@
               "specificity": "specific",
               "direction": "up",
               "status": "no_mention"
-            },
-            {
-              "metric": "OHM Bus Operations",
-              "horizon": "next 12 months",
-              "statement": "OHM is progressing well on its target of operating 2,500 plus buses within the next 12 months.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "no_mention"
             }
           ],
           "risk_register": [
             {
-              "risk": "Commodity Price Escalation",
+              "risk": "Commodity Price Volatility",
               "status": "new",
-              "note": "Material cost as a percentage of revenue increased due to product mix and escalations in nonferrous commodities."
+              "note": "Escalations in nonferrous commodities like PGM, copper, and aluminium impacted gross margins."
             },
             {
-              "risk": "Material cost volatility",
+              "risk": "Commodity Costs",
               "status": "no_mention",
-              "note": "Material cost as a percentage of revenue for Q2 was at 71.2% at the same level as same quarter last year, despite tariff volatilities and adoption of ACs in MHCV trucks."
-            },
-            {
-              "risk": "Input credit issue",
-              "status": "no_mention",
-              "note": "The issue of the input credit of course is there, but higher freight demand and price cut are larger factors."
-            },
-            {
-              "risk": "Commodity costs",
-              "status": "no_mention",
-              "note": "Commodity costs are expected to be better in Q3 than Q2, with no major concerns for Q4."
+              "note": "Material cost as a percentage of revenue for Q2 was at 71.2%, same as last year, despite tariff volatilities."
             },
             {
               "risk": "Material cost pressures from steel safeguard duty and tariff volatilities",
               "status": "no_mention",
-              "note": "Achieved cost savings and better price realization to mitigate."
+              "note": null
+            },
+            {
+              "risk": "Geopolitical uncertainties affecting home markets outside India",
+              "status": "no_mention",
+              "note": null
             },
             {
               "risk": "Geopolitical uncertainties in home markets outside India",
@@ -20555,41 +20719,39 @@
               "label": "Market Share Expansion",
               "direction": "positive",
               "note": "Ashok Leyland gained market share in both MHCV and LCV segments.",
-              "section_ref": "ORD"
+              "section_ref": "SEG"
             },
             {
               "label": "Product Innovation",
               "direction": "positive",
-              "note": "Launched new products with industry-best features, expanding product pipeline.",
+              "note": "Launched new products with industry-best power and torque, and expanded greener technology offerings.",
               "section_ref": "TECH"
             },
             {
               "label": "Capacity Expansion",
               "direction": "positive",
-              "note": "Inaugurated a new electric vehicle plant and expanded bus body building capacity.",
+              "note": "Inaugurated a new electric vehicle manufacturing plant and expanded bus body building capacity.",
               "section_ref": "MFG"
             },
             {
               "label": "Financial Performance",
               "direction": "positive",
-              "note": "Achieved all-time high Q3 revenue, EBITDA, and PAT with strong cash position.",
+              "note": "Achieved all-time high Q3 revenue, EBITDA, and PAT with strong growth across segments.",
               "section_ref": "FIN"
             },
             {
               "label": "Geopolitical and Commodity Risks",
               "direction": "mixed",
-              "note": "Commodity price escalations impacted gross margins, but strategic partnerships expanded international reach.",
+              "note": "Commodity price volatility impacted margins, but strategic initiatives are in place to mitigate.",
               "section_ref": "RISK"
             }
           ],
           "key_takeaways": [
-            "Ashok Leyland achieved its highest ever quarter 3 volumes, revenue, EBITDA, EBITDA margin, profit before tax and profit after tax.",
-            "The GST reset provided the much-needed trigger for fresh CV replacement cycle to kick in.",
-            "Domestic MHCV truck industry volume grew 24%, with overall MHCV industry growing by 21%.",
-            "Ashok Leyland domestic MHCV volume growth for the quarter was at 23.4% Y-o-Y and was better than the industry growth.",
-            "Our exports volume for Q3 at 4,965 units was higher by 20% Y-o-Y.",
-            "Revenue from Power Solutions business was higher by 45% year-on-year, and revenue from defense business was higher by 84% year-on-year.",
-            "Ashok Leyland recently launched the new range of heavy-duty trucks, HIPPO tractors and TAURUS tippers with industry-best power and torque."
+            "Ashok Leyland achieved its highest ever Q3 volumes, revenue, EBITDA, EBITDA margin, profit before tax, and profit after tax.",
+            "The GST reset provided a much-needed trigger for a fresh CV replacement cycle, significantly lowering CV prices and boosting consumption and freight demand.",
+            "Domestic MHCV volume growth for the quarter was at 23.4% Y-o-Y, better than the industry growth, resulting in market share gains.",
+            "Ashok Leyland recently launched HIPPO tractor and TAURUS tipper range with industry-best power and torque.",
+            "The company inaugurated a modern electric vehicle manufacturing plant built from ground zero in just 14 months."
           ],
           "pressing_questions": []
         },
@@ -20598,12 +20760,12 @@
           "ticker": "ASHOKLEY",
           "industry": "Commercial Vehicles",
           "country": "India",
-          "concall_date": "2025-11-01",
+          "concall_date": "2025-11-19",
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=19a3f6bd-e48c-4a48-9fbb-e727c5bbf7a8.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-22T20:02:10.307Z",
-          "summary": "Ashok Leyland remains optimistic about growth prospects in the CV industry for both MHCV and LCV segments, driven by GST rate cuts and infrastructure activity, with plans for new product launches to support volume and margin growth.",
+          "generated_at": "2026-07-30T05:41:29.964Z",
+          "summary": "Ashok Leyland remains optimistic about growth prospects in the CV industry for both MHCV and LCV segments in H2 FY26, driven by GST rate cuts and infrastructure activity.",
           "sections": [
             {
               "id": "FIN",
@@ -20613,267 +20775,165 @@
                   "label": "Revenue for Q2",
                   "value": "9,588",
                   "unit": "crores",
-                  "period": "Q2 FY '26",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue growth",
+                  "value": "9.3",
+                  "unit": "%",
+                  "period": "YoY",
                   "kind": "reported"
                 },
                 {
                   "label": "EBITDA for Q2",
                   "value": "1,162",
                   "unit": "crores",
-                  "period": "Q2 FY '26",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA growth",
+                  "value": "14.2",
+                  "unit": "%",
+                  "period": "YoY",
                   "kind": "reported"
                 },
                 {
                   "label": "PBT for Q2",
                   "value": "1,043",
                   "unit": "crores",
-                  "period": "Q2 FY '26",
+                  "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
                   "label": "PAT for Q2",
                   "value": "771",
                   "unit": "crores",
-                  "period": "Q2 FY '26",
+                  "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
                   "label": "EBITDA margin for Q2",
                   "value": "12.1",
                   "unit": "%",
-                  "period": "Q2 FY '26",
+                  "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
                   "label": "CAPEX for Q2",
                   "value": "417",
                   "unit": "crores",
-                  "period": "Q2 FY '26",
+                  "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
                   "label": "CAPEX for H1",
                   "value": "658",
                   "unit": "crores",
-                  "period": "H1 FY '26",
+                  "period": "H1 FY26",
                   "kind": "reported"
                 },
                 {
                   "label": "Cash position net of debt",
                   "value": "1,000",
                   "unit": "crores",
-                  "period": "end of Q2 FY '26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Interim dividend",
-                  "value": "1",
-                  "unit": "INR per share",
-                  "period": "FY '26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Material cost as a percentage of revenue for Q2",
-                  "value": "71.2",
-                  "unit": "%",
-                  "period": "Q2 FY '26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Cash position improvement",
-                  "value": "1,500",
-                  "unit": "crores",
-                  "period": "Y-o-Y",
+                  "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
                   "label": "Operating capital reduction",
                   "value": "50",
                   "unit": "%",
-                  "period": "Y-o-Y",
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Interim dividend",
+                  "value": "1",
+                  "unit": "INR per share",
+                  "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
                   "label": "ROCE",
                   "value": "34",
                   "unit": "%",
-                  "period": "FY '25",
+                  "period": "FY25",
                   "kind": "reported"
                 },
                 {
                   "label": "ROE",
                   "value": "32.5",
                   "unit": "%",
-                  "period": "FY '25",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Financial Highlights",
-                  "points": [
-                    "Revenue for Q2 was at Rs. 9,588 crores, higher by 9.3% on Y-o-Y basis.",
-                    "EBITDA was at Q2 record level at Rs. 1,162 crores, higher by 14.2% Y-o-Y.",
-                    "Q2 PBT was also at record levels at Rs. 1,043 crores.",
-                    "PAT for Q2 was at Rs. 771 crores.",
-                    "EBITDA margin for the quarter was at 12.1%, higher by 50 basis points against Q2 of last year.",
-                    "CAPEX for the quarter was Rs. 417 crores and cumulatively Rs. 658 crores for H1.",
-                    "Cash position net of debt continues to be positive at the end of Q2 at roughly Rs. 1,000 crores, reflecting a positive swing of roughly Rs. 1,500 crores on Y-o-Y basis.",
-                    "The Board of Ashok Leyland has recommended an interim dividend of INR 1 per share.",
-                    "Material cost as a percentage of revenue for Q2 was at 71.2% at the same level as same quarter last year.",
-                    "Our cash position net of debt continues to be positive at the end of Q2 at roughly Rs. 1,000 crores, reflecting a positive swing of roughly Rs. 1,500 crores on Y-o-Y basis.",
-                    "We have been able to keep our operating capital very lean and have brought it down by almost 50% on Y-o-Y basis.",
-                    "ROCE was at about 34% last year and return on equity is about 32.5%."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "ORD",
-              "title": "Order Book & Demand",
-              "key_figures": [
-                {
-                  "label": "Domestic MHCV truck volume for Q2",
-                  "value": "21,647",
-                  "unit": "units",
-                  "period": "Q2 FY '26",
+                  "period": "FY25",
                   "kind": "reported"
                 },
                 {
-                  "label": "MHCV bus volume for Q2",
-                  "value": "4,660",
-                  "unit": "units",
-                  "period": "Q2 FY '26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Domestic MHCV market share for H1",
-                  "value": "31",
-                  "unit": "%",
-                  "period": "H1 FY '26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "LCV domestic volume for Q2",
-                  "value": "17,697",
-                  "unit": "units",
-                  "period": "Q2 FY '26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "LCV Vahan market share at the end of H1",
-                  "value": "13.2",
-                  "unit": "%",
-                  "period": "H1 FY '26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Exports volume for Q2",
-                  "value": "4,784",
-                  "unit": "units",
-                  "period": "Q2 FY '26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Exports volume for H1",
-                  "value": "38",
-                  "unit": "%",
-                  "period": "H1 FY '26",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Order Book & Demand Highlights",
-                  "points": [
-                    "Domestic MHCV truck volume for Q2 was at 21,647 units and MHCV bus volume at 4,660 units.",
-                    "In H1, Ashok Leyland's domestic MHCV market share was at 31%, with a gain of 50 basis points over H1 of last year.",
-                    "The LCV domestic volume for Q2 was at 17,697 units, higher by 6.4% on Y-o-Y basis.",
-                    "LCV Vahan market share at the end of H1 stood at 13.2%, higher by 0.9% on Y-o-Y basis.",
-                    "Our exports volume for Q2 at 4,784 units were higher by 45% Y-o-Y.",
-                    "For H1 FY '26, export volume was higher by 38%."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "SEG",
-              "title": "Segment & Product Performance",
-              "key_figures": [
-                {
-                  "label": "Aftermarket revenues for Q2",
+                  "label": "Aftermarket revenue growth for Q2",
                   "value": "11",
                   "unit": "%",
-                  "period": "Y-o-Y",
+                  "period": "YoY",
                   "kind": "reported"
                 },
                 {
-                  "label": "Revenue from power solutions business",
+                  "label": "Revenue growth from power solutions business for Q2",
                   "value": "14",
                   "unit": "%",
-                  "period": "Y-o-Y",
+                  "period": "YoY",
                   "kind": "reported"
                 },
                 {
-                  "label": "Revenue from defense business",
+                  "label": "Revenue growth from defense business for Q2",
                   "value": "25",
                   "unit": "%",
-                  "period": "Y-o-Y",
+                  "period": "YoY",
                   "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Segment Performance",
-                  "points": [
-                    "Our non-CV businesses also grew as per plan.",
-                    "The aftermarket revenues for Q2 were higher 11% Y-o-Y.",
-                    "Revenue from power solutions business was higher by 14% Y-o-Y.",
-                    "Revenue from defense business was higher by 25% Y-o-Y.",
-                    "Defense order book and tender wind pipeline remains quite strong."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "TECH",
-              "title": "Product & Technology",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Product Development",
-                  "points": [
-                    "Our product development pipeline is stronger than ever.",
-                    "Our non-diesel portfolio is continuously expanding, with two models of light electric trucks, three models of MHCV electric trucks and several models and variants of electric buses already available commercially.",
-                    "We have also forayed into other greener technologies such as CNG, LNG and even hydrogen.",
-                    "Within the diesel range, we are preparing to soon launch a completely new range of heavy-duty trucks with power ratings of 320 and 360 horsepower.",
-                    "These new trucks are built with next-level of heavy-duty aggregates, delivering unmatched reliability.",
-                    "These products would be fitted with our most modern 6-cylinder engines, delivering highest peak torque in the respective segments, enabling our customer’s best-in-class turnaround time and therefore more earnings per month.",
-                    "We are also working on improving the throughput of our R&D resources, which will help us reduce the time to market and respond quickly to the changing market and regulatory requirements."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "MFG",
-              "title": "Manufacturing & Capacity",
-              "key_figures": [
-                {
-                  "label": "Bus body-building capacity after ramp-up",
-                  "value": "20,000",
-                  "unit": "units per year",
-                  "period": "post ramp-up",
-                  "kind": "target"
                 },
                 {
-                  "label": "Current bus body-building capacity",
-                  "value": "12,000",
-                  "unit": "units per year",
+                  "label": "Material cost as a percentage of revenue for Q2",
+                  "value": "71.2",
+                  "unit": "%",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cash position net of debt improvement",
+                  "value": "1,500",
+                  "unit": null,
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Break-even volume for MHCV trucks",
+                  "value": "1,000-1,200",
+                  "unit": "units/month",
                   "period": "current",
                   "kind": "reported"
                 },
                 {
-                  "label": "Current LCV capacity",
+                  "label": "Break-even volume for MHCV trucks (previous)",
+                  "value": "6,000-7,000",
+                  "unit": "units/month",
+                  "period": "previous",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Domestic truck business revenue share FY '22",
+                  "value": "60",
+                  "unit": "%",
+                  "period": "FY22",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Domestic truck business revenue share current",
+                  "value": "51",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "LCV capacity",
                   "value": "80,000",
                   "unit": "units",
                   "period": "current",
@@ -20884,6 +20944,206 @@
                   "value": "110,000-120,000",
                   "unit": "units",
                   "period": "future",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Average age of fleet",
+                  "value": "9.5-10.5",
+                  "unit": "years",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "LCV sales in 2-4 ton category",
+                  "value": "6,000",
+                  "unit": "units/month",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "SAATHI sales as percentage of LCV sales",
+                  "value": "22-25",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Hinduja Housing Finance funding",
+                  "value": "16,000",
+                  "unit": "crores",
+                  "period": null,
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Cost Management",
+                  "points": [
+                    "Material cost as a percentage of revenue for Q2 was at 71.2%, same as last year.",
+                    "Cost savings efforts continue with focus on better price realizations."
+                  ]
+                },
+                {
+                  "label": "Cash Management",
+                  "points": [
+                    "Net cash position improved by Rs. 1,500 crores YoY.",
+                    "Operating working capital reduced significantly, with Rs. 500 crore reduction in receivables."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ORD",
+              "title": "Order Book & Demand",
+              "key_figures": [
+                {
+                  "label": "MHCV industry growth in Q2",
+                  "value": "4",
+                  "unit": "%",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "LCV industry growth in 2-4 ton category",
+                  "value": "13",
+                  "unit": "%",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "MHCV industry growth in October",
+                  "value": "7",
+                  "unit": "%",
+                  "period": "October 2025",
+                  "kind": "reported"
+                },
+                {
+                  "label": "LCV industry growth in October",
+                  "value": "15",
+                  "unit": "%",
+                  "period": "October 2025",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Exports volume last year",
+                  "value": "15,000",
+                  "unit": null,
+                  "period": "last year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Exports volume target",
+                  "value": "25,000",
+                  "unit": null,
+                  "period": "next 3 years",
+                  "kind": "target"
+                },
+                {
+                  "label": "Exports volume growth target",
+                  "value": "20",
+                  "unit": "%",
+                  "period": "next 3 years",
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "GST Impact",
+                  "points": [
+                    "GST 2.0 reduced truck and bus costs by 10%, boosting demand.",
+                    "Higher freight demand expected due to GST rate reduction in goods."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "Domestic MHCV truck volume for Q2",
+                  "value": "21,647",
+                  "unit": "units",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Domestic MHCV bus volume for Q2",
+                  "value": "4,660",
+                  "unit": "units",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Domestic MHCV market share for H1",
+                  "value": "31",
+                  "unit": "%",
+                  "period": "H1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "LCV domestic volume for Q2",
+                  "value": "17,697",
+                  "unit": "units",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "LCV Vahan market share for H1",
+                  "value": "13.2",
+                  "unit": "%",
+                  "period": "H1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Exports volume for Q2",
+                  "value": "4,784",
+                  "unit": "units",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Exports volume growth for Q2",
+                  "value": "45",
+                  "unit": "%",
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Exports volume growth for H1",
+                  "value": "38",
+                  "unit": "%",
+                  "period": "YoY",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Non-CV Business Growth",
+                  "points": [
+                    "Aftermarket revenues for Q2 were higher by 11% YoY.",
+                    "Revenue from power solutions business was higher by 14% YoY.",
+                    "Revenue from defense business was higher by 25% YoY."
+                  ]
+                },
+                {
+                  "label": "Product Development",
+                  "points": [
+                    "Non-diesel portfolio expanding with electric trucks and buses.",
+                    "New heavy-duty trucks with 320 and 360 horsepower to be launched soon."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MFG",
+              "title": "Manufacturing & Capacity",
+              "key_figures": [
+                {
+                  "label": "Bus body-building capacity post expansion",
+                  "value": "20,000",
+                  "unit": "units per year",
+                  "period": "future",
                   "kind": "target"
                 }
               ],
@@ -20891,13 +21151,8 @@
                 {
                   "label": "Capacity Expansion",
                   "points": [
-                    "We are continuously augmenting our fully-built bus capacity to cater to the growing demand of fully-built buses.",
-                    "Our newest and most modern bus plant at Lucknow shall be inaugurated soon.",
-                    "After complete ramp-up of our AP and Lucknow plants, we shall reach bus body-building capacity of 20,000 numbers-plus per year from that of roughly 12,000 numbers at present.",
-                    "As far as the capacity is concerned, our current capacity is close to 80,000 units on the light commercial vehicles.",
-                    "We have already laid out a plan to increase this capacity to 110,000-120,000 units without much of an investment.",
-                    "Mainly these are process changes and some small investments here or there, but largely leading through process changes and efficiency changes.",
-                    "No more floor area expansion, no more new buildings, etc."
+                    "Fully-built bus capacity being augmented with new plant at Lucknow.",
+                    "AP and Lucknow plants ramp-up to increase bus capacity from 12,000 to 20,000 units per year."
                   ]
                 }
               ]
@@ -20907,90 +21162,26 @@
               "title": "Geography & Distribution",
               "key_figures": [
                 {
-                  "label": "Total touchpoints",
-                  "value": "2,000",
-                  "unit": "touchpoints",
-                  "period": "current",
-                  "kind": "reported"
-                },
-                {
-                  "label": "MHCV touchpoints",
+                  "label": "Total touchpoints for MHCV",
                   "value": "1,100",
-                  "unit": "touchpoints",
-                  "period": "current",
+                  "unit": "points",
+                  "period": "Q2 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "LCV touchpoints",
+                  "label": "Total touchpoints for LCV",
                   "value": "876",
-                  "unit": "touchpoints",
-                  "period": "current",
+                  "unit": "points",
+                  "period": "Q2 FY26",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Geographical Expansion",
+                  "label": "Network Expansion",
                   "points": [
-                    "We also continue to expand our domestic network.",
-                    "We added 27 MHCV points and 26 LCV touchpoints during the quarter, with most of the additions happening in northeast and the central areas.",
-                    "With these additions, total touchpoints are about to touch the milestone number of 2,000, that is 1,100 for MHCV and 876 for LCV.",
-                    "Internationally as well, we are expanding our network in all our four home markets with SAARC, Africa, GCC and ASEAN."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "SUP",
-              "title": "Supply Chain & Operations",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Supply Chain Management",
-                  "points": [
-                    "We have been able to keep our operating capital very lean and have brought it down by almost 50% on Y-o-Y basis.",
-                    "We are running several projects on better cash management, cost management.",
-                    "We believe there is still a lot of potential left even in inventory ratios, inventory turnover, receivables, there is a lot more juice that is left."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "MKT",
-              "title": "Market & Customer Strategy",
-              "key_figures": [
-                {
-                  "label": "Non-truck revenue share",
-                  "value": "50",
-                  "unit": "%",
-                  "period": "current",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Domestic truck revenue share in FY '22",
-                  "value": "60",
-                  "unit": "%",
-                  "period": "FY '22",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Domestic truck revenue share now",
-                  "value": "51",
-                  "unit": "%",
-                  "period": "current",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Market Strategy",
-                  "points": [
-                    "Roughly 50% of the revenue comes from the non-truck businesses.",
-                    "With buses, about 13%; light commercial vehicles, about 12%; spares, about 10% and exports, about 7%-8%.",
-                    "The margins from these businesses are higher than the domestic truck margins.",
-                    "The share of domestic truck business was 60% in FY '22, now it has moved to 51%.",
-                    "Our break-even volume we have been able to reduce drastically.",
-                    "Break-even volume when considered in terms of the units we have to sell for MHCV trucks used to be about 6,000-7,000 units a month, now it has dropped to more or less closer to 1,000-1,200 units a month."
+                    "Added 27 MHCV points and 26 LCV touchpoints during the quarter.",
+                    "Expanding network in SAARC, Africa, GCC, and ASEAN regions."
                   ]
                 }
               ]
@@ -20998,22 +21189,77 @@
             {
               "id": "STRAT",
               "title": "Strategic Initiatives & M&A",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "Switch India bus sales for H1",
+                  "value": "600",
+                  "unit": "buses",
+                  "period": "H1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Switch India e-LCV sales for H1",
+                  "value": "600",
+                  "unit": "e-LCVs",
+                  "period": "H1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "OHM electric buses in operation",
+                  "value": "1,100",
+                  "unit": "buses",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "OHM fleet addition during the quarter",
+                  "value": "250",
+                  "unit": "buses",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Hinduja Leyland Finance AUM",
+                  "value": "52,635",
+                  "unit": "crores",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Hinduja Housing Finance AUM",
+                  "value": "14,903",
+                  "unit": "crores",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Finance subsidiaries PAT for Q2",
+                  "value": "196",
+                  "unit": "crores",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Finance subsidiaries book value",
+                  "value": "7,418",
+                  "unit": "crores",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "NNPA on a consolidated basis",
+                  "value": "1.59",
+                  "unit": "%",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                }
+              ],
               "subsections": [
                 {
-                  "label": "Strategic Initiatives",
+                  "label": "Subsidiary Performance",
                   "points": [
-                    "Ashok Leyland also took a milestone decision to foray into the battery manufacturing business, giving shape to its long-term strategic plans.",
-                    "Switch India continues to do well. For H1 FY '26, Switch India sold close to 600 buses and 600 e-LCVs.",
-                    "Switch India is progressing well on its target of becoming free cash flow positive by FY '27.",
-                    "OHM, our eMaaS subsidiary is now operating more than 1,100 electric buses with fleet availability of 98% plus.",
-                    "OHM is working diligently on the 10,000 plus PME drive tender to further add to the growing fleet.",
-                    "Hinduja Leyland Finance, standalone AUM, was at Rs. 52,635 crores, higher by 26% on Y-o-Y basis.",
-                    "Hinduja Housing Finance AUM was at Rs. 14,903 crores, higher 20% Y-o-Y.",
-                    "Total PAT for the finance subsidiaries for Q2 was at Rs. 196 crores and the book value at the end of the quarter was at Rs. 7,418 crores.",
-                    "HLF has received the final clearance from RBI to initiate a merger process with NXT Digital, paving the way for its listing.",
-                    "We have now signed four franchisee partners for AL HARIT, our platform for RVSF or Registered Vehicle Scrappage Facilities.",
-                    "We have progressed really well in our commitment towards RE100, achieving 84% RE status, with our Tamil Nadu plants operating now close to 98% RE."
+                    "Switch India was both EBITDA and PAT positive for H1 FY26.",
+                    "OHM is progressing on its target of operating 2,500 plus buses within the next 12 months."
                   ]
                 }
               ]
@@ -21024,11 +21270,9 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Risks & External Factors",
+                  "label": "Commodity Costs",
                   "points": [
-                    "Material cost as a percentage of revenue for Q2 was at 71.2% at the same level as same quarter last year, despite tariff volatilities and adoption of ACs in MHCV trucks.",
-                    "The issue of the input credit of course is there, but higher freight demand and price cut are larger factors.",
-                    "Commodity costs are expected to be better in Q3 than Q2, with no major concerns for Q4."
+                    "Material cost as a percentage of revenue for Q2 was at 71.2%, same as last year, despite tariff volatilities."
                   ]
                 }
               ]
@@ -21039,17 +21283,10 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Guidance & Outlook",
+                  "label": "Growth Prospects",
                   "points": [
-                    "For the second half of the current fiscal, we remain optimistic about the growth prospects of the CV industry for both MHCV and LCV segments.",
-                    "We remain confident of posting decent volumes and margin uptrend for Ashok Leyland in the second half of the year.",
-                    "Switch India is progressing well on its target of becoming free cash flow positive by FY '27.",
-                    "OHM is working diligently on the 10,000 plus PME drive tender to further add to the growing fleet.",
-                    "We are targeting about 18,000 units in the exports for this year.",
-                    "Our mid-term target is going to be 25,000 units for exports.",
-                    "CAPEX for the year is expected to be between Rs. 800 and Rs. 1,000 crores.",
-                    "We are pursuing our CAPEX expenditure plan relating to the center of excellence and higher horsepower engine nodes development.",
-                    "We have also gone ahead and purchased a piece of land next to our corporate office building for future expansion."
+                    "Optimistic about growth prospects in the CV industry for both MHCV and LCV segments in H2 FY26.",
+                    "LCV segment expected to benefit from GST rate cuts."
                   ]
                 }
               ]
@@ -21057,68 +21294,28 @@
           ],
           "guidance_ledger": [
             {
-              "metric": "CV Industry Growth",
-              "horizon": "H2 FY '26",
-              "statement": "We remain optimistic about the growth prospects of the CV industry for both MHCV and LCV segments.",
+              "metric": "Revenue Growth",
+              "horizon": "H2 FY26",
+              "statement": "Optimistic about growth prospects in the CV industry for both MHCV and LCV segments in H2 FY26.",
               "specificity": "vague",
               "direction": "up",
-              "status": "new"
-            },
-            {
-              "metric": "Ashok Leyland Volumes and Margins",
-              "horizon": "H2 FY '26",
-              "statement": "We remain confident of posting decent volumes and margin uptrend for Ashok Leyland in the second half of the year.",
-              "specificity": "vague",
-              "direction": "up",
-              "status": "new"
+              "status": "reiterated"
             },
             {
               "metric": "Switch India Free Cash Flow",
-              "horizon": "FY '27",
+              "horizon": "FY27",
               "statement": "Switch India is progressing well on its target of becoming free cash flow positive by FY '27.",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
             },
             {
-              "metric": "OHM Fleet Expansion",
+              "metric": "OHM Bus Operations",
               "horizon": "next 12 months",
-              "statement": "OHM is working diligently on the 10,000 plus PME drive tender to further add to the growing fleet.",
+              "statement": "OHM is progressing well on its target of operating 2,500 plus buses within the next 12 months.",
               "specificity": "specific",
               "direction": "up",
-              "status": "new"
-            },
-            {
-              "metric": "Export Volume",
-              "horizon": "FY '26",
-              "statement": "We are targeting about 18,000 units in the exports for this year.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "new"
-            },
-            {
-              "metric": "Export Volume Mid-term Target",
-              "horizon": "next 3 years",
-              "statement": "Our mid-term target is going to be 25,000 units for exports.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "new"
-            },
-            {
-              "metric": "CAPEX",
-              "horizon": "FY '26",
-              "statement": "CAPEX for the year is expected to be between Rs. 800 and Rs. 1,000 crores.",
-              "specificity": "specific",
-              "direction": "flat",
-              "status": "new"
-            },
-            {
-              "metric": "Revenue Growth",
-              "horizon": "FY'26",
-              "statement": "Confident to post a double-digit revenue growth in FY'26.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "no_mention"
+              "status": "reiterated"
             },
             {
               "metric": "Switch India PAT Status",
@@ -21127,36 +21324,23 @@
               "specificity": "specific",
               "direction": "up",
               "status": "no_mention"
-            },
-            {
-              "metric": "OHM Bus Operations",
-              "horizon": "next 12 months",
-              "statement": "OHM is progressing well on its target of operating 2,500 plus buses within the next 12 months.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "no_mention"
             }
           ],
           "risk_register": [
             {
-              "risk": "Material cost volatility",
+              "risk": "Commodity Costs",
               "status": "new",
-              "note": "Material cost as a percentage of revenue for Q2 was at 71.2% at the same level as same quarter last year, despite tariff volatilities and adoption of ACs in MHCV trucks."
-            },
-            {
-              "risk": "Input credit issue",
-              "status": "new",
-              "note": "The issue of the input credit of course is there, but higher freight demand and price cut are larger factors."
-            },
-            {
-              "risk": "Commodity costs",
-              "status": "new",
-              "note": "Commodity costs are expected to be better in Q3 than Q2, with no major concerns for Q4."
+              "note": "Material cost as a percentage of revenue for Q2 was at 71.2%, same as last year, despite tariff volatilities."
             },
             {
               "risk": "Material cost pressures from steel safeguard duty and tariff volatilities",
               "status": "no_mention",
-              "note": "Achieved cost savings and better price realization to mitigate."
+              "note": null
+            },
+            {
+              "risk": "Geopolitical uncertainties affecting home markets outside India",
+              "status": "no_mention",
+              "note": null
             },
             {
               "risk": "Geopolitical uncertainties in home markets outside India",
@@ -21168,50 +21352,49 @@
             {
               "label": "Market Share Expansion",
               "direction": "positive",
-              "note": "Ashok Leyland's domestic MHCV market share was at 31% in H1, with a gain of 50 basis points over H1 of last year.",
-              "section_ref": "ORD"
+              "note": "Domestic MHCV market share increased by 50 basis points over H1 of last year.",
+              "section_ref": "SEG"
             },
             {
               "label": "Product Innovation",
               "direction": "positive",
-              "note": "Ashok Leyland is expanding its non-diesel portfolio and preparing to launch new heavy-duty trucks with advanced features.",
-              "section_ref": "TECH"
+              "note": "Expanding non-diesel portfolio with electric trucks and buses.",
+              "section_ref": "SEG"
             },
             {
               "label": "Capacity Expansion",
               "direction": "positive",
-              "note": "Plans to increase LCV capacity to 110,000-120,000 units and bus body-building capacity to 20,000 units per year.",
+              "note": "Bus body-building capacity to increase from 12,000 to 20,000 units per year.",
               "section_ref": "MFG"
             },
             {
               "label": "Financial Performance",
               "direction": "positive",
-              "note": "Record Q2 EBITDA and PBT, with a positive cash position and lean operating capital.",
+              "note": "EBITDA for Q2 reached a record level at Rs. 1,162 crores, higher by 14.2% YoY.",
               "section_ref": "FIN"
             },
             {
               "label": "Geopolitical and Commodity Risks",
-              "direction": "mixed",
-              "note": "Material cost stability despite tariff volatilities; commodity costs expected to improve in Q3.",
+              "direction": "neutral",
+              "note": "Material cost as a percentage of revenue remained stable despite tariff volatilities.",
               "section_ref": "RISK"
             }
           ],
           "key_takeaways": [
             "MHCV trucks smoothly transitioned to the AC mandate, signifying growing acceptance towards safety and comfort in the Indian trucking industry.",
-            "GST 2.0 added cheer to the festive season, with rate rationalization from 28% to 18% bringing down the cost of owning new trucks and buses.",
-            "The domestic MHCV industry grew 4% in Q2, and the LCV industry offtake in 2-4 ton category grew by 13%.",
-            "Ashok Leyland's domestic MHCV market share was at 31% in H1, with a gain of 50 basis points over H1 of last year.",
-            "Our exports volume for Q2 at 4,784 units were higher by 45% Y-o-Y.",
-            "Revenue for Q2 was at Rs. 9,588 crores, higher by 9.3% on Y-o-Y basis.",
-            "EBITDA was at Q2 record level at Rs. 1,162 crores, higher by 14.2% Y-o-Y.",
-            "We remain optimistic about the growth prospects of the CV industry for both MHCV and LCV segments in H2."
+            "GST 2.0 added cheer to the festive season, reducing truck and bus costs by 10% and boosting freight demand.",
+            "Ashok Leyland forayed into the battery manufacturing business, aligning with long-term strategic plans.",
+            "Domestic MHCV market share for H1 was at 31%, with a gain of 50 basis points over H1 of last year.",
+            "Exports volume for Q2 at 4,784 units were higher by 45% YoY, with growth across GCC, Africa, and SAARC.",
+            "Switch India was both EBITDA and PAT positive for H1 FY26, with a strong order book for buses.",
+            "OHM is progressing on its target of operating 2,500 plus buses within the next 12 months."
           ],
           "pressing_questions": [
-            "What kind of growth are you expecting for the full year or second half for MHCVs and LCVs?",
-            "Is there a change in demand pattern you are observing between retail and fleet after GST cut?",
+            "What kind of growth is expected for MHCVs and LCVs for the full year or second half?",
+            "Is there a change in demand pattern observed between retail and fleet post-GST cut?",
             "What are the drivers for margin expansion from here on?",
-            "Can you give us some color on the mix of the revenues, particularly looking at spares, defense, engine, exports, and separately LCV?",
-            "What is the potential reduction in discounting further, which would give us some visibility of margin accretion quantification?"
+            "What is the average age of the truck fleet?",
+            "How big are non-truck revenues as a percentage of total revenues now?"
           ]
         },
         {
@@ -21219,54 +21402,61 @@
           "ticker": "ASHOKLEY",
           "industry": "Commercial Vehicles",
           "country": "India",
-          "concall_date": "2025-08-01",
+          "concall_date": "2025-08-21",
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=689f94d3-7f58-4d2f-ac2f-3ad8541598de.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-22T20:01:38.248Z",
-          "summary": "Ashok Leyland is optimistic about growth prospects in both MHCV and LCV segments, with expectations of volume and margin uptrend in the second half of the year.",
+          "generated_at": "2026-07-30T05:40:57.147Z",
+          "summary": "Ashok Leyland expects continued growth in both MHCV and LCV segments, with optimism for volume and margin improvements in the second half of the year, supported by new product launches and favorable market conditions.",
           "sections": [
             {
               "id": "FIN",
               "title": "Financial Performance",
               "key_figures": [
                 {
-                  "label": "Net Profit Q1 FY'26",
+                  "label": "Net Profit",
                   "value": "594",
-                  "unit": "crore",
+                  "unit": "crore INR",
                   "period": "Q1 FY'26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Revenue Q1 FY'26",
+                  "label": "Revenue",
                   "value": "8,725",
-                  "unit": "crore",
+                  "unit": "crore INR",
                   "period": "Q1 FY'26",
                   "kind": "reported"
                 },
                 {
-                  "label": "EBITDA Q1 FY'26",
+                  "label": "EBITDA",
                   "value": "970",
-                  "unit": "crore",
+                  "unit": "crore INR",
                   "period": "Q1 FY'26",
                   "kind": "reported"
                 },
                 {
-                  "label": "EBITDA Margin Q1 FY'26",
+                  "label": "EBITDA Margin",
                   "value": "11.1",
                   "unit": "%",
                   "period": "Q1 FY'26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Net Debt Q1 FY'26",
+                  "label": "Cash Position Net of Debt",
                   "value": "800",
-                  "unit": "crore",
+                  "unit": "crore INR",
                   "period": "Q1 FY'26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Material Cost as % of Revenue Q1 FY'26",
+                  "label": "Net Debt",
+                  "value": "1,200",
+                  "unit": "crore INR",
+                  "period": "Q1 FY'25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Material Cost as Percentage of Revenue",
                   "value": "70.6",
                   "unit": "%",
                   "period": "Q1 FY'26",
@@ -21275,28 +21465,21 @@
                 {
                   "label": "Hinduja Leyland Finance AUM",
                   "value": "50,430",
-                  "unit": "crore",
+                  "unit": "crore INR",
                   "period": "Q1 FY'26",
                   "kind": "reported"
                 },
                 {
                   "label": "Hinduja Housing Finance AUM",
                   "value": "14,265",
-                  "unit": "crore",
+                  "unit": "crore INR",
                   "period": "Q1 FY'26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Finance Subsidiaries Total Income",
+                  "label": "Total Income for Finance Subsidiaries",
                   "value": "1,855",
-                  "unit": "crore",
-                  "period": "Q1 FY'26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Finance Subsidiaries Book Value",
-                  "value": "7,222",
-                  "unit": "crore",
+                  "unit": "crore INR",
                   "period": "Q1 FY'26",
                   "kind": "reported"
                 },
@@ -21306,26 +21489,206 @@
                   "unit": "%",
                   "period": "Q1 FY'26",
                   "kind": "reported"
+                },
+                {
+                  "label": "Book Value at End of Quarter",
+                  "value": "7,222",
+                  "unit": null,
+                  "period": "Q1 FY'26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "OHM Operating Fleet",
+                  "value": "850",
+                  "unit": "buses",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "OHM Fleet Availability",
+                  "value": "98",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "OHM Added Buses to Operating Fleet",
+                  "value": "200",
+                  "unit": "buses",
+                  "period": "Q1 FY'26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "OHM Target Operating Fleet",
+                  "value": "2,500",
+                  "unit": "buses",
+                  "period": "next 12 months",
+                  "kind": "target"
+                },
+                {
+                  "label": "GCC Projects IRR",
+                  "value": "double-digit",
+                  "unit": null,
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PM E-DRIVE Tenders",
+                  "value": "10,000",
+                  "unit": "plus",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "RE Status",
+                  "value": "81",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "TN Plants RE Status",
+                  "value": "95",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Road to School Reach",
+                  "value": "5 lakh",
+                  "unit": "students",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Road to School Capacity Building Sessions",
+                  "value": "11,000",
+                  "unit": "students",
+                  "period": "Q1 FY'26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Road to Livelihood Enrollment",
+                  "value": "200",
+                  "unit": "women",
+                  "period": "Q1 FY'26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "MHCV Market Growth",
+                  "value": "5",
+                  "unit": "%",
+                  "period": "July",
+                  "kind": "reported"
+                },
+                {
+                  "label": "OHM Investment",
+                  "value": "300",
+                  "unit": "crores",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "OHM Additional Investment",
+                  "value": "300",
+                  "unit": "crores",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "OHM Buses by March",
+                  "value": "700",
+                  "unit": "buses",
+                  "period": "by March",
+                  "kind": "target"
+                },
+                {
+                  "label": "OHM Buses on Switch Balance Sheet",
+                  "value": "1,000",
+                  "unit": "buses",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Fully Built Bus Capacity",
+                  "value": "950",
+                  "unit": "buses per month",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Target Fully Built Bus Capacity",
+                  "value": "1,650",
+                  "unit": "buses per month",
+                  "period": "current",
+                  "kind": "target"
+                },
+                {
+                  "label": "Overall Capacity Utilization",
+                  "value": "70",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Hinduja Leyland Finance PAT",
+                  "value": "160",
+                  "unit": null,
+                  "period": "Q1 FY'26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Hinduja Leyland Finance Capital Adequacy Ratio",
+                  "value": "18.2",
+                  "unit": "%",
+                  "period": "Q1 FY'26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Ashok Leyland Shareholding in Hinduja Leyland Finance",
+                  "value": "61.12",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Defense Revenue Q1 FY'26",
+                  "value": "120",
+                  "unit": null,
+                  "period": "Q1 FY'26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Defense Revenue Q1 FY'25",
+                  "value": "400",
+                  "unit": null,
+                  "period": "Q1 FY'25",
+                  "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Financial Highlights",
+                  "label": "Quarterly Performance",
                   "points": [
-                    "Net profit in Q1 FY'26 was Rs. 594 crore, a 13% increase YOY.",
-                    "Revenue was Rs. 8,725 crore, a 1.5% increase YOY.",
-                    "EBITDA was Rs. 970 crore, a 6.4% increase YOY.",
-                    "EBITDA margin was 11.1%, a 50 basis points increase YOY.",
-                    "Net debt was Rs. 800 crore, a swing of approximately Rs. 2000 crore YOY.",
-                    "Material cost as a percentage of revenue was 70.6%, same as Q4 FY'25 and 1.6% lower YOY."
+                    "Highest ever Q1 revenue, EBITDA, and PAT.",
+                    "Net profit increased by 13% YoY.",
+                    "Revenue increased by 1.5% YoY.",
+                    "EBITDA increased by 6.4% YoY.",
+                    "EBITDA margin improved by 50 basis points YoY."
                   ]
                 },
                 {
-                  "label": "Finance Subsidiaries",
+                  "label": "Cash and Debt Position",
                   "points": [
-                    "Hinduja Leyland Finance AUM was Rs. 50,430 crore, and Hinduja Housing Finance AUM was Rs. 14,265 crore, both registering 25% YOY growth.",
-                    "Total income for the finance subsidiaries was Rs. 1,855 crore, and the book value at the end of the quarter was Rs. 7,222 crore.",
-                    "On a consolidated basis, the NNPA has come down to a healthy 1.63%."
+                    "Cash position net of debt is positive at Rs. 800 crores.",
+                    "Net debt reduced by approximately Rs. 2000 crore YoY."
+                  ]
+                },
+                {
+                  "label": "Material Cost Management",
+                  "points": [
+                    "Material cost as a percentage of revenue was 70.6%, same as Q4 FY'25 and 1.6% lower than Q1 FY'25.",
+                    "Achieved through cost savings, better price realization, and healthier model mix."
                   ]
                 }
               ]
@@ -21335,58 +21698,54 @@
               "title": "Order Book & Demand",
               "key_figures": [
                 {
-                  "label": "MHCV Market Share Q1 FY'26",
-                  "value": "31.1",
-                  "unit": "%",
-                  "period": "Q1 FY'26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "0 to 7.5 LCV Vahan Market Share Q1 FY'26",
-                  "value": "12.9",
-                  "unit": "%",
-                  "period": "Q1 FY'26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Domestic MHCV Volume Q1 FY'26",
-                  "value": "25,641",
-                  "unit": "units",
-                  "period": "Q1 FY'26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Domestic LCV Volume Q1 FY'26",
-                  "value": "15,566",
-                  "unit": "units",
-                  "period": "Q1 FY'26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "LCV Vahan Sales Q1 FY'26",
-                  "value": "15,436",
-                  "unit": "units",
-                  "period": "Q1 FY'26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Exports Volume Q1 FY'26",
+                  "label": "Exports Volume",
                   "value": "3,011",
                   "unit": "units",
                   "period": "Q1 FY'26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Aftermarket Revenue Growth",
+                  "value": "8",
+                  "unit": "%",
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Power Solutions Revenue Growth",
+                  "value": "28.5",
+                  "unit": "%",
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Defense Order Book",
+                  "value": "1,000",
+                  "unit": "crore INR",
+                  "period": "current",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Market Share and Volume",
+                  "label": "Export Performance",
                   "points": [
-                    "MHCV market share improved to 31.1% from 29.8% YOY.",
-                    "0 to 7.5 LCV Vahan market share improved to 12.9%, a 120 basis points improvement YOY.",
-                    "Domestic MHCV volume excluding defence grew by 2% to 25,641 units.",
-                    "Domestic LCV volume was 15,566 units, a 1.4% increase YOY.",
-                    "LCV Vahan sales were 15,436 units, an 8% increase YOY.",
-                    "Exports volume was 3,011 units, a 29% increase YOY."
+                    "Exports volume increased by 29% YoY.",
+                    "Home markets outside India are performing well despite geopolitical uncertainties."
+                  ]
+                },
+                {
+                  "label": "Non-CV Business Growth",
+                  "points": [
+                    "Aftermarket revenues grew by 8% YoY.",
+                    "Power solutions business revenue grew by 28.5% YoY."
+                  ]
+                },
+                {
+                  "label": "Defense Orders",
+                  "points": [
+                    "Defense order book and tender win pipeline is stronger than ever.",
+                    "Confident to post double-digit revenue growth in FY'26."
                   ]
                 }
               ]
@@ -21396,26 +21755,50 @@
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
-                  "label": "Aftermarket Revenue Growth",
-                  "value": "8",
+                  "label": "MHCV Market Share",
+                  "value": "31.1",
                   "unit": "%",
-                  "period": "YOY",
+                  "period": "Q1 FY'26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Power Solutions Business Revenue Growth",
-                  "value": "28.5",
+                  "label": "LCV Vahan Market Share",
+                  "value": "12.9",
                   "unit": "%",
-                  "period": "YOY",
+                  "period": "Q1 FY'26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Domestic MHCV Volume",
+                  "value": "25,641",
+                  "unit": "units",
+                  "period": "Q1 FY'26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Domestic LCV Volume",
+                  "value": "15,566",
+                  "unit": "units",
+                  "period": "Q1 FY'26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "LCV Vahan Sales",
+                  "value": "15,436",
+                  "unit": "units",
+                  "period": "Q1 FY'26",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Non-CV Business Growth",
+                  "label": "Market Share and Volume",
                   "points": [
-                    "Aftermarket revenues were higher by 8% YOY.",
-                    "Revenue from power solutions business was higher by 28.5%."
+                    "MHCV market share improved to 31.1% from 29.8% YoY.",
+                    "LCV Vahan market share improved by 120 basis points YoY.",
+                    "Domestic MHCV volume grew by 2% despite industry decline.",
+                    "Domestic LCV volume increased by 1.4% YoY.",
+                    "LCV Vahan sales increased by 8% YoY."
                   ]
                 }
               ]
@@ -21426,15 +21809,10 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Product Developments",
+                  "label": "Product Launches and Innovations",
                   "points": [
-                    "Introduced ACs across product lines in Q1 with a smooth migration.",
-                    "Introduced Ashok Leyland's new IVAC system to improve fuel efficiency.",
-                    "Preparing to launch new products in MHCV and LCV segments, including 280, 320, and 360 horsepower tippers, tractor trailers, and multi-axle vehicles.",
-                    "Planning to launch first offering in the LNG segment later this year.",
-                    "Upgraded 13.5-metre bus and new 15-metre bus with unique value proposition to be launched.",
-                    "Unveiling a bi-fuel product in the LCV range for large metros.",
-                    "Many upgraded products for international markets are slated for launch this year."
+                    "Preparing to launch new products in MHCV and LCV segments, including high horsepower tippers and LNG segment models.",
+                    "Introduction of Ashok Leyland's new IVAC system to improve fuel efficiency."
                   ]
                 }
               ]
@@ -21444,10 +21822,10 @@
               "title": "Manufacturing & Capacity",
               "key_figures": [
                 {
-                  "label": "New Plant Capacity Andhra Pradesh",
+                  "label": "New Plant Capacity in Andhra Pradesh",
                   "value": "200",
                   "unit": "units per month",
-                  "period": "end of year",
+                  "period": "by end of year",
                   "kind": "target"
                 }
               ],
@@ -21455,9 +21833,9 @@
                 {
                   "label": "Capacity Expansion",
                   "points": [
-                    "New plant in Andhra Pradesh is in ramp-up stage, aiming for 200 units per month by end of the year.",
-                    "New bus plant at Lucknow under construction, operational from Q3 FY'26.",
-                    "Enhancing capacity at bus plants at Alwar and Trichy."
+                    "New plant in Andhra Pradesh is ramping up to reach 200 units per month by year-end.",
+                    "New bus plant in Lucknow to be operational from Q3 FY'26.",
+                    "Enhancing capacity at bus plants in Alwar and Trichy."
                   ]
                 }
               ]
@@ -21467,31 +21845,17 @@
               "title": "Geography & Distribution",
               "key_figures": [
                 {
-                  "label": "MHCV Touchpoints Added",
-                  "value": "23",
-                  "unit": "touchpoints",
-                  "period": "Q1 FY'26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "LCV Touchpoints Added",
-                  "value": "13",
-                  "unit": "touchpoints",
-                  "period": "Q1 FY'26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Total MHCV Touchpoints",
+                  "label": "MHCV Touchpoints",
                   "value": "1,073",
                   "unit": "touchpoints",
-                  "period": "Q1 FY'26",
+                  "period": "current",
                   "kind": "reported"
                 },
                 {
-                  "label": "Total LCV Touchpoints",
+                  "label": "LCV Touchpoints",
                   "value": "851",
                   "unit": "touchpoints",
-                  "period": "Q1 FY'26",
+                  "period": "current",
                   "kind": "reported"
                 }
               ],
@@ -21499,36 +21863,9 @@
                 {
                   "label": "Network Expansion",
                   "points": [
-                    "Added 23 MHCV touchpoints and 13 LCV touchpoints during the quarter, mostly in north and central India.",
+                    "Added 23 MHCV and 13 LCV touchpoints during the quarter, focusing on north and central India.",
                     "Total touchpoints for MHCV are now at 1,073 and for LCV at 851.",
-                    "Internationally expanding network in SAARC, Africa, GCC, and ASEAN."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "SUP",
-              "title": "Supply Chain & Operations",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Supply Chain Alignment",
-                  "points": [
-                    "Operations and supply chain fully aligned for AC introduction across product lines."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "MKT",
-              "title": "Market & Customer Strategy",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Customer Experience and Satisfaction",
-                  "points": [
-                    "Ashok Leyland ranking improved to number one in dealer satisfaction index and number two in customer and sales satisfaction index.",
-                    "Initiatives towards premiumization of products to achieve global standards on customer experience."
+                    "International network expansion in SAARC, Africa, GCC, and ASEAN."
                   ]
                 }
               ]
@@ -21536,16 +21873,22 @@
             {
               "id": "STRAT",
               "title": "Strategic Initiatives & M&A",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "Switch India Order Book",
+                  "value": "1,500",
+                  "unit": "buses",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
               "subsections": [
                 {
-                  "label": "Switch India and OHM",
+                  "label": "Switch India and OHM Developments",
                   "points": [
-                    "Switch India achieved PBT breakeven in Q1 and aims for PAT positive status in FY'26.",
-                    "Current order book for Switch India stands at 1,500 plus buses.",
-                    "Switch UK redundancy process in progress, with production moving to other global facilities.",
-                    "OHM operating more than 850 buses with fleet availability of 98% plus.",
-                    "OHM added more than 200 buses to the operating fleet, targeting 2,500 plus buses within the next 12 months."
+                    "Switch India achieved PBT breakeven in Q1.",
+                    "OHM operating more than 850 buses with fleet availability of 98%+.",
+                    "OHM added more than 200 buses to the operating fleet in the quarter."
                   ]
                 }
               ]
@@ -21559,7 +21902,7 @@
                   "label": "Commodity and Geopolitical Risks",
                   "points": [
                     "Material cost pressures from steel safeguard duty and tariff volatilities.",
-                    "Geopolitical uncertainties in home markets outside India, including Wales, GCC, Africa, and SAARC."
+                    "Geopolitical uncertainties affecting home markets outside India."
                   ]
                 }
               ]
@@ -21570,10 +21913,11 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Growth Prospects",
+                  "label": "Future Outlook",
                   "points": [
-                    "Optimistic about growth prospects in both MHCV and LCV given the low base of Q2 last year.",
-                    "Expectations of volume and margin uptrend for Ashok Leyland in the second half of the year."
+                    "Optimistic about growth prospects in both MHCV and LCV segments.",
+                    "Expecting volume and margin uptrend in the second half of the year.",
+                    "RBI interest rate cuts expected to transmit soon, supporting growth."
                   ]
                 }
               ]
@@ -21586,7 +21930,7 @@
               "statement": "Confident to post a double-digit revenue growth in FY'26.",
               "specificity": "specific",
               "direction": "up",
-              "status": "new"
+              "status": "reiterated"
             },
             {
               "metric": "Switch India PAT Status",
@@ -21594,7 +21938,7 @@
               "statement": "Goal is to achieve PAT positive status for Switch India in FY'26.",
               "specificity": "specific",
               "direction": "up",
-              "status": "new"
+              "status": "reiterated"
             },
             {
               "metric": "OHM Bus Operations",
@@ -21602,18 +21946,23 @@
               "statement": "OHM is progressing well on its target of operating 2,500 plus buses within the next 12 months.",
               "specificity": "specific",
               "direction": "up",
-              "status": "new"
+              "status": "reiterated"
             }
           ],
           "risk_register": [
             {
               "risk": "Material cost pressures from steel safeguard duty and tariff volatilities",
               "status": "stable",
-              "note": "Achieved cost savings and better price realization to mitigate."
+              "note": null
+            },
+            {
+              "risk": "Geopolitical uncertainties affecting home markets outside India",
+              "status": "new",
+              "note": null
             },
             {
               "risk": "Geopolitical uncertainties in home markets outside India",
-              "status": "stable",
+              "status": "no_mention",
               "note": "Markets include Wales, GCC, Africa, and SAARC."
             }
           ],
@@ -21621,43 +21970,42 @@
             {
               "label": "Market Share Expansion",
               "direction": "positive",
-              "note": "Improved market share in MHCV and LCV segments.",
-              "section_ref": "ORD"
+              "note": "MHCV and LCV market shares improved, indicating successful market penetration.",
+              "section_ref": "SEG"
             },
             {
               "label": "Product Innovation",
               "direction": "positive",
-              "note": "Launch of new products and technology enhancements planned.",
+              "note": "New product launches in MHCV and LCV segments, including LNG models, are planned.",
               "section_ref": "TECH"
             },
             {
               "label": "Capacity Expansion",
               "direction": "positive",
-              "note": "Increasing capacity in Andhra Pradesh and Lucknow plants.",
+              "note": "New plant in Andhra Pradesh and bus plant in Lucknow to increase production capacity.",
               "section_ref": "MFG"
             },
             {
               "label": "Financial Performance",
               "direction": "positive",
-              "note": "Record revenue, EBITDA, and PAT in Q1 FY'26.",
+              "note": "Record Q1 revenue, EBITDA, and PAT with improved margins.",
               "section_ref": "FIN"
             },
             {
               "label": "Geopolitical and Commodity Risks",
               "direction": "neutral",
-              "note": "Managing material cost pressures and geopolitical uncertainties.",
+              "note": "Material cost pressures and geopolitical uncertainties remain stable.",
               "section_ref": "RISK"
             }
           ],
           "key_takeaways": [
-            "Net profit in Q1 FY'26 was Rs. 594 crore, a 13% increase YOY.",
-            "Revenue was Rs. 8,725 crore, a 1.5% increase YOY.",
-            "EBITDA was Rs. 970 crore, a 6.4% increase YOY.",
-            "MHCV market share improved to 31.1% from 29.8% YOY.",
-            "Exports volume was 3,011 units, a 29% increase YOY.",
-            "Switch India achieved PBT breakeven in Q1 and aims for PAT positive status in FY'26.",
-            "OHM operating more than 850 buses with fleet availability of 98% plus.",
-            "Optimistic about growth prospects in both MHCV and LCV given the low base of Q2 last year."
+            "Highest ever Q1 revenue, EBITDA, and PAT achieved.",
+            "MHCV market share improved to 31.1%, and LCV Vahan market share improved to 12.9%.",
+            "Exports volume increased by 29% YoY, with strong performance in GCC.",
+            "Switch India achieved PBT breakeven in Q1.",
+            "OHM operating more than 850 buses with fleet availability of 98%+.",
+            "Material cost as a percentage of revenue was 70.6%, same as Q4 FY'25 and 1.6% lower than Q1 FY'25.",
+            "New plant in Andhra Pradesh is ramping up to reach 200 units per month by year-end."
           ],
           "pressing_questions": []
         }
