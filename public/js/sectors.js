@@ -711,18 +711,33 @@ function runningThemesCard(sec) {
   );
 }
 
-/* Theme × company heatmap — cells colored by direction (the read-across). */
+/* Theme × company heatmap — cells colored by direction (the read-across).
+ * Rows are CAPPED and most-shared-first. Companies label their own themes, so a
+ * sector accumulates dozens of near-unique labels (44 in Auto Components, only 1
+ * of them shared); one row each produced a ~1100px strip that wasn't a read-across
+ * at all. `sec.themes` is already sorted by company count, and the Running Themes
+ * list above still shows every theme.
+ * NOTE: the "not mentioned" cell class is `hm-none`, NOT `empty` — a bare `empty`
+ * also matches the global empty-STATE rule (min-height:220px), which stretched
+ * each affected row and turned the grid into giant coloured bars. */
+const HEATMAP_MAX_ROWS = 12;
+
 function heatmapHtml(sec) {
   if (sec.companies.length < 1 || sec.themes.length < 1) return "";
   const cols = sec.companies.map((c) => c.ticker);
+  // Prefer themes more than one company raised; fall back to the top themes so a
+  // small or newly-tracked sector still shows something.
+  const shared = sec.themes.filter((t) => (t.count || 0) >= 2);
+  const shown = (shared.length ? shared : sec.themes).slice(0, HEATMAP_MAX_ROWS);
+  const hidden = sec.themes.length - shown.length;
   const head = `<th class="hm-corner">Theme \\ Co.</th>` + cols.map((t) => `<th class="hm-co">${escapeHtml(t)}</th>`).join("");
-  const rows = sec.themes
+  const rows = shown
     .map((t) => {
       const tkey = themeKey(t.label); // cells are stored under the canonical key
       const cells = cols
         .map((tk) => {
           const dir = sec.cell[`${tk}|${tkey}`];
-          if (!dir) return `<td class="hm-cell empty" title="${escapeHtml(tk)}: not mentioned"></td>`;
+          if (!dir) return `<td class="hm-cell hm-none" title="${escapeHtml(tk)}: not mentioned"></td>`;
           const d = dirMeta(dir);
           return `<td class="hm-cell ${d.cls}" title="${escapeHtml(tk)}: ${d.label}"></td>`;
         })
@@ -730,11 +745,15 @@ function heatmapHtml(sec) {
       return `<tr><td class="hm-theme" title="${escapeHtml(t.label)}">${escapeHtml(t.label)}</td>${cells}</tr>`;
     })
     .join("");
+  const note = hidden > 0
+    ? `<div class="hm-note">${shared.length ? `Showing the ${shown.length} theme${shown.length === 1 ? "" : "s"} raised by more than one company` : `Showing the top ${shown.length}`} — ${hidden} company-specific theme${hidden === 1 ? "" : "s"} listed above ${hidden === 1 ? "is" : "are"} not in the grid.</div>`
+    : "";
   return `
     <div class="heatmap-wrap">
       <div class="hm-title"><i data-lucide="grid-2x2" class="i16"></i> Read-across heatmap</div>
       <div class="table-scroll"><table class="heatmap"><thead><tr>${head}</tr></thead><tbody>${rows}</tbody></table></div>
-      <div class="hm-legend">${Object.values(DIR).map((d) => `<span class="hm-l"><span class="hm-sw ${d.cls}"></span>${d.label}</span>`).join("")}<span class="hm-l"><span class="hm-sw empty"></span>Not mentioned</span></div>
+      <div class="hm-legend">${Object.values(DIR).map((d) => `<span class="hm-l"><span class="hm-sw ${d.cls}"></span>${d.label}</span>`).join("")}<span class="hm-l"><span class="hm-sw hm-none"></span>Not mentioned</span></div>
+      ${note}
     </div>`;
 }
 
