@@ -139,10 +139,11 @@
       "source": "transcript"
     },
     "FIVESTAR": {
-      "status": "failed",
-      "finished_at": "2026-07-31T11:59:08.327Z",
-      "error": "OpenAI 429: {\n    \"error\": {\n        \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n        \"type\": \"insufficient_quota\",\n        \"param\": null,\n        \"code\": \"credit_balance_exhausted\"\n    }\n}\n",
-      "message": "Analysis failed for FIVESTAR. Please retry."
+      "status": "queued",
+      "queued_at": "2026-07-31T12:31:29.918Z",
+      "name": "Five-Star Business Finance Limited",
+      "industry": "Non Banking Financial Company (NBFC)",
+      "country": "India"
     }
   }
 }
