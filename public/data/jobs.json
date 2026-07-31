@@ -139,10 +139,8 @@
       "source": "transcript"
     },
     "FIVESTAR": {
-      "status": "failed",
-      "finished_at": "2026-07-31T11:57:46.051Z",
-      "error": "OpenAI 429: {\n    \"error\": {\n        \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n        \"type\": \"insufficient_quota\",\n        \"param\": null,\n        \"code\": \"credit_balance_exhausted\"\n    }\n}\n",
-      "message": "Analysis failed for FIVESTAR. Please retry."
+      "status": "running",
+      "started_at": "2026-07-31T11:58:30.128Z"
     }
   }
 }
