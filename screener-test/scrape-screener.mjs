@@ -182,6 +182,36 @@ async function resolveCompanyUrl(context, ticker) {
 }
 
 /**
+ * Resolve a company NAME (as filed with the exchange, e.g. "Vedant Fashions Ltd")
+ * to its Screener ticker, via Screener's own search API. Used by discovery: BSE
+ * announcements give us names, the rest of the pipeline works in tickers.
+ * Cheap and unmetered — this is the search endpoint, not the summary endpoint.
+ * Returns null when nothing matches confidently.
+ */
+export async function resolveTicker(context, name) {
+  const q = String(name || "")
+    .replace(/\b(ltd|limited|india|corporation|corp|company|co)\b\.?/gi, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  if (!q) return null;
+  try {
+    const res = await context.request.get(`${BASE}/api/company/search/?q=${encodeURIComponent(q)}`, {
+      headers: { accept: "application/json" },
+      timeout: 30000,
+    });
+    if (!res.ok()) return null;
+    const list = await res.json();
+    const hit = Array.isArray(list) ? list[0] : null;
+    if (!hit?.url) return null;
+    // Screener company URLs are /company/<TICKER>/ (sometimes /consolidated/).
+    const m = /\/company\/([^/]+)/.exec(hit.url);
+    return m ? m[1].toUpperCase() : null;
+  } catch {
+    return null;
+  }
+}
+
+/**
  * Best-effort INDUSTRY/SECTOR capture from the Screener company page. Screener
  * shows the industry as a peer-comparison link near the ratios/peers area. This
  * is defensive (multiple strategies) and LOGS its candidates so the exact DOM

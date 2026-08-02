@@ -37,6 +37,7 @@ const API = { search: "/api/search", analyze: "/api/analyze", health: "/api/heal
 const DATA = {
   tracked: "./data/tracked.json",
   tearsheets: "./data/tearsheets.json",
+  queue: "./data/queue.json",
   jobs: "./data/jobs.json",
   metadata: "./data/metadata.json",
 };
@@ -606,12 +607,14 @@ function applyCycleFilter() {
 
 async function loadData() {
   const bust = `?t=${Date.now()}`; // avoid stale caches while polling
-  const [tracked, tearsheets, jobs, metadata] = await Promise.all([
+  const [tracked, tearsheets, jobs, metadata, queue] = await Promise.all([
     fetchJson(DATA.tracked + bust, { companies: [], updated_at: null }),
     fetchJson(DATA.tearsheets + bust, { companies: {} }),
     fetchJson(DATA.jobs + bust, { jobs: {} }),
     fetchJson(DATA.metadata + bust, { updated_at: null, count: 0 }),
+    fetchJson(DATA.queue + bust, null),
   ]);
+  state.queue = queue;
   state.tracked = tracked;
   state.tearsheets = tearsheets;
   state.jobs = jobs;
@@ -938,6 +941,29 @@ function emptyFeedHtml() {
 }
 
 /* ---- KPIs ---- */
+/* Concall intake counter — what Screener published today, what we processed, and
+   what is waiting because of the 80-summaries/day cap (2 summaries per company,
+   so the board takes at most `cap` companies a day and rolls the rest forward). */
+function renderIntake() {
+  const el = qs("#intakeStrip");
+  if (!el) return;
+  const st = state.queue?.stats;
+  if (!st) { el.classList.add("hidden"); return; }
+  el.classList.remove("hidden");
+  const found = (st.discovered || 0) + (st.carried_over || 0);
+  const done = st.already_processed_today || 0;
+  const waiting = st.pending_tomorrow || 0;
+  qs("#intakeTitle").textContent =
+    `${found} concall${found === 1 ? "" : "s"} found${st.carried_over ? ` (incl. ${st.carried_over} carried over)` : ""}`;
+  qs("#intakeSub").textContent = waiting
+    ? `${waiting} queued for tomorrow — each company costs 2 AI summaries and Screener allows 80 a day, so we take ${st.cap} at a time.`
+    : `All caught up — inside Screener's daily AI-summary limit.`;
+  const stat = (n, label, cls) =>
+    `<span class="intake-stat ${cls}"><b>${n}</b>${label}</span>`;
+  qs("#intakeStats").innerHTML =
+    stat(found, "found", "is-found") + stat(done, "processed", "is-done") + stat(waiting, "queued", waiting ? "is-wait" : "");
+}
+
 function renderKpis(rows) {
   const trackedCount = rows.length;
   const sectors = new Set(
@@ -962,6 +988,7 @@ function renderKpis(rows) {
 
   const updated = state.metadata.updated_at || state.tracked.updated_at;
   qs("#kpiUpdated").textContent = updated ? relTime(updated) : "—";
+  renderIntake();
   qs("#footUpdated").textContent = updated ? fmtDate(updated) : "—";
   refreshIcons();
 }
