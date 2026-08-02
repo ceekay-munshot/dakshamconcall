@@ -93,24 +93,70 @@ const bedrockUrl = () =>
 
 /** An error we should not retry and should not blame on the network. */
 class BedrockModelAccessError extends Error {}
+/** The request shape this deployment won't accept — try the next one. */
+class BedrockShapeError extends Error {}
+
+/**
+ * How to ask for schema-constrained JSON. There is more than one way and which
+ * ones a given Bedrock deployment accepts is not knowable from here, so we try
+ * them in order and remember the one that works (see `resolvedShape`).
+ *
+ *   json_schema   the documented Structured Outputs parameter. First choice.
+ *   strict_tool   one tool, forced; `strict` guarantees schema adherence.
+ *   tool          same, without `strict`, for deployments that reject it.
+ *
+ * All three return the same object, so nothing downstream knows the difference.
+ */
+const SHAPES = [
+  {
+    name: "json_schema",
+    apply: (body, schema) => {
+      body.output_config = { format: { type: "json_schema", schema } };
+    },
+  },
+  {
+    name: "strict_tool",
+    apply: (body, schema, toolName) => {
+      body.tools = [
+        { name: toolName, description: "Return the result in this exact shape.", input_schema: schema, strict: true },
+      ];
+      body.tool_choice = { type: "tool", name: toolName };
+    },
+  },
+  {
+    name: "tool",
+    apply: (body, schema, toolName) => {
+      body.tools = [
+        { name: toolName, description: "Return the result in this exact shape.", input_schema: schema },
+      ];
+      body.tool_choice = { type: "tool", name: toolName };
+    },
+  },
+];
+
+/** Does this 400 mean "wrong request shape" rather than "bad content"? */
+const isShapeRejection = (text) =>
+  /output_config|output_format|input_schema|tool_choice|\btools\b|\bstrict\b/i.test(text);
+
+/** Set once the deployment tells us which shape it accepts. */
+let resolvedShape = null;
 
 /**
  * One streaming Bedrock call. Streaming (rather than a single blocking POST)
  * is deliberate: a full tear sheet can take minutes to generate and a
  * non-streaming request would sit silent long enough to trip request timeouts.
  *
- * @returns {Promise<string>} the accumulated text (a JSON document, per the schema).
+ * @returns {Promise<string>} the accumulated JSON document.
  */
-async function bedrockOnce({ model, system, user, schema }) {
+async function bedrockOnce({ model, system, user, schema, schemaName, shape }) {
   const body = {
     model,
     max_tokens: BEDROCK_MAX_TOKENS,
     system,
     messages: [{ role: "user", content: user }],
-    // Structured Outputs: the response is guaranteed to match this schema.
-    output_config: { format: { type: "json_schema", schema } },
     stream: true,
   };
+  shape.apply(body, schema, schemaName || "emit_result");
   // NOTE: no `temperature`. Sampling parameters are rejected (400) on Opus 5 /
   // Opus 4.8 / 4.7, which is why determinism here comes from the schema, not
   // from temperature 0 as on the OpenAI path.
@@ -138,6 +184,11 @@ async function bedrockOnce({ model, system, user, schema }) {
     if (res.status === 403 || res.status === 404 || (res.status === 400 && /model/i.test(text))) {
       throw Object.assign(new BedrockModelAccessError(err.message), { status: res.status });
     }
+    // "output_config.format: Extra inputs are not permitted" and friends: this
+    // deployment wants a different way of asking for schema-constrained JSON.
+    if (res.status === 400 && isShapeRejection(text)) {
+      throw Object.assign(new BedrockShapeError(err.message), { status: res.status });
+    }
     throw Object.assign(err, { status: res.status });
   }
 
@@ -164,7 +215,9 @@ async function bedrockOnce({ model, system, user, schema }) {
         continue; // a partial frame; the next chunk completes it
       }
       if (ev.type === "content_block_delta" && ev.delta?.type === "text_delta") {
-        out += ev.delta.text;
+        out += ev.delta.text; // json_schema shape: the JSON arrives as text
+      } else if (ev.type === "content_block_delta" && ev.delta?.type === "input_json_delta") {
+        out += ev.delta.partial_json; // tool shapes: the JSON arrives as tool input
       } else if (ev.type === "message_delta" && ev.delta?.stop_reason) {
         stopReason = ev.delta.stop_reason;
       } else if (ev.type === "error") {
@@ -185,30 +238,43 @@ async function bedrockOnce({ model, system, user, schema }) {
 }
 
 /**
- * Bedrock with retries and a one-time walk down the model chain.
+ * Bedrock with retries, plus a one-time walk down two axes: which MODEL this
+ * account can reach, and which request SHAPE this deployment accepts. Both are
+ * resolved on the first call and pinned for the rest of the process, so the
+ * probing costs at most a couple of cheap rejected requests per run.
  */
-async function bedrockStructured({ system, user, schema }) {
+async function bedrockStructured({ system, user, schema, schemaName }) {
   if (!process.env.BEDROCK_API_KEY) throw new Error("BEDROCK_API_KEY is not set");
 
-  // Once a model has answered in this process, stop probing the others.
-  const chain = resolvedBedrockModel ? [resolvedBedrockModel] : BEDROCK_MODEL_CHAIN;
+  const models = resolvedBedrockModel ? [resolvedBedrockModel] : BEDROCK_MODEL_CHAIN;
+  const shapes = resolvedShape ? [resolvedShape] : SHAPES;
   let lastErr;
 
-  for (const model of chain) {
-    for (let attempt = 0; attempt < 4; attempt++) {
-      try {
-        const text = await bedrockOnce({ model, system, user, schema });
-        resolvedBedrockModel = model;
-        activeModelId = model;
-        return JSON.parse(text);
-      } catch (err) {
-        lastErr = err;
-        if (err instanceof BedrockModelAccessError) break; // try the next model
-        const status = err.status;
-        // 4xx other than 429 is a request problem — retrying changes nothing.
-        if (status && status !== 429 && status < 500) throw err;
-        await sleep(1500 * 2 ** attempt);
+  for (const model of models) {
+    let modelUnreachable = false;
+    for (const shape of shapes) {
+      for (let attempt = 0; attempt < 4; attempt++) {
+        try {
+          const text = await bedrockOnce({ model, system, user, schema, schemaName, shape });
+          if (!resolvedShape) console.log(`[llm] bedrock output shape: ${shape.name}`);
+          resolvedBedrockModel = model;
+          resolvedShape = shape;
+          activeModelId = model;
+          return JSON.parse(text);
+        } catch (err) {
+          lastErr = err;
+          if (err instanceof BedrockModelAccessError) {
+            modelUnreachable = true; // no shape will help — next model
+            break;
+          }
+          if (err instanceof BedrockShapeError) break; // next shape, same model
+          const status = err.status;
+          // 4xx other than 429 is a request problem — retrying changes nothing.
+          if (status && status !== 429 && status < 500) throw err;
+          await sleep(1500 * 2 ** attempt);
+        }
       }
+      if (modelUnreachable) break;
     }
   }
   throw lastErr || new Error("Bedrock call failed");
