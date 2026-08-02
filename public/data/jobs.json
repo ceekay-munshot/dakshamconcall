@@ -109,8 +109,10 @@
       "message": "Couldn't fetch TMCV's latest concall. Screener daily AI-summary limit reached. Limit exceeded - Please try again later Premium users can request 80 summaries each day."
     },
     "TMPV": {
-      "status": "running",
-      "started_at": "2026-08-02T22:54:39.329Z"
+      "status": "failed",
+      "finished_at": "2026-08-02T22:54:48.060Z",
+      "error": "Screener daily AI-summary limit reached. Limit exceeded - Please try again later Premium users can request 80 summaries each day.",
+      "message": "Couldn't fetch TMPV's latest concall. Screener daily AI-summary limit reached. Limit exceeded - Please try again later Premium users can request 80 summaries each day."
     },
     "DEVYANI": {
       "status": "failed",
