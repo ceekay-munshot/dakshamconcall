@@ -73,6 +73,13 @@ jobs:
           SCREENER_PREMIUM_PASSWORD: ${{ secrets.SCREENER_PREMIUM_PASSWORD }}
           SCREENER_EMAIL: ${{ secrets.SCREENER_EMAIL }}
           SCREENER_PASSWORD: ${{ secrets.SCREENER_PASSWORD }}
+          # LLM: Claude via Amazon Bedrock is primary (that's the key with
+          # balance); OpenAI stays wired as the automatic fallback and becomes
+          # primary again by setting the LLM_PROVIDER secret to "openai".
+          BEDROCK_API_KEY: ${{ secrets.BEDROCK_API_KEY }}
+          BEDROCK_REGION: ${{ secrets.BEDROCK_REGION }} # optional; defaults to us-east-1
+          BEDROCK_MODEL: ${{ secrets.BEDROCK_MODEL }} # optional; defaults to the Opus 5 chain
+          LLM_PROVIDER: ${{ secrets.LLM_PROVIDER }} # optional; blank = Bedrock first
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }} # optional; llm.mjs defaults to gpt-4o
           FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}

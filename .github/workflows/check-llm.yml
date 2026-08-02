@@ -1,0 +1,42 @@
+# =============================================================================
+# Daksham Capital · Concall Tracker — LLM key check
+#
+# One tiny structured call through the same code path the analyzer uses.
+# Click "Run workflow" after changing an LLM key or provider: it tells you in
+# ~10 seconds whether the key works, which provider answered, and which model,
+# instead of finding out 20 minutes into a real run.
+# =============================================================================
+
+name: Check LLM key
+
+on:
+  workflow_dispatch:
+    inputs:
+      provider:
+        description: "Force a provider (blank = normal order: Bedrock first, OpenAI as fallback)"
+        required: false
+        type: choice
+        default: ""
+        options: ["", "bedrock", "openai"]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Check
+        env:
+          BEDROCK_API_KEY: ${{ secrets.BEDROCK_API_KEY }}
+          BEDROCK_REGION: ${{ secrets.BEDROCK_REGION }} # optional; defaults to us-east-1
+          BEDROCK_MODEL: ${{ secrets.BEDROCK_MODEL }} # optional; defaults to the Opus 5 chain
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
+          LLM_PROVIDER: ${{ github.event.inputs.provider }}
+        run: node screener-test/check-llm.mjs

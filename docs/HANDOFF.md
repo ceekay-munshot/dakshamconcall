@@ -17,9 +17,31 @@ opinions of our own.
   push to `main`. There is no bundler/build, so the Cloudflare "build" is
   effectively a no-op that goes green unless something is structurally broken.
 - **Pipeline** (`screener-test/*.mjs`, run by `.github/workflows/analyze.yml`):
-  logs into Screener → scrapes a company's concall AI summary → OpenAI Structured
-  Outputs classifies it into a fixed 11-section schema → commits the JSON back to
-  the repo. Cloudflare then redeploys.
+  logs into Screener → scrapes a company's concall AI summary → an LLM classifies
+  it into a fixed 11-section schema with structured outputs → commits the JSON
+  back to the repo. Cloudflare then redeploys.
+- **LLM provider layer** (`screener-test/llm.mjs`): one seam, `llmStructured()`,
+  with two interchangeable backends and the same primary/fallback shape as the
+  Screener credentials.
+  - **Claude via Amazon Bedrock** — primary. `BEDROCK_API_KEY` goes in the
+    `x-api-key` header against `https://bedrock-mantle.{region}.api.aws/anthropic/v1/messages`
+    (region from `BEDROCK_REGION`, default `us-east-1`). Structured output via
+    `output_config.format = json_schema`. **Streaming** (a full tear sheet takes
+    minutes; a blocking POST would trip request timeouts). **No `temperature`** —
+    sampling params are rejected with a 400 on Opus 5 / 4.8 / 4.7. Model IDs carry
+    an `anthropic.` prefix; the default chain is
+    `claude-opus-5 → claude-opus-4-8 → claude-sonnet-5` because Bedrock grants
+    Opus 5 access per-account — the first model that answers is pinned for the
+    rest of the process. `BEDROCK_MODEL` pins one explicitly.
+  - **OpenAI** — automatic fallback. Set the `LLM_PROVIDER` secret to `openai` to
+    make it primary again once that account has balance.
+  - The same strict schema (`additionalProperties:false`, every key in
+    `required`) satisfies both providers, so there is one schema, not two.
+  - `activeModel()` reports which model actually answered; it is what lands in
+    each quarter's `model` field, so the JSON always says who wrote it.
+  - **`node screener-test/check-llm.mjs`** (or the **Check LLM key** workflow)
+    makes one tiny structured call and prints provider + model. Run it after any
+    key change — it turns "the run died 20 minutes in" into "the key is wrong".
 - **Data store** (committed JSON): `public/data/{tracked,tearsheets,jobs,metadata}.json`.
   `tearsheets.json` is the main one (per-company, up to 4 quarters each).
 - **Frontend**: plain `public/index.html` + `public/css/styles.css` + vanilla
@@ -208,5 +230,7 @@ Headless Playwright harness pattern: serve `public/` with
 `chromium_headless_shell` with the proxy args + `--proxy-bypass-list`, stub the
 CDN libs and `/api/*` with `page.route`, drive the UI, assert on the DOM and take
 a screenshot. Syntax-check JS with `node --check <file>`. Pipeline functions are
-pure enough to unit-test with a mocked `openaiStructured` (set a fake
-`OPENAI_API_KEY` and stub `global.fetch`).
+pure enough to unit-test with a mocked LLM: point `BEDROCK_BASE_URL` /
+`OPENAI_BASE_URL` at a local `node:http` stub, set a fake key, and drive
+`llmStructured()` for real (that is how the Bedrock SSE parser, the model-chain
+walk on 403, and the Bedrock→OpenAI fallback were verified offline).

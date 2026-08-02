@@ -10,7 +10,7 @@
  * (diffGuidance), using the prior quarter's ledger — not left to the model.
  */
 
-import { openaiStructured, MODEL } from "./llm.mjs";
+import { llmStructured, activeModel } from "./llm.mjs";
 
 /** The FIXED 11 sections + one-line scopes (kept identical every quarter). */
 export const SECTIONS = [
@@ -226,7 +226,7 @@ export async function completeKeyFiguresOnce(sections, rawText, meta = {}) {
 
   let missing;
   try {
-    const out = await openaiStructured({ system: COMPLETION_SYSTEM, user, schemaName: "missing_figures", schema: COMPLETION_SCHEMA });
+    const out = await llmStructured({ system: COMPLETION_SYSTEM, user, schemaName: "missing_figures", schema: COMPLETION_SCHEMA });
     missing = Array.isArray(out.missing) ? out.missing : [];
   } catch (e) {
     console.log(`[completeness] pass skipped for ${meta.ticker || "?"}: ${e.message}`);
@@ -376,7 +376,7 @@ export async function classifyQuarter(scrape, priorGuidance = null, priorThemes 
     priorThemesContext,
   ].join("\n");
 
-  const out = await openaiStructured({
+  const out = await llmStructured({
     system: SYSTEM_PROMPT,
     user,
     schemaName: "concall_tearsheet",
@@ -449,14 +449,14 @@ export async function classifyQuarter(scrape, priorGuidance = null, priorThemes 
   // Diagnostic: how rich did this come out? Empty takeaways/thin output show here.
   const kfCount = (out.sections || []).reduce((n, s) => n + (s.key_figures?.length || 0), 0);
   console.log(
-    `[classify] ${scrape.ticker} @ ${scrape.concall_date || "?"} (${MODEL}): ` +
+    `[classify] ${scrape.ticker} @ ${scrape.concall_date || "?"} (${activeModel()}): ` +
       `sections=${out.sections.length} keyFigures=${kfCount} ` +
       `guidance=${out.guidance_ledger?.length || 0} risks=${out.risk_register?.length || 0} ` +
       `takeaways=${out.key_takeaways?.length || 0} questions=${out.pressing_questions?.length || 0} ` +
       `themes=${out.themes?.length || 0}`
   );
 
-  out.model = MODEL;
+  out.model = activeModel();
   return out;
 }
 
@@ -519,7 +519,7 @@ export async function editTearSheet(sections, meta = {}) {
 
   let editedById;
   try {
-    const out = await openaiStructured({ system: EDITOR_SYSTEM, user, schemaName: "edited_tearsheet", schema: EDITED_SCHEMA });
+    const out = await llmStructured({ system: EDITOR_SYSTEM, user, schemaName: "edited_tearsheet", schema: EDITED_SCHEMA });
     editedById = new Map((out.sections || []).map((s) => [s.id, (s.subsections || []).filter((x) => x.points?.length)]));
   } catch (e) {
     console.log(`[editor] pass skipped for ${meta.ticker || "?"}: ${e.message}`);

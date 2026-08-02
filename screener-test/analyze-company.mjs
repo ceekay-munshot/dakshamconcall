@@ -19,7 +19,7 @@ import fs from "node:fs";
 import { launchAndLogin, scrapeCompany, resolveTicker } from "./scrape-screener.mjs";
 import { discoverConcalls, planDay } from "./discover.mjs";
 import { classifyQuarter, diffGuidance, diffRisks, editTearSheet } from "./classify.mjs";
-import { MODEL } from "./llm.mjs";
+import { activeModel, llmBanner } from "./llm.mjs";
 
 const DIR = "public/data";
 const FILES = {
@@ -409,7 +409,7 @@ async function analyzeTicker(page, context, ticker, baseStore) {
       concall_date: q.concall_date,
       source: q.source,
       source_url: q.source_url,
-      model: MODEL,
+      model: activeModel(),
       pipeline_version: PIPELINE_VERSION,
       generated_at: nowIso(),
       summary: c.summary,
@@ -468,6 +468,7 @@ async function analyzeTicker(page, context, ticker, baseStore) {
    Main
    ========================================================================== */
 async function main() {
+  log(llmBanner()); // which LLM this run will use (no secrets)
   const single = (process.env.TICKER || "").trim().toUpperCase();
   const base = loadStores();
   // The reporting cycle the board is on (null while the newest one lacks quorum).
