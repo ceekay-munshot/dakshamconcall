@@ -2530,3 +2530,28 @@ tr.fresh {
 .insight-card.takeaways.full { width: 100%; }
 .insight-card.takeaways.full ul { columns: 2; column-gap: 26px; }
 @media (max-width: 720px) { .insight-card.takeaways.full ul { columns: 1; } }
+
+/* ---- Concall intake strip (discovery counter) ---------------------------- */
+.intake {
+  display: flex; align-items: center; gap: 12px;
+  margin: 0 0 18px; padding: 12px 16px;
+  background: var(--surface); border: 1px solid var(--glass-border);
+  border-radius: var(--r-lg); box-shadow: var(--shadow-sm);
+}
+.intake-ico {
+  width: 30px; height: 30px; border-radius: 9px; flex: none;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--grad-cool); color: #fff;
+}
+.intake-body { flex: 1; min-width: 0; }
+.intake-title { font-size: 13px; font-weight: 700; color: var(--text-2); }
+.intake-sub { font-size: 11.5px; color: var(--text-4); line-height: 1.45; }
+.intake-stats { display: flex; gap: 8px; flex-wrap: wrap; }
+.intake-stat {
+  font-size: 11px; color: var(--text-3); padding: 4px 10px; border-radius: 999px;
+  background: rgba(100, 116, 139, 0.1); white-space: nowrap;
+}
+.intake-stat b { font-family: var(--font-mono); margin-right: 5px; color: var(--text-2); }
+.intake-stat.is-done b { color: var(--ok); }
+.intake-stat.is-wait b { color: var(--warn); }
+@media (max-width: 560px) { .intake { flex-wrap: wrap; } .intake-stats { width: 100%; } }

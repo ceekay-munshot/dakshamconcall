@@ -37,6 +37,7 @@ const API = { search: "/api/search", analyze: "/api/analyze", health: "/api/heal
 const DATA = {
   tracked: "./data/tracked.json",
   tearsheets: "./data/tearsheets.json",
+  queue: "./data/queue.json",
   jobs: "./data/jobs.json",
   metadata: "./data/metadata.json",
 };
@@ -560,18 +561,70 @@ function retryAnalyze(job) {
 /* ============================================================================
    DATA LOADING (committed JSON is the app's memory)
    ========================================================================== */
+/* ============================================================================
+   Current reporting cycle (mirrors analyze-company.mjs).
+   The board shows the companies that have reported the most recent round of
+   calls and rolls forward by itself — nothing is hardcoded to a given quarter.
+   GRACE PERIOD: a straggler is only hidden once the newest cycle has at least
+   CYCLE_QUORUM companies in it, so the board never empties out in the fortnight
+   after a quarter ends while firms are still reporting.
+   ========================================================================== */
+const CYCLE_QUORUM = 3;
+
+const cycleKey = (iso) => {
+  const y = +String(iso || "").slice(0, 4), m = +String(iso || "").slice(5, 7);
+  return y && m ? `${y}Q${Math.floor((m - 1) / 3) + 1}` : null;
+};
+
+function applyCycleFilter() {
+  const companies = state.tearsheets.companies || {};
+  const counts = new Map();
+  for (const c of Object.values(companies)) {
+    const k = cycleKey(c?.quarters?.[0]?.concall_date);
+    if (k) counts.set(k, (counts.get(k) || 0) + 1);
+  }
+  const cycle = [...counts.keys()].sort().reverse().find((k) => counts.get(k) >= CYCLE_QUORUM) || null;
+  state.cycle = cycle;
+  state.hiddenBehindCycle = 0;
+  if (!cycle) return; // no cycle has quorum yet -> show everything
+
+  const visible = {};
+  for (const [t, c] of Object.entries(companies)) {
+    if (cycleKey(c?.quarters?.[0]?.concall_date) === cycle) visible[t] = c;
+    else state.hiddenBehindCycle++;
+  }
+  state.tearsheets = { ...state.tearsheets, companies: visible };
+  // Keep the feed in step: a tracked name with no visible tear sheet would
+  // otherwise render as an empty "awaiting analysis" row forever.
+  state.tracked = {
+    ...state.tracked,
+    companies: (state.tracked.companies || []).filter((c) => {
+      const t = (c.ticker || "").toUpperCase();
+      return visible[t] || !companies[t]; // keep never-analyzed names (still queued)
+    }),
+  };
+}
+
 async function loadData() {
   const bust = `?t=${Date.now()}`; // avoid stale caches while polling
-  const [tracked, tearsheets, jobs, metadata] = await Promise.all([
+  const [tracked, tearsheets, jobs, metadata, queue] = await Promise.all([
     fetchJson(DATA.tracked + bust, { companies: [], updated_at: null }),
     fetchJson(DATA.tearsheets + bust, { companies: {} }),
     fetchJson(DATA.jobs + bust, { jobs: {} }),
     fetchJson(DATA.metadata + bust, { updated_at: null, count: 0 }),
+    fetchJson(DATA.queue + bust, null),
   ]);
+  state.queue = queue;
   state.tracked = tracked;
   state.tearsheets = tearsheets;
   state.jobs = jobs;
   state.metadata = metadata;
+
+  // FORWARD-RUNNING BOARD: only show companies that have reported the current
+  // round of calls. Filtering here (once, right after load) means the feed, the
+  // KPIs and the sector views all inherit it. Nothing is deleted — the stale
+  // company's tear sheet stays in the store and reappears the moment it reports.
+  applyCycleFilter();
 
   // Drop optimistic rows once the real tracked.json has caught up.
   const trackedSet = new Set(
@@ -888,6 +941,29 @@ function emptyFeedHtml() {
 }
 
 /* ---- KPIs ---- */
+/* Concall intake counter — what Screener published today, what we processed, and
+   what is waiting because of the 80-summaries/day cap (2 summaries per company,
+   so the board takes at most `cap` companies a day and rolls the rest forward). */
+function renderIntake() {
+  const el = qs("#intakeStrip");
+  if (!el) return;
+  const st = state.queue?.stats;
+  if (!st) { el.classList.add("hidden"); return; }
+  el.classList.remove("hidden");
+  const found = (st.discovered || 0) + (st.carried_over || 0);
+  const done = st.already_processed_today || 0;
+  const waiting = st.pending_tomorrow || 0;
+  qs("#intakeTitle").textContent =
+    `${found} concall${found === 1 ? "" : "s"} found${st.carried_over ? ` (incl. ${st.carried_over} carried over)` : ""}`;
+  qs("#intakeSub").textContent = waiting
+    ? `${waiting} queued for tomorrow — each company costs 2 AI summaries and Screener allows 80 a day, so we take ${st.cap} at a time.`
+    : `All caught up — inside Screener's daily AI-summary limit.`;
+  const stat = (n, label, cls) =>
+    `<span class="intake-stat ${cls}"><b>${n}</b>${label}</span>`;
+  qs("#intakeStats").innerHTML =
+    stat(found, "found", "is-found") + stat(done, "processed", "is-done") + stat(waiting, "queued", waiting ? "is-wait" : "");
+}
+
 function renderKpis(rows) {
   const trackedCount = rows.length;
   const sectors = new Set(
@@ -912,6 +988,7 @@ function renderKpis(rows) {
 
   const updated = state.metadata.updated_at || state.tracked.updated_at;
   qs("#kpiUpdated").textContent = updated ? relTime(updated) : "—";
+  renderIntake();
   qs("#footUpdated").textContent = updated ? fmtDate(updated) : "—";
   refreshIcons();
 }

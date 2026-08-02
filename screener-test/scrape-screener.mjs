@@ -182,6 +182,36 @@ async function resolveCompanyUrl(context, ticker) {
 }
 
 /**
+ * Resolve a company NAME (as filed with the exchange, e.g. "Vedant Fashions Ltd")
+ * to its Screener ticker, via Screener's own search API. Used by discovery: BSE
+ * announcements give us names, the rest of the pipeline works in tickers.
+ * Cheap and unmetered — this is the search endpoint, not the summary endpoint.
+ * Returns null when nothing matches confidently.
+ */
+export async function resolveTicker(context, name) {
+  const q = String(name || "")
+    .replace(/\b(ltd|limited|india|corporation|corp|company|co)\b\.?/gi, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  if (!q) return null;
+  try {
+    const res = await context.request.get(`${BASE}/api/company/search/?q=${encodeURIComponent(q)}`, {
+      headers: { accept: "application/json" },
+      timeout: 30000,
+    });
+    if (!res.ok()) return null;
+    const list = await res.json();
+    const hit = Array.isArray(list) ? list[0] : null;
+    if (!hit?.url) return null;
+    // Screener company URLs are /company/<TICKER>/ (sometimes /consolidated/).
+    const m = /\/company\/([^/]+)/.exec(hit.url);
+    return m ? m[1].toUpperCase() : null;
+  } catch {
+    return null;
+  }
+}
+
+/**
  * Best-effort INDUSTRY/SECTOR capture from the Screener company page. Screener
  * shows the industry as a peer-comparison link near the ratios/peers area. This
  * is defensive (multiple strategies) and LOGS its candidates so the exact DOM
@@ -729,6 +759,9 @@ export async function scrapeCompany(page, context, ticker, opts = {}) {
   // Set once Screener's daily summary cap is known to be spent: go straight to the
   // transcript instead of burning more capped requests that can only fail.
   const skipSummary = !!opts.skipSummary;
+  // "YYYY-MM" of every quarter already stored as an ai_summary — skip re-fetching
+  // those (they cannot improve, and each one costs a metered summary view).
+  const haveSummaryMonths = new Set(opts.haveSummaryMonths || []);
   try {
     const { url, company, industry } = await openCompany(page, context, ticker);
     const { entries } = await findConcalls(page, ticker);
@@ -776,8 +809,19 @@ export async function scrapeCompany(page, context, ticker, opts = {}) {
 
     // Best-effort history (older quarters). PREFER each quarter's AI summary
     // (cleaner, avoids transcript-PDF parse failures); fall back to the PDF.
+    //
+    // A quarter we already hold as an ai_summary is SKIPPED entirely: re-fetching
+    // it costs a metered summary view and an LLM pass to rebuild something
+    // identical. `haveSummaryMonths` carries those months from the store. A month
+    // we hold only as a TRANSCRIPT is deliberately NOT skipped, so it gets a
+    // chance to upgrade to the summary once Screener publishes one.
     const history = [];
     for (let i = 1; i < Math.min(dated.length, maxHistory); i++) {
+      const rowMonth = toIsoDate(dated[i].date);
+      if (rowMonth && haveSummaryMonths.has(rowMonth.slice(0, 7))) {
+        log(`history[${i}] ${dated[i].date}: already stored as ai_summary — skipped (no quota, no LLM)`);
+        continue;
+      }
       try {
         let h = skipSummary ? null : await fetchHostedSummary(context, dated[i]);
         if (h) log(`history[${i}] ${dated[i].date}: via ai_summary`);

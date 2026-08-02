@@ -16,7 +16,8 @@
 
 import { execSync } from "node:child_process";
 import fs from "node:fs";
-import { launchAndLogin, scrapeCompany } from "./scrape-screener.mjs";
+import { launchAndLogin, scrapeCompany, resolveTicker } from "./scrape-screener.mjs";
+import { discoverConcalls, planDay } from "./discover.mjs";
 import { classifyQuarter, diffGuidance, diffRisks, editTearSheet } from "./classify.mjs";
 import { MODEL } from "./llm.mjs";
 
@@ -26,13 +27,29 @@ const FILES = {
   tearsheets: `${DIR}/tearsheets.json`,
   jobs: `${DIR}/jobs.json`,
   metadata: `${DIR}/metadata.json`,
+  queue: `${DIR}/queue.json`,
 };
 // Commit to the branch this workflow runs on (main in production; the feature
 // branch during testing). GITHUB_REF_NAME is set by Actions.
 const BRANCH = process.env.TARGET_BRANCH || process.env.GITHUB_REF_NAME || "main";
 const STALE_DAYS = 80;
 const REFRESH_THROTTLE_DAYS = 3; // don't re-scrape a stale name more often than this
+// How many quarters we STORE per company. Kept at 4 so history already paid for
+// is never trimmed away — we simply stop fetching more (see FETCH_QUARTERS).
 const MAX_QUARTERS = 4;
+// How many quarters a NEW fetch covers: the latest call plus one previous, both
+// from the AI summary. Client's call — 20 companies x 2 = 40 summaries/day, half
+// of Screener's 80/day cap, and the previous quarter gives the rate-of-change
+// context. Anything older we already hold stays untouched.
+const FETCH_QUARTERS = 2;
+// Bump when a pipeline change should force stored quarters to be rebuilt.
+// Quarters stamped with the current version are reused instead of re-classified.
+const PIPELINE_VERSION = 3;
+// Screener allows 80 AI summaries/day and we spend 2 per company, so the client
+// capped the board at 20 companies/day; the rest rolls to the next day.
+const DAILY_COMPANY_CAP = parseInt(process.env.DAILY_COMPANY_CAP || "", 10) || 20;
+// How far back the announcements feed is read (covers a weekend / a late filing).
+const DISCOVER_DAYS = parseInt(process.env.DISCOVER_DAYS || "", 10) || 2;
 
 const log = (...a) => console.log("[analyze]", ...a);
 
@@ -64,12 +81,14 @@ function loadStores() {
     tearsheets: readJson(FILES.tearsheets, { companies: {} }),
     jobs: readJson(FILES.jobs, { jobs: {} }),
     metadata: readJson(FILES.metadata, { updated_at: null, count: 0 }),
+    queue: readJson(FILES.queue, { date: null, pending: [], processed: 0, stats: null }),
   };
 }
 
 /* Pending mutations — re-applied onto the latest base on every persist so a
    push rejection can be resolved by rebasing our LOGICAL changes, never text. */
 const pending = {
+  queue: null, // discovery queue + counters for the dashboard
   jobs: new Map(), // ticker -> job entry
   tearsheets: new Map(), // ticker -> { company, ticker, industry, country, quarters:[...] }
   tracked: new Map(), // ticker -> partial tracked entry
@@ -96,6 +115,9 @@ function applyPending(stores) {
     else arr.push({ ticker: t, added_at: nowIso(), ...patch });
   }
   if (pending.tracked.size) stores.tracked.updated_at = nowIso();
+
+  // discovery queue (whole-object replace — it is a single small record)
+  if (pending.queue) stores.queue = pending.queue;
 
   // metadata: count = companies that have a tear sheet
   stores.metadata.count = Object.keys(stores.tearsheets.companies).length;
@@ -185,12 +207,58 @@ function writeStores(stores) {
   writeJson(FILES.tearsheets, stores.tearsheets);
   writeJson(FILES.jobs, stores.jobs);
   writeJson(FILES.metadata, stores.metadata);
+  writeJson(FILES.queue, stores.queue);
 }
 
 /* ---- helpers ---- */
 function topGuidanceHeadline(ledger = []) {
   const specific = ledger.find((g) => g.specificity === "specific");
   return (specific || ledger[0])?.statement || null;
+}
+
+/* ============================================================================
+   Current reporting cycle.
+   The dashboard is FORWARD-RUNNING: it shows companies that have reported the
+   most recent round of calls, and rolls on by itself (nothing is hardcoded to
+   "Q1"). The cycle is derived from the newest call in the universe, so when the
+   next quarter's calls start landing the whole board moves with them.
+
+   GRACE PERIOD: a straggler is only hidden once the new cycle is genuinely
+   underway (CYCLE_QUORUM companies in it). Without that, the first company to
+   report a new quarter would instantly hide everyone else and the dashboard
+   would sit near-empty for the fortnight until the rest report.
+   ========================================================================== */
+const CYCLE_QUORUM = 3;
+
+/** Calendar quarter key for a call date, e.g. "2026-07-01" -> "2026Q3". */
+export function cycleKey(iso) {
+  if (!iso) return null;
+  const y = +String(iso).slice(0, 4), m = +String(iso).slice(5, 7);
+  if (!y || !m) return null;
+  return `${y}Q${Math.floor((m - 1) / 3) + 1}`;
+}
+
+/**
+ * The cycle the board is currently on, or null while the newest cycle is still
+ * too thin to switch to (grace period). Pure — exported for tests.
+ */
+export function currentCycle(companies, quorum = CYCLE_QUORUM) {
+  const counts = new Map();
+  for (const c of Object.values(companies || {})) {
+    const k = cycleKey(c?.quarters?.[0]?.concall_date);
+    if (k) counts.set(k, (counts.get(k) || 0) + 1);
+  }
+  if (!counts.size) return null;
+  const keys = [...counts.keys()].sort().reverse(); // newest first
+  // Walk back from the newest cycle to the first one with enough reporters.
+  for (const k of keys) if (counts.get(k) >= quorum) return k;
+  return null; // nothing has quorum yet -> hide nobody
+}
+
+/** Has this company reported the current cycle? Unknown cycle -> treat as yes. */
+export function isCurrent(comp, cycle) {
+  if (!cycle) return true;
+  return cycleKey(comp?.quarters?.[0]?.concall_date) === cycle;
 }
 
 function isStale(store, ticker) {
@@ -219,7 +287,30 @@ async function analyzeTicker(page, context, ticker, baseStore) {
   persistAndPush(`analyze: ${T} running`);
 
   // 2) scrape
-  const scrape = await scrapeCompany(page, context, T);
+  // Only fetch the latest + one previous quarter, and skip any month we already
+  // hold as an ai_summary — that is what keeps us inside Screener's 80/day cap.
+  const storedQuarters = baseStore.tearsheets.companies[T]?.quarters || [];
+  const haveSummaryMonths = storedQuarters
+    .filter((q) => q.source === "ai_summary" && q.concall_date)
+    .map((q) => q.concall_date.slice(0, 7));
+  const scrapeOpts = { maxHistory: FETCH_QUARTERS, haveSummaryMonths };
+  const scrape = await scrapeCompany(page, context, T, scrapeOpts);
+
+  // Forward-running board: if the company hasn't reported the cycle everyone else
+  // is on, there is nothing new to show and no reason to spend a summary view.
+  if (!scrape.error && scrape.concall_date && baseStore.__cycle) {
+    if (cycleKey(scrape.concall_date) !== baseStore.__cycle) {
+      log(`${T}: latest call ${scrape.concall_date} is behind the current cycle ${baseStore.__cycle} — skipping`);
+      pending.jobs.set(T, {
+        status: "failed",
+        finished_at: nowIso(),
+        error: "no_current_quarter",
+        message: "Sorry, can't find Q1 on Screener. Please search for a different company.",
+      });
+      persistAndPush(`analyze: ${T} skipped (no current-quarter concall)`);
+      return;
+    }
+  }
   if (scrape.error) {
     // Screener's daily AI-summary cap (80/day) is TEMPORARY. Downgrading is now
     // prevented in mergeQuarters (a stored ai_summary quarter is never replaced by
@@ -240,7 +331,7 @@ async function analyzeTicker(page, context, ticker, baseStore) {
       }
       // Re-scrape with the summary path disabled so it goes straight to the
       // transcript instead of burning another capped request.
-      const viaTranscript = await scrapeCompany(page, context, T, { skipSummary: true });
+      const viaTranscript = await scrapeCompany(page, context, T, { ...scrapeOpts, skipSummary: true });
       if (!viaTranscript.error) {
         Object.assign(scrape, viaTranscript, { error: undefined, rateLimited: false });
       }
@@ -282,8 +373,26 @@ async function analyzeTicker(page, context, ticker, baseStore) {
   let priorRisks = seed?.risk_register || null;
   let priorThemes = seed?.themes || null; // stable theme labels across quarters
 
+  // Reuse a quarter we have already built rather than paying to rebuild it. A
+  // past earnings call never changes, so re-classifying it is pure waste: the last
+  // full refresh re-ran 77 quarters when only 8 were new. Reuse requires the same
+  // call date, a stored source of ai_summary (a transcript quarter still gets a
+  // chance to upgrade), and the current PIPELINE_VERSION so pipeline improvements
+  // still force a rebuild.
+  const storedByMonth = new Map(
+    stored.filter((q) => q.concall_date).map((q) => [q.concall_date.slice(0, 7), q])
+  );
   const classifiedNewestFirst = [];
   for (const q of chronological) {
+    const prev = q.concall_date ? storedByMonth.get(q.concall_date.slice(0, 7)) : null;
+    if (prev && prev.source === "ai_summary" && prev.pipeline_version === PIPELINE_VERSION) {
+      log(`reusing stored ${T} @ ${prev.concall_date} (unchanged — no LLM call)`);
+      classifiedNewestFirst.unshift(prev);
+      priorGuidance = prev.guidance_ledger || priorGuidance;
+      priorRisks = prev.risk_register || priorRisks;
+      if (Array.isArray(prev.themes) && prev.themes.length) priorThemes = prev.themes;
+      continue;
+    }
     log(`classifying ${T} @ ${q.concall_date || "?"} (${q.source})`);
     const c = await classifyQuarter(q, priorGuidance, priorThemes);
     c.guidance_ledger = diffGuidance(c.guidance_ledger, priorGuidance);
@@ -301,6 +410,7 @@ async function analyzeTicker(page, context, ticker, baseStore) {
       source: q.source,
       source_url: q.source_url,
       model: MODEL,
+      pipeline_version: PIPELINE_VERSION,
       generated_at: nowIso(),
       summary: c.summary,
       sections: c.sections,
@@ -360,6 +470,10 @@ async function analyzeTicker(page, context, ticker, baseStore) {
 async function main() {
   const single = (process.env.TICKER || "").trim().toUpperCase();
   const base = loadStores();
+  // The reporting cycle the board is on (null while the newest one lacks quorum).
+  let discoveryNames = [];
+  base.__cycle = currentCycle(base.tearsheets.companies);
+  if (base.__cycle) log(`current reporting cycle: ${base.__cycle}`);
 
   let tickers;
   if (single) {
@@ -373,6 +487,17 @@ async function main() {
       .map((c) => (c.ticker || "").toUpperCase())
       .filter(Boolean);
     tickers = forceAll ? all : all.filter((t) => isStale(base, t));
+    // Skip companies that haven't reported the current cycle — they have nothing
+    // new, and each one would cost metered summary views to find that out.
+    if (base.__cycle) {
+      const before = tickers.length;
+      tickers = tickers.filter((t) => {
+        const comp = base.tearsheets.companies[t];
+        return !comp || isCurrent(comp, base.__cycle);
+      });
+      if (before !== tickers.length)
+        log(`skipping ${before - tickers.length} company(ies) behind cycle ${base.__cycle}`);
+    }
 
     // MAX_PER_RUN paces a run against Screener's 80-summaries/day cap: each
     // company costs up to 4 summary requests, so ~1-5 companies/run stays well
@@ -394,7 +519,28 @@ async function main() {
     );
   }
 
-  if (!tickers.length) {
+  // ---- Auto-discovery: let the board fill itself -------------------------
+  // Scope is every listed company (not a curated list): BSE's announcements feed
+  // tells us who just filed a call recording / transcript, which the client
+  // identified as the proxy for "Screener's AI summary is now up". Everything
+  // beyond DAILY_COMPANY_CAP rolls to tomorrow rather than being dropped.
+  let queueStats = null;
+  if (!single && process.env.DISCOVER !== "0") {
+    const today = nowIso().slice(0, 10);
+    let discoveredTickers = [];
+    let discovered = [];
+    try {
+      discovered = await discoverConcalls({ days: DISCOVER_DAYS });
+      log(`discovery: ${discovered.length} company(ies) filed a concall in the last ${DISCOVER_DAYS} day(s)`);
+    } catch (e) {
+      log(`discovery skipped (${e.message}) — continuing with the tracked list`);
+    }
+    if (discovered.length) discoveryNames = discovered; // resolved after login
+    const plan = planDay(base.queue, [], today, DAILY_COMPANY_CAP);
+    queueStats = plan.stats;
+  }
+
+  if (!tickers.length && !discoveryNames.length) {
     log("nothing to do");
     return;
   }
@@ -422,6 +568,41 @@ async function main() {
 
   const { browser, context, page } = session;
   try {
+    // Resolve discovered company NAMES to Screener tickers now that we're logged
+    // in, then build today's work list: yesterday's leftovers first, then new
+    // finds, capped at DAILY_COMPANY_CAP with the remainder rolling forward.
+    if (discoveryNames.length) {
+      const resolved = [];
+      for (const c of discoveryNames) {
+        const tk = await resolveTicker(context, c.name);
+        if (tk) resolved.push(tk);
+        else log(`discovery: could not resolve "${c.name}" to a Screener ticker`);
+      }
+      const today = nowIso().slice(0, 10);
+      // Don't re-queue a company we already hold for the current cycle.
+      const fresh = resolved.filter((t) => {
+        const comp = base.tearsheets.companies[t];
+        return !(comp && isCurrent(comp, base.__cycle));
+      });
+      const plan = planDay(base.queue, fresh, today, DAILY_COMPANY_CAP);
+      queueStats = plan.stats;
+      log(
+        `queue: ${plan.stats.discovered} new + ${plan.stats.carried_over} carried -> ` +
+          `${plan.stats.processing_today} today, ${plan.stats.pending_tomorrow} tomorrow (cap ${plan.stats.cap})`
+      );
+      // Discovered names lead; the tracked list follows and fills any spare room.
+      const seen = new Set(plan.today);
+      tickers = [...plan.today, ...tickers.filter((t) => !seen.has(t))].slice(0, DAILY_COMPANY_CAP);
+      pending.queue = {
+        date: today,
+        pending: plan.pending,
+        processed: (base.queue?.date === today ? base.queue.processed || 0 : 0),
+        stats: plan.stats,
+      };
+      persistAndPush("analyze: discovery queue updated");
+    }
+
+    let processedCount = 0;
     for (const t of tickers) {
       try {
         const outcome = await analyzeTicker(page, context, t, base);
@@ -436,6 +617,7 @@ async function main() {
           );
           break;
         }
+        processedCount++;
       } catch (err) {
         log(`ticker ${t} crashed:`, err.message);
         pending.jobs.set(t.toUpperCase(), {
@@ -448,6 +630,13 @@ async function main() {
           persistAndPush(`analyze: ${t} failed`);
         } catch {}
       }
+    }
+    // Record how much of today's allowance we actually used, so tomorrow's run
+    // (and the dashboard counter) start from the truth.
+    if (pending.queue) {
+      pending.queue.processed = (pending.queue.processed || 0) + processedCount;
+      if (pending.queue.stats) pending.queue.stats.already_processed_today = pending.queue.processed;
+      try { persistAndPush("analyze: queue counters updated"); } catch {}
     }
   } finally {
     await browser.close().catch(() => {});

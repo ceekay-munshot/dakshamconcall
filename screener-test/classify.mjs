@@ -418,6 +418,22 @@ export async function classifyQuarter(scrape, priorGuidance = null, priorThemes 
     out.pressing_questions = scrape.pressing_questions.slice();
   }
 
+  // Drop junk rows: a qualitative note that slipped through as a "figure" ends up
+  // with the literal string "null" as its value (4 such rows were found in
+  // UNOMINDA). Only clearly-empty values are dropped -- a non-numeric but real
+  // value (a quoted range like "four to five dollars") is KEPT, so nothing
+  // meaningful is lost.
+  const emptyVal = (v) => {
+    const t = (v ?? "").toString().trim().toLowerCase();
+    return !t || t === "null" || t === "undefined" || t === "n/a" || t === "-";
+  };
+  for (const sec of out.sections || []) {
+    const before = (sec.key_figures || []).length;
+    sec.key_figures = (sec.key_figures || []).filter((f) => !emptyVal(f?.value));
+    const dropped = before - sec.key_figures.length;
+    if (dropped) console.log(`[classify] dropped ${dropped} empty-valued figure(s) from ${sec.id}`);
+  }
+
   // Normalize model artifacts: a literal "null"/"" unit or period -> real null.
   const clean = (v) => {
     const s = (v ?? "").toString().trim();
