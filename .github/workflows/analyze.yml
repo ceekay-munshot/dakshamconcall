@@ -65,6 +65,20 @@ jobs:
           git config user.name "daksham-bot"
           git config user.email "actions@github.com"
 
+      # Prove an LLM answers BEFORE we touch Screener. One tiny call, a fraction
+      # of a paisa. Without it, a bad key burns a metered AI summary (which we
+      # only get 80 of a day) and then fails — this fails first instead, and the
+      # log says which provider and model answered.
+      - name: Preflight — LLM key
+        env:
+          BEDROCK_API_KEY: ${{ secrets.BEDROCK_API_KEY }}
+          BEDROCK_REGION: ${{ secrets.BEDROCK_REGION }}
+          BEDROCK_MODEL: ${{ secrets.BEDROCK_MODEL }}
+          LLM_PROVIDER: ${{ secrets.LLM_PROVIDER }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
+        run: node screener-test/check-llm.mjs
+
       - name: Analyze
         env:
           # Paid/premium account first (no free-tier AI-summary quota); the free
