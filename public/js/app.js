@@ -560,6 +560,50 @@ function retryAnalyze(job) {
 /* ============================================================================
    DATA LOADING (committed JSON is the app's memory)
    ========================================================================== */
+/* ============================================================================
+   Current reporting cycle (mirrors analyze-company.mjs).
+   The board shows the companies that have reported the most recent round of
+   calls and rolls forward by itself — nothing is hardcoded to a given quarter.
+   GRACE PERIOD: a straggler is only hidden once the newest cycle has at least
+   CYCLE_QUORUM companies in it, so the board never empties out in the fortnight
+   after a quarter ends while firms are still reporting.
+   ========================================================================== */
+const CYCLE_QUORUM = 3;
+
+const cycleKey = (iso) => {
+  const y = +String(iso || "").slice(0, 4), m = +String(iso || "").slice(5, 7);
+  return y && m ? `${y}Q${Math.floor((m - 1) / 3) + 1}` : null;
+};
+
+function applyCycleFilter() {
+  const companies = state.tearsheets.companies || {};
+  const counts = new Map();
+  for (const c of Object.values(companies)) {
+    const k = cycleKey(c?.quarters?.[0]?.concall_date);
+    if (k) counts.set(k, (counts.get(k) || 0) + 1);
+  }
+  const cycle = [...counts.keys()].sort().reverse().find((k) => counts.get(k) >= CYCLE_QUORUM) || null;
+  state.cycle = cycle;
+  state.hiddenBehindCycle = 0;
+  if (!cycle) return; // no cycle has quorum yet -> show everything
+
+  const visible = {};
+  for (const [t, c] of Object.entries(companies)) {
+    if (cycleKey(c?.quarters?.[0]?.concall_date) === cycle) visible[t] = c;
+    else state.hiddenBehindCycle++;
+  }
+  state.tearsheets = { ...state.tearsheets, companies: visible };
+  // Keep the feed in step: a tracked name with no visible tear sheet would
+  // otherwise render as an empty "awaiting analysis" row forever.
+  state.tracked = {
+    ...state.tracked,
+    companies: (state.tracked.companies || []).filter((c) => {
+      const t = (c.ticker || "").toUpperCase();
+      return visible[t] || !companies[t]; // keep never-analyzed names (still queued)
+    }),
+  };
+}
+
 async function loadData() {
   const bust = `?t=${Date.now()}`; // avoid stale caches while polling
   const [tracked, tearsheets, jobs, metadata] = await Promise.all([
@@ -572,6 +616,12 @@ async function loadData() {
   state.tearsheets = tearsheets;
   state.jobs = jobs;
   state.metadata = metadata;
+
+  // FORWARD-RUNNING BOARD: only show companies that have reported the current
+  // round of calls. Filtering here (once, right after load) means the feed, the
+  // KPIs and the sector views all inherit it. Nothing is deleted — the stale
+  // company's tear sheet stays in the store and reappears the moment it reports.
+  applyCycleFilter();
 
   // Drop optimistic rows once the real tracked.json has caught up.
   const trackedSet = new Set(
