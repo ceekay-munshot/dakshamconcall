@@ -951,17 +951,40 @@ function renderIntake() {
   if (!st) { el.classList.add("hidden"); return; }
   el.classList.remove("hidden");
   const found = (st.discovered || 0) + (st.carried_over || 0);
-  const done = st.already_processed_today || 0;
   const waiting = st.pending_tomorrow || 0;
+  // "Attempted" is not "on the dashboard". Older runs reported only the attempt
+  // count, which read as success on days when every company failed (a dead LLM
+  // key, Screener's cap, a call with no summary AND no transcript). Show what
+  // actually landed, and say so when the rest didn't. Runs predating the split
+  // have no added_today — fall back to the attempt count rather than show 0.
+  const attempted = st.already_processed_today || 0;
+  const hasSplit = st.added_today != null;
+  // Runs predating the split didn't record successes, so count them off
+  // jobs.json — the record of what each company actually ended as. Scoped to
+  // the queue's own date so an old job never inflates today.
+  const countJobs = (want) =>
+    Object.values(state.jobs?.jobs || {}).filter(
+      (j) => j?.status === want && String(j.finished_at || "").slice(0, 10) === st.date
+    ).length;
+  const added = hasSplit ? st.added_today : countJobs("done");
+  const failed = hasSplit ? st.failed_today || 0 : countJobs("failed");
   qs("#intakeTitle").textContent =
     `${found} concall${found === 1 ? "" : "s"} found${st.carried_over ? ` (incl. ${st.carried_over} carried over)` : ""}`;
-  qs("#intakeSub").textContent = waiting
-    ? `${waiting} queued for tomorrow — each company costs 2 AI summaries and Screener allows 80 a day, so we take ${st.cap} at a time.`
-    : `All caught up — inside Screener's daily AI-summary limit.`;
+  // Deliberately non-specific about WHY: a failure can be a missing summary, a
+  // missing transcript, Screener's daily cap or an LLM outage, and the per-company
+  // reason is already on each card. Naming one cause here would be wrong most days.
+  qs("#intakeSub").textContent = failed
+    ? `${added} added to the board, ${failed} couldn't be completed — each one retries on the next run.`
+    : waiting
+      ? `${waiting} queued for tomorrow — each company costs 2 AI summaries and Screener allows 80 a day, so we take ${st.cap} at a time.`
+      : `All caught up — inside Screener's daily AI-summary limit.`;
   const stat = (n, label, cls) =>
     `<span class="intake-stat ${cls}"><b>${n}</b>${label}</span>`;
   qs("#intakeStats").innerHTML =
-    stat(found, "found", "is-found") + stat(done, "processed", "is-done") + stat(waiting, "queued", waiting ? "is-wait" : "");
+    stat(found, "found", "is-found") +
+    stat(added, "added", "is-done") +
+    (failed ? stat(failed, "failed", "is-fail") : "") +
+    stat(waiting, "queued", waiting ? "is-wait" : "");
 }
 
 function renderKpis(rows) {

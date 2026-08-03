@@ -308,7 +308,7 @@ async function analyzeTicker(page, context, ticker, baseStore) {
         message: "Sorry, can't find Q1 on Screener. Please search for a different company.",
       });
       persistAndPush(`analyze: ${T} skipped (no current-quarter concall)`);
-      return;
+      return "failed";
     }
   }
   if (scrape.error) {
@@ -344,7 +344,7 @@ async function analyzeTicker(page, context, ticker, baseStore) {
         message: `Couldn't fetch ${T}'s latest concall. ${scrape.error}`,
       });
       persistAndPush(`analyze: ${T} failed`);
-      return;
+      return "failed";
     }
   }
 
@@ -462,6 +462,7 @@ async function analyzeTicker(page, context, ticker, baseStore) {
 
   persistAndPush(`Analyze ${T} (${latest.concall_date || "latest"})`);
   log(`done ${T}: ${classifiedNewestFirst.length} quarter(s)`);
+  return "added"; // a tear sheet reached the dashboard — the only outcome that counts
 }
 
 /* ============================================================================
@@ -603,10 +604,17 @@ async function main() {
       persistAndPush("analyze: discovery queue updated");
     }
 
-    let processedCount = 0;
+    // Counted separately on purpose. "Attempted" is not "on the dashboard": a
+    // company can be scraped, fail to yield a summary or transcript, and still
+    // have been worked on. Reporting those together read as "6 done" on a day
+    // when nothing new appeared, so the two are now kept apart.
+    let addedCount = 0;
+    let failedCount = 0;
     for (const t of tickers) {
       try {
         const outcome = await analyzeTicker(page, context, t, base);
+        if (outcome === "added") addedCount++;
+        else if (outcome === "failed") failedCount++;
         if (outcome === "rate_limited") {
           // Every remaining company would hit the same cap and be rebuilt from
           // transcripts. Stop here so they keep their existing data intact.
@@ -618,8 +626,8 @@ async function main() {
           );
           break;
         }
-        processedCount++;
       } catch (err) {
+        failedCount++;
         log(`ticker ${t} crashed:`, err.message);
         pending.jobs.set(t.toUpperCase(), {
           status: "failed",
@@ -633,10 +641,20 @@ async function main() {
       }
     }
     // Record how much of today's allowance we actually used, so tomorrow's run
-    // (and the dashboard counter) start from the truth.
+    // (and the dashboard counter) start from the truth. `processed` still means
+    // "attempted" — it is what paces the daily cap, since a failed attempt costs
+    // Screener views all the same. `added`/`failed` are what the dashboard shows.
     if (pending.queue) {
-      pending.queue.processed = (pending.queue.processed || 0) + processedCount;
-      if (pending.queue.stats) pending.queue.stats.already_processed_today = pending.queue.processed;
+      const attempted = addedCount + failedCount;
+      pending.queue.processed = (pending.queue.processed || 0) + attempted;
+      pending.queue.added = (pending.queue.added || 0) + addedCount;
+      pending.queue.failed = (pending.queue.failed || 0) + failedCount;
+      if (pending.queue.stats) {
+        pending.queue.stats.already_processed_today = pending.queue.processed;
+        pending.queue.stats.added_today = pending.queue.added;
+        pending.queue.stats.failed_today = pending.queue.failed;
+      }
+      log(`queue: ${addedCount} added, ${failedCount} failed, ${attempted} attempted this run`);
       try { persistAndPush("analyze: queue counters updated"); } catch {}
     }
   } finally {

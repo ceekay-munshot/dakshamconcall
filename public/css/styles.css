@@ -2554,4 +2554,5 @@ tr.fresh {
 .intake-stat b { font-family: var(--font-mono); margin-right: 5px; color: var(--text-2); }
 .intake-stat.is-done b { color: var(--ok); }
 .intake-stat.is-wait b { color: var(--warn); }
+.intake-stat.is-fail b { color: var(--err); }
 @media (max-width: 560px) { .intake { flex-wrap: wrap; } .intake-stats { width: 100%; } }
