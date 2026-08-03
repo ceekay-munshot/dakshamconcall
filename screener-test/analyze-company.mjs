@@ -314,7 +314,15 @@ async function analyzeTicker(page, context, ticker, baseStore) {
   const haveSummaryMonths = storedQuarters
     .filter((q) => q.source === "ai_summary" && q.concall_date)
     .map((q) => q.concall_date.slice(0, 7));
-  const scrapeOpts = { maxHistory: FETCH_QUARTERS, haveSummaryMonths };
+  // Months we already hold from a TRANSCRIPT. The summary is still fetched for
+  // these (that is the upgrade attempt), but if no summary exists there is
+  // nothing to gain from downloading and re-parsing the very same PDF: the
+  // stored quarter is already the answer. Skipping it is the slowest step in
+  // the run, not just the cheapest saving.
+  const haveTranscriptMonths = storedQuarters
+    .filter((q) => q.source === "transcript" && q.concall_date)
+    .map((q) => q.concall_date.slice(0, 7));
+  const scrapeOpts = { maxHistory: FETCH_QUARTERS, haveSummaryMonths, haveTranscriptMonths };
   const scrape = await scrapeCompany(page, context, T, scrapeOpts);
 
   // Forward-running board: if the company hasn't reported the cycle everyone else
@@ -426,6 +434,16 @@ async function analyzeTicker(page, context, ticker, baseStore) {
       priorGuidance = prev.guidance_ledger || priorGuidance;
       priorRisks = prev.risk_register || priorRisks;
       if (Array.isArray(prev.themes) && prev.themes.length) priorThemes = prev.themes;
+      continue;
+    }
+    // A `reused` marker means the scraper deliberately skipped re-reading a
+    // source we already hold, so it carries no text. It should always have been
+    // matched to a stored quarter above; if it was not — a month key that did
+    // not line up, a store edited underneath us — classifying it would feed the
+    // model an empty document. Keep whatever is stored and move on instead.
+    if (q.reused) {
+      log(`skipping ${T} @ ${q.concall_date || "?"} — nothing new to read and no stored quarter matched`);
+      if (prev) classifiedNewestFirst.unshift(prev);
       continue;
     }
     log(`classifying ${T} @ ${q.concall_date || "?"} (${q.source})`);

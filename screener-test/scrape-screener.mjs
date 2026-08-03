@@ -785,6 +785,19 @@ export async function scrapeCompany(page, context, ticker, opts = {}) {
   // "YYYY-MM" of every quarter already stored as an ai_summary — skip re-fetching
   // those (they cannot improve, and each one costs a metered summary view).
   const haveSummaryMonths = new Set(opts.haveSummaryMonths || []);
+  const haveTranscriptMonths = new Set(opts.haveTranscriptMonths || []);
+  // Stand-in for a quarter we already hold and could not improve on. It carries
+  // no text because none is needed: the caller matches it to the stored quarter
+  // by month and keeps that, so re-reading the same PDF buys nothing.
+  const alreadyHave = (src) => ({
+    reused: true,
+    source: src,
+    raw_text: "",
+    screener_sections: [],
+    key_takeaways: [],
+    pressing_questions: [],
+    source_url: null,
+  });
   try {
     const { url, company, industry } = await openCompany(page, context, ticker);
     const { entries } = await findConcalls(page, ticker);
@@ -831,6 +844,10 @@ export async function scrapeCompany(page, context, ticker, opts = {}) {
         log("latest quarter: summary capped — falling back to the transcript");
       }
     }
+    if (!summary && haveTranscriptMonths.has(toIsoDate(latest.date).slice(0, 7))) {
+      log("latest quarter: no summary yet and its transcript is already stored — not re-reading it");
+      summary = alreadyHave("transcript");
+    }
     if (!summary) summary = await extractTranscript(context, latest);
     if (!summary) {
       await saveShot(page, `no-summary-${ticker}.png`);
@@ -863,6 +880,10 @@ export async function scrapeCompany(page, context, ticker, opts = {}) {
       try {
         let h = skipSummary ? null : await fetchHostedSummary(context, dated[i]);
         if (h) log(`history[${i}] ${dated[i].date}: via ai_summary`);
+        if (!h && haveTranscriptMonths.has((toIsoDate(dated[i].date) || "").slice(0, 7))) {
+          log(`history[${i}] ${dated[i].date}: transcript already stored — not re-reading it`);
+          h = alreadyHave("transcript");
+        }
         if (!h) h = await extractTranscript(context, dated[i]);
         if (h) {
           const hMonth = toIsoDate(dated[i].date);
