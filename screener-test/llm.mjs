@@ -58,8 +58,16 @@ const BEDROCK_MODEL_CHAIN = process.env.BEDROCK_MODEL
 /** Claude in Amazon Bedrock region. Global endpoint; us-east-1 is the safe default. */
 const BEDROCK_REGION = process.env.BEDROCK_REGION || process.env.AWS_REGION || "us-east-1";
 
-/** Output ceiling. Tear sheets with 100+ key figures are long; leave headroom. */
+/** Output ceiling, and how far it may grow.
+ *  A tear sheet with 137 key figures is genuinely long JSON, and a fixed 16k
+ *  ceiling truncated two companies outright on the first real run — the model
+ *  was fine, the budget was not. Rather than hard-code a number that depends on
+ *  the model, start here and let a truncation raise it (see bedrockStructured).
+ *  A too-LARGE value is rejected outright by the API, so it also steps back
+ *  down; either way the process settles on a value that works and keeps it. */
 const BEDROCK_MAX_TOKENS = parseInt(process.env.BEDROCK_MAX_TOKENS || "", 10) || 16384;
+const BEDROCK_MAX_TOKENS_CEILING =
+  parseInt(process.env.BEDROCK_MAX_TOKENS_CEILING || "", 10) || 65536;
 
 /** Extended thinking is off by default: this is faithful extraction, not reasoning,
  *  and thinking tokens are billed. BEDROCK_THINKING=1 turns it on. */
@@ -95,6 +103,10 @@ const bedrockUrl = () =>
 class BedrockModelAccessError extends Error {}
 /** The request shape this deployment won't accept — try the next one. */
 class BedrockShapeError extends Error {}
+/** The answer didn't fit in max_tokens — retry with more room. */
+class BedrockTruncatedError extends Error {}
+/** This model won't accept a budget that large — step back down. */
+class BedrockBudgetTooLargeError extends Error {}
 
 /**
  * How to ask for schema-constrained JSON. There is more than one way and which
@@ -140,6 +152,14 @@ const isShapeRejection = (text) =>
 
 /** Set once the deployment tells us which shape it accepts. */
 let resolvedShape = null;
+/** Output budget in use. Grows on truncation, shrinks if the API rejects it,
+ *  and persists for the rest of the process so the cost is paid once. */
+let maxTokensInUse = BEDROCK_MAX_TOKENS;
+/** Hard upper bound. Starts at the configured ceiling and drops the moment a
+ *  model refuses a value, so growing and shrinking can never fight each other:
+ *  without this, a model that rejects 16k while truncating at 8k would flap
+ *  between the two until the attempts ran out. */
+let maxTokensLimit = BEDROCK_MAX_TOKENS_CEILING;
 
 /**
  * One streaming Bedrock call. Streaming (rather than a single blocking POST)
@@ -148,10 +168,10 @@ let resolvedShape = null;
  *
  * @returns {Promise<string>} the accumulated JSON document.
  */
-async function bedrockOnce({ model, system, user, schema, schemaName, shape }) {
+async function bedrockOnce({ model, system, user, schema, schemaName, shape, maxTokens }) {
   const body = {
     model,
-    max_tokens: BEDROCK_MAX_TOKENS,
+    max_tokens: maxTokens,
     system,
     messages: [{ role: "user", content: user }],
     stream: true,
@@ -179,15 +199,20 @@ async function bedrockOnce({ model, system, user, schema, schemaName, shape }) {
   if (!res.ok) {
     const text = await res.text().catch(() => "");
     const err = new Error(`Bedrock ${res.status}: ${text.slice(0, 600)}`);
+    // ORDER MATTERS. Classify by the SPECIFIC parameter named first, because the
+    // model-access test below matches the bare word "model" — and a budget
+    // rejection reads "max_tokens ... exceeds the maximum for this model", so
+    // checking access first misfiles it and walks the model chain pointlessly.
+    if (res.status === 400 && /max_tokens/i.test(text)) {
+      throw Object.assign(new BedrockBudgetTooLargeError(err.message), { status: res.status });
+    }
+    if (res.status === 400 && isShapeRejection(text)) {
+      throw Object.assign(new BedrockShapeError(err.message), { status: res.status });
+    }
     // A model this account cannot reach (or an unknown model ID) is a config
     // problem, not a transient one — signal it so we can try the next model.
     if (res.status === 403 || res.status === 404 || (res.status === 400 && /model/i.test(text))) {
       throw Object.assign(new BedrockModelAccessError(err.message), { status: res.status });
-    }
-    // "output_config.format: Extra inputs are not permitted" and friends: this
-    // deployment wants a different way of asking for schema-constrained JSON.
-    if (res.status === 400 && isShapeRejection(text)) {
-      throw Object.assign(new BedrockShapeError(err.message), { status: res.status });
     }
     throw Object.assign(err, { status: res.status });
   }
@@ -228,10 +253,9 @@ async function bedrockOnce({ model, system, user, schema, schemaName, shape }) {
 
   if (streamError) throw new Error(`Bedrock stream error: ${streamError}`);
   if (stopReason === "max_tokens") {
-    // Truncated JSON would fail to parse anyway; say why, so it is fixable.
-    throw new Error(
-      `Bedrock hit max_tokens (${BEDROCK_MAX_TOKENS}) — output truncated. Raise BEDROCK_MAX_TOKENS.`
-    );
+    // Truncated JSON cannot parse. Typed so the caller can simply give it more
+    // room and try again, instead of failing the company.
+    throw new BedrockTruncatedError(`Bedrock hit max_tokens (${maxTokens}) — output truncated`);
   }
   if (!out.trim()) throw new Error("Bedrock returned empty content");
   return out;
@@ -253,9 +277,11 @@ async function bedrockStructured({ system, user, schema, schemaName }) {
   for (const model of models) {
     let modelUnreachable = false;
     for (const shape of shapes) {
-      for (let attempt = 0; attempt < 4; attempt++) {
+      for (let attempt = 0; attempt < 6; attempt++) {
         try {
-          const text = await bedrockOnce({ model, system, user, schema, schemaName, shape });
+          const text = await bedrockOnce({
+            model, system, user, schema, schemaName, shape, maxTokens: maxTokensInUse,
+          });
           if (!resolvedShape) console.log(`[llm] bedrock output shape: ${shape.name}`);
           resolvedBedrockModel = model;
           resolvedShape = shape;
@@ -268,10 +294,37 @@ async function bedrockStructured({ system, user, schema, schemaName }) {
             break;
           }
           if (err instanceof BedrockShapeError) break; // next shape, same model
+          // A long tear sheet simply needs more room. Double and retry rather
+          // than failing the company, and keep the larger budget for the rest
+          // of the run so the next long one doesn't pay the same wasted call.
+          if (err instanceof BedrockTruncatedError) {
+            // Already at the most this model will take: more room is not on
+            // offer, so report it rather than flapping.
+            if (maxTokensInUse >= maxTokensLimit) throw err;
+            maxTokensInUse = Math.min(maxTokensInUse * 2, maxTokensLimit);
+            console.warn(`[llm] output truncated — raising max_tokens to ${maxTokensInUse} and retrying`);
+            continue;
+          }
+          // The other direction: too large for this model. Halve and retry.
+          if (err instanceof BedrockBudgetTooLargeError) {
+            const next = Math.floor(maxTokensInUse / 2);
+            if (next < 4096) throw err;
+            maxTokensLimit = maxTokensInUse - 1; // never ask for this much again
+            maxTokensInUse = next;
+            console.warn(`[llm] max_tokens rejected — lowering to ${maxTokensInUse} and retrying`);
+            continue;
+          }
           const status = err.status;
           // 4xx other than 429 is a request problem — retrying changes nothing.
           if (status && status !== 429 && status < 500) throw err;
-          await sleep(1500 * 2 ** attempt);
+          // Transient: a timeout, a 5xx, a refused connection. Retry here, but
+          // do NOT let it walk the shape and model lists afterwards — a dead
+          // endpoint is neither shape- nor model-specific, and re-walking turned
+          // one unreachable host into 54 attempts of escalating backoff before
+          // the OpenAI fallback ever got a turn. Cap the backoff too: past a few
+          // seconds it is waiting, not recovering.
+          if (attempt === 5) throw err;
+          await sleep(Math.min(1500 * 2 ** attempt, 8000));
         }
       }
       if (modelUnreachable) break;
