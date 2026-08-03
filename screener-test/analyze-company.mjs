@@ -505,7 +505,6 @@ async function main() {
     // company costs up to 4 summary requests, so ~1-5 companies/run stays well
     // inside it. Least-recently-checked first, so consecutive runs ROTATE through
     // the universe instead of re-doing the same names.
-    const maxPerRun = parseInt(process.env.MAX_PER_RUN || "", 10);
     if (Number.isFinite(maxPerRun) && maxPerRun > 0 && tickers.length > maxPerRun) {
       const checkedAt = (t) => {
         const v = base.tearsheets.companies[t]?.checked_at;
@@ -526,7 +525,11 @@ async function main() {
   // tells us who just filed a call recording / transcript, which the client
   // identified as the proxy for "Screener's AI summary is now up". Everything
   // beyond DAILY_COMPANY_CAP rolls to tomorrow rather than being dropped.
+  // MAX_PER_RUN caps BOTH the tracked slice below and the delivery target, so a
+  // deliberately small run stays small even when discovery adds candidates.
+  const maxPerRun = parseInt(process.env.MAX_PER_RUN || "", 10);
   let queueStats = null;
+  let queueDate = null; // set once discovery plans a day; drives the roll-over write
   if (!single && process.env.DISCOVER !== "0") {
     const today = nowIso().slice(0, 10);
     let discoveredTickers = [];
@@ -592,9 +595,20 @@ async function main() {
         `queue: ${plan.stats.discovered} new + ${plan.stats.carried_over} carried -> ` +
           `${plan.stats.processing_today} today, ${plan.stats.pending_tomorrow} tomorrow (cap ${plan.stats.cap})`
       );
-      // Discovered names lead; the tracked list follows and fills any spare room.
+      // Discovered names lead, then tomorrow's queue, then the tracked list.
+      // This is a CANDIDATE POOL, not the work list: the cap counts companies
+      // DELIVERED, so if one has no summary and no transcript the loop pulls the
+      // next candidate instead of finishing a company short. Whatever the loop
+      // never reaches rolls over as tomorrow's pending.
       const seen = new Set(plan.today);
-      tickers = [...plan.today, ...tickers.filter((t) => !seen.has(t))].slice(0, DAILY_COMPANY_CAP);
+      const rest = [];
+      for (const t of [...plan.pending, ...tickers]) {
+        if (seen.has(t)) continue;
+        seen.add(t);
+        rest.push(t);
+      }
+      tickers = [...plan.today, ...rest];
+      queueDate = today;
       pending.queue = {
         date: today,
         pending: plan.pending,
@@ -608,9 +622,34 @@ async function main() {
     // company can be scraped, fail to yield a summary or transcript, and still
     // have been worked on. Reporting those together read as "6 done" on a day
     // when nothing new appeared, so the two are now kept apart.
+    //
+    // The TARGET is companies delivered, not companies tried. On a day when 50
+    // names report and 5 of the first 20 have nothing readable on Screener yet,
+    // we keep drawing from the remaining candidates until 20 are on the board.
+    // ATTEMPT_BUDGET stops that from becoming unbounded: each company costs up
+    // to 2 metered summary views against Screener's 80/day, so 2x the cap is the
+    // most we can spend chasing a target of `cap` before the quota is the binding
+    // constraint anyway.
+    const target = single
+      ? tickers.length
+      : Number.isFinite(maxPerRun) && maxPerRun > 0
+        ? Math.min(maxPerRun, DAILY_COMPANY_CAP)
+        : DAILY_COMPANY_CAP;
+    const attemptBudget = single
+      ? tickers.length
+      : parseInt(process.env.ATTEMPT_BUDGET || "", 10) || target * 2;
     let addedCount = 0;
     let failedCount = 0;
+    let attempts = 0;
+    const untouched = [];
     for (const t of tickers) {
+      // Target met, or we have spent as many attempts as the quota allows: every
+      // remaining candidate rolls forward untouched rather than being dropped.
+      if (addedCount >= target || attempts >= attemptBudget) {
+        untouched.push(t);
+        continue;
+      }
+      attempts++;
       try {
         const outcome = await analyzeTicker(page, context, t, base);
         if (outcome === "added") addedCount++;
@@ -619,6 +658,7 @@ async function main() {
           // Every remaining company would hit the same cap and be rebuilt from
           // transcripts. Stop here so they keep their existing data intact.
           const left = tickers.slice(tickers.indexOf(t) + 1);
+          untouched.push(...left); // they keep their turn tomorrow
           log(
             `STOPPING: Screener's daily AI-summary limit (80/day) was reached. ` +
               `${left.length} company(ies) left untouched: ${left.join(", ") || "(none)"}. ` +
@@ -654,7 +694,17 @@ async function main() {
         pending.queue.stats.added_today = pending.queue.added;
         pending.queue.stats.failed_today = pending.queue.failed;
       }
-      log(`queue: ${addedCount} added, ${failedCount} failed, ${attempted} attempted this run`);
+      // Roll forward what the loop never got to. Computed from the actual run,
+      // not from planDay's up-front guess, so a company promoted mid-run to
+      // replace a failure isn't also queued for tomorrow.
+      if (queueDate) {
+        pending.queue.pending = untouched;
+        if (pending.queue.stats) pending.queue.stats.pending_tomorrow = untouched.length;
+      }
+      log(
+        `queue: ${addedCount} added, ${failedCount} failed, ${attempted} attempted, ` +
+          `${untouched.length} rolled to tomorrow (target ${target}, attempt budget ${attemptBudget})`
+      );
       try { persistAndPush("analyze: queue counters updated"); } catch {}
     }
   } finally {
