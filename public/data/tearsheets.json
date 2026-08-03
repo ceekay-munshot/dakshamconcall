@@ -32731,7 +32731,7 @@
       "ticker": "SONACOMS",
       "industry": "Auto Components & Equipments",
       "country": "India",
-      "checked_at": "2026-07-30T23:04:15.739Z",
+      "checked_at": "2026-08-03T12:04:53.287Z",
       "quarters": [
         {
           "company": "Sona BLW Precision Forgings Ltd",
@@ -32741,9 +32741,10 @@
           "concall_date": "2026-07-23",
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ba4be72b-164f-4dd9-b6ae-ff475176e5bc.pdf",
-          "model": "gpt-4o",
-          "generated_at": "2026-07-30T23:04:12.784Z",
-          "summary": "Sona Comstar is focusing on expanding its product verticals, strengthening its presence in Eastern markets, and entering the robotics and physical AI space to drive growth over the next decade.",
+          "model": "anthropic.claude-sonnet-5",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-03T12:03:51.564Z",
+          "summary": "Sona Comstar reported its best-ever quarter for revenue, BEV revenue and BEV revenue share, with revenue up 54% YoY, EBITDA up 49% and PAT up 45%, though EBITDA margin (23.1%) and PAT margin (13.6%) were both down ~0.7pp YoY on input-cost inflation, labor cost increases, timing gaps in customer pass-throughs, and adverse product mix from fast-growing lower-margin traction motors; management expects recovery measures to become progressively visible from Q2 onward. The company announced a landmark two-JV partnership with DENSO covering high-voltage EV/hybrid powertrains (JV1, Denso-majority) and 2/3-wheeler traction motors (JV2, Sona-majority), alongside a formal entry into Robotics and Physical AI with an ₹8 billion order book, as part of its \"Sona Comstar 2.0\" strategy to build another 10x company over the next decade.",
           "sections": [
             {
               "id": "FIN",
@@ -32752,67 +32753,106 @@
                 {
                   "label": "Revenue",
                   "value": "12,310",
-                  "unit": "crores",
+                  "unit": "INR crore",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Revenue Growth",
+                  "label": "Revenue growth YoY",
                   "value": "54",
                   "unit": "%",
-                  "period": "YoY",
+                  "period": "Q1 FY27 vs Q1 FY26",
                   "kind": "reported"
                 },
                 {
                   "label": "EBITDA",
                   "value": "303",
-                  "unit": "crore",
+                  "unit": "INR crore",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "EBITDA Margin",
+                  "label": "EBITDA growth YoY",
+                  "value": "49",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin",
                   "value": "23.1",
                   "unit": "%",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "EBITDA Growth",
-                  "value": "49",
-                  "unit": "%",
-                  "period": "YoY",
+                  "label": "EBITDA margin change YoY",
+                  "value": "-0.7",
+                  "unit": "percentage points",
+                  "period": "Q1 FY27 vs Q1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "PAT",
+                  "label": "PAT (Profit after tax)",
                   "value": "181",
-                  "unit": "crores",
+                  "unit": "INR crore",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "PAT Margin",
+                  "label": "PAT growth YoY",
+                  "value": "45",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT margin",
                   "value": "13.6",
                   "unit": "%",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "PAT Growth",
-                  "value": "45",
-                  "unit": "%",
-                  "period": "YoY",
+                  "label": "PAT margin change YoY",
+                  "value": "-0.7",
+                  "unit": "percentage points",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net debt to EBITDA",
+                  "value": "negative",
+                  "unit": null,
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VA to employee cost ratio",
+                  "value": "4.5",
+                  "unit": "times",
+                  "period": "Q1 FY27",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Quarterly Performance",
+                  "label": "Margin drivers",
                   "points": [
-                    "Revenue grew by 54% year on year, while EBITDA and net profit increased by 49% and 45% respectively.",
-                    "EBITDA margin was 23.1%, impacted by input cost inflation and product mix.",
-                    "PAT margin was 13.6%, affected by lower EBITDA margin and lower net finance income."
+                    "Margins were heavily impacted by input cost inflation, labor cost increases as well as the timing gap in customer recoveries/pass-throughs, especially during April and May, but June was significantly better.",
+                    "Cost pass-throughs to automotive customers always lag inflation, so recoveries come later; recovery measures are expected to become progressively more visible from Q2 onwards.",
+                    "There was also a product mix impact as traction motor sales grew quite rapidly, and that product category has the lowest margins relative to company average, dragging margin down.",
+                    "Between EBITDA and PAT, there was a positive impact on margin from lower depreciation percentage and exceptional expenses booked in Q1 of last year, whereas PAT margin was pulled down by lower EBITDA margin and lower net finance income."
+                  ]
+                },
+                {
+                  "label": "Key ratios",
+                  "points": [
+                    "All ratios except VA to employee cost showed improvement this quarter.",
+                    "VA to employee cost declined mainly due to change in product mix in favor of assembly products (motor and railway businesses are more assembly-oriented vs. driveline, which has higher value addition); this ratio can vary quarter to quarter depending on which business grows faster.",
+                    "Return ratios continue to show gradual improvement; the impact of the QIP fundraise has been absorbed in the ratios, and incremental returns from businesses are now supporting these ratios.",
+                    "Net debt continues to be negative, so net debt to EBITDA ratio also continues in negative territory.",
+                    "Both turnover ratios improved this quarter, supported by robust revenue growth; working capital turnover ratio also improved due to a significant reduction in debtor days, making this the best quarter from an operational cash flow perspective."
                   ]
                 }
               ]
@@ -32822,815 +32862,84 @@
               "title": "Order Book & Demand",
               "key_figures": [
                 {
-                  "label": "Net Order Book",
+                  "label": "Net order book",
                   "value": "240",
-                  "unit": "billion",
+                  "unit": "INR billion",
                   "period": "end of Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "EV Order Book",
-                  "value": "69",
-                  "unit": "programs",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Robotics and Physical AI Order Book",
-                  "value": "8",
-                  "unit": "billion",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "ICE Differential Gear Program Order Value",
-                  "value": "2.1",
-                  "unit": "billion",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "EV Order Book Share",
+                  "label": "EV share of net order book",
                   "value": "64",
                   "unit": "%",
                   "period": "end of Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Total Order Book",
-                  "value": "800",
-                  "unit": "crores",
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "Robotics Order Book",
-                  "value": "8",
-                  "unit": "billion",
-                  "period": null,
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Order Wins",
-                  "points": [
-                    "Received a new order from an existing North American customer for hybrid differential assembly.",
-                    "Won 2 traction motor programs from a new age Indian electric two-wheeler vehicle.",
-                    "Received an ICE differential gear program from a traditional North American OEM."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "SEG",
-              "title": "Segment & Product Performance",
-              "key_figures": [
-                {
-                  "label": "BEV Revenue",
-                  "value": "436",
-                  "unit": "crores",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "BEV Revenue Growth",
-                  "value": "107",
-                  "unit": "%",
-                  "period": "YoY",
-                  "kind": "reported"
-                },
-                {
-                  "label": "BEV Revenue Share",
-                  "value": "44",
-                  "unit": "%",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Electrification",
-                  "points": [
-                    "Delivered the highest ever BEV revenue and BEV mix during the quarter.",
-                    "BEV revenue grew 107% despite EV demand in the US remaining weak.",
-                    "Added 2 new EV programs and 1 hybrid program, increasing the EV order book to 69 programs across 36 customers."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "TECH",
-              "title": "Product & Technology",
-              "key_figures": [
-                {
-                  "label": "New Products Revenue Contribution",
-                  "value": "35",
-                  "unit": "%",
-                  "period": "current",
-                  "kind": "reported"
-                },
-                {
-                  "label": "New Products Annualized Revenue",
-                  "value": "1,800",
-                  "unit": "crore",
-                  "period": "current",
-                  "kind": "reported"
-                },
-                {
-                  "label": "New Products Annual Profit",
-                  "value": "230",
-                  "unit": "crore",
-                  "period": "current",
-                  "kind": "reported"
-                },
-                {
-                  "label": "EV Programs",
-                  "value": "69",
-                  "unit": "programs",
-                  "period": "current",
-                  "kind": "reported"
-                },
-                {
-                  "label": "EV Customers",
-                  "value": "36",
-                  "unit": "customers",
-                  "period": "current",
-                  "kind": "reported"
-                },
-                {
-                  "label": "New EV Programs",
-                  "value": "2",
-                  "unit": "programs",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "New Hybrid Program",
-                  "value": "1",
-                  "unit": "program",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Traction Motor Programs",
-                  "value": "2",
-                  "unit": "programs",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "ICE Differential Gear Program Order Value",
-                  "value": "₹ 2.1 billion",
-                  "unit": null,
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Robotics and Physical AI Order Book Share",
+                  "label": "Robotics & Physical AI share of order book",
                   "value": "3",
                   "unit": "%",
                   "period": "end of Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Short Range Radar Sensors",
-                  "value": "1",
-                  "unit": "product",
+                  "label": "ICE differential gear order value (North American OEM)",
+                  "value": "2.1",
+                  "unit": "INR billion",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Advanced Robotics Components",
-                  "value": "1",
-                  "unit": "product",
+                  "label": "EV order book programs",
+                  "value": "69",
+                  "unit": "programs",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Suspension Motor Product Code Lines",
-                  "value": "2 million",
-                  "unit": "lines of code",
-                  "period": "current",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Car Code Lines",
-                  "value": "over a million",
-                  "unit": "lines of code",
-                  "period": "current",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Advanced Electric Vehicles Code Lines",
-                  "value": "5 million plus",
-                  "unit": "lines of code",
-                  "period": "current",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Market Size for High Voltage Motor",
-                  "value": "24,000 crores",
-                  "unit": null,
-                  "period": "2030",
-                  "kind": "market_size"
-                },
-                {
-                  "label": "Market Size for High Voltage Motor",
-                  "value": "72,000 crores",
-                  "unit": null,
-                  "period": "2035",
-                  "kind": "market_size"
-                },
-                {
-                  "label": "Capex to Revenue Ratio for High Voltage Systems",
-                  "value": "11-12",
-                  "unit": null,
-                  "period": "current",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Robotics and Physical AI",
-                  "points": [
-                    "Invested in technology, equipment, and developed products in robotics and physical AI.",
-                    "Secured first order for an advanced robotic subsystem and second order for perception engineering services for AMRs.",
-                    "Total order book for this new vertical is ₹ 8 billion."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "GEO",
-              "title": "Geography & Distribution",
-              "key_figures": [
-                {
-                  "label": "Eastern Markets Revenue Contribution",
-                  "value": "59",
-                  "unit": "%",
+                  "label": "EV order book customers",
+                  "value": "36",
+                  "unit": "customers",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Eastern Markets Revenue Contribution",
-                  "value": "56",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": []
-            },
-            {
-              "id": "STRAT",
-              "title": "Strategic Initiatives & M&A",
-              "key_figures": [
-                {
-                  "label": "Acquisitions Investment",
-                  "value": "2,750",
-                  "unit": "crores",
-                  "period": "last 7 years",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Acquisitions Revenue Contribution",
-                  "value": "40",
-                  "unit": "%",
-                  "period": "current",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Acquisitions Annual Profit Contribution",
-                  "value": "270",
-                  "unit": "crore",
-                  "period": "current",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Sona Comstar 2.0",
-                  "points": [
-                    "Focus on new product verticals, Eastward expansion, and robotics and physical AI.",
-                    "Partnership with DENSO to fill the gap in high voltage electric and hybrid powertrain systems.",
-                    "Ambition to build another 10x company over the next decade."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "RISK",
-              "title": "Risks & External Factors",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Challenges",
-                  "points": [
-                    "Inflation continues to be the biggest near-term challenge, impacting margins.",
-                    "Commodities and other input costs remain elevated.",
-                    "Trade and geopolitical developments continue to be choppy."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "GUID",
-              "title": "Guidance & Outlook",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Future Plans",
-                  "points": [
-                    "Ambition to build another 10x company over the next decade.",
-                    "Focus on expanding product verticals, strengthening presence in Eastern markets, and entering robotics and physical AI."
-                  ]
-                }
-              ]
-            }
-          ],
-          "guidance_ledger": [
-            {
-              "metric": "Electrification Growth",
-              "horizon": null,
-              "statement": "Electrification growth is expected to continue across geographies.",
-              "specificity": "vague",
-              "direction": "up",
-              "status": "reiterated"
-            },
-            {
-              "metric": "Robotics and Physical AI",
-              "horizon": "next 10 years",
-              "statement": "Robotics and Physical AI is expected to become a significant long-term growth platform.",
-              "specificity": "vague",
-              "direction": "up",
-              "status": "new"
-            },
-            {
-              "metric": "Railway Business Growth",
-              "horizon": "next 5 years",
-              "statement": "Confident about good, healthy growth over the next 5 years in the railway business.",
-              "specificity": "vague",
-              "direction": "up",
-              "status": "no_mention"
-            },
-            {
-              "metric": "Market Share in Differential Gears",
-              "horizon": "next few years",
-              "statement": "We have the potential to increase this market share quite robustly in the next few years from what we are seeing in our RFQ pipeline and the market in general.",
-              "specificity": "vague",
-              "direction": "up",
-              "status": "no_mention"
-            },
-            {
-              "metric": "Return Ratios",
-              "horizon": null,
-              "statement": "We expect the return ratios to start improving gradually as we invest the cash that we have in various growth initiatives that we have outlined.",
-              "specificity": "vague",
-              "direction": "up",
-              "status": "no_mention"
-            },
-            {
-              "metric": "Suspension Systems Production",
-              "horizon": "Q2 FY27",
-              "statement": "Suspension systems expected to start production in Q2 of FY 27.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "no_mention"
-            },
-            {
-              "metric": "Mexico Plant Production",
-              "horizon": "Q2 FY28",
-              "statement": "Production expected to start in the second quarter of FY 28.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "no_mention"
-            }
-          ],
-          "risk_register": [
-            {
-              "risk": "Inflation",
-              "status": "stable",
-              "note": "Inflation continues to be the biggest near-term challenge, impacting margins."
-            },
-            {
-              "risk": "Commodities and Input Costs",
-              "status": "new",
-              "note": "Commodities and other input costs remain elevated."
-            },
-            {
-              "risk": "Trade and Geopolitical Developments",
-              "status": "new",
-              "note": "Trade and geopolitical developments continue to be choppy."
-            },
-            {
-              "risk": "Increase in minimum wages in Haryana",
-              "status": "no_mention",
-              "note": "Affecting labor costs."
-            },
-            {
-              "risk": "Gas availability challenges",
-              "status": "no_mention",
-              "note": "Mitigated by shifting to electric heating."
-            },
-            {
-              "risk": "China's restrictions on heavy rare earth magnets",
-              "status": "no_mention",
-              "note": "Continues to impact supply, leading to a shift to alternative motor designs."
-            },
-            {
-              "risk": "Uncertainties around US tariffs",
-              "status": "no_mention",
-              "note": "Persisted during the quarter, but tariff relief related to USMCA content has been extended."
-            },
-            {
-              "risk": "Demand challenges for a global customer",
-              "status": "no_mention",
-              "note": "Particularly in sales of one specific model, affecting EV revenue."
-            },
-            {
-              "risk": "China's supply of heavy rare-earth magnets stopped",
-              "status": "no_mention",
-              "note": "Impacting production of EV traction motors."
-            },
-            {
-              "risk": "Uncertainties regarding USA tariffs",
-              "status": "no_mention",
-              "note": "Recent US decision to extend tariff relief on vehicles assembled in the US should benefit US customers."
-            },
-            {
-              "risk": "Nexperia chips issue",
-              "status": "no_mention",
-              "note": "Potential risk being monitored."
-            },
-            {
-              "risk": "Novelis plant fire",
-              "status": "no_mention",
-              "note": "Potential risk impacting a larger customer."
-            }
-          ],
-          "themes": [
-            {
-              "label": "Revenue growth",
-              "direction": "positive",
-              "note": "Revenue grew by 54% year on year, driven by strong demand across markets.",
-              "section_ref": "FIN"
-            },
-            {
-              "label": "BEV segment challenges",
-              "direction": "mixed",
-              "note": "BEV revenue grew 107% despite weak demand in the US, indicating mixed performance across geographies.",
-              "section_ref": "SEG"
-            },
-            {
-              "label": "Supply chain adaptation",
-              "direction": "neutral",
-              "note": "Capacity is not constrained by demand, but supply chain challenges persist.",
-              "section_ref": "SUP"
-            },
-            {
-              "label": "Geographical diversification",
-              "direction": "positive",
-              "note": "Eastern markets contributed 59% of revenue, showing a shift in geographic mix.",
-              "section_ref": "GEO"
-            },
-            {
-              "label": "Strategic collaborations",
-              "direction": "positive",
-              "note": "Partnership with DENSO enhances capabilities in high voltage electric and hybrid powertrain systems.",
-              "section_ref": "STRAT"
-            }
-          ],
-          "key_takeaways": [
-            "Revenue grew by 54% year on year, while EBITDA and net profit increased by 49% and 45% respectively.",
-            "BEV revenue grew 107% despite EV demand in the US remaining weak.",
-            "Partnership with DENSO to fill the gap in high voltage electric and hybrid powertrain systems.",
-            "Total order book for robotics and physical AI is ₹ 8 billion.",
-            "Inflation continues to be the biggest near-term challenge, impacting margins."
-          ],
-          "pressing_questions": []
-        },
-        {
-          "company": "Sona BLW Precision Forgings Ltd",
-          "ticker": "SONACOMS",
-          "industry": "Auto Components & Equipments",
-          "country": "India",
-          "concall_date": "2026-05-01",
-          "source": "transcript",
-          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=e655e3eb-4d7d-4ace-bde9-5a2f30cf8019.pdf",
-          "model": "gpt-4o",
-          "generated_at": "2026-07-30T23:03:12.475Z",
-          "summary": "Sona BLW Precision Forgings Ltd anticipates continued growth in electrification and diversification, with a focus on expanding its product offerings and geographical reach.",
-          "sections": [
-            {
-              "id": "FIN",
-              "title": "Financial Performance",
-              "key_figures": [
-                {
-                  "label": "Q4 FY26 Revenue",
-                  "value": "1,272",
-                  "unit": "crores",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Q4 FY26 EBITDA",
-                  "value": "311",
-                  "unit": "crores",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Q4 FY26 EBITDA Margin",
-                  "value": "24.4",
-                  "unit": "%",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Q4 FY26 PAT",
-                  "value": "192",
-                  "unit": "crores",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Q4 FY26 PAT Margin",
-                  "value": "14.7",
-                  "unit": "%",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "FY26 Revenue",
-                  "value": "4,475",
-                  "unit": "crores",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "FY26 EBITDA",
-                  "value": "1,107",
-                  "unit": "crores",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "FY26 EBITDA Margin",
-                  "value": "24.7",
-                  "unit": "%",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "FY26 PAT",
-                  "value": "670",
-                  "unit": "crores",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Cash from Operations",
-                  "value": "659",
-                  "unit": "crores",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Capex Spend",
-                  "value": "369",
-                  "unit": "crores",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Free Cash Flow",
-                  "value": "290",
-                  "unit": "crores",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Cash and Investments",
-                  "value": "1,269",
-                  "unit": "crores",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Q4 FY26 Revenue Growth",
-                  "value": "47",
-                  "unit": "%",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Q4 FY26 PAT Growth",
-                  "value": "17",
-                  "unit": "%",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "FY26 Revenue Growth",
-                  "value": "26",
-                  "unit": "%",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "FY26 EBITDA Growth",
-                  "value": "13.5",
-                  "unit": "%",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "FY26 PAT Growth",
-                  "value": "11",
-                  "unit": "%",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "FY26 Adjusted PAT",
-                  "value": "670",
-                  "unit": null,
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "FY26 Adjusted PAT Margin",
-                  "value": "11",
-                  "unit": "%",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "FY26 One-time Impact from New Labor Code",
-                  "value": "30",
-                  "unit": null,
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Dividend Distributed",
-                  "value": "200",
-                  "unit": null,
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Short-term Borrowings",
-                  "value": "226",
-                  "unit": null,
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Interest Income",
-                  "value": "86",
-                  "unit": null,
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Return on Capital Employed",
-                  "value": "2.9",
-                  "unit": null,
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Fixed Asset Turnover Ratio",
-                  "value": "2.9",
-                  "unit": null,
-                  "period": "FY26",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Q4 FY26 Performance",
-                  "points": [
-                    "Revenue grew by 47% year on year.",
-                    "EBITDA increased by 32% year on year.",
-                    "PAT increased by 17% year on year."
-                  ]
-                },
-                {
-                  "label": "FY26 Performance",
-                  "points": [
-                    "Revenue grew by 26% year on year.",
-                    "EBITDA grew by 13% year on year.",
-                    "PAT grew by 11% year on year."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "ORD",
-              "title": "Order Book & Demand",
-              "key_figures": [
-                {
-                  "label": "Net Order Book",
-                  "value": "237",
-                  "unit": "billion",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "EV Order Book Share",
-                  "value": "70",
-                  "unit": "%",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "New EV Programs Added",
-                  "value": "3",
-                  "unit": null,
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "New Hybrid Program Added",
-                  "value": "1",
-                  "unit": null,
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "New EV Customers Added",
+                  "label": "New EV programs added",
                   "value": "2",
-                  "unit": null,
-                  "period": "Q4 FY26",
+                  "unit": "programs",
+                  "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Total EV Programs",
-                  "value": "67",
-                  "unit": null,
-                  "period": "FY26",
+                  "label": "New hybrid programs added",
+                  "value": "1",
+                  "unit": "program",
+                  "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "EV Programs in Production",
-                  "value": "37",
-                  "unit": null,
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "EV Programs Yet to Enter Production",
-                  "value": "30",
-                  "unit": null,
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "New Non-EV Differential Gear Programs",
-                  "value": "7",
-                  "unit": null,
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Non-EV Differential Gear Programs Orderbook Addition",
-                  "value": "3 billion",
-                  "unit": null,
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Total New Programs Won",
-                  "value": "31",
-                  "unit": null,
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "New Customers Added",
-                  "value": "3",
-                  "unit": null,
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Total Net Order Book",
-                  "value": "237 billion",
-                  "unit": null,
-                  "period": "Q4 FY26",
+                  "label": "Order book consumption multiplier",
+                  "value": "32",
+                  "unit": "times quarterly consumption (avg order life ~8 years)",
+                  "period": null,
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Order Wins",
+                  "label": "Order wins",
                   "points": [
-                    "Won 4 new driveline orders in Q4.",
-                    "3 driveline orders from European OEMs, highest ever in a single quarter from Europe.",
-                    "1 order for a hybrid platform."
+                    "New order from an existing North American customer for hybrid differential assembly.",
+                    "Won 2 traction motor programs from a new-age Indian electric two-wheeler vehicle manufacturer.",
+                    "Won meaningful ICE differential gear programs, including one from a traditional North American OEM worth ₹2.1 billion — company noted continued gains in this original product category which often gets overlooked versus newer products.",
+                    "Additional business wins in starters, differential gears and railways.",
+                    "Quality of order book continues to improve, increasingly winning business across multiple powertrains, geographies and product categories."
+                  ]
+                },
+                {
+                  "label": "Order book consumption clarification",
+                  "points": [
+                    "Order book consumption is calculated over roughly the average life of an order (assumed ~8 years), so quarterly consumption is multiplied by ~32x, explaining the gap between order intake figures and quarterly revenue."
                   ]
                 }
               ]
@@ -33640,53 +32949,190 @@
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
-                  "label": "BEV Revenue",
-                  "value": "359",
-                  "unit": "crores",
-                  "period": "Q4 FY26",
+                  "label": "BEV revenue",
+                  "value": "436",
+                  "unit": "INR crore",
+                  "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "BEV Revenue Share",
-                  "value": "39",
+                  "label": "BEV revenue growth YoY",
+                  "value": "107",
                   "unit": "%",
-                  "period": "Q4 FY26",
+                  "period": "Q1 FY27 vs Q1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "BEV Revenue Growth",
-                  "value": "22",
+                  "label": "BEV revenue as % of automotive product sales",
+                  "value": "44",
                   "unit": "%",
-                  "period": "Q4 FY26",
+                  "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "BEV Revenue",
-                  "value": "1,154",
-                  "unit": "crores",
-                  "period": "FY26",
+                  "label": "Revenue from products created in last 7 years",
+                  "value": ">35",
+                  "unit": "% of revenue",
+                  "period": "annualized, Q1 basis",
                   "kind": "reported"
                 },
                 {
-                  "label": "BEV Revenue Share",
-                  "value": "35",
+                  "label": "Number of new products from own R&D",
+                  "value": "19",
+                  "unit": "products",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Annualized new-products revenue (Q1 annualized)",
+                  "value": "1,800",
+                  "unit": "INR crore",
+                  "period": "annualized from Q1",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Annualized new-products profit (Q1 annualized)",
+                  "value": "230",
+                  "unit": "INR crore",
+                  "period": "annualized from Q1",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cumulative acquisition investment (Comstar, Novelic, Railway)",
+                  "value": "2,750",
+                  "unit": "INR crore",
+                  "period": "over last 7 years",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Acquired businesses' share of revenue",
+                  "value": "40",
                   "unit": "%",
-                  "period": "FY26",
+                  "period": "end of Q1",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Acquired businesses' estimated net annual profit",
+                  "value": "270",
+                  "unit": "INR crore",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Robotics & Physical AI order book (new orders this quarter)",
+                  "value": "6",
+                  "unit": "INR billion",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total Robotics & Physical AI order book",
+                  "value": "8",
+                  "unit": "INR billion",
+                  "period": "end of Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Eastern markets share of revenue",
+                  "value": "59",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Eastern markets share of revenue (prior year)",
+                  "value": "56",
+                  "unit": "%",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Denso electrification business revenue",
+                  "value": "8",
+                  "unit": "USD billion/year",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capex-to-revenue ratio in high voltage motor/control systems (Sona view)",
+                  "value": "8-9",
+                  "unit": "INR revenue per ₹1 capex",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capex-to-revenue ratio (Sat Mohan Gupta estimate)",
+                  "value": "11-12",
+                  "unit": "INR revenue per ₹1 capex",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "2/3-wheeler traction motor market share (India)",
+                  "value": "25",
+                  "unit": "%",
+                  "period": null,
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "BEV Segment",
+                  "label": "Electrification performance",
                   "points": [
-                    "Best ever quarter for BEV revenue and revenue share.",
-                    "BEV revenues grew 22% year on year despite US EV sales declining by 28%."
+                    "Delivered highest ever BEV revenue and BEV mix during the quarter; BEV revenue grew 107% despite weak EV demand in the US, showing the EV business is no longer dependent on a handful of customers or one geography.",
+                    "Added 2 new EV programs and 1 hybrid program, taking EV order book to 69 programs across 36 customers."
                   ]
                 },
                 {
-                  "label": "Product Diversification",
+                  "label": "New product/innovation capability",
                   "points": [
-                    "Top 4 products contributed 86% of revenue last year; now spread across top 8 products."
+                    "More than 35% of revenue comes from products that did not exist in the portfolio 7 years ago; 19 of these products were conceived, designed, industrialized and scaled entirely through own R&D funded from own cash flows.",
+                    "Annualized Q1 basis, these new products represent a ₹1,800 crore revenue business generating over ₹230 crore of annual profit — described as equivalent to creating a multi-unicorn from scratch in 7 years."
+                  ]
+                },
+                {
+                  "label": "Capital allocation / M&A track record",
+                  "points": [
+                    "Over last 7 years, invested ~₹2,750 crore across acquisitions of Comstar, Novelic and the Railway Business; these 3 businesses now contribute ~40% of revenue and, assuming comparable margins, ~₹270 crore of net annual profit — despite the railway business being in its first year of post-acquisition integration."
+                  ]
+                },
+                {
+                  "label": "DENSO Joint Venture structure",
+                  "points": [
+                    "Two JVs: JV1 focuses on high-voltage electric and hybrid powertrain systems for 4 and 4+ wheel vehicles (passenger and commercial); Denso holds majority stake, contributes technology/IP and leads management.",
+                    "JV2 focuses on 2 and 3 wheelers where Sona Comstar already has an established technology position; Sona Comstar retains majority ownership and management control while licensing its own technology into the JV.",
+                    "Suspension motor business and all other non-traction motor businesses remain completely outside the scope of the DENSO transaction.",
+                    "Royalty structure is equal and reciprocal: JV2 pays royalties to Denso for high-voltage technologies, while JV1 pays royalties to Sona Comstar for 2/3-wheeler technologies — both companies contribute technology, IP and engineering expertise.",
+                    "JV1 will lead/kickstart faster; JV2 will follow, per management (Sat Mohan Gupta) — exact timing not disclosed due to confidentiality.",
+                    "Rationale for including the already-successful 2/3-wheeler business in a JV: access to a customer base not currently open to Sona, export opportunity to markets where Denso is dominant, and a desire to partner fully across the board rather than selectively.",
+                    "e-axle (integrated motor+inverter+gearbox assembly) is a very tiny market for JV1; JV2 will make motors and inverters that can be sold to e-axle makers, directly to OEMs, or to Sona Comstar's own driveline division to build e-axles — three possible go-to-market models exist.",
+                    "Denso's electrification business revenue is above $8 billion/year, giving JV2 access to a market-leading position; Denso brings full-spectrum controller technology while Sona Comstar brings motor manufacturing excellence and frugal, cost-targeted design capability."
+                  ]
+                },
+                {
+                  "label": "Robotics & Physical AI business build-out",
+                  "points": [
+                    "Three distinct revenue streams identified: (1) advanced components and subsystems (motors, gearboxes, sensors) closest to existing capability; (2) perception stack and engineering services, including software and integrated hardware-software solutions; (3) manufacturing of selected full robotic platforms, initially autonomous mobile robots (AMRs) and cognitive collaborative robots (cobots).",
+                    "Showcased prototype of first AMR at CES Las Vegas earlier this year; development continues to progress rapidly.",
+                    "Secured first order for an advanced robotic subsystem; second order for perception engineering services for AMRs; third order combines hardware and software — a complete short-range radar perception solution for an Indian commercial vehicle OEM.",
+                    "These three orders add ₹6 billion to the Robotics and Physical AI order book, taking the total for this new vertical to ₹8 billion.",
+                    "Market for this vertical appears to be developing faster than originally anticipated, unlike the slower ramp historically seen with electrification products or suspension motors.",
+                    "Company deliberately delayed public discussion of this vertical until it had tangible proof points (orders secured), to avoid loss of credibility from premature announcements."
+                  ]
+                },
+                {
+                  "label": "Diversification (4th strategic priority)",
+                  "points": [
+                    "Eastern markets contributed 59% of revenue this quarter vs. 56% last year, showing continued shift in geographic mix.",
+                    "Fastest growing business this quarter was EV suspension motors, followed by EV traction motors.",
+                    "Emerging product portfolios (often grouped under 'others') include steering bevel boxes, intermediate gears, epicyclic gear trains, input rotor shafts, and several railway products."
+                  ]
+                },
+                {
+                  "label": "Growth ramp-up pattern for new businesses",
+                  "points": [
+                    "Typical pattern for a new product/technology: first 3 years generate no money, year 4 sees first $1 of revenue, year 5 reaches ~$10 million, year 7-8 becomes a $100 million business — as seen with EV differential assemblies, EV traction motors, and expected with suspension motors.",
+                    "Robotics business is expected to hit these milestones faster than the historical timeline, though how much faster is too early to tell."
                   ]
                 }
               ]
@@ -33694,13 +33140,101 @@
             {
               "id": "TECH",
               "title": "Product & Technology",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "Suspension motor product code base",
+                  "value": "2 million",
+                  "unit": "lines of code",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Regular car code base",
+                  "value": ">1 million",
+                  "unit": "lines of code",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Advanced EV code base",
+                  "value": "5 million+",
+                  "unit": "lines of code",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV reducer ratio (car)",
+                  "value": "9:1",
+                  "unit": "reduction ratio",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Humanoid joint reducer ratio",
+                  "value": "100-160",
+                  "unit": "reduction ratio",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Global radar market projected growth (25 yrs)",
+                  "value": "~260x, reaching $60 billion",
+                  "unit": "USD / multiple",
+                  "period": "next 25 years",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "Global reducer market projected growth (25 yrs)",
+                  "value": "~590x, reaching $1.4 trillion",
+                  "unit": "USD / multiple",
+                  "period": "next 25 years",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "Global electric motor market projected growth (25 yrs)",
+                  "value": "~260x, reaching $2.5 trillion",
+                  "unit": "USD / multiple",
+                  "period": "next 25 years",
+                  "kind": "market_size"
+                }
+              ],
               "subsections": [
                 {
-                  "label": "R&D and New Products",
+                  "label": "Technology roadmap and products under commercialization",
                   "points": [
-                    "Received approvals for electric panels and HVAC systems in railway business.",
-                    "Developed in-cabin radar solution for passenger cars and exterior radar solutions for commercial vehicles."
+                    "Advancing market-relevant products across automotive and railway applications: magnet-free motor solutions, exterior radar solutions, air springs, HVAC, and door systems.",
+                    "Products under commercialization this quarter include short-range radar sensors and advanced robotics components.",
+                    "Short-range exterior radar sensor developed for a leading commercial vehicle OEM is designed to meet upcoming Government of India ADAS (advanced driver assistance systems) regulations.",
+                    "Business win in advanced robotic components builds on deep expertise and foundational capabilities in automotive product design, tooling and manufacturing.",
+                    "AMR platform brings together capabilities across motor, driveline and sensor divisions, while establishing expertise in newer domains such as robot perception, motion planning and control, telematics, reinforcement learning and AI orchestration.",
+                    "AMR platform is being developed for manufacturing and warehousing applications, designed to support use cases across automotive, electronics, pharmaceuticals, FMCG and other sectors.",
+                    "As smart/flexible manufacturing scales, manufacturers are moving from isolated automation to connected/coordinated operations, creating opportunities in physical AI components, actuators, and in some cases full systems.",
+                    "Training for physical AI deployment is flagged as an area likely to be the next frontier in cognitive robotics."
+                  ]
+                },
+                {
+                  "label": "Automotive-robotics technology convergence thesis",
+                  "points": [
+                    "Same technologies (motors, gearboxes, actuators, sensors, electronics, software) power both modern EVs/AVs and intelligent machines (humanoids, AMRs, cobots, robotaxis).",
+                    "Automotive and robotics industries have already started converging — cited Hyundai's ownership of Boston Dynamics and automotive-sector entrants making humanoids.",
+                    "Reducer used in an EV (9:1 ratio) is fundamentally the same concept as one used in a humanoid joint (100:1 to 160:1 ratio), just smaller and more precise.",
+                    "Company already provides a range of service models: pure software/perception stack service (training an AMR, providing perception software stack), and combined hardware+software offerings (device plus software)."
+                  ]
+                },
+                {
+                  "label": "AI ethics and data privacy approach",
+                  "points": [
+                    "Guardrails for AI applications and data are designed before even the data structure mapping stage.",
+                    "European customer supply requires passing a high GDPR compliance bar for data usage.",
+                    "Most of the perception stack is built around radar technology, which detects outline/heartbeat but not face or voice, providing an inherent privacy layer.",
+                    "Customers themselves require privacy/ethics safeguards to be built in as a first layer."
+                  ]
+                },
+                {
+                  "label": "Passenger vehicle EV motor capability build (JV context)",
+                  "points": [
+                    "Even with a PO today, automotive product development cycle to SOP takes ~32 months / 3 years.",
+                    "Key building blocks for competitive motor development: frugal, cost-efficient design from day one; building the supply chain (motor is an assembled product with lower in-house value addition); and market/duty-cycle knowledge (e.g., company captured 1 year of duty-cycle data via an MOU with a three-wheeler company circa 2021 before launching a product a year later)."
                   ]
                 }
               ]
@@ -33711,9 +33245,11 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Gas Availability Challenge",
+                  "label": "Capacity positioning vs. demand",
                   "points": [
-                    "Reduced gas requirement by nearly 20% through electric heating and process modifications."
+                    "Management stated the company is not constrained by demand for EV products; OEMs are themselves constrained by their own supply chain challenges, not by Sona Comstar's capacity.",
+                    "Sat Mohan Gupta (Motor Business CEO) confirmed no capacity constraints currently; management stated Driveline business (Vikram) also has no capacity constraints.",
+                    "Company has historically built capacity ahead of market demand; however, since any vehicle has hundreds of parts, even one bottlenecked supplier in the broader supply chain can constrain overall system sales."
                   ]
                 }
               ]
@@ -33721,35 +33257,18 @@
             {
               "id": "GEO",
               "title": "Geography & Distribution",
-              "key_figures": [
-                {
-                  "label": "India Revenue Share",
-                  "value": "50",
-                  "unit": "%",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Eastern Markets Revenue Share",
-                  "value": "60",
-                  "unit": "%",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "North America Revenue Share",
-                  "value": "40",
-                  "unit": "%",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                }
-              ],
+              "key_figures": [],
               "subsections": [
                 {
-                  "label": "Geographical Diversification",
+                  "label": "Regional demand trends",
                   "points": [
-                    "India's share in revenue mix has crossed 50% for the full year.",
-                    "Eastern markets contributed 60% of revenues in Q4 compared to 40% last year."
+                    "India delivered another strong quarter, particularly in passenger vehicles and electric two-wheelers.",
+                    "Europe has not just remained stable but is actually growing, surprising many.",
+                    "US has improved meaningfully as the quarter progressed, though EV demand in the US specifically remains weak, with a shift toward hybrids being observed.",
+                    "China was mixed overall, but was Sona Comstar's fastest growing geography this quarter due to the suspension motor ramp-up and its success in China.",
+                    "India is considered the fastest growing EV market in the world currently.",
+                    "Europe is electrifying fast, whether fully BEV, strong hybrid, or plug-in hybrid.",
+                    "JV2 (2/3-wheeler high voltage) will begin with India, with global/export expansion to other markets where Denso is more dominant planned in phase two, once Indian operations are established."
                   ]
                 }
               ]
@@ -33760,10 +33279,90 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Commodity Inflation",
+                  "label": "Rare earth magnet situation",
                   "points": [
-                    "Inflation in steel, aluminum, copper, and energy prices impacting margins.",
-                    "Some commodity inflation is not passed through, causing pressure on margins."
+                    "Heavy rare earth magnets remain restricted from import; company has shifted almost entirely to light rare earth alternatives, which is working fine.",
+                    "No material change or update versus prior quarters — situation has been the same for the last 5 quarters.",
+                    "No real magnet shortage impact, as shown by continued growth in the EV traction motor business."
+                  ]
+                },
+                {
+                  "label": "Debtor days / working capital",
+                  "points": [
+                    "Significant reduction in debtor days this quarter improved the working capital turnover ratio and contributed to the best quarter from an operational cash flow perspective."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [
+                {
+                  "label": "Addressable EV/hybrid car & CV market (India, 2030)",
+                  "value": "2.3 million vehicles / ~24,000 crore",
+                  "unit": "vehicles / INR crore",
+                  "period": "2030",
+                  "kind": "market_size"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Market sizing for high-voltage JV opportunity",
+                  "points": [
+                    "Per S&P Global Mobility, Indian hybrid and EV cars plus commercial vehicle market represents an addressable market of over 2.3 million vehicles, amounting to roughly a ₹24,000 crore opportunity by 2030; by 2035 this could be several times larger (management referenced roughly 3x).",
+                    "This market sizing is before considering longer-term global ambitions beyond India."
+                  ]
+                },
+                {
+                  "label": "Competitive landscape commentary",
+                  "points": [
+                    "2-wheeler/3-wheeler traction motor market is far more competitive, where Sona Comstar has been able to take market leadership on its own.",
+                    "High-voltage motor/control systems market is described as less competitive due to a significant technology barrier, which management believes will allow the company to make a 'fairly big dent' in the market.",
+                    "Management declined to give specifics on the number of competitors with local, highly localized manufacturing capability in high-voltage motors, citing sensitivity around compliance/PLI claims by some market participants."
+                  ]
+                },
+                {
+                  "label": "Business development wins across markets",
+                  "points": [
+                    "Secured new business across EVs, hybrids and ICE across India, Europe and North America, and across virtually every product category — a diversified base capable of growing across customers, geographies, products and powertrain technologies."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "\"Sona Comstar 2.0\" strategic framework",
+                  "points": [
+                    "Framed as natural evolution (not change in direction) of strategy built over past decade; work on this strategy began more than 2 years ago but was not publicized until tangible actions (DENSO JV, Robotics/Physical AI) were ready to show.",
+                    "Between 2015-2025, revenue increased 10-fold, with more than 85% of that growth coming from just 3 strategic decisions: entering new product verticals, expanding into global markets (particularly the West), and early recognition/action on the electrification opportunity.",
+                    "Ambition for next decade: build 'another 10x company', addressable market broadened from automotive to mobility.",
+                    "Three growth engines identified: (1) new product verticals via organic innovation plus disciplined acquisitions/partnerships; (2) 'Look East' strategy — building an equally strong presence in the East via strategic moves (railway acquisition, DENSO partnership) rather than incremental expansion, while maintaining strategic importance of Europe/North America; (3) Robotics and Physical AI as a new long-term technology theme alongside electrification.",
+                    "What will not change: purpose, values, commitment to customers/shareholders/employees, and principles of engineering excellence, disciplined capital allocation, operational execution, financial prudence and transparency.",
+                    "What will change: scale of ambition — pursuing larger opportunities, markets, investments and strategic decisions.",
+                    "Every decision continues to be judged against three questions: does it create meaningful value for customers; does it create long-term value for shareholders; does the company have capability/management bandwidth to execute well — if any answer is no, company will walk away."
+                  ]
+                },
+                {
+                  "label": "DENSO Partnership rationale",
+                  "points": [
+                    "Described as the most important strategic partnership in Sona Comstar's history and the company's first joint venture.",
+                    "Fills a prior gap: the company did not previously participate in high-voltage electric and hybrid powertrain systems for passenger and commercial vehicles.",
+                    "Management believes DENSO (world's 2nd largest mobility technology company) chose Sona Comstar for its strong engineering capabilities, proven frugal execution, and complementary technologies (DENSO's hybrid strength plus Sona's electric strength).",
+                    "Aspiration is to reach the stature of companies like Bosch and DENSO (85 years old) despite Sona Comstar being only 25 years old and roughly 1/100th DENSO's revenue size.",
+                    "Management noted this may make Sona Comstar the first Indian automotive company to receive royalty income from a global mobility technology company."
+                  ]
+                },
+                {
+                  "label": "Robotics and Physical AI as strategic platform",
+                  "points": [
+                    "Positioned as the third and 'boldest' growth engine, viewed as building on capabilities developed over the past decade rather than a departure from strategy.",
+                    "AI viewed as a 'general purpose technology' (in the lineage of fire, the wheel, electricity, internet) now moving from the digital world into the physical world.",
+                    "Management believes if the company captures even a fraction of the long-term robotics/physical AI opportunity, the outlook is very positive."
                   ]
                 }
               ]
@@ -33774,16 +33373,41 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Inflation and Costs",
+                  "label": "Inflation and cost pressure",
                   "points": [
-                    "Inflation in commodities and energy prices impacting margins.",
-                    "Increase in minimum wages in Haryana affecting labor costs."
+                    "Inflation remains the biggest near-term challenge; commodities and other input costs remain elevated and impacted margins during the quarter.",
+                    "April was tough, May was even tougher, but June showed improvement as material costs passed through and cost reduction/mitigation measures started catching up.",
+                    "Cost pass-throughs to automotive customers lag inflation, creating an arithmetic impact on both revenue and cost that may continue to pressure margin as a percentage."
                   ]
                 },
                 {
-                  "label": "Gas Availability",
+                  "label": "Geopolitical and trade uncertainty",
                   "points": [
-                    "Challenges in gas availability mitigated by shifting to electric heating."
+                    "Operating environment remains uncertain; trade and geopolitical developments continue to be choppy, though management stated these have been uncertain for so long that they should not be used as an explanation for business performance — the job is to manage through the choppiness."
+                  ]
+                },
+                {
+                  "label": "Supply chain bottlenecks (external)",
+                  "points": [
+                    "Company is not itself a supply chain constraint, but other suppliers' capacity/supply chain issues can bottleneck the overall vehicle system and limit Sona Comstar's sellable volume, since a vehicle has hundreds of parts and the slowest link determines system pace."
+                  ]
+                },
+                {
+                  "label": "Rare earth magnet import restrictions",
+                  "points": [
+                    "Heavy rare earth magnets remain restricted for import; mitigated via shift to light rare earth alternatives, with no material change over the last 5 quarters."
+                  ]
+                },
+                {
+                  "label": "US EV demand weakness",
+                  "points": [
+                    "EV demand in the US remains weak, with a shift toward hybrids observed; despite this, BEV revenue still grew 107% globally."
+                  ]
+                },
+                {
+                  "label": "Confidentiality constraints on JV disclosure",
+                  "points": [
+                    "SOP timelines and specific revenue-recognition timing for JV1/JV2 cannot be disclosed due to confidentiality agreements involving DENSO and customers."
                   ]
                 }
               ]
@@ -33794,15 +33418,28 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Electrification Growth",
+                  "label": "Margin outlook",
                   "points": [
-                    "Electrification growth is expected to continue across geographies."
+                    "Recovery measures (cost pass-throughs) expected to become progressively more visible from Q2 FY27 onwards."
                   ]
                 },
                 {
-                  "label": "Railway Business Growth",
+                  "label": "Robotics order execution timelines",
                   "points": [
-                    "Confident about good, healthy growth over the next 5 years in the railway business."
+                    "Of the three robotics orders comprising the ₹8 billion order book (₹6bn added this quarter), SOPs are near-term: one starts production this quarter, one next quarter, and one within 15 months — most robotics orders expected to start production within 12-15 months maximum."
+                  ]
+                },
+                {
+                  "label": "JV1/JV2 timeline",
+                  "points": [
+                    "SOP timelines for DENSO JV1 and JV2 cannot be disclosed due to confidentiality agreements; JV1 will lead and kick off faster than JV2.",
+                    "JV2 will begin with the Indian market; global/export expansion is planned in a 'phase two' once Indian operations are established, timing unspecified."
+                  ]
+                },
+                {
+                  "label": "New business ramp-up timeline (general pattern, applied to robotics)",
+                  "points": [
+                    "Typical ramp pattern for new products: no revenue for first 3 years, first $1 revenue in year 4, ~$10 million in year 5, ~$100 million business by year 7-8; robotics business is expected to hit these milestones faster than this historical pattern, though the exact pace is still uncertain."
                   ]
                 }
               ]
@@ -33810,20 +33447,188 @@
           ],
           "guidance_ledger": [
             {
-              "metric": "Electrification Growth",
-              "horizon": null,
-              "statement": "Electrification growth is expected to continue across geographies.",
+              "metric": "EBITDA margin recovery / cost pass-through visibility",
+              "horizon": "Q2 FY27 onwards",
+              "statement": "We expect that these recovery measures will become progressively more visible from quarter 2 onwards.",
               "specificity": "vague",
               "direction": "up",
               "status": "new"
             },
             {
-              "metric": "Railway Business Growth",
-              "horizon": "next 5 years",
-              "statement": "Confident about good, healthy growth over the next 5 years in the railway business.",
+              "metric": "Margin pressure from mix and cost timing",
+              "horizon": "near-term",
+              "statement": "This, along with the arithmetic impact on both revenue and cost, may continue to create some pressure on margin as a percentage.",
+              "specificity": "vague",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "Robotics & Physical AI order SOPs",
+              "horizon": "within 12-15 months",
+              "statement": "Most of this will start production within 12 to 15 months max; one is this quarter, one is next quarter, one within 15 months.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "JV1/JV2 (DENSO) SOP timelines",
+              "horizon": "unspecified",
+              "statement": "We are restricted by confidentiality agreements on it... but as soon as we humanly can is really the actual timeline.",
+              "specificity": "refused",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "JV2 global expansion (beyond India)",
+              "horizon": "phase two, unspecified",
+              "statement": "We begin with India and then we look at the world... Phase one is to get this up and running, then get Indian customers, start satisfying that, and then in phase two, we would also look at that.",
               "specificity": "vague",
               "direction": "up",
               "status": "new"
+            },
+            {
+              "metric": "High-voltage EV/hybrid market opportunity (India)",
+              "horizon": "2030",
+              "statement": "Indian hybrid and EV cars and commercial vehicle market alone represents an addressable market of over 2.3 million vehicles, which would roughly amount to about a 24,000 crore opportunity in 2030; if you go to 2035, it will be many times this (management suggested roughly 3x).",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Robotics/Physical AI long-term component markets (radar, reducers, motors)",
+              "horizon": "next 25 years",
+              "statement": "Global market for radars, reducers, and electric motors over the next 25 years could grow approximately 260x, 590x, and 260x respectively, reaching an estimated $60 billion for radars, $1.4 trillion for reducers, and $2.5 trillion for motors.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "New business ramp-up timeline for Robotics business",
+              "horizon": "next several years",
+              "statement": "First 3 years you make no money, year 4 first $1 revenue, year 5 ~$10 million, year 7-8 becomes a $100 million business... I think this one will be faster, much faster, probably.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "10x revenue growth ambition (decade-long)",
+              "horizon": "next decade",
+              "statement": "Over the last 10 years together, we built one 10X company, our ambition for the next decade is to build another 10X company.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "2/3-wheeler traction motor market share (India)",
+              "horizon": "unspecified",
+              "statement": "We're doing well in India, and we're 25%, but 25% is also not enough. Why not more than 50%?",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "EBITDA margin band (23-25%)",
+              "horizon": "ongoing",
+              "statement": "Prior guidance of 23-25% EBITDA margin band post-railway acquisition was not explicitly reiterated in this call; current quarter margin was 23.1%.",
+              "specificity": "vague",
+              "direction": "flat",
+              "status": "lowered"
+            },
+            {
+              "metric": "Suspension motor revenue growth (3-4x)",
+              "horizon": "next year",
+              "statement": "Prior guidance of 3-4x suspension motor growth not explicitly restated this quarter; suspension motors flagged as fastest growing business this quarter.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Suspension motor % of revenue reaching double digits",
+              "horizon": "FY26/next year",
+              "statement": "Not explicitly restated this quarter.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Traction motor growth (high double digits)",
+              "horizon": "next 2-3 years",
+              "statement": "Traction motor flagged as second-fastest growing business this quarter; explicit high-double-digit growth figure not restated.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Railway business growth (next 5 years)",
+              "horizon": "next 3-5 years",
+              "statement": "Not explicitly restated this quarter; railway business referenced only via emerging product portfolio and being in first year of post-acquisition integration.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Suspension Systems production start",
+              "horizon": "Q2 FY27",
+              "statement": "Prior guidance of Q2 FY27 production start not explicitly re-confirmed this quarter.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Mexico Plant production start",
+              "horizon": "Q2 FY28",
+              "statement": "Prior guidance of Q2 FY28 production start not explicitly re-confirmed this quarter.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Railway new products (HVAC, electric panels) as growth driver",
+              "horizon": "3 years",
+              "statement": "New products will become a meaningful driver from 3rd year onwards.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Railway business return ratios vs core business",
+              "horizon": null,
+              "statement": "It will improve returns because from a return perspective, they're very, very high return businesses. It may be slightly diluted on margins, but return-wise, it will be much higher.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Electric panel rolling-stock coverage timeline",
+              "horizon": "12-15 months",
+              "statement": "In electric panels, it will take us 12 to 15 months to cover all types of rolling stock because our development is more advanced.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "HVAC rolling-stock coverage timeline",
+              "horizon": "3 years",
+              "statement": "In HVAC, it will take at least 3 years for us to cover all types of rolling stock, especially in the segments where we want to play.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Non-automotive (robotics/eVTOL) revenue meaningfulness",
+              "horizon": "beyond 3 years",
+              "statement": "If the question is, when will you see meaningful revenue, assume if your investment horizon is less than 3 years, none of this has any meaning for you as an investor... it takes 4 to 5 years for anything which is a new product...to actually get there.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Commodity cost pressure outlook",
+              "horizon": null,
+              "statement": "That is a multi-trillion dollar question...I have no idea [if worst of commodity pressure is behind us].",
+              "specificity": "refused",
+              "direction": "unclear",
+              "status": "no_mention"
             },
             {
               "metric": "Market Share in Differential Gears",
@@ -33840,39 +33645,98 @@
               "specificity": "vague",
               "direction": "up",
               "status": "no_mention"
-            },
-            {
-              "metric": "Suspension Systems Production",
-              "horizon": "Q2 FY27",
-              "statement": "Suspension systems expected to start production in Q2 of FY 27.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "no_mention"
-            },
-            {
-              "metric": "Mexico Plant Production",
-              "horizon": "Q2 FY28",
-              "statement": "Production expected to start in the second quarter of FY 28.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "no_mention"
             }
           ],
           "risk_register": [
             {
-              "risk": "Inflation in commodities and energy prices",
+              "risk": "Input cost / commodity inflation and labor cost increases",
               "status": "new",
-              "note": "Impacting margins with some costs not passed through."
+              "note": "Commodities and other input costs remain elevated, impacting margins; April was tough, May tougher, June improved as pass-throughs and mitigation measures caught up."
             },
             {
-              "risk": "Increase in minimum wages in Haryana",
+              "risk": "Timing lag in customer cost pass-throughs",
               "status": "new",
-              "note": "Affecting labor costs."
+              "note": "Cost pass-throughs with automotive customers always lag inflation, creating margin pressure that is expected to ease from Q2 onward."
             },
             {
-              "risk": "Gas availability challenges",
+              "risk": "Adverse product mix (traction motor growth)",
               "status": "new",
-              "note": "Mitigated by shifting to electric heating."
+              "note": "Rapid growth in traction motor sales, which carries lowest margins relative to company average, dragged down overall margin."
+            },
+            {
+              "risk": "Geopolitical and trade uncertainty",
+              "status": "new",
+              "note": "Operating environment remains uncertain and choppy, though management says this should no longer be used as an explanation for performance."
+            },
+            {
+              "risk": "External supply chain bottlenecks limiting sellable volume",
+              "status": "new",
+              "note": "Company itself has ample capacity, but OEM/other-supplier constraints in the broader vehicle supply chain limit how much can actually be sold."
+            },
+            {
+              "risk": "Rare earth magnet import restrictions",
+              "status": "new",
+              "note": "Heavy rare earth magnets remain restricted for import; mitigated via light rare earth alternatives, unchanged for 5 quarters."
+            },
+            {
+              "risk": "US EV demand weakness",
+              "status": "new",
+              "note": "EV demand in the US remains weak with a shift toward hybrids, though this did not prevent 107% global BEV revenue growth."
+            },
+            {
+              "risk": "Confidentiality constraints limiting timeline disclosure",
+              "status": "new",
+              "note": "SOP and revenue-recognition timelines for DENSO JV1/JV2 cannot be disclosed due to confidentiality agreements with DENSO and customers."
+            },
+            {
+              "risk": "China market mixed",
+              "status": "new",
+              "note": "China remained kind of mixed overall in demand terms, though it was Sona Comstar's fastest growing geography this quarter due to suspension motor ramp-up."
+            },
+            {
+              "risk": "Commodity inflation (steel, aluminum, copper, freight, packaging, energy, petrochemicals)",
+              "status": "no_mention",
+              "note": "Continued to move up over last 5 months; part not passed through and lag effect will pressure margins for the foreseeable future."
+            },
+            {
+              "risk": "Haryana minimum wage increase effective 1st April 2026",
+              "status": "no_mention",
+              "note": "Cascading impact on labor cost; being mitigated via productivity improvement, headcount control, and workload management."
+            },
+            {
+              "risk": "Gas availability constraint",
+              "status": "no_mention",
+              "note": "Partially mitigated via electric heating shift and process optimization; gas requirement reduced ~20% with no production loss so far."
+            },
+            {
+              "risk": "US tariffs (Section 232) and inflationary demand impact",
+              "status": "no_mention",
+              "note": "Section 232 unchanged; tariffs inflationary, contributing to ~1 million lost car sales in US SAR estimate of 16-16.5 million units; revenue/margins from US not materially impacted so far."
+            },
+            {
+              "risk": "Customer/model concentration risk",
+              "status": "no_mention",
+              "note": "Lost 300 crore in revenue last year from one customer due to model discontinuation; de-risked via supplying same product across multiple customers and geographies."
+            },
+            {
+              "risk": "Chinese OEM supply chain access constraint",
+              "status": "no_mention",
+              "note": "Hard to penetrate China-for-China EV supply chain while Chinese OEMs still rely on domestic supply chain; will improve only as they set up production in Europe/US."
+            },
+            {
+              "risk": "EV subsidy landscape / BYD-related subsidy risk",
+              "status": "no_mention",
+              "note": "Not viewed as structural risk since most of the order book is in geographies (US, Europe, India) with little to no subsidies."
+            },
+            {
+              "risk": "Rare earth magnet policy uncertainty",
+              "status": "no_mention",
+              "note": "No update on rare earth magnets; government policy released but nothing material yet; company does not currently use heavy rare earth magnets."
+            },
+            {
+              "risk": "Order book volume volatility",
+              "status": "no_mention",
+              "note": "Volumes in order book are indicative, not firm; conversion can be higher or lower than booked but tends to average out over time."
             },
             {
               "risk": "China's restrictions on heavy rare earth magnets",
@@ -33914,42 +33778,1357 @@
             {
               "label": "Revenue growth",
               "direction": "positive",
-              "note": "Strong revenue growth across segments and geographies.",
+              "note": "Best-ever quarter for revenue, BEV revenue and BEV mix; revenue up 54% YoY, EBITDA up 49%, PAT up 45%.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Input-cost inflation",
+              "direction": "negative",
+              "note": "Commodities and input costs remained elevated, pressuring EBITDA and PAT margins by ~0.7pp YoY, though June showed improvement as pass-throughs caught up.",
               "section_ref": "FIN"
             },
             {
               "label": "BEV segment challenges",
               "direction": "mixed",
-              "note": "Strong BEV revenue growth despite challenges in US market.",
+              "note": "BEV revenue grew 107% to an all-time high share despite continued weak EV demand in the US.",
               "section_ref": "SEG"
-            },
-            {
-              "label": "Supply chain adaptation",
-              "direction": "positive",
-              "note": "Mitigated gas availability challenges and adapted to commodity inflation.",
-              "section_ref": "SUP"
             },
             {
               "label": "Geographical diversification",
               "direction": "positive",
-              "note": "Increased revenue share from India and Eastern markets.",
+              "note": "Eastern markets rose to 59% of revenue from 56% YoY; India, Europe strong, US improving, China mixed but fastest-growing geography this quarter.",
               "section_ref": "GEO"
             },
             {
               "label": "Strategic collaborations",
               "direction": "positive",
-              "note": "New orders and product approvals in railway and automotive sectors.",
-              "section_ref": "ORD"
+              "note": "Landmark two-JV partnership announced with DENSO covering high-voltage EV/hybrid powertrains and 2/3-wheeler traction motors, described as the most important partnership in company history.",
+              "section_ref": "STRAT"
+            },
+            {
+              "label": "New product ramp-up",
+              "direction": "positive",
+              "note": "Formal entry into Robotics and Physical AI with ₹8 billion order book already secured; over 35% of revenue now comes from products created via own R&D in last 7 years.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Supply chain adaptation",
+              "direction": "neutral",
+              "note": "Company not capacity-constrained itself, but broader OEM/supplier supply chain bottlenecks limit sellable volume; rare earth magnet import restrictions managed via light rare earth alternatives.",
+              "section_ref": "SUP"
             }
           ],
           "key_takeaways": [
-            "Q4 was the best ever quarter across the board with highest ever revenue, EBITDA, PAT, BEV revenue, and BEV revenue share.",
-            "Inflation in commodities and energy prices is impacting margins, with some costs not passed through.",
-            "Electrification growth is expected to continue across geographies, with strong BEV revenue performance.",
-            "India's share in revenue mix has crossed 50% for the full year, showing successful geographical diversification.",
-            "The company is confident about good, healthy growth over the next 5 years in the railway business."
+            "This was the best ever quarter for revenue, BEV revenue, and BEV revenue share, with very healthy momentum continuing across the business.",
+            "Revenue grew by 54% year on year, while EBITDA and net profit increased by 49% and 45% respectively. EBITDA margin was 23.1%.",
+            "Margins were heavily impacted by input cost inflation, labor cost increases as well as the timing gap in the customer recoveries or the pass-throughs, especially during April and May, but June was significantly better.",
+            "Announced a landmark partnership with DENSO consisting of two joint ventures: JV1 for high-voltage electric and hybrid powertrain systems for 4 and 4+ wheel vehicles (Denso majority), and JV2 for 2 and 3 wheelers (Sona Comstar majority).",
+            "Formally announced entry into Robotics and Physical AI as a third growth engine, with a ₹8 billion order book already secured across three orders (components, perception software services, and a combined hardware+software radar perception solution).",
+            "BEV revenue grew 107% to 436 crores, constituting 44% of automotive product sales; EV order book now stands at 69 programs across 36 customers.",
+            "Net order book stands at 240 billion at end of Q1 FY27, with EVs accounting for 64% and Robotics and Physical AI now contributing 3%.",
+            "Eastern markets contributed 59% of revenue this quarter, up from 56% last year, reflecting continued geographic diversification."
           ],
-          "pressing_questions": []
+          "pressing_questions": [
+            "How should we think about AI vs. the automotive business, given that probably half of the value lies in the software aspect — how will Sona Comstar target that? And in terms of return ratios and capital commitment, how are you thinking about it because it's a completely new and evolving area?",
+            "What are the timelines for JV2 (high voltage), given the understanding with Denso, as to when we should see revenue recognition starting, and whether both JVs' activation will be on the same date or with a gap?",
+            "Can you help size up the TAM/opportunity for JV2 given Denso's globally proven hybrid/EV portfolio, and what capability Denso brings versus Sona Comstar's own solo plan on high voltage motors (liquid cooling, inverters, etc.)?",
+            "In the India high-voltage motor landscape, how many players actually have local manufacturing capability with high localization, or is the industry still relying largely on imported subassemblies?",
+            "How should we think about capex intake for JV2?",
+            "For reaching the revenue stage of JV2, would it be 2 to 3 years away, and would this entail the entire product development process (validation, testing, etc.)?",
+            "Does Denso supply any of these products in India in EVs and hybrids?",
+            "The VA per employee has been declining — can you elaborate on the reasons, especially on a QoQ basis?",
+            "How will Sona Comstar ensure ethical guardrails (human values, cultural diversity, privacy, fairness, transparency) are maintained as AI/robotics applications expand?",
+            "For the ₹8 billion robotics order book, when are SOPs for these orders?",
+            "How is the rare earth situation panning out?",
+            "Which product is expected to grow the fastest, and which entails the highest margins?",
+            "If orders consumed are worth 15 billion, how are revenues only 13 billion?",
+            "How do you see the execution timeline of robotics orders compared to autos' typical ~7-year cycle?"
+          ]
+        },
+        {
+          "company": "Sona BLW Precision Forgings Ltd",
+          "ticker": "SONACOMS",
+          "industry": "Auto Components & Equipments",
+          "country": "India",
+          "concall_date": "2026-05-01",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=e655e3eb-4d7d-4ace-bde9-5a2f30cf8019.pdf",
+          "model": "anthropic.claude-sonnet-5",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-03T12:01:16.134Z",
+          "summary": "Q4 FY26 was Sona Comstar's best-ever quarter with highest-ever revenue, EBITDA, PAT, BEV revenue and BEV revenue share. Management flagged commodity inflation, Haryana minimum wage hikes and gas availability as near-term headwinds but expects margins to remain in a 23-25% band post-railway acquisition, with continued momentum in EV order wins, geographic diversification (India >50% mix, Eastern markets 60% of Q4 revenue), and new growth drivers in railways, suspension motors and traction motors.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "Revenue",
+                  "value": "1,272",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue growth YoY",
+                  "value": "47",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA",
+                  "value": "311",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA growth YoY",
+                  "value": "32",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin",
+                  "value": "24.4",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin YoY change",
+                  "value": "-2.7",
+                  "unit": "percentage points",
+                  "period": "Q4 FY26 vs Q4 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin base effect from PLI income",
+                  "value": "1.9",
+                  "unit": "percentage points",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin impact from product mix and commodity inflation",
+                  "value": "0.8",
+                  "unit": "percentage points",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Profit after tax (PAT)",
+                  "value": "192",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT growth YoY",
+                  "value": "17",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT margin",
+                  "value": "14.7",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT margin YoY change",
+                  "value": "-4.1",
+                  "unit": "percentage points",
+                  "period": "Q4 FY26 vs Q4 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT margin impact from lower net finance income (railway fund deployment)",
+                  "value": "-3.4",
+                  "unit": "percentage points",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT margin net positive impact from lower depreciation and higher tax",
+                  "value": "1.3",
+                  "unit": "percentage points",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Full year revenue",
+                  "value": "4,475",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Full year revenue growth YoY",
+                  "value": "26",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Full year EBITDA",
+                  "value": "1,107",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Full year EBITDA growth YoY",
+                  "value": "13",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Full year EBITDA margin",
+                  "value": "24.7",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Full year EBITDA margin YoY change",
+                  "value": "-2.7",
+                  "unit": "percentage points",
+                  "period": "FY26 vs FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Full year PAT one-time impact from new labor code",
+                  "value": "30",
+                  "unit": "INR crores (post-tax)",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Full year PAT (adjusted for one-time item)",
+                  "value": "670",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Full year adjusted PAT growth YoY",
+                  "value": "11",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Full year adjusted PAT margin YoY change",
+                  "value": "-2.2",
+                  "unit": "percentage points",
+                  "period": "FY26 vs FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Full year revenue growth (management commentary)",
+                  "value": "26",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Full year EBITDA growth (management commentary)",
+                  "value": "13.5",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Full year PAT growth (management commentary)",
+                  "value": "11",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cash generated from operations",
+                  "value": "659",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capex spend",
+                  "value": "369",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Free cash flow",
+                  "value": "290",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Aggregate amount used for purchase of railway business",
+                  "value": "1,800",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Additional land purchased",
+                  "value": "110",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Dividend distributed to shareholders",
+                  "value": "200",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Short-term borrowings added",
+                  "value": "226",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Interest income",
+                  "value": "86",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cash and investments at year end",
+                  "value": "1,269",
+                  "unit": "INR crores",
+                  "period": "FY26 year-end",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cash at year end (management commentary)",
+                  "value": "1,270",
+                  "unit": "INR crores",
+                  "period": "FY26 year-end",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Fixed asset turnover ratio",
+                  "value": "2.9",
+                  "unit": "x",
+                  "period": "FY26",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Q4 EBITDA margin drivers",
+                  "points": [
+                    "EBITDA margin lower by 2.7% YoY in Q4; of this, base effect of 1.9% is due to fully PLI income accrued in the fourth quarter last year, and the balance 0.8% impact is due to product mix and commodity price inflation.",
+                    "Of the 80bps mix/commodity impact, roughly half is due to mix (traction motor being the highest growth driver with lower margins) and half is due to commodity prices, largely a pass-through with a lag effect; commodity prices continue to trend up so the impact is ongoing, and there is a numerator-denominator effect that impacts percentage margin more than absolute margin."
+                  ]
+                },
+                {
+                  "label": "Q4 PAT margin drivers",
+                  "points": [
+                    "PAT margin lower by 4.1% YoY; nearly half of this due to lower EBITDA, 3.4% effect due to lower net finance income from deployment of funds in the railway business during the year, and a net positive impact of about 1.3% from lower depreciation and higher tax."
+                  ]
+                },
+                {
+                  "label": "Full year performance context",
+                  "points": [
+                    "Full year described as tough given the loss of Sunjay in Q1, US tariffs, the magnet ban, and an increasingly challenging and volatile geopolitical environment, yet the company delivered 26% revenue growth, 13.5% EBITDA growth and 11% PAT growth with sequential improvement across all metrics.",
+                    "Full year EBITDA margin of 24.7% was achieved despite consolidating the lower-margin Railway Business and high growth from the lower-margin Traction Motor business.",
+                    "Full year EBITDA margin decline of 2.7% mainly on account of change in product mix and, to some extent, higher fixed costs.",
+                    "Full year PAT had a one-time impact of 30 crores after tax from the new labor code; adjusted PAT was higher by 11% at 670 crores, with adjusted PAT margin lower by 2.2%, mainly due to lower EBITDA margin and lower net finance income."
+                  ]
+                },
+                {
+                  "label": "Cash flow and capital allocation",
+                  "points": [
+                    "Cash from operations of 659 crores, net of capex of 369 crores generated free cash flow of 290 crores.",
+                    "Other major cash movements: ~1,800 crores used for purchase of railway business, 110 crores for additional land, and payment for the last tranche of acquisition of Novelic shareholding.",
+                    "200 crores distributed as dividend; added ~226 crores of short-term borrowings and 86 crores of interest income as positive cash inflows.",
+                    "Ended the year with cash and investments of 1,269 crores (management referenced ~1,270 crores)."
+                  ]
+                },
+                {
+                  "label": "Key ratios",
+                  "points": [
+                    "Newly purchased railway business has a different cost structure and working capital cycle, which has caused a dip in value addition over employee cost and working capital turnover ratios.",
+                    "Return on capital employed (ROCE) has come down mainly due to fresh equity raised in September 2024; expected to improve over the medium term as only part of the capital has been deployed so far.",
+                    "Return on equity (ROE) has already started to improve compared to the previous two quarters, as deployment of capital in the railway business continues to bring an incremental positive impact over finance income substituted in the P&L.",
+                    "Fixed asset turnover ratio dropped to 2.9 this year primarily because of new capitalization and land purchase; expected to improve as new capex generates revenue in the following financial year."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ORD",
+              "title": "Order Book & Demand",
+              "key_figures": [
+                {
+                  "label": "New driveline orders won in Q4",
+                  "value": "4",
+                  "unit": "orders",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "European OEM driveline orders won in Q4",
+                  "value": "3",
+                  "unit": "orders",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "New EV programs added in FY26",
+                  "value": "3",
+                  "unit": "programs",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "New hybrid programs added in FY26",
+                  "value": "1",
+                  "unit": "program",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "New EV customers added in Q4",
+                  "value": "2",
+                  "unit": "customers",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total EV programs (end FY26)",
+                  "value": "67",
+                  "unit": "programs",
+                  "period": "FY26 year-end",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total EV customers (end FY26)",
+                  "value": "35",
+                  "unit": "customers",
+                  "period": "FY26 year-end",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV programs already in production",
+                  "value": "37",
+                  "unit": "programs",
+                  "period": "FY26 year-end",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV programs yet to enter production",
+                  "value": "30",
+                  "unit": "programs",
+                  "period": "FY26 year-end",
+                  "kind": "reported"
+                },
+                {
+                  "label": "New programs won during the year",
+                  "value": "31",
+                  "unit": "programs",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "New customers added during the year",
+                  "value": "3",
+                  "unit": "customers",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Non-EV differential gear programs won in Q4",
+                  "value": "7",
+                  "unit": "programs",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Order book addition from non-EV differential gear programs",
+                  "value": "3",
+                  "unit": "INR billion",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net order book (end Q4 FY26)",
+                  "value": "237",
+                  "unit": "INR billion",
+                  "period": "Q4 FY26 year-end",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV share of order book",
+                  "value": "70",
+                  "unit": "%",
+                  "period": "Q4 FY26 year-end",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Order wins detail",
+                  "points": [
+                    "Won 4 new driveline orders in Q4; 3 from European OEMs in a single quarter, the highest ever from Europe in a single quarter and the first EV order win from Europe in almost 4 years.",
+                    "One of the four Q4 orders was for a hybrid platform, reinforcing the view that hybrids are an opportunity, not a risk.",
+                    "New wins directionally important though amounts may not be large: (1) new European customer for differential gears for their EV program in North America; (2) order for EV differential assemblies from a luxury PV OEM in Europe; (3) new order from an existing European OEM for hybrid differential assemblies; (4) EV differential assemblies program in India supplying to both Indian and European OEMs via a tier 1, a shared program with existing customers.",
+                    "Non-EV order wins in Q4: 7 differential gear programs from existing customers totaling ₹3 billion order book addition; remaining wins came from segments like starter motors and railways."
+                  ]
+                },
+                {
+                  "label": "Order book composition",
+                  "points": [
+                    "In Q2, a significant correction was made to the order book because of one particular model; despite that, FY26 ended with fairly similar levels to last year despite growth achieved during the year.",
+                    "Order momentum is broad-based across powertrains, geographies, and customer types.",
+                    "Net order book stands at 237 billion at end of Q4 FY26, with EVs accounting for 70% of the order book."
+                  ]
+                },
+                {
+                  "label": "Order book visibility and conversion (Q&A)",
+                  "points": [
+                    "100% of the order book has volume visibility and pricing stability, but volumes are indicative only (no firm commitments in the industry); the company discounts customer volume projections when adding to the order book based on historical experience.",
+                    "Currently there is no demand problem; rather, customers are unable to produce enough to supply demand due to weaknesses in the supply chain among certain suppliers finding it hard to ramp up, which works both ways — some orders convert higher than booked, some lower, but over time it pans out around the same number."
+                  ]
+                },
+                {
+                  "label": "European bankruptcy/consolidation opportunity (Q&A)",
+                  "points": [
+                    "Some opportunity from peers' bankruptcy in Europe has already started flowing in via new wins; the third asset acquired by another party's future performance cannot be commented on, but conversations will continue directly with customers.",
+                    "Overall, no material change in the opportunity set Europe presents; expected to remain a fairly good place to win business over the next 12 months."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "BEV revenue",
+                  "value": "359",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BEV revenue growth YoY",
+                  "value": "22",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BEV revenue share of automotive revenue",
+                  "value": "39",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Full year BEV revenue",
+                  "value": "1,154",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Full year BEV revenue share of automotive revenue",
+                  "value": "35",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Full year BEV revenue decline YoY",
+                  "value": "-6",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "US EV sales decline YoY",
+                  "value": "-28",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India revenue mix share (full year)",
+                  "value": "50+",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Top 4 products revenue contribution (last year)",
+                  "value": "86",
+                  "unit": "%",
+                  "period": "FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Top 8 products revenue contribution (this year)",
+                  "value": "86",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Loss of revenue from one customer (model discontinuation)",
+                  "value": "300",
+                  "unit": "INR crores",
+                  "period": "FY26 (last year referenced)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Traction motor share of revenue",
+                  "value": "~10",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "New railway products commercialized this year",
+                  "value": "3",
+                  "unit": "products",
+                  "period": "FY26",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "BEV performance",
+                  "points": [
+                    "Q4 was the best ever quarter for both BEV revenue and BEV revenue share, reaching 39%, despite EV sales in the US declining 28% YoY in Q4, showing EV business is not overly dependent on any one market, category, or customer.",
+                    "Full year BEV revenue declined marginally due to an extremely weak Q1; since then revenue has improved consistently, ending Q4 with the highest ever BEV revenue and revenue share following a similar trend."
+                  ]
+                },
+                {
+                  "label": "Product diversification",
+                  "points": [
+                    "Last year top 4 products contributed 86% of revenue; this year the same 86% of revenue is spread across top eight products, meaning the revenue base is becoming broader and less dependent on a few products.",
+                    "Sequentially, fastest growth came from traction and suspension motors, followed by differential assemblies and differential gears; legacy products (differential gears and differential assemblies) continue to grow alongside newer products."
+                  ]
+                },
+                {
+                  "label": "Suspension motor business",
+                  "points": [
+                    "Suspension motor launched last year on one customer model; the vehicle has done very well and the customer has now launched a premium model with volumes growing strongly.",
+                    "Product perceived with very good quality ratings and performance both in China and rest of the world; end customer (Clear Motion) is working with other OEMs in Europe with wide acceptability in the automotive sector.",
+                    "Expected 3 to 4 times growth compared to last year; will still be single digit as % of revenue this year, potentially double digits next year, though this depends on the customer's ability to win the next OEM."
+                  ]
+                },
+                {
+                  "label": "Traction motor business",
+                  "points": [
+                    "Traction motor is currently about 10% of revenue and will be the second fastest growing business after suspension motors, with high double-digit growth rates expected for some time.",
+                    "Growth driven both by higher-than-assumed volumes on existing programs and by new inquiries; policy push for electrification (reducing oil/gas dependence from 80% to less exposure) expected to increase over next 18 months, alongside consumer demand shift due to better TCO for electric vehicles especially for economic-use vehicles (3-wheelers, delivery, two-wheelers, electric LCVs, buses)."
+                  ]
+                },
+                {
+                  "label": "Market segment mix",
+                  "points": [
+                    "The market segment analysis is broadly the same as at the end of nine-months."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "TECH",
+              "title": "Product & Technology",
+              "key_figures": [
+                {
+                  "label": "New railway product approvals in Q4",
+                  "value": "2",
+                  "unit": "products (electric panels and HVAC systems)",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "New products commercialized this year",
+                  "value": "3",
+                  "unit": "products",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "HVAC market size",
+                  "value": "2,000 to 2,500",
+                  "unit": "INR crores",
+                  "period": "current",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "Electric panel market size",
+                  "value": "1,500",
+                  "unit": "INR crores",
+                  "period": "current",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "Time to cover all rolling stock types for electric panels",
+                  "value": "12 to 15",
+                  "unit": "months",
+                  "period": null,
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Time to cover all rolling stock types for HVAC",
+                  "value": "3",
+                  "unit": "years",
+                  "period": null,
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Railway product roadmap",
+                  "points": [
+                    "Received approvals to supply two new products this quarter: electric panels and HVAC systems, expanding railway product offerings beyond safety-critical brake systems and couplers to include products enhancing passenger comfort.",
+                    "Supplied first batch of electric panels for locomotive applications; will start supplying HVAC systems this quarter.",
+                    "Addition of railway products to the roadmap marked a significant step in diversifying from pure automotive to the wider, fast-growing mobility space, adding capability in brakes, suspensions, couplers, and railway electronic systems."
+                  ]
+                },
+                {
+                  "label": "Other mobility domains / robotics",
+                  "points": [
+                    "MoU with Neura Robotics of Germany opened opportunities in cognitive robotics, AMRs, and humanoids.",
+                    "Progressing on industrializing first-ever in-cabin radar solution for passenger car application (ADAS).",
+                    "In advanced stage of developing exterior radar solutions to support Indian commercial vehicles in meeting upcoming ADAS regulations."
+                  ]
+                },
+                {
+                  "label": "New product commercialization",
+                  "points": [
+                    "Latest additions in Q4 are electric control panel and HVAC systems for railways, demonstrating strong capability in designing, developing, and commercializing complex electronics, electromechanical, and electropneumatic systems.",
+                    "Including the previously announced hydraulic motor controller, three new products were commercialized this year."
+                  ]
+                },
+                {
+                  "label": "Railway market sizing and coverage timeline (Q&A)",
+                  "points": [
+                    "HVAC market size is about 2,000 to 2,500 crore, and electric panel market is about 1,500 crore — both large segments relative to the size of the railway business, covering locomotives, passenger coaches, train sets and metro applications.",
+                    "Electric panels development is more advanced and will take 12-15 months to cover all rolling stock types; HVAC will take at least 3 years due to longer approval cycles and field trials, especially in target segments.",
+                    "New products expected to become a meaningful growth driver from the 3rd year onward; in the next 2 years, growth will come more from operational improvement and filling white spaces in existing product lines."
+                  ]
+                },
+                {
+                  "label": "Non-automotive / robotics and eVTOL timeline (Q&A)",
+                  "points": [
+                    "New product development, whether organic robotics/eVTOL or otherwise, typically takes 4-5 years to become meaningful: years 0-3 involve spending more than earning, year 4 brings initial revenue trickling in, and later years can scale to hundreds and then thousands of crores if successful.",
+                    "Suspension motor order was won in 2021; 2026 is the first year it will be in hundreds of crores — illustrating the multi-year cycle. EV differential assembly business started in 2016, became meaningful around 2019.",
+                    "Company will not rush new product timelines given B2B, safety-critical/mission-critical nature of products requiring long testing and safety cycles; investors with horizon <3 years should not expect meaningful revenue from non-automotive/robotics/eVTOL initiatives yet."
+                  ]
+                },
+                {
+                  "label": "Rare earth magnets (Q&A)",
+                  "points": [
+                    "No update on rare earth magnet situation as of now; government has released a policy but nothing material/reportable yet; company does not currently use any heavy rare earth magnets in any of its products."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MFG",
+              "title": "Manufacturing & Capacity",
+              "key_figures": [
+                {
+                  "label": "Reduction in gas requirement at company level",
+                  "value": "20",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Traction motor overall capacity",
+                  "value": "1",
+                  "unit": "million electric motors",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Gas availability mitigation",
+                  "points": [
+                    "Gas availability has been a challenge; company partially mitigated this by shifting part of gas requirement to electric heating, optimizing gas flows and modifying certain processes, reducing gas requirement by nearly 20% at company level with no production loss so far."
+                  ]
+                },
+                {
+                  "label": "Capex fungibility strategy (Q&A)",
+                  "points": [
+                    "Fungible capex — usable across multiple customers/models — is preferred over highly specific investments tied to one model of one carmaker, which make capital allocation tricky.",
+                    "Traction motor capacity of ~1 million electric motors overall is largely fungible with minor tweaks across customers, so as long as overall electrification progresses, that capacity decision should bear fruit."
+                  ]
+                },
+                {
+                  "label": "Novelic India manufacturing (Q&A)",
+                  "points": [
+                    "Novelic entity set up in India; launch process started for one customer with SOP targeted for end of this year.",
+                    "Manufacturing lines already set up as it is a sensor assembly unit; will use an in-house SMT line."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [
+                {
+                  "label": "India PV/CV/electric two-wheeler quarter performance",
+                  "value": "best ever quarter",
+                  "unit": null,
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India share in overall mix (full year)",
+                  "value": "50+",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EU BEV sales growth YoY (March)",
+                  "value": "45",
+                  "unit": "%",
+                  "period": "March 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India electric car sales growth YoY (March)",
+                  "value": "65",
+                  "unit": "%",
+                  "period": "March 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India electric two-wheeler sales growth YoY (March)",
+                  "value": "45",
+                  "unit": "%",
+                  "period": "March 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Eastern markets revenue contribution (Q4 FY26)",
+                  "value": "60",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Eastern markets revenue contribution (Q4 FY25)",
+                  "value": "40",
+                  "unit": "%",
+                  "period": "Q4 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "US full-year car SAR estimate",
+                  "value": "16 to 16.5",
+                  "unit": "million units",
+                  "period": "current year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cars lost due to tariff-driven inflationary impact (US)",
+                  "value": "1",
+                  "unit": "million cars",
+                  "period": "current year",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Look East / diversification strategy",
+                  "points": [
+                    "Eastern markets contributed 60% of revenues in Q4 compared to 40% in the same quarter last year, proving the company can diversify without compromising growth or margins.",
+                    "North America PV sales were clearly weak in the quarter while Europe had its best quarter in 4 years; because the company is a meaningful player in both, the net effect was mitigated — the difference between North America and European car sales was one of the narrowest seen apart from COVID and the semiconductor crisis.",
+                    "India — passenger vehicles, commercial vehicles, and electric two-wheelers all hit their best ever quarter in Q4, and India's share in the mix crossed 50% for the full year, showing geographic diversification is working and weakness in one market does not materially affect overall growth trajectory."
+                  ]
+                },
+                {
+                  "label": "Global EV demand trends",
+                  "points": [
+                    "March BEV sales grew ~45% YoY in the EU; India electric cars and two-wheelers grew 65% and 45% YoY respectively in March, both trending above 50% in April as well, suggesting a sustained electrification growth trend.",
+                    "North America saw its best monthly BEV run rate in March since US EV subsidy cuts, which had been a setback for that subset of the industry.",
+                    "War is deeply tragic but has an evident outcome of renewed urgency towards energy security and electrification globally."
+                  ]
+                },
+                {
+                  "label": "US tariff situation (Q&A)",
+                  "points": [
+                    "Section 232, covering a large part of exports, remains unchanged and was not affected by the Supreme Court ruling (under a different National Emergency Act not addressed by that ruling); other tariffs have become lower/easier as country tariffs have largely gone away.",
+                    "Tariffs are paid by importers, not exporters; as long as pricing/tariffs are lower than China's, it remains favorable; a roughly 5-year concession exists for OEMs with certain domestic value addition in the US to claim back tariff impacts.",
+                    "Revenue from the US has not materially come down, nor have margins, despite earlier analyst predictions (called 'half-baked and uninformed') that EBITDA would drop from 25% to 12.5%.",
+                    "Secondary impact of tariffs is inflationary and dampens demand; US full-year car SAR is now estimated between 16 to 16.5 million units, with about one million cars lost due to this inflationary impact, affecting all suppliers to that market."
+                  ]
+                },
+                {
+                  "label": "China / Chinese OEM opportunity (Q&A)",
+                  "points": [
+                    "Company supplies to one large Chinese EV customer, both for domestic sales and exports; the constraint is that unless the Chinese OEM moves production entirely to Europe or North America, it will continue relying on the Chinese supply chain, which is harder to penetrate.",
+                    "Drew parallel to Japan's export model in the 70s, where geopolitical/protectionist pressures eventually forced production to shift to markets being sold into, which then created opportunities for local suppliers; expects a similar evolution over time for China."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [
+                {
+                  "label": "M&A opportunities evaluated over last 3 years",
+                  "value": "100+",
+                  "unit": "opportunities",
+                  "period": "last 3 years",
+                  "kind": "reported"
+                },
+                {
+                  "label": "M&A opportunities acted on",
+                  "value": "1",
+                  "unit": "deal",
+                  "period": "last 3 years",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Diversification strategy (Look East, product diversification)",
+                  "points": [
+                    "Look East strategy from the annual report was a statement of deliberate effort to broaden focus and footprint in new geographies; results are already visible with Eastern markets contributing 60% of Q4 revenue vs 40% a year ago.",
+                    "Product diversification: top 8 products now needed to reach the same 86% revenue contribution that top 4 products delivered last year, showing a broader, less concentrated revenue base."
+                  ]
+                },
+                {
+                  "label": "Railway business R&D progress",
+                  "points": [
+                    "Strong and consistent progress in R&D for newly acquired railway business; in about 10 months, product offerings expanded beyond safety-critical brake systems and couplers to include passenger comfort products (electric panels, HVAC)."
+                  ]
+                },
+                {
+                  "label": "M&A approach and capital allocation (Q&A)",
+                  "points": [
+                    "No M&A opportunity currently at a reportable stage; company continuously evaluates opportunities but is disciplined — over the last 3 years evaluated 100+ opportunities and acted on only one (railway acquisition).",
+                    "Company applies four filters before considering an M&A opportunity: (1) product must last for the next 15 years, (2) must be able to take a top-5 position in that category, (3) must generate good financial returns, and (4) must be good for humanity.",
+                    "Having cash provides optionality to invest and grow when others may be constrained, but cash will not be deployed hastily just because it is available."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Commodity inflation",
+                  "points": [
+                    "Steel, aluminum, copper and other major commodities have continued to move up over the last 5 months, amplified by sharp increases in freight, packaging, and energy prices; almost everything linked to petrochemicals has become more expensive.",
+                    "While a large part of commodity inflation is passed through, some parts are not, and there is always a lag; this lag along with the arithmetic impact on both revenue and cost will put pressure on margins, expected to continue in the foreseeable future.",
+                    "Commodity price inflation impact is ongoing and unpredictable — management stated it is impossible to know if the worst is behind, tying it to unpredictable macro/geopolitical factors like the war and its impact on oil and gas."
+                  ]
+                },
+                {
+                  "label": "Labor cost / minimum wage increase",
+                  "points": [
+                    "Haryana government announced an increase in minimum wages effective 1st April 2026, which will have some cascading impact on labor cost.",
+                    "Company is mitigating through productivity improvement, tighter control in headcount addition, and better workload management; being a high-growth company, it can add less manpower growth relative to revenue/production growth to absorb this impact over time."
+                  ]
+                },
+                {
+                  "label": "Gas availability constraint",
+                  "points": [
+                    "Gas availability has been a challenge; partially mitigated via shifting to electric heating and process optimization, reducing gas requirement by ~20% at the company level with no production loss so far."
+                  ]
+                },
+                {
+                  "label": "US tariffs and demand impact",
+                  "points": [
+                    "Section 232 tariffs remain unchanged; tariffs are inflationary and have a secondary impact of dampening demand — US full-year car SAR estimated at 16-16.5 million units with about 1 million cars lost due to tariff-driven inflationary impact, affecting all suppliers to that market."
+                  ]
+                },
+                {
+                  "label": "Model discontinuation / customer concentration risk",
+                  "points": [
+                    "Last year, the company lost 300 crore in revenue from one customer due to model discontinuation; such events can happen but not frequently. De-risking comes from supplying the same product to multiple customers and across geographies."
+                  ]
+                },
+                {
+                  "label": "BYD / subsidy landscape (Q&A)",
+                  "points": [
+                    "On the question of BYD's sales decline following removal of EV purchase tax exemptions and whether shifting subsidy landscape is a structural risk given 70% of order book is BEV/PHEV: management does not view this as a structural risk because most orders are in geographies (US, Europe, India) with little to no subsidies, and India subsidies are also on their way out."
+                  ]
+                },
+                {
+                  "label": "Chinese supply chain penetration risk",
+                  "points": [
+                    "Getting into the China-for-China EV supply chain remains difficult while Chinese OEMs continue to rely on domestic supply chain; this will change only as Chinese OEMs set up production in Europe/US, at which point the company would become competitive due to duty reasons."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [
+                {
+                  "label": "EBITDA margin band (updated, post-railway acquisition)",
+                  "value": "23 to 25",
+                  "unit": "%",
+                  "period": "ongoing",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Suspension motor growth (next year)",
+                  "value": "3 to 4 times",
+                  "unit": "multiple of last year",
+                  "period": "next year",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Suspension motor revenue contribution (this year)",
+                  "value": "single digit",
+                  "unit": "% of revenue",
+                  "period": "FY26",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Suspension motor revenue contribution (next year)",
+                  "value": "potentially double digit",
+                  "unit": "% of revenue",
+                  "period": "next year",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Margin band outlook",
+                  "points": [
+                    "Previously the company guided a 24-26% margin band for the core business prior to the railway acquisition; post-acquisition, the band is now 23-25%, and management is comfortable continuing in that band."
+                  ]
+                },
+                {
+                  "label": "Suspension motor growth outlook",
+                  "points": [
+                    "Suspension motor is expected to be the fastest growing business by far, with triple-digit growth rates likely given its small base and strong product/performance acceptance.",
+                    "Expected 3-4x growth compared to last year; will remain single digit as % of revenue this year, potentially reaching double digits next year, though the exact scale depends on the customer's (Clear Motion's) ability to win additional OEM customers."
+                  ]
+                },
+                {
+                  "label": "Traction motor growth outlook",
+                  "points": [
+                    "Traction motor, currently ~10% of revenue, expected to be the second fastest growing business with high double-digit growth rates for some time, driven by higher-than-assumed volumes on existing programs, new inquiries, and expected policy push over the next 18 months to increase electrification from current ~20% share of energy mix."
+                  ]
+                },
+                {
+                  "label": "Railway business growth outlook (3-5 years)",
+                  "points": [
+                    "No year-by-year growth guidance given for railways, but management is confident about good, healthy growth over the next 5 years based on: (1) improving own process/supply chain to service unmet existing demand, (2) filling white spaces within existing brakes, couplers, and suspension product lines, and (3) new products (HVAC, electric panels, others in development) becoming significant drivers in about 3 years' time.",
+                    "New products (HVAC, electric panels) are expected to become meaningful revenue drivers only from year 3 onward given long approval and field trial cycles (12-15 months for electric panels, 3 years for HVAC to cover all rolling stock types)."
+                  ]
+                },
+                {
+                  "label": "Railway business returns outlook",
+                  "points": [
+                    "Railway business is expected to improve overall returns given it is a very high-return business, though it may be slightly dilutive to margins."
+                  ]
+                },
+                {
+                  "label": "Order book conversion outlook",
+                  "points": [
+                    "100% of order book has volume visibility and pricing stability, but actual conversion to revenue depends on volatility; historically, order book volumes are discounted based on experience and tend to average out over time despite year-to-year swings."
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "EBITDA margin band",
+              "horizon": "ongoing",
+              "statement": "We had already said that it will be 23 to 25% after the railway acquisition. That is the band...24 to 26% is the band prior, when we [talked of] the core business. I think now it is 23 to 25%, and we should be able to continue being in that band.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Suspension motor revenue growth",
+              "horizon": "next year",
+              "statement": "We are looking at a very high volume...3 to 4 times growth compared to last year.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Suspension motor % of revenue",
+              "horizon": "FY26/next year",
+              "statement": "This year, at the end of this year, it'll still be single digit. Next year, maybe it even touches double digits.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Traction motor growth",
+              "horizon": "next 2-3 years",
+              "statement": "The traction motor will be the second fastest [growing business]... it will have high double-digit growth rates, actually, maybe, yeah, very high double-digit growth rates for some time.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Railway business growth",
+              "horizon": "next 3-5 years",
+              "statement": "We are confident about good, healthy growth over the next 5 years in the railway business based on products which are already under development and not counting any other products that we may add in future.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Railway new products (HVAC, electric panels) as growth driver",
+              "horizon": "3 years",
+              "statement": "New products will become a meaningful driver from 3rd year onwards.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Railway business return ratios vs core business",
+              "horizon": null,
+              "statement": "It will improve returns because from a return perspective, they're very, very high return businesses. It may be slightly diluted on margins, but return-wise, it will be much higher.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Electric panel rolling-stock coverage timeline",
+              "horizon": "12-15 months",
+              "statement": "In electric panels, it will take us 12 to 15 months to cover all types of rolling stock because our development is more advanced.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "HVAC rolling-stock coverage timeline",
+              "horizon": "3 years",
+              "statement": "In HVAC, it will take at least 3 years for us to cover all types of rolling stock, especially in the segments where we want to play.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Non-automotive (robotics/eVTOL) revenue meaningfulness",
+              "horizon": "beyond 3 years",
+              "statement": "If the question is, when will you see meaningful revenue, assume if your investment horizon is less than 3 years, none of this has any meaning for you as an investor... it takes 4 to 5 years for anything which is a new product...to actually get there.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Commodity cost pressure outlook",
+              "horizon": null,
+              "statement": "That is a multi-trillion dollar question...I have no idea [if worst of commodity pressure is behind us].",
+              "specificity": "refused",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Market Share in Differential Gears",
+              "horizon": "next few years",
+              "statement": "We have the potential to increase this market share quite robustly in the next few years from what we are seeing in our RFQ pipeline and the market in general.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Return Ratios",
+              "horizon": null,
+              "statement": "We expect the return ratios to start improving gradually as we invest the cash that we have in various growth initiatives that we have outlined.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Suspension Systems Production",
+              "horizon": "Q2 FY27",
+              "statement": "Suspension systems expected to start production in Q2 of FY 27.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Mexico Plant Production",
+              "horizon": "Q2 FY28",
+              "statement": "Production expected to start in the second quarter of FY 28.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "reiterated"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "Commodity inflation (steel, aluminum, copper, freight, packaging, energy, petrochemicals)",
+              "status": "new",
+              "note": "Continued to move up over last 5 months; part not passed through and lag effect will pressure margins for the foreseeable future."
+            },
+            {
+              "risk": "Haryana minimum wage increase effective 1st April 2026",
+              "status": "new",
+              "note": "Cascading impact on labor cost; being mitigated via productivity improvement, headcount control, and workload management."
+            },
+            {
+              "risk": "Gas availability constraint",
+              "status": "new",
+              "note": "Partially mitigated via electric heating shift and process optimization; gas requirement reduced ~20% with no production loss so far."
+            },
+            {
+              "risk": "US tariffs (Section 232) and inflationary demand impact",
+              "status": "new",
+              "note": "Section 232 unchanged; tariffs inflationary, contributing to ~1 million lost car sales in US SAR estimate of 16-16.5 million units; revenue/margins from US not materially impacted so far."
+            },
+            {
+              "risk": "Customer/model concentration risk",
+              "status": "new",
+              "note": "Lost 300 crore in revenue last year from one customer due to model discontinuation; de-risked via supplying same product across multiple customers and geographies."
+            },
+            {
+              "risk": "Chinese OEM supply chain access constraint",
+              "status": "new",
+              "note": "Hard to penetrate China-for-China EV supply chain while Chinese OEMs still rely on domestic supply chain; will improve only as they set up production in Europe/US."
+            },
+            {
+              "risk": "EV subsidy landscape / BYD-related subsidy risk",
+              "status": "new",
+              "note": "Not viewed as structural risk since most of the order book is in geographies (US, Europe, India) with little to no subsidies."
+            },
+            {
+              "risk": "Rare earth magnet policy uncertainty",
+              "status": "new",
+              "note": "No update on rare earth magnets; government policy released but nothing material yet; company does not currently use heavy rare earth magnets."
+            },
+            {
+              "risk": "Order book volume volatility",
+              "status": "new",
+              "note": "Volumes in order book are indicative, not firm; conversion can be higher or lower than booked but tends to average out over time."
+            },
+            {
+              "risk": "China's restrictions on heavy rare earth magnets",
+              "status": "no_mention",
+              "note": "Continues to impact supply, leading to a shift to alternative motor designs."
+            },
+            {
+              "risk": "Uncertainties around US tariffs",
+              "status": "no_mention",
+              "note": "Persisted during the quarter, but tariff relief related to USMCA content has been extended."
+            },
+            {
+              "risk": "Demand challenges for a global customer",
+              "status": "no_mention",
+              "note": "Particularly in sales of one specific model, affecting EV revenue."
+            },
+            {
+              "risk": "China's supply of heavy rare-earth magnets stopped",
+              "status": "no_mention",
+              "note": "Impacting production of EV traction motors."
+            },
+            {
+              "risk": "Uncertainties regarding USA tariffs",
+              "status": "no_mention",
+              "note": "Recent US decision to extend tariff relief on vehicles assembled in the US should benefit US customers."
+            },
+            {
+              "risk": "Nexperia chips issue",
+              "status": "no_mention",
+              "note": "Potential risk being monitored."
+            },
+            {
+              "risk": "Novelis plant fire",
+              "status": "no_mention",
+              "note": "Potential risk impacting a larger customer."
+            }
+          ],
+          "themes": [
+            {
+              "label": "Revenue growth",
+              "direction": "positive",
+              "note": "Q4 revenue grew 47% YoY to 1,272 crores; full year revenue grew 26% to 4,475 crores, both best-ever performances.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "BEV segment challenges",
+              "direction": "mixed",
+              "note": "Q4 BEV revenue and share hit all-time highs (39%) even as full-year BEV revenue declined 6% YoY due to a weak Q1, with US EV sales down 28% in Q4 offset by strong EU/India electrification trends.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Supply chain adaptation",
+              "direction": "mixed",
+              "note": "Company mitigated gas availability constraints via electric heating and process optimization (20% reduction, no production loss), while European peer bankruptcies opened new order-win opportunities.",
+              "section_ref": "MFG"
+            },
+            {
+              "label": "Geographical diversification",
+              "direction": "positive",
+              "note": "Eastern markets rose to 60% of Q4 revenue from 40% a year ago, and India's mix share crossed 50% for the full year, helping offset weak North America PV sales.",
+              "section_ref": "GEO"
+            },
+            {
+              "label": "Strategic collaborations",
+              "direction": "positive",
+              "note": "MoU with Neura Robotics (Germany) opened opportunities in cognitive robotics, AMRs and humanoids; railway business R&D expanded into electric panels and HVAC within 10 months of acquisition.",
+              "section_ref": "STRAT"
+            },
+            {
+              "label": "Input-cost inflation",
+              "direction": "negative",
+              "note": "Steel, aluminum, copper, freight, packaging and energy costs continued rising, with commodity/mix effects contributing 80bps of margin pressure in Q4 and expected to persist.",
+              "section_ref": "RISK"
+            },
+            {
+              "label": "New product ramp-up",
+              "direction": "positive",
+              "note": "Suspension motors expected to grow 3-4x next year and traction motors at high double-digit rates, while railway HVAC/electric panel products target large addressable markets (2,000-2,500cr and 1,500cr respectively) with 3-5 year growth horizons.",
+              "section_ref": "GUID"
+            }
+          ],
+          "key_takeaways": [
+            "Q4 was the best ever quarter across the board — highest ever revenue, EBITDA, PAT, BEV revenue, as well as BEV revenue share in the history of the company.",
+            "Inflation has hit the industry pretty hard — steel, aluminum, copper, freight, packaging, and energy prices have continued to move up, and this will put pressure on margins for the foreseeable future.",
+            "Haryana government's minimum wage increase effective 1st April 2026 will have a cascading impact on labor cost, being mitigated through productivity improvement and tighter headcount control.",
+            "Gas availability challenge partially mitigated by shifting to electric heating and process optimization, reducing gas requirement by nearly 20% at the company level with no production loss so far.",
+            "Won 4 new driveline orders in Q4, including 3 from European OEMs in a single quarter — the highest ever from Europe and the first EV order win from Europe in almost 4 years.",
+            "Closed the year with nearly 1,270 crores of cash, entering FY27 with the strongest balance sheet ever.",
+            "India's share in the mix crossed 50% for the full year, with PVs, CVs, and electric two-wheelers all hitting best ever quarter in Q4, demonstrating geographic diversification is working.",
+            "Received approvals to supply two new railway products — electric panels and HVAC systems — expanding beyond safety-critical brake systems and couplers to passenger comfort products.",
+            "Revenue grew 47% YoY in Q4 while EBITDA and net profit increased 32% and 17% respectively; full year revenue growth was 26%, EBITDA growth 13.5%, and PAT growth 11%.",
+            "Net order book stands at 237 billion at end of Q4 FY26, with EVs accounting for 70% of the order book."
+          ],
+          "pressing_questions": [
+            "How is Sona progressing on rare earth magnets? Maybe you can give us an update on the whole situation.",
+            "On the order book, there is a question, what proportion has clear volume visibility and pricing stability over the next 2 to 3 years? And how should we think about conversions into steady revenues and margins as these programs ramp up?",
+            "On the railways: How should we think about steady-state asset terms, margins, ROC versus your core EV business? And will this growth structurally improve or dilute overall returns?",
+            "Have you tracked the recent decline in BYD sales following removal of EV purchase tax exemptions? ... Given that 70% of Sona's order book consists of BEVs and PHEVs, do you view this shifting subsidy landscape as a structural risk?",
+            "Cash on books — is there any M&A potential in pipeline?",
+            "Is the worst of commodity pressure behind or should we anticipate increasing pressure before pass-through happens and margins improve or stabilize?",
+            "How are things shaping up on the non-automotive front apart from railways? When will we see any developments on robotics and EVTOLs?"
+          ]
         },
         {
           "company": "Sona BLW Precision Forgings Ltd",
