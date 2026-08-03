@@ -4345,7 +4345,7 @@
       "ticker": "INFY",
       "industry": "Computers - Software & Consulting",
       "country": "India",
-      "checked_at": "2026-07-30T05:19:27.301Z",
+      "checked_at": "2026-08-03T11:47:25.937Z",
       "quarters": [
         {
           "company": "Infosys Ltd",
@@ -4355,46 +4355,26 @@
           "concall_date": "2026-07-28",
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=95f8af86-dc92-49dc-a7cf-ecce287f8cce.pdf",
-          "model": "gpt-4o",
-          "generated_at": "2026-07-30T05:19:21.671Z",
-          "summary": "Infosys has revised its revenue growth guidance for FY27 to 1.5% to 3% YoY in constant currency terms, citing macroeconomic uncertainties and a one-time client decision impact. The company continues to focus on AI-driven growth and strategic initiatives to maintain its market position.",
+          "model": "anthropic.claude-sonnet-5",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-03T11:46:29.061Z",
+          "summary": "Infosys lowered FY27 revenue growth guidance to 1.5%-3% YoY in constant currency (from 1.5%-3.5% previously) after a soft Q1 (2.4% YoY, 1% QoQ CC) impacted by a one-time client program termination, softer volumes and pricing, and a European manufacturing client de-scoping; operating margin guidance was maintained at 20%-22%. Management flagged an uncertain macro environment, continued strong AI revenue momentum (8.2% of revenue, growing double-digit QoQ), robust large deal wins ($3.6bn TCV, 61% net new), and announced CEO succession with Ashiss Dash to take over from Salil Parekh on April 1, 2027.",
           "sections": [
             {
               "id": "FIN",
               "title": "Financial Performance",
               "key_figures": [
                 {
-                  "label": "Revenue growth (YoY)",
-                  "value": "2.4",
-                  "unit": "%",
+                  "label": "Revenue growth YoY",
+                  "value": "2.4%",
+                  "unit": "% CC",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Revenue growth (QoQ)",
-                  "value": "1",
-                  "unit": "%",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Operating margin",
-                  "value": "21.1",
-                  "unit": "%",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Free cash flow",
-                  "value": "955",
-                  "unit": "$ mn",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Earnings per share growth (YoY)",
-                  "value": "15",
-                  "unit": "%",
+                  "label": "Revenue growth QoQ",
+                  "value": "1%",
+                  "unit": "% CC",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
@@ -4406,6 +4386,69 @@
                   "kind": "reported"
                 },
                 {
+                  "label": "Acquisition contribution to sequential revenue growth",
+                  "value": "~1.1%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "AI services revenue as % of overall revenue",
+                  "value": "8.2%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "AI services revenue (prior, at Hexagon launch)",
+                  "value": "5.5%",
+                  "unit": "%",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operating margin",
+                  "value": "21.1%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operating margin change QoQ",
+                  "value": "+20",
+                  "unit": "bps",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gross margin change QoQ",
+                  "value": "+60",
+                  "unit": "bps",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Free cash flow",
+                  "value": "955",
+                  "unit": "$ mn",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Free cash flow as % of net profit",
+                  "value": "116.5%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EPS growth YoY (INR terms)",
+                  "value": "15%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
                   "label": "EPS",
                   "value": "19.19",
                   "unit": "INR",
@@ -4413,102 +4456,32 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Yield on cash investment balance",
-                  "value": "6.8",
+                  "label": "Utilization (excl. trainees)",
+                  "value": "84.9%",
                   "unit": "%",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Consolidated cash and cash equivalents",
-                  "value": "3.9",
-                  "unit": "$ bn",
+                  "label": "Utilization improvement",
+                  "value": "1.9",
+                  "unit": "percentage points",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Consolidation deals net new business",
-                  "value": "700",
-                  "unit": "mn",
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "Currency impact on margin per 1% change",
-                  "value": "15 to 17",
+                  "label": "Onsite mix change QoQ (excl. acquisitions)",
+                  "value": "-30",
                   "unit": "bps",
-                  "period": null,
+                  "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Revenue from non-U.S. geography",
-                  "value": "45",
+                  "label": "Expected onsite mix reduction (excl. new acquisitions) for the year",
+                  "value": "75 bps to 1%",
                   "unit": "%",
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "College graduates recruited last year",
-                  "value": "20,000",
-                  "unit": null,
-                  "period": "last year",
-                  "kind": "reported"
-                },
-                {
-                  "label": "College graduates recruited this year",
-                  "value": "20,000",
-                  "unit": null,
-                  "period": "this year",
-                  "kind": "reported"
-                },
-                {
-                  "label": "College graduates recruited in Q1",
-                  "value": "4,000",
-                  "unit": null,
-                  "period": "Q1",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Clients",
-                  "value": "1,800",
-                  "unit": null,
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "Employees",
-                  "value": "300,000",
-                  "unit": null,
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "Headcount reduction",
-                  "value": "500",
-                  "unit": "employees",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Acquisition headcount addition",
-                  "value": "2,000",
-                  "unit": "employees",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Attrition rate",
-                  "value": "13",
-                  "unit": "%",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Utilization excluding trainees",
-                  "value": "84.9",
-                  "unit": "%",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
+                  "period": "FY27",
+                  "kind": "guidance"
                 },
                 {
                   "label": "DSO",
@@ -4518,198 +4491,186 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "DSO including unbilled net of unearned",
+                  "label": "DSO change sequential",
+                  "value": "-4",
+                  "unit": "days",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "DSO incl. unbilled net of unearned",
                   "value": "76",
                   "unit": "days",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Onsite mix reduction excluding new acquisitions",
-                  "value": "30",
-                  "unit": "bps",
+                  "label": "DSO incl. unbilled net of unearned (prior quarter)",
+                  "value": "78",
+                  "unit": "days",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Headcount change",
+                  "value": "-500",
+                  "unit": "employees",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Onsite mix reduction expected excluding new acquisitions",
-                  "value": "75",
-                  "unit": "bps",
-                  "period": "FY27",
-                  "kind": "guidance"
+                  "label": "Employees added from acquisitions",
+                  "value": "2,000+",
+                  "unit": "employees",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
                 },
                 {
-                  "label": "Onsite mix reduction expected including new acquisitions",
-                  "value": "1",
+                  "label": "Attrition rate",
+                  "value": "13%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Attrition rate (prior quarter)",
+                  "value": "12.6%",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Effective tax rate expectation",
+                  "value": "29% to 30%",
                   "unit": "%",
                   "period": "FY27",
                   "kind": "guidance"
                 },
                 {
-                  "label": "Gross margin improvement",
-                  "value": "60",
-                  "unit": "bps",
+                  "label": "Yield on cash investment balance",
+                  "value": "6.8%",
+                  "unit": "%",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Operating margin improvement",
-                  "value": "20",
-                  "unit": "bps",
+                  "label": "Consolidated cash and cash equivalents",
+                  "value": "3.9",
+                  "unit": "$ bn",
+                  "period": "Q1 FY27 end",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Dividends returned to shareholders",
+                  "value": ">1",
+                  "unit": "$ bn",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Rupee depreciation impact on margin",
+                  "label": "Margin tailwind from rupee depreciation",
                   "value": "70",
                   "unit": "bps",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Project Maximus impact on margin",
+                  "label": "Margin tailwind from Project Maximus",
                   "value": "20",
                   "unit": "bps",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Amortization of costs on intangibles impact on margin",
+                  "label": "Margin net benefit from amortization/intangibles offset by new acquisitions",
                   "value": "10",
                   "unit": "bps",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Investment in AI sales and marketing impact on margin",
+                  "label": "Margin headwind from AI sales & marketing investment",
                   "value": "50",
                   "unit": "bps",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Onetime revenue impact from program termination impact on margin",
+                  "label": "Margin headwind from one-time revenue impact (program termination)",
                   "value": "40",
                   "unit": "bps",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Onetime cost benefit impact on margin",
-                  "value": "30",
+                  "label": "One-time cost benefit",
+                  "value": "~30",
                   "unit": "bps",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Increase in various other expenses impact on margin",
+                  "label": "Increase in other expenses offsetting one-time cost benefit",
                   "value": "20",
                   "unit": "bps",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Salary hikes effective October",
-                  "value": "most employees",
-                  "unit": null,
-                  "period": "October 2026",
+                  "label": "Margin sensitivity to currency",
+                  "value": "15 to 17",
+                  "unit": "bps per 1% rupee depreciation",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue from non-U.S. geography",
+                  "value": "~45%",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Expected margin impact from Optimum Healthcare and Stratus acquisitions",
+                  "value": "50",
+                  "unit": "bps",
+                  "period": "FY27",
                   "kind": "guidance"
-                },
-                {
-                  "label": "Salary hikes effective January",
-                  "value": "rest of employees",
-                  "unit": null,
-                  "period": "January 2027",
-                  "kind": "guidance"
-                },
-                {
-                  "label": "Large deal wins in Financial Services",
-                  "value": "approximately $1 bn",
-                  "unit": "TCV",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Large deal wins in EURS",
-                  "value": "approximately $1 bn",
-                  "unit": "TCV",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Large deal wins in Manufacturing",
-                  "value": "approximately $1 bn",
-                  "unit": "TCV",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Large deal wins in Communications",
-                  "value": "approximately $1 bn",
-                  "unit": "TCV",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Large deal wins in Retail",
-                  "value": "approximately $1 bn",
-                  "unit": "TCV",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Large deal wins in Life Science",
-                  "value": "approximately $1 bn",
-                  "unit": "TCV",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Large deal wins in HiTech",
-                  "value": "approximately $1 bn",
-                  "unit": "TCV",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Large deal wins in North America",
-                  "value": "approximately $1 bn",
-                  "unit": "TCV",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Large deal wins in Europe",
-                  "value": "approximately $1 bn",
-                  "unit": "TCV",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Large deal wins in Rest of the World",
-                  "value": "approximately $1 bn",
-                  "unit": "TCV",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Quarterly Performance",
+                  "label": "Revenue drivers",
                   "points": [
-                    "Revenue growth for Q1 was 2.4% YoY and 1% QoQ in constant currency terms.",
-                    "Operating margin was 21.1%.",
-                    "Free cash flow was $955 mn.",
-                    "Earnings per share were up 15% YoY in rupee terms."
+                    "Q1 revenue growth was lower than expectations mainly due to a one-off 50 bps impact from program termination by an EURS client during the quarter, not factored into earlier guidance.",
+                    "Volumes were soft and weaker than expectations and versus historical Q1 trends.",
+                    "Client expectation on productivity along with high competitive intensity resulted in softer price increases versus expectations.",
+                    "Sequential revenue growth was also impacted by higher offshoring to derisk the business model, along with lower revenues from a European Manufacturing client called out in the last earnings call."
                   ]
                 },
                 {
-                  "label": "Cost and Margin Analysis",
+                  "label": "Margin bridge",
                   "points": [
-                    "Gross margins improved by 60 bps sequentially.",
-                    "Operating margin improved by 20 bps sequentially to 21.1%.",
-                    "Tailwinds included 70 bps from rupee depreciation and 20 bps from Project Maximus.",
-                    "Headwinds included 50 bps from investment in AI sales and marketing and 40 bps from one-time revenue impact."
+                    "Despite lower-than-expected growth, gross margins improved 60 bps sequentially and operating margin improved 20 bps sequentially to 21.1%.",
+                    "Tailwinds: 70 bps from rupee depreciation, 20 bps from Project Maximus, and a 10 bps net benefit from amortization of costs on intangibles incurred in Q4, offset by impact of new acquisitions in Q1.",
+                    "Headwinds: 50 bps from investment in AI sales and marketing, 40 bps from one-time revenue impact from program termination.",
+                    "A one-time cost benefit of ~30 bps was offset by 20 bps due to increase in various other expenses.",
+                    "Every 1% change/depreciation in rupee vs dollar typically gives 15-17 bps margin benefit, but since dollar appreciation is often broad-based against many currencies (Infosys has ~45% revenue from non-US geography), part of the rupee depreciation benefit gets offset.",
+                    "Company will face a headwind from compensation increases in the second half of the year but remains confident of holding the 20%-22% guidance band."
+                  ]
+                },
+                {
+                  "label": "Balance sheet & cash",
+                  "points": [
+                    "Balance sheet continues to be strong and debt-free.",
+                    "Cash returned to shareholders through dividends exceeded $1 bn during the quarter."
+                  ]
+                },
+                {
+                  "label": "Compensation",
+                  "points": [
+                    "Compensation increases will be rolled out in two parts: October 2026 and January 2027.",
+                    "Most employees will get an increase in October; senior employees will get it in January."
                   ]
                 }
               ]
@@ -4719,97 +4680,148 @@
               "title": "Order Book & Demand",
               "key_figures": [
                 {
-                  "label": "Large deals TCV",
+                  "label": "Large deal TCV",
                   "value": "3.6",
                   "unit": "$ bn",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Net new large deals",
-                  "value": "61",
+                  "label": "Net new % of large deals",
+                  "value": "61%",
                   "unit": "%",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Large deal wins in Financial Services",
+                  "label": "Number of large deals won",
+                  "value": "22",
+                  "unit": "deals",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Number of deals worth $400mn each",
+                  "value": "3",
+                  "unit": "deals",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Vendor consolidation share of large deal TCV",
+                  "value": "20%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net new business from consolidation deals",
+                  "value": "700",
+                  "unit": "$ mn",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Large deals by vertical - Financial Services",
                   "value": "5",
                   "unit": "deals",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Large deal wins in Communications",
+                  "label": "Large deals by vertical - Communications",
                   "value": "5",
                   "unit": "deals",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Large deal wins in EURS",
+                  "label": "Large deals by vertical - EURS",
                   "value": "4",
                   "unit": "deals",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Large deal wins in Manufacturing",
+                  "label": "Large deals by vertical - Manufacturing",
                   "value": "3",
                   "unit": "deals",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Large deal wins in Retail",
+                  "label": "Large deals by vertical - Retail",
                   "value": "2",
                   "unit": "deals",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Large deal wins in Life Science",
-                  "value": "1",
-                  "unit": "deal",
+                  "label": "Large deals by vertical - Life Science, HiTech, others",
+                  "value": "1 each",
+                  "unit": "deals",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Large deal wins in HiTech",
-                  "value": "1",
-                  "unit": "deal",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Large deal wins in North America",
+                  "label": "Large deals by region - North America",
                   "value": "11",
                   "unit": "deals",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Large deal wins in Europe",
+                  "label": "Large deals by region - Europe",
                   "value": "8",
                   "unit": "deals",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Large deal wins in Rest of the World",
+                  "label": "Large deals by region - Rest of world",
                   "value": "3",
                   "unit": "deals",
                   "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Financial Services large deal net new TCV",
+                  "value": "~1",
+                  "unit": "$ bn",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Typical large deal contract term",
+                  "value": "3 to 5",
+                  "unit": "years",
+                  "period": null,
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Deal Dynamics",
+                  "label": "Deal traction and pipeline",
                   "points": [
-                    "Large deals were $3.6 bn with a net new of 61%.",
-                    "Out of the 22 large deals won, three deals were worth $400 mn each.",
-                    "20% of the total large deal TCV was from new vendor consolidation deals."
+                    "Large deal pipeline is even larger than the current 8% AI revenue share, indicating good traction ahead.",
+                    "5 of the large deals were consolidation deals where Infosys was the beneficiary; 3 deals were just under the $500mn mega deal range.",
+                    "TCV conversion: consolidation deals convert to revenue quicker; transformation deals ramp up more slowly - this dynamic has not changed materially over recent quarters.",
+                    "AI is now integral to almost every client discussion and deal, including Topaz Fabric; it is not tracked as separate AI-specific TCV since it underlies virtually all engagements.",
+                    "Renewals on large deals traditionally see productivity asks from clients; on top of this, AI-led deflation is now an additional headwind, both on large deal and non-large deal portions of the book, partly offset by net new business won."
+                  ]
+                },
+                {
+                  "label": "Lost renewals / deal discipline",
+                  "points": [
+                    "Infosys lost some existing renewals; management declined to comment on specific deals but stated the focus is on working with clients on projects/contracts that make economic sense.",
+                    "Decision to not bid beyond a certain point on a large European client deal was made because it did not make commercial/economic sense, impacting Q4 as the deal reaches closure in December."
+                  ]
+                },
+                {
+                  "label": "Outcome-based pricing",
+                  "points": [
+                    "Clients show stronger interest in outcome-based pricing, though it is not yet a large part of overall activity; more relevant in heavy transformation investment scenarios.",
+                    "Outcome-based pricing is a specific track within Project Maximus with a dedicated organizational leader working across all segments to drive it."
                   ]
                 }
               ]
@@ -4819,37 +4831,79 @@
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
-                  "label": "AI services revenue",
-                  "value": "8.2",
-                  "unit": "% of overall revenue",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "AI services growth (QoQ)",
-                  "value": "double-digit",
+                  "label": "Manufacturing segment CC growth",
+                  "value": "~1.5% (editor note: CC growth 1%)",
                   "unit": "%",
-                  "period": "several quarters",
+                  "period": "Q1 FY27",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "AI Services",
+                  "label": "Financial Services",
                   "points": [
-                    "AI services revenue was 8.2% of overall revenue in Q1.",
-                    "AI revenues are growing at double-digit QoQ for the last several quarters.",
-                    "Strong traction across the six areas of new growth in AI, referred to as the Hexagon for AI strategy."
+                    "Growth expected to be higher than company average going forward.",
+                    "Uncertainty and geopolitical instability causing client hesitancy; spending patterns more cautious.",
+                    "Client priorities centered on efficiency, productivity, and modernization with discretionary spend evaluated more carefully.",
+                    "Momentum seen across banking, payments, capital markets, and wealth management.",
+                    "AI adoption has been incremental and additive, with clients engaging Infosys to support AI journeys across strategy, platforms, engineering, and operations - reflected in ~$1bn large deal net new TCV this quarter.",
+                    "GCCs continue to expand; Infosys partnering with clients in setup and growth of GCCs."
                   ]
                 },
                 {
-                  "label": "Vertical Performance",
+                  "label": "EURS (Energy, Utilities, Resources, Services)",
                   "points": [
-                    "Financial Services: Growth expected to be higher than company average, with strong deal wins.",
-                    "Manufacturing: Impacted by lower revenue from a large client, cautious discretionary spend.",
-                    "EURS: Impacted by one-off client termination, but adjusted growth was strong.",
-                    "Retail and CPG: Consumer spend remains muted, budgets tightly controlled.",
-                    "Communications: Challenging environment with disciplined discretionary spending."
+                    "Segment was impacted by one-off client termination; adjusted for this, growth was strong.",
+                    "Expected to grow higher than company average for the rest of the year.",
+                    "Macroeconomic uncertainty continues to influence client spending patterns and decision-making timelines.",
+                    "Clients driving priorities including cost optimization, operational resilience, productivity improvements and regulatory compliance.",
+                    "Generative AI emerging as a strong growth catalyst driving process re-imagination and productivity initiatives.",
+                    "Partnerships with hyperscalers and AI-native companies allowing faster experimentation and ideation."
+                  ]
+                },
+                {
+                  "label": "Manufacturing",
+                  "points": [
+                    "Growth continues to be impacted due to lower revenue from a large client (previously flagged European Manufacturing client).",
+                    "Despite the headwind, Manufacturing grew close to/slightly over 1.5% (editor's comment: CC growth 1%), described as commendable given the sector headwind.",
+                    "Clients remain cautious on discretionary spend; decision-making elongated, especially in European auto.",
+                    "Impact of tariffs, geopolitical uncertainty, and energy cost keeping budgets tightly controlled.",
+                    "AI adoption creating new opportunity areas but also raising productivity expectations from clients; better pricing being achieved on AI skills and consulting.",
+                    "Focus on supporting clients through digital, AI modernization, and consolidation initiatives while balancing growth with disciplined deal selection and sustainable pricing."
+                  ]
+                },
+                {
+                  "label": "Retail and CPG",
+                  "points": [
+                    "Segment continues to see challenges; still constrained growth, not yet seeing pickup.",
+                    "Consumer spend remains muted; budgets tightly controlled due to geopolitics, inflation, and tariffs.",
+                    "Spend shifting towards AI modernization and productivity-led programs funded through operational efficiency and cost optimization.",
+                    "Clients asking for AI-led productivity commitments leading to new pricing structures.",
+                    "Infosys leveraging native knowledge of client business processes/technology landscapes augmented with AI.",
+                    "Large deal pipeline healthy, but decision cycles are longer."
+                  ]
+                },
+                {
+                  "label": "Communications",
+                  "points": [
+                    "Segment continues to see challenges alongside Retail.",
+                    "Operating environment remains challenging; clients exercising discipline on discretionary spending, closely scrutinizing investment decisions.",
+                    "AI reshaping spending patterns; enterprises increasingly prioritizing initiatives with near-term gains.",
+                    "Telecom undergoing significant transformation with consolidation and M&A, with increased investments especially for OEMs."
+                  ]
+                },
+                {
+                  "label": "Life Sciences",
+                  "points": [
+                    "Segment will see benefit from the acquisition in Healthcare and Life Sciences."
+                  ]
+                },
+                {
+                  "label": "GCC (Global Capability Centre) portfolio",
+                  "points": [
+                    "Infosys launched an AI GCC concept; held a client event with leading GCC leadership teams at its Bangalore campus sharing latest AI GCC developments.",
+                    "Traction on GCC looking very strong; revenue growth and work with GCCs is good, though specific milestones not externally shared.",
+                    "GCC business has a lifecycle - some GCCs expanding well, others have exited in the past with Infosys sometimes participating in the transition; both GCC-internal work and Infosys's work with GCCs are growing well."
                   ]
                 }
               ]
@@ -4859,55 +4913,193 @@
               "title": "Product & Technology",
               "key_figures": [
                 {
-                  "label": "Frontier Engineers target",
+                  "label": "Employees working on coding tools (Claude Code, Codex, etc.)",
+                  "value": "80,000+",
+                  "unit": "employees",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Planned Frontier Engineers",
                   "value": "6,000",
-                  "unit": "engineers",
+                  "unit": "employees",
                   "period": "next few years",
                   "kind": "target"
                 },
                 {
-                  "label": "Employees working on coding tools",
-                  "value": "80,000",
-                  "unit": null,
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "AI revenue as percentage of total revenue",
-                  "value": "8.2",
-                  "unit": "%",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "AI revenue growth (QoQ)",
-                  "value": "double-digit",
-                  "unit": null,
-                  "period": "several quarters",
-                  "kind": "reported"
-                },
-                {
-                  "label": "AI strategy market opportunity",
+                  "label": "Addressable market from Hexagon AI strategy (6 value pools)",
                   "value": "300",
-                  "unit": "bn",
+                  "unit": "$ bn",
                   "period": null,
                   "kind": "market_size"
                 },
                 {
-                  "label": "AI revenue percentage in Q3 FY26",
-                  "value": "5.5",
-                  "unit": "%",
-                  "period": "Q3 FY26",
+                  "label": "Medicaid eligibility verification time reduction",
+                  "value": "from 6-8 days to ~4 minutes",
+                  "unit": "time",
+                  "period": null,
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "AI and Technology Initiatives",
+                  "label": "Hexagon AI Strategy - 6 value pools",
                   "points": [
-                    "Over 80,000 employees are working on coding tools such as Claude Code or Codex.",
-                    "Building a team of frontier engineers to support client work, with a target of 6,000 engineers.",
-                    "Topaz Fabric platform enables clients to get the benefits of AI while keeping data sovereignty."
+                    "Six areas of new growth identified: process AI, agents for processes, data/data layer for AI, modernization, AI engineering strategy, and coding tools.",
+                    "Strong traction across all 6 value pools with higher share of revenues coming from process AI, AI strategy and engineering, and Data for AI.",
+                    "AI revenue is defined as revenue coming from this strategic framework (Hexagon) described at Investor Day - distinct from internally tracked 'AI infused/augmented' revenue which is not included in the externally reported 8.2% figure."
+                  ]
+                },
+                {
+                  "label": "Topaz Fabric platform",
+                  "points": [
+                    "Platform enables clients to get benefits of AI while keeping sovereignty of their own data and company knowledge within their organization.",
+                    "Clients can work with any foundation model - closed, open-weight, or on their own cloud/server.",
+                    "Provides a harness enabling clients to more fully deploy foundation model benefits into their organization and optimize token cost by matching appropriate models to appropriate tasks.",
+                    "Not held by Infosys or by the foundation model company - data stays with the client, seen as a major differentiator that may become increasingly important over time.",
+                    "Almost every client discussion today involves some element of AI and Topaz Fabric since it is now foundational/integral to the work being done."
+                  ]
+                },
+                {
+                  "label": "Frontier Engineers",
+                  "points": [
+                    "Building a team of Frontier Engineers to support client work; objective set at 6,000 over the next few years.",
+                    "Capability combines engineering plus business context - an area where Infosys was strong even before the AI wave began.",
+                    "Plan in place for some time to scale this up, leveraging existing internal capability doing similar work."
+                  ]
+                },
+                {
+                  "label": "Small language models",
+                  "points": [
+                    "Small language model for banking based on Finacle product set is getting good traction, offering an easy way for clients to leverage a smaller, cheaper, more token-efficient model.",
+                    "Similar traction seen for IT-Ops small language models; both are part of scaling AI offerings.",
+                    "No separate margin quantification given for AI deals, but management stated it is comfortable with margins seen in this area."
+                  ]
+                },
+                {
+                  "label": "Cybersecurity and AI safety",
+                  "points": [
+                    "Approach to cyber security includes work done previously around model security protocols (referenced discussion with 'Mythos' and prior model OPUS 4.7), building understanding of vulnerabilities and how to protect against them for clients.",
+                    "Each client environment requires its own cyber defense; Infosys supports clients via security operation centers beyond just foundation model work.",
+                    "Own internal Infosys cyber approach incorporates the same principles."
+                  ]
+                },
+                {
+                  "label": "Innovation fund / AI investments",
+                  "points": [
+                    "Infosys has an innovation fund investing minority stakes in early-stage companies to explore whether new technology can be deployed across the client base or leveraged in some way.",
+                    "Several past investments made, historically much in data and analytics, now spanning many other technologies; will look at further opportunities including potentially in Indian AI firms, without confirming any specific plan."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [
+                {
+                  "label": "Revenue from non-U.S. geography",
+                  "value": "~45%",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Currency exposure",
+                  "points": [
+                    "Approximately 45% of revenue comes from non-U.S. geography, which offsets part of the rupee depreciation margin benefit since dollar appreciation is typically broad-based against most currencies, not just the rupee."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [
+                {
+                  "label": "Number of clients",
+                  "value": "~1,800",
+                  "unit": "clients",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total employees",
+                  "value": "300,000+",
+                  "unit": "employees",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "College graduates recruited last year",
+                  "value": "20,000",
+                  "unit": "employees",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "College graduates planned this year",
+                  "value": "20,000",
+                  "unit": "employees",
+                  "period": "FY27",
+                  "kind": "target"
+                },
+                {
+                  "label": "College graduates recruited in Q1",
+                  "value": "~4,000",
+                  "unit": "employees",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Competitive positioning on AI",
+                  "points": [
+                    "Management views large tech/AI companies (e.g., Microsoft's frontier company, Anthropic/Claude) entering the services space as a positive validation of the services opportunity, not a threat, given Infosys's scale of 300,000+ people and ~1,800 clients versus newer entrants' smaller scale.",
+                    "Differentiators cited: clear AI strategy with 6 focus areas, investment in AI capability, 80,000 employees actively using AI tools for client work, Topaz Fabric enabling data sovereignty and lower token cost, and depth/quality of delivery seen as difficult for competitors to match.",
+                    "Competition is seen mainly from a few companies given Infosys's client base; differentiation is on AI capability plus depth/quality of delivery."
+                  ]
+                },
+                {
+                  "label": "Productivity and revenue per employee",
+                  "points": [
+                    "Over the past several quarters (excluding the most recent quarter specifically), the company has seen continuous improvement in revenue productivity.",
+                    "Productivity benefits are expected to continue even as the company keeps hiring (20,000 planned college graduates this year); pricing dynamics in the market sometimes balance out productivity gains."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "CEO succession",
+                  "points": [
+                    "Salil Parekh's term as CEO ends March 31, 2027; the Board has appointed Ashiss Dash as successor CEO, effective April 1, 2027.",
+                    "Ashiss Dash has 31 years of experience at Infosys, having worked across delivery, sales, account management, and setting up a new DC in Bhubaneswar; he joined as a software engineer from IIT Kharagpur and has been Segment Head for EURS practice (with many sub-verticals) for many years.",
+                    "Dash is based in L.A. and will move back to India; over the next 2-3 months he will undergo CEO coaching, then work as Salil's mentee (described elsewhere as 6 months) to prepare for managing a complex $20bn company during a transformational time.",
+                    "Under Salil's ~10 year tenure, Infosys grew from $10bn to $20bn in revenue, completed digital-era transformation, and launched the AI differentiation/strategy.",
+                    "Mandate for new CEO: continue executing the existing well-defined AI strategy (Hexagon 6 areas); some fine-tuning expected as a natural evolution, particularly around token cost management and ensuring client data sovereignty, but overall strategy remains unchanged."
+                  ]
+                },
+                {
+                  "label": "Acquisitions",
+                  "points": [
+                    "Infosys continues to look at acquisitions and has a good pipeline; recently completed acquisitions include Life Sciences/Healthcare (Optimum Healthcare) and Insurance-related (Stratus).",
+                    "Areas of interest for further M&A include certain geographies for expansion, and industries such as Telco, Financial Services, and a bit more in Healthcare; also areas that are more service-line oriented, especially where AI can be leveraged into processes and agent building.",
+                    "Company reviewed and decided, after discussion with management team and Board, not to enter the AI infrastructure/data center business at this stage (an area some peers like HCL and TCS have entered)."
+                  ]
+                },
+                {
+                  "label": "Project Maximus",
+                  "points": [
+                    "Project Maximus continues to deliver value from pricing, utilization, and other levers, contributing to margin tailwinds (20 bps in Q1).",
+                    "Outcome-based pricing is a specific track within Project Maximus, with a dedicated organizational leader driving it across all segments."
                   ]
                 }
               ]
@@ -4918,10 +5110,40 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Macroeconomic Uncertainty",
+                  "label": "Macro uncertainty",
                   "points": [
-                    "The macro environment remains uncertain, impacting revenue growth guidance.",
-                    "Client spending patterns are influenced by geopolitical instability and economic conditions."
+                    "Overall business environment continues to remain volatile; macro environment remains uncertain.",
+                    "The lower end of the revised guidance assumes further deterioration in macro; the top end assumes an improvement in macro, though a lesser improvement than assumed in the April guidance.",
+                    "Clients continue to prioritize investments in AI, modernization, cloud, and productivity initiatives while remaining selective in discretionary spending."
+                  ]
+                },
+                {
+                  "label": "Pricing and competitive intensity",
+                  "points": [
+                    "Client expectation on productivity, along with high competitive intensity, is resulting in softer-than-expected price increases versus company expectations.",
+                    "AI-led deflation is an additional headwind on both large deal and non-large deal portions of the book, on top of the traditional productivity ask clients make at contract renewal.",
+                    "Company does not externally quantify the compression/deflation, though it acknowledges and internally tracks it; in many cases, compression is offset by new/adjacent scope of work with the same client."
+                  ]
+                },
+                {
+                  "label": "Client-specific headwinds",
+                  "points": [
+                    "One-off 50 bps impact from a program termination by an EURS client during the quarter, not factored into earlier guidance; this was a contract termination for various client reasons, unrelated to AI.",
+                    "European Manufacturing client: reduced client spend along with Infosys's conscious decision not to pursue certain deals not aligned to return expectations; this impact is now clearly above the previously flagged 0.75%-1% range as the company progressed on certain other deals; will have an additional impact in Q4 as the deal reaches closure in December.",
+                    "Manufacturing segment growth continues to be impacted by lower revenue from this large client; tariffs, geopolitical uncertainty and energy costs keeping Manufacturing/European auto budgets tightly controlled with elongated decision-making."
+                  ]
+                },
+                {
+                  "label": "Cybersecurity",
+                  "points": [
+                    "Rising security incidents around autonomous AI agents and breaches at model hosting platforms (referenced OpenAI hack) raise concerns about safety and security of cross-domain AI agent access to client data.",
+                    "Large corporations are cautious about being locked into a single AI ecosystem given cybersecurity and data-control concerns."
+                  ]
+                },
+                {
+                  "label": "Onsite mix reduction",
+                  "points": [
+                    "Conscious decision to increase offshoring to derisk the business model is reducing onsite mix, expected to reduce by 0.75% to 1% for the year (excluding new acquisitions), representing an additional headwind versus last year."
                   ]
                 }
               ]
@@ -4932,33 +5154,81 @@
               "key_figures": [
                 {
                   "label": "Revenue growth guidance",
-                  "value": "1.5 to 3",
-                  "unit": "% YoY",
+                  "value": "1.5% to 3%",
+                  "unit": "% CC YoY",
                   "period": "FY27",
                   "kind": "guidance"
                 },
                 {
                   "label": "Operating margin guidance",
-                  "value": "20 to 22",
+                  "value": "20% to 22%",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Acquisition contribution to guidance",
+                  "value": "~1.7%",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Impact from European Manufacturing client",
+                  "value": "slightly over 1%",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Impact from shift to offshore",
+                  "value": "0.75% to 1%",
                   "unit": "%",
                   "period": "FY27",
                   "kind": "guidance"
                 },
                 {
                   "label": "Effective tax rate guidance",
-                  "value": "29 to 30",
+                  "value": "29% to 30%",
                   "unit": "%",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Margin impact from Optimum Healthcare/Stratus acquisitions",
+                  "value": "50",
+                  "unit": "bps",
                   "period": "FY27",
                   "kind": "guidance"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Revised Guidance",
+                  "label": "Guidance construction",
                   "points": [
-                    "Revenue growth guidance revised to 1.5% to 3% YoY in constant currency terms.",
-                    "Operating margin guidance remains the same at 20% to 22%.",
-                    "Effective tax rate expected to be in the range of 29% to 30%."
+                    "Revenue guidance revised down from 1.5%-3.5% CC YoY to 1.5%-3% CC YoY, reflecting Q1 outcome (one-time client program termination), macro factors, volumes, and pricing mix.",
+                    "As the year progresses, the guidance band is typically narrowed - from a 2-point band to roughly a 1.5-point band by this stage.",
+                    "Guidance includes ~1.7% contribution from recently closed acquisitions (Optimum Healthcare and Stratus), slightly over 1% impact from the European Manufacturing client (reduced spend plus conscious decision not to pursue certain deals not aligned to return expectations), and ~0.75%-1% impact from shift toward offshore.",
+                    "Lower end of guidance assumes further macro deterioration; upper end assumes a macro improvement, though less than assumed in the April guidance.",
+                    "FS and EURS segments are expected to grow higher than the company average for the rest of the year.",
+                    "Whatever happens in Q1 tends to have a cascading effect across the rest of the fiscal year on guidance."
+                  ]
+                },
+                {
+                  "label": "Margin guidance construction",
+                  "points": [
+                    "Margin guidance of 20%-22% maintained, assuming headwinds from wage hikes, productivity pass-throughs, AI investments, and a 50 bps impact from the Optimum Healthcare and Stratus acquisitions.",
+                    "These headwinds are expected to be partly offset by initiatives under Project Maximus and currency benefits.",
+                    "Company expressed confidence in holding the margin guidance band despite upcoming compensation increase headwinds in H2."
+                  ]
+                },
+                {
+                  "label": "Business outlook",
+                  "points": [
+                    "Underlying fundamentals of the business remain strong; healthy client engagements leading to a robust pipeline.",
+                    "Company is taking decisive actions to capitalize on opportunities across the 6 identified AI value pools.",
+                    "Spending is shifting towards areas with clear business cases such as AI-led Modernization, Cost Transformation, Cybersecurity, Cloud Optimization and Vendor Consolidation.",
+                    "Normal seasonality expected between first half and second half; nothing unusual anticipated."
                   ]
                 }
               ]
@@ -4968,7 +5238,7 @@
             {
               "metric": "Revenue growth",
               "horizon": "FY27",
-              "statement": "Our revenue growth guidance for FY27 is 1.5% to 3% YoY growth in constant currency terms.",
+              "statement": "Revenue growth guidance revised to 1.5% to 3% Y-on-Y growth in constant currency terms (from 1.5%-3.5% previously).",
               "specificity": "specific",
               "direction": "down",
               "status": "reiterated"
@@ -4976,7 +5246,7 @@
             {
               "metric": "Operating margin",
               "horizon": "FY27",
-              "statement": "Our operating margin guidance remains the same at 20% to 22%.",
+              "statement": "Operating margin guidance remains at 20% to 22%.",
               "specificity": "specific",
               "direction": "flat",
               "status": "reiterated"
@@ -4984,55 +5254,159 @@
             {
               "metric": "Effective tax rate",
               "horizon": "FY27",
-              "statement": "We expect effective tax rate for the year to be in the range of 29% to 30%.",
+              "statement": "Effective tax rate expected to be in the range of 29% to 30%.",
               "specificity": "specific",
               "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Onsite mix reduction (excl. new acquisitions)",
+              "horizon": "FY27",
+              "statement": "Onsite mix excluding new acquisitions expected to reduce by 0.75% to 1% for the year.",
+              "specificity": "specific",
+              "direction": "down",
               "status": "reiterated"
             },
             {
-              "metric": "AI services market size",
-              "horizon": "2030",
-              "statement": "The opportunity is between $300 bn and $400 bn in the year getting to 2030.",
+              "metric": "Revenue impact from European Manufacturing client",
+              "horizon": "FY27",
+              "statement": "Impact from the European Manufacturing client is now slightly over 1% (previously guided 0.75%-1%), due to reduced client spend and a conscious decision not to pursue certain deals not aligned to return expectations.",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "lowered"
+            },
+            {
+              "metric": "Revenue contribution from acquisitions",
+              "horizon": "FY27",
+              "statement": "Guidance includes approximately 1.7% contribution from recently closed acquisitions of Optimum Healthcare and Stratus.",
               "specificity": "specific",
               "direction": "up",
+              "status": "raised"
+            },
+            {
+              "metric": "Margin impact from acquisitions",
+              "horizon": "FY27",
+              "statement": "Margin guidance assumes a 50 basis point impact from acquisitions of Optimum Healthcare and Stratus.",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "Frontier Engineers headcount",
+              "horizon": "next few years",
+              "statement": "Plan to have 6,000 Frontier Engineers over the next few years.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "College graduate hiring",
+              "horizon": "FY27",
+              "statement": "Plan to recruit 20,000 college graduates this year (~4,000 already recruited in Q1).",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "H2 revenue growth vs H1",
+              "horizon": "H2 FY27",
+              "statement": "Expect normal seasonality between first half and second half; nothing unusual anticipated.",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Segment growth - Financial Services and EURS",
+              "horizon": "FY27",
+              "statement": "FS and EURS are expected to grow higher than the company average.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Revenue reduction due to European client",
+              "horizon": "FY27",
+              "statement": "0.75%-1% revenue reduction due to lower revenue from a large European manufacturing client.",
+              "specificity": "specific",
+              "direction": "down",
               "status": "no_mention"
             }
           ],
           "risk_register": [
             {
-              "risk": "Macroeconomic uncertainty",
+              "risk": "Uncertain and volatile macro environment",
               "status": "new",
-              "note": "The macro environment remains uncertain, impacting revenue growth guidance."
+              "note": "Macro remains uncertain; upper end of guidance now assumes a lesser improvement than assumed in the April guidance; lower end assumes further deterioration."
             },
             {
-              "risk": "Geopolitical tensions",
-              "status": "no_mention",
-              "note": "Global uncertainties like geopolitical tensions and cautious client spending are impacting growth."
+              "risk": "Pricing pressure / competitive intensity",
+              "status": "new",
+              "note": "Client productivity asks combined with high competitive intensity led to softer-than-expected price increases in Q1 versus expectations; still a net price increase but less than envisaged."
             },
             {
-              "risk": "Manufacturing sector uncertainty",
-              "status": "no_mention",
-              "note": "Manufacturing sector faces uncertainty due to tariffs and ongoing Middle East conflict."
+              "risk": "AI-led deflation / compression",
+              "status": "new",
+              "note": "AI-led deflation is an additional headwind on top of traditional renewal productivity asks, seen across both large and non-large deal portions of the portfolio; not externally quantified."
             },
             {
-              "risk": "Visa costs",
-              "status": "no_mention",
-              "note": "Visa costs remain stable despite potential headwinds."
+              "risk": "Client program termination (EURS)",
+              "status": "new",
+              "note": "One-off 50 bps revenue impact from a client terminating a program in the EURS vertical during the quarter; contract termination unrelated to AI."
             },
             {
-              "risk": "Execution risk in AI deployment",
-              "status": "no_mention",
-              "note": "Complexity of integrating AI into existing systems poses a challenge."
+              "risk": "European Manufacturing client de-scoping",
+              "status": "new",
+              "note": "Reduced client spend plus Infosys's decision not to pursue certain deals not aligned to return expectations; impact now above the previously flagged 0.75%-1% range, with an additional impact expected in Q4 as the deal reaches closure in December."
             },
             {
-              "risk": "Deployment gap between AI technology and enterprise adoption",
-              "status": "no_mention",
-              "note": "The gap between AI technology advancement and enterprise deployment is significant."
+              "risk": "Sector headwinds in Manufacturing (tariffs, geopolitics, energy costs)",
+              "status": "new",
+              "note": "Tariffs, geopolitical uncertainty and energy costs keeping Manufacturing/European auto budgets tightly controlled with elongated decision cycles."
             },
             {
-              "risk": "Labor code impact",
+              "risk": "Weak demand in Retail and Communications",
+              "status": "new",
+              "note": "Retail and Communications continue to see challenges; muted consumer spend, tightly controlled budgets due to geopolitics, inflation and tariffs; Communications clients exercising spending discipline."
+            },
+            {
+              "risk": "Lost renewals",
+              "status": "new",
+              "note": "Infosys lost some existing renewals; management declined to give specifics but stated focus is on projects/contracts that make economic sense."
+            },
+            {
+              "risk": "Cybersecurity risks around AI agents",
+              "status": "new",
+              "note": "Rising security incidents around autonomous AI agents and breaches at model hosting platforms (e.g., referenced OpenAI hack) raise client concerns on data sovereignty and cross-domain AI agent access."
+            },
+            {
+              "risk": "Onsite mix reduction impacting YoY comparison",
+              "status": "new",
+              "note": "Conscious derisking via higher offshoring reduces onsite mix by 0.75%-1% for the year, an incremental headwind versus last year."
+            },
+            {
+              "risk": "CEO transition execution risk",
+              "status": "stable",
+              "note": "Leadership transition from Salil Parekh to Ashiss Dash effective April 1, 2027; management indicated a smooth transition is a key focus area."
+            },
+            {
+              "risk": "Geopolitics (Middle East/Iran war)",
               "status": "no_mention",
-              "note": "The results for Q3 FY'26 include a charge associated with change in labor codes in India."
+              "note": "Management acknowledged a change in economic environment after conflict escalation, but sees paths towards stabilization."
+            },
+            {
+              "risk": "Competitive intensity & 'irrational' bids",
+              "status": "no_mention",
+              "note": "Management acknowledged occasional competitor proposals outside the range of what models can deliver; Infosys may walk away."
+            },
+            {
+              "risk": "AI security/vulnerability angle (Mythos)",
+              "status": "no_mention",
+              "note": "CEO described Mythos as exposing more vulnerabilities than expected, framing it as a services opportunity."
+            },
+            {
+              "risk": "Leadership/succession questions",
+              "status": "no_mention",
+              "note": "CEO gave 'No comment' on tenure/succession-related queries."
             },
             {
               "risk": "H-1B visa regulatory challenges",
@@ -5044,43 +5418,66 @@
             {
               "label": "AI-driven transformation",
               "direction": "positive",
-              "note": "AI services revenue is growing at double-digit QoQ, indicating strong traction.",
-              "section_ref": "SEG"
+              "note": "AI revenue at 8.2% of overall revenue, growing double-digit QoQ over several quarters, with strong traction across all 6 Hexagon value pools and a $300bn addressable market.",
+              "section_ref": "TECH"
             },
             {
-              "label": "Macroeconomic uncertainty",
+              "label": "Large deal momentum",
+              "direction": "positive",
+              "note": "$3.6bn TCV with 61% net new, 22 deals won, 20% from vendor consolidation deals, reflecting continued positive traction in the pipeline.",
+              "section_ref": "ORD"
+            },
+            {
+              "label": "Revenue growth guidance",
               "direction": "negative",
-              "note": "The macro environment remains uncertain, impacting revenue growth guidance.",
-              "section_ref": "RISK"
-            },
-            {
-              "label": "Strategic partnerships",
-              "direction": "neutral",
-              "note": "Partnerships with hyper-scalers and AI native companies are allowing faster experimentation and ideation.",
-              "section_ref": "SEG"
+              "note": "FY27 revenue growth guidance lowered to 1.5%-3% CC YoY from 1.5%-3.5%, driven by Q1 program termination, soft volumes/pricing, and European client impact.",
+              "section_ref": "GUID"
             },
             {
               "label": "Execution risk",
-              "direction": "mixed",
-              "note": "Client spending patterns are influenced by geopolitical instability and economic conditions.",
+              "direction": "negative",
+              "note": "Client program termination, softer pricing/volumes, and a European Manufacturing client de-scoping created cascading headwinds into the rest of the year.",
               "section_ref": "RISK"
             },
             {
-              "label": "AI services growth",
+              "label": "Partnerships and acquisitions",
               "direction": "positive",
-              "note": "AI services revenue was 8.2% of overall revenue, growing at double-digit QoQ.",
-              "section_ref": "SEG"
+              "note": "Continued pipeline of acquisitions (Optimum Healthcare, Stratus) contributing ~1.7% to revenue guidance; company reviewed but decided against entering AI data center/infrastructure business.",
+              "section_ref": "STRAT"
+            },
+            {
+              "label": "Pricing and AI-led deflation",
+              "direction": "mixed",
+              "note": "Net pricing still positive but softer than expected due to client productivity asks and competitive intensity, alongside emerging AI-led compression not externally quantified.",
+              "section_ref": "RISK"
+            },
+            {
+              "label": "Leadership transition",
+              "direction": "neutral",
+              "note": "Salil Parekh to be succeeded by internal veteran Ashiss Dash as CEO effective April 1, 2027, with a multi-month coaching and mentee transition planned.",
+              "section_ref": "STRAT"
             }
           ],
           "key_takeaways": [
-            "Revenue growth for Q1 was 2.4% YoY and 1% QoQ in constant currency terms.",
-            "AI services revenue was 8.2% of overall revenue in Q1, growing at double-digit QoQ for the last several quarters.",
-            "Large deals were $3.6 bn with a net new of 61%.",
-            "Revenue growth guidance revised to 1.5% to 3% YoY in constant currency terms.",
-            "Operating margin guidance remains the same at 20% to 22%.",
-            "The macro environment remains uncertain, impacting revenue growth guidance."
+            "Our revenue growth for Q1 was at 2.4% Y-on-Y and 1% Q-on-Q in constant currency terms. We had a one-time revenue impact of a client decision during the quarter.",
+            "Our AI services revenue was 8.2% of overall revenue in Q1.",
+            "Our large deals, $3.6 bn at 61% net new, operating margin at 21.1%, free cash flow at $955 mn. Earnings per share were up 15% Y-on-Y in rupee terms.",
+            "We are changing our revenue growth guidance to 1.5% to 3% Y-on-Y growth in constant currency terms. Our operating margin guidance remains the same at 20% to 22% operating margin.",
+            "The Board has appointed his successor, our new CEO, who will take over on April 1, 2027... His name is Ashiss Dash.",
+            "Q1 revenues were at $5,082 mn, increase of 1% sequentially and 2.4% Y-on-Y in constant currency terms. Acquisitions contributed approximately 1.1% sequentially.",
+            "Large deal wins were strong at $3.6 bn with high net new of 61%, reflecting the relevance of our value proposition... We have been on the positive side of vendor consolidation with 20% of the total large deal TCV being from new vendor consolidation deals.",
+            "The lower end of the guidance assumes further deterioration in macro. Top end of the guidance assumes an improvement in macro, though lower than what we had assumed in April guidance."
           ],
-          "pressing_questions": []
+          "pressing_questions": [
+            "Why decide to leave at a time like now, instead of perhaps looking at an extension? And with the new CEO coming in, any mandate for the new CEO that you could highlight for us more clearly?",
+            "On the earnings, what is the reason for this revision downwards - where is the weakness? Where is momentum picking up? Some of your competitors like Tech M have been talking about irrational competitive pricing. Wipro has also spoken about that a bit. So what are you seeing in the environment?",
+            "With a 1% kind of growth in the first quarter, do we assume the second half will be meaningfully better if you were to reach that upper end of the 3% guidance?",
+            "Two of your peers have highlighted that AI revenue is slightly lumpy and it could be 1 or 2 quarters post which you will have to go and get those deals again. So is that something that Infosys is also seeing?",
+            "Would Infy ever at all, at least in the near future, would you want the company to move into the AI infrastructure business, data center, something that HCL and TCS has already done?",
+            "Infosys has lost some of the existing renewals, at least three in the know. What are the factors that led to that?",
+            "Could you quantify the AI-led deflation, if you can? And lastly, how do we define AI-led revenues?",
+            "With big tech getting into AI services space, will Indian IT companies end up becoming subcontractors at the end of the day, if these guys get into the game? And if that happens, will that rob you from the bigger opportunities in the AI space?"
+          ]
         },
         {
           "company": "Infosys Ltd",
