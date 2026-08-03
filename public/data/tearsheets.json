@@ -53792,6 +53792,1430 @@
           ]
         }
       ]
+    },
+    "TATACAP": {
+      "company": "Tata Capital Ltd",
+      "ticker": "TATACAP",
+      "industry": "Non Banking Financial Company (NBFC)",
+      "country": "India",
+      "checked_at": "2026-08-03T11:41:32.647Z",
+      "quarters": [
+        {
+          "company": "Tata Capital Ltd",
+          "ticker": "TATACAP",
+          "industry": "Non Banking Financial Company (NBFC)",
+          "country": "India",
+          "concall_date": "2026-08-03",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=4b8e9436-643e-43bf-a3ad-17563c74c9d6.pdf",
+          "model": "anthropic.claude-sonnet-5",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-03T11:40:57.600Z",
+          "summary": "Tata Capital reported healthy Q1 FY27 growth (AUM up 22% YoY consolidated, 28% ex-Motor Finance; PAT up 56% YoY) with improving asset quality and operating leverage, and management reiterated it is on track to meet FY28 guidance (ROA of 2.6%, cost-to-income of 33-34%, credit cost within guided corridor, Motor Finance ROA of 2%, and AUM growth guidance of 23-25% for FY27). Two key developments during the quarter were the proposed acquisition of gold-loan company Yogloans (entry into secured gold lending) and a USD 400 million oversubscribed international bond issuance strengthening the funding mix.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "Consolidated AUM",
+                  "value": "2.91",
+                  "unit": "lakh crores INR",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated AUM growth YoY",
+                  "value": "22",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated AUM growth QoQ",
+                  "value": "5",
+                  "unit": "%",
+                  "period": "Q1 FY27 QoQ",
+                  "kind": "reported"
+                },
+                {
+                  "label": "AUM growth YoY excluding Motor Finance",
+                  "value": "28",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "AUM growth QoQ excluding Motor Finance",
+                  "value": "6",
+                  "unit": "%",
+                  "period": "Q1 FY27 QoQ",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Credit cost",
+                  "value": "1",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Credit cost",
+                  "value": "1.6",
+                  "unit": "%",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Credit cost decline YoY",
+                  "value": "26",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated PAT",
+                  "value": "1,547",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated PAT growth YoY",
+                  "value": "56",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated PAT growth QoQ",
+                  "value": "3",
+                  "unit": "%",
+                  "period": "Q1 FY27 QoQ",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net NPA",
+                  "value": "0.8",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net NPA sequential change",
+                  "value": "-10",
+                  "unit": "basis points",
+                  "period": "Q1 FY27 QoQ",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gross Stage-3 assets",
+                  "value": "1.9",
+                  "unit": "%",
+                  "period": "June 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gross Stage-3 assets",
+                  "value": "2.0",
+                  "unit": "%",
+                  "period": "March 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Provision Coverage Ratio (PCR)",
+                  "value": "57",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated ROA",
+                  "value": "2.3",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ROA excluding Motor Finance",
+                  "value": "2.5",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated ROE",
+                  "value": "13.7",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total borrowings",
+                  "value": "~2.45",
+                  "unit": "lakh crores INR",
+                  "period": "June 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Liquidity buffer",
+                  "value": "~29,000",
+                  "unit": "INR crores",
+                  "period": "June 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost of funds",
+                  "value": "7.28",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost of funds",
+                  "value": "7.15",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost-to-income ratio",
+                  "value": "36.4",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost-to-income improvement QoQ",
+                  "value": "190",
+                  "unit": "basis points",
+                  "period": "Q1 FY27 vs Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operating expense growth QoQ",
+                  "value": "2",
+                  "unit": "%",
+                  "period": "Q1 FY27 QoQ",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operating expense growth YoY",
+                  "value": "21",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operating expense growth YoY normalized for appraisal cycle change",
+                  "value": "16-17",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "On-role employee count",
+                  "value": "30,170",
+                  "unit": "employees",
+                  "period": "June 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Employee count growth YoY",
+                  "value": "~5",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capital adequacy ratio",
+                  "value": "18.5",
+                  "unit": "%",
+                  "period": "June 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated debt-to-equity ratio",
+                  "value": "5.3x",
+                  "unit": "x",
+                  "period": "June 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated debt-to-equity ratio",
+                  "value": "5.3x",
+                  "unit": "x",
+                  "period": "March 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total equity",
+                  "value": "46,237",
+                  "unit": "INR crores",
+                  "period": "June 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Foreign borrowings share of total borrowings",
+                  "value": "12.6",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Foreign borrowings share of total borrowings (media call figure)",
+                  "value": "11",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bank loans share of borrowings",
+                  "value": "~40",
+                  "unit": "%",
+                  "period": "June 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "NCDs share of borrowings",
+                  "value": "~33",
+                  "unit": "%",
+                  "period": "June 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ECB/MTN share of borrowings",
+                  "value": "~11",
+                  "unit": "%",
+                  "period": "June 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "CP and WCDL share of borrowings",
+                  "value": "~8",
+                  "unit": "%",
+                  "period": "June 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "USD bond issuance size",
+                  "value": "400",
+                  "unit": "USD million",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "USD bond tenor",
+                  "value": "3.5",
+                  "unit": "years",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "USD bond rate",
+                  "value": "T-Bill + 107",
+                  "unit": "basis points",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "USD bond order book oversubscription",
+                  "value": "4x",
+                  "unit": "x",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Tier-1 capital level",
+                  "value": "~15.5",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Target consolidated debt-equity ratio (forward)",
+                  "value": "6.2x-6.3x",
+                  "unit": "x",
+                  "period": "forward",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Housing Finance entity debt-equity ratio",
+                  "value": "7.2x-7.3x",
+                  "unit": "x",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "NBFC debt-equity ratio",
+                  "value": "5.5x-5.6x",
+                  "unit": "x",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "AI-driven operating leverage",
+                  "points": [
+                    "AI initiatives delivering 98% digital onboarding and AI-led underwriting, 40% productivity gains in operations, and stronger collections outcomes.",
+                    "Cost-to-income ratio improvement attributed to technology, data infrastructure and distribution investments now translating into structural efficiency gains.",
+                    "Headcount growth remains well calibrated; incremental hiring focused on frontline sales and collections roles only.",
+                    "Manpower addition last year was just under 5% of total workforce; largely added only in front-end sales and collections.",
+                    "Operating expense YoY growth of 21% was driven mainly by change in the annual appraisal cycle; normalized growth would be ~16-17%.",
+                    "ROA improvement expected via two-thirds from margin expansion and one-third from operating leverage improvement."
+                  ]
+                },
+                {
+                  "label": "Asset quality / provisioning",
+                  "points": [
+                    "PCR change of 30-40 bps quarter-to-quarter is purely a function of the ageing mix within Stage-3 assets (incremental provisioning as accounts age within Stage-3), not a change in TTC PD/LGD assumptions.",
+                    "ECL grades (PD/LGD) refreshed quarterly using trailing data (e.g., Q1 calculation uses data through March); ECL calculation horizon is 5 to 7 years depending on product life cycle; LGD is historical-to-date.",
+                    "Credit cost decline of 26% YoY primarily driven by continued improvement in unsecured Retail portfolio.",
+                    "Bounce rates continue to improve month-on-month, including in the current month, per management."
+                  ]
+                },
+                {
+                  "label": "Capital planning",
+                  "points": [
+                    "Endeavor to operate capital adequacy/CET1 at least 200-250 bps above mandated regulatory thresholds.",
+                    "Company well capitalized until June-September 2028 based on current book growth guidance."
+                  ]
+                },
+                {
+                  "label": "Calendar day / margin impact",
+                  "points": [
+                    "No impact from difference in number of days between Q4 FY26 and Q1 FY27 on margins/interest expense."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "Tata Capital Housing Finance AUM",
+                  "value": "89,416",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Housing Finance AUM growth YoY",
+                  "value": "24",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Housing Finance credit cost",
+                  "value": "0.05",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Housing Finance PAT",
+                  "value": "532",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Housing Finance PAT growth YoY",
+                  "value": "29",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Affordable Housing segment net AUM growth YoY",
+                  "value": "23",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Housing Finance branch network",
+                  "value": "~350",
+                  "unit": "branches",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Housing Finance cost-to-income ratio",
+                  "value": "30",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Housing Finance net NPA",
+                  "value": "0.3",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Housing Finance ROA",
+                  "value": "2.5",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Housing Finance ROE",
+                  "value": "18.4",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Retail + SME share of portfolio",
+                  "value": "85.4",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Retail + SME target range",
+                  "value": "85-88",
+                  "unit": "%",
+                  "period": "forward",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Consolidated disbursements",
+                  "value": "46,212",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated disbursement growth YoY",
+                  "value": "33",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Unsecured Retail disbursement growth YoY",
+                  "value": "50",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Unsecured Retail AUM growth YoY",
+                  "value": "17",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Motor Finance book size",
+                  "value": "24,445",
+                  "unit": "INR crores",
+                  "period": "June 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "High-margin products disbursement growth",
+                  "value": "38",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total book growth ex-Motor Finance",
+                  "value": "17",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Overall book growth (incl. Motor Finance)",
+                  "value": "10",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Disbursement growth Q3 FY26 (comparison)",
+                  "value": "13",
+                  "unit": "%",
+                  "period": "Q3 FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Book growth Q3 FY26 (comparison)",
+                  "value": "4",
+                  "unit": "%",
+                  "period": "Q3 FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Motor Finance legacy book net AUM depletion",
+                  "value": "3,139",
+                  "unit": "INR crores",
+                  "period": "June 2025",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Motor Finance legacy book net AUM depletion",
+                  "value": "945",
+                  "unit": "INR crores",
+                  "period": "June 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Microfinance (JLG) share of book",
+                  "value": "<1",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Microfinance target ceiling",
+                  "value": "<2",
+                  "unit": "%",
+                  "period": "forward",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Motor Finance Used vehicle disbursement mix",
+                  "value": "~40",
+                  "unit": "%",
+                  "period": "last 3 quarters",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Motor Finance Used vehicle mix target range",
+                  "value": "40-42",
+                  "unit": "%",
+                  "period": "forward",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Micro Housing book size",
+                  "value": "~1,200",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Micro Housing AUM QoQ growth",
+                  "value": "14",
+                  "unit": "%",
+                  "period": "Q1 FY27 QoQ",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Micro Housing growth target (this FY)",
+                  "value": "100",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Micro Housing growth target (following year)",
+                  "value": "50-60",
+                  "unit": "%",
+                  "period": "FY28",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Combined Affordable + Micro Housing growth target",
+                  "value": "~30",
+                  "unit": "%",
+                  "period": "forward",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Affordable Housing loan rate range",
+                  "value": "11-12",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Affordable Housing ticket size",
+                  "value": "18",
+                  "unit": "INR lakhs",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Micro Housing ticket size",
+                  "value": "~9",
+                  "unit": "INR lakhs",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Book growth drivers",
+                  "points": [
+                    "Disbursement growth outpacing AUM growth as book growth lags disbursement growth in early stages of any lending scale-up; expect gap to narrow over next 2-3 quarters.",
+                    "Corporate and SME segments continuing to scale steadily; Corporate segment viewed as having largely maxed out its share, with more incremental growth expected from Retail and SME.",
+                    "In each business line (Housing, Retail, SME, Corporate, Prime Home Loans) effort is to increase margins even outside the high-margin product mix shift.",
+                    "If Corporate origination exceeds desired proportion, company will sell down/syndicate to keep Retail+SME within the 85-88% corridor.",
+                    "Contribution of high-yield/unsecured products expected to make unsecured book grow faster than overall book by Q3/Q4 of this financial year.",
+                    "No PLR (base rate) hikes taken on SME/Corporate book; strategy instead is to price incremental lending better to grow NIMs faster than cost-of-funds growth, applied across Housing, Retail, SME and Corporate."
+                  ]
+                },
+                {
+                  "label": "Motor Finance transformation",
+                  "points": [
+                    "Transformation journey progressing as planned with focus on a more balanced, sustainable portfolio; measured growth approach amid geopolitical uncertainty and elevated fuel costs led to sequential book decline.",
+                    "Business became profitable from Q4 of last year and remained profitable in Q1 FY27 despite seasonal increase in credit cost.",
+                    "Continuing to expand presence beyond captive OEMs while enhancing efficiency through branch and workforce rationalization.",
+                    "Mix shift expected: proportion of ILMSCV to increase, proportion of HCV to reduce; combined with rate increases across segments to improve yields and margins.",
+                    "Price gap between new and used vehicles has narrowed after GST rate rationalization."
+                  ]
+                },
+                {
+                  "label": "Microfinance strategy",
+                  "points": [
+                    "Model is JLG (Joint Liability Group), forming 99.9% of that business; right-to-win seen as operational excellence — correct KYC, income-source evaluation, timely digital collections, paperless processes.",
+                    "Business seen as having room to scale, but management intends to keep it below 2% of total book for the foreseeable future."
+                  ]
+                },
+                {
+                  "label": "Affordable/Micro Housing strategy",
+                  "points": [
+                    "Affordable and Micro Housing chosen to target customers within a comfortable credit profile with low delinquency, leveraging cost-of-funds advantage for better ROA.",
+                    "Micro Housing offers a better yield than Affordable Housing and will be grown faster."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "TECH",
+              "title": "Product & Technology / AI Initiatives",
+              "key_figures": [
+                {
+                  "label": "Digital onboarding share",
+                  "value": "98",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operations productivity gain from AI",
+                  "value": "40",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Expected ROA improvement from AI/technology (2-year horizon)",
+                  "value": "10-15",
+                  "unit": "basis points",
+                  "period": "next 2 years",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "AI-led onboarding customer connects",
+                  "value": "30",
+                  "unit": "lakh",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "AI-driven welcome calls share",
+                  "value": "~90",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "AI agents' contribution to call-center personal loan sourcing",
+                  "value": "~15",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "AI-generated multilingual marketing creatives share",
+                  "value": "85-90",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Documents processed via AI document intelligence/CAM automation",
+                  "value": "~4",
+                  "unit": "crore documents",
+                  "period": "cumulative",
+                  "kind": "reported"
+                },
+                {
+                  "label": "AI adoption in personal/business loan cases",
+                  "value": ">90",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Processing turnaround improvement from AI underwriting",
+                  "value": ">35",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Retail applications processed via AI-led workflows",
+                  "value": "~70",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Processing turnaround improvement (operations)",
+                  "value": "~40",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operating manpower cost reduction per file",
+                  "value": ">25",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Email responses AI-generated",
+                  "value": ">70",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Email queries resolved same day",
+                  "value": ">90",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Pre-delinquency outreach managed by AI bots",
+                  "value": ">95",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "AI-driven early bucket collections share",
+                  "value": "~30",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Employees trained on AI platforms/tools",
+                  "value": ">12,000",
+                  "unit": "employees",
+                  "period": "cumulative",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "AI strategy",
+                  "points": [
+                    "AI positioned as a key enabler of the 'Digital First' strategy across the lending lifecycle: onboarding, underwriting, operations, servicing and collections.",
+                    "Evolution from point solutions to end-to-end, value-creative, transformative AI-led projects across the organization.",
+                    "AI-powered portfolio monitoring enhances risk surveillance across SME customer portfolios, enabling quicker and more targeted actions.",
+                    "Number of people added has been small relative to AUM growth, reflecting AI-driven productivity; benefits expected across cost of doing business, faster acquisition, and better cross-sell."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [
+                {
+                  "label": "Branch network",
+                  "value": "1,491",
+                  "unit": "branches",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Locations served",
+                  "value": "1,091",
+                  "unit": "locations",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "States/UTs covered",
+                  "value": "27",
+                  "unit": "states/UTs",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "New branches added in quarter",
+                  "value": "14",
+                  "unit": "branches",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Customer base",
+                  "value": "8.8",
+                  "unit": "million customers",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Yogloans existing branch network",
+                  "value": "162",
+                  "unit": "branches",
+                  "period": "March 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Yogloans customer base",
+                  "value": "~32,000",
+                  "unit": "customers",
+                  "period": "March 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Yogloans branches located in",
+                  "value": "4 southern states",
+                  "unit": null,
+                  "period": "March 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Target gold loan branch addition",
+                  "value": "500+",
+                  "unit": "branches",
+                  "period": "next 2.5-3 years",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Distribution model",
+                  "points": [
+                    "Phygital model combines physical branch reach with digital capability, serving 8.8 million customers across existing and underpenetrated markets.",
+                    "Gold loan branch expansion strategy will focus on building a strong ecosystem in select states (including northern states) before adding more states, once critical mass is achieved in initial states; specific target states not disclosed."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [
+                {
+                  "label": "Yogloans stake to be acquired",
+                  "value": "~88.6",
+                  "unit": "%",
+                  "period": "transaction",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Yogloans pre-money equity valuation",
+                  "value": "up to 318",
+                  "unit": "INR crores",
+                  "period": "transaction",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Yogloans primary capital infusion",
+                  "value": "93",
+                  "unit": "INR crores",
+                  "period": "transaction",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Yogloans AUM at acquisition",
+                  "value": "708",
+                  "unit": "INR crores",
+                  "period": "March 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Target gold loan portfolio (3-year horizon)",
+                  "value": "4,000-5,000",
+                  "unit": "INR crores",
+                  "period": "next 3 years",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Gold loan (Yogloans) acquisition rationale",
+                  "points": [
+                    "Combination of Yogloans' domestic expertise and branch network with Tata Capital's brand, technology and risk management capabilities intended to create a compelling platform for secured lending growth.",
+                    "Transaction structured via combination of capital infusion and purchase of shares from existing shareholders; subject to regulatory approvals and customary closing conditions.",
+                    "RBI approval for the acquisition expected towards the end of the calendar year; organic gold-loan build-out plan will merge with the acquired business once approved.",
+                    "Acquired team brings experience in the gold loan business; new branches will be added in markets that are growing and behaving well on credit quality.",
+                    "Competitive positioning in gold loans seen resting on brand trust, cost-of-funds advantage, and strength in technology/operational excellence.",
+                    "Post regulatory approval, Yogloans will become a Tata Capital subsidiary and will ultimately be consolidated within the Tata Capital brand; no separate branding plan disclosed beyond eventual consolidation."
+                  ]
+                },
+                {
+                  "label": "Funding diversification",
+                  "points": [
+                    "USD 400 million Reg S bond is the second USD bond issuance and the first following the S&P BBB rating upgrade and equity listing; received broad demand from Asia and EMEA investors including asset managers, insurers, banks and institutional investors.",
+                    "Foreign borrowings now constitute 11-12.6% of total borrowings (media call cited 11%; earnings call cited 12.6%), reflecting continued diversification of funding mix."
+                  ]
+                },
+                {
+                  "label": "Value unlocking / listing considerations",
+                  "points": [
+                    "Board discusses potential monetization/listing of Housing Finance business but no decision has been made; company will wait for RBI's placement in the upper layer, which would afford about three years to decide on listing timing, before acting."
+                  ]
+                },
+                {
+                  "label": "Co-lending",
+                  "points": [
+                    "Company is not a significant player in co-lending market; in early discussions with a few partners who would source loans while Tata Capital retains larger portion of the book; 99% of the book has been built organically."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [
+                {
+                  "label": "Real GDP growth FY26",
+                  "value": "7.7",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "CPI inflation",
+                  "value": "4.38",
+                  "unit": "%",
+                  "period": "June 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bank credit growth",
+                  "value": "18.6",
+                  "unit": "%",
+                  "period": "June 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "NBFC credit growth",
+                  "value": "14.2",
+                  "unit": "%",
+                  "period": "May 2026 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "NBFC credit growth (year ago comparison)",
+                  "value": "11.4",
+                  "unit": "%",
+                  "period": "May 2025 YoY",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Macro risks flagged",
+                  "points": [
+                    "Elevated crude/energy prices from prolonged geopolitical tensions expected to moderate GDP growth from FY26's high base.",
+                    "Headline CPI crossed the midpoint of RBI's band for the first time since January 2025, led mainly by crude prices; being watched closely alongside monsoon trends and rural demand.",
+                    "Monsoon and El Niño-related risks being monitored for potential effect on food inflation and rural demand, though no impact seen on portfolio as of the call; hopeful monsoon quantum will improve.",
+                    "Bank credit growth partly reflects funding substitution as elevated bond yields pushed corporates and NBFCs toward bank borrowings.",
+                    "MPC held repo rate steady in June, retained neutral stance citing global macro uncertainty; transmission of last year's rate cuts by banks has moderated in recent months.",
+                    "Temporary liquidity deficit in June from advance tax outflows was addressed via timely RBI interventions; recent measures to encourage foreign currency inflows expected to further support system liquidity."
+                  ]
+                },
+                {
+                  "label": "Segment-specific caution",
+                  "points": [
+                    "Went conservative in Q1 on Commercial Vehicle and Construction Equipment segments and on MSMEs with high reliance on petro-products, due to concern that full pass-through of fuel prices to end borrowers could hurt profitability of those businesses.",
+                    "Government has not passed on fuel price increases to end consumers, so these segments have continued to behave well.",
+                    "No early signs of stress visible in any segment; asset quality across CV and MSME portfolios has shown no material stress despite geopolitical uncertainty.",
+                    "Elevated fuel costs and macro uncertainties are contributing to a measured, disciplined growth approach in Motor Finance."
+                  ]
+                },
+                {
+                  "label": "Gold loan regulatory considerations",
+                  "points": [
+                    "RBI revised gold loan guidelines effective this year, creating distinct treatment (LTV, repayment structures) between income-generating and consumption-generating loans; company has planned products in line with these norms.",
+                    "Company will watch customer leverage levels, collateral offered, and gold price movement trends while growing the gold loan portfolio; views gold loans as a secured asset class with extremely low credit costs."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [
+                {
+                  "label": "AUM growth guidance FY27",
+                  "value": "23-25",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Credit cost guidance",
+                  "value": "1",
+                  "unit": "%",
+                  "period": "FY28 corridor",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Cost-to-income ratio guidance",
+                  "value": "33-34",
+                  "unit": "%",
+                  "period": "FY28",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "ROA guidance",
+                  "value": "2.6",
+                  "unit": "%",
+                  "period": "forward (from current 2.3%)",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "NIM/margin improvement guidance",
+                  "value": "~10",
+                  "unit": "basis points",
+                  "period": "FY27 full year",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Cost of funds increase guidance",
+                  "value": "8-10",
+                  "unit": "basis points",
+                  "period": "FY27 full year",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Motor Finance ROA target",
+                  "value": "2",
+                  "unit": "%",
+                  "period": "FY28",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Gold loan branch target",
+                  "value": "500+",
+                  "unit": "branches",
+                  "period": "next 2.5-3 years",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Gold loan AUM target",
+                  "value": "4,000-5,000",
+                  "unit": "INR crores",
+                  "period": "next 3 years",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Capital adequacy sufficiency horizon",
+                  "value": "through Sept 2028",
+                  "unit": null,
+                  "period": "forward",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Outlook commentary",
+                  "points": [
+                    "Management stated Q1 FY27 credit cost of 1% is in line with FY28 guidance and remains well within the guided corridor.",
+                    "Operating leverage expected to further improve in coming quarters; margins expected to improve due to focus on high margin products.",
+                    "Company on track to meet FY28 guidance overall (as stated in closing remarks).",
+                    "ROA improvement to 2.6% expected via two-thirds from margin expansion and one-third from operating cost (OPEX) optimization; any additional benefit from credit cost improvement would be a bonus not factored into guidance.",
+                    "High-yield/unsecured product contribution expected to make unsecured book growth outpace overall book growth by Q3/Q4 of this financial year.",
+                    "No policy rate cut/hike benefit has been factored into margin guidance since timing/magnitude of any RBI rate action is uncertain; company will remain neutral to policy rate moves (pass on increases and decreases as they occur)."
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "Consolidated AUM growth",
+              "horizon": "FY27",
+              "statement": "AUM growth guidance of 23% to 25% and we should be on track with that",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Credit cost",
+              "horizon": "FY28",
+              "statement": "Credit cost for Quarter 1 FY27 stood at 1%, in line with FY28 guidance, and remains well within the guided corridor",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Cost-to-income ratio",
+              "horizon": "FY28",
+              "statement": "We have guided that by FY28, we will be at 33% to 34% on cost-to-income ratio",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "ROA",
+              "horizon": "forward",
+              "statement": "From the current ROA of 2.3% to the guided ROA of 2.6%, two-thirds will come from margins and one-third will come from OPEX optimization",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "NIM / margin improvement",
+              "horizon": "FY27 full year",
+              "statement": "We are targeting a 10 bps NIMs increase for the whole year",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Cost of funds increase",
+              "horizon": "FY27 full year",
+              "statement": "On an overall basis, we may see a cost of fund increase of closer to about 8 to 10 basis points",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Motor Finance ROA",
+              "horizon": "FY28",
+              "statement": "We had given a guidance of reaching a 2% ROA by FY28 and at this point of time we want to stick to the same objective and plan of doing so",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Gold loan branch network",
+              "horizon": "next 2.5-3 years",
+              "statement": "Post getting all approvals from RBI, over next 2.5 to 3 years, we expect to add close to about 500 plus branches",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Gold loan AUM",
+              "horizon": "next 3 years",
+              "statement": "Build a portfolio of approximately INR4,000 crores to INR5,000 crores over the next 3 years",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Retail + SME portfolio mix",
+              "horizon": "ongoing",
+              "statement": "Retail and SME will constitute between 85% to 88% of our book, and we will remain within that corridor",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Microfinance share of book",
+              "horizon": "foreseeable future",
+              "statement": "We do believe that for the foreseeable future that this will continue to be less than 2% of our book",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Motor Finance Used vehicle mix",
+              "horizon": "ongoing",
+              "statement": "Our strategy there is to keep Used at about 40-42% in that range",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Micro Housing AUM growth",
+              "horizon": "FY27",
+              "statement": "We plan to grow it by 100% for this financial year",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Micro Housing AUM growth",
+              "horizon": "FY28 (subsequent year)",
+              "statement": "Maybe another 50% to 60% for the subsequent year",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Affordable + Micro Housing combined growth",
+              "horizon": "forward",
+              "statement": "Combined, we will be growing at closer to around 30% in this segment between Affordable and Micro",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "High-yield/unsecured book growth vs overall book",
+              "horizon": "Q3/Q4 FY27",
+              "statement": "We expect [unsecured book growth outpacing overall book] to be there by Quarter 3 or Quarter 4 of this year, but definitely in this financial year",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Capital sufficiency",
+              "horizon": "through Sept 2028",
+              "statement": "If I look at the book growth, what we have guided to the street, I think we are well capitalized till June to September of 2028",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "AI-driven ROA improvement",
+              "horizon": "next 2 years",
+              "statement": "We expect further improvement over the next 2 years of close to 10 basis points to 15 basis points on ROA because of the use of these technologies",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "Elevated crude/energy prices amid geopolitical tensions",
+              "status": "stable",
+              "note": "Expected to moderate GDP growth for FY26/27 from a high base; company remains watchful"
+            },
+            {
+              "risk": "Inflation / CPI trending above RBI's band midpoint",
+              "status": "escalated",
+              "note": "Headline CPI crossed midpoint of RBI's band for the first time since January 2025, at 4.38% in June, led mainly by crude prices"
+            },
+            {
+              "risk": "Monsoon and El Niño-related risks to rural demand/food inflation",
+              "status": "stable",
+              "note": "No impact seen on portfolio so far; company hopeful weather predictions on subnormal monsoon will be proven wrong"
+            },
+            {
+              "risk": "Funding cost volatility / bond market yields",
+              "status": "stable",
+              "note": "Cost of funds rose from 7.15% (Q4 FY26) to 7.28% (Q1 FY27); expect 8-10 bps further increase this year, but volatility from March/April has settled"
+            },
+            {
+              "risk": "Commercial Vehicle / Construction Equipment segment stress from fuel price pass-through",
+              "status": "easing",
+              "note": "Went conservative in Q1 due to fuel price concerns, but government has not passed on price increases to consumers, so segments continued to behave well"
+            },
+            {
+              "risk": "MSME stress from petro-product reliance",
+              "status": "easing",
+              "note": "Similarly went conservative; no impact seen as fuel price pass-through did not materialize"
+            },
+            {
+              "risk": "Regulatory risk on gold loans (LTV, repayment structure norms)",
+              "status": "stable",
+              "note": "RBI revised gold loan guidelines; company has planned products in line with new distinct segment treatment"
+            },
+            {
+              "risk": "Gold price volatility",
+              "status": "stable",
+              "note": "Company will watch gold price movement trends while growing the gold loan portfolio"
+            },
+            {
+              "risk": "Regulatory approval timing for Yogloans acquisition",
+              "status": "stable",
+              "note": "Approval expected towards end of calendar year; subject to RBI approval and customary closing conditions"
+            },
+            {
+              "risk": "Competitive intensity in gold loan market",
+              "status": "stable",
+              "note": "Established players delivering strong growth; company believes brand, cost of funds and technology give it a competitive edge despite late entry"
+            },
+            {
+              "risk": "Policy rate uncertainty",
+              "status": "stable",
+              "note": "No policy rate hike/cut has been factored into margin guidance given uncertainty on timing/magnitude; company will remain neutral, passing through both increases and decreases"
+            }
+          ],
+          "themes": [
+            {
+              "label": "AUM growth momentum",
+              "direction": "positive",
+              "note": "Consolidated AUM grew 22% YoY (28% ex-Motor Finance) with strong disbursement growth of 33% YoY, driven by broad-based momentum across Housing, Retail and SME.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Asset quality improvement",
+              "direction": "positive",
+              "note": "Credit cost declined to 1% from 1.6% YoY, Gross Stage-3 improved to 1.9% from 2.0%, Net NPA down 10bps sequentially, with no early signs of stress in any segment.",
+              "section_ref": "RISK"
+            },
+            {
+              "label": "AI-led operating leverage",
+              "direction": "positive",
+              "note": "AI driving 98% digital onboarding, 40% productivity gains, and expected 10-15 bps ROA improvement over next 2 years, with cost-to-income improving 190 bps QoQ to 36.4%.",
+              "section_ref": "TECH"
+            },
+            {
+              "label": "Gold loan diversification (Yogloans)",
+              "direction": "positive",
+              "note": "Proposed acquisition of Yogloans marks entry into secured gold lending, targeting 500+ branches and INR4,000-5,000 crore AUM over 3 years, pending RBI approval.",
+              "section_ref": "STRAT"
+            },
+            {
+              "label": "Funding diversification",
+              "direction": "positive",
+              "note": "USD 400 million bond issuance oversubscribed 4x following S&P BBB upgrade, raising foreign borrowings to 11-12.6% of total borrowings and diversifying the funding mix.",
+              "section_ref": "STRAT"
+            },
+            {
+              "label": "Margin/NIM expansion strategy",
+              "direction": "positive",
+              "note": "Targeting ~10 bps NIM improvement in FY27 via higher share of high-margin products and better pricing across all businesses, expected to outpace 8-10 bps cost of funds increase.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Macro and segment-specific caution",
+              "direction": "mixed",
+              "note": "Management flagged energy price/geopolitical risks and monsoon/El Niño watchfulness, and went conservative in Q1 on CV, construction equipment and petro-reliant MSME segments, though no material stress has materialized.",
+              "section_ref": "RISK"
+            }
+          ],
+          "key_takeaways": [
+            "Consolidated AUM stood at INR2.91 lakh crores, up 22% year-on-year and up 5% sequentially; excluding motor finance business, AUM grew by 28% year-on-year.",
+            "Credit costs for Quarter 1 FY27 were 1% versus 1.6% for quarter one of FY26, a significant drop.",
+            "Profit after tax for the quarter stood at INR1,547 crores, up 56% year-on-year and 3% sequentially.",
+            "Our Net NPA declined by 10 basis points sequentially to 0.8%. Our ROA stood at 2.3% consolidated including the motor finance business; excluding motor finance, ROA stands at 2.5%.",
+            "Tata Capital Housing Finance AUM increased 24% year-on-year to INR89,416 crores; profit after tax for the quarter was up 29% year-on-year to INR532 crores.",
+            "Our core focus remains as retail and SME lending which together constitutes 85.4% of our portfolio.",
+            "We expanded our distribution network to 1,491 branches across 1,091 locations, serving approximately 8.8 million customers.",
+            "Proposed acquisition of Yogloans marks an important step in expanding and diversifying our lending franchise, entering the gold loan segment.",
+            "Tata Capital successfully raised USD400 million through an international bond issuance that was oversubscribed four times, strengthening its diversified funding platform.",
+            "We had given certain guidance for FY28 and we are on track to meet that guidance going forward."
+          ],
+          "pressing_questions": [
+            "Since you've said you've not hired as much because of artificial intelligence, how much of a difference has AI made to your hiring, and what kind of roles is it where you're not hiring?",
+            "Any concerns you see on income generating versus consumption generating loans and the overlap on personal loans given that you've entered gold loan business?",
+            "See, already Tata Home Finance is a large company in terms of AUM actually. So when will the time be right for you to actually unlock value in the company in terms of monetizing it?",
+            "What segments are you most cautious of, Mr. Sabharwal, in the current times?",
+            "Sir, I just wanted to know the number what how much gold loan branches you are targeting in the next few years... which are the next states you will be targeting for this gold loan branches?",
+            "The gold loan market is already quite competitive. The established players are delivering strong growth. What differentiated opportunity do you see for Tata Capital? How do you plan to carve out market share, despite being a relatively late entrant?",
+            "Directionally, when do you expect this on a book basis, the growth to say accelerate to a 25% kind of a number? Would it be possible by end of this year? Have we taken any increase in the SME or Corporate book rates?"
+          ]
+        }
+      ]
     }
   }
 }
