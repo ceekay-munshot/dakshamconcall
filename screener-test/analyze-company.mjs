@@ -401,18 +401,26 @@ async function analyzeTicker(page, context, ticker, baseStore) {
   let priorThemes = seed?.themes || null; // stable theme labels across quarters
 
   // Reuse a quarter we have already built rather than paying to rebuild it. A
-  // past earnings call never changes, so re-classifying it is pure waste: the last
-  // full refresh re-ran 77 quarters when only 8 were new. Reuse requires the same
-  // call date, a stored source of ai_summary (a transcript quarter still gets a
-  // chance to upgrade), and the current PIPELINE_VERSION so pipeline improvements
-  // still force a rebuild.
+  // past earnings call never changes, so re-classifying it is pure waste.
+  //
+  // Reuse used to require the stored source to be an ai_summary, so that a
+  // transcript quarter kept its chance to upgrade. In practice that meant
+  // re-classifying the transcript from scratch on EVERY run even when Screener
+  // still had no summary — on a 25-company board, 85 of 86 quarters were being
+  // rebuilt to produce the same answer. The upgrade attempt is what matters, not
+  // the rebuild: re-classify only when the source actually got BETTER
+  // (transcript -> ai_summary), and otherwise keep what we have.
+  const sourceRank = (src) => (src === "ai_summary" ? 2 : 1);
   const storedByMonth = new Map(
     stored.filter((q) => q.concall_date).map((q) => [q.concall_date.slice(0, 7), q])
   );
   const classifiedNewestFirst = [];
   for (const q of chronological) {
     const prev = q.concall_date ? storedByMonth.get(q.concall_date.slice(0, 7)) : null;
-    if (!FORCE_REBUILD && prev && prev.source === "ai_summary" && prev.pipeline_version === PIPELINE_VERSION) {
+    // PIPELINE_VERSION still forces a one-time rebuild when the pipeline itself
+    // improves — that is a deliberate cost, paid once per quarter, not per run.
+    const improved = prev && sourceRank(q.source) > sourceRank(prev.source);
+    if (!FORCE_REBUILD && prev && !improved && prev.pipeline_version === PIPELINE_VERSION) {
       log(`reusing stored ${T} @ ${prev.concall_date} (unchanged — no LLM call)`);
       classifiedNewestFirst.unshift(prev);
       priorGuidance = prev.guidance_ledger || priorGuidance;
