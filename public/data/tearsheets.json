@@ -41305,7 +41305,7 @@
       "ticker": "ULTRACEMCO",
       "industry": "Cement & Cement Products",
       "country": "India",
-      "checked_at": "2026-07-30T06:08:27.938Z",
+      "checked_at": "2026-08-03T12:12:17.767Z",
       "quarters": [
         {
           "company": "UltraTech Cement Ltd",
@@ -41315,19 +41315,416 @@
           "concall_date": "2026-07-20",
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=4fd54e8a-8de9-4547-8a4c-908568d1cd0e.pdf",
-          "model": "gpt-4o",
-          "generated_at": "2026-07-30T06:08:24.484Z",
-          "summary": "UltraTech Cement Ltd is optimistic about strong demand and capacity expansion, with plans to increase its capacity to over 242 million tons by FY28, while maintaining a focus on cost management and brand strength.",
+          "model": "anthropic.claude-sonnet-5",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-03T12:11:04.390Z",
+          "summary": "Management reported the highest-ever Q1 performance across volumes, revenues, EBITDA and profit, driven by double-digit volume growth and strong demand pipeline across infrastructure, housing and urban real estate. Q2 FY27 is expected to be optically softer due to seasonal monsoon slowdown and full-quarter West Asia cost impact (INR130-140/ton), but management expects double-digit volume growth for FY27, prices to hold broadly steady through the monsoon quarter, net debt/EBITDA to stay below 1x, India Cements EBITDA/ton to reach INR1,000 by Q4 FY28, capacity to reach 212.7 million tons (grey, domestic) by end FY27 and beyond 242 million tons consolidated in 2-2.5 years, and Cables & Wires to launch in Q3 FY27.",
           "sections": [
             {
               "id": "FIN",
               "title": "Financial Performance",
               "key_figures": [
                 {
-                  "label": "Volume growth",
+                  "label": "EBITDA",
+                  "value": "5,146",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT",
+                  "value": "2,604",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT growth YoY",
+                  "value": "17.2",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue growth YoY",
+                  "value": "16",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA growth YoY",
+                  "value": "12",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT growth (alt statement)",
+                  "value": "17",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operating EBITDA per ton",
+                  "value": "above 1,200",
+                  "unit": "INR/ton",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net debt to EBITDA - start of year",
+                  "value": "0.94x",
+                  "unit": "x",
+                  "period": "start of FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net debt to EBITDA - end of quarter",
+                  "value": "0.87x",
+                  "unit": "x",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "FY26 capex deployed",
+                  "value": "9,500",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capex for projects under execution",
+                  "value": "17,000",
+                  "unit": "INR crores",
+                  "period": "next 2-2.5 years",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Cables and Wires approved investment",
+                  "value": "1,800",
+                  "unit": "INR crores",
+                  "period": "project total",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Cables and Wires spent/committed",
+                  "value": "888",
+                  "unit": "INR crores",
+                  "period": "till last quarter",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India Cements cost improvement capex",
+                  "value": "2,000",
+                  "unit": "INR crores",
+                  "period": "ongoing",
+                  "kind": "reported"
+                },
+                {
+                  "label": "UltraTech historical EBITDA per ton (Jun'22)",
+                  "value": "1,230",
+                  "unit": "INR/ton",
+                  "period": "Q1 FY23 (Jun'22)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Rest of industry EBITDA per ton (Jun'22)",
+                  "value": "800",
+                  "unit": "INR/ton",
+                  "period": "Q1 FY23 (Jun'22)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "UltraTech EBITDA higher than industry (Jun'23)",
+                  "value": "25",
+                  "unit": "%",
+                  "period": "Q1 FY24 (Jun'23)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "UltraTech EBITDA higher than industry (Jun'24)",
+                  "value": "26",
+                  "unit": "%",
+                  "period": "Q1 FY25 (Jun'24)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India Cements revenue (printed)",
+                  "value": "1,013",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India Cements revenue (printed, prior year)",
+                  "value": "1,021",
+                  "unit": "INR crores",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India Cements revenue (like-for-like, ex-freight)",
+                  "value": "993",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India Cements revenue (like-for-like, ex-freight, prior year)",
+                  "value": "821",
+                  "unit": "INR crores",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India Cements revenue growth (like-for-like)",
+                  "value": "21",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India Cements volume growth",
+                  "value": "19",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India Cements EBITDA per ton (Q2 FY26)",
+                  "value": "386",
+                  "unit": "INR/ton",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India Cements EBITDA per ton (Q3 FY26)",
+                  "value": "400",
+                  "unit": "INR/ton",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India Cements EBITDA per ton (Q4 FY26)",
+                  "value": "509",
+                  "unit": "INR/ton",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India Cements EBITDA per ton (Q1 FY27)",
+                  "value": "603",
+                  "unit": "INR/ton",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India Cements conversion ratio",
+                  "value": "1.5x",
+                  "unit": "x",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Fuel cost per ton",
+                  "value": "874 to 915",
+                  "unit": "INR/ton",
+                  "period": "QoQ, Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Fuel cost increase",
+                  "value": "5",
+                  "unit": "%",
+                  "period": "QoQ, Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Fuel cost increase (per ton)",
+                  "value": "25 to 40",
+                  "unit": "INR/ton",
+                  "period": "QoQ, Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Packing bag cost increase",
+                  "value": "20",
+                  "unit": "INR/ton",
+                  "period": "QoQ, Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Packing bag cost per bag (average, before)",
+                  "value": "9",
+                  "unit": "INR/bag",
+                  "period": "pre-quarter",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Packing bag cost per bag (peak)",
+                  "value": "14 to 15",
+                  "unit": "INR/bag",
+                  "period": "during quarter",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Packing bag cost per bag (settled)",
+                  "value": "10",
+                  "unit": "INR/bag",
+                  "period": "later in quarter",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Packing bag average cost",
+                  "value": "12",
+                  "unit": "INR/bag",
+                  "period": "Q1 FY27 average",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Blended coal cost",
+                  "value": "1.9",
+                  "unit": "INR/Kcal",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Coal cost",
+                  "value": "134",
+                  "unit": "USD/ton",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Fuel cost per kcal - current",
+                  "value": "around 2",
+                  "unit": "INR/Kcal",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Industrial diesel price - pre-war",
+                  "value": "78 to 80",
+                  "unit": "INR/litre",
+                  "period": "pre-war",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Industrial diesel price - war peak",
+                  "value": "150s",
+                  "unit": "INR/litre",
+                  "period": "during war",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Industrial diesel price increase",
+                  "value": "50",
+                  "unit": "%",
+                  "period": "pre-war to war",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Industrial diesel price - alt figures",
+                  "value": "100 to 157",
+                  "unit": "INR/litre",
+                  "period": "pre-war to war",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Limestone raising cost QoQ increase",
+                  "value": "13 to 14",
+                  "unit": "%",
+                  "period": "QoQ",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Ocean freight insurance premium - current",
+                  "value": "4 to 5",
+                  "unit": "%",
+                  "period": "current, war period",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Ocean freight insurance premium - normal",
+                  "value": "less than 1",
+                  "unit": "%",
+                  "period": "pre-war",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Q1 FY27 highlights",
+                  "points": [
+                    "Q1 was the highest ever first quarter performance for UltraTech across volumes, revenues, EBITDA and profit.",
+                    "Operating EBITDA per ton has been steady above INR1,200 this quarter, reflecting cost discipline and operating leverage while absorbing the sharpest imported fuel cost shock in recent memory on a volume base enlarged by acquired assets still ramping up to system profitability.",
+                    "The acquired assets' improvement capex-led cash flows through the P&L over fiscal '27 and '28 will result in the per-ton EBITDA trajectory moving upwards sustainably."
+                  ]
+                },
+                {
+                  "label": "Cost pressures - Q1",
+                  "points": [
+                    "The biggest one-off cost inflation in Q1 was fuel cost and packing bags, with packing bags having the larger cost impact.",
+                    "Fuel cost went from INR874 to INR915 per ton, a 5% increase; INR25 to INR40 per ton increase in fuel cost alone.",
+                    "Packing bags went from an average of about INR9/bag to peaks of INR14-15/bag before settling around INR10/bag, averaging about INR12/bag for the quarter (about INR20/ton impact); fuel contributed about INR40/ton and bags about INR20/ton.",
+                    "Limestone raising cost rose 13-14% QoQ to the highest level in 2 years, driven largely by industrial diesel prices, which rose from INR78-80/litre pre-war to INR150s/litre during the war (about 50% increase, cited also as INR100 to INR157/litre)."
+                  ]
+                },
+                {
+                  "label": "Cost outlook - Q2 FY27",
+                  "points": [
+                    "Q2 FY27 (July-September) will see the full impact of the war since costs will come to a head from July 1, plus monsoon-related maintenance costs (kilns undergoing maintenance) and negative operating leverage from lower seasonal volumes.",
+                    "Management expects costs to rise by INR130 to INR140 per ton in aggregate, covering fuel, maintenance and operating deleverage combined - cannot attribute one line item specifically to the war versus normal seasonal effects.",
+                    "The prior INR250 industry-wide cost impact estimate cited previously was described as 'not a very thorough number'; for UltraTech specifically, the increase is expected at INR130-140/ton.",
+                    "There is a positive offset within the negative operating leverage as UltraTech's size (volumes) has continuously grown, giving some advantage versus smaller peers.",
+                    "H2 FY27 variable costs (packaging, energy) are expected to be lower on a per-ton basis versus H1 if the war ends and oil, coal and pet coke prices subside; ocean freight insurance premiums have risen to 4-5% from below 1% due to the war."
+                  ]
+                },
+                {
+                  "label": "India Cements turnaround",
+                  "points": [
+                    "The printed revenue number of INR1,013 crores (vs INR1,021 crores same period last year) reflects an accounting adjustment - since Q1 FY27 the company reports ex-factory sales, net of freight cost; on a like-for-like basis (ex-freight), revenue was INR993 crores vs INR821 crores, a 21% growth backed by 19% volume growth.",
+                    "India Cements' EBITDA per ton has climbed sequentially and unbroken: from roughly INR386/ton in Q2 FY26 to INR400 (Q3 FY26), INR509 (Q4 FY26) and INR603 (Q1 FY27).",
+                    "Every lever behind the improvement is owned by the company: brand migration to UltraTech is 100% complete; premium and trade volumes are rising; cost improvement capex of about INR2,000 crores is being deployed into waste heat recovery, preheater upgradation, cooler upgradation etc.",
+                    "Green power trajectory for India Cements is planned to step up from around 3% of power requirements to about 86% by end of FY28.",
+                    "India Cements' conversion ratio has improved rapidly to already 1.5x for production.",
+                    "Q2 FY27 may look optically softer for India Cements due to seasonal monsoon slowdown and West Asia cost effects, but management maintains that the INR1,000/ton EBITDA target remains in sight with full benefit of the capex program flowing through from Q4 FY28."
+                  ]
+                },
+                {
+                  "label": "Capital allocation",
+                  "points": [
+                    "As of now, the company is fully booked in terms of cash flows: all operating cash flows will be ploughed back into growth, and beyond that, into dividends for shareholders.",
+                    "No foreseeable requirement for further investment in cables and wires beyond current plan; that business will first mature and milk the investment already made.",
+                    "Capital allocation remains committed to cement and shareholders.",
+                    "Dividend is viewed by the Board as a percentage of profits; management is 'expecting good dividends' going forward, without confirming whether last year's payout (which had a one-off/special component) is repeatable."
+                  ]
+                },
+                {
+                  "label": "Historical outperformance vs industry (volume & EBITDA)",
+                  "points": [
+                    "June 2022 quarter: UltraTech grew 17.7% in volume vs industry's ~15.5%; UltraTech EBITDA/ton of 1,230 vs industry's ~800.",
+                    "June 2023 quarter: UltraTech grew 20% in volume vs industry's 15.4%; UltraTech EBITDA was 25% higher than industry.",
+                    "June 2024 quarter: UltraTech grew 6.5% in volume while rest of industry degrew; UltraTech EBITDA was 26% higher.",
+                    "June 2025 and September 2025 quarters saw a volume shock/degrowth for UltraTech, but the company recovered.",
+                    "December 2025 quarter: UltraTech grew 15% vs industry growing about half that rate.",
+                    "March 2026 quarter: UltraTech grew 9% vs industry growing less than half that rate.",
+                    "June 2026 (Q1 FY27) quarter: UltraTech grew 13%; industry results awaited to assess market share gains."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ORD",
+              "title": "Order Book & Demand",
+              "key_figures": [
+                {
+                  "label": "Domestic grey cement volume growth",
                   "value": "13.1",
                   "unit": "%",
-                  "period": "Q1 FY27",
+                  "period": "Q1 FY27 YoY",
                   "kind": "reported"
                 },
                 {
@@ -41338,442 +41735,163 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "EBITDA",
-                  "value": "5,146",
-                  "unit": "INR Crores",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "PAT",
-                  "value": "2,604",
-                  "unit": "INR Crores",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Revenue growth",
-                  "value": "16",
+                  "label": "Capacity utilization - prior year",
+                  "value": "76",
                   "unit": "%",
-                  "period": "Q1 FY27",
+                  "period": "Q1 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "EBITDA growth",
-                  "value": "12",
+                  "label": "Brand growth (Kesoram/India Cements post-conversion)",
+                  "value": "21.3",
                   "unit": "%",
-                  "period": "Q1 FY27",
+                  "period": "Q1 FY27 YoY",
                   "kind": "reported"
                 },
                 {
-                  "label": "PAT growth",
-                  "value": "17.2",
-                  "unit": "%",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Operating EBITDA per ton",
-                  "value": "1,200",
-                  "unit": "INR",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Net debt to EBITDA",
-                  "value": "0.87",
-                  "unit": "x",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Capex deployed in fiscal '26",
-                  "value": "9,500",
-                  "unit": "INR crores",
-                  "period": "fiscal '26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Capex for cables and wires project",
-                  "value": "1,800",
-                  "unit": "INR crores",
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "Capex spent or committed for cables and wires project",
-                  "value": "888",
-                  "unit": "INR crores",
-                  "period": "last quarter",
-                  "kind": "reported"
-                },
-                {
-                  "label": "India Cements revenue growth",
-                  "value": "21",
-                  "unit": "%",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "India Cements volume growth",
-                  "value": "19",
-                  "unit": "%",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "India Cements EBITDA per ton Q2 FY26",
-                  "value": "386",
-                  "unit": "INR",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "India Cements EBITDA per ton Q1 FY27",
-                  "value": "603",
-                  "unit": "INR",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "India Cements conversion ratio",
-                  "value": "1.5",
-                  "unit": "x",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Green power capacity target",
-                  "value": "2.5 to 3",
-                  "unit": "gigawatts",
-                  "period": null,
-                  "kind": "target"
-                },
-                {
-                  "label": "Green power capacity at end of Q1 FY27",
-                  "value": "47",
-                  "unit": "%",
-                  "period": "end of Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Cement lead distance",
-                  "value": "360",
-                  "unit": "kilometres",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "India urbanization rate",
-                  "value": "35",
-                  "unit": "%",
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "India urbanization target by 2030",
-                  "value": "39",
-                  "unit": "%",
-                  "period": "2030",
-                  "kind": "target"
-                },
-                {
-                  "label": "India Cements power requirements met by green power target",
-                  "value": "86",
-                  "unit": "%",
-                  "period": "end of fiscal '28",
-                  "kind": "target"
-                },
-                {
-                  "label": "India Cements EBITDA per ton target",
-                  "value": "1,000",
-                  "unit": "INR",
-                  "period": "Q4 fiscal '28",
-                  "kind": "target"
-                },
-                {
-                  "label": "Cables and wires project commissioning and product launch",
-                  "value": "Q3 fiscal '27",
-                  "unit": null,
-                  "period": "Q3 fiscal '27",
-                  "kind": "target"
-                },
-                {
-                  "label": "Fuel cost increase",
-                  "value": "INR130 to INR140",
-                  "unit": "per ton",
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "Fuel cost increase",
-                  "value": "INR25 to INR40",
-                  "unit": "per ton",
-                  "period": "quarter",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Fuel cost",
-                  "value": "INR915",
-                  "unit": "per ton",
-                  "period": "quarter",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Fuel cost",
-                  "value": "INR874",
-                  "unit": "per ton",
-                  "period": "quarter",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Fuel cost increase percentage",
-                  "value": "5%",
-                  "unit": null,
-                  "period": "quarter",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Packing bags cost increase",
-                  "value": "INR9 to INR12",
-                  "unit": "per bag",
-                  "period": "quarter",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Packing bags cost increase",
-                  "value": "INR14 to INR15",
-                  "unit": "per bag",
-                  "period": "quarter",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Packing bags cost increase",
-                  "value": "INR20",
-                  "unit": "per ton",
-                  "period": "quarter",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Limestone raising cost increase",
-                  "value": "13% to 14%",
-                  "unit": "Q-o-Q",
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "Industrial diesel price increase",
-                  "value": "50%",
-                  "unit": null,
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "Industrial diesel price",
-                  "value": "INR157",
-                  "unit": "per liter",
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "Industrial diesel price",
-                  "value": "INR100",
-                  "unit": "per liter",
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "Industrial diesel price",
-                  "value": "INR78 to INR80",
-                  "unit": "per liter",
-                  "period": "pre-war",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Industrial diesel price",
-                  "value": "INR150s",
-                  "unit": "per liter",
-                  "period": "during war",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Blended coal cost",
-                  "value": "USD134",
-                  "unit": "per ton",
-                  "period": "quarter",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Blended coal cost",
-                  "value": "INR2",
-                  "unit": "per Kcal",
-                  "period": "current",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Industry volume growth",
-                  "value": "7% to 8%",
-                  "unit": null,
-                  "period": "quarter",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Grey cement volume growth",
-                  "value": "9.3%",
-                  "unit": "Y-o-Y",
-                  "period": "Q4",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Grey cement volume growth",
-                  "value": "13.1%",
-                  "unit": "Y-o-Y",
-                  "period": "Q1",
-                  "kind": "reported"
-                },
-                {
-                  "label": "RMC sales percentage",
-                  "value": "3.5%",
-                  "unit": "of total sales",
-                  "period": "last year",
-                  "kind": "reported"
-                },
-                {
-                  "label": "RMC plants count",
-                  "value": "477",
-                  "unit": "plants",
-                  "period": "current",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Institutional customers percentage",
-                  "value": "35%",
-                  "unit": "of total sales",
-                  "period": "current",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Retail customers percentage",
-                  "value": "65% to 66%",
-                  "unit": "of total sales",
-                  "period": "current",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Cities with more than 1 million population",
-                  "value": "63",
-                  "unit": "cities",
-                  "period": "current",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Cities with more than 1 million population",
-                  "value": "71",
-                  "unit": "cities",
-                  "period": "2030",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Total sales",
-                  "value": "145 million tons",
-                  "unit": "tons",
-                  "period": "last year",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Total sales",
-                  "value": "40 million tons",
-                  "unit": "tons",
-                  "period": "last year",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Ocean freight insurance premiums increase",
-                  "value": "4% to 5%",
-                  "unit": null,
-                  "period": "current",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Ocean freight insurance premiums",
-                  "value": "less than 1%",
-                  "unit": null,
-                  "period": "pre-war",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Capacity addition FY27-FY28",
-                  "value": "45",
-                  "unit": "million tons",
-                  "period": "FY27-FY28",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Capacity at end of March '28",
-                  "value": "235",
-                  "unit": "million tons",
-                  "period": "end of March '28",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Capacity at end of March '27",
-                  "value": "212",
-                  "unit": "million tons",
-                  "period": "end of March '27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Capacity addition in '27 and '28",
-                  "value": "37",
-                  "unit": "million tons",
-                  "period": "'27 and '28",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Q1 FY27 Performance",
-                  "points": [
-                    "Q1 was the highest ever first quarter performance for UltraTech across volumes, revenues, EBITDA, and profit.",
-                    "Operating EBITDA per ton has been steady above INR1,200 this quarter."
-                  ]
-                },
-                {
-                  "label": "Cost Management",
-                  "points": [
-                    "UltraTech absorbed the sharpest imported fuel cost shock during the quarter.",
-                    "Fuel cost increased from INR874 to INR915 per ton, a 5% increase.",
-                    "Packing bags cost increased from INR9 to INR12 per bag on average for the quarter."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "ORD",
-              "title": "Order Book & Demand",
-              "key_figures": [
-                {
-                  "label": "Housing and urban real estate consumption",
-                  "value": "55-60",
-                  "unit": "%",
-                  "period": "calendar '26",
+                  "label": "State capex growth (April-May)",
+                  "value": "2",
+                  "unit": "% YoY",
+                  "period": "Apr-May FY27",
                   "kind": "reported"
                 },
                 {
                   "label": "Mumbai property registrations growth",
                   "value": "6",
                   "unit": "%",
-                  "period": "Q1 FY26",
+                  "period": "Q1FY26/CY26 start",
                   "kind": "reported"
+                },
+                {
+                  "label": "Housing/urban real estate share of cement consumption",
+                  "value": "55 to 60",
+                  "unit": "%",
+                  "period": "ongoing",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India urbanization level - current",
+                  "value": "35",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India urbanization level - projected",
+                  "value": "39",
+                  "unit": "%",
+                  "period": "by 2030",
+                  "kind": "target"
+                },
+                {
+                  "label": "Indonesia urbanization level",
+                  "value": "59",
+                  "unit": "%",
+                  "period": "current, comparator",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Regional volume growth - East",
+                  "value": "slowest of regions (below others)",
+                  "unit": null,
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Regional volume growth - South and North",
+                  "value": "shade below 15",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Regional volume growth - West and Central",
+                  "value": "above 15",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Industry volume growth expectation",
+                  "value": "7 to 8",
+                  "unit": "%",
+                  "period": "Q2 FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Cities with population >1 million - current",
+                  "value": "63",
+                  "unit": "cities",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cities with population >1 million - projected",
+                  "value": "71",
+                  "unit": "cities",
+                  "period": "by 2030",
+                  "kind": "target"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Demand Drivers",
+                  "label": "Demand drivers - infrastructure",
                   "points": [
-                    "Demand pipeline across infrastructure, housing, and urban real estate is strong.",
-                    "Ports, shipyards, and data centers are among the most cement-intensive asset classes.",
-                    "India's capex revival is propelled by power and data centers."
+                    "Maharashtra planning INR20,000 crores greenfield shipbuilding cluster anchored around Mazagaon Dock.",
+                    "Odisha announced a deep seaport at Ganjam and shipbuilding cluster at Paradip with investment of over INR50,000 crores.",
+                    "Tamil Nadu signed ~INR18,000 crores MoU for data centres and shipbuilding projects.",
+                    "Ports, shipyards, data centres are among the most cement-intensive asset classes in the economy.",
+                    "Cabinet approved ~INR20,000 crores plus Ahmedabad-Dholera semi high-speed rail corridor.",
+                    "Metro programs continue to expand across Ahmedabad, Bangalore, Mumbai, Pune and Uttar Pradesh.",
+                    "Additional ~INR30,000 crores infusion into NIIF with private capital across roads, ports and urban infrastructure.",
+                    "India's capex revival is also being propelled by power and data centres, both concrete-hungry sectors.",
+                    "Vadhavan port - multiple packages have already been awarded, meaning that work will commence, adding to positivity.",
+                    "River linking (e.g., Ken-Betwa project) expected to be cement-intensive: river banks have to be built (concrete), with silting work and concrete structures on either side."
+                  ]
+                },
+                {
+                  "label": "Demand drivers - housing & urban real estate",
+                  "points": [
+                    "Housing and urban real estate has had a very strong start to calendar '26.",
+                    "Across India's top 8 cities, Q1FY26 saw a very big growth in number of units sold per registry records; prices have remained strong, indicating a structurally mature end-user-driven market where absorption keeps pace with supply.",
+                    "Bangalore stood out on the strength of GCC and technology sector employment.",
+                    "Redevelopment is significant: Mumbai's Slum Rehabilitation Authority set to redevelop about 850 acres of land; developers continue land banking aggressively; private real estate companies continue to acquire land parcels across cities.",
+                    "India's grade A office market opened Q1 with a very strong start - premium housing, redevelopment, office towers, hotels are building upwards and outwards simultaneously, all built on cement."
+                  ]
+                },
+                {
+                  "label": "Macro backdrop",
+                  "points": [
+                    "India's macroeconomic engines demonstrate resilience even as global energy markets endured a disruptive supply cycle.",
+                    "Benchmark lending rates remain attractive, improving housing affordability and lowering cost of capital for infrastructure developers.",
+                    "Near-term watch points: coal sector growth slowing in May, lower coal and refinery output, and modest 2% YoY state capex growth in April-May - viewed as timing effects, not a change in trend."
+                  ]
+                },
+                {
+                  "label": "Monsoon/weather impact on demand",
+                  "points": [
+                    "Part of Q1 demand was helped by drier weather, particularly in June; Rajasthan is going through a very dry patch and may face a water crisis next year impacting demand.",
+                    "July onwards, wet spells have started across various parts of the country; barring 1-2 states, every state has experienced rains.",
+                    "Still early in monsoon season - August and September data needed to assess weather progression and impact of dry/wet spells."
+                  ]
+                },
+                {
+                  "label": "East region demand outlook",
+                  "points": [
+                    "East was the slowest region in April-June, partly due to elections and labor availability.",
+                    "Multiple Eastern states have gone through elections; land reforms about to come into place in one Eastern state; structural change will be visible over next 2-3-4 years, not next quarter - East expected to witness a good demand upcycle."
+                  ]
+                },
+                {
+                  "label": "Pricing",
+                  "points": [
+                    "Cement prices were constructive during the quarter; all-India exit prices improved through June even as monsoon sets in.",
+                    "East and South led price improvements; Central and West were steady; North was a consistent performer.",
+                    "Industry expects prices to hold broadly steady through the monsoon quarter due to cost increases - viewed as a constructive outcome for this time of year.",
+                    "Cost escalations of the past 2 quarters are still to be fully passed through, and with demand momentum, a supportive price environment is expected as the busy season approaches.",
+                    "Premiumization and blended cement mix continue to support blended realizations regardless of headline price movements.",
+                    "Management said prices move with demand: if demand is strong on an all-India basis, prices can go up; if the cost curve comes down, prices are not necessarily forced to reduce.",
+                    "On pricing outlook for the monsoon quarter, management said 'expecting higher is everybody's desire, we will attempt it, we'll see where we land.'"
                   ]
                 }
               ]
@@ -41783,26 +41901,75 @@
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
-                  "label": "Domestic grey cement volumes growth",
-                  "value": "13.1",
+                  "label": "RMC share of overall sales",
+                  "value": "3.5",
                   "unit": "%",
-                  "period": "Q1 FY27",
+                  "period": "current",
                   "kind": "reported"
                 },
                 {
-                  "label": "Brand growth",
-                  "value": "21.3",
+                  "label": "Institutional customer share",
+                  "value": "35",
+                  "unit": "% (approx)",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Retail share",
+                  "value": "65 to 66",
                   "unit": "%",
-                  "period": "Q1 FY27",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "RMC as % of overall cement industry business",
+                  "value": "20",
+                  "unit": "% (not more than)",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Number of RMC plants",
+                  "value": "477",
+                  "unit": "plants",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total sales volume (prior year reference)",
+                  "value": "145",
+                  "unit": "million tons",
+                  "period": "last year (FY26)",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Brand Transition",
+                  "label": "Brand transition - Kesoram and India Cements",
                   "points": [
-                    "Kesoram and India Cements brands converted to 100% UltraTech.",
-                    "Brand migration to UltraTech is 100% complete."
+                    "Management converted the Kesoram and India Cements brands to 100% UltraTech; these brands were operating in B or C category space and the company did not vacate that space.",
+                    "Post brand conversion, the true performance of UltraTech is visible; the team successfully converted customers who were buying B/C category cement into A category brand buyers willing to pay a price premium.",
+                    "This conversion of B/C category markets to UltraTech at higher price points is cited as a key driver of the company's ability to outperform on both volumes and pricing versus peers."
+                  ]
+                },
+                {
+                  "label": "Retail vs institutional market strategy",
+                  "points": [
+                    "India is fundamentally a retail market for cement given low urbanization and low RMC penetration; management believes cement will remain a branded product play as long as India remains a retail, individual-homebuilder market.",
+                    "Similar branded dynamics exist in other Indian commodities like steel (TMT rebar) and paints, because these are retail markets too - contrasted with markets like UAE where RMC is the biggest customer and there's no brand play.",
+                    "For UltraTech specifically, despite having the largest number of RMC plants in the country (477), RMC is only 3.5% of total sales, underscoring the branded retail nature of the business.",
+                    "The brand play will persist as long as India remains in nascent stages of RMC adoption and urbanization."
+                  ]
+                },
+                {
+                  "label": "Network and reach",
+                  "points": [
+                    "UltraTech has almost 76 operating facilities spread across the country.",
+                    "Network of nearly 2,000 plus/minus warehouses.",
+                    "150,000 channel partners across the country.",
+                    "Dedicated transporters, with more than 50% of transport service providers dedicated to UltraTech.",
+                    "16,000-plus employees across the country.",
+                    "5,000-plus UBS stores (dedicated dealers/outlets for UltraTech Cement)."
                   ]
                 }
               ]
@@ -41812,41 +41979,252 @@
               "title": "Manufacturing & Capacity",
               "key_figures": [
                 {
-                  "label": "New capacity commissioned",
-                  "value": "8.7",
+                  "label": "New capacity commissioned across country (April-June)",
+                  "value": "12",
                   "unit": "million tons",
-                  "period": "April '26",
+                  "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Total capacity",
+                  "label": "New capacity commissioned by UltraTech (Shahjahanpur, Visakhapatnam, Patratu)",
+                  "value": "8.7",
+                  "unit": "million tons",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Domestic capacity - current",
+                  "value": "200.1",
+                  "unit": "million tons",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total capacity (incl. international) - current",
                   "value": "205.5",
                   "unit": "million tons",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Projects under execution capex",
-                  "value": "17,000",
-                  "unit": "INR Crores",
-                  "period": "next 2 to 2.5 years",
+                  "label": "Consolidated capacity target",
+                  "value": "beyond 242",
+                  "unit": "million tons",
+                  "period": "future",
+                  "kind": "target"
+                },
+                {
+                  "label": "Grey cement domestic capacity target",
+                  "value": "212.7",
+                  "unit": "million tons",
+                  "period": "end FY27",
+                  "kind": "target"
+                },
+                {
+                  "label": "Total capacity by March 2028",
+                  "value": "235",
+                  "unit": "million tons",
+                  "period": "March 2028",
+                  "kind": "target"
+                },
+                {
+                  "label": "Capacity addition FY27-28",
+                  "value": "37",
+                  "unit": "million tons",
+                  "period": "FY27-28",
+                  "kind": "target"
+                },
+                {
+                  "label": "Green power capacity - current",
+                  "value": "1,897",
+                  "unit": "MW",
+                  "period": "end of Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Green power capacity",
-                  "value": "1,897",
-                  "unit": "megawatts",
+                  "label": "Green power share of total power requirement - exit",
+                  "value": "47",
+                  "unit": "%",
+                  "period": "end of Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Renewable capacity commissioned this quarter",
+                  "value": "71",
+                  "unit": "MW",
                   "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "WHRS capacity commissioned this quarter",
+                  "value": "19",
+                  "unit": "MW",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Green power capacity target",
+                  "value": "2.5 to 3",
+                  "unit": "gigawatts",
+                  "period": "very shortly",
+                  "kind": "target"
+                },
+                {
+                  "label": "Cement lead distance - current quarter",
+                  "value": "360",
+                  "unit": "km",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cement lead distance - previous",
+                  "value": "367",
+                  "unit": "km",
+                  "period": "prior period",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Clinker conversion ratio (India Cements)",
+                  "value": "1.5x",
+                  "unit": "x",
+                  "period": "current",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Capacity Expansion",
+                  "label": "Capacity expansion",
                   "points": [
-                    "12 million tons of new capacity commissioned in the country, 8.7 million tons by UltraTech.",
-                    "Projects under execution for capacity growth are backed by a capex of about INR17,000 crores in the next 2 to 2.5 years.",
-                    "Green power now stands at 1,897 megawatts of renewable energy."
+                    "Projects under execution for capacity growth are backed by capex of about INR17,000 crores in the next 2 to 2.5 years.",
+                    "Consolidated capacity to go beyond 242 million tons, with grey cement capacity reaching 212.7 million tons by end of fiscal '27 and the balance completed the following year.",
+                    "Every ton of committed expansion is fully backed by secured limestone; there is no raw material constraint on the growth trajectory.",
+                    "March 2028 exit target of 235 million tons domestic, implying 22-25 million tons added in FY28 beyond the 212 million tons expected by March 2027, and 37 million tons total added across FY27-28.",
+                    "Team has already started working on growth plans beyond 240 million tons; industry capacity addition estimates for FY27-28 could not be firmly quantified as some industry players are reportedly revisiting their expansion plans.",
+                    "Inorganic growth opportunities will be examined if they arise, alongside the organic capacity plan.",
+                    "12 million tons of new capacity commissioned across the country in April-June, of which UltraTech commissioned 8.7 million tons at Shahjahanpur, Visakhapatnam and Patratu.",
+                    "Current capacity stands at 200.1 million tons domestic and 205.5 million tons including international operations."
+                  ]
+                },
+                {
+                  "label": "Green energy transition",
+                  "points": [
+                    "Green power capacity stands at 1,897 MW, meeting 47% of total power requirement at end of quarter (lower average during the quarter itself).",
+                    "71 MW of renewables and 19 MW of WHRS commissioned this quarter.",
+                    "Expect to reach 2.5 to 3 gigawatts of green power very shortly.",
+                    "Green power is a structural buffer that helped absorb the West Asia fuel cost shock and is cheaper than conventional power.",
+                    "India Cements green power trajectory planned to step up from around 3% currently to about 86% of power requirements by end of FY28."
+                  ]
+                },
+                {
+                  "label": "Cost efficiency levers",
+                  "points": [
+                    "Cement lead distance has come down further from 367 km to 360 km, a 7 km reduction; annualized at INR2.5-3 per ton per kilometre, this represents a visible upfront saving.",
+                    "Clinker conversion has improved to 1.5x, a small improvement.",
+                    "Power consumption has gone down and power rate has gone down because of power mix changes.",
+                    "Management prefers to present a comprehensive annual cost-saving number at year-end rather than quarter-by-quarter, since Q2 will show a negative (cost increase) performance."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Regional performance",
+                  "points": [
+                    "East region was the slowest growing in April-June quarter, partly due to elections and labor availability.",
+                    "South and North grew a shade below 15%.",
+                    "West and Central grew above 15%.",
+                    "East and South led price improvements during the quarter; Central and West were steady; North was a consistent performer."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SUP",
+              "title": "Supply Chain & Operations",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Fuel sourcing strategy",
+                  "points": [
+                    "Pet coke has become more expensive in energy terms than coal, making domestic coal more attractive to buy.",
+                    "Company is fully inventory loaded on coal, which is expected to cap fuel cost per kcal from rising further beyond around INR2/Kcal."
+                  ]
+                },
+                {
+                  "label": "Cables and Wires supply chain",
+                  "points": [
+                    "Sourcing raw material from Hindalco, with a lead distance of only four hours, providing tangible working capital and logistics benefits.",
+                    "Working capital will initially be higher due to inventory ramp-up; structurally, the company is working on financing suppliers to release working capital, targeting stabilization to around 30 days plus/minus after about six months (around April-June FY28)."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [
+                {
+                  "label": "Company market share (approx)",
+                  "value": "30",
+                  "unit": "% (approx)",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Competitive positioning drivers",
+                  "points": [
+                    "Decades of consistent delivery, bag after bag, site after site, has made UltraTech synonymous with reliability; quality standards apply to every ton, with product complaints resolved ASAP.",
+                    "Complete network of plants (integrated plants, grinding units, bulk terminals) is focused on meeting customer requirements.",
+                    "Legacy of governance and ethical conduct at Aditya Birla Group/UltraTech is at its highest pecking order, giving dealers and institutional buyers assurance that commands a premium.",
+                    "Combination of network reach, brand trust, and quality is described as unique to UltraTech and not replicable by competitors."
+                  ]
+                },
+                {
+                  "label": "Brand vs commodity dynamics",
+                  "points": [
+                    "India's cement industry will remain a brand-driven, retail play as long as India remains an individual-homebuilder, low-urbanization market; similar to other Indian retail commodities like steel and paints which are also branded despite being commodities elsewhere in the world.",
+                    "As RMC penetration remains low (industry ~20%, UltraTech 3.5%), brand power in the trade/retail market will remain central to the business for the foreseeable future."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "India Cements merger considerations",
+                  "points": [
+                    "Most targets set at the time of the India Cements acquisition are nearing completion; before contemplating merger into a stand-alone entity, remaining steps include completing the ongoing capex program and disposing of certain non-core assets (land).",
+                    "Expected completion of the turnaround journey by Q4 FY28 or possibly a quarter earlier.",
+                    "Certain operating parameters for India Cements still need to be brought in line with UltraTech's stand-alone performance.",
+                    "Entire India Cements volume is now reported as part of UltraTech's consolidated (stand-alone) volume; the company has stopped reporting India Cements stand-alone volumes separately in the presentation/press release."
+                  ]
+                },
+                {
+                  "label": "Cables and Wires new business launch",
+                  "points": [
+                    "Project is on schedule and on budget, within the approved INR1,800 crores investment program (INR888 crores spent/committed to date).",
+                    "Channel partners onboarding is moving at a frantic pace; facility setup is complete; trial runs have commenced; key regulatory approvals are in place; leadership team is on board.",
+                    "SAP/ERP systems are in place; CRM is under testing and will be live before launch.",
+                    "Reaffirmed commissioning and product launch in Q3 FY27 (October-December 2026), precisely as previously committed.",
+                    "Management does not intend to scale up further capex in cables and wires for now; the business will first mature and 'milk' the current investment before any further expansion.",
+                    "No formal guidance given for the Cables and Wires business other than the aim to be 'profitable, grounded and grow with the market.'"
+                  ]
+                },
+                {
+                  "label": "Track record of delivery",
+                  "points": [
+                    "Company crossed 200 million tons of capacity a year early versus prior commitment.",
+                    "Brand migration of India Cements and Kesoram was completed a quarter early versus prior commitment.",
+                    "Cables and Wires launch commitment for Q3 FY27 is being reaffirmed and delivered as promised."
                   ]
                 }
               ]
@@ -41854,21 +42232,43 @@
             {
               "id": "RISK",
               "title": "Risks & External Factors",
-              "key_figures": [
-                {
-                  "label": "Coal sector growth",
-                  "value": "2",
-                  "unit": "%",
-                  "period": "April-May",
-                  "kind": "reported"
-                }
-              ],
+              "key_figures": [],
               "subsections": [
                 {
-                  "label": "West Asia Crisis",
+                  "label": "West Asia crisis / geopolitical risk",
                   "points": [
-                    "Q1 '27 opened with the most disruptive situation, the Strait of Hormuz effectively closed.",
-                    "Crude crossed $100 and coal cost hit the roof."
+                    "Q1 FY27 opened with the most disruptive situation - the Strait of Hormuz effectively closed, crude crossed $100, and coal costs spiked; situation later de-escalated but remains fluid and uncertain.",
+                    "Management cannot fully separate cost impacts attributable to the war versus normal seasonal/maintenance effects.",
+                    "Ocean freight insurance premiums have risen to 4-5% from below 1% due to the war, reflecting broader disruption.",
+                    "Structural buffers (green power, AFR substitution, reduced lead distance) helped the company absorb the shock better than peers."
+                  ]
+                },
+                {
+                  "label": "Cost inflation risk",
+                  "points": [
+                    "Sharpest imported fuel cost shock in recent memory absorbed during the quarter.",
+                    "Industrial diesel prices spiked sharply (from INR78-80/litre pre-war to INR150s/litre during war), driving up limestone raising costs by 13-14% QoQ to a 2-year high.",
+                    "Cost pressure of INR130-140 per ton expected in Q2 FY27 from fuel, monsoon-related kiln maintenance, and negative operating leverage.",
+                    "Cost escalations of the past two quarters are still to be fully passed through to prices."
+                  ]
+                },
+                {
+                  "label": "Weather/monsoon risk",
+                  "points": [
+                    "Dry spell in certain states (e.g., Rajasthan) could lead to water crisis and demand impact next year.",
+                    "Still early in monsoon season; effects on demand to be clearer only in August-September."
+                  ]
+                },
+                {
+                  "label": "Demand-side structural risk (long-term)",
+                  "points": [
+                    "Management flagged that a slowdown in structural demand growth (e.g., people not buying houses, industrialization stalling, data centers shifting to other countries like Pakistan) would be the biggest challenge for the industry and the company over a 5-year horizon, though this is not currently foreseen."
+                  ]
+                },
+                {
+                  "label": "Capacity constraint risk",
+                  "points": [
+                    "If demand remains strong, the challenge for the company will be insufficient capacity, necessitating continued expansion."
                   ]
                 }
               ]
@@ -41878,33 +42278,124 @@
               "title": "Guidance & Outlook",
               "key_figures": [
                 {
-                  "label": "Target capacity by end of FY27",
+                  "label": "Q2 FY27 cost increase guidance",
+                  "value": "130 to 140",
+                  "unit": "INR/ton",
+                  "period": "Q2 FY27, sequential",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Industry volume growth expectation",
+                  "value": "7 to 8",
+                  "unit": "%",
+                  "period": "Q2 FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Domestic capacity target",
                   "value": "212.7",
                   "unit": "million tons",
-                  "period": "FY27",
-                  "kind": "guidance"
+                  "period": "end FY27",
+                  "kind": "target"
+                },
+                {
+                  "label": "Consolidated capacity target",
+                  "value": "beyond 242",
+                  "unit": "million tons",
+                  "period": "next 2-2.5 years",
+                  "kind": "target"
+                },
+                {
+                  "label": "Total capacity target",
+                  "value": "235",
+                  "unit": "million tons",
+                  "period": "March 2028",
+                  "kind": "target"
+                },
+                {
+                  "label": "Green power capacity target",
+                  "value": "2.5 to 3",
+                  "unit": "gigawatts",
+                  "period": "very shortly",
+                  "kind": "target"
+                },
+                {
+                  "label": "India Cements EBITDA per ton target",
+                  "value": "1,000",
+                  "unit": "INR/ton",
+                  "period": "by Q4 FY28",
+                  "kind": "target"
+                },
+                {
+                  "label": "India Cements green power mix target",
+                  "value": "86",
+                  "unit": "%",
+                  "period": "by end FY28",
+                  "kind": "target"
                 },
                 {
                   "label": "Net debt to EBITDA target",
-                  "value": "below 1",
+                  "value": "below 1x",
                   "unit": "x",
-                  "period": "FY27",
+                  "period": "this year (FY27)",
                   "kind": "guidance"
                 },
                 {
-                  "label": "EBITDA per ton target for India Cements",
-                  "value": "1,000",
-                  "unit": "INR",
-                  "period": "Q4 FY28",
-                  "kind": "guidance"
+                  "label": "UltraTech magical EBITDA per ton figure target",
+                  "value": "1,400",
+                  "unit": "INR/ton",
+                  "period": "January-March 2028 (without war)",
+                  "kind": "target"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Future Outlook",
+                  "label": "Volume and demand outlook",
                   "points": [
-                    "UltraTech aims to grow like a challenger and not an incumbent.",
-                    "The company remains confident of a bright future for the next quarters."
+                    "Management is targeting double-digit volume growth for the full year FY27.",
+                    "Industry volume growth for Q2 FY27 expected at around 7-8% based on marketing intelligence, though it is still early.",
+                    "Q2 FY27 may look optically softer due to seasonal monsoon slowdown and West Asia cost effects, but the direction of travel and destination remain unchanged."
+                  ]
+                },
+                {
+                  "label": "Cost and margin outlook",
+                  "points": [
+                    "Cost increase of INR130-140 per ton expected in Q2 FY27, covering fuel, monsoon maintenance and operating deleverage combined.",
+                    "H2 FY27 variable costs expected to be lower per ton than H1 if the war ends and oil/coal/pet coke prices stabilize.",
+                    "Comprehensive annual cost-saving numbers (previously flagged around INR200+/ton for FY28) will be given at year-end rather than quarter by quarter, since sequential figures can look mixed.",
+                    "The 'magical' INR1,400 per ton EBITDA figure previously discussed is reiterated for the January-March 2028 quarter, contingent on there being no war."
+                  ]
+                },
+                {
+                  "label": "Capacity and capex outlook",
+                  "points": [
+                    "Grey cement domestic capacity to reach 212.7 million tons by end of FY27, with consolidated capacity to go beyond 242 million tons in the next 2-2.5 years, backed by capex of about INR17,000 crores.",
+                    "March 2028 domestic capacity exit target of 235 million tons, implying 37 million tons of capacity addition across FY27-28; industry-wide capacity addition estimates remain unclear as some players are reportedly revisiting expansion plans.",
+                    "Team has begun work on growth plans beyond 240 million tons; more details to be shared once finalized.",
+                    "Inorganic growth opportunities will be examined if they arise, alongside organic expansion."
+                  ]
+                },
+                {
+                  "label": "India Cements outlook",
+                  "points": [
+                    "India Cements EBITDA per ton target of INR1,000 remains in sight, with full capex benefit flowing through the P&L from Q4 FY28.",
+                    "Merger of India Cements into a stand-alone entity is contemplated only after completion of the capex program and disposal of certain non-core (land) assets, expected around Q4 FY28 or a quarter earlier.",
+                    "Green power mix for India Cements targeted to reach about 86% of power requirements by end of FY28, up from about 3% currently."
+                  ]
+                },
+                {
+                  "label": "Cables and Wires outlook",
+                  "points": [
+                    "Commissioning and product launch reaffirmed for Q3 FY27 (October-December 2026), within the approved INR1,800 crores capex program.",
+                    "No further capex scale-up planned for now; business will first mature and 'milk' the current investment.",
+                    "No formal financial guidance given; management's stated aim is to be profitable, grounded and grow with the market ('sky is the limit' but no specific numbers)."
+                  ]
+                },
+                {
+                  "label": "Balance sheet and capital allocation outlook",
+                  "points": [
+                    "Net debt to EBITDA expected to remain below 1x for the year, continuing the trend of prudent leverage management.",
+                    "Capital allocation remains focused on growth capex (fully funded via internal accruals) and shareholder dividends; dividend framed as a percentage of profits, with management expecting 'good dividends' though not confirming repeatability of the prior year's special/one-off component."
                   ]
                 }
               ]
@@ -41912,12 +42403,20 @@
           ],
           "guidance_ledger": [
             {
-              "metric": "Target capacity",
-              "horizon": "end of FY27",
-              "statement": "We will take our consolidated capacity beyond 242 million tons with grey cement capacity to reach 212.7 million tons by the end of fiscal '27.",
+              "metric": "UltraTech domestic volume growth",
+              "horizon": "FY27",
+              "statement": "We are targeting double-digit volume growth this year.",
               "specificity": "specific",
               "direction": "up",
-              "status": "raised"
+              "status": "new"
+            },
+            {
+              "metric": "Industry volume growth",
+              "horizon": "Q2 FY27",
+              "statement": "Too early, but anywhere between 7% to 8%... our marketing intel says it should be around 7% to 8%.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
             },
             {
               "metric": "Net debt to EBITDA",
@@ -41928,27 +42427,211 @@
               "status": "reiterated"
             },
             {
-              "metric": "EBITDA per ton for India Cements",
-              "horizon": "Q4 FY28",
-              "statement": "EBITDA of INR1,000 per ton for India Cements remains very much in sight with the full benefit of the capex program flowing through the P&L from Q4 fiscal '28.",
+              "metric": "Grey cement domestic capacity",
+              "horizon": "end FY27",
+              "statement": "We'll take our consolidated capacity beyond 242 million tons with grey cement capacity to reach 212.7 million tons by the end of fiscal '27 and further balance to be completed in the next year.",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
             },
             {
-              "metric": "Volume growth",
-              "horizon": "FY27",
-              "statement": "We expect a sustainable volume growth of 7% to 8% per annum.",
+              "metric": "Consolidated capacity",
+              "horizon": "next 2-2.5 years",
+              "statement": "We'll take our consolidated capacity beyond 242 million tons... backed by a capex of about INR17,000 crores in the next 2 to 2.5 years.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Total domestic capacity",
+              "horizon": "March 2028",
+              "statement": "March '28 we should exit with 235 million tons in India.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Green power capacity",
+              "horizon": "near-term",
+              "statement": "We believe we will reach anywhere between 2.5 to 3 gigawatts very shortly.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "India Cements EBITDA per ton",
+              "horizon": "Q4 FY28",
+              "statement": "EBITDA of INR1,000 per ton for India Cements remains very much in sight with the full benefit of the capex program flowing through the P&L from Q4 fiscal '28.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "India Cements green power mix",
+              "horizon": "end FY28",
+              "statement": "A step change in the green power trajectory from around 3% of their power requirements to about 86% of their power requirements by the end of fiscal '28.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "lowered"
+            },
+            {
+              "metric": "India Cements merger into stand-alone entity",
+              "horizon": "Q4 FY28 or a quarter earlier",
+              "statement": "Q4 '28 or maybe a quarter earlier, we expect to complete our journey.",
+              "specificity": "specific",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Cables and Wires product launch",
+              "horizon": "Q3 FY27",
+              "statement": "We reaffirm commissioning and product launch in Q3 fiscal '27, October-December '26 quarter, precisely as committed to you when we announced this investment.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Cables and Wires further capex",
+              "horizon": "ongoing",
+              "statement": "As of now, I don't foresee any requirement for further investment in cables and wires. They will now first mature and milk the investment that they have done.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Cables and Wires financial guidance",
+              "horizon": "ongoing",
+              "statement": "Sky is the limit. So, we don't give any guidance. So, we would like to be profitable, grounded and grow with the market.",
+              "specificity": "refused",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Q2 FY27 cost increase",
+              "horizon": "Q2 FY27",
+              "statement": "I would expect the cost to go up by INR130 to INR140 per ton, all put together.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "H2 FY27 variable costs",
+              "horizon": "H2 FY27",
+              "statement": "Once the war is out of the way, things should stabilize and H2 hopefully, God willing, should be a better place in terms of cost.",
               "specificity": "vague",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "Annual cost-saving program",
+              "horizon": "FY27 (year-end)",
+              "statement": "At the end of the year, we will give a comprehensive number. That will make more sense to do a comparison.",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "UltraTech EBITDA per ton (magical figure)",
+              "horizon": "Jan-Mar 2028 (without war)",
+              "statement": "I have already called it out n number of times. There's no point in repeating it. January-March '28 quarter without any war.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Capacity growth beyond 240 million tons",
+              "horizon": "future",
+              "statement": "Our team has already got on to the drawing board to take us beyond 240. Once the plans are ready, we will come back with absolute micro details.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Dividend payout",
+              "horizon": "future",
+              "statement": "You call it special, be happy with it, but I'm expecting good dividends.",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Coal fuel cost per kcal",
+              "horizon": "near-term",
+              "statement": "Would be around INR2 per Kcal. And Raashi, INR2, I think we won't go beyond that because we are fully inventory loaded.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "raised"
+            },
+            {
+              "metric": "East region demand",
+              "horizon": "next 2-4 years",
+              "statement": "East will witness good demand upcycle... it's not next quarter story, but it's next 2, 3, 4 years story.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Cables and Wires working capital days",
+              "horizon": "April-June FY28",
+              "statement": "April-June '27 should be a period to see a stable number... start stabilizing and coming down to 30 days plus-minus of working capital.",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "Total cement capacity",
+              "horizon": "FY28",
+              "statement": "Committed to add a further 37 million tons, which will take us over 242.5 million tons in a phased manner by fiscal '28.",
+              "specificity": "specific",
               "direction": "up",
               "status": "no_mention"
             },
             {
-              "metric": "Renewable energy share",
-              "horizon": "FY30",
-              "statement": "We have committed to reach about 85% of our power requirements from green energy by the end of fiscal 2030.",
+              "metric": "Sustainable volume growth",
+              "horizon": "FY27 and beyond",
+              "statement": "We expect a sustainable volume growth of 7% to 8% per annum.",
               "specificity": "specific",
               "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "UltraTech volume growth",
+              "horizon": "FY27",
+              "statement": "For fiscal '27, we would target double-digit growth.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Clinker conversion ratio",
+              "horizon": "FY28",
+              "statement": "We have targeted to reach about 1.54x. That road map is already there... 1.54x is our target to reach by fiscal '28.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Cost efficiency improvement program",
+              "horizon": "FY28",
+              "statement": "We had committed INR300, because I'm keeping an emergency buffer in my pocket, but I think we will deliver higher than INR300 per ton by fiscal '28.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Annual growth capex",
+              "horizon": "foreseeable future",
+              "statement": "We see a plan of investing around INR8,000 crores to INR10,000 crores every year for the foreseeable future.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Industry demand growth",
+              "horizon": "FY26 full year",
+              "statement": "6.5% is what my colleagues tell me for the full year.",
+              "specificity": "specific",
+              "direction": "flat",
               "status": "no_mention"
             },
             {
@@ -41960,9 +42643,9 @@
               "status": "no_mention"
             },
             {
-              "metric": "Green power mix",
-              "horizon": "FY27",
-              "statement": "Our renewal energy has gone to almost 41% and is further likely to go to 60% going forward.",
+              "metric": "Total capacity",
+              "horizon": "FY26",
+              "statement": "We will complete or exit this financial year with 200 million tons of capacity under our belt.",
               "specificity": "specific",
               "direction": "up",
               "status": "no_mention"
@@ -41990,26 +42673,103 @@
               "specificity": "specific",
               "direction": "up",
               "status": "no_mention"
-            },
-            {
-              "metric": "Industry growth",
-              "horizon": "FY26",
-              "statement": "Industry growth expected to be 6-7% for the full year.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "no_mention"
             }
           ],
           "risk_register": [
             {
-              "risk": "West Asia crisis",
+              "risk": "West Asia geopolitical conflict / Strait of Hormuz disruption",
               "status": "new",
-              "note": "The situation remains fluid with crude prices and coal costs impacted."
+              "note": "Quarter began with Strait of Hormuz effectively closed, crude crossed $100, coal costs spiked; situation de-escalated but remains fluid; full-quarter cost impact expected in Q2 FY27."
             },
             {
-              "risk": "West Asia conflict",
+              "risk": "Imported fuel/coal cost inflation",
+              "status": "new",
+              "note": "Sharpest imported fuel cost shock in recent memory absorbed in Q1; fuel cost per ton rose from INR874 to INR915 (5%); further INR130-140/ton cost increase expected in Q2 FY27."
+            },
+            {
+              "risk": "Packing bag cost inflation",
+              "status": "new",
+              "note": "Bag costs rose from ~INR9/bag to peaks of INR14-15/bag before settling near INR10/bag, averaging INR12/bag for the quarter; not expected to move haywire going forward."
+            },
+            {
+              "risk": "Industrial diesel price spike / limestone raising cost",
+              "status": "new",
+              "note": "Industrial diesel rose from INR78-80/litre pre-war to INR150s/litre during war (~50% increase), driving limestone raising costs up 13-14% QoQ to a 2-year high."
+            },
+            {
+              "risk": "Ocean freight insurance premium increase",
+              "status": "new",
+              "note": "Insurance premiums for ocean routes have risen to 4-5% from less than 1% due to the war."
+            },
+            {
+              "risk": "Monsoon / dry weather impact on demand",
+              "status": "new",
+              "note": "Some states (e.g., Rajasthan) facing dry spells that could cause water crisis and demand impact next year; wet spells have started elsewhere from July; effects to be clearer by August-September."
+            },
+            {
+              "risk": "Negative operating leverage in seasonally weak Q2",
+              "status": "new",
+              "note": "Q2 (July-September) is typically a low-volume quarter, contributing to the INR130-140/ton cost increase along with fuel and maintenance costs."
+            },
+            {
+              "risk": "Structural demand slowdown (long-term)",
+              "status": "new",
+              "note": "Flagged as the biggest hypothetical 5-year challenge if demand structurally slows (housing stalls, industrialization slows, data centers shift abroad), though not currently foreseen by management."
+            },
+            {
+              "risk": "Capacity constraint versus strong demand",
+              "status": "new",
+              "note": "If demand remains strong, insufficient capacity (not demand) will be the challenge, necessitating continued expansion to 240+ million tons."
+            },
+            {
+              "risk": "Industry capacity expansion uncertainty",
+              "status": "new",
+              "note": "Some industry players reportedly revisiting their expansion plans, making it difficult to firmly estimate industry-wide FY27-28 capacity addition."
+            },
+            {
+              "risk": "West Asia (Middle East) conflict impacting fuel, bag, freight costs and import-dependent supply chains",
               "status": "no_mention",
-              "note": "Presents a headwind on fuel costs, packing bags, freight, and certain import-dependent supply chains."
+              "note": "Real headwind on fuel costs, packing bags, freight; near-term sentiment impact in some demand segments; characterized as a cost moderator, not structural demand reversal."
+            },
+            {
+              "risk": "Rising oil prices leading to potential domestic petrol/diesel price increases",
+              "status": "no_mention",
+              "note": "Government's monthly economic review for March '26 acknowledged outlook has become slightly uncertain."
+            },
+            {
+              "risk": "Rupee devaluation / forex mark-to-market impact on hedged foreign currency borrowings",
+              "status": "no_mention",
+              "note": "$950 million of borrowings fully hedged but MTM accounting created a noncash EBITDA hit of INR120-130 crores (INR30/ton) due to rupee weakening to INR94.85/$ at quarter-end."
+            },
+            {
+              "risk": "Packaging (bag) cost inflation",
+              "status": "no_mention",
+              "note": "Bag costs rose from INR9 to INR15 per bag in March (INR90 crore hit), since stabilized to INR13-14; company has ~150 suppliers to mitigate."
+            },
+            {
+              "risk": "Diesel cost uncertainty",
+              "status": "no_mention",
+              "note": "Diesel impact unresolved; management awaiting developments, 'might surface its horns next month'."
+            },
+            {
+              "risk": "Fuel cost pressure from elevated pet coke prices persisting",
+              "status": "no_mention",
+              "note": "Some ripples expected in July-September if pet coke prices sustain at $150-160; company believes it can manage better than industry via supply contracts and domestic coal."
+            },
+            {
+              "risk": "Legacy legal cases inherited with India Cements delaying merger",
+              "status": "no_mention",
+              "note": "Long-pending legal issues; company working to resolve before proceeding with full merger integration."
+            },
+            {
+              "risk": "Industry fragmentation limiting pricing power versus other building material industries",
+              "status": "no_mention",
+              "note": "Cement industry has struggled to take price hikes as aggressively as steel/agri/PVC due to fragmentation."
+            },
+            {
+              "risk": "Temporary regional demand softness",
+              "status": "no_mention",
+              "note": "Slowdown in last 15 days attributed to excessive heat and Bengal/Tamil Nadu elections; management views this as temporary, not structural."
             },
             {
               "risk": "Cost increases in pet coke and coal",
@@ -42041,37 +42801,64 @@
             {
               "label": "Demand growth",
               "direction": "positive",
-              "note": "Strong demand pipeline across infrastructure, housing, and urban real estate.",
+              "note": "Double-digit volume growth (13.1%) driven by strong demand pipeline across infrastructure, housing and urban real estate; management targets double-digit volume growth for FY27.",
               "section_ref": "ORD"
             },
             {
-              "label": "Capacity expansion",
-              "direction": "positive",
-              "note": "UltraTech plans to increase its capacity to over 242 million tons by FY28.",
-              "section_ref": "MFG"
-            },
-            {
               "label": "Cost pressures",
-              "direction": "mixed",
-              "note": "Fuel and packing bag costs increased, impacting overall costs.",
+              "direction": "negative",
+              "note": "Fuel, packing bag and industrial diesel/limestone cost inflation from the West Asia crisis; further INR130-140/ton cost increase expected in Q2 FY27.",
               "section_ref": "FIN"
             },
             {
               "label": "Brand transition",
               "direction": "positive",
-              "note": "Successful conversion of Kesoram and India Cements brands to UltraTech.",
+              "note": "Kesoram and India Cements brands fully converted to UltraTech, driving 21.3% brand growth as B/C category customers migrated to the premium A category brand.",
               "section_ref": "SEG"
+            },
+            {
+              "label": "M&A integration (India Cements/Kesoram)",
+              "direction": "positive",
+              "note": "India Cements EBITDA per ton climbed sequentially to INR603 in Q1 FY27, with INR1,000/ton target reiterated for Q4 FY28 and brand migration complete a quarter early.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Capacity expansion",
+              "direction": "positive",
+              "note": "Domestic capacity reached 200.1 million tons with consolidated capacity targeted beyond 242 million tons in 2-2.5 years, backed by INR17,000 crores capex.",
+              "section_ref": "MFG"
+            },
+            {
+              "label": "Green energy transition",
+              "direction": "positive",
+              "note": "Green power capacity of 1,897 MW met 47% of power needs at quarter end, helping absorb the fuel cost shock; targeting 2.5-3 GW shortly.",
+              "section_ref": "MFG"
+            },
+            {
+              "label": "Capital allocation / shareholder returns",
+              "direction": "positive",
+              "note": "Net debt/EBITDA improved to 0.87x; cash flows to be ploughed back into growth capex and dividends, with no further Cables and Wires capex planned for now.",
+              "section_ref": "FIN"
             }
           ],
           "key_takeaways": [
-            "Q1 FY27 was the highest ever first quarter performance for UltraTech across volumes, revenues, EBITDA, and profit.",
-            "UltraTech's domestic grey cement volumes grew 13.1%, ahead of industry growth, translating into market share gains.",
-            "The company has converted Kesoram and India Cements brands to 100% UltraTech, with brand growth at 21.3%.",
-            "UltraTech's capacity utilization was 81% on an enlarged 200-million-ton base, indicating strong demand pipeline.",
-            "Projects under execution for capacity growth are backed by a capex of about INR17,000 crores in the next 2 to 2.5 years.",
-            "The company aims to grow like a challenger and not an incumbent, with a focus on demand and capacity expansion."
+            "Q1 was the highest ever first quarter performance for UltraTech across volumes, revenues, EBITDA and profit.",
+            "Domestic grey cement volumes grew 13.1%, capacity utilization improved to 81% from 76%, EBITDA of INR5,146 crores and PAT of INR2,604 crores, up 17.2% YoY.",
+            "Kesoram and India Cements brands have been converted to 100% UltraTech; the converted brand grew 21.3% YoY as B/C category customers migrated to the A category UltraTech brand at a price premium.",
+            "Operating EBITDA per ton held steady above INR1,200 despite the sharpest imported fuel cost shock in recent memory, reflecting cost discipline and operating leverage.",
+            "India Cements delivered a clear turnaround: like-for-like revenue grew 21% and volumes grew 19%, with EBITDA per ton climbing sequentially from INR386 (Q2FY26) to INR400, INR509 and INR603 (Q1FY27); India Cements EBITDA per ton of INR1,000 remains targeted by Q4 FY28.",
+            "Domestic capacity reached 200.1 million tons and total capacity 205.5 million tons after commissioning of Shahjahanpur, Visakhapatnam and Patratu; consolidated capacity to go beyond 242 million tons in 2-2.5 years backed by ~INR17,000 crores capex.",
+            "Cables and Wires project remains on schedule and on budget, reaffirming commissioning and product launch in Q3 FY27.",
+            "Net debt to EBITDA improved to 0.87x from 0.94x at start of year, and company remains confident of ending FY27 below 1x.",
+            "Q2 FY27 expected to be optically softer due to seasonal monsoon slowdown and full quarter impact of West Asia cost disruption, with an expected INR130-140 per ton cost increase."
           ],
-          "pressing_questions": []
+          "pressing_questions": [
+            "What is the sort of working capital days for the Cables and Wires business, particularly on inventory days given the low lead distance from suppliers like Hindalco?",
+            "What steps remain before India Cements could be merged into a stand-alone entity, given most acquisition targets are nearing completion?",
+            "Given industry players revisiting expansion plans, what is UltraTech's estimate of industry-wide capacity addition for FY27-28?",
+            "Is there a structural shift toward prioritizing profitability/pricing over market share, or vice versa, if input costs decline later in the year?",
+            "How cement-intensive are river-linking projects like Ken-Betwa compared to something like a hydropower plant?"
+          ]
         },
         {
           "company": "UltraTech Cement Ltd",
@@ -42081,9 +42868,10 @@
           "concall_date": "2026-05-01",
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b4e6bf58-5985-4eda-b714-7489b4b926b0.pdf",
-          "model": "gpt-4o",
-          "generated_at": "2026-07-30T06:07:50.013Z",
-          "summary": "UltraTech Cement Ltd expects sustainable volume growth of 7% to 8% per annum, driven by India's urbanization and infrastructure commitments, despite near-term complexities from the West Asia conflict.",
+          "model": "anthropic.claude-sonnet-5",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-03T12:07:51.790Z",
+          "summary": "UltraTech expects sustainable volume growth of 7-8% per annum in FY27 and beyond, targets double-digit volume growth for UltraTech itself in FY27, plans capex of INR8,000-10,000 crores every year for the foreseeable future to grow beyond 240 million tons capacity (37 million tons already committed to take capacity to 242.5 million tons by FY28), and expects cost-efficiency programs (India Cements/Kesoram) to push India Cements EBITDA/ton beyond INR1,000 by FY28, with near-term cost headwinds from the West Asia conflict (fuel, bags, forex) being managed via pricing and sourcing measures; leverage to be maintained below 1x.",
           "sections": [
             {
               "id": "FIN",
@@ -42097,101 +42885,80 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "EBITDA per ton (excluding acquired assets)",
-                  "value": "1,296",
-                  "unit": "INR",
+                  "label": "UltraTech brand volume growth YoY",
+                  "value": "19",
+                  "unit": "%",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Aggregate EBITDA per ton",
-                  "value": "1,253",
-                  "unit": "INR",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Net debt-EBITDA ratio (consolidated)",
-                  "value": "0.94",
-                  "unit": null,
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Net debt-EBITDA ratio (UltraTech India)",
-                  "value": "0.92",
-                  "unit": null,
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Dividend per share",
-                  "value": "240",
-                  "unit": "INR",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "PAT for the quarter",
-                  "value": "3,000",
-                  "unit": "crores INR",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "PAT for the year",
-                  "value": "8,000",
-                  "unit": "crores INR",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Realizations improvement",
+                  "label": "Grey cement pricing improvement",
                   "value": "2.5",
                   "unit": "%",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Lead distance",
-                  "value": "367",
-                  "unit": "kilometers",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Incremental cost on bags",
-                  "value": "90",
-                  "unit": "crores",
+                  "label": "EBITDA per ton (excl. acquired assets)",
+                  "value": "1,296",
+                  "unit": "INR/ton",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Foreign currency borrowings",
-                  "value": "950",
-                  "unit": "million USD",
+                  "label": "EBITDA per ton (excl. acquired assets)",
+                  "value": "1,225",
+                  "unit": "INR/ton",
+                  "period": "Q4 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA per ton (aggregate, consolidated)",
+                  "value": "1,253",
+                  "unit": "INR/ton",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA per ton excl. West Asia crisis aberrations",
+                  "value": "1,240",
+                  "unit": "INR/ton",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA per ton India (excl. exchange/bag cost impact)",
+                  "value": "1,200",
+                  "unit": "INR/ton",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net debt to EBITDA (consolidated)",
+                  "value": "0.94",
+                  "unit": "x",
+                  "period": "FY26 end",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net debt to EBITDA (UltraTech India)",
+                  "value": "0.92",
+                  "unit": "x",
+                  "period": "FY26 end",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Dividend recommended",
+                  "value": "240",
+                  "unit": "INR/share (2400%)",
                   "period": "FY26",
                   "kind": "reported"
-                },
-                {
-                  "label": "Mark-to-market exchange rate",
-                  "value": "94.85",
-                  "unit": "INR/USD",
-                  "period": "31st March 2026",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Capex plan",
-                  "value": "8,000 to 10,000",
-                  "unit": "crores",
-                  "period": "per year",
-                  "kind": "target"
                 },
                 {
                   "label": "Dividend payout ratio",
                   "value": "37",
                   "unit": "% of profits",
-                  "period": "FY25",
+                  "period": "last year (FY25)",
                   "kind": "reported"
                 },
                 {
@@ -42202,124 +42969,121 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Capex on cable and wire business",
-                  "value": "800",
-                  "unit": "crores",
-                  "period": "FY26",
-                  "kind": "reported"
+                  "label": "Annual growth capex plan",
+                  "value": "8,000-10,000",
+                  "unit": "INR crores",
+                  "period": "ongoing/foreseeable future",
+                  "kind": "guidance"
                 },
                 {
-                  "label": "Total planned capex on cable and wire business",
-                  "value": "1,800",
-                  "unit": "crores",
-                  "period": "FY26",
-                  "kind": "reported"
+                  "label": "Cumulative incremental capex beyond 240 mtpa",
+                  "value": "~15,000",
+                  "unit": "INR crores",
+                  "period": "future",
+                  "kind": "guidance"
                 },
                 {
-                  "label": "India Cements EBITDA per ton",
-                  "value": "333",
-                  "unit": "INR",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
+                  "label": "Incremental capex from balance sheet",
+                  "value": "~50,000",
+                  "unit": "INR crores (over 4-5 years)",
+                  "period": "next 4-5 years",
+                  "kind": "guidance"
                 },
                 {
-                  "label": "India Cements EBITDA per ton",
-                  "value": "305",
-                  "unit": "INR",
-                  "period": "Q3 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "India Cements PAT",
-                  "value": "60",
-                  "unit": "crores",
+                  "label": "PAT",
+                  "value": "3,000",
+                  "unit": "INR crores",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Investment commitment for India Cements efficiency improvement",
-                  "value": "1,592",
-                  "unit": "crores",
-                  "period": "FY26",
-                  "kind": "target"
-                },
-                {
-                  "label": "Capex for India Cements capacity expansion",
-                  "value": "400",
-                  "unit": "crores",
-                  "period": "FY26",
-                  "kind": "target"
-                },
-                {
-                  "label": "Capex for Kesoram cement assets",
-                  "value": "400 to 500",
-                  "unit": "crores",
-                  "period": "FY26",
-                  "kind": "target"
-                },
-                {
-                  "label": "Mumbai City infrastructure investment",
-                  "value": "60",
-                  "unit": "billion USD",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Highways constructed in India",
-                  "value": "10,660",
-                  "unit": "kilometers",
-                  "period": "FY25",
-                  "kind": "reported"
-                },
-                {
-                  "label": "India Cements EBITDA per ton booked in UltraTech",
-                  "value": "200",
-                  "unit": "INR",
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "India Cements EBITDA per ton booked in India Cements",
-                  "value": "800",
-                  "unit": "INR",
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "Cost improvements delivered for India Cements",
-                  "value": "185",
-                  "unit": "INR",
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "Committed cost improvements for India Cements",
-                  "value": "300",
-                  "unit": "INR",
-                  "period": null,
-                  "kind": "target"
-                },
-                {
-                  "label": "Capex for UltraTech",
-                  "value": "10,000",
+                  "label": "PAT",
+                  "value": "8,000+",
                   "unit": "INR crores",
-                  "period": "per year",
-                  "kind": "guidance"
+                  "period": "FY26",
+                  "kind": "reported"
                 },
                 {
-                  "label": "Capex beyond 240 million tons",
-                  "value": "15,000",
+                  "label": "Incremental cost on bags",
+                  "value": "90",
                   "unit": "INR crores",
-                  "period": null,
-                  "kind": "guidance"
+                  "period": "March 2026 (month)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bag price increase",
+                  "value": "9 to 15 (delta ~6)",
+                  "unit": "INR/bag",
+                  "period": "Q4 FY26 to now",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Forex mark-to-market hit to EBITDA",
+                  "value": "30",
+                  "unit": "INR/ton",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Forex mark-to-market hit to EBITDA (absolute)",
+                  "value": "120-130",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Foreign currency borrowings (fully hedged)",
+                  "value": "950",
+                  "unit": "USD million",
+                  "period": "as of Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "USD/INR rate used for borrowings valuation",
+                  "value": "94.85",
+                  "unit": "INR/USD",
+                  "period": "31 March 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "USD/INR rate",
+                  "value": "94.2",
+                  "unit": "INR/USD",
+                  "period": "current (post quarter-end)",
+                  "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Dividend and Capital Allocation",
+                  "label": "Margin and cost drivers",
                   "points": [
-                    "The Board has recommended a dividend of INR240 a share for fiscal '26, maintaining leverage below 1x while meeting growth capex.",
-                    "Operating cash flows are growing, allowing for increased returns to shareholders, with dividends growing from 10% of profits in 2020 to 37% last year."
+                    "EBITDA per ton improvement driven by improving trade mix and premiumization along with realization gains.",
+                    "India EBITDA per ton of INR1,240 achieved when excluding last month's bag cost increase and forex mark-to-market loss from rupee devaluation.",
+                    "UAE operations contributed substantially to EBITDA alongside strong India performance (India capacity ~196 million tons during the year)."
+                  ]
+                },
+                {
+                  "label": "Forex impact explanation",
+                  "points": [
+                    "$950 million of foreign currency borrowings are fully hedged, but mark-to-market accounting at quarter-end (INR94.85/$ on 31 March vs strengthening to ~INR93 subsequently) creates a noncash debit to EBITDA/P&L.",
+                    "This mark-to-market hit is a noncash item but is accounted within EBITDA, not as an extraordinary or finance cost item."
+                  ]
+                },
+                {
+                  "label": "Dividend rationale",
+                  "points": [
+                    "Dividend of INR240/share (2400%) proposed, 3x last year's dividend.",
+                    "Dividend stress-tested against retained earnings remaining adequate for all planned investments and commitments; credit metrics and debt covenants unaffected.",
+                    "Dividend growth from 10% of profits in 2020 to 37% last year reflects a deliberate Board strategy to reward shareholders as operating cash flows grow.",
+                    "Management indicates future payout could go up or down depending on annual OCF and Board decision, with intent not to over-leverage the balance sheet.",
+                    "Company reiterated it will not exceed a leverage of 1x net debt/EBITDA even while funding growth capex."
+                  ]
+                },
+                {
+                  "label": "Wire and cable business capex",
+                  "points": [
+                    "INR800 crores spent out of committed INR1,800 crores capex for the cable and wire business.",
+                    "Management indicated the business remains on track, potentially launching earlier (first month of Q3) than the originally committed December timeline."
                   ]
                 }
               ]
@@ -42329,135 +43093,93 @@
               "title": "Order Book & Demand",
               "key_figures": [
                 {
-                  "label": "International operations capacity",
-                  "value": "5",
-                  "unit": "million tons",
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "International operations capacity utilization before war",
-                  "value": "100",
+                  "label": "Industry demand growth",
+                  "value": "6-7",
                   "unit": "%",
-                  "period": null,
+                  "period": "Q4 FY26 (March quarter)",
                   "kind": "reported"
                 },
                 {
-                  "label": "International operations capacity utilization after war",
-                  "value": "80",
-                  "unit": "%",
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "UAE operations EBITDA",
-                  "value": "267",
-                  "unit": "crores",
-                  "period": "Q3 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "UAE operations EBITDA",
-                  "value": "278",
-                  "unit": "crores",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Other brand sales volume",
-                  "value": "7.34",
-                  "unit": "million tons",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Other brand sales volume",
-                  "value": "0.52",
-                  "unit": "million tons",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Trade mix",
-                  "value": "65",
-                  "unit": "%",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Non-trade mix",
-                  "value": "35",
-                  "unit": "%",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Clinker conversion ratio",
-                  "value": "1.48",
-                  "unit": "x",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Industry growth for March quarter",
-                  "value": "6% to 7%",
-                  "unit": "%",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Industry growth for full year",
+                  "label": "Industry demand growth (full year)",
                   "value": "6.5",
                   "unit": "%",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Fuel cost",
-                  "value": "1.77",
-                  "unit": "per kcal",
+                  "label": "UltraTech capacity utilization",
+                  "value": "80-100 (avg >80)",
+                  "unit": "%",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Mark-to-market hit on forex loan",
-                  "value": "30",
-                  "unit": "per ton",
+                  "label": "Rural/trade mix",
+                  "value": "66-67",
+                  "unit": "%",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Mark-to-market hit on forex loan",
-                  "value": "120 crores to 130 crores",
-                  "unit": null,
+                  "label": "Trade/non-trade mix",
+                  "value": "65-35",
+                  "unit": "% (vs 70-30 earlier)",
                   "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Packing cost impact",
-                  "value": "90",
-                  "unit": "crores",
-                  "period": "March",
                   "kind": "reported"
                 }
               ],
-              "subsections": []
+              "subsections": [
+                {
+                  "label": "Demand commentary",
+                  "points": [
+                    "India's structural growth story intact despite West Asia conflict: government capex flowing, infrastructure execution continuing, housing demand robust; IMF raised India's growth forecast.",
+                    "India built ~10,660 km of highways in FY25 and maintained similar pace in FY26; PMAY housing program driving cement consumption at scale.",
+                    "Rural demand remained steady, inferred from capacity utilization above 80% nationally and trade mix holding at 66-67%.",
+                    "Too early to determine cash flow improvement in rural markets from crop cycles for the current quarter.",
+                    "Slowdown observed in the last 15 days attributed to excessive heat and Bengal/Tamil Nadu elections, but underlying demand undercurrent remains strong.",
+                    "Trade/non-trade mix elevated to 65-35 (vs historical 70-30) partly due to temporary reduction in infra offtake (e.g., end of a high-speed rail project phase in Gujarat), expected to normalize as infra activity (e.g., Mumbai's $60 billion infrastructure spend) picks up."
+                  ]
+                },
+                {
+                  "label": "Pricing dynamics",
+                  "points": [
+                    "Cement price hikes historically muted versus other building material industries (steel, agri, PVC) due to fragmentation of the cement industry.",
+                    "Price increases typically occur in Q1 of the financial year, not Q4, due to seasonal patterns (monsoon impact in July-September, volume focus in March).",
+                    "Price increases taken in April 2026 to offset rising input costs; management believes cost-related price hikes are 'here to stay' since cost pressure affects the entire industry uniformly.",
+                    "Price increases already taken are viewed as adequate to offset the ~INR6/bag cost increase."
+                  ]
+                }
+              ]
             },
             {
               "id": "SEG",
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
-                  "label": "EBITDA per ton for India Cements",
+                  "label": "India Cements EBITDA per ton",
                   "value": "497",
-                  "unit": "INR",
+                  "unit": "INR/ton",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "EBITDA per ton for Kesoram",
-                  "value": "1,000",
-                  "unit": "INR",
+                  "label": "India Cements EBITDA per ton",
+                  "value": "333",
+                  "unit": "INR/ton",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India Cements EBITDA per ton",
+                  "value": "305",
+                  "unit": "INR/ton",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India Cements PAT",
+                  "value": "60",
+                  "unit": "INR crores",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
@@ -42469,19 +43191,205 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Non-UltraTech volume for India Cements",
+                  "label": "India Cements non-UltraTech brand volume",
                   "value": "0.39",
                   "unit": "million tons",
                   "period": "Q4 FY26",
                   "kind": "reported"
+                },
+                {
+                  "label": "India Cements EBITDA/ton (all-inclusive incl. UltraTech books portion)",
+                  "value": "670",
+                  "unit": "INR/ton",
+                  "period": "cumulative Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA/ton portion booked in UltraTech standalone books (from India Cements tolling)",
+                  "value": "200",
+                  "unit": "INR/ton",
+                  "period": "Q4 FY26 / ongoing",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Kesoram EBITDA per ton",
+                  "value": "1,000+",
+                  "unit": "INR/ton",
+                  "period": "Jan-Mar quarter FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Investment committed for India Cements efficiency improvement",
+                  "value": "1,592",
+                  "unit": "INR crores",
+                  "period": "cumulative",
+                  "kind": "target"
+                },
+                {
+                  "label": "Additional capex for India Cements capacity expansion",
+                  "value": "400",
+                  "unit": "INR crores",
+                  "period": "cumulative",
+                  "kind": "target"
+                },
+                {
+                  "label": "Investment for Kesoram cement assets",
+                  "value": "400-500",
+                  "unit": "INR crores",
+                  "period": "cumulative",
+                  "kind": "target"
+                },
+                {
+                  "label": "Combined ICL+Kesoram share of consolidated capacity",
+                  "value": "13",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Other (non-UltraTech) brand sales volume",
+                  "value": "7.34",
+                  "unit": "million tons",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Other (non-UltraTech) brand sales volume",
+                  "value": "0.52",
+                  "unit": "million tons",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ICL brand-migration volume share",
+                  "value": "31",
+                  "unit": "%",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Kesoram brand-migration volume share",
+                  "value": "55",
+                  "unit": "%",
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ICL brand-migration volume share",
+                  "value": "58",
+                  "unit": "%",
+                  "period": "Dec 2025",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Kesoram brand-migration volume share",
+                  "value": "69",
+                  "unit": "%",
+                  "period": "Dec 2025",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Brand conversion completion",
+                  "value": "100",
+                  "unit": "%",
+                  "period": "end of March 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "UAE operations EBITDA",
+                  "value": "267",
+                  "unit": "INR crores",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "UAE operations EBITDA",
+                  "value": "278",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "UAE capacity",
+                  "value": "5",
+                  "unit": "million tons",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "UAE capacity utilization (pre-war)",
+                  "value": "100",
+                  "unit": "%",
+                  "period": "pre-war",
+                  "kind": "reported"
+                },
+                {
+                  "label": "UAE capacity utilization (during war)",
+                  "value": "80",
+                  "unit": "%",
+                  "period": "during war",
+                  "kind": "reported"
+                },
+                {
+                  "label": "RMC share of volumes",
+                  "value": "3",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost efficiency delivered (nominal basis)",
+                  "value": "185",
+                  "unit": "INR/ton",
+                  "period": "as of Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost efficiency target",
+                  "value": ">300",
+                  "unit": "INR/ton",
+                  "period": "by FY28",
+                  "kind": "target"
+                },
+                {
+                  "label": "India Cements remaining efficiency improvement potential",
+                  "value": "200",
+                  "unit": "INR/ton",
+                  "period": "future (into India Cements' books)",
+                  "kind": "target"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Brand Transition and Integration",
+                  "label": "India Cements / Kesoram integration progress",
                   "points": [
-                    "100% brand migration for India Cements and Kesoram was completed by March '26.",
-                    "India Cements' EBITDA per ton improved from INR333 in Q2 to INR497 in Q4 '26."
+                    "Sequential improvement in India Cements EBITDA per ton every quarter since acquisition (INR305 in Q3 to INR497 in Q4).",
+                    "India Cements declared PAT of INR60 crores for the quarter, first time in a long time.",
+                    "Under a related-party tolling arrangement, India Cements manufactures and sells the UltraTech brand but does not bear direct marketing/distribution costs — those sit at the UltraTech consolidated level, with UltraTech charging a markup per bag on ICL volumes to offset this; hence India Cements' underlying operational progress is understated by the reported INR497/ton figure (true comparable figure ~INR670/ton after accounting for the INR200/ton booked in UltraTech books).",
+                    "Selling price improvements in southern markets expected to give India Cements further boost.",
+                    "Kesoram already operating at ~INR1,000/ton EBITDA, broadly in line with other South cement operations.",
+                    "India Cements and Kesoram together represent ~13% of consolidated capacity, moving from an integration drag to an earnings contributor; expected to become a meaningful and growing source of group-level EBITDA accretion as cost-improvement capex matures.",
+                    "100% brand migration completed by end of March 2026 for both India Cements and Kesoram, a quarter ahead of schedule.",
+                    "Post full brand conversion, only ~0.5 million tons of India Cements volume in Q4 remained non-UltraTech branded (0.39 million tons), implying limited further realization upside purely from brand conversion but significant efficiency upside from logistics/operational integration (single product now shipped from all 9 India Cements factories vs multiple brands earlier).",
+                    "Efficiency improvement of INR200/ton still expected to flow into India Cements' books; full efficiency program (targeting >INR300/ton) to mature further into FY28.",
+                    "India Cements EBITDA/ton guidance of >INR1,000/ton by FY28 is described as 'all inclusive' — i.e., includes the ~INR200/ton currently booked in UltraTech's standalone books via the tolling markup."
+                  ]
+                },
+                {
+                  "label": "UAE / overseas operations",
+                  "points": [
+                    "UAE capacity utilization dropped to ~80% during the war from 100% pre-war; now recovering with 'permanent peace program' in place, with utilization and prices both moving up.",
+                    "UAE operations are entirely bulk (no bag costs) and 100% sold to RMC (zero trade sales).",
+                    "Stable sequential UAE EBITDA (INR267 crores Q3 to INR278 crores Q4) — described as a 'stable journey'.",
+                    "UAE economy expected to be among the first to recover, potentially with new government programs reviving the economy."
+                  ]
+                },
+                {
+                  "label": "RMC business",
+                  "points": [
+                    "RMC considered an integral, strategic part of UltraTech's business and offering, viewed as the future growth engine given increasing urbanization.",
+                    "No specific numeric target set for RMC's share of volumes (currently 3%); no plan to monetize the RMC business.",
+                    "RMC revenue growth outpacing volume growth."
                   ]
                 }
               ]
@@ -42491,47 +43399,230 @@
               "title": "Manufacturing & Capacity",
               "key_figures": [
                 {
-                  "label": "Cement production capacity in India",
+                  "label": "Total cement production capacity (India)",
                   "value": "200",
                   "unit": "million tons",
-                  "period": "FY26",
+                  "period": "current (FY27 start)",
                   "kind": "reported"
                 },
                 {
-                  "label": "Next capacity target",
-                  "value": "242.5",
+                  "label": "Capacity in 2019",
+                  "value": "100",
                   "unit": "million tons",
-                  "period": "FY28",
+                  "period": "2019",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capacity in 2024",
+                  "value": "150",
+                  "unit": "million tons",
+                  "period": "2024",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capacity in 2016",
+                  "value": "~65",
+                  "unit": "million tons",
+                  "period": "2016",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Committed additional capacity",
+                  "value": "37",
+                  "unit": "million tons",
+                  "period": "phased, by FY28",
+                  "kind": "target"
+                },
+                {
+                  "label": "Target total capacity",
+                  "value": "242.5+",
+                  "unit": "million tons",
+                  "period": "by FY28",
                   "kind": "target"
                 },
                 {
                   "label": "Green energy platform capacity",
                   "value": "1.8",
                   "unit": "gigawatt",
-                  "period": "FY26",
+                  "period": "current",
                   "kind": "reported"
                 },
                 {
-                  "label": "Renewable energy share of power needs",
+                  "label": "Green power share of energy needs",
                   "value": "43",
                   "unit": "%",
-                  "period": "FY26",
+                  "period": "current",
                   "kind": "reported"
                 },
                 {
-                  "label": "Target for renewable energy share",
+                  "label": "Green power target",
                   "value": "85",
                   "unit": "%",
-                  "period": "FY30",
+                  "period": "by end of FY30",
+                  "kind": "target"
+                },
+                {
+                  "label": "Lead distance",
+                  "value": "367",
+                  "unit": "km",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Clinker conversion ratio",
+                  "value": "1.48",
+                  "unit": "x",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Clinker conversion ratio target",
+                  "value": "1.54",
+                  "unit": "x",
+                  "period": "by FY28",
                   "kind": "target"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Capacity Expansion",
+                  "label": "Capacity growth trajectory",
                   "points": [
-                    "UltraTech crossed 200 million tons of cement production capacity in India, a first for any company outside of China.",
-                    "The company plans to add a further 37 million tons, reaching over 242.5 million tons by fiscal '28."
+                    "UltraTech crossed 200 million tons of cement production capacity in India — a first for any company in a single country outside China.",
+                    "Reached 100 million tons in 2019, added 50 million tons over 5 years to reach 150 million by 2024, then went from 150 to 200 million tons in less than 2 years — a full year ahead of the company's own targets.",
+                    "More than tripled capacity in a decade, from ~65 million tons in 2016 to 200 million tons today.",
+                    "Outside China, UltraTech is the largest cement company globally by sales volume and the only company anywhere with over 100 million tons of production capacity within a single country.",
+                    "Committed to add a further 37 million tons in a phased manner, taking total capacity over 242.5 million tons by FY28.",
+                    "Company has already begun charting its growth story beyond 240 million tons capacity, with further details to be shared next year; incremental capex beyond 240 million tons estimated at plus/minus INR15,000 crores."
+                  ]
+                },
+                {
+                  "label": "Green energy and fuel mix",
+                  "points": [
+                    "Renewable energy platform has been growing from strength to strength; ~43% of power needs currently met from green sources.",
+                    "Company committed to reaching ~85% of power requirements from green energy by end of FY30 and is confident of achieving this.",
+                    "On the fuel side, actively managing the mix by optimizing between petcoke, coal, alternative fuels, and increasing domestic coal share wherever possible.",
+                    "No new thermal power capacity being added; instead, higher levels of WHRS (waste heat recovery systems) are being added, along with tying up renewable energy, aided by grid availability at several locations."
+                  ]
+                },
+                {
+                  "label": "Logistics / lead distance",
+                  "points": [
+                    "Lead distance reduced to 367 km, aided by an ever-expanding bulk terminal network including the new Lucknow facility, helping reach customers faster and reduce overall costs."
+                  ]
+                },
+                {
+                  "label": "Clinker factor",
+                  "points": [
+                    "Clinker conversion ratio currently at 1.48x, targeted to reach 1.54x by fiscal '28.",
+                    "Company will always remain fully clinker-backed (maintaining historical hypothesis of 70% clinker backing) even as conversion ratio improves.",
+                    "Management declined to comment on industry-wide clinker conversion trends but noted UltraTech is structurally stronger than the rest of the industry across multiple metrics including EBITDA/ton and growth."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Regional notes",
+                  "points": [
+                    "Mumbai infrastructure spend of $60 billion cited as a structural demand driver going forward, with 2035 expected to represent a totally new phase for the city.",
+                    "Western region infra demand expected to turn 'darker green' (i.e., stronger) going forward given large infrastructure spend plans.",
+                    "India Cements' logistics efficiency set to improve now that a single (UltraTech) product ships from all 9 India Cements factories, versus multiple brands shipping earlier."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SUP",
+              "title": "Supply Chain & Operations",
+              "key_figures": [
+                {
+                  "label": "Fuel cost",
+                  "value": "1.77",
+                  "unit": "INR/kcal",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Fuel cost (projected)",
+                  "value": "1.8",
+                  "unit": "INR/kcal (max)",
+                  "period": "near-term projection",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Bag supplier count",
+                  "value": "150",
+                  "unit": "suppliers",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bag cost",
+                  "value": "9 to 15 (now ~13-14)",
+                  "unit": "INR/bag",
+                  "period": "recent months",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Sourcing and mitigation measures for West Asia crisis",
+                  "points": [
+                    "Company dispatches have not suffered at any location due to the conflict; bag availability has become expensive but has not been a crisis.",
+                    "Mitigation measures include diversifying procurement sources, identifying new sourcing opportunities, and entering long-term fuel contracts that are expected to be favorable going forward (unlike unfavorable long-term contracts over the last 2 years).",
+                    "~150 bag suppliers across the country provide sourcing resilience; high-volume customers like UltraTech get prioritized servicing from suppliers.",
+                    "Diesel price impact remains uncertain and unquantified; management states it will 'wait and watch'.",
+                    "Some ripples in fuel costs expected in July-September if pet coke prices sustain at elevated levels ($150-160), but company expects to manage better than industry peers due to supply contracts and domestic coal sourcing.",
+                    "Long-term fuel supply contracts and inventory/sourcing rotation are continuous and expected to persist as a mitigation lever.",
+                    "Bag cost increase from INR9 to INR15 per bag (delta of INR6) has already occurred; cost has since stabilized/slightly reduced to INR13-14 per bag.",
+                    "INR90 crore bag-cost hit in March cannot be annualized, as prices have since stabilized and volumes of alternate inventory/sources have been built up."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Premiumization and market positioning",
+                  "points": [
+                    "Blended cement share and premium portfolio contribution both moved higher during the quarter — a conscious, deliberate strategy going forward.",
+                    "UltraTech enjoys premium brand positioning, which has helped realizations especially post brand migration of acquired assets (India Cements, Kesoram).",
+                    "Cement industry has been relatively slower than other building material industries (steel, agri, PVC) in taking price hikes, attributed to industry fragmentation.",
+                    "UltraTech outperforming the rest of the industry in growth and EBITDA per ton, attributed to clinker conversion improvements (composite cement), RMC integration, and other operational efficiencies."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "India Cements legal/merger status",
+                  "points": [
+                    "Merger of India Cements into UltraTech not yet undertaken due to legacy, long-pending legal cases; management is working to resolve these before proceeding to next phase of integration, to avoid any risk to the main UltraTech Board/company.",
+                    "No specific timeline provided for full merger."
+                  ]
+                },
+                {
+                  "label": "RCB / balance sheet ring-fencing",
+                  "points": [
+                    "Management reaffirmed that UltraTech's balance sheet remains ring-fenced and not used to support other group entities (referencing prior Chairman statements made regarding Vodafone-Idea aspersions); no funds have moved from UltraTech's balance sheet for other purposes.",
+                    "Operating cash flow is committed to meeting UltraTech's own capex requirements (~INR10,000 crores/year for at least 4-5 years, ~INR50,000 crores cumulative) and rewarding shareholders."
+                  ]
+                },
+                {
+                  "label": "Adjacency/diversification stance",
+                  "points": [
+                    "Wire and cable business remains the sole non-cement adjacency investment; management stated no other building-material-adjacent investments are planned for the next 5 years."
                   ]
                 }
               ]
@@ -42542,10 +43633,34 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "West Asia Conflict Impact",
+                  "label": "West Asia conflict impact",
                   "points": [
-                    "The conflict in West Asia presents a headwind on fuel costs, packing bags, freight, and certain import-dependent supply chains.",
-                    "The situation is seen as a near-term cost moderator, not a structural demand reversal."
+                    "Conflict in West Asia is a real headwind on fuel costs, packing bags, freight, certain import-dependent supply chains, and near-term sentiment in some demand segments.",
+                    "Rising oil prices could lead to increases in domestic petrol/diesel prices.",
+                    "Government's monthly economic review for March '26 acknowledged the outlook has become slightly uncertain.",
+                    "Management characterizes the West Asia situation as a near-term cost moderator, not a structural demand reversal.",
+                    "Steel prices have seen volatility while cement prices have been largely stable (0-5% movement) over the last financial year."
+                  ]
+                },
+                {
+                  "label": "Currency / forex risk",
+                  "points": [
+                    "Rupee devaluation created a mark-to-market hit on $950 million of foreign-currency borrowings (fully hedged) due to accounting requirement at quarter-end rate (INR94.85/$ on 31 March vs. subsequent strengthening to below INR93), resulting in a noncash debit to EBITDA/P&L.",
+                    "Management is not factoring in a scenario of dollar reaching INR100, calling any such move a notional debit risk to the P&L."
+                  ]
+                },
+                {
+                  "label": "Input cost inflation",
+                  "points": [
+                    "Packaging (bag) costs rose sharply in March (INR9 to INR15/bag, later stabilizing to INR13-14).",
+                    "Diesel cost impact is unresolved and could surface in the coming months.",
+                    "Fuel costs could see 'some ripples' in July-September if elevated pet coke prices persist."
+                  ]
+                },
+                {
+                  "label": "Legal/legacy risk (India Cements)",
+                  "points": [
+                    "Long-pending legacy legal cases inherited with India Cements are delaying full merger; company avoiding taking risk with the main UltraTech Board while working to resolve them."
                   ]
                 }
               ]
@@ -42555,32 +43670,71 @@
               "title": "Guidance & Outlook",
               "key_figures": [
                 {
-                  "label": "Target clinker conversion ratio",
-                  "value": "1.54",
-                  "unit": "x",
-                  "period": "FY28",
-                  "kind": "target"
+                  "label": "Sustainable volume growth",
+                  "value": "7-8",
+                  "unit": "% per annum",
+                  "period": "FY27 and beyond",
+                  "kind": "guidance"
                 },
                 {
                   "label": "UltraTech volume growth target",
                   "value": "double-digit",
                   "unit": "%",
                   "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Annual growth capex",
+                  "value": "8,000-10,000",
+                  "unit": "INR crores",
+                  "period": "ongoing (through FY30-31)",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Net debt/EBITDA ceiling",
+                  "value": "<1",
+                  "unit": "x",
+                  "period": "ongoing",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "India Cements EBITDA/ton target",
+                  "value": "1,000+",
+                  "unit": "INR/ton",
+                  "period": "by FY28",
                   "kind": "target"
                 },
                 {
-                  "label": "Fuel cost expectation",
-                  "value": "1.8",
-                  "unit": "per kcal",
-                  "period": "Q1 FY27",
-                  "kind": "guidance"
+                  "label": "Cost efficiency target",
+                  "value": ">300",
+                  "unit": "INR/ton",
+                  "period": "by FY28",
+                  "kind": "target"
+                },
+                {
+                  "label": "Clinker conversion factor target",
+                  "value": "1.54",
+                  "unit": "x",
+                  "period": "by FY28",
+                  "kind": "target"
+                },
+                {
+                  "label": "Green power target",
+                  "value": "85",
+                  "unit": "%",
+                  "period": "by end FY30",
+                  "kind": "target"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Volume Growth Outlook",
+                  "label": "Outlook commentary",
                   "points": [
-                    "UltraTech expects a sustainable volume growth of 7% to 8% per annum, driven by India's urbanization and infrastructure commitments."
+                    "Structural growth drivers (urbanization, government infra commitment, PMAY housing targets, rising rural demand) remain firmly in place and undiluted by the West Asia crisis.",
+                    "Near-term environment complexities remain unpredictable ('nobody knows what will happen tomorrow'); management will 'wait and watch'.",
+                    "Fiscal '27 P&L expected to start reflecting integration/cost-efficiency benefits from India Cements and Kesoram investments.",
+                    "Company will maintain leverage below 1x net debt/EBITDA year after year even while meeting growth capex needs.",
+                    "Future capex pipeline is described as fully funded with the growth story intact."
                   ]
                 }
               ]
@@ -42588,36 +43742,108 @@
           ],
           "guidance_ledger": [
             {
-              "metric": "Volume growth",
-              "horizon": "FY27",
-              "statement": "We expect a sustainable volume growth of 7% to 8% per annum.",
-              "specificity": "vague",
+              "metric": "Total cement capacity",
+              "horizon": "FY28",
+              "statement": "Committed to add a further 37 million tons, which will take us over 242.5 million tons in a phased manner by fiscal '28.",
+              "specificity": "specific",
               "direction": "up",
               "status": "new"
             },
             {
-              "metric": "Total capacity",
-              "horizon": "FY28",
-              "statement": "We have committed to add a further 37 million tons, which will take us over 242.5 million tons in a phased manner by fiscal '28.",
+              "metric": "Sustainable volume growth",
+              "horizon": "FY27 and beyond",
+              "statement": "We expect a sustainable volume growth of 7% to 8% per annum.",
               "specificity": "specific",
               "direction": "up",
-              "status": "lowered"
+              "status": "new"
             },
             {
-              "metric": "Renewable energy share",
+              "metric": "UltraTech volume growth",
+              "horizon": "FY27",
+              "statement": "For fiscal '27, we would target double-digit growth.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Green power mix",
               "horizon": "FY30",
-              "statement": "We have committed to reach about 85% of our power requirements from green energy by the end of fiscal 2030.",
+              "statement": "We have committed to reach about 85% of our power requirements from green energy by the end of fiscal 2030, and we are very confident of reaching that position.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "raised"
+            },
+            {
+              "metric": "Clinker conversion ratio",
+              "horizon": "FY28",
+              "statement": "We have targeted to reach about 1.54x. That road map is already there... 1.54x is our target to reach by fiscal '28.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Cost efficiency improvement program",
+              "horizon": "FY28",
+              "statement": "We had committed INR300, because I'm keeping an emergency buffer in my pocket, but I think we will deliver higher than INR300 per ton by fiscal '28.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "India Cements EBITDA per ton",
+              "horizon": "FY28",
+              "statement": "This definitely is going to take us over INR1,000 per ton, as committed by the end of fiscal '28.",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
             },
             {
               "metric": "Net debt to EBITDA",
-              "horizon": "end of FY26",
-              "statement": "We will reach the mark of 1x and be in 0.8, 0.9x net debt EBITDA by the end of this fiscal year.",
+              "horizon": "ongoing",
+              "statement": "We'll maintain our leverage below 1x year after year after meeting our growth capex.",
               "specificity": "specific",
-              "direction": "down",
-              "status": "no_mention"
+              "direction": "flat",
+              "status": "achieved"
+            },
+            {
+              "metric": "Annual growth capex",
+              "horizon": "foreseeable future",
+              "statement": "We see a plan of investing around INR8,000 crores to INR10,000 crores every year for the foreseeable future.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Capacity beyond 240 million tons",
+              "horizon": "future",
+              "statement": "We have already started charting out our growth story beyond 240 million tons, and we'll come back to you next year... close to plus/minus INR15,000 crores to be spent.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Fuel cost per kcal",
+              "horizon": "Q1 FY27 (June quarter)",
+              "statement": "We were at INR1.77 per kcal, max it might go to INR1.8.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Dividend payout",
+              "horizon": "next year",
+              "statement": "Whether next year also, it will be the similar dividend, I am not the person to call that out. It depends on the OCF for the year... My guess is the direction is already visible.",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Industry demand growth",
+              "horizon": "FY26 full year",
+              "statement": "6.5% is what my colleagues tell me for the full year.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "achieved"
             },
             {
               "metric": "Clinker conversion factor",
@@ -42628,9 +43854,9 @@
               "status": "no_mention"
             },
             {
-              "metric": "Green power mix",
-              "horizon": "FY27",
-              "statement": "Our renewal energy has gone to almost 41% and is further likely to go to 60% going forward.",
+              "metric": "Total capacity",
+              "horizon": "FY26",
+              "statement": "We will complete or exit this financial year with 200 million tons of capacity under our belt.",
               "specificity": "specific",
               "direction": "up",
               "status": "no_mention"
@@ -42658,21 +43884,53 @@
               "specificity": "specific",
               "direction": "up",
               "status": "no_mention"
-            },
-            {
-              "metric": "Industry growth",
-              "horizon": "FY26",
-              "statement": "Industry growth expected to be 6-7% for the full year.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "no_mention"
             }
           ],
           "risk_register": [
             {
-              "risk": "West Asia conflict",
+              "risk": "West Asia (Middle East) conflict impacting fuel, bag, freight costs and import-dependent supply chains",
               "status": "new",
-              "note": "Presents a headwind on fuel costs, packing bags, freight, and certain import-dependent supply chains."
+              "note": "Real headwind on fuel costs, packing bags, freight; near-term sentiment impact in some demand segments; characterized as a cost moderator, not structural demand reversal."
+            },
+            {
+              "risk": "Rising oil prices leading to potential domestic petrol/diesel price increases",
+              "status": "new",
+              "note": "Government's monthly economic review for March '26 acknowledged outlook has become slightly uncertain."
+            },
+            {
+              "risk": "Rupee devaluation / forex mark-to-market impact on hedged foreign currency borrowings",
+              "status": "new",
+              "note": "$950 million of borrowings fully hedged but MTM accounting created a noncash EBITDA hit of INR120-130 crores (INR30/ton) due to rupee weakening to INR94.85/$ at quarter-end."
+            },
+            {
+              "risk": "Packaging (bag) cost inflation",
+              "status": "new",
+              "note": "Bag costs rose from INR9 to INR15 per bag in March (INR90 crore hit), since stabilized to INR13-14; company has ~150 suppliers to mitigate."
+            },
+            {
+              "risk": "Diesel cost uncertainty",
+              "status": "new",
+              "note": "Diesel impact unresolved; management awaiting developments, 'might surface its horns next month'."
+            },
+            {
+              "risk": "Fuel cost pressure from elevated pet coke prices persisting",
+              "status": "new",
+              "note": "Some ripples expected in July-September if pet coke prices sustain at $150-160; company believes it can manage better than industry via supply contracts and domestic coal."
+            },
+            {
+              "risk": "Legacy legal cases inherited with India Cements delaying merger",
+              "status": "new",
+              "note": "Long-pending legal issues; company working to resolve before proceeding with full merger integration."
+            },
+            {
+              "risk": "Industry fragmentation limiting pricing power versus other building material industries",
+              "status": "new",
+              "note": "Cement industry has struggled to take price hikes as aggressively as steel/agri/PVC due to fragmentation."
+            },
+            {
+              "risk": "Temporary regional demand softness",
+              "status": "new",
+              "note": "Slowdown in last 15 days attributed to excessive heat and Bengal/Tamil Nadu elections; management views this as temporary, not structural."
             },
             {
               "risk": "Cost increases in pet coke and coal",
@@ -42704,36 +43962,61 @@
             {
               "label": "Capacity expansion",
               "direction": "positive",
-              "note": "UltraTech crossed 200 million tons capacity and plans to reach 242.5 million tons by FY28.",
+              "note": "Crossed 200 million tons of capacity, a global first outside China; committed 37 million tons more to reach 242.5+ million tons by FY28.",
               "section_ref": "MFG"
-            },
-            {
-              "label": "Demand growth",
-              "direction": "positive",
-              "note": "Sustainable volume growth of 7% to 8% per annum expected, driven by India's urbanization and infrastructure commitments.",
-              "section_ref": "GUID"
-            },
-            {
-              "label": "Cost pressures",
-              "direction": "mixed",
-              "note": "West Asia conflict impacts fuel costs, packing bags, and freight, but UltraTech is positioned to manage these challenges.",
-              "section_ref": "RISK"
             },
             {
               "label": "Brand transition",
               "direction": "positive",
-              "note": "100% brand migration for India Cements and Kesoram completed, improving EBITDA per ton.",
+              "note": "100% brand migration completed for India Cements and Kesoram by end of March 2026, a quarter ahead of schedule, boosting realizations and efficiency.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Cost pressures",
+              "direction": "negative",
+              "note": "West Asia conflict driving up fuel, bag and freight costs; rupee devaluation caused a forex mark-to-market EBITDA hit; management confident of managing through via pricing and sourcing.",
+              "section_ref": "RISK"
+            },
+            {
+              "label": "Demand growth",
+              "direction": "positive",
+              "note": "Industry demand grew 6-7% in Q4 and ~6.5% for FY26; structural drivers (urbanization, infra, PMAY housing, rural demand) intact; UltraTech targets double-digit volume growth in FY27.",
+              "section_ref": "ORD"
+            },
+            {
+              "label": "Capital allocation / shareholder returns",
+              "direction": "positive",
+              "note": "Record dividend of INR240/share (2400%, 3x last year) proposed on strong balance sheet (net debt/EBITDA <1x) and rising operating cash flow, alongside continued INR8,000-10,000 crore annual growth capex.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Green energy transition",
+              "direction": "positive",
+              "note": "Green power share at 43% currently, targeted to reach 85% by end of FY30; no new thermal capacity being added.",
+              "section_ref": "MFG"
+            },
+            {
+              "label": "M&A integration (India Cements/Kesoram)",
+              "direction": "positive",
+              "note": "Acquired assets moving from integration drag to earnings contributor as brand migration, cost efficiency capex, and pricing improve EBITDA/ton toward >INR1,000 by FY28.",
               "section_ref": "SEG"
             }
           ],
           "key_takeaways": [
-            "UltraTech crossed 200 million tons of cement production capacity in India, a first for any company outside of China.",
-            "The company plans to add a further 37 million tons, reaching over 242.5 million tons by fiscal '28.",
-            "100% brand migration for India Cements and Kesoram was completed by March '26.",
-            "The conflict in West Asia presents a headwind on fuel costs, packing bags, freight, and certain import-dependent supply chains.",
-            "UltraTech expects a sustainable volume growth of 7% to 8% per annum, driven by India's urbanization and infrastructure commitments."
+            "UltraTech crossed 200 million tons of cement production capacity in India, a first for any company in a single country outside of China.",
+            "UltraTech is today the largest cement company in the world by sales volume outside of China, and the only cement company anywhere in the world to have over 100 million tons of production capacity within a single country.",
+            "Committed to add a further 37 million tons, which will take us over 242.5 million tons in a phased manner by fiscal '28.",
+            "Consolidated sales volumes has crossed a rocking 44 million tons this quarter; UltraTech as a brand year-on-year has grown 19%.",
+            "EBITDA per ton, excluding acquired assets, is at INR1,296 per ton for the quarter, up from INR1,225 in Q4 '25.",
+            "100% brand migration completed at the end of March '26 for both India Cements and Kesoram; India Cements EBITDA of INR497 per ton in Q4 '26 up from INR333 in Q2 and INR305 in Q3, and declared PAT of INR60 crores for the quarter, after a very long time.",
+            "Net debt-EBITDA of 0.94x at consolidated level and 0.92x at UltraTech India level; Board has recommended a dividend of INR240 a share for fiscal '26.",
+            "We expect a sustainable volume growth of 7% to 8% per annum; growth capex requirement is not shrinking, with a plan of investing around INR8,000 crores to INR10,000 crores every year for the foreseeable future."
           ],
-          "pressing_questions": []
+          "pressing_questions": [
+            "Sir, you also said that packing cost impact was felt only in March month... shall we assume that that's the run rate which will continue given there's no relief on packing?",
+            "Given some of the EBITDA of India Cements is getting booked in UltraTech standalone, your INR1,000 per ton guidance includes that one which is getting booked in UltraTech or it is pure India Cements EBITDA per ton, which will come purely through cost savings and all?",
+            "India Cements, you're doing the right things, when do we see the day when we actually merge it? I understand there are a few legal cases which are there. But any time lines over here?"
+          ]
         },
         {
           "company": "UltraTech Cement Ltd",
