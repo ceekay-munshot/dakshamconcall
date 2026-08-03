@@ -28,6 +28,15 @@ on:
         description: "Max companies this run (blank = no cap). Paces against Screener's 80-summaries/day cap; picks the least-recently-checked."
         required: false
         type: string
+      bedrock_model:
+        description: "Override the Claude model for this run only, e.g. anthropic.claude-sonnet-5 (blank = the default chain)"
+        required: false
+        type: string
+      force_rebuild:
+        description: "Re-classify quarters already stored instead of reusing them. Only for model/prompt comparisons — run it on a branch."
+        required: false
+        type: boolean
+        default: false
   schedule:
     # Daily refresh of stale tracked companies (03:30 IST ≈ 22:00 UTC).
     - cron: "0 22 * * *"
@@ -73,7 +82,7 @@ jobs:
         env:
           BEDROCK_API_KEY: ${{ secrets.BEDROCK_API_KEY }}
           BEDROCK_REGION: ${{ secrets.BEDROCK_REGION }}
-          BEDROCK_MODEL: ${{ secrets.BEDROCK_MODEL }}
+          BEDROCK_MODEL: ${{ github.event.inputs.bedrock_model || secrets.BEDROCK_MODEL }}
           LLM_PROVIDER: ${{ secrets.LLM_PROVIDER }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
@@ -92,8 +101,14 @@ jobs:
           # primary again by setting the LLM_PROVIDER secret to "openai".
           BEDROCK_API_KEY: ${{ secrets.BEDROCK_API_KEY }}
           BEDROCK_REGION: ${{ secrets.BEDROCK_REGION }} # optional; defaults to us-east-1
-          BEDROCK_MODEL: ${{ secrets.BEDROCK_MODEL }} # optional; defaults to the Opus 5 chain
+          # The run input wins over the secret, so a single A/B run can pin a
+          # different model without touching the stored configuration.
+          BEDROCK_MODEL: ${{ github.event.inputs.bedrock_model || secrets.BEDROCK_MODEL }}
           LLM_PROVIDER: ${{ secrets.LLM_PROVIDER }} # optional; blank = Bedrock first
+          # Compared as a STRING: github.event.inputs gives "true"/"false" even for
+          # a boolean input, and GitHub casts across types via number, so == true
+          # would be false forever and the flag would silently never apply.
+          FORCE_REBUILD: ${{ github.event.inputs.force_rebuild == 'true' && '1' || '' }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }} # optional; llm.mjs defaults to gpt-4o
           FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}

@@ -50,6 +50,12 @@ const PIPELINE_VERSION = 3;
 const DAILY_COMPANY_CAP = parseInt(process.env.DAILY_COMPANY_CAP || "", 10) || 20;
 // How far back the announcements feed is read (covers a weekend / a late filing).
 const DISCOVER_DAYS = parseInt(process.env.DISCOVER_DAYS || "", 10) || 2;
+// Re-classify quarters we already hold instead of reusing them. Off by default —
+// reuse is what stopped the pipeline re-spending on 77 unchanged quarters. Turn it
+// on to compare two models or two prompts on the SAME source: without it a re-run
+// reuses the stored answer and measures nothing. Run it on a branch, since it
+// spends Screener views and overwrites the quarters it rebuilds.
+const FORCE_REBUILD = process.env.FORCE_REBUILD === "1";
 
 const log = (...a) => console.log("[analyze]", ...a);
 
@@ -395,7 +401,7 @@ async function analyzeTicker(page, context, ticker, baseStore) {
   const classifiedNewestFirst = [];
   for (const q of chronological) {
     const prev = q.concall_date ? storedByMonth.get(q.concall_date.slice(0, 7)) : null;
-    if (prev && prev.source === "ai_summary" && prev.pipeline_version === PIPELINE_VERSION) {
+    if (!FORCE_REBUILD && prev && prev.source === "ai_summary" && prev.pipeline_version === PIPELINE_VERSION) {
       log(`reusing stored ${T} @ ${prev.concall_date} (unchanged — no LLM call)`);
       classifiedNewestFirst.unshift(prev);
       priorGuidance = prev.guidance_ledger || priorGuidance;
