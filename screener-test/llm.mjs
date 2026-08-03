@@ -46,14 +46,23 @@ export const PROVIDER =
 export const OPENAI_MODEL = process.env.OPENAI_MODEL || "gpt-4o";
 
 /**
- * Bedrock model IDs carry an `anthropic.` provider prefix. Opus 5 is the best
- * extractor but its Bedrock access is granted per-account, so if the account
- * cannot reach it we walk down this list once and stick with the first model
- * that answers. Set BEDROCK_MODEL to pin one explicitly.
+ * Bedrock model IDs carry an `anthropic.` provider prefix. Sonnet 5 leads on
+ * measurement, not on tier: re-running BPCL through both, Sonnet captured 100%
+ * of the numbers Opus 4.8 found on the AI summary (plus 4 more) in a third of
+ * the wall-clock time. That is the path this pipeline is on — the client's
+ * source of record is Screener's AI summary.
+ *
+ * The gap shows on long TRANSCRIPTS, where Sonnet found 86% of Opus's numbers.
+ * Transcripts are the fallback for a call Screener has not summarised yet, and
+ * mergeQuarters replaces them with the summary once it lands — so the weaker
+ * case is also the temporary one. If Screener stays slow to publish summaries,
+ * revisit this: set BEDROCK_MODEL to pin a different model, no code change.
+ *
+ * Opus 4.8 stays as the fallback for an account that cannot reach Sonnet.
  */
 const BEDROCK_MODEL_CHAIN = process.env.BEDROCK_MODEL
   ? [process.env.BEDROCK_MODEL]
-  : ["anthropic.claude-opus-5", "anthropic.claude-opus-4-8", "anthropic.claude-sonnet-5"];
+  : ["anthropic.claude-sonnet-5", "anthropic.claude-opus-4-8"];
 
 /** Claude in Amazon Bedrock region. Global endpoint; us-east-1 is the safe default. */
 const BEDROCK_REGION = process.env.BEDROCK_REGION || process.env.AWS_REGION || "us-east-1";
