@@ -50,6 +50,11 @@ const PIPELINE_VERSION = 3;
 const DAILY_COMPANY_CAP = parseInt(process.env.DAILY_COMPANY_CAP || "", 10) || 20;
 // How far back the announcements feed is read (covers a weekend / a late filing).
 const DISCOVER_DAYS = parseInt(process.env.DISCOVER_DAYS || "", 10) || 2;
+// How many days a company that produced nothing keeps being re-checked. Screener
+// publishes a call's summary or transcript some days after the call, so "nothing
+// there yet" is usually a matter of timing — but a ticker that genuinely never
+// files must not be retried forever, hence the ceiling.
+const RETRY_DAYS = parseInt(process.env.RETRY_DAYS || "", 10) || 5;
 // Re-classify quarters we already hold instead of reusing them. Off by default —
 // reuse is what stopped the pipeline re-spending on 77 unchanged quarters. Turn it
 // on to compare two models or two prompts on the SAME source: without it a re-run
@@ -357,7 +362,13 @@ async function analyzeTicker(page, context, ticker, baseStore) {
         status: "failed",
         finished_at: nowIso(),
         error: scrape.error,
-        message: `Couldn't fetch ${T}'s latest concall. ${scrape.error}`,
+        // Say what is actually true and what happens next. "Couldn't fetch"
+        // sounds like a broken scraper; the common case is that Screener has
+        // simply not published this call yet, and the company is re-checked
+        // automatically for the next few days (RETRY_DAYS).
+        message: /could not extract an AI summary or transcript/i.test(scrape.error || "")
+          ? `Screener has no AI summary and no transcript for ${T}'s latest concall yet. We'll keep checking — it appears here automatically once either is published.`
+          : `Couldn't fetch ${T}'s latest concall. ${scrape.error}`,
       });
       persistAndPush(`analyze: ${T} failed`);
       return "failed";
@@ -658,6 +669,8 @@ async function main() {
     let failedCount = 0;
     let attempts = 0;
     const untouched = [];
+    const failedTickers = []; // re-checked tomorrow — see RETRY_DAYS
+
     for (const t of tickers) {
       // Target met, or we have spent as many attempts as the quota allows: every
       // remaining candidate rolls forward untouched rather than being dropped.
@@ -669,7 +682,7 @@ async function main() {
       try {
         const outcome = await analyzeTicker(page, context, t, base);
         if (outcome === "added") addedCount++;
-        else if (outcome === "failed") failedCount++;
+        else if (outcome === "failed") { failedCount++; failedTickers.push(t.toUpperCase()); }
         if (outcome === "rate_limited") {
           // Every remaining company would hit the same cap and be rebuilt from
           // transcripts. Stop here so they keep their existing data intact.
@@ -684,6 +697,7 @@ async function main() {
         }
       } catch (err) {
         failedCount++;
+        failedTickers.push(t.toUpperCase());
         log(`ticker ${t} crashed:`, err.message);
         pending.jobs.set(t.toUpperCase(), {
           status: "failed",
@@ -714,8 +728,29 @@ async function main() {
       // not from planDay's up-front guess, so a company promoted mid-run to
       // replace a failure isn't also queued for tomorrow.
       if (queueDate) {
-        pending.queue.pending = untouched;
-        if (pending.queue.stats) pending.queue.stats.pending_tomorrow = untouched.length;
+        // Re-check what produced nothing. "No summary and no transcript" almost
+        // always means Screener has not published yet, not that the company is
+        // uninteresting — and until now a failure was simply dropped, so a call
+        // that appeared a day later was never picked up unless the announcements
+        // feed happened to mention it again. Count the tries so a ticker that
+        // never yields anything stops after RETRY_DAYS instead of retrying for
+        // ever.
+        const tries = { ...(base.queue?.date ? base.queue.retries || {} : {}) };
+        for (const t of failedTickers) tries[t] = (tries[t] || 0) + 1;
+        for (const t of [...pending.tearsheets.keys()]) delete tries[t]; // succeeded — forget it
+        const retriable = failedTickers.filter((t) => (tries[t] || 0) <= RETRY_DAYS);
+        const gaveUp = failedTickers.filter((t) => (tries[t] || 0) > RETRY_DAYS);
+        for (const t of gaveUp) {
+          delete tries[t];
+          log(`giving up on ${t} after ${RETRY_DAYS} days with nothing on Screener`);
+        }
+        const seenNext = new Set();
+        pending.queue.pending = [...untouched, ...retriable].filter(
+          (t) => t && !seenNext.has(t) && seenNext.add(t)
+        );
+        pending.queue.retries = tries;
+        if (pending.queue.stats) pending.queue.stats.pending_tomorrow = pending.queue.pending.length;
+        if (retriable.length) log(`re-queued for tomorrow: ${retriable.join(", ")}`);
       }
       log(
         `queue: ${addedCount} added, ${failedCount} failed, ${attempted} attempted, ` +

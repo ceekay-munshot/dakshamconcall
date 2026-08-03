@@ -2573,4 +2573,8 @@ tr.fresh {
 .intake-stat.is-done b { color: var(--ok); }
 .intake-stat.is-wait b { color: var(--warn); }
 .intake-stat.is-fail b { color: var(--err); }
+/* A tear sheet with no earlier concall keeps the toggle visible but inert —
+   see the comment in app.js sectionsHtml. */
+.ts-mode:disabled { opacity: .45; cursor: default; }
+.ts-mode:disabled:hover { background: transparent; }
 @media (max-width: 560px) { .intake { flex-wrap: wrap; } .intake-stats { width: 100%; } }

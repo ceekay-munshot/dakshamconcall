@@ -1456,19 +1456,26 @@ function sectionsHtml(sections, sourceUrl, comp, mode = "single") {
   if (!list.length) return "";
   // Two views only: the latest call on its own, or the latest against the one
   // before it. Older quarters stay stored but never reach the dashboard —
-  // see DISPLAY_QUARTERS. Toggle appears only when there is a previous call.
+  // see DISPLAY_QUARTERS.
+  //
+  // With no previous call the toggle is shown DISABLED rather than hidden. A
+  // missing control reads as a broken tear sheet; a disabled one with a reason
+  // answers the question ("why can I compare some companies and not this one?")
+  // without anyone having to ask.
   const nQ = (comp?.quarters || []).length;
-  const toggle =
-    nQ > 1
-      ? `<div class="ts-modes" role="tablist" aria-label="Key figures range">
-          <button class="ts-mode ${mode !== "multi" ? "on" : ""}" data-mode="single" role="tab" aria-selected="${mode !== "multi"}">This concall</button>
-          <button class="ts-mode ${mode === "multi" ? "on" : ""}" data-mode="multi" role="tab" aria-selected="${mode === "multi"}">vs previous</button>
-        </div>`
-      : "";
+  const hasPrev = nQ > 1;
+  const toggle = `<div class="ts-modes" role="tablist" aria-label="Key figures range">
+          <button class="ts-mode ${mode !== "multi" || !hasPrev ? "on" : ""}" data-mode="single" role="tab" aria-selected="${mode !== "multi"}">This concall</button>
+          <button class="ts-mode ${mode === "multi" && hasPrev ? "on" : ""}" data-mode="multi" role="tab"
+            aria-selected="${mode === "multi" && hasPrev}"${hasPrev ? "" : ' disabled title="Screener has no earlier concall for this company yet"'}>vs previous</button>
+        </div>`;
+  const prevNote = hasPrev
+    ? ""
+    : `<div class="ts-note"><i data-lucide="info" class="i16"></i> Screener doesn't have an earlier concall for this company yet — it appears here automatically once published.</div>`;
   const head = `<div class="band-title band-title-row"><span class="bt-label"><i data-lucide="layout-grid" class="i16"></i> The 11-Section Tear Sheet</span>${toggle}</div>`;
   // One shared "seen" set across sections so a repeated explainer point drops.
   const seen = new Set();
-  return head + `<div class="ts-sections">${list.map((s) => sectionCardHtml(s, sourceUrl, comp, mode, seen)).join("")}</div>`;
+  return head + prevNote + `<div class="ts-sections">${list.map((s) => sectionCardHtml(s, sourceUrl, comp, hasPrev ? mode : "single", seen)).join("")}</div>`;
 }
 
 /** Treat empty / literal "null"/"undefined" strings as absent (model artifacts). */
