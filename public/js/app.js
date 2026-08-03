@@ -114,6 +114,7 @@ const state = {
   boardRows: [], // done-only rows on the board (source for feed search/paging)
   feedShown: 5, // visible feed rows (grows +5 via "show more")
   feedQuery: "", // feed table search filter
+  feedRange: "all", // concall recency filter: all | today | week | month | quarter
   pendingAnalyze: null,
   sheetMode: "single", // tear-sheet key figures: "single" (latest) | "multi" (see DISPLAY_QUARTERS)
 };
@@ -761,16 +762,26 @@ function renderFeed(rows) {
 
   // Filter by the table search, then reveal in pages of 5 (no long scroll).
   const q = (state.feedQuery || "").toLowerCase().trim();
+  const range = state.feedRange || "all";
+  // Recency first, then text — the counts beside each chip describe the board,
+  // so they must not be narrowed by whatever is typed in the search box.
+  const inWindow = rows.filter((r) => inRange(r.concallDate, range));
   const filtered = q
-    ? rows.filter((r) => `${r.name} ${r.ticker} ${r.industry || ""}`.toLowerCase().includes(q))
-    : rows;
+    ? inWindow.filter((r) => `${r.name} ${r.ticker} ${r.industry || ""}`.toLowerCase().includes(q))
+    : inWindow;
   const shown = Math.max(5, Math.min(state.feedShown || 5, filtered.length));
   const visible = filtered.slice(0, shown);
   const remaining = filtered.length - visible.length;
 
   const bodyHtml = visible.length
     ? visible.map((r) => feedRowHtml(r)).join("")
-    : `<tr><td colspan="5" class="feed-nomatch">No companies match “${escapeHtml(state.feedQuery)}”.</td></tr>`;
+    : `<tr><td colspan="5" class="feed-nomatch">${
+        q
+          ? `No companies match “${escapeHtml(state.feedQuery)}”${
+              range === "all" ? "" : ` in ${rangeLabel(range).toLowerCase()}`
+            }.`
+          : `No concalls ${rangeLabel(range).toLowerCase()}.`
+      }</td></tr>`;
 
   container.innerHTML = `
     <div class="feed-toolbar">
@@ -779,6 +790,14 @@ function renderFeed(rows) {
         <input id="feedSearch" type="search" name="daksham-feed-filter" autocomplete="off"
           autocorrect="off" autocapitalize="off" spellcheck="false" data-1p-ignore data-lpignore="true"
           placeholder="Search concalls — company, ticker or sector…" value="${escapeHtml(state.feedQuery || "")}" />
+      </div>
+      <div class="feed-ranges" role="tablist" aria-label="Concall period">
+        ${FEED_RANGES.map(([key, label]) => {
+          const n = rows.filter((r) => inRange(r.concallDate, key)).length;
+          const on = key === range;
+          return `<button class="feed-range ${on ? "on" : ""}" data-range="${key}" role="tab"
+            aria-selected="${on}"${n ? "" : " disabled"}>${label}<span class="fr-n">${n}</span></button>`;
+        }).join("")}
       </div>
       <span class="feed-count">${filtered.length} ${filtered.length === 1 ? "company" : "companies"}</span>
     </div>
@@ -838,6 +857,13 @@ function renderFeed(rows) {
       search.setSelectionRange(v.length, v.length);
     }
   }
+  qsa(".feed-range", container).forEach((btn) =>
+    btn.addEventListener("click", () => {
+      state.feedRange = btn.getAttribute("data-range");
+      state.feedShown = 5; // a new window starts at the top
+      renderFeed(state.boardRows);
+    })
+  );
   const more = qs("#feedMore");
   if (more) more.addEventListener("click", () => { state.feedShown = shown + 5; renderFeed(state.boardRows); });
   const less = qs("#feedLess");
@@ -1024,6 +1050,58 @@ function inCurrentQuarter(iso) {
     Math.floor(d.getMonth() / 3) === Math.floor(now.getMonth() / 3) &&
     d.getFullYear() === now.getFullYear()
   );
+}
+
+/* ---- Concall recency filter ---------------------------------------------
+   "What reported today / this week / this month / this quarter", read off the
+   concall date Screener gave us. Each range is the CALENDAR period containing
+   today, not a rolling window back from now — "this week" on a Tuesday means
+   this Mon-Sun, which is what someone scanning a board expects.              */
+export const FEED_RANGES = [
+  ["all", "All"],
+  ["today", "Today"],
+  ["week", "This week"],
+  ["month", "This month"],
+  ["quarter", "This quarter"],
+];
+
+/** Parse YYYY-MM-DD into a LOCAL midnight Date. `new Date("2026-07-01")` would
+ *  parse as UTC and can land on the previous day west of Greenwich, which would
+ *  quietly drop a company from "Today". */
+export function localDay(iso) {
+  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(String(iso || ""));
+  return m ? new Date(+m[1], +m[2] - 1, +m[3]) : null;
+}
+
+export const rangeLabel = (key) =>
+  (FEED_RANGES.find(([k]) => k === key) || [, "All"])[1];
+
+export function inRange(iso, range, now = new Date()) {
+  if (!range || range === "all") return true;
+  const d = localDay(iso);
+  if (!d) return false; // no known concall date -> not in any dated range
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  switch (range) {
+    case "today":
+      return d.getTime() === today.getTime();
+    case "week": {
+      // Monday-start week (Indian convention); getDay() is Sunday-start.
+      const monday = new Date(today);
+      monday.setDate(today.getDate() - ((today.getDay() + 6) % 7));
+      const sunday = new Date(monday);
+      sunday.setDate(monday.getDate() + 6);
+      return d >= monday && d <= sunday;
+    }
+    case "month":
+      return d.getFullYear() === today.getFullYear() && d.getMonth() === today.getMonth();
+    case "quarter":
+      return (
+        d.getFullYear() === today.getFullYear() &&
+        Math.floor(d.getMonth() / 3) === Math.floor(today.getMonth() / 3)
+      );
+    default:
+      return true;
+  }
 }
 
 /* ---- Sector donut (ECharts) ---- */
