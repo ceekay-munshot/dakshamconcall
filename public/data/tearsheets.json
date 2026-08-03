@@ -5,7 +5,7 @@
       "ticker": "RELIANCE",
       "industry": "Refineries & Marketing",
       "country": "India",
-      "checked_at": "2026-07-30T05:16:36.745Z",
+      "checked_at": "2026-08-03T13:36:36.111Z",
       "quarters": [
         {
           "company": "Reliance Industries Ltd",
@@ -15,60 +15,110 @@
           "concall_date": "2026-07-01",
           "source": "ai_summary",
           "source_url": "https://www.screener.in/concalls/summary/23248165/",
-          "model": "gpt-4o",
-          "generated_at": "2026-07-30T05:16:32.462Z",
-          "summary": "Reliance Industries Ltd anticipates continued growth in its consumer businesses and digital services, while navigating geopolitical and market volatility in its energy and petrochemical segments.",
+          "model": "anthropic.claude-sonnet-5",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-03T13:30:01.172Z",
+          "summary": "Q1 FY26-27 was framed by management as an \"extraordinary\" quarter due to macro volatility, energy market shock and supply chain dislocation, met with strong operational agility. Consolidated revenue grew 25% YoY (oil-price led, with Jio +12% and Retail ~+12% also contributing). Excluding last year's Rs. 8,900 Cr Asian Paints gain, EBITDA grew 10% YoY to over Rs. 54,000 Cr and PAT grew 6% to ~Rs. 23,200 Cr, with consumer businesses back to ~50% of overall mix. O2C delivered windfall spreads but heavy friction costs muted margin expansion despite RIL maintaining near-full refinery runs amid a regional logistics/availability crisis triggered by the Strait of Hormuz closure. Petrochem benefited from a widening ethane-vs-naphtha advantage even as polymer demand fell 22%. E&P saw KGD6 decline managed better than expected while CBM turned into a growth driver. Jio scaled 5G/FWA/digital services strongly, though PAT was pressured by a shift from capitalized to expensed interest post 5G build completion. Retail deliberately traded near-term margin for digital/quick-commerce scale under a three-year roadmap, and RCPL/JioStar continued rapid scale-up with RCPL EBITDA at breakeven. Forward commentary on O2C profitability remains non-committal given geopolitical volatility, though management maintains confidence in RIL's structural positioning.",
           "sections": [
             {
               "id": "FIN",
-              "title": "Financial Performance",
+              "title": "Consolidated Financial Performance",
               "key_figures": [
                 {
-                  "label": "Revenue growth",
-                  "value": "25%",
+                  "label": "Revenue growth YoY",
+                  "value": "25",
                   "unit": "%",
-                  "period": "YoY",
-                  "kind": "reported"
-                },
-                {
-                  "label": "EBITDA",
-                  "value": "54,000",
-                  "unit": "Cr",
                   "period": "Q1 FY26-27",
                   "kind": "reported"
                 },
                 {
-                  "label": "PAT",
-                  "value": "23,200",
-                  "unit": "Cr",
+                  "label": "Asian Paints gain (prior year, excluded for comparability)",
+                  "value": "8,900",
+                  "unit": "Rs. Crores",
+                  "period": "Q1 FY25-26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA (ex Asian Paints gain)",
+                  "value": ">54,000",
+                  "unit": "Rs. Crores",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA growth (ex Asian Paints gain)",
+                  "value": "10",
+                  "unit": "%",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT (ex Asian Paints gain)",
+                  "value": "~23,200",
+                  "unit": "Rs. Crores",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT growth (ex Asian Paints gain)",
+                  "value": "6",
+                  "unit": "%",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consumer businesses share of overall mix",
+                  "value": "~50",
+                  "unit": "%",
                   "period": "Q1 FY26-27",
                   "kind": "reported"
                 },
                 {
                   "label": "Net debt",
-                  "value": "1.23",
-                  "unit": "lakh Cr",
+                  "value": "~1.23 lakh",
+                  "unit": "Rs. Crores",
                   "period": "Q1 FY26-27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Capex",
-                  "value": "39,000",
-                  "unit": "Cr",
+                  "label": "Q1 capex",
+                  "value": "~39,000",
+                  "unit": "Rs. Crores",
                   "period": "Q1 FY26-27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Finance cost increase",
-                  "value": "19%",
-                  "unit": null,
+                  "label": "Finance cost growth",
+                  "value": "19",
+                  "unit": "%",
                   "period": "Q1 FY26-27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Depreciation increase",
-                  "value": "9%",
-                  "unit": null,
+                  "label": "Depreciation growth",
+                  "value": "9",
+                  "unit": "%",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Jio asset capitalization",
+                  "value": "more than a lakh crore",
+                  "unit": "Rs.",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Jio revenue growth YoY",
+                  "value": "12",
+                  "unit": "%",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Retail revenue growth YoY",
+                  "value": "~12",
+                  "unit": "%",
                   "period": "Q1 FY26-27",
                   "kind": "reported"
                 },
@@ -89,216 +139,990 @@
               ],
               "subsections": [
                 {
+                  "label": "Revenue drivers",
+                  "points": [
+                    "Revenue growth was primarily oil-price led, but Jio (+12%) and Retail (~+12%) also contributed, i.e., not solely O2C-driven."
+                  ]
+                },
+                {
                   "label": "Balance sheet/cash flow",
                   "points": [
-                    "Capex funded by cash profit.",
-                    "Net debt slightly lower QoQ.",
-                    "Moody’s upgraded to Baa1; S&P A-."
+                    "Capex was funded by cash profit, described as 'cash profit... really funding the overall capex.'",
+                    "Net debt was slightly lower QoQ at ~Rs. 1.23 lakh Cr."
+                  ]
+                },
+                {
+                  "label": "Ratings tailwind",
+                  "points": [
+                    "Moody's upgraded RIL to Baa1.",
+                    "S&P rating at A-."
                   ]
                 },
                 {
                   "label": "Cost line movement",
                   "points": [
-                    "Finance cost +19% and depreciation +9% due to Jio capitalization."
+                    "Finance cost (+19%) and depreciation (+9%) increases were explicitly tied to Jio capitalization: more than a lakh crore of assets were capitalized, so interest on those assets now flows through the P&L instead of being capitalized."
                   ]
                 }
               ]
             },
             {
-              "id": "ORD",
-              "title": "Order Book & Demand",
+              "id": "SEG",
+              "title": "Oil-to-Chemicals (Refining & Marketing + Petrochemicals)",
               "key_figures": [
                 {
-                  "label": "Gasoline crack expansion",
-                  "value": "$10→$26/bbl",
-                  "unit": null,
+                  "label": "O2C revenue growth YoY",
+                  "value": "30",
+                  "unit": "%",
                   "period": "Q1 FY26-27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Gasoil crack expansion",
-                  "value": "$16→$63",
-                  "unit": null,
+                  "label": "O2C EBITDA growth YoY",
+                  "value": "17",
+                  "unit": "%",
                   "period": "Q1 FY26-27",
                   "kind": "reported"
                 },
                 {
-                  "label": "ATF crack expansion",
-                  "value": "$14→$62",
-                  "unit": null,
+                  "label": "O2C EBITDA",
+                  "value": "~17,000",
+                  "unit": "Rs. Crores",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "RIL refinery throughput",
+                  "value": "~96–97",
+                  "unit": "%",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Rest of Asia refinery run decline",
+                  "value": "15–20",
+                  "unit": "%",
                   "period": "Q1 FY26-27",
                   "kind": "reported"
                 },
                 {
                   "label": "Middle East production decline",
-                  "value": "12 million bpd",
+                  "value": "~12 million",
+                  "unit": "bpd",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Crude/freight premium (shock cost)",
+                  "value": "close to $20",
+                  "unit": "$/barrel",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Freight rate increase",
+                  "value": "10x",
                   "unit": null,
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Insurance cost increase",
+                  "value": "multiples",
+                  "unit": null,
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "LPG production increase",
+                  "value": "almost fourfold",
+                  "unit": null,
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Production meant for sale reduction (planned turnaround)",
+                  "value": "10",
+                  "unit": "%",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gasoline crack",
+                  "value": "$10 → $26",
+                  "unit": "$/bbl",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gasoil crack",
+                  "value": "$16 → $63",
+                  "unit": "$/bbl",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ATF crack",
+                  "value": "$14 → $62",
+                  "unit": "$/bbl",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Russia refining capacity lost",
+                  "value": "more than 40",
+                  "unit": "%",
                   "period": "Q1 FY26-27",
                   "kind": "reported"
                 },
                 {
                   "label": "Naphtha price increase",
-                  "value": "+61% to $903/ton",
-                  "unit": null,
+                  "value": "61",
+                  "unit": "%",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Naphtha price",
+                  "value": "$903 (peaked >$1,000)",
+                  "unit": "$/ton",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Naphtha premium",
+                  "value": "~$100",
+                  "unit": "$/ton",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PVC delta decline",
+                  "value": "~10",
+                  "unit": "%",
                   "period": "Q1 FY26-27",
                   "kind": "reported"
                 },
                 {
                   "label": "Polymer demand decline",
-                  "value": "22%",
-                  "unit": null,
+                  "value": "22",
+                  "unit": "%",
                   "period": "Q1 FY26-27",
                   "kind": "reported"
                 },
                 {
-                  "label": "KGD6 ceiling price",
-                  "value": "$8.9",
-                  "unit": null,
+                  "label": "Ethylene feed from ethane",
+                  "value": "~70",
+                  "unit": "%",
                   "period": "Q1 FY26-27",
                   "kind": "reported"
                 },
                 {
-                  "label": "KGD6 expected ceiling price",
-                  "value": "~$9.9",
-                  "unit": "2H FY26-27",
+                  "label": "Ethane availability reduction (Suez rerouting)",
+                  "value": "~7–8",
+                  "unit": "%",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Designed ethane capacity",
+                  "value": "~1.6",
+                  "unit": "mtpa",
                   "period": null,
-                  "kind": "guidance"
-                },
-                {
-                  "label": "Condensate realizations",
-                  "value": "~$107/bbl",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
                   "kind": "reported"
                 },
                 {
-                  "label": "CBM production",
-                  "value": "1 million standard cubic meters of gas",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "KGD6 ceiling price reduction",
-                  "value": "$1.14",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Ethane availability reduction",
-                  "value": "~7–8%",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Naphtha peak price",
-                  "value": ">$1,000/ton",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": []
-            },
-            {
-              "id": "SEG",
-              "title": "Segment & Product Performance",
-              "key_figures": [
-                {
-                  "label": "O2C revenue growth",
-                  "value": "30%",
+                  "label": "Ethane + ROGC share of ethylene feed",
+                  "value": "~70",
                   "unit": "%",
-                  "period": "YoY",
-                  "kind": "reported"
-                },
-                {
-                  "label": "O2C EBITDA",
-                  "value": "17,000",
-                  "unit": "Cr",
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Jio Platforms revenue",
-                  "value": "39,173",
-                  "unit": "Cr",
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Jio Platforms EBITDA",
-                  "value": "20,865",
-                  "unit": "Cr",
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Jio Platforms margin",
-                  "value": "53.3",
-                  "unit": "%",
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Reliance Retail revenue",
-                  "value": "90,000",
-                  "unit": "Cr",
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Reliance Retail EBITDA",
-                  "value": "6,309",
-                  "unit": "Cr",
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "RCPL revenue",
-                  "value": "8,600",
-                  "unit": "Cr",
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "JioStar revenue",
-                  "value": "10,946",
-                  "unit": "Cr",
                   "period": "Q1 FY26-27",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Oil-to-Chemicals (Refining & Marketing + Petrochem)",
+                  "label": "Reported outcome and key offsets",
                   "points": [
-                    "Headline cracks/deltas overstate realizable economics due to shock costs.",
-                    "RIL maintained ~96–97% throughput despite logistics/availability crisis.",
-                    "Middle East production fell by about 12 million bpd.",
-                    "Crude diversification and trade/logistics optimization were key mitigation actions.",
-                    "SAED drag and domestic under-recoveries impacted performance.",
-                    "LPG production increased fourfold, affecting petchem feed slate."
+                    "Management emphasized that headline cracks/deltas overstate realizable economics due to shock costs: huge premiums close to $20 a barrel, freight rate up 10x, insurance costs also up multiples.",
+                    "This explains why EBITDA margin did not expand in line with cracks."
                   ]
                 },
                 {
-                  "label": "Jio Platforms",
+                  "label": "Refining: logistics/availability crisis",
                   "points": [
-                    "Subscribers 533m; net add 35.2m in 12 months.",
-                    "5G users 285m (add 73m).",
-                    "Home broadband 28.6m, with 14m AirFiber.",
-                    "Digital services revenue growth ~20% YoY.",
-                    "Enterprise push is managed services-led."
+                    "Central operating achievement: while the rest of Asia had runs down 15% to 20%, RIL maintained ~96–97% throughput and ran secondary units at high throughputs.",
+                    "Crisis stemmed from Strait of Hormuz (SOH) closure and renewed hostilities; Middle East output fell materially (~12 million bpd)."
                   ]
                 },
                 {
-                  "label": "Reliance Retail",
+                  "label": "RIL mitigation actions",
                   "points": [
-                    "Operating metrics show a digital mix shift with lower average ticket as digital scales.",
-                    "Grocery digital orders +116% YoY.",
-                    "EBITDA margin 7.9% (‑80 bps YoY), flat sequentially.",
-                    "Three-year roadmap focuses on digital commerce and hyperlocal delivery infrastructure."
+                    "Crude diversification: sourced from Latin America, US, Canada, Africa, Russia, plus opportunistic return to discounted AG crudes.",
+                    "Trade/logistics optimization: chartered vessels and rerouted traffic back from Europe to deficit markets in Asia and Australia, meeting contractual commitments but flexing where possible.",
+                    "Energy inputs: gas diversion to priority sectors forced more liquids use; however, RIL could maximize its gasifier throughput to reduce reliance on gas."
+                  ]
+                },
+                {
+                  "label": "Headwinds called out explicitly",
+                  "points": [
+                    "SAED drag and domestic under-recoveries (including sales to PSUs).",
+                    "Planned turnaround lowered production meant for sale by 10%.",
+                    "LPG diversion under government direction: RIL increased LPG production almost fourfold, reducing alkylate/high-grade gasoline component exports and impacting petchem feed slate."
+                  ]
+                },
+                {
+                  "label": "Product cracks/demand signals",
+                  "points": [
+                    "Crack expansion was extreme across gasoline, gasoil and ATF.",
+                    "Asia-Pacific and Africa curtailed buying due to high prices; India demand stayed reasonably strong and insulated from the price rise."
+                  ]
+                },
+                {
+                  "label": "Forward view on cracks",
+                  "points": [
+                    "Structural support for cracks from lost capacity (Middle East outages) and Russia, which has lost more than 40% of its capacity due to bans on gasoline, jet and diesel.",
+                    "Management refused near-term profitability calls due to renewed SOH volatility, calling such calls 'too hypothetical.'"
+                  ]
+                },
+                {
+                  "label": "Petrochem: ethane advantage amplified",
+                  "points": [
+                    "Quarter described as an 'absolute roller coaster' with crude changing 5% to 10% in a day.",
+                    "Naphtha price spike plus freight spikes pushed many regional crackers to under-run."
+                  ]
+                },
+                {
+                  "label": "Supply shock effects",
+                  "points": [
+                    "Middle East PE supplies blocked, causing PE deltas to surge; PP firm; PVC delta fell ~10% due to China coal-based PVC running harder.",
+                    "Polyester: China constrained by crude availability prioritizing fuels; deltas rose despite MEG delta declining."
+                  ]
+                },
+                {
+                  "label": "Demand shock",
+                  "points": [
+                    "Polymer demand was down 22%.",
+                    "Polyester downstream also hit by gas curtailment and labor disruption, described as a 'mini exodus' from Surat."
+                  ]
+                },
+                {
+                  "label": "RIL's structural edge",
+                  "points": [
+                    "Almost 70% of ethylene feed is ethane, with ethane cheaper (US associated gas) while oil rose, creating a widening ethane vs naphtha cracking advantage."
+                  ]
+                },
+                {
+                  "label": "Ethane logistics",
+                  "points": [
+                    "Suez rerouting previously reduced ethane availability by ~7–8% vs designed ~1.6 mtpa capacity.",
+                    "New VLECs: first ship delivered and loading; next two due in coming months; with all three, ethane availability will be substantially higher, and ethane/ROGC share will rise a little more from current levels.",
+                    "Current ethylene feed mix: ethane and ROGC together constitute about 70% of ethylene feed."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Exploration & Production (KGD6 and CBM)",
+              "key_figures": [
+                {
+                  "label": "E&P revenue growth YoY",
+                  "value": "3.2",
+                  "unit": "%",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "CBM production",
+                  "value": "crossed 1 million standard cubic meters of gas",
+                  "unit": null,
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Condensate realization",
+                  "value": "~107",
+                  "unit": "$/bbl",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "KGD6 ceiling price (current)",
+                  "value": "8.9",
+                  "unit": "$",
+                  "period": "current half",
+                  "kind": "reported"
+                },
+                {
+                  "label": "KGD6 ceiling price change",
+                  "value": "down 1.14",
+                  "unit": "$",
+                  "period": "vs previous half",
+                  "kind": "reported"
+                },
+                {
+                  "label": "KGD6 ceiling price (expected)",
+                  "value": "~9.9",
+                  "unit": "$",
+                  "period": "2H FY26-27",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Segment performance",
+                  "points": [
+                    "EBITDA was almost flat/slightly lower at segment level per CFO.",
+                    "KGD6: lower production and lower price realization due to ceiling price, but decline was lower than expected.",
+                    "CBM: described as a 'turnaround story' with better realizations since there is no ceiling price applicable.",
+                    "Condensate realizations were high, cited as a key driver."
+                  ]
+                },
+                {
+                  "label": "Activity plans",
+                  "points": [
+                    "Rig arriving next month for KG basin exploration, followed by a multi-year, multi-well campaign to offset natural decline, including additional opportunities within existing fields.",
+                    "CBM: continuing the '40-well program' and multilaterals across both blocks."
+                  ]
+                },
+                {
+                  "label": "Gas market context",
+                  "points": [
+                    "Gas prices remain elevated vs pre-war levels.",
+                    "Government prioritization circular for PSC gas has been 'rolled back.'"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Jio Platforms",
+              "key_figures": [
+                {
+                  "label": "Subscribers",
+                  "value": "533",
+                  "unit": "million",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net subscriber adds",
+                  "value": "35.2",
+                  "unit": "million",
+                  "period": "12 months",
+                  "kind": "reported"
+                },
+                {
+                  "label": "5G users",
+                  "value": "285",
+                  "unit": "million",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "5G user adds",
+                  "value": "73",
+                  "unit": "million",
+                  "period": "12 months",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Home broadband subscribers",
+                  "value": "28.6",
+                  "unit": "million",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "AirFiber subscribers",
+                  "value": "14",
+                  "unit": "million",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "JPL Revenue",
+                  "value": "39,173",
+                  "unit": "Rs. Crores",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "JPL Revenue growth",
+                  "value": "11.8",
+                  "unit": "%",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "JPL EBITDA",
+                  "value": "20,865",
+                  "unit": "Rs. Crores",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "JPL EBITDA growth",
+                  "value": "15.1",
+                  "unit": "%",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "JPL EBITDA margin",
+                  "value": "53.3",
+                  "unit": "%",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "JPL EBITDA margin change",
+                  "value": "+150",
+                  "unit": "bps",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Data usage",
+                  "value": "69.4",
+                  "unit": "exabytes",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Data usage growth",
+                  "value": "27",
+                  "unit": "%",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Per-capita data usage",
+                  "value": "43.7",
+                  "unit": "GB/user/month",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ARPU",
+                  "value": "215.6",
+                  "unit": "Rs.",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ARPU growth",
+                  "value": "+7",
+                  "unit": "Rs. YoY",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Digital services revenue growth",
+                  "value": "~20",
+                  "unit": "% YoY",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "FWA market share of net adds",
+                  "value": "78",
+                  "unit": "%",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Patent count",
+                  "value": "~4,500",
+                  "unit": "patents",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "JPL PAT",
+                  "value": "764",
+                  "unit": "Rs. Crores",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Jamnagar data center project capacity",
+                  "value": "168",
+                  "unit": "MW",
+                  "period": null,
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Scale and financials",
+                  "points": [
+                    "Home broadband growth includes AirFiber, with 'half' of growth coming through JioAirFiber.",
+                    "5G data traffic is now one-and-a-half times the 4G data traffic.",
+                    "Management denied underlying ARPU pressure; noted home promotions and clarified that home ARPU isn't necessarily higher than mobility ARPU."
+                  ]
+                },
+                {
+                  "label": "Digital services and enterprise strategy",
+                  "points": [
+                    "Digital services revenue growth (~20% YoY) explicitly outpaced connectivity growth.",
+                    "Management sees 'scope for far more monetization'; margins should improve with scale and operating leverage since the IP-building cost base doesn't rise proportionately.",
+                    "Enterprise push is managed-services-led, bundling connectivity with security, managed Wi-Fi, ERP, analytics, and surveillance, enabled by FWA for rapid deployment."
+                  ]
+                },
+                {
+                  "label": "FWA leadership and technology/IP",
+                  "points": [
+                    "78% FWA market share of net additions in India.",
+                    "Only Indian tech innovator in WIPO PCT global top-20; holds around 4,500 patents across the full network stack."
+                  ]
+                },
+                {
+                  "label": "Profitability nuance",
+                  "points": [
+                    "PAT at JPL of Rs. 764 Cr despite strong EBITDA growth; finance cost appears higher because interest is now expensed rather than capitalized following completion of 5G build capitalization.",
+                    "Gross interest cost has come down, but net interest cost has increased."
+                  ]
+                },
+                {
+                  "label": "Strategic optionality",
+                  "points": [
+                    "LEO constellation (1,600 satellites referenced by analyst): Jio reiterated it as complementary; will invest 'when the economics is proven,' with details constrained to DRHP.",
+                    "Overseas opportunity: management would not expand beyond DRHP disclosures.",
+                    "Leadership changes described as 'routine in nature' — Pankaj Pawar elevated with longstanding operational responsibility; KT is focusing on intelligence/AI initiatives for the group.",
+                    "Meta partnership: 168 MW Jamnagar data center project providing end-to-end services (building, managing network, power, connectivity, and managed services), to be delivered much faster than traditional Indian data center builds; funding currently on RIL's own balance sheet with partnering optional later; delivered '168... in one shot.'"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Reliance Retail",
+              "key_figures": [
+                {
+                  "label": "Q1 Revenue",
+                  "value": "~90,000",
+                  "unit": "Rs. Crores",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Underlying revenue growth",
+                  "value": "11.6",
+                  "unit": "%",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Reported revenue growth",
+                  "value": "7.4",
+                  "unit": "%",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Customer growth",
+                  "value": "11",
+                  "unit": "%",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Transaction growth",
+                  "value": "46",
+                  "unit": "%",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Grocery digital order growth",
+                  "value": "116",
+                  "unit": "% YoY",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA",
+                  "value": "6,309",
+                  "unit": "Rs. Crores",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin",
+                  "value": "7.9",
+                  "unit": "%",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin change YoY",
+                  "value": "-80",
+                  "unit": "bps",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin Q4 (comparison)",
+                  "value": "7.9",
+                  "unit": "%",
+                  "period": "Q4",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin Q3 (comparison)",
+                  "value": "8.0",
+                  "unit": "%",
+                  "period": "Q3",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Customer base for loyalty program",
+                  "value": "almost 400",
+                  "unit": "million",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Grocery markets presence",
+                  "value": "over a thousand",
+                  "unit": "markets",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Grocery hypermarkets",
+                  "value": "1,000+",
+                  "unit": "stores",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Grocery LFL growth",
+                  "value": "7",
+                  "unit": "%",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Omni customer spend multiple",
+                  "value": "2.7x",
+                  "unit": null,
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Omni customer spend growth",
+                  "value": "20–25",
+                  "unit": "% YoY",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Electronics LFL growth",
+                  "value": "16",
+                  "unit": "%",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ResQ growth",
+                  "value": "27",
+                  "unit": "%",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Fashion LFL growth",
+                  "value": "4",
+                  "unit": "%",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Ajio Rush orders growth",
+                  "value": "136",
+                  "unit": "% QoQ",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Shein installs",
+                  "value": "11m → 30m",
+                  "unit": "installs",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Digital share in apparel/footwear",
+                  "value": "27.5",
+                  "unit": "%",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Digital share in apparel/footwear change",
+                  "value": "~+5",
+                  "unit": "pp YoY",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Operating metrics — digital mix shift",
+                  "points": [
+                    "Customers +11%, transactions +46% vs revenue +12%, implying a lower average ticket as digital scales.",
+                    "Grocery digital share is accelerating and 'almost doubled' YoY in grocery B2C."
+                  ]
+                },
+                {
+                  "label": "Profitability drivers",
+                  "points": [
+                    "Downward margin move is explicitly intentional: management described a 'conscious play' of ramping up digital commerce and hyperlocal delivery infrastructure, plus dark store/tech investments."
+                  ]
+                },
+                {
+                  "label": "Three-year roadmap",
+                  "points": [
+                    "FY27 framed as 'laying the foundation and scale... with discipline,' on a market-by-market basis with a path to positive unit economics.",
+                    "Next two years: leverage scale benefits into margins and cash generation via repeat purchases, higher baskets, product mix, own brands, monetization, and market-based income."
+                  ]
+                },
+                {
+                  "label": "Quick commerce differentiation claims",
+                  "points": [
+                    "Proprietary advantage from transaction data over the last 20 years across almost 400 million customers via the loyalty program.",
+                    "Physical footprint leverage: presence in over a thousand grocery markets, and 'dark store within a store' concept that is not an incremental cost.",
+                    "Supplier terms: terms of trade are significantly better, enabling lower consumer prices while maintaining margin.",
+                    "Dark stores: expansion continues for at least the next 12 months (next nine to 10 months), but will 'scale back' where unit economics don't hold."
+                  ]
+                },
+                {
+                  "label": "Category notes — Grocery",
+                  "points": [
+                    "1,000+ hypermarkets; LFL +7%.",
+                    "Omni customers spend 2.7x vs offline customers and grow spend 20–25% YoY."
+                  ]
+                },
+                {
+                  "label": "Category notes — Electronics",
+                  "points": [
+                    "LFL +16%; ResQ +27%.",
+                    "Benefited from inventory planning amid chip/memory constraints."
+                  ]
+                },
+                {
+                  "label": "Category notes — Fashion",
+                  "points": [
+                    "LFL +4%; Ajio Rush orders +136% QoQ.",
+                    "Shein installs grew from 11m to 30m in the quarter.",
+                    "Digital share in apparel/footwear at 27.5%, up ~5pp YoY."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "RCPL (FMCG)",
+              "key_figures": [
+                {
+                  "label": "Revenue",
+                  "value": "8,600",
+                  "unit": "Rs. Crores",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue growth (management characterization)",
+                  "value": "2x",
+                  "unit": null,
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Staples/daily essentials revenue",
+                  "value": "3,200",
+                  "unit": "Rs. Crores",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Beverages revenue",
+                  "value": "2,900",
+                  "unit": "Rs. Crores",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Beverages revenue vs prior year total",
+                  "value": "more than 50",
+                  "unit": "% of last year's total beverage revenue",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Distributor count",
+                  "value": "5,000+",
+                  "unit": "distributors",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Retail outlet reach",
+                  "value": "3m+",
+                  "unit": "outlets",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Sales via external channels",
+                  "value": "80%+",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "International market presence",
+                  "value": "40+",
+                  "unit": "markets",
+                  "period": null,
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Beverages",
+                  "points": [
+                    "Claims #3 NARTD player in India with double-digit market shares.",
+                    "Plans entry into Australia and Africa next quarter.",
+                    "Campa cans manufactured in Australia; launch planned for end of month."
+                  ]
+                },
+                {
+                  "label": "Manufacturing",
+                  "points": [
+                    "Commissioned (partially) 'one of the largest beverage plants in Asia,' part of an integrated food park.",
+                    "Edible oil facility exploration underway in West Bengal."
+                  ]
+                },
+                {
+                  "label": "M&A/brand integration",
+                  "points": [
+                    "Majority stake taken in Sosyo JV.",
+                    "Operational transition completed for Toni & Guy, Brylcreem, Badedas, Matey; sales commenced in UK/Europe/Australia; India launch preparation underway."
+                  ]
+                },
+                {
+                  "label": "Profitability disclosure",
+                  "points": [
+                    "'Breakeven on EBITDA terms,' with improvement expected as scale and supply chain mature.",
+                    "Near-term focus remains market share and capacity build rather than profitability."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "JioStar (Media)",
+              "key_figures": [
+                {
+                  "label": "Platform users",
+                  "value": "530",
+                  "unit": "million",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "IPL reach",
+                  "value": "700",
+                  "unit": "million",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "CTV consumption growth",
+                  "value": "19",
+                  "unit": "% vs prior IPL",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Digital entertainment watch time growth",
+                  "value": "16",
+                  "unit": "%",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Tadka users",
+                  "value": "100",
+                  "unit": "million",
+                  "period": "~2 months",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue",
+                  "value": "10,946",
+                  "unit": "Rs. Crores",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue growth",
+                  "value": "14",
+                  "unit": "%",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PBT growth",
+                  "value": "14",
+                  "unit": "%",
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Grocery B2C digital share growth",
+                  "value": "almost doubled",
+                  "unit": null,
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "CBM well program",
+                  "value": "40",
+                  "unit": "wells",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Retail dark stores expansion horizon (alt phrasing)",
+                  "value": "at least next 12 months",
+                  "unit": "months",
+                  "period": null,
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Product/tech initiatives (strategic)",
+                  "points": [
+                    "Tadka micro-content hub engaged 100m users in ~2 months.",
+                    "Deep integration with OpenAI enabling conversational discovery and native-language conversational search.",
+                    "JAMS in-house AI media studio launched the 'first ever fully AI-generated micro-content' micro-drama."
+                  ]
+                },
+                {
+                  "label": "Commerce",
+                  "points": [
+                    "First in-app commerce integration with Swiggy, enabling transactions without leaving the content stream."
+                  ]
+                },
+                {
+                  "label": "Headwinds",
+                  "points": [
+                    "Advertising was hit by the real-money gaming ban on advertising and by the US-Iran war's adverse impact on the overall ad market, partially offset by strong digital advertising growth."
                   ]
                 }
               ]
@@ -308,120 +1132,22 @@
               "title": "Product & Technology",
               "key_figures": [
                 {
-                  "label": "Assets capitalized",
-                  "value": "more than a lakh crore",
+                  "label": "5G data traffic vs 4G data traffic",
+                  "value": "one-and-a-half times",
                   "unit": null,
                   "period": "Q1 FY26-27",
                   "kind": "reported"
                 },
                 {
-                  "label": "5G users",
-                  "value": "285m",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "5G user additions",
-                  "value": "73m",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Home broadband users",
-                  "value": "28.6m",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "AirFiber users",
-                  "value": "14m",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Subscribers",
-                  "value": "533m",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Net subscriber additions",
-                  "value": "35.2m",
-                  "unit": null,
-                  "period": "12 months",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Data usage",
-                  "value": "69.4 exabytes",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Per-capita data usage",
-                  "value": "43.7 GB/user/month",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "ARPU",
-                  "value": "Rs. 215.6",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Digital services revenue growth",
-                  "value": "~20%",
-                  "unit": null,
-                  "period": "YoY",
-                  "kind": "reported"
-                },
-                {
-                  "label": "FWA market share of net additions",
-                  "value": "78%",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Patent count",
-                  "value": "around 4,500",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "PAT at JPL",
-                  "value": "Rs. 764 Cr",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Gross interest cost reduction",
-                  "value": "come down",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Net interest cost increase",
-                  "value": "increased",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "LEO satellites",
+                  "label": "LEO satellite constellation size referenced by analyst",
                   "value": "1,600",
+                  "unit": "satellites",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "WIPO PCT global ranking of patent applicants",
+                  "value": "top-20",
                   "unit": null,
                   "period": null,
                   "kind": "reported"
@@ -434,262 +1160,58 @@
               "title": "Manufacturing & Capacity",
               "key_figures": [
                 {
-                  "label": "Ethylene feed mix",
-                  "value": "70%",
-                  "unit": "%",
+                  "label": "VLECs delivered/expected",
+                  "value": "3",
+                  "unit": "ships",
                   "period": "Q1 FY26-27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Meta Jamnagar data center delivery",
+                  "value": "168",
+                  "unit": "MW",
+                  "period": null,
                   "kind": "reported"
                 }
               ],
-              "subsections": [
-                {
-                  "label": "Ethane logistics",
-                  "points": [
-                    "Suez rerouting reduced ethane availability by ~7–8% vs designed ~1.6 mtpa.",
-                    "New VLECs to increase ethane/ROGC share."
-                  ]
-                }
-              ]
+              "subsections": []
             },
             {
               "id": "MKT",
               "title": "Market & Customer Strategy",
               "key_figures": [
                 {
-                  "label": "Grocery digital orders growth",
-                  "value": "+116%",
+                  "label": "Beverages ranking",
+                  "value": "3",
                   "unit": null,
-                  "period": "YoY",
+                  "period": null,
                   "kind": "reported"
                 },
                 {
-                  "label": "Grocery hypermarkets",
-                  "value": "1,000+",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
+                  "label": "Dark store expansion timeline (range 1)",
+                  "value": "12",
+                  "unit": "months",
+                  "period": null,
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Dark store expansion timeline (range 2)",
+                  "value": "9 to 10",
+                  "unit": "months",
+                  "period": null,
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Beverages market share characterization",
+                  "value": "double-digit",
+                  "unit": "%",
+                  "period": null,
                   "kind": "reported"
                 },
                 {
-                  "label": "Grocery LFL growth",
-                  "value": "+7%",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Omni customers spend increase",
-                  "value": "2.7x",
-                  "unit": null,
-                  "period": "YoY",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Omni customers spend growth",
-                  "value": "20–25%",
-                  "unit": null,
-                  "period": "YoY",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Electronics LFL growth",
-                  "value": "+16%",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "ResQ growth",
-                  "value": "+27%",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Fashion LFL growth",
-                  "value": "+4%",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Ajio Rush orders growth",
-                  "value": "+136%",
-                  "unit": null,
-                  "period": "QoQ",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Shein installs growth",
-                  "value": "11m→30m",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Digital share in apparel/footwear",
-                  "value": "27.5%",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "RCPL staples/daily essentials revenue",
-                  "value": "Rs. 3,200 Cr",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "RCPL beverages revenue",
-                  "value": "Rs. 2,900 Cr",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "RCPL distributors",
-                  "value": "5,000+",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "RCPL retail outlets",
-                  "value": "3m+",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "RCPL international markets",
-                  "value": "40+",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "RCPL sales via external channels",
-                  "value": "80%+",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "RCPL NARTD player rank",
-                  "value": "#3",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "RCPL Campa cans manufacturing location",
-                  "value": "Australia",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "RCPL beverage plant size",
-                  "value": "one of the largest in Asia",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "RCPL edible oil facility exploration location",
-                  "value": "West Bengal",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "RCPL majority stake in Sosyo JV",
-                  "value": "completed",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "RCPL operational transition for Toni & Guy, Brylcreem, Badedas, Matey",
-                  "value": "completed",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "RCPL sales commencement in UK/Europe/Australia",
-                  "value": "commenced",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "RCPL India launch preparation",
-                  "value": "in progress",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "RCPL profitability",
-                  "value": "breakeven on EBITDA terms",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "RCPL focus",
-                  "value": "market share and capacity build",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "JioStar platform users",
-                  "value": "530m",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "IPL reach",
-                  "value": "700m",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "CTV consumption growth",
-                  "value": "+19%",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Digital entertainment watch time growth",
-                  "value": "+16%",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Tadka micro-content hub users",
-                  "value": "100m",
-                  "unit": null,
-                  "period": "~2 months",
-                  "kind": "reported"
-                },
-                {
-                  "label": "JioStar revenue growth",
-                  "value": "+14%",
-                  "unit": null,
-                  "period": "Q1 FY26-27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "JioStar PBT growth",
-                  "value": "+14%",
-                  "unit": null,
+                  "label": "Crude price intraday volatility",
+                  "value": "5 to 10",
+                  "unit": "%",
                   "period": "Q1 FY26-27",
                   "kind": "reported"
                 }
@@ -697,17 +1219,90 @@
               "subsections": []
             },
             {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & Optionality",
+              "key_figures": [
+                {
+                  "label": "Home ARPU vs mobility ARPU relationship",
+                  "value": "not necessarily higher",
+                  "unit": null,
+                  "period": "Q1 FY26-27",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Investor-relevant framing",
+                  "points": [
+                    "RIL is explicitly trading near-term consumer margins for digital scale in Retail and building new infrastructure moats (dark stores, data centers, AI/media tooling).",
+                    "In Energy/O2C, management stresses that realizable margin is constrained by procurement/logistics friction even when market cracks are extreme; nonetheless, RIL demonstrated operational resilience (near-full runs) and feedstock advantage (ethane-heavy slate).",
+                    "Forward commentary is deliberately non-committal on near-term O2C earnings due to geopolitical volatility ('a lot of imponderables'), but management maintains confidence in structural positioning: 'structurally... we are in a good place right through.'"
+                  ]
+                },
+                {
+                  "label": "M&A/brand integration (RCPL)",
+                  "points": [
+                    "Majority stake in Sosyo JV.",
+                    "Operational transition completed for Toni & Guy, Brylcreem, Badedas, Matey brands with sales commenced in UK/Europe/Australia and India launch in preparation."
+                  ]
+                },
+                {
+                  "label": "Optionality (Jio)",
+                  "points": [
+                    "LEO satellite constellation reiterated as complementary; investment contingent on proven economics, with details constrained to DRHP.",
+                    "Overseas telecom opportunity not expanded beyond DRHP disclosures.",
+                    "Meta partnership for 168 MW Jamnagar data center, currently funded on RIL's own balance sheet with partnering optional later."
+                  ]
+                }
+              ]
+            },
+            {
               "id": "RISK",
               "title": "Risks & External Factors",
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Headwinds",
+                  "label": "Geopolitical/energy market shocks",
                   "points": [
-                    "SAED drag and domestic under-recoveries.",
-                    "Planned turnaround lowered production by 10%.",
-                    "LPG diversion under government direction impacted petchem feed slate.",
-                    "Advertising hit by real-money gaming ban and US-Iran war."
+                    "Strait of Hormuz closure and renewed hostilities caused Middle East production to fall by ~12 million bpd.",
+                    "Freight rates rose 10x and insurance costs rose by multiples, along with crude premiums close to $20/barrel.",
+                    "Russia has lost more than 40% of its refining capacity due to bans on gasoline, jet, and diesel exports."
+                  ]
+                },
+                {
+                  "label": "Domestic policy/regulatory drag",
+                  "points": [
+                    "SAED drag and domestic under-recoveries, including sales to PSUs.",
+                    "LPG diversion under government direction reduced alkylate/high-grade gasoline component exports and impacted petchem feed slate.",
+                    "Government prioritization circular for PSC gas was later rolled back."
+                  ]
+                },
+                {
+                  "label": "Demand destruction",
+                  "points": [
+                    "Asia-Pacific and Africa curtailed fuel buying due to high prices.",
+                    "Polymer demand fell 22% amid the supply shock.",
+                    "Polyester downstream was hit by gas curtailment and labor disruption, described as a 'mini exodus' from Surat."
+                  ]
+                },
+                {
+                  "label": "Media/advertising headwinds",
+                  "points": [
+                    "Advertising impacted by the real-money gaming ban on advertising.",
+                    "US-Iran war had an adverse impact on the overall ad market, partially offset by digital advertising growth."
+                  ]
+                },
+                {
+                  "label": "Operational constraints",
+                  "points": [
+                    "Planned turnaround lowered production meant for sale by 10%.",
+                    "Chip/memory constraints affected Electronics category, though benefited from inventory planning."
+                  ]
+                },
+                {
+                  "label": "Forward uncertainty",
+                  "points": [
+                    "Management refused near-term O2C profitability calls due to renewed Strait of Hormuz volatility, calling such calls 'too hypothetical.'"
                   ]
                 }
               ]
@@ -715,13 +1310,52 @@
             {
               "id": "GUID",
               "title": "Guidance & Outlook",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "KGD6 ceiling price (expected)",
+                  "value": "~9.9",
+                  "unit": "$",
+                  "period": "2H FY26-27",
+                  "kind": "guidance"
+                }
+              ],
               "subsections": [
                 {
-                  "label": "Forward view",
+                  "label": "O2C outlook",
                   "points": [
-                    "Structural support for cracks from lost capacity and Russia.",
-                    "Management refused near-term profitability calls due to renewed SOH volatility."
+                    "Structural support for cracks expected from lost Middle East and Russian refining capacity.",
+                    "Management declined to give near-term profitability calls due to renewed SOH volatility, but expressed confidence in RIL's structural positioning."
+                  ]
+                },
+                {
+                  "label": "E&P outlook",
+                  "points": [
+                    "KGD6 ceiling price expected to rise to ~$9.9 in 2H, from current $8.9.",
+                    "Rig arriving next month for KG basin exploration ahead of a multi-year, multi-well campaign to offset natural decline.",
+                    "CBM: continuing the 40-well program and multilaterals across both blocks."
+                  ]
+                },
+                {
+                  "label": "Retail outlook",
+                  "points": [
+                    "FY27 framed as 'laying the foundation and scale... with discipline' with a path to positive unit economics market-by-market.",
+                    "Next two years: leverage scale benefits into margins and cash generation.",
+                    "Dark store expansion to continue for at least the next 12 months (nine to 10 months), with scale-back where unit economics don't hold."
+                  ]
+                },
+                {
+                  "label": "RCPL outlook",
+                  "points": [
+                    "Plans entry into Australia and Africa beverages markets next quarter.",
+                    "Campa cans launch planned for end of month.",
+                    "Near-term focus remains market share and capacity build, with profitability improvement expected as scale and supply chain mature."
+                  ]
+                },
+                {
+                  "label": "Jio/LEO outlook",
+                  "points": [
+                    "Jio will invest in LEO satellites 'when the economics is proven.'",
+                    "Overseas telecom opportunity constrained to DRHP disclosures."
                   ]
                 }
               ]
@@ -730,57 +1364,211 @@
           "guidance_ledger": [
             {
               "metric": "KGD6 ceiling price",
-              "horizon": "2H",
-              "statement": "Expected to rise to ~$9.9 in 2H.",
+              "horizon": "2H FY26-27",
+              "statement": "KGD6 ceiling price currently $8.9 (down $1.14 vs previous half), expected to rise to ~$9.9 in 2H.",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
             },
             {
-              "metric": "ARPU",
+              "metric": "O2C near-term profitability",
+              "horizon": "near-term",
+              "statement": "Management refused near-term profitability calls due to renewed SOH volatility, calling it 'too hypothetical.'",
+              "specificity": "refused",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "O2C structural positioning",
               "horizon": null,
-              "statement": "Targeting organically improve our ARPU by 5% to 6% a year.",
+              "statement": "Structural support for cracks from lost Middle East and Russian refining capacity; management maintains confidence: 'structurally... we are in a good place right through.'",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "KG basin exploration",
+              "horizon": "next month onward, multi-year",
+              "statement": "Rig arriving next month for KG basin exploration, followed by a multi-year, multi-well campaign to offset natural decline, including additional opportunities within existing fields.",
               "specificity": "specific",
               "direction": "up",
-              "status": "no_mention"
+              "status": "new"
+            },
+            {
+              "metric": "CBM 40-well program",
+              "horizon": null,
+              "statement": "Continue the 40-well program and multilaterals across both blocks.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Retail three-year roadmap",
+              "horizon": "FY27 and next two years",
+              "statement": "FY27: laying the foundation and scale with discipline (market-by-market, path to positive unit economics). Next two years: leverage scale benefits into margins and cash generation via repeat, higher baskets, product mix, own brands, monetization, market-based income.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Dark store expansion",
+              "horizon": "next 12 months (9-10 months)",
+              "statement": "Dark stores expansion continues at least next 12 months (next nine to 10 months), but will scale back where unit economics don't hold.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "RCPL beverages international expansion",
+              "horizon": "next quarter",
+              "statement": "Plans entry into Australia and Africa next quarter.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Campa cans launch",
+              "horizon": "end of month",
+              "statement": "Campa cans manufactured in Australia; launch end of month.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "RCPL profitability",
+              "horizon": null,
+              "statement": "Breakeven on EBITDA terms, with improvement expected as scale and supply chain mature; near-term focus remains market share and capacity build.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Jio LEO satellite investment",
+              "horizon": null,
+              "statement": "Will invest in LEO satellites 'when the economics is proven,' with details constrained to DRHP.",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Jio overseas opportunity",
+              "horizon": null,
+              "statement": "Management would not expand beyond DRHP on overseas opportunity.",
+              "specificity": "refused",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "ARPU",
+              "horizon": null,
+              "statement": "Prior quarter targeted organically improving ARPU by 5% to 6% a year; this quarter ARPU rose to Rs. 215.6, +Rs.7 YoY, with management denying underlying pressure.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "reiterated"
             },
             {
               "metric": "Home broadband additions",
               "horizon": null,
-              "statement": "Management expects home additions to ramp further, not peak.",
+              "statement": "Prior quarter management expected home additions to ramp further, not peak; this quarter home broadband reached 28.6m subscribers including 14m AirFiber.",
               "specificity": "vague",
               "direction": "up",
-              "status": "no_mention"
+              "status": "reiterated"
             },
             {
               "metric": "RE-RTC revenue/EBITDA contribution",
               "horizon": "next year",
-              "statement": "Aim to begin RERTC revenue/EBITDA contribution next year.",
+              "statement": "Prior quarter aim was to begin RE-RTC revenue/EBITDA contribution next year; not mentioned in this call.",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Ethane availability (VLECs)",
+              "horizon": "coming months",
+              "statement": "First VLEC ship delivered and loading; next two due in coming months; with all three, ethane availability will be substantially higher than current, and ethane/ROGC share will rise a little more.",
               "specificity": "specific",
               "direction": "up",
-              "status": "no_mention"
+              "status": "new"
+            },
+            {
+              "metric": "Digital services margins (Jio)",
+              "horizon": null,
+              "statement": "Margins should improve with scale and operating leverage since the IP-building cost base doesn't rise proportionately.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
             }
           ],
           "risk_register": [
             {
-              "risk": "SAED drag and domestic under-recoveries",
+              "risk": "Strait of Hormuz closure / renewed hostilities disrupting Middle East crude supply",
               "status": "new",
-              "note": null
+              "note": "Middle East production fell by ~12 million bpd; freight rates up 10x, insurance costs up multiples, crude premiums close to $20/barrel."
             },
             {
-              "risk": "Planned turnaround lowered production by 10%",
+              "risk": "Russia refining capacity loss due to sanctions/bans",
               "status": "new",
-              "note": null
+              "note": "Russia has lost more than 40% of its capacity; banned from exporting gasoline, jet fuel and diesel."
+            },
+            {
+              "risk": "SAED drag and domestic under-recoveries",
+              "status": "new",
+              "note": "Includes under-recoveries on sales to PSUs."
             },
             {
               "risk": "LPG diversion under government direction",
               "status": "new",
-              "note": null
+              "note": "RIL increased LPG production almost fourfold, reducing alkylate/high-grade gasoline exports and impacting petchem feed slate."
             },
             {
-              "risk": "Advertising hit by real-money gaming ban and US-Iran war",
+              "risk": "Planned turnaround impact on refining output",
               "status": "new",
-              "note": null
+              "note": "Lowered production meant for sale by 10%."
+            },
+            {
+              "risk": "Demand destruction in Asia-Pacific and Africa fuel markets",
+              "status": "new",
+              "note": "High prices curtailed buying outside India; India demand stayed reasonably strong."
+            },
+            {
+              "risk": "Polymer demand decline",
+              "status": "new",
+              "note": "Polymer demand was down 22% amid the supply shock."
+            },
+            {
+              "risk": "Polyester downstream disruption",
+              "status": "new",
+              "note": "Hit by gas curtailment and labor disruption described as a 'mini exodus' from Surat."
+            },
+            {
+              "risk": "Ethane logistics disruption via Suez rerouting",
+              "status": "new",
+              "note": "Reduced ethane availability by ~7–8% vs designed ~1.6 mtpa capacity; being addressed via new VLECs."
+            },
+            {
+              "risk": "Advertising headwinds from real-money gaming ban",
+              "status": "new",
+              "note": "Real-money gaming ban on advertising hit JioStar ad revenue, partially offset by digital advertising growth."
+            },
+            {
+              "risk": "US-Iran war impact on ad market",
+              "status": "new",
+              "note": "Adverse impact on the overall ad market for JioStar."
+            },
+            {
+              "risk": "Chip/memory constraints",
+              "status": "new",
+              "note": "Affected Electronics category, though RIL benefited from inventory planning."
+            },
+            {
+              "risk": "Geopolitical volatility clouding forward O2C outlook",
+              "status": "new",
+              "note": "Management called near-term profitability calls 'too hypothetical' given renewed SOH volatility, citing 'a lot of imponderables.'"
+            },
+            {
+              "risk": "Government prioritization circular for PSC gas",
+              "status": "new",
+              "note": "Circular has been rolled back."
             },
             {
               "risk": "Supply shock from the war and its impact on industry and consumer confidence.",
@@ -810,36 +1598,64 @@
           ],
           "themes": [
             {
-              "label": "Retail growth",
-              "direction": "positive",
-              "note": "Reliance Retail focuses on digital commerce and hyperlocal delivery infrastructure.",
-              "section_ref": "SEG"
-            },
-            {
-              "label": "5G network expansion",
-              "direction": "positive",
-              "note": "Jio Platforms continues to expand 5G user base and digital services.",
-              "section_ref": "SEG"
-            },
-            {
               "label": "Oil & gas production management",
-              "direction": "neutral",
-              "note": "RIL navigates geopolitical and market volatility in energy and petrochemical segments.",
+              "direction": "positive",
+              "note": "RIL maintained ~96–97% refinery throughput vs rest of Asia's 15–20% decline amid Strait of Hormuz-driven Middle East supply shock; KGD6 decline managed better than expected while CBM turns into a growth driver.",
               "section_ref": "SEG"
             },
             {
               "label": "Petrochemical demand trends",
               "direction": "mixed",
-              "note": "High cracks but demand destruction outside India; structural support from lost capacity.",
+              "note": "Ethane vs naphtha cost advantage widened, but polymer demand fell 22% and polyester downstream was hit by gas curtailment and labor disruption.",
               "section_ref": "SEG"
+            },
+            {
+              "label": "5G network expansion",
+              "direction": "positive",
+              "note": "5G users reached 285m (+73m in 12 months); 5G data traffic now 1.5x 4G traffic; JPL revenue/EBITDA grew strongly though PAT pressured by interest expensing post-capitalization.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Retail growth",
+              "direction": "mixed",
+              "note": "Retail underlying revenue growth of 11.6% accompanied by a deliberate EBITDA margin decline (-80bps YoY) to fund digital/quick-commerce scale-up under a three-year roadmap.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Geopolitical/energy market shock",
+              "direction": "negative",
+              "note": "Strait of Hormuz closure, Middle East output loss (~12mn bpd) and Russia capacity loss (>40%) drove extreme freight/insurance/crude premium cost inflation, muting realizable O2C margins despite high cracks.",
+              "section_ref": "RISK"
+            },
+            {
+              "label": "Digital/FMCG scale-up",
+              "direction": "positive",
+              "note": "RCPL revenue doubled YoY to Rs. 8,600 Cr, reaching EBITDA breakeven; JioStar crossed 530m users with AI-led product innovation (Tadka, JAMS, OpenAI integration).",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Advertising market headwinds",
+              "direction": "negative",
+              "note": "JioStar ad revenue impacted by real-money gaming advertising ban and US-Iran war's adverse effect on the overall ad market, partially offset by digital advertising growth.",
+              "section_ref": "RISK"
             }
           ],
           "key_takeaways": [
-            "RIL is explicitly trading near-term consumer margins for digital scale (Retail) and building new infrastructure moats (dark stores; data centers; AI/media tooling).",
-            "In Energy/O2C, management stresses realizable margin is constrained by procurement/logistics friction even when market cracks are extreme; nonetheless, RIL demonstrated operational resilience (near-full runs) and feedstock advantage (ethane-heavy slate).",
-            "Forward commentary is deliberately non-committal on near-term O2C earnings due to geopolitical volatility (“a lot of imponderables”), but management maintains confidence in structural positioning: “structurally… we are in a good place right through.”"
+            "Management framed the quarter as \"extraordinary\" due to \"macro volatility… energy market shock… supply chain dislocation,\" and positioned RIL's response as \"agility… incredible.\"",
+            "Revenue +25% YoY, primarily oil-price led, but with Jio +12% and Retail ~+12% also contributing (i.e., not solely O2C-driven).",
+            "For comparability, CFO repeatedly excludes last year's \"Rs. 8,900 Crores of Asian paints\" gain; on this basis: EBITDA > Rs. 54,000 Cr (+10%), PAT ~Rs. 23,200 Cr (+6%).",
+            "O2C revenue +30% YoY; EBITDA +17% (~Rs. 17,000 Cr). Management emphasized that headline cracks/deltas overstate realizable economics due to shock costs.",
+            "While \"the rest of Asia had runs… down… 15% to 20%,\" RIL maintained ~96–97% throughput amid the Strait of Hormuz crisis.",
+            "Jio: Subscribers 533m; net add 35.2m in 12 months. 5G users 285m (add 73m). JPL Revenue Rs. 39,173 Cr (+11.8%), EBITDA Rs. 20,865 Cr (+15.1%), margin 53.3% (+150 bps). PAT at JPL Rs. 764 Cr despite strong EBITDA due to interest now being expensed not capitalized.",
+            "Reliance Retail: Q1 revenue ~Rs. 90,000 Cr; underlying growth +11.6% (reported +7.4% due to RCPL demerger base effect). EBITDA Rs. 6,309 Cr, slightly down YoY; EBITDA margin 7.9% (‑80 bps YoY) — a deliberate margin trade-off to scale digital/quick commerce.",
+            "RCPL (FMCG): Revenue Rs. 8,600 Cr (management: \"2x of what it was\"); breakeven on EBITDA terms.",
+            "JioStar: Platform crossed 530m users; IPL reach 700m; Revenue Rs. 10,946 Cr (+14%); advertising hit by real-money gaming ban and US-Iran war impact on ad market."
           ],
-          "pressing_questions": []
+          "pressing_questions": [
+            "LEO constellation (1,600 satellites referenced by analyst) — Jio reiterated it as complementary; will invest 'when the economics is proven,' with details constrained to DRHP.",
+            "Overseas opportunity: management would not expand beyond DRHP.",
+            "Forward commentary on near-term O2C profitability was deliberately non-committal due to geopolitical volatility ('a lot of imponderables'), refusing to make calls given renewed SOH volatility ('too hypothetical')."
+          ]
         },
         {
           "company": "Reliance Industries Ltd",
