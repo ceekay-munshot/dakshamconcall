@@ -163,7 +163,17 @@ function hasStaged() {
   }
 }
 
+// A run outside CI is a developer running the script by hand. BRANCH defaults to
+// "main", so without this a local smoke test commits and pushes real job state
+// onto the live dashboard — which is exactly what happened once. CI sets
+// GITHUB_ACTIONS; ALLOW_LOCAL_WRITE=1 is the deliberate override.
+const DRY_RUN = !process.env.GITHUB_ACTIONS && process.env.ALLOW_LOCAL_WRITE !== "1";
+
 function persistAndPush(message) {
+  if (DRY_RUN) {
+    log(`[dry-run] would commit "${message}" (set ALLOW_LOCAL_WRITE=1 to really write)`);
+    return false;
+  }
   // Re-apply our LOGICAL mutations onto whatever is currently on disk, then
   // commit. Returns false when there's nothing new to commit.
   const commitOnce = () => {
@@ -477,6 +487,9 @@ async function main() {
   base.__cycle = currentCycle(base.tearsheets.companies);
   if (base.__cycle) log(`current reporting cycle: ${base.__cycle}`);
 
+  // MAX_PER_RUN caps BOTH the tracked slice and the delivery target, so a
+  // deliberately small run stays small even when discovery adds candidates.
+  const maxPerRun = parseInt(process.env.MAX_PER_RUN || "", 10);
   let tickers;
   if (single) {
     tickers = [single];
@@ -525,9 +538,6 @@ async function main() {
   // tells us who just filed a call recording / transcript, which the client
   // identified as the proxy for "Screener's AI summary is now up". Everything
   // beyond DAILY_COMPANY_CAP rolls to tomorrow rather than being dropped.
-  // MAX_PER_RUN caps BOTH the tracked slice below and the delivery target, so a
-  // deliberately small run stays small even when discovery adds candidates.
-  const maxPerRun = parseInt(process.env.MAX_PER_RUN || "", 10);
   let queueStats = null;
   let queueDate = null; // set once discovery plans a day; drives the roll-over write
   if (!single && process.env.DISCOVER !== "0") {
