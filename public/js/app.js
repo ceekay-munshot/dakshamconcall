@@ -27,7 +27,7 @@ import {
 } from "./ui.js";
 import * as Sectors from "./sectors.js";
 import { initProgress, registerJob } from "./progress.js";
-import { exportReportPdf, buildReportModel, fileName, quarterMatrix, explainerSubsections, normPeriod, DISPLAY_QUARTERS } from "./report.js";
+import { exportReportPdf, buildReportModel, fileName, quarterMatrix, explainerSubsections, normPeriod } from "./report.js";
 import { exportTearSheetXlsx } from "./export-xlsx.js";
 
 /* ============================================================================
@@ -1353,13 +1353,15 @@ function sectionsHtml(sections, sourceUrl, comp, mode = "single") {
     (s) => s && (s.key_figures?.length || s.subsections?.some((x) => x.points?.length))
   );
   if (!list.length) return "";
-  // Toggle only when there's history to compare against.
+  // Two views only: the latest call on its own, or the latest against the one
+  // before it. Older quarters stay stored but never reach the dashboard —
+  // see DISPLAY_QUARTERS. Toggle appears only when there is a previous call.
   const nQ = (comp?.quarters || []).length;
   const toggle =
     nQ > 1
       ? `<div class="ts-modes" role="tablist" aria-label="Key figures range">
           <button class="ts-mode ${mode !== "multi" ? "on" : ""}" data-mode="single" role="tab" aria-selected="${mode !== "multi"}">This concall</button>
-          <button class="ts-mode ${mode === "multi" ? "on" : ""}" data-mode="multi" role="tab" aria-selected="${mode === "multi"}">Last ${Math.min(DISPLAY_QUARTERS, nQ)} concalls</button>
+          <button class="ts-mode ${mode === "multi" ? "on" : ""}" data-mode="multi" role="tab" aria-selected="${mode === "multi"}">vs previous</button>
         </div>`
       : "";
   const head = `<div class="band-title band-title-row"><span class="bt-label"><i data-lucide="layout-grid" class="i16"></i> The 11-Section Tear Sheet</span>${toggle}</div>`;
