@@ -227,8 +227,10 @@
       "source": "transcript"
     },
     "EXIDEIND": {
-      "status": "running",
-      "started_at": "2026-08-03T11:37:49.357Z"
+      "status": "failed",
+      "finished_at": "2026-08-03T11:37:55.405Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Couldn't fetch EXIDEIND's latest concall. Found concalls but could not extract an AI summary or transcript."
     }
   }
 }
