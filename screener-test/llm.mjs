@@ -116,6 +116,36 @@ class BedrockShapeError extends Error {}
 class BedrockTruncatedError extends Error {}
 /** This model won't accept a budget that large — step back down. */
 class BedrockBudgetTooLargeError extends Error {}
+/** Valid JSON, wrong shape — the model deviated from the schema. Retryable. */
+class BedrockBadShapeError extends Error {}
+
+/**
+ * Shallow check that a parsed answer matches the schema we asked for.
+ *
+ * Only the top level, and only what actually breaks callers: a missing required
+ * key, or an array field that came back as something else. Two companies died on
+ * "(out.sections || []).filter is not a function" — valid JSON, but `sections`
+ * was not a list, so every downstream `.filter`/`.map` threw and the company was
+ * lost. Catching it here turns that into a retry, which usually succeeds,
+ * instead of a dead company.
+ *
+ * Deliberately NOT a full JSON Schema validator: the strict shapes already
+ * enforce the details, and a half-written one would reject good answers.
+ */
+function schemaMismatch(obj, schema) {
+  if (!schema || schema.type !== "object") return null;
+  if (!obj || typeof obj !== "object" || Array.isArray(obj)) return "top level is not an object";
+  for (const k of schema.required || []) {
+    if (!(k in obj)) return `missing required key "${k}"`;
+  }
+  for (const [k, spec] of Object.entries(schema.properties || {})) {
+    if (!(k in obj) || obj[k] == null) continue;
+    if (spec?.type === "array" && !Array.isArray(obj[k])) return `"${k}" should be an array`;
+    if (spec?.type === "object" && (typeof obj[k] !== "object" || Array.isArray(obj[k])))
+      return `"${k}" should be an object`;
+  }
+  return null;
+}
 
 /**
  * How to ask for schema-constrained JSON. There is more than one way and which
@@ -131,12 +161,16 @@ class BedrockBudgetTooLargeError extends Error {}
 const SHAPES = [
   {
     name: "json_schema",
+    // Structured Outputs puts the JSON in a normal text block.
+    delta: "text_delta",
     apply: (body, schema) => {
       body.output_config = { format: { type: "json_schema", schema } };
     },
   },
   {
     name: "strict_tool",
+    // Tool input streams as input_json_delta, NOT as text.
+    delta: "input_json_delta",
     apply: (body, schema, toolName) => {
       body.tools = [
         { name: toolName, description: "Return the result in this exact shape.", input_schema: schema, strict: true },
@@ -146,6 +180,7 @@ const SHAPES = [
   },
   {
     name: "tool",
+    delta: "input_json_delta",
     apply: (body, schema, toolName) => {
       body.tools = [
         { name: toolName, description: "Return the result in this exact shape.", input_schema: schema },
@@ -248,10 +283,11 @@ async function bedrockOnce({ model, system, user, schema, schemaName, shape, max
       } catch {
         continue; // a partial frame; the next chunk completes it
       }
-      if (ev.type === "content_block_delta" && ev.delta?.type === "text_delta") {
-        out += ev.delta.text; // json_schema shape: the JSON arrives as text
-      } else if (ev.type === "content_block_delta" && ev.delta?.type === "input_json_delta") {
-        out += ev.delta.partial_json; // tool shapes: the JSON arrives as tool input
+      // Take ONLY the delta type this shape produces. Accepting both meant a
+      // model that prefaces a tool call with a sentence of text ("Here is the
+      // analysis...") concatenated that sentence onto the tool's JSON.
+      if (ev.type === "content_block_delta" && ev.delta?.type === shape.delta) {
+        out += shape.delta === "text_delta" ? ev.delta.text : ev.delta.partial_json;
       } else if (ev.type === "message_delta" && ev.delta?.stop_reason) {
         stopReason = ev.delta.stop_reason;
       } else if (ev.type === "error") {
@@ -291,11 +327,14 @@ async function bedrockStructured({ system, user, schema, schemaName }) {
           const text = await bedrockOnce({
             model, system, user, schema, schemaName, shape, maxTokens: maxTokensInUse,
           });
+          const parsed = JSON.parse(text);
+          const bad = schemaMismatch(parsed, schema);
+          if (bad) throw new BedrockBadShapeError(`Bedrock returned ${bad}`);
           if (!resolvedShape) console.log(`[llm] bedrock output shape: ${shape.name}`);
           resolvedBedrockModel = model;
           resolvedShape = shape;
           activeModelId = model;
-          return JSON.parse(text);
+          return parsed;
         } catch (err) {
           lastErr = err;
           if (err instanceof BedrockModelAccessError) {
@@ -303,6 +342,13 @@ async function bedrockStructured({ system, user, schema, schemaName }) {
             break;
           }
           if (err instanceof BedrockShapeError) break; // next shape, same model
+          // The model wandered off the schema. Same request again usually lands
+          // it; only give up once the attempts are spent.
+          if (err instanceof BedrockBadShapeError) {
+            console.warn(`[llm] ${err.message} — retrying`);
+            if (attempt === 5) throw err;
+            continue;
+          }
           // A long tear sheet simply needs more room. Double and retry rather
           // than failing the company, and keep the larger budget for the rest
           // of the run so the next long one doesn't pay the same wasted call.
