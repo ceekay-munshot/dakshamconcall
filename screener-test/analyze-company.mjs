@@ -55,6 +55,10 @@ const DISCOVER_DAYS = parseInt(process.env.DISCOVER_DAYS || "", 10) || 2;
 // there yet" is usually a matter of timing — but a ticker that genuinely never
 // files must not be retried forever, hence the ceiling.
 const RETRY_DAYS = parseInt(process.env.RETRY_DAYS || "", 10) || 5;
+// A company that has not reported the current cycle is skipped to save metered
+// views, which leaves the announcements feed as its only way back onto the
+// board. This is the safety net under that: look at it anyway this often.
+const CYCLE_RECHECK_DAYS = parseInt(process.env.CYCLE_RECHECK_DAYS || "", 10) || 7;
 // Re-classify quarters we already hold instead of reusing them. Off by default —
 // reuse is what stopped the pipeline re-spending on 77 unchanged quarters. Turn it
 // on to compare two models or two prompts on the SAME source: without it a re-run
@@ -280,6 +284,13 @@ export function currentCycle(companies, quorum = CYCLE_QUORUM) {
 export function isCurrent(comp, cycle) {
   if (!cycle) return true;
   return cycleKey(comp?.quarters?.[0]?.concall_date) === cycle;
+}
+
+/** Days since an ISO timestamp; a missing one counts as "never", i.e. overdue. */
+function daysSince(iso) {
+  const t = iso ? new Date(iso).getTime() : 0;
+  if (!t || Number.isNaN(t)) return Infinity;
+  return (Date.now() - t) / 86400000;
 }
 
 function isStale(store, ticker) {
@@ -547,14 +558,26 @@ async function main() {
     tickers = forceAll ? all : all.filter((t) => isStale(base, t));
     // Skip companies that haven't reported the current cycle — they have nothing
     // new, and each one would cost metered summary views to find that out.
+    //
+    // But not forever. A company skipped here is reachable ONLY through the
+    // announcements feed, so one missed filing — different wording, a feed
+    // hiccup, a call outside the discovery window — would strand it
+    // permanently, which is the opposite of "whoever reports shows up". Every
+    // CYCLE_RECHECK_DAYS one is let back in to look. That costs a company-page
+    // view, not a summary: the metered fetch only happens if a new call is
+    // actually there.
     if (base.__cycle) {
       const before = tickers.length;
+      const skipped = [];
       tickers = tickers.filter((t) => {
         const comp = base.tearsheets.companies[t];
-        return !comp || isCurrent(comp, base.__cycle);
+        if (!comp || isCurrent(comp, base.__cycle)) return true;
+        if (daysSince(comp.checked_at) >= CYCLE_RECHECK_DAYS) return true; // due a look
+        skipped.push(t);
+        return false;
       });
       if (before !== tickers.length)
-        log(`skipping ${before - tickers.length} company(ies) behind cycle ${base.__cycle}`);
+        log(`skipping ${skipped.length} company(ies) behind cycle ${base.__cycle} (re-checked every ${CYCLE_RECHECK_DAYS}d)`);
     }
 
     // MAX_PER_RUN paces a run against Screener's 80-summaries/day cap: each
