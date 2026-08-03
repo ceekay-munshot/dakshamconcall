@@ -10450,7 +10450,7 @@
       "ticker": "BAJAJ-AUTO",
       "industry": "2/3 Wheelers",
       "country": "India",
-      "checked_at": "2026-07-30T05:33:35.630Z",
+      "checked_at": "2026-08-03T13:49:52.000Z",
       "quarters": [
         {
           "company": "Bajaj Auto Ltd",
@@ -11027,428 +11027,520 @@
           "concall_date": "2026-05-12",
           "source": "transcript",
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=cbc90a41-3f6e-4dcb-b47c-36dc70b66634.pdf",
-          "model": "gpt-4o",
-          "generated_at": "2026-07-30T05:32:52.239Z",
-          "summary": "Bajaj Auto anticipates continued growth in exports and electric vehicle segments, despite challenges in the domestic market due to inflation and supply chain issues.",
+          "model": "anthropic.claude-sonnet-5",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-03T13:44:33.620Z",
+          "summary": "Bajaj Auto closed a record FY26 (revenue ~INR58,000+ crores, EBITDA >INR12,000 crores at 20.5% margin, PAT ~INR9,825 crores) and a standout Q4 (revenue >INR16,000 crores, EBITDA INR3,323 crores at 20.8% margin, volumes 13.7 lakh units, +24% YoY). Going into Q1 FY27, management flags a softened demand environment (motorcycle industry growth expected to moderate from ~20% in Q4 to 7-9% near term) driven by inflation, price hikes, LPG shortages and manpower migration, alongside a sharply inflationary commodity environment (~3.5-4% of revenue impact) partly offset by pricing (40% covered so far) and a favorable currency tailwind; company remains bullish on 150cc+ motorcycles, EVs (2W & 3W), exports (targeting 220K+ units/month) and expects growth to continue in Q1 despite these headwinds, while the Board approved a 100% FY26 profit payout via dividend and buyback.",
           "sections": [
             {
               "id": "FIN",
               "title": "Financial Performance",
               "key_figures": [
                 {
-                  "label": "Record Revenue FY26",
+                  "label": "Revenue",
                   "value": "58,000+",
-                  "unit": "INR Crores",
+                  "unit": "INR crores",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Record EBITDA FY26",
+                  "label": "Revenue",
+                  "value": "~59,000",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue growth YoY",
+                  "value": "17",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA",
                   "value": "12,000+",
-                  "unit": "INR Crores",
+                  "unit": "INR crores",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "EBITDA Margin FY26",
+                  "label": "EBITDA growth YoY",
+                  "value": "19",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin",
                   "value": "20.5",
                   "unit": "%",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Record PAT FY26",
-                  "value": "9,800+",
-                  "unit": "INR Crores",
+                  "label": "EBITDA margin improvement YoY",
+                  "value": "30",
+                  "unit": "bps",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Revenue Q4 FY26",
-                  "value": "16,000+",
-                  "unit": "INR Crores",
+                  "label": "PAT",
+                  "value": "9,825",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT growth YoY",
+                  "value": "21",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total volumes",
+                  "value": "5,000,000+",
+                  "unit": "units",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue from operations",
+                  "value": "16,006",
+                  "unit": "INR crores",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "EBITDA Q4 FY26",
-                  "value": "3,300",
-                  "unit": "INR Crores",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "EBITDA Margin Q4 FY26",
-                  "value": "20.8",
+                  "label": "Revenue growth YoY",
+                  "value": "32",
                   "unit": "%",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Total Volumes Q4 FY26",
+                  "label": "Total volumes",
                   "value": "13.7",
-                  "unit": "Lakh Units",
+                  "unit": "lakh units",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Volume Growth YoY Q4 FY26",
+                  "label": "Volume growth YoY",
                   "value": "24",
                   "unit": "%",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "PAT Q4 FY26",
+                  "label": "EBITDA",
+                  "value": "3,323",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA growth YoY",
+                  "value": "36",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin",
+                  "value": "20.8",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin expansion YoY",
+                  "value": "60",
+                  "unit": "bps",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT",
                   "value": "2,746",
-                  "unit": "INR Crores",
+                  "unit": "INR crores",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Exceptional Gain Q4 FY26",
+                  "label": "PAT growth YoY",
+                  "value": "34",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Exceptional gain (deferral incentive/loan prepayment NPV)",
                   "value": "35",
-                  "unit": "INR Crores",
+                  "unit": "INR crores",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Consolidated Revenue FY26",
-                  "value": "63,000",
-                  "unit": "INR Crores",
+                  "label": "Exceptional charge (employee benefit obligation reassessment, Labor Code)",
+                  "value": "58",
+                  "unit": "INR crores",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated revenue",
+                  "value": "~63,000",
+                  "unit": "INR crores",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Consolidated PAT FY26",
-                  "value": "10,000+",
-                  "unit": "INR Crores",
+                  "label": "Consolidated revenue growth YoY",
+                  "value": "23",
+                  "unit": "%",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Surplus Funds FY26",
-                  "value": "18,000+",
-                  "unit": "INR Crores",
+                  "label": "Consolidated PAT",
+                  "value": ">10,000",
+                  "unit": "INR crores",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Capex FY26",
-                  "value": "500",
-                  "unit": "INR Crores",
+                  "label": "Consolidated PAT growth YoY",
+                  "value": "~50",
+                  "unit": "%",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Free Cash Flow FY26",
-                  "value": "8,000+",
-                  "unit": "INR Crores",
+                  "label": "Cost inflation (Q4 guided range)",
+                  "value": "50-60",
+                  "unit": "bps",
+                  "period": "Q4 FY26",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Net cost inflation actual",
+                  "value": "40",
+                  "unit": "bps",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Realized exchange rate",
+                  "value": "90.6",
+                  "unit": "INR/USD",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Realized exchange rate",
+                  "value": "88.3",
+                  "unit": "INR/USD",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Realized exchange rate",
+                  "value": "86.5",
+                  "unit": "INR/USD",
+                  "period": "Q4 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Spares revenue",
+                  "value": "1,700-1,800",
+                  "unit": "INR crores",
+                  "period": "quarterly run-rate",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Spares business sales",
+                  "value": "1,700+",
+                  "unit": "INR crores",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Dividend Payout",
+                  "label": "Spares revenue growth",
+                  "value": "16",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cash surplus",
+                  "value": ">18,000",
+                  "unit": "INR crores",
+                  "period": "FY26 year-end",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capex",
+                  "value": "~500",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Investment in BACL and BAIH BV",
+                  "value": ">2,300",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Free cash flow",
+                  "value": ">8,000",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Dividend returned to shareholders",
+                  "value": "~5,900",
+                  "unit": "INR crores",
+                  "period": "FY25 (paid July FY26)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Final dividend FY26",
+                  "value": "150",
+                  "unit": "INR per share",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Final dividend aggregate",
                   "value": "4,192",
-                  "unit": "INR Crores",
+                  "unit": "INR crores",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Buyback Amount",
+                  "label": "Buyback amount",
                   "value": "5,633",
-                  "unit": "INR Crores",
+                  "unit": "INR crores",
                   "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Buyback price",
+                  "value": "12,000",
+                  "unit": "INR per share",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PLI claim for the year",
+                  "value": "~900",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Share of profit from associate (KTM/BMAG)",
+                  "value": "1,195",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "KTM share of loss (1 Jul-acquisition date)",
+                  "value": "413",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Fair value re-measurement gain (49.9% stake in PBAG)",
+                  "value": "953",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "FCTR reclassification gain",
+                  "value": "646",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Share of profit from BAIH AG associates (till 31 Dec 2025)",
+                  "value": "9",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net share of profit from associate (1 Jan to acquisition date)",
+                  "value": "561",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Steel price increase",
+                  "value": "~15",
+                  "unit": "%",
+                  "period": "Q1 FY27 outlook",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Copper price increase",
+                  "value": "~20",
+                  "unit": "%",
+                  "period": "Q1 FY27 outlook",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Aluminium and Noble Metals price increase",
+                  "value": "35-45",
+                  "unit": "%",
+                  "period": "Q1 FY27 outlook",
                   "kind": "reported"
                 },
                 {
                   "label": "Material cost inflation impact estimate",
-                  "value": "3.5% to 4%",
+                  "value": "3.5-4",
                   "unit": "% of revenue",
-                  "period": null,
-                  "kind": "reported"
+                  "period": "Q1 FY27",
+                  "kind": "guidance"
                 },
                 {
-                  "label": "Pricing actions offset impact",
-                  "value": "40%",
-                  "unit": null,
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "Annual volumes FY26",
-                  "value": "over 5 million units",
-                  "unit": "units",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Revenue FY26",
-                  "value": "nearly INR59,000 crores",
-                  "unit": "INR",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Revenue growth YoY FY26",
-                  "value": "17%",
+                  "label": "Pricing action offset of inflation",
+                  "value": "40",
                   "unit": "%",
-                  "period": "FY26",
+                  "period": "from 1 April 2026",
                   "kind": "reported"
                 },
                 {
-                  "label": "EBITDA growth YoY FY26",
-                  "value": "19%",
-                  "unit": "%",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "PAT FY26",
-                  "value": "INR9,825 crores",
-                  "unit": "INR",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "PAT growth YoY FY26",
-                  "value": "21%",
-                  "unit": "%",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Consolidated revenue growth YoY FY26",
-                  "value": "23%",
-                  "unit": "%",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Consolidated PAT growth YoY FY26",
-                  "value": "nearly 50%",
-                  "unit": "%",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "BACL Total Income FY26",
-                  "value": "crossed INR3,000 crores",
-                  "unit": "INR",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "BACL PAT FY26",
-                  "value": "INR665 crores",
-                  "unit": "INR",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "BACL PAT growth YoY FY26",
-                  "value": "near 12x increase",
-                  "unit": "multiple",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "BACL AUM FY26",
-                  "value": "nearly INR19,000 crores",
-                  "unit": "INR",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "BACL Disbursements FY26",
-                  "value": "a tad under INR15,000 crores",
-                  "unit": "INR",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "BACL Capital Adequacy Ratio FY26",
-                  "value": "19.5%",
-                  "unit": "%",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "BACL Return on Equity FY26",
-                  "value": "about 23%",
-                  "unit": "%",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "KTM Net Share of Profit Q4 FY26",
-                  "value": "INR1,195 crores",
-                  "unit": "INR",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "KTM Share of Loss Q4 FY26",
-                  "value": "INR413 crores",
-                  "unit": "INR",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "KTM Gain on Re-measurement Q4 FY26",
-                  "value": "INR953 crores",
-                  "unit": "INR",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "KTM Reclassification of FCTR Q4 FY26",
-                  "value": "INR646 crores",
-                  "unit": "INR",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "KTM Share of Profit Q4 FY26",
-                  "value": "INR9 crores",
-                  "unit": "INR",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "KTM Net Share of Profit from Associate Q4 FY26",
-                  "value": "INR561 crores",
-                  "unit": "INR",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Capex FY26 (ICE and EV investments)",
-                  "value": "approximately INR500 crores",
-                  "unit": "INR",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Investment in BACL and BAIH BV FY26",
-                  "value": "over INR2,300 crores",
-                  "unit": "INR",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Dividend Payout July FY26",
-                  "value": "about INR5,900 crores",
-                  "unit": "INR",
-                  "period": "July FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Final Dividend per Share FY26",
-                  "value": "INR150 per share",
-                  "unit": "INR",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Buyback Price FY26",
-                  "value": "INR12,000 per share",
-                  "unit": "INR",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Steel Price Increase",
-                  "value": "15%",
-                  "unit": "%",
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "Copper Price Increase",
-                  "value": "20%",
-                  "unit": "%",
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "Aluminium and Noble Metals Price Increase",
-                  "value": "35% to 45%",
-                  "unit": "%",
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "CV Exports Growth FY26",
-                  "value": "nearly 50%",
-                  "unit": "%",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "BACL Customer Base FY26",
-                  "value": "approximately 1.8 million customers",
-                  "unit": "customers",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "BACL Outlets FY26",
-                  "value": "almost 6,200 outlets",
-                  "unit": "outlets",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "BACL 3-Wheeler Volume Growth FY26",
-                  "value": "nearly 49%",
-                  "unit": "%",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "PLI incentive for the year",
-                  "value": "INR900 crores",
-                  "unit": null,
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Commodity inflation impact estimate",
-                  "value": "3.5% to 4%",
-                  "unit": "of turnover",
+                  "label": "Current currency realization",
+                  "value": "94-95",
+                  "unit": "INR/USD",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Realized exchange rate Q4 FY26",
-                  "value": "$94 - $95",
-                  "unit": null,
+                  "label": "Noble metals (rhodium, palladium, platinum) price move",
+                  "value": "20-25",
+                  "unit": "%",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Other operating income increase",
-                  "value": "driven by electric scale-up, export incentives, BGO growth",
+                  "label": "PAT (rounded)",
+                  "value": "9,800-plus",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BACL PAT increase multiple",
+                  "value": "near 12x",
+                  "unit": "x",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capex split between ICE and EV",
+                  "value": "equally",
                   "unit": null,
-                  "period": "last 2 quarters",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Buyback shareholder approval threshold (10% of free reserves)",
+                  "value": "3,500",
+                  "unit": "INR crores",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Profit payout basis for buyback (last year's profit)",
+                  "value": "9,825",
+                  "unit": "INR crores",
+                  "period": "FY25",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Commodity and Currency Context",
+                  "label": "Commodity & Currency Context",
                   "points": [
-                    "Inflationary pressures across commodities, with noble metals firming up 20-25%.",
-                    "Rupee depreciation provided a favorable currency tailwind, with realized exchange rate at INR90.6 to the dollar in Q4 FY26."
+                    "Q4 characterized by inflationary pressures across the basket; noble metals (rhodium, palladium, platinum) firmed 20-25%, broader inflation in copper, aluminium, lead.",
+                    "Steel, ABS, nickel and natural rubber were relatively benign/stable for most of the quarter, though these started to inflate towards period-end, carrying steep inflation into next quarter.",
+                    "Previous guidance was cost inflation of 50-60 bps, with plan to cover about half via pricing; commodities settled within that range due to good purchase team work, pushing out the impact so it did not hit Q4 results.",
+                    "Net cost inflation of 40 bps came in after taking pricing, partly offset by absorption of the full quarter's impact of the PM E-DRIVE phase-out for electric 3-wheelers (budget outlay ran out end of Q3; absorbed to support competitive growth/market share).",
+                    "Currency was distinctly favorable: rupee depreciated through Q4, providing sequential and YoY tailwind supporting margins amidst inflation."
                   ]
                 },
                 {
-                  "label": "Annual Financial Highlights",
+                  "label": "Revenue Drivers Q4",
                   "points": [
-                    "FY26 closed with highest ever annual volumes over 5 million units.",
-                    "Revenue nearly INR59,000 crores, up 17% YoY.",
-                    "EBITDA at INR12,000+ crores, growing 19% YoY with margins at 20.5%."
+                    "Growth was broad-based: across 2-wheelers, 3-wheelers and exports, volumes grew 20% each and revenues 30% each.",
+                    "Revenue supported by rich sales mix: rebound in KTM exports, higher contribution from commercial vehicles (domestic and international), continued traction in sports motorcycles — all structurally revenue accretive.",
+                    "Favorable currency movements further aided revenue.",
+                    "Spares revenue at steady INR1,700-1,800 crore range provided recurring support to revenue and profitability.",
+                    "Exports revenue reached a new high of nearly $600 million in the quarter."
+                  ]
+                },
+                {
+                  "label": "Margin Drivers Q4",
+                  "points": [
+                    "Sequential margin held flat, supported by favorable currency, richer mix and operating leverage, which absorbed net commodity inflation and higher discretionary spends (notably marketing and R&D) plus full-quarter PM E-DRIVE absorption.",
+                    "YoY margin expansion of 60 bps driven by operating leverage and currency tailwinds while managing cost inflation."
+                  ]
+                },
+                {
+                  "label": "FY26 Full Year Recap",
+                  "points": [
+                    "Highest ever annual volumes at over 5 million units — only second time achieved (last FY2019); achieved across both domestic and exports.",
+                    "Domestic saw subdued H1 with acceleration in H2 aided by GST rate rationalization and buoyant festive season.",
+                    "Commercial vehicles, 125cc+ segment, KTM, Triumph and Chetak all registered new highs in billing and retails; export volumes ex-Nigeria at all-time high; CV exports grew nearly 50% for the year.",
+                    "Revenue growth was primarily volume-led with contribution from richer sales mix (higher share of sports motorcycles domestically, sharp step-up in KTM and CV within exports, growing electric contribution across 2W/3W); currency added further uplift.",
+                    "EBITDA margin improvement driven by favorable currency, accretive mix and operating leverage on larger revenue base, more than offsetting commodity inflation (especially in H2) and pricing/investment actions.",
+                    "Electric portfolio hit double-digit EBITDA margin in entirety for first time in the year, driven by rising scale of profitable electric 3-wheelers and improving Chetak unit economics (now EBITDA-neutral as a portfolio).",
+                    "Two exceptional items in FY26 (Q3 charge of INR58 crore from Labor Code wage redefinition reassessment; Q4 gain of INR35 crore from sales tax deferral prepayment) largely offset each other for the full year."
+                  ]
+                },
+                {
+                  "label": "Q1 FY27 Commodity Outlook",
+                  "points": [
+                    "Commodity environment has moved to being sharply, almost hyper, inflationary with tight material availability on aluminium alloys and polymers; company taking decisive actions to secure supplies.",
+                    "Inflation now visible across almost entire basket including base metals (steel, aluminium), not just noble metals; largely event-driven (supply shock).",
+                    "Quantum of increases stepped up materially vs previous quarter: steel ~15%, copper ~20%, aluminium and noble metals up 35-45%.",
+                    "Estimated material cost inflation impact of ~3.5-4% of revenue at portfolio level (will vary by model/segment); situation described as volatile and dynamic, could change.",
+                    "Judicious pricing actions taken to offset about 40% of this impact so far; company watching developments closely, acting dynamically — accelerating cost programs, being mindful/choiceful about discretionary spend, and considering further pricing only as a later recourse.",
+                    "Currency continuing to emerge as a tailwind providing some cushion; realized rate moved from $90.6 (Q4) to hovering $94-95 currently.",
+                    "Rate negotiations/locking now happening at shorter frequency (not quarterly) given dynamic environment; benefit of any settling down could translate into costs sooner rather than later.",
+                    "Next round of pricing viewed as likely the last resource if required, to protect competitive growth, after exhausting cost savings and discretionary spend pullbacks and considering currency tailwind."
+                  ]
+                },
+                {
+                  "label": "Capital Allocation & Cash",
+                  "points": [
+                    "Closed year with cash surplus of over INR18,000 crore after deploying capital on multiple fronts, reflecting strong consistent cash generation.",
+                    "Capex for the year ~INR500 crore, split equally between ICE and EV investments.",
+                    "Invested over INR2,300 crore between BACL (to support scaling of lending book) and BAIH BV (in furtherance of KTM transaction).",
+                    "Free cash flow >INR8,000 crore, reflecting robust cash conversion on profit.",
+                    "Returned about INR5,900 crore to shareholders via dividends last year (July, pertaining to previous financial year).",
+                    "Board approved payout of 100% of last year's profits (INR9,825 crore) in recognition of the Bajaj family's 100-year milestone: final dividend of INR150/share (aggregating INR4,192 crore) plus buyback under tender route (INR5,633 crore) at INR12,000/share.",
+                    "Buyback in excess of 10% of free reserves (threshold ~INR3,500 crore) requires shareholder approval; process to run now, likely culminate by end of July with SEBI filing; payouts expected second week of July; dividend paid after AGM also in July."
+                  ]
+                },
+                {
+                  "label": "Other Operating Income",
+                  "points": [
+                    "Other operating income line driven by 3 factors: PLI scale-up from electric business as volumes move to higher slabs, export incentives from scale-up of exports, and robust growth in BGO/oils business royalty income.",
+                    "No other material items sit in that line."
                   ]
                 }
               ]
@@ -11458,356 +11550,664 @@
               "title": "Order Book & Demand",
               "key_figures": [
                 {
-                  "label": "Export Volumes Q4 FY26",
-                  "value": "6,00,000+",
-                  "unit": "Units",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Export Revenue FY26",
-                  "value": "2.2",
-                  "unit": "USD Billion",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Export Revenue Q4 FY26",
-                  "value": "600",
-                  "unit": "USD Million",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Nigeria Q4 FY26 Volumes",
-                  "value": "1 lakh",
+                  "label": "Highest ever annual volumes (2nd time achieved)",
+                  "value": "5 million",
                   "unit": "units",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Retail Market Share in Nigeria",
-                  "value": "50%",
-                  "unit": "%",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "KTM Exports Q4 FY26",
-                  "value": "17,500",
-                  "unit": "units",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Brazil Stores",
-                  "value": "70",
-                  "unit": "stores",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Export Target Q1 FY27",
-                  "value": "2,20,000",
-                  "unit": "units per month",
-                  "period": "Q1 FY27",
-                  "kind": "guidance"
-                },
-                {
-                  "label": "Domestic Motorcycle Growth Q4 FY26",
-                  "value": "20%",
-                  "unit": "%",
-                  "period": "Q4 FY26",
+                  "label": "Prior instance of highest annual volumes",
+                  "value": "2019",
+                  "unit": null,
+                  "period": "FY19",
                   "kind": "reported"
                 },
                 {
-                  "label": "Chetak Market Share Q4 FY26",
-                  "value": "23%",
-                  "unit": "%",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Chetak Market Share Gain Q4 FY26",
-                  "value": "170",
-                  "unit": "basis points",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Chetak March '26 Retail",
-                  "value": "50,000+",
-                  "unit": "units",
-                  "period": "March '26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "E-segment Scooter Growth Q4 FY26",
-                  "value": "40%",
-                  "unit": "%",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "E-segment Scooter Growth April '26",
-                  "value": "60%+",
-                  "unit": "%",
-                  "period": "April '26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Commercial Vehicle CNG Segment Share",
-                  "value": "90%",
+                  "label": "CV exports growth",
+                  "value": "nearly 50",
                   "unit": "%",
                   "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "E-Rick Monthly Units",
-                  "value": "30,000",
-                  "unit": "units per month",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Domestic Revenue from Electric Business",
-                  "value": "20%+",
-                  "unit": "%",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Electric Business EBITDA Contribution",
-                  "value": "double-digit",
-                  "unit": "%",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Motorcycle Category Growth Estimate",
-                  "value": "7% to 9%",
-                  "unit": "%",
-                  "period": "FY27",
-                  "kind": "guidance"
-                },
-                {
-                  "label": "150cc Plus Segment Growth Estimate",
-                  "value": "twice the industry rate",
-                  "unit": null,
-                  "period": "FY27",
-                  "kind": "guidance"
-                },
-                {
-                  "label": "USD Realization Rate Q4 FY26",
-                  "value": "INR95",
-                  "unit": null,
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Realized Exchange Rate Q4 FY26",
-                  "value": "INR90.6",
-                  "unit": null,
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Realized Exchange Rate Q3 FY26",
-                  "value": "INR88.3",
-                  "unit": null,
-                  "period": "Q3 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Realized Exchange Rate Q4 FY25",
-                  "value": "INR86.5",
-                  "unit": null,
-                  "period": "Q4 FY25",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Revenue Growth YoY Q4 FY26",
-                  "value": "32%",
-                  "unit": "%",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Profit Growth YoY Q4 FY26",
-                  "value": "36%",
-                  "unit": "%",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Volume Growth YoY Q4 FY26",
-                  "value": "24%",
-                  "unit": "%",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Revenue Growth YoY Q4 FY26 (2-wheelers, 3-wheelers, exports)",
-                  "value": "30%",
-                  "unit": "%",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Volume Growth YoY Q4 FY26 (2-wheelers, 3-wheelers, exports)",
-                  "value": "20%",
-                  "unit": "%",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Spares Revenue Range FY26",
-                  "value": "INR1,700 crores to INR1,800 crores",
-                  "unit": null,
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Exports Revenue Q4 FY26",
-                  "value": "nearly 600 million",
-                  "unit": null,
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "EBITDA Growth YoY Q4 FY26",
-                  "value": "36%",
-                  "unit": "%",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "PAT Growth YoY Q4 FY26",
-                  "value": "34%",
-                  "unit": "%",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Exceptional Gain Q4 FY26",
-                  "value": "INR35 crores",
-                  "unit": null,
-                  "period": "Q4 FY26",
                   "kind": "reported"
                 }
               ],
-              "subsections": [
-                {
-                  "label": "Export Business Unit",
-                  "points": [
-                    "BU crossed 6,00,000 units for the second consecutive quarter, 25% growth YoY.",
-                    "Highest ever quarterly revenue from exports despite Nigeria operating at 50% of peak performance."
-                  ]
-                }
-              ]
+              "subsections": []
             },
             {
               "id": "SEG",
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
-                  "label": "Domestic Motorcycle Growth FY26",
-                  "value": "11",
+                  "label": "Exports volume milestone",
+                  "value": "600,000+",
+                  "unit": "units",
+                  "period": "Q4 FY26 (2nd consecutive quarter)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Exports volume growth YoY",
+                  "value": "25",
                   "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Exports revenue",
+                  "value": "2.2",
+                  "unit": "USD billion",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Pulsar Export Volume Q4 FY26",
-                  "value": "Record",
+                  "label": "Nigeria Q4 volumes",
+                  "value": ">1",
+                  "unit": "lakh units",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Nigeria market share (retail)",
+                  "value": "50",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Latam consecutive growth streak",
+                  "value": "11",
+                  "unit": "quarters",
+                  "period": "as of Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Top 30 markets share of emerging market industry",
+                  "value": "80",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Growth rate vs industry in top 30 markets",
+                  "value": "~2x",
                   "unit": null,
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "KTM and Triumph Volumes Q4 FY26",
-                  "value": "43,000",
-                  "unit": "Units",
+                  "label": "KTM motorcycle exports from India",
+                  "value": "~17,500",
+                  "unit": "units",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Chetak Retail Q4 FY26",
-                  "value": "1,00,000+",
-                  "unit": "Units",
+                  "label": "KTM motorcycle exports from India (prior year)",
+                  "value": "~nil",
+                  "unit": "units",
+                  "period": "Q4 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Brazil sales",
+                  "value": "~10,000",
+                  "unit": "units",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Chetak Revenue FY26",
+                  "label": "Brazil manufacturing capacity",
+                  "value": "60,000",
+                  "unit": "units per annum",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Brazil stores",
+                  "value": "~70",
+                  "unit": "stores",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Brazil market share rank",
+                  "value": "5",
+                  "unit": "position",
+                  "period": "April 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Exports run-rate target",
+                  "value": "220,000",
+                  "unit": "units/month",
+                  "period": "Q1 FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Exports run-rate prior level",
+                  "value": "200,000",
+                  "unit": "units/month",
+                  "period": "prior quarter",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Domestic motorcycle industry growth",
+                  "value": "~11",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Pulsar new variants/upgrades introduced",
+                  "value": "10",
+                  "unit": "count",
+                  "period": "Oct'25-Mar'26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Pulsar new variants contribution to sales",
+                  "value": "50",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "N and NS Pulsar series growth vs industry",
+                  "value": ">2x",
+                  "unit": null,
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Probiking (KTM+Triumph) combined domestic volume",
+                  "value": "~43,000",
+                  "unit": "units",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Probiking YoY growth",
+                  "value": "43",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Triumph cumulative volume since inception",
+                  "value": ">1 lakh",
+                  "unit": "units",
+                  "period": "since inception (2.5 years)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Joint KTM/Triumph showrooms operational",
+                  "value": "80",
+                  "unit": "showrooms",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Chetak Q4 retail",
+                  "value": ">1 lakh",
+                  "unit": "units",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Chetak March 2026 retail",
+                  "value": "50,000+",
+                  "unit": "units",
+                  "period": "March 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Chetak market share",
+                  "value": "~23",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Chetak market share gain sequential",
+                  "value": "170",
+                  "unit": "bps",
+                  "period": "QoQ",
+                  "kind": "reported"
+                },
+                {
+                  "label": "E-scooter segment growth",
+                  "value": "40",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "E-scooter segment growth",
+                  "value": "60+",
+                  "unit": "%",
+                  "period": "April 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Chetak FY26 volume milestone",
+                  "value": ">5 lakh",
+                  "unit": "units",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Chetak FY26 revenue",
                   "value": "4,000",
-                  "unit": "INR Crores",
+                  "unit": "INR crores",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Commercial Vehicle Volumes FY26",
-                  "value": "5,00,000+",
-                  "unit": "Units",
+                  "label": "Chetak exclusive stores",
+                  "value": "500+",
+                  "unit": "stores",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Chetak shared motorcycle stores",
+                  "value": "3,000+",
+                  "unit": "stores",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Chetak city presence",
+                  "value": "850+",
+                  "unit": "cities",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Commercial vehicle FY26 volume milestone",
+                  "value": ">5 lakh",
+                  "unit": "units",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Commercial Vehicle Growth Q4 FY26",
+                  "label": "Commercial vehicle Q4 volume growth",
                   "value": "28",
                   "unit": "%",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Spares Revenue FY26",
-                  "value": "1,700+",
-                  "unit": "INR Crores",
+                  "label": "CNG segment share",
+                  "value": "~90",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "WEGO 9018 battery capacity",
+                  "value": "17.7",
+                  "unit": "kWh",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "WEGO 9018 max range",
+                  "value": "296",
+                  "unit": "km",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Riki (E-Rick) city presence",
+                  "value": "100+",
+                  "unit": "cities",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "E-Rick segment run-rate",
+                  "value": "~30,000",
+                  "unit": "units/month",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Electric 2W+3W share of domestic revenue",
+                  "value": "20+",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Electric 2W+3W EBITDA margin",
+                  "value": "double-digit",
+                  "unit": "%",
+                  "period": "current/last 2 quarters",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV revenue",
+                  "value": "8,000",
+                  "unit": "INR crores",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "3-wheeler industry growth Q4 FY26",
-                  "value": "25%+",
-                  "unit": null,
+                  "label": "Chetak monthly run-rate",
+                  "value": "~30,000",
+                  "unit": "units/month",
+                  "period": "recent months",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Chetak current capacity",
+                  "value": "50,000",
+                  "unit": "units/month",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "3-wheeler industry growth Q4",
+                  "value": "25+",
+                  "unit": "%",
                   "period": "Q4 FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "3-wheeler industry growth April FY26",
-                  "value": "25%+",
-                  "unit": null,
-                  "period": "April FY26",
+                  "label": "3-wheeler industry growth April",
+                  "value": "25+",
+                  "unit": "%",
+                  "period": "April 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BACL customer base",
+                  "value": "~1.8 million",
+                  "unit": "customers",
+                  "period": "FY26 end",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BACL outlets",
+                  "value": "~6,200",
+                  "unit": "outlets",
+                  "period": "FY26 end",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BACL 3-wheeler portfolio volume growth",
+                  "value": "~49",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BACL total income",
+                  "value": ">3,000",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BACL PAT",
+                  "value": "665",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BACL PAT prior year",
+                  "value": "58",
+                  "unit": "INR crores",
+                  "period": "FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BACL AUM",
+                  "value": "~19,000",
+                  "unit": "INR crores",
+                  "period": "FY26 end",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BACL disbursements",
+                  "value": "<15,000",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BACL new customers onboarded",
+                  "value": ">1 million",
+                  "unit": "customers",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BACL capital adequacy ratio",
+                  "value": "19.5",
+                  "unit": "%",
+                  "period": "FY26 end",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BACL return on equity",
+                  "value": "~23",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "2-wheeler, 3-wheeler, exports segment volume growth",
+                  "value": "20",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "2-wheeler, 3-wheeler, exports segment revenue growth",
+                  "value": "30",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Exports revenue (USD)",
+                  "value": "600",
+                  "unit": "USD million",
+                  "period": "Q4 FY26",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
+                  "label": "Exports Business Unit",
+                  "points": [
+                    "Exports BU crossed 600,000 units mark for 2nd consecutive quarter, growing 25% YoY, resulting in highest ever quarterly export revenue.",
+                    "FY26 was second-highest ever in volume terms but highest ever in revenue terms at USD2.2 billion — achieved despite Nigeria (largest volume market) operating at 50% of peak performance.",
+                    "Nigeria reached stability in Q4, crossing 1 lakh units, delivering full-year performance equal to FY25; wide retail distribution footprint gives competitive edge with 50% retail market share.",
+                    "Latam delivered sustained growth for 11 consecutive quarters, another all-time high, driven by strong growth across almost every country; remains key driver of export volume, revenue and EBITDA.",
+                    "Asia recorded double-digit growth, particularly Sri Lanka, Philippines and Nepal, enabling Pulsar brand record export volume for the quarter.",
+                    "Of top 30 markets (80% of emerging market industry), company grew at almost twice the industry rate in Q4.",
+                    "KTM motorcycle exports from India revived after past quarters' disruption.",
+                    "Brazil: supported by expanded manufacturing capacity (now 60,000 units/annum), new product introductions (400 NS) and wider market presence (~70 top-class stores); reached #5 position in April in share terms — youngest company (3 years old in Brazil vs Bajaj Group's 100 years) to break into top 5.",
+                    "Company targeting export run-rate of 220,000 units/month this quarter, up from 200,000 level, despite loss of business in Gulf region due to geopolitical issues."
+                  ]
+                },
+                {
                   "label": "Domestic Motorcycles",
                   "points": [
-                    "Industry growth driven by 125cc+ segment, particularly 150cc+ segment.",
-                    "Pulsar portfolio refreshed with 10 new variants, contributing to 50% of sales."
+                    "Industry had split trajectory in FY26: muted H1, strong H2 recovery driven by festive season and GST rate cuts, resulting in ~11% full-year growth.",
+                    "Growth driven by upper half of industry: 125cc+ growing faster than 100cc, with 150cc+ the fastest growing segment.",
+                    "Clear turnaround in sports segment (150cc+) performance with sequential market share gains month-on-month, driven by refreshed Pulsar portfolio.",
+                    "10 new Pulsar variants/upgrades introduced Oct-Mar now contribute 50% of sales, signaling good acceptance.",
+                    "Share gains in H2 were secular across every state (J&K to Tamil Nadu, Northeast to Rajasthan), each growing faster than industry in their region.",
+                    "Led by N and NS series of Pulsar, which grew at over twice industry rate in Q4.",
+                    "Further upgrades/interventions planned across Pulsar portfolio in 125 and 150-plus segments in coming months to capture festive season surge."
                   ]
                 },
                 {
-                  "label": "Probiking",
+                  "label": "Probiking (KTM & Triumph)",
                   "points": [
-                    "KTM and Triumph brands delivered record domestic performance in Q4.",
-                    "KTM growth led by Adventure and street portfolios, Triumph driven by Speed 400."
+                    "Continued steep growth trajectory; combined domestic volumes ~43,000 units in Q4, +43% YoY — highest ever quarterly performance.",
+                    "KTM growth led by strong demand across Adventure and street portfolios, with Duke 250 leading street segment; Adventure portfolio strengthened with KTM 390 Adventure R launch in January (most off-road capable adventure motorcycle in India); more tax-friendly 350cc variants introduced.",
+                    "Triumph delivered highest ever performance, driven by Speed 400; crossed 1 lakh unit milestone since inception within 2.5 years; portfolio expanded with 350cc platform (lower GST benefit) and Tracker 400 launch in Q4.",
+                    "Continued investment in performance sports category via events: KTM Cup, Adventure Rally for KTM, Epic Rides, World of Triumph Expos.",
+                    "Triumph Scrambler along with KTM and Triumph Adventure bikes achieved leadership share in the adventure segment in Q4.",
+                    "Joint KTM/Triumph showroom rollout progressed with 80 showrooms operational, helping drive reach while maintaining differentiated brand presence."
                   ]
                 },
                 {
-                  "label": "Chetak Electric Scooters",
+                  "label": "Chetak (Electric Scooter)",
                   "points": [
-                    "Chetak crossed 1 lakh retail mark in Q4, highest ever quarterly retails.",
-                    "Market share moved up to 23%, gain of 170 basis points sequentially."
+                    "Crossed 1 lakh retail mark for first time in a single quarter in Q4, highest ever quarterly retail; March'26 was largest month with 50,000+ retails.",
+                    "Market share moved to ~23%, up 170 bps sequentially, amid strong consumer sentiment shift toward e-scooters (segment grew 40% in Q4, 60%+ in April, far outpacing ICE scooters).",
+                    "Key contributor to Q4 sequential share gain was Chetak C25, new variant addressing youth needs for lighter, faster, easier last-mile mobility, combining everyday usability with Chetak's trusted durability/build quality.",
+                    "FY26: crossed 5-lakh unit mark at INR4,000 crore revenue; reach at 500+ exclusive Chetak stores plus ~3,000+ shared motorcycle stores across 850+ cities.",
+                    "Chetak commenced international exports in Q4 to Sri Lanka, Philippines and Nepal — seen as potentially significant opportunity in due course."
                   ]
                 },
                 {
-                  "label": "Commercial Vehicles",
+                  "label": "Commercial Vehicles / 3-Wheelers",
                   "points": [
-                    "Commercial vehicle business crossed 5 lakh unit mark for the first time.",
-                    "ICE franchise remains strong with 90% share in CNG segment."
+                    "Landmark year: first time CV business crossed 5-lakh unit mark for full year, reflecting ICE leadership and EV portfolio scale-up.",
+                    "Q4 delivered highest ever quarterly CV volumes, +28% YoY; ICE franchise remains solid with ~90% share in CNG segment.",
+                    "Maintained #1 position in electric 3-wheelers throughout Q4 and April in registrations; scale-up accompanied by healthy profitability, making E3-wheelers strong contributor to top line and bottom line.",
+                    "Q4 highlight: launch of WEGO 9018, largest electric 3-wheeler in the industry, powered by 17.7 kWh battery with advanced PMS and regenerative braking, delivering max range of 296 km (highest in segment).",
+                    "Riki (E-Rick) progressing steadily with presence in 100+ cities; segment itself has slowed due to enforcement of regulation, which is helping consolidate the industry in favor of larger/better OEMs; even so, ~30,000 units/month run-rate still offers large opportunity via quality/reliability upgrade.",
+                    "Electric 2W+3W business is now the largest in the auto industry for the company, accounting for 20%+ of domestic revenues and contributing double-digit EBITDA margin."
+                  ]
+                },
+                {
+                  "label": "Spares Business",
+                  "points": [
+                    "Sales of INR1,700+ crore, growth of 16%, delivering record EBITDA margin."
+                  ]
+                },
+                {
+                  "label": "BACL (Bajaj Auto Credit) Business Update",
+                  "points": [
+                    "Excellent year, scaled up rapidly; customer base ~1.8 million supported by ~6,200 outlets covering nearly entirety of Bajaj Auto retail network.",
+                    "2-wheeler lending delivered robust growth with continued strength in core motorcycles and strong traction in EVs and premium segment (KTM, Triumph).",
+                    "3-wheeler portfolio was a standout, recording ~49% volume growth, led by significant EV segment expansion and introduction of new business and refinancing models.",
+                    "Total income crossed INR3,000 crore; PAT INR665 crore vs INR58 crore prior year, near 12x increase — business now hitting meaningful scale.",
+                    "AUM reached ~INR19,000 crore, roughly doubling during the year; disbursements a tad under INR15,000 crore.",
+                    "Onboarded over 1 million customers last year; asset quality remains healthy; capital adequacy ratio 19.5%; delivering industry-leading ROE of ~23%.",
+                    "BACL now a material earnings contributor within the group within 2 years, positioned as strategic enabler within the Bajaj Auto ecosystem."
+                  ]
+                },
+                {
+                  "label": "EV Revenue & Margin Detail (Q&A)",
+                  "points": [
+                    "EV revenue (2W+3W combined) of INR8,000 crore delivers double-digit EBITDA margin, achieved despite Chetak (2-wheeler) being EBITDA neutral — driven by rising proportion of profitable electric 3-wheelers."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "TECH",
+              "title": "Product & Technology",
+              "key_figures": [
+                {
+                  "label": "NS range growth vs sport segment growth",
+                  "value": "twice",
+                  "unit": null,
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Upcoming Product Launches",
+                  "points": [
+                    "New range planned in both 125cc and 150cc plus segments; new introductions expected to hit market as early as July under the Pulsar brand.",
+                    "A 125cc affordable motorcycle is 'very much in the cards' though launch date undisclosed.",
+                    "NS range introductions include NS 400 upgrades and variants that have been well accepted even in markets where the company doesn't enjoy a strong competitive ratio (e.g., UP), contributing to NS range growing at twice the sport segment growth rate.",
+                    "Both the 125cc and 150cc plus new ranges expected to make their appearance in July."
+                  ]
+                },
+                {
+                  "label": "WEGO 9018 Technology",
+                  "points": [
+                    "Largest electric 3-wheeler in the industry, powered by a 17.7 kWh battery with advanced PMS (permanent magnet synchronous motor) and regenerative braking, delivering a max range of 296 km — highest in its segment."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MFG",
+              "title": "Manufacturing & Capacity",
+              "key_figures": [
+                {
+                  "label": "Brazil manufacturing capacity",
+                  "value": "60,000",
+                  "unit": "units per annum",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Brazil usable capacity",
+                  "value": "50,000",
+                  "unit": "units per annum",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Chetak capacity",
+                  "value": "50,000",
+                  "unit": "units/month",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Sequential EBITDA margin change",
+                  "value": "flat",
+                  "unit": null,
+                  "period": "Q4 FY26 QoQ",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Chetak capacity utilization target",
+                  "value": "100",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "target"
+                },
+                {
+                  "label": "Brazil localization capacity step-change threshold",
+                  "value": "20,000",
+                  "unit": "units",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Brazil localization capacity step-change threshold (upper)",
+                  "value": "100,000",
+                  "unit": "units",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Chetak Capacity Expansion",
+                  "points": [
+                    "Demand for Chetak has not been fully met for various reasons; capacity now at 50,000 units/month, expected to be maxed out, contingent on labour issues and fuel availability at Tier 1/Tier 2 vendors not playing spoiler to reach 100% utilization.",
+                    "Serious work underway to determine how/where to expand capacity in a quantum manner; company has reached a point where a substantive capacity increase is deemed needed; will share details once the exercise is complete."
+                  ]
+                },
+                {
+                  "label": "Brazil Capacity Step Changes",
+                  "points": [
+                    "Manufacturing capacity constrained by localization requirements which change at different volume thresholds (20,000, 50,000-60,000, and beyond 100,000 units — each threshold requiring different localization).",
+                    "Current capacity closer to 60,000 (50,000 usable); company hopes to hit that level within next 12 months and will look at further capacity enhancement in FY27-28 by mid-year.",
+                    "Approach in Brazil has been brand-forward rather than volume-forward, launching highest-end models first and investing in exclusive high-end stores to build the Pulsar and Dominar brand franchise, particularly in the first 5 years."
+                  ]
+                },
+                {
+                  "label": "3-Wheeler Capacity",
+                  "points": [
+                    "Company is capacity limited in 3-wheelers and working to expand capacity, particularly for larger format 3-wheelers, given the shift in demand from small 3-wheelers toward larger 7 and 9 series 3-wheelers driven by ticketing/shared-ride markets rather than full-hire contracting markets."
                   ]
                 }
               ]
@@ -11817,96 +12217,154 @@
               "title": "Geography & Distribution",
               "key_figures": [
                 {
-                  "label": "Brazil Sales Q4 FY26",
-                  "value": "10,000",
-                  "unit": "Units",
-                  "period": "Q4 FY26",
+                  "label": "Nigeria retail stores",
+                  "value": "800+",
+                  "unit": "stores",
+                  "period": "current",
                   "kind": "reported"
                 },
                 {
-                  "label": "Brazil Manufacturing Capacity",
-                  "value": "60,000",
-                  "unit": "Units per annum",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Chetak Stores",
-                  "value": "500+",
-                  "unit": "Stores",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Chetak Cities",
-                  "value": "850+",
-                  "unit": "Cities",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Nigeria monthly run rate",
+                  "label": "Nigeria monthly run-rate (2W)",
                   "value": "35,000+",
-                  "unit": "units",
+                  "unit": "units/month",
                   "period": "last 2-3 months",
                   "kind": "reported"
                 },
                 {
-                  "label": "Nigeria 3-wheelers monthly run rate",
+                  "label": "Nigeria monthly run-rate (3W)",
                   "value": "5,000+",
-                  "unit": "units",
+                  "unit": "units/month",
                   "period": "last 2-3 months",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Nigeria peak run-rate reference",
+                  "value": "50,000",
+                  "unit": "units/month",
+                  "period": "historical peak",
                   "kind": "reported"
                 },
                 {
                   "label": "Nigeria fuel price increase",
-                  "value": "30%",
-                  "unit": null,
-                  "period": null,
+                  "value": "~30",
+                  "unit": "%",
+                  "period": "recent",
                   "kind": "reported"
                 },
                 {
-                  "label": "Nigeria retailers",
-                  "value": "800+",
-                  "unit": null,
-                  "period": null,
+                  "label": "Brazil stores",
+                  "value": "300-odd",
+                  "unit": "stores",
+                  "period": "current",
                   "kind": "reported"
                 },
                 {
-                  "label": "Brazil manufacturing capacity",
-                  "value": "50,000",
-                  "unit": "units",
+                  "label": "Middle East/Gulf lost sales",
+                  "value": "5,000-6,000",
+                  "unit": "units/month",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Container export frequency",
+                  "value": "1 every 10 minutes",
+                  "unit": null,
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Ships caught per day",
+                  "value": "4",
+                  "unit": "ships/day",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Nigeria FY26 performance vs FY25",
+                  "value": "equal to FY25",
+                  "unit": null,
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Brazil manufacturing capacity target",
-                  "value": "60,000",
-                  "unit": "units",
-                  "period": "next 12 months",
-                  "kind": "target"
+                  "label": "Brazil age since inception",
+                  "value": "3",
+                  "unit": "years",
+                  "period": "current",
+                  "kind": "reported"
                 },
                 {
-                  "label": "Brazil manufacturing capacity future target",
-                  "value": "100,000",
-                  "unit": "units",
-                  "period": "FY27-28",
-                  "kind": "target"
+                  "label": "Bajaj Auto company age",
+                  "value": "80",
+                  "unit": "years",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bajaj Group anniversary",
+                  "value": "100",
+                  "unit": "years",
+                  "period": "11 May",
+                  "kind": "reported"
+                },
+                {
+                  "label": "KTM/BAIH AG associate share period reference (prior quarter)",
+                  "value": "Q2 FY26",
+                  "unit": null,
+                  "period": "Q2 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Mexico plant import duty",
+                  "value": "3",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Mexico stores vs nearest competitor",
+                  "value": "double",
+                  "unit": null,
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Middle East/Gulf overall export base reference",
+                  "value": "200 plus",
+                  "unit": null,
+                  "period": "current",
+                  "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Latin America",
+                  "label": "Nigeria Outlook",
                   "points": [
-                    "Region delivered sustained growth for 11 consecutive quarters.",
-                    "Key driver of export performance in terms of volume, revenue, and EBITDA."
+                    "Steady run-rate of 35,000+ units/month (2W) plus 5,000+ (3W) in last 2-3 months, healthy and expected to continue growing.",
+                    "Watching Nigeria fuel prices which increased ~30%; higher oil prices help Nigeria as a net crude exporter, but lack of refining capacity means consumer fuel prices affecting common man have risen — two factors expected to balance out.",
+                    "In readiness for season with stocks on ground and strong salesforce engagement with 800+ retailers; good advancements against 125cc bikes from Chinese and other sources."
                   ]
                 },
                 {
-                  "label": "Brazil",
+                  "label": "Brazil Outlook",
                   "points": [
-                    "Sales nearly 10,000 units in Q4, supported by expanded manufacturing capacity.",
-                    "Business reached number 5 position in April in terms of market share."
+                    "Still small in Brazil, viewed as a very large opportunity; top-down brand-forward approach; positioned with a plant with only 3% duty and ~300 stores (double any competitor including Japanese brands).",
+                    "Expect strong growth in Mexico with hope that a US-Mexico FTA (June/July) gets signed; other Latam markets (Colombia, Argentina, Peru) recording highest ever sales."
+                  ]
+                },
+                {
+                  "label": "Logistics & Container Availability",
+                  "points": [
+                    "Container availability flagged as a market-wide issue ('big nightmare'), but years of logistics team experience and coordination between plant and logistics team managing it well.",
+                    "Exporting one container every 10 minutes, catching 4 ships every day; out-of-the-box thinking used to find alternate routes and ensure container supply amid global disruptions.",
+                    "No sale lost due to logistics in exports apart from the Middle East, where nothing is currently going to Gulf countries, costing about 5,000-6,000 units/month out of overall 200+ thousand."
+                  ]
+                },
+                {
+                  "label": "Currency/Emerging Market Demand Context",
+                  "points": [
+                    "Internationally, currency-devaluation-led inflation seen in India has not yet appeared in many emerging markets; demand remains healthy, particularly in Latam, where Bajaj's strong position and sports segment leadership drive rapid growth.",
+                    "In Asia, Sri Lanka and Philippines continue to be good markets holding strong."
                   ]
                 }
               ]
@@ -11916,40 +12374,155 @@
               "title": "Supply Chain & Operations",
               "key_figures": [
                 {
-                  "label": "Spare Parts Sales FY26",
-                  "value": "1,700+",
-                  "unit": "INR Crores",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Container export frequency",
-                  "value": "one container every 10 minutes",
-                  "unit": null,
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "Ships caught daily",
-                  "value": "4",
-                  "unit": "ships",
-                  "period": "daily",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Middle East lost sales",
-                  "value": "5,000 - 6,000",
-                  "unit": "units per month",
-                  "period": null,
+                  "label": "Supply chain impairment to demand servicing",
+                  "value": "10-15",
+                  "unit": "%",
+                  "period": "current/April 2026",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Supply Chain Challenges",
+                  "label": "Supply Chain Constraints",
                   "points": [
-                    "Supply chain difficulties due to LPG shortage, manpower availability, and logistics.",
-                    "Impaired availability to service demand by about 10% to 15%."
+                    "Supply chain difficulties in terms of LPG shortage, manpower availability and outbound logistics to overseas markets have impaired ability to service demand by about 10-15%.",
+                    "Hopeful these will resolve over time as manpower migration issues ease and people return to work; fuel availability alternates like PNG and vendor realignment underway.",
+                    "April performance was impaired by 10-15%, largely due to vehicle availability constraints from vendor system facing manpower migration and fuel availability difficulties; if this impairment wasn't present, performance would have been better given spillover of unserviced demand from March/April."
+                  ]
+                },
+                {
+                  "label": "Rate/Sourcing Negotiation Frequency",
+                  "points": [
+                    "Negotiation and rate locking-in on commodity supplies has moved to shorter frequency rather than the quarterly rates that were the norm in the past, given the dynamic/volatile situation."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [
+                {
+                  "label": "3-wheeler industry growth",
+                  "value": "25+",
+                  "unit": "%",
+                  "period": "Q4 FY26 and April 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Motorcycle industry growth in Q4 (prior rate)",
+                  "value": "20",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost inflation potential rise (Q1 FY27 outlook, metal complex)",
+                  "value": "3-5",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "USD realization rate outlook",
+                  "value": "95",
+                  "unit": "INR/USD",
+                  "period": "Q1 FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "GST rate cut benefit rollback due to price hike",
+                  "value": "30-40",
+                  "unit": "%",
+                  "period": "post 1 April 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Motorcycle industry growth decline (from 20% to 9%)",
+                  "value": "20 to 9",
+                  "unit": "%",
+                  "period": "Q4 FY26 to April 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Nigeria historical monthly run-rate reference",
+                  "value": "25,000",
+                  "unit": "units",
+                  "period": "historical",
+                  "kind": "reported"
+                },
+                {
+                  "label": "150cc+ segment outperformance vs industry duration",
+                  "value": "5-6",
+                  "unit": "months",
+                  "period": "last 5-6 months",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "3-Wheeler Structural Demand Drivers",
+                  "points": [
+                    "3-wheeler growth (best-performing auto category post-COVID) driven by exploding mobility requirements in non-metro locations and smaller towns.",
+                    "Driven by huge spread of road network and people traveling between towns for work, choosing shared/commute options over renting homes near workplace.",
+                    "Women coming out and traveling is exploding mobility requirements; insufficient public transport systems sustaining this phenomenon over several quarters.",
+                    "Shift toward larger format 3-wheelers (7 and 9 series) as growth increasingly comes from ticketing/shared markets rather than full-hire contracting markets; some competitors remain only in small 3-wheelers.",
+                    "Retail finance (via BACL) plays a key role enabling asset acquisition and enhancing income for 3-wheeler buyers."
+                  ]
+                },
+                {
+                  "label": "Demand Environment Segmentation",
+                  "points": [
+                    "Within the moderated 9% growth, upper half of the upper half of the industry is maintaining strong growth, indicating customers with stronger wallets continue to purchase, aided by good start to marriage season in northern India and evidence of upgrading behavior.",
+                    "In 3-wheelers, ICE segment has come down while electric segment growth has strengthened (e.g., in April) due to LPG shortage, CNG issues and imminent petrol price hikes favoring EV adoption."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [
+                {
+                  "label": "BAIH BV acquisition of Bajaj Auto Holdings AG (formerly Pierer Bajaj AG) stake",
+                  "value": "100",
+                  "unit": "%",
+                  "period": "completed 18 Nov 2025",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bajaj Auto Holdings AG stake in Bajaj Mobility AG (BMAG)",
+                  "value": "75",
+                  "unit": "%",
+                  "period": "at acquisition",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "KTM/BMAG Acquisition Structure & Accounting",
+                  "points": [
+                    "Bajaj Auto, through wholly-owned Netherlands subsidiary BAIH BV, completed acquisition of 100% stake in Bajaj Auto Holdings AG (formerly Pierer Bajaj AG), which held 75% stake in Bajaj Mobility AG (BMAG), the listed holding entity for KTM.",
+                    "Transaction completed 18 November 2025; Bajaj moved from minority position to controlling stake; BMAG and KTM are now step-down subsidiaries of the group.",
+                    "BAIH AG/BMAG/KTM AG Group publishes results on a half-yearly basis per European listing regulations, meaning quarterly financial information was not available in prior periods.",
+                    "For quarter ended 31 March 2026, group accounted for its share of consolidated BMAG/KTM AG results for the period 1 July to 18 November 2025 (date of controlling-interest acquisition); prior accounting was last done in Q2 FY26 (published November) covering 1 Jan-30 June 2025.",
+                    "Prior to acquisition, KTM (via BAIH AG) was accounted for as an associate under equity method; post-acquisition (from November onward), BMAG/KTM AG consolidated line-by-line through 31 December 2025.",
+                    "Going forward, intention is to move BMAG/KTM AG to quarterly reporting (voluntary, aligning with Bajaj Auto's calendar) as a measure of good governance/transparency, consolidated with a 1-quarter lag.",
+                    "Acquisition accounted for under Ind AS 103 (business combinations); excess of fair value over net assets and purchase consideration recognized as capital reserve in other equity line.",
+                    "Detailed note on transaction structure and accounting treatment provided in press release; IR team available for offline clarity given the complexity."
+                  ]
+                },
+                {
+                  "label": "KTM Turnaround Plan",
+                  "points": [
+                    "Focus in 2026 continues to be driving, along with the Executive Board, a broad-based turnaround plan covering portfolio priorities, product development, go-to-market, supply chain (including sourcing), and organizational/structure simplification aimed at rationalizing fixed costs.",
+                    "Results of turnaround expected to start showing up in the latter part of 2026."
+                  ]
+                },
+                {
+                  "label": "Management Elevation",
+                  "points": [
+                    "Board of Directors, on NRC recommendation, approved elevation of Rakesh Sharma to Joint Managing Director of the company effective 1 June 2026."
                   ]
                 }
               ]
@@ -11960,16 +12533,40 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Middle East Geopolitical Issues",
+                  "label": "Demand-side Risks",
                   "points": [
-                    "Potential disruptions due to geopolitical issues in the Middle East."
+                    "Demand environment softened in April due to general inflation, increased vehicle prices, LPG shortages, manpower migration and LPG-shortage-led effect on consumer sentiment.",
+                    "Price hikes taken by nearly all companies (including Bajaj, from 1 April) mean 30-40% of the GST rate cut benefit previously passed to customers could get rolled back, impacting demand.",
+                    "Adverse sentiment has set in due to LPG shortage crisis reaching customer homes, causing purchase postponement.",
+                    "Geopolitical disruptions in the Middle East have caused loss of business in the Gulf region (5,000-6,000 units/month), with hope for no further disruption.",
+                    "Nigeria fuel prices increased ~30%, which could affect consumer demand even as higher crude prices benefit Nigeria as a net exporter."
                   ]
                 },
                 {
-                  "label": "Inflation and Price Hikes",
+                  "label": "Commodity/Cost Risks",
                   "points": [
-                    "General inflation and increased vehicle prices affecting consumer sentiment.",
-                    "Potential rise in cost environment by 3% to 5% driven by metal complex."
+                    "Cost environment saw a potential rise during the quarter of about 3-5%, driven by the metal complex, partially addressed via price hikes from 1 April and helped by favorable USD realization.",
+                    "Q1 FY27 commodity environment sharply/hyper inflationary; tight material availability for aluminium alloys and polymers; inflation is largely event-driven (supply shock) and highly volatile — 3 refreshes to the outlook in the last 4 weeks alone.",
+                    "Uncertainty over how long the event-driven inflation will last and how the situation evolves through the rest of the quarter."
+                  ]
+                },
+                {
+                  "label": "Supply Chain Risks",
+                  "points": [
+                    "LPG shortage, manpower availability and outbound logistics to overseas markets have impaired ability to service demand by 10-15%.",
+                    "Container availability flagged broadly as a market issue amid global logistics chaos."
+                  ]
+                },
+                {
+                  "label": "Currency Risk",
+                  "points": [
+                    "Company is not hedged on currency and realizes at market rates, meaning it is exposed to currency volatility both as a tailwind and potential risk."
+                  ]
+                },
+                {
+                  "label": "E-Rickshaw Regulatory Risk",
+                  "points": [
+                    "E-Rick segment itself has slowed down due to enforcement of regulation on the streets, though this is viewed as helping consolidate the industry in favor of larger, better OEMs."
                   ]
                 }
               ]
@@ -11977,13 +12574,139 @@
             {
               "id": "GUID",
               "title": "Guidance & Outlook",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "Motorcycle industry growth guidance",
+                  "value": "7-9",
+                  "unit": "%",
+                  "period": "near term/next few months",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "150cc+ segment growth expectation vs industry",
+                  "value": "~2x",
+                  "unit": null,
+                  "period": "near term",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Export run-rate target",
+                  "value": "220,000",
+                  "unit": "units/month",
+                  "period": "Q1 FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Material cost inflation estimate",
+                  "value": "3.5-4",
+                  "unit": "% of revenue",
+                  "period": "Q1 FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Pricing offset of inflation achieved",
+                  "value": "40",
+                  "unit": "%",
+                  "period": "from 1 April 2026",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Dividend payout of profits (100 years milestone)",
+                  "value": "100",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Brazil capacity build-out horizon",
+                  "value": "5",
+                  "unit": "years",
+                  "period": "first phase",
+                  "kind": "target"
+                },
+                {
+                  "label": "RM inflation quarter-over-quarter comparison basis",
+                  "value": "Q1 over Q4",
+                  "unit": null,
+                  "period": "Q1 FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Commodity refreshes frequency",
+                  "value": "3",
+                  "unit": "refreshes",
+                  "period": "last 4 weeks",
+                  "kind": "reported"
+                }
+              ],
               "subsections": [
                 {
-                  "label": "Growth Outlook",
+                  "label": "Near-Term Demand Outlook",
                   "points": [
-                    "Expect growth to come from 125cc+ and 150cc+ segments.",
-                    "Electric category in both 3-wheelers and 2-wheelers to witness continued growth."
+                    "Motorcycle category expected to slow from ~20% growth in Q4 to an estimated 7-9% in the near term (next few months, not a full-year call), due to inflation, price hikes and sentiment effects.",
+                    "Growth expected to come almost entirely from the 125cc+ segment, and even more from the 150cc+ segment, which should grow at twice the industry rate; April outcomes support this view.",
+                    "Electric category (2W and 3W) expected to witness continuity of growth or even a further increase, helping mitigate overall demand softening since 150cc+ and electric are the company's focus areas.",
+                    "Base effect will start kicking in for H2 FY27 given lower H1 FY26 base and stronger H2 FY26 sales; full year growth exit rate not being wagered at this point — depends on inflation/pricing impact on reversal of GST benefits."
+                  ]
+                },
+                {
+                  "label": "Q1 FY27 Growth Tempo",
+                  "points": [
+                    "Company expects growth tempo to continue in Q1 based on strong competitive positions in 150cc+ domestic motorcycles, EV business (2W & 3W), and continued performance in large stable territories like Latam and parts of Asia.",
+                    "Through Q1 and rest of FY27, focus remains on gaining share in 125cc+ (particularly 150cc+) via new product launches and brand development timed for the festive season."
+                  ]
+                },
+                {
+                  "label": "Export Outlook",
+                  "points": [
+                    "Pushing exports to 220K+ units/month level, leveraging sports segment leadership in Latam and more aggressive outreach to gain share in commercial bikes, particularly against China-origin competitors.",
+                    "Exports expected to continue doing well aided by disproportionate share of growth from strong retail presence and brand/channel investment in key markets; hopeful of pushing beyond 200,000 units/month in Q1.",
+                    "Whether exports outgrow domestic in FY27 is uncertain given many variables (logistics, currency, demand), but company optimistic about both."
+                  ]
+                },
+                {
+                  "label": "Super Premium (KTM/Triumph) Outlook",
+                  "points": [
+                    "Plan to accelerate growth in both Triumph and KTM based on network expansion and launch of more tax-friendly 350cc variants."
+                  ]
+                },
+                {
+                  "label": "Electric Business Outlook",
+                  "points": [
+                    "Plan to deepen leadership position leveraging wider existing product portfolio, planned new launches, and expansion of exclusive network.",
+                    "KTM AG turnaround support to continue, aiming to bring KTM back to original performance in due course.",
+                    "Key focus area: balancing growth and profitability optimally through robust operational management given the current environment."
+                  ]
+                },
+                {
+                  "label": "Bajaj Auto Credit (BACL) Outlook",
+                  "points": [
+                    "Continue to build capability and leverage scale in Bajaj Auto Credit to deliver industry-class-leading performance."
+                  ]
+                },
+                {
+                  "label": "Q1 FY27 Cost/Margin Management Outlook",
+                  "points": [
+                    "Intention, once steady state is reached, is to continue holding and driving margins as done historically; but near-term situation remains highly dynamic and volatile with frequent commodity outlook refreshes (3 refreshes in last 4 weeks).",
+                    "Strategy: continue judicious pricing (40% of impact covered from 1 April), hard look at discretionary spend, accelerate cost savings, and evaluate further pricing only as a later recourse while protecting competitive growth, factoring in currency tailwind."
+                  ]
+                },
+                {
+                  "label": "New Product Launch Timing",
+                  "points": [
+                    "New range in both 125cc and 150cc-plus segments expected to launch as early as July under Pulsar brand; 125cc affordable motorcycle also in the pipeline (timing undisclosed)."
+                  ]
+                },
+                {
+                  "label": "Chetak Capacity Outlook",
+                  "points": [
+                    "Substantive capacity increase in Chetak deemed necessary; exercise underway to determine how/where to expand capacity in a quantum manner, details to be shared once complete."
+                  ]
+                },
+                {
+                  "label": "Buyback Timeline",
+                  "points": [
+                    "Shareholder approval process for the buyback (exceeding 10% of free reserves threshold of ~INR3,500 crore) starting now, expected to culminate by end of July with SEBI filing; payouts likely second week of July; dividend paid after AGM, also in July."
                   ]
                 }
               ]
@@ -11991,27 +12714,147 @@
           ],
           "guidance_ledger": [
             {
-              "metric": "Motorcycle Category Growth",
-              "horizon": "near term",
-              "statement": "The motorcycle category growth is expected to slow down to 7% to 9% in the near term.",
+              "metric": "Domestic Motorcycle Industry Growth",
+              "horizon": "near term / next few months",
+              "statement": "This is bound to slow down the motorcycle category from its rocking 20% growth in Q4 to we estimate 7% to 9% in the near term.",
               "specificity": "specific",
               "direction": "down",
               "status": "new"
             },
             {
-              "metric": "Export Volumes",
+              "metric": "150cc+ Segment Growth vs Industry",
+              "horizon": "near term",
+              "statement": "We expect this growth to come almost entirely from the 125cc plus segment and even more so from the 150cc plus segment, which should grow at twice the industry rate.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Electric Category Growth (2W & 3W)",
+              "horizon": "near term",
+              "statement": "The electric category in both 3-wheelers and 2-wheelers will witness not just continuity of growth, but perhaps a further increase in growth.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Export Volume Run-Rate",
               "horizon": "Q1 FY27",
-              "statement": "We are looking at moving the exports needle to 2,20,000 units per month this quarter.",
+              "statement": "We are looking at moving the exports needle to 2,20,000 units per month this quarter, up from the 2,00,000 levels.",
               "specificity": "specific",
               "direction": "up",
               "status": "reiterated"
             },
             {
-              "metric": "Electric Vehicle Growth",
-              "horizon": "ongoing",
-              "statement": "The electric category in both 3-wheelers and 2-wheelers will witness not just continuity of growth, but perhaps a further increase in growth.",
+              "metric": "Growth Tempo Q1 FY27",
+              "horizon": "Q1 FY27",
+              "statement": "We expect our growth tempo to actually continue in Q1 basis the strong competitive positions we enjoy in the key segments like the 150cc plus in domestic motorcycles, the EV business, both in 2-wheelers and 3-wheelers and the continued performance in large and stable territories like Latam and parts of Asia.",
               "specificity": "vague",
               "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Sports/Commercial Bike Share Gain (Exports)",
+              "horizon": "FY27",
+              "statement": "In exports, pushing exports to the 220K plus levels on the back of leadership in the sports segment in Latam and a more aggressive outreach in gaining shares in commercial bikes, particularly from competitors originating in China.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Super Premium (KTM/Triumph) Growth",
+              "horizon": "FY27",
+              "statement": "Super Premium segment accelerate growth in both Triumph and KTM basis network expansion and the launch of the more tax-friendly 350cc variants.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Electric Business Leadership",
+              "horizon": "FY27",
+              "statement": "In electric business, we will deepen our leadership position, leveraging the wider product portfolio, which is already there and some new launches planned and the expansion of an exclusive network.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "KTM Turnaround",
+              "horizon": "2026 (latter part)",
+              "statement": "KTM AG, we will continue to support the management there in the turnaround, which is well underway to bring back KTM in due course of time to its original performance. I expect the results of this to start showing up in the latter part of 2026 itself.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Bajaj Auto Credit (BACL) Performance",
+              "horizon": "ongoing",
+              "statement": "We will continue to build capability and now leverage scale in Bajaj Auto Credit to deliver an industry-class-leading performance.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Material Cost Inflation Impact",
+              "horizon": "Q1 FY27",
+              "statement": "We are currently estimating a material cost inflation impact of approximately 3.5% to 4% of revenue.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Pricing Offset of Cost Inflation",
+              "horizon": "from 1 April 2026",
+              "statement": "We have taken very judicious pricing actions to offset about 40% of this impact so far.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Margin Management (Full Year)",
+              "horizon": "FY27 steady state",
+              "statement": "Once we get to full year basis and when I mean full year, essentially, once we get to steady state, obviously, the intention will be to continue to hold margins and drive margins the way we have.",
+              "specificity": "vague",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Chetak Capacity Expansion",
+              "horizon": "unspecified",
+              "statement": "We have now reached a position where we think a substantive increase in capacity in Chetak is needed... once we are done with that exercise, we'll be happy to talk to you guys about it.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Brazil Capacity Expansion",
+              "horizon": "next 12 months / FY27-28",
+              "statement": "We are seeing in the next 12 months hoping to hit that kind of thing [50,000-60,000 usable capacity]. And as we move forward and hit it, by middle of the year, we will start looking at further enhancing our capacity in the year '27-28.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "New Product Launches (125cc/150cc Pulsar)",
+              "horizon": "July 2026",
+              "statement": "We will have a new range in both the 125cc and the 150cc plus range... we hope to see these new introductions hitting the market as early as July in the Pulsar brand itself.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Buyback Completion Timeline",
+              "horizon": "July 2026",
+              "statement": "This is essentially a process which will run right now, starting now and likely culminate by the end of July with the SEBI filing... payouts would essentially happen sometime in the second week of July likely.",
+              "specificity": "specific",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Full Year Motorcycle Growth Exit Rate",
+              "horizon": "FY27 full year",
+              "statement": "I would say, in the next few months. At this point of time, I won't wager a full year exit.",
+              "specificity": "refused",
+              "direction": "unclear",
               "status": "new"
             },
             {
@@ -12057,14 +12900,59 @@
           ],
           "risk_register": [
             {
-              "risk": "Middle East Geopolitical Issues",
+              "risk": "Demand softening in April due to general inflation, price hikes, LPG shortages, manpower migration and consumer sentiment effects",
               "status": "new",
-              "note": "Potential disruptions due to geopolitical issues in the Middle East."
+              "note": "Expected to slow motorcycle category growth from ~20% in Q4 to 7-9% near term."
             },
             {
-              "risk": "Inflation and Price Hikes",
+              "risk": "Price hike rollback of GST benefit (30-40% of GST rate cut benefit potentially reversed)",
               "status": "new",
-              "note": "General inflation and increased vehicle prices affecting consumer sentiment."
+              "note": "Price hikes taken by nearly all companies from 1 April, including Bajaj, could dampen demand."
+            },
+            {
+              "risk": "Geopolitical disruption in Middle East / Gulf region",
+              "status": "new",
+              "note": "Caused loss of business in Gulf region (~5,000-6,000 units/month); hoping for no further disruption."
+            },
+            {
+              "risk": "Sharp commodity cost inflation (event-driven supply shock)",
+              "status": "escalated",
+              "note": "Q1 FY27 commodity environment sharply/hyper inflationary across steel, aluminium, copper, noble metals; estimated at 3.5-4% of revenue, highly volatile with multiple outlook refreshes in weeks."
+            },
+            {
+              "risk": "Material availability tightness (aluminium alloys, polymers)",
+              "status": "new",
+              "note": "Prospect of tight material availability flagged for Q1 FY27, requiring decisive actions to secure supplies."
+            },
+            {
+              "risk": "Supply chain impairment (LPG shortage, manpower availability, outbound logistics)",
+              "status": "new",
+              "note": "Impaired ability to service demand by about 10-15%; hoped to resolve over time."
+            },
+            {
+              "risk": "Container availability / global logistics chaos",
+              "status": "new",
+              "note": "Flagged as a market-wide 'nightmare' but managed without losing sales apart from the Middle East, via alternate routes and strong logistics coordination."
+            },
+            {
+              "risk": "Currency volatility (unhedged exposure)",
+              "status": "new",
+              "note": "Company is not hedged and realizes exchange rate at market; currently a tailwind but exposes P&L to volatility."
+            },
+            {
+              "risk": "Nigeria fuel price increase (~30%)",
+              "status": "new",
+              "note": "Could affect consumer demand even as higher crude prices benefit Nigeria as a net exporter of crude."
+            },
+            {
+              "risk": "E-Rickshaw segment regulatory enforcement slowdown",
+              "status": "new",
+              "note": "Segment has slowed due to street enforcement of regulation, though this is consolidating the industry in favor of larger/better OEMs."
+            },
+            {
+              "risk": "Base effect risk for H2 FY27 growth comparisons",
+              "status": "new",
+              "note": "Lower H1 FY26 base and stronger H2 FY26 sales will create a base effect impacting H2 FY27 growth comparisons."
             },
             {
               "risk": "Commodity Cost Pressures",
@@ -12075,53 +12963,61 @@
               "risk": "Supply chain constraints",
               "status": "no_mention",
               "note": "Constraints in e-components and manufacturing capacity impacted EV segment."
-            },
-            {
-              "risk": "Commodity cost inflation",
-              "status": "no_mention",
-              "note": "Cost pressures across key commodities, including steel and noble metals."
             }
           ],
           "themes": [
             {
               "label": "Export growth",
               "direction": "positive",
-              "note": "Exports reached highest ever quarterly revenue despite challenges in key markets.",
-              "section_ref": "ORD"
+              "note": "Exports crossed 600,000 units for 2nd consecutive quarter (+25% YoY), highest ever quarterly export revenue, with target to push run-rate to 220,000 units/month in Q1 FY27.",
+              "section_ref": "SEG"
             },
             {
               "label": "Domestic market recovery",
               "direction": "mixed",
-              "note": "Domestic motorcycle growth driven by 125cc+ segment, but overall growth expected to slow.",
-              "section_ref": "SEG"
+              "note": "150cc+ Pulsar segment showing secular share gains driving domestic recovery, but overall motorcycle industry growth expected to slow from ~20% in Q4 to 7-9% near term due to inflation and price hikes.",
+              "section_ref": "ORD"
             },
             {
               "label": "Commodity cost pressures",
               "direction": "negative",
-              "note": "Inflationary pressures across commodities impacting cost environment.",
+              "note": "Q1 FY27 commodity environment turned sharply/hyper inflationary (steel ~15%, copper ~20%, aluminium/noble metals 35-45%), with estimated 3.5-4% of revenue impact, only 40% offset by pricing so far.",
               "section_ref": "FIN"
+            },
+            {
+              "label": "Strategic acquisitions",
+              "direction": "mixed",
+              "note": "KTM/BMAG consolidation completed 18 Nov 2025 moving Bajaj to controlling stake; complex accounting recognized net share of profit of INR1,195 crore in Q4; turnaround plan results expected in latter part of 2026.",
+              "section_ref": "STRAT"
             },
             {
               "label": "Product refreshes",
               "direction": "positive",
-              "note": "New variants and upgrades in Pulsar and other segments driving growth.",
+              "note": "10 new Pulsar variants/upgrades (Oct-Mar) now contribute 50% of sales; new 125cc and 150cc+ ranges plus a 125cc affordable motorcycle planned for July launch.",
+              "section_ref": "TECH"
+            },
+            {
+              "label": "EV scale-up",
+              "direction": "positive",
+              "note": "Electric 2W+3W business now largest in the auto industry for the company, contributing 20%+ of domestic revenue with double-digit EBITDA margin; Chetak crossed 1 lakh retail in a single quarter for first time.",
               "section_ref": "SEG"
             },
             {
-              "label": "Electric vehicle expansion",
+              "label": "Capital returns",
               "direction": "positive",
-              "note": "Chetak and electric 3-wheelers showing strong growth and market share gains.",
-              "section_ref": "SEG"
+              "note": "Board approved 100% payout of FY26 profit (INR9,825 crore) via INR150/share dividend (INR4,192 crore) plus a INR5,633 crore tender-route buyback at INR12,000/share, marking Bajaj family's 100-year milestone.",
+              "section_ref": "FIN"
             }
           ],
           "key_takeaways": [
             "Record revenues at INR58,000-plus crores, record EBITDA crossing INR12,000 crores for the first time with margins at 20.5% and record PAT, which was INR9,800-plus crores, also a new peak.",
-            "Quarter 4 was a standout quarter with revenues crossing INR16,000 crores, EBITDA at INR3,300 crores and margins at 20.8%.",
-            "Total volumes reached a new high of 13.7 lakh units, growing 24% year-on-year.",
-            "Exports business unit crossed the 6,00,000 units mark for the second consecutive quarter, clocking 25% growth year-on-year.",
-            "Domestic motorcycles saw a growth of around 11% for the full year, driven by the upper half of the industry with the 125cc plus segment growing faster than the 100cc segment.",
-            "Chetak crossed the 1 lakh retail mark for the very first time in a single quarter, the highest ever quarterly retails for the brand.",
-            "Commercial vehicles crossed the 5-lakh unit mark for the full year, a milestone that reflects both ICE leadership and the scaling up of the electric portfolio."
+            "Quarter 4 was a standout quarter with revenues crossing INR16,000 crores, EBITDA at INR3,300 crores and margins at 20.8%. Total volumes reached a new high of 13.7 lakh units, growing 24% year-on-year.",
+            "Exports business unit crossed the 6,00,000 units mark for the second consecutive quarter, clocking 25% growth year-on-year, resulting in the highest ever quarterly revenue from exports.",
+            "In FY26, Chetak crossed the 5-lakh unit mark at INR4,000 crores in revenue... Market share has moved up to almost 23%, a gain of 170 basis points sequentially.",
+            "The commercial vehicle business crossed the 5-lakh unit mark for the full year, a milestone that reflects both our ICE leadership and the scaling up of our electric portfolio.",
+            "We expect our growth tempo to actually continue in Q1 basis the strong competitive positions we enjoy in the key segments like the 150cc plus in domestic motorcycles, the EV business, both in 2-wheelers and 3-wheelers and the continued performance in large and stable territories like Latam and parts of Asia.",
+            "We are currently estimating a material cost inflation impact of approximately 3.5% to 4% of revenue... we have taken very judicious pricing actions to offset about 40% of this impact so far.",
+            "The Board of Directors at its meeting earlier today approved a payout of 100% of the profits that we have made last year in recognition of the 100 years milestone of the Bajaj family in India... a final dividend of INR150 per share that will aggregate to INR4,192 crores and the balance of about INR5,633 crores will be towards a buyback under the tender route at a buyback price of INR12,000 per share."
           ],
           "pressing_questions": []
         },
