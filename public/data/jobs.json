@@ -205,8 +205,10 @@
       "message": "Analysis failed for KEC. Please retry."
     },
     "KIRLFER": {
-      "status": "running",
-      "started_at": "2026-08-03T10:17:29.306Z"
+      "status": "failed",
+      "finished_at": "2026-08-03T10:32:44.421Z",
+      "error": "Bedrock hit max_tokens (16384) — output truncated. Raise BEDROCK_MAX_TOKENS.",
+      "message": "Analysis failed for KIRLFER. Please retry."
     }
   }
 }
