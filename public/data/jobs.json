@@ -151,10 +151,8 @@
       "source": "transcript"
     },
     "NEULANDLAB": {
-      "status": "failed",
-      "finished_at": "2026-08-01T04:33:57.793Z",
-      "error": "OpenAI 429: {\n    \"error\": {\n        \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n        \"type\": \"insufficient_quota\",\n        \"param\": null,\n        \"code\": \"credit_balance_exhausted\"\n    }\n}\n",
-      "message": "Analysis failed for NEULANDLAB. Please retry."
+      "status": "running",
+      "started_at": "2026-08-03T12:27:08.416Z"
     },
     "3IINFOLTD": {
       "status": "failed",
