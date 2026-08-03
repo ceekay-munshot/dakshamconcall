@@ -58,6 +58,10 @@ async function saveShot(page, name) {
 /* ============================================================================
    Browser + login
    ========================================================================== */
+/** Which Screener account the current session is on: "premium" or "free".
+ *  Read by the rate-limit path so a quota message names the account that hit it. */
+export let activeTier = null;
+
 export async function launchAndLogin() {
   // Prefer the PAID/premium account (no free-tier AI-summary quota), then fall back
   // to the free account. The old free creds are left untouched — they're just the
@@ -86,7 +90,22 @@ export async function launchAndLogin() {
     log(`logging in… (${tier} account)`);
     const loggedIn = await attemptScreenerLogin(page, email, password);
     if (loggedIn) {
+      activeTier = tier;
       log(`login OK (${tier} account)`);
+      // A silent downgrade to the free account looks exactly like a paid plan
+      // that stopped working: the free tier caps concall notes, so the run then
+      // fails on "limit exceeded" while the paid plan sits unused. Say it loudly.
+      if (tier === "free" && (process.env.SCREENER_PREMIUM_EMAIL || process.env.SCREENER_PREMIUM_PASSWORD)) {
+        log(
+          "WARNING: running on the FREE account even though premium credentials are set — " +
+            "the premium login did not succeed. Free-tier concall-note limits apply to this run."
+        );
+      } else if (tier === "free") {
+        log(
+          "NOTE: running on the FREE account (no SCREENER_PREMIUM_EMAIL/SCREENER_PREMIUM_PASSWORD set). " +
+            "Free-tier concall-note limits apply."
+        );
+      }
       return { browser, context, page };
     }
     const more = i < creds.length - 1;
@@ -473,7 +492,11 @@ async function fetchHostedSummary(context, entry) {
     // Screener's daily cap — the summary exists but is temporarily unreadable.
     // Raise it so the caller can STOP rather than quietly using a transcript.
     if (txt && txt.length < 1000 && RATE_LIMIT_RE.test(txt)) {
-      throw new ScreenerRateLimitError(txt.replace(/\s+/g, " ").trim().slice(0, 200));
+      // Name the account. A quota message is only meaningful next to the tier it
+      // applies to — "limit exceeded" on a plan sold as unlimited means the run
+      // is not on that plan.
+      const who = activeTier ? `[${activeTier} account] ` : "";
+      throw new ScreenerRateLimitError(who + txt.replace(/\s+/g, " ").trim().slice(0, 200));
     }
     if (txt && txt.length > 300) {
       const parsed = parseSummaryText(txt);
