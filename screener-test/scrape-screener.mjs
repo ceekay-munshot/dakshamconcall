@@ -814,8 +814,23 @@ export async function scrapeCompany(page, context, ticker, opts = {}) {
     }
 
     const latest = dated[0];
+    let capHit = false; // Screener's summary cap was reached for at least one quarter
 
-    let summary = skipSummary ? null : await extractAiSummary(page, context, latest, url);
+    // The cap is on the SUMMARY endpoint only, so treat it as "no summary
+    // available right now" and take the transcript, rather than letting it
+    // bubble up and cost the company. Previously this threw, the caller caught
+    // it and re-scraped the whole company with the summary path disabled — the
+    // same outcome for twice the work.
+    let summary = null;
+    if (!skipSummary) {
+      try {
+        summary = await extractAiSummary(page, context, latest, url);
+      } catch (e) {
+        if (!(e instanceof ScreenerRateLimitError)) throw e;
+        capHit = true;
+        log("latest quarter: summary capped — falling back to the transcript");
+      }
+    }
     if (!summary) summary = await extractTranscript(context, latest);
     if (!summary) {
       await saveShot(page, `no-summary-${ticker}.png`);
@@ -855,7 +870,30 @@ export async function scrapeCompany(page, context, ticker, opts = {}) {
           history.push({ concall_date: hPrecise || hMonth, ...h, company, ticker });
         }
       } catch (e) {
-        if (e instanceof ScreenerRateLimitError) throw e; // stop; don't degrade history to transcripts
+        if (e instanceof ScreenerRateLimitError) {
+          // The cap applies to the SUMMARY endpoint, not to transcripts. This
+          // used to rethrow, which discarded the whole company — including a
+          // latest quarter that had already been fetched successfully — because
+          // one PREVIOUS quarter could not be summarised. Coverage matters more
+          // than source purity here, and it is safe: mergeQuarters never lets a
+          // transcript replace a stored ai_summary, so this can only add, and a
+          // later run upgrades the quarter once the cap resets.
+          capHit = true;
+          try {
+            const viaPdf = await extractTranscript(context, dated[i]);
+            if (viaPdf) {
+              const m = toIsoDate(dated[i].date);
+              const p = preciseConcallDate(viaPdf.raw_text, m) || preciseConcallDate(dated[i].rowText, m);
+              history.push({ concall_date: p || m, ...viaPdf, company, ticker });
+              log(`history[${i}] ${dated[i].date}: summary capped — used the transcript instead`);
+            } else {
+              log(`history[${i}] ${dated[i].date}: summary capped and no transcript — skipping this quarter only`);
+            }
+          } catch (e2) {
+            warn(`history[${i}] transcript fallback failed`, e2.message);
+          }
+          continue;
+        }
         warn("history quarter failed", e.message);
       }
     }
@@ -880,6 +918,10 @@ export async function scrapeCompany(page, context, ticker, opts = {}) {
       key_takeaways: summary.key_takeaways,
       pressing_questions: summary.pressing_questions,
       history,
+      // Not an error: the company was delivered, but at least one quarter came
+      // from a transcript because the summary endpoint was capped. A later run
+      // upgrades it (mergeQuarters only ever ratchets upward).
+      summary_capped: capHit,
     };
   } catch (err) {
     if (err instanceof ScreenerRateLimitError) {
