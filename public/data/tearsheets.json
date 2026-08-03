@@ -71738,6 +71738,2680 @@
           ]
         }
       ]
+    },
+    "ORIENTCEM": {
+      "company": "Orient Cement Ltd",
+      "ticker": "ORIENTCEM",
+      "industry": "Cement & Cement Products",
+      "country": "India",
+      "checked_at": "2026-08-03T23:20:01.560Z",
+      "quarters": [
+        {
+          "company": "Orient Cement Ltd",
+          "ticker": "ORIENTCEM",
+          "industry": "Cement & Cement Products",
+          "country": "India",
+          "concall_date": "2026-08-03",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=a73f5041-d4cb-4670-b030-11a607cc79f0.pdf",
+          "model": "anthropic.claude-sonnet-5",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-03T23:19:14.622Z",
+          "summary": "Ambuja Cements Q1 FY27 delivered sequential profitability improvement (EBITDA margin up 331bps to 16.7%, cost per tonne down INR206 sequentially to INR4,241) despite a Y-o-Y decline in total volumes (trade -2%, non-trade -21%) driven by a deliberate value-over-volume strategy, geopolitical/West Asia cost pressures (~INR110/tonne absorbed), and diesel/logistics disruptions. Management reiterated full-year guidance of ~8% trade volume growth, cost of INR4,250/tonne for FY27, capacity expansion to 119 million tonnes, and cost leadership initiatives worth INR130-150/tonne, while flagging continued near-term cost pressure in Q2 from geopolitical tensions.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "Revenue",
+                  "value": "9,500",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operating EBITDA",
+                  "value": "1,589",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin",
+                  "value": "16.7",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin improvement",
+                  "value": "331",
+                  "unit": "bps",
+                  "period": "Q1 FY27 sequential",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA per tonne (blended, gray cement + RMX)",
+                  "value": "931",
+                  "unit": "INR/tonne",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA per tonne (gray cement only)",
+                  "value": "911",
+                  "unit": "INR/tonne",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net cost reduction sequential",
+                  "value": "206",
+                  "unit": "INR/tonne",
+                  "period": "Q1 FY27 vs Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net operating cost",
+                  "value": "4,241",
+                  "unit": "INR/tonne",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net operating cost (Q4 FY26 reference)",
+                  "value": "4,447",
+                  "unit": "INR/tonne",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT",
+                  "value": "660",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net worth",
+                  "value": "~72,000",
+                  "unit": "INR crores",
+                  "period": "as of Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Manpower cost",
+                  "value": "222",
+                  "unit": "INR/tonne PMT",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost of West Asia geopolitical escalation absorbed",
+                  "value": "110",
+                  "unit": "INR/tonne",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gross cost improvement before absorbing escalation",
+                  "value": "316",
+                  "unit": "INR/tonne",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total capex FY27",
+                  "value": "6,500",
+                  "unit": "INR crores",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Capex spent in Q1",
+                  "value": "1,500-1,600",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capex spent as % of full year budget",
+                  "value": "~25",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "RMC segment EBITDA",
+                  "value": "33",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "RMC EBITDA margin (current)",
+                  "value": "7",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "RMC EBITDA margin (prior 4 quarters)",
+                  "value": "14-15",
+                  "unit": "%",
+                  "period": "FY26 (trailing 4 quarters)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Power sales revenue",
+                  "value": "140",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Power sales revenue (Q4 FY26)",
+                  "value": "70",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Power units sold",
+                  "value": "45",
+                  "unit": "crore units",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Power units sold (Q4 FY26)",
+                  "value": "24",
+                  "unit": "crore units",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Opex on power sales",
+                  "value": "~5",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ICD coupon rate",
+                  "value": "8",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VRS/termination exceptional items",
+                  "value": "24",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Debt at Ambuja operating company level",
+                  "value": "0",
+                  "unit": "INR crores",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Raw material cost (consolidated, absolute)",
+                  "value": "1,526",
+                  "unit": "INR crores",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Implied cost of green power units sold",
+                  "value": "3.3",
+                  "unit": "INR per unit",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Grid power cost (blend)",
+                  "value": "7 to 8",
+                  "unit": "INR per unit",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Cost bridge / drivers of INR206/tonne sequential savings",
+                  "points": [
+                    "Savings driven by efficient sourcing of fly ash (raw material), lower RE power price per unit, and clinker factor reduction of ~2%",
+                    "Logistics contributed marginally, ~INR10/tonne from lead distance reduction",
+                    "Fixed cost optimization also contributed despite lower capacity utilization",
+                    "INR206 improvement is after absorbing INR110/tonne hit from West Asia geopolitical escalation; gross underlying improvement was INR316/tonne",
+                    "Cost journey breakdown: efficiency factor ~INR30-50/tonne, input material and logistics ~INR50/tonne, clinker factor ~INR50/tonne, fixed cost optimization ~INR80/tonne"
+                  ]
+                },
+                {
+                  "label": "NSP / realization commentary",
+                  "points": [
+                    "ASP/NSP sequential increase was one of the lowest in industry; management attributes this partly to accounting treatment differences (Incoterms, netting off certain expenditures against NSP unlike some peers)",
+                    "Q1 saw disruption from multiple beyond-control factors causing an aberration in NSP performance vs UltraTech (down ~INR100 vs UltraTech this quarter vs ~INR50 better in preceding 8 quarters)",
+                    "Company investing into channel growth this period, which impacts reported NSP under its accounting approach",
+                    "Price is a market force; company is focusing controllable cost improvements as differentiator going forward"
+                  ]
+                },
+                {
+                  "label": "Depreciation",
+                  "points": [
+                    "Depreciation number lower in the quarter due to true-up entries taken on account of merger of Sanghi and Penna, which had made Q4 depreciation higher Q-on-Q; run rate to stay similar going forward"
+                  ]
+                },
+                {
+                  "label": "RMC segment margin decline",
+                  "points": [
+                    "No specific reason cited for margin fall from 14-15% to 7%; attributed to raw material pricing and certain financial/lease accounting factors; segment still relatively small"
+                  ]
+                },
+                {
+                  "label": "Fly ash and power sales accounting",
+                  "points": [
+                    "Fly ash and power sales revenue booked under other operating income",
+                    "Fly ash consumption is ~30% of long-term contracted volume, with surplus sold in market at a profit versus long-term purchase price, reducing effective cost of supply"
+                  ]
+                },
+                {
+                  "label": "Other expenses / acquired asset stabilization",
+                  "points": [
+                    "Sharp Y-o-Y jump in stores & spares, advertising & sales promotion, and repairs & maintenance costs attributed to intensity of investment requirements in acquired assets (Penna, Sanghi, and others)",
+                    "Company expects stabilization as one unified cement platform this financial year, reducing surprises associated with acquired assets"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "Trade sales share of overall sales",
+                  "value": "78",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Trade sales share (prior)",
+                  "value": "74",
+                  "unit": "%",
+                  "period": "prior quarter",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Premium products share of trade sales",
+                  "value": "34",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "North trade volume growth Y-o-Y",
+                  "value": "2",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total trade volume growth Y-o-Y",
+                  "value": "-2",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total non-trade volume growth Y-o-Y",
+                  "value": "-21",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total volume decline Y-o-Y",
+                  "value": "-7",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Trade volume growth in July (current quarter run-rate)",
+                  "value": "8",
+                  "unit": "% YoY",
+                  "period": "July 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Regional volume mix - North",
+                  "value": "~25",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Regional volume mix - West",
+                  "value": "~30",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Regional volume mix - East",
+                  "value": "~25",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Regional volume mix - Center",
+                  "value": "~10",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Regional volume mix - South",
+                  "value": "~10",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Low/negative EBITDA volumes curtailed in South",
+                  "value": "~1",
+                  "unit": "million tonnes",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Overall capacity utilization",
+                  "value": "65",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Orient capacity utilization",
+                  "value": "87",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cement supplied by Ambuja to ACC under MSA",
+                  "value": "1.6-2 to 3",
+                  "unit": "million tonnes",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Cluster-wise performance",
+                  "points": [
+                    "North: highest EBITDA cluster; grew 2% trade volumes YoY, with sharper reduction in lower-margin non-trade volumes",
+                    "Central: stronger market with higher proportion of premium cement enabling higher EBITDA margins; improved share of blended cement",
+                    "West: well balanced between trade and non-trade (key markets Mumbai, Gujarat stronger on higher-margin non-trade volumes); grew positively in both trade and non-trade",
+                    "East: sustained trade volumes and maintained healthy EBITDA margins",
+                    "South: consciously reduced lower-margin volumes while continuing to increase channel network and focus on trade volumes; highest degrowth cluster; percentage share of overall mix lower this quarter vs last quarter and last year"
+                  ]
+                },
+                {
+                  "label": "Trade vs non-trade strategy",
+                  "points": [
+                    "Focus on trade volume improvement (74%→78%) has given a good bump in EBITDA per tonne",
+                    "Trade share expected to remain upwards of 75% going forward",
+                    "Selective growth/degrowth by cluster based on EBITDA margin considerations — grown in North/West, degrown in South/Center (Center degrowth linked to shift toward blended cement offering improving margins)",
+                    "1 million tonnes of low/negative EBITDA volume curtailed in South is a calculated action plan, not a market share loss concern; strategy is to move this volume into trade segment via channel investment, expected to take 1-2 quarters more in South while other four clusters ramping well",
+                    "Company confirms market share sustained/improved on trade segment; consciously reduced on non-trade"
+                  ]
+                },
+                {
+                  "label": "RMC segment",
+                  "points": [
+                    "RMC EBITDA margin fell sharply from typical 14-15% in FY26's four quarters to 7% this quarter; no specific reason cited beyond raw material pricing and lease accounting factors; segment described as still small"
+                  ]
+                },
+                {
+                  "label": "MSA arrangement",
+                  "points": [
+                    "Ambuja has higher share of capacity and supplies material to ACC/Orient under MSA arrangement; investments made by Ambuja benefit ACC/Orient and the entire cement pack via proper payouts through MSAs"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MFG",
+              "title": "Manufacturing & Capacity",
+              "key_figures": [
+                {
+                  "label": "Total installed capacity (current, integrated platform)",
+                  "value": "109",
+                  "unit": "million tonnes",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total installed capacity target",
+                  "value": "119",
+                  "unit": "million tonnes",
+                  "period": "end FY27",
+                  "kind": "target"
+                },
+                {
+                  "label": "Capacity addition",
+                  "value": "10.2",
+                  "unit": "million tonnes",
+                  "period": "FY27",
+                  "kind": "target"
+                },
+                {
+                  "label": "Kilns under scheduled maintenance",
+                  "value": "~12",
+                  "unit": "% of kilns",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Additional cost of kiln maintenance",
+                  "value": "50",
+                  "unit": "INR/tonne",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Clinker inventory built up",
+                  "value": "1",
+                  "unit": "month",
+                  "period": "as of Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Coal inventory built up",
+                  "value": "~3",
+                  "unit": "months",
+                  "period": "as of Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Clinker factor",
+                  "value": "64",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Clinker factor improvement",
+                  "value": "~3",
+                  "unit": "%",
+                  "period": "Q1 FY27 sequential",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Share of blended cement",
+                  "value": "85",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Primary lead distance reduction",
+                  "value": "20",
+                  "unit": "km",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Logistics cost reduction from lead distance cut",
+                  "value": "10",
+                  "unit": "INR/tonne",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Lead distance (Y-o-Y)",
+                  "value": "269 to 249",
+                  "unit": "km",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Further lead distance reduction expected",
+                  "value": "15",
+                  "unit": "km",
+                  "period": "forward",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Additional savings from further lead distance reduction",
+                  "value": "35",
+                  "unit": "INR/tonne",
+                  "period": "forward",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Additional savings from BCFC/fly ash logistics optimization",
+                  "value": "30",
+                  "unit": "INR/tonne",
+                  "period": "forward",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Additional savings from energy initiatives (RE, heat/power consumption)",
+                  "value": "50",
+                  "unit": "INR/tonne",
+                  "period": "forward",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Additional savings headroom from other expenses",
+                  "value": "10-15",
+                  "unit": "INR/tonne",
+                  "period": "forward",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Total expected cost savings from initiatives",
+                  "value": "130-150",
+                  "unit": "INR/tonne",
+                  "period": "forward",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "RE power capacity (current)",
+                  "value": "973",
+                  "unit": "MW",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "RE power capacity increase over past year",
+                  "value": "~500",
+                  "unit": "MW",
+                  "period": "past 1 year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "RE power capacity target",
+                  "value": "1,122",
+                  "unit": "MW",
+                  "period": "FY28",
+                  "kind": "target"
+                },
+                {
+                  "label": "WHRS capacity (current)",
+                  "value": "228",
+                  "unit": "MW",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "WHRS capacity target",
+                  "value": "376",
+                  "unit": "MW",
+                  "period": "forward",
+                  "kind": "target"
+                },
+                {
+                  "label": "Power cost per unit (before)",
+                  "value": "5.9",
+                  "unit": "INR/kWh",
+                  "period": "prior",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Power cost per unit (current)",
+                  "value": "4.9",
+                  "unit": "INR/kWh",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Additional new green power capacity commissioning",
+                  "value": "75",
+                  "unit": "MW",
+                  "period": "forward",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Heat consumption reduction target",
+                  "value": "5",
+                  "unit": "kcal/kg clinker",
+                  "period": "forward, conservative estimate",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Power consumption reduction target",
+                  "value": "2-3",
+                  "unit": "units/tonne cement",
+                  "period": "forward",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Green power share (consumption basis, reported)",
+                  "value": "34",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Green power share (incl. sold units, on revenue+consumption basis)",
+                  "value": "48",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Green power share target",
+                  "value": "60",
+                  "unit": "%",
+                  "period": "FY28",
+                  "kind": "target"
+                },
+                {
+                  "label": "AFR/TSR current level",
+                  "value": "~7",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "AFR/TSR 2030 target",
+                  "value": "23",
+                  "unit": "%",
+                  "period": "2030",
+                  "kind": "target"
+                },
+                {
+                  "label": "AFR long-term target",
+                  "value": "25",
+                  "unit": "%",
+                  "period": "unspecified (previously highlighted)",
+                  "kind": "target"
+                },
+                {
+                  "label": "AFR target for this fiscal year",
+                  "value": "12-15",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "target"
+                },
+                {
+                  "label": "Number of coal blocks",
+                  "value": "3-4",
+                  "unit": "blocks",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "First coal block operationalization timeline",
+                  "value": "~30",
+                  "unit": "months",
+                  "period": "forward",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "AFR/WHRS investment for Penna",
+                  "value": "100-150",
+                  "unit": "INR crores",
+                  "period": "forward",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Sanghi jetty expansion investment",
+                  "value": "~600",
+                  "unit": "INR crores",
+                  "period": "planned",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Temporarily suspended (mothballed) plant capacity",
+                  "value": "~3.5",
+                  "unit": "million tonnes annual capacity",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Duration of temporary plant suspension",
+                  "value": "6",
+                  "unit": "months",
+                  "period": "forward",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Target capacity utilization (value-focused)",
+                  "value": "70-75",
+                  "unit": "%",
+                  "period": "forward",
+                  "kind": "target"
+                },
+                {
+                  "label": "Additional North capacity from Bhatinda, Marwar Mundwa, Penna, Jodhpur",
+                  "value": "~5.5",
+                  "unit": "million tonnes",
+                  "period": "cumulative",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Kalamboli (West) expansion",
+                  "value": "1",
+                  "unit": "million tonnes",
+                  "period": "expected Q2",
+                  "kind": "target"
+                },
+                {
+                  "label": "Bhatinda expansion capacity",
+                  "value": "1",
+                  "unit": "million tons",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Marwar Mundwa expansion capacity",
+                  "value": "2.4",
+                  "unit": "million tons",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Penna and Jodhpur additional capacity",
+                  "value": "3.4 plus another 2",
+                  "unit": "million tons",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total new capacity coming to market (commercial production sense)",
+                  "value": "10",
+                  "unit": "million tons",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capacity under suspension (ACC Chaibasa, Marwar, Wadi, Lakheri)",
+                  "value": "6.5",
+                  "unit": "million tons",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Expansion project status",
+                  "points": [
+                    "Trial runs already commenced at Dahej — expansion of 1.2 million tonnes of cement capacity",
+                    "Salai Banwa (UP) already started with 2.4 million tonnes of capacity",
+                    "Bhatinda (Punjab) expanded by 1.2 million tonnes",
+                    "Jodhpur (acquired from Penna, was under construction) already commissioned at 2 million tonnes capacity; trials started, will stabilize and start supplying to grinding units in Q2",
+                    "Kalamboli (Mumbai) — 1 million tonnes expansion expected in Q2",
+                    "Warisaliganj (Bihar) — 2.4 million tonnes expansion expected in Q2, most likely September",
+                    "Maratha clinker line expected to commission next year (Q1 FY28); delay attributed to balancing utilization with Sanghi's clinker capacity/marine infrastructure rather than structural issues; a previously flagged contractor partner issue is now under control",
+                    "These projects to increase installed capacity to 119 million tonnes by end of FY27"
+                  ]
+                },
+                {
+                  "label": "Cost leadership structural initiatives",
+                  "points": [
+                    "Operational excellence continues to strengthen competitive advantage via raw material optimization, higher renewable energy utilization, better use of domestic fuels, enhanced capacity, enhanced captive coal integration, improved kiln efficiency, logistics optimization, and expanded rail infrastructure",
+                    "Net operating cost reduced INR206/tonne sequentially, keeping company on track for INR4,250/tonne guidance for FY27",
+                    "Productivity initiatives maintained manpower cost at INR222 PMT despite inflationary pressures",
+                    "Cost transformation journey supported by additional lead distance reduction (15km further, INR35/tonne savings), BCFC rate/fly ash sorting optimization (INR30/tonne), RE power and heat/power consumption efficiency (INR50/tonne), and other expense optimization headroom (INR10-15/tonne) — cumulative INR130-150/tonne expected savings",
+                    "Every 1% reduction in clinker factor yields meaningful cost savings; company believes Adani Cement has led peers in clinker factor reduction",
+                    "Cost journey from ~INR4,700-5,000/tonne at Holcim acquisition (Sept 2022) to INR4,241/tonne now, with confidence toward INR4,250/tonne FY27 guidance and a further INR250/tonne reduction target for FY28 (reaching ~INR4,000/tonne or below)"
+                  ]
+                },
+                {
+                  "label": "Green power / RE / WHRS",
+                  "points": [
+                    "RE power capacity up ~500MW over past year to 973MW; WHRS capacity at 228MW",
+                    "Power cost per unit reduced from INR5.9/kWh to INR4.9/kWh due to RE/WHRS improvements",
+                    "45 crore units of green power sold in Q1 from operating assets; expect to consume ~50% (20 crore units) of that going forward in Q2 as transmission/policy/trading infrastructure issues resolve; inclination is toward consumption over sale since captive consumption savings exceed market sale realization",
+                    "Green power share reported on consumption basis is 34%, but on combined revenue+consumption basis is 48%; journey to 60% by FY28 enabled by RE capacity growth to 1,122MW and WHRS capacity growth to ~376MW",
+                    "At most, ~10% of green power capacity expected to be used for external sale, with priority given to own consumption",
+                    "Blend of grid power costs ~INR7-8/unit, making green power consumption a strong cost replacement opportunity"
+                  ]
+                },
+                {
+                  "label": "AFR/TSR and coal blocks",
+                  "points": [
+                    "AFR/TSR currently at ~7%, below the 2030 target of 23% and previously highlighted long-term target of 25%; company targeting 12-15% for this fiscal year",
+                    "Investments already made in AFR to support confidence in hitting ~15%",
+                    "3 coal blocks being focused on; first will be operationalized in ~30 months; declined to give specific tonnage savings numbers as investments have 5-6 year payback periods"
+                  ]
+                },
+                {
+                  "label": "Temporary plant suspension / mothballing",
+                  "points": [
+                    "Temporary closure (not permanent mothballing) of very old ACC facilities and one facility of an acquired company, totaling ~3.5 million tonnes annual capacity",
+                    "Suspension period expected to be ~6 months total, during which company will conduct thorough optimization planning (efficiency factors, WHRS, debottlenecking, railway infrastructure, fly ash availability, coal consumption, heat factors) before restart decision",
+                    "Alternate supplying plants cover the market during suspension, so no market share loss expected",
+                    "VRS scheme implemented at one plant in South India (INR24 crores exceptional item) is separate from suspension and relates to operational efficiency, not impairment; no further impairments currently expected"
+                  ]
+                },
+                {
+                  "label": "Capacity expansion planning by region",
+                  "points": [
+                    "North: additional ~5.5 million tonnes capacity added via Bhatinda, Marwar Mundwa, Penna, and Jodhpur — one of most profitable markets",
+                    "West: Kalamboli (BCCI) expansion in advanced stages for additional 1 million tonnes",
+                    "East/Center: Salai Banwa trials through, Warisaliganj expected in Q2 (likely September)",
+                    "Target utilization for expanded capacity base is 70-75%, all value-focused",
+                    "FY28-29 capacity growth expected to be organic only, generally 8-10 million tonnes per year"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Regional demand momentum",
+                  "points": [
+                    "East, West seeing good momentum with positive growth on both trade and B2B side in West",
+                    "North, West, Central, East all showing good traction supporting volume growth guidance confidence",
+                    "South requires further channel network investment; expected improvement over coming quarters",
+                    "Growing pull demand and channel excitement (dealers, contractors, retailers) for premium cement and overall brand equity"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [
+                {
+                  "label": "ICD coupon rate",
+                  "value": "8",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "ACC-Orient merger / ICDs",
+                  "points": [
+                    "ICDs from ACC and Orient to parent are within approved shareholder limits, carrying 8% coupon; company is in advanced stages of merger of entities into one platform",
+                    "Ambuja operating company itself carries zero debt; parent company debt questions not addressed by CEO (not the right person to answer)"
+                  ]
+                },
+                {
+                  "label": "Brand strategy",
+                  "points": [
+                    "No plans for brand merger of ACC/Ambuja into a single Adani Cement brand, despite channel talk; only a company (legal entity) merger has been announced"
+                  ]
+                },
+                {
+                  "label": "SLA (service level agreement) for plants and logistics",
+                  "points": [
+                    "Company has begun SLA arrangements for a few plants and looking to expand to logistics; too early to share specifics on capex/opex/cost benefits; described as moving positively under Chairman's and Karan Bhai's vision"
+                  ]
+                },
+                {
+                  "label": "Acquired assets — Sanghi, Penna, Orient",
+                  "points": [
+                    "Orient performing well on capacity utilization (87%) and margin, expects further improvement with minimal investment",
+                    "Penna needs channel network investment and trade sales focus to improve capacity utilization and margins; incremental investment estimated at less than INR100-150 crores combined with Sanghi's AFR/WHRS needs",
+                    "Sanghi improving in both clinker and cement capacity utilization; investing ~INR600 crores in jetty expansion for clinker utilization supporting planned coastal grinding units; also investing in WHRS line; one kiln shutdown as normal course of investment",
+                    "Management asserts acquired assets (Penna, Sanghi, Orient) are assets, not liabilities, and will start showing results"
+                  ]
+                },
+                {
+                  "label": "Talent and organizational capability",
+                  "points": [
+                    "Management highlighted building a young, energetic team groomed through substantial L&D programs, with a structured group approach to talent and technology as key focus areas",
+                    "Acknowledged past delays in some efficiency capex outcomes, framed as learning curve opportunity; June quarter savings of INR206/tonne cited as progress"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [
+                {
+                  "label": "Estimated potential cost rise if geopolitical situation continues",
+                  "value": "~100",
+                  "unit": "INR/tonne",
+                  "period": "forward risk scenario",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Geopolitical and input cost pressures",
+                  "points": [
+                    "Profitability across industry remained under pressure from higher imported fuel prices, elevated freight costs, and geopolitical developments in West Asia",
+                    "Company absorbed ~INR110/tonne cost impact from West Asia escalation in Q1",
+                    "Sequential cost pressure expected to continue in Q2 FY27 depending on geopolitical de-escalation; company holds ~1 month clinker inventory and ~3 months coal inventory as mitigation",
+                    "Cost optimization initiatives (INR130-150/tonne) seen as cushion/mitigation against external cost surprises",
+                    "Estimated potential cost rise of ~INR100/tonne if geopolitical situation continues"
+                  ]
+                },
+                {
+                  "label": "Logistics disruptions",
+                  "points": [
+                    "Diesel shortages and interim packing bag availability issues, particularly in Western plants, disrupted distribution and escalated costs in the quarter",
+                    "Some disruptions also occurred in East",
+                    "Green sales issue (AGP) in Himachal contributed to logistics cost pressure",
+                    "Despite lead distance reduction (269km to 249km YoY), freight per tonne remained stable due to these disruptions; management identifies this as an area for improvement via tech platform on logistics"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [
+                {
+                  "label": "Trade volume growth target",
+                  "value": "8",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Cost per tonne target",
+                  "value": "4,250",
+                  "unit": "INR/tonne",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Additional cost reduction target FY28",
+                  "value": "250",
+                  "unit": "INR/tonne",
+                  "period": "FY28",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Total capacity target",
+                  "value": "119",
+                  "unit": "million tonnes",
+                  "period": "end FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Additional capacity addition",
+                  "value": "10.2",
+                  "unit": "million tonnes",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Capex FY27",
+                  "value": "6,500",
+                  "unit": "INR crores",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Green power share target",
+                  "value": "60",
+                  "unit": "%",
+                  "period": "FY28",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "AFR target FY27",
+                  "value": "12-15",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Trade sales share target",
+                  "value": "upwards of 75",
+                  "unit": "%",
+                  "period": "forward",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Target capacity utilization",
+                  "value": "70-75",
+                  "unit": "%",
+                  "period": "forward",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Annual organic capacity addition target FY28-29",
+                  "value": "8-10",
+                  "unit": "million tonnes/year",
+                  "period": "FY28-29",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Volume growth guidance excluding mothballed plants (remaining part of year)",
+                  "value": "12 to 13",
+                  "unit": "%",
+                  "period": "FY27 (remaining)",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Volume growth guidance (full year, referenced)",
+                  "value": "7 to 8",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Outlook commentary",
+                  "points": [
+                    "India's long-term demand fundamentals remain compelling — infrastructure, urbanization, industrialization, logistics investments and housing demand support sustained cement consumption growth",
+                    "Near-term demand may remain influenced by monsoon and input cost volatility",
+                    "Company remains well positioned to outperform industry growth via capacity expansion, cost savings target of ~INR250/tonne additional for FY27, and continued focus on premiumization, operational excellence and digital transformation",
+                    "Management confident in 8% trade volume growth for FY27 based on July run-rate of 8% YoY trade growth and brand equity momentum",
+                    "Full-year cost expected to remain at INR4,250/tonne even with incremental inflation, since incremental savings initiatives offset incremental cost impact",
+                    "Q2 expected to see some net cost impact from geopolitical factors but broadly in line with or slightly better than June quarter due to mitigation",
+                    "Volume growth guidance excluding mothballed plants is 12-13% for the remainder of FY27, while full-year guidance referenced at 7-8%"
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "Trade volume growth",
+              "horizon": "FY27",
+              "statement": "Confidence to continue with estimation and guidance of 8% growth in trade volumes for this financial year, based on July run-rate showing 8% YoY improvement",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Total volume growth (implied)",
+              "horizon": "FY27",
+              "statement": "Company will be able to manage overall volumes in line with the guidance given, even with continuing non-trade decline being handled specifically",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Cost per tonne",
+              "horizon": "FY27",
+              "statement": "Firmly on track to achieve total cost of INR4,250 per tonne by end of FY27; incremental cost impact of inflation will be absorbed by incremental savings so full year cost remains same as reported in Q1",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "raised"
+            },
+            {
+              "metric": "Cost per tonne",
+              "horizon": "FY28",
+              "statement": "Next year (FY28) target another INR250 reduction in cost so that by end of FY28 reach up to INR4,000/tonne or below",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "raised"
+            },
+            {
+              "metric": "Total capacity",
+              "horizon": "FY27 end",
+              "statement": "Expansion program firmly on schedule; projects will increase installed capacity to 119 million tonnes by end of financial year FY27, with addition of 10.2 million tonnes",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Capacity growth FY28-29",
+              "horizon": "FY28-29",
+              "statement": "Generally expect every year 8 million to 10 million tonnes of capacity additions, purely organic",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Cost savings initiatives",
+              "horizon": "unspecified forward",
+              "statement": "Cost transformation initiatives (lead distance reduction, BCFC/fly ash optimization, RE power, heat/power efficiency, other expense optimization) expected to deliver savings of almost INR130 to INR150 per tonne",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "Green power share",
+              "horizon": "FY28",
+              "statement": "Absolutely well on plan in terms of green power to achieve 60% by FY28 (from current 48% on combined revenue+consumption basis)",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "AFR/TSR",
+              "horizon": "2030",
+              "statement": "Stated goal for 2030 with respect to TSR is 23%; currently at ~7%",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "AFR/TSR",
+              "horizon": "FY27",
+              "statement": "Immediately, in this fiscal year, targeting to hit almost 12% to 15% AFR",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "AFR long-term target",
+              "horizon": "unspecified",
+              "statement": "Target is to achieve 25% of the AFR down the line (previously highlighted); currently a little behind schedule",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Capex",
+              "horizon": "FY27-28",
+              "statement": "Capex overall closer to INR6,500 crores between growth and efficiency capex, well underway (currently working through)",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Trade sales share",
+              "horizon": "forward",
+              "statement": "Trade sales share expected to be upwards of 75% in subsequent quarters",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Capacity utilization",
+              "horizon": "forward",
+              "statement": "Targeted utilization now, with focus on value, is around 70% to 75%, all value-focused capacity utilization",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Temporarily suspended plant restart",
+              "horizon": "~6 months",
+              "statement": "Plants temporarily closed (~3.5 million tonnes) expected to remain suspended for a total of six months while optimization plan is executed before restart",
+              "specificity": "specific",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Coal block operationalization",
+              "horizon": "~30 months",
+              "statement": "First of three focused coal blocks will be operationalized in about 2 to 2.5 years (30 months) from now",
+              "specificity": "specific",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "WHRS capacity",
+              "horizon": "forward",
+              "statement": "WHRS capacity to increase from 228 MW to almost 376 MW",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Market share",
+              "horizon": "FY27/FY28",
+              "statement": "From a capacity addition perspective, growing almost 8% to 10% per year via new capacity, targeting corresponding growth on trade side; market share is dynamic and depends on competitor growth",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Consolidated sales volume",
+              "horizon": "FY27",
+              "statement": "Ambuja expects consolidated volumes to grow by almost 8% to around 80 million-odd tonnes in FY27",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Industry volume growth",
+              "horizon": "FY27",
+              "statement": "Industry is believed to grow at around 5% to 5.5% given inflation and weak monsoon headlines",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Total cement capacity",
+              "horizon": "FY27 end",
+              "statement": "Expecting to hit capacity of almost 119 million tonnes by end of FY27, supported by ongoing additions of 10 million tonnes of GU (e.g. Salai Banwa, Warisaliganj)",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Sanghi & Penna utilization",
+              "horizon": "unspecified forward period",
+              "statement": "Target is to increase utilization of Sanghi and Penna (19 million tonnes combined capacity) by at least 5% to 10%",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Utilization by plant FY27",
+              "horizon": "FY27",
+              "statement": "Target utilization for FY27: Orient at full capacity, Sanghi at 65-70%, Penna at 55-60%, existing Ambuja/ACC assets at 75-80%, blended consol average 70-75%",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Long-term capacity ambition (140-155 million tonnes)",
+              "horizon": "FY30 (pushed from FY28)",
+              "statement": "Target plans that were earlier FY28 could move a year or 2, on a safer side FY30, for hitting larger capacity targets",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Debottlenecking capacity",
+              "horizon": "unspecified",
+              "statement": "Earlier guided 15 million tonnes of debottlenecking exercises across assets stays, though timing may differ based on return on investment",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Premium cement share of trade sales",
+              "horizon": "forward",
+              "statement": "36% considered a good number to sustain as share of premium cement in trade sales",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "no_mention"
+            },
+            {
+              "metric": "EBITDA per tonne",
+              "horizon": "FY28 and beyond",
+              "statement": "Management declined to give specific EBITDA per tonne guidance, citing it would be a 'Herculean task' at this stage; will update over next 2-3 quarters as visibility improves",
+              "specificity": "refused",
+              "direction": "unclear",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Project IRR",
+              "horizon": "ongoing capex program",
+              "statement": "Target project IRR of 18% (equity returns) for new capex",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Mundra and Assam clinker projects",
+              "horizon": "24-28 months",
+              "statement": "New Mundra clinker line (2 million tonnes) and Assam clinker capacity (2 million tonnes, from new limestone block) targeted to complete in 24-28 months",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Cost per tonne Q1 FY27",
+              "horizon": "Q1 FY27",
+              "statement": "Cost expected to be flattish at around INR4,500/tonne in Q1 FY27 before improving in subsequent quarters",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "no_mention"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "Higher imported fuel prices and elevated freight costs across industry",
+              "status": "new",
+              "note": "Profitability across the industry remained under pressure from higher imported fuel prices, elevated freight costs and geopolitical developments in West Asia"
+            },
+            {
+              "risk": "Geopolitical developments in West Asia",
+              "status": "new",
+              "note": "Absorbed additional cost of INR110/tonne this quarter from West Asia War escalation; sequential cost pressure expected to continue in Q2 depending on de-escalation; potential further rise of ~INR100/tonne if situation continues"
+            },
+            {
+              "risk": "Diesel and packing bag availability disruptions",
+              "status": "new",
+              "note": "Diesel shortages and interim packing bag availability issues, particularly in Western plants, disrupted distribution and escalated logistics costs during the quarter; some disruptions also in East"
+            },
+            {
+              "risk": "Monsoon and input cost volatility affecting near-term demand",
+              "status": "new",
+              "note": "Near-term demand may remain influenced by monsoon and input cost volatility, though long-term demand fundamentals remain compelling"
+            },
+            {
+              "risk": "South region low-margin volume drag",
+              "status": "new",
+              "note": "South remains an area requiring channel network investment to shift low/negative EBITDA non-trade volumes into higher-margin trade; expected to take 1-2 quarters more to ramp up"
+            },
+            {
+              "risk": "Acquired asset stabilization costs (Sanghi/Penna/Orient/ACC integration)",
+              "status": "new",
+              "note": "Other expenses (stores & spares, advertising, repairs) saw sharp Y-o-Y jumps due to acquired asset investment intensity; expected to stabilize as company consolidates into one unified cement platform this financial year"
+            },
+            {
+              "risk": "AFR/TSR behind schedule",
+              "status": "new",
+              "note": "Currently at ~7% versus 2030 target of 23% and earlier stated 25% long-term target; management acknowledges being a little behind schedule but expects improvement every quarter"
+            },
+            {
+              "risk": "Logistics cost stickiness despite lead distance reduction",
+              "status": "new",
+              "note": "Despite lead distance reduction from 269km to 249km YoY, freight per tonne remained stable due to diesel shortages and other disruptions; identified as an area for improvement via tech platform on logistics"
+            },
+            {
+              "risk": "Adverse and extended weather conditions",
+              "status": "no_mention",
+              "note": "Affected FY26 demand and industry performance broadly"
+            },
+            {
+              "risk": "Global geopolitical factors (West Asia war)",
+              "status": "no_mention",
+              "note": "Caused packing cost disruptions especially in March, contributing to cost escalation"
+            },
+            {
+              "risk": "State elections",
+              "status": "no_mention",
+              "note": "Affected FY26 demand in some regions"
+            },
+            {
+              "risk": "Weak monsoon / inflationary pressure",
+              "status": "no_mention",
+              "note": "Expected to keep cement demand soft in FY27"
+            },
+            {
+              "risk": "Energy/fuel cost volatility",
+              "status": "no_mention",
+              "note": "Fast-moving global situation makes long-term cost estimates difficult for next 2-3 quarters"
+            },
+            {
+              "risk": "Additional goods tax (state-level)",
+              "status": "no_mention",
+              "note": "Increased costs in states like Himachal"
+            },
+            {
+              "risk": "Acquired asset reliability issues (Sanghi, Penna)",
+              "status": "no_mention",
+              "note": "Breakdowns and deferred maintenance drove higher repair and maintenance costs; turnaround taking longer than expected"
+            },
+            {
+              "risk": "Lower government incentives",
+              "status": "no_mention",
+              "note": "Due to lower GST rates, exhaustion of incentive periods, and shift to conservative/certainty-based incentive accrual"
+            },
+            {
+              "risk": "Inability to fully pass on cost inflation via pricing",
+              "status": "no_mention",
+              "note": "Industry facing relentless pricing pressure amid softening demand despite cost increases"
+            },
+            {
+              "risk": "Capex execution delays",
+              "status": "no_mention",
+              "note": "Attributed to wrong contractor selection, team-building lag post-acquisition, and incomplete engineering before project starts"
+            },
+            {
+              "risk": "South India demand weakness impacting Penna",
+              "status": "no_mention",
+              "note": "South was one of the most weather/demand-affected geographies in March quarter, impacting Penna operations"
+            }
+          ],
+          "themes": [
+            {
+              "label": "Premiumization & trade sales mix",
+              "direction": "positive",
+              "note": "Trade sales share rose from 74% to 78%, premium products at 34% of trade sales; trade EBITDA per tonne bump credited to this shift",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Cost inflation & normalization",
+              "direction": "mixed",
+              "note": "Cost per tonne fell INR206 sequentially to INR4,241 despite absorbing INR110/tonne West Asia geopolitical cost pressure; further cost pressure guided for Q2",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Demand softness",
+              "direction": "negative",
+              "note": "Total volumes declined 7% YoY (trade -2%, non-trade -21%) in Q1 due to deliberate value-over-volume strategy and disruptions, though July showed 8% YoY trade growth recovery",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Acquired asset turnaround (Sanghi/Penna)",
+              "direction": "mixed",
+              "note": "Orient performing well at 87% utilization; Penna needs channel investment to improve utilization; Sanghi improving with INR600 crore jetty expansion investment planned",
+              "section_ref": "STRAT"
+            },
+            {
+              "label": "Capex discipline & recalibration",
+              "direction": "neutral",
+              "note": "FY27 capex reiterated at INR6,500 crores, ~25% (INR1,500-1,600 crores) spent in Q1; capacity expansion to 119 million tonnes on schedule",
+              "section_ref": "MFG"
+            },
+            {
+              "label": "Pricing power constraints",
+              "direction": "negative",
+              "note": "NSP/ASP sequential increase was one of the lowest in industry, attributed partly to accounting treatment (Incoterms/netting) and channel investment, with a sharp gap emerging versus UltraTech this quarter",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Management execution reset / accountability",
+              "direction": "mixed",
+              "note": "Management acknowledged past delays in efficiency capex outcomes, temporary suspension of ~3.5 million tonnes of old capacity for cost optimization, and reiterated confidence assets acquired (Penna/Sanghi/Orient) will deliver results",
+              "section_ref": "STRAT"
+            }
+          ],
+          "key_takeaways": [
+            "Ambuja Cements delivered stronger profitability, improved operating efficiency and continued strategic execution in Q1 FY27 despite a challenging operating environment characterized by stable cement demand but industry-wide pressure from higher imported fuel prices, elevated freight costs and geopolitical developments in West Asia.",
+            "Trade sales share improved from 74% to 78% of overall sales, with premium products comprising 34% of trade sales.",
+            "Net operating cost reduced to INR4,241 per metric ton, a reduction of INR206 PMT from the previous quarter, keeping the company firmly on track for its guidance to achieve INR4,250 per ton for this financial year.",
+            "RE power capacity is now at 973 megawatts, up almost 500 megawatts over the past year; WHRS capacity stands at 228 megawatts, helping reduce unit power cost from INR5.9 per kWh to almost INR4.9.",
+            "Cost transformation initiatives are expected to deliver savings of almost INR130 to INR150 per ton, providing strong visibility toward the cost leadership target and mitigating pressures from geopolitical tensions.",
+            "Ambuja has evolved into a 109 million ton capacity integrated cement platform, with expansion projects expected to increase installed capacity to 119 million tons by end of this financial year.",
+            "Revenue of INR9,500 crores, operating EBITDA of INR1,589 crores, EBITDA margin improved 331 basis points to 16.7%, EBITDA per ton of INR931, PAT of INR660 crores and net worth of almost INR72,000 crores.",
+            "Total trade volumes declined 2% Y-o-Y and non-trade declined 21% Y-o-Y in Q1, but management highlighted an 8% Y-o-Y improvement in trade volumes seen in July, supporting continued confidence in the 8% full-year trade volume growth guidance."
+          ],
+          "pressing_questions": [
+            "Now volumes, you'll appreciate that yours is the only company to have seen at least so far, in the listed entity space, Ambuja is the only company to have lost volumes... is it fair then that for full year FY27, if this strategy maintains, we will have a very muted kind of a volume growth?",
+            "So we'll gain the lost I mean, just to like part of this question is, so whatever market share loss we have had in Q1, we'll be able to recoup that in the balance 9 months. Is that a safe understanding?",
+            "Despite improvement in trade sales, our ASP increase on a sequential basis has been one of the lowest in the industry. So, is it more geographical mix? Or what exactly is driving this?",
+            "I was just comparing your NSP with UltraTech reported NSP for like-to-like comparison... this quarter, almost INR50 higher on an average versus this quarter, we are down INR100 versus UltraTech reported NSP... why should there be such a sharp fall in our number versus UltraTech?",
+            "So, basically, in terms of the ICD, which has actually come through via ACC and Orient? How should one read into that?... any specific reason of not raising debt at Ambuja level?",
+            "If I just calibrate your... write-downs which we took for the impairment... roughly around 6.5 million tons of capacity, which I presume has been on the suspension for a temporary purpose... what is the learning going forward if we take a look at any inorganic opportunity?",
+            "Now that we have a better chance of assessing what we have done and what we have got, do we think we have acquired more of an asset or more of a liability?"
+          ]
+        },
+        {
+          "company": "Orient Cement Ltd",
+          "ticker": "ORIENTCEM",
+          "industry": "Cement & Cement Products",
+          "country": "India",
+          "concall_date": "2026-05-10",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=436b5f9d-ef9a-4859-8d5d-10ed20708803.pdf",
+          "model": "anthropic.claude-sonnet-5",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-03T23:12:47.331Z",
+          "summary": "Note: This transcript is actually of the Ambuja Cements (with ACC and Orient Cement) Q4 FY'26 earnings call, not an Orient Cement-specific call. FY'27 outlook centers on cost normalization from a peak of ~INR4,500/tonne in Q4 FY'26 towards ~INR4,250/tonne (average, INR250 reduction), moderated consolidated volume growth of ~8% to ~80 million tonnes against a softer industry growth estimate of 5%-5.5%, recalibrated/slower capex pace with disciplined capital allocation, and continued focus on trade sales, premiumization and stabilizing acquired assets (Sanghi, Penna, Orient).",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "Annual sales volume (FY26)",
+                  "value": "73.7",
+                  "unit": "million tonnes",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Annual sales volume growth YoY",
+                  "value": "16",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Normalized EBITDA (FY26)",
+                  "value": "6,539",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA growth YoY",
+                  "value": "31",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA per metric tonne (PMT)",
+                  "value": "887",
+                  "unit": "INR/tonne",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA PMT growth YoY",
+                  "value": "12",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT (FY26)",
+                  "value": "2,647",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT growth YoY",
+                  "value": "17",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Trade sales volume growth",
+                  "value": "10",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Premium cement share of trade sales (full year)",
+                  "value": "35",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Premium cement share of trade sales (Q4)",
+                  "value": "36",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Trade sales share of total sales (Q4 FY26)",
+                  "value": "74",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Trade sales share of total sales (Q3 FY26/Dec quarter)",
+                  "value": "68",
+                  "unit": "%",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Clinker factor (Dec quarter)",
+                  "value": "67",
+                  "unit": "%",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Clinker factor (current)",
+                  "value": "65",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost per tonne, full year FY26",
+                  "value": "4,400",
+                  "unit": "INR/tonne",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost per tonne, March exit month",
+                  "value": "4,100",
+                  "unit": "INR/tonne",
+                  "period": "March 2026 (normalized)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost per tonne, Q4 FY26 quarter average",
+                  "value": "4,500",
+                  "unit": "INR/tonne",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost per tonne, Q3 FY26 (Dec quarter)",
+                  "value": "4,500",
+                  "unit": "INR/tonne",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost escalation seen in Q4 (bag basis)",
+                  "value": "INR25 per bag",
+                  "unit": "INR/bag",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost escalation seen in Q4 (full-blown basis)",
+                  "value": "400-500",
+                  "unit": "INR/tonne",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Expected cost savings from fly ash/green energy",
+                  "value": "150-200",
+                  "unit": "INR/tonne",
+                  "period": "forward",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Targeted cost reduction FY27 (guidance)",
+                  "value": "250",
+                  "unit": "INR/tonne",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Additional cost reduction targeted FY28",
+                  "value": "250",
+                  "unit": "INR/tonne",
+                  "period": "FY28",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Target cost FY27 (after INR250 reduction)",
+                  "value": "4,250",
+                  "unit": "INR/tonne",
+                  "period": "FY27",
+                  "kind": "target"
+                },
+                {
+                  "label": "Cost peak reference / Q1 FY27 expectation",
+                  "value": "4,500",
+                  "unit": "INR/tonne",
+                  "period": "Q1 FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Capex FY26",
+                  "value": "~7,500",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capex estimate FY27",
+                  "value": "6,000-6,500",
+                  "unit": "INR crores",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Annual capex plan (next 2 years) referenced by analyst",
+                  "value": "65-70",
+                  "unit": "INR billion",
+                  "period": "next 2 years",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Capex already under execution",
+                  "value": "~4",
+                  "unit": "INR billion",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Project IRR target",
+                  "value": "18",
+                  "unit": "%",
+                  "period": "ongoing",
+                  "kind": "target"
+                },
+                {
+                  "label": "Cement price (bag) Q4 FY26",
+                  "value": "254",
+                  "unit": "INR/bag",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cement price (bag) Q3 FY26 (Dec)",
+                  "value": "253 (implied, up by INR1 QoQ)",
+                  "unit": "INR/bag",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cement price (bag) prior year",
+                  "value": "255",
+                  "unit": "INR/bag",
+                  "period": "FY25 comparable",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Industry price hike in Q4 (modest, select pockets)",
+                  "value": "INR10 (up to INR15-20 in select pockets)",
+                  "unit": "INR/bag",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "April over March price trend",
+                  "value": "INR10",
+                  "unit": "INR/bag",
+                  "period": "April 2026 vs March 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Branding & advertisement cost, full year FY26",
+                  "value": "70",
+                  "unit": "INR/tonne",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "RMX/RMC EBITDA Q4 FY26",
+                  "value": "102",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "RMX/RMC EBITDA full year FY26",
+                  "value": "~300",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Core working capital days (current)",
+                  "value": "20",
+                  "unit": "days",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Core working capital days (prior year)",
+                  "value": "30",
+                  "unit": "days",
+                  "period": "FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Non-core working capital (ex cash)",
+                  "value": "5,500",
+                  "unit": "INR crores",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Non-core working capital (ex cash) prior",
+                  "value": "1,300",
+                  "unit": "INR crores",
+                  "period": "prior period",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Non-core working capital days",
+                  "value": "49 (up from 40)",
+                  "unit": "days",
+                  "period": "current vs prior",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Higher heat consumption gap",
+                  "value": "35-40",
+                  "unit": "kilocalories",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Price gap: super premium vs base product",
+                  "value": "INR50-55",
+                  "unit": "INR/bag",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Price gap: premium vs base product",
+                  "value": "INR20-25",
+                  "unit": "INR/bag",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Price gap vs nearest pan-India competitor",
+                  "value": "INR5-10",
+                  "unit": "INR/bag",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Cost drivers for Q4 FY26 escalation",
+                  "points": [
+                    "Higher freight cost due to increase in overall sale lead (primary and secondary)",
+                    "Increase in additional goods tax in some states, especially Himachal",
+                    "Higher packing costs, seen more so in March, due to abruptions from the West Asia war",
+                    "Higher fuel cost on account of higher-than-expected heat consumption, more so for acquired assets",
+                    "Higher branding cost due to increased focus on trade sales starting Q4",
+                    "Higher repairs and maintenance costs, including breakdowns at acquired assets (Penna) needing planned/unplanned shutdowns",
+                    "Lower government incentives due to lower GST rates, exhausted incentive periods at some plants, and shift to accruing incentives on a virtual-certainty basis rather than pending long-term accruals",
+                    "3 to 6 months delay on some efficiency capexes (e.g., fly ash raw material improvement pending railway infrastructure completion)"
+                  ]
+                },
+                {
+                  "label": "Cost outlook / reconciliation",
+                  "points": [
+                    "Management believes INR4,500/tonne represents peak cost level for the quarter, expected to taper in coming quarters",
+                    "Q1 FY27 cost expected to remain flattish at ~INR4,500/tonne before improvement in later quarters",
+                    "Full-year FY27 average cost reduction guidance of INR250/tonne factors in current cost inflation already seen",
+                    "Difference between December quarter commentary (aspiration to approach INR4,000 by March exit) and actual March quarter average of INR4,500 attributed to unfructified planned initiatives, South geography being most weather/demand-affected (impacting Penna), and abnormal March packing costs"
+                  ]
+                },
+                {
+                  "label": "Balance sheet / cash flow",
+                  "points": [
+                    "ACC's operating cash flows sharply negative for the year due to receivables from Ambuja under the MSA; expected to be knocked off via ICD (intercorporate deposit) approved by shareholders",
+                    "Ambuja's own working capital showed improvement for March quarter compared to December quarter, supported by good receivables control despite higher inventory",
+                    "Core working capital improved (30 to 20 days) but non-core working capital (ex cash) rose sharply; management attributed part of this to accounting/incentive booking treatment changes (booking incentives on actual/received basis) and offered to clarify offline"
+                  ]
+                },
+                {
+                  "label": "Purchase price allocation / accounting",
+                  "points": [
+                    "Balance sheet of Ambuja consolidated now reflects finalized purchase price allocation for Orient and Penna (previously provisional); marginal changes in classification of goodwill and other intangible assets",
+                    "P&L changes expected in depreciation and deferred tax accounting treatments",
+                    "Various tax-related provisional notes with respect to reversals detailed in published financials",
+                    "FY25 and FY26 not comparable like-to-like: FY25 does not include Orient Cement; Penna consolidated from 16 August 2025 (7.5 months in FY25 vs 12 months in FY26); Orient included for only 11 months in FY26 and was absent in FY25"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ORD",
+              "title": "Order Book & Demand",
+              "key_figures": [
+                {
+                  "label": "Industry demand growth estimate FY27",
+                  "value": "5-5.5",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Ambuja consolidated volume growth guidance FY27",
+                  "value": "~8",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Guided consolidated volume FY27",
+                  "value": "~80",
+                  "unit": "million tonnes",
+                  "period": "FY27",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Demand environment",
+                  "points": [
+                    "FY26 was a year of resilience for the Indian cement sector marked by industry consolidation and GST 2.0 reforms, alongside adverse/extended weather conditions, global geopolitical factors, and various state elections affecting demand",
+                    "Current demand (April/May) viewed as subdued and soft",
+                    "Industry expected to grow at ~5-5.5% given inflation and weak monsoon headwinds",
+                    "Ambuja's FY27 volume growth guidance of ~8% (to ~80 million tonnes) driven by incremental volume from ~10 million tonnes of new capacity commissioning between now and September, plus stabilization of acquired assets (Sanghi, Penna)",
+                    "Management stresses focus on value via trade volumes and premium cement rather than pure volume growth, keeping overall growth moderate"
+                  ]
+                },
+                {
+                  "label": "Pricing",
+                  "points": [
+                    "Industry saw modest price improvement of ~INR10 in Q4, with select pockets seeing INR15-20 increases",
+                    "Despite cost increases, industry remains under relentless pricing pressure and unable to fully pass on costs, especially with softening demand",
+                    "April prices trended up ~INR10 over March",
+                    "Passing on cost inflation via pricing viewed as dependent on demand; management expects industry may achieve only about half of any attempted price hike given current soft demand"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "Premium cement share of trade sales (FY26 full year)",
+                  "value": "35",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Premium cement share of trade sales (Q4 FY26)",
+                  "value": "36",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "RMX/RMC EBITDA Q4 FY26",
+                  "value": "102",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "RMX/RMC EBITDA FY26 full year",
+                  "value": "~300",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Premiumization strategy",
+                  "points": [
+                    "Continued focus on trade sales and premium product sales where the company has leadership",
+                    "36% considered a sustainable target level for premium cement share of trade sales going forward",
+                    "Journey of premiumization has 'just begun' — differentiated realization benefits expected in subsequent quarters as blended and premium cement sales increase",
+                    "Price gap maintained: INR50-55 for super premium vs base product, INR20-25 for premium vs base product"
+                  ]
+                },
+                {
+                  "label": "Realization trends",
+                  "points": [
+                    "Realization has moved modestly QoQ (INR254/bag vs INR253 in December, up ~INR1) versus peers seeing 1.5-2% QoQ realization gains, attributed to the early stage of the mix-shift journey"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MFG",
+              "title": "Manufacturing & Capacity",
+              "key_figures": [
+                {
+                  "label": "Total cement capacity (FY26)",
+                  "value": "109",
+                  "unit": "million tonnes",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "New grinding capacity commissioned FY26",
+                  "value": "10.7",
+                  "unit": "million tonnes",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Additional clinker capacity commissioned FY26 (Jodhpur & Bhatapara)",
+                  "value": "7",
+                  "unit": "million tonnes",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Sanghi cement capacity utilization",
+                  "value": "57",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Penna cement capacity utilization",
+                  "value": "46",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Combined capacity of Sanghi and Penna",
+                  "value": "19",
+                  "unit": "million tonnes",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Target utilization improvement for Sanghi/Penna",
+                  "value": "5-10",
+                  "unit": "percentage points",
+                  "period": "forward",
+                  "kind": "target"
+                },
+                {
+                  "label": "Green power share Q4 FY26",
+                  "value": "32",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Green power share prior period",
+                  "value": "26",
+                  "unit": "%",
+                  "period": "prior quarter",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Targeted capacity by end FY27",
+                  "value": "119",
+                  "unit": "million tonnes",
+                  "period": "FY27 end",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Proposed ongoing GU capacity additions",
+                  "value": "10",
+                  "unit": "million tonnes",
+                  "period": "ongoing",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Clinker capacity (current)",
+                  "value": "69",
+                  "unit": "million tonnes",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Clinker capacity addition (Maratha)",
+                  "value": "4",
+                  "unit": "million tonnes",
+                  "period": "current year",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Clinker capacity after Maratha addition",
+                  "value": "73",
+                  "unit": "million tonnes",
+                  "period": "forward",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "New Mundra clinker line capacity",
+                  "value": "2",
+                  "unit": "million tonnes",
+                  "period": "forward (24-28 months)",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "New Assam clinker capacity (limestone block)",
+                  "value": "2",
+                  "unit": "million tonnes",
+                  "period": "forward, starting end of this year",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Timeline for Mundra/Assam clinker projects",
+                  "value": "24-28",
+                  "unit": "months",
+                  "period": "forward",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Earlier debottlenecking target across assets",
+                  "value": "15",
+                  "unit": "million tonnes",
+                  "period": "unspecified",
+                  "kind": "target"
+                },
+                {
+                  "label": "Target utilization FY27 - Orient",
+                  "value": "full capacity",
+                  "unit": null,
+                  "period": "FY27",
+                  "kind": "target"
+                },
+                {
+                  "label": "Target utilization FY27 - Sanghi",
+                  "value": "65-70",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "target"
+                },
+                {
+                  "label": "Target utilization FY27 - Penna",
+                  "value": "55-60",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "target"
+                },
+                {
+                  "label": "Target utilization FY27 - existing Ambuja/ACC assets",
+                  "value": "75-80",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "target"
+                },
+                {
+                  "label": "Target blended utilization FY27 (consol average)",
+                  "value": "70-75",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "target"
+                },
+                {
+                  "label": "Earlier long-term capacity ambition (revised away from)",
+                  "value": "140-155",
+                  "unit": "million tonnes",
+                  "period": "earlier target, now revised",
+                  "kind": "target"
+                },
+                {
+                  "label": "Revised target timeline for larger capacity ambition",
+                  "value": "FY30 (moved from FY28)",
+                  "unit": null,
+                  "period": "revised",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Possible utilization if hitting 120 million tonnes by FY27 end",
+                  "value": "120",
+                  "unit": "million tonnes",
+                  "period": "FY27 end (alternate scenario)",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Capacity commissioning and integration",
+                  "points": [
+                    "New grinding capacity commissioned at Marwar, Farakka, Sankrail, Sindri, Krishnapatnam during FY26",
+                    "Additional clinker capacity commissioned at Jodhpur and Bhatapara",
+                    "Successful amalgamation of Sanghi Industries and Penna Cement with Ambuja Cements now completed; ACC and Orient Cement amalgamation under process (One Cement platform strategic initiative for sharper operational focus, business synergies, and compliance)"
+                  ]
+                },
+                {
+                  "label": "Acquired asset turnaround challenges",
+                  "points": [
+                    "Newly acquired assets (Sanghi, Penna) witnessed lower utilization levels than expected",
+                    "Turnaround initiatives took longer than expected timelines; Penna needed higher-than-expected maintenance capex and asset upkeep",
+                    "Sanghi showed improvement in December quarter but remains at 57% utilization currently; Penna at 46%",
+                    "EBITDA of Ambuja and ACC excluding acquired assets is higher by INR70-80/tonne (management estimates overall drag of at least INR800/tonne when normalized), highlighting acquired assets are not yet performing to desired levels",
+                    "Investor site visits conducted to Sanghi (in March) and Marwar to showcase readiness; Penna visit planned next",
+                    "Breakdowns at acquired assets (Penna, Sanghi) attributed partly to deferred/incomplete repairs and maintenance and lack of full engineering done before project starts"
+                  ]
+                },
+                {
+                  "label": "Capex recalibration and location strategy",
+                  "points": [
+                    "Capacity expansion plans being recalibrated to take advantage of recent railway policies on bulk cement terminals, with more gradual additions, first optimizing current capacities",
+                    "Recalibration primarily involves relocating/shutting down grinding units at integrated locations where logistics costs are high (distance traveled by integrated units), moving grinding closer to market — majority of recalibration occurring in North UP, Bihar, Southern Gujarat and Maharashtra; affects both ACC and Ambuja assets",
+                    "Sanghi is predominantly clinker plus cement currently; over next 3 years will move predominantly to clinker with new cement capacities coming up on Gujarat coastal region (Dahej Line 2 as an example) — Sanghi to supply clinker while cement supplied from these new units",
+                    "Capex plan includes ~INR4 billion already under execution (capacity, WHRS, fly ash transportation system) with balance being debottlenecking plus maintenance capex",
+                    "Reasons for past capex delays (per Karan Adani): choice of wrong contractor for execution in some projects, team-building time needed post-acquisition of Ambuja/ACC, and starting projects without full engineering being completed — company now using 6 months to complete engineering before starting new projects",
+                    "7 vessels ordered for marine infrastructure at Sanghi, to be delivered progressively starting next year, forming base model for ramp-up rather than reliance on the Naliya railway line (which is considered only an add-on)",
+                    "Mundra new clinker line and Assam limestone block project cited as two new growth areas apart from ongoing GU additions"
+                  ]
+                },
+                {
+                  "label": "Ambition reset",
+                  "points": [
+                    "Management (Karan Adani) confirmed a partial reset in ambition versus original post-acquisition target to double capacity/volume and become industry leader — reset is on the timeline, not the ultimate target",
+                    "Reset driven by acknowledgment that the company has not been delivering against what was committed to shareholders",
+                    "Key monitorables identified for the next year: (1) discipline on L1 plants delivering to respective markets, (2) discipline on trade vs non-trade sales, (3) reducing raw material and electricity/energy consumption costs, (4) improving channel network to boost sales, and (5) [implied cost focus] — ~80% of the reset effort is attributed to cost improvement",
+                    "SLA (service level agreement)-based contracts with competent external partners being used at some plants to focus internal teams' energy and help clean up legacy union issues, improving cost and efficiency"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Regional demand impact",
+                  "points": [
+                    "Penna's asset base is geographically concentrated in South India, which was one of the most weather/demand-affected geographies in the March quarter, contributing to shutdowns and higher repair/maintenance costs",
+                    "New growth geographies being pursued: Assam (new limestone block, completely new territory) and Mundra (completely new clinker line) in coastal Gujarat"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SUP",
+              "title": "Supply Chain & Operations",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Logistics and input cost issues",
+                  "points": [
+                    "Higher freight cost due to increase in overall sale lead (primary and secondary)",
+                    "Packing cost disruptions in March linked to the West Asia war",
+                    "Fly ash raw material cost improvement pending completion of railway infrastructure in coming months",
+                    "Higher heat consumption / fuel consumption partly due to non-optimal fuel blend, more pronounced at acquired assets",
+                    "Logistics cost recalibration: integrated units in some regions (e.g., supplying Bihar market via Chhattisgarh) travel longer distances than optimal, prompting plan to relocate grinding units closer to markets (e.g., set up grinding units in Bihar, keep Chhattisgarh as clinker-only unit)"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Competitive positioning",
+                  "points": [
+                    "Pan-India competitor pricing (vs the other major national player) is broadly in a similar range, with differences of INR5-10 per bag either way across districts, reflected in similar overall NSP for the top two players",
+                    "Focus on high market share/high recall markets for future capacity expansion to reduce logistics costs and improve penetration"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Portfolio integration (One Cement platform)",
+                  "points": [
+                    "Amalgamation of Sanghi Industries and Penna Cement with Ambuja Cements completed; ACC and Orient Cement amalgamation under process",
+                    "One Cement platform intended to sharpen focus on operational performance, business synergies, and overall higher degree of compliance",
+                    "Finalized purchase price allocation for Orient and Penna now reflected in balance sheet (previously provisional)"
+                  ]
+                },
+                {
+                  "label": "Inorganic growth stance",
+                  "points": [
+                    "Primary focus remains organic growth and stabilizing existing/ongoing expansions and acquired assets; inorganic opportunities continuously evaluated but not the current priority",
+                    "On JP assets: company declined to comment on potential acquisition given JP's resolution process involves another listed company (RP)"
+                  ]
+                },
+                {
+                  "label": "SLA partnerships",
+                  "points": [
+                    "SLA-based contracts being used at certain plants with external competent partners to run plants at desired efficiency, freeing up internal team focus and helping resolve legacy union issues, particularly relevant given Ambuja/ACC's history"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Headwinds flagged by management",
+                  "points": [
+                    "Adverse and extended weather conditions affecting FY26 demand",
+                    "Global geopolitical factors, notably the West Asia war causing packing cost disruptions in March",
+                    "Various state elections affecting demand in FY26",
+                    "Expected inflationary pressure and weak monsoon likely to soften cement demand in FY27",
+                    "Fast-moving global situations and dynamism in energy costs make it difficult to provide long-term cost estimates for the next 2-3 quarters",
+                    "Higher additional goods tax in certain states (e.g., Himachal) raising costs",
+                    "Breakdowns and reliability issues at acquired assets (Penna, Sanghi) due to deferred maintenance",
+                    "Lower government incentives due to reduced GST rates and exhaustion of incentive periods at some plants",
+                    "Industry unable to fully pass on cost inflation to customers amid softening demand, pressuring margins",
+                    "Past capex execution delays due to wrong contractor selection, team-building lag post-acquisition, and incomplete engineering before project starts"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [
+                {
+                  "label": "FY27 consolidated volume guidance",
+                  "value": "~80",
+                  "unit": "million tonnes",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "FY27 volume growth guidance",
+                  "value": "~8",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Industry volume growth estimate FY27",
+                  "value": "5-5.5",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Targeted capacity by end FY27",
+                  "value": "119",
+                  "unit": "million tonnes",
+                  "period": "FY27 end",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "FY27 cost reduction target",
+                  "value": "250",
+                  "unit": "INR/tonne",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "FY28 additional cost reduction target",
+                  "value": "250",
+                  "unit": "INR/tonne",
+                  "period": "FY28",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Cumulative 2-year cost reduction target",
+                  "value": "500",
+                  "unit": "INR/tonne",
+                  "period": "FY27-FY28",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Target cost level FY27",
+                  "value": "4,250",
+                  "unit": "INR/tonne",
+                  "period": "FY27",
+                  "kind": "target"
+                },
+                {
+                  "label": "Earlier long-term cost target (reiterated as longer-term ambition)",
+                  "value": "3,650",
+                  "unit": "INR/tonne",
+                  "period": "long-term",
+                  "kind": "target"
+                },
+                {
+                  "label": "FY27 capex estimate",
+                  "value": "6,000-6,500",
+                  "unit": "INR crores",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Utilization improvement target for Sanghi/Penna",
+                  "value": "5-10",
+                  "unit": "percentage points",
+                  "period": "forward",
+                  "kind": "target"
+                },
+                {
+                  "label": "Revised long-term capacity ambition timeline",
+                  "value": "FY30 (vs earlier FY28)",
+                  "unit": null,
+                  "period": "long-term",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Project IRR target",
+                  "value": "18",
+                  "unit": "%",
+                  "period": "ongoing",
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "FY27 outlook",
+                  "points": [
+                    "Company remains focused on disciplined execution, strengthening brand penetration, scaling trade sales, driving premium cement sales, and maintaining cost and capital discipline",
+                    "FY27 focus firmly on streamlining operations and margin expansion",
+                    "Volume guidance of ~80 million tonnes (~8% growth) predicated on incremental ~10 million tonnes from new capacity commissioning (now to September) plus stabilization of acquired Sanghi/Penna assets, despite anticipated softer industry demand",
+                    "Cost reduction of INR250/tonne for FY27 guided as a full-year average, meaning Q1 FY27 expected to be flattish near INR4,500/tonne with greater reduction pace needed in remaining three quarters",
+                    "Company reiterated it is not abandoning its earlier long-term cost target of INR3,650/tonne, but is committing only to the realistic INR500/tonne reduction (over 2 years) for now while continuing to pursue further efficiency steps across manufacturing, raw materials and logistics",
+                    "Capacity expansion timeline for larger ambitions (previously targeted for FY28) has been pushed to around FY30; company still evaluating whether to add capacity in high-potential existing markets (high share/recall) for logistics and penetration benefits",
+                    "Earlier debottlenecking target of 15 million tonnes across assets stays in place, though timing may shift based on return on investment",
+                    "Any EBITDA per tonne guidance for FY28 considered premature ('Herculean task') to provide with confidence at this stage; management will update over the next 2-3 quarters as visibility improves",
+                    "Management stresses that outcomes are 100% controllable internally; any guidance miss would be attributed to internal execution issues, not external factors"
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "Consolidated sales volume",
+              "horizon": "FY27",
+              "statement": "Ambuja expects consolidated volumes to grow by almost 8% to around 80 million-odd tonnes in FY27",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Industry volume growth",
+              "horizon": "FY27",
+              "statement": "Industry is believed to grow at around 5% to 5.5% given inflation and weak monsoon headlines",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Total cement capacity",
+              "horizon": "FY27 end",
+              "statement": "Expecting to hit capacity of almost 119 million tonnes by end of FY27, supported by ongoing additions of 10 million tonnes of GU (e.g. Salai Banwa, Warisaliganj)",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Cost per tonne",
+              "horizon": "FY27",
+              "statement": "Targeting a reduction of INR250 per tonne for FY27 as a full-year average, bringing cost to around INR4,250/tonne from a peak of INR4,500/tonne",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "Cost per tonne",
+              "horizon": "FY28",
+              "statement": "Additional cost reduction of INR250 per tonne targeted for FY28 (cumulative INR500/tonne reduction over 2 years)",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "Cost per tonne",
+              "horizon": "long-term",
+              "statement": "Company is not shying away from its earlier long-term cost target of INR3,650 per tonne, despite only committing to INR500/tonne reduction over the next 2 years for now",
+              "specificity": "vague",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "Capex",
+              "horizon": "FY27",
+              "statement": "Capex estimate for FY27 is INR6,000 crores to INR6,500 crores, may change by a couple hundred crores",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Sanghi & Penna utilization",
+              "horizon": "unspecified forward period",
+              "statement": "Target is to increase utilization of Sanghi and Penna (19 million tonnes combined capacity) by at least 5% to 10%",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Utilization by plant FY27",
+              "horizon": "FY27",
+              "statement": "Target utilization for FY27: Orient at full capacity, Sanghi at 65-70%, Penna at 55-60%, existing Ambuja/ACC assets at 75-80%, blended consol average 70-75%",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Long-term capacity ambition (140-155 million tonnes)",
+              "horizon": "FY30 (pushed from FY28)",
+              "statement": "Target plans that were earlier FY28 could move a year or 2, on a safer side FY30, for hitting larger capacity targets",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Debottlenecking capacity",
+              "horizon": "unspecified",
+              "statement": "Earlier guided 15 million tonnes of debottlenecking exercises across assets stays, though timing may differ based on return on investment",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Premium cement share of trade sales",
+              "horizon": "forward",
+              "statement": "36% considered a good number to sustain as share of premium cement in trade sales",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "EBITDA per tonne",
+              "horizon": "FY28 and beyond",
+              "statement": "Management declined to give specific EBITDA per tonne guidance, citing it would be a 'Herculean task' at this stage; will update over next 2-3 quarters as visibility improves",
+              "specificity": "refused",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Project IRR",
+              "horizon": "ongoing capex program",
+              "statement": "Target project IRR of 18% (equity returns) for new capex",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Mundra and Assam clinker projects",
+              "horizon": "24-28 months",
+              "statement": "New Mundra clinker line (2 million tonnes) and Assam clinker capacity (2 million tonnes, from new limestone block) targeted to complete in 24-28 months",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Cost per tonne Q1 FY27",
+              "horizon": "Q1 FY27",
+              "statement": "Cost expected to be flattish at around INR4,500/tonne in Q1 FY27 before improving in subsequent quarters",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "Adverse and extended weather conditions",
+              "status": "stable",
+              "note": "Affected FY26 demand and industry performance broadly"
+            },
+            {
+              "risk": "Global geopolitical factors (West Asia war)",
+              "status": "new",
+              "note": "Caused packing cost disruptions especially in March, contributing to cost escalation"
+            },
+            {
+              "risk": "State elections",
+              "status": "stable",
+              "note": "Affected FY26 demand in some regions"
+            },
+            {
+              "risk": "Weak monsoon / inflationary pressure",
+              "status": "new",
+              "note": "Expected to keep cement demand soft in FY27"
+            },
+            {
+              "risk": "Energy/fuel cost volatility",
+              "status": "escalated",
+              "note": "Fast-moving global situation makes long-term cost estimates difficult for next 2-3 quarters"
+            },
+            {
+              "risk": "Additional goods tax (state-level)",
+              "status": "new",
+              "note": "Increased costs in states like Himachal"
+            },
+            {
+              "risk": "Acquired asset reliability issues (Sanghi, Penna)",
+              "status": "escalated",
+              "note": "Breakdowns and deferred maintenance drove higher repair and maintenance costs; turnaround taking longer than expected"
+            },
+            {
+              "risk": "Lower government incentives",
+              "status": "new",
+              "note": "Due to lower GST rates, exhaustion of incentive periods, and shift to conservative/certainty-based incentive accrual"
+            },
+            {
+              "risk": "Inability to fully pass on cost inflation via pricing",
+              "status": "escalated",
+              "note": "Industry facing relentless pricing pressure amid softening demand despite cost increases"
+            },
+            {
+              "risk": "Capex execution delays",
+              "status": "escalated",
+              "note": "Attributed to wrong contractor selection, team-building lag post-acquisition, and incomplete engineering before project starts"
+            },
+            {
+              "risk": "South India demand weakness impacting Penna",
+              "status": "new",
+              "note": "South was one of the most weather/demand-affected geographies in March quarter, impacting Penna operations"
+            }
+          ],
+          "themes": [
+            {
+              "label": "Cost inflation & normalization",
+              "direction": "mixed",
+              "note": "Cost per tonne peaked at INR4,500 in Q4 FY26 due to freight, packing, fuel, branding and R&M cost increases; management guides to INR250/tonne reduction in FY27",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Acquired asset turnaround (Sanghi/Penna)",
+              "direction": "negative",
+              "note": "Sanghi at 57% and Penna at 46% utilization, turnaround taking longer than expected with higher maintenance capex needs and breakdowns",
+              "section_ref": "MFG"
+            },
+            {
+              "label": "Premiumization & trade sales mix",
+              "direction": "positive",
+              "note": "Premium cement at 35-36% of trade sales; trade sales share rose to 74% in Q4 from 68% in December quarter",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Capex discipline & recalibration",
+              "direction": "mixed",
+              "note": "Capacity expansion timeline pushed from FY28 to FY30; capex approach recalibrated to prioritize stabilizing existing/ongoing assets over new growth capex",
+              "section_ref": "MFG"
+            },
+            {
+              "label": "Demand softness",
+              "direction": "negative",
+              "note": "Industry expected to grow only 5-5.5% in FY27 amid inflation and weak monsoon, with April-May demand already appearing subdued",
+              "section_ref": "ORD"
+            },
+            {
+              "label": "Pricing power constraints",
+              "direction": "negative",
+              "note": "Industry unable to fully pass on cost inflation to customers despite cost increases, given softening demand",
+              "section_ref": "ORD"
+            },
+            {
+              "label": "Management execution reset / accountability",
+              "direction": "mixed",
+              "note": "Karan Adani acknowledged partial reset in ambition and timeline, attributing gaps to internal execution rather than external factors, with 5 key monitorables set including cost, L1 plant discipline, trade mix, raw material/energy consumption and channel network",
+              "section_ref": "STRAT"
+            }
+          ],
+          "key_takeaways": [
+            "Ambuja delivered a resilient performance for FY26, achieving its highest ever annual sales volume of 73.7 million tonnes, up 16% year-on-year, with normalized EBITDA of INR6,539 crores (up 31%) at INR887 per metric tonne (up 12%) and PAT of INR2,647 crores (up 17%)",
+            "Company continues to remain debt-free with highest credit rating",
+            "Cement capacity increased to 109 million tonnes during FY26, supported by 10.7 million tonnes of new grinding capacity and 7 million tonnes of additional clinker capacity",
+            "Successful amalgamation of Sanghi Industries and Penna Cement with Ambuja Cements is now completed, while ACC and Orient Cement amalgamation is under process",
+            "Newly acquired assets (Sanghi, Penna) witnessed lower utilization levels and turnaround initiatives took longer than expected, leading to higher-than-expected costs and disappointments",
+            "Cost per tonne peaked at INR4,500 for Q4 FY26 quarter, with management guiding to INR250/tonne reduction for FY27 (target ~INR4,250/tonne average)",
+            "FY27 consolidated volume guidance of ~80 million tonnes (~8% growth) against expected softer industry growth of 5%-5.5%",
+            "Capacity expansion plans being recalibrated with a more gradual, disciplined approach; long-term capacity ambition timeline pushed from FY28 to around FY30",
+            "Management (Karan Adani) acknowledged a partial reset in ambition versus original post-acquisition targets, driven by execution gaps, with 80% of the reset effort focused on cost improvement"
+          ],
+          "pressing_questions": [
+            "Navin Sahadeo (ICICI Securities): questioned whether volumes are seeing pressure since Q4 growth adjusted for Orient Cement volumes appears flattish YoY, against an FY27 guidance of 80 million tonnes (9-10% growth) amid expectation of softer industry growth of 5%",
+            "Navin Sahadeo: asked by when the company will provide color on the next leg of capex given the step-back from the earlier vision to double capacity to 140-155 million tonnes, and whether the company is more open to inorganic growth now",
+            "Indrajit Agarwal (CLSA): asked why realization has hardly moved QoQ versus peers up 1.5-2%, questioning if this reflects weaker mix-driven revenue growth",
+            "Jashandeep Singh Chadha (Nomura): questioned why Ambuja's fixed cost (employee + other cost) increased significantly YoY versus peers, and the rationale for taking planned shutdowns in high-volume-growth quarters (Q3, Q4) instead of the usual monsoon (Q2) period",
+            "Prateek Kumar (Jefferies): sought reconciliation of Q3 call commentary of cost approaching INR4,000 (January) and INR4,100 (March exit) versus the reported Q4 average cost of INR4,500",
+            "Amber Singhania (Nippon India AMC): pressed for a detailed reconciliation and quantification of cost items explaining the gap between the December quarter exit commentary (near INR4,000) and the March quarter actual average (INR4,500), especially given inventory carry-forward and seasonally favorable factors",
+            "Amit Murarka (Axis Capital): asked whether the subdued current guidance represents a reset in ambition from the original goal to double capacity/volume and become industry leader at the time of acquisition",
+            "Ritesh Shah (Investec): asked what prompted the reset now, the 5 key monitorables set for the next year, and how SLA agreements fit into the overall strategy post-reset",
+            "Raghav Maheshwari (Equirus Securities): asked about the reasons behind continuous capex delays (e.g., Maratha plant) despite Adani's reputation for fast execution, and whether recurring breakdowns at bigger plants are maintenance-related"
+          ]
+        }
+      ]
     }
   }
 }
