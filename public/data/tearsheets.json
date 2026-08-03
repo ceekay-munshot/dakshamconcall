@@ -50915,6 +50915,2883 @@
           ]
         }
       ]
+    },
+    "360ONE": {
+      "company": "360 ONE WAM Ltd",
+      "ticker": "360ONE",
+      "industry": "Stockbroking & Allied",
+      "country": "India",
+      "checked_at": "2026-08-03T11:37:47.785Z",
+      "quarters": [
+        {
+          "company": "360 ONE WAM Ltd",
+          "ticker": "360ONE",
+          "industry": "Stockbroking & Allied",
+          "country": "India",
+          "concall_date": "2026-07-21",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=e810b8db-b7a9-48d4-9d4b-c2c00741af56.pdf",
+          "model": "anthropic.claude-sonnet-5",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-03T11:36:56.251Z",
+          "summary": "Management expects gradual improvement in cost-to-income ratio (from 51.3% towards ~49-49.5% by Q4 and 100-150 bps improvement for the full year) as HNI and ET Money businesses reach breakeven/profitability and operating leverage builds; ARR AUM and revenue growth momentum expected to continue, aided by UBS collaboration, ECM build-out, and continued UHNI/HNI franchise scale-up; asset management alternates platform (private credit, real assets, PE, renewables) seen as a long structural growth opportunity.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "Total ARR AUM",
+                  "value": "3,42,000",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total ARR AUM growth",
+                  "value": "19",
+                  "unit": "%",
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Wealth AUM",
+                  "value": "2,42,000",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Wealth AUM growth",
+                  "value": "24.2",
+                  "unit": "%",
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Asset management AUM",
+                  "value": "1,00,000",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Asset management AUM growth",
+                  "value": "8.2",
+                  "unit": "%",
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Overall AUM",
+                  "value": "7.8 lakh",
+                  "unit": "INR crores",
+                  "period": "as on Jun 30, 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Overall AUM growth",
+                  "value": "17",
+                  "unit": "%",
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ARR net flows",
+                  "value": "10,815",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ARR net flows",
+                  "value": "8,985",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Wealth business net flows",
+                  "value": "13,379",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Wealth business net flows",
+                  "value": "6,957",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Asset management gross flows",
+                  "value": "~4,000",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ARR revenues",
+                  "value": "614",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ARR revenue growth",
+                  "value": "20.3",
+                  "unit": "%",
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ARR revenue as % of total revenue from operations",
+                  "value": "75",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ARR retention",
+                  "value": "74",
+                  "unit": "bps",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Wealth ARR retention",
+                  "value": "71",
+                  "unit": "bps",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Asset management ARR retention",
+                  "value": "83",
+                  "unit": "bps",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "TBR (Transaction & Broking Revenue)",
+                  "value": "208",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "TBR growth",
+                  "value": "37.3",
+                  "unit": "%",
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total revenue",
+                  "value": "870",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total revenue growth",
+                  "value": "20",
+                  "unit": "%",
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total cost",
+                  "value": "446",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost to income ratio",
+                  "value": "51.3",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost to income ratio",
+                  "value": "53.5",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Profit after tax",
+                  "value": "330",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT growth",
+                  "value": "14.8",
+                  "unit": "%",
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Tangible ROE",
+                  "value": "19.4",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Retention decline (from prior)",
+                  "value": "78 to 73-74",
+                  "unit": "bps",
+                  "period": "Q1 FY27 vs prior",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Carry contribution to retention decline",
+                  "value": "2-2.5",
+                  "unit": "bps",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Mix-driven retention decline (remaining)",
+                  "value": "2",
+                  "unit": "bps",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Advisory retention (large mandates)",
+                  "value": "25-27",
+                  "unit": "bps",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Advisory retention (average)",
+                  "value": "30-35",
+                  "unit": "bps",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Discretionary retention",
+                  "value": "40-45",
+                  "unit": "bps",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Distribution retention",
+                  "value": "65-70",
+                  "unit": "bps",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Listed asset management business revenue contribution",
+                  "value": "8-9",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ARR AUM retention range",
+                  "value": "70-75",
+                  "unit": "bps",
+                  "period": "ongoing",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Alternates AUM (for carry calc)",
+                  "value": "58,000-60,000",
+                  "unit": "INR crores",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Carry yield on AIF alternates",
+                  "value": "~4 (range 3-5)",
+                  "unit": "bps",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Implied annual carry revenue",
+                  "value": "~240",
+                  "unit": "INR crores",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Exceptional cost (ESOP related to B&K acquisition)",
+                  "value": "12-13",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Wealth overall expense",
+                  "value": "354",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Wealth operating PBT cost (excl. exceptional items)",
+                  "value": "342",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "New SARs granted",
+                  "value": "12 lakh",
+                  "unit": "SARs",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "SARs notional value",
+                  "value": "130-140",
+                  "unit": "INR crores",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "SARs cost impact",
+                  "value": "~60",
+                  "unit": "INR crores",
+                  "period": "spread over 4 years",
+                  "kind": "reported"
+                },
+                {
+                  "label": "SARs cost impact spread period",
+                  "value": "60 odd",
+                  "unit": "crores",
+                  "period": "spread over 3 years",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Macro backdrop",
+                  "points": [
+                    "Equity indices staged a broad-based recovery over the quarter, navigating geopolitical uncertainty with resilience.",
+                    "This resilience was equally visible in flows into the domestic asset and wealth management ecosystem, reaffirming conviction in the industry's structural growth story.",
+                    "India's wealth market remains deeply underpenetrated and represents a significant growth opportunity; for a franchise positioned at the premium end, this is an opportunity to compound leadership."
+                  ]
+                },
+                {
+                  "label": "Net flows commentary",
+                  "points": [
+                    "Net flows of ~40,000 crores represent 12-15% of the opening ARR AUM base of ~2,40,000 crores.",
+                    "Net flow split expected to be broadly 70:30 or 75:25 in favour of wealth business.",
+                    "Asset management net flows were lopsided/negative in the quarter due to one large institutional mandate reducing allocation from ~$550-600 million to ~$175-180 million; broader FII/global allocations to listed equity have been muted over last 6-9 months, though alternates flows have been strong.",
+                    "Multiple product launches planned over next 6-9 months expected to average out flows between wealth and asset management.",
+                    "PMS as a structure is challenged structurally versus AIF, mutual fund or SIF vehicles for the same product; strategy remains alive but flows likely to migrate to pooled structures."
+                  ]
+                },
+                {
+                  "label": "Cost-to-income drivers",
+                  "points": [
+                    "HNI business AUM grew from ~600 crores to ~3,900-4,000 crores last year, and further to ~5,100-5,200 crores this quarter; platform stable, execution digital, run with 65-70 people.",
+                    "A small set of clients (2-10 crore segment) to be migrated into HNI piece over next 2-3 months.",
+                    "HNI business expected to not only break even but move into slight profitability this year.",
+                    "ET Money run-rate loss (excl. exit-related costs) is now ~3-3.5-4 crores per quarter, down from 7 crores last quarter, expected ~6-7 crores this quarter, trending toward breakeven by Q4.",
+                    "ET Money and HNI improvements expected to reduce cost-to-income by ~100-150 bps combined.",
+                    "Operating leverage from alternates and wealth management businesses expected to take cost-to-income from 51% to ~49-49.5% by Q4, and ~100-150 bps improvement for the full year.",
+                    "Core stable UHNI cost-to-income typically ~45%, with 100-200 bps buffer for expansion/new hires; long-term convergence expected toward 44-45% to 46-47% zip code depending on recruitment pace.",
+                    "Variable vs permanent cost nature: hiring/team costs tied to GBs/JBs (guaranteed/joining bonuses) take 24-30 months cycle (vs 12-18 months) to normalize as new hires rebuild their book; industry equilibrium has not changed dramatically over last 2-3 years."
+                  ]
+                },
+                {
+                  "label": "Retention/yield drivers",
+                  "points": [
+                    "Retention decline attributed roughly half to carry recognition (largely asset management side, partially wealth) and half to business mix (advisory vs distribution mix, and typically lower TBR in Q1-Q2 vs Q3-Q4).",
+                    "No reduction in margins seen within any specific business line; decline is purely a mix effect.",
+                    "Only area of expected continuing headline retention pressure is the pure listed side of asset management business (8-9% of revenue).",
+                    "AIF-only carry yield estimated at ~4 bps (range 3-5 bps) on ~58,000-60,000 crores alternates AUM, implying ~240 crores annual carry revenue."
+                  ]
+                },
+                {
+                  "label": "Exceptional costs",
+                  "points": [
+                    "~12-13 crores exceptional cost this quarter relates to ESOPs tied to the B&K acquisition, not a recurring/constant item."
+                  ]
+                },
+                {
+                  "label": "New SAR grant",
+                  "points": [
+                    "New SARs (~12 lakh) announced; cost will start accruing only from next quarter once approved and allotted, spread over 4 years (~60 crores total notional impact of ~130-140 crores value)."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "HNI relationship managers",
+                  "value": "60+",
+                  "unit": "count",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "HNI locations",
+                  "value": "12",
+                  "unit": "count",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "HNI AUM",
+                  "value": ">5,000",
+                  "unit": "INR crores",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "HNI clients",
+                  "value": "800+",
+                  "unit": "count",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "HNI ARR retention yield",
+                  "value": "~90",
+                  "unit": "bps",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "HNI addressable households",
+                  "value": "200,000+",
+                  "unit": "households",
+                  "period": "current",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "HNI distribution AUM growth (last year)",
+                  "value": "600 to 3,900-4,000",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "HNI distribution AUM (current quarter)",
+                  "value": "4,000 to 5,100-5,200",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "HNI trail revenue starting to accrue",
+                  "value": "7-8",
+                  "unit": "INR crores",
+                  "period": "current quarter",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Clients (1-10 crore) to migrate to HNI",
+                  "value": "~4,000",
+                  "unit": "count",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "AUM of clients to migrate to HNI",
+                  "value": "17,000-18,000",
+                  "unit": "INR crores",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue from clients to migrate to HNI",
+                  "value": "10-15",
+                  "unit": "INR crores per quarter",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Employees to migrate for HNI transition",
+                  "value": "<10-12",
+                  "unit": "count",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "HNI retention (once mature)",
+                  "value": "85-90",
+                  "unit": "bps",
+                  "period": "future",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "UHNI distribution retention",
+                  "value": "71-72-73",
+                  "unit": "bps",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Institutional equity coverage",
+                  "value": "550+",
+                  "unit": "companies",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Institutional clients",
+                  "value": "300+",
+                  "unit": "count",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Broking revenue from cash segment",
+                  "value": "85%+",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Corporate treasury access",
+                  "value": "600+",
+                  "unit": "count",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Asset management AUM milestone",
+                  "value": "1 lakh crore (crossed)",
+                  "unit": "INR crores",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Combined listed equity brokerage at B&K deal close",
+                  "value": "250-260",
+                  "unit": "INR crores",
+                  "period": "at acquisition",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Combined listed equity brokerage now",
+                  "value": "310-320",
+                  "unit": "INR crores",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Equity brokerage run-rate (B&K + UHNI)",
+                  "value": "23-25 crores/month (~75 crores/quarter)",
+                  "unit": "INR crores",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Equity brokerage as % of revenue (current)",
+                  "value": "8-10",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Equity brokerage as % of revenue (target)",
+                  "value": "12-15",
+                  "unit": "%",
+                  "period": "future",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "ECM revenue last quarter",
+                  "value": "<8",
+                  "unit": "INR crores",
+                  "period": "last quarter",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ECM contribution to TBR target",
+                  "value": "15-20",
+                  "unit": "%",
+                  "period": "over 2-3 years",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Target TBR range (2-3 years)",
+                  "value": "750-1,000",
+                  "unit": "INR crores",
+                  "period": "2-3 years",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Number of clients with AUM >Rs 10 crore (36 months ago)",
+                  "value": "1,800-2,000",
+                  "unit": "count",
+                  "period": "~36 months ago",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Number of clients with AUM >Rs 10 crore (current)",
+                  "value": "4,000+",
+                  "unit": "count",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Proportion of clients above Rs 250 crore not on advisory side",
+                  "value": "less than 3 out of 10 or less than 2 out of 10",
+                  "unit": null,
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Clients above Rs 250 crore on advisory side",
+                  "value": "70-80",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Advisory vs distribution split for Rs 50-250 crore clients",
+                  "value": "50-50",
+                  "unit": null,
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Advisory vs distribution split for Ultra HNI incremental mix",
+                  "value": "60-40",
+                  "unit": null,
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "HNI business",
+                  "points": [
+                    "HNI proposition scaling well as a natural extension of the UHNI franchise.",
+                    "Program supported by digital-first, scalable operating model, state-of-the-art client and RM app, and referrals from existing client and RM base.",
+                    "Expected to break even on direct cost by end of this year as business momentum and productivity build through the year.",
+                    "Revenue recognition of assets moved to HNI starts with a 12-month lag; trail revenue for assets moved a year ago has just started accruing.",
+                    "HNI retention will be higher than UHNI distribution retention once mature (85-90 bps vs 71-73 bps for UHNI distribution)."
+                  ]
+                },
+                {
+                  "label": "ET Money",
+                  "points": [
+                    "FY26 was a year of deliberate strategic transformation of ET Money, resetting the business model towards profitability.",
+                    "Expect business to reach breakeven this year."
+                  ]
+                },
+                {
+                  "label": "Institutional business / B&K integration",
+                  "points": [
+                    "Institutional equity franchise continues to perform strongly.",
+                    "Synergies envisaged at acquisition are coming to life: broking income from UHNI clients seeing uplift, and access to 600+ corporate treasuries opening cross-sell into wealth, treasury advisory and lending.",
+                    "ECM-focused IB capabilities still building out but showing strong early traction; broking mix expected to turn steadily more annuity-like as institutional business scales and UHNI participation rises.",
+                    "Biggest synergy in immediate short term is on equity brokerage side: combined B&K + UHNI brokerage grown from ~250-260 crores at deal close to ~310-320 crores currently, expected to grow at healthy clip of 15-20% per year for next 2-3 years.",
+                    "Integration of B&K research into HNW fold expected to make equity brokerage one of the fastest-growing TBR line items."
+                  ]
+                },
+                {
+                  "label": "Asset management business",
+                  "points": [
+                    "Continues to be a structural growth engine; AUM crossed key milestone of Rs 1 lakh crore.",
+                    "Strong momentum across alternates platform: private equity, private credit, real estate, infrastructure, renewables, multi-asset, plus listed strategies.",
+                    "Product engine remains active; continuing to broaden shelf across AIF, PMS, MF platforms including SIFs."
+                  ]
+                },
+                {
+                  "label": "UHNI wallet-share dynamics",
+                  "points": [
+                    "Number of clients with AUM >Rs 10 crore grown from ~1,800-2,000 (36 months ago) to just above 4,000 currently; these clients typically have only 15-20% wallet share with the firm today.",
+                    "Growing this base from 4,000-5,000 to 6,000-8,000 clients seen as key to AUM growth via wallet share expansion.",
+                    "Most clients deal with two or two-and-a-half advisors; ability to be part of that core two (rather than one of four/five) is a key differentiator.",
+                    "Clients above Rs 250 crores are 70-80% on advisory side; Rs 50-250 crore (or 100-250 crore) segment is roughly 50-50; Rs 10-50 crore segment more skewed toward distribution.",
+                    "Advisory mix on UHNI incremental flows expected to be ~60-40 advisory-led; advisory clients use the platform ~3x more (trusts, Gift City investments, borrowing, equity brokerage) than distribution clients, so overall retention between advisory and distribution clients is not dramatically different despite lower headline advisory retention."
+                  ]
+                },
+                {
+                  "label": "ECM business build-out",
+                  "points": [
+                    "Team of 6 people added: 4 on coverage side plus 2 strategic hires on process/compliance side; some serving notice period, some already joined.",
+                    "Full-strength ECM team expected by October-December, with active pitching for mandates likely from January next year.",
+                    "Currently a very small business benefiting from existing distribution strength and promoter connects rather than dedicated ECM origination."
+                  ]
+                },
+                {
+                  "label": "Transaction Brokerage Revenue (TBR) composition",
+                  "points": [
+                    "Large lumpy transactions (e.g., fixed income, private equity syndications) becoming less frequent as co-investment regulation and AIF-PMS vehicles allow long-term money collection for single instruments, converting transaction brokerage income into ARR assets over time.",
+                    "Only one large lumpy transaction seen in Q4 last year; going forward, ability to have individually large TBR transactions is declining.",
+                    "Efforts made to keep TBR consistent at Rs 125-150 crores range, targeting modest 10-15% growth over next 2-3 years; overall composition includes equity brokerage (listed), fixed income brokerage, unlisted equity brokerage, real estate/insurance brokerage, and merchant banking income.",
+                    "TBR expected to stay below 25% of overall revenue mix, but proportion should rise from 15-20% toward ~20% as ARR AUM grows faster than TBR revenue in absolute terms; targeting overall organic growth of 15-20% a year in this bucket."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SUP",
+              "title": "Supply Chain & Operations",
+              "key_figures": [
+                {
+                  "label": "Prime lenders worked with for FCNR(B) platform",
+                  "value": "8-10",
+                  "unit": null,
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bankers worked with for FCNR(B) platform",
+                  "value": "8-10",
+                  "unit": null,
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "FCNR(B) platform network",
+                  "points": [
+                    "Works with 8-10 prime lenders and 8-10 bankers to enable client access to the FCNR(B) platform on an open architecture basis."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [
+                {
+                  "label": "UHNI addressable households",
+                  "value": "40,000-45,000",
+                  "unit": "households",
+                  "period": "current",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "Target families (3-year horizon)",
+                  "value": "9,000-10,000",
+                  "unit": "families",
+                  "period": "3-year",
+                  "kind": "target"
+                },
+                {
+                  "label": "Current families",
+                  "value": "4,100",
+                  "unit": "families",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "RM target to service 10,000 families",
+                  "value": "300-350",
+                  "unit": "RMs",
+                  "period": "future",
+                  "kind": "target"
+                },
+                {
+                  "label": "Annual RM additions needed",
+                  "value": "30-40",
+                  "unit": "RMs/year",
+                  "period": "next 3 years",
+                  "kind": "target"
+                },
+                {
+                  "label": "Cross-selling/cross-pollination multiple for advisory vs distribution client",
+                  "value": "3x",
+                  "unit": null,
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "UHNI franchise strategy",
+                  "points": [
+                    "UHNI franchise remains an anchor of the firm and continues to perform very well.",
+                    "Focus consistent across three vectors: deepening wallet share of existing clients, extending beyond top cities, and being manager of first-choice post-monetization events.",
+                    "Advisory-led proposition gaining traction as clients migrate from transactional, product-driven engagement to portfolio-level, solution-oriented mandates.",
+                    "Continued investment ahead of the curve across RM capabilities, technology, portfolio analytics, and client data security.",
+                    "RM target of 350-400 senior RMs over medium term against 9,000-10,000 family target (vs 4,100 today, addressable market of 40,000-45,000 UHNI households); requires ~30-40 RM additions per year over next three years (~300-350 total RMs to service 10,000 families), with internal junior RMs also escalating to senior roles.",
+                    "UHNI wealth management RMs typically break even substantially faster than most other platforms."
+                  ]
+                },
+                {
+                  "label": "FCNR(B) advisory opportunity",
+                  "points": [
+                    "360 ONE operates on an open architecture basis, working with 8-10 prime lenders and 8-10 bankers to help clients access FCNR(B) platform, acting as advisor rather than as bank/lender.",
+                    "UBS has not, to management's knowledge, launched an FCNR programme."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [
+                {
+                  "label": "UBS AUM exchange target",
+                  "value": "$500-600 million",
+                  "unit": "USD",
+                  "period": "over time",
+                  "kind": "target"
+                },
+                {
+                  "label": "GB/JB transition cycle duration (current)",
+                  "value": "24-30",
+                  "unit": "months",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "GB/JB transition cycle duration (earlier)",
+                  "value": "12-18",
+                  "unit": "months",
+                  "period": "prior",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Number of times CEO succession question answered",
+                  "value": "125",
+                  "unit": "times",
+                  "period": "cumulative",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Years since first answering CEO succession question",
+                  "value": "18",
+                  "unit": "years",
+                  "period": "cumulative",
+                  "kind": "reported"
+                },
+                {
+                  "label": "CEO age",
+                  "value": "49",
+                  "unit": "years",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Years CEO has been passionate about the business",
+                  "value": "25",
+                  "unit": "years",
+                  "period": "cumulative",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Mental/emotional investment in business",
+                  "value": "85-90-95-100",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Financial investment in business",
+                  "value": "more than 90",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "UBS collaboration",
+                  "points": [
+                    "Steady progress across various components of the UBS collaboration; cross-referral programs across NRI, resident, and global mandates showing early traction, expected to convert into meaningful flows over the medium term.",
+                    "UBS's global distribution expected to open up offshore capital access for alternates and listed strategies during this year.",
+                    "Onboarding of funds mutually and client referrals began January-March of current year; expect funds launched both ways (UBS launching 360 ONE funds and vice versa) in the coming quarter.",
+                    "Conservative AUM exchange target of $500-600 million between the two organizations over time, used as the measure of collaboration success rather than immediate cost-to-income/profitability impact.",
+                    "Confident of seeing money actually change hands over next three months; expect to be close to internal targets by about a year from January-March start.",
+                    "Both organizations seen as mutually accretive at whatever retention is agreed; exact unit economics/retention terms still to be discovered over next six months as market develops."
+                  ]
+                },
+                {
+                  "label": "360 ONE Flywheel",
+                  "points": [
+                    "Wealth and asset management businesses reinforce the 360 ONE Flywheel as a single integrated platform, in which each business strengthens the other and deepens client relationships."
+                  ]
+                },
+                {
+                  "label": "Leadership continuity",
+                  "points": [
+                    "CEO addressed market murmurs about his continuation post any Bain investor step-back; clarified his tenure as CEO is unrelated to his equity shareholding.",
+                    "Continuation as CEO depends on personal desire/passion (unchanged after 25 years in the business), health (currently 49 years old), and continued alignment of interests; management and CEO remain 85-100% mentally/emotionally invested and >90% financially invested in the business.",
+                    "No defined timeline (3/5/7/10 years) — approach is continuous, with no factors currently pointing to a change.",
+                    "CEO noted he has answered the succession question 125 times over 18 years."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Institutional flow volatility",
+                  "points": [
+                    "One large institutional mandate reduced allocation from ~$550-600 million to ~$175-180 million, causing negative net flows in asset management despite strong gross flows (~4,000 crores).",
+                    "Global allocations to listed equity have been fairly muted over the last six to nine months, impacting FII/large institutional mandate flows into India."
+                  ]
+                },
+                {
+                  "label": "PMS structural challenge",
+                  "points": [
+                    "PMS as a structure is challenged versus AIF, mutual fund and SIF vehicles for the same product; flows likely to migrate to pooled structures rather than PMS."
+                  ]
+                },
+                {
+                  "label": "Retention/margin pressure",
+                  "points": [
+                    "Pure listed side of asset management business will continue to see a little margin/retention pressure; contributes ~8-9% of revenue."
+                  ]
+                },
+                {
+                  "label": "Talent/hiring cost cycle",
+                  "points": [
+                    "Hiring cycle for RMs/bankers extends to 24-30 months (vs 12-18 months) due to guaranteed/joining bonuses left behind and time taken to rebuild book after moving organizations, adding to cost-to-income."
+                  ]
+                },
+                {
+                  "label": "Attrition/competitive pressure",
+                  "points": [
+                    "Competitive pressure is highest at the start of a client relationship and eases as the relationship deepens and platform breadth increases; large mandates sometimes require fee flexibility."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [
+                {
+                  "label": "Full year cost income ratio target",
+                  "value": "49-50",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Cost-to-income outlook",
+                  "points": [
+                    "Expect cost-to-income to improve from 51.3% to ~49-49.5% on a Q4 basis, and ~100-150 bps improvement for the full year.",
+                    "Desire is to land full-year cost-to-income around 49-50%.",
+                    "Core stable UHNI cost-to-income expected to be in the 44-45% to 46-47% range longer term depending on hiring pace."
+                  ]
+                },
+                {
+                  "label": "HNI and ET Money breakeven",
+                  "points": [
+                    "HNI business expected to break even on direct cost by end of this year, possibly moving into slight profitability.",
+                    "ET Money expected to reach breakeven this year, on a run-rate basis excluding exit-related costs, trending toward close to breakeven by end of Q4."
+                  ]
+                },
+                {
+                  "label": "Net flows / AUM mix",
+                  "points": [
+                    "Net flows expected to remain broadly split 70:30 or 75:25 in favour of wealth business.",
+                    "Product launches over next 6-9 months expected to average out flows between wealth and asset management."
+                  ]
+                },
+                {
+                  "label": "TBR outlook",
+                  "points": [
+                    "Core TBR (ex ECM/lumpy transactions) targeted at a consistent Rs 125-150 crores per quarter, growing modestly 10-15% over next 2-3 years.",
+                    "Equity brokerage as % of TBR revenue targeted to rise from 8-10% to 12-15%.",
+                    "ECM contribution to TBR targeted at 15-20% if overall TBR reaches Rs 750-1,000 crores over 2-3 years.",
+                    "TBR to remain below 25% of overall revenue but rise from ~15-20% toward ~20%, growing 15-20% organically per year."
+                  ]
+                },
+                {
+                  "label": "Carry outlook",
+                  "points": [
+                    "AIF alternates carry yield expected in 3-5 bps range, ~4 bps currently, implying ~240 crores annual carry on ~60,000 crores alternates AUM."
+                  ]
+                },
+                {
+                  "label": "UBS collaboration outlook",
+                  "points": [
+                    "AUM exchange target of $500-600 million over time between 360 ONE and UBS.",
+                    "Expect fund launches both ways and cross-referral flows to start materializing in coming quarter; meaningful progress expected within a year of January-March start."
+                  ]
+                },
+                {
+                  "label": "ECM outlook",
+                  "points": [
+                    "Full-strength ECM team expected by October-December this year; active mandate pitching from around January next year."
+                  ]
+                },
+                {
+                  "label": "Private credit industry outlook",
+                  "points": [
+                    "Private credit, real assets, private equity and renewables all seen as promising alternates landscape.",
+                    "Private credit industry seen as nascent in India, with potential to grow as fast as the private equity industry over time."
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "Cost-to-income ratio (Q4 basis)",
+              "horizon": "Q4 FY27",
+              "statement": "Operating leverage from ET Money, HNI and alternates/wealth businesses expected to take cost-to-income from 51% to about 49-49.5% by Q4",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "raised"
+            },
+            {
+              "metric": "Cost-to-income ratio (full year)",
+              "horizon": "FY27",
+              "statement": "Approximately 100-150 basis points improvement in cost-to-income for the full year from current levels; desire is to land around 49-50%",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "reiterated"
+            },
+            {
+              "metric": "HNI business breakeven",
+              "horizon": "FY27 (by end of this year)",
+              "statement": "HNI business expected to break even on direct cost by end of this year, and may move into a little profitability",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "ET Money breakeven",
+              "horizon": "FY27 (by Q4)",
+              "statement": "ET Money expected to reach breakeven level this year, close to breakeven by end of Q4 on run-rate basis excluding exit-related costs",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Net flows split (wealth vs asset mgmt)",
+              "horizon": "ongoing",
+              "statement": "Net flows expected to remain broadly split 70:30 or 75:25 in favour of the wealth business",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "TBR (core, ex-ECM)",
+              "horizon": "next 2-3 years",
+              "statement": "Core TBR targeted at a consistent Rs 125-150 crores per quarter, with potential to increase by a modest 10-15% over next two to three years",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Equity brokerage as % of TBR revenue",
+              "horizon": "as we go along",
+              "statement": "Equity brokerage as % of revenue expected to rise from 8-10% currently to 12-15%",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "ECM contribution to TBR",
+              "horizon": "2-3 years",
+              "statement": "If TBR reaches Rs 750-1,000 crores over 2-3 years, ECM expected to contribute 15-20% of that",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "TBR as % of overall revenue",
+              "horizon": "ongoing",
+              "statement": "TBR to remain below 25% of overall revenue but rise from ~15-20% toward ~20%, growing 15-20% organically per year",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "AIF alternates carry yield",
+              "horizon": "annual",
+              "statement": "AIF-only carry yield expected in 3-5 basis points range on alternates AUM, implying ~240 crores annual carry on ~60,000 crores AUM",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "UBS AUM exchange",
+              "horizon": "over time / within a year of Jan-Mar start",
+              "statement": "Conservative target of $500-600 million AUM exchanged between 360 ONE and UBS over a period of time; expect to be close to internal targets by about a year from January-March start",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "UBS fund launches / cross-referral",
+              "horizon": "next quarter / 3 months",
+              "statement": "Fairly certain to have some funds launched both ways in the coming quarter, with money actually changing hands over next three months",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "ECM full team readiness",
+              "horizon": "October-December this year",
+              "statement": "Expect to be a full-strength team on the ECM side by October-December, with active mandate pitching from around January next year",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "RM count / family target",
+              "horizon": "3-year horizon",
+              "statement": "Target of 9,000-10,000 families over three years (vs 4,100 today), requiring 300-350 RMs, implying ~30-40 RM additions per year",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "UHNI stable cost-to-income",
+              "horizon": "long term",
+              "statement": "Core stable UHNI cost-to-income expected in the 44-45% to 46-47% zip code long term depending on hiring pace",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "Private credit industry growth",
+              "horizon": "over time",
+              "statement": "Private credit industry in India is nascent; expected to grow as fast as the private equity industry over time",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Equity brokerage (B&K+UHNI combined) growth",
+              "horizon": "next 2-3 years",
+              "statement": "Combined equity brokerage number (currently 310-320 crores) expected to increase at a healthy clip of 15-20% every year for the next 2-3 years",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Quarterly Transaction & Broking Revenue (TBR)",
+              "horizon": "going forward",
+              "statement": "125-130 crores quarterly TBR guidance revised to closer to 175-180 crores; comfortable with 170-180-crore number vs prior 130-140-crore number, with ambition to grow towards north of 200 crores",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Alternates total yield (ex-carry + carry)",
+              "horizon": "next 2-3 years",
+              "statement": "Approximately 95-100 basis points yield on Alternates (85-90 bps management fee plus ~10 bps carry) is the right number to model",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Carry accrual on carryable AUM",
+              "horizon": "annual",
+              "statement": "10-14 bps of carryable AUM accrues every year on average; bad year 5-7 bps (~150-175 crores), good year 12-15 bps (~300-325 crores)",
+              "specificity": "specific",
+              "direction": "unclear",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Wealth Management net flows as % of opening AUM",
+              "horizon": "ongoing/next 3-4 years",
+              "statement": "Should be able to get to 12-15% of opening AUM every year as net flows",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Mark-to-market return contribution",
+              "horizon": "annual, rolling basis",
+              "statement": "Mark-to-market of 10-12% definitely comes in on a rolling basis, potentially 10-14% in the new world order",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Wealth Management AUM growth",
+              "horizon": "next 3-4 years",
+              "statement": "Should be able to grow AUM on Wealth Management side by 20-25%",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Relationship manager growth",
+              "horizon": "next 3-4 years",
+              "statement": "Grow relationship managers carefully by 25-30% every year over the next 3 to 4 years",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Wealth Management profit growth",
+              "horizon": "ongoing",
+              "statement": "Effectively grow our profits on the Wealth Management side by 15-25%",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "360 ONE Capital Investment Banking contribution",
+              "horizon": "next 12-18 months",
+              "statement": "Investment Banking platform is being built out; expect it to begin meaningful contribution over the next 12-18 months",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "UBS cross-referral conversion",
+              "horizon": "coming financial year",
+              "statement": "Cross-referral programs showing positive early traction; expect these to convert to meaningful relations over the coming financial year",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "UBS product platform integration (GIFT/AMC)",
+              "horizon": "next quarter",
+              "statement": "Product on each other's platforms delayed by regulatory approvals; hopefully will see it happen over the next quarter or so",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "no_mention"
+            },
+            {
+              "metric": "UHNI equities revenue growth",
+              "horizon": "next 3-5 years",
+              "statement": "Historical run-rate of 85-90 crores/year revenue line item seen doubling, if not tripling, over the next 3-5 years",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Equity and equity-related income (ex-banking)",
+              "horizon": "next 3-4 years",
+              "statement": "Expect equity and equity related income, without considering banking income, to nearly double over the next 3-4 years",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Investment Banking team hiring",
+              "horizon": "next 3-4 months",
+              "statement": "12 super investment professionals to hire, 4 of 12 in place; over next 3-4 months, expect to be substantially more competitive in the market",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Market share",
+              "horizon": "next 3-5 years",
+              "statement": "Only hope to be able to double our market share over the next 3-5 years",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "UHNI RM count",
+              "horizon": "next 12-18 months",
+              "statement": "Plan to move senior team leaders from 70-75 to 120-130, partner level from 110-120 to ~240, and total RM count from 180-190 to 330-340",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Annual attrition",
+              "horizon": "ongoing",
+              "statement": "Have to be prepared for 2 to 4% attrition every year",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "no_mention"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "Muted global/FII allocation to listed equity impacting institutional mandate flows",
+              "status": "new",
+              "note": "Global allocations to listed equity have been fairly muted over last 6-9 months; one large institutional mandate cut allocation from ~$550-600mn to ~$175-180mn, causing negative AMC net flows despite strong gross flows"
+            },
+            {
+              "risk": "PMS structural disadvantage vs AIF/MF/SIF vehicles",
+              "status": "new",
+              "note": "PMS as a structure is challenged; same strategies/clients likely to migrate into AIF, MF or SIF pooled structures instead"
+            },
+            {
+              "risk": "Retention/margin pressure on listed asset management strategies",
+              "status": "new",
+              "note": "Pure listed side of AMC business will continue to see headline retention decline; contributes ~8-9% of revenue"
+            },
+            {
+              "risk": "Extended talent/hiring cost cycle",
+              "status": "new",
+              "note": "Guaranteed/joining bonuses and time to rebuild book after switching organizations extend hiring payback cycle to 24-30 months vs 12-18 months, adding to cost-to-income"
+            },
+            {
+              "risk": "Competitive pressure at start of new client relationships",
+              "status": "new",
+              "note": "Competitive pressure is highest at relationship inception and eases as relationship deepens; large mandates sometimes require fee flexibility"
+            },
+            {
+              "risk": "Annual attrition",
+              "status": "new",
+              "note": "Not specifically addressed this quarter (prior quarter flagged 2-4% annual attrition expectation)"
+            },
+            {
+              "risk": "Global/domestic market volatility and geopolitical dynamics affecting equity indices and investor sentiment",
+              "status": "no_mention",
+              "note": "FY26 saw bullish H1 followed by correction and sectoral rotation; headwinds seen as largely priced in per management."
+            },
+            {
+              "risk": "Foreign/other investor capital withdrawal",
+              "status": "no_mention",
+              "note": "$15-20 billion withdrawn in FY26, mitigated by strong domestic (mutual fund) flows."
+            },
+            {
+              "risk": "Tax demand/litigation",
+              "status": "no_mention",
+              "note": "Rs 336 crore tax demand order received; company confident of legal position, will appeal, no material impact expected."
+            },
+            {
+              "risk": "Talent attrition / war for talent",
+              "status": "no_mention",
+              "note": "Attrition seen in markets like Delhi and Bangalore but offset by strong hiring; management prepared for 2-4% annual attrition; compensation positioned at 90th-110th percentile."
+            },
+            {
+              "risk": "Yield/fee compression",
+              "status": "no_mention",
+              "note": "Some yield pressure acknowledged as constant but management not overly concerned; broadly in line with expectations."
+            },
+            {
+              "risk": "Mutual fund fee changes impacting B&K/360 ONE Capital transactional yields",
+              "status": "no_mention",
+              "note": "Yield compression expected from mutual fund companies effective April 1, but TBR guidance maintained."
+            },
+            {
+              "risk": "Discretionary PMS underperformance/outflows",
+              "status": "no_mention",
+              "note": "DPMS has seen outflows for several quarters due to a relative-return/benchmark-hugging strategy; strategy being revised with relaunch in June."
+            },
+            {
+              "risk": "Execution risk from rapid scale-up",
+              "status": "no_mention",
+              "note": "Biggest risk flagged is execution at scale with 1,800 employees; investing in middle management depth to professionalize organization."
+            },
+            {
+              "risk": "Lending book credit stress",
+              "status": "no_mention",
+              "note": "No stress seen in loan-against-shares book despite Q4 volatility in bullion and equity; book collateralized at 2x, zero NPA/loss since 2016."
+            },
+            {
+              "risk": "Domestic institution/insurance participation gap",
+              "status": "no_mention",
+              "note": "Management flagged as an area of weakness needing more work — low participation from domestic institutions/insurance companies in Alternative Investment Funds."
+            }
+          ],
+          "themes": [
+            {
+              "label": "ARR flywheel growth",
+              "direction": "positive",
+              "note": "ARR AUM up 19% to Rs 3,42,000 crores and ARR revenue up 20.3% YoY to Rs 614 crores, now 75% of total revenue.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Cost-to-income discipline",
+              "direction": "positive",
+              "note": "Cost-to-income improved to 51.3% from 53.5% in Q4 FY26, with management guiding toward ~49-49.5% by Q4 and 100-150 bps improvement for the full year as HNI and ET Money reach breakeven.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "New business scale-up (HNI, ET Money, Banking)",
+              "direction": "positive",
+              "note": "HNI AUM grown to Rs 5,100-5,200 crores and expected to break even this year; ET Money run-rate loss down to Rs 3-4 crores/quarter, trending to breakeven by Q4.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Acquisition integration (B&K/360 ONE Capital)",
+              "direction": "positive",
+              "note": "Combined B&K+UHNI equity brokerage grown from Rs 250-260 crores to Rs 310-320 crores since acquisition; ECM team build-out progressing with 6 hires, full strength expected by Oct-Dec.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "UBS strategic collaboration",
+              "direction": "positive",
+              "note": "Cross-referral programs showing early traction; conservative AUM exchange target of $500-600 million with fund launches expected both ways in the coming quarter.",
+              "section_ref": "STRAT"
+            },
+            {
+              "label": "Transaction/Broking revenue guidance revision",
+              "direction": "mixed",
+              "note": "TBR rose 37.3% YoY to Rs 208 crores; management targets consistent Rs 125-150 crores core TBR growing 10-15% over 2-3 years, with equity brokerage share of TBR rising from 8-10% to 12-15%, even as large lumpy transactions decline in frequency.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "UHNI market consolidation & RM talent war",
+              "direction": "positive",
+              "note": "Clients with AUM >Rs 10 crore grown from ~1,800-2,000 to 4,000+ in 36 months; targeting 9,000-10,000 families over 3 years requiring 300-350 RMs and 30-40 RM additions per year.",
+              "section_ref": "MKT"
+            }
+          ],
+          "key_takeaways": [
+            "Our total ARR AUM increased by 19% to Rs 3,42,000 crores, with wealth AUM at Rs 2,42,000 crores, a growth of 24.2%, and asset management AUM at Rs 1,00,000 crores, an increase of 8.2%. Overall, AUM rose by 17% to Rs 7.8 lakh crores as on June 30, 2026.",
+            "We garnered the ARR net flows of Rs 10,815 crores in this quarter as compared to Rs 8,985 crores in the previous quarter. The wealth business drove the increase contributing strong flows of Rs 13,379 crores as compared to Rs 6,957 crores in Q4.",
+            "On the asset management side, even as gross flows remained very strong at approximately Rs 4,000 crores, the net flows were negative due to one large outflow in an institutional mandate.",
+            "Q1 FY27 ARR revenues stood at Rs 614 crores, up 20.3% year on year, with ARR revenue now comprising 75% of total revenue from operations. ARR retention was at 74 basis points, with wealth at 71 and asset management at 83 basis points. TBR rose by 37.3% year on year to Rs 208 crores during the quarter. Total revenue increased 20% to Rs 870 crores driven by strong growth across both wealth and asset verticals.",
+            "Total cost stood at Rs 446 crores with a cost to income ratio of 51.3% as compared to 53.5% in Q4 FY26. We expect gradual improvement in this metric as the businesses scale up, we drive synergies from strategic initiatives and incoming wealth teams reach full productivity.",
+            "We are very happy to report a profit after tax of Rs 330 crores an increase of 14.8%. Tangible ROE stood at 19.4% and we expect this to improve as capital deployed in our lending and asset businesses begin to reflect in earnings.",
+            "The program now spans approximately 60+ relationship managers across 12 locations, managing in excess of Rs 5,000 crores of AUM for 800+ clients at ARR retention yield of around 90 basis points.",
+            "As business momentum continues and productivity builds through the year, we expect the [HNI] business to break even on direct cost by end of this year. FY26 was a year of deliberate strategic transformation of the ET money business, resetting the business model towards profitability. We expect the business to reach break-even level this year.",
+            "AUM has now crossed key milestone of Rs 1 lakh crore with strong momentum across our alternates platform, comprising of private equity, private credit, real estate, infrastructure, renewables, and multi-asset, as well as listed strategies."
+          ],
+          "pressing_questions": [
+            "First question is basically on the net flows. I think, you know, we are on the target to achieve that '12 to 15% of opening net flows, but do you think it will be more lopsided towards wealth as AMC is kind of, you know, seeing outflows, specifically in the PMS over the last two to three quarters?",
+            "My second question is on the cost-to-income ratio. I think we have this kind of mandate to, you know, go at least 150-200 basis point decline, but this quarter also, it was more than 51%. So, should we expect the remainder of FY27 to have that operating leverage and declining cost-to-income?",
+            "An industry question, wherein, you know, we are a significant player in the private credit industry. So just wanted to know, you know, how do you see the future for this segment and how are we kind of positioned to, you know, increase our dominant position further?",
+            "Karan, if you can delve some bit on the unit economics of the [UBS] business that you would have in mind, if you kind of reach the $500-600 million asset transfer between the two entities, what kind of revenue potential, or does it operate at a similar cost structure of what we have today?",
+            "Over the last couple of months, there have been a lot of murmurs about, you know, when Bain as an investor steps back, you as the CEO might also take a backseat... if you won't mind sharing what, how you think yourself at, from a 3 to 5-year perspective, running 360 ONE, a lot of us would love to hear your thoughts around it."
+          ]
+        },
+        {
+          "company": "360 ONE WAM Ltd",
+          "ticker": "360ONE",
+          "industry": "Stockbroking & Allied",
+          "country": "India",
+          "concall_date": "2026-04-27",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=694ed4c9-9336-482a-b9c7-fd594b73be1c.pdf",
+          "model": "anthropic.claude-sonnet-5",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-03T11:34:00.319Z",
+          "summary": "Management framed FY26 as a \"landmark year\" with strong ARR AUM/revenue growth, record PAT, and platform expansion (B&K/360 ONE Capital integration, ET Money, UBS collaboration, HNI Reserve program). For FY27 and beyond, management guided to 12-15% opening AUM net flow growth in Wealth, AUM growth of 20-25%, RM addition of 25-30% per year, and profit growth of 15-25% on the Wealth Management side, while targeting cost-to-income reduction to 45-48% over 2-3 years and quarterly TBR run-rate of ~175-200 crores versus prior guidance of 125-130 crores. ET Money is expected to head toward breakeven in the near term, and the Investment Banking platform under 360 ONE Capital is expected to begin meaningful contribution over the next 12-18 months.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "Total ARR AUM",
+                  "value": "3,11,940",
+                  "unit": "crores",
+                  "period": "FY26 (as of Mar 2026)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total ARR AUM growth YoY",
+                  "value": "26",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Wealth ARR AUM",
+                  "value": "2,16,000",
+                  "unit": "crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Asset Management ARR AUM",
+                  "value": "95,000",
+                  "unit": "crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total AUM",
+                  "value": "6.7 lakh",
+                  "unit": "crores",
+                  "period": "as on March 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total AUM 5-yr CAGR",
+                  "value": "22",
+                  "unit": "%",
+                  "period": "5 years",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ARR AUM CAGR",
+                  "value": "26",
+                  "unit": "%",
+                  "period": "5 years",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ARR revenue CAGR",
+                  "value": "32",
+                  "unit": "%",
+                  "period": "5 years",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ARR net flows",
+                  "value": "55,875",
+                  "unit": "crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Organic ARR net flows (ex-acquisition)",
+                  "value": "35,199",
+                  "unit": "crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Organic net flows growth",
+                  "value": "36",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Organic net flows as % of opening AUM",
+                  "value": "14",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net flows - Wealth",
+                  "value": "25,900",
+                  "unit": "crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net flows - Asset Management",
+                  "value": "9,299",
+                  "unit": "crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ARR revenue",
+                  "value": "2,289",
+                  "unit": "crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ARR revenue growth YoY",
+                  "value": "34.5",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ARR revenue as % of total revenue from operations",
+                  "value": "75",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Q4 FY26 ARR revenue",
+                  "value": "605",
+                  "unit": "crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Q4 FY26 ARR revenue growth YoY",
+                  "value": "20.4",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ARR retention (blended)",
+                  "value": "78",
+                  "unit": "bps",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ARR retention - Wealth",
+                  "value": "76",
+                  "unit": "bps",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ARR retention - Asset Management",
+                  "value": "83",
+                  "unit": "bps",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Transaction and Broking revenue",
+                  "value": "777",
+                  "unit": "crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Transaction and Broking revenue growth",
+                  "value": "4.4",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Q4 Transaction and Broking revenue",
+                  "value": "230",
+                  "unit": "crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Q4 Transaction and Broking revenue growth YoY",
+                  "value": "53.7",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total revenue",
+                  "value": "3,144",
+                  "unit": "crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total revenue growth",
+                  "value": "18.6",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Q4 revenue",
+                  "value": "780",
+                  "unit": "crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Q4 revenue growth YoY",
+                  "value": "18.5",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total costs",
+                  "value": "1,568",
+                  "unit": "crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost-to-income ratio",
+                  "value": "49.9",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost-to-total operating income",
+                  "value": "~50",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost-to-total operating income (previous quarter)",
+                  "value": "49.5",
+                  "unit": "%",
+                  "period": "prior quarter",
+                  "kind": "reported"
+                },
+                {
+                  "label": "UHNI Wealth and Asset Management cost-to-income ratio",
+                  "value": "44-45",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Tax demand order received",
+                  "value": "336",
+                  "unit": "crores",
+                  "period": "April 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Full-year PAT",
+                  "value": "1,225",
+                  "unit": "crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT growth",
+                  "value": "20.7",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Tangible ROE",
+                  "value": "19.3",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "First interim dividend",
+                  "value": "6",
+                  "unit": "Rs per share",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "UHNI equities revenue from Wealth clients (historical run-rate)",
+                  "value": "85-90",
+                  "unit": "crores/year",
+                  "period": "historical",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Margin funding book size",
+                  "value": "less than 50-60",
+                  "unit": "crores",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "P&L Drivers",
+                  "points": [
+                    "FY26 was a landmark year with strong financial outcomes and meaningful platform expansion to complete the flywheel.",
+                    "Q4 revenue growth of 18.5% was driven by strong growth across both Wealth and Asset verticals, partially offset by lower other income.",
+                    "Q4 Transaction and Broking revenue strength partly reflects full quarter consolidation of 360 ONE Capital (formerly B&K Securities), whose broking revenue adds a structurally more consistent annuity-like component to a historically more transactional revenue stream.",
+                    "FY26 costs not directly comparable to FY25 due to consolidation of B&K Securities and ET Money.",
+                    "Higher blended cost-to-income ratio reflects investment phase of newer businesses (HNI Reserve, ET Money, 360 ONE Capital); gradual improvement expected as these businesses scale and reach full productivity via synergies and incoming Wealth team productivity."
+                  ]
+                },
+                {
+                  "label": "Tax Matter",
+                  "points": [
+                    "Received an order from tax authorities today (call date) with an aggregate demand of Rs. 336 crores.",
+                    "Company believes it has duly discharged all tax liabilities as applicable and has adequate factual and legal grounds to substantiate its position.",
+                    "Does not expect any material impact on financials or operations; will pursue appeals against the entire order under applicable laws."
+                  ]
+                },
+                {
+                  "label": "Capital Allocation",
+                  "points": [
+                    "Board approved first interim dividend of Rs. 6 per share, continuing disciplined capital allocation philosophy — returning surplus capital to shareholders while retaining capacity to fund growth in Lending, Alternates, and strategic initiatives.",
+                    "Tangible ROE expected to improve as capital deployed in Lending and Alternate businesses begins to reflect in earnings."
+                  ]
+                },
+                {
+                  "label": "Lending Book Quality",
+                  "points": [
+                    "No margin funding (MTF) book to speak of — broker does not do MTF; book is less than Rs 50-60 crores.",
+                    "Lending book is largely loan-against-shares, collateralized at 2x typically on a diversified portfolio; no stress observed despite market volatility.",
+                    "Since 2016, the Lending business has been run without a single rupee of NPA or loss, focused on Lombard/portfolio lending to Wealth Management clients."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ORD",
+              "title": "Order Book & Demand",
+              "key_figures": [
+                {
+                  "label": "Firm operating history",
+                  "value": "18",
+                  "unit": "years",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total professionals at firm",
+                  "value": "1800",
+                  "unit": "count",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": []
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "HNI Reserve program AUM",
+                  "value": "~4,000",
+                  "unit": "crores",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "HNI Reserve program clients",
+                  "value": "650+",
+                  "unit": "clients",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "HNI Reserve program RM count",
+                  "value": "~60",
+                  "unit": "RMs",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "HNI Reserve program locations",
+                  "value": "12",
+                  "unit": "locations",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "HNI Reserve ARR retention yield",
+                  "value": "~90",
+                  "unit": "bps",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "HNI segment RM count (closing)",
+                  "value": "63-64",
+                  "unit": "RMs",
+                  "period": "closing FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "HNI net flows (average RM basis)",
+                  "value": "3,000-3,500",
+                  "unit": "crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "HNI average RM count during year",
+                  "value": "35-40",
+                  "unit": "RMs",
+                  "period": "FY26 average",
+                  "kind": "reported"
+                },
+                {
+                  "label": "360 ONE Capital companies under coverage",
+                  "value": "500+",
+                  "unit": "companies",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "360 ONE Capital institutional clients",
+                  "value": "300+",
+                  "unit": "clients",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "360 ONE Capital cash segment share in broking revenue",
+                  "value": ">90",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Corporate treasuries accessible via 360 ONE Capital",
+                  "value": "600+",
+                  "unit": "treasuries",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "B&K top-line (previous year comparable range)",
+                  "value": "220-250",
+                  "unit": "crores",
+                  "period": "prior year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "B&K top-line growth this year",
+                  "value": "6-7",
+                  "unit": "%",
+                  "period": "10 months post-acquisition",
+                  "kind": "reported"
+                },
+                {
+                  "label": "B&K PBT at time of acquisition",
+                  "value": "100-105",
+                  "unit": "crores",
+                  "period": "at acquisition",
+                  "kind": "reported"
+                },
+                {
+                  "label": "B&K PBT (current year, ex acquisition costs)",
+                  "value": "105-110",
+                  "unit": "crores",
+                  "period": "FY26 (10 months)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "B&K net flows",
+                  "value": "9,000-10,000 (approx 9,500)",
+                  "unit": "crores",
+                  "period": "10 months post-acquisition",
+                  "kind": "reported"
+                },
+                {
+                  "label": "B&K net flows - Asset Management",
+                  "value": "2,000-2,500",
+                  "unit": "crores",
+                  "period": "10 months post-acquisition",
+                  "kind": "reported"
+                },
+                {
+                  "label": "B&K net flows - Advisory",
+                  "value": "4,500-5,000",
+                  "unit": "crores",
+                  "period": "10 months post-acquisition",
+                  "kind": "reported"
+                },
+                {
+                  "label": "B&K net flows - Distribution/Lending balancing amount",
+                  "value": "2,000-2,500",
+                  "unit": "crores",
+                  "period": "10 months post-acquisition",
+                  "kind": "reported"
+                },
+                {
+                  "label": "AMC gross flows",
+                  "value": "5,200",
+                  "unit": "crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "AMC gross flows",
+                  "value": "19,000",
+                  "unit": "crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net outflow from fund maturities/distributions",
+                  "value": "2,500-2,600",
+                  "unit": "crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Credit fund maturity outflow",
+                  "value": "1,500-1,700",
+                  "unit": "crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Real estate fund maturity outflow",
+                  "value": "~850",
+                  "unit": "crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net AMC flow after outflows",
+                  "value": "2,300-2,400",
+                  "unit": "crores",
+                  "period": "Q4 FY26 (from 5,300cr gross)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "TBR split - Equity/Equity-related",
+                  "value": "30-35% (60-80)",
+                  "unit": "% / crores",
+                  "period": "current split",
+                  "kind": "reported"
+                },
+                {
+                  "label": "TBR split - Fixed income/yield plus/real estate",
+                  "value": "~a third",
+                  "unit": "%",
+                  "period": "current split",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Senior team leader RM count",
+                  "value": "70-75",
+                  "unit": "RMs",
+                  "period": "last 3 years, at scale",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Partner level RM count target",
+                  "value": "110-120 moving to 240",
+                  "unit": "RMs",
+                  "period": "target",
+                  "kind": "target"
+                },
+                {
+                  "label": "Current total RM count",
+                  "value": "180-190",
+                  "unit": "RMs",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Target total RM count",
+                  "value": "330-340",
+                  "unit": "RMs",
+                  "period": "target",
+                  "kind": "target"
+                },
+                {
+                  "label": "DPMS net flow (distribution assets, Wealth)",
+                  "value": "-212",
+                  "unit": "crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PE fund vintage return multiple",
+                  "value": "1.82x",
+                  "unit": "x",
+                  "period": "2018-19 fund, over 4-5 years",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PE fund size",
+                  "value": "5,500-6,000",
+                  "unit": "crores",
+                  "period": "raised 2018-19",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PE fund net compounded return",
+                  "value": "~16",
+                  "unit": "%",
+                  "period": "over 4-5 years",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Family offices (sophisticated) count",
+                  "value": "300-350",
+                  "unit": "family offices",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Deep-partner-type clients count (current vs 5 yrs back)",
+                  "value": "400-500 (vs 40-50 5 yrs back)",
+                  "unit": "clients",
+                  "period": "current vs 5 yrs ago",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Professionals/professional entrepreneurs as % of client base",
+                  "value": "15-20 (vs 5-10 earlier)",
+                  "unit": "%",
+                  "period": "current vs earlier",
+                  "kind": "reported"
+                },
+                {
+                  "label": "UHNI families (above 10 crore) with firm",
+                  "value": "4,500",
+                  "unit": "families",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Target UHNI families",
+                  "value": "8,000-10,000",
+                  "unit": "families",
+                  "period": "target",
+                  "kind": "target"
+                },
+                {
+                  "label": "Estimated current UHNI market share",
+                  "value": "8-10",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "HNI Segment (Reserve Program)",
+                  "points": [
+                    "Natural extension of the UHNI franchise and a powerful feeder pipeline into the core proposition.",
+                    "With increased business momentum and productivity in the coming year, overall financial performance of this segment expected to improve significantly.",
+                    "Revenue impact is muted because a large portion of assets are mutual funds and the broker code change affects revenue only after 12 months, but quality and quantum of business have been strong.",
+                    "Tech platform is a unique 'phygital' model set up to service clients between Rs 2-25 crores, as opposed to purely online clients."
+                  ]
+                },
+                {
+                  "label": "ET Money",
+                  "points": [
+                    "FY26 was a year of strategic transformation on the business model and disciplined execution driving multiple on-ground changes.",
+                    "Expected to head towards breakeven in the near term."
+                  ]
+                },
+                {
+                  "label": "360 ONE Capital (formerly B&K Securities)",
+                  "points": [
+                    "Integration of B&K is now complete; Institutional Equities business rebranded as 360 ONE Capital.",
+                    "Strategic synergies coming to life — brokerage revenues from UHNI clients seeing an uplift, and access to 600+ corporate treasuries opening distribution and lending channels.",
+                    "Investment Banking platform is being built out and expected to begin meaningful contribution over the next 12-18 months.",
+                    "B&K numbers steady for the last 10 months vs prior year, driven by early integration on the corporate treasury platform (introduction of large Wealth Management corporate treasury clients) and slight market share gain on equity side.",
+                    "Regulatory approvals for B&K Capital to become 360 ONE Capital, and common research integration, only completed in last 15-30 days — integration benefits expected to come through soon."
+                  ]
+                },
+                {
+                  "label": "Discretionary PMS (AMC)",
+                  "points": [
+                    "Growth has been softer than desired; supplemented partly by growth on advisory side.",
+                    "Strategy was, in retrospect, too benchmark-hugging/relative-return to index rather than customized — custom-mandate clients have done extremely well and continued to add AUM.",
+                    "Management has pivoted strategy, launching changes in first week of June; expects those numbers to move up.",
+                    "Q4 discretionary PMS retention increase was due to profit share on a small base, not a structural trend; retentions remain within range on a yearly basis."
+                  ]
+                },
+                {
+                  "label": "RM / Team Leader Structure",
+                  "points": [
+                    "Improved ratio of senior leaders to relationship managers over time — minimum recruitment benchmark for UHNI business is 'partner equivalent' (6-8 years prior experience).",
+                    "Quality improvement and quantity optimization both achieved versus 5 years back; span of control automatically adjusts with quality improvement.",
+                    "Plan to move senior team leader count from 70-75 to 120-130, partner level from 110-120 to ~240, and total RM count from 180-190 to 330-340."
+                  ]
+                },
+                {
+                  "label": "Client Quality Evolution",
+                  "points": [
+                    "Client base has become broader and deeper — sophisticated family offices (300-350) able to cut larger cheques and act as platform partners rather than single product allocators.",
+                    "Portfolio-based approach (vs product-based) is driving higher average ticket sizes — no more than 25% in a single product, no more than 15% with a single asset manager.",
+                    "Greater diversity in client geography (beyond first 6-7 cities) and background — professionals/professional entrepreneurs, corporate lawyers, movie stars, sportspeople, doctors now represent 15-20% of client base vs 5-10% earlier.",
+                    "Area needing more work: greater participation from domestic institutions and insurance companies, which have become key contributors to Alternative Investment Funds."
+                  ]
+                },
+                {
+                  "label": "Distribution Assets Net Flow",
+                  "points": [
+                    "Distribution assets negative net flow largely not a function of large redemptions — mainly attributable to mark-to-market impact reducing trail income versus last quarter.",
+                    "Negative Q4 net flow of Rs 212 crores in Wealth distribution assets was primarily contributed by Corporate Treasuries, not UHNI."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [
+                {
+                  "label": "Q4 UHNI TBR",
+                  "value": "177",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Carry accrual basis points estimate",
+                  "value": "10-14",
+                  "unit": "basis points",
+                  "period": "annual",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "UHNI market share target implied by families",
+                  "value": "12-15",
+                  "unit": "%",
+                  "period": "target",
+                  "kind": "target"
+                },
+                {
+                  "label": "Industry expected number of large players",
+                  "value": "3-4",
+                  "unit": "count",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Historical share of flows from new client additions",
+                  "value": "50",
+                  "unit": "%",
+                  "period": "typical year",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": []
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [
+                {
+                  "label": "Investment professionals per Alternates strategy",
+                  "value": "15 to 20",
+                  "unit": null,
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PE fund track record period",
+                  "value": "5 to 6",
+                  "unit": "years",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Banking business investment professionals to hire",
+                  "value": "12",
+                  "unit": "count",
+                  "period": "current",
+                  "kind": "target"
+                },
+                {
+                  "label": "Banking business investment professionals hired so far",
+                  "value": "four",
+                  "unit": "count",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Banking business team build-out timeline",
+                  "value": "3 to 4",
+                  "unit": "months",
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "Required number of super bankers for 10,000 families",
+                  "value": "280-300",
+                  "unit": "count",
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "Average relationships per banker assumption",
+                  "value": "35",
+                  "unit": "count",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Average relationships per banker (revised/lower)",
+                  "value": "30",
+                  "unit": "count",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Required super bankers (revised)",
+                  "value": "325-330",
+                  "unit": "count",
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "Timeframe to scale from 200-300 to 330 super bankers",
+                  "value": "12 to 18",
+                  "unit": "months",
+                  "period": null,
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "UBS Collaboration",
+                  "points": [
+                    "Cross-referral programs in the Wealth business across NRI, resident, and global mandates showing positive early traction; expected to convert to meaningful relations over the coming financial year.",
+                    "On Asset Management side, early synergies emerging with UBS's global distribution, providing a pathway for Alternate and Listed strategies to access offshore capital.",
+                    "Product collaboration (360 ONE product on UBS AMC platform and vice versa) has been slower than desired — not from lack of intent but due to regulatory approval processes both in GIFT and on UBS platform taking longer; expected to progress over the next quarter or so."
+                  ]
+                },
+                {
+                  "label": "Investment Banking Build-out",
+                  "points": [
+                    "Building out Banking business in a measured, no-hurry manner given it's a relationship/execution-driven services business requiring the best people.",
+                    "12 senior investment professionals identified to hire; 4 of 12 already in place; team expected to be substantially more competitive over next 3-4 months."
+                  ]
+                },
+                {
+                  "label": "10,000 Families Strategy",
+                  "points": [
+                    "Strategic vision to serve ~10,000 families across all three business lines — Wealth management, capital provision at different balance sheet stages via fund management, and capital markets journey via 360 ONE Capital as these families/businesses grow."
+                  ]
+                },
+                {
+                  "label": "Industry Consolidation Outlook",
+                  "points": [
+                    "Management believes the industry requires at least 3-4 more larger players given its size, but expects it to remain fairly consolidated over the next 3-4 years given 'size begets size' dynamics.",
+                    "A tighter/more consolidated market is viewed as helping the company consolidate its position faster."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [
+                {
+                  "label": "FII/other investor withdrawals",
+                  "value": "$15-20",
+                  "unit": "billion",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Expected annual attrition rate",
+                  "value": "2-4",
+                  "unit": "%",
+                  "period": "per year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Team tenure (>8-9 years with firm)",
+                  "value": "60-65",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Lending business NPA/loss track record period",
+                  "value": "since 2016",
+                  "unit": null,
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Wealth management RM talent percentile range",
+                  "value": "90-110",
+                  "unit": "percentile",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Macro/Market Volatility",
+                  "points": [
+                    "FY26 was undeniably challenging for Indian equity markets; equity indices touched bullish levels in H1 but saw phases of correction and sectoral rotation through the year, testing investor conviction.",
+                    "Foreign and other investors withdrew nearly $15-20 billion, well mitigated by strong domestic flows especially through the mutual fund industry.",
+                    "Management believes headwinds are largely priced in and policy environment is supportive; markets present an attractive entry point for long-term investors."
+                  ]
+                },
+                {
+                  "label": "Tax Matter",
+                  "points": [
+                    "Received tax demand order of Rs 336 crores; company believes it has adequate grounds and does not expect material impact; will appeal."
+                  ]
+                },
+                {
+                  "label": "Execution & Talent Risk",
+                  "points": [
+                    "Biggest risk (and opportunity) identified is execution — need for continuous attention to detail, response times, and professionalized organization as headcount grows (1,800 employees).",
+                    "Investing heavily in middle management leadership depth to professionalize organization from the top.",
+                    "War for talent is ongoing; company positions compensation between 90th-110th percentile — beyond 110th percentile becomes harder even for the firm to justify/manage.",
+                    "Attrition risk acknowledged in markets like Delhi and Bangalore, but company has attracted strong replacement talent; prepared for 2-4% attrition annually.",
+                    "Discretionary PMS underperformance attributed to a relative-return/benchmark-hugging strategy design, now being revised."
+                  ]
+                },
+                {
+                  "label": "Lending/Credit Risk",
+                  "points": [
+                    "No stress observed in loan-against-shares lending book despite market volatility in Q4, unlike some brokers experiencing stress on MTF books; company has no meaningful MTF book.",
+                    "Lending book collateralized at 2x on a diversified portfolio; zero NPA/loss track record since 2016."
+                  ]
+                },
+                {
+                  "label": "Yield/Pricing Pressure",
+                  "points": [
+                    "Some degree of pressure on yields acknowledged as a constant, but management not overly concerned; broadly in line with expectations.",
+                    "B&K/360 ONE Capital transactional revenue faces yield compression risk from mutual fund company fee changes effective April 1, but management still comfortable with 175-200 crore quarterly TBR guidance range."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [
+                {
+                  "label": "Quarterly TBR guidance (revised)",
+                  "value": "175-200",
+                  "unit": "crores/quarter",
+                  "period": "going forward",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Quarterly TBR guidance (prior)",
+                  "value": "125-130",
+                  "unit": "crores/quarter",
+                  "period": "prior guidance",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Carry yield estimate",
+                  "value": "~10",
+                  "unit": "bps of carryable AUM",
+                  "period": "modelling estimate",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Carry - bad year scenario",
+                  "value": "5-7",
+                  "unit": "bps",
+                  "period": "annual",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Carry - good year scenario",
+                  "value": "12-15",
+                  "unit": "bps",
+                  "period": "annual",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Carry absolute - low case",
+                  "value": "150-175",
+                  "unit": "crores",
+                  "period": "annual",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Carry absolute - high case",
+                  "value": "300-325",
+                  "unit": "crores",
+                  "period": "annual",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Carryable AUM (Alternates)",
+                  "value": "30,000-35,000",
+                  "unit": "crores",
+                  "period": "current, ~70-75% of Alternates AUM",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Alternates management fee yield",
+                  "value": "85-90",
+                  "unit": "bps",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Alternates total yield estimate (mgmt fee + carry)",
+                  "value": "95-100",
+                  "unit": "bps",
+                  "period": "modelling estimate",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Wealth Management opening AUM net flow target",
+                  "value": "12-15",
+                  "unit": "% of opening AUM",
+                  "period": "annual, ongoing",
+                  "kind": "target"
+                },
+                {
+                  "label": "Mark-to-market expectation",
+                  "value": "10-12",
+                  "unit": "%",
+                  "period": "annual",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Historical client portfolio CAGR",
+                  "value": "15.4",
+                  "unit": "%",
+                  "period": "last 16 years",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Expected forward portfolio return range",
+                  "value": "10-14",
+                  "unit": "%",
+                  "period": "forward",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Wealth AUM growth target",
+                  "value": "20-25",
+                  "unit": "%",
+                  "period": "per year, next 3-4 years",
+                  "kind": "target"
+                },
+                {
+                  "label": "RM growth target",
+                  "value": "25-30",
+                  "unit": "% per year",
+                  "period": "next 3-4 years",
+                  "kind": "target"
+                },
+                {
+                  "label": "Wealth Management profit growth target",
+                  "value": "15-25",
+                  "unit": "%",
+                  "period": "ongoing",
+                  "kind": "target"
+                },
+                {
+                  "label": "Equity/equity-related income growth target",
+                  "value": "double over 3-4 years (equities revenue potentially double/triple)",
+                  "unit": "multiple",
+                  "period": "next 3-4 years",
+                  "kind": "target"
+                },
+                {
+                  "label": "Target cost-to-income ratio",
+                  "value": "46-48 (moving toward 45-47)",
+                  "unit": "%",
+                  "period": "next 2-3 years",
+                  "kind": "target"
+                },
+                {
+                  "label": "Market share doubling ambition",
+                  "value": "double market share",
+                  "unit": "qualitative",
+                  "period": "next 3-5 years",
+                  "kind": "target"
+                },
+                {
+                  "label": "Revised quarterly TBR guidance (alt range)",
+                  "value": "160-180",
+                  "unit": "INR crores",
+                  "period": "going forward",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Revised quarterly TBR guidance (alt range 2)",
+                  "value": "170-180",
+                  "unit": "INR crores",
+                  "period": "going forward",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Prior quarterly TBR guidance (alt range)",
+                  "value": "130-140",
+                  "unit": "INR crores",
+                  "period": "prior guidance",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Aspirational quarterly TBR target",
+                  "value": "north of 200",
+                  "unit": "INR crores",
+                  "period": "future",
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Overall Outlook",
+                  "points": [
+                    "As the firm looks toward FY27 and beyond, management remains confident despite ongoing volatility, citing 18 years of navigating challenging cycles, a strong balance sheet, talented team, and culture.",
+                    "India seen at an inflection point with strong macroeconomic foundations, supportive regulatory environment, and an addressable market for Wealth, Asset Management, Alternatives and Lending expanding at an unprecedented pace."
+                  ]
+                },
+                {
+                  "label": "TBR Guidance Revision",
+                  "points": [
+                    "125-130 crore quarterly TBR guidance revised upward to 175-180 crores given BNK/360 ONE Capital consolidation, with an ambition to grow towards north of 200 crores over time.",
+                    "175-200 crore range not 'cast in stone' but considered a reasonable improvement versus the prior 125-140 crore range."
+                  ]
+                },
+                {
+                  "label": "Capital Markets/Banking Opportunity",
+                  "points": [
+                    "Historical UHNI equities revenue run-rate of 85-90 crores/year seen potentially doubling or tripling over next 3-5 years as research capability is added.",
+                    "Equity and equity-related income (excluding banking) expected to roughly double over next 3-4 years combining 360 ONE Capital equities growth with wealth management equities uptake."
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "Quarterly Transaction & Broking Revenue (TBR)",
+              "horizon": "going forward",
+              "statement": "125-130 crores quarterly TBR guidance revised to closer to 175-180 crores; comfortable with 170-180-crore number vs prior 130-140-crore number, with ambition to grow towards north of 200 crores",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Alternates total yield (ex-carry + carry)",
+              "horizon": "next 2-3 years",
+              "statement": "Approximately 95-100 basis points yield on Alternates (85-90 bps management fee plus ~10 bps carry) is the right number to model",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Carry accrual on carryable AUM",
+              "horizon": "annual",
+              "statement": "10-14 bps of carryable AUM accrues every year on average; bad year 5-7 bps (~150-175 crores), good year 12-15 bps (~300-325 crores)",
+              "specificity": "specific",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Wealth Management net flows as % of opening AUM",
+              "horizon": "ongoing/next 3-4 years",
+              "statement": "Should be able to get to 12-15% of opening AUM every year as net flows",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Mark-to-market return contribution",
+              "horizon": "annual, rolling basis",
+              "statement": "Mark-to-market of 10-12% definitely comes in on a rolling basis, potentially 10-14% in the new world order",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Wealth Management AUM growth",
+              "horizon": "next 3-4 years",
+              "statement": "Should be able to grow AUM on Wealth Management side by 20-25%",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Relationship manager growth",
+              "horizon": "next 3-4 years",
+              "statement": "Grow relationship managers carefully by 25-30% every year over the next 3 to 4 years",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Wealth Management profit growth",
+              "horizon": "ongoing",
+              "statement": "Effectively grow our profits on the Wealth Management side by 15-25%",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Cost-to-income ratio",
+              "horizon": "next 2-3 years",
+              "statement": "Even outside new businesses, at cost-to-income ratio of 49-50%, should be able to get down to 46-48%; core Wealth/AM business to move towards 45-46-47%",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "ET Money breakeven",
+              "horizon": "near term",
+              "statement": "With different engines at play, expect the business to head towards breakeven in the near term",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "360 ONE Capital Investment Banking contribution",
+              "horizon": "next 12-18 months",
+              "statement": "Investment Banking platform is being built out; expect it to begin meaningful contribution over the next 12-18 months",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "UBS cross-referral conversion",
+              "horizon": "coming financial year",
+              "statement": "Cross-referral programs showing positive early traction; expect these to convert to meaningful relations over the coming financial year",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "UBS product platform integration (GIFT/AMC)",
+              "horizon": "next quarter",
+              "statement": "Product on each other's platforms delayed by regulatory approvals; hopefully will see it happen over the next quarter or so",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "UHNI equities revenue growth",
+              "horizon": "next 3-5 years",
+              "statement": "Historical run-rate of 85-90 crores/year revenue line item seen doubling, if not tripling, over the next 3-5 years",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Equity and equity-related income (ex-banking)",
+              "horizon": "next 3-4 years",
+              "statement": "Expect equity and equity related income, without considering banking income, to nearly double over the next 3-4 years",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Investment Banking team hiring",
+              "horizon": "next 3-4 months",
+              "statement": "12 super investment professionals to hire, 4 of 12 in place; over next 3-4 months, expect to be substantially more competitive in the market",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Market share",
+              "horizon": "next 3-5 years",
+              "statement": "Only hope to be able to double our market share over the next 3-5 years",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "UHNI RM count",
+              "horizon": "next 12-18 months",
+              "statement": "Plan to move senior team leaders from 70-75 to 120-130, partner level from 110-120 to ~240, and total RM count from 180-190 to 330-340",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Annual attrition",
+              "horizon": "ongoing",
+              "statement": "Have to be prepared for 2 to 4% attrition every year",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "Global/domestic market volatility and geopolitical dynamics affecting equity indices and investor sentiment",
+              "status": "stable",
+              "note": "FY26 saw bullish H1 followed by correction and sectoral rotation; headwinds seen as largely priced in per management."
+            },
+            {
+              "risk": "Foreign/other investor capital withdrawal",
+              "status": "stable",
+              "note": "$15-20 billion withdrawn in FY26, mitigated by strong domestic (mutual fund) flows."
+            },
+            {
+              "risk": "Tax demand/litigation",
+              "status": "new",
+              "note": "Rs 336 crore tax demand order received; company confident of legal position, will appeal, no material impact expected."
+            },
+            {
+              "risk": "Talent attrition / war for talent",
+              "status": "stable",
+              "note": "Attrition seen in markets like Delhi and Bangalore but offset by strong hiring; management prepared for 2-4% annual attrition; compensation positioned at 90th-110th percentile."
+            },
+            {
+              "risk": "Yield/fee compression",
+              "status": "stable",
+              "note": "Some yield pressure acknowledged as constant but management not overly concerned; broadly in line with expectations."
+            },
+            {
+              "risk": "Mutual fund fee changes impacting B&K/360 ONE Capital transactional yields",
+              "status": "new",
+              "note": "Yield compression expected from mutual fund companies effective April 1, but TBR guidance maintained."
+            },
+            {
+              "risk": "Discretionary PMS underperformance/outflows",
+              "status": "escalated",
+              "note": "DPMS has seen outflows for several quarters due to a relative-return/benchmark-hugging strategy; strategy being revised with relaunch in June."
+            },
+            {
+              "risk": "Execution risk from rapid scale-up",
+              "status": "stable",
+              "note": "Biggest risk flagged is execution at scale with 1,800 employees; investing in middle management depth to professionalize organization."
+            },
+            {
+              "risk": "Lending book credit stress",
+              "status": "resolved",
+              "note": "No stress seen in loan-against-shares book despite Q4 volatility in bullion and equity; book collateralized at 2x, zero NPA/loss since 2016."
+            },
+            {
+              "risk": "Domestic institution/insurance participation gap",
+              "status": "new",
+              "note": "Management flagged as an area of weakness needing more work — low participation from domestic institutions/insurance companies in Alternative Investment Funds."
+            }
+          ],
+          "themes": [
+            {
+              "label": "ARR flywheel growth",
+              "direction": "positive",
+              "note": "ARR AUM up 26% YoY to Rs 3,11,940 crores and ARR revenue up 34.5% YoY, now 75% of total revenue from operations.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Acquisition integration (B&K/360 ONE Capital)",
+              "direction": "positive",
+              "note": "B&K integration complete and rebranded as 360 ONE Capital; synergies emerging in brokerage uplift and corporate treasury access, though integration benefits still ramping.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "New business scale-up (HNI, ET Money, Banking)",
+              "direction": "mixed",
+              "note": "HNI Reserve program and Investment Banking build-out progressing steadily; ET Money targeting breakeven; all still in investment phase weighing on cost-to-income.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Cost-to-income discipline",
+              "direction": "neutral",
+              "note": "Blended cost-to-income at ~50% due to new business investment phase, with core UHNI/AM businesses steady at 44-45%; management targets 46-48% over 2-3 years.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Transaction/Broking revenue guidance revision",
+              "direction": "positive",
+              "note": "Quarterly TBR guidance raised from 125-130 crores to 175-200 crores driven by asset-class diversification and B&K/360 ONE Capital consolidation.",
+              "section_ref": "GUID"
+            },
+            {
+              "label": "UHNI market consolidation & RM talent war",
+              "direction": "mixed",
+              "note": "Management sees industry staying consolidated over 3-4 years and plans to scale RM count from 180-190 to 330-340, but war for talent and 2-4% attrition remain ongoing risks.",
+              "section_ref": "RISK"
+            },
+            {
+              "label": "UBS strategic collaboration",
+              "direction": "mixed",
+              "note": "Cross-referral traction positive but platform product integration delayed by regulatory approvals in GIFT and on UBS platform.",
+              "section_ref": "STRAT"
+            }
+          ],
+          "key_takeaways": [
+            "FY26 has been a landmark year for 360 ONE, one in which we have delivered strong financial outcomes, and also meaningfully expanded the platform to complete our flywheel.",
+            "Total ARR AUM increased to 311,940 crores, up 26% year-on-year, with Wealth ARR AUM at 2,16,000 crores and Asset Management ARR AUM at 95,000 crores.",
+            "FY26 ARR revenue stood at 2,289 crores, up 34.5% year-over-year, and ARR revenue now comprising 75% of total revenue from operations.",
+            "We are happy to report the company recorded its highest full-year PAT in FY26 of Rs. 1,225 crores, an increase of 20.7%.",
+            "The Board has approved the first interim dividend of Rs. 6 per share.",
+            "The integration of B&K is now complete, and the Institutional Equities business has been rebranded as 360 ONE Capital.",
+            "On ET Money, FY26 has been a year of strategic transformation on the business model and disciplined execution to drive multiple on-ground changes. With different engines at play, we would expect the business to head towards breakeven in the near term.",
+            "As an update to our past communication on tax-related matters, we have received an order today from the tax authorities with an aggregate demand of Rs. 336 crores.",
+            "We would love to do better on the mutual fund side, whereas emphasize and ensure that we have our clear leadership position maintained, both on the Wealth Management side as well as on the Alternate side.",
+            "We've been blessed to be a large participant in the market and have a large percentage of market share, and we only hope to be able to double our market share over the next 3 to 5 years."
+          ],
+          "pressing_questions": [
+            "On the discretionary PMS, growth has been slightly softer than desired — what is the strategy to get back, especially on that segment?",
+            "On the UBS bit — in terms of referrals, how has the traction been? Any initial data point? And also, your product on UBS's AMC platform, and then your AMC product on their platform, when can we expect some things on those lines?",
+            "On a quarter-on-quarter basis, net flows have come down while retail brokerage has remained more or less steady — is this attrition-led, clients pulling out money, or avoidance of deployment given the volatile situation?",
+            "On DPMS, there is a sharp rise in retentions on both Wealth and Asset Management sides — is this new money coming in at higher retentions or older, lower-priced AUM going out, and what is the out-pricing risk given competitive intensity, especially on the Asset Management side?",
+            "Some colour on distribution assets where net flow is negative — how much of that negative net flow is from UHNI given HNI would have net positive cash flows?",
+            "On the team leader RM count — the count has been broadly flat for the last 3 years despite intense competition; what explains this?"
+          ]
+        }
+      ]
     }
   }
 }
