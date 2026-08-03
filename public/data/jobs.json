@@ -104,15 +104,15 @@
     },
     "TMCV": {
       "status": "failed",
-      "finished_at": "2026-08-03T09:37:36.644Z",
-      "error": "No Screener credentials set (need SCREENER_PREMIUM_EMAIL/SCREENER_PREMIUM_PASSWORD or SCREENER_EMAIL/SCREENER_PASSWORD)",
-      "message": "Setup failed (No Screener credentials set (need SCREENER_PREMIUM_EMAIL/SCREENER_PREMIUM_PASSWORD or SCREENER_EMAIL/SCREENER_PASSWORD)). Please retry."
+      "finished_at": "2026-08-02T22:54:38.299Z",
+      "error": "Screener daily AI-summary limit reached. Limit exceeded - Please try again later Premium users can request 80 summaries each day.",
+      "message": "Couldn't fetch TMCV's latest concall. Screener daily AI-summary limit reached. Limit exceeded - Please try again later Premium users can request 80 summaries each day."
     },
     "TMPV": {
       "status": "failed",
-      "finished_at": "2026-08-03T09:37:36.645Z",
-      "error": "No Screener credentials set (need SCREENER_PREMIUM_EMAIL/SCREENER_PREMIUM_PASSWORD or SCREENER_EMAIL/SCREENER_PASSWORD)",
-      "message": "Setup failed (No Screener credentials set (need SCREENER_PREMIUM_EMAIL/SCREENER_PREMIUM_PASSWORD or SCREENER_EMAIL/SCREENER_PASSWORD)). Please retry."
+      "finished_at": "2026-08-02T22:54:48.060Z",
+      "error": "Screener daily AI-summary limit reached. Limit exceeded - Please try again later Premium users can request 80 summaries each day.",
+      "message": "Couldn't fetch TMPV's latest concall. Screener daily AI-summary limit reached. Limit exceeded - Please try again later Premium users can request 80 summaries each day."
     },
     "DEVYANI": {
       "status": "failed",
@@ -122,9 +122,9 @@
     },
     "CESC": {
       "status": "failed",
-      "finished_at": "2026-08-03T09:37:36.645Z",
-      "error": "No Screener credentials set (need SCREENER_PREMIUM_EMAIL/SCREENER_PREMIUM_PASSWORD or SCREENER_EMAIL/SCREENER_PASSWORD)",
-      "message": "Setup failed (No Screener credentials set (need SCREENER_PREMIUM_EMAIL/SCREENER_PREMIUM_PASSWORD or SCREENER_EMAIL/SCREENER_PASSWORD)). Please retry."
+      "finished_at": "2026-08-02T22:54:53.910Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Couldn't fetch CESC's latest concall. Found concalls but could not extract an AI summary or transcript."
     },
     "ULTRACEMCO": {
       "status": "done",
@@ -146,15 +146,15 @@
     },
     "FIVESTAR": {
       "status": "failed",
-      "finished_at": "2026-08-03T09:37:36.645Z",
-      "error": "No Screener credentials set (need SCREENER_PREMIUM_EMAIL/SCREENER_PREMIUM_PASSWORD or SCREENER_EMAIL/SCREENER_PASSWORD)",
-      "message": "Setup failed (No Screener credentials set (need SCREENER_PREMIUM_EMAIL/SCREENER_PREMIUM_PASSWORD or SCREENER_EMAIL/SCREENER_PASSWORD)). Please retry."
+      "finished_at": "2026-08-02T22:55:30.052Z",
+      "error": "OpenAI 429: {\n    \"error\": {\n        \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n        \"type\": \"insufficient_quota\",\n        \"param\": null,\n        \"code\": \"credit_balance_exhausted\"\n    }\n}\n",
+      "message": "Analysis failed for FIVESTAR. Please retry."
     },
     "NEULANDLAB": {
       "status": "failed",
-      "finished_at": "2026-08-03T09:37:36.645Z",
-      "error": "No Screener credentials set (need SCREENER_PREMIUM_EMAIL/SCREENER_PREMIUM_PASSWORD or SCREENER_EMAIL/SCREENER_PASSWORD)",
-      "message": "Setup failed (No Screener credentials set (need SCREENER_PREMIUM_EMAIL/SCREENER_PREMIUM_PASSWORD or SCREENER_EMAIL/SCREENER_PASSWORD)). Please retry."
+      "finished_at": "2026-08-01T04:33:57.793Z",
+      "error": "OpenAI 429: {\n    \"error\": {\n        \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n        \"type\": \"insufficient_quota\",\n        \"param\": null,\n        \"code\": \"credit_balance_exhausted\"\n    }\n}\n",
+      "message": "Analysis failed for NEULANDLAB. Please retry."
     },
     "3IINFOLTD": {
       "status": "failed",
