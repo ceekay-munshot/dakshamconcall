@@ -69292,6 +69292,2452 @@
           ]
         }
       ]
+    },
+    "ELECON": {
+      "company": "Elecon Engineering Company Ltd",
+      "ticker": "ELECON",
+      "industry": "Heavy Electrical Equipment",
+      "country": "India",
+      "checked_at": "2026-08-03T23:07:02.879Z",
+      "quarters": [
+        {
+          "company": "Elecon Engineering Company Ltd",
+          "ticker": "ELECON",
+          "industry": "Heavy Electrical Equipment",
+          "country": "India",
+          "concall_date": "2026-07-13",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=bac1ce1f-7666-45dd-a38c-30b39c97566e.pdf",
+          "model": "anthropic.claude-sonnet-5",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-03T23:06:16.119Z",
+          "summary": "Elecon guided FY27 to a low double-digit consolidated revenue growth while maintaining last year's EBITDA margin, citing macro uncertainty and limited near-term visibility; Gear division targets ~24% EBITDA margin and MHE ~22-24% EBITDA margin as sustainable levels; management reiterated its FY30 aspiration of INR5,000 crores in topline (Gear ~70-75%, MHE ~25-30%) and confirmed the INR400 crore FY26-FY28 capex program remains on track; recovery in Europe expected in about two quarters, defense/naval order enquiries expected in Q4 FY27 with no update in the last 90 days.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "Consolidated revenue from operations",
+                  "value": "521",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated revenue (adjusted)",
+                  "value": "465",
+                  "unit": "INR crores",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated revenue growth YoY",
+                  "value": "11.9%",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated EBITDA",
+                  "value": "109",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated EBITDA growth YoY",
+                  "value": "3.9%",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated EBITDA margin",
+                  "value": "21%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Profit after tax (PAT)",
+                  "value": "70",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT margin",
+                  "value": "13.5%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT growth YoY",
+                  "value": "2.3%",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Arbitration award income excluded (Q1 FY26 adjustment)",
+                  "value": "25",
+                  "unit": "INR crores",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Arbitration claim settlement income excluded (Q1 FY26 adjustment, other income)",
+                  "value": "10",
+                  "unit": "INR crores",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "One-time exceptional income excluded (mark-to-market gain on investment reclassification, post-tax, below PBT)",
+                  "value": "80",
+                  "unit": "INR crores",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net cash position",
+                  "value": "~700",
+                  "unit": "INR crores",
+                  "period": "as of Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capex program",
+                  "value": "~400",
+                  "unit": "INR crores",
+                  "period": "FY26-FY28",
+                  "kind": "target"
+                },
+                {
+                  "label": "Gear division FY26 EBIT margin (full year)",
+                  "value": "18.8%",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "MHE division FY26 EBIT margin (full year)",
+                  "value": "24.7%",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "MHE division Q1 FY27 EBIT margin",
+                  "value": "25.6%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Blended BOM cost increase (average)",
+                  "value": "5%",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Steel raw material price increase (specific grades)",
+                  "value": "5-7%",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bearings price increase",
+                  "value": "6-7%",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Fabricated gear case (outsourced) price increase",
+                  "value": "7%",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Tooling price increase",
+                  "value": "6-10%",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "MHE margin decline attributable to input cost increase",
+                  "value": "2.5-3%",
+                  "unit": "% points",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "MHE margin decline attributable to sales mix change",
+                  "value": "3%",
+                  "unit": "% points",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "MHE margin decline attributable to lower throughput/volume",
+                  "value": "3%",
+                  "unit": "% points",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gear finished goods dispatched but not revenue-recognized (Ind AS cut-off)",
+                  "value": "70",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gear revenue carried over from Q4 FY26 into Q1 FY27",
+                  "value": "77",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26 to Q1 FY27",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Adjustment basis for YoY comparisons",
+                  "points": [
+                    "All YoY growth comparisons are based on Q1 FY26 adjusted performance, excluding INR25 crores arbitration award and INR10 crores arbitration claim settlement (recorded under other income, both pre-tax), and a one-time exceptional post-tax income of INR80 crores from unrealized mark-to-market gain on reclassification of investment (recorded below PBT)."
+                  ]
+                },
+                {
+                  "label": "Margin resilience despite input cost pressure",
+                  "points": [
+                    "Consolidated EBITDA grew despite a spike in input cost due to geopolitical tensions; EBITDA margin remained stable at 21% reflecting disciplined cost management and operational efficiency focus.",
+                    "Gear division margin did not grow despite revenue growth because gains were dragged by raw material price increases; EBIT margin was roughly flat versus last year's corresponding quarter (17.9% vs 18.8% full-year FY26)."
+                  ]
+                },
+                {
+                  "label": "MHE margin decline drivers",
+                  "points": [
+                    "Three factors contributed to MHE margin decline: shift in sales mix, input cost increase, and overall revenue degrowth (lower throughput volume) — each contributing roughly 2.5-3 percentage points of the decline.",
+                    "MHE Q1 FY26 was flagged previously as an exceptional margin quarter due to a couple of favorable orders; against full-year FY26 EBIT margin of 24.7%, current quarter EBIT margin of 25.6% is broadly in line with expectations."
+                  ]
+                },
+                {
+                  "label": "Goodwill impairment (Benzler Radicon Europe, 2010-11 acquisition)",
+                  "points": [
+                    "Goodwill of approximately INR102 crores in FY25 was impaired to nil in FY26 in the consolidated financial statements only; the impairment was purely a non-cash accounting charge with no tax impact.",
+                    "A tax deduction of GBP1 million remains over 5 years in the UK entity via amortization of goodwill recorded as an asset in local books; a marginal goodwill book value remains in the UK entity to be amortized over the balance 3-4 years."
+                  ]
+                },
+                {
+                  "label": "Working capital - defense orders",
+                  "points": [
+                    "Defense orders with 2-3 year execution timelines carry higher working capital days versus standard gear orders (historically working capital increased by 15-20% compared to overall gear division for similar long-execution orders); higher margins on such orders are expected to absorb the cost of working capital interest."
+                  ]
+                },
+                {
+                  "label": "Price pass-through strategy",
+                  "points": [
+                    "Most orders accepted in Q1 include price increases; company has back-to-back strategic tie-ups with key raw material suppliers to lock raw material prices upon order acceptance.",
+                    "Catalogue products (54% of gear revenue) are priced on a monthly-refreshed price list, diluting input cost impact; engineered products also benefit from raw material price locking, reducing impact versus MHE.",
+                    "Blended BOM cost increase averages 5%, with specific steel grades up 5-7%, bearings up 6-7%, fabricated gear cases (outsourced) up 7%, and tooling up 6-10%."
+                  ]
+                },
+                {
+                  "label": "Revenue recognition timing (Gear)",
+                  "points": [
+                    "Gear finished goods worth INR70 crores were dispatched in Q1 FY27 but not revenue-recognized due to Ind AS cut-off/title transfer timing, while INR77 crores of Gear revenue was carried over from Q4 FY26 into Q1 FY27."
+                  ]
+                },
+                {
+                  "label": "Capital allocation",
+                  "points": [
+                    "Company maintains a strong balance sheet with net cash of approximately INR700 crores.",
+                    "Capex program of ~INR400 crores over FY26-FY28 remains on track; further capex evaluation to seek board approval in the near future."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ORD",
+              "title": "Order Book & Demand",
+              "key_figures": [
+                {
+                  "label": "Consolidated order intake",
+                  "value": "755",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated order intake (prior year)",
+                  "value": "614",
+                  "unit": "INR crores",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated order intake growth YoY",
+                  "value": "23%",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated open order book",
+                  "value": "1,518",
+                  "unit": "INR crores",
+                  "period": "as of Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated open order book growth YoY",
+                  "value": "36.8%",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gear division order intake",
+                  "value": "570",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gear division order intake growth YoY",
+                  "value": "18.8%",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gear division open order book",
+                  "value": "1,043",
+                  "unit": "INR crores",
+                  "period": "as of Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gear division open order book growth YoY",
+                  "value": "46.9%",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Power sector share of gear order intake",
+                  "value": "~27%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "MHE division order intake",
+                  "value": "185",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "MHE division order intake growth YoY",
+                  "value": "38.1%",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "MHE division open order book",
+                  "value": "475",
+                  "unit": "INR crores",
+                  "period": "as of June 30, 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "MHE division open order book growth YoY",
+                  "value": "18.8%",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "MHE overseas order (port industry)",
+                  "value": "~21",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gear open order book beyond FY27",
+                  "value": "~160",
+                  "unit": "INR crores",
+                  "period": "as of Q1 FY27",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Order book quality and timing",
+                  "points": [
+                    "Demand shown across key user industries; major contributors to order intake were power, steel, cement, and MHE.",
+                    "Power sector contributed ~27% of total gear order intake via a large single order previously mentioned in the Q4 FY26 con-call.",
+                    "Gear open order book beyond FY27 stands at ~INR160 crores, in line with the typical proportion received year-on-year; no major shift in order execution timelines observed.",
+                    "Enquiry activity healthy; order inflows improving steadily across domestic and international markets; demand across key user industries continues to strengthen.",
+                    "MHE division received an overseas order of ~INR21 crores from the port industry in Q1 FY27."
+                  ]
+                },
+                {
+                  "label": "Revenue-to-order-book conversion mismatch",
+                  "points": [
+                    "Significant raw material price increases have lengthened the time taken to convert enquiries into orders, causing high order book levels but slower revenue conversion in Q1 and expected in Q2.",
+                    "Market currently in a 'correction' phase (Q1) transitioning to an 'acceptance' phase (Q2) regarding price increases; Q3 and Q4 expected to show more significant improvement as market accepts stabilized prices."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "Gear division revenue",
+                  "value": "416",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gear division revenue growth YoY",
+                  "value": "16.3%",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gear division contribution to consolidated revenue",
+                  "value": "~80%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gear division EBIT",
+                  "value": "75",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gear division EBIT growth YoY",
+                  "value": "14.7%",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gear division EBIT margin",
+                  "value": "17.9%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "MHE division revenue",
+                  "value": "105",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "MHE division revenue (adjusted, prior year)",
+                  "value": "108",
+                  "unit": "INR crores",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "MHE division revenue decline YoY",
+                  "value": "2.9%",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "MHE division EBIT",
+                  "value": "27",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "MHE division EBIT decline YoY",
+                  "value": "25.3%",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Catalogue product revenue mix (gear)",
+                  "value": "54%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Engineered product revenue mix (gear)",
+                  "value": "46%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gear order intake mix - catalogue products",
+                  "value": "27%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gear order intake mix - engineered products",
+                  "value": "73%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Expected Gear division share of FY30 revenue",
+                  "value": "70-75%",
+                  "unit": "%",
+                  "period": "FY30 target",
+                  "kind": "target"
+                },
+                {
+                  "label": "Expected MHE division share of FY30 revenue",
+                  "value": "25-30%",
+                  "unit": "%",
+                  "period": "FY30 target",
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Gear division performance drivers",
+                  "points": [
+                    "Growth underpinned by steady execution of order book and gradual improvement in international market.",
+                    "Revenue growth partly reflects carry-over of INR77 crores from Q4 FY26 into Q1 FY27, plus a further INR70 crores of finished goods dispatched before June 30 but not revenue-recognized due to Ind AS cut-off/title transfer timing.",
+                    "Bulk of orders received in the second half of May and in June, limiting conversion into quarter revenue despite a healthy order book.",
+                    "India standalone gear business growth has been low single digits over recent quarters even as order book builds, driven by legacy events: US tariff actions from Q2 last year and the US-Iran event in Q4 impacted order pipeline; catalogue product (monthly price list) volumes also declined.",
+                    "Gear order intake mix was 27% catalogue products and 73% engineered products in Q1 FY27, versus a revenue mix of 54% catalogue and 46% engineered."
+                  ]
+                },
+                {
+                  "label": "MHE division performance drivers",
+                  "points": [
+                    "Revenue moderation primarily due to project execution delays, specifically in two large power-sector orders where design engineering clearance from the end customer (via EPC main contractor) took longer than expected (originally expected in April).",
+                    "Progress expected in Q2 with good revenue contribution from these delayed orders.",
+                    "Underlying business momentum, healthy order book and improving order inflow provide strong visibility for coming quarters."
+                  ]
+                },
+                {
+                  "label": "Naval/defense order margin context",
+                  "points": [
+                    "A prior naval gearbox order carried a 1-2% margin impact due to learning curve and engineering effort (first-of-kind order); that order has been fully executed and cost is behind the company.",
+                    "Future similar large defense orders are expected to carry better margins given existing learning curve and completed detailed engineering."
+                  ]
+                },
+                {
+                  "label": "FY30 segment mix outlook",
+                  "points": [
+                    "By FY30, Gear division (including marine business) is expected to contribute ~70-75% of total revenue, and MHE ~25-30%."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [
+                {
+                  "label": "Overseas business contribution to consolidated revenue",
+                  "value": "151",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Overseas revenue share of consolidated revenue",
+                  "value": "~29%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Overseas revenue (prior year)",
+                  "value": "124",
+                  "unit": "INR crores",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Overseas revenue growth YoY",
+                  "value": "21.9%",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "International share of consolidated Gear division revenue",
+                  "value": "~36%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "International Gear division revenue growth YoY",
+                  "value": "37.6%",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Overseas order intake",
+                  "value": "194",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Overseas order intake growth YoY",
+                  "value": "63%",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "MHE contribution to overseas order intake",
+                  "value": "21",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Overseas open order book",
+                  "value": "256",
+                  "unit": "INR crores",
+                  "period": "as of June 30, 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Overseas open order book growth YoY",
+                  "value": "73%",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "FY26 export revenue - Middle East",
+                  "value": "66",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "FY26 export revenue - Radicon USA",
+                  "value": "102",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "FY26 export revenue - UK (Benzler Europe group)",
+                  "value": "102 / 171",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "FY26 export revenue - Singapore",
+                  "value": "22",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Exports from India (current quarter, standalone)",
+                  "value": "sub-30 (down ~35%)",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Customer countries served",
+                  "value": "95+",
+                  "unit": "countries",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Growth geographies",
+                  "points": [
+                    "Bulk of international revenue growth this quarter came from Middle East and US, driven by resumption of dispatches for orders that were on hold in Q4 last year due to improving macro conditions, now eased.",
+                    "Both Middle East and US regions also show stronger traction in open order book and enquiry quantum/nature.",
+                    "Middle East demand weakness/strength noted specifically in cement and mining & minerals end markets.",
+                    "European market traction still awaited; based on early feelers, European market bounce-back expected in a minimum of two quarters.",
+                    "International share of consolidated Gear division revenue was ~36% in Q1 FY27, with international Gear revenue growth of 37.6% YoY.",
+                    "Overseas order intake grew 63% YoY to INR194 crores, with MHE contributing INR21 crores of that overseas intake; overseas open order book grew 73% YoY to INR256 crores as of June 30, 2026.",
+                    "FY26 export revenue by geography: Middle East INR66 crores, Radicon USA INR102 crores, UK (Benzler Europe group) INR102/171 crores, Singapore INR22 crores.",
+                    "Company serves customers in 95+ countries."
+                  ]
+                },
+                {
+                  "label": "Assembly centers and India exports",
+                  "points": [
+                    "Company measures total exports at the organization level (not exports-from-India alone) due to multiple overseas assembly centers set up for customer connect and proximity.",
+                    "Assembly centers include local outsourcing of certain parts (value addition), while main manufacturing remains based in Anand, India.",
+                    "Exports from India (standalone) declined ~35% to sub-INR30 crores in the current quarter, but overall (organization-level) exports are still expected to register double-digit higher percentage growth for the year despite this India-origin export decline."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [
+                {
+                  "label": "Manufacturing cycle time for catalogue product (gear)",
+                  "value": "2 to 3",
+                  "unit": "months",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Manufacturing cycle time for engineering product (gear)",
+                  "value": "4 to 5",
+                  "unit": "months",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Competitive intensity and pricing",
+                  "points": [
+                    "Whenever there is a stiff/abnormal price increase, the market moves through a 'correction' phase (competitors sitting on higher inventory at historical lower prices squeeze pricing) followed by an 'acceptance' phase as inventory levels normalize across players; Q1 was correction phase, Q2 expected to be acceptance phase.",
+                    "Manufacturing cycle for catalogue products is 2-3 months and for engineered products 4-5 months; existing orders on hand have price protection, but new projects will face price pressure from MNC competition.",
+                    "Company positions itself as preferred supplier based on quality and faster production infrastructure versus competitors, enabling it to compete with MNCs even where MNCs offer more competitive pricing.",
+                    "MNCs setting up local manufacturing plants create competitive pressure, particularly on new project pricing."
+                  ]
+                },
+                {
+                  "label": "Export OEM relationships",
+                  "points": [
+                    "Relationships with export OEMs have increased in number; monetization timing tied to regional recovery — near-term opportunities seen in Middle East and US based on early enquiry/order book signs, while European market (amid rising defense spending and industrial cycle uptick) still awaits traction, expected in a minimum of two quarters."
+                  ]
+                },
+                {
+                  "label": "Sugar sector outlook",
+                  "points": [
+                    "Sugar sector demand currently muted due to poor/prolonged monsoon impacting sugarcane crop and sugar season expectations.",
+                    "Ethanol blending traction, if sustained, could support future sugar plant expansion and better sector traction, but near-term outlook remains muted."
+                  ]
+                },
+                {
+                  "label": "Aerospace certification",
+                  "points": [
+                    "Company is not currently working deeply on aerospace-related certifications; no near-term plans disclosed."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [
+                {
+                  "label": "Time expected for European market export traction to bounce back",
+                  "value": "two",
+                  "unit": "quarters",
+                  "period": null,
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Company operating history",
+                  "value": "75 plus",
+                  "unit": "years",
+                  "period": null,
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Mid-term revenue target",
+                  "points": [
+                    "Reiterated mid-term target of reaching INR5,000 crores in topline by FY30; management calls this challenging but still achievable.",
+                    "Achievability of the FY30 target is contingent on: securing a couple of large enquiries from the marine segment, expansion in export territories, continuation of the committed capex plan, and further capex under evaluation pending board approval.",
+                    "By FY30, Gear division (including marine business) expected to contribute ~70-75% of total revenue, and MHE ~25-30%."
+                  ]
+                },
+                {
+                  "label": "Acquisition strategy",
+                  "points": [
+                    "Company is not actively looking for acquisition opportunities in the European region, especially where the opportunity demands significant investment in a manufacturing setup."
+                  ]
+                },
+                {
+                  "label": "Patents",
+                  "points": [
+                    "Company has filed for certain patents but declined to disclose the commercial markets/segments being targeted for competitive reasons."
+                  ]
+                },
+                {
+                  "label": "Company background",
+                  "points": [
+                    "Company has an operating history of 75+ years."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [
+                {
+                  "label": "Time since no significant update on defense/shipbuilding orders",
+                  "value": "90",
+                  "unit": "days",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Naval gearbox project margin impact due to learning and manufacturing cost",
+                  "value": "1-2%",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Geopolitical and macro risk",
+                  "points": [
+                    "Spike in input costs attributed to geopolitical tensions during the quarter.",
+                    "US-Iran tensions have picked up again in the last 48 hours (as of the call), adding to macro uncertainty and limiting confidence for full-year guidance.",
+                    "Last year's US tariff actions (from Q2) and the Q4 US-Iran event both significantly impacted the gear division's order pipeline.",
+                    "Large part of gear business is routed through PSUs, which are dependent on fiscal budgets, government fund allocation, and macroeconomic conditions — disturbances at this level delay capex plans of customers in thermal power, cement, and steel sectors."
+                  ]
+                },
+                {
+                  "label": "Input cost / commodity risk",
+                  "points": [
+                    "Significant (not minor) raw material price increases have lengthened the enquiry-to-order conversion time, contributing to the mismatch between strong order book growth and lower revenue growth guidance.",
+                    "MHE division more exposed to price increase impact than gear due to its highly customized, project-based nature involving non-raw-material cost components (delivery/fuel cost, packing material cost) that are harder to lock in versus gear's catalogue/price-list and raw-material-locking mechanisms."
+                  ]
+                },
+                {
+                  "label": "Execution / project delay risk",
+                  "points": [
+                    "MHE division experienced delays in design engineering clearance from end customers routed through EPC main contractors, particularly in two large power-sector orders, extending hierarchy and approval timelines."
+                  ]
+                },
+                {
+                  "label": "Weather/agri risk (sugar)",
+                  "points": [
+                    "Prolonged, below-expectation monsoon rainfall this year is negatively impacting the sugarcane crop and expected sugar season traction."
+                  ]
+                },
+                {
+                  "label": "Competitive risk",
+                  "points": [
+                    "MNCs setting up local manufacturing facilities and expanding presence create pricing pressure risk, particularly for new (not-yet-quoted) projects.",
+                    "Some competitors sitting on higher, lower-cost historical inventory create near-term pricing pressure until market-wide price correction completes."
+                  ]
+                },
+                {
+                  "label": "Defense/Naval order visibility risk",
+                  "points": [
+                    "No significant update in the last 90 days on defense/shipbuilding orders versus prior guidance; naval gearbox project margin impact of 1-2% previously noted due to learning and manufacturing cost on a first-of-kind order."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [
+                {
+                  "label": "FY30 topline target",
+                  "value": "5,000",
+                  "unit": "INR crores",
+                  "period": "FY30",
+                  "kind": "target"
+                },
+                {
+                  "label": "Gear division EBITDA margin target",
+                  "value": "24%",
+                  "unit": "%",
+                  "period": "going forward",
+                  "kind": "target"
+                },
+                {
+                  "label": "Gear division EBIT margin target",
+                  "value": "19-20%",
+                  "unit": "%",
+                  "period": "current year / next year",
+                  "kind": "target"
+                },
+                {
+                  "label": "MHE division EBITDA margin sustainable target",
+                  "value": "22-24%",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "target"
+                },
+                {
+                  "label": "Overall exports growth expectation",
+                  "value": "double-digit higher percentage",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "target"
+                },
+                {
+                  "label": "Anticipated large defense/naval order book",
+                  "value": "1000",
+                  "unit": "INR crores",
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "Expected timeline for naval/defense order enquiry release",
+                  "value": "Q4",
+                  "unit": null,
+                  "period": "FY27",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "FY27 guidance rationale",
+                  "points": [
+                    "Given ongoing macroeconomic uncertainty and limited near-term visibility, targeting low double-digit consolidated revenue growth while maintaining last year's EBITDA margin, supported by healthy order book, strong enquiry pipeline, and disciplined execution.",
+                    "Guidance is deliberately conservative; Q1 and Q2 FY27 already show improved but not significantly improved traction; too many variables (e.g., renewed US-Iran tension) remain, limiting comfort for a higher full-year number.",
+                    "Management may revisit guidance in a future quarterly call as conditions improve."
+                  ]
+                },
+                {
+                  "label": "Segment margin targets",
+                  "points": [
+                    "Gear division EBITDA margin targeted at 24% going forward, with EBIT margin target of 19-20% for the current/next year.",
+                    "MHE division sustainable EBITDA margin targeted at 22-24% for FY27.",
+                    "Overall exports growth expected at a double-digit higher percentage in FY27."
+                  ]
+                },
+                {
+                  "label": "Defense/Naval order timeline",
+                  "points": [
+                    "No significant update in the last 90 days versus the guidance provided in the April call; enquiry for large defense orders (anticipated order book of ~INR1000 crores) still expected to be released in Q4 of the financial year, consistent with prior communication."
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "Consolidated revenue growth",
+              "horizon": "FY27",
+              "statement": "Given the ongoing macroeconomic uncertainty and limited near-term visibility, we are targeting to have a low double-digit consolidated revenue growth while maintaining the EBITDA margin as we had it in the last year.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Consolidated EBITDA margin",
+              "horizon": "FY27",
+              "statement": "Maintaining the EBITDA margin as we had it in the last year.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Gear division EBITDA margin",
+              "horizon": "unspecified/going forward",
+              "statement": "Loosely speaking we should be able to maintain 24% margin EBITDA margin for gear division.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "raised"
+            },
+            {
+              "metric": "Gear division EBIT margin",
+              "horizon": "current year plus one year",
+              "statement": "1% above the current level about 18.8% is what we had in the last year, we should be able to somewhere around 19% to 20%, 20% on an average is what we are meeting at EBIT level margin for gear.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "MHE division EBITDA margin",
+              "horizon": "FY27",
+              "statement": "We are seeing a 22% to 24% EBITDA margin for MHE business for the year as a sustainable margin.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "FY30 topline target",
+              "horizon": "FY30",
+              "statement": "We had set the target of reaching to 5000 crores in a top line by FY30. That target looks challenging but still achievable for us.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Gear vs MHE revenue split",
+              "horizon": "FY30",
+              "statement": "We expect Gear to be almost 70% - 75% of the total revenue in FY30 and almost 25% to 30% for MHE for the overall revenue in FY'30. Gear will also include the marine business.",
+              "specificity": "specific",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Overall export growth",
+              "horizon": "FY27",
+              "statement": "In terms of the overall growth we will see a double-digit higher percentage growth at least for this year when it comes to exports.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "European market recovery",
+              "horizon": "next 2 quarters",
+              "statement": "Based on the early feelers, it looks like two quarters minimum that we see for the European market to bounce back.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Defense/Naval order enquiry timeline",
+              "horizon": "Q4 FY27",
+              "statement": "The enquiry of these orders are likely to be released in Q4 of this year. As on today, we maintain the same communication.",
+              "specificity": "vague",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Q2 FY27 revenue trajectory",
+              "horizon": "Q2 FY27",
+              "statement": "In Q2 also we are seeing that we will pick up, the market will pick up, but it will still gradually pick up... not that a stiff percentage improvement.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Q3/Q4 FY27 revenue trajectory",
+              "horizon": "H2 FY27",
+              "statement": "Q3 and Q4 is what we are expecting to improve significantly when it comes to market's acceptance of the stabilized prices.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Revenue growth vs FY26",
+              "horizon": "FY27",
+              "statement": "We are not expecting any degrowth to happen compared to FY26. We are expecting growth. The amount of growth is currently what is under question.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Margins vs FY26",
+              "horizon": "FY27",
+              "statement": "From FY26 we will be able to definitely maintain or grow it. We are expecting growth, but the geopolitical situation will control it a little bit.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "MHE Division growth pace",
+              "horizon": "next 2-3 years",
+              "statement": "Whatever growth trajectory we have shown in the last two, three years, we can definitely continue with the same pace and growth percentage.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "MHE sustainable margin",
+              "horizon": "going forward",
+              "statement": "Considering the revenue mix, the sustainable margin is around 20% to 22% in between.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Q4 FY26 revenue",
+              "horizon": "Q4 FY26",
+              "statement": "We had lowered our guidance and communicated that we are reducing the revenue in the quarter ending March by at least 5%, released in the month of January.",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Navy Corvette order",
+              "horizon": "FY27",
+              "statement": "Anytime in Q1, they are going to release the RFP. And then we are expecting orders to come by Q4 of the financial year.",
+              "specificity": "specific",
+              "direction": "unclear",
+              "status": "no_mention"
+            },
+            {
+              "metric": "P-17 Alpha defense order",
+              "horizon": "FY28",
+              "statement": "P-17 Alpha also they have deferred, but it may come in the financial year of '28, around Q3.",
+              "specificity": "specific",
+              "direction": "unclear",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Export revenue mix",
+              "horizon": "3-4 years (prior plan)",
+              "statement": "As we had planned, we would be ramping our exports up to 50% in the next 3 to 4 years... going forward we expect it will still improve.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Capex program",
+              "horizon": "FY26-FY28",
+              "statement": "We have a capex plan of INR400 crores between FY26 to FY28; roughly INR95 crores spent so far.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "Geopolitical tensions (US-Iran, tariffs)",
+              "status": "new",
+              "note": "Input cost spike attributed to geopolitical tensions; US-Iran intensity picked up again in last 48 hours as of the call, adding uncertainty; last year's US tariffs and Q4 US-Iran event significantly impacted gear order pipeline."
+            },
+            {
+              "risk": "Raw material / commodity price increase",
+              "status": "new",
+              "note": "Significant (not minor) BOM cost increase (~5% average, up to 10% for tooling) has lengthened enquiry-to-order conversion time and pressured margins, especially in MHE."
+            },
+            {
+              "risk": "PSU capex dependency",
+              "status": "new",
+              "note": "Large part of gear business routed through PSUs in thermal power, cement, and steel, dependent on fiscal budgets and government fund allocation; macro disturbances delay customer capex plans."
+            },
+            {
+              "risk": "MHE project execution delays",
+              "status": "new",
+              "note": "Two large power-sector orders delayed due to slow design engineering clearance from end customers via EPC main contractors; progress expected in Q2."
+            },
+            {
+              "risk": "Competitive intensity from MNCs",
+              "status": "new",
+              "note": "MNCs setting up local manufacturing plants and expanding presence create price pressure on new projects; some competitors sitting on cheaper historical inventory squeeze near-term pricing."
+            },
+            {
+              "risk": "Weak monsoon impacting sugar sector",
+              "status": "new",
+              "note": "Prolonged poor rain situation is muting sugarcane crop and sugar season traction; ethanol blending could offset if it gains traction."
+            },
+            {
+              "risk": "Ind AS revenue recognition cut-off timing",
+              "status": "new",
+              "note": "INR70 crores of FGs dispatched before June 30 could not be revenue-recognized due to title transfer/cut-off timing criteria not being met."
+            },
+            {
+              "risk": "Geopolitical and macroeconomic uncertainty causing delayed order inflows and dispatch deferment",
+              "status": "no_mention",
+              "note": "Event intensified late Feb/early March 2026, causing ~INR77 crores of order/dispatch impact in March; customers recalibrated capex schedules; conflicting news continues as of call date."
+            },
+            {
+              "risk": "Middle East regional conflict impacting exports/order booking",
+              "status": "no_mention",
+              "note": "Middle East has suffered significantly in order booking; UAE overseas entity exposed to risk including potential Strait of Hormuz closure impact."
+            },
+            {
+              "risk": "Unfavourable product mix (catalogue vs engineered) impacting margins",
+              "status": "no_mention",
+              "note": "Engineered orders on hand could not be invoiced this year due to customer deferment, keeping margin embedded in unbilled inventory rather than reflected in P&L."
+            },
+            {
+              "risk": "Raw material and logistics cost inflation",
+              "status": "no_mention",
+              "note": "Company has pre-emptively locked in raw material prices at order receipt and is passing cost increases into new orders, mitigating margin risk."
+            },
+            {
+              "risk": "US tariffs on exports (Section 232)",
+              "status": "no_mention",
+              "note": "50% tariff currently applies on exports from India to US subsidiaries/customers; Mexico subsidiary established to serve Latin America where this tariff does not apply."
+            },
+            {
+              "risk": "Defense order timeline delays (Navy Corvette, P-17 Alpha)",
+              "status": "no_mention",
+              "note": "Corvette RFP and orders pushed out to Q1/Q4 FY27; P-17 Alpha deferred to Q3 FY28 as shipyard has not yet received RFQ."
+            },
+            {
+              "risk": "Sugar industry ethanol demand excess capacity concern raised by peers",
+              "status": "no_mention",
+              "note": "Analyst flagged industry commentary of excess ethanol capacity built in India; management's demand expectation is based on anticipated gas/petroleum supply constraints from war situation, not confirmed."
+            }
+          ],
+          "themes": [
+            {
+              "label": "Geopolitical/Macro deferment impact",
+              "direction": "negative",
+              "note": "US-Iran tensions resurfaced in the last 48 hours and prior US tariff/Iran events continued to disrupt order pipeline conversion and input costs.",
+              "section_ref": "RISK"
+            },
+            {
+              "label": "MHE growth momentum",
+              "direction": "mixed",
+              "note": "MHE revenue declined 2.9% YoY on project execution delays even as order intake grew 38.1% YoY and open order book rose 18.8% YoY.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Order book visibility",
+              "direction": "positive",
+              "note": "Consolidated open order book rose 36.8% YoY to INR1,518 crores, with Gear open order book up 46.9% YoY to INR1,043 crores.",
+              "section_ref": "ORD"
+            },
+            {
+              "label": "Product mix (engineered vs catalogue)",
+              "direction": "mixed",
+              "note": "Gear order intake mix shifted to 73% engineered/27% catalogue, while quarter revenue mix was 54% catalogue/46% engineered, affecting price pass-through ability.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "FY27 guidance withheld",
+              "direction": "neutral",
+              "note": "Company issued conservative low double-digit revenue growth guidance for FY27 with flat EBITDA margin, citing macro uncertainty and limited visibility, with possible revision in future quarters.",
+              "section_ref": "GUID"
+            },
+            {
+              "label": "International/export expansion",
+              "direction": "positive",
+              "note": "Overseas revenue grew 21.9% YoY to INR151 crores (~29% of consolidated revenue), with overseas order intake up 63% YoY and overseas order book up 73% YoY, driven by Middle East and US.",
+              "section_ref": "GEO"
+            },
+            {
+              "label": "Defense order pipeline delays",
+              "direction": "neutral",
+              "note": "No significant update in the last 90 days on defense/naval enquiries; enquiry release still expected in Q4 FY27 per prior communication.",
+              "section_ref": "GUID"
+            }
+          ],
+          "key_takeaways": [
+            "The Gear division which contributed nearly 80% of our consolidated revenue to INR416 crores during the quarter delivered a strong performance with revenue growing by 16.3% year-on-year.",
+            "The consolidated order intake increased 18.8% year-on-year to INR570 crores during the quarter.",
+            "Our open order book currently stands at INR1,043 crores, is up 46.9% year-on-year, providing strong revenue visibility and giving us confidence in our growth trajectory over the coming quarters.",
+            "The MHE division reported a marginal decline in revenue during the quarter with revenue moderating by 2.9% year-on-year. This was primarily on account of project execution delays.",
+            "During the quarter, order intake witnessed a significant growth of 38.1% year-on-year reaching INR185 crores.",
+            "For the quarter ended June 2026, Elecon reported consolidated revenue from operation of INR521 crores. This represents a healthy year-on-year growth of 11.9% over adjusted revenue of INR465 crores in Q1 FY '26.",
+            "Despite a spike in input cost due to geopolitical tensions, our consolidated EBITDA remained resilient and grew by 3.9% year-on-year to INR109 crores. EBITDA margins remain stable and sustainable at 21%.",
+            "Given the ongoing macroeconomic uncertainty and limited near-term visibility, we are targeting to have a low double-digit consolidated revenue growth while maintaining the EBITDA margin as it we had it in the last year.",
+            "We had set the target of reaching to 5000 crores in a top line by FY30. That target looks challenging but still achievable for us."
+          ],
+          "pressing_questions": [
+            "Sir, on the international revenue side, it's grown nearly 22% this quarter. Could you please talk about which are the geographies majorly contributed for this growth? Also, you can talk about Middle East impact on the international revenue side. Is there any specific end markets within Middle East regions like oil and gas and infra driving this weakness? And when we can expect the recovery in the Middle East side?",
+            "If our order book is up by 37%, our order inflows are up by 23%, I think we are running on record order books now, then why are we guiding only for low double-digit revenue growth?",
+            "Considering all these things and also the order book that we are getting, why are we thinking about this lower double-digit that again is not making sense from our perspective because demand environment is good... why we are not able to reap the fruit from this?",
+            "We might not be able to give exact guidance in terms of number, but what are our aspirations for the same given the fact that we are doing significant capex around INR400 crores till FY28?",
+            "In the last year we said that Q3 onwards, we are expecting some order from Naval or defense probably... is that timeline attached to that or are we seeing some difficulty going forward?"
+          ]
+        },
+        {
+          "company": "Elecon Engineering Company Ltd",
+          "ticker": "ELECON",
+          "industry": "Heavy Electrical Equipment",
+          "country": "India",
+          "concall_date": "2026-04-16",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=c9f70d5a-4199-49a6-a197-3bc07bd0945b.pdf",
+          "model": "anthropic.claude-sonnet-5",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-03T23:03:09.560Z",
+          "summary": "Elecon reported moderate consolidated revenue growth of 6% in FY26, with Q4 revenue declining due to delayed order inflows, extended dispatch timelines and customer-led deferment amid geopolitical/macro uncertainty; management held FY27 guidance in abeyance pending greater clarity, while MHE division continued strong growth momentum and the Gear Division carries a strong open order book supporting expected normalization and recovery in coming quarters.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "Consolidated revenue from operations",
+                  "value": "746",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated revenue from operations",
+                  "value": "798",
+                  "unit": "INR crores",
+                  "period": "Q4 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Domestic revenue contribution",
+                  "value": "82",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "International revenue contribution",
+                  "value": "18",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated order inflows",
+                  "value": "657",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated order inflow growth YoY",
+                  "value": "1.9",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated EBITDA",
+                  "value": "158",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated EBITDA margin",
+                  "value": "21.2",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net profit (excl. exceptional goodwill impairment)",
+                  "value": "108",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT margin",
+                  "value": "14.5",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "One-time goodwill impairment (exceptional item)",
+                  "value": "102",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Adjusted consolidated revenue",
+                  "value": "2,341",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Adjusted consolidated revenue",
+                  "value": "2,227",
+                  "unit": "INR crores",
+                  "period": "FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Realized arbitration award (excluded from adjusted revenue)",
+                  "value": "25",
+                  "unit": "INR crores",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Adjusted EBITDA",
+                  "value": "498",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Adjusted EBITDA margin",
+                  "value": "21.3",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Other income from arbitration settlement",
+                  "value": "10",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Exceptional gain (MTM on investment reclassification) below PBT",
+                  "value": "80",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Goodwill impairment (exceptional item)",
+                  "value": "102",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Reported PAT (including all exceptional items)",
+                  "value": "341",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated revenue growth YoY",
+                  "value": "6",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net cash balance",
+                  "value": "approximately 700",
+                  "unit": "INR crores",
+                  "period": "as of Mar 31, 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Final dividend",
+                  "value": "1.50",
+                  "unit": "INR per share (FV INR1)",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ROCE",
+                  "value": "29",
+                  "unit": "%",
+                  "period": "FY24",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ROCE",
+                  "value": "20.4",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Investments parked (conservative yield instruments)",
+                  "value": "approximately 800",
+                  "unit": "INR crores",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Yield on investments",
+                  "value": "8",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Average post-tax cash generated per year",
+                  "value": "300-350",
+                  "unit": "INR crores",
+                  "period": "last 2 years, average annual",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Trade receivables",
+                  "value": "720",
+                  "unit": "INR crores",
+                  "period": "as of Mar 31, 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Trade receivables (prior period)",
+                  "value": "610",
+                  "unit": "INR crores",
+                  "period": "prior year comparable",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Receivables increase from Feb-Mar sales not yet due",
+                  "value": "70-75",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Receivables increase from overdue bucket vs last year",
+                  "value": "approximately 15",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "CFO experience",
+                  "value": "19",
+                  "unit": "years",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Investment balance parked (alternate figure)",
+                  "value": "750-800",
+                  "unit": "INR crores",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Q4 Performance Drivers",
+                  "points": [
+                    "Slower conversion of the order pipeline into revenue, in line with a broader industry trend of uneven execution cycles across all capital-intensive sectors.",
+                    "Several customers across key end-user industries recalibrated their capex schedules, leading to a shift in business direction across the value chain; underlying demand environment remains constructive.",
+                    "Profitability impacted by operating deleverage due to lower revenue conversion, marginally higher employee costs, along with a change in product mix.",
+                    "Margins expected to improve gradually as execution accelerates and volumes pick up."
+                  ]
+                },
+                {
+                  "label": "Goodwill Impairment Explanation",
+                  "points": [
+                    "Goodwill represented the amount acquired in 2010-11 when Elecon acquired Benzlers and Radicon Group in Europe.",
+                    "Over the last 15 years Elecon integrated these businesses into the Radicon group of products/geographies; there is no separate structure — single sales/marketing/operations team handles the combined product mix.",
+                    "Management concluded the goodwill as a standalone carrying amount did not have much value in financials, though the business as a whole retains good cash flow/profitability that need not be discounted.",
+                    "Goodwill was never part of standalone financials — always part of consolidated financial statements; tax deduction (if any) will accrue in the books of the UK entity holding the goodwill.",
+                    "A tax deduction is being claimed annually in the UK entity; about 5 years remain with only 1 million GBP left to be claimed gradually as deduction."
+                  ]
+                },
+                {
+                  "label": "Capex Program & ROCE Discussion",
+                  "points": [
+                    "Capex plan of INR400 crores spread between FY26 to FY28; roughly INR95 crores spent so far across different categories.",
+                    "Capex split: Gear Division ~80% of spend, MHE Division the remaining ~20%.",
+                    "ROCE decline from FY24 to FY26 attributed to growing equity/capital employed base — nearly INR800 crores of balance is parked in conservative investments yielding ~8%, rather than deployed into installed capacity expansion.",
+                    "Cash generation has outpaced capex deployment in recent years; company plans to build capability and increase installed capacity over the next two years, expecting resultant revenue and EBITDA/margin improvement.",
+                    "Management views the large investment cushion as 'a good problem to have,' providing flexibility for strategic investments/expansion while closely monitoring macro conditions before committing to major expansion."
+                  ]
+                },
+                {
+                  "label": "Receivables Movement",
+                  "points": [
+                    "Receivables increase of about INR90 crores versus last year's balance sheet — of this, INR70-75 crores is attributable to February and March sales not yet due as of March 31, and about INR15 crores relates to an overdue bucket compared to same period last year, expected to be effected in April."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ORD",
+              "title": "Order Book & Demand",
+              "key_figures": [
+                {
+                  "label": "Gear Division order intake",
+                  "value": "550",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gear Division open order book",
+                  "value": "894",
+                  "unit": "INR crores",
+                  "period": "as of Mar 31, 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gear Division open order book (prior year)",
+                  "value": "583",
+                  "unit": "INR crores",
+                  "period": "as of Mar 31, 2025",
+                  "kind": "reported"
+                },
+                {
+                  "label": "MHE Division order inflow",
+                  "value": "107",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "MHE Division order book",
+                  "value": "398",
+                  "unit": "INR crores",
+                  "period": "as of Mar 31, 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "MHE Division order book (prior year)",
+                  "value": "365",
+                  "unit": "INR crores",
+                  "period": "Q4 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total open order book",
+                  "value": "1,292",
+                  "unit": "INR crores",
+                  "period": "as of Mar 31, 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total open order book (prior year)",
+                  "value": "948",
+                  "unit": "INR crores",
+                  "period": "as of Mar 31, 2025",
+                  "kind": "reported"
+                },
+                {
+                  "label": "MHE inquiry pipeline",
+                  "value": "more than 1,000",
+                  "unit": "INR crores",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "April order booking (MHE)",
+                  "value": "more than 15",
+                  "unit": "INR crores",
+                  "period": "April 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Orders impacted by geopolitical event in March",
+                  "value": "77",
+                  "unit": "INR crores",
+                  "period": "March 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Orders on hold ready for dispatch (subset)",
+                  "value": "12",
+                  "unit": "INR crores",
+                  "period": "March 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Orders scheduled March delivery, deferred to April",
+                  "value": "34",
+                  "unit": "INR crores",
+                  "period": "March 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Orders with production put on hold",
+                  "value": "31",
+                  "unit": "INR crores",
+                  "period": "March 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "December quarter guidance for Q4 revenue reduction",
+                  "value": "at least 5",
+                  "unit": "%",
+                  "period": "guided in Jan for Q4 FY26",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Demand & Deferment Drivers",
+                  "points": [
+                    "Delayed order inflows, extended dispatch timelines and customer-led deferment of delivery amid ongoing macroeconomic and geopolitical uncertainties impacted Gear Division near-term performance.",
+                    "During the year, healthy inflow of orders secured across key sectors including power, steel, cement and material handling equipment.",
+                    "Strong open order book for next year supported by strengthening demand environment and healthy project pipeline.",
+                    "Steel sector customers specifically asked for deferment of delivery; order booking was also later than expected as customers deferred capex investment due to geopolitical scenario, preventing execution within the year; deferment was broad-based, not tied to any specific large order.",
+                    "Geopolitical risk intensified starting last week of February, intensified further in first week of March, with the largest impact felt in March; approx. INR77 crores of orders were affected across three buckets (on-hold ready-to-dispatch, scheduled-but-deferred delivery, and production halted).",
+                    "Company had already flagged in the December quarter call that March quarter revenue could be reduced by at least 5%.",
+                    "MHE order inflow for the quarter was a 10-quarter low due to timing difference — expected opportunities deferred to Q1; more than INR15 crores in orders already received in April, expected to help mitigate the Q4 gap.",
+                    "MHE inquiry pipeline is strong at more than INR1,000 crores across various sectors.",
+                    "Gear Division has a large single order (LOI already received) from the power sector, described as the single largest order ever in the industrial gear business market — expected to convert to an order within 1-2 days; further details to be published once finalized.",
+                    "Sector-wise order book sensibility: power, steel and cement are the three main sectors seeing good demand.",
+                    "Cement sector is relatively stagnant, more skewed to brownfield than greenfield projects, moving at their own pace, though orders coming from 2-3 major contractors.",
+                    "Sugar industry demand anticipated to rise due to potential gas/petroleum supply constraints from the war situation, driving ethanol demand — this is anticipatory, not yet realized.",
+                    "Steel sector deferment: gearboxes were ready but could not be delivered/invoiced due to customer-requested deferment; expected to clear in Q1; described as a usual phenomenon exacerbated by the geopolitical situation."
+                  ]
+                },
+                {
+                  "label": "Raw Material / Input Cost Pass-through",
+                  "points": [
+                    "Raw material prices/logistic costs were secured/locked in as soon as orders were received, anticipating cost increases, to safeguard margins.",
+                    "Execution cycle is not long, so pending orders are largely already covered by locked-in input costs; suppliers are not in a position to claim additional costs on pending orders."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "Gear Division revenue contribution to consolidated",
+                  "value": "63",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gear Division revenue",
+                  "value": "472",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gear Division revenue",
+                  "value": "597",
+                  "unit": "INR crores",
+                  "period": "Q4 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gear Division revenue decline YoY",
+                  "value": "21",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gear Division EBIT",
+                  "value": "91",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gear Division EBIT",
+                  "value": "147",
+                  "unit": "INR crores",
+                  "period": "Q4 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gear Division EBIT margin",
+                  "value": "19.3",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "MHE Division revenue contribution to consolidated",
+                  "value": "37",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "MHE Division revenue",
+                  "value": "274",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "MHE Division revenue",
+                  "value": "200",
+                  "unit": "INR crores",
+                  "period": "Q4 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "MHE Division revenue growth YoY",
+                  "value": "36.8",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "MHE Division EBIT",
+                  "value": "62",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "MHE Division EBIT",
+                  "value": "59",
+                  "unit": "INR crores",
+                  "period": "Q4 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gear-to-MHE revenue mix",
+                  "value": "63:37",
+                  "unit": "ratio",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Historical Gear-to-MHE revenue mix",
+                  "value": "75:25",
+                  "unit": "ratio",
+                  "period": "historical",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Catalogue (standard) product mix",
+                  "value": "55",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Engineered (customized) product mix",
+                  "value": "45",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Catalogue product mix",
+                  "value": "55",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Engineered product mix",
+                  "value": "45",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Prior year catalogue mix",
+                  "value": "60",
+                  "unit": "%",
+                  "period": "Q4 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Prior year engineered mix",
+                  "value": "40",
+                  "unit": "%",
+                  "period": "Q4 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gear Division full-year margin",
+                  "value": "18.8",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gear Division margin",
+                  "value": "20",
+                  "unit": "%",
+                  "period": "FY22",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gear Division margin",
+                  "value": "26",
+                  "unit": "%",
+                  "period": "FY24",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Prior guided EBITDA range for Gear (referenced target)",
+                  "value": "22-24",
+                  "unit": "%",
+                  "period": "prior guidance reference",
+                  "kind": "target"
+                },
+                {
+                  "label": "Share of open engineered-product orders",
+                  "value": "almost 50",
+                  "unit": "% of open orders",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Inventory value of engineered products (unbilled)",
+                  "value": "45-46",
+                  "unit": "INR crores",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Margin embedded in unbilled engineered inventory",
+                  "value": "25-30",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Sustainable MHE margin range (going forward)",
+                  "value": "20-22",
+                  "unit": "%",
+                  "period": "forward view",
+                  "kind": "target"
+                },
+                {
+                  "label": "Capacity utilization (with capex addition)",
+                  "value": "56-60",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Gear Division Performance",
+                  "points": [
+                    "Gear Division continues to be the largest contributor, accounting for ~63% of consolidated revenue in Q4.",
+                    "Revenue decline reflects a temporary gap between order booking and deferment of delivery driven by phasing of execution in large industrial projects.",
+                    "Demand fundamentals remain strong, supported by sustained customer engagement and healthy inquiry pipeline across domestic and overseas markets.",
+                    "EBIT margin impacted by lower throughputs and changes in product mix — considered transitional factors expected to normalize as execution improves.",
+                    "Strong order intake and open order book of INR894 crores provide good visibility for coming quarters; expected to return to steady growth trajectory as execution timelines normalize and macro conditions stabilize."
+                  ]
+                },
+                {
+                  "label": "MHE Division Performance",
+                  "points": [
+                    "MHE continued strong growth momentum in Q4 FY26, reinforcing its role as key growth driver.",
+                    "Growth driven by sustained demand across power, cement and ports, supported by both replacement demand and ongoing industrial infrastructure investments.",
+                    "EBIT reflects stable profitability despite dynamic revenue mix; margins remained healthy, supported by balanced contribution from equipment sales and aftermarket services.",
+                    "Order book provides strong foundation for continued growth; MHE seen as structurally high-growth segment supported by long-term trends in industrial automation and increasing focus on material handling efficiency.",
+                    "MHE delivered revenues ahead of the guidance set for the year, supported by robust demand and strong execution pipeline (per closing remarks)."
+                  ]
+                },
+                {
+                  "label": "Product Mix & Margin Dynamics",
+                  "points": [
+                    "Engineered products carry better margins than catalogue products; company continues to prioritize higher-margin engineered products.",
+                    "Despite engineered mix improving YoY (40%→45%), margins have not improved because engineered orders on hand could not be executed/dispatched/invoiced this year due to customer deferment; margin embedded in this unbilled inventory (valued at cost) is not yet reflected in financials.",
+                    "At the start of the year, margin projections assumed a 50-50 EP/CP split; however, catalogue product orders came in more than engineered product orders during the year due to customer-side project delays, while engineered orders on hand as of March 31 may be executed in the next year.",
+                    "Management is not providing explicit guidance that margins will revert upward due to ongoing geopolitical uncertainty, but if domestic orders proceed smoothly and expected demand materializes, EBITDA levels could return to the previously suggested range of 22%-24%.",
+                    "Gear margin decline versus FY22-24 peak attributed to: (1) engineered orders not reflected in invoicing this year (unlike FY22-23 growth period), and (2) R&D cost investment in developing new products/upgrading existing ones (4 patents taken, 3 more being applied for, per investor presentation).",
+                    "Navy/defense development order carried a slightly lower margin (1-2 percentage points lower, as communicated in a previous call) due to developmental initiatives/activities involved in executing the first order; a repeat order of the same grade would carry better margins.",
+                    "Sustainable MHE margin expected in the 20-22% range considering the revenue mix, given equipment contribution is expected to increase while spare parts/aftermarket may not grow at the same pace.",
+                    "Management stated the Gear-to-MHE mix may shift further as MHE continues to grow alongside Gear growth, but long-term consolidated margin is not expected to vary due to mix shift.",
+                    "Capacity utilization with capex addition currently stands at 56-60%."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "TECH",
+              "title": "Product & Technology",
+              "key_figures": [
+                {
+                  "label": "Patents obtained",
+                  "value": "4",
+                  "unit": "count",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Patents pending application",
+                  "value": "3",
+                  "unit": "count",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "R&D and IP",
+                  "points": [
+                    "Continued focus on research and development ensures innovation, product customization and end-to-end life cycle support remain central to offerings.",
+                    "Company is developing new products and upgrading existing products; investor presentation shows 4 patents taken and 3 more being applied for, contributing to R&D cost incurred during the year."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MFG",
+              "title": "Manufacturing & Capacity",
+              "key_figures": [
+                {
+                  "label": "Capacity utilization",
+                  "value": "56-60",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capex plan",
+                  "value": "400",
+                  "unit": "INR crores",
+                  "period": "FY26-FY28",
+                  "kind": "target"
+                },
+                {
+                  "label": "Capex spent so far",
+                  "value": "95",
+                  "unit": "INR crores",
+                  "period": "FY26 (to date)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capex split - Gear Division",
+                  "value": "80",
+                  "unit": "%",
+                  "period": "FY26 (to date)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capex split - MHE Division",
+                  "value": "20",
+                  "unit": "%",
+                  "period": "FY26 (to date)",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Capex and Capacity Plans",
+                  "points": [
+                    "Capacity utilization currently at 56-60% following capex addition.",
+                    "Company plans to build capability and increase installed capacity over the next two years as part of the INR400 crore FY26-28 capex program; results expected in terms of revenue increase and EBITDA/margin improvement.",
+                    "No capex yet incurred for the newly established Mexico step-down subsidiary; management to update at a later date."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [
+                {
+                  "label": "Domestic revenue share",
+                  "value": "82",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "International revenue share",
+                  "value": "18",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "US tariff on exports from India (Section 232)",
+                  "value": "50",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Prior stated export ramp-up target",
+                  "value": "50",
+                  "unit": "% of revenue",
+                  "period": "next 3-4 years (prior plan)",
+                  "kind": "target"
+                },
+                {
+                  "label": "Gear Division domestic revenue decline YoY",
+                  "value": "27",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Mexico Subsidiary / Export Strategy",
+                  "points": [
+                    "Established a step-down subsidiary in Mexico, strengthening presence in Latin American region as part of international expansion strategy.",
+                    "Currently a 50% tariff (Section 232) applies to exports from India to the company's US subsidiaries/customers; Mexico establishment aims to supply Latin America where this tariff is not applicable.",
+                    "No significant capex committed yet for the Mexico entity; management will update later.",
+                    "Export mix expected to improve going forward despite the geopolitical scenario; company has managed to maintain at least last year's export performance; some improvement seen in order booking in a few entities, while the Middle East has suffered significantly.",
+                    "Company cannot currently comment specifically on sustainable margins tied to export/domestic mix due to the ever-changing scenario.",
+                    "UAE overseas entity is exposed to Middle East-related disruption risk (e.g., Strait of Hormuz closure); domestic operations and other entities are not seen as affected."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SUP",
+              "title": "Supply Chain & Operations",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Input Cost and Supply Chain Management",
+                  "points": [
+                    "Raw material and logistics cost increases are being pre-empted by securing prices/placing orders as soon as customer orders are received, to safeguard margins.",
+                    "Execution cycle is short, so most pending orders' input costs are already locked in; suppliers cannot claim additional costs on orders already placed.",
+                    "No supply chain issues currently observed for domestic orders due to Strait of Hormuz closure or Middle East tensions; only the UAE overseas entity is expected to be affected, not domestic operations or other entities."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "End-Market Demand by Sector",
+                  "points": [
+                    "Power, steel and cement are the three main sectors showing good demand in the current order book.",
+                    "Steel sector is now expanding its executions; power sector customers are demanding fast project closure — no delays anticipated in deliveries for power, cement, and steel going forward.",
+                    "Cement demand is relatively stagnant, more brownfield-oriented, moving at its own pace, though orders are coming from 2-3 major contractors.",
+                    "Sugar industry demand anticipated to rise due to potential ethanol demand driven by concerns over gas/petroleum supply amid the war situation (anticipatory, not confirmed).",
+                    "No current order visibility from the nuclear sector.",
+                    "Engineered/customized products have better margins than catalogue products, so company prioritizes pursuing engineered product orders where possible.",
+                    "Possibility of significant uptick in Middle East orders for infrastructure redevelopment once the regional conflict situation clears, but direction/timing remains uncertain."
+                  ]
+                },
+                {
+                  "label": "Defense/Navy Order Pipeline",
+                  "points": [
+                    "Expecting a very good/large order from the Indian Navy in Q4 (current) — described as a big order at this moment.",
+                    "Corvette RFP now expected to be released anytime in Q1 FY27 (deferred), with orders expected by Q4 FY27 — earlier expectation was Q2 FY27, indicating a delay.",
+                    "P-17 Alpha order also deferred, may come in Q3 FY28; shipyard has not yet even received the RFQ for this.",
+                    "Project orders of this scale are typically executed over two to three years.",
+                    "For large project orders, margins are described as good; smaller orders see a margin gap; first Navy order had 1-2 percentage points lower margin due to developmental activities, but repeat orders of the same grade are expected to have better margins."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "International Expansion",
+                  "points": [
+                    "Establishment of a step-down subsidiary in Mexico to strengthen presence in the Latin American region, as part of strategy to expand into new sectors and geographies.",
+                    "Strategy focuses on portfolio diversification, expansion into new sectors and geographies and continuous strengthening of engineering and execution capabilities."
+                  ]
+                },
+                {
+                  "label": "Capital Allocation Philosophy",
+                  "points": [
+                    "Strong net cash position of ~INR700 crores provides significant strategic flexibility to pursue growth opportunities while maintaining financial discipline.",
+                    "~INR800 crores parked in conservative investment instruments yielding ~8%, kept for flexibility for strategic investments and expansion; company closely monitoring macro conditions before committing to major capex/expansion decisions.",
+                    "Board recommended a final dividend of INR1.50 per equity share (face value INR1), subject to shareholder approval."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [
+                {
+                  "label": "Margin impact from initial Navy order (lower margin)",
+                  "value": "1-2",
+                  "unit": "%",
+                  "period": "prior quarter reference",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Timeline for repeat defense order execution",
+                  "value": "2",
+                  "unit": "years",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Project order execution duration",
+                  "value": "2-3",
+                  "unit": "years",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Geopolitical and Macro Risks",
+                  "points": [
+                    "Ongoing macroeconomic and geopolitical uncertainties led to delayed order inflows, extended dispatch timelines, and customer-led deferment of delivery, primarily impacting the Gear Division.",
+                    "Geopolitical event intensified from last week of February through first week of March, causing ~INR77 crores of order/dispatch impact in March across on-hold, deferred and halted-production orders.",
+                    "Customers across key end-user industries recalibrated capex schedules due to macro/geopolitical uncertainty.",
+                    "Middle East region has suffered significantly in terms of order booking due to ongoing tensions; UAE overseas entity is exposed to related risk (e.g., Strait of Hormuz closure impact), though domestic operations are not expected to be affected.",
+                    "Management describes current challenges as transient and does not believe they alter the company's long-term growth trajectory.",
+                    "Conflicting news/information on the geopolitical situation as of the call date creates ongoing uncertainty, prompting a cautious 'wait and watch' approach before providing forward guidance."
+                  ]
+                },
+                {
+                  "label": "Product Mix & Margin Risk",
+                  "points": [
+                    "Unfavourable product mix (more catalogue vs. engineered product execution this year) contributed to margin compression versus historical levels.",
+                    "Change in product mix and lower throughput cited as factors impacting Gear Division EBIT margin."
+                  ]
+                },
+                {
+                  "label": "Input Cost / Raw Material Risk",
+                  "points": [
+                    "Anticipated increase in raw material and logistics costs; company states this is being pre-emptively addressed by locking in prices at order receipt and passing costs into new orders."
+                  ]
+                },
+                {
+                  "label": "Defense Order Timing Risk",
+                  "points": [
+                    "Corvette and P-17 Alpha defense RFP/order timelines have been pushed out/deferred relative to earlier expectations."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [
+                {
+                  "label": "Gear Division prior suggested EBITDA range",
+                  "value": "22-24",
+                  "unit": "%",
+                  "period": "referenced prior guidance",
+                  "kind": "target"
+                },
+                {
+                  "label": "Prior Q4 FY26 revenue reduction guidance (given in December quarter call)",
+                  "value": "at least 5",
+                  "unit": "%",
+                  "period": "guided in Jan 2026 for Q4 FY26",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "FY27 Guidance Stance",
+                  "points": [
+                    "Given continued macroeconomic uncertainty and limited near-term visibility, management believes it is prudent to adopt a cautious approach and is holding guidance for FY27 at this stage, to revisit once there is greater clarity and stability in the operating environment.",
+                    "Management explicitly stated they will not be providing forward-looking guidance for FY27, as previously communicated.",
+                    "Despite lack of specific guidance, management does not expect degrowth compared to FY26 — they expect growth, though the magnitude is currently uncertain and will be influenced by the geopolitical situation.",
+                    "Management expects to at least maintain or grow margins from FY26 levels; anticipated raw material/logistics cost increases are already being factored into new orders so should not adversely affect margins.",
+                    "If domestic orders proceed smoothly and expected demand materializes, EBITDA could return to previously suggested levels of 22%-24% for the Gear Division, though this is not being given as firm guidance due to geopolitical uncertainty.",
+                    "MHE Division growth expected to continue at the same pace/percentage as shown in the last two-three years, supported by strong inquiry flow, particularly from the power sector.",
+                    "Strategic priorities remain unchanged: disciplined execution, operational efficiency, prudent capital allocation, and strengthening presence in high-growth markets.",
+                    "MHE division delivered revenues ahead of the guidance set for the year in FY26."
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "FY27 guidance",
+              "horizon": "FY27",
+              "statement": "Given the continued macroeconomic uncertainty and limited near-term visibility, we believe it is prudent to adopt a cautious approach. Accordingly, we are holding our guidance for FY27 at this stage and will revisit our outlook once there is greater clarity and stability in the operating environment.",
+              "specificity": "refused",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Revenue growth vs FY26",
+              "horizon": "FY27",
+              "statement": "We are not expecting any degrowth to happen compared to FY26. We are expecting growth. The amount of growth is currently what is under question.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Margins vs FY26",
+              "horizon": "FY27",
+              "statement": "From FY26 we will be able to definitely maintain or grow it. We are expecting growth, but the geopolitical situation will control it a little bit.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Gear Division EBITDA margin",
+              "horizon": "unspecified (when domestic orders normalize)",
+              "statement": "If all the domestic orders go smoothly and what demand we are expecting comes in, we will be able to go back to the EBITDA levels that we had suggested even earlier, which is close to 22% to 24%.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "MHE Division growth pace",
+              "horizon": "next 2-3 years",
+              "statement": "Whatever growth trajectory we have shown in the last two, three years, we can definitely continue with the same pace and growth percentage.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "MHE sustainable margin",
+              "horizon": "going forward",
+              "statement": "Considering the revenue mix, the sustainable margin is around 20% to 22% in between.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Consolidated EBITDA margin impact from Gear-MHE mix shift",
+              "horizon": "long-term",
+              "statement": "The mix might change further, but we do not expect the long-term margin to vary.",
+              "specificity": "vague",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Q4 FY26 revenue",
+              "horizon": "Q4 FY26",
+              "statement": "We had lowered our guidance and communicated that we are reducing the revenue in the quarter ending March by at least 5%, released in the month of January.",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "Navy Corvette order",
+              "horizon": "FY27",
+              "statement": "Anytime in Q1, they are going to release the RFP. And then we are expecting orders to come by Q4 of the financial year.",
+              "specificity": "specific",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "P-17 Alpha defense order",
+              "horizon": "FY28",
+              "statement": "P-17 Alpha also they have deferred, but it may come in the financial year of '28, around Q3.",
+              "specificity": "specific",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Export revenue mix",
+              "horizon": "3-4 years (prior plan)",
+              "statement": "As we had planned, we would be ramping our exports up to 50% in the next 3 to 4 years... going forward we expect it will still improve.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Capex program",
+              "horizon": "FY26-FY28",
+              "statement": "We have a capex plan of INR400 crores between FY26 to FY28; roughly INR95 crores spent so far.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "Geopolitical and macroeconomic uncertainty causing delayed order inflows and dispatch deferment",
+              "status": "escalated",
+              "note": "Event intensified late Feb/early March 2026, causing ~INR77 crores of order/dispatch impact in March; customers recalibrated capex schedules; conflicting news continues as of call date."
+            },
+            {
+              "risk": "Middle East regional conflict impacting exports/order booking",
+              "status": "escalated",
+              "note": "Middle East has suffered significantly in order booking; UAE overseas entity exposed to risk including potential Strait of Hormuz closure impact."
+            },
+            {
+              "risk": "Unfavourable product mix (catalogue vs engineered) impacting margins",
+              "status": "stable",
+              "note": "Engineered orders on hand could not be invoiced this year due to customer deferment, keeping margin embedded in unbilled inventory rather than reflected in P&L."
+            },
+            {
+              "risk": "Raw material and logistics cost inflation",
+              "status": "easing",
+              "note": "Company has pre-emptively locked in raw material prices at order receipt and is passing cost increases into new orders, mitigating margin risk."
+            },
+            {
+              "risk": "US tariffs on exports (Section 232)",
+              "status": "stable",
+              "note": "50% tariff currently applies on exports from India to US subsidiaries/customers; Mexico subsidiary established to serve Latin America where this tariff does not apply."
+            },
+            {
+              "risk": "Defense order timeline delays (Navy Corvette, P-17 Alpha)",
+              "status": "escalated",
+              "note": "Corvette RFP and orders pushed out to Q1/Q4 FY27; P-17 Alpha deferred to Q3 FY28 as shipyard has not yet received RFQ."
+            },
+            {
+              "risk": "Sugar industry ethanol demand excess capacity concern raised by peers",
+              "status": "new",
+              "note": "Analyst flagged industry commentary of excess ethanol capacity built in India; management's demand expectation is based on anticipated gas/petroleum supply constraints from war situation, not confirmed."
+            }
+          ],
+          "themes": [
+            {
+              "label": "Geopolitical/Macro deferment impact",
+              "direction": "negative",
+              "note": "Delayed order inflows, extended dispatch timelines and customer-led deferment of delivery amid macro/geopolitical uncertainty impacted Q4 Gear Division revenue and margins.",
+              "section_ref": "RISK"
+            },
+            {
+              "label": "MHE growth momentum",
+              "direction": "positive",
+              "note": "MHE Division posted 37% YoY revenue growth in Q4, driven by sustained demand across power, cement, mining and ports, and delivered revenue ahead of full-year guidance.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Order book visibility",
+              "direction": "positive",
+              "note": "Total open order book grew to INR1,292 crores as of March 31, 2026 versus INR948 crores a year earlier, providing visibility for coming quarters.",
+              "section_ref": "ORD"
+            },
+            {
+              "label": "Product mix (engineered vs catalogue)",
+              "direction": "mixed",
+              "note": "Engineered product share rose YoY (40%→45%) but margins didn't improve as engineered orders on hand could not be invoiced this year; engineered products carry better margins than catalogue.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "FY27 guidance withheld",
+              "direction": "neutral",
+              "note": "Management is holding FY27 guidance given macro/geopolitical uncertainty, to be revisited once there is greater clarity.",
+              "section_ref": "GUID"
+            },
+            {
+              "label": "International/export expansion",
+              "direction": "mixed",
+              "note": "New Mexico step-down subsidiary established to serve Latin America amid 50% US tariff under Section 232, while Middle East export orders have suffered significantly.",
+              "section_ref": "GEO"
+            },
+            {
+              "label": "Defense order pipeline delays",
+              "direction": "negative",
+              "note": "Corvette and P-17 Alpha RFP/order timelines pushed out relative to earlier expectations, though a large Navy order is expected in the near term.",
+              "section_ref": "MKT"
+            }
+          ],
+          "key_takeaways": [
+            "The Gear Division, which accounted for approximately 63% of consolidated revenue in Q4, reported revenue of INR472 crores, reflecting a decline of 21% year-on-year, primarily due to delayed order inflows, extended dispatch timelines and customer-led deferment of delivery amid ongoing macroeconomic and geopolitical uncertainties.",
+            "The MHE Division, which contributed approximately 37% of the consolidated revenue in Q4, continued its strong growth trajectory, posting a 37% year-on-year increase in revenue during the quarter.",
+            "Despite the challenging environment, we delivered moderate consolidated revenue growth of 6% in FY26.",
+            "Consolidated EBITDA for the quarter stood at INR158 crores, with a margin of 21.2%; Net profit for the quarter came in at INR108 crores, translating into a PAT margin of 14.5%, excluding the one-time impairment of goodwill of INR102 crores.",
+            "For the full year FY26, adjusted consolidated revenue stood at INR2,341 crores compared to INR2,227 crores in FY25; Adjusted EBITDA for FY26 stood at INR498 crores, with margins of 21.3%.",
+            "As part of our strategy to expand into international markets, we are pleased to announce the recent establishment of a step-down subsidiary in Mexico, further strengthening our presence in the Latin American region.",
+            "Given the continued macroeconomic uncertainty and limited near-term visibility, we believe it is prudent to adopt a cautious approach. Accordingly, we are holding our guidance for FY '27 at this stage and will revisit our outlook once there is greater clarity and stability in the operating environment.",
+            "On the balance sheet front, we continue to maintain a strong financial position, with a net cash balance of approximately INR700 crores; The Board has recommended a final dividend of INR1.50 per equity share."
+          ],
+          "pressing_questions": [
+            "Do we expect the Gear-to-MHE ratio of 63:37 (vs historical 75:25) to continue going forward and what effect on EBITDA margin?",
+            "What issues is MHE facing since order inflow for the quarter was a 10-quarter low?",
+            "Capex program of INR400 crores — how much was spent in FY26 and what is the split between Gear and MHE? Also, ROCE has fallen from 29% in FY24 to 20.4% in FY26 — when can it bounce back to 25% by FY28?",
+            "On defense side, Navy order impacted margins — will future RFPs (Corvette by Q3 FY27, IAC in Q1 FY27) lead to winning at least one or two Navy orders by FY27, and are we qualified for upcoming Navy orders?",
+            "What is current capacity utilization in Q4, and how would you rank end markets (power, steel, cement, mining, defense, sugar, plastic and rubber) by pricing power?",
+            "Within domestic gears, where exactly are we seeing delays in dispatches where customers are not ready to take delivery — is it specific to a large order or broad-based?",
+            "On Mexico: do we still attract 50% tariff, and what capex is planned for Mexico?",
+            "Given visibility improving in domestic steel/power markets, why is there no real guidance on growth or margins for FY27?",
+            "Given the March goodwill note 8B, can you explain the goodwill write-off comment and whether any tax benefit was received?",
+            "Could the geopolitical risk starting only on the night of 27th-28th February make such a large one-month difference in revenue?",
+            "Receivables increased from INR610 crores to INR720 crores — what is the reason?",
+            "What is the current update on the aircraft carrier defense order expected by FY27, and on the P-17 Alpha order?",
+            "What is the sustainable margin for MHE going forward given the changing revenue mix (equipment vs. spare parts)?"
+          ]
+        }
+      ]
     }
   }
 }
