@@ -105,10 +105,17 @@ export function metricKey(label) {
   s = s.replace(/\bfor the (quarter|year|period|half)\b/g, " ");
   return s.replace(/[^a-z0-9%&]+/g, " ").replace(/\s+/g, " ").trim();
 }
+/** How many concalls the dashboard SHOWS: the latest and the one before it.
+ *  Deliberately smaller than what we STORE (analyze-company.mjs MAX_QUARTERS):
+ *  older quarters we already paid for are kept on disk, they just don't crowd
+ *  the comparison. Change this one number to change every view — tear sheet,
+ *  PDF and Excel all read it. */
+export const DISPLAY_QUARTERS = 2;
+
 /** Pivot one section's key figures across up to `maxCols` most-recent quarters.
  *  Quarters arrive newest-first; columns come back oldest→newest so the latest
  *  sits on the right. Metrics are lined up by canonical key (see metricKey). */
-export function quarterMatrix(quarters, sectionId, maxCols = 4) {
+export function quarterMatrix(quarters, sectionId, maxCols = DISPLAY_QUARTERS) {
   const qs = (quarters || []).filter(Boolean).slice(0, maxCols).reverse(); // oldest → newest
   const cols = qs.map((q) => ({ date: q.concall_date || null, label: shortConcall(q.concall_date) }));
   const order = [];

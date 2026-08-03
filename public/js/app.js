@@ -27,7 +27,7 @@ import {
 } from "./ui.js";
 import * as Sectors from "./sectors.js";
 import { initProgress, registerJob } from "./progress.js";
-import { exportReportPdf, buildReportModel, fileName, quarterMatrix, explainerSubsections, normPeriod } from "./report.js";
+import { exportReportPdf, buildReportModel, fileName, quarterMatrix, explainerSubsections, normPeriod, DISPLAY_QUARTERS } from "./report.js";
 import { exportTearSheetXlsx } from "./export-xlsx.js";
 
 /* ============================================================================
@@ -115,7 +115,7 @@ const state = {
   feedShown: 5, // visible feed rows (grows +5 via "show more")
   feedQuery: "", // feed table search filter
   pendingAnalyze: null,
-  sheetMode: "single", // tear-sheet key figures: "single" (latest) | "multi" (last 4 concalls)
+  sheetMode: "single", // tear-sheet key figures: "single" (latest) | "multi" (see DISPLAY_QUARTERS)
 };
 
 // CDN capability flags (graceful degradation if a script was blocked).
@@ -1359,7 +1359,7 @@ function sectionsHtml(sections, sourceUrl, comp, mode = "single") {
     nQ > 1
       ? `<div class="ts-modes" role="tablist" aria-label="Key figures range">
           <button class="ts-mode ${mode !== "multi" ? "on" : ""}" data-mode="single" role="tab" aria-selected="${mode !== "multi"}">This concall</button>
-          <button class="ts-mode ${mode === "multi" ? "on" : ""}" data-mode="multi" role="tab" aria-selected="${mode === "multi"}">Last ${Math.min(4, nQ)} concalls</button>
+          <button class="ts-mode ${mode === "multi" ? "on" : ""}" data-mode="multi" role="tab" aria-selected="${mode === "multi"}">Last ${Math.min(DISPLAY_QUARTERS, nQ)} concalls</button>
         </div>`
       : "";
   const head = `<div class="band-title band-title-row"><span class="bt-label"><i data-lucide="layout-grid" class="i16"></i> The 11-Section Tear Sheet</span>${toggle}</div>`;
