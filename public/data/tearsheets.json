@@ -59781,6 +59781,2118 @@
           ]
         }
       ]
+    },
+    "FIVESTAR": {
+      "company": "Five-Star Business Finance Ltd",
+      "ticker": "FIVESTAR",
+      "industry": "Non Banking Financial Company (NBFC)",
+      "country": "India",
+      "checked_at": "2026-08-03T12:27:06.707Z",
+      "quarters": [
+        {
+          "company": "Five-Star Business Finance Ltd",
+          "ticker": "FIVESTAR",
+          "industry": "Non Banking Financial Company (NBFC)",
+          "country": "India",
+          "concall_date": "2026-07-31",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=c5d4e073-3d10-488a-b973-89b3422e009d.pdf",
+          "model": "anthropic.claude-sonnet-5",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-03T12:26:23.658Z",
+          "summary": "Five-Star delivered its best-ever quarterly disbursements (INR1,496 crores, +23% QoQ, +16% YoY) and 4% sequential AUM growth to INR13,722 crores, with management confident of comfortably achieving full-year AUM growth guidance of ~20%, credit cost guidance of 1.7-1.9% (trending to lower end), GNPA falling to sub-3%, and disbursement run-rate of INR6,500-6,800 crores for FY27. Collections and asset quality continued to improve sequentially despite the seasonally soft quarter, opex/cost-to-asset is expected to stay elevated this year (5.75-6%) before operating leverage kicks in from FY28, and management reiterated plans to enter a new product (beyond housing) in the next 3-6 months.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "Disbursements",
+                  "value": "1,496",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Disbursement growth QoQ",
+                  "value": "23",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Disbursement growth YoY",
+                  "value": "16",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "AUM",
+                  "value": "13,722",
+                  "unit": "INR crores",
+                  "period": "as of Jun 30, 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "AUM growth QoQ",
+                  "value": "4",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Unique customer collection efficiency",
+                  "value": "97.9",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Unique customer collection efficiency (prior quarter)",
+                  "value": "98.1",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "X-bucket collections",
+                  "value": "99.2",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "X-bucket collections (prior quarter)",
+                  "value": "99.3",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Current book",
+                  "value": "83.30",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Current book (prior quarter)",
+                  "value": "82.69",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "30-plus book",
+                  "value": "12.38",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "30-plus book (prior quarter)",
+                  "value": "12.69",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Slippages",
+                  "value": "0.70",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Credit cost",
+                  "value": "1.85",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Credit cost (prior quarter)",
+                  "value": "1.88",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "All-inclusive cost of borrowing",
+                  "value": "8.33",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost of funds on book",
+                  "value": "8.80",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost of funds on book (prior quarter)",
+                  "value": "8.95",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Active loan customers",
+                  "value": "500,000",
+                  "unit": "customers",
+                  "period": "as of Jun 30, 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Branches added",
+                  "value": "12",
+                  "unit": "branches",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total branches",
+                  "value": "856",
+                  "unit": "branches",
+                  "period": "as of Jun 30, 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Yield decline",
+                  "value": "12",
+                  "unit": "bps",
+                  "period": "Q1 FY27 QoQ",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Average cost of funds decline",
+                  "value": "15",
+                  "unit": "bps",
+                  "period": "Q1 FY27 QoQ",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Spread change",
+                  "value": "+3",
+                  "unit": "bps",
+                  "period": "Q1 FY27 QoQ",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ROA",
+                  "value": "8.11",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ROE",
+                  "value": "14.5",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "1-plus bucket drop",
+                  "value": "60",
+                  "unit": "bps",
+                  "period": "Q1 FY27 QoQ",
+                  "kind": "reported"
+                },
+                {
+                  "label": "30-plus bucket drop",
+                  "value": "30",
+                  "unit": "bps",
+                  "period": "Q1 FY27 QoQ",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Stage 3 provision coverage",
+                  "value": ">40",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Overall AUM provision coverage",
+                  "value": "~1.8",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT",
+                  "value": "271",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net worth",
+                  "value": "7,653",
+                  "unit": "INR crores",
+                  "period": "as of Jun 30, 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Recovery from write-off and NPA settlements",
+                  "value": "35",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Recovery from write-off and NPA settlements (prior quarter)",
+                  "value": "26-27",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Write-offs",
+                  "value": "60",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Recovery on write-offs",
+                  "value": "7-8",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost to asset (current)",
+                  "value": "6",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Overlap with microfinance customers (trend)",
+                  "value": "20-21% to 16-17%",
+                  "unit": "%",
+                  "period": "trailing quarters",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ROA (converted to total assets)",
+                  "value": "7-7.25",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Repayment rate",
+                  "value": "~30",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Amount raised last quarter",
+                  "value": "~1,000",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Amount raised this quarter",
+                  "value": "450",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Liquidity on balance sheet",
+                  "value": "1,850",
+                  "unit": "INR crores",
+                  "period": "as of Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "June monthly disbursement",
+                  "value": "670",
+                  "unit": "INR crores",
+                  "period": "June 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT added to net worth annually",
+                  "value": "1,100-1,200",
+                  "unit": "INR crores",
+                  "period": "annual",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total employees",
+                  "value": "15,000",
+                  "unit": "employees",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "October 2024 lending yield reduction",
+                  "value": "200",
+                  "unit": "bps",
+                  "period": "October 2024",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Prior borrowing cost before reduction",
+                  "value": "11%+",
+                  "unit": "%",
+                  "period": "prior to October 2024",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Borrowing cost after decline",
+                  "value": "9%+",
+                  "unit": "%",
+                  "period": "around October 2024",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ROA on AUM basis",
+                  "value": "8-8.5",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Growth & Collections",
+                  "points": [
+                    "Quarter panned out in line with expectations, vindicating actions taken to overcome challenges faced.",
+                    "Historical best disbursement quarter driven by strong traction; at this pace of quarterly growth, full-year growth guidance should be achieved comfortably.",
+                    "Collections remained robust despite being the seasonally soft quarter.",
+                    "Current book and 30-plus book both improved sequentially, supported by strong collections.",
+                    "Slippages remained flat sequentially; credit cost dropped despite seasonally soft quarter."
+                  ]
+                },
+                {
+                  "label": "Cost of Funds & Spreads",
+                  "points": [
+                    "All-inclusive borrowing cost remained favorable despite not-so-favourable liquidity conditions, helping cost of funds on book decline QoQ.",
+                    "Spreads remained intact despite yield drop stemming from October 2024 rate cut, showing franchise strength with external stakeholders.",
+                    "Yield decline of 12 bps was more than compensated by 15 bps drop in average cost of funds, resulting in 3 bps higher spread QoQ.",
+                    "NIM continues to be flat.",
+                    "Spread should largely remain flat to current levels for the next few quarters, assuming no policy actions (Chandrasekhar Sridhar Q&A)."
+                  ]
+                },
+                {
+                  "label": "Opex / Cost-to-Asset",
+                  "points": [
+                    "Given competitive intensity, company had to be more competitive on employee compensation; not guiding for strong operating leverage this year.",
+                    "Whatever operating leverage arises will likely be absorbed by increased expenses; opex will largely stay flat vs last year.",
+                    "From next year (FY28) onwards, operating leverage should start kicking in; cost-to-asset expected to settle at 5.25-5.5% in steady state vs current ~6%.",
+                    "Employee cost increase is due to realigning/revising salaries and better incentives at branch level (branch managers, supervisors), not ESOPs.",
+                    "Overhead cost increase is primarily driven by personnel expenses, not branch expansion, since branch additions this year will follow normal run-rate of 50-60 branches.",
+                    "Y-o-Y expense growth expected at 20-21%, largely in line with Q1 trend; increments and appraisals already built into Q1."
+                  ]
+                },
+                {
+                  "label": "Yields",
+                  "points": [
+                    "Large part of asset yield repricing at lower rate is largely over; incremental yield contraction limited going forward.",
+                    "Q1 average yield less than 22.5%; new loans onboarded at close to 22.5% average (range 21.5%-23%); expect further ~10-15 bps contraction over next couple of quarters, settling around 22.25%, mainly due to NPA interest reversals rather than fresh repricing.",
+                    "October 2024 200 bps yield reduction was not regulator-driven; it reflected passing back the benefit of borrowing cost falling from 11%+ to 9%+ to customers.",
+                    "Going forward, lending rates will get adjusted in line with borrowing cost trends (both up and down)."
+                  ]
+                },
+                {
+                  "label": "Provisioning & Write-offs",
+                  "points": [
+                    "Credit cost shown at gross level; recoveries on write-off loans are not netted off against credit cost but shown as other income in top line — divergent from some market practices.",
+                    "Company does not resort to ARC sale.",
+                    "Write-offs are technical (for tax benefit and appropriate GNPA positioning); no concerns on recoverability, and recoveries on write-offs continue to be realized.",
+                    "Company will endeavor to maintain overall ECL coverage of 1.75-1.8% on the book, via a mix of Stage 1/2 coverage build-up or Stage 3 coverage depending on portfolio mix."
+                  ]
+                },
+                {
+                  "label": "Repayment Rate Dynamics",
+                  "points": [
+                    "Repayment rates rose due to stronger collections (collection efficiency improving from ~96-97% levels).",
+                    "Policy change: best customers (zero DPD elsewhere) no longer required to fully prepay existing loan before sanction of fresh loan; will instead get a top-up — reduces customer migration to other NBFCs and should help repayment rate normalize to ~27-28% versus current ~30%.",
+                    "Behavioural loan tenor expected around 4-4.5 years.",
+                    "Vintage on book (share of 3-5 year loans) rising as loans season; this is distinct from disbursement tenure — nearly 85-90% of loans are disbursed for 7-year tenure; growing disbursement momentum increases share of less-than-1-year book."
+                  ]
+                },
+                {
+                  "label": "Leverage & Debt",
+                  "points": [
+                    "Absolute debt declined from March levels as company was choosy on borrowing given cost-of-funds focus; adequate lines available to lever up as needed.",
+                    "Company still holds sizable liquidity (INR1,850 crores) on balance sheet; Q1 tends to be muted for additional borrowing as banks wait for results before setting limits.",
+                    "Incremental cost of funds guided at 8.5% (not 8.3%) to account for intent to lever up balance sheet, including a pending ADB ECB tranche with hedging cost impact.",
+                    "Debt-to-equity of 2x will take medium term — likely another 6-8 quarters — given growth trajectory in current and new products and annual net worth accretion of ~INR1,100-1,200 crores PAT.",
+                    "Leverage will get a kicker even from current product growth, and further boosted with new product additions; endeavor is to maximize shareholder ROE via appropriate capital use."
+                  ]
+                },
+                {
+                  "label": "ROE/ROA Framework",
+                  "points": [
+                    "Current ROA ~8-8.5% (AUM basis) translates to ~7-7.25% on total assets basis; as leverage increases, ROA compression is expected.",
+                    "Past guidance was steady-state ROA of ~6-6.5%; at ~3x leverage, ROE could be in 18-20% range — this remains the endeavor."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ORD",
+              "title": "Order Book & Demand",
+              "key_figures": [
+                {
+                  "label": "New customer additions (approx range mentioned)",
+                  "value": "4,000-6,500",
+                  "unit": "customers",
+                  "period": "recent quarters",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Average ticket size on incremental disbursements",
+                  "value": "4.5-5",
+                  "unit": "INR lakh",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Demand Drivers",
+                  "points": [
+                    "No dearth of demand in this segment — demand was always there; challenges over last 3-4 quarters led to conscious slowdown in approval rates/disbursements to prioritize asset quality first.",
+                    "Split of business and collections verticals significantly increased productivity — previously same person managed both business and collections, and stressed accounts negatively impacted disbursement capacity; now dedicated collections team frees business team to focus purely on incremental logins/business.",
+                    "Strong traction seen in logins and in sanctions converting into MODs, which will convert into disbursements.",
+                    "Assuming same Q1 disbursement run-rate (~INR1,500 crores) for next 3 quarters plus 10% uplift, projects ~INR6,500-6,800 crores full-year disbursements, comfortably enabling 20% growth guidance.",
+                    "June monthly disbursement of INR670 crores reflects typical third-month-of-quarter seasonality; company working to minimize inter-month seasonality within quarters; INR600-670 crores expected as new normal monthly run-rate for rest of year."
+                  ]
+                },
+                {
+                  "label": "Ticket Size / Customer Mix Strategy",
+                  "points": [
+                    "Ticket size increase reflects a combination of inflation and conscious strategic movement to a higher mix.",
+                    "Target mix: 25% around INR3 lakh ticket size, 50% around INR5 lakh, 25% around INR10 lakh — steps taken are getting reflected in portfolio mix.",
+                    "Company is not vacating the sub-INR3-lakh/microloan space that other players have exited in the last 12 months — instead becoming stronger in the same space it has operated in for 24 years; only the internal mix is shifting.",
+                    "Guided mix from last July call: <INR3 lakh ~25%, INR3-5 lakh ~50%, >INR5 lakh ~25% — trend as of June confirms this mix is playing out as planned.",
+                    "Focus on adding the 'right' customers (good NACH behavior, repayment, flow characteristics) rather than simply smaller-ticket customers."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [
+                {
+                  "label": "Rollback rate in 31-60 and 1-30 day buckets",
+                  "value": "4-5",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Rollback rate in 61-90 day bucket",
+                  "value": "2-3",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Ticket size mix - less than INR3 lakh",
+                  "value": "25",
+                  "unit": "%",
+                  "period": "target mix",
+                  "kind": "target"
+                },
+                {
+                  "label": "Ticket size mix - INR3 lakh to INR5 lakh",
+                  "value": "50",
+                  "unit": "%",
+                  "period": "target mix",
+                  "kind": "target"
+                },
+                {
+                  "label": "Ticket size mix - above INR5 lakh",
+                  "value": "25",
+                  "unit": "%",
+                  "period": "target mix",
+                  "kind": "target"
+                },
+                {
+                  "label": "New normal monthly disbursement range for rest of year",
+                  "value": "600-650-670",
+                  "unit": "INR crores",
+                  "period": "FY27 (rest of year)",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Competitive Landscape",
+                  "points": [
+                    "A few other competitors entering the space has required the company to be more competitive on employee compensation."
+                  ]
+                },
+                {
+                  "label": "Asset Quality Stress / Overleverage Monitoring",
+                  "points": [
+                    "Management sees comfortable collections trends going forward, with collections trending up for the last 7-8 months, indicating intact customer cash flows.",
+                    "Two watch-items flagged: energy cost increases (which may go up further) and liquidity/regulatory rate decisions.",
+                    "Rollback stabilization: journey is more about stabilization (holding customers in the same bucket via unique customer collection efficiency) than high rollback, since customers generally cannot pay multiple installments in a month to roll back.",
+                    "Customer scrub: underwriting cannot fully control future overleveraging, but company has taken measures over last 12 months to withstand any future overleverage crisis; leverage ex-gold loans has trended lower via write-offs and stricter lender guardrails, while gold loans as a category continue to rise.",
+                    "Gold loan/microfinance small-ticket borrowing is sometimes used by customers to temporarily bridge cash flow dips and repay secured lenders — a seasonal/behavioral phenomenon seen across quarters, not unique to current period.",
+                    "In the last 6 months, gold loan growth has moderated due to gold price corrections (versus faster growth from rising prices before that), reducing the extent to which rising gold loan values could be masking underlying customer stress.",
+                    "Microfinance overlap proportion has trended down from ~20-21% to ~16-17% due to stricter guardrails implemented by microfinance companies.",
+                    "Underlying customer cash flows have remained largely flat rather than showing major improvement, but are viewed as adequate to service secured lenders; behavior (not cash flow) was the primary driver of past stress, linked to write-offs by unsecured lenders."
+                  ]
+                },
+                {
+                  "label": "Steady-State Portfolio Framework",
+                  "points": [
+                    "Thumb rule for steady state: Stage 1 ~90-91% (current ~87-88%, 1-30 bucket ~3-4%), Stage 2 ~6-7% (31-60 and 61-90 buckets ~3-3.5% each), Stage 3 (NPA) at sub-3%, guided around 2.5% — considered the sustainable business model for short-to-medium term."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [
+                {
+                  "label": "Debt-to-equity timeline expectation (not before)",
+                  "value": "8",
+                  "unit": "quarters",
+                  "period": "medium term",
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Product Diversification",
+                  "points": [
+                    "Management reiterated intent to diversify into 2-3 products; one new product expected to be launched in the next 3-6 months.",
+                    "Learning from the recent crisis: being in a single product is risky during stress periods even though depth exists for growth in that single product; Board has emphasized multiproduct strategy.",
+                    "At the appropriate time, management will explain the specific new product and its rationale to investors.",
+                    "New product under discussion is distinct from the housing product already launched two quarters ago; housing product was deprioritized while focus remained on getting Micro LAP back to pre-crisis disbursement levels.",
+                    "Once Micro LAP is fully back on track, focus will shift to scaling the already-launched housing product for similar customer profile, in addition to exploring the new (third) product.",
+                    "At the point of new product launch, AUM growth guidance would be incremental/additive to the current Micro LAP guidance, not a replacement of it."
+                  ]
+                },
+                {
+                  "label": "Organizational Structure",
+                  "points": [
+                    "Chairman Lakshmipathy operates on the operational front as MD, supported by JMD/CFO Srikanth, with operational heads/chiefs across all departments — investor presentation includes details of ~20-21 management team members.",
+                    "Business and collections verticals have been segregated, but business team retains responsibility for collecting on current accounts for a certain vintage — arrears management alone has moved to the dedicated collections team.",
+                    "No cultural shift or incentive structure changes for the business team; incentives remain tied to both collection percentage on current accounts and growth targets.",
+                    "Management emphasized Five-Star is not dependent on a few individuals but on its 15,000 employees — 'individuals may come and go, but the institution will go on forever.'",
+                    "Attrition trends are currently flat; too early to assess impact of compensation realignment, with clearer trends expected in 2-3 quarters."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Flagged Headwinds",
+                  "points": [
+                    "Energy cost increases, which have gone up and may rise further, flagged as a factor to monitor for customer cash flows.",
+                    "Regulatory/liquidity environment: uncertainty on regulator's stance on price hikes flagged as a factor to monitor.",
+                    "Repo rate risk: if there are repo rate increases, this would negatively impact cost of borrowings; current guidance of 10-15 bps further cost-of-borrowing decline assumes no repo rate hikes.",
+                    "Customer overleverage risk: company cannot control customer-level leverage buildup even with strong underwriting, dependent on lender discipline/guardrails across the industry.",
+                    "Portfolio in the 61-90 day bucket still carries slippage risk, cautioning against assuming too much write-off benefit this year.",
+                    "Rating upgrade (carried from prior quarter context) remains contingent on sustained improvement in collections/asset quality trends."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [
+                {
+                  "label": "Credit cost guidance",
+                  "value": "1.7-1.9",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Steady-state cost-to-asset target",
+                  "value": "5.25-5.5",
+                  "unit": "%",
+                  "period": "FY28 onwards",
+                  "kind": "target"
+                },
+                {
+                  "label": "Current-year cost-to-asset",
+                  "value": "5.75-6",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Yield settling level",
+                  "value": "~22.25",
+                  "unit": "%",
+                  "period": "next couple of quarters",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Incremental cost of borrowing guidance",
+                  "value": "8.5",
+                  "unit": "%",
+                  "period": "going forward",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Further cost of borrowing decline expected",
+                  "value": "10-15",
+                  "unit": "bps",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "GNPA target",
+                  "value": "sub-3",
+                  "unit": "%",
+                  "period": "steady state",
+                  "kind": "target"
+                },
+                {
+                  "label": "Full-year write-off guidance",
+                  "value": "225-250",
+                  "unit": "INR crores",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Quarterly write-off run-rate guidance",
+                  "value": "55-60",
+                  "unit": "INR crores",
+                  "period": "per quarter FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "ECL coverage guidance",
+                  "value": "1.75-1.8",
+                  "unit": "%",
+                  "period": "ongoing",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Expense growth guidance",
+                  "value": "20-21",
+                  "unit": "% YoY",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Loan growth guidance",
+                  "value": "20",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Disbursement projection",
+                  "value": "6,500-6,800",
+                  "unit": "INR crores",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Credit cost steady-state (FY28 onwards)",
+                  "value": "1.6-1.7",
+                  "unit": "%",
+                  "period": "FY28 onwards",
+                  "kind": "target"
+                },
+                {
+                  "label": "Debt-to-equity of 2x timeline",
+                  "value": "6-8",
+                  "unit": "quarters",
+                  "period": "medium term",
+                  "kind": "target"
+                },
+                {
+                  "label": "Steady-state ROA target",
+                  "value": "6-6.5",
+                  "unit": "%",
+                  "period": "steady state",
+                  "kind": "target"
+                },
+                {
+                  "label": "ROE at 3x leverage target",
+                  "value": "18-20",
+                  "unit": "%",
+                  "period": "steady state",
+                  "kind": "target"
+                },
+                {
+                  "label": "Branch additions guidance",
+                  "value": "50-60",
+                  "unit": "branches",
+                  "period": "FY27",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Overall Confidence",
+                  "points": [
+                    "Management extremely confident of achieving all guidances comfortably in the quarters to come.",
+                    "Full year growth guidance should be achieved very comfortably given current quarterly growth pace.",
+                    "Coming quarters (September, December, March) expected to show slippages, credit cost and NPLs all trending down, with credit cost trend likely closer to 1.7% (lower end of guided range) rather than higher end.",
+                    "New product AUM growth, if launched, would add to (not replace) current guidance."
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "AUM/Loan growth",
+              "horizon": "FY27",
+              "statement": "The 20% loan growth guidance stays",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Credit cost",
+              "horizon": "FY27",
+              "statement": "Guidance for credit cost for this financial year is somewhere between 1.7% to 1.9%, but trend is lower than the higher side, likely trending towards 1.7%",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Credit cost (steady-state)",
+              "horizon": "FY28 onwards",
+              "statement": "From FY28 onwards, credit cost won't be at 1.7-1.9% levels; even the highest range will be around 1.6% to 1.7%",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "lowered"
+            },
+            {
+              "metric": "GNPA",
+              "horizon": "coming quarters",
+              "statement": "Gross NPAs guided to fall to sub-3%; steady state NPA guided around 2.5%",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "Current book",
+              "horizon": "FY27 (by year-end)",
+              "statement": "Expect current book to be about 85% by the end of this year, currently at about 83.3%",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "30-plus book",
+              "horizon": "coming quarters",
+              "statement": "Will start seeing the 30-plus come down to less than 12%",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "Cost to asset / Opex",
+              "horizon": "FY27",
+              "statement": "Cost to asset will stay at around 5.75% to 6% for this year; opex will largely stay flat versus last year",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Cost to asset (steady-state)",
+              "horizon": "FY28 onwards",
+              "statement": "In steady state, cost-to-asset should drop to somewhere close to about 5.25% to 5.5%, from FY28 onwards",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "Yield",
+              "horizon": "next couple of quarters",
+              "statement": "Yield contraction of another 10-15 basis points expected, settling somewhere around 22.25% levels",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "lowered"
+            },
+            {
+              "metric": "Cost of borrowing",
+              "horizon": "FY27",
+              "statement": "Incremental cost of borrowing should be somewhere around 8.5% level; cost of borrowing should trend down by another 10-15 basis points for the year, assuming no repo rate increases",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "Spread",
+              "horizon": "next few quarters",
+              "statement": "Spread should largely remain flat to current levels for the next few quarters, assuming no policy actions",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Write-offs",
+              "horizon": "FY27",
+              "statement": "Full year write-offs guided at somewhere around INR225 crores to INR250 crores, largely the Q1 run rate continuing; write-offs to remain stable at around INR55-60 crores every quarter",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "ECL coverage",
+              "horizon": "ongoing",
+              "statement": "Overall coverage on the book to be maintained at around 1.75% to 1.8%",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Expense growth",
+              "horizon": "FY27",
+              "statement": "Expecting somewhere around 20% to 21% expense growth compared to last year's numbers, largely tracking Q1 Y-o-Y trend",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Disbursements",
+              "horizon": "FY27",
+              "statement": "Assuming Q1 run-rate continuing plus 10% uplift for remaining quarters, will be somewhere around INR6,500 crores to INR6,800 crores, enabling 20% growth guidance comfortably",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "raised"
+            },
+            {
+              "metric": "Monthly disbursement run-rate",
+              "horizon": "rest of FY27",
+              "statement": "Anywhere between INR600 crores to INR650-670 crores should be a new normal monthly disbursement number for rest of the year",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Debt-to-equity",
+              "horizon": "medium term (6-8 quarters)",
+              "statement": "Debt to equity of 2 will take a little bit of time, probably another 6 to 8 quarters from here",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "ROA (steady-state)",
+              "horizon": "steady-state",
+              "statement": "Steady-state ROA guidance of somewhere around 6% to 6.5%",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "lowered"
+            },
+            {
+              "metric": "ROE (at 3x leverage)",
+              "horizon": "steady-state",
+              "statement": "If able to get to 3x leverage, ROE talked about somewhere between 18% to 20%",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "New product launch",
+              "horizon": "next 3-6 months",
+              "statement": "One of the 2-3 products under consideration will definitely be launched, maybe in next 3 months or 6 months",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "AUM growth (with new product)",
+              "horizon": "medium term",
+              "statement": "Guidance at the point of new product launch will be much higher than current Micro LAP guidance — an addition to the guidance already given",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Branch additions",
+              "horizon": "FY27",
+              "statement": "Continue normal run rate of about 50-60 branches this year",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "lowered"
+            },
+            {
+              "metric": "AUM/disbursement per employee",
+              "horizon": "coming quarters",
+              "statement": "With existing product itself, disbursement per employee and AUM per employee will trend up in quarters to come",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Slippages/credit cost/NPLs trend",
+              "horizon": "September, December, March quarters FY27",
+              "statement": "All three numbers—slippages, credit cost and NPLs—expected to trend down in coming quarters",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "reiterated"
+            },
+            {
+              "metric": "ROA",
+              "horizon": "FY27",
+              "statement": "Should be able to operate at about 8.25% to 8.5% for this year",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Opex to average AUM",
+              "horizon": "FY27",
+              "statement": "It will largely remain around the 7% to 7.25% levels, and not show any big decline during the year despite the 20% growth",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Disbursements (alt figure)",
+              "horizon": "FY27",
+              "statement": "We don't really see a challenge getting to about INR6,200 crores to INR6,400 crores of disbursements to achieve a 20% growth",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Cost of funds",
+              "horizon": "FY27",
+              "statement": "We don't expect too much benefit to come in from the cost of funds in the next financial year... most likely we will largely be where we were in FY26",
+              "specificity": "vague",
+              "direction": "flat",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Book cost of funds convergence to borrowing rate",
+              "horizon": "next 2-3 years",
+              "statement": "If borrowing at 8.5%, naturally the book has to come to about 8.5%, but it'll probably take two to three years - another 30-40 bps of cost still to flow into book",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Pricing",
+              "horizon": "FY27",
+              "statement": "We don't really envisage at this point of time for any pricing drop to happen at least in FY27; no proposal on table to revise pricing up or down",
+              "specificity": "vague",
+              "direction": "flat",
+              "status": "no_mention"
+            },
+            {
+              "metric": "NPA trend",
+              "horizon": "coming quarters",
+              "statement": "You will see the NPA slowing down from next quarter onwards",
+              "specificity": "vague",
+              "direction": "down",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Rating upgrade",
+              "horizon": "H2 FY27",
+              "statement": "Rating upgrade, at least till the end of the year, or maybe till second half of the year, is out of question till we start showing some benefit",
+              "specificity": "vague",
+              "direction": "flat",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Dividend",
+              "horizon": "FY26",
+              "statement": "Board has declared the same dividend that we got in the last financial year",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "no_mention"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "Energy cost increases impacting customer cash flows",
+              "status": "new",
+              "note": "Energy cost has gone up and may increase further, flagged as a factor to monitor alongside collections trends."
+            },
+            {
+              "risk": "Regulatory/liquidity conditions and rate decisions",
+              "status": "new",
+              "note": "Uncertainty on regulator's stance on price hikes flagged; liquidity conditions described as not so favourable this quarter."
+            },
+            {
+              "risk": "Repo rate increase risk to cost of borrowing",
+              "status": "new",
+              "note": "If there is a repo rate increase, this will negatively impact cost of borrowings; current guidance assumes no repo hikes."
+            },
+            {
+              "risk": "Customer overleverage",
+              "status": "new",
+              "note": "Company cannot control customer-level leverage buildup, but measures taken over last 12 months to withstand next overleverage crisis; leverage (ex-gold) trending lower via write-offs and stricter lender guardrails."
+            },
+            {
+              "risk": "Microfinance/gold loan overlap masking underlying stress",
+              "status": "new",
+              "note": "Microfinance overlap proportion down from ~20-21% to ~16-17%; gold loan growth moderating in last 6 months due to price corrections, reducing masking risk."
+            },
+            {
+              "risk": "Portfolio flows in 61-90 day bucket",
+              "status": "new",
+              "note": "Good amount of portfolio remains in 61-90 day bucket, cautioning against assuming too much write-off benefit this year."
+            },
+            {
+              "risk": "Employee attrition/compensation competitiveness",
+              "status": "new",
+              "note": "Increased competition requires more competitive employee compensation; attrition trends currently flat, too early to assess impact of changes."
+            },
+            {
+              "risk": "Rating upgrade contingent on sustained trend improvement",
+              "status": "new",
+              "note": "Rating upgrade remains dependent on continued demonstration of improved collections/asset quality benefit over time."
+            },
+            {
+              "risk": "Asset quality stress from MFI overlap in small-ticket secured loans",
+              "status": "no_mention",
+              "note": "DPDs and NPA increased during FY26 due to MFI overlap; management states the worst is behind, with collection metrics improving."
+            },
+            {
+              "risk": "Geopolitical scenario (West Asia conflict) / macroeconomic uncertainty",
+              "status": "no_mention",
+              "note": "No material impact seen so far; sub-1% portfolio exposure to potentially affected segments (small eateries, NRI remittances); continues to be monitored."
+            },
+            {
+              "risk": "Sector over-leveraging in microfinance",
+              "status": "no_mention",
+              "note": "Flagged in prior quarter; addressed via organizational restructuring separating business and collection teams and slower growth in South markets during H1FY26."
+            },
+            {
+              "risk": "Senior management exit",
+              "status": "no_mention",
+              "note": "Occurred during the year but management states it had no impact on performance given team depth."
+            },
+            {
+              "risk": "Elevated personal/employee expenses",
+              "status": "no_mention",
+              "note": "Higher personal expense in Q4 due to collections vertical build-out and incentive schemes; expected to remain elevated in FY27 to retain talent amid competition."
+            },
+            {
+              "risk": "Cost of funds / borrowing cost uncertainty",
+              "status": "no_mention",
+              "note": "Geopolitical/macro challenges creating uncertainty in the borrowing/liquidity space; limited near-term benefit to cost of funds expected; rating upgrade unlikely near-term."
+            },
+            {
+              "risk": "Regulatory Stage-2 provisioning norms (RBI ECL floor)",
+              "status": "no_mention",
+              "note": "RBI prescribed minimum 5% Stage-2 floor for banks; company's coverage is lower, but management does not expect this to extend to NBFCs soon given bank ECL framework starts only April 2027."
+            }
+          ],
+          "themes": [
+            {
+              "label": "Asset quality recovery",
+              "direction": "positive",
+              "note": "Current book improved to 83.30% from 82.69%, 30-plus book fell to 12.38% from 12.69%, and slippages/credit cost trended down sequentially despite a seasonally soft quarter.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Growth re-acceleration",
+              "direction": "positive",
+              "note": "Disbursements hit a historical best of INR1,496 crores (+23% QoQ, +16% YoY) and AUM grew 4% QoQ to INR13,722 crores, putting 20% full-year growth guidance comfortably in reach.",
+              "section_ref": "ORD"
+            },
+            {
+              "label": "Credit cost normalization",
+              "direction": "positive",
+              "note": "Credit cost guided at 1.7-1.9% for FY27 trending toward the lower end, with steady-state credit cost seen falling further to 1.6-1.7% from FY28 onwards.",
+              "section_ref": "GUID"
+            },
+            {
+              "label": "Diversified/cost-effective funding",
+              "direction": "positive",
+              "note": "Cost of funds on book fell to 8.80% from 8.95% QoQ; incremental borrowing guided at 8.5% including a pending ADB ECB tranche, with debt-to-equity of 2x targeted in 6-8 quarters.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Organizational restructuring (business-collections split)",
+              "direction": "positive",
+              "note": "Segregation of business and collections verticals has driven significant productivity gains in logins and disbursements, though business team retains current-account collection responsibility.",
+              "section_ref": "STRAT"
+            },
+            {
+              "label": "Ticket size / sweet-spot strategy",
+              "direction": "neutral",
+              "note": "Company continues to shift mix toward 25% <INR3 lakh, 50% INR3-5 lakh, 25% >INR5 lakh tickets, while explicitly not vacating its traditional micro-ticket space.",
+              "section_ref": "ORD"
+            },
+            {
+              "label": "Geopolitical/macro risk monitoring",
+              "direction": "mixed",
+              "note": "Management flagged rising energy costs and regulatory/liquidity uncertainty as watch items, alongside repo-rate risk to cost of borrowing, even as underlying collections trends stay comfortable.",
+              "section_ref": "RISK"
+            }
+          ],
+          "key_takeaways": [
+            "We clocked our historical best in disbursement with quarterly disbursements coming in at INR1,496 crores, a growth of 23% over the previous quarter and 16% over the previous year.",
+            "We ended the quarter with an AUM of INR13,722 crores, which is a sequential growth of 4% for the quarter.",
+            "For the quarter ended June 30, 2026, we clocked a unique customer collection efficiency of 97.9% versus 98.1% last quarter, with our x-bucket collections coming in at 99.2% versus 99.3% in previous quarter.",
+            "Our current book continues to improve and stood at 83.30% as compared to 82.69% as of previous quarter. We also saw a good improvement in our 30-plus book, which reduced to 12.38% as compared to 12.69% in the previous quarter.",
+            "Our slippages remained flat at 0.70% compared to the previous quarter. And despite the seasonally soft nature of this quarter, our credit cost dropped sequentially to 1.85% for Q1 financial year '27 from 1.88% for the Q4 financial year '26.",
+            "On the borrowing front, our all-inclusive cost was at 8.33% despite not so favourable liquidity conditions. This has also helped bring down our cost of fund on the book from 8.95% for Q4 to 8.80% for the Q1 this year.",
+            "During this quarter, one other milestone that we crossed is to achieve 500,000 active loan customers as on 30th June, which is a very significant milestone in the journey of the company.",
+            "We ended the quarter with about INR271 crores of PAT. And our net worth as of 30th June stands at about INR7,653 crores."
+          ],
+          "pressing_questions": [
+            "Chandrasekhar Sridhar asked whether the rise in gold loans could be masking underlying stress not actually improving, given the overlap of Five-Star customers with gold loan and MFI borrowers.",
+            "Rajiv Mehta questioned whether the credit cost guidance of 1.7-1.8% implies management is planning to build back coverage on Stage 1 and Stage 2, given fresh flow rates have normalized significantly.",
+            "Kunal Shah asked where current book (~99.2% collection efficiency) and 30-plus/current book metrics would settle 2-3 years down the line as the portfolio matures and underwriting improves.",
+            "Divyansh Gupta asked for the overall (not just unique customer) collection efficiency numbers for the current and prior quarter — management deferred this to the IR team.",
+            "Chirag Fialoke asked for the 60-90 day bucket percentage for the quarter — management deferred this to the IR team."
+          ]
+        },
+        {
+          "company": "Five-Star Business Finance Ltd",
+          "ticker": "FIVESTAR",
+          "industry": "Non Banking Financial Company (NBFC)",
+          "country": "India",
+          "concall_date": "2026-05-01",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=32985bf4-fbeb-4b8b-b1bb-ba3ac7fd8b97.pdf",
+          "model": "anthropic.claude-sonnet-5",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-03T12:23:56.596Z",
+          "summary": "Management stated the worst of the asset-quality stress (from MFI overlap in small-ticket secured lending) is behind Five-Star, with collection efficiency back to normal levels and disbursements re-accelerating in Q4FY26. The company guided to ~20% AUM growth for FY27 (18-20% range, ~INR16,000cr AUM by FY27 end), disbursements of INR6,200-7,000cr, steady-state credit cost of 1.5-1.6%, ROA of 8.25-8.5% for FY27 (steady-state 8-8.25%), spreads of ~13.5%, and opex/AUM of 7-7.25%, with cost of funds expected to stay largely flat versus FY26 due to geopolitical/macro uncertainty.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "Disbursement",
+                  "value": "1,213",
+                  "unit": "INR crores",
+                  "period": "Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Disbursement QoQ growth",
+                  "value": "24",
+                  "unit": "%",
+                  "period": "Q4FY26 vs Q3FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Disbursement",
+                  "value": "4,675",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "AUM/Portfolio growth",
+                  "value": "11",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Incremental debt availed",
+                  "value": "928",
+                  "unit": "INR crores",
+                  "period": "Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "All-inclusive cost of incremental debt",
+                  "value": "8.53",
+                  "unit": "%",
+                  "period": "Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ADB borrowing line",
+                  "value": "100",
+                  "unit": "USD million",
+                  "period": "Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ADB drawn amount",
+                  "value": "50",
+                  "unit": "USD million",
+                  "period": "Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ADB undrawn amount available",
+                  "value": "50",
+                  "unit": "USD million",
+                  "period": "FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost of funds",
+                  "value": "9.12 to 8.95",
+                  "unit": "%",
+                  "period": "Q3FY26 to Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost of funds",
+                  "value": "9.64 to 9.21",
+                  "unit": "%",
+                  "period": "FY25 to FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT",
+                  "value": "269",
+                  "unit": "INR crores",
+                  "period": "Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT QoQ change",
+                  "value": "-3",
+                  "unit": "%",
+                  "period": "Q4FY26 vs Q3FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT",
+                  "value": "1,099",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT growth",
+                  "value": "2",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Return on average AUM",
+                  "value": "8.68",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Return on equity",
+                  "value": "16",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Return on average AUM (alt figure cited by CFO)",
+                  "value": "8.37",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Yield drop (past action)",
+                  "value": "2",
+                  "unit": "%",
+                  "period": "~1.5 years back",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Full year spread drop",
+                  "value": "40",
+                  "unit": "basis points",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Incremental disbursement cost impact",
+                  "value": "200",
+                  "unit": "basis points",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net worth",
+                  "value": "7,400 (precisely 7,380)",
+                  "unit": "INR crores",
+                  "period": "as of Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Overall provision coverage ratio",
+                  "value": "1.84",
+                  "unit": "%",
+                  "period": "Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Stage-3 provision coverage ratio",
+                  "value": "41.4",
+                  "unit": "%",
+                  "period": "Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "61-90 day bucket proportion",
+                  "value": "5.1 to 4.8",
+                  "unit": "%",
+                  "period": "Q3FY26 to Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Credit cost (average AUM)",
+                  "value": "1.88",
+                  "unit": "%",
+                  "period": "Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "AUM (implied FY26 end)",
+                  "value": "13,000",
+                  "unit": "INR crores",
+                  "period": "FY26 end",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Write-off",
+                  "value": "160-165",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Opex to average AUM",
+                  "value": ">7",
+                  "unit": "%",
+                  "period": "Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost of funds excluding ADB borrowings",
+                  "value": "8.25 to 8.3",
+                  "unit": "%",
+                  "period": "Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Average borrowing cost expectation",
+                  "value": "~8.5",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Dividend",
+                  "value": "same as last financial year",
+                  "unit": null,
+                  "period": "FY26",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Q4 PAT drivers",
+                  "points": [
+                    "PAT for the quarter was 3% lower sequentially on account of higher personal expense (build-out of collections vertical plus typical Q4 incentives/schemes to spur collections and growth), while full-year PAT still grew 2% despite the challenging year.",
+                    "Personal expense increase described as not a one-off but a typical Q4 phenomenon, combined with the collections vertical build-out; growth being slightly lower this year made personal costs look higher on the margin."
+                  ],
+                  "label_alt": []
+                },
+                {
+                  "label": "Cost of funds / borrowing",
+                  "points": [
+                    "ADB $100mn line drawn $50mn in Q4, with another $50mn available to draw anytime in FY27; all-inclusive cost slightly higher than previous quarter primarily due to higher hedging cost on the ADB transaction.",
+                    "Excluding ADB borrowings, overall cost for the quarter would be ~8.25-8.3%.",
+                    "Management does not expect much benefit from cost of funds in FY27 given macroeconomic/geopolitical uncertainty creating uncertainty in the borrowing space; will keep pushing banks for finer rates.",
+                    "Rating upgrade unlikely at least till second half of the year until benefits are shown; average borrowing rates expected to remain closer to 8.5% levels, implying another 30-40 bps of cost still to flow into the book over the next two to three years.",
+                    "In April, no borrowing was done given strong liquidity position; better clarity expected over next couple of months and next earnings call."
+                  ]
+                },
+                {
+                  "label": "Provision coverage / Stage-2",
+                  "points": [
+                    "Stage-2 proportion (61-90 day bucket) improved, dropping from 5.1% to 4.8%, causing a small drop in Stage-2 provision coverage; company tracks overall provision coverage as the key confidence metric on balance sheet/asset quality.",
+                    "RBI has prescribed a minimum floor (5%) on Stage-2 for banks; management does not expect this framework to apply to NBFCs soon since ECL framework for banks itself starts only from April 1, 2027."
+                  ],
+                  "label_alt": []
+                },
+                {
+                  "label": "Spread/Yield dynamics",
+                  "points": [
+                    "Despite dropping yields by 2% about 1.5 years back, spreads remained healthy; full-year spread drop was only 40 bps despite incremental disbursement cost increase of ~200 bps, due to favorable cost of funds.",
+                    "Incremental lending yield is ~22.5%; factoring delinquencies, book yield should be closer to 22-22.25%; Q4 book yield was ~22.6%; further impact of ~30-40 bps expected over the next three to four quarters as older higher-yield loans roll off.",
+                    "Management does not see material yield compression from shifting focus toward higher ticket customers (closer to 5 lakh vs 3 lakh) as segment is not very price-sensitive and yields have been similar across ticket sizes over the last 12 months.",
+                    "No plan to revise pricing either upwards or downwards at this point despite elevated steady-state credit cost guidance; company already dropped pricing by 200 bps ~1.5 years back and is at the lower end of segment pricing range."
+                  ]
+                },
+                {
+                  "label": "Personnel/Management continuity",
+                  "points": [
+                    "A senior management exit occurred during the year but had no impact on performance; company emphasizes team depth at management and branch levels, not dependent on any few individuals."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ORD",
+              "title": "Order Book & Demand",
+              "key_figures": [
+                {
+                  "label": "Unique customer collection efficiency",
+                  "value": "98.1",
+                  "unit": "%",
+                  "period": "Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "X-bucket collections",
+                  "value": "99.3",
+                  "unit": "%",
+                  "period": "Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Current bucket customer proportion",
+                  "value": "81.77 to 82.69",
+                  "unit": "%",
+                  "period": "Q3FY26 to Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Karnataka x-bucket collections",
+                  "value": "99",
+                  "unit": "%",
+                  "period": "last quarter",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Top-up/repeat loan proportion of book",
+                  "value": "10 to 15",
+                  "unit": "%",
+                  "period": "ongoing",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Top-up/repeat proportion of disbursements",
+                  "value": "10 to 12",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Digital collections proportion",
+                  "value": "84",
+                  "unit": "%",
+                  "period": "Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Digital collections proportion",
+                  "value": "80 to 84",
+                  "unit": "%",
+                  "period": "last one year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Digital collections proportion",
+                  "value": "53 to 84",
+                  "unit": "%",
+                  "period": "last two years",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Small eateries/NRI remittance exposure",
+                  "value": "sub-1",
+                  "unit": "%",
+                  "period": "current portfolio",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Collection trend / demand recovery",
+                  "points": [
+                    "Collection efficiency across all buckets showing excellent improvement, returning to robust historical levels; reflects strength in credit underwriting and collection infrastructure.",
+                    "Current bucket proportion improved for the first time after quarters of continued drop, moving up ~1% from Q3 to Q4.",
+                    "For last six months, a good upward trend has been seen in collections; NPA expected to start slowing down from next quarter onwards as forward flow from current and x-customer buckets reduces.",
+                    "April trending in line with a typical seasonally weak month; no material deterioration or improvement expected but collections holding up well across buckets; company does not expect material impact from geopolitical scenario (West Asia conflict) on customer segment, with exposure to small eateries/NRI remittances sub-1% of portfolio and no alarm signals in repayments."
+                  ],
+                  "label_alt": []
+                },
+                {
+                  "label": "Digital vs cash collections",
+                  "points": [
+                    "Intent is to move digital collections closer to 90%, though some level of cash collection will always remain given borrower profile."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "Average ticket size",
+                  "value": "3.5 lakh to 4.2 lakh",
+                  "unit": "INR per customer",
+                  "period": "last year to this year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "AUM in INR3-5 lakh ticket band",
+                  "value": ">50",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Average ticket size (current)",
+                  "value": "~4",
+                  "unit": "INR lakh",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "South AUM proportion",
+                  "value": "85",
+                  "unit": "% or higher",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Ticket size / product mix strategy",
+                  "points": [
+                    "Company operating in a 'sweet spot' of INR3-5 lakh ticket size, viewed as the segment with highest growth potential and highest barriers to entry for competitors.",
+                    "Prior guidance (three quarters back) was to slow down below INR3 lakh (where pain was seen) and focus a bit more on above INR5 lakh; no major structural shift to bigger ticket sizes has occurred - over 50% of AUM remains in the INR3-5 lakh band.",
+                    "Micro-LAP product (sweet spot INR3-5 lakh) being pushed back to its original growth trajectory due to good yields, returns and runway; affordable housing product being introduced in some locations with a target sweet spot of INR7-8 lakh; one more product may be added in the next two years."
+                  ]
+                },
+                {
+                  "label": "Geographic growth composition",
+                  "points": [
+                    "Large chunk of FY26 AUM growth came from non-South markets (Maharashtra, Rajasthan, Gujarat, Chhattisgarh, UP) as branches were newly put in these states; AP notably weaker this year.",
+                    "South (~85%+ of AUM) is where the over-leverage problem started; growth was muted there for first two quarters (June, September) as focus shifted to collections.",
+                    "For FY27, growth of South markets (Tamil Nadu, Andhra, Telangana, and to some extent Karnataka) expected to predominantly drive the anticipated 20%+ growth as collections stabilize (Karnataka x-bucket collections at 99% last quarter)."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MFG",
+              "title": "Manufacturing & Capacity",
+              "key_figures": [
+                {
+                  "label": "New branches opened",
+                  "value": "90",
+                  "unit": "branches",
+                  "period": "FY26 (also cited as 96 elsewhere)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "New branch break-even rate",
+                  "value": "95",
+                  "unit": "%",
+                  "period": "of FY26 new branches",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Branch catchment radius",
+                  "value": "25 to 30",
+                  "unit": "kilometers",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Planned new branches",
+                  "value": "60 to 75",
+                  "unit": "branches",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Maharashtra branch count target",
+                  "value": "40 to 70-80",
+                  "unit": "branches",
+                  "period": "ongoing expansion",
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Branch expansion strategy",
+                  "points": [
+                    "Endeavour is to keep opening new branches to stay close to customer vicinity (25-30 km catchment) where competition is lower and ground-level understanding of customers is better - considered an important lever for growth.",
+                    "95% of the 90 new branches opened last year have already broken even, indicating infrastructure is in place to support doubling growth versus last year.",
+                    "For FY27, plan is to open a comparatively smaller number of 60-75 branches versus 90-96 last year, as the split branch mechanism and new branch infrastructure built over the last three years in Tamil Nadu, Telangana, AP has provided a strong foundation; if newer states (Maharashtra, Rajasthan, Gujarat, UP, Chhattisgarh) show promise, branch counts there will be increased.",
+                    "Branches will typically break-even or become profitable over a nine to 12 month period."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [
+                {
+                  "label": "AUM share shown from certain new geography (city-level split)",
+                  "value": "1 to 2",
+                  "unit": "%",
+                  "period": "quarter-on-quarter",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Maharashtra / Tier1-2 expansion",
+                  "points": [
+                    "Uptick in city-level AUM split (from ~1% to 2%) driven by new branch openings in Maharashtra (Nashik, Pune, Aurangabad) classified as Tier 1/2 cities, not a change in sourcing strategy - branch network in Maharashtra being scaled from ~40 to 70-80 branches as the state looks promising."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Competitive positioning vs fintech",
+                  "points": [
+                    "Management does not view fintechs as competitors because fintech ticket sizes (INR25,000-50,000, below INR1 lakh) and tenures (6-12 months) differ fundamentally from Five-Star's average ticket size of ~INR4 lakh and tenures of up to 7 years.",
+                    "Five-Star's loans are for business construction purposes (business improvement, starting a business, home renovation) vs. fintech's working-capital-like use; fintech may compete more with gold loan providers of similar ticket size/tenure.",
+                    "On digital footprint concern (customers gaining banking history from digital payments potentially attracting fintech lenders), management acknowledged that digital footprints are becoming inevitable everywhere, but reiterated ticket size and tenure differences insulate Five-Star's customer base from fintech disintermediation."
+                  ]
+                },
+                {
+                  "label": "Underwriting methodology",
+                  "points": [
+                    "Proprietary underwriting based on evaluation of character, cash flows, and collateral, perfected over 20 years of operating in this segment; process, credit bureau footprint review, and underwriting is the same regardless of ticket size (INR3-5 lakh vs INR5-10 lakh); sourcing channels are also the same across ticket sizes.",
+                    "Management offered to take interested analysts through detailed underwriting process, turnaround times, etc. in offline discussions rather than during the earnings call."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Organizational restructuring",
+                  "points": [
+                    "Business and collections verticals fully separated into distinct teams effective April 1, 2026; business team now focuses on new business origination while collection team focuses on stabilizing DPDs across all customers.",
+                    "Restructuring undertaken in response to the over-leveraging cycle experienced for the first time in the company's ~20-year history, requiring reorganization of the team structure."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Asset quality stress",
+                  "points": [
+                    "Asset quality headwinds faced by MFIs and unsecured loan lenders over the last couple of years crept into secured loan lenders' portfolios too, especially those providing small ticket loans, due to higher MFI overlap, resulting in increased DPDs and NPA for Five-Star during FY26.",
+                    "Management maintains actions taken over recent quarters have addressed these challenges and the worst is behind the company."
+                  ]
+                },
+                {
+                  "label": "Macroeconomic/geopolitical risk",
+                  "points": [
+                    "Geopolitical scenario (West Asia conflict) flagged as a monitorable; management has not seen material impact so far, portfolio exposure to potentially affected segments (small eateries, NRI remittances) is sub-1% with no alarm signals in repayments, but will continue to monitor.",
+                    "Geopolitical/macro challenges are creating some uncertainty in the borrowing/liquidity space, which is a reason cost of funds is not expected to improve materially in FY27."
+                  ]
+                },
+                {
+                  "label": "Sector over-leveraging",
+                  "points": [
+                    "Permanent over-leveraging in the microfinance sector flagged in prior quarter's commentary; discussed as an ongoing sector dynamic being closely monitored, addressed via organizational restructuring and slower growth in South markets during first half of FY26."
+                  ]
+                },
+                {
+                  "label": "Personnel risk",
+                  "points": [
+                    "Senior management exit during the year created an overhang, though management states it had no impact on performance given team depth."
+                  ]
+                },
+                {
+                  "label": "Regulatory (ECL/Stage-2 coverage) risk",
+                  "points": [
+                    "RBI has prescribed a minimum floor (5%) on Stage-2 coverage for banks; company's Stage-2 coverage is currently lower than this prescription, but management does not expect this framework to extend to NBFCs soon since the ECL framework for banks itself starts only April 1, 2027."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [
+                {
+                  "label": "AUM growth guidance",
+                  "value": "~20 (range 18-20)",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "AUM growth guidance",
+                  "value": "~20",
+                  "unit": "%",
+                  "period": "next 2-3 years",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Implied AUM",
+                  "value": "~16,000",
+                  "unit": "INR crores",
+                  "period": "end of FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Credit cost guidance",
+                  "value": "1.7 to 1.75",
+                  "unit": "% of average AUM",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Steady-state credit cost guidance",
+                  "value": "1.5 to 1.6",
+                  "unit": "%",
+                  "period": "FY28-FY30 / next couple of years",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Spread guidance",
+                  "value": "~13.5",
+                  "unit": "%",
+                  "period": "FY27 and thereafter",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "ROA guidance",
+                  "value": "8.25 to 8.5",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Steady-state ROA guidance",
+                  "value": "8 to 8.25",
+                  "unit": "%",
+                  "period": "steady-state",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Opex to average AUM guidance",
+                  "value": "7 to 7.25",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Disbursement guidance",
+                  "value": "6,500 to 7,000 (also cited 6,200-6,400)",
+                  "unit": "INR crores",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "New branches guidance",
+                  "value": "60 to 75",
+                  "unit": "branches",
+                  "period": "FY27",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Growth outlook trajectory",
+                  "points": [
+                    "Company is 'geared up' for AUM growth of ~20% for FY27, and will 'slowly move upwards' thereafter; for at least the next two to three years, growth of around 20% is targeted (conservative range 18-20%), with 20% not being viewed as the ceiling - possible upside if asset quality and credit cost trends remain favorable.",
+                    "Even growing at 20% by end of FY27, AUM would be only around INR16,000 crores, reflecting a relatively low base versus historical ~INR5,000-7,000 crore AUM base when growth was 30%+; management does not want to over-commit beyond 20% despite low base, given the year is coming off 10-11% growth (effectively doubling growth rate)."
+                  ]
+                },
+                {
+                  "label": "Credit cost normalization",
+                  "points": [
+                    "Credit cost guidance of 1.7-1.75% of average AUM for FY27, an improvement from Q4FY26 actual of 1.88%; if buckets trend better through the year, actual could beat guidance.",
+                    "Steady-state credit cost guidance of 1.5-1.6% for FY28-30, up from earlier historical guidance framework of 0.8-1% (on total assets basis, equivalent to ~1.3-1.35% on AUM basis); increase reflects revised understanding of the environment/customer segment, need for consistency in credit cost build-up amid macro volatility, and balancing growth with credit cost rather than under-provisioning and pressuring field force."
+                  ]
+                },
+                {
+                  "label": "Disbursement outlook",
+                  "points": [
+                    "FY27 disbursement targeted at ~INR6,200-7,000 crores (varying figures cited: 6,200-6,400cr and 6,500-7,000cr) to support 20% AUM growth; back-of-envelope calc: FY25 disbursements of ~INR5,000cr (~INR425-450cr/month), a 15% increase would give ~INR6,000cr, another 15% would give ~INR7,000cr for FY27.",
+                    "Company consciously pulled back disbursements this year amid the credit cycle; ability to grow disbursements 20% off a low base is viewed as not a challenge, with strong lead indicators already visible; Q1FY27 targeted to show strong disbursements despite being a seasonally weak quarter historically."
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "AUM growth",
+              "horizon": "FY27",
+              "statement": "Well-poised to achieve AUM growth of around 20% for financial year 2027; range given as 18% to 20% if being conservative",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "AUM growth",
+              "horizon": "next 2-3 years",
+              "statement": "For at least the next two to three years, we should be able to clock a growth of around 20%; possibly could see upsides beyond 20% in later years",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Credit cost",
+              "horizon": "FY27",
+              "statement": "Guiding for a credit cost of 1.7% to 1.75% for the next financial year",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "Credit cost (steady-state)",
+              "horizon": "FY28-FY30",
+              "statement": "Steady-state credit cost anywhere between 1.5% to 1.6% for the next couple of years",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "Spread",
+              "horizon": "FY27 and thereafter",
+              "statement": "Should be able to operate at a spread of around 13.5%, depending on leverage",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "ROA",
+              "horizon": "FY27",
+              "statement": "Should be able to operate at about 8.25% to 8.5% for this year",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "ROA (steady-state)",
+              "horizon": "steady-state",
+              "statement": "On a fairly steady-state, also about 8% to 8.25% levels, we should be able to operate",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Opex to average AUM",
+              "horizon": "FY27",
+              "statement": "It will largely remain around the 7% to 7.25% levels, and not show any big decline during the year despite the 20% growth",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Disbursements",
+              "horizon": "FY27",
+              "statement": "We should be able to get close to about INR6,500 crores to INR7,000 crores of disbursements in the coming year",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Disbursements (alt figure)",
+              "horizon": "FY27",
+              "statement": "We don't really see a challenge getting to about INR6,200 crores to INR6,400 crores of disbursements to achieve a 20% growth",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "New branch additions",
+              "horizon": "FY27",
+              "statement": "For this financial year, we intend to open 60 to 75 branches",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Cost of funds",
+              "horizon": "FY27",
+              "statement": "We don't expect too much benefit to come in from the cost of funds in the next financial year... most likely we will largely be where we were in FY26",
+              "specificity": "vague",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Yield impact from past rate cut",
+              "horizon": "next 3-4 quarters",
+              "statement": "About 30-40 basis points of further impact that may come in over the next three to four quarters on yields",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "Book cost of funds convergence to borrowing rate",
+              "horizon": "next 2-3 years",
+              "statement": "If borrowing at 8.5%, naturally the book has to come to about 8.5%, but it'll probably take two to three years - another 30-40 bps of cost still to flow into book",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Pricing",
+              "horizon": "FY27",
+              "statement": "We don't really envisage at this point of time for any pricing drop to happen at least in FY27; no proposal on table to revise pricing up or down",
+              "specificity": "vague",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "NPA trend",
+              "horizon": "coming quarters",
+              "statement": "You will see the NPA slowing down from next quarter onwards",
+              "specificity": "vague",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "Rating upgrade",
+              "horizon": "H2 FY27",
+              "statement": "Rating upgrade, at least till the end of the year, or maybe till second half of the year, is out of question till we start showing some benefit",
+              "specificity": "vague",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Dividend",
+              "horizon": "FY26",
+              "statement": "Board has declared the same dividend that we got in the last financial year",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "Asset quality stress from MFI overlap in small-ticket secured loans",
+              "status": "easing",
+              "note": "DPDs and NPA increased during FY26 due to MFI overlap; management states the worst is behind, with collection metrics improving."
+            },
+            {
+              "risk": "Geopolitical scenario (West Asia conflict) / macroeconomic uncertainty",
+              "status": "stable",
+              "note": "No material impact seen so far; sub-1% portfolio exposure to potentially affected segments (small eateries, NRI remittances); continues to be monitored."
+            },
+            {
+              "risk": "Sector over-leveraging in microfinance",
+              "status": "stable",
+              "note": "Flagged in prior quarter; addressed via organizational restructuring separating business and collection teams and slower growth in South markets during H1FY26."
+            },
+            {
+              "risk": "Senior management exit",
+              "status": "resolved",
+              "note": "Occurred during the year but management states it had no impact on performance given team depth."
+            },
+            {
+              "risk": "Elevated personal/employee expenses",
+              "status": "stable",
+              "note": "Higher personal expense in Q4 due to collections vertical build-out and incentive schemes; expected to remain elevated in FY27 to retain talent amid competition."
+            },
+            {
+              "risk": "Cost of funds / borrowing cost uncertainty",
+              "status": "stable",
+              "note": "Geopolitical/macro challenges creating uncertainty in the borrowing/liquidity space; limited near-term benefit to cost of funds expected; rating upgrade unlikely near-term."
+            },
+            {
+              "risk": "Regulatory Stage-2 provisioning norms (RBI ECL floor)",
+              "status": "stable",
+              "note": "RBI prescribed minimum 5% Stage-2 floor for banks; company's coverage is lower, but management does not expect this to extend to NBFCs soon given bank ECL framework starts only April 2027."
+            }
+          ],
+          "themes": [
+            {
+              "label": "Asset quality recovery",
+              "direction": "positive",
+              "note": "Collection efficiency metrics (98.1% unique customer, 99.3% x-bucket) at best-ever levels, current bucket proportion improved for first time in quarters, signaling worst is behind.",
+              "section_ref": "ORD"
+            },
+            {
+              "label": "Growth re-acceleration",
+              "direction": "positive",
+              "note": "Disbursements up 24% QoQ in Q4; company guiding ~20% AUM growth for FY27 after 11% growth in FY26.",
+              "section_ref": "GUID"
+            },
+            {
+              "label": "Credit cost normalization",
+              "direction": "mixed",
+              "note": "FY27 credit cost guided at 1.7-1.75% (down from Q4 actual 1.88%) but steady-state guidance of 1.5-1.6% is structurally higher than pre-crisis levels (~1.3-1.35% AUM-equivalent).",
+              "section_ref": "GUID"
+            },
+            {
+              "label": "Diversified/cost-effective funding",
+              "direction": "positive",
+              "note": "Raised $100mn from ADB reinforcing lender confidence, though hedging costs raised incremental borrowing cost this quarter; overall cost of funds continuing to decline YoY.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Organizational restructuring (business-collections split)",
+              "direction": "positive",
+              "note": "Business and collection verticals fully separated from April 1, 2026 to sharpen focus on new business origination and DPD stabilization respectively.",
+              "section_ref": "STRAT"
+            },
+            {
+              "label": "Ticket size / sweet-spot strategy",
+              "direction": "neutral",
+              "note": "Average ticket size moved from 3.5 lakh to 4.2 lakh but company reiterates no major structural shift beyond its INR3-5 lakh sweet spot, with over 50% of AUM still in that band.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Geopolitical/macro risk monitoring",
+              "direction": "neutral",
+              "note": "No material impact seen from West Asia conflict on customer segment or liquidity so far, but flagged as an ongoing monitorable affecting borrowing costs and asset quality outlook.",
+              "section_ref": "RISK"
+            }
+          ],
+          "key_takeaways": [
+            "We have just completed one of the most challenging years for Five-Star. The asset quality headwinds faced by MFIs and unsecured loan lenders over the last couple of years creeped into the portfolios of secured loan lenders also, especially those providing small ticket loans.",
+            "For the quarter ended March 31, 2026, we clocked a unique customer collection efficiency of 98.1%, which is one of our best in the history of Five-Star. Our x-bucket collections for the quarter came in at 99.3%.",
+            "The current proportion of customers who are in current buckets has moved up by close to 1% from 81.77% in Q3 to 82.69% in Q4.",
+            "Our disbursement for the quarter came in at INR1,213 crores, an increase of 24% over the previous quarter. Our disbursement for the full year came in at INR4,675 crores, which has allowed us to clock a portfolio growth of 11% even during a challenging year.",
+            "We raised $100 million from Asian Development Bank, ADB... during this quarter, which is a reinforcement of lenders' belief in Five-Star.",
+            "For the quarter, we achieved a PAT of INR269 crores, while this is 3% lower as compared to the previous quarter on account of higher personal expense... for the full year we grew even in such a challenging year by 2%, and we clocked a full year PAT of INR1,099 crores. Our return on average AUM and return on equity for the financial year 2026 remains healthy at 8.68% and 16%, respectively.",
+            "There was a senior management exit during this year, but I want to clearly lay down the fact this has no impact on our performance.",
+            "We are geared up to get back on the track of growth and well-poised to achieve AUM growth of around 20% for the financial year 2027."
+          ],
+          "pressing_questions": [
+            "Kunal Thanvi: structurally, we have been saying the business is -- because of the lower base and opportunity, 25% was the growth number that we've been giving for last two, three years. Now in one of the comments, Srikanth mentioned that we'll be growing at 18% to 20% over next three years. So, is it fair to assume that structurally our growth rates would be lower, compared to what we had anticipated say three years back, two to three years back?",
+            "Chandrasekhar Sridhar: asset quality is beginning to improve, but you're still holding on to somewhat similar credit cost level. Is this because we're trying to up the coverage on some of the lower stages? ...our Stage-2 coverage is lower than what the RBI prescription itself is?",
+            "Aravind Ravichandran: given our steady-state credit cost itself, we are looking at a slightly higher [level] than what we had initially anticipated. Should we relook at our pricing also... in terms of revising upwards pricing?"
+          ]
+        }
+      ]
     }
   }
 }
