@@ -425,8 +425,10 @@
       "source": "transcript"
     },
     "SBCL": {
-      "status": "running",
-      "started_at": "2026-08-04T23:39:07.627Z"
+      "status": "failed",
+      "finished_at": "2026-08-04T23:39:19.581Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     }
   }
 }
