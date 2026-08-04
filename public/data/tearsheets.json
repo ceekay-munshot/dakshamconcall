@@ -76557,6 +76557,2707 @@
           ]
         }
       ]
+    },
+    "ACMESOLAR": {
+      "company": "ACME Solar Holdings Ltd",
+      "ticker": "ACMESOLAR",
+      "industry": "Power Generation",
+      "country": "India",
+      "checked_at": "2026-08-04T23:29:16.302Z",
+      "quarters": [
+        {
+          "company": "ACME Solar Holdings Ltd",
+          "ticker": "ACMESOLAR",
+          "industry": "Power Generation",
+          "country": "India",
+          "concall_date": "2026-08-04",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=53865f49-af5a-448f-a55d-c0e4374466c0.pdf",
+          "model": "anthropic.claude-sonnet-5",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-04T23:26:51.520Z",
+          "summary": "Management guided Q1 FY27 as a record quarter (highest-ever revenue and EBITDA), driven by higher CUF, BESS revenue contribution and capacity additions. Forward outlook centers on upgraded FY27 capex guidance (INR15,000-20,000 crores), upgraded BESS commissioning guidance (>10 GWh by FY27 vs prior CY2027 target), 1.5 GW of contracted renewable capacity to be commissioned in FY27 (subject to substation/transmission availability), continued short-term BESS contracting (INR1,400 crores locked in, with potential to exceed this in coming years), and a 2030 portfolio target beyond the previously guided 10 GW.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "Total revenue",
+                  "value": "954",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue growth YoY",
+                  "value": "63",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA",
+                  "value": "831",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA growth YoY",
+                  "value": "56",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total EBITDA margin",
+                  "value": "87",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Renewable energy portfolio EBITDA margin",
+                  "value": "88-89",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BESS business EBITDA margin",
+                  "value": "82",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT",
+                  "value": "235",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT growth YoY",
+                  "value": "80",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT margin",
+                  "value": "25",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Asset base",
+                  "value": "~25,000",
+                  "unit": "INR crores",
+                  "period": "as of Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capex incurred in quarter",
+                  "value": "~3,000",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Full year capex guidance (upgraded)",
+                  "value": "15,000 to 20,000",
+                  "unit": "INR crores",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Battery interest cost (P&L)",
+                  "value": "32",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Battery depreciation (P&L)",
+                  "value": "27",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Battery depreciation policy",
+                  "value": "20",
+                  "unit": "years",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Core (ex-BESS) EBITDA margin",
+                  "value": "91",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Core (ex-BESS) EBITDA margin range (prior year quarters)",
+                  "value": "88-91",
+                  "unit": "%",
+                  "period": "FY26 quarters",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Financing secured for under-construction FDRE projects",
+                  "value": "~6,000",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Debt tied up vs PPA-signed portfolio",
+                  "value": "~85",
+                  "unit": "%",
+                  "period": "as of Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BESS capital cost capitalized",
+                  "value": "93",
+                  "unit": "INR lakhs/MW",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "BESS capital cost equivalent",
+                  "value": "~100",
+                  "unit": "USD/kWh",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Potential BESS cost increase for future orders",
+                  "value": "5 to 10",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Dollar hedging locked",
+                  "value": ">300",
+                  "unit": "USD million",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Locked hedge rate range",
+                  "value": "89 to 93",
+                  "unit": "INR/USD",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Core (ex-BESS) EBITDA margin guidance range for next quarters",
+                  "value": "88 to 92",
+                  "unit": "%",
+                  "period": "next 3-4 quarters",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Core (ex-BESS) EBITDA margin range (alternate guidance)",
+                  "value": "88 to 91",
+                  "unit": "%",
+                  "period": "next 3-4 quarters",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Revenue & EBITDA drivers",
+                  "points": [
+                    "Strong performance driven by higher CUF, revenue contribution from BESS operations and renewable capacity additions.",
+                    "Renewable energy portfolio delivered ~88-89% EBITDA margin while BESS business recorded ~82% margin; difference primarily because the cost of power purchased for charging batteries is accounted for within operating expenses, so blended margin should be viewed in that context.",
+                    "Ex-BESS EBITDA margin of 91% for the quarter is broadly in line with the ~88-91% range seen across the last four quarters of the previous year (except Q2 FY26/Sept'25 at 88-89%), reflecting seasonality; margin could vary further depending on project profitability, with FDRE projects potentially improving margin due to healthier realizations versus plain solar bids.",
+                    "Ex-BESS EBITDA growth (~20%) mainly driven by CUF improvement (28.5% to 30.9% YoY) and continuous repowering of existing plants; curtailment (only from state-based projects) contributed less than 1% impact on overall revenue."
+                  ]
+                },
+                {
+                  "label": "Capital allocation",
+                  "points": [
+                    "Successfully completed QIP, giving flexibility to prepone capex for under-construction projects and deliver better return economics.",
+                    "Asset base expanded significantly following commissioning of new assets and batteries.",
+                    "BESS module/component purchasing being done opportunistically; ~80% of non-module capex (transmission line, substations, plant infrastructure) done for certain projects, with module purchase timed to take advantage of lower Chinese module prices before a 6% China export tax kicks in from January.",
+                    "Company minimizing interest during construction by balancing opportunistic buying against IDC costs."
+                  ]
+                },
+                {
+                  "label": "BESS cost trends",
+                  "points": [
+                    "Initial BESS orders were at lower prices; lithium carbonate is a volatile commodity and China supply-demand economics could push future BESS costs up, but not by a large percentage (5-10%), and remains within budgeted cost.",
+                    "PCS component coming in lower than budgeted cost; building at substations where line/substation infrastructure already exists also helps save cost.",
+                    "Cost figures do not factor in hedging gains; company has hedged >$300 million with locked-in rates of $89-93, creating a positive bias toward reducing costs from dollar movement."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ORD",
+              "title": "Order Book & Demand",
+              "key_figures": [
+                {
+                  "label": "FDRE and hybrid PPAs signed with SECI in quarter",
+                  "value": "600",
+                  "unit": "MW",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total PPA signed capacity",
+                  "value": "3,880",
+                  "unit": "MW",
+                  "period": "as of Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total under-construction capacity",
+                  "value": "5,080",
+                  "unit": "MW",
+                  "period": "as of Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Balance capacity awaiting PPA signing",
+                  "value": "~1,200",
+                  "unit": "MW",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total portfolio",
+                  "value": "8,070",
+                  "unit": "MW",
+                  "period": "as of Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Battery storage entailed by total portfolio",
+                  "value": "~20",
+                  "unit": "GWh",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "CUF this quarter",
+                  "value": "30.9",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "CUF prior year quarter",
+                  "value": "28.5",
+                  "unit": "%",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Power generation",
+                  "value": "2,020",
+                  "unit": "million units",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Power generation growth YoY",
+                  "value": "23",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "2030 portfolio target",
+                  "value": "beyond 10",
+                  "unit": "GW",
+                  "period": "by 2030",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Ex-BESS EBITDA growth YoY",
+                  "value": "20-odd",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "PPA progress",
+                  "points": [
+                    "Balance ~1,200 MW of projects for which PPAs are yet to be signed are progressing well and expected to be signed soon.",
+                    "Hybrid PPA signed this quarter involved offering 1 hour of battery as a change to standard configuration; second signed project (at INR6.28/unit) had no change in configuration.",
+                    "ACME Marigold LOA project (Northeast state, via REMCL) delayed due to Supreme Court proceedings on railway open-access status; bank guarantee already given, expected to be signed very shortly."
+                  ]
+                },
+                {
+                  "label": "Bid pipeline & market structure",
+                  "points": [
+                    "SECI has consolidated bids and introduced a rule not to release a bid until there is a firm commitment on power requirement, reducing bid-to-PPA cycle time but also reducing near-term bid quantum.",
+                    "Expected large upcoming bid categories: midterm contracts, long-term peak power, RTC FDRE, CFD (contract for difference) related to peak power, and state bids (e.g., Bengal post-elections, Gujarat, Maharashtra).",
+                    "Format of bids is shifting: pure solar bids are disappearing; wind bids continue; battery-related bids will be the focus except for pump-storage projects.",
+                    "Rightsizing of battery bids is underway due to delays in VGF-based state projects, causing temporary volume realignment even as demand drivers remain strong.",
+                    "Each megawatt of round-the-clock/FDRE power is roughly equivalent to 4 megawatts of solar in terms of impact, per Chairman."
+                  ]
+                },
+                {
+                  "label": "Merchant route conversion (CERC)",
+                  "points": [
+                    "CERC's free exit option for merchant-route conversion for parties lacking a signed PPA is viewed positively as it should free up connectivity where PPAs are not signed, benefiting ACME given most of its PPAs/LOAs are on track to be signed.",
+                    "This freed-up connectivity also helps CTU plan future connectivity better and benefits batteries since nighttime capacity tied to Right of First Refusal connectivity may also become available."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance - BESS Business",
+              "key_figures": [
+                {
+                  "label": "BESS commissioned in quarter till date",
+                  "value": "~2.3",
+                  "unit": "GWh",
+                  "period": "Q1 FY27 to date",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cumulative commissioned BESS capacity",
+                  "value": "~3.62",
+                  "unit": "GWh",
+                  "period": "as of Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Share of India's cumulative commissioned BESS capacity",
+                  "value": "~40",
+                  "unit": "%",
+                  "period": "as of Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue from BESS power sales",
+                  "value": "226",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Share of BESS revenue from short-term contracts",
+                  "value": "~85",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BESS EBITDA to capex yield",
+                  "value": ">20",
+                  "unit": "% annual",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Short-term BESS contracts revenue locked-in",
+                  "value": ">1,400",
+                  "unit": "INR crores",
+                  "period": "partial FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Round-trip efficiency",
+                  "value": "~89",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Depth of discharge",
+                  "value": "~93",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "State of health",
+                  "value": ">99.9",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Plant availability (batteries)",
+                  "value": ">99",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "BESS realization range (short-term contracts)",
+                  "value": "8 to 10",
+                  "unit": "INR/unit",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Battery contracted vs 20 GWh target",
+                  "value": "~90",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Open (uncontracted) BESS capacity",
+                  "value": "600",
+                  "unit": "MWh",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cycles per day",
+                  "value": "1",
+                  "unit": "cycle/day",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Typical discharge duration",
+                  "value": "4",
+                  "unit": "hours",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Some contracts discharge duration",
+                  "value": "6",
+                  "unit": "hours",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Contracted BESS capacity share of 10 GWh (locked-in for INR1,400cr)",
+                  "value": "70 to 80",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Merchant/short-term contract tenure (typical)",
+                  "value": "6 to 9 months (max 1 year)",
+                  "unit": null,
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Battery to remain exposed to merchant market annually (per Chairman)",
+                  "value": "10 to 12",
+                  "unit": "GWh",
+                  "period": "next 5 years",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "BESS strategy & deployment",
+                  "points": [
+                    "Strategy of early deployment resulted in commissioning ~2.3 GWh during the quarter, taking cumulative commissioned BESS capacity to ~3.62 GWh, ~40% share of India's cumulative commissioned BESS capacity, one of the highest in the country.",
+                    "Company demonstrated large-scale FDRE through battery operations by charging/discharging batteries in a 15-minute slot interval.",
+                    "Secured short-term BESS contracts during the quarter (>INR1,400 crores of revenue for partial FY27 BESS commissioned capacity); will keep participating and tying up more contracts for full BESS capacity in FY27.",
+                    "Operational performance for batteries better than design expectation across round-trip efficiency, depth of discharge, state of health and plant availability."
+                  ]
+                },
+                {
+                  "label": "Open capacity & contracting plan",
+                  "points": [
+                    "Target is to have zero open (non-PPA) capacity by end of the year; only a 300 MW plant (scaling to 300x4) currently remains uncontracted.",
+                    "Chairman clarified that every year, at least 10 GWh of battery will remain exposed to the merchant market before moving into PPA the following year; company does not expose itself to the merchant market for the battery for the next 25 years, but the plan for the next 5 years is to keep 10-12 GWh available for the short-term power market.",
+                    "Capex is allocated toward PPA in terms of final destination even though first year of operation may be merchant.",
+                    "Currently contracted almost all (~90%) of the 20 GWh target battery capacity; wherever PPA is not signed, battery is not counted as needing to be ordered."
+                  ]
+                },
+                {
+                  "label": "Locked-in revenue & realization",
+                  "points": [
+                    "INR1,400 crores locked-in revenue represents ~70-80% of the 10 GWh targeted merchant capacity for the year; remaining 20% still to be contracted, which would push overall revenue higher than INR1,400 crores if tied up.",
+                    "Realizations for contracted capacity range INR8-10/unit depending on month and contract volume, based on bids on the DEEP portal and HP-TAM markets (publicly available ranges).",
+                    "Contract tenures are typically under 1 year (mostly 6-9 months); midterm bids of 5-year contracts are emerging from states but company currently has only one uncontracted project available for such an offer.",
+                    "Management believes the INR1,400 crores+ run-rate can be assumed for financial modeling over the next 2-3 years, potentially even higher, given current PPA pipeline; beyond 2-3 years it is dependent on market dynamics, new PPA wins and profitability."
+                  ]
+                },
+                {
+                  "label": "BESS demand & pricing outlook",
+                  "points": [
+                    "Market is nascent: pure merchant BESS supply is not expected to be very high because most players (ACME, Adani, etc.) plan to put capacity into long-term PPAs rather than operate merchant plants for 25 years.",
+                    "Demand-side trust in battery reliability is growing state-by-state as states (currently ~6-7 states buying) previously met peak needs via costlier thermal power; new bids will increasingly factor in BESS supply once trust builds.",
+                    "All battery/FDRE/peak-power connectivity currently being allocated is co-located with solar; a 'sync' battery addition without solar has not yet been seen because of excess solar in the grid.",
+                    "Duck curve phenomenon (driven by rooftop, KUSUM, B2B solar additions) is expected to push peak power/evening-morning demand higher; Chairman estimates current peak demand at ~300 GWh with potential progression to 400-500 GWh, and in a positive scenario, up to 1 TWh.",
+                    "Management does not see slowdown in pricing over next 3 years despite El Nino-related state buying dynamics, monsoon effects, hydropower return, or air-conditioner penetration factors; anticipates continued strong demand due to duck curve dynamics, and hydro power (which runs 24/7) cannot itself meet peaking demand.",
+                    "Sodium battery technology progress in China/globally (e.g., cold-climate deployment in Europe) could offer cost positives and extend battery life closer to pump-storage timelines, potentially improving future peak-power profitability dynamics.",
+                    "Pump storage is most competitive for 8-hour solutions but will take at least 3-4 years to come online; gas peaker and pump storage are the other two short-term peak solutions besides battery."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "TECH",
+              "title": "Product & Technology",
+              "key_figures": [
+                {
+                  "label": "In-house EPS BESS team members",
+                  "value": "50",
+                  "unit": "members",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Target BESS capacity by end of March FY27 (daily basis)",
+                  "value": "10",
+                  "unit": "GWh",
+                  "period": "by March 2027",
+                  "kind": "target"
+                },
+                {
+                  "label": "Open (uncontracted) BESS capacity plant size",
+                  "value": "300 into 2 (scaling to 300 into 4)",
+                  "unit": "MW",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Rooftop solar addition to grid",
+                  "value": "6 to 7",
+                  "unit": "GW",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "One BESS cycle discharge duration (typical)",
+                  "value": "3 or 4",
+                  "unit": "hours",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "One project upgraded discharge duration from 2 hours to 4 hours",
+                  "value": "2",
+                  "unit": "hours",
+                  "period": null,
+                  "kind": "reported"
+                }
+              ],
+              "subsections": []
+            },
+            {
+              "id": "MFG",
+              "title": "Manufacturing & Capacity",
+              "key_figures": [
+                {
+                  "label": "700 MW under-construction FDRE projects for which financing was secured",
+                  "value": "700",
+                  "unit": "MW",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": []
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution - Sector & Regulatory Update",
+              "key_figures": [
+                {
+                  "label": "India aggregate electricity demand growth (Q1)",
+                  "value": "8.8",
+                  "unit": "% YoY",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India aggregate electricity demand",
+                  "value": "485",
+                  "unit": "billion units",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Peak power demand (new all-time high)",
+                  "value": "271",
+                  "unit": "GW",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Peak demand in July",
+                  "value": "~270",
+                  "unit": "GW",
+                  "period": "July 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India installed power generation capacity",
+                  "value": ">548",
+                  "unit": "GW",
+                  "period": "as of 30 June 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Non-fossil fuel share of installed capacity",
+                  "value": "~54",
+                  "unit": "%",
+                  "period": "as of 30 June 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Renewable capacity added in quarter",
+                  "value": "~13.9",
+                  "unit": "GW",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cumulative renewable capacity",
+                  "value": "289",
+                  "unit": "GW",
+                  "period": "as of Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "MNRE Open Access/Net Metering commissioning deadline extension",
+                  "value": "31 December 2026",
+                  "unit": null,
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "ISTS waiver PPA cutoff extension",
+                  "value": "30 June 2026",
+                  "unit": null,
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bikaner II / Heergarh BESS commissioning status for SJVN plants",
+                  "value": "2",
+                  "unit": "plants",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Number of states currently supplied with BESS power",
+                  "value": "6 to 7",
+                  "unit": "states",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Sector demand drivers",
+                  "points": [
+                    "Strong start to FY27 supported by expanding economic activity, delayed monsoons, and elevated cooling demand."
+                  ]
+                },
+                {
+                  "label": "Policy developments",
+                  "points": [
+                    "MNRE extended commissioning deadline for Open Access and Net Metering renewable projects to 31 December 2026, ensuring smoother transition to cell-level List-II compliance and providing greater flexibility to evaluate/commission merchant BESS projects co-located with solar generation.",
+                    "Ministry of Power extended graded ISTS waiver benefits for projects delayed due to transmission readiness, for PPAs signed up to 30 June 2026, reducing financial risk for developers and providing clarity for discoms, also benefiting offtakers where GNA availability is delayed.",
+                    "CTU has begun granting BESS connectivity through Right of First Refusal route, expected to accelerate BESS deployment while strengthening grid reliability and enabling better participation during evening peak demand.",
+                    "New circular allows use of surplus renewable generation (from solar) to charge batteries in state-based projects, which management plans to use to reduce/eliminate curtailment going forward; also pursuing regulatory changes to align state curtailment provisions with central grid provisions."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SUP",
+              "title": "Supply Chain & Operations",
+              "key_figures": [
+                {
+                  "label": "China export tax on batteries effective January",
+                  "value": "6",
+                  "unit": "%",
+                  "period": "from January",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PPA rate for signed project",
+                  "value": "6.28",
+                  "unit": "INR/unit",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Open (uncontracted) BESS capacity referenced in Q&A",
+                  "value": "1,200",
+                  "unit": "MWh",
+                  "period": null,
+                  "kind": "reported"
+                }
+              ],
+              "subsections": []
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [
+                {
+                  "label": "Module price (current)",
+                  "value": "sub 12 / around 11.60",
+                  "unit": "INR",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Transmission line capex completed for SJVN FDRE (non-module part)",
+                  "value": "80",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin variability expected vs Q1",
+                  "value": "2 to 5",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Locked-in dollar hedge rate range (specific values)",
+                  "value": "89, 90, 92, 93",
+                  "unit": "$",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Estimated current peak power demand market size (base case)",
+                  "value": "300",
+                  "unit": "GWh",
+                  "period": null,
+                  "kind": "market_size"
+                },
+                {
+                  "label": "Estimated future peak power demand market size (projected)",
+                  "value": "400 to 500",
+                  "unit": "GWh",
+                  "period": null,
+                  "kind": "market_size"
+                },
+                {
+                  "label": "Estimated future peak power demand market size (positive scenario)",
+                  "value": "1",
+                  "unit": "TWh",
+                  "period": null,
+                  "kind": "market_size"
+                },
+                {
+                  "label": "Average short-term tied-up BESS capacity",
+                  "value": "5 to 6",
+                  "unit": "GWh",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Roughly annual open capacity available for short-term market",
+                  "value": "10",
+                  "unit": "GWh",
+                  "period": "annual",
+                  "kind": "target"
+                },
+                {
+                  "label": "Contracted volume of 10 GWh target tied up",
+                  "value": "80",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Remaining volume to be tied up for 10 GWh target",
+                  "value": "20",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "Total India current peak power demand to be met (short-term)",
+                  "value": "300",
+                  "unit": "GWh",
+                  "period": null,
+                  "kind": "market_size"
+                },
+                {
+                  "label": "Assumption horizon for INR1,400 crore+ revenue run rate",
+                  "value": "2 to 3",
+                  "unit": "years",
+                  "period": null,
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Pump storage most competitive solution duration",
+                  "value": "8",
+                  "unit": "hours",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Pump storage project development timeline",
+                  "value": "3, 4",
+                  "unit": "years",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Macro peaking demand growth outlook horizon",
+                  "value": "5 to 10",
+                  "unit": "years",
+                  "period": null,
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "C&I / Data center opportunity",
+                  "points": [
+                    "Company is building a team and has started hiring/strategic planning around the data center power requirement opportunity, viewed as a very promising sector.",
+                    "Focus is on segments offering long-term concessions and playing to ACME's strengths in building power infrastructure; will not dilute mid-teen/high-teen target returns for government-bid pipeline in favor of C&I.",
+                    "Preference for CTU-connected C&I customers for flexibility in using power for peak power or various use cases.",
+                    "Data center demand seen as second-biggest driver of renewable/peak power demand after EV; SECI is also creating a platform to work with data centers as an aggregator/customer, which ACME would participate in if concretized.",
+                    "Direct engagement with credible data center players also being explored, but profitability metrics (cost side and pricing side) still being worked out before committing."
+                  ]
+                },
+                {
+                  "label": "Demand growth from EV and other drivers",
+                  "points": [
+                    "Chairman noted growing EV adoption will keep increasing peak power demand for 1-2-3 hour windows, especially in evening and daytime."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [
+                {
+                  "label": "Hybrid project battery configuration offered",
+                  "value": "1",
+                  "unit": "hour",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Peak power business focus timeline beyond",
+                  "value": "28, 29",
+                  "unit": null,
+                  "period": null,
+                  "kind": "target"
+                }
+              ],
+              "subsections": []
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [
+                {
+                  "label": "Curtailment impact on revenue",
+                  "value": "~1",
+                  "unit": "% of revenue",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "ACME Suryodaya BESS fire incident",
+                  "points": [
+                    "Media reports incorrectly suggested the fire originated within the battery system; detailed technical root cause analysis confirmed the incident was caused by an electrical short circuit in the AC cabling between the transformer and power conversion system, resulting in a localized fire and equipment shutdown.",
+                    "No damage to any battery systems or other equipment at the site; incident was contained by already-deployed safety measures across detection, suppression and containment (AI-enabled video analytics for early fire detection, arc-flash sensors within PCS panels, additional aerosol-based fire suppression systems inside PCS enclosures, enhanced fire barriers between electrical equipment, improved cable protection).",
+                    "Company has long-term warranty for BESS and other equipment from suppliers, and has built an in-house 50-member EPS BESS team responsible for overall integration including installation, commissioning and operation of BESS."
+                  ]
+                },
+                {
+                  "label": "GNA / transmission connectivity delay",
+                  "points": [
+                    "SJVN FDRE project (Heergarh, Bikaner II) has BESS already commissioned, but GNA (transmission) connectivity is scheduled only for next year (around June '27), which is the earliest solar can be commissioned; company will not commission solar on TGNA (temporary GNA) given curtailment risk in Rajasthan and other states which is IRR-dilutive.",
+                    "Company plans to make plants fully ready (transmission line, substation, balance of plant) and operate the battery there, then feed solar once daytime GNA becomes operational, to avoid stranded modules or curtailed generation.",
+                    "Fatehgarh II bay is already charged/capable of evacuating nighttime power, though not relevant for the current PPA (which does not need nighttime power)."
+                  ]
+                },
+                {
+                  "label": "Curtailment (state-based projects)",
+                  "points": [
+                    "Curtailment on state-based projects contributed ~1% (less than 1%) impact on overall revenue this quarter; company plans to add a little battery to state-based projects in future to capitalize on/eliminate curtailment.",
+                    "New ministry circular allowing surplus solar to charge batteries expected to help eliminate curtailment (seasonal effects notwithstanding); company also pursuing regulatory forums to extend central-grid curtailment provisions to states."
+                  ]
+                },
+                {
+                  "label": "BESS/RE bid slowdown",
+                  "points": [
+                    "General slowdown observed in bidding activity, especially in the last quarter and FY26, attributed to SECI's format changes (requiring firm demand commitment before releasing bids) which reduced near-term bid volume even as underlying demand drivers remain strong.",
+                    "Rightsizing of battery bids by states is ongoing due to delays in VGF-based project execution amid competitive bid dynamics, contributing to currently low reported bid volumes."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [
+                {
+                  "label": "Full year capex guidance (upgraded)",
+                  "value": "15,000 to 20,000",
+                  "unit": "INR crores",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "BESS commissioning guidance (upgraded)",
+                  "value": ">10",
+                  "unit": "GWh",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Contracted renewable generation capacity to be commissioned",
+                  "value": "1.5",
+                  "unit": "GW",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Battery already ordered from global suppliers (CATL, Hithium)",
+                  "value": ">15",
+                  "unit": "GWh",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "2030 portfolio target (increased)",
+                  "value": "beyond 10",
+                  "unit": "GW",
+                  "period": "by 2030",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "GNA connectivity timeline for SJVN FDRE",
+                  "value": "June '27",
+                  "unit": null,
+                  "period": "June 2027",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Timeline for government-backed bids to revive strongly",
+                  "value": "6 to 9",
+                  "unit": "months",
+                  "period": null,
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Projected BESS short-term revenue from next year onwards",
+                  "value": "2000-2500",
+                  "unit": "INR crores",
+                  "period": "FY28 onwards",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Upgraded BESS commissioning guidance",
+                  "points": [
+                    "Company upgraded BESS commissioning guidance from 10 GWh by calendar year 2027 to more than 10 GWh by fiscal year 2027, effectively bringing forward this milestone by nearly 3 quarters.",
+                    "Battery already ordered (>15 GWh) from leading global suppliers including CATL and Hithium, well within budgeted cost."
+                  ]
+                },
+                {
+                  "label": "Renewable capacity commissioning guidance",
+                  "points": [
+                    "For FY27, company expects to commission 1.5 GW of contracted renewable energy generation capacity, subject to timely availability of substation and transmission lines."
+                  ]
+                },
+                {
+                  "label": "2030 portfolio ambition",
+                  "points": [
+                    "By 2030, company contemplates increasing its target beyond 10 GW as previously guided, based on new growth opportunities seen in the market; will update in coming quarters."
+                  ]
+                },
+                {
+                  "label": "Industry bid outlook",
+                  "points": [
+                    "Company expects large bids going forward across midterm contracts, long-term peak power, RTC FDRE, CFD related to peak power, and state bids, and will continue to actively pursue such opportunities to capitalize on evolving market demand and merchant market dynamics."
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "Full year capex",
+              "horizon": "FY27",
+              "statement": "Upgraded capex guidance to approximately INR15,000 crores to INR20,000 crores for the full year.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Battery (BESS) commissioning",
+              "horizon": "FY27",
+              "statement": "Upgrading BESS commissioning guidance from 10 gigawatt hour by calendar year 2027 to more than 10 gigawatt hour by fiscal year 2027, effectively bringing forward this milestone by nearly 3 quarters.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Generation asset commissioning",
+              "horizon": "FY27",
+              "statement": "Expect to commission 1.5 gigawatt of contracted renewable energy generation capacity, subject to timely availability of substation and transmission lines.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "reiterated"
+            },
+            {
+              "metric": "2030 portfolio target",
+              "horizon": "by 2030",
+              "statement": "By 2030, contemplate increasing target beyond 10 gigawatt as guided earlier, basis new growth opportunities seen in the market; will update in coming quarters.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "BESS short-term/merchant revenue run-rate",
+              "horizon": "next 2-3 years",
+              "statement": "INR1,400 crores+ revenue run-rate can be assumed for financial modeling for next 2-3 years, potentially even more, given current PPA pipeline and timelines; beyond that dependent on market dynamics.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Open/merchant BESS exposure per year",
+              "horizon": "next 5 years",
+              "statement": "At least 10 gigawatt hour of battery will remain exposed to the merchant market every year before moving to PPA the following year; company aims for zero long-term open capacity beyond a 5-year horizon.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Core (ex-BESS) EBITDA margin",
+              "horizon": "next 3-4 quarters",
+              "statement": "Core EBITDA margin expected to vary between 88% to 92% (88% to 91%) depending on seasonality; may improve further with FDRE project mix given healthier realizations vs plain solar bids.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Battery capex cost",
+              "horizon": "unclear",
+              "statement": "INR93 lakhs/MW capitalized cost could rise for future BESS orders by not more than 5% to 10%, but remains within budgeted cost.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "BESS pricing/demand sustainability",
+              "horizon": "next 3 years",
+              "statement": "Management does not see a slowdown in BESS demand or pricing over the next 3 years; beyond 3 years is susceptible to change.",
+              "specificity": "vague",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Zero open BESS capacity target",
+              "horizon": "end of this year",
+              "statement": "Aim to have 0 open capacity outside PPA by end of this year, other than a 300 MW plant currently uncontracted.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Peak power demand growth (macro)",
+              "horizon": "next 5-10 years",
+              "statement": "Chairman expects peak power demand driven by duck curve to rise from current ~300 GWh estimate toward 400-500 GWh, and in a positive scenario up to 1 terawatt hour.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "ACME Marigold LOA PPA signing",
+              "horizon": "near-term",
+              "statement": "PPA with Northeast state (via REMCL) expected to be signed very shortly; bank guarantee already given.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Battery contracted vs 20 GWh target",
+              "horizon": "unclear",
+              "statement": "Almost all (~90%) of the 20 GWh target battery capacity has been contracted; balance is where PPA is not yet signed.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Operating battery portfolio",
+              "horizon": "upcoming",
+              "statement": "Upcoming future operational capacity expected to have an operating battery portfolio of around 10 gigawatt hour, along with 1.5 gigawatts of contracted generation capacity, subject to timely availability of transmission connectivity and other external factors.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Under-construction PPA-signed portfolio commissioning (3,280 MW + 12 GWh BESS)",
+              "horizon": "FY28",
+              "statement": "These will be commissioned by FY28.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Order book strategy",
+              "horizon": "ongoing",
+              "statement": "Continue to focus on long-term 25-year contracts while also actively participating in short- and medium-term BESS opportunities to capitalize on evolving market demand and merchant market dynamics.",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "no_mention"
+            },
+            {
+              "metric": "SJVN FDRE full commissioning",
+              "horizon": "FY27 end",
+              "statement": "Full FDRE for SJVN will be ready by FY27 end (long-term open access per CTU targeted March '27).",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "no_mention"
+            },
+            {
+              "metric": "NTPC hybrid commissioning",
+              "horizon": "Dec 2026 / by March 2027",
+              "statement": "NTPC solar ready; long-term open access slated to be commissioned by December '26; Pachora wind component ready but slated a couple of quarters later; by March '27, all this will be commissioned.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Neemuch substation commissioning",
+              "horizon": "June 2026",
+              "statement": "Neemuch substation will be the first commissioning from our side, to be charged in June, commissioning NHPC and Tata plants.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Peak power / battery tariff arbitrage sustainability",
+              "horizon": "next 4-5 years",
+              "statement": "We see that... at least for around 4, 5 years, we don't see this going down (referring to peak power realization/tariff arbitrage).",
+              "specificity": "vague",
+              "direction": "flat",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Battery peak-hour price expectation",
+              "horizon": "medium term",
+              "statement": "Battery will remain at INR9 to INR10 in the peak hour time.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "RE bid volume",
+              "horizon": "FY27",
+              "statement": "Bids will be lesser than last year, but you will see bids of a level of 15 to 20 gigawatts; PPA signing pace should be faster.",
+              "specificity": "specific",
+              "direction": "unclear",
+              "status": "no_mention"
+            },
+            {
+              "metric": "State + central capacity addition",
+              "horizon": "FY27",
+              "statement": "Bids will be won with capacity next year, adding state and central will be 20 to 30 gigawatt.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Implied solar deployment behind battery-backed bids",
+              "horizon": "FY27",
+              "statement": "Even if nominal capacity awarded is 25-30 GW, deployment of solar will remain 40 to 50 gigawatt because battery-backed bids carry large solar behind the battery.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "550 MWh standalone BESS project start (zero date)",
+              "horizon": "unclear",
+              "statement": "Zero date has not yet started for us; we will be able to update once the zero date has started, pending regulatory decision on trading margin.",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "no_mention"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "ACME Suryodaya BESS fire incident / media misreporting on battery safety",
+              "status": "new",
+              "note": "Root cause analysis confirmed electrical short circuit in AC cabling between transformer and PCS, not the battery system; no damage to batteries; multiple safety measures already in place."
+            },
+            {
+              "risk": "GNA/transmission connectivity delays pushing out solar commissioning",
+              "status": "new",
+              "note": "SJVN FDRE and other projects have BESS commissioned but await GNA (e.g., SJVN GNA scheduled ~June '27); company avoids commissioning solar on TGNA due to curtailment risk, preferring to wait for full GNA readiness."
+            },
+            {
+              "risk": "Curtailment on state-based projects",
+              "status": "new",
+              "note": "Contributed ~1% revenue impact this quarter; new circular allowing surplus solar to charge batteries and additional battery sizing on state projects expected to reduce/eliminate curtailment going forward; regulatory parity with central grid provisions being pursued."
+            },
+            {
+              "risk": "Slowdown in RE/BESS bidding activity",
+              "status": "new",
+              "note": "Bid volumes reduced due to SECI's new rule requiring firm demand commitment before releasing bids, plus rightsizing of battery bids by states following VGF project execution delays; management expects large bids and revival within next 6-9 months given strong underlying demand drivers."
+            },
+            {
+              "risk": "BESS input cost volatility (lithium carbonate, China supply-demand, export tax)",
+              "status": "new",
+              "note": "Lithium carbonate volatility and a 6% China export tax from January could push future BESS costs up modestly (5-10%), but remains within budgeted cost; dollar hedging (>$300 million locked at INR89-93) provides a positive cost bias."
+            },
+            {
+              "risk": "Profitability uncertainty in data center/C&I segment",
+              "status": "new",
+              "note": "Company still working out cost and pricing profitability metrics before committing further to data center power supply despite promising headline demand."
+            },
+            {
+              "risk": "Open access litigation (Northeast railway/Supreme Court proceeding)",
+              "status": "new",
+              "note": "Caused delay in ACME Marigold LOA PPA signing with a Northeast state; now at advanced stage with bank guarantee given, expected to be signed shortly."
+            },
+            {
+              "risk": "Transmission/CTU substation delays (interconnection, right-of-way)",
+              "status": "no_mention",
+              "note": "Average ~6 months delay historically, considered manageable; no penalty for such delays; company defers module procurement to mitigate capex exposure."
+            },
+            {
+              "risk": "State grid (STU) inefficiency / variability",
+              "status": "no_mention",
+              "note": "STU efficiency varies by state; company has consciously avoided STU-connected projects except one Gujarat wind project and a small 550 MWh AP battery project."
+            },
+            {
+              "risk": "PPA signing / connectivity date attractiveness to DISCOMs",
+              "status": "no_mention",
+              "note": "Developers with later declared substation dates get lower DISCOM priority; ISTS waivers expiring 2028 add urgency."
+            },
+            {
+              "risk": "Regulatory uncertainty on standalone BESS trading margin (NHPC leasing structure)",
+              "status": "no_mention",
+              "note": "State regulator debating 0.5% margin vs INR7 paisa margin for NHPC's trading margin on the 550 MWh AP project; zero date not started."
+            },
+            {
+              "risk": "Supply chain / geopolitical factors affecting battery supply",
+              "status": "no_mention",
+              "note": "Achieving 10 GWh battery target depends on material supply, connectivity, financing and geopolitical factors, though considered less externally dependent than CTU-connected solar."
+            },
+            {
+              "risk": "Sustainability of merchant/tariff arbitrage economics",
+              "status": "no_mention",
+              "note": "Management views tariff arbitrage sustainability as uncertain long-term ('anybody's guess'), though expects it to hold for at least 4-5 years given rising peak demand and gas constraints; could taper as more battery capacity is added nationally."
+            },
+            {
+              "risk": "Curtailment (state grid, Rajasthan)",
+              "status": "no_mention",
+              "note": "Real curtailment impact limited to INR5-6 crores for the full year; battery installation expected to further reduce curtailment issue as more batteries come online in Rajasthan."
+            },
+            {
+              "risk": "LOA-to-PPA conversion / potential surrender under proposed CERC mechanism",
+              "status": "no_mention",
+              "note": "CERC discussion paper proposes surrender/exit option for LOA-based connectivity delayed >1 year without signed PPA; company does not foresee this affecting its portfolio given its strong conversion pipeline, but has a backup plan (future bids/battery projects) if needed."
+            }
+          ],
+          "themes": [
+            {
+              "label": "BESS ramp-up & merchant arbitrage",
+              "direction": "positive",
+              "note": "BESS commissioning upgraded to >10 GWh by FY27, with INR1,400 crores locked-in short-term revenue and >20% EBITDA-to-capex yield.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Peak power demand & tariff sustainability",
+              "direction": "positive",
+              "note": "Duck curve dynamics expected to push peak demand from ~300 GWh toward 400-500 GWh (up to 1 TWh in positive scenario); management sees no pricing slowdown for 3 years.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Regulatory tailwinds for BESS/FDRE",
+              "direction": "positive",
+              "note": "MNRE deadline extension, ISTS waiver extension, CTU RoFR-based BESS connectivity, and CERC merchant-route conversion all cited as supportive of BESS/FDRE growth.",
+              "section_ref": "GEO"
+            },
+            {
+              "label": "Transmission/connectivity delay risk",
+              "direction": "negative",
+              "note": "SJVN FDRE and other projects await GNA connectivity (e.g., ~June '27); company avoids commissioning solar on TGNA due to curtailment risk.",
+              "section_ref": "RISK"
+            },
+            {
+              "label": "Order book growth & PPA conversion",
+              "direction": "positive",
+              "note": "600 MW of new SECI PPAs signed; total PPA-signed capacity reached 3,880 MW of 5,080 MW under construction; total portfolio at 8,070 MW.",
+              "section_ref": "ORD"
+            },
+            {
+              "label": "CTU vs STU connectivity mix",
+              "direction": "neutral",
+              "note": "Company favors CTU-connected projects/C&I customers for flexibility in using power for peak power or other use cases.",
+              "section_ref": "MKT"
+            },
+            {
+              "label": "Curtailment mitigation via batteries",
+              "direction": "positive",
+              "note": "Curtailment contributed ~1% revenue impact; new circular allows charging batteries with surplus solar, and company plans added battery on state projects to reduce curtailment going forward.",
+              "section_ref": "RISK"
+            }
+          ],
+          "key_takeaways": [
+            "This quarter marks another milestone for the company as we delivered the highest ever revenue and EBITDA in our history.",
+            "Total revenue for the quarter stood at INR954 crores, which is up 63% year-on-year, while EBITDA increased 56% to INR831 crores.",
+            "We have secured short-term BESS contracts during the quarter, locking in more than INR1,400 crores of revenue for partial FY27 BESS commission capacity.",
+            "We are upgrading our BESS commissioning guidance from 10 gigawatt hour by calendar year 2027 to more than 10 gigawatt hour by fiscal year 2027, effectively bringing forward this milestone by nearly 3 quarters.",
+            "For FY27, we also expect to commission 1.5 gigawatt of contracted renewable energy generation capacity, subject to timely availability of substation and transmission lines.",
+            "By 2030, we contemplate to increase our target beyond 10 gigawatt as guided earlier, basis the new growth opportunities that we are seeing in the market, and we will keep you updated on the same in coming quarters.",
+            "We signed 600 megawatt of FDRE and hybrid PPAs with SECI during the quarter, which takes our total PPA signed capacity to 3,880 megawatts out of total under-construction capacity of 5,080 megawatts.",
+            "During the quarter, we also achieved the highest capacity utilization factor in the company's history at 30.9% compared with 28.5% in the corresponding quarter last year."
+          ],
+          "pressing_questions": [
+            "Apoorva Bahadur asked about the depth of the merchant market and how much BESS capacity it can support given that arbitrage is very good and many players are jumping in, and for how long spreads will hold before compression.",
+            "Yogesh Patil asked whether the INR1,400 crores revenue run-rate could be sustained for the next 3-4 years given a normalizing El Nino effect, return of hydropower, and potential lower realizations.",
+            "Anuj Upadhyay sought clarity on whether the INR1,400 crores locked-in revenue is from the entire 10 GWh or only a 50% portion tied to upcoming FDRE projects, per the presentation."
+          ]
+        },
+        {
+          "company": "ACME Solar Holdings Ltd",
+          "ticker": "ACMESOLAR",
+          "industry": "Power Generation",
+          "country": "India",
+          "concall_date": "2026-05-14",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=15e795ed-10b7-488c-b0c9-a798ed33d8cc.pdf",
+          "model": "anthropic.claude-sonnet-5",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-04T23:23:31.476Z",
+          "summary": "ACME Solar reported strong Q4/FY26 growth driven by capacity addition, higher CUF and early BESS deployment, with management guiding to ~1.5 GW of generation commissioning and ~10 GWh of battery commissioning in FY27, continued focus on long-term 25-year PPAs alongside opportunistic short/medium-term BESS merchant opportunities, and expectations that peak power tariff arbitrage (~INR6/unit) will sustain for at least 4-5 years amid rising RE capacity and CTU-linked connectivity.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "Total revenue",
+                  "value": "705",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total revenue",
+                  "value": "2,507",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue growth YoY",
+                  "value": "31",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue growth YoY",
+                  "value": "59",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Other income (included in revenue)",
+                  "value": "157",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin",
+                  "value": "over 90",
+                  "unit": "%",
+                  "period": "Q4 FY26 and FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT",
+                  "value": "138",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT",
+                  "value": "498",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT margin",
+                  "value": "19.6",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT margin",
+                  "value": "19.9",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Financing secured for under-construction projects",
+                  "value": "15,000",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Debt refinanced for operational projects",
+                  "value": "3,300",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Reduction in rate of interest on refinanced projects",
+                  "value": "~150",
+                  "unit": "basis points",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Weighted average cost of debt (operational projects)",
+                  "value": "8.4",
+                  "unit": "% p.a.",
+                  "period": "as of date",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operational projects with AA- stable credit rating",
+                  "value": "2.2",
+                  "unit": "GW",
+                  "period": "as of date",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Committed total capex",
+                  "value": "12,475",
+                  "unit": "INR crores",
+                  "period": "cumulative",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capex incurred during the year",
+                  "value": "6,445",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Purchase orders aggregated",
+                  "value": "6,030",
+                  "unit": "INR crores",
+                  "period": "cumulative",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Battery capex incurred (approx, last quarter)",
+                  "value": "1,000-1,200",
+                  "unit": "INR crores",
+                  "period": "Q3 FY26 / prior quarter",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capital advances (non-current assets)",
+                  "value": "323",
+                  "unit": "INR crores",
+                  "period": "FY26 balance sheet",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gross block increase YoY",
+                  "value": "3,400 (approx, later clarified as 3,460)",
+                  "unit": "INR crores",
+                  "period": "FY26 vs FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gross block increase attributable to battery",
+                  "value": "1,000-1,100",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Run rate EBITDA (prior year)",
+                  "value": "1,700",
+                  "unit": "INR crores",
+                  "period": "FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Run rate EBITDA (current year)",
+                  "value": "~2,000",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "FY26 EBITDA including other income (from 2,990 MW operational capacity)",
+                  "value": "~2,200",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Trade receivables decline YoY",
+                  "value": "13",
+                  "unit": "%",
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "DSO (current)",
+                  "value": "14-15",
+                  "unit": "days",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "DSO (historical, FY23 and before)",
+                  "value": "180",
+                  "unit": "days",
+                  "period": "FY23 and before",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Curtailment impact (real curtailment, full year)",
+                  "value": "5-6",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Curtailment impact on STU Rajasthan",
+                  "value": "3",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Curtailment impact from grid O&M maintenance",
+                  "value": "2-3",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "IRR expected for standalone battery project",
+                  "value": "mid- to high teens",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "Standalone battery bids as % of overall capex",
+                  "value": "less than 1",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Solar/wind/FDRE battery mix as % of capex",
+                  "value": "99",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gross block increase in capitalization (approx, alternate figure)",
+                  "value": "3,000-odd",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Q3 reported run rate EBITDA",
+                  "value": "2,100",
+                  "unit": "INR crores",
+                  "period": "Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gross block increase excluding battery",
+                  "value": "2,300",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Assumed tariff arbitrage for merchant BESS margin calc",
+                  "value": "6",
+                  "unit": "INR/kWh",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Assumed selling price for merchant BESS margin calc",
+                  "value": "8",
+                  "unit": "INR/kWh",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Assumed purchase price for merchant BESS margin calc",
+                  "value": "2",
+                  "unit": "INR/kWh",
+                  "period": null,
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Revenue & Margin Drivers",
+                  "points": [
+                    "Revenue growth driven by capacity addition and higher CUF.",
+                    "Other income primarily comprises recurring interest income from cash generated at SPV level until upstreamed to ASHL and recurring interest from DSRA balances maintained per debt covenants.",
+                    "Since DSRA is largely funded from debt proceeds, corresponding finance cost is accounted for in finance cost.",
+                    "EBITDA margin of over 90% attributed to favourable operating leverage and optimized operational efficiency."
+                  ]
+                },
+                {
+                  "label": "Debt & Capital Structure",
+                  "points": [
+                    "Refinancing of INR3,300 crores in operational project debt reduced interest rate by ~150 bps.",
+                    "2.2 GW of operational projects carry an AA- stable credit rating."
+                  ]
+                },
+                {
+                  "label": "Receivables & Working Capital",
+                  "points": [
+                    "DSO improvement to 14-15 days from a historical high of 180 days is described as structural rather than one-time, driven by portfolio shift toward central offtakers who take cash discounts by paying within 6-10 days.",
+                    "Historical high receivable days pertained to FY23 and prior, when central offtaker contribution was lower and there were payment delays from some DISCOMs, notably Telangana and Andhra Pradesh.",
+                    "Government's Late Payment Surcharge (LPS) scheme has enforced payment discipline among state DISCOMs; non-payment leads to disconnection via PRAPTI portal reporting, and prior legal disputes (e.g., Andhra Pradesh court cases) are now settled."
+                  ]
+                },
+                {
+                  "label": "Cash Flow & Capital Advances",
+                  "points": [
+                    "Increase in non-current assets/other financial non-current assets on balance sheet mainly due to capex-related capital creditors.",
+                    "Capital advances of INR323 crores relate to procurement of battery and turbine equipment, given as partial (10-20%) advances against bank guarantees to secure supplier commitments and enable raw material purchase, particularly for international/large equipment procurement."
+                  ]
+                },
+                {
+                  "label": "Gross Block vs Run-rate EBITDA",
+                  "points": [
+                    "Apparent high gross block-to-EBITDA ratio (~11x) explained by wind capacity commissioning late in the year (not yet contributing to run-rate EBITDA) and ~INR1,000-1,100 crores of the INR3,460 crores gross block increase relating to batteries commissioned at year-end that are not yet reflected in run-rate EBITDA."
+                  ]
+                },
+                {
+                  "label": "Curtailment Impact",
+                  "points": [
+                    "Only 2 projects in the portfolio are connected to the Rajasthan state grid; rest are on the central grid where curtailment is compensated via regulatory mechanism.",
+                    "Pre-COD/pre-GNA curtailment (infrastructure not ready, e.g., Sikar plant before full commissioning) is not classified as true curtailment.",
+                    "Adjusted for pre-COD curtailment, real curtailment impact for the full year was only INR5-6 crores, with INR3 crores from STU Rajasthan and INR2-3 crores from grid operator O&M maintenance."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ORD",
+              "title": "Order Book & Demand",
+              "key_figures": [
+                {
+                  "label": "FDRE projects won with SECI (301 MW peak power)",
+                  "value": "301",
+                  "unit": "MW",
+                  "period": "during the quarter",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Under construction portfolio",
+                  "value": "5.1",
+                  "unit": "GW",
+                  "period": "as of date",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total portfolio",
+                  "value": "8,071",
+                  "unit": "MW",
+                  "period": "as of date",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BESS requirement for expanded portfolio",
+                  "value": "~17",
+                  "unit": "GWh",
+                  "period": "as of date",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PPA signed capacity (under construction)",
+                  "value": "3,280",
+                  "unit": "MW",
+                  "period": "as of date",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Signed PPA under construction (excl. operational)",
+                  "value": "3.2",
+                  "unit": "GW",
+                  "period": "as of date",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Recently won PPAs",
+                  "value": "1.8",
+                  "unit": "GW",
+                  "period": "recent",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Older PPAs in discussion",
+                  "value": "~850",
+                  "unit": "MW",
+                  "period": "various stages",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Merchant BESS in under-construction portfolio",
+                  "value": "654",
+                  "unit": "MWh",
+                  "period": "as of date",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Industry-wide LOA-to-PPA conversion",
+                  "value": "3+",
+                  "unit": "GW",
+                  "period": "industry, current",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "SECI open tenders",
+                  "value": "~5",
+                  "unit": "GW",
+                  "period": "current",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "SECI wind tender component",
+                  "value": "2",
+                  "unit": "GW",
+                  "period": "current",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "SECI PSP tender component",
+                  "value": "~1",
+                  "unit": "GW",
+                  "period": "current",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "Expected bid volume this year",
+                  "value": "15-20",
+                  "unit": "GW",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Expected state+central capacity addition next year",
+                  "value": "20-30",
+                  "unit": "GW",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Implied solar deployment behind battery-backed bids",
+                  "value": "40-50",
+                  "unit": "GW",
+                  "period": "FY27 outlook",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Order Book Composition & Growth",
+                  "points": [
+                    "301 MW peak power FDRE win with SECI during the quarter expanded under-construction portfolio to 5.1 GW and total portfolio to 8,071 MW, requiring ~17 GWh of BESS installation.",
+                    "PPA signed capacity within under-construction portfolio stands at 3,280 MW.",
+                    "Company holds 6.2 GW of signed PPA under construction in total (including 3.2 GW converted from LOA, excluding 3 GW operational); additional 1.8 GW of recently won PPAs and ~850 MW of older PPAs in various stages of discussion."
+                  ]
+                },
+                {
+                  "label": "Merchant BESS in Portfolio",
+                  "points": [
+                    "654 MWh merchant BESS currently unsigned to a PPA but slated to move to a PPA shortly (tariff likely ~INR6.28 or similar); kept merchant for financing/early-installation flexibility since it does not tie the asset to a specific PPA."
+                  ]
+                },
+                {
+                  "label": "LOA-to-PPA Conversion Regulatory Development (CERC)",
+                  "points": [
+                    "CERC has proposed (discussion paper stage) a mechanism allowing surrender/exit of LOA-based connectivity where PPA signing is delayed beyond 1 year; developer would then be free to use capacity on merchant basis or apply it to another LOA.",
+                    "Company does not foresee needing to surrender LOAs given its strong PPA conversion pipeline; if it happens, connectivity will be redeployed for future bids or battery-connected projects."
+                  ]
+                },
+                {
+                  "label": "Demand & Bidding Outlook",
+                  "points": [
+                    "Demand for peak power capacity (backed by battery) is strongest; partial peak power second; wind selling well but fewer opportunities; plain solar selling slowest as very few states have pure solar demand.",
+                    "SECI now sole REIA, expected to aggregate demand for thermal-mimic, peak power, and CfD tenders which will find takers based on demand; at least 5 GW of tenders currently open with SECI (2 GW wind, ~1 GW PSP, plus thermal mimic and CfD).",
+                    "Bid volume for FY27 expected to be lower than last year but PPA signing pace expected to be faster since developers hold sizable pipelines to execute before new bids are floated.",
+                    "Some states (Southern states, Maharashtra, Gujarat) will continue state-level bidding successfully; others will rely on SECI's competitive rates due to limited renewable potential.",
+                    "Overall capacity addition (state+central) expected at 20-30 GW next year, but overall capex requirement will be higher than last year because battery-backed 'thermal mimic'/long-duration storage bids carry large solar capacity behind the battery — implying 40-50 GW of solar deployment even if nominal awarded capacity is 25-30 GW.",
+                    "CERC connectivity rules under regulation 5.2 mandate installing solar within 3 years of taking connectivity, driving battery-linked solar installations and reducing pure battery installations."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "Operational generation contracted capacity",
+                  "value": "2,990",
+                  "unit": "MW",
+                  "period": "as of date",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Q4 generation",
+                  "value": "1,720",
+                  "unit": "million units",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Q4 generation growth YoY",
+                  "value": "13",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "FY26 generation",
+                  "value": "6,464",
+                  "unit": "million units",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "FY26 generation growth YoY",
+                  "value": "61",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "CUF",
+                  "value": "26.9",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "CUF (full portfolio, full year)",
+                  "value": "~26",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Grid availability",
+                  "value": "over 99",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Plant availability",
+                  "value": "over 99",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Sikar plant CUF",
+                  "value": "29-30",
+                  "unit": "%",
+                  "period": "FY26 (year)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Rajasthan new plants PLF (last quarter)",
+                  "value": "28+",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Rajasthan new plants capacity",
+                  "value": "~2,200",
+                  "unit": "MW",
+                  "period": "as of date",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BESS commissioned to date",
+                  "value": "~2.3",
+                  "unit": "GW",
+                  "period": "as of date",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BESS commissioned as of prior quarter",
+                  "value": "1.3",
+                  "unit": "GW",
+                  "period": "prior quarter",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BESS net realization value",
+                  "value": "~2.2",
+                  "unit": "INR crores/day",
+                  "period": "as of date",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BESS monthly realization (approx)",
+                  "value": ">60",
+                  "unit": "INR crores/month",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BESS round trip efficiency",
+                  "value": "88-90",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Merchant BESS EBITDA margin (estimate)",
+                  "value": "75-80",
+                  "unit": "%",
+                  "period": "FY27 outlook",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "BESS Performance",
+                  "points": [
+                    "BESS capacities running on merchant and short-term contracts, capturing tariff arbitrage between sale and purchase of power during peak and non-peak hours.",
+                    "BESS delivering net realization of ~INR2.2 crores per day, in line or better than expectations for round trip efficiency (88-90%).",
+                    "Last quarter (Q3) battery contribution was almost nil; in Q4 (March quarter) contribution was negligible as batteries were just getting started at various sites."
+                  ]
+                },
+                {
+                  "label": "PLF/CUF Trends",
+                  "points": [
+                    "Q4 PLF decline of ~1% YoY attributed to lower irradiation and/or curtailment; larger capacity base (denominator effect) also plays a role; seasonality is a factor.",
+                    "New Rajasthan plants have higher DC installed capacity leading to higher CUF than blended portfolio average."
+                  ]
+                },
+                {
+                  "label": "Standalone BESS project (Andhra Pradesh)",
+                  "points": [
+                    "550 MWh standalone BESS project: tariff adopted with caveat, zero date not yet started pending regulatory clarification on NHPC's trading margin (0.5% vs INR7 paisa) since project involves pure leasing structure with VGF.",
+                    "Expected IRR in mid-to-high teens; low transmission infrastructure required (33kV level installation).",
+                    "Batteries slated to run for 8,000-10,000 cycles depending on single vs double cycle PPA terms.",
+                    "This project represents less than 1% of overall capex; management not focusing on such small standalone battery bids as core portfolio batteries (part of solar/wind/FDRE mix) constitute ~99% of capex."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "TECH",
+              "title": "Product & Technology",
+              "key_figures": [
+                {
+                  "label": "PLF decline YoY",
+                  "value": "1",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Battery transmission target during next calendar year",
+                  "value": "10",
+                  "unit": "GWh",
+                  "period": "next calendar year",
+                  "kind": "target"
+                },
+                {
+                  "label": "CERC connectivity mandatory solar installation timeline",
+                  "value": "3",
+                  "unit": "years",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Battery installation voltage level",
+                  "value": "33",
+                  "unit": "kV",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Battery end-of-life cycle range",
+                  "value": "8,000 to 10,000",
+                  "unit": "cycles",
+                  "period": null,
+                  "kind": "reported"
+                }
+              ],
+              "subsections": []
+            },
+            {
+              "id": "MFG",
+              "title": "Manufacturing & Capacity",
+              "key_figures": [
+                {
+                  "label": "Peak power PPA tariff under discussion",
+                  "value": "6.28",
+                  "unit": "INR/kWh",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "SJVN capacity at Fatehgarh substation",
+                  "value": "570",
+                  "unit": "MW",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Fatehgarh-1 capacity (part 1)",
+                  "value": "1,000",
+                  "unit": "MW",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Fatehgarh-1 capacity (part 2)",
+                  "value": "1,200",
+                  "unit": "MW",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Fatehgarh-2 capacity",
+                  "value": "1,000",
+                  "unit": "MW",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Aggregate ready connectivity for battery power at operational substations",
+                  "value": "2,500",
+                  "unit": "MW",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Plain vanilla solar capex per MW",
+                  "value": "3 to 4",
+                  "unit": "INR crore/MW",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Standalone battery project capacity",
+                  "value": "550",
+                  "unit": "MWh",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Trading margin option 1 for NHPC leasing",
+                  "value": "0.5",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Trading margin option 2 for NHPC leasing",
+                  "value": "7",
+                  "unit": "paisa",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Standalone battery project as portion of overall portfolio",
+                  "value": "1 bid out of overall portfolio of 8",
+                  "unit": "GWh",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Module cost as % of solar plant capex",
+                  "value": "60",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Service-related work (transmission line, substation) as % of overall project cost",
+                  "value": "20-25",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                }
+              ],
+              "subsections": []
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [
+                {
+                  "label": "CTU-based projects share of portfolio",
+                  "value": "80",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Typical CTU substation transmission delay",
+                  "value": "6",
+                  "unit": "months",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Substations on time (industry generic portfolio)",
+                  "value": "60",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Grid Connectivity Mix",
+                  "points": [
+                    "Only 2 projects in Rajasthan are connected to the state grid (STU); the rest of the portfolio is on the central grid (CTU) where curtailment is compensated regulatorily.",
+                    "Portfolio spans substations across Rajasthan, Gujarat, Madhya Pradesh, Andhra Pradesh, and Karnataka, all CTU-connected.",
+                    "No projects are being built on STU except the Gujarat wind project (already done) and a small 550 MWh battery project in Andhra Pradesh; no further state-grid projects are in the pipeline.",
+                    "CTU projects are structured, giving firm declared dates each quarter for substation readiness, whereas STU/state grid efficiency varies significantly by state (e.g., Gujarat cited as efficient; some states lack renewable potential and don't develop grids as much)."
+                  ]
+                },
+                {
+                  "label": "Battery Deployment Locations",
+                  "points": [
+                    "Battery installations at operational substations: Fatehgarh-1 (1,000-1,200 MW), Fatehgarh-2 (1,000 MW with STOA allowing full battery transmission), and Bikaner-3 (bay ready for battery transmission) aggregate to ~2,500 MW of ready connectivity for night-time battery power sales.",
+                    "Commissioning plan for FY27 includes Neemuch substation (first to commission, charging expected June, will commission NHPC and Tata FDRE plants), Fatehgarh substation (SJVN 570 MW, short-term open access available, long-term open access per CTU targeted March 2027), NTPC hybrid (solar ready, long-term open access targeted December 2026) and Pachora wind component (a couple of quarters later), Pavagada and Anantapur also targeted this year per CTU timeline."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SUP",
+              "title": "Supply Chain & Operations",
+              "key_figures": [
+                {
+                  "label": "Battery contract advance payment percentage",
+                  "value": "10",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Turbine advance payment percentage",
+                  "value": "20",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                }
+              ],
+              "subsections": []
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [
+                {
+                  "label": "Industry-wide LOA to PPA conversion",
+                  "value": "3-plus",
+                  "unit": "GW",
+                  "period": "industry, current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Expected bid volume range this year",
+                  "value": "15 to 20",
+                  "unit": "GW",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "SECI thermal-mimic/CfD tender component",
+                  "value": "5",
+                  "unit": "GW",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Assumed thermal power realization at full capacity",
+                  "value": "6.5",
+                  "unit": "INR",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Thermal power operating capacity range",
+                  "value": "60-70",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Peak power realization sustainability outlook",
+                  "value": "4-5",
+                  "unit": "years",
+                  "period": null,
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": []
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [
+                {
+                  "label": "Signed PPA under construction (excl. 3 operational)",
+                  "value": "6.2",
+                  "unit": "GW",
+                  "period": "as of date",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Under construction portfolio (Aanchal reference)",
+                  "value": "3,280",
+                  "unit": "MW",
+                  "period": "as of date",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Management Change",
+                  "points": [
+                    "Rajat Kumar Singh has stepped down as CFO to pursue opportunities outside ACME; Arun Chopra has been appointed as the company's new CFO."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [
+                {
+                  "label": "ISTS waiver expiry year",
+                  "value": "2028",
+                  "unit": null,
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Substation declared charging year example (priority case)",
+                  "value": "2027",
+                  "unit": null,
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Substation declared charging year example (lower priority case)",
+                  "value": "2029",
+                  "unit": null,
+                  "period": null,
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Transmission & Connectivity Delays",
+                  "points": [
+                    "CTU substations experience delay mainly in transmission line interconnection and right-of-way issues, dependent on bidding companies; historically ~6 months average delay, described as 'a wonderful job' given the grid's scale.",
+                    "Some substations (~60%) are on time, others delayed; maximum typical delay is 6 months, though unfortunate events could extend this further.",
+                    "Company mitigates delay risk by deferring capex on long-lead but flexible items (e.g., solar modules, which are just-in-time and abundant in India), while completing transmission line/substation work (fixed lead items, ~20-25% of project cost) ahead of schedule.",
+                    "No penalty is levied for CTU-caused delays; developers get automatic timeline extensions, and states/developers are not penalized for delays beyond their control."
+                  ]
+                },
+                {
+                  "label": "PPA/Connectivity Attractiveness Risk",
+                  "points": [
+                    "DISCOMs prioritize signing PPAs with developers whose substations have nearer-term declared commissioning dates (e.g., 2027 vs 2029); developers with later connectivity dates face lower priority and risk not getting a 'seat at the table'.",
+                    "Certain ISTS waivers are set to expire in 2028, adding urgency/attractiveness considerations tied to declared substation dates."
+                  ]
+                },
+                {
+                  "label": "Regulatory/Tariff Uncertainty on Standalone BESS",
+                  "points": [
+                    "Standalone 550 MWh Andhra Pradesh BESS project's zero date has not started, pending state regulator's decision on NHPC's trading margin structure (0.5% vs INR7 paisa) given the pure leasing/VGF arrangement."
+                  ]
+                },
+                {
+                  "label": "Geopolitical/Supply Factors",
+                  "points": [
+                    "Achieving the 10 GWh battery target depends on supply of material, connectivity, financing and supply tie availability; interplay of supply chain and geopolitical factors remain sources of uncertainty, though considered to have fewer external dependencies than CTU-connected solar plants."
+                  ]
+                },
+                {
+                  "label": "Tariff Arbitrage Sustainability",
+                  "points": [
+                    "Sustainability of BESS tariff arbitrage is 'anybody's guess' per management, though historical peak power realization of INR7-8 has persisted for several years even in low-demand years; current gas constraints have elevated prices further, and elevated peak demand is expected to keep arbitrage favorable for at least 4-5 years before it could taper as more battery capacity comes online (CEA estimates ~200 GWh battery needed nationally, rising as more daytime solar is added)."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [
+                {
+                  "label": "Target BESS operational portfolio (near-term)",
+                  "value": "~10",
+                  "unit": "GWh",
+                  "period": "upcoming",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Target contracted generation capacity addition (near-term)",
+                  "value": "1.5",
+                  "unit": "GW",
+                  "period": "upcoming",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "FY27 generation asset commissioning target",
+                  "value": "1.5",
+                  "unit": "GW",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "FY27 battery commissioning target",
+                  "value": "~10",
+                  "unit": "GWh",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Merchant portion of FY27 battery commissioning",
+                  "value": "~8.5",
+                  "unit": "GWh",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "FDRE format portion of FY27 battery commissioning",
+                  "value": "1.2-1.5",
+                  "unit": "GWh (MWh: 1,200-1,500)",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Full commissioning of PPA-signed under-construction portfolio (3,280 MW + 12 GWh BESS)",
+                  "value": "FY28",
+                  "unit": null,
+                  "period": "FY28",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Battery power tariff/arbitrage expectation",
+                  "value": "INR9-10",
+                  "unit": "INR/unit (peak hour)",
+                  "period": "medium term",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Peak power realization historical range",
+                  "value": "INR7-8",
+                  "unit": "INR/unit",
+                  "period": "last few years",
+                  "kind": "reported"
+                },
+                {
+                  "label": "National battery requirement (CEA estimate, current)",
+                  "value": "200",
+                  "unit": "GWh",
+                  "period": "current",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "National battery requirement (with planned installations)",
+                  "value": "200-300",
+                  "unit": "GWh",
+                  "period": "near-term",
+                  "kind": "market_size"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Forward Priorities",
+                  "points": [
+                    "Key focus remains timely execution alongside healthy order book additions.",
+                    "Continued focus on advancing commissioning and operation of large-scale BESS capacity utilizing transmission infrastructure of existing operational projects, running on merchant/short-term basis.",
+                    "Upcoming future operational capacity expected to have operating battery portfolio of ~10 GWh along with 1.5 GW of contracted generation capacity, subject to timely transmission connectivity and other external factors.",
+                    "Order book strategy: continue focusing on long-term 25-year contracts while also actively participating in short- and medium-term BESS opportunities to capitalize on evolving market demand and merchant dynamics."
+                  ]
+                },
+                {
+                  "label": "Battery Installation Sequencing Rationale",
+                  "points": [
+                    "Batteries are being commissioned ahead of solar/FDRE integration at operational (Brownfield) substations to prepone battery revenue realization since night-time power sales are now allowed per PPA construct and MNRE clarification, more than compensating for CTU timeline shifts.",
+                    "Company purposely defers connecting installed solar to avoid FDRE classification, instead charging batteries from grid and selling merchant power at attractive summer prices; solar capex (~60% of project cost, modules) is deferred until LTOA is operational to save interest during construction and improve returns, since modules are just-in-time available."
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "Generation asset commissioning",
+              "horizon": "FY27",
+              "statement": "Targeting 1.5 gigawatts of projects commissioned in this financial year.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Battery (BESS) commissioning",
+              "horizon": "FY27",
+              "statement": "Around 10 gigawatt hour of battery to be commissioned; ~8.5 GWh on merchant basis and ~1.2-1.5 GWh in FDRE format.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Operating battery portfolio",
+              "horizon": "upcoming",
+              "statement": "Upcoming future operational capacity expected to have an operating battery portfolio of around 10 gigawatt hour, along with 1.5 gigawatts of contracted generation capacity, subject to timely availability of transmission connectivity and other external factors.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Under-construction PPA-signed portfolio commissioning (3,280 MW + 12 GWh BESS)",
+              "horizon": "FY28",
+              "statement": "These will be commissioned by FY28.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Order book strategy",
+              "horizon": "ongoing",
+              "statement": "Continue to focus on long-term 25-year contracts while also actively participating in short- and medium-term BESS opportunities to capitalize on evolving market demand and merchant market dynamics.",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "SJVN FDRE full commissioning",
+              "horizon": "FY27 end",
+              "statement": "Full FDRE for SJVN will be ready by FY27 end (long-term open access per CTU targeted March '27).",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "NTPC hybrid commissioning",
+              "horizon": "Dec 2026 / by March 2027",
+              "statement": "NTPC solar ready; long-term open access slated to be commissioned by December '26; Pachora wind component ready but slated a couple of quarters later; by March '27, all this will be commissioned.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Neemuch substation commissioning",
+              "horizon": "June 2026",
+              "statement": "Neemuch substation will be the first commissioning from our side, to be charged in June, commissioning NHPC and Tata plants.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Peak power / battery tariff arbitrage sustainability",
+              "horizon": "next 4-5 years",
+              "statement": "We see that... at least for around 4, 5 years, we don't see this going down (referring to peak power realization/tariff arbitrage).",
+              "specificity": "vague",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Battery peak-hour price expectation",
+              "horizon": "medium term",
+              "statement": "Battery will remain at INR9 to INR10 in the peak hour time.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "RE bid volume",
+              "horizon": "FY27",
+              "statement": "Bids will be lesser than last year, but you will see bids of a level of 15 to 20 gigawatts; PPA signing pace should be faster.",
+              "specificity": "specific",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "State + central capacity addition",
+              "horizon": "FY27",
+              "statement": "Bids will be won with capacity next year, adding state and central will be 20 to 30 gigawatt.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Implied solar deployment behind battery-backed bids",
+              "horizon": "FY27",
+              "statement": "Even if nominal capacity awarded is 25-30 GW, deployment of solar will remain 40 to 50 gigawatt because battery-backed bids carry large solar behind the battery.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "550 MWh standalone BESS project start (zero date)",
+              "horizon": "unclear",
+              "statement": "Zero date has not yet started for us; we will be able to update once the zero date has started, pending regulatory decision on trading margin.",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "new"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "Transmission/CTU substation delays (interconnection, right-of-way)",
+              "status": "stable",
+              "note": "Average ~6 months delay historically, considered manageable; no penalty for such delays; company defers module procurement to mitigate capex exposure."
+            },
+            {
+              "risk": "State grid (STU) inefficiency / variability",
+              "status": "stable",
+              "note": "STU efficiency varies by state; company has consciously avoided STU-connected projects except one Gujarat wind project and a small 550 MWh AP battery project."
+            },
+            {
+              "risk": "PPA signing / connectivity date attractiveness to DISCOMs",
+              "status": "stable",
+              "note": "Developers with later declared substation dates get lower DISCOM priority; ISTS waivers expiring 2028 add urgency."
+            },
+            {
+              "risk": "Regulatory uncertainty on standalone BESS trading margin (NHPC leasing structure)",
+              "status": "new",
+              "note": "State regulator debating 0.5% margin vs INR7 paisa margin for NHPC's trading margin on the 550 MWh AP project; zero date not started."
+            },
+            {
+              "risk": "Supply chain / geopolitical factors affecting battery supply",
+              "status": "new",
+              "note": "Achieving 10 GWh battery target depends on material supply, connectivity, financing and geopolitical factors, though considered less externally dependent than CTU-connected solar."
+            },
+            {
+              "risk": "Sustainability of merchant/tariff arbitrage economics",
+              "status": "stable",
+              "note": "Management views tariff arbitrage sustainability as uncertain long-term ('anybody's guess'), though expects it to hold for at least 4-5 years given rising peak demand and gas constraints; could taper as more battery capacity is added nationally."
+            },
+            {
+              "risk": "Curtailment (state grid, Rajasthan)",
+              "status": "easing",
+              "note": "Real curtailment impact limited to INR5-6 crores for the full year; battery installation expected to further reduce curtailment issue as more batteries come online in Rajasthan."
+            },
+            {
+              "risk": "LOA-to-PPA conversion / potential surrender under proposed CERC mechanism",
+              "status": "new",
+              "note": "CERC discussion paper proposes surrender/exit option for LOA-based connectivity delayed >1 year without signed PPA; company does not foresee this affecting its portfolio given its strong conversion pipeline, but has a backup plan (future bids/battery projects) if needed."
+            }
+          ],
+          "themes": [
+            {
+              "label": "BESS ramp-up & merchant arbitrage",
+              "direction": "positive",
+              "note": "~2.3 GW BESS commissioned delivering ~INR2.2 crores/day net realization and 88-90% round-trip efficiency, with plans to reach ~10 GWh via merchant/short-term contracts capturing peak-off-peak tariff arbitrage.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "CTU vs STU connectivity mix",
+              "direction": "positive",
+              "note": "Portfolio deliberately concentrated on CTU-connected substations for regulatory curtailment protection and central offtaker cash-discount payment terms, versus limited/no STU exposure.",
+              "section_ref": "GEO"
+            },
+            {
+              "label": "Receivables & working capital improvement",
+              "direction": "positive",
+              "note": "DSO improved structurally to 14-15 days (from 180 days historically) as portfolio shifts toward central offtakers and LPS scheme enforces payment discipline.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Regulatory tailwinds for BESS/FDRE",
+              "direction": "positive",
+              "note": "MNRE clarification allowing merchant sale of grid-charged BESS power ahead of RE commissioning, CTU processing of BESS connectivity under RoFR, and CERC's draft SCOD extension order all support faster BESS deployment.",
+              "section_ref": "GUID"
+            },
+            {
+              "label": "Transmission/connectivity delay risk",
+              "direction": "mixed",
+              "note": "CTU substation delays (~6 months typical) require capex deferral strategies (delaying module procurement) but are non-penalized and considered manageable given grid scale.",
+              "section_ref": "RISK"
+            },
+            {
+              "label": "Order book growth & PPA conversion",
+              "direction": "positive",
+              "note": "Under-construction portfolio expanded to 5.1 GW / total 8,071 MW after winning 301 MW FDRE with SECI; strong LOA-to-PPA conversion pipeline (6.2 GW signed) reduces surrender risk under proposed CERC mechanism.",
+              "section_ref": "ORD"
+            },
+            {
+              "label": "Peak power demand & tariff sustainability",
+              "direction": "positive",
+              "note": "Management expects peak power/BESS tariff arbitrage to sustain for at least 4-5 years given rising peak demand, gas constraints, and historical INR7-8 realization, potentially rising to INR9-10 in peak hours.",
+              "section_ref": "RISK"
+            }
+          ],
+          "key_takeaways": [
+            "India has observed its all-time highest peak electricity demand of 256 gigawatt on 25th April '26, surpassing the previous high of 250 gigawatt (30th May '24) and 245 gigawatt (9th January '26).",
+            "India continues to maintain strong momentum in capacity additions with approximately 55 gigawatt of RE added in financial year '26, taking cumulative renewable energy capacity to 283 gigawatts.",
+            "In a significant milestone, India achieved 50% of its cumulative electric power installed capacity from non-fossil fuel sources in June '25, 5 years ahead of the 2030 target set under its nationally determined contribution to the Paris Agreement.",
+            "In line with our continued focus on early BESS deployment, we successfully commissioned approximately 2.3 gigawatt BESS capacity to date, delivering net realization value of approximately INR2.2 crores per day and a round trip efficiency of approximately 88% to 90%.",
+            "Our total revenue for the quarter stands at INR 705 crores and INR 2,507 crores of FY '26, 31% and 59% increase year-on-year respectively, driven by capacity addition and higher CUF.",
+            "EBITDA margin of over 90%, both for the quarter and full year on account of favourable operating leverage and optimized operational efficiency. PAT stood at INR138 crores for the quarter and INR498 crores for the year with a margin of 19.6% and 19.9%, respectively.",
+            "During the year, we secured financing of around INR15,000 crores for various under construction projects, and refinanced debt amounting to INR3,300 crores for various operational projects, resulting in reduction of rate of interest of the refinance projects by approximately 150 basis points.",
+            "Upcoming future operational capacity is expected to have an operating battery portfolio of around 10 gigawatt hour, along with 1.5 gigawatts of contracted generation capacity, subject to timely availability of transmission connectivity and other external factors."
+          ],
+          "pressing_questions": [
+            "Just on the cash flow: there seems a very large increase in the non-current assets and some other balance sheet items, which is impacting the cash flow from operations. Just wanted to understand that?",
+            "Given the rising concentration of projects in Rajasthan and ongoing transmission and grid constraints in the state, is there any curtailment impact that we've had? And if yes, could you quantify in like what happened in Q4 or the full year in EBITDA loss?",
+            "There is this sharp improvement in receivables and the DSO has come down to 14 days, which was at one point in time 180 days — is this largely driven by onetime collections or a structural shift?",
+            "CERC has recently proposed a new mechanism for LOA-based connectivity wherein capacities delayed for 1 year have a surrendering exit option — how much of that connectivity inventory falls under this? And what is your strategy to convert it?",
+            "How long do we see this BESS arbitrage situation (using conventional power and discharging at peak demand) sustaining into the future?",
+            "Almost 80% of our projects would be on the CTU side of the business — are we facing lag in terms of substation connectivity at the STU level or CTU level from an industry perspective?"
+          ]
+        }
+      ]
     }
   }
 }
