@@ -281,8 +281,10 @@
       "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "MOBIKWIK": {
-      "status": "running",
-      "started_at": "2026-08-05T22:54:38.339Z"
+      "status": "failed",
+      "finished_at": "2026-08-05T22:54:43.684Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Screener has no AI summary and no transcript for MOBIKWIK's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "BIRLANU": {
       "status": "failed",
