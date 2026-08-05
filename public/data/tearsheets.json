@@ -16932,8 +16932,1333 @@
       "ticker": "EICHERMOT",
       "industry": "2/3 Wheelers",
       "country": "India",
-      "checked_at": "2026-07-28T23:04:52.533Z",
+      "checked_at": "2026-08-05T23:30:59.917Z",
       "quarters": [
+        {
+          "company": "Eicher Motors Ltd",
+          "ticker": "EICHERMOT",
+          "industry": "2/3 Wheelers",
+          "country": "India",
+          "concall_date": "2026-08-04",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=8c3a03ae-07e5-4e5b-8caf-193354910410.pdf",
+          "model": "gpt-4o",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-05T23:30:00.525Z",
+          "summary": "Eicher Motors reported record Q1 FY27 performance across both Royal Enfield and VECV, with consolidated revenue growth of 32% YoY and highest-ever EBITDA. Management guided to continued growth momentum for FY27, backed by strong booking/inquiry funnel trends, capacity ramp-up (Cheyyar brownfield to 2 million units by FY27-28, Tada greenfield Phase 1 taking total capacity to 2.45 million units by FY29-30), and international expansion (Brazil CKD facility, Indonesia CKD under consideration). Near-term headwinds include commodity cost inflation (partially softening), tight channel inventory ahead of festive season, and macro/geopolitical uncertainty in export markets.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "EML Consolidated Revenue",
+                  "value": "6,632",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EML Consolidated Revenue Growth YoY",
+                  "value": "32",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EML Consolidated Revenue (prior year)",
+                  "value": "5,042",
+                  "unit": "INR crores",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EML Consolidated EBITDA",
+                  "value": "1,591",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EML Consolidated EBITDA (prior year)",
+                  "value": "1,203",
+                  "unit": "INR crores",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EML Consolidated PAT",
+                  "value": "1,463",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EML Consolidated PAT Growth YoY",
+                  "value": "21",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EML Consolidated PAT (prior year)",
+                  "value": "1,205",
+                  "unit": "INR crores",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EML share of VECV profits included in prior year PAT",
+                  "value": "168",
+                  "unit": "INR crores",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VECV Revenue",
+                  "value": "6,610",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VECV Revenue (prior year)",
+                  "value": "5,671",
+                  "unit": "INR crores",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VECV EBITDA",
+                  "value": "541",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VECV EBITDA (prior year)",
+                  "value": "511",
+                  "unit": "INR crores",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VECV EBITDA Margin",
+                  "value": "8.4",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VECV EBITDA Margin (prior year)",
+                  "value": "9.2",
+                  "unit": "%",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VECV PAT",
+                  "value": "300",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VECV PAT (prior year)",
+                  "value": "288",
+                  "unit": "INR crores",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VECV Spares Sales",
+                  "value": "9,313",
+                  "unit": "INR million",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VECV Spares Sales Growth YoY",
+                  "value": "15.3",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net commodity/input cost impact on gross margin",
+                  "value": "4-4.5",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Value engineering benefit on margin",
+                  "value": "0.4",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Price increase on majority of 350cc motorcycles",
+                  "value": "1.75",
+                  "unit": "%",
+                  "period": "April 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Benefit from price increase against commodity impact",
+                  "value": "1.2",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Mix/other benefit on margin",
+                  "value": "0.2",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Other expenses decline",
+                  "value": "7",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs prior period",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Q4 marketing (Cricket World Cup) not repeated",
+                  "value": "20",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26 vs Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Launch-related benefit not repeated",
+                  "value": "10",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26 vs Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total non-repeat expense benefit",
+                  "value": "30",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Controlled marketing expenditure benefit (remainder)",
+                  "value": "22",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ASP growth QoQ",
+                  "value": "2.8",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ASP contribution from price increase",
+                  "value": "1.2",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Price increase on certain models",
+                  "value": "0.85",
+                  "unit": "%",
+                  "period": "January 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ASP contribution from international mix increase",
+                  "value": "1",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "International share of revenue Q1 FY27",
+                  "value": "15.3",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "International share of revenue Q4 FY26",
+                  "value": "13.7",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ASP contribution from currency depreciation",
+                  "value": "0.4",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ASP contribution from allied business revenue increase",
+                  "value": "0.6",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Allied businesses share of revenue",
+                  "value": "15",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Service job cards growth YoY",
+                  "value": "20",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Average service job cards per month",
+                  "value": "9",
+                  "unit": "lakh",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Accessories and apparel growth",
+                  "value": "30+",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Accessories penetration",
+                  "value": "87",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Accessories penetration (initial)",
+                  "value": "35-40",
+                  "unit": "%",
+                  "period": "historical",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue gap between standalone and consolidated",
+                  "value": ">400",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Average revenue gap (last 4 quarters)",
+                  "value": "~200",
+                  "unit": "INR crores",
+                  "period": "trailing 4 quarters",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Increase in average gross block",
+                  "value": "346",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Inventory level",
+                  "value": "10-12",
+                  "unit": "days",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "In-transit inventory",
+                  "value": "5",
+                  "unit": "days",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Max in-transit inventory",
+                  "value": "7",
+                  "unit": "days",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Gross Margin Drivers",
+                  "points": [
+                    "Substantial inflation seen in input costs across key commodities: aluminum, crude oil, steel, copper, precious metals.",
+                    "Additional disruption in supply chain and logistics contributed to cost pressure, though challenges have been mitigated so far.",
+                    "Net impact of about 4% to 4.5% on margin from increased input cost of commodities and processes involved.",
+                    "Value engineering benefits of about 0.4% achieved; company continues to advance value engineering and cost reduction programs.",
+                    "Advanced purchase program conducted for critical parts and raw materials, expected to kick in further going forward.",
+                    "Price increase of 1.75% on majority of 350cc motorcycles in April 2026 partly mitigated commodity impact, contributing about 1.2% benefit against overall commodity piece.",
+                    "Remaining 0.2% benefit from mix and other factors.",
+                    "Commodity situation remains volatile; management declined to give forward guidance on commodity impact for Q2, but noted slight softening versus Q1 headwind depending on inventory holding period."
+                  ]
+                },
+                {
+                  "label": "Other Expenses Decline Drivers",
+                  "points": [
+                    "Other expenses lower by about 7%, driven by multiple factors.",
+                    "Q4 FY26 had marketing ad campaigns around the Cricket World Cup costing about INR20 crores, which did not recur in Q1 FY27.",
+                    "INR10 crores benefit from two product launches that occurred in Q4 FY26 but not in Q1 FY27, totaling INR30 crores of non-repeat expenses.",
+                    "Remaining INR22 crores benefit from controlled marketing expenditure given the current situation."
+                  ]
+                },
+                {
+                  "label": "ASP and Non-Vehicle Revenue Drivers",
+                  "points": [
+                    "ASP growth of 2.8% from Q4 FY26 driven by price increases (1.2%), international business mix increase (1%), currency depreciation (0.4%), and allied business revenue increase (0.6%).",
+                    "International business revenue crossed INR1,000 crores for the first time, now 15.3% of revenue vs 13.7% in Q4 FY26.",
+                    "Allied businesses (spare parts, service income, accessories, apparel) now about 15% of revenue.",
+                    "Service job cards grew ~20% YoY, averaging about 9 lakh per month, described as a huge growth driver.",
+                    "Accessories and apparel growth of more than 30%; almost all bookings through 'Make it yours' feature lead customers to add accessories.",
+                    "Accessories penetration increased from initial 35-40% to current 87% of consumers buying motorcycles also buying accessories; more SKUs being added as penetration rises.",
+                    "Apparel business has moved to a 'core collection' brand strategy; roadshow received overwhelmingly positive response from dealers and customers.",
+                    "Extended warranties and customer retention for service are also growing, supporting non-vehicle revenue."
+                  ]
+                },
+                {
+                  "label": "Depreciation Increase",
+                  "points": [
+                    "Depreciation increase this quarter attributed to capitalization related to new module and Flying Flea launch (start of production and start of sale).",
+                    "Average gross block increased by approximately INR346 crores.",
+                    "Some tools and dies depreciation also kicking in."
+                  ]
+                },
+                {
+                  "label": "Standalone vs Consolidated Revenue Gap",
+                  "points": [
+                    "Gap between standalone and consolidated revenue of over INR400 crores in Q1 FY27 versus average gap of around INR200 crores in the last 4 quarters attributed to growth from subsidiaries, particularly strong performance in Brazil and other international subsidiaries, offset partly by revenues booked in India for exports and subsidiaries."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "Royal Enfield total motorcycle sales",
+                  "value": "332,940",
+                  "unit": "units",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Royal Enfield total motorcycle sales (prior year)",
+                  "value": "261,326",
+                  "unit": "units",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Royal Enfield India sales",
+                  "value": "301,174",
+                  "unit": "units",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Royal Enfield global (export) volumes",
+                  "value": "31,766",
+                  "unit": "units",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "350cc models (Classic, Bullet, Hunter, Meteor) growth",
+                  "value": "34",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Hunter 350 share of first-time buyers",
+                  "value": "~50",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Guerrilla 450 average monthly sales",
+                  "value": "2,400-2,500",
+                  "unit": "units/month",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "650cc twins average monthly sales",
+                  "value": "4,000-4,200",
+                  "unit": "units/month",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Royal Enfield upgrade-from-RE customers",
+                  "value": "5-6",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Overall upgraders share",
+                  "value": "70+",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "First-time buyers share",
+                  "value": "25",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Middleweight segment (PST) industry size 3 years ago",
+                  "value": "70,000",
+                  "unit": "units/month",
+                  "period": "3 years ago",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Middleweight segment (PST) industry size current",
+                  "value": "1.2 lakh",
+                  "unit": "units/month",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "New launches in middleweight segment during this period",
+                  "value": "20+",
+                  "unit": "launches",
+                  "period": "last 3 years",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Royal Enfield volume when base was 70,000/month",
+                  "value": "61,000",
+                  "unit": "units/month",
+                  "period": "3 years ago",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Royal Enfield volume at current base of 1.2 lakh/month",
+                  "value": "1.01 lakh",
+                  "unit": "units/month",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VECV total sales",
+                  "value": "24,815",
+                  "unit": "units",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VECV sales growth YoY",
+                  "value": "14.8",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Eicher heavy-duty trucks units",
+                  "value": "5,275",
+                  "unit": "units",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Eicher heavy-duty trucks growth",
+                  "value": "15.2",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Eicher heavy-duty trucks market share",
+                  "value": "8.8",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Light and medium-duty trucks units",
+                  "value": "9,993",
+                  "unit": "units",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Pro X (SCV) trucks delivered",
+                  "value": "1,041",
+                  "unit": "units",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Pro X electric vehicles within SCV delivery",
+                  "value": "172",
+                  "unit": "units",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Eicher buses delivered",
+                  "value": "6,126",
+                  "unit": "units",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Volvo trucks and buses delivered",
+                  "value": "598",
+                  "unit": "units",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VECV exports growth",
+                  "value": "14.7",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VECV exports units",
+                  "value": "1,450",
+                  "unit": "units",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Royal Enfield Product Mix Trends",
+                  "points": [
+                    "350cc models (Classic, Bullet, Hunter, Meteor) grew ~34% compared to Q1 FY26, outperforming the industry.",
+                    "Hunter 350 launched new variants and colors (Tarmac Black, Mumbai Yellow, Moonshot White) which received exceptional customer response and now account for almost 50% share of first-time buyers in Hunter.",
+                    "Higher CC segment (Guerrilla 450, Continental GT 650) showing green shoots of growth in India, having returned to pre-GST levels; company will now focus on building this market from here.",
+                    "Guerrilla 450 APEX variant launched with upgraded tires and more aggressive riding stance, propelling growth to about 2,500/month.",
+                    "650cc twins have reached pre-GST levels of about 4,000-4,200/month.",
+                    "Model-by-model performance in the above-350cc segment is mixed: 650cc twins and Guerrilla have done well, while Super Meteor, Himalayan, and Shotgun saw pressure on sales performance in Q1.",
+                    "Company has held firm on 450cc and 650cc product value/performance rather than lowering specs to capture lower GST benefit brackets."
+                  ]
+                },
+                {
+                  "label": "VECV Segment Highlights",
+                  "points": [
+                    "VECV recorded several best-ever quarterly milestones across segments, broad-based performance improvement across all verticals.",
+                    "Entry into small commercial vehicle (SCV) segment with Pro X trucks has begun well, opening an important new avenue for future growth in the large and growing SCV segment.",
+                    "Growth phenomenal across almost all VECV segments except heavy-duty buses, per management.",
+                    "Opportunities seen coming in VECV across truck side, bus side, and new projects including a new transmission project."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "TECH",
+              "title": "Product & Technology",
+              "key_figures": [
+                {
+                  "label": "Flying Flea C6 cumulative deliveries since launch",
+                  "value": "100+",
+                  "unit": "units",
+                  "period": "2 months since launch",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Flying Flea C6 cumulative kilometers run by customers",
+                  "value": "29,000",
+                  "unit": "km",
+                  "period": "since launch",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Flying Flea average customer age",
+                  "value": "25-30",
+                  "unit": "years",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "New Product Launches",
+                  "points": [
+                    "Launch of Flying Flea C6, the first electric motorcycle under Royal Enfield's city-focused electric mobility brand Flying Flea.",
+                    "Launch of the iconic Bullet on the 650cc platform, paying tribute to British lineage and Indian soul, bringing the essence of the iconic Bullet DNA to the 650cc platform.",
+                    "Hunter 350 lineup expanded with a new base premium variant and new colorways (Tarmac Black, Mumbai Yellow, Moonshot White), introduced at HunterHood street culture festival in Lucknow.",
+                    "Both 450cc and 650cc motorcycles are back to pre-GST price levels; company continues to invest in them to drive growth and expand the segment.",
+                    "Himalayan 450 became the best-selling adventure motorcycle in its class in various regions, especially India and Brazil.",
+                    "Guerrilla 450 APEX variant launched with upgraded tires and more aggressive riding stance and refreshed design elements.",
+                    "Himalayan Mana Black variant launched, received well; Himalayan Odyssey saw more inquiries than previous years.",
+                    "Volvo FMX Edge launched at VECV, engineered to transform mining productivity by combining optimized payload capability with superior safety, uptime and life cycle value.",
+                    "Planned refreshes: 125-year special edition on Classic 650, a 'drop' coming for Shotgun, and work ongoing on Super Meteor refresh; further CTG (category) updates expected in coming quarters.",
+                    "Himalayan marketing was deliberately scaled back while GST-related pricing settled; experiential rides and marketing to now ramp up in coming quarters."
+                  ]
+                },
+                {
+                  "label": "Value Analysis / Value Engineering (VAVE)",
+                  "points": [
+                    "VAVE is a continuous effort; company starts the year with a calendar of activities/ideas, not all of which convert to realized savings at the same pace.",
+                    "Focus has shifted to the J platform (450cc and 650cc) given it now has scale, having been in market for 4 years.",
+                    "Value engineering will progressively kick in across all platforms over time."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MFG",
+              "title": "Manufacturing & Capacity",
+              "key_figures": [
+                {
+                  "label": "Tada, Andhra Pradesh greenfield Phase 1 investment",
+                  "value": "1,225",
+                  "unit": "INR crores",
+                  "period": "approved this quarter",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Tada greenfield full-utilization additional capacity",
+                  "value": "4.5 lakh",
+                  "unit": "motorcycles/year",
+                  "period": "at full utilization",
+                  "kind": "target"
+                },
+                {
+                  "label": "Tada greenfield completion timeline",
+                  "value": "FY 2029-30",
+                  "unit": null,
+                  "period": "FY30",
+                  "kind": "target"
+                },
+                {
+                  "label": "Cheyyar brownfield investment (announced Feb 2026)",
+                  "value": "958",
+                  "unit": "INR crores",
+                  "period": "announced February 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "June 2026 production rate",
+                  "value": "4,500",
+                  "unit": "motorcycles/day",
+                  "period": "June 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "June 2026 total motorcycles produced",
+                  "value": "1.16 lakh",
+                  "unit": "motorcycles",
+                  "period": "June 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Current build capacity after first Cheyyar module",
+                  "value": "1.5 million",
+                  "unit": "motorcycles/year",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cheyyar brownfield eventual capacity",
+                  "value": "2 million",
+                  "unit": "motorcycles/year",
+                  "period": "FY27-28",
+                  "kind": "target"
+                },
+                {
+                  "label": "Total capacity after Tada greenfield",
+                  "value": "2.45 million",
+                  "unit": "motorcycles/year",
+                  "period": "FY29-30",
+                  "kind": "target"
+                },
+                {
+                  "label": "Current delivery rate post first module kick-in",
+                  "value": "5,000+",
+                  "unit": "motorcycles/day",
+                  "period": "post-July module kick-in",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Delivery rate range after ramp-up",
+                  "value": "5,000-5,100",
+                  "unit": "motorcycles/day",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VECV new touchpoints added",
+                  "value": "30",
+                  "unit": "touchpoints",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Production capacity after first module",
+                  "value": "5,000-5,100",
+                  "unit": "per day",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Capacity Ramp-up and Operational Issues",
+                  "points": [
+                    "Faced LPG shortage issues in Q1, managed by converting back to PNG.",
+                    "Faced manpower shortage issues; recruited additional manpower and extended support to contractors.",
+                    "Faced issues on availability of key commodities, which were managed.",
+                    "Oragadam and Vallam plants have been running three shifts since April.",
+                    "First module at Cheyyar kicked in on time in the last week of July, taking build capacity to about 1.5 million motorcycles per year.",
+                    "Next Cheyyar module targeted to kick in by first week of October; company is trying to prepone this.",
+                    "Entire brownfield capacity expansion at Cheyyar (from the INR958 crores investment announced in February 2026) will be completed by FY27-28, taking capacity to 2 million.",
+                    "Andhra Pradesh Tada greenfield Phase 1 (INR1,225 crores, Board-approved this quarter) will take overall capacity to 2.45 million by FY29-30, built in modules given continuing growth momentum.",
+                    "Supplier conference held to discuss inventory situation and align vendor ecosystem; vendors also planning 24/7, 3-shift operations to support production ramp-up."
+                  ]
+                },
+                {
+                  "label": "Inventory / Channel Stock",
+                  "points": [
+                    "Current dealer inventory stock is about 10-12 days, described as lean due to strong Q1 retail performance.",
+                    "In-transit inventory adds another approximately 4-5 days on top of dealer inventory (normally max in-transit inventory is about 7 days).",
+                    "Company is shifting distribution model toward direct billing to dealers to cut inefficiency in secondary transit and depot management; direct billing has grown from about 1-1.5% of volume historically to about 4.5-4.7x that level; expected to save another 4-5 days.",
+                    "Plan to build inventory ahead of festive season by combining faster capacity ramp-up with logistics efficiency gains (direct billing) and vendor ecosystem readiness."
+                  ]
+                },
+                {
+                  "label": "VECV Distribution/Service Network",
+                  "points": [
+                    "Added 30 new touchpoints in the quarter to enhance ability to service customers across the country, including the Northeast, in line with focus on uptime."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [
+                {
+                  "label": "International business revenue",
+                  "value": "1,000+",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "International business share of overall revenue",
+                  "value": "~15",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "International business growth over last 2 years",
+                  "value": "2x",
+                  "unit": null,
+                  "period": "last 2 years",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Brazil retail volume growth",
+                  "value": "3x",
+                  "unit": null,
+                  "period": "last 3 years",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Europe Riders Club total members",
+                  "value": "42,000",
+                  "unit": "members",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "SAARC growth last year",
+                  "value": "60",
+                  "unit": "%",
+                  "period": "last year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "International market total size outside India",
+                  "value": "0.8-1",
+                  "unit": "million units",
+                  "period": "current",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "Royal Enfield market share in international markets",
+                  "value": "8-9",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Indonesia CKD plant volume cap without full quota relief",
+                  "value": "10,000",
+                  "unit": "vehicles/year",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Indonesia luxury tax rate",
+                  "value": "160%+",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Indonesia luxury tax threshold",
+                  "value": "250",
+                  "unit": "cc",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Key International Markets",
+                  "points": [
+                    "Brazil is the biggest market outside India and is leading growth; retail volume grew over 3x in the last 3 years, built on years of brand-building, riding community development, and events; Royal Enfield holds the number two position in the middleweight segment in Brazil.",
+                    "Every fourth Royal Enfield motorcycle exported now ships to Brazil; company is setting up its own CKD facility in Brazil due to strong growth momentum.",
+                    "Rest of LatAm shows strong demand momentum led by Colombia; Royal Enfield is number two in Argentina in the middleweight segment; Mexico is also growing.",
+                    "USA market has been very slow but showed some green shoots of growth in Q1 following a new trade deal cutting tariffs on motorcycles; management says it needs to wait and see.",
+                    "Europe is in a market adjustment phase with business pressure on dealers/distributors; company has established its own distributorship/subsidiary performing well, and opened its Riders Club, which has exceeded 42,000 members, building blocks for future growth once market opens up.",
+                    "APAC market was previously weak due to uncertainties but showed green shoots in Q1 with growth in retail and wholesale.",
+                    "SAARC (especially Nepal and Bangladesh) saw robust 60% growth last year, driven by strong brand awareness.",
+                    "Portfolio expanded in Nepal and Malaysia with the launch of 2026 Goan Classic 350; Guerrilla 450 APEX variant introduced in Australia and New Zealand.",
+                    "Royal Enfield motorcycles (Goan Classic 350, Guerrilla 450, Super Meteor) won industry awards at major automotive shows in Thailand and Malaysia.",
+                    "Royal Enfield ranked as the world's third strongest automobile brand by Brand Finance.",
+                    "Company remains cautiously bullish on international markets, expecting normalization of energy situations and tariff conditions to help markets recover strongly."
+                  ]
+                },
+                {
+                  "label": "ASEAN Strategy - Thailand and Indonesia",
+                  "points": [
+                    "Thailand has a CKD plant; initial expectation was that ASEAN treaty would allow shipping to Indonesia without quota restriction via the Thailand CKD plant, but Indonesia has maintained quota restriction limiting sales to about 10,000 vehicles/year.",
+                    "Company is exploring setting up a CKD plant directly in Indonesia via an identified assembler/distributor partner; decision expected to be made this quarter; local content requirement for Indonesia CKD is low, allowing a faster path.",
+                    "Indonesia carries a luxury tax of about 160%+ above 250cc regardless of CBU or CKD status, so a CKD plant would not remove this tax but would remove the 10,000-unit quota cap.",
+                    "Thailand market has been weak for the past 2 years due to tourism dip and weak economy, but retail momentum and dealer sentiment turned positive in Q1; Royal Enfield holds number two position in the middleweight segment in Thailand.",
+                    "Company is building brand collaboration in Thailand with Muay Thai and Thailand tourism development to increase consumer awareness ahead of market recovery."
+                  ]
+                },
+                {
+                  "label": "Flying Flea Distribution Strategy",
+                  "points": [
+                    "First Flying Flea store opened in Jayanagar, Bengaluru.",
+                    "Plans to expand footprint in Bengaluru first with five additional touchpoints, followed by another five (total 10 locations) over the next 2 months.",
+                    "City-by-city expansion strategy; once Bengaluru matures across 10 locations, company will open up remaining identified markets (about 6 markets) one by one."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [
+                {
+                  "label": "Royal Enfield India retail volume growth tracked in Q1",
+                  "value": "~32",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Demand Funnel Indicators",
+                  "points": [
+                    "In India, continuing strong growth momentum, with volumes tracking over about 32% growth over Q1 FY26.",
+                    "Other funnel indicators such as overall booking, walk-ins, and telephonic inquiries continue to maintain very strong growth, slightly higher than volume growth, indicating unmet demand due to inventory constraints rather than demand issues.",
+                    "Premiumization trend in the two-wheeler industry continuing over the last 3+ years."
+                  ]
+                },
+                {
+                  "label": "Flying Flea Customer Profile",
+                  "points": [
+                    "Too early to conclude detailed customer profiling as adoption is at initial adopter stage.",
+                    "Average age group of interested customers is approximately 25-30 years.",
+                    "All prospective customers are looking at the motorcycles and taking test rides.",
+                    "Good interest also shown by existing Royal Enfield owners who have owned motorcycles for more than about 5-6 years."
+                  ]
+                },
+                {
+                  "label": "Customer Demographics",
+                  "points": [
+                    "Royal Enfield's professional customer profile broadly includes business owners, agricultural workers, students, government employees and other professionals.",
+                    "Company tracks government employee demand by category (central/state) and tailors marketing activation around pay commission or income tax benefit developments that put free cash in customers' hands.",
+                    "About 5-6% of buyers are existing Royal Enfield owners upgrading from one Royal Enfield to another; over 70% are upgraders overall; about 25% are first-time buyers, with Hunter and new launches driving increased first-time buyer share."
+                  ]
+                },
+                {
+                  "label": "Growth Outlook for Higher Base Period (H2 FY27)",
+                  "points": [
+                    "Management expects to continue growth even against a higher base starting September/October, driven by continued strength across the demand funnel (bookings, walk-ins, telephonic inquiries).",
+                    "Growth strategy includes continued new product launches (Hunter, Guerrilla 450 APEX, Bullet 650, GT Cup series, more CTG updates to come).",
+                    "Brand awareness and marketing activation spend, which was scaled down last year in Q1 due to supply-demand situation, will be ramped up again.",
+                    "New business initiatives like Re-own and Assured Buy Back are gaining traction and add to the growth playbook."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "VECV Structure",
+                  "points": [
+                    "Management indicated no current plans to hive off VECV as a separate listed entity; current focus at Eicher Motors level is on EV, with a lot of work still needed there.",
+                    "Decision on VECV structure has not crystallized."
+                  ]
+                },
+                {
+                  "label": "VECV Fleet Modernization MoU",
+                  "points": [
+                    "VECV signed an MoU for the fleet modernization scheme PARIVARTAN, announced by the Ministry of Road Transport and Highways for the NCR.",
+                    "The scheme targets over 2 lakh vehicles; implementation details are being finalized.",
+                    "VECV is well positioned to address the opportunity with its comprehensive portfolio spanning CNG, LNG, electric and BS-VI diesel solutions."
+                  ]
+                },
+                {
+                  "label": "125 Years Celebrations",
+                  "points": [
+                    "Marked 125 years of Royal Enfield with unveiling of World Origin Site plaque at Redditch, birthplace of the brand, with five generations of motorcycles lining Enfield Road for the unveiling.",
+                    "Flagged off the biggest ever edition of the Himalayan Odyssey, bringing together riders from eight countries, as part of 125-year celebrations.",
+                    "Opened registrations for the 2026 Continental GT Cup, introducing the GT-R750 for the professional category and expanding the championship to 8 cities in India.",
+                    "Hosted community experiences including inaugural Himalayan Basecamp: Ladakh Edition, Himalayan Spirit in Kochi, Gymkhana in Chennai, and GRRR Nights in Bengaluru."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Commodity and Input Cost Inflation",
+                  "points": [
+                    "Substantial inflation seen across key input commodities including aluminum, crude oil, steel, copper, and precious metals.",
+                    "Supply chain and logistics disruption added further cost pressure, though challenges have been mitigated so far.",
+                    "Situation remains volatile; management declined to provide forward-looking guidance on commodity impact for Q2, though noted slight softening depending on inventory holding period."
+                  ]
+                },
+                {
+                  "label": "Manufacturing Operational Constraints",
+                  "points": [
+                    "LPG shortage issues faced in Q1, managed by converting back to PNG.",
+                    "Manpower shortage issues faced in Q1, managed through additional recruitment and support to contractors.",
+                    "Issues on availability of key commodities managed during the quarter."
+                  ]
+                },
+                {
+                  "label": "Channel Inventory Tightness",
+                  "points": [
+                    "Current dealer inventory is lean at 10-12 days due to strong Q1 retail; situation described as tight ahead of the festive season, requiring capacity ramp-up and logistics efficiency (direct billing) to build adequate stock."
+                  ]
+                },
+                {
+                  "label": "Macroeconomic and Geopolitical Uncertainty (International)",
+                  "points": [
+                    "Dynamic macroeconomic and geopolitical environment affecting international markets.",
+                    "International markets have been trading through rough patches over past few quarters due to macro uncertainties and industry-specific factors.",
+                    "USA market has been very slow; Europe is going through a market adjustment phase with dealer/distributor business pressure; APAC previously affected by uncertainties.",
+                    "Thailand market weak for past 2 years due to tourism dip and weak economy."
+                  ]
+                },
+                {
+                  "label": "Indonesia Market Access Constraints",
+                  "points": [
+                    "Indonesia maintains a quota restriction limiting sales to about 10,000 vehicles/year regardless of ASEAN treaty expectations from the Thailand CKD plant.",
+                    "Indonesia luxury tax of about 160%+ above 250cc applies regardless of CBU or CKD status, representing a structural cost hurdle."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Capacity Roadmap",
+                  "points": [
+                    "Cheyyar brownfield expansion capacity to reach 2 million motorcycles/year by FY27-28.",
+                    "Andhra Pradesh Tada greenfield Phase 1 (INR1,225 crores) to take total capacity to 2.45 million motorcycles/year by FY29-30, built in modules given continuing growth momentum."
+                  ]
+                },
+                {
+                  "label": "Demand and Growth Outlook",
+                  "points": [
+                    "Management expects growth-led FY27 for both Royal Enfield and VECV, geared for consolidating market dominance.",
+                    "Confidence that growth can continue even against a higher base in H2 FY27 (Sept/Oct onward) given healthy demand funnel (bookings, walk-ins, telephonic inquiries).",
+                    "Company will ramp up marketing/brand awareness initiatives to support growth."
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "Capacity Expansion (Cheyyar brownfield)",
+              "horizon": "FY27-28",
+              "statement": "Entire brownfield capacity expansion at Cheyyar will be completed by FY27-28, taking production capacity to 2 million motorcycles per year.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "lowered"
+            },
+            {
+              "metric": "Capacity Expansion (Tada greenfield)",
+              "horizon": "FY29-30",
+              "statement": "Board approved investment of INR1,225 crores for Phase 1 of greenfield expansion at Tada, Andhra Pradesh, which at full utilization can produce an additional 4.5 lakh motorcycles per year; total company capacity to reach 2.45 million motorcycles per year by FY29-30.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "lowered"
+            },
+            {
+              "metric": "Product Demand / Growth Momentum",
+              "horizon": "FY27",
+              "statement": "Both Royal Enfield and VECV businesses are optimistic of growth in remaining quarters of FY27; growth momentum expected to continue even against a higher base from September/October given strong demand funnel indicators.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Channel Inventory Build for Festive",
+              "horizon": "H2 FY27 / festive season",
+              "statement": "Company is on track to build inventory ahead of the festive season through capacity ramp-up and logistics efficiency (direct billing), though situation is currently tight.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Commodity Cost Outlook",
+              "horizon": "Q2 FY27",
+              "statement": "Management declined to give forward-looking guidance on commodity cost impact for Q2 due to volatility, though noted a slight softening versus the Q1 headwind.",
+              "specificity": "refused",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Value Engineering / Cost Reduction",
+              "horizon": "ongoing",
+              "statement": "Company continues to advance value engineering programs and cost reduction programs, with value engineering to kick in across all platforms over time, with current focus on the J platform (450cc/650cc).",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Indonesia CKD Plant Decision",
+              "horizon": "this quarter (Q2 FY27)",
+              "statement": "Decision on setting up a CKD operating plant in Indonesia via an identified assembler partner is expected to be made this quarter.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Flying Flea City Expansion",
+              "horizon": "next 2 months / ongoing",
+              "statement": "Flying Flea to expand footprint in Bengaluru with 10 total locations in the next 2 months, followed by phased city-by-city rollout to about 6 more identified markets thereafter.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "International Business Sustainability",
+              "horizon": "ongoing",
+              "statement": "International markets performance expected to sustain given deep investment in subsidiaries and own teams/CKD plants in markets with potential; growth and profitability from subsidiary formation expected to continue.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "VECV / EML Structural Separation",
+              "horizon": "unclear",
+              "statement": "No current plans to hive off VECV as a separate listed entity; decision has not crystallized as current focus at EML level is on EV.",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Pricing Strategy",
+              "horizon": "Q4 FY26",
+              "statement": "Price increases taken in January on select models; focus remains on growth.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Capacity Utilization",
+              "horizon": "next 3-5 years",
+              "statement": "Capacity build up will take place in modules without heavy investment.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Product Launches",
+              "horizon": "FY26",
+              "statement": "New products and refreshes will be introduced to support growth.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "Commodity/input cost inflation (aluminum, crude oil, steel, copper, precious metals)",
+              "status": "new",
+              "note": "Net impact of about 4-4.5% on gross margin in Q1 FY27; situation remains volatile with no forward guidance given, though slight softening noted."
+            },
+            {
+              "risk": "Supply chain and logistics disruption",
+              "status": "new",
+              "note": "Contributed to cost pressure alongside commodity inflation; challenges have been mitigated so far."
+            },
+            {
+              "risk": "LPG shortage in manufacturing",
+              "status": "new",
+              "note": "Managed by converting back to PNG during the quarter."
+            },
+            {
+              "risk": "Manpower shortage at manufacturing facilities",
+              "status": "new",
+              "note": "Managed through additional recruitment and extended support to contractors."
+            },
+            {
+              "risk": "Key commodity availability issues",
+              "status": "new",
+              "note": "Managed during the quarter."
+            },
+            {
+              "risk": "Tight channel/dealer inventory ahead of festive season",
+              "status": "new",
+              "note": "Dealer inventory lean at 10-12 days; company working on capacity ramp-up and direct billing to build stock before festive period."
+            },
+            {
+              "risk": "Macroeconomic and geopolitical uncertainty in international markets",
+              "status": "new",
+              "note": "International markets trading through rough patches over past few quarters due to macro uncertainties and industry-specific factors; USA slow, Europe in adjustment phase, APAC previously weak but showing green shoots."
+            },
+            {
+              "risk": "Indonesia market access restrictions (quota and luxury tax)",
+              "status": "new",
+              "note": "Quota limits sales to about 10,000 vehicles/year; luxury tax of 160%+ above 250cc applies regardless of CBU/CKD status."
+            },
+            {
+              "risk": "Thailand market weakness",
+              "status": "new",
+              "note": "Weak for past 2 years due to tourism dip and weak economy, but retail momentum and dealer sentiment turned positive in Q1."
+            },
+            {
+              "risk": "Higher base effect from H2 FY27 onward",
+              "status": "new",
+              "note": "Base for the industry and Royal Enfield will be higher from September/October for a 12-month period following GST-related demand pull-forward in H1."
+            },
+            {
+              "risk": "Commodity inflation",
+              "status": "no_mention",
+              "note": "Expected commodity headwind: '~3% to 3.5% on the material cost level impact… incremental in Q1.'"
+            },
+            {
+              "risk": "Geopolitical uncertainties",
+              "status": "no_mention",
+              "note": "'war situation' operating environment creating both inflation and availability constraints."
+            },
+            {
+              "risk": "Supply chain volatility",
+              "status": "no_mention",
+              "note": "VECV: 'traction… quite good,' but environment 'dynamic' with 'global uncertainties… supply chain volatility.'"
+            },
+            {
+              "risk": "Trade Deals and Tariffs",
+              "status": "no_mention",
+              "note": "U.S. and EMEA trade deals could impact tariffs, with steel and aluminum tariffs remaining unclear."
+            },
+            {
+              "risk": "Financing Conditions",
+              "status": "no_mention",
+              "note": "Financing conditions remain stable, supporting demand."
+            },
+            {
+              "risk": "Supply chain stability",
+              "status": "no_mention",
+              "note": "Alternative materials have been sourced to mitigate risks."
+            }
+          ],
+          "themes": [
+            {
+              "label": "Capacity expansion",
+              "direction": "positive",
+              "note": "Cheyyar brownfield ramping to 2 million units/year by FY27-28; new Tada greenfield Phase 1 (INR1,225 crores) to take total capacity to 2.45 million units/year by FY29-30.",
+              "section_ref": "MFG"
+            },
+            {
+              "label": "International market growth",
+              "direction": "mixed",
+              "note": "International revenue crossed INR1,000 crores for the first time (~15% of revenue), led by Brazil, but USA, Europe, APAC and Thailand still working through macro-driven soft patches with Indonesia facing quota/tax constraints.",
+              "section_ref": "GEO"
+            },
+            {
+              "label": "Product innovation",
+              "direction": "positive",
+              "note": "Launch of first electric motorcycle Flying Flea C6, Bullet 650, Hunter 350 new variants, Guerrilla 450 APEX, and Volvo FMX Edge at VECV.",
+              "section_ref": "TECH"
+            },
+            {
+              "label": "Commodity inflation",
+              "direction": "negative",
+              "note": "Net commodity/input cost impact of 4-4.5% on gross margin in Q1, partly offset by price hikes and value engineering; outlook remains volatile with slight softening noted.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Geopolitical uncertainties",
+              "direction": "mixed",
+              "note": "Dynamic macro/geopolitical environment continues to affect key export markets (USA, Europe, APAC), though some green shoots emerging in Q1.",
+              "section_ref": "GEO"
+            },
+            {
+              "label": "Channel inventory management",
+              "direction": "negative",
+              "note": "Dealer inventory lean at 10-12 days ahead of festive season; company ramping capacity and shifting to direct billing to build stock.",
+              "section_ref": "MFG"
+            },
+            {
+              "label": "Premiumization and demand funnel strength",
+              "direction": "positive",
+              "note": "Retail volumes tracking ~32% growth with even stronger growth in bookings, walk-ins and telephonic inquiries, supporting confidence in sustaining growth even against a higher base from H2 FY27.",
+              "section_ref": "MKT"
+            }
+          ],
+          "key_takeaways": [],
+          "pressing_questions": [
+            "Can you please explain how to see the sustained gap between standalone and consolidated revenue going forward?",
+            "On the above 350 cc segment, the model-by-sales performance is a mixed bag - 650cc twins and Guerrilla have done very well, but Super Meteor, Himalayan, Shotgun have seen pressure on sales performance in Q1 - can you highlight future initiatives on marketing and product intervention efforts for how these models will catch up in coming quarters?",
+            "Any plans of hiving off VECV as a separate entity and listing it, given the value that could potentially be unlocked?",
+            "How much of the other expenses decline can reverse, and how much pending commodity cost hit is there for quarter two?"
+          ]
+        },
         {
           "company": "Eicher Motors Ltd",
           "ticker": "EICHERMOT",
@@ -18508,447 +19833,6 @@
             "VECV announced an investment of INR544 crores for a new transmission production facility, enhancing capacity.",
             "98% of the energy used at Royal Enfield plants comes from renewable sources, highlighting sustainability efforts.",
             "Eicher Motors is optimistic about continued growth driven by strong demand and strategic initiatives."
-          ],
-          "pressing_questions": []
-        },
-        {
-          "company": "Eicher Motors Ltd",
-          "ticker": "EICHERMOT",
-          "industry": "2/3 Wheelers",
-          "country": "India",
-          "concall_date": "2025-08-06",
-          "source": "transcript",
-          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=1ad95936-7c92-46f9-b542-716bfc1f6ca1.pdf",
-          "model": "gpt-4o",
-          "generated_at": "2026-07-28T23:02:43.822Z",
-          "summary": "Eicher Motors is optimistic about growth in both domestic and international markets, with a focus on expanding capacity and launching new products to meet increasing demand.",
-          "sections": [
-            {
-              "id": "FIN",
-              "title": "Financial Performance",
-              "key_figures": [
-                {
-                  "label": "Q1 FY26 Revenue",
-                  "value": "5,042",
-                  "unit": "INR Crores",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Q1 FY25 Revenue",
-                  "value": "4,393",
-                  "unit": "INR Crores",
-                  "period": "Q1 FY25",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Revenue Growth YoY",
-                  "value": "14.8",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Q1 FY26 EBITDA",
-                  "value": "1,203",
-                  "unit": "INR Crores",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Q1 FY25 EBITDA",
-                  "value": "1,165",
-                  "unit": "INR Crores",
-                  "period": "Q1 FY25",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Q1 FY26 PAT",
-                  "value": "1,205",
-                  "unit": "INR Crores",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Q1 FY25 PAT",
-                  "value": "1,101",
-                  "unit": "INR Crores",
-                  "period": "Q1 FY25",
-                  "kind": "reported"
-                },
-                {
-                  "label": "PAT Growth YoY",
-                  "value": "9.4",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "VECV Q1 FY26 Revenue",
-                  "value": "5,671",
-                  "unit": "INR Crores",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "VECV Q1 FY25 Revenue",
-                  "value": "5,070",
-                  "unit": "INR Crores",
-                  "period": "Q1 FY25",
-                  "kind": "reported"
-                },
-                {
-                  "label": "VECV Q1 FY26 EBITDA",
-                  "value": "511",
-                  "unit": "INR Crores",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "VECV Q1 FY25 EBITDA",
-                  "value": "385",
-                  "unit": "INR Crores",
-                  "period": "Q1 FY25",
-                  "kind": "reported"
-                },
-                {
-                  "label": "VECV EBITDA Growth YoY",
-                  "value": "33",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "VECV Q1 FY26 EBITDA Margin",
-                  "value": "9",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "VECV Q1 FY25 EBITDA Margin",
-                  "value": "7.6",
-                  "unit": "%",
-                  "period": "Q1 FY25",
-                  "kind": "reported"
-                },
-                {
-                  "label": "VECV Q1 FY26 PAT",
-                  "value": "289",
-                  "unit": "INR Crores",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "VECV Q1 FY25 PAT",
-                  "value": "321",
-                  "unit": "INR Crores",
-                  "period": "Q1 FY25",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Overall Financials",
-                  "points": [
-                    "Eicher Motors achieved its best-ever Q1 revenue, driven by strong performance across Royal Enfield and VECV.",
-                    "The company's PAT includes a share of profit from VECV, which stood at INR157 crores for Q1."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "SEG",
-              "title": "Segment & Product Performance",
-              "key_figures": [
-                {
-                  "label": "Royal Enfield Q1 FY26 Motorcycle Sales",
-                  "value": "261,326",
-                  "unit": "units",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Royal Enfield Q1 FY25 Motorcycle Sales",
-                  "value": "227,736",
-                  "unit": "units",
-                  "period": "Q1 FY25",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Royal Enfield Sales Growth YoY",
-                  "value": "14.7",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Royal Enfield India Sales Q1 FY26",
-                  "value": "228,779",
-                  "unit": "units",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Royal Enfield India Sales Growth YoY",
-                  "value": "11.8",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Royal Enfield International Sales Q1 FY26",
-                  "value": "32,547",
-                  "unit": "units",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Royal Enfield International Sales Growth YoY",
-                  "value": "41.2",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Royal Enfield Middle-sized Motorcycle Market Share",
-                  "value": "87.3",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "VECV Q1 FY26 Sales",
-                  "value": "21,610",
-                  "unit": "units",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "VECV Q1 FY25 Sales",
-                  "value": "19,702",
-                  "unit": "units",
-                  "period": "Q1 FY25",
-                  "kind": "reported"
-                },
-                {
-                  "label": "VECV Export Growth YoY",
-                  "value": "20",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Royal Enfield Performance",
-                  "points": [
-                    "Royal Enfield continues to dominate the middle-sized motorcycle segment with an 87.3% market share.",
-                    "The company has seen significant growth in international markets, particularly in LATAM and SAARC regions."
-                  ]
-                },
-                {
-                  "label": "VECV Performance",
-                  "points": [
-                    "VECV achieved record sales across all segments, maintaining growth momentum in the CV industry.",
-                    "The company focuses on future-ready, efficient mobility and deep customer engagement."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "TECH",
-              "title": "Product & Technology",
-              "key_figures": [
-                {
-                  "label": "Renewable Energy Sourcing",
-                  "value": "84",
-                  "unit": "%",
-                  "period": "FY25",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Emission Intensity Reduction",
-                  "value": "51",
-                  "unit": "%",
-                  "period": "FY25",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Water Positivity Index",
-                  "value": "4.3",
-                  "unit": null,
-                  "period": "FY25",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Product Launches and Innovations",
-                  "points": [
-                    "Royal Enfield launched the new Hunter 350 with refreshed features and colors, targeting young riders.",
-                    "The company introduced the Flying Flea, its first electric motorcycle, in India."
-                  ]
-                },
-                {
-                  "label": "Sustainability Initiatives",
-                  "points": [
-                    "Eicher Motors has significantly increased its renewable energy sourcing and reduced emission intensity.",
-                    "The company maintains a strong commitment to social and environmental responsibility."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "MFG",
-              "title": "Manufacturing & Capacity",
-              "key_figures": [
-                {
-                  "label": "Current Capacity Utilization",
-                  "value": "90",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Stated Capacity",
-                  "value": "1.2",
-                  "unit": "million units",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Capacity Expansion Plans",
-                  "points": [
-                    "Eicher Motors is operating at 90% capacity and plans to enhance capacity in modules without heavy investment.",
-                    "The focus of capex is on new products, with a modular approach to capacity enhancement."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "GEO",
-              "title": "Geography & Distribution",
-              "key_figures": [
-                {
-                  "label": "Brazil CKD Facility",
-                  "value": "2",
-                  "unit": "facilities",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "International Market Expansion",
-                  "points": [
-                    "Royal Enfield is expanding its presence in key global markets, with a focus on Brazil and the SAARC region.",
-                    "The company is setting up CKD facilities to enhance product availability and responsiveness."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "RISK",
-              "title": "Risks & External Factors",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Commodity and Supply Chain Risks",
-                  "points": [
-                    "Eicher Motors faces challenges with commodity inflation and rare earth material availability.",
-                    "The company has mitigated risks by working on alternative materials and ensuring supply chain stability."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "GUID",
-              "title": "Guidance & Outlook",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Growth and Market Strategy",
-                  "points": [
-                    "Eicher Motors is optimistic about the festive season and plans to introduce new products and colors to boost sales.",
-                    "The company is focused on growth through product excellence, global ambition, and deep customer engagement."
-                  ]
-                }
-              ]
-            }
-          ],
-          "guidance_ledger": [
-            {
-              "metric": "Capacity Utilization",
-              "horizon": "next 3-5 years",
-              "statement": "Capacity build up will take place in modules without heavy investment.",
-              "specificity": "vague",
-              "direction": "up",
-              "status": "new"
-            },
-            {
-              "metric": "Product Launches",
-              "horizon": "FY26",
-              "statement": "New products and refreshes will be introduced to support growth.",
-              "specificity": "vague",
-              "direction": "up",
-              "status": "new"
-            }
-          ],
-          "risk_register": [
-            {
-              "risk": "Commodity inflation pressures",
-              "status": "stable",
-              "note": "Includes availability of steel and rare earth materials."
-            },
-            {
-              "risk": "Supply chain stability",
-              "status": "stable",
-              "note": "Alternative materials have been sourced to mitigate risks."
-            }
-          ],
-          "themes": [
-            {
-              "label": "Capacity expansion",
-              "direction": "positive",
-              "note": "Eicher Motors plans to enhance capacity in modules to meet growing demand.",
-              "section_ref": "MFG"
-            },
-            {
-              "label": "International market growth",
-              "direction": "positive",
-              "note": "Royal Enfield is expanding its presence in key global markets, particularly in Brazil and SAARC.",
-              "section_ref": "GEO"
-            },
-            {
-              "label": "Product innovation",
-              "direction": "positive",
-              "note": "New product launches and refreshes are driving growth and attracting young riders.",
-              "section_ref": "TECH"
-            },
-            {
-              "label": "Sustainability initiatives",
-              "direction": "positive",
-              "note": "Eicher Motors has increased renewable energy sourcing and reduced emissions.",
-              "section_ref": "TECH"
-            },
-            {
-              "label": "Commodity inflation",
-              "direction": "negative",
-              "note": "The company faces challenges with commodity inflation and rare earth material availability.",
-              "section_ref": "RISK"
-            }
-          ],
-          "key_takeaways": [
-            "Eicher Motors achieved its best-ever Q1 revenue, driven by strong performance across Royal Enfield and VECV.",
-            "Royal Enfield continues to dominate the middle-sized motorcycle segment with an 87.3% market share.",
-            "The company has significantly increased its renewable energy sourcing and reduced emission intensity.",
-            "Eicher Motors is operating at 90% capacity and plans to enhance capacity in modules without heavy investment.",
-            "Royal Enfield is expanding its presence in key global markets, with a focus on Brazil and the SAARC region.",
-            "Eicher Motors faces challenges with commodity inflation and rare earth material availability.",
-            "The company is optimistic about the festive season and plans to introduce new products and colors to boost sales."
           ],
           "pressing_questions": []
         }
