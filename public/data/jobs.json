@@ -121,8 +121,10 @@
       "message": "Couldn't fetch DEVYANI's latest concall. Screener daily AI-summary limit reached. Limit exceeded - Please try again later Premium users can request 80 summaries each day."
     },
     "CESC": {
-      "status": "running",
-      "started_at": "2026-08-07T22:54:15.504Z"
+      "status": "failed",
+      "finished_at": "2026-08-07T22:54:20.196Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Screener has no AI summary and no transcript for CESC's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "ULTRACEMCO": {
       "status": "done",
