@@ -461,8 +461,10 @@
       "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "FEDERALBNK": {
-      "status": "running",
-      "started_at": "2026-08-07T01:45:56.330Z"
+      "status": "failed",
+      "finished_at": "2026-08-07T01:46:00.953Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Screener has no AI summary and no transcript for FEDERALBNK's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "SMARTWORKS": {
       "status": "done",
