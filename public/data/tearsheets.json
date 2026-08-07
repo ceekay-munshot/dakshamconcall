@@ -8658,8 +8658,1736 @@
       "ticker": "M&M",
       "industry": "Passenger Cars & Utility Vehicles",
       "country": "India",
-      "checked_at": "2026-07-30T05:24:53.161Z",
+      "checked_at": "2026-08-07T01:56:55.018Z",
       "quarters": [
+        {
+          "company": "Mahindra & Mahindra Ltd",
+          "ticker": "M&M",
+          "industry": "Passenger Cars & Utility Vehicles",
+          "country": "India",
+          "concall_date": "2026-08-01",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f451beeb-32aa-45da-8e1a-417884693047.pdf",
+          "model": "gpt-4o",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-07T01:55:40.267Z",
+          "summary": "M&M delivered strong Q1 FY27 results across businesses despite commodity headwinds, with consolidated PAT up 34% and ROE at 23%. Management guided to continued 18% ROE target, Tech Mahindra reaching 15% EBIT margin by end of FY27, auto capacity doubling by F31 in phases, and cautious optimism on margins improving sequentially in Auto (Q1 seen as low point) while Farm faces continued near-term commodity pressure from unhedgeable steel and rubber inflation.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "Consolidated PAT growth",
+                  "value": "34",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ROE",
+                  "value": "23",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue growth",
+                  "value": "28",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EPS",
+                  "value": "48",
+                  "unit": "₹",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EPS growth",
+                  "value": "34",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Auto profit growth (PBIT)",
+                  "value": "21",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Farm profit growth",
+                  "value": "15",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Mahindra Finance profit growth",
+                  "value": "78",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Tech Mahindra profit growth",
+                  "value": "28",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Growth Gems profit growth",
+                  "value": "3x",
+                  "unit": null,
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Auto commodity price impact",
+                  "value": "400 to 500",
+                  "unit": "bps",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Tech Mahindra EBIT margin",
+                  "value": "14.4",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Tech Mahindra free cash flow growth",
+                  "value": "94",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Farm Consolidated margin",
+                  "value": "14.2",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Core tractor margin",
+                  "value": "19.2",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Farm Consolidated PBIT growth (after impairment)",
+                  "value": "9",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Farm Consolidated PBIT growth (before impairment)",
+                  "value": "12",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Farm Consolidated PAT growth (after impairment)",
+                  "value": "15",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Auto revenue growth",
+                  "value": "32",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Auto consolidated PBIT growth",
+                  "value": "28",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Auto consolidated PAT growth",
+                  "value": "21",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Farm revenue growth",
+                  "value": "15",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Growth Gems revenue growth",
+                  "value": "39",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT growth ex-CIE gain",
+                  "value": "22",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Auto margin reduction despite 450bps commodity pressure",
+                  "value": "160-170",
+                  "unit": "bps",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Auto commodity pressure",
+                  "value": "450",
+                  "unit": "bps",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Farm commodity pressure",
+                  "value": "300 plus",
+                  "unit": "bps",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Steel price increase",
+                  "value": "24",
+                  "unit": "%",
+                  "period": "since start of calendar year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Rubber price increase",
+                  "value": "30-53",
+                  "unit": "%",
+                  "period": "since start of calendar year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Auto hedging impact (aluminium/precious metals)",
+                  "value": "85",
+                  "unit": "bps",
+                  "period": "Q1 FY27 QoQ",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Auto price hike (July)",
+                  "value": "1.5 then 2.7 average",
+                  "unit": "%",
+                  "period": "mid-July 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Farm price hike",
+                  "value": "15,000",
+                  "unit": "₹",
+                  "period": "August 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV end-to-end PBIT",
+                  "value": "288",
+                  "unit": "crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Mahindra Electric company PBIT (within EV total)",
+                  "value": "270",
+                  "unit": "crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV margin (column 2, three-column chart)",
+                  "value": "5.3",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Core Auto (ex-EV) PBIT margin",
+                  "value": "8.9",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Core Auto PBIT margin trend (prior periods)",
+                  "value": "10.2, 10.8, 8.9",
+                  "unit": "%",
+                  "period": "trailing quarters",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Logistics profit (M&M level)",
+                  "value": "14",
+                  "unit": "crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Logistics profit (business level)",
+                  "value": "25",
+                  "unit": "crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Real Estate GDV added",
+                  "value": "5,600",
+                  "unit": "crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Real Estate GDV growth",
+                  "value": "60",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Real Estate free sales",
+                  "value": "925",
+                  "unit": "crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Real Estate free sales growth",
+                  "value": "2x",
+                  "unit": null,
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Real Estate total GDV",
+                  "value": "50,000",
+                  "unit": "crores",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Real Estate total GDV (3 years ago)",
+                  "value": "8,000",
+                  "unit": "crores",
+                  "period": "3 years ago",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Mahindra Finance lending book size",
+                  "value": "1,50,000",
+                  "unit": "crores",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Mahindra Finance wheels share of book",
+                  "value": "83",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Mahindra Finance non-wheels share of book",
+                  "value": "17",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Mahindra Finance housing finance company GS3",
+                  "value": "below 2.5",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Mahindra Finance non-wheels lending growth",
+                  "value": "130",
+                  "unit": "%",
+                  "period": "last quarter YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Mahindra Finance NIM",
+                  "value": "7.3",
+                  "unit": "%",
+                  "period": "current, up from 6.5%",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Mahindra Finance ROA",
+                  "value": "2.4",
+                  "unit": "%",
+                  "period": "current, up from below 2%",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Mahindra Finance wheels business growth",
+                  "value": "20",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Mahindra Finance non-wheels business growth",
+                  "value": "79",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Mahindra Finance GS2+GS3",
+                  "value": "below 10",
+                  "unit": "%",
+                  "period": "last 7 quarters",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Mahindra Finance GS2 (30+ early risk) improvement",
+                  "value": "100",
+                  "unit": "bps",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Aerostructures cumulative contract wins",
+                  "value": "1.2",
+                  "unit": "billion USD",
+                  "period": "cumulative",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Aerostructures contract wins in last year",
+                  "value": "600",
+                  "unit": "million USD",
+                  "period": "last 1 year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Farm implement revenue",
+                  "value": "370",
+                  "unit": "crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Auto price hike",
+                  "value": "2%",
+                  "unit": null,
+                  "period": "July 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Auto Operating Profit margin improvement expectation",
+                  "value": "slightly improve",
+                  "unit": null,
+                  "period": "Q2 FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Auto Operating Profit margin",
+                  "value": "maintain/slightly improve",
+                  "unit": null,
+                  "period": "Q2 FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Auto hedging loss impact on margins",
+                  "value": "85",
+                  "unit": "bps",
+                  "period": "Q1 FY27 QoQ",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Auto commodity headwind",
+                  "value": "650-700",
+                  "unit": "bps",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "PAT drivers",
+                  "points": [
+                    "Growth Gems driven by Real Estate, Accelo and Logistics.",
+                    "Mahindra Finance driven by NIMs, asset quality and growth; pivot to growth (discussed last quarter) is driving AUM higher while maintaining GS3 at reasonable level.",
+                    "Tech Mahindra driven by margin expansion, EBIT margins up to 14.4%, on track for 15% by end of fiscal year.",
+                    "Auto volumes offset by commodity prices; Farm volume offset by commodities in Turkey.",
+                    "Investments gain on sale from CIE contributed to investment income; ex-CIE gain PAT growth was 22% YoY.",
+                    "Auto margin loss of only 160-170 bps despite 450 bps commodity pressure attributed to proactive pricing actions and operating cost actions."
+                  ]
+                },
+                {
+                  "label": "Auto margin bridge (three-column chart)",
+                  "points": [
+                    "Column 1: Auto plus LCV (domestic plus exports), i.e., core business without EVs — PBIT margin 8.9% (vs 10.2%, 10.8% in prior quarters), impacted by high commodity price increases escalated significantly after February.",
+                    "Column 2: EVs/ESUVs (Mahindra Electric plus conversion costs earned in M&M) — 5.3% margin.",
+                    "Column 3: Others — trucks and buses, contract manufacturing for Last Mile Mobility, domestic and international subsidiaries, Last Mile Mobility Company."
+                  ]
+                },
+                {
+                  "label": "Farm margin bridge (three-column chart)",
+                  "points": [
+                    "Column 1: Core tractors (domestic plus exports) — 19.2% margin, historically operates in 17-19% band (rarely below 17% except one quarter), management can manage margins irrespective of up/down cycles or commodity swings.",
+                    "Column 2: International subsidiaries — loss taken, largely due to impairment on Erkunt Foundry and one more company.",
+                    "Column 3: Others (Farm machinery, Powerol, Indian subsidiaries like Swaraj Engines) — improved margin percentage and growth.",
+                    "All three combine to 14.2% Farm consolidated margin."
+                  ]
+                },
+                {
+                  "label": "Commodity outlook and pricing actions",
+                  "points": [
+                    "Auto: 450 bps commodity pressure; price hikes of ~1.5% and 2.7% average taken by mid-July; commodity prices have started rising again since those pricing decisions; other operating actions also taken.",
+                    "Framework expectation: Q1 was a low point for Auto margins and should improve from here, barring further dramatic commodity moves.",
+                    "Farm: steel up 24%, rubber up 30-53% since start of calendar year, both unhedgeable; price increases taken (₹15,000 in August) are not sufficient given further price escalation; temporary blip likely in Farm, duration dependent on how long the rally in steel/rubber prices continues.",
+                    "Auto hedging loss on aluminium/precious metals of 85 bps QoQ impact on margins.",
+                    "Aggregate understanding discussed: ~450 bps Q1 headwind, 2.7% price hike taken, margin expected neutral-ish — implying ~650-700 bps of commodity headwind as of the call (management confirmed 'as of today' with caveat of June trend uptick)."
+                  ]
+                },
+                {
+                  "label": "Growth Gems financial detail",
+                  "points": [
+                    "Logistics: highest ever quarterly profit for the business coming out of turnaround.",
+                    "Real Estate: OCs delivered ahead of schedule; multiple large multi-use projects ranging ₹5,000 crore up to ₹10,000-12,000 crore planned from already-acquired GDV pipeline."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "SUV volume growth",
+                  "value": "15",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV penetration (M&M)",
+                  "value": "12",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV penetration (industry)",
+                  "value": "9",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV industry penetration few quarters back",
+                  "value": "2-2.5",
+                  "unit": "%",
+                  "period": "few quarters ago",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Farm export growth",
+                  "value": "15",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Farm equipment volume growth",
+                  "value": "18",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Farm market share (all-time high, prior year)",
+                  "value": "45.2",
+                  "unit": "%",
+                  "period": "prior year same quarter",
+                  "kind": "reported"
+                },
+                {
+                  "label": "LCV volume growth",
+                  "value": "20",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Auto revenue market share",
+                  "value": "24-25",
+                  "unit": "%",
+                  "period": "Q1 FY27 (linear trend)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cumulative EV vehicles sold",
+                  "value": "77,000",
+                  "unit": "vehicles",
+                  "period": "cumulative till now",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Trucks and Bus volume growth",
+                  "value": "11",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Trucks and Bus market share",
+                  "value": "7.8",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Last Mile Mobility total volume",
+                  "value": "42,000",
+                  "unit": "units",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Last Mile Mobility L5 EV penetration",
+                  "value": "40",
+                  "unit": "%",
+                  "period": "Q1 FY27 (vs 27% same period last year)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV-SUV growth (Velusamy)",
+                  "value": "77",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Combined XEV brand volume",
+                  "value": "16,500",
+                  "unit": "units",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "SUV growth (Velusamy detail)",
+                  "value": "14.9",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "LCV growth (Velusamy detail)",
+                  "value": "20",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Prior year Q1 SUV growth (comparison base)",
+                  "value": "22.1",
+                  "unit": "%",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "SML LCV bus segment (<12 tonnes) rank",
+                  "value": "number two (from number three)",
+                  "unit": null,
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Tractor horsepower mix (40-50 HP range)",
+                  "value": "69-70",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Farm channel inventory (days)",
+                  "value": "30 to 40",
+                  "unit": "days",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Used vehicle disbursement share (Mahindra Finance)",
+                  "value": "15 to 19 (last quarter 16)",
+                  "unit": "%",
+                  "period": "trailing 8 quarters",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Mahindra Finance loan file AI processing (Samurai)",
+                  "value": "65",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Mahindra Finance AI service requests fulfilled",
+                  "value": "5 lakhs plus",
+                  "unit": null,
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Mahindra Finance cross-sell cost reduction via AI",
+                  "value": "30",
+                  "unit": "% lower CAC",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Mahindra Finance target book size",
+                  "value": "3 lakh crore",
+                  "unit": "₹",
+                  "period": "by 2031",
+                  "kind": "target"
+                },
+                {
+                  "label": "Mahindra Finance target mix (wheels/non-wheels)",
+                  "value": "70/30",
+                  "unit": "%",
+                  "period": "by 2031",
+                  "kind": "target"
+                },
+                {
+                  "label": "Mahindra Finance ROA target range",
+                  "value": "2.2-2.5",
+                  "unit": "%",
+                  "period": "ongoing",
+                  "kind": "target"
+                },
+                {
+                  "label": "Aerostructures TAT reduction via AI (SamurAI)",
+                  "value": "40",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Logistics white space to be sold by",
+                  "value": "September",
+                  "unit": null,
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "Logistics losses streak before quarter three profit",
+                  "value": "11",
+                  "unit": "quarters",
+                  "period": "prior to Q3 last year",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Farm business detail",
+                  "points": [
+                    "Farm machinery had highest quarter ever, business getting into momentum, connecting with increased mechanisation in rural India both on tractor side and adoption of farm machines.",
+                    "Erkunt Foundry problem solved for and exited.",
+                    "Tractor market share: strong sequential growth but slight YoY sequential share loss versus last year's all-time high of 45.2%.",
+                    "Horsepower mix shift towards 40-50 HP driven by mechanisation trend and adoption of higher-value implements like seeders and balers; post-GST customers able to buy higher horsepower product for price previously paid for lower horsepower.",
+                    "Channel inventory discipline improved across OEMs, reducing volatility in industry growth; Swaraj below norm due to supply issues in the quarter; overall 30-40 days considered fine, minimal restocking needed."
+                  ]
+                },
+                {
+                  "label": "Auto business detail",
+                  "points": [
+                    "SUV volumes grew despite production issues especially in April and May; LCV growth also had production issues.",
+                    "Continued to be revenue number one market share with strong sequential growth in LCV market share.",
+                    "XEV 9S is the single largest, even by volume, selling EV across all passenger vehicles despite its price point.",
+                    "Strong demand momentum urban and rural; some shift to diesel; segmental shift to CNG especially in lower GST (<4m) category as part of segment moved to EV and another to CNG amid fuel price/crisis; diesel gaining on fuel efficiency salience.",
+                    "All brands on strong momentum; growth seen equally in above-4m and below-4m segments wherever new products launched, more driven by refreshes/new launches than segment per se."
+                  ]
+                },
+                {
+                  "label": "Truck & Bus / SML Mahindra combination",
+                  "points": [
+                    "SML and truck & bus division combined, enhancing competitiveness and creating synergies; business now double its size.",
+                    "SML/M&M team became number two player in LCV bus segment (<12 tonnes), from number three; thin margin, hoping to sustain and increase.",
+                    "Among leaders in LCV trucks; limited rate in ICV trucks doing well; heavy trucks a long-haul commitment continuing.",
+                    "Synergy from network/product point of view and cost/value engineering already started; combination accretive for both M&M and SML with additional synergies."
+                  ]
+                },
+                {
+                  "label": "Last Mile Mobility",
+                  "points": [
+                    "Very good quarter, strong growth, continued number one; L5 EV penetration accelerated significantly to 40% from ~27% same period last year.",
+                    "UDO enabling this volume growth."
+                  ]
+                },
+                {
+                  "label": "Mahindra Finance segment detail",
+                  "points": [
+                    "Growth pivot clear: AUM and disbursement growth driving Q1 performance along with credit discipline and NIM expansion.",
+                    "Diversification into mortgage and SME started, needs acceleration; add more fee-based income.",
+                    "Non-wheels business (mortgage, SME, PL) grew 79% vs wheels business ~20%.",
+                    "Housing finance company NPAs cleaned up (GS3 below 2.5%) before growing; grown 130% last quarter.",
+                    "Used vehicle business: firm is number two/three in used car leaderboard, number one in used tractor, not a big player in used CV; business is margin accretive; disbursement share dipped slightly last 2 quarters due to conservative approach post-GST residual value shift, expected to move back up to 16-19% range.",
+                    "Target: 70% mobility / 30% non-wheels book mix by 2031, book size target ₹3 lakh crore by 2031.",
+                    "ROA target range 2.2%-2.5%; current 2.4%; Group ROE aspiration ~20%, Mahindra Finance initial ROE target 15%, close to it at current ROA."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "TECH",
+              "title": "Product & Technology",
+              "key_figures": [
+                {
+                  "label": "Service.ai workshop assistants using AI",
+                  "value": "2,600",
+                  "unit": "assistants",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Reach.ai test drives via AI",
+                  "value": "91,000",
+                  "unit": "test drives",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Simulation time reduction via AI",
+                  "value": "10 hours to 2 minutes",
+                  "unit": null,
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Forward deployed engineers and AI experts",
+                  "value": "50",
+                  "unit": "people",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Proprietary AI models built",
+                  "value": "19",
+                  "unit": "models",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Leaders/teams trained in RM.ai academy",
+                  "value": "1900",
+                  "unit": "people",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "AI transformation projects",
+                  "value": "15",
+                  "unit": "large scale projects",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Welding guns in Chakan",
+                  "value": "300",
+                  "unit": "guns",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Welds done per hour in Chakan",
+                  "value": "20,000",
+                  "unit": "welds/hour",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Auto EV EBITDA margin (Chandru question reference)",
+                  "value": "10",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "AI deployment examples in Auto",
+                  "points": [
+                    "Paint.ai: making significant impact in paint shop — creating better-looking vehicle, reducing paint used, reducing rework required, effectively creating more capacity.",
+                    "Service.ai: 2,600 workshop assistants use AI to help customers, reduce turnaround time in workshop, creating more capacity.",
+                    "Reach.ai: 91,000 test drives generated entirely through AI-led customer communication (AI not driving the car); direct addition to revenue that would not otherwise have been achieved.",
+                    "Simulation in product development: drag coefficient simulations that typically took 10 hours now take 2 minutes with AI, aimed at cutting product development timeline; team working on many other such applications."
+                  ]
+                },
+                {
+                  "label": "AI deployment examples in Finance",
+                  "points": [
+                    "Samurai model for loan file processing: 65% of loan files processed by AI, cutting TAT by ~40% by piecing together unstructured/vernacular data.",
+                    "Service requests: 5 lakh plus fulfilled through AI.",
+                    "Cross-sell: 30% lower cost of acquisition through AI-orchestrated channel.",
+                    "Voice.ai used across multiple solutions in collections, sales and other areas."
+                  ]
+                },
+                {
+                  "label": "AI foundation and governance",
+                  "points": [
+                    "50 forward deployed engineers and AI experts working with businesses; 19 proprietary models built for specific applications built on internal GPUs (no token cost).",
+                    "1,900 leaders and teams trained in RM.ai academy; 15 large-scale transformation projects plus smaller projects.",
+                    "Group AI governance council and business governance council in place for security and governance focus.",
+                    "AI driven by process owners, not just central teams; example given of Chakan plant shop-floor employees using AI and generating their own process ideas.",
+                    "Welding quality validation model built in-house: 300 welding guns and 20,000 welds/hour in Chakan, every weld can be validated by AI (previously destructive testing monthly)."
+                  ]
+                },
+                {
+                  "label": "AI differentiation discussion",
+                  "points": [
+                    "Management view: differentiation comes from proprietary models built with company-specific data (e.g., 20 years of simulation data feeding a proprietary AI known only to the company) and from process owners driving build-out, not from the underlying AI technology itself, which is broadly available.",
+                    "Mahindra Finance context: distributed business across 3.8 lakh villages with many dialects and unstructured data; vernacular bots used to acquire customers at lower cost; SamurAI helps cut loan processing TAT by ~40%.",
+                    "Farm business: 'sentiment.ai' — simple tool connecting with field force (FD, SD, board divisions) to collect on-ground sentiment village by village, feeding pattern/discrepancy detection for proactive action."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MFG",
+              "title": "Manufacturing & Capacity",
+              "key_figures": [
+                {
+                  "label": "ICE SUV capacity (by September, end H1)",
+                  "value": "60,000",
+                  "unit": "per month",
+                  "period": "September 2026",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "EV capacity readiness (by September)",
+                  "value": "8,000",
+                  "unit": "per month",
+                  "period": "September 2026",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Total September capacity",
+                  "value": "68,000",
+                  "unit": "per month",
+                  "period": "September 2026",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "ICE capacity addition by end of year",
+                  "value": "10,000",
+                  "unit": "per month",
+                  "period": "by end of FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "EV capacity addition by end of year",
+                  "value": "4,000",
+                  "unit": "per month (8,000 to 12,000)",
+                  "period": "by end of FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Total capacity by end of year",
+                  "value": "82,000 (64,500 moving to 82,000)",
+                  "unit": "per month",
+                  "period": "end of FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Additional Chakan capacity (NU_IQ platform phase 2)",
+                  "value": "10,000",
+                  "unit": "per month",
+                  "period": "future",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Capacity after Chakan phase 2 addition",
+                  "value": "92,000",
+                  "unit": "per month",
+                  "period": "future",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Nagpur capacity addition (two phases)",
+                  "value": "20,000 then 20,000 (250,000 and 250,000 in two phases)",
+                  "unit": "per month/annualized",
+                  "period": "phase 1 H1 CY2029, phase 2 ~10-12 months later",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Overall capacity increase target",
+                  "value": "2x",
+                  "unit": null,
+                  "period": "between now and F31",
+                  "kind": "target"
+                },
+                {
+                  "label": "SML Mahindra becomes number two player in LCV bus segment",
+                  "value": "two",
+                  "unit": null,
+                  "period": "Q2",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capacity increase from 64.5 to 68 by end of H1",
+                  "value": "64.5 to 68",
+                  "unit": "thousand per month",
+                  "period": "end of H1",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Capacity planning detail",
+                  "points": [
+                    "ICE SUV capacity to reach 60,000/month by September (end of H1); EV capacity readiness for 8,000/month by same time — total September capacity 68,000/month; mix issue exists because one product among three is doing disproportionately well relative to capacity readiness.",
+                    "By end of the year, ICE capacity adds 10,000 (flowing into F28 for launch of first NU_IQ platform products) and EV capacity adds 4,000 (8,000 to 12,000) for new EV launching in F28 — taking total from 64,500 to 82,000.",
+                    "Further 10,000/month added in Chakan for NU_IQ platform phase 2, taking capacity to 92,000.",
+                    "Nagpur facility: 20,000/month (250,000 phase) capacity in two phases; first phase ready H1 calendar 2029, second phase a few months (10-12 months) later — this is the 2x capacity increase planned between now and F31 in multiple phases.",
+                    "Auto CEO reiterated capacity increase from 64.5 to 68 happening by end of H1, positioning for festive season demand."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Farm international exposure",
+                  "points": [
+                    "Exports up 15%, with slightly lower commodity inflation impact than domestic.",
+                    "International subsidiaries loss largely due to impairment on Erkunt Foundry and one more company; future growth drivers include accelerating exports further and fixing certain weak spots internationally."
+                  ]
+                },
+                {
+                  "label": "Rural market geography",
+                  "points": [
+                    "Rainfall deficit improved from bad levels in June to 15% deficit currently, varying by region and tracked accordingly.",
+                    "Reservoir levels 7% below LPA (Long Period Average), recovered from a much greater deficit, better than same period last year.",
+                    "Kharif sowing accelerated after rains started over last 3-4 weeks; shortfall over last year currently a little over 4%."
+                  ]
+                },
+                {
+                  "label": "Lifespaces city focus",
+                  "points": [
+                    "Residential focus on three cities: Mumbai, Pune, Bangalore — representing 55% of overall national volume in unit sales (slightly more by value).",
+                    "Company declines land parcel opportunities in other cities like Indore, Hyderabad, Delhi to maintain depth-over-breadth strategy.",
+                    "Relative Market Share (RMS) framework used to track presence versus largest competitor in each city (e.g., versus Lodha in Mumbai)."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SUP",
+              "title": "Supply Chain & Operations",
+              "key_figures": [
+                {
+                  "label": "Logistics white space (same period last year)",
+                  "value": "16 lakh",
+                  "unit": "sq ft",
+                  "period": "same period last year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Logistics white space (current)",
+                  "value": "2 lakh",
+                  "unit": "sq ft",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Logistics operational turnaround",
+                  "points": [
+                    "Strong focus on operational execution; significant action was white space reduction from 16 lakh sq ft (same period last year) to 2 lakh sq ft currently, expected to be sold by September.",
+                    "None of the white space has been surrendered — all sold, so these are now revenue-generating assets.",
+                    "Strong growth on manufacturing and e-commerce sites; three very large e-commerce sites started this month across the country.",
+                    "After 11 straight quarters of losses, business achieved small profit in Q3 of last year, followed by strong Q4 and Q1.",
+                    "RIVIGO (express logistics) turnaround: losses cut down significantly in last one year; still a drag but EBITDA positive is 'just around the corner', expected to lead to PAT positive at some point soon."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [
+                {
+                  "label": "Lifespaces pricing premium enabled by trust",
+                  "value": "15",
+                  "unit": "% higher pricing",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Joint development partnership deal size (trust-driven)",
+                  "value": "12,000",
+                  "unit": "crore",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Lifespaces target pre-sales",
+                  "value": "10,000",
+                  "unit": "crores",
+                  "period": "by FY30",
+                  "kind": "target"
+                },
+                {
+                  "label": "Lifespaces FY30 growth multiple vs FY20",
+                  "value": "14x",
+                  "unit": null,
+                  "period": "FY30 vs FY20",
+                  "kind": "target"
+                },
+                {
+                  "label": "Lifespaces locked-in deal pipeline",
+                  "value": "50,000",
+                  "unit": "crore",
+                  "period": "over last 3 years",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Lifespaces OCs delivered / apartments delivered",
+                  "value": "3,000 apartments (delivered 1,500)",
+                  "unit": "apartments",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Lifespaces zero-snag apartment rate",
+                  "value": "99",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Combined XEV brand volume decimal detail",
+                  "value": "1,6500",
+                  "unit": null,
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Trust and pricing power (Mahindra Way)",
+                  "points": [
+                    "Lifespaces business can price 15% higher in market despite strong competitors because of trust.",
+                    "Closed joint development partnership deals (e.g., ₹12,000 crore GDV opportunity) because partner chose to work exclusively with Mahindra regardless of other offers.",
+                    "Underlying theme across businesses: strong execution driven by purpose, values (integrity, quality, care), talent, technology adoption, and startup-like behaviors (collaboration, agility, boldness)."
+                  ]
+                },
+                {
+                  "label": "Lifespaces strategy detail (Amit Sinha)",
+                  "points": [
+                    "Strategy codified 3 years ago: focus on residential in Mumbai, Pune, Bangalore; exited affordable segment, focus on mid-premium and premium segments.",
+                    "Locked in ~₹50,000 crore of land deal pipeline over last 3 years across greenfield, joint development, and society redevelopment, through rigorous process to ensure more upside than downside.",
+                    "Focus on customer experience and premiumization so customers come for the brand and stay for the experience; 3,000 apartments covered by OCs, 1,500 delivered, 99% zero-snag apartments.",
+                    "Execution discipline emphasized because pricing is locked upfront while costs are covered over next five years — prudence on cost escalation surprises; industrial/commercial (IC) business complements residential business."
+                  ]
+                },
+                {
+                  "label": "EV pricing/profitability path",
+                  "points": [
+                    "Management expects EV price sensitivity to reduce and inflection point likely after 20-25% EV penetration, enabling a reasonable premium of 5-7% versus ICE (today EVs priced near parity, e.g., XEV 9S vs 7XO).",
+                    "As EV category adoption grows, word-of-mouth on tangible savings builds, reducing reliance on price parity.",
+                    "Cost curve expected to improve via continued localization, scale benefits passed on by supply ecosystem (previously subscale given orders/VOBs awarded around 2022 with uncertain EV penetration), engineering optimization — expected over next 12-18 months.",
+                    "Scale argument: company doing ~9x ICE volume vs EV; scaling up EV volume expected to improve profitability further; INGLO EV platform capex efficiency across multiple top-heads also supports profitability.",
+                    "Consumers historically willing to pay more for diesel due to lower fuel cost/higher efficiency; EV value proposition includes similar fuel savings potential providing some pricing ability."
+                  ]
+                },
+                {
+                  "label": "Lifespaces group strategy fit (Anish Shah)",
+                  "points": [
+                    "Fit in group requires high quality products (aspiration: customers wait specifically for Mahindra Lifespaces property in their area), meaningful scale, and profitability standards (ROA maintenance) with some businesses given long-term view (5-15 years) to build profitability, similar to aerospace timeline.",
+                    "Mahindra Lifespaces with ₹50,000 crore GDV positioned well versus large players, expected to continue growing faster than most competitors, described as a very profitable business under close monitoring."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [
+                {
+                  "label": "Aerostructures decade growth aspiration",
+                  "value": "30x",
+                  "unit": null,
+                  "period": "over a decade (Global Investor Day target)",
+                  "kind": "target"
+                },
+                {
+                  "label": "Aerostructures organic growth component",
+                  "value": "10x",
+                  "unit": null,
+                  "period": "over a decade",
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "SML Mahindra + Truck & Bus combination",
+                  "points": [
+                    "Combination announced the day before the call, enhances competitiveness, creates synergies, doubles business size.",
+                    "Truck and bus business trajectory validated over last 3-4 years after earlier questions about whether to retain it; management decided to let business prove execution before deciding to exit or continue — business executed well, giving confidence to proceed with SML combination.",
+                    "Combination expected to be accretive to M&M with additional synergies from network/product and cost/value engineering already underway."
+                  ]
+                },
+                {
+                  "label": "Aerostructures M&A",
+                  "points": [
+                    "Business exploring potential acquisition globally based on strength of business and desire of OEM partner customers; acquisition would need to be underwritten to ensure appropriate returns.",
+                    "Aspiration (from Global Investor Day) to grow business 30x over a decade organically and inorganically combined, with 10x organic component; management indicated confidence to grow faster than that target and will share more numbers closer to milestones.",
+                    "Business moving up the aero value chain — from detailed parts player towards sub-assemblies and full fuselages (manufacturer of thousands of small parts moving toward hundreds of high-value parts).",
+                    "Two large deals recently won with Airbus; company is single global source for fuselage of 2 helicopters, seen as testament to quality.",
+                    "Industry dynamics: reliability/quality track record is central to reputation; parts industrialization takes 2-3 years; aircraft parts must last ~40 years (e.g., 747s still flying), so replacement/design cycles are long and quality bar very high."
+                  ]
+                },
+                {
+                  "label": "Growth Gems / Federation model",
+                  "points": [
+                    "Multiple growth engines (Growth Gems, Mahindra Finance, Tech Mahindra, Auto, Farm) delivering value simultaneously described as a 'federation' — every engine currently firing and contributing meaningfully to PAT growth.",
+                    "Growth Gems (Real Estate, Logistics, Aerostructures, Truck & Bus) delivering profits up 3x, with format going forward to bring multiple business leaders on stage directly for analyst interaction."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [
+                {
+                  "label": "Farm rainfall deficit",
+                  "value": "15",
+                  "unit": "%",
+                  "period": "current (improved from worse in June)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Reservoir levels vs LPA",
+                  "value": "7",
+                  "unit": "% below LPA",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Kharif sowing shortfall vs last year",
+                  "value": "over 4",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Government spending increase (rural)",
+                  "value": "16",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Wheat procurement improvement",
+                  "value": "19",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Rural demand risk / El Nino concerns",
+                  "points": [
+                    "Positive enablers highlighted despite El Nino fears: farm labour shortage (accelerating trend as labour moves to industrial areas for better pay) driving mechanisation; healthy Rabi cash flows with wheat procurement up ~19%; rainfall deficit improved from very bad in June to 15% currently (varies by region); sentiment on ground is 'non-negative' despite data suggesting rainfall-driven negativity because rains have come in most parts of country; reservoir levels recovering though still 7% below LPA; Kharif sowing accelerated after rains started, shortfall vs last year only ~4%; government spending (including states) up 16% supporting rural cash flow.",
+                    "Caveat: need to see what happens to rainfall and other factors over next two months; at the moment rural market reality assessed as reasonably okay based on last three months' volumes and early July signs."
+                  ]
+                },
+                {
+                  "label": "Commodity inflation risk",
+                  "points": [
+                    "Auto commodity price impact 400-500 bps in the quarter; escalated significantly after February.",
+                    "Farm has completely unhedgeable steel and rubber inflation (steel +24%, rubber +30-53% since start of calendar year); price increases taken are insufficient given further escalation; temporary blip likely, duration dependent on how long price rally continues.",
+                    "Commodity prices have started rising again even after price hike decisions were taken in Auto.",
+                    "Auto hedging loss on aluminium/precious metals of 85 bps QoQ impact."
+                  ]
+                },
+                {
+                  "label": "International farm business risk",
+                  "points": [
+                    "Impairment taken on Erkunt Foundry and one more international subsidiary company, contributing to loss in international subs column.",
+                    "International headwinds noted; company continues to have certain weak spots internationally that need fixing."
+                  ]
+                },
+                {
+                  "label": "Production constraints",
+                  "points": [
+                    "SUV and LCV volume growth impacted by production issues, especially in April and May."
+                  ]
+                },
+                {
+                  "label": "Capacity constraint risk",
+                  "points": [
+                    "Company is 'strapped for capacity right now' in Auto/EV; plan to double capacity from current level over several years to address this constraint, phased through FY31."
+                  ]
+                },
+                {
+                  "label": "Season shift risk (tractors)",
+                  "points": [
+                    "Festival (Navratri) has moved to 11th October this year vs Q2 last year when Navratri had already started and peak volume occurred in Q2; this season shift combined with operating leverage effects creates added complexity for Q2 tractor margins on top of commodity pressure."
+                  ]
+                },
+                {
+                  "label": "PLI subsidy dependency",
+                  "points": [
+                    "No specific timeline yet on whether PLI 2.0 continues beyond FY28; expectation is PLI should reduce as EV margins improve with scale, to avoid supernormal profits based on subsidies; more clarity expected in next 6-12 months.",
+                    "Company confirmed EV business is EBITDA positive without PLI currently, though exact PLI contribution amount not disclosed."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [
+                {
+                  "label": "ROE target",
+                  "value": "18",
+                  "unit": "%",
+                  "period": "ongoing",
+                  "kind": "target"
+                },
+                {
+                  "label": "Tech Mahindra EBIT margin target",
+                  "value": "15",
+                  "unit": "%",
+                  "period": "by end of FY27",
+                  "kind": "target"
+                },
+                {
+                  "label": "Aerospace quality/business excellence ranking globally",
+                  "value": "top five",
+                  "unit": null,
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Group outlook",
+                  "points": [
+                    "ROE at 23% this quarter is higher than expected but management is not resetting target expectations, maintaining 18% ROE target going forward.",
+                    "Growth continuing to outpace targets, EPS growth at 34% with ₹48 EPS this quarter, described as consistent delivery.",
+                    "Cautiously optimistic overall outlook given challenges of last 3 months; team delivered better results than might have been expected 3-4 months ago."
+                  ]
+                },
+                {
+                  "label": "Auto margin outlook",
+                  "points": [
+                    "Expectation that Q1 was a low point for Auto margins and margins should improve from here absent further dramatic commodity moves.",
+                    "Sequential expectation: maintain or slightly improve Operating Profit margin between Q1 and Q2, aided by conscious aggressive 2.7% average price increase taken to avoid disruptive incremental hikes; headroom from GST reduction retained since prices still below September-October last year levels; no significant demand impact observed so far from new prices."
+                  ]
+                },
+                {
+                  "label": "Farm margin outlook",
+                  "points": [
+                    "Farm situation more complex: unhedgeable steel/rubber inflation, season shift (festival moved to October vs Q2 last year) creating operating leverage headwind in Q2; hope for softening commodities plus season upcycle entering Q3 which should help tractors."
+                  ]
+                },
+                {
+                  "label": "Tech Mahindra outlook",
+                  "points": [
+                    "On track for 15% EBIT margin commitment by end of FY27; next phase of Tech Mahindra strategy to be outlined once this phase target is achieved."
+                  ]
+                },
+                {
+                  "label": "Mahindra Finance outlook",
+                  "points": [
+                    "Targeting 70% mobility / 30% non-wheels book mix by 2031 and ₹3 lakh crore book size by 2031.",
+                    "ROA target range of 2.2%-2.5% (currently at 2.4%), intended to support Group ROE aspiration (~20% currently, Mahindra Finance's initial ROE target was 15%, currently close to that at present ROA)."
+                  ]
+                },
+                {
+                  "label": "Aerostructures outlook",
+                  "points": [
+                    "Aspiration (from Global Investor Day) to grow 30x over a decade organic+inorganic combined, 10x organic; management indicated confidence to exceed that pace and will share more numbers as milestones approach.",
+                    "Potential global acquisition being evaluated based on business strength and OEM partner requirements."
+                  ]
+                },
+                {
+                  "label": "Capacity expansion outlook",
+                  "points": [
+                    "Plan to double Auto/EV capacity between now and FY31 across multiple phases (details in MFG section): ICE and EV capacity ramps through September 2026, end of FY27, Chakan phase 2, and Nagpur phases through H1 CY2029 and beyond."
+                  ]
+                },
+                {
+                  "label": "PLI outlook",
+                  "points": [
+                    "No confirmed timeline on PLI 2.0 or extension beyond FY28; more clarity expected within 6-12 months; expectation that PLI will reduce as EV margins scale up."
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "ROE",
+              "horizon": "ongoing",
+              "statement": "Our target is 18%, so we will go slightly up and above 18%. 23% is higher than what we expected as well, but we are not resetting expectations, we will stay with 18% as a target.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Tech Mahindra EBIT margin",
+              "horizon": "FY27",
+              "statement": "Tech Mahindra promise is to get to 15% EBIT margin by end of this fiscal year; on track for that.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "raised"
+            },
+            {
+              "metric": "Auto capacity expansion",
+              "horizon": "over next few years to FY31",
+              "statement": "Plan to double capacity from where we stand today, phased: total September capacity 68,000/month, end of FY27 82,000/month, then 92,000/month with Chakan phase 2, then 20,000/month added in Nagpur in two phases (first phase ready H1 calendar 2029, second a few months later), taking to 2x capacity increase between now and F31.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Auto Operating Profit margin (Q2)",
+              "horizon": "Q2 FY27",
+              "statement": "Sequentially if there is no further dramatic change in commodities, we should be able to maintain/slightly improve the Operating Profit margin between Q1 and Q2.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Auto margin trajectory (post-Q1)",
+              "horizon": "FY27 remainder",
+              "statement": "We are expecting that Q1 in Auto was a low point and it should improve from here.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Farm margin",
+              "horizon": "Q2 FY27",
+              "statement": "Some temporary blip is likely in Farm and how long that extends will depend a lot on how long this rally in prices continues in steel and rubber.",
+              "specificity": "vague",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "Farm margin/volume",
+              "horizon": "Q3 FY27",
+              "statement": "As we get into Q3 we are hoping that there will be some softening on commodities plus we also get into season upcycle, which will help tractors.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "PLI subsidy timeline/reduction",
+              "horizon": "next 6-12 months",
+              "statement": "Our expectation would be that as we start showing higher margins with scale, PLI should reduce. In terms of specific timelines, we don't have an answer on that as yet; we will have more clarity in the next maybe 6 to 12 months.",
+              "specificity": "vague",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "EV cost curve / profitability",
+              "horizon": "next 12 to 18 months",
+              "statement": "We would expect the cost curve to kick in on multiple technologies... I think both of these will kick in in the next 12 to 18 months.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "EV pricing inflection point",
+              "horizon": "unclear",
+              "statement": "The inflection point probably will be after 20-25% EV penetration... a reasonable premium of 5-7% is possible.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Mahindra Finance lending book size",
+              "horizon": "by 2031",
+              "statement": "We are targeting a ₹3 lakh crore book by 2031.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Mahindra Finance book mix (wheels/non-wheels)",
+              "horizon": "by 2031",
+              "statement": "By 2031, 70% of the book will still be mobility, 30% will be non-wheels.",
+              "specificity": "specific",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Mahindra Finance ROA",
+              "horizon": "ongoing",
+              "statement": "First goal is to be between 2.2%-2.5% ROA.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Mahindra Finance ROE",
+              "horizon": "ongoing",
+              "statement": "Our first stated ROE target was 15%; with 2.4% ROA we are very close to 15% ROE.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "lowered"
+            },
+            {
+              "metric": "Mahindra Lifespaces pre-sales",
+              "horizon": "FY30",
+              "statement": "We want to be a 10,000 crores company pre-sales by FY30, 14 times what we were in FY20.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Aerostructures growth",
+              "horizon": "over a decade",
+              "statement": "Aspiration target that organic and inorganic put together we want to grow the business by almost 30 times in a decade, out of which organic was 10 times; I can assure you we will grow faster than that.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Logistics EBITDA/PAT positive (RIVIGO/express)",
+              "horizon": "near term",
+              "statement": "EBITDA positive is just around the corner... that should then lead us to a PAT positive number at some point in time very soon.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Logistics white space sale",
+              "horizon": "by September 2026",
+              "statement": "We have only 2 lakh square feet of white space available, and that also we should be able to sell it by September.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Tractor growth",
+              "horizon": "FY27",
+              "statement": "Tractor growth mid-single digit (~5%).",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "SUV growth",
+              "horizon": "FY27",
+              "statement": "SUVs (M&M growth, not industry): mid-to-high teens.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "<3.5T LCV growth",
+              "horizon": "FY27",
+              "statement": "<3.5T LCV: high single digits.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Additional capacity in FY27",
+              "horizon": "FY27",
+              "statement": "We’ll probably add this year 5 to 6,000 by July-August in ICE over what we have right now.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "New capacity in Chakan for IQ platform",
+              "horizon": "calendar year 2027",
+              "statement": "Calendar year 2027, will see the addition of new capacity in Chakan for the new IQ platform.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Nagpur facility capacity",
+              "horizon": "over time",
+              "statement": "The Nagpur facility, which will come up in calendar 2028, will have primarily the new IQ platform on the SUV side.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "Commodity cost inflation (Auto)",
+              "status": "new",
+              "note": "400-500 bps impact in Q1, commodity prices escalated significantly after February and have continued rising even after price hikes were taken."
+            },
+            {
+              "risk": "Commodity cost inflation (Farm - unhedgeable steel and rubber)",
+              "status": "new",
+              "note": "Steel up 24%, rubber up 30-53% since start of calendar year; both unhedgeable, price hikes insufficient to offset, temporary margin blip expected."
+            },
+            {
+              "risk": "Rural demand / monsoon (El Nino) uncertainty",
+              "status": "new",
+              "note": "Rainfall deficit improved from very bad in June to 15% currently; reservoir levels 7% below LPA but recovering; sentiment non-negative on ground despite headline deficit data; still need to watch next two months."
+            },
+            {
+              "risk": "International Farm subsidiary weakness / impairment",
+              "status": "new",
+              "note": "Impairment taken on Erkunt Foundry and one more company; some international weak spots still being fixed."
+            },
+            {
+              "risk": "Production constraints (Auto)",
+              "status": "new",
+              "note": "SUV and LCV growth impacted by production issues in April and May."
+            },
+            {
+              "risk": "Auto/EV capacity constraint",
+              "status": "new",
+              "note": "Company 'strapped for capacity right now'; multi-year phased expansion plan underway to double capacity by FY31."
+            },
+            {
+              "risk": "Tractor season shift (Q2 operating leverage)",
+              "status": "new",
+              "note": "Festival moved to 11th October this year vs Q2 last year (Navratri was in Q2 last year); creates operating leverage headwind for Q2 tractor volumes/margins on top of commodity pressure."
+            },
+            {
+              "risk": "PLI subsidy uncertainty",
+              "status": "new",
+              "note": "No confirmed timeline on PLI continuation/PLI 2.0 beyond FY28; expectation PLI reduces as EV margins scale; more clarity in 6-12 months."
+            },
+            {
+              "risk": "Auto hedging losses (aluminium/precious metals)",
+              "status": "new",
+              "note": "85 bps QoQ negative impact on Auto margins from hedging losses in Q1."
+            },
+            {
+              "risk": "Logistics express business (RIVIGO) drag",
+              "status": "new",
+              "note": "Losses cut down significantly over last one year; still a drag on business but EBITDA positive expected imminently."
+            },
+            {
+              "risk": "Gas supply issues",
+              "status": "no_mention",
+              "note": "Very difficult but has not caused any disruption."
+            },
+            {
+              "risk": "DRAM / memory chips constraint",
+              "status": "no_mention",
+              "note": "Treated as a structural constraint, requiring inventory build and aftermarket purchases."
+            },
+            {
+              "risk": "Commodity inflation",
+              "status": "no_mention",
+              "note": "Steep commodity inflation, particularly in precious metals, is a concern."
+            },
+            {
+              "risk": "Memory chip shortages",
+              "status": "no_mention",
+              "note": "Memory chip shortages are affecting the entire portfolio, not just EVs."
+            },
+            {
+              "risk": "Steel price increase",
+              "status": "no_mention",
+              "note": "Steel prices have gone up by about 6% over the last quarter."
+            },
+            {
+              "risk": "Sampo impairment",
+              "status": "no_mention",
+              "note": "Sampo impairment has impacted Farm PBIT growth by 12% but is not expected to carry into future quarters."
+            }
+          ],
+          "themes": [
+            {
+              "label": "Commodity cost inflation",
+              "direction": "negative",
+              "note": "Auto faced 400-500 bps commodity pressure and Farm faced unhedgeable steel/rubber inflation (steel +24%, rubber +30-53%), partly offset by price hikes.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Electric vehicle growth",
+              "direction": "positive",
+              "note": "EV penetration at 12% for M&M vs 9% industry, EV-SUV growth of 77%, XEV 9S largest-selling EV, capacity being doubled to support acceleration.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Capacity utilization",
+              "direction": "mixed",
+              "note": "Company currently capacity-constrained in Auto/EV; phased expansion plan to reach 92,000/month plus Nagpur additions taking total 2x by FY31.",
+              "section_ref": "MFG"
+            },
+            {
+              "label": "Market share expansion",
+              "direction": "positive",
+              "note": "Farm machinery highest-ever quarter, Auto revenue market share steady at 24-25%, SML LCV bus segment moved to number two, Last Mile Mobility EV penetration jumped to 40%.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Supply chain challenges",
+              "direction": "mixed",
+              "note": "Farm channel inventory discipline improved (30-40 days) reducing volatility, but unhedgeable steel/rubber costs and hedging losses on aluminium/precious metals persist.",
+              "section_ref": "SUP"
+            },
+            {
+              "label": "Growth Gems diversification",
+              "direction": "positive",
+              "note": "Real Estate, Logistics and Aerostructures delivering profits up 3x collectively, contributing meaningfully to group PAT growth alongside Mahindra Finance and Tech Mahindra turnarounds.",
+              "section_ref": "STRAT"
+            },
+            {
+              "label": "AI-driven productivity",
+              "direction": "positive",
+              "note": "Company disclosed specific AI use cases across Auto (Paint.ai, Service.ai, Reach.ai, simulation) and Finance (Samurai, cross-sell, service requests) with quantified results and a 50-engineer, 19-model foundation.",
+              "section_ref": "TECH"
+            }
+          ],
+          "key_takeaways": [
+            "Consolidated profit up 34%, ROE at 23%.",
+            "Auto and Farm resilience in a strong quarter despite commodity price impact of 400 to 500 basis points. Auto profits up 21%, Farm up 15%.",
+            "Mahindra Finance and Tech Mahindra, on a very strong journey now... Mahindra Finance profits up 78%... Tech Mahindra up 28%.",
+            "Growth Gems, profits up 3x for Growth Gems.",
+            "Revenue up 28%, PAT is up 34%.",
+            "Tech Mahindra driven by margin expansion, EBIT margins up to 14.4% and the promise has been to get to 15% by the end of this fiscal year. On track for that.",
+            "SUV volume up 15% despite some challenges from a production standpoint. Penetration for electric is at 12% now.",
+            "SML and truck and bus division combination announced, enhancing competitiveness, creating synergies, business now double its size.",
+            "Aerostructures: $1.2 billion of cumulated contract wins, half of them in the last year alone at 600 million."
+          ],
+          "pressing_questions": [
+            "On the battery electric vehicle business... what is the PLI in the current EBITDA/EBIT margin contribution from PLI, and is there any discussion around PLI 2.0 and whether this might be extended beyond FY28.",
+            "On the commodity part in Q2, how do you see the impact coming through in auto and farm, and would the price hikes taken be able to cover the commodity impact? Also, because of the price hikes, is there any thought process on how customers will accept it?",
+            "When I add up the comments, we are talking about 450 basis point of commodity headwind in Q1, we've taken 2.7% price hike and yet margin will be neutral-ish, which means almost 650-700 basis point of commodity headwind — is that understanding correct?"
+          ]
+        },
         {
           "company": "Mahindra & Mahindra Ltd",
           "ticker": "M&M",
