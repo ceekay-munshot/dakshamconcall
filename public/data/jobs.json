@@ -425,8 +425,10 @@
       "source": "transcript"
     },
     "SBCL": {
-      "status": "running",
-      "started_at": "2026-08-07T23:35:29.959Z"
+      "status": "failed",
+      "finished_at": "2026-08-07T23:35:34.507Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Screener has no AI summary and no transcript for SBCL's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "MSUMI": {
       "status": "failed",
