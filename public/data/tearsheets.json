@@ -35659,197 +35659,201 @@
       "ticker": "APOLLOTYRE",
       "industry": "Tyres & Rubber Products",
       "country": "India",
-      "checked_at": "2026-07-30T06:01:55.464Z",
+      "checked_at": "2026-08-08T22:37:08.833Z",
       "quarters": [
         {
           "company": "Apollo Tyres Ltd",
           "ticker": "APOLLOTYRE",
           "industry": "Tyres & Rubber Products",
           "country": "India",
-          "concall_date": "2026-05-18",
-          "source": "transcript",
-          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=bd54bac7-9a0e-4651-b1d0-915a346b358b.pdf",
+          "concall_date": "2026-08-01",
+          "source": "ai_summary",
+          "source_url": "https://www.screener.in/concalls/summary/23278632/",
           "model": "gpt-4o",
-          "generated_at": "2026-07-30T06:01:49.475Z",
-          "summary": "Apollo Tyres expects to sustain and accelerate top-line growth in India and Europe despite geopolitical challenges, with a focus on disciplined cost control and strategic capacity expansion.",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-08T22:36:37.958Z",
+          "summary": "Consolidated Q1 FY27 revenue grew 12.8% YoY to ₹74 bn with sequential growth described as muted, while EBITDA margin fell ~150 bps YoY to 11.7% on raw material cost pressure and macro/geopolitical cost volatility (RM/energy/logistics, especially West Asia-linked). India delivered its strongest YoY quarterly growth in 14 quarters, volume-led, while Europe posted muted reported growth due to Netherlands plant closure/transition overlap costs, with restructuring benefits expected from H2 FY27 and a long-term aspiration of high-teens EBIT for Europe. RM inflation is expected to remain elevated (~8% sequentially in India in Q2) before cooling from Q3, with further price increases planned in both India and Europe to catch up with cost inflation.",
           "sections": [
             {
               "id": "FIN",
               "title": "Financial Performance",
               "key_figures": [
                 {
-                  "label": "Consolidated revenue for Q4 FY26",
-                  "value": "INR 73.4 billion",
-                  "unit": "INR",
-                  "period": "Q4 FY26",
+                  "label": "Consolidated Revenue",
+                  "value": "74",
+                  "unit": "₹ bn",
+                  "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Consolidated EBITDA for Q4 FY26",
-                  "value": "INR 10.7 billion",
-                  "unit": "INR",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Consolidated EBITDA margin for Q4 FY26",
-                  "value": "14.6%",
-                  "unit": null,
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Consolidated top-line growth for Q4 FY26",
-                  "value": "14%",
+                  "label": "Consolidated Revenue growth YoY",
+                  "value": "12.8",
                   "unit": "%",
-                  "period": "YoY",
+                  "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Consolidated top-line growth for FY26",
-                  "value": "9%",
+                  "label": "Consolidated EBITDA margin",
+                  "value": "11.7",
                   "unit": "%",
-                  "period": "YoY",
+                  "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Net debt to EBITDA ratio",
-                  "value": "0.4x",
-                  "unit": null,
-                  "period": "March 2026",
+                  "label": "Consolidated EBITDA margin decline YoY",
+                  "value": "~150",
+                  "unit": "bps",
+                  "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Consolidated ROCE for FY26",
-                  "value": "13.4%",
+                  "label": "India Revenue",
+                  "value": "54.6",
+                  "unit": "₹ bn",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India Revenue growth YoY",
+                  "value": "15.6",
                   "unit": "%",
-                  "period": "FY26",
+                  "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Revenue for India Operations Q4 FY26",
-                  "value": "INR 52.4 billion",
-                  "unit": "INR",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "EBITDA for India Operations Q4 FY26",
-                  "value": "INR 7.6 billion",
-                  "unit": "INR",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Net debt to EBITDA for India Operations",
-                  "value": "0.7x",
-                  "unit": null,
-                  "period": "March 2026",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Deferred tax impact",
-                  "value": "INR 570 crores",
-                  "unit": "INR",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Revenue for Europe Operations Q4 FY26",
-                  "value": "EUR 170 million",
-                  "unit": "EUR",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "EBITDA for Europe Operations Q4 FY26",
-                  "value": "EUR 25 million",
-                  "unit": "EUR",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Reifencom revenue for Q4 FY26",
-                  "value": "EUR 40 billion",
-                  "unit": "EUR",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Reifencom EBITDA margin for Q4 FY26",
-                  "value": "2%",
+                  "label": "India Revenue growth QoQ",
+                  "value": "4.3",
                   "unit": "%",
-                  "period": "Q4 FY26",
+                  "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Blended raw material cost increase Q4 over Q3",
-                  "value": "1%",
-                  "unit": null,
-                  "period": "Q4 FY26",
+                  "label": "India EBITDA",
+                  "value": "5.0",
+                  "unit": "₹ bn",
+                  "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Revenue for Europe Operations FY26",
-                  "value": "EUR 670 million",
-                  "unit": null,
-                  "period": "FY26",
+                  "label": "India EBITDA margin",
+                  "value": "12.6",
+                  "unit": "%",
+                  "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Cash outflow for social plan in Europe",
-                  "value": "EUR 50 million",
-                  "unit": null,
+                  "label": "Europe Revenue",
+                  "value": "147",
+                  "unit": "€ mn",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Europe Revenue growth YoY",
+                  "value": "0.5",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Europe EBITDA",
+                  "value": "13",
+                  "unit": "€ mn",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Europe EBITDA margin",
+                  "value": "8.9",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Europe EBITDA margin (prior year)",
+                  "value": "10.8",
+                  "unit": "%",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Europe EBITDA margin ex-overlap costs (implied)",
+                  "value": "~11",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Q1 capex (consolidated)",
+                  "value": "650",
+                  "unit": "₹ cr",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Q1 capex (India)",
+                  "value": "500",
+                  "unit": "₹ cr",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Full-year capex guidance (referenced)",
+                  "value": ">3,000",
+                  "unit": "₹ cr",
                   "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Net debt",
+                  "value": "~1,700+",
+                  "unit": "₹ cr",
+                  "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Total cash provision for Europe plant closure",
-                  "value": "EUR 55 million plus",
-                  "unit": null,
+                  "label": "Net debt/EBITDA",
+                  "value": "~0.4",
+                  "unit": "x",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Advertising & Sales Promotion (A&SP) expense cut",
+                  "value": "~50",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net debt/EBITDA FY27 expectation",
+                  "value": "rise slightly",
+                  "unit": "x",
                   "period": "FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Tax rate for Europe",
-                  "value": "20%",
-                  "unit": null,
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "Tax rate for India",
-                  "value": "25%",
-                  "unit": null,
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "Agri-contribution to revenues",
-                  "value": "12%",
-                  "unit": null,
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "OE piece of agri-contribution",
-                  "value": "5% to 6%",
-                  "unit": null,
-                  "period": "FY26",
-                  "kind": "reported"
+                  "kind": "guidance"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Balance Sheet and Leverage",
+                  "label": "Margin drivers",
                   "points": [
-                    "Net debt to EBITDA ratio improved from 3.2x to 0.4x by March 2026, indicating strong financial health."
+                    "Consolidated EBITDA margin decline primarily due to raw material cost pressure",
+                    "Macro and geopolitics drove cost volatility across RM/energy/logistics, especially linked to West Asia"
                   ]
                 },
                 {
-                  "label": "Tax Regime Transition",
+                  "label": "Capital allocation and leverage",
                   "points": [
-                    "Transition to concessional tax regime effective FY27, reducing applicable tax rate from 34% to 25%."
+                    "Full-year capex guidance of >₹3,000 cr referenced by analysts; management confirmed capex already underway, with higher intensity expected in Q2/Q3",
+                    "Management expects net debt/EBITDA to rise slightly in FY27; company will be a net borrower"
+                  ]
+                },
+                {
+                  "label": "Cost structure and advertising",
+                  "points": [
+                    "Other expenses declined QoQ, mainly from advertising & sales promotion (A&SP) cut ~50% in the quarter",
+                    "Management does not expect continued step-down; spend will fluctuate with campaign calendar (incl. BCCI schedule)",
+                    "Growth in consumer tyre categories (PCR, 2W) has accelerated significantly over the last three quarters, supporting the view that sponsorship/marketing is justifying those spends"
                   ]
                 }
               ]
@@ -35859,39 +35863,35 @@
               "title": "Order Book & Demand",
               "key_figures": [
                 {
-                  "label": "Volume growth in India Operations Q4 FY26",
-                  "value": "high teens",
+                  "label": "Product categories growth (barring TBB)",
+                  "value": "double-digit",
                   "unit": "%",
-                  "period": "YoY",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Export volume growth",
-                  "value": "mid-single-digit",
-                  "unit": "%",
-                  "period": "YoY",
-                  "kind": "reported"
-                },
-                {
-                  "label": "TBR replacement growth",
-                  "value": "20% plus",
-                  "unit": "%",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "PCR replacement growth",
-                  "value": "single digit",
-                  "unit": "%",
-                  "period": "Q4 FY26",
+                  "period": "Q1 FY27",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Demand Outlook",
+                  "label": "Demand / near-term trajectory",
                   "points": [
-                    "Demand remains strong across categories and channels, with April showing strong volume growth."
+                    "Demand described as healthy across categories and channels; July started strong, supporting confidence into Q2",
+                    "Seasonality noted: Q2 is seasonally a weaker quarter, yet management still expects strong YoY growth"
+                  ]
+                },
+                {
+                  "label": "Pricing vs realization dynamics",
+                  "points": [
+                    "Q1 growth was predominantly volume-driven: of ~15.6% growth, ~12% came from volume",
+                    "Although 7–9% price increases were implemented during Q1, they were staggered, so only ~3-4% flowed into Q1 reported revenue; full benefit shifts to Q2",
+                    "OEM price pass-through lag: where formula-based, pass-through has ~1 quarter lag; negotiated OEM increases (notably truck side) expected to start rolling in from Q2 and also Q3"
+                  ]
+                },
+                {
+                  "label": "Industry behavior and competitive dynamics",
+                  "points": [
+                    "Current cycle shows unusually steep price hikes and better pricing discipline, driven by unprecedented cost push (RM + logistics) and strong demand/high utilization",
+                    "Competition has broadly matched Apollo's pricing (similar magnitude)",
+                    "Management left room for downward price corrections in Q4, contingent on magnitude of RM decline and demand"
                   ]
                 }
               ]
@@ -35901,54 +35901,84 @@
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
-                  "label": "Revenue growth for India Operations Q4 FY26",
-                  "value": "14.3%",
+                  "label": "India Replacement volume growth YoY",
+                  "value": "13",
                   "unit": "%",
-                  "period": "YoY",
+                  "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Revenue growth for Europe Operations Q4 FY26",
-                  "value": "-1%",
+                  "label": "India OEM volume growth YoY",
+                  "value": "10",
                   "unit": "%",
-                  "period": "YoY",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India Exports volume growth YoY",
+                  "value": "15",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India revenue growth from volume",
+                  "value": "~12",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India revenue growth from pricing flow-through",
+                  "value": "~3-4",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "TBR replacement market share",
+                  "value": "upwards of 30",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Passenger car replacement market share",
+                  "value": "21+",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Europe volume growth",
+                  "value": "low single-digit",
+                  "unit": null,
+                  "period": "Q1 FY27",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "India Operations",
+                  "label": "Channel/segment operating detail",
                   "points": [
-                    "Strong double-digit growth in replacement and OE markets.",
-                    "High teens volume growth in both replacement and OE segments."
+                    "Volume growth by channel (YoY): Replacement +13%, OEM +10%, Exports +15% — fairly stable, in a narrow range, but all in double digits",
+                    "Product categories: double-digit growth across categories barring TBB (likely Truck & Bus Bias), implying relative softness there"
                   ]
                 },
                 {
-                  "label": "Europe Operations",
+                  "label": "Market share (management estimates)",
                   "points": [
-                    "Slow, low single-digit growth in volumes due to geopolitical developments.",
-                    "Truck tyre sales impacted by supply issues from India."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "TECH",
-              "title": "Product & Technology",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "R&D and Product Approvals",
-                  "points": [
-                    "Secured fresh approval from leading OEMs, including BMW, MINI, Genesis, KIA, and Mahindra.",
-                    "Introduced upgraded premium products across India and Europe Operations."
+                    "Since external industry data is limited, management gave internal estimates",
+                    "TBR replacement: upwards of 30% and regained some of the share that had been lost",
+                    "Passenger car replacement: 21% plus"
                   ]
                 },
                 {
-                  "label": "Digital Initiatives",
+                  "label": "Underlying demand vs reported revenue (Europe)",
                   "points": [
-                    "Rolled out new B2B e-commerce platform in Europe.",
-                    "Scaling use of AI across business functions for efficiency and cost optimisation."
+                    "PCR replacement continues to show healthy (double-digit) growth and is expected to sustain",
+                    "Muted Europe top line attributed to Agri tyre transition causing a certain amount of revenue loss, which was known in advance",
+                    "Truck radial capacity shift from Hungary to India coinciding with demand strength in both Europe and India, creating temporary capacity transition losses"
                   ]
                 }
               ]
@@ -35958,26 +35988,119 @@
               "title": "Manufacturing & Capacity",
               "key_figures": [
                 {
-                  "label": "Capacity utilisation",
-                  "value": "90%",
-                  "unit": "%",
-                  "period": "Q4 FY26",
+                  "label": "Netherlands plant volume (last year sales)",
+                  "value": "750,000",
+                  "unit": "tyres",
+                  "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "CapEx for FY27",
-                  "value": "INR 35 billion",
-                  "unit": "INR",
-                  "period": "FY27",
+                  "label": "Hungary PCR capacity (current)",
+                  "value": "17,000",
+                  "unit": "tyres/day",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Hungary PCR capacity (target)",
+                  "value": "21,000",
+                  "unit": "tyres/day",
+                  "period": "H2 FY27 onward",
+                  "kind": "target"
+                },
+                {
+                  "label": "India capacity utilization expectation",
+                  "value": "90s",
+                  "unit": "%",
+                  "period": "through FY27",
                   "kind": "guidance"
+                },
+                {
+                  "label": "Historical agri capacity (India, cited)",
+                  "value": "~20",
+                  "unit": "MT/day",
+                  "period": "historical",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Hypothetical small agri plant capacity (uneconomic)",
+                  "value": "10-15",
+                  "unit": "MT/day",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Agri off-take quantum",
+                  "value": "~20-25",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "CFO tenure at Apollo Tyres",
+                  "value": "22",
+                  "unit": "years",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Netherlands to Hungary/India transfer works council clearance",
+                  "value": "Sep 2025",
+                  "unit": null,
+                  "period": "Sep 2025",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Netherlands to Hungary/India transfer completion timeline",
+                  "value": "Sep-Oct 2026",
+                  "unit": null,
+                  "period": "Sep-Oct 2026",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Lower-end Hungary output tyre size shifted to India",
+                  "value": "14-15",
+                  "unit": "inch",
+                  "period": null,
+                  "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Capacity Expansion",
+                  "label": "Netherlands → Hungary / India transfer",
                   "points": [
-                    "Planned expansion initiatives to continue due to full capacity utilisation.",
-                    "80% of FY27 CapEx towards growth and capacity expansion projects."
+                    "A large part of Netherlands volume to move to Hungary",
+                    "Some lower-end Hungary output (14-15 inch) to move to India",
+                    "Timeline: triggered after works council clearance (Sep 2025); expected completion Sep-Oct 2026"
+                  ]
+                },
+                {
+                  "label": "Hungary expansion",
+                  "points": [
+                    "Hungary capacity expansion to move from ~17,000 PCR tyres/day to ~21,000/day; production/ramp in H2 FY27 (almost about to start, and in H2 will start producing and ramping up)"
+                  ]
+                },
+                {
+                  "label": "India expansion",
+                  "points": [
+                    "India expansion started later; new capacity expected towards end of FY27 with ramp through FY28",
+                    "Capacity utilization is very high: India expected to be very tight on capacity, running into the 90s through FY27"
+                  ]
+                },
+                {
+                  "label": "High-end agri tyre gap & off-take strategy",
+                  "points": [
+                    "Company lacks equivalent in-house capacity for high-end agri tyres post Netherlands closure; using off-take",
+                    "Off-take quantum: ~20-25% of agri business via two partners (category-dependent)",
+                    "Stabilization expected to take at least a couple of quarters due to customization/spec requirements",
+                    "Medium-term plan: continue off-take because Indian OHT capacity constraints (Kalamassery location limits) and sub-scale economics of building a small plant (historical agri capacity cited at ~20 MT/day, versus hypothetical 10-15 being uneconomic)",
+                    "Off-take partner location described only as at the cusp of India, Asia, and Europe"
+                  ]
+                },
+                {
+                  "label": "Space Master spare tyre localization",
+                  "points": [
+                    "Capacity set up at Baroda; OEM clearances received; supplies to proceed from Baroda"
                   ]
                 }
               ]
@@ -35985,13 +36108,29 @@
             {
               "id": "GEO",
               "title": "Geography & Distribution",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "Export growth (India)",
+                  "value": "15",
+                  "unit": "% YoY",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                }
+              ],
               "subsections": [
                 {
-                  "label": "Market Focus",
+                  "label": "Exports: recovery led by Europe; other geographies constrained",
                   "points": [
-                    "India and Europe remain priority markets due to strong demand.",
-                    "Strategic capacity allocation decisions needed for truck product categories."
+                    "Export growth in Q1 India +15% YoY, but primarily Europe-led in the quarter",
+                    "West Asia impacted by war; behind budget",
+                    "US softer due to inflation and dealer inventory issues (dealers' inventory not going off the shelf)"
+                  ]
+                },
+                {
+                  "label": "European mix/footprint reconfiguration",
+                  "points": [
+                    "Capacity and SKU transfers across Netherlands → Hungary, and lower-end Hungary → India are ongoing",
+                    "Timing and execution risks (transition-related revenue loss, cost overlap) remain key near-term swing factors"
                   ]
                 }
               ]
@@ -35999,12 +36138,65 @@
             {
               "id": "SUP",
               "title": "Supply Chain & Operations",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "FX contribution to RM increase",
+                  "value": "~7-8",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "RM imported proportion",
+                  "value": "~50",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Natural rubber price",
+                  "value": "225",
+                  "unit": "₹/kg",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Synthetic rubber price",
+                  "value": "250",
+                  "unit": "₹/kg",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Carbon black price",
+                  "value": "125",
+                  "unit": "₹/kg",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Steel cord price",
+                  "value": "165",
+                  "unit": "₹/kg",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Natural rubber price expected (Q2)",
+                  "value": "upwards of 260",
+                  "unit": "₹/kg",
+                  "period": "Q2 FY27",
+                  "kind": "guidance"
+                }
+              ],
               "subsections": [
                 {
-                  "label": "Geopolitical Impact",
+                  "label": "Raw material drivers",
                   "points": [
-                    "Geopolitical developments in West Asia add volatility to raw materials, energy, and logistics costs."
+                    "FX impact: rupee depreciation contributed ~7-8% to the RM increase; ~50% of RM imported, but domestic inputs often price to import parity/landed cost quickly",
+                    "Q2 inflation expected to be ~8% over Q1 rates, largely natural rubber-led, with NR average expected upwards of ₹260/kg",
+                    "Management expects rubber to cool from Q3 as seasonality normalizes",
+                    "Crude-linked benefits typically come with ≥1 quarter lag, implying potential relief later if crude remains lower"
                   ]
                 }
               ]
@@ -36012,13 +36204,21 @@
             {
               "id": "MKT",
               "title": "Market & Customer Strategy",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "Consumer tyre category growth acceleration period",
+                  "value": "three",
+                  "unit": "quarters",
+                  "period": null,
+                  "kind": "reported"
+                }
+              ],
               "subsections": [
                 {
-                  "label": "Brand and Marketing",
+                  "label": "Anti-dumping duty on Chinese tyres (Europe)",
                   "points": [
-                    "BCCI partnership and 'Har Safar Mein Dum Hai' campaign strengthened brand equity.",
-                    "A&P spends higher due to sponsorship of Cricket Jersey, expected to normalise."
+                    "Management expects anti-dumping action to be net positive, as Chinese tyres had taken share at the lower end; this could feed into the Apollo brand volumes",
+                    "Caveat: Vredestein PCR positioned higher and does not compete with the Chinese tires, so benefit is more for Apollo brand/lower-end segments and domestic players overall"
                   ]
                 }
               ]
@@ -36029,9 +36229,1370 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Sustainability Initiatives",
+                  "label": "CFO transition",
                   "points": [
-                    "Climate targets received validation from the Science-Based Targets Initiative."
+                    "CFO Gauro Kumar announced his decision to leave Apollo Tyres after ~22 years, post completion of the NSCD project (Having completed the NSCD project… it was an emotional decision to leave Apollo Tires)"
+                  ]
+                },
+                {
+                  "label": "Netherlands plant closure executed",
+                  "points": [
+                    "The Netherlands plant stopped production in June 2026 as planned; management expects restructuring benefits from H2 FY27 (financial and operational benefits… from H2 of the current fiscal year)"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [
+                {
+                  "label": "Q1 RM inflation (India)",
+                  "value": "~17",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Pricing needed for full RM protection (rule of thumb)",
+                  "value": "~11-12",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Pricing executed in-quarter (India)",
+                  "value": "~7-9",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Q1 Europe RM basket increase",
+                  "value": "8",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total price increase needed (Europe, Q1+Q2)",
+                  "value": "~10",
+                  "unit": "%",
+                  "period": "Q1+Q2 FY27",
+                  "kind": "target"
+                },
+                {
+                  "label": "Price increase implemented so far (Europe)",
+                  "value": "~3-4",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India Q2 RM sequential inflation expectation",
+                  "value": "~8",
+                  "unit": "%",
+                  "period": "Q2 FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Crude-linked benefit lag",
+                  "value": "1",
+                  "unit": "quarter",
+                  "period": null,
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Macro/geopolitical cost volatility",
+                  "points": [
+                    "Macro and geopolitics drove cost volatility across RM/energy/logistics, especially linked to West Asia (heightened uncertainty and cost volatility across raw materials, energy, logistics costs)"
+                  ]
+                },
+                {
+                  "label": "European mix/footprint reconfiguration risk",
+                  "points": [
+                    "Timing and execution risks (transition-related revenue loss, cost overlap) remain key near-term swing factors during Netherlands → Hungary/India transfer"
+                  ]
+                },
+                {
+                  "label": "Europe margin pressure risk",
+                  "points": [
+                    "Total price increase needed across Q1+Q2 is ~10%, but only ~3-4% implemented so far—indicating margin pressure risk into Q2 until pricing catches up"
+                  ]
+                },
+                {
+                  "label": "Export geography constraints",
+                  "points": [
+                    "West Asia export impacted by war; behind budget",
+                    "US export softer due to inflation and dealer inventory issues (dealers' inventory not going off the shelf)"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [
+                {
+                  "label": "Cumulative pricing implemented/announced (TBR, India)",
+                  "value": "~9",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Cumulative pricing implemented/announced (other categories, India)",
+                  "value": "~11",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Total pricing management believes required (India)",
+                  "value": "~15-16",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "target"
+                },
+                {
+                  "label": "July price increase announced (India)",
+                  "value": "~1-2",
+                  "unit": "%",
+                  "period": "Jul 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "August price increase expected (India)",
+                  "value": "~2",
+                  "unit": "%",
+                  "period": "Aug 2026",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Europe long-term EBIT margin aspiration",
+                  "value": "high teens",
+                  "unit": "%",
+                  "period": "long-term",
+                  "kind": "target"
+                },
+                {
+                  "label": "OEM price pass-through lag",
+                  "value": "1",
+                  "unit": "quarter",
+                  "period": null,
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Pricing roadmap (India)",
+                  "points": [
+                    "Cumulative pricing status: implemented/announced so far ~9% in TBR, ~11% in other categories",
+                    "Management said ~15-16% total pricing may be required; hence at least one to two more price increases are needed",
+                    "July increase announced: ~1-2%; August expected in the ~2% range (not confirmed as final)"
+                  ]
+                },
+                {
+                  "label": "Margin potential post-restructuring (Europe)",
+                  "points": [
+                    "CFO indicated that without overlap costs, Q1 Europe margin would have been ~11%",
+                    "Longer-term aspiration post footprint optimization: high teens EBIT for Europe (with this change, we would look to deliver high teens… that was the goal)"
+                  ]
+                },
+                {
+                  "label": "Q2 RM outlook (India)",
+                  "points": [
+                    "Management expects ~8% sequential RM inflation; commodities remain volatile until West Asia stabilizes"
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "Netherlands restructuring financial/operational benefits",
+              "horizon": "H2 FY27",
+              "statement": "Financial and operational benefits from the Netherlands plant closure expected from H2 of the current fiscal year.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "India cumulative pricing requirement",
+              "horizon": "current",
+              "statement": "Management said ~15-16% total pricing may be required in India; hence at least one to two more price increases are needed.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "August price increase (India)",
+              "horizon": "Aug 2026",
+              "statement": "August price increase expected in the ~2% range (not confirmed as final).",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "lowered"
+            },
+            {
+              "metric": "Q2 RM inflation (India)",
+              "horizon": "Q2 FY27",
+              "statement": "Management expects ~8% sequential RM inflation in Q2; commodities remain volatile until West Asia stabilizes.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Rubber cost cooling",
+              "horizon": "Q3 FY27",
+              "statement": "Management expects rubber to start cooling down from Q3 onwards as seasonality normalizes.",
+              "specificity": "vague",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "Crude-linked cost relief",
+              "horizon": "forward, ≥1 quarter lag",
+              "statement": "Crude-linked benefits typically come with ≥1 quarter lag, implying potential relief later if crude remains lower.",
+              "specificity": "vague",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "Europe total pricing requirement (Q1+Q2)",
+              "horizon": "Q1+Q2 FY27",
+              "statement": "Total price increase needed across Q1+Q2 is ~10%, but only ~3-4% implemented so far.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Europe EBIT margin (post-restructuring)",
+              "horizon": "long-term (2 years+)",
+              "statement": "Longer-term aspiration post footprint optimization: high teens EBIT for Europe.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Full-year capex",
+              "horizon": "FY27",
+              "statement": "Full-year capex guidance referenced by analysts as >₹3,000 cr; management confirmed capex is already underway, with higher intensity expected in Q2/Q3.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Net debt/EBITDA trajectory",
+              "horizon": "FY27",
+              "statement": "Management expects net debt/EBITDA to rise slightly in FY27; company will be a net borrower.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Hungary capacity ramp",
+              "horizon": "H2 FY27",
+              "statement": "Hungary capacity expansion to move from ~17,000 PCR tyres/day to ~21,000/day; production/ramp in H2 FY27.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "India capacity expansion",
+              "horizon": "end of FY27 to FY28",
+              "statement": "India expansion started later; new capacity expected towards end of FY27 with ramp through FY28.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "India capacity utilization",
+              "horizon": "through FY27",
+              "statement": "India expected to be very tight on capacity, running into the 90s through FY27.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Agri off-take stabilization",
+              "horizon": "a couple of quarters",
+              "statement": "Stabilization of off-take arrangement expected to take at least a couple of quarters due to customization/spec requirements.",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Price correction possibility if RM falls",
+              "horizon": "Q4 FY27",
+              "statement": "Management left room for downward price corrections in Q4, contingent on magnitude of RM decline and demand.",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Q2 demand/YoY growth (India)",
+              "horizon": "Q2 FY27",
+              "statement": "Q2 is seasonally a weaker quarter, yet management still expects strong YoY growth.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "OEM price pass-through (India, truck)",
+              "horizon": "Q2-Q3 FY27",
+              "statement": "Negotiated OEM increases (notably truck side) are expected to start rolling in from Q2 and also Q3.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Topline growth (India and Europe)",
+              "horizon": "FY27",
+              "statement": "Despite the tough macroeconomic environment, we expect to sustain and accelerate top-line growth in India and Europe.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "India demand momentum",
+              "horizon": "Q1 FY27",
+              "statement": "April already showing equally strong volume growth, and we expect the same momentum to continue through Q1.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Raw material cost increase (India)",
+              "horizon": "Q1 FY27",
+              "statement": "Raw material costs are expected to rise in high teens on a sequential basis.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Raw material cost increase (overall)",
+              "horizon": "Q1 FY27",
+              "statement": "Mid to high teens is the current reality; current estimate is around mid to high teens.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Raw material cost increase Q2 vs Q1",
+              "horizon": "Q2 FY27",
+              "statement": "If nothing changes, Q2 could be marginally higher than Q1.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Price increase (Europe)",
+              "horizon": "current",
+              "statement": "We've announced a 2% price increase in Europe also... we would need further increases even for our European Operations.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Europe margin restructuring benefit",
+              "horizon": "H2 FY27",
+              "statement": "In H2 of FY'27, the positive impact of margins as we become more cost competitive for our European operations should start flowing in.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Europe EBITDA margin (long-term normalised)",
+              "horizon": "2 years+",
+              "statement": "We definitely believe that in a normalised scenario, we will get back to a 16% which was our earlier normal, and in fact, we believe we can even surpass that.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "A&P spend as % of sales",
+              "horizon": "future",
+              "statement": "Going forward, we would expect, as growth kicks in, etc., for it to be around a 2.5% plus of sales.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "FY27 CapEx",
+              "horizon": "FY27",
+              "statement": "For FY'27, we have outlined a CapEx of INR 35 billion, with nearly 80% towards growth and capacity expansion projects.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Capacity utilisation",
+              "horizon": "future",
+              "statement": "Overall, given the healthy demand outlook, we expect full capacity utilisation and therefore will continue to progress on our planned expansion initiatives.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "India applicable tax rate",
+              "horizon": "FY27",
+              "statement": "We decided to transition to the concessional tax regime effective FY'27... our applicable tax rate reduces from 34% to 25%.",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "no_mention"
+            },
+            {
+              "metric": "H2 FY27 demand outlook",
+              "horizon": "H2 FY27",
+              "statement": "How the second half pans out, right now, things are just too volatile to be able to make any definitive statement.",
+              "specificity": "refused",
+              "direction": "unclear",
+              "status": "no_mention"
+            },
+            {
+              "metric": "FY27 CapEx flexibility",
+              "horizon": "FY27-FY28",
+              "statement": "Right now, we would definitely be going ahead as per our CapEx plans. If we see slowing down, we would have some flexibility for FY'28. FY'27 would largely be committed.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "no_mention"
+            },
+            {
+              "metric": "A&P spend as percentage of sales",
+              "horizon": "future",
+              "statement": "In a normalised scenario, we would be upping it to about 2.5% to drive the top line growth.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "Raw material cost inflation (India and Europe)",
+              "status": "new",
+              "note": "Q1 RM inflation in India ~17%; Q2 expected ~8% sequential increase; Europe RM basket +8% in Q1 with bigger hit expected in Q2."
+            },
+            {
+              "risk": "FX / rupee depreciation impact on RM costs",
+              "status": "new",
+              "note": "Rupee depreciation contributed ~7-8% to the RM increase; ~50% of RM imported, domestic inputs price to import parity quickly."
+            },
+            {
+              "risk": "Macro/geopolitical volatility (West Asia)",
+              "status": "new",
+              "note": "Heightened uncertainty and cost volatility across raw materials, energy, logistics costs, especially linked to West Asia."
+            },
+            {
+              "risk": "Netherlands→Hungary/India transition execution risk",
+              "status": "new",
+              "note": "Transition-related revenue loss and cost overlap remain key near-term swing factors; overlap costs impacted Europe Q1 margin (would have been ~11% without them)."
+            },
+            {
+              "risk": "High-end agri tyre in-house capacity gap",
+              "status": "new",
+              "note": "Company lacks equivalent in-house capacity for high-end agri tyres post Netherlands closure; relying on off-take from two partners (~20-25% of agri business), with stabilization expected to take at least a couple of quarters."
+            },
+            {
+              "risk": "Export softness in West Asia and US",
+              "status": "new",
+              "note": "West Asia export impacted by war and behind budget; US export softer due to inflation and dealer inventory not clearing."
+            },
+            {
+              "risk": "Europe margin pressure from pricing lag",
+              "status": "new",
+              "note": "Only ~3-4% of the ~10% needed Europe price increase implemented so far, indicating margin pressure risk into Q2."
+            },
+            {
+              "risk": "CFO transition",
+              "status": "new",
+              "note": "CFO Gauro Kumar leaving Apollo Tyres after ~22 years, post completion of the NSCD project."
+            },
+            {
+              "risk": "Geopolitical developments in West Asia creating volatility in raw materials, energy and logistics costs",
+              "status": "no_mention",
+              "note": "Continues to create significant uncertainty; company monitoring closely and responding with agility while maintaining disciplined cost controls."
+            },
+            {
+              "risk": "Raw material cost inflation outpacing price hikes",
+              "status": "no_mention",
+              "note": "Mid to high teens sequential increase expected; only about half the needed price increase taken so far; two more rounds needed."
+            },
+            {
+              "risk": "Europe market sluggishness and cost inflation",
+              "status": "no_mention",
+              "note": "European market conditions flattish to negative for two years, coupled with high energy costs and salary inflation (e.g. Netherlands ~12-13% vs usual 4-5%), pressuring margins below historical 16%+ levels."
+            },
+            {
+              "risk": "Truck tyre supply issues from India impacting Europe sales",
+              "status": "no_mention",
+              "note": "Truck tyre sales in Europe impacted by supply issues from India even as passenger car tyre category outperformed the market."
+            },
+            {
+              "risk": "GDP growth slowdown due to continued inflation (fuel, tyre, other materials)",
+              "status": "no_mention",
+              "note": "Predictions on GDP growth have been brought down slightly; could impact overall demand, though currently demand remains strong."
+            },
+            {
+              "risk": "US export market weakness",
+              "status": "no_mention",
+              "note": "US market currently looking weak as company enters the first month of the new quarter."
+            },
+            {
+              "risk": "Enschede plant closure cash and business impact",
+              "status": "no_mention",
+              "note": "Non-cash write-off of EUR 43 million taken; EUR 55+ million cash provision for social plan and legal costs to be paid out in FY27; potential revenue loss limited to agri/OHT category (~5-6% of revenue from OE piece)."
+            },
+            {
+              "risk": "Competitive intensity / new entrants jostling for market share",
+              "status": "no_mention",
+              "note": "Given cost push, aggressive discounting is not expected; price increases announced across the industry with timing/quantum differences."
+            },
+            {
+              "risk": "Raw material costs",
+              "status": "no_mention",
+              "note": "Expect raw material costs to be steady in Q4."
+            },
+            {
+              "risk": "Competitive intensity from new entrants in TBR and PCR segments",
+              "status": "no_mention",
+              "note": "New entrants could increase competitive intensity in India."
+            },
+            {
+              "risk": "Inflationary pressures in Europe",
+              "status": "no_mention",
+              "note": "Particularly in energy and salary costs, impacting margins."
+            }
+          ],
+          "themes": [
+            {
+              "label": "Europe restructuring",
+              "direction": "mixed",
+              "note": "Netherlands plant closure executed in June 2026; overlap costs pressured Q1 margin, with restructuring benefits and high-teens EBIT aspiration expected from H2 FY27 onward.",
+              "section_ref": "STRAT"
+            },
+            {
+              "label": "Topline growth",
+              "direction": "positive",
+              "note": "India delivered strongest YoY quarterly growth in 14 quarters (+15.6%), volume-led; consolidated revenue grew 12.8% YoY, though sequential growth was muted.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Cost optimization",
+              "direction": "negative",
+              "note": "RM cost pressure (~17% India inflation) and overlap costs during Europe transition compressed EBITDA margins across both geographies.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Capacity expansion",
+              "direction": "positive",
+              "note": "Hungary PCR capacity to expand from 17,000 to 21,000 tyres/day in H2 FY27; India expansion targeted for end-FY27 with ramp through FY28 amid very tight utilization.",
+              "section_ref": "MFG"
+            },
+            {
+              "label": "Competitive intensity",
+              "direction": "neutral",
+              "note": "Competition has broadly matched Apollo's pricing increases; anti-dumping duty on Chinese tyres in Europe expected to be net positive for Apollo brand/lower-end segments.",
+              "section_ref": "MKT"
+            },
+            {
+              "label": "Pricing power",
+              "direction": "mixed",
+              "note": "7-9% price increases implemented in India Q1 but only ~3-4% flowed through to revenue; further increases (~15-16% total needed) planned, with similar catch-up dynamics in Europe.",
+              "section_ref": "ORD"
+            },
+            {
+              "label": "Export dynamics",
+              "direction": "mixed",
+              "note": "India exports grew 15% YoY led by Europe, while West Asia (war-impacted) and US (inflation/dealer inventory) remained soft.",
+              "section_ref": "GEO"
+            }
+          ],
+          "key_takeaways": [
+            "CFO transition: CFO Gauro Kumar announced his decision to leave Apollo Tyres after ~22 years, post completion of the NSCD project (\"Having completed the NSCD project… it was an emotional decision to leave Apollo Tires\").",
+            "Netherlands plant closure executed: The Netherlands plant stopped production in June 2026 as planned; management expects restructuring benefits from H2 FY27 (\"financial and operational benefits… from H2 of the current fiscal year\").",
+            "European mix/footprint reconfiguration underway: Capacity and SKU transfers across Netherlands → Hungary, and lower-end Hungary → India are ongoing; timing and execution risks (transition-related revenue loss, cost overlap) remain key near-term swing factors.",
+            "Consolidated Q1 FY27: Revenue ₹74 bn, +12.8% YoY (sequential growth \"muted\"); EBITDA margin 11.7%, down ~150 bps YoY, primarily due to raw material (RM) cost pressure.",
+            "India operations: strongest growth in 14 quarters; volume-led with RM inflation defense. Revenue ₹54.6 bn, +15.6% YoY, +4.3% QoQ; described as \"highest ever revenue\" for India.",
+            "Europe operations: muted reported growth due to transition; margin impacted by overlap costs. Revenue €147m, +0.5% YoY; EBITDA €13m, margin 8.9% vs 10.8% last year.",
+            "Anti-dumping duty on Chinese tyres (Europe): expected positive, as Chinese tyres had taken share at the lower end; this could \"feed into the Apollo brand volumes.\"",
+            "Manufacturing footprint shifts: Netherlands → Hungary/India transfer; Hungary capacity expansion from ~17,000 to ~21,000 PCR tyres/day; India expansion expected towards end of FY27 with ramp through FY28; India capacity utilization very tight, running into the 90s through FY27."
+          ],
+          "pressing_questions": []
+        },
+        {
+          "company": "Apollo Tyres Ltd",
+          "ticker": "APOLLOTYRE",
+          "industry": "Tyres & Rubber Products",
+          "country": "India",
+          "concall_date": "2026-05-18",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=bd54bac7-9a0e-4651-b1d0-915a346b358b.pdf",
+          "model": "gpt-4o",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-08T22:26:50.936Z",
+          "summary": "Apollo Tyres delivered strong Q4 FY26 consolidated growth (revenue +14% YoY, EBITDA margin 14.6%) and expects to sustain and accelerate top-line growth in India and Europe despite a tough macro environment marked by West Asia geopolitical volatility hitting raw material, energy and logistics costs. Near-term margins face pressure from steep raw material inflation (mid-to-high teens sequentially in Q1, possibly higher in Q2), being mitigated via calibrated price hikes (6-8% announced in India for Q1, 2% in Europe) and disciplined cost control; balance sheet strength (net debt/EBITDA at 0.4x) provides cushion. Europe restructuring (Enschede plant closure by June 30, 2026) is expected to start benefiting margins from H2 FY27, with a long-term ambition to return to/surpass the earlier normalised 16%+ EBITDA margin.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "Consolidated revenue",
+                  "value": "73.4",
+                  "unit": "INR billion",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated revenue growth YoY",
+                  "value": "14%+",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated EBITDA",
+                  "value": "10.7",
+                  "unit": "INR billion",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated EBITDA margin",
+                  "value": "14.6",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated EBITDA margin (prior year)",
+                  "value": "13",
+                  "unit": "%",
+                  "period": "Q4 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated full-year revenue growth YoY",
+                  "value": "9",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated full-year EBITDA margin",
+                  "value": "nearly 14.6",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net debt to EBITDA (consolidated)",
+                  "value": "0.4",
+                  "unit": "x",
+                  "period": "March 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net debt to EBITDA (consolidated, prior year)",
+                  "value": "0.7",
+                  "unit": "x",
+                  "period": "March 2025",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net debt to EBITDA (consolidated, historical)",
+                  "value": "3.2",
+                  "unit": "x",
+                  "period": "March 2020",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net debt to EBITDA (consolidated, comparison)",
+                  "value": "3",
+                  "unit": "x",
+                  "period": "March 2020",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated ROCE",
+                  "value": "13.4",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated ROCE improvement",
+                  "value": "~240",
+                  "unit": "bps",
+                  "period": "FY26 vs FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India Operations revenue",
+                  "value": "52.4",
+                  "unit": "INR billion",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India Operations revenue growth YoY",
+                  "value": "14.3",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India Operations revenue growth QoQ",
+                  "value": "~2",
+                  "unit": "%",
+                  "period": "Q4 FY26 vs Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India Operations EBITDA",
+                  "value": "7.6",
+                  "unit": "INR billion",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India Operations EBITDA margin",
+                  "value": "14.6",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India Operations EBITDA margin (prior year)",
+                  "value": "11.2",
+                  "unit": "%",
+                  "period": "Q4 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net debt to EBITDA (India Operations)",
+                  "value": "0.7",
+                  "unit": "x",
+                  "period": "March 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net debt to EBITDA (India Operations, prior year)",
+                  "value": "1.1",
+                  "unit": "x",
+                  "period": "March 2025",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Applicable tax rate (India, current)",
+                  "value": "34",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Applicable tax rate (India, post transition)",
+                  "value": "25",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Deferred tax liability positive impact",
+                  "value": "570+",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Europe Operations revenue",
+                  "value": "170",
+                  "unit": "EUR million",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Europe Operations revenue decline YoY",
+                  "value": "-1",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Europe Operations overall revenue decline (incl. other operating income)",
+                  "value": "-3",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Europe Operations EBITDA",
+                  "value": "25",
+                  "unit": "EUR million",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Europe Operations EBITDA margin",
+                  "value": "14.6",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Europe Operations EBITDA margin (prior year)",
+                  "value": "14.3",
+                  "unit": "%",
+                  "period": "Q4 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Non-cash write-off on Enschede fixed assets",
+                  "value": "43",
+                  "unit": "EUR million",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "European tax rate",
+                  "value": "~20",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Blended tax rate going forward (India)",
+                  "value": "25",
+                  "unit": "%",
+                  "period": "FY27 onward",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Cash provision for Enschede closure (social plan)",
+                  "value": "50",
+                  "unit": "EUR million",
+                  "period": "FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total cash provision for Enschede closure incl. legal costs",
+                  "value": "55+",
+                  "unit": "EUR million",
+                  "period": "FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Reifencom revenue",
+                  "value": "40",
+                  "unit": "EUR billion",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Reifencom EBITDA margin",
+                  "value": "just under 2",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "A&P spend as % of sales (Q4 FY26)",
+                  "value": "4",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "A&P spend excess over usual",
+                  "value": ">100",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "A&P spend typical level",
+                  "value": "2",
+                  "unit": "%",
+                  "period": "historical",
+                  "kind": "reported"
+                },
+                {
+                  "label": "A&P spend expected going forward",
+                  "value": "2.5+",
+                  "unit": "%",
+                  "period": "future",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Leverage & Balance Sheet",
+                  "points": [
+                    "Consolidated net debt to EBITDA improved dramatically from 3.2x/3x (March 2020) to 0.4x (March 2026), driven by focus on cash flows and profitability.",
+                    "India Operations net debt to EBITDA improved from 1.1x (March 2025) to 0.7x (March 2026).",
+                    "Balance sheet described as very strong, providing financial strength to navigate future uncertainties and ride out near-term difficult times."
+                  ]
+                },
+                {
+                  "label": "Tax Transition",
+                  "points": [
+                    "Following enactment of the Finance Act 2026, the company decided to transition to the concessional tax regime effective FY27, reducing applicable tax rate from 34% to 25%.",
+                    "This transition resulted in deferred tax liabilities providing a positive net impact of almost INR 570+ crores, recognised in the P&L during the year and reflected in net profit."
+                  ]
+                },
+                {
+                  "label": "A&P Spend Trend",
+                  "points": [
+                    "Q4 FY26 A&P spend was elevated due to Cricket Jersey sponsorship activation, exceeding usual levels by more than INR 100 crores (4% of sales vs typical ~2%).",
+                    "A&P spend to normalise going forward, expected to settle around 2.5%+ of sales, slightly higher than previous annual trend but not to the extent seen this quarter."
+                  ]
+                },
+                {
+                  "label": "Europe Other Operating Income Decline",
+                  "points": [
+                    "Of the 3% overall Europe revenue decline, 1% was from pure sales/price-mix decline while 2% was from a drop in other operating income.",
+                    "Europe had received state aid from Hungary/EU when setting up the plant, amortised over 10 years; as TBR assets move to India, that other operating income accrual moves out of Hungary, causing the YoY drop.",
+                    "This decline will continue to reduce over the next few quarters as TBR assets are no longer in Hungary; it is not a cash impact since the state aid was already received in full."
+                  ]
+                },
+                {
+                  "label": "Enschede Closure Cash Impact",
+                  "points": [
+                    "Cash outflow expected in FY27: EUR 50 million social plan payout already provided for in earlier quarters, plus additional legal costs, totaling EUR 55+ million cash provision already taken.",
+                    "No cash provision expected over and above what has already been taken."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ORD",
+              "title": "Order Book & Demand",
+              "key_figures": [
+                {
+                  "label": "Standalone OE volume growth",
+                  "value": "high teens",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Standalone replacement volume growth",
+                  "value": "high teens",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Export volume growth",
+                  "value": "mid-single-digit",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "TBR replacement growth",
+                  "value": "20%+",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PCR replacement growth",
+                  "value": "20%+",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "OEM TBR growth",
+                  "value": "20%+",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "OEM PCR growth",
+                  "value": "single digit",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Sequential volume growth (India standalone)",
+                  "value": "2",
+                  "unit": "%",
+                  "period": "Q4 FY26 vs Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Price increase announced (India)",
+                  "value": "6% to 8%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Price increase implemented tranche 1 (India)",
+                  "value": "3% to 5%",
+                  "unit": "%",
+                  "period": "Q4 FY26/early Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Price increase announced (Europe)",
+                  "value": "2",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Export price increase (US)",
+                  "value": "mid to high single digits",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Demand Environment",
+                  "points": [
+                    "India witnessed strong double-digit growth in both replacement and OE markets in Q4, in line with and in some segments ahead of market performance across all product categories.",
+                    "Demand remains strong across categories and channels in India, with April already showing equally strong volume growth, and momentum expected to continue through Q1 FY27.",
+                    "Europe witnessed slow, low single-digit growth in volumes; growth in certain international markets impacted by geopolitical developments in West Asia.",
+                    "Europe outlook: expect better growth momentum in Q1; April already positive for all segments.",
+                    "In India, TBR and PCR replacement grew 20%+ each in Q4; OEM TBR grew 20%+ while OEM PCR grew single digit.",
+                    "Historically, in inflationary environments new vehicle purchases tend to get impacted first before consumer costs are eventually passed through the chain."
+                  ]
+                },
+                {
+                  "label": "Pricing Actions",
+                  "points": [
+                    "India has announced price increases of 6% to 8% for the current quarter, with 3% to 5% already implemented and the remainder coming through in May; more price increases likely needed to negate raw material cost push.",
+                    "About half the needed price increase has been taken so far; at least a couple more rounds needed.",
+                    "Europe: announced a 2% price increase; Apollo follows global majors' pricing actions given its relative size; for the same raw material cost increase, Europe needs a smaller price hike than India (India needs about two-thirds of the RM increase in price hike vs Europe needing less than half).",
+                    "Export market pricing: US demand weak but increases of mid to high single digits announced; INR depreciation also provides support on exports.",
+                    "OEM pricing follows a formula with a three-month lag for the majority of customers; some negotiated pricing ongoing; small price increases received so far but not enough to counter RM cost push.",
+                    "Competitors (including CEAT) have also announced price increases; Apollo and CEAT are slightly ahead of some peers, with timing and quantum differences across the industry.",
+                    "Management does not expect aggressive discounting given cost push, strong demand, high capacity utilisation, and a strong balance sheet."
+                  ]
+                },
+                {
+                  "label": "Demand Outlook Uncertainty",
+                  "points": [
+                    "Second-half FY27 demand outlook is uncertain and will largely depend on overall GDP growth, which predictions suggest may be revised down slightly if fuel, tyre, and other material inflation continues.",
+                    "Immediate outlook (post price hikes, April data) remains as strong as Q4, but management cannot make definitive statements on H2 FY27."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "Agri/OHT revenue contribution",
+                  "value": "12",
+                  "unit": "%",
+                  "period": "overall",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Agri OE portion of contribution",
+                  "value": "5% to 6%",
+                  "unit": "%",
+                  "period": "overall",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Market Share",
+                  "points": [
+                    "Official market share data is not published or comes with significant lag; for the full year, management believes Apollo gained market share in TBR replacement and TBR overall.",
+                    "Believes gained share in passenger car replacement but not in passenger car OEM (internal estimates).",
+                    "MRF and Apollo are believed to be the two leading players in the TBR category overall by numbers."
+                  ]
+                },
+                {
+                  "label": "Enschede Closure Product Impact",
+                  "points": [
+                    "Potential revenue loss expected only in the agricultural/OHT product category, which was a small capacity not manufactured in any other plant.",
+                    "Some of the OE agri business may be lost, which was anyway loss-making — a conscious choice.",
+                    "For all other product categories with similar production capability in Hungary or India, the company retains ability to supply the markets, limiting revenue loss risk."
+                  ]
+                },
+                {
+                  "label": "Reifencom",
+                  "points": [
+                    "Reifencom (B2B distribution) posted EUR 40 billion revenue and just under 2% EBITDA margin for the quarter."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "TECH",
+              "title": "Product & Technology",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "R&D and OEM Approvals",
+                  "points": [
+                    "Continued steady progress across all segments in R&D.",
+                    "In passenger vehicle tyres, secured fresh approvals from leading OEMs including BMW, MINI, Genesis, KIA and Mahindra.",
+                    "Introduced upgraded premium products across India and Europe Operations in the replacement category."
+                  ]
+                },
+                {
+                  "label": "Digital & AI Initiatives",
+                  "points": [
+                    "Started rollout of new B2B e-commerce platform in Europe during the quarter.",
+                    "Continuing work in India to improve customer experience, inventory visibility, and service efficiency.",
+                    "Scaling use of artificial intelligence across business functions with several initiatives underway in manufacturing, logistics, and customer service to drive efficiency and cost optimisation.",
+                    "Recognised by Amazon Web Services as a case study for use of AI and data technologies."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MFG",
+              "title": "Manufacturing & Capacity",
+              "key_figures": [
+                {
+                  "label": "Capacity utilisation (India & Europe)",
+                  "value": "90",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "FY27 CapEx",
+                  "value": "35",
+                  "unit": "INR billion",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "FY27 CapEx towards growth/capacity expansion",
+                  "value": "~80",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "FY27 CapEx allocated to India",
+                  "value": "~3,000",
+                  "unit": "INR crores",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Total FY27 CapEx (crores)",
+                  "value": "3,500",
+                  "unit": "INR crores",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Prior approved CapEx for AP plant",
+                  "value": "5,800",
+                  "unit": "INR crores",
+                  "period": "FY27-FY29",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Capacity Utilisation & Expansion",
+                  "points": [
+                    "Capacity utilisation was at a high of 90% across both India and Europe Operations.",
+                    "Given healthy demand outlook, company expects full capacity utilisation and will continue to progress on planned expansion initiatives.",
+                    "In India, expansion is in both truck and car tyre capacity; in Europe (Hungary plant), only passenger car tyre expansion is underway (already well underway).",
+                    "Capacity utilisations are already high, so in certain product categories (particularly truck), capacity allocation decisions will be needed given strong India demand.",
+                    "Through April, the company struggled to keep up with demand given high utilisation.",
+                    "Some flexibility exists on the large previously announced CapEx (INR 5,800 crores for AP plant), but FY27 CapEx is largely committed; flexibility for pushing out spend would only apply to FY28 if demand slows."
+                  ]
+                },
+                {
+                  "label": "Enschede Plant Closure",
+                  "points": [
+                    "Closure of the Enschede plant production remains on track; last day of production would be June 30, 2026 — described as a tough, difficult, emotional decision.",
+                    "Fixed assets at the plant were assessed as the company enters the last month of operation, leading to a non-cash write-off of EUR 43 million taken this quarter.",
+                    "It will take about another quarter to stabilise after closure; positive margin impact from becoming more cost competitive in European operations expected to start flowing in from H2 FY27.",
+                    "TBR assets move from Hungary to India as part of this restructuring."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Export Strategy",
+                  "points": [
+                    "Export strategy will continue to be managed strategically given high capacity utilisations; capacity allocation decisions needed for certain product categories like truck given strong India demand.",
+                    "India and Europe remain priority markets as the two home markets; remaining capacities allocated to other geographies.",
+                    "Europe currently showing promising signs, but outcome depends on how West Asia situation evolves; US market currently looking weak entering the new fiscal year.",
+                    "Truck tyre sales in Europe were impacted by supply issues from India, while passenger car tyre category outperformed the market.",
+                    "Under transfer pricing regulation, the India standalone entity retains only a fixed margin on exports to Europe and does not directly benefit from rupee depreciation; the overall group benefits from rupee devaluation.",
+                    "There is scope to increase India production to serve European and other export markets if India's cost structure becomes more cost-competitive, given the different quantum of capacity increases planned in Hungary vs. India."
+                  ]
+                },
+                {
+                  "label": "Channel Inventory",
+                  "points": [
+                    "In India, there is no marked difference in dealer inventory levels after the strong start to the year."
+                  ]
+                },
+                {
+                  "label": "Imports",
+                  "points": [
+                    "Tyre imports remain at a certain level, slightly more in passenger car tyre category, very little in truck tyre category; no expectation of a dramatic increase in the near term."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SUP",
+              "title": "Supply Chain & Operations",
+              "key_figures": [
+                {
+                  "label": "Natural rubber price (Q4 FY26)",
+                  "value": "200",
+                  "unit": "INR/kg",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Synthetic rubber price (Q4 FY26)",
+                  "value": "170",
+                  "unit": "INR/kg",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Carbon black price (Q4 FY26)",
+                  "value": "110",
+                  "unit": "INR/kg",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Steel cord price (Q4 FY26)",
+                  "value": "155",
+                  "unit": "INR/kg",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Current natural rubber price",
+                  "value": "250",
+                  "unit": "INR/kg",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Natural rubber price at start of current quarter",
+                  "value": "~220",
+                  "unit": "INR/kg",
+                  "period": "start of Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "RM basket change Q4 vs Q3",
+                  "value": "1",
+                  "unit": "%",
+                  "period": "Q4 FY26 vs Q3 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Raw material cost increase expected (India, sequential)",
+                  "value": "high teens",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Raw material cost increase expected (overall, mid-to-high)",
+                  "value": "mid to high teens",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Raw material cost increase expected (Europe)",
+                  "value": "low to mid-teens",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Overall raw material basket inflation estimate (analyst-cited)",
+                  "value": "~20",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Commodity Price Trends",
+                  "points": [
+                    "Raw material costs expected to rise in high teens sequentially in Q1 FY27; situation is very volatile and has kept changing about a month and a half into the quarter.",
+                    "Current estimate is mid to high teens increase; Q2 could be marginally higher than Q1 if the current situation (natural rubber continuing to rise, crude fluctuating) persists.",
+                    "Natural rubber consumption is much lower in Europe than India, so raw material cost inflation would be lower in Europe versus India Operations.",
+                    "No significant difference between international and domestic rubber costs; domestic rubber growers price close to landed cost of overseas rubber given a transparent market."
+                  ]
+                },
+                {
+                  "label": "Cost Mitigation",
+                  "points": [
+                    "Raw material is the biggest cost basket; ability to fully negate cost push through other cost levers is limited.",
+                    "Non-essential costs such as travel and conferences have been postponed/reduced wherever possible, but this is disproportionate relative to the raw material cost basket."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Brand & Marketing",
+                  "points": [
+                    "BCCI partnership generated strong momentum, further amplified by the 'Har Safar Mein Dum Hai' campaign launched around the ICC T20 World Cup, reinforcing brand positioning around performance, resilience and trust.",
+                    "Campaign rolled out across multiple platforms and markets, strengthening brand connect with consumers and enhancing overall brand equity."
+                  ]
+                },
+                {
+                  "label": "Competitive Dynamics",
+                  "points": [
+                    "Apollo Tyres and CEAT are slightly ahead of peers in announcing price increases; timing and quantum differences exist across the industry.",
+                    "Aggressive discounting is not expected given cost push, strong demand, high capacity utilisation and strong balance sheets across players."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "People & Recognition",
+                  "points": [
+                    "Apollo Tyres recognised as Top Employer in 2026, with India Operations receiving the recognition for the first time, while European entities continued their strong track record."
+                  ]
+                },
+                {
+                  "label": "Sustainability",
+                  "points": [
+                    "Climate targets received validation from the Science-Based Targets Initiative during the quarter, reaffirming long-term commitment towards net zero across the value chain."
                   ]
                 }
               ]
@@ -36042,9 +37603,25 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Geopolitical Risks",
+                  "label": "Geopolitical & Macro Risk",
                   "points": [
-                    "Geopolitical developments in West Asia create significant uncertainty and add volatility to costs."
+                    "Geopolitical developments in West Asia continue to create significant uncertainty and add volatility to raw materials, energy, and logistics costs.",
+                    "Company is closely monitoring the evolving situation, remaining focused on responding with agility while maintaining disciplined cost controls.",
+                    "Continued inflation on fuel, tyre and other materials could impact overall GDP growth and hence demand, though this is currently uncertain."
+                  ]
+                },
+                {
+                  "label": "Europe Margin Pressure",
+                  "points": [
+                    "European market conditions have been sluggish, flattish to negative for two years running, coupled with continuing high energy costs and salary inflation much higher than usual for Western European geographies (e.g., Netherlands salary inflation ~12-13% vs usual 4-5%).",
+                    "These factors brought down margins from previous normalised levels (16%+) and were a factor forcing the decision regarding the Enschede plant."
+                  ]
+                },
+                {
+                  "label": "India Margin Pressure",
+                  "points": [
+                    "India margins will remain under pressure due to increased raw material costs, being offset through price increases.",
+                    "Raw material cost inflation running ahead of price hikes taken so far; more price increases needed to fully offset cost push."
                   ]
                 }
               ]
@@ -36054,26 +37631,64 @@
               "title": "Guidance & Outlook",
               "key_figures": [
                 {
-                  "label": "Price increases for Q1 FY27",
+                  "label": "FY27 CapEx",
+                  "value": "35",
+                  "unit": "INR billion",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Raw material cost increase (Q1 FY27, sequential)",
+                  "value": "mid to high teens",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Price increase announced (India, Q1 FY27)",
                   "value": "6% to 8%",
                   "unit": "%",
                   "period": "Q1 FY27",
                   "kind": "guidance"
                 },
                 {
-                  "label": "Raw material cost increase for Q1 FY27",
-                  "value": "mid to high teens",
+                  "label": "A&P spend target",
+                  "value": "2.5+",
                   "unit": "%",
-                  "period": "Q1 FY27",
+                  "period": "future",
                   "kind": "guidance"
+                },
+                {
+                  "label": "Target Europe EBITDA margin (normalised)",
+                  "value": "16",
+                  "unit": "%",
+                  "period": "2 years+",
+                  "kind": "target"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Outlook",
+                  "label": "Top-line Outlook",
                   "points": [
-                    "Expect to sustain and accelerate top-line growth in India and Europe.",
-                    "Margins will remain under pressure due to increased costs, mitigated through price increases."
+                    "Despite tough macro environment, company expects to sustain and accelerate top-line growth in India and Europe.",
+                    "Demand remains strong across categories and channels in India; April already showing equally strong volume growth, expected to continue through Q1 FY27.",
+                    "Europe: expect better growth momentum in Q1 FY27; April already positive for all segments."
+                  ]
+                },
+                {
+                  "label": "Margin Outlook",
+                  "points": [
+                    "India margins will remain under pressure near term due to increased costs, being offset through price increases; raw material costs expected to rise in high teens sequentially, with 6-8% price increases already announced for the current quarter and more likely needed.",
+                    "Europe restructuring benefits on margin expected to start flowing in from H2 FY27 as the company becomes more cost competitive.",
+                    "Long-term ambition to return to and potentially surpass the previous normalised Europe EBITDA margin of 16%+.",
+                    "Company will continue to monitor the volatile external environment and guide operations keeping an eye on cash flows and ROCE."
+                  ]
+                },
+                {
+                  "label": "CapEx Outlook",
+                  "points": [
+                    "FY27 CapEx of INR 35 billion outlined, with nearly 80% towards growth and capacity expansion projects (~INR 3,000 crores in India for truck and car tyre capacity, balance in Europe/Hungary for passenger car tyre expansion).",
+                    "FY27 CapEx largely committed given high capacity utilisation and demand; flexibility to push out spend, if needed, would apply only to FY28."
                   ]
                 }
               ]
@@ -36081,23 +37696,23 @@
           ],
           "guidance_ledger": [
             {
-              "metric": "Topline growth",
-              "horizon": "Q1 FY27",
-              "statement": "Expect to sustain and accelerate top-line growth in India and Europe.",
+              "metric": "Topline growth (India and Europe)",
+              "horizon": "FY27",
+              "statement": "Despite the tough macroeconomic environment, we expect to sustain and accelerate top-line growth in India and Europe.",
               "specificity": "vague",
               "direction": "up",
               "status": "reiterated"
             },
             {
-              "metric": "Price increases",
+              "metric": "India demand momentum",
               "horizon": "Q1 FY27",
-              "statement": "Price increases of 6% to 8% announced for this current quarter.",
+              "statement": "April already showing equally strong volume growth, and we expect the same momentum to continue through Q1.",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
             },
             {
-              "metric": "Raw material cost",
+              "metric": "Raw material cost increase (India)",
               "horizon": "Q1 FY27",
               "statement": "Raw material costs are expected to rise in high teens on a sequential basis.",
               "specificity": "specific",
@@ -36105,9 +37720,97 @@
               "status": "reiterated"
             },
             {
-              "metric": "CapEx",
+              "metric": "Raw material cost increase (overall)",
+              "horizon": "Q1 FY27",
+              "statement": "Mid to high teens is the current reality; current estimate is around mid to high teens.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Raw material cost increase Q2 vs Q1",
+              "horizon": "Q2 FY27",
+              "statement": "If nothing changes, Q2 could be marginally higher than Q1.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Price increase (India)",
+              "horizon": "Q1 FY27",
+              "statement": "We have already announced price increases of 6% to 8% for this current quarter. More price increases would further be needed.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Price increase (Europe)",
+              "horizon": "current",
+              "statement": "We've announced a 2% price increase in Europe also... we would need further increases even for our European Operations.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Europe margin restructuring benefit",
+              "horizon": "H2 FY27",
+              "statement": "In H2 of FY'27, the positive impact of margins as we become more cost competitive for our European operations should start flowing in.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Europe EBITDA margin (long-term normalised)",
+              "horizon": "2 years+",
+              "statement": "We definitely believe that in a normalised scenario, we will get back to a 16% which was our earlier normal, and in fact, we believe we can even surpass that.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "A&P spend as % of sales",
+              "horizon": "future",
+              "statement": "Going forward, we would expect, as growth kicks in, etc., for it to be around a 2.5% plus of sales.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "FY27 CapEx",
               "horizon": "FY27",
-              "statement": "CapEx of INR 35 billion outlined for FY27, with nearly 80% towards growth and capacity expansion projects.",
+              "statement": "For FY'27, we have outlined a CapEx of INR 35 billion, with nearly 80% towards growth and capacity expansion projects.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "raised"
+            },
+            {
+              "metric": "Capacity utilisation",
+              "horizon": "future",
+              "statement": "Overall, given the healthy demand outlook, we expect full capacity utilisation and therefore will continue to progress on our planned expansion initiatives.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "India applicable tax rate",
+              "horizon": "FY27",
+              "statement": "We decided to transition to the concessional tax regime effective FY'27... our applicable tax rate reduces from 34% to 25%.",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "H2 FY27 demand outlook",
+              "horizon": "H2 FY27",
+              "statement": "How the second half pans out, right now, things are just too volatile to be able to make any definitive statement.",
+              "specificity": "refused",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "FY27 CapEx flexibility",
+              "horizon": "FY27-FY28",
+              "statement": "Right now, we would definitely be going ahead as per our CapEx plans. If we see slowing down, we would have some flexibility for FY'28. FY'27 would largely be committed.",
               "specificity": "specific",
               "direction": "flat",
               "status": "raised"
@@ -36123,9 +37826,44 @@
           ],
           "risk_register": [
             {
-              "risk": "Geopolitical developments in West Asia",
+              "risk": "Geopolitical developments in West Asia creating volatility in raw materials, energy and logistics costs",
               "status": "new",
-              "note": "Create significant uncertainty and add volatility to raw materials, energy, and logistics costs."
+              "note": "Continues to create significant uncertainty; company monitoring closely and responding with agility while maintaining disciplined cost controls."
+            },
+            {
+              "risk": "Raw material cost inflation outpacing price hikes",
+              "status": "new",
+              "note": "Mid to high teens sequential increase expected; only about half the needed price increase taken so far; two more rounds needed."
+            },
+            {
+              "risk": "Europe market sluggishness and cost inflation",
+              "status": "new",
+              "note": "European market conditions flattish to negative for two years, coupled with high energy costs and salary inflation (e.g. Netherlands ~12-13% vs usual 4-5%), pressuring margins below historical 16%+ levels."
+            },
+            {
+              "risk": "Truck tyre supply issues from India impacting Europe sales",
+              "status": "new",
+              "note": "Truck tyre sales in Europe impacted by supply issues from India even as passenger car tyre category outperformed the market."
+            },
+            {
+              "risk": "GDP growth slowdown due to continued inflation (fuel, tyre, other materials)",
+              "status": "new",
+              "note": "Predictions on GDP growth have been brought down slightly; could impact overall demand, though currently demand remains strong."
+            },
+            {
+              "risk": "US export market weakness",
+              "status": "new",
+              "note": "US market currently looking weak as company enters the first month of the new quarter."
+            },
+            {
+              "risk": "Enschede plant closure cash and business impact",
+              "status": "new",
+              "note": "Non-cash write-off of EUR 43 million taken; EUR 55+ million cash provision for social plan and legal costs to be paid out in FY27; potential revenue loss limited to agri/OHT category (~5-6% of revenue from OE piece)."
+            },
+            {
+              "risk": "Competitive intensity / new entrants jostling for market share",
+              "status": "new",
+              "note": "Given cost push, aggressive discounting is not expected; price increases announced across the industry with timing/quantum differences."
             },
             {
               "risk": "Raw material costs",
@@ -36147,44 +37885,63 @@
             {
               "label": "Topline growth",
               "direction": "positive",
-              "note": "Strong consolidated top-line growth driven by India and Europe operations.",
+              "note": "Consolidated Q4 revenue grew ~14% YoY with 14.6% EBITDA margin; India volume growth was high teens in both replacement and OE.",
               "section_ref": "FIN"
             },
             {
               "label": "Cost optimization",
-              "direction": "mixed",
-              "note": "Efforts to mitigate cost pressures through price increases and disciplined cost control.",
+              "direction": "negative",
+              "note": "Raw material costs (natural rubber, synthetic rubber, carbon black, steel cord) rising mid-to-high teens sequentially, mitigated via price hikes and disciplined cost control including deferred travel/conference costs.",
               "section_ref": "SUP"
             },
             {
               "label": "Sustainability achievements",
               "direction": "positive",
-              "note": "Climate targets validated by the Science-Based Targets Initiative.",
+              "note": "Climate targets validated by the Science-Based Targets Initiative, reaffirming net-zero commitment across the value chain.",
               "section_ref": "STRAT"
             },
             {
               "label": "Product approvals and launches",
               "direction": "positive",
-              "note": "Secured fresh approvals from leading OEMs and introduced upgraded products.",
+              "note": "Secured fresh OEM approvals from BMW, MINI, Genesis, KIA and Mahindra; upgraded premium products launched in India and Europe replacement.",
               "section_ref": "TECH"
             },
             {
               "label": "Competitive intensity",
-              "direction": "neutral",
-              "note": "Price increases announced by competitors in response to cost pressures.",
+              "direction": "mixed",
+              "note": "Apollo and CEAT ahead of peers in announcing price hikes; no aggressive discounting expected despite new entrants and cost pressures; market share believed gained in TBR replacement.",
               "section_ref": "MKT"
+            },
+            {
+              "label": "Europe restructuring",
+              "direction": "mixed",
+              "note": "Enschede plant closure (last day June 30, 2026) with EUR 43mn non-cash write-off and EUR 55mn+ cash provision; margin benefits expected from H2 FY27 with long-term goal of returning to/surpassing 16% EBITDA margin.",
+              "section_ref": "MFG"
+            },
+            {
+              "label": "Capacity expansion",
+              "direction": "positive",
+              "note": "Capacity utilisation at 90% across India and Europe; FY27 CapEx of INR 35 billion with ~80% for growth/capacity expansion, largely committed for FY27.",
+              "section_ref": "MFG"
             }
           ],
           "key_takeaways": [
             "We closed quarter four with a very strong consolidated top-line growth of nearly 14% Y-on-Y, and an EBITDA margin of 14.6%.",
-            "For our Indian Operations in Q4, we saw a strong double-digit growth in the replacement and OE markets as compared to last year.",
-            "In Europe Operations, we witnessed a slow, low single-digit growth in volumes.",
-            "Despite the tough macroeconomic environment, we expect to sustain and accelerate top-line growth in India and Europe.",
-            "Our balance sheet remains very strong, and despite the turbulent macro environment, we have continued to improve our leverage profile.",
-            "The net debt to EBITDA ratio has significantly improved from 3.2 times multiple to 0.4 times in 2026 March.",
-            "We have announced price increases of 6% to 8% for this current quarter."
+            "For the full year, consol top-line growth was 9% Y-on-Y and EBITDA margin of nearly 14.6%.",
+            "In Europe Operations, we witnessed a slow, low single-digit growth in volumes... impacted by the geopolitical developments in West Asia, which continue to create significant uncertainty and add volatility to raw materials, to energy and to logistics costs.",
+            "On a consol level, our net debt to EBITDA ratio has significantly improved from 3.2 times multiple to 0.4 times in 2026 March.",
+            "Raw material costs are expected to rise in high teens on a sequential basis. And we have already announced price increases of 6% to 8% for this current quarter. More price increases would further be needed.",
+            "The closure of the Enschede plant production remains on track... a non-cash write-off of EUR 43 million has been taken on the fixed assets this quarter.",
+            "The capacity utilisation was at a high of 90% across both our India and Europe Operations.",
+            "For FY'27, we have outlined a CapEx of INR 35 billion, with nearly 80% towards growth and capacity expansion projects."
           ],
-          "pressing_questions": []
+          "pressing_questions": [
+            "How much price hike do you need further to pass on the entire cost inflation and go back to the earlier margin trends which we were operating?",
+            "Given that there has been a lot of focus on A&P spends and market activation, and you're seeing the benefits in terms of better growth, can you talk about how has been the market share movement in recent months and for FY'26 in replacement?",
+            "On the Europe margin... last year 4Q was also lower than the previous year 4Q and the year before that. So what is going on there if you can help us understand?",
+            "How should we think about demand during second half of this financial year, especially in the TBR replacement segment on the backdrop that the tyre cost would go up?",
+            "In your experience, in this type of inflationary environment, when we take price increases, is our customers that price-sensitive in that category? Or you think that they'll kind of absorb this hike and demand will still be steady, at least from a historical context?"
+          ]
         },
         {
           "company": "Apollo Tyres Ltd",
@@ -37513,539 +39270,6 @@
             "Vredestein brand achieved highest ever volumes in Q2 FY26, supporting premiumisation.",
             "Apollo Tyres became the lead title and jersey sponsor of the Indian cricket team.",
             "Expect raw material costs to be stable to slightly down in Q3 FY26."
-          ],
-          "pressing_questions": []
-        },
-        {
-          "company": "Apollo Tyres Ltd",
-          "ticker": "APOLLOTYRE",
-          "industry": "Tyres & Rubber Products",
-          "country": "India",
-          "concall_date": "2025-08-08",
-          "source": "transcript",
-          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=0470081b-d0fd-4454-bffc-898da3e29465.pdf",
-          "model": "gpt-4o",
-          "generated_at": "2026-07-30T05:59:50.778Z",
-          "summary": "Apollo Tyres anticipates stronger topline growth in both India and Europe, with a focus on the replacement segment in India and cost optimization in Europe.",
-          "sections": [
-            {
-              "id": "FIN",
-              "title": "Financial Performance",
-              "key_figures": [
-                {
-                  "label": "Consolidated revenue",
-                  "value": "INR 65.6 billion",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Consolidated revenue growth",
-                  "value": "3.6%",
-                  "unit": "%",
-                  "period": "YoY",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Consolidated EBITDA",
-                  "value": "INR 8.7 billion",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Consolidated EBITDA margin",
-                  "value": "13.2%",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Consolidated net debt reduction",
-                  "value": "INR 3.9 billion",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Consolidated net debt",
-                  "value": "INR 21 billion",
-                  "unit": null,
-                  "period": "end of June 2025",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Net debt to EBITDA ratio",
-                  "value": "0.7x",
-                  "unit": null,
-                  "period": "end of June 2025",
-                  "kind": "reported"
-                },
-                {
-                  "label": "India revenue",
-                  "value": "INR 47.3 billion",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "India revenue growth",
-                  "value": "3%",
-                  "unit": "%",
-                  "period": "YoY",
-                  "kind": "reported"
-                },
-                {
-                  "label": "India EBITDA",
-                  "value": "INR 6.4 billion",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "India EBITDA margin",
-                  "value": "13.6%",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Europe revenue",
-                  "value": "EUR 146 million",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Europe EBITDA",
-                  "value": "EUR 16 million",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Europe EBITDA margin",
-                  "value": "10.8%",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Exceptional item related to restructuring",
-                  "value": "INR 3.7 billion",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Consolidated EBITDA margin (Q4 FY25)",
-                  "value": "13.0%",
-                  "unit": null,
-                  "period": "Q4 FY25",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Consolidated EBITDA margin (Q1 FY25)",
-                  "value": "14.4%",
-                  "unit": null,
-                  "period": "Q1 FY25",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Standalone net debt reduction (Q1 FY26)",
-                  "value": "INR 3.8 billion",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Standalone net debt to EBITDA ratio (end of June 2025)",
-                  "value": "1x",
-                  "unit": null,
-                  "period": "end of June 2025",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Standalone net debt to EBITDA ratio (previous quarter)",
-                  "value": "1.2x",
-                  "unit": null,
-                  "period": "previous quarter",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Europe EBITDA margin (Q1 FY25)",
-                  "value": "13.7%",
-                  "unit": null,
-                  "period": "Q1 FY25",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Profit Before Tax (PBT)",
-                  "value": "INR 4 billion",
-                  "unit": null,
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "Actual tax",
-                  "value": "INR 255 million",
-                  "unit": null,
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "Blended consolidated tax rate",
-                  "value": "high-teens",
-                  "unit": null,
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "Netherlands tax rate",
-                  "value": "20%",
-                  "unit": null,
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "Hungary tax rate",
-                  "value": "9%",
-                  "unit": null,
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "Standalone opex",
-                  "value": "INR 800 crores",
-                  "unit": "per quarter",
-                  "period": "last year",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Reifencom revenue",
-                  "value": "EUR 53 million",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Reifencom revenue growth",
-                  "value": "5%",
-                  "unit": "YoY",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Reifencom EBITDA margin",
-                  "value": "4%",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "India opex",
-                  "value": "INR 800 crores",
-                  "unit": "per quarter",
-                  "period": "last year",
-                  "kind": "reported"
-                },
-                {
-                  "label": "India opex reduction",
-                  "value": "lower travel costs",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "India opex reduction",
-                  "value": "lower advertisement and promotion spend",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "India opex reduction",
-                  "value": "lower variable pay",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "India opex reduction",
-                  "value": "new talent at senior management level",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "India volume growth",
-                  "value": "4%",
-                  "unit": "QoQ",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Raw material basket price reduction",
-                  "value": "2%",
-                  "unit": "sequentially",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Import content in raw material basket",
-                  "value": "about half",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Market share in PCR",
-                  "value": "20%",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Market share in TBR replacement",
-                  "value": "30%",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Balance Sheet and Cash Flow",
-                  "points": [
-                    "Focus on free cash flow generation and improvement in return ratios.",
-                    "Consolidated net debt reduced by over 15% in Q1 compared to Q4 of last year."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "ORD",
-              "title": "Order Book & Demand",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Demand Outlook",
-                  "points": [
-                    "Anticipate stronger topline growth in both India and Europe.",
-                    "In India, growth likely led by the replacement segment.",
-                    "Expect demand momentum to improve in the second half of the fiscal year."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "SEG",
-              "title": "Segment & Product Performance",
-              "key_figures": [
-                {
-                  "label": "India volume growth",
-                  "value": "Flattish",
-                  "unit": null,
-                  "period": "YoY",
-                  "kind": "reported"
-                },
-                {
-                  "label": "India replacement segment growth",
-                  "value": "Low single-digit",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "India OE segment growth",
-                  "value": "Mid single-digit",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Europe PCLT volumes",
-                  "value": "Slightly up",
-                  "unit": null,
-                  "period": "YoY",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Europe spacemaster tyres decline",
-                  "value": "40%",
-                  "unit": "%",
-                  "period": "YoY",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "India Segment Performance",
-                  "points": [
-                    "Growth in the OEM segment driven by pre-buying due to mandatory AC cabin regulation in the heavy commercial segment.",
-                    "Decline in passenger car OEM volumes.",
-                    "Significant decline in exports."
-                  ]
-                },
-                {
-                  "label": "Europe Segment Performance",
-                  "points": [
-                    "Challenging demand environment leading to a decline in industry volumes in key categories.",
-                    "Sequential decline in revenue due to seasonality.",
-                    "Focus on profitable growth through new product launches and premiumization."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "TECH",
-              "title": "Product & Technology",
-              "key_figures": [
-                {
-                  "label": "Scope 1 emissions intensity reduction",
-                  "value": "35%",
-                  "unit": null,
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "Scope 2 emissions intensity reduction",
-                  "value": "39%",
-                  "unit": null,
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "Blended RM basket price",
-                  "value": "166",
-                  "unit": null,
-                  "period": null,
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Product Approvals and Launches",
-                  "points": [
-                    "Received approvals for supplies to a prominent German passenger vehicle manufacturer in both India and Europe.",
-                    "Launch of ultra-high performance tyre Apollo Aspire 5 for premium car and SUV category."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "MFG",
-              "title": "Manufacturing & Capacity",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Sustainability Initiatives",
-                  "points": [
-                    "Achieved a 35% reduction in Scope 1 and 39% reduction in Scope 2 emissions intensity, surpassing FY’26 targets.",
-                    "Obtained first ISCC certification for Hungary facility in May 2025."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "RISK",
-              "title": "Risks & External Factors",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Inflationary Pressures",
-                  "points": [
-                    "Inflationary pressures in Europe, particularly in energy and salary costs, impacting margins."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "GUID",
-              "title": "Guidance & Outlook",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Guidance",
-                  "points": [
-                    "Expect raw material cost to be slightly lower in Q2 vis-a-vis current levels, with some uncertainty due to exchange rates.",
-                    "No change in capex guidance for FY’26."
-                  ]
-                }
-              ]
-            }
-          ],
-          "guidance_ledger": [
-            {
-              "metric": "Topline growth",
-              "horizon": "FY26",
-              "statement": "Anticipate stronger topline growth in both India and Europe.",
-              "specificity": "vague",
-              "direction": "up",
-              "status": "new"
-            },
-            {
-              "metric": "Raw material cost",
-              "horizon": "Q2 FY26",
-              "statement": "Expect raw material cost to be slightly lower in Q2 vis-a-vis current levels.",
-              "specificity": "vague",
-              "direction": "down",
-              "status": "new"
-            },
-            {
-              "metric": "Capex",
-              "horizon": "FY26",
-              "statement": "No change in capex guidance for FY’26.",
-              "specificity": "specific",
-              "direction": "flat",
-              "status": "new"
-            }
-          ],
-          "risk_register": [
-            {
-              "risk": "Inflationary pressures in Europe",
-              "status": "escalated",
-              "note": "Particularly in energy and salary costs, impacting margins."
-            }
-          ],
-          "themes": [
-            {
-              "label": "Topline growth",
-              "direction": "positive",
-              "note": "Anticipate stronger topline growth in both India and Europe.",
-              "section_ref": "ORD"
-            },
-            {
-              "label": "Cost optimization",
-              "direction": "positive",
-              "note": "Focus on cost optimization in Europe to improve margins.",
-              "section_ref": "SEG"
-            },
-            {
-              "label": "Sustainability achievements",
-              "direction": "positive",
-              "note": "Achieved significant reductions in emissions intensity, surpassing targets.",
-              "section_ref": "MFG"
-            },
-            {
-              "label": "Inflationary pressures",
-              "direction": "negative",
-              "note": "Inflationary pressures in Europe impacting margins.",
-              "section_ref": "RISK"
-            },
-            {
-              "label": "Product approvals and launches",
-              "direction": "positive",
-              "note": "Received approvals for supplies to a German manufacturer and launched new products.",
-              "section_ref": "TECH"
-            }
-          ],
-          "key_takeaways": [
-            "Consolidated topline growth of nearly 3.6% Y-o-Y with an EBITDA margin of 13.2%.",
-            "Reduced consolidated net debt by over 15% in Q1 compared to Q4 of last year.",
-            "Achieved a 35% reduction in Scope 1 and 39% reduction in Scope 2 emissions intensity.",
-            "Received approvals for supplies to a prominent German passenger vehicle manufacturer.",
-            "Launch of ultra-high performance tyre Apollo Aspire 5 for premium car and SUV category."
           ],
           "pressing_questions": []
         }
