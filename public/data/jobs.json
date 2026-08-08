@@ -347,8 +347,10 @@
       "message": "Screener has no AI summary and no transcript for NESCO's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "KIRLOSENG": {
-      "status": "running",
-      "started_at": "2026-08-08T22:37:24.026Z"
+      "status": "failed",
+      "finished_at": "2026-08-08T22:37:29.529Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Screener has no AI summary and no transcript for KIRLOSENG's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "RAYMONDLSL": {
       "status": "done",
