@@ -515,8 +515,10 @@
       "source": "transcript"
     },
     "DELHIVERY": {
-      "status": "running",
-      "started_at": "2026-08-08T22:47:28.139Z"
+      "status": "failed",
+      "finished_at": "2026-08-08T22:47:34.720Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Screener has no AI summary and no transcript for DELHIVERY's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     }
   }
 }
