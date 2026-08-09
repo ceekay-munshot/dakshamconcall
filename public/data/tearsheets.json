@@ -46332,81 +46332,155 @@
       "ticker": "DEVYANI",
       "industry": "Restaurants",
       "country": "India",
-      "checked_at": "2026-07-26T22:57:42.075Z",
+      "checked_at": "2026-08-09T22:48:16.795Z",
       "quarters": [
         {
           "company": "Devyani International Ltd",
           "ticker": "DEVYANI",
           "industry": "Restaurants",
           "country": "India",
-          "concall_date": "2026-05-21",
+          "concall_date": "2026-08-04",
           "source": "transcript",
-          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b3c9eb0b-f218-4100-93d5-6dd594604628.pdf",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=c7a1294d-6107-4290-ad64-15bbc3dc32d4.pdf",
           "model": "gpt-4o",
-          "generated_at": "2026-07-26T22:57:38.187Z",
-          "summary": "Devyani International is optimistic about demand conditions and expects stronger performance, with plans to add 200-225 new stores in FY27 and complete the merger with Sapphire Foods by the end of the fiscal year.",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-09T22:46:57.714Z",
+          "summary": "Management expects the Sapphire Foods merger to complete by end of FY27, with NSE/BSE approvals received in June and regulatory filings progressing; the new leadership team is fully in place and building \"DIL 2.0\"; KFC targets 5-6% SSSG and 105k-110k ADS to cross 20% Brand Contribution margin (~1.5-2 years horizon); store opening guidance remains unchanged; Pizza Hut's full turnaround push is expected post-merger (around FY28); technology platform buildout (with Cognizant) is expected to be ready before merger integration; Biryani By Kilo is targeted to become a INR 1,000 crore brand over the next few years.",
           "sections": [
             {
               "id": "FIN",
               "title": "Financial Performance",
               "key_figures": [
                 {
-                  "label": "Q4 Revenue",
-                  "value": "1,437",
+                  "label": "Consolidated Revenue",
+                  "value": "1,581",
                   "unit": "INR crore",
-                  "period": "Q4 FY26",
+                  "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Full Year Revenue",
-                  "value": "5,611",
-                  "unit": "INR crore",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Q4 Revenue Growth",
-                  "value": "18.5",
+                  "label": "Consolidated Revenue growth YoY",
+                  "value": "16.5",
                   "unit": "%",
-                  "period": "YoY",
+                  "period": "Q1 FY27 YoY",
                   "kind": "reported"
                 },
                 {
                   "label": "Gross Margin",
-                  "value": "68.8",
+                  "value": "69.1",
                   "unit": "%",
-                  "period": "FY26",
+                  "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Operating EBITDA",
-                  "value": "123",
+                  "label": "Gross Margin improvement YoY",
+                  "value": "0.9",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Brand Contribution margin",
+                  "value": "14.2",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Brand Contribution margin expansion",
+                  "value": "1.1",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated Brand Contribution",
+                  "value": "224",
                   "unit": "INR crore",
-                  "period": "Q4 FY26",
+                  "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Operating EBITDA Margin",
-                  "value": "8.6",
+                  "label": "Consolidated Brand Contribution growth YoY",
+                  "value": "~26",
                   "unit": "%",
-                  "period": "Q4 FY26",
+                  "period": "Q1 FY27 YoY",
                   "kind": "reported"
                 },
                 {
-                  "label": "Operating EBITDA Growth",
-                  "value": "13.8",
-                  "unit": "%",
-                  "period": "YoY",
+                  "label": "Operating EBITDA (highest ever)",
+                  "value": "151",
+                  "unit": "INR crore",
+                  "period": "Q1 FY27",
                   "kind": "reported"
+                },
+                {
+                  "label": "Operating EBITDA growth YoY",
+                  "value": "~38",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operating EBITDA margin",
+                  "value": "9.6",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA (highest ever, as cited by Chairman)",
+                  "value": "255",
+                  "unit": "INR crore",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin (as cited by Chairman)",
+                  "value": "16.1",
+                  "unit": "% of revenues",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "LPG prices increase",
+                  "value": "significantly",
+                  "unit": null,
+                  "period": "last few months",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Seasonal factors led to higher utility costs",
+                  "value": "higher",
+                  "unit": null,
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Higher wage costs",
+                  "value": "higher",
+                  "unit": null,
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "KFC dine-in saliency target",
+                  "value": "59%-60%",
+                  "unit": null,
+                  "period": "coming quarters",
+                  "kind": "target"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Financial Overview",
+                  "label": "Margin drivers",
                   "points": [
-                    "Full-year revenue reached INR 5,611 crore, crossing the INR 5,500 crore milestone.",
-                    "Gross margin improved to 68.8% for FY26.",
-                    "Operating EBITDA was INR 123 crore, representing 8.6% of sales, growing 13.8% YoY."
+                    "The improvement in Brand Contribution and effective management of G&A costs helped post highest ever Operating EBITDA.",
+                    "Judicious use of discounting helped restore KFC Gross Margin.",
+                    "Food commodity inflation, hike in minimum wages and annual increments, and significantly higher LPG prices impacted costs during the quarter.",
+                    "Teams effectively managed LPG availability during the period.",
+                    "Slight price increases taken in KFC and Pizza Hut to mitigate cost impact; raw material and packaging prices being monitored going forward.",
+                    "Seasonal factors led to higher utility costs and higher wage costs during the quarter."
                   ]
                 }
               ]
@@ -46417,120 +46491,384 @@
               "key_figures": [
                 {
                   "label": "KFC SSSG",
-                  "value": "4.9",
+                  "value": "3.3",
                   "unit": "%",
-                  "period": "Q4 FY26",
+                  "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "KFC Revenue Growth",
-                  "value": "15",
-                  "unit": "%",
-                  "period": "YoY",
-                  "kind": "reported"
-                },
-                {
-                  "label": "KFC Q4 Revenue",
-                  "value": "586",
+                  "label": "KFC Revenue",
+                  "value": "684",
                   "unit": "INR crore",
-                  "period": "Q4 FY26",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "KFC Revenue growth YoY",
+                  "value": "~12",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "KFC Gross Margin",
+                  "value": "69.4",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "KFC Gross Margin YoY improvement",
+                  "value": "2.3",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "KFC Brand Contribution margin expansion",
+                  "value": "1.4",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
                   "kind": "reported"
                 },
                 {
                   "label": "KFC Brand Contribution",
-                  "value": "99",
+                  "value": "115",
                   "unit": "INR crore",
-                  "period": "Q4 FY26",
+                  "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "KFC Brand Contribution Margin",
-                  "value": "17.0",
+                  "label": "KFC Brand Contribution growth YoY",
+                  "value": "~22",
                   "unit": "%",
-                  "period": "Q4 FY26",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "KFC offline saliency",
+                  "value": "57",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "KFC offline saliency YoY improvement",
+                  "value": ">3",
+                  "unit": "percentage points",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "KFC Brand Contribution margin (current level)",
+                  "value": "17",
+                  "unit": "%",
+                  "period": "Q1 FY27 / Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "KFC Brand Contribution margin YoY increase",
+                  "value": "130-140",
+                  "unit": "basis points",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "KFC delivery salience (pre-COVID)",
+                  "value": "<10",
+                  "unit": "%",
+                  "period": "pre-COVID",
+                  "kind": "reported"
+                },
+                {
+                  "label": "KFC delivery salience (current)",
+                  "value": "45-46",
+                  "unit": "%",
+                  "period": "current",
                   "kind": "reported"
                 },
                 {
                   "label": "Pizza Hut SSSG",
-                  "value": "-3.7",
+                  "value": "-2.2",
                   "unit": "%",
-                  "period": "Q4 FY26",
+                  "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
                   "label": "Pizza Hut ADS",
-                  "value": "30,000",
+                  "value": "~32,400",
                   "unit": "INR per store per day",
-                  "period": "Q4 FY26",
+                  "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Costa Coffee Revenue Growth",
-                  "value": "3",
-                  "unit": "%",
-                  "period": "YoY",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Costa Coffee Brand Contribution Margin",
-                  "value": "16.1",
-                  "unit": "%",
-                  "period": "Q4 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "International Business Revenue Growth",
-                  "value": "20",
-                  "unit": "%",
-                  "period": "YoY",
-                  "kind": "reported"
-                },
-                {
-                  "label": "International Business Q4 Revenue",
-                  "value": "500",
+                  "label": "Pizza Hut Revenue",
+                  "value": "184",
                   "unit": "INR crore",
-                  "period": "Q4 FY26",
+                  "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "International Business Brand Contribution Margin",
-                  "value": "17.7",
+                  "label": "Pizza Hut Gross Margin",
+                  "value": "76.3",
                   "unit": "%",
-                  "period": "Q4 FY26",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Pizza Hut Brand Contribution loss",
+                  "value": "-4",
+                  "unit": "INR crore",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Pizza Hut store count",
+                  "value": "626",
+                  "unit": "stores",
+                  "period": "as of Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Biryani By Kilo SSSG",
+                  "value": "7.2",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Vaango SSSG",
+                  "value": "7.1",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Own brands portfolio Revenue",
+                  "value": "98",
+                  "unit": "INR crore",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Own brands Gross Margin",
+                  "value": "65.9",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Own brands Brand Contribution",
+                  "value": "~10",
+                  "unit": "INR crore",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Own brands Brand Contribution margin",
+                  "value": "10.2",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Own brands store network",
+                  "value": "218",
+                  "unit": "stores",
+                  "period": "as of Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BBK Express stores",
+                  "value": "23",
+                  "unit": "stores",
+                  "period": "as of Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Franchise brands (incl. Costa) revenue growth YoY",
+                  "value": "~6",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Franchise brands Gross Margin",
+                  "value": "74.6",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Franchise brands Brand Contribution margin",
+                  "value": "15.1",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net new KFC stores (India)",
+                  "value": "11",
+                  "unit": "stores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net new BBK stores (India)",
+                  "value": "3",
+                  "unit": "stores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Biryani market size (organized+unorganized)",
+                  "value": "30,000-40,000",
+                  "unit": "INR crore",
+                  "period": "current",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "Largest biryani brand revenue",
+                  "value": "~300-350",
+                  "unit": "INR crore",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Biryani By Kilo target revenue",
+                  "value": "1,000",
+                  "unit": "INR crore",
+                  "period": "next few years",
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "KFC",
+                  "points": [
+                    "KFC continued to post double-digit sales growth building on strong H2 FY26 momentum.",
+                    "Marketing spends deliberately rebalanced towards driving dine-in visits rather than deep online discounting; media investments focused on positioning the brand at the center of consumption and celebration moments, both in-store and on delivery.",
+                    "Rebalancing investment towards dine-in channel is showing good results, with offline saliency improving YoY."
+                  ]
+                },
+                {
+                  "label": "Pizza Hut",
+                  "points": [
+                    "Pizza Hut delivered sequentially better SSSG numbers, working on a 'back-to-basics' reset.",
+                    "Marketing activity remained measured and purposeful, focused this quarter on communicating improved product quality and everyday value, building the foundation for a stronger brand.",
+                    "Higher costs and operating deleverage led to Brand Contribution margin eroding slightly despite Gross Margin improvement.",
+                    "Ended quarter with 626 stores as the brand continues to be right-sized.",
+                    "Pizza Hut remains the number 2 pizza brand nationally (Domino's is number 1); the biggest historical issue has been the 3-way decision-making structure between DIL, Sapphire and Yum!, which is expected to ease post-merger.",
+                    "Fundamental problem for Pizza Hut is low ADS versus competition, which requires differentiated offering/innovation across all price points, not just entry price points.",
+                    "Full push behind Pizza Hut expected once merger structure is sorted, likely around FY28."
+                  ]
+                },
+                {
+                  "label": "Own brands (Vaango, Biryani By Kilo)",
+                  "points": [
+                    "BBK continues to progress well on top line and bottom line; company is on track to realize the acquisition case turnaround of BBK; Brand Contribution has turned positive versus negative at time of acquisition.",
+                    "Post-acquisition, company has been evaluating expanding BBK in newer formats; BBK Express is a small box, lower capex format showing initial good response in food courts.",
+                    "Testing BBK in dine-in format through food courts with good response; also launched BBK at a couple of airport locations to test.",
+                    "Planning to test a sattvic vegetarian portfolio for BBK during the Shravan and Navratri season.",
+                    "Objective is to grow BBK into a INR 1,000 crore brand in the next few years.",
+                    "Vaango continues to do well; company is bullish on the South Indian food space, described as healthy food that works across dayparts; product needs to be stabilized a little further.",
+                    "Biryani category is the largest ordered online item on platforms in India, yet the biggest branded players are only around INR 300-350 crore, offering a large opportunity for consolidation and standardized product offering."
+                  ]
+                },
+                {
+                  "label": "Franchise brands (Costa Coffee)",
+                  "points": [
+                    "Costa Coffee leaned into peak summer season with cold beverage and frappe range, driving footfall and trials through April-June heat.",
+                    "Costa continued to expand presence in high visibility travel and transit locations.",
+                    "Higher input costs led to lower Gross Margin for the franchise brands portfolio, but Brand Contribution margin was higher than last year on better cost management."
+                  ]
+                },
+                {
+                  "label": "Dine-in vs delivery strategy",
+                  "points": [
+                    "Delivery today is eating into dine-in sales rather than adding incremental net top line, unlike the post-COVID period when delivery was purely incremental.",
+                    "Company is making concerted efforts to bring consumers back to dine-in stores for best customer experience and full flavours.",
+                    "Dine-in pricing proposition ensures dine-in customers get the best deal along with a better experience.",
+                    "North region typically favors delivery/convenience more than other regions.",
+                    "Target is to move KFC offline saliency to 59%-60%, not expected to reach 65% in the near future.",
+                    "Shift towards dine-in is a broader principle across the business, not format-specific, though pizza is inherently more dine-in oriented."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [
+                {
+                  "label": "International business quarterly revenue",
+                  "value": "523",
+                  "unit": "INR crore",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "International business revenue growth YoY",
+                  "value": ">20",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "International Brand Contribution margin",
+                  "value": "18.2",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "International Brand Contribution margin YoY improvement",
+                  "value": "1.5",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total stores in India",
+                  "value": "1,855",
+                  "unit": "stores",
+                  "period": "as of June 30, 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total stores globally",
+                  "value": "2,255",
+                  "unit": "stores",
+                  "period": "as of June 30, 2026",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "KFC Performance",
+                  "label": "Store network",
                   "points": [
-                    "KFC delivered its strongest performance in the last 14 quarters with a 4.9% positive SSSG.",
-                    "KFC revenue grew nearly 15% YoY to INR 586 crore in Q4.",
-                    "Brand contribution grew nearly 20% YoY to INR 99 crore with margins improving to 17.0%."
+                    "Plan for opening new units remains in line with guidance given earlier."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Aggregator dynamics",
+                  "points": [
+                    "Indian QSR industry continues to mature; the interplay between aggregator platforms and dine-in-led brands is an evolving dynamic being navigated thoughtfully, brand-by-brand."
                   ]
                 },
                 {
-                  "label": "Pizza Hut Performance",
+                  "label": "Indian food category opportunity",
                   "points": [
-                    "Pizza Hut SSSG was at -3.7%, but performance improved sequentially.",
-                    "ADS remained stable at ~INR 30,000 per store per day.",
-                    "Brand contribution was slightly negative due to operating deleverage from lower same-store sales."
-                  ]
-                },
-                {
-                  "label": "Costa Coffee and Franchise Brands",
-                  "points": [
-                    "Costa Coffee revenue growth remained steady at nearly 3% YoY.",
-                    "Elevated coffee and cocoa prices impacted input costs, leading to a 1.2% YoY decline in gross margins.",
-                    "The portfolio delivered a healthy brand contribution margin of 16.1%."
-                  ]
-                },
-                {
-                  "label": "International Business",
-                  "points": [
-                    "International business grew 20% YoY, crossing INR 500 crore in quarterly revenues for the first time.",
-                    "Nepal recorded a 46% YoY increase in sales, while Thailand grew revenues by 19%.",
-                    "Improved gross margins and operating leverage drove brand contribution margins to 17.7%."
+                    "Per capita consumption / incidence of eating out is low in India today; consumers currently associate Western brands with eating out while considering Indian food as home food.",
+                    "As per capita income grows and more women join the workforce, the Indian food category outside home is expected to expand significantly; management believes in a mature market (15-20 years out) Indian food category outside home could be a far bigger category than Western food category.",
+                    "South Indian food category and North Indian food category are large but under-organized, offering further expansion opportunities beyond biryani."
                   ]
                 }
               ]
@@ -46541,17 +46879,51 @@
               "key_figures": [],
               "subsections": [
                 {
-                  "label": "Merger with Sapphire Foods",
+                  "label": "Sapphire Foods merger",
                   "points": [
-                    "The proposed merger with Sapphire Foods is progressing as per plan and is expected to complete by the end of the current fiscal year.",
-                    "The merger will create one of the largest QSR platforms globally, enhancing operational capabilities and geographic reach."
+                    "Merger process with Sapphire continues to progress along expected timelines; approvals received from both NSE and BSE in June, bringing the company closer to the next phase of regulatory filings.",
+                    "Timelines broadly on track with stated target of completion by end of FY2027.",
+                    "Management thanked Yum! Brands for continued confidence in DIL and RJ Corp as long-term partners.",
+                    "Merger synergies readiness is not seen as an issue; it was important for the new team to join and settle in first so integration becomes easier, which has been demonstrated.",
+                    "Technology piece is the other big lever that needs to be sorted before the merger; progress being made as per plans, expected to happen before merger approvals with integration starting post that.",
+                    "IT integration between Sapphire and Devyani should not be a big challenge since both were on the same technology stack (previously controlled by Yum!) and processes on both sides are very similar."
                   ]
                 },
                 {
-                  "label": "Leadership Transformation",
+                  "label": "DIL 2.0 organizational build",
                   "points": [
-                    "Steps have been taken to transform the management team under the new CEO, Manish Dawar.",
-                    "The focus is on bringing in experienced professionals with deep operational and strategic expertise."
+                    "New leadership team fully in place and settling in well in respective roles under Manish Dawar's leadership; encouraged by early cultural and operational shifts across the organization, described as building 'DIL 2.0'.",
+                    "New hires include COO, CTO, and Chief Marketing Officer; joining timelines ranged from about 2-3 weeks to about 2 months.",
+                    "As part of DIL 2.0, entire business development (BD) activity has been consolidated under one leader, unlike the past where individual brands handled their own BD; this led to rethinking of the store opening strategy and approach to landlords.",
+                    "Promoters are very bullish on the business and have never viewed investment as an issue; promoters feel Devyani can become 'another Varun' (referencing Varun Beverages) over time.",
+                    "Key priorities for the remainder of the year: 1) opening new stores per earlier guidance, 2) maintaining positive SSSG across brand portfolio, 3) improving efficiency/margin structure via technology adoption and cost control, 4) building next level of team and organization structure with right processes, and 5) getting ready for the merged entity."
+                  ]
+                },
+                {
+                  "label": "Technology buildout",
+                  "points": [
+                    "New Chief Technology Officer hired, with strong QSR industry background from India and overseas.",
+                    "Rather than building a full in-house tech team, company decided to build a core team in-house and outsource buildout to Cognizant Technologies.",
+                    "Combination of core in-house team plus Cognizant outsourcing expected to enable faster rollout, on track before the merger.",
+                    "Technology adoption is a leverage point that will take a few quarters to realize benefits, with 'a few quarters' counted after the merger since platforms are currently being built."
+                  ]
+                },
+                {
+                  "label": "Global KFC brand initiatives",
+                  "points": [
+                    "Renewed global thrust for KFC brand around three initiatives: beverages (sub-brand 'Kwench'), sauces, and boneless snacking; all three initiatives are planned to come to India, with India part of the global pipeline.",
+                    "Company already in discussions to experiment with 'Kwench' in India; product needs to be optimized for Indian conditions and taste.",
+                    "Capex considerations for new rollouts are viewed differently in Western markets versus India; most homework on 'Kwench' from capex and product optimization perspective is done, with planning underway for test launch timing.",
+                    "Sauces and boneless initiatives are relatively simpler and will follow once 'Kwench' is established."
+                  ]
+                },
+                {
+                  "label": "International business / Thailand",
+                  "points": [
+                    "International business posted another quarter of 20%+ YoY growth; Gross Margins remained stable sequentially.",
+                    "Effective cost management and operating leverage helped improve Brand Contribution margin.",
+                    "Company has been very happy with Thailand results; currently one of three franchisee partners there.",
+                    "No formal process has been launched for expanding territory in Thailand; no one has approached the company, but management remains keen to look at opportunities if they arise."
                   ]
                 }
               ]
@@ -46559,13 +46931,32 @@
             {
               "id": "RISK",
               "title": "Risks & External Factors",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "RBI FY27 growth outlook",
+                  "value": "6.6",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "RBI inflation projection",
+                  "value": "5.1",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "reported"
+                }
+              ],
               "subsections": [
                 {
-                  "label": "Gas Crisis",
+                  "label": "Macro backdrop",
                   "points": [
-                    "A significant gas crisis due to the Middle East war was managed effectively with minimal impact on the business.",
-                    "The crisis continues to be an issue in some parts of the country, and the situation is being monitored closely."
+                    "Quarter presented a mixed macro picture; external environment became more challenging as the conflict in the Middle East pushed crude oil to elevated levels through April and May, feeding into LPG and fuel costs, while the rupee remained under pressure.",
+                    "RBI, in its June policy, held the repo rate steady but moderated its FY27 growth outlook and raised its inflation projection, reflecting these pressures.",
+                    "Operating environment has remained volatile, along with usual seasonal complexities.",
+                    "Demand has remained stable so far, but the forecast of a below-normal season combined with El Niño risk is a reminder that consumption recovery in India rarely moves in a straight line.",
+                    "LPG availability was a big constraint through the cycle, although the company managed to mitigate the impact; macro pressures are not seen as fully behind the company, with periodic news continuing to emerge.",
+                    "It is too early to comment definitively on Q2 SSSG trends since the quarter is still in its early stage (month of July); Q2 also faces a different drag effect from Shravan timing versus last year, though broadly a positive trend has been seen in July."
                   ]
                 }
               ]
@@ -46573,19 +46964,57 @@
             {
               "id": "GUID",
               "title": "Guidance & Outlook",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "KFC target ADS for 20% Brand Contribution margin",
+                  "value": "105,000-110,000",
+                  "unit": "ADS",
+                  "period": "future",
+                  "kind": "target"
+                },
+                {
+                  "label": "KFC SSSG outlook",
+                  "value": "5-6",
+                  "unit": "%",
+                  "period": "ongoing",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Timeframe to reach target ADS/margin",
+                  "value": "1.5-2",
+                  "unit": "years",
+                  "period": "forward",
+                  "kind": "guidance"
+                }
+              ],
               "subsections": [
                 {
-                  "label": "Store Expansion Plans",
+                  "label": "KFC margin trajectory",
                   "points": [
-                    "Expect to add approximately 200 to 225 net new stores in FY27.",
-                    "KFC is expected to contribute 100 to 110 stores of these additions."
+                    "Key driver for improving KFC Brand Contribution margin remains the ADS number; crossing a threshold of 105,000-110,000 ADS is expected to enable crossing 20% Brand Contribution margin, as demonstrated in the past.",
+                    "Key lever for ADS is a combination of SSSG in existing stores and quality of new stores (starting new stores at a higher ADS number).",
+                    "Focus on promoting dine-in channel better versus delivery channel is another lever expected to push margins up; positive results already seen from this quarter's experimentation.",
+                    "As ADS goes up, operating leverage benefit follows, further helping margins.",
+                    "Given macro uncertainty, margin achievement timing is contingent on stable conditions; company continues to bring efficiency into the business as a continuous process.",
+                    "Technology adoption is a leverage point expected to help but will take a few quarters post-merger to realize benefits."
                   ]
                 },
                 {
-                  "label": "Merger Completion",
+                  "label": "Store opening guidance",
                   "points": [
-                    "The merger with Sapphire Foods is expected to complete by the end of the current financial year."
+                    "Plan for opening new units remains in line with the guidance given earlier."
+                  ]
+                },
+                {
+                  "label": "Merger completion",
+                  "points": [
+                    "Company continues to expect completion of the merger with Sapphire Foods by end of the current financial year (FY27)."
+                  ]
+                },
+                {
+                  "label": "Pizza Hut strategy timing",
+                  "points": [
+                    "Full energy and push behind Pizza Hut expected once the merger and structural issues are resolved, referenced as around FY28."
                   ]
                 }
               ]
@@ -46593,35 +47022,163 @@
           ],
           "guidance_ledger": [
             {
-              "metric": "Store additions",
-              "horizon": "FY27",
-              "statement": "Expect to add approximately 200 to 225 net new stores in FY27.",
+              "metric": "Sapphire Foods merger completion",
+              "horizon": "end of FY27",
+              "statement": "Timelines are broadly on track with our stated target of completion by the end of FY 2027; we continue to expect completion of the merger by end of the current financial year.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "reiterated"
+            },
+            {
+              "metric": "KFC SSSG outlook",
+              "horizon": "ongoing",
+              "statement": "We are looking at a SSSG of about 5% to 6% for KFC.",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
             },
             {
-              "metric": "KFC store openings",
-              "horizon": "FY27",
-              "statement": "KFC is expected to contribute 100 to 110 stores of these additions.",
+              "metric": "KFC ADS threshold for 20% Brand Contribution margin",
+              "horizon": "1.5-2 years",
+              "statement": "Once we cross a threshold of 105,000 ADS to 110,000 ADS, we will be able to cross 20% Brand Contribution margins in KFC.",
               "specificity": "specific",
               "direction": "up",
-              "status": "reiterated"
+              "status": "new"
             },
             {
-              "metric": "Merger completion",
-              "horizon": "FY27",
-              "statement": "The merger with Sapphire Foods is expected to complete by the end of the current financial year.",
+              "metric": "KFC dine-in/offline saliency target",
+              "horizon": "coming quarters",
+              "statement": "Our target remains to get to a number of 59%-60% offline saliency; I do not think we will be able to get to 65% in the near future.",
               "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "New store opening plan",
+              "horizon": "FY27",
+              "statement": "Our plan for opening new units remains in line with the guidance given earlier.",
+              "specificity": "vague",
               "direction": "flat",
               "status": "new"
             },
             {
-              "metric": "Merged entity annual revenue",
-              "horizon": "post-merger",
-              "statement": "The merged entity is expected to cross $1 billion USD in annual revenues.",
+              "metric": "Pizza Hut full turnaround push",
+              "horizon": "FY28 (post-merger)",
+              "statement": "FY28 is when we will put all our energy behind Pizza Hut once the two entities come together.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Biryani By Kilo revenue target",
+              "horizon": "next few years",
+              "statement": "Our objective is to make sure that this brand gets to INR 1,000 crore brand in the next few years.",
               "specificity": "specific",
               "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "KFC global initiatives rollout (Kwench, sauces, boneless)",
+              "horizon": "phased/unspecified",
+              "statement": "All of those initiatives will come to India, one after the other; Kwench homework is mostly done, planning test launch timing; other pieces will follow once Kwench gets established.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Technology platform readiness",
+              "horizon": "before merger",
+              "statement": "We are hopeful that piece also should happen before we get the merger approvals and the integration starts post that.",
+              "specificity": "vague",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Merger synergies readiness",
+              "horizon": "post-merger",
+              "statement": "We do not see an issue in terms of readiness for merger synergies; we are on track and making good progress.",
+              "specificity": "vague",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "FY27 net new store additions (DIL standalone)",
+              "horizon": "FY27",
+              "statement": "We expect to add approximately 200 to 225 net new stores in FY27 as DIL.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "FY27 KFC store additions",
+              "horizon": "FY27",
+              "statement": "KFC is expected to contribute 100 to 110 stores of these additions (referenced elsewhere as 110 to 120 store levels).",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Pizza Hut net store additions",
+              "horizon": "CY2026",
+              "statement": "For 2026 (calendar year), we are not planning to add any net new stores for Pizza Hut - the idea is to consolidate and realign the portfolio.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Merged entity annual revenue",
+              "horizon": "post-merger",
+              "statement": "If you put the two companies together, we are going to be almost a USD 1 billion top line by the time we complete the merger.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "New management team formation",
+              "horizon": "next quarter",
+              "statement": "I feel very confident that we will be able to largely have the new team in place by next quarter.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Tea Live brand discontinuation",
+              "horizon": "next quarter",
+              "statement": "Having tested Tea Live in India and Thailand, we have decided to discontinue the brand, and the same will happen in the next quarter.",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Pizza Hut revival strategy launch",
+              "horizon": "next couple of months",
+              "statement": "It will take maybe a couple of months by the time we actually launch that in the market.",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Analyst Day on brand strategy",
+              "horizon": "next couple of quarters",
+              "statement": "Maybe we can fix an Analyst Day in the next couple of quarters, and we can take you guys through in detail on what our plans are.",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "no_mention"
+            },
+            {
+              "metric": "KFC SSSG sustainability",
+              "horizon": "next few quarters",
+              "statement": "We feel confident that we will be able to sustain the initiatives that you have seen... it will take another couple of quarters by the time we are firmly able to say that the worst is behind us.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Menu price increases (KFC)",
+              "horizon": "near future",
+              "statement": "If you can help me foresee the inflation in the near future, I will be able to tell you that.",
+              "specificity": "refused",
+              "direction": "unclear",
               "status": "no_mention"
             },
             {
@@ -46631,13 +47188,86 @@
               "specificity": "specific",
               "direction": "up",
               "status": "no_mention"
+            },
+            {
+              "metric": "KFC store openings",
+              "horizon": "FY26",
+              "statement": "Plan to open approximately 100 to 110 new KFC stores in FY26.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
             }
           ],
           "risk_register": [
             {
-              "risk": "Gas crisis due to Middle East war",
+              "risk": "Crude oil / geopolitical conflict impact on LPG and fuel costs",
               "status": "new",
-              "note": "Managed effectively with minimal impact, but continues to be an issue in some parts."
+              "note": "Conflict in the Middle East pushed crude oil to elevated levels through April and May, feeding into LPG and fuel costs."
+            },
+            {
+              "risk": "Rupee pressure",
+              "status": "new",
+              "note": "The rupee remained under pressure during the quarter."
+            },
+            {
+              "risk": "Macro growth/inflation outlook",
+              "status": "new",
+              "note": "RBI moderated its FY27 growth outlook to 6.6% and raised its inflation projection to 5.1%."
+            },
+            {
+              "risk": "Seasonal complexities / below-normal season and El Niño risk",
+              "status": "new",
+              "note": "Forecast of a below-normal season, combined with El Niño risk, is a reminder that consumption recovery rarely moves in a straight line."
+            },
+            {
+              "risk": "LPG availability constraint",
+              "status": "new",
+              "note": "LPG availability was a big constraint during the cycle, although teams managed to mitigate the impact; not fully behind the company."
+            },
+            {
+              "risk": "Food commodity inflation and wage cost increases",
+              "status": "new",
+              "note": "Food commodity inflation along with hike in minimum wages and annual increments impacted costs; higher utility and wage costs seen due to seasonal factors."
+            },
+            {
+              "risk": "3-way decision-making structure (DIL-Sapphire-Yum!) at Pizza Hut",
+              "status": "new",
+              "note": "The biggest historical issue for Pizza Hut has been the 3-way decision-making structure, expected to ease once merger approval is received."
+            },
+            {
+              "risk": "Aggregator/delivery platform dynamics",
+              "status": "new",
+              "note": "The interplay between aggregator platforms and dine-in-led brands is an evolving dynamic being navigated thoughtfully, brand-by-brand; delivery today is eating into dine-in sales."
+            },
+            {
+              "risk": "Macro uncertainty on future inflation trajectory",
+              "status": "new",
+              "note": "It is not that macros are behind us; there is some news or the other that keeps coming in, making a very bullish view difficult."
+            },
+            {
+              "risk": "Gas crisis due to Middle East war",
+              "status": "no_mention",
+              "note": "Significant gas crisis impacted operations; managed effectively with minimal business impact, but continues to be an issue in some parts of the country and company is not fully out of it."
+            },
+            {
+              "risk": "Input cost inflation (coffee and cocoa prices)",
+              "status": "no_mention",
+              "note": "Elevated coffee and cocoa prices impacted input costs, leading to a 1.2% YoY decline in gross margins for the Franchise Brands portfolio."
+            },
+            {
+              "risk": "Macro and geopolitical uncertainty",
+              "status": "no_mention",
+              "note": "Recurring macro issues since COVID; company has no control over macro factors but notes such situations pressure small-scale players more, aiding consolidation for larger players."
+            },
+            {
+              "risk": "Pizza Hut underperformance / negative SSSG",
+              "status": "no_mention",
+              "note": "SSSG remained negative at -3.7% though improving sequentially; brand contribution slightly negative due to operating deleverage from lower same-store sales."
+            },
+            {
+              "risk": "Store portfolio quality reset leading to negative store count",
+              "status": "no_mention",
+              "note": "Negative store count in Q4 reflects a deliberate BD strategy reset to close loss-making stores and build a better-quality pipeline."
             },
             {
               "risk": "Macro environment",
@@ -46669,37 +47299,825 @@
             {
               "label": "Strategic merger",
               "direction": "positive",
-              "note": "The merger with Sapphire Foods is on track to complete by the end of the fiscal year, creating a large QSR platform.",
+              "note": "NSE/BSE approvals received in June; merger with Sapphire remains on track for completion by end of FY27.",
               "section_ref": "STRAT"
             },
             {
-              "label": "Store expansion",
-              "direction": "positive",
-              "note": "Plans to add 200-225 new stores in FY27, with significant contributions from KFC.",
-              "section_ref": "GUID"
+              "label": "Demand environment",
+              "direction": "mixed",
+              "note": "Demand has remained stable so far but below-normal season and El Niño risk pose uncertainty; most brands posted positive SSSG.",
+              "section_ref": "RISK"
             },
             {
-              "label": "Demand environment",
-              "direction": "positive",
-              "note": "Stable demand sentiment aided by policy stimulus and GST rate rationalization.",
-              "section_ref": "ORD"
+              "label": "Store expansion",
+              "direction": "neutral",
+              "note": "Net new KFC and BBK store additions in India in line with guidance; total store count at 1,855 India / 2,255 globally.",
+              "section_ref": "GEO"
             },
             {
               "label": "Technology integration",
               "direction": "positive",
-              "note": "Focus on digital transformation and technology-led operations to enhance efficiency and customer experience.",
+              "note": "New CTO hired; core in-house team plus Cognizant outsourcing planned to accelerate tech buildout ahead of merger.",
               "section_ref": "STRAT"
+            },
+            {
+              "label": "Leadership transformation",
+              "direction": "positive",
+              "note": "New leadership team (COO, CTO, CMO) fully in place and settling in well, driving 'DIL 2.0' cultural and operational shifts.",
+              "section_ref": "STRAT"
+            },
+            {
+              "label": "Input cost and gas crisis pressure",
+              "direction": "negative",
+              "note": "LPG prices rose significantly amid Middle East conflict; food commodity inflation and wage hikes pressured costs, partly offset by price increases.",
+              "section_ref": "RISK"
+            },
+            {
+              "label": "Pizza Hut turnaround",
+              "direction": "mixed",
+              "note": "SSSG improved sequentially to -2.2% with higher ADS, but Brand Contribution loss persisted; full push expected post-merger around FY28.",
+              "section_ref": "SEG"
             }
           ],
           "key_takeaways": [
-            "The proposed merger with Sapphire Foods is progressing as per plan and is expected to complete by the end of the current fiscal year.",
-            "KFC delivered its strongest performance in the last 14 quarters with a 4.9% positive SSSG and nearly 15% year-on-year growth during the quarter.",
-            "International business grew 20% year-on-year and crossed INR 500 crore in quarterly revenues for the first time.",
-            "Demand sentiment during the quarter remained broadly stable, helped by favourable policy stimulus and GST rate rationalization.",
-            "The management team is being transformed under the new CEO, with a focus on experienced professionals with deep operational and strategic expertise.",
-            "The company plans to add approximately 200 to 225 net new stores in FY27, with KFC expected to contribute 100 to 110 stores."
+            "We begin the new financial year on a strong note. The momentum we built through the second half of FY26, anchored by KFC's strong same-store sales performance has continued into Q1 FY27.",
+            "KFC continues to post double-digit sales growth and delivered another positive SSSG of 3.3% during the quarter.",
+            "The business has improved profitability and posted its highest ever EBITDA of INR 255 crore at 16.1% of the revenues.",
+            "On a consolidated basis, we delivered a 16.5% year-on-year growth in revenues, reaching INR 1,581 crore.",
+            "The improvement in Brand Contribution and effective management of G&A costs helped us post our highest ever Operating EBITDA at INR 151 crore. Our consolidated Operating EBITDA grew nearly 38% year-on-year and represents an EBITDA margin of 9.6%.",
+            "The merger process with Sapphire continues to progress along expected timelines. We received approvals from both the NSE and the BSE in June, bringing us closer to the next phase of regulatory filings.",
+            "We ended the period with 1,855 stores in India and 2,255 stores globally, as of June 30, 2026.",
+            "The new leadership team at DIL is fully in place and is settling in well."
           ],
-          "pressing_questions": []
+          "pressing_questions": [
+            "Percy Panthaki: this 105k to 110k kind of ADS, how many quarters down the line or how soon do you think you can achieve that given the macroeconomic construct?",
+            "Vivek Maheshwari: If you leave aside this quarter and the previous quarter, your Same Store Sales have been negative for a long time. What is holding you back from giving a very positive outlook on SSSG, let's say even above mid-single digits?",
+            "Vivek Maheshwari: what exactly is the issue [with Pizza Hut], is it execution, the market context, higher margins, or competition? What do you think is holding Pizza Hut back? And is it really worth putting more energy behind this brand?"
+          ]
+        },
+        {
+          "company": "Devyani International Ltd",
+          "ticker": "DEVYANI",
+          "industry": "Restaurants",
+          "country": "India",
+          "concall_date": "2026-05-21",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b3c9eb0b-f218-4100-93d5-6dd594604628.pdf",
+          "model": "gpt-4o",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-09T22:44:29.342Z",
+          "summary": "Devyani International closed FY26 with KFC posting its strongest SSSG (4.9%) in 14 quarters and consolidated revenue growth of 18.5% YoY in Q4; the proposed merger with Sapphire Foods remains on track for completion by end of the current fiscal year, and management guided to 200-225 net new stores in FY27 (100-110 from KFC) while discontinuing the Tea Live brand and continuing to reset the Pizza Hut portfolio with no net store additions planned for CY2026.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "Consolidated revenue",
+                  "value": "1,437",
+                  "unit": "INR crore",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated revenue growth YoY",
+                  "value": "18.5",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Full year revenue",
+                  "value": "5,611",
+                  "unit": "INR crore",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gross margin",
+                  "value": "68.8",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Brand contribution margin (consolidated)",
+                  "value": "14.1",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operating EBITDA",
+                  "value": "123",
+                  "unit": "INR crore",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operating EBITDA margin",
+                  "value": "8.6",
+                  "unit": "% of sales",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operating EBITDA growth YoY",
+                  "value": "13.8",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "KFC menu price correction",
+                  "value": "less than 0.5",
+                  "unit": "percentage point",
+                  "period": "recent quarter",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gas cost as % of sales",
+                  "value": "small (approx. 1.5%-2% referenced by analyst, not confirmed by management)",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gross margin improvement YoY",
+                  "value": "improved",
+                  "unit": null,
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Brand contribution improvement YoY",
+                  "value": "improved",
+                  "unit": null,
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operating EBITDA improvement YoY",
+                  "value": "improved",
+                  "unit": null,
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operating EBITDA margin improvement YoY",
+                  "value": "improved",
+                  "unit": null,
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net store additions",
+                  "value": "217",
+                  "unit": "stores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net store additions guidance",
+                  "value": "200 to 225",
+                  "unit": "stores",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "KFC store additions guidance",
+                  "value": "100 to 110",
+                  "unit": "stores",
+                  "period": "FY27",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Revenue and margin drivers",
+                  "points": [
+                    "Consolidated revenue growth of 18.5% YoY in Q4 driven by strong KFC and international business performance.",
+                    "Full year revenue crossed the INR 5,500 crore milestone, reaching INR 5,611 crore.",
+                    "Both gross margin (68.8%) and brand contribution (14.1%) improved YoY on a consolidated basis.",
+                    "Operating EBITDA grew 13.8% YoY to INR 123 crore, representing 8.6% of sales."
+                  ]
+                },
+                {
+                  "label": "Balance sheet movements",
+                  "points": [
+                    "Increase in debt during FY26 was temporary, raised for an equity infusion required in Thailand; the debt was squared off by the second week of April.",
+                    "Increase in intangible assets predominantly reflects the Biryani By Kilo consolidation, with the acquisition consideration sitting largely on the intangible/goodwill side along with brands."
+                  ]
+                },
+                {
+                  "label": "Pricing actions",
+                  "points": [
+                    "A very small menu price correction was taken in KFC, less than 0.5 percentage point on a portfolio basis, only to tweak bits of mismatches; described as a continuous process.",
+                    "Management could not foresee future inflation trends to comment on further near-term price increases."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "KFC SSSG",
+                  "value": "4.9",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "KFC revenue growth YoY",
+                  "value": "nearly 15",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "KFC revenue",
+                  "value": "586",
+                  "unit": "INR crore",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "KFC brand contribution",
+                  "value": "99",
+                  "unit": "INR crore",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "KFC brand contribution growth YoY",
+                  "value": "nearly 20",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "KFC brand contribution margin",
+                  "value": "17.0",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "KFC store count",
+                  "value": "783",
+                  "unit": "stores",
+                  "period": "FY26 end",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Pizza Hut SSSG",
+                  "value": "-3.7",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Pizza Hut ADS per store per day",
+                  "value": "~30,000",
+                  "unit": "INR",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Pizza Hut store count",
+                  "value": "639",
+                  "unit": "stores",
+                  "period": "FY26 end",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Pizza Hut net store additions",
+                  "value": "0",
+                  "unit": "stores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Franchise Brands (incl. Costa Coffee) revenue growth YoY",
+                  "value": "nearly 3",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Franchise Brands gross margin decline YoY",
+                  "value": "1.2",
+                  "unit": "percentage points",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Franchise Brands brand contribution margin",
+                  "value": "16.1",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Nepal sales growth YoY",
+                  "value": "46",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Thailand revenue growth YoY",
+                  "value": "19",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "International business revenue growth YoY",
+                  "value": "20",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "International business quarterly revenue",
+                  "value": "over 500",
+                  "unit": "INR crore",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "International business brand contribution margin",
+                  "value": "17.7",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "International business brand contribution",
+                  "value": "89",
+                  "unit": "INR crore",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total system store count",
+                  "value": "2,256",
+                  "unit": "stores",
+                  "period": "FY26 end",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net store additions over last 12 months",
+                  "value": "217",
+                  "unit": "stores",
+                  "period": "FY26",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "KFC",
+                  "points": [
+                    "KFC delivered its strongest performance in the last 14 quarters, posting 4.9% positive SSSG, driven by stable demand environment and tailored, sustained customer engagement.",
+                    "KFC continues to anchor overall growth momentum and network expansion.",
+                    "Growth was aided by shifting promotional focus from online to offline/dine-in channels; online promotions were reduced while offline deals/pricing were tailored to attract dine-in customers, with offline gains exceeding online losses.",
+                    "SSSG improvement is a combination of higher average order value (AOV) and higher incremental transactions; historically, negative SSSG was driven more by weak dine-in versus resilient online, and the strategy reversed this by focusing on the dine-in channel.",
+                    "Company is also working on recovering lapsed consumers while continuing to recruit new consumers.",
+                    "Approximately 45 days into the current quarter, KFC has been able to maintain SSSG trends in line with the previous quarter, though management said it would take a couple more quarters to confirm sustainability.",
+                    "Gross margin expansion in KFC was driven by a combination of favourable raw material and packing material costs, and tweaking the mix of promotions/discounting/deal timing in favour of dine-in customers."
+                  ]
+                },
+                {
+                  "label": "Pizza Hut",
+                  "points": [
+                    "Focus remains on portfolio consolidation and operational discipline.",
+                    "SSSG improved sequentially despite remaining negative at -3.7%; ADS remained stable at ~INR 30,000 per store per day.",
+                    "Brand contribution for the quarter was slightly negative, primarily due to operating deleverage arising from lower same-store sales.",
+                    "No net store additions during the quarter; negative store count this quarter is due to a strategy reset from a business development (BD) perspective focused on better-quality stores and a stronger pipeline, involving closure of loss-making stores.",
+                    "No net new Pizza Hut store additions planned for calendar year 2026; focus is on consolidating and realigning the portfolio.",
+                    "New Chief Marketing Officer Sandeep Anand has joined and will oversee Pizza Hut operations; going back to basics by identifying product gaps, missing pricing layers, and reassessing quality (dough, cheese, toppings) on a de novo basis.",
+                    "Store staff being retrained on both product quality and customer experience (CX); a complete revival strategy is expected to launch in the market in a couple of months, with a possible Analyst Day in coming quarters to detail brand-by-brand plans."
+                  ]
+                },
+                {
+                  "label": "Own Brands (Vaango and Biryani By Kilo)",
+                  "points": [
+                    "Both Vaango and Biryani By Kilo reported mid-single-digit positive SSSG.",
+                    "Biryani By Kilo has achieved positive brand contribution, turning around from a loss-making brand; company has started measured expansion into offline channels via test launch of smaller Express formats in food courts.",
+                    "Wherever new Express outlets have opened, they have been profitable; management is bullish on Biryani By Kilo's potential once performance is further stabilized, seeing scope for further profitability growth beyond breakeven."
+                  ]
+                },
+                {
+                  "label": "Franchise Brands (including Costa Coffee)",
+                  "points": [
+                    "Revenue growth remained steady at nearly 3% YoY.",
+                    "Elevated coffee and cocoa prices impacted input costs, leading to a 1.2% YoY decline in gross margins.",
+                    "Portfolio delivered a healthy brand contribution margin of 16.1%."
+                  ]
+                },
+                {
+                  "label": "International Business",
+                  "points": [
+                    "International business continues to deliver strong and consistent growth, with Nepal (still a relatively small contributor) posting an impressive 46% YoY sales increase and Thailand growing revenues 19%.",
+                    "International business crossed INR 500 crore in quarterly revenues for the first time.",
+                    "Improved gross margins and operating leverage drove brand contribution margins to 17.7%."
+                  ]
+                },
+                {
+                  "label": "Store network and brand discontinuation",
+                  "points": [
+                    "Ended FY26 with a system store count of 2,256 stores, representing a net addition of 217 stores over the last 12 months.",
+                    "Having tested the Tea Live brand in India and Thailand, the company has decided to discontinue the brand, effective next quarter."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "TECH",
+              "title": "Product & Technology",
+              "key_figures": [
+                {
+                  "label": "Digital kiosk penetration across KFC network",
+                  "value": "more than 80",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Digital and technology initiatives",
+                  "points": [
+                    "Achieved more than 80% digital kiosk penetration across the KFC store network, enhancing customer experience, convenience and engagement across physical formats.",
+                    "Making strong progress on DIL Commerce, a unified technology platform designed to strengthen operational execution, deepen customer engagement and create a scalable digital backbone for future growth.",
+                    "Technology, automation and data-led decision-making remain central to the DIL 2.0 transformation journey, playing a key role in enhancing efficiency, scalability and customer experience.",
+                    "Company will manage all tech-related changes within existing budgets, including Yum! charges, and plans to leverage current infrastructure better with overlaying AI technology rather than materially changing store size or capex per store.",
+                    "Company continues to explore equipment that can work on both gas and electricity, and has begun evaluating a shift to electrical equipment across the portfolio in response to the gas crisis (e.g., successfully switched Biryani By Kilo equipment to electrical)."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Demand environment and consumer engagement",
+                  "points": [
+                    "Demand sentiment during the quarter remained broadly stable, helped by favourable policy stimulus and GST rate rationalization.",
+                    "Volume-leading growth in adjacent consumption categories like FMCG points to stable-to-improving demand trends.",
+                    "Owned and franchise brands maintained positive SSSG trends.",
+                    "Value-led initiatives and accessibility-focused campaigns at KFC are resonating well with customers, resulting in improved average daily sales trends and sequential recovery in SSSG performance.",
+                    "Company believes business is well positioned for stronger performance during the year, though external and seasonal factors remain fluid.",
+                    "Dine-in footfalls have improved industry-wide post Q4 per broader QSR commentary; company has treated online and offline as two different businesses with distinct pricing/incentive strategies to give consumers a reason to visit stores.",
+                    "Management notes geopolitical/macro uncertainties (e.g., COVID and subsequent events) tend to put more pressure on small-scale players, which helps larger players like DIL consolidate further.",
+                    "Strategic priorities remain unchanged: disciplined expansion, stronger profitability and deeper consumer relevance through innovation and digital engagement.",
+                    "Company sees significant momentum on the travel segment, driving focus on opening multiple brands' food courts at highways, malls and food courts."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Proposed merger with Sapphire Foods",
+                  "points": [
+                    "The proposed merger is a strategic combination of two scaled-up and complementary platforms, united by a shared vision for long-term growth.",
+                    "Upon completion, the merged entity will emerge as one of the largest QSR platforms globally and as one of the largest partners for Yum!, with a diversified portfolio of leading brands, expanded geography reach and enhanced operational capabilities.",
+                    "The merger is expected to unlock meaningful synergies, strengthen execution and create a more agile and efficient organization capable of accelerating growth across markets.",
+                    "Process is progressing as per plan; company remains on track to complete the merger by the end of the current fiscal year.",
+                    "Filings with stock exchanges have been completed; company expects to receive necessary approval shortly, following which it will proceed with the CCI application.",
+                    "Combined entity, post-merger, is expected to be almost a USD 1 billion top line business.",
+                    "FY27 store addition guidance of 200-225 stores is on a standalone DIL basis (including all brands: KFC, Costa, Vaango, Biryani By Kilo), not factoring in the merger scenario.",
+                    "Mumbai territory operations are managed by Sapphire, not DIL, so Mumbai-specific questions must be addressed by Sapphire."
+                  ]
+                },
+                {
+                  "label": "Management team transformation / DIL 2.0",
+                  "points": [
+                    "Steps taken to transform the management team under new CEO Manish Dawar; largely new team expected to be in place by next quarter.",
+                    "Focus is on bringing in experienced, forward-looking professionals with deep operational and strategic expertise as the company prepares for the next phase of growth and integration.",
+                    "DIL 2.0 is a transformation journey led by new leadership and enabled by digital technology, automation and AI, aiming to build a common, scaled-up 'ONE DIL' view and a frictionless organization across employees, brands and technology.",
+                    "Core pillars of DIL 2.0: reimagining how the company works, expanding brand reach, making the organization more efficient, and focusing on digital transformation.",
+                    "Opportunities identified in driving greater collaboration across brands: sharing capabilities, common infrastructure, strategic thinking at middle management level, consumer insights and best practices across the portfolio, aiming for a leaner, more agile, more productive growth-oriented organization.",
+                    "New leadership hires: Neeraj Tiwari as CTO (technology leadership gap identified); Sandeep Anand as CMO (also overseeing Pizza Hut operations, background combines QSR and technology); Robinder to lead Costa and smaller brands (New York Fries, Sanook Kitchen); a new COO (background from FMCG and technology, companies like Unilever and Amazon) also announced, expected to join in the next couple of weeks.",
+                    "Rationale for leadership hires tied to skill-gap analysis conducted ahead of the impending merger with Sapphire Foods, given the combined entity's scale (~USD 1 billion top line).",
+                    "Company had previously tied up with a leading IT company as a technology partner to develop its own apps and technology stack in-house, requiring in-house capability to manage the technology going forward.",
+                    "Possible Analyst Day planned in the next couple of quarters to detail brand-by-brand strategy once the full new leadership team is in place."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Gas crisis",
+                  "points": [
+                    "A significant gas crisis occurred in the country due to the Middle East war; teams managed it effectively with minimal impact on the business.",
+                    "The gas crisis continues to be an issue in some parts of the country; company is not yet fully out of it and continues to monitor the situation closely.",
+                    "Gas cost described as a small cost as a percentage of sales, though management did not disclose an exact figure.",
+                    "In response, company is evaluating a shift to electrical equipment across the portfolio (e.g., Biryani By Kilo) and exploring dual gas/electric-capable equipment to mitigate future impact."
+                  ]
+                },
+                {
+                  "label": "Input cost inflation",
+                  "points": [
+                    "Elevated coffee and cocoa prices impacted input costs for the Franchise Brands portfolio, leading to a 1.2% YoY decline in gross margins for that segment.",
+                    "Management stated it cannot foresee future inflation trends and therefore cannot comment on the likelihood of further near-term price increases."
+                  ]
+                },
+                {
+                  "label": "Macro and geopolitical uncertainty",
+                  "points": [
+                    "Macro-level factors are not controllable; multiple macro issues have recurred over the last 3-4 years starting from COVID.",
+                    "Company accepts this as a reality and continues to focus on what is within its control, noting such situations put more pressure on small-scale players, aiding consolidation for larger players."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [
+                {
+                  "label": "FY27 net new store additions (guidance)",
+                  "value": "200 to 225",
+                  "unit": "stores",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "FY27 KFC store additions (guidance)",
+                  "value": "100 to 110 (mentioned also as up to 120)",
+                  "unit": "stores",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Merged entity annual revenue (guidance)",
+                  "value": "almost USD 1 billion",
+                  "unit": "USD",
+                  "period": "post-merger",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Store expansion outlook",
+                  "points": [
+                    "Company expects to add approximately 200 to 225 net new stores in FY27 as DIL, with KFC expected to contribute 100 to 110 (also referenced as up to 120) stores of these additions.",
+                    "The balance of additions will be driven by Costa Coffee, Biryani By Kilo and international businesses.",
+                    "No net new Pizza Hut store additions planned for calendar year 2026 as the brand focuses on consolidation and realignment.",
+                    "Guidance for 200-225 stores is on a standalone DIL basis (not factoring the Sapphire merger), covering KFC, Costa, Vaango, and Biryani By Kilo."
+                  ]
+                },
+                {
+                  "label": "Merger completion timeline",
+                  "points": [
+                    "Company remains on track to complete the merger with Sapphire Foods by the end of the current fiscal year.",
+                    "Filings with stock exchanges completed; approval expected shortly, after which the CCI application will be filed."
+                  ]
+                },
+                {
+                  "label": "SSSG sustainability outlook",
+                  "points": [
+                    "Management expressed confidence in sustaining KFC's improved SSSG trends, noting it will take a couple more quarters to confirm the worst is behind, and remains uncertain about the macro environment going forward."
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "FY27 net new store additions (DIL standalone)",
+              "horizon": "FY27",
+              "statement": "We expect to add approximately 200 to 225 net new stores in FY27 as DIL.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "FY27 KFC store additions",
+              "horizon": "FY27",
+              "statement": "KFC is expected to contribute 100 to 110 stores of these additions (referenced elsewhere as 110 to 120 store levels).",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Pizza Hut net store additions",
+              "horizon": "CY2026",
+              "statement": "For 2026 (calendar year), we are not planning to add any net new stores for Pizza Hut - the idea is to consolidate and realign the portfolio.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Merged entity annual revenue",
+              "horizon": "post-merger",
+              "statement": "If you put the two companies together, we are going to be almost a USD 1 billion top line by the time we complete the merger.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Sapphire Foods merger completion",
+              "horizon": "end of current fiscal year",
+              "statement": "We remain on track to complete the merger by the end of the current fiscal year.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "New management team formation",
+              "horizon": "next quarter",
+              "statement": "I feel very confident that we will be able to largely have the new team in place by next quarter.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Tea Live brand discontinuation",
+              "horizon": "next quarter",
+              "statement": "Having tested Tea Live in India and Thailand, we have decided to discontinue the brand, and the same will happen in the next quarter.",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "Pizza Hut revival strategy launch",
+              "horizon": "next couple of months",
+              "statement": "It will take maybe a couple of months by the time we actually launch that in the market.",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Analyst Day on brand strategy",
+              "horizon": "next couple of quarters",
+              "statement": "Maybe we can fix an Analyst Day in the next couple of quarters, and we can take you guys through in detail on what our plans are.",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "KFC SSSG sustainability",
+              "horizon": "next few quarters",
+              "statement": "We feel confident that we will be able to sustain the initiatives that you have seen... it will take another couple of quarters by the time we are firmly able to say that the worst is behind us.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Menu price increases (KFC)",
+              "horizon": "near future",
+              "statement": "If you can help me foresee the inflation in the near future, I will be able to tell you that.",
+              "specificity": "refused",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Brand contribution breakeven for Sky Gate",
+              "horizon": "March 2026",
+              "statement": "Achieved brand contribution breakeven for Sky Gate ahead of target.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "KFC store openings",
+              "horizon": "FY26",
+              "statement": "Plan to open approximately 100 to 110 new KFC stores in FY26.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "Gas crisis due to Middle East war",
+              "status": "new",
+              "note": "Significant gas crisis impacted operations; managed effectively with minimal business impact, but continues to be an issue in some parts of the country and company is not fully out of it."
+            },
+            {
+              "risk": "Input cost inflation (coffee and cocoa prices)",
+              "status": "new",
+              "note": "Elevated coffee and cocoa prices impacted input costs, leading to a 1.2% YoY decline in gross margins for the Franchise Brands portfolio."
+            },
+            {
+              "risk": "Macro and geopolitical uncertainty",
+              "status": "new",
+              "note": "Recurring macro issues since COVID; company has no control over macro factors but notes such situations pressure small-scale players more, aiding consolidation for larger players."
+            },
+            {
+              "risk": "Pizza Hut underperformance / negative SSSG",
+              "status": "new",
+              "note": "SSSG remained negative at -3.7% though improving sequentially; brand contribution slightly negative due to operating deleverage from lower same-store sales."
+            },
+            {
+              "risk": "Store portfolio quality reset leading to negative store count",
+              "status": "new",
+              "note": "Negative store count in Q4 reflects a deliberate BD strategy reset to close loss-making stores and build a better-quality pipeline."
+            },
+            {
+              "risk": "Macro environment",
+              "status": "no_mention",
+              "note": "Early signs of consumption recovery in a few sectors due to government support and fiscal measures."
+            },
+            {
+              "risk": "Weak demand environment",
+              "status": "no_mention",
+              "note": "Demand environment remains weak, with consumers becoming value conscious."
+            },
+            {
+              "risk": "Impact of Shraavana, Navaratri, and unseasonal rains",
+              "status": "no_mention",
+              "note": "External factors like Shraavana, Navaratri, and unseasonal rains impacted sales."
+            },
+            {
+              "risk": "GST 2.0 transition",
+              "status": "no_mention",
+              "note": "Minimal impact on the QSR category."
+            },
+            {
+              "risk": "Shraavana and Navaratri timing",
+              "status": "no_mention",
+              "note": "Impacted out-of-home consumption."
+            }
+          ],
+          "themes": [
+            {
+              "label": "Strategic merger",
+              "direction": "positive",
+              "note": "Sapphire Foods merger progressing as per plan, filings completed with exchanges, on track for completion by end of current fiscal year, targeting a combined ~USD 1 billion top line entity.",
+              "section_ref": "STRAT"
+            },
+            {
+              "label": "Demand environment",
+              "direction": "positive",
+              "note": "Demand sentiment stable, helped by GST rate rationalization and policy stimulus; KFC posted strongest SSSG in 14 quarters and dine-in footfalls improved industry-wide.",
+              "section_ref": "MKT"
+            },
+            {
+              "label": "Store expansion",
+              "direction": "mixed",
+              "note": "FY27 guidance of 200-225 net new stores (100-110 KFC) even as Pizza Hut sees zero net additions and a deliberate closure of loss-making stores in Q4, and Tea Live is being discontinued.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Technology integration",
+              "direction": "positive",
+              "note": "Over 80% digital kiosk penetration at KFC, progress on DIL Commerce platform, new CTO hired, and DIL 2.0 transformation emphasizing automation, AI and data-led decision-making.",
+              "section_ref": "TECH"
+            },
+            {
+              "label": "Leadership transformation",
+              "direction": "positive",
+              "note": "New CEO-led management overhaul with hires for CTO, CMO, brand leads and COO to build skills ahead of merger scale and drive DIL 2.0 strategy.",
+              "section_ref": "STRAT"
+            },
+            {
+              "label": "Input cost and gas crisis pressure",
+              "direction": "negative",
+              "note": "Middle East war-driven gas crisis and elevated coffee/cocoa prices pressured costs, though company reports minimal business impact and is mitigating via electrical equipment shift.",
+              "section_ref": "RISK"
+            },
+            {
+              "label": "Pizza Hut turnaround",
+              "direction": "mixed",
+              "note": "SSSG remains negative but improving sequentially; brand undergoing a back-to-basics revival under new CMO with product, pricing and CX overhaul expected to launch within a couple of months.",
+              "section_ref": "SEG"
+            }
+          ],
+          "key_takeaways": [
+            "Our proposed merger with Sapphire Foods is a strategic combination of two scaled up and complementary platforms... we remain on track to complete the merger by the end of the current fiscal year.",
+            "KFC delivered its strongest performance in the last 14 quarters, posting 4.9% positive SSSG and nearly 15% year-on-year growth during the quarter.",
+            "Overall, our footprint growth was calibrated, and we ended the year with a global network of 2,256 stores.",
+            "On a consolidated basis, we delivered 18.5% year-on-year growth in revenues for the quarter, reaching INR 1,437 crore. For the full year, we crossed INR 5,500 crore revenue milestone, reaching INR 5,611 crore.",
+            "We expect to add approximately 200 to 225 net new stores in FY27 as DIL. KFC is expected to contribute 100 to 110 stores of these additions with the balance being driven by Costa Coffee, Biryani By Kilo and international businesses.",
+            "Having tested Tea Live in India and Thailand, we have decided to discontinue the brand, and the same will happen in the next quarter.",
+            "Our international business continues to deliver strong and consistent growth... the international business grew 20% year-on-year and crossed INR 500 crore in quarterly revenues for the first time.",
+            "At Pizza Hut, our focus remains on portfolio consolidation and operational discipline. While SSSG was at minus 3.7%, the SSSG performance improved on a sequential basis."
+          ],
+          "pressing_questions": [
+            "Just wanted to understand the gross margin expansion on KFC, it is a pretty big number. What has really driven that?",
+            "Also, I just wanted to understand, in light of the fact that promotions have actually been reduced, what is really driving this SSSG? ... could you highlight two or three very specific actions that, in your opinion, have driven the SSSG for KFC?",
+            "Also, have you taken any menu price increases in KFC either in the past quarter or very recently? And given the inflationary macro scenario that we are seeing, do you foresee any price increases in the near future?",
+            "On KFC, would you help us understand this SSSG that you have seen, what part of it is higher average order value (AOV), and higher incremental transactions? Which is a bigger share and what gives you the confidence of sustaining that irrespective of what happens in macro?",
+            "On Pizza Hut, the last time you mentioned that we will have a more detailed answer to what is the approach going to be to revive the brand. So, when should we expect to see that?",
+            "This gas cost, is this a small 1.5% - 2% of sales, or is it a sizable part of your portfolio, if you could just specify this?",
+            "There is some increase in debt, as well as some increase in intangible assets as well. So, anything to look into it? Or how should we read these two numbers in FY26?"
+          ]
         },
         {
           "company": "Devyani International Ltd",
@@ -47443,407 +48861,6 @@
             "Synergies of INR 2.1 billion to INR 2.25 billion are expected, net of costs.",
             "The merger will result in a unified franchise partner for global brands with national rights.",
             "The merged entity is expected to cross $1 billion USD in annual revenues post-merger."
-          ],
-          "pressing_questions": []
-        },
-        {
-          "company": "Devyani International Ltd",
-          "ticker": "DEVYANI",
-          "industry": "Restaurants",
-          "country": "India",
-          "concall_date": "2025-11-13",
-          "source": "transcript",
-          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=e42be354-f22b-4c57-9ab9-9121ae3a7382.pdf",
-          "model": "gpt-4o",
-          "generated_at": "2026-07-26T22:57:02.267Z",
-          "summary": "Devyani International Ltd is focused on expanding its store network and achieving brand contribution breakeven for Sky Gate by March 2026, while navigating a challenging demand environment.",
-          "sections": [
-            {
-              "id": "FIN",
-              "title": "Financial Performance",
-              "key_figures": [
-                {
-                  "label": "Consolidated revenue Q2 FY26",
-                  "value": "1,377",
-                  "unit": "INR crore",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Consolidated revenue growth YoY",
-                  "value": "13",
-                  "unit": "%",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Consolidated gross profit Q2 FY26",
-                  "value": "933",
-                  "unit": "INR crore",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Consolidated gross margin Q2 FY26",
-                  "value": "67.8",
-                  "unit": "%",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Brand contribution margin Q2 FY26",
-                  "value": "11.7",
-                  "unit": "%",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Operating EBITDA pre-IND AS Q2 FY26",
-                  "value": "93",
-                  "unit": "INR crore",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Operating EBITDA margin pre-IND AS Q2 FY26",
-                  "value": "6.8",
-                  "unit": "%",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Reported EBITDA Q2 FY26",
-                  "value": "194",
-                  "unit": "INR crore",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Reported EBITDA margin Q2 FY26",
-                  "value": "14.1",
-                  "unit": "%",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Indian operations revenue growth YoY",
-                  "value": "12.1",
-                  "unit": "%",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Indian operations revenue Q2 FY26",
-                  "value": "937",
-                  "unit": "INR crore",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Indian operations gross margin Q2 FY26",
-                  "value": "69.7",
-                  "unit": "%",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "International business revenue Q2 FY26",
-                  "value": "450",
-                  "unit": "INR crore",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "International business revenue growth YoY",
-                  "value": "14",
-                  "unit": "%",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "International business gross margin Q2 FY26",
-                  "value": "64",
-                  "unit": "%",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "International business brand contribution margin Q2 FY26",
-                  "value": "16.7",
-                  "unit": "%",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Financial Highlights",
-                  "points": [
-                    "Consolidated revenue for Q2 FY26 was INR 1,377 crore, up 13% YoY.",
-                    "Consolidated gross profit was INR 933 crore with a margin of 67.8%.",
-                    "Brand contribution margin was 11.7%, impacted by Sky Gate consolidation.",
-                    "Operating EBITDA pre-IND AS was INR 93 crore with a margin of 6.8%.",
-                    "Reported EBITDA was INR 194 crore with a margin of 14.1%.",
-                    "Indian operations revenue grew 12.1% YoY to INR 937 crore with a gross margin of 69.7%.",
-                    "International business revenue was INR 450 crore, up 14% YoY, with a gross margin of 64% and brand contribution margin of 16.7%."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "SEG",
-              "title": "Segment & Product Performance",
-              "key_figures": [
-                {
-                  "label": "KFC India revenue Q2 FY26",
-                  "value": "572",
-                  "unit": "INR crore",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "KFC India gross margin Q2 FY26",
-                  "value": "68.1",
-                  "unit": "%",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "KFC India brand contribution margin Q2 FY26",
-                  "value": "14.1",
-                  "unit": "%",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Pizza Hut India revenue Q2 FY26",
-                  "value": "186",
-                  "unit": "INR crore",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Pizza Hut India ADS Q2 FY26",
-                  "value": "33,000",
-                  "unit": "INR",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Pizza Hut India SSSG Q2 FY26",
-                  "value": "-4",
-                  "unit": "%",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Pizza Hut India gross margin Q2 FY26",
-                  "value": "74.8",
-                  "unit": "%",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Franchise Brands revenue Q2 FY26",
-                  "value": "51",
-                  "unit": "INR crore",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Franchise Brands gross margin Q2 FY26",
-                  "value": "73.6",
-                  "unit": "%",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Franchise Brands brand contribution Q2 FY26",
-                  "value": "5.4",
-                  "unit": "INR crore",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Own Brands revenue Q2 FY26",
-                  "value": "86",
-                  "unit": "INR crore",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Own Brands gross margin Q2 FY26",
-                  "value": "62.6",
-                  "unit": "%",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Own Brands brand contribution margin Q2 FY26",
-                  "value": "0.6",
-                  "unit": "%",
-                  "period": "Q2 FY26",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Brand Performance",
-                  "points": [
-                    "KFC India added 30 net new stores in Q2 FY26, with revenue of INR 572 crore and a gross margin of 68.1%.",
-                    "Pizza Hut India opened 3 net new stores, with revenue of INR 186 crore and a gross margin of 74.8%.",
-                    "Franchise Brands, including Costa Coffee, posted revenues of INR 51 crore with a gross margin of 73.6%.",
-                    "Own Brands, including Vaango and Biryani By Kilo, recorded INR 86 crore in revenues with a gross margin of 62.6%."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "MFG",
-              "title": "Manufacturing & Capacity",
-              "key_figures": [
-                {
-                  "label": "Total store count as of September 2025",
-                  "value": "2,184",
-                  "unit": "stores",
-                  "period": "September 2025",
-                  "kind": "reported"
-                },
-                {
-                  "label": "KFC store count in India as of September 2025",
-                  "value": "734",
-                  "unit": "stores",
-                  "period": "September 2025",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Pizza Hut store count in India as of September 2025",
-                  "value": "621",
-                  "unit": "stores",
-                  "period": "September 2025",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Store Expansion",
-                  "points": [
-                    "Total store count reached 2,184 stores, including 1,100 KFC and 630 Pizza Hut stores globally.",
-                    "KFC India store count reached 734, with plans to open 100-110 new stores this year.",
-                    "Pizza Hut India store count reached 621."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "RISK",
-              "title": "Risks & External Factors",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Demand Environment",
-                  "points": [
-                    "Demand environment remains weak, with consumers becoming value conscious.",
-                    "External factors like Shraavana, Navaratri, and unseasonal rains impacted sales."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "GUID",
-              "title": "Guidance & Outlook",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Guidance",
-                  "points": [
-                    "On track to achieve brand contribution breakeven for Sky Gate by March 2026.",
-                    "Plan to open approximately 100 to 110 new KFC stores in FY26."
-                  ]
-                }
-              ]
-            }
-          ],
-          "guidance_ledger": [
-            {
-              "metric": "Brand contribution breakeven for Sky Gate",
-              "horizon": "March 2026",
-              "statement": "On track to achieve brand contribution breakeven for Sky Gate by March 2026.",
-              "specificity": "specific",
-              "direction": "flat",
-              "status": "reiterated"
-            },
-            {
-              "metric": "KFC store openings",
-              "horizon": "FY26",
-              "statement": "Plan to open approximately 100 to 110 new KFC stores in FY26.",
-              "specificity": "specific",
-              "direction": "flat",
-              "status": "reiterated"
-            }
-          ],
-          "risk_register": [
-            {
-              "risk": "Weak demand environment",
-              "status": "new",
-              "note": "Demand environment remains weak, with consumers becoming value conscious."
-            },
-            {
-              "risk": "Impact of Shraavana, Navaratri, and unseasonal rains",
-              "status": "stable",
-              "note": "External factors like Shraavana, Navaratri, and unseasonal rains impacted sales."
-            },
-            {
-              "risk": "GST 2.0 transition",
-              "status": "no_mention",
-              "note": "Minimal impact on the QSR category."
-            },
-            {
-              "risk": "Shraavana and Navaratri timing",
-              "status": "no_mention",
-              "note": "Impacted out-of-home consumption."
-            }
-          ],
-          "themes": [
-            {
-              "label": "Store expansion",
-              "direction": "positive",
-              "note": "Continued expansion with new KFC and Pizza Hut stores.",
-              "section_ref": "MFG"
-            },
-            {
-              "label": "Demand environment",
-              "direction": "negative",
-              "note": "Demand remains weak with consumers becoming value conscious.",
-              "section_ref": "RISK"
-            },
-            {
-              "label": "GST 2.0 impact",
-              "direction": "neutral",
-              "note": "Minimal impact on QSR category and business.",
-              "section_ref": "RISK"
-            },
-            {
-              "label": "Sky Gate integration",
-              "direction": "positive",
-              "note": "On track to achieve breakeven by March 2026.",
-              "section_ref": "GUID"
-            },
-            {
-              "label": "Promotional strategy",
-              "direction": "neutral",
-              "note": "Efforts to balance promotions with transaction growth.",
-              "section_ref": "SEG"
-            }
-          ],
-          "key_takeaways": [
-            "Consolidated revenues grew to INR 1,377 crore, a 13% year-on-year growth.",
-            "GST 2.0 transition has had minimal impact on the QSR category and business.",
-            "Store network expanded with 30 additional KFC and 3 additional Pizza Hut stores.",
-            "Test launched Tealive with six new outlets, receiving positive initial feedback.",
-            "Sky Gate integration remains on track with a goal to achieve breakeven by March 2026.",
-            "KFC India added 30 net new stores in Q2 FY26, with revenue of INR 572 crore.",
-            "Pizza Hut India opened 3 net new stores, with revenue of INR 186 crore."
           ],
           "pressing_questions": []
         }
