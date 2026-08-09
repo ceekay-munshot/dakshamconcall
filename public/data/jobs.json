@@ -19,8 +19,10 @@
       "source": "transcript"
     },
     "MARUTI": {
-      "status": "running",
-      "started_at": "2026-08-09T22:32:43.697Z"
+      "status": "failed",
+      "finished_at": "2026-08-09T22:32:49.440Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Screener has no AI summary and no transcript for MARUTI's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "M&M": {
       "status": "done",
