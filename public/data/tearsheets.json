@@ -69465,8 +69465,886 @@
       "ticker": "NEULANDLAB",
       "industry": "Pharmaceuticals",
       "country": "India",
-      "checked_at": "2026-08-03T12:34:14.894Z",
+      "checked_at": "2026-08-10T22:55:20.449Z",
       "quarters": [
+        {
+          "company": "Neuland Laboratories Ltd",
+          "ticker": "NEULANDLAB",
+          "industry": "Pharmaceuticals",
+          "country": "India",
+          "concall_date": "2026-08-10",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2741a4de-4965-4ee5-bea1-d9e45ab8d7c0.pdf",
+          "model": "anthropic.claude-sonnet-5",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-10T22:54:38.821Z",
+          "summary": "Q1FY27 revenue grew 16.3% YoY driven primarily by commercial CMS projects, with EBITDA margin at 35.5% aided by operating leverage and favorable customer mix. Management reiterated its long-standing aspiration of ~20% growth for FY27 and FY28, cautioned against reading too much into single-quarter performance given inherent business lumpiness, and highlighted new peptide facility commissioning, the Gland Pharma sterile API collaboration, and continued capex acceleration as key pillars of the medium-term growth story.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "Total income",
+                  "value": "650.1",
+                  "unit": "INR crores",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total income (prior year)",
+                  "value": "300.6",
+                  "unit": "INR crores",
+                  "period": "Q1FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue growth YoY",
+                  "value": "16.3",
+                  "unit": "%",
+                  "period": "Q1FY27 vs Q1FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA",
+                  "value": "231.1",
+                  "unit": "INR crores",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin",
+                  "value": "35.5",
+                  "unit": "%",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gross margin",
+                  "value": "61.2",
+                  "unit": "%",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gross margin (prior year)",
+                  "value": "55.3",
+                  "unit": "%",
+                  "period": "Q1FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Profit after tax",
+                  "value": "147.4",
+                  "unit": "INR crores",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Profit after tax (prior year)",
+                  "value": "13.7",
+                  "unit": "INR crores",
+                  "period": "Q1FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Earnings per share",
+                  "value": "114.9",
+                  "unit": "INR/share",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Working capital days",
+                  "value": "137",
+                  "unit": "days",
+                  "period": "FY26 end",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Working capital days",
+                  "value": "84",
+                  "unit": "days",
+                  "period": "Q1FY27/FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capex cash outflow",
+                  "value": "121.6",
+                  "unit": "INR crores",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "New capital investments approved",
+                  "value": "203",
+                  "unit": "INR crores",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Of which earmarked for strategic growth (Unit 1 capacity expansion)",
+                  "value": "196",
+                  "unit": "INR crores",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total approved capex (last 13 quarters)",
+                  "value": "1,460",
+                  "unit": "INR crores",
+                  "period": "trailing 13 quarters",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total capex spent to date",
+                  "value": "870",
+                  "unit": "INR crores",
+                  "period": "cumulative",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin long-term target",
+                  "value": "25",
+                  "unit": "%",
+                  "period": "medium term",
+                  "kind": "target"
+                },
+                {
+                  "label": "Development revenue",
+                  "value": "90",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Development revenue",
+                  "value": "100",
+                  "unit": "INR crores",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Development revenue",
+                  "value": "300",
+                  "unit": "INR crores",
+                  "period": "historical",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Development revenue",
+                  "value": "50",
+                  "unit": "INR crores",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Development revenue",
+                  "value": "200",
+                  "unit": "INR crores",
+                  "period": "historical",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Largest molecule value",
+                  "value": "50",
+                  "unit": "INR crores per year",
+                  "period": "5 years ago",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Largest molecule value",
+                  "value": "500",
+                  "unit": "INR crores per year",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Largest molecule value",
+                  "value": "1000",
+                  "unit": "INR crores per year",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Revenue drivers",
+                  "points": [
+                    "Commercial CMS projects contributed a majority share of the revenue and were the primary drivers of growth during the quarter.",
+                    "The quarter also witnessed healthy execution across the project portfolio and customer programs.",
+                    "Quarterly revenue performance was broadly in line with expectations; management reiterated the inherent uneven nature of the business and the need to assess performance over a longer period rather than a single quarter."
+                  ]
+                },
+                {
+                  "label": "Profitability drivers",
+                  "points": [
+                    "Higher revenue base, operating leverage and favorable customer mix contributed to the profitability profile during the quarter.",
+                    "Gross margin improvement was again a function of business mix during the quarter; gross margin includes manufacturing expenses and other costs directly attributable to the product."
+                  ]
+                },
+                {
+                  "label": "Working capital and capex",
+                  "points": [
+                    "Working capital days improved from 137 days at end of FY26 to 84 days in FY27; optimal utilization of cash remains a key priority, with continued focus on inventory optimization, disciplined execution and strengthening cash conversion.",
+                    "Capex outflow of INR121.6 crores in Q1FY27 was primarily driven by new R&D and peptide facilities.",
+                    "New capital investments of ~INR203 crores approved during the quarter, of which INR196 crores earmarked for strategic growth initiatives largely related to capacity expansion at Unit 1.",
+                    "Against total approved capex of INR1,460 crores over the last 13 quarters, INR870 crores has been spent to date, with the balance committed towards projects under implementation."
+                  ]
+                },
+                {
+                  "label": "Geopolitical monitoring",
+                  "points": [
+                    "Company continues to closely monitor the evolving geopolitical environment and broader global trade developments; no material impact experienced on operations or supply chain continuity of customer commitments thus far, but remains vigilant."
+                  ]
+                },
+                {
+                  "label": "Transcript clarification",
+                  "points": [
+                    "CFO clarified a prior question about alleged manipulation of the transcript; earnings calls are recorded and full unedited audio is published on the website; the written transcript is prepared by an external agency and lightly edited for readability; on review, no change was found in the referenced section, though the company acknowledged missing a minor editing mistake."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "CMS business",
+                  "points": [
+                    "Most CMS revenues this quarter came from top commercial products.",
+                    "Order book from pipeline molecules is encouraging and expected to pan out over the next few quarters.",
+                    "Healthy engagement continues across both development and commercial programs; depth of customer conversations is significantly stronger than a few years ago, with discussions increasingly capability-led rather than individual-project-based.",
+                    "A handful of molecules (about 3) are driving most of CMS commercial growth; these are produced every quarter with a fairly healthy future expected over the next 5 to 6 years; there is lumpiness in ordering but no one-off/exceptional contributions.",
+                    "Expect one more commercialization this year, and possibly one or two more next year, which would add diversity to the molecule mix.",
+                    "CMS commercial revenue growth over the next 2-3 years will continue to be driven predominantly by the existing handful of molecules while new projects are being added."
+                  ]
+                },
+                {
+                  "label": "GDS business",
+                  "points": [
+                    "GDS business performance was supported by a number of products that performed well and contributed meaningfully, including Ezetimibe, Mirtazapine, Escitalopram and Aripiprazole, reflecting portfolio strength built over time.",
+                    "GDS strategic direction continues to evolve, focused on expanding the portfolio of differentiated products while increasing presence in key markets like Brazil, Japan, South Korea and Turkey.",
+                    "Company has initiated pursuit of life cycle management opportunities with innovators where its process chemistry, development experience and manufacturing capabilities can create long-term value."
+                  ]
+                },
+                {
+                  "label": "Development revenue vs commercial revenue",
+                  "points": [
+                    "Development revenue is separated from commercial revenue in disclosures specifically so analysts/investors can identify the recurring part of the business; commercial revenue trend is the intended long-term indicator.",
+                    "Development revenues are product-specific and driven by launch quantities; large NCE launch shipments (10-20 tons) over a multi-quarter period have historically driven development revenue as high as INR200 crores, while other periods see only ~INR50 crores when customers order smaller launch quantities.",
+                    "No change in approach to selecting development products; large development revenue swings are due to customer-specific launch strategies, not a shift in product selection criteria.",
+                    "Development pipeline quality is described as continuing to improve, though quantifying pipeline revenue for the current year is considered premature.",
+                    "At least two new projects have come into the pipeline in FY27, fairly advanced in the clinic (not yet commercial), including some peptide projects not previously visualized a year ago; management is cautious about quantifying their revenue impact for the year but expects them to pave the way for larger volumes in the future."
+                  ]
+                },
+                {
+                  "label": "Historical development revenue context",
+                  "points": [
+                    "FY26 development revenue was approximately INR90-odd crores, compared to historically higher absolute levels in FY24 and earlier years."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "TECH",
+              "title": "Product & Technology",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Peptides",
+                  "points": [
+                    "Peptide process development capabilities have been built over 15+ years; a decision was made ~2 years ago to invest in commercial-scale peptide manufacturing based on conviction of the segment's long-term attractiveness.",
+                    "Even before the peptide manufacturing asset is fully ramped up, customer interest continues to grow, with expanded discussions and encouraging conversion of opportunities providing greater visibility around Module 1 utilization.",
+                    "Peptide plant is set to be commissioned next month, with manufacturing qualification to follow; multiple projects are lined up at various stages.",
+                    "The plant is located within an FDA-approved manufacturing site, but as a new building it will be subject to an FDA audit dependent on how the FDA views the filing; this is not seen as a gating issue given the site's existing approval status.",
+                    "Order book visibility exists for the new peptide facility even before commissioning, with a couple of projects ready to use it."
+                  ]
+                },
+                {
+                  "label": "R&D and capability investments",
+                  "points": [
+                    "Investment velocity across the company has increased meaningfully over the last 3 years and into FY27, spanning manufacturing infrastructure, R&D capabilities, peptides, sterile APIs and future capacity expansion, all made with a long-term perspective to remain relevant and competitive as customer requirements evolve."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MFG",
+              "title": "Manufacturing & Capacity",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Capacity expansion / land acquisition",
+                  "points": [
+                    "Approved capex includes ~INR196 crores earmarked largely for capacity expansion at Unit 1.",
+                    "Acquisition of adjacent land (6-7 acres) at Unit 1 is a short-to-medium-term convenient strategy to amalgamate land into an existing site, easing FDA approvals and environmental clearances without triggering a greenfield approval cycle.",
+                    "Company currently operates 3 manufacturing sites; longer-term plans involve additional manufacturing sites with larger headroom for capacity, requiring possession of larger industrial land parcels; this should be expected from the company in the near future.",
+                    "Adjacent land acquisition strategy is described as only a short-term opportunistic move to ensure comfortable servicing of customer needs over the next 2-3 years."
+                  ]
+                },
+                {
+                  "label": "Future capex direction",
+                  "points": [
+                    "Next phase of investment is expected to differ both quantitatively (higher overall capex than deployed so far) and qualitatively (new modalities) from past capex cycles.",
+                    "Company operates at the convergence of GMP and complex chemistry, focusing on complex APIs rather than nonhuman health or starting materials/KSMs; future growth is expected to require presence in newer, more complex modalities.",
+                    "Qualitative progression may include geographic diversification, potentially via M&A or organic overseas investments, since building infrastructure for more complex modalities may not make strategic/economic sense solely in India.",
+                    "These moves may not be large individual bets but will be qualitatively different, representing meaningful progression expected over the next 1-2 years, alongside continued conventional organic investment in infrastructure, R&D, manufacturing and complex molecules."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Gland Pharma sterile API collaboration",
+                  "points": [
+                    "Strategic collaboration announced with Gland Pharma to create a differentiated platform in sterile APIs by combining complementary strengths of both organizations.",
+                    "Collaboration demonstrates commitment to the specialty GDS business and strategy of building niche capabilities in areas where technical complexity creates meaningful differentiation.",
+                    "Gland has established sterile (aseptic) manufacturing capabilities that are not widely prevalent globally, with very few players; Neuland brings complex API development and process expertise, including complex sterilization process development.",
+                    "The companies do not compete with each other; Gland is strong in managing sterile products while Neuland avoids the risks of managing sterile facilities directly.",
+                    "Arrangement is asset-light for Neuland, allowing reliance on the partnership without creating and managing a sterile manufacturing asset.",
+                    "Collaboration currently covers products in the niche generic category (not the prime category); management sees a long runway and opportunity for collaborating on more products beyond the initial set."
+                  ]
+                },
+                {
+                  "label": "Relationship/account strategy",
+                  "points": [
+                    "Increasing emphasis across the CMS business on becoming a long-term strategic partner to customers (platform partner working on a set of programs) rather than being viewed as a provider for individual projects.",
+                    "Customer discussions increasingly center on capabilities, supply assurance, technical expertise and long-term collaboration rather than individual projects.",
+                    "Confidence in monetizing these relationships stems from qualitative, substantiated conversations with known accounts (companies worked with for 3-10 years) now discussing increasing their total business/exposure to Neuland.",
+                    "Illustrative scale shift: 5 years ago the largest visualized molecule opportunity was ~INR50 crores/year; today opportunities of INR500 crores/year or even INR1,000 crores/year per molecule can be visualized, though not every engagement reaches that scale.",
+                    "This growing opportunity value is informing a more bold capex investment approach over the next 2-3 years."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Geopolitical and macro monitoring",
+                  "points": [
+                    "Company continues to closely monitor evolving geopolitical environment and broader global trade developments; no material impact experienced thus far on operations, supply chain continuity or customer commitments, but remains vigilant and focused on business continuity, customer service and proactive risk management.",
+                    "Business operates in a dynamic environment where geopolitical developments, regulatory timelines, customer ordering patterns and broader macroeconomic conditions can influence the timing and shape of quarter-to-quarter growth."
+                  ]
+                },
+                {
+                  "label": "Business volatility",
+                  "points": [
+                    "Variability remains an inherent characteristic of the business; quarterly performance should be viewed in that context rather than in isolation.",
+                    "CMS commercial revenue is driven by a handful of molecules and is therefore subject to volatility/lumpiness, though no one-off or exceptional contributions or destocking risk is currently seen for FY27.",
+                    "Q4FY26 was flagged as an exceptionally inflated quarter (effectively a Q3 spillover into Q4), making sequential Q4-to-Q1 comparisons not meaningful."
+                  ]
+                },
+                {
+                  "label": "FDA audit consideration for peptide facility",
+                  "points": [
+                    "New peptide facility building, though located within an FDA-approved site, will be subject to a future FDA audit dependent on the nature of the filing; not viewed as a gating issue given the site's existing approval."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [
+                {
+                  "label": "Aspirational growth rate",
+                  "value": "20",
+                  "unit": "%",
+                  "period": "FY27 & FY28",
+                  "kind": "target"
+                },
+                {
+                  "label": "EBITDA margin target",
+                  "value": "25",
+                  "unit": "%",
+                  "period": "long-term/medium-term",
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Growth outlook",
+                  "points": [
+                    "Management has always aspired to grow at about 20%, and expects FY27 and FY28 to also grow that way; declined to give a more specific growth rate indication for FY27, noting they had cautioned in the past when a year (FY25) was expected to be flattish and that turned out accurate, but is not giving such an indication currently.",
+                    "Outlook considering the FY27-FY28 period remains in line with long-term ambitions; customer interest, opportunities under discussion, capabilities coming online and investments made across the businesses reinforce confidence in medium-term trajectory.",
+                    "No destocking risk currently seen for FY27 commercial contracts; order visibility is consistent with commentary and factors in stocking/destocking dynamics; any such effects are expected to potentially play out beyond FY27."
+                  ]
+                },
+                {
+                  "label": "Margin outlook",
+                  "points": [
+                    "Company has historically guided to ~25% EBITDA margin as a conservative benchmark and has been pleased to exceed it, aided partly by favorable exchange rates; 25%+ remains the long-term expectation, with anything above considered a bonus.",
+                    "Margin profile expected to remain healthy given a divergent mix of higher- and lower-margin molecules; average profile will be determined by mix."
+                  ]
+                },
+                {
+                  "label": "ROCE outlook",
+                  "points": [
+                    "3-year ROCE is currently healthy but may dip as the company enters an expansion mode requiring more capital deployment and longer gestation periods; guardrails will be maintained; a dip in ROCE is expected but not necessarily a dip in margins."
+                  ]
+                },
+                {
+                  "label": "Development revenue outlook",
+                  "points": [
+                    "Development revenue is expected to go up this year and is expected to lead to commercial revenue, though not necessarily substantial commercial contribution in FY27; from FY28 onwards, more molecules are expected to start contributing to commercial revenue."
+                  ]
+                },
+                {
+                  "label": "Peptide commercialization outlook",
+                  "points": [
+                    "One commercialization from peptides remains expected this year, with possibly one or two more next year (in line with prior quarter's stated expectation)."
+                  ]
+                },
+                {
+                  "label": "Formal guidance policy",
+                  "points": [
+                    "Company reiterated it does not intend to give formal quarterly/annual guidance, focusing instead on broader directional commentary."
+                  ]
+                },
+                {
+                  "label": "Stock split/bonus",
+                  "points": [
+                    "Shareholders have raised the question of a stock split/bonus, including at the Annual Shareholders' Meeting; this is a Board matter and management will take the suggestion to the Board to discuss all elements surrounding such a decision."
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "Revenue growth aspiration",
+              "horizon": "FY27 & FY28",
+              "statement": "We've always aspired to grow at about 20%, and we expect that FY27 & FY28 also we expect to grow that way.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Specific FY27 growth rate",
+              "horizon": "FY27",
+              "statement": "We are not giving such indications right now [specific growth rate guidance for FY27].",
+              "specificity": "refused",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Destocking risk",
+              "horizon": "FY27",
+              "statement": "We don't see any surprises coming out of destocking [for FY27]; such conversations might play out beyond FY27.",
+              "specificity": "vague",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Medium-term outlook (FY27-FY28)",
+              "horizon": "FY27-FY28",
+              "statement": "Our outlook as we consider FY27 and FY28 period remains in line with our long-term ambitions.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Development revenue/new projects",
+              "horizon": "FY27",
+              "statement": "We've seen at least 2 new projects come in, fairly advanced in the clinic; we will deliver on development quantities this year, but I think they definitely pave the way for larger volumes in the future.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Peptide facility commissioning",
+              "horizon": "next month (from Aug 2026 call)",
+              "statement": "The plant itself is going to be commissioned next month, and then manufacturing qualification will be done by then.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "CMS commercialization pipeline",
+              "horizon": "this year / next year",
+              "statement": "We expect to have one more commercialization this year, probably have 1 or maybe even 2 next year.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "EBITDA margin",
+              "horizon": "long-term/medium-term",
+              "statement": "25% plus is what we would be coming for. And anything that's above that is kind of a bonus.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "lowered"
+            },
+            {
+              "metric": "ROCE",
+              "horizon": "medium term",
+              "statement": "ROCE is something that maybe is going to kind of ebb and flow... you should see maybe a dip in ROCE, but not necessarily a dip in margins.",
+              "specificity": "vague",
+              "direction": "down",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Development revenue leading to commercial revenue",
+              "horizon": "FY28 onwards",
+              "statement": "This year, we'll see development revenue go up... I'm not sure it will lead to substantial commercial revenue in FY27. But FY28 onwards, you can see more molecules contributing to the commercial revenue.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Formal guidance policy",
+              "horizon": "ongoing",
+              "statement": "We don't want to give any kind of indication of what FY27 is likely to be other than the broader guidance we've talked about... we believe YFY27 will be a good year and FY28 will be a good year as well.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Stock split/bonus",
+              "horizon": "not specified",
+              "statement": "It's a Board matter, and we will definitely take the suggestion and discuss it in our Board and look at all the elements that surround that decision.",
+              "specificity": "refused",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Long-term investment/capex scale-up",
+              "horizon": "next 2-3 years / next 1-2 years",
+              "statement": "The forward capex will be much higher than the capex that we've deployed so far... you will see quantitatively more investments, and you will also see a qualitative move towards newer modalities.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Additional manufacturing sites/land",
+              "horizon": "near future",
+              "statement": "We would need to have possession of more industrial land, larger pieces of land, and that is something that you should expect from the company in the near future.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Revenue CAGR",
+              "horizon": "5-year (aspirational)",
+              "statement": "The 18% to 20% is a fair assumption not necessarily linearly; potential that we see, talked about over a 5-year period, and always talked about as aspirational.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Revenue growth (2-3 year horizon)",
+              "horizon": "next 2-3 years",
+              "statement": "Over the next 2 to 3 years, we have visible growth driven by our existing pipeline. At the same time, we are laying the groundwork for growth beyond this horizon.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Business lumpiness/volatility",
+              "horizon": "next 2-3 years / 10-12 quarters",
+              "statement": "Growth over the next 2 to 3 years is also expected to remain lumpy. Not every quarter will necessarily show progression. However, if performance is assessed over a longer horizon, say, 10 to 12 quarters, a clear trend line should emerge consistent with the growth outlook.",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "no_mention"
+            },
+            {
+              "metric": "FY26 growth vs FY24",
+              "horizon": "FY26",
+              "statement": "We did indicate earlier that FY26 would be a year of strong growth when viewed against FY24... I'm glad to note that this outlook was accurate. We have achieved the kind of performance that we anticipated at the beginning of the year, in fact, slightly better than expected, aided by favorable exchange rates.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Peptide commercial manufacturing arrangement",
+              "horizon": "FY27",
+              "statement": "We're probably looking at one commercialization in FY27 and maybe 1 or 2 more later.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Working capital days",
+              "horizon": "FY27",
+              "statement": "Working capital days stood at 137 days in Q4FY26 versus 107 days in Q4FY25... we believe that this should normalize in FY27.",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Formal quarterly/annual guidance",
+              "horizon": "ongoing",
+              "statement": "While we have not given formal guidance in the past that we do not intend to do so going forward.",
+              "specificity": "refused",
+              "direction": "unclear",
+              "status": "no_mention"
+            },
+            {
+              "metric": "New R&D center",
+              "horizon": "not specified",
+              "statement": "The new R&D center will be an important step up in our ability to support complex programs across development stages.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Peptide business scale potential",
+              "horizon": "5+ years",
+              "statement": "It has the potential to create another Neuland for sure. It may take a few years, it may take more than a few years.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Q4/FY26 outlook",
+              "horizon": "Q4FY26/FY26",
+              "statement": "Management declined to give any specific guidance for Q4 or the remainder of FY26, citing lumpy ramp-up and requesting focus on medium-term horizon instead.",
+              "specificity": "refused",
+              "direction": "unclear",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Decadal CAGR",
+              "horizon": "2026-2036",
+              "statement": "There is a potential for a business like this to grow at 20-plus CAGR, but that requires a sequence of right plans to fall in place.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Gross margin trajectory",
+              "horizon": "next few quarters",
+              "statement": "The gross margin that you've seen in this quarter is more of an outlier or an aberration; what we have seen in the last two, three quarters is perhaps a better representation of the gross margins going forward.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Unit 3 CMS capacity ramp-up",
+              "horizon": "next 1-2 quarters",
+              "statement": "The ramp-up has started and volumes were shipped in Q3, but it is going to take maybe another one or two quarters to really pick up.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "New CMS molecule commercialization",
+              "horizon": "Q4 and into next year",
+              "statement": "A lot of the additional CMS molecule remains to be shipped; going forward in Q4 and into the next year, we believe it will be a continuous business going forward, though revenue contribution this quarter is a very small component.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Paliperidone shipment resolution",
+              "horizon": "FY27",
+              "statement": "The paliperidone shipment issue is expected to resolve next financial year.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Inventory holding period",
+              "horizon": "next 2-3 quarters",
+              "statement": "You will see inventory days coming back to something like 90 days from the current 124 days over the next two or three quarters.",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "no_mention"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "Geopolitical environment and global trade developments",
+              "status": "new",
+              "note": "Company continues to closely monitor evolving geopolitical environment and broader global trade developments; no material impact on operations, supply chain continuity or customer commitments thus far, but remains vigilant."
+            },
+            {
+              "risk": "Business lumpiness/quarterly volatility",
+              "status": "new",
+              "note": "Variability remains an inherent characteristic of the business; quarterly performance should be viewed over a longer period; commercial revenue driven by a handful of molecules is subject to volatility."
+            },
+            {
+              "risk": "Concentration in a handful of commercial molecules",
+              "status": "new",
+              "note": "A big part of CMS commercial growth is driven by about 3 molecules; management is glad it's a handful and not just one, but acknowledges lumpiness in their ordering patterns."
+            },
+            {
+              "risk": "Destocking/stocking risk",
+              "status": "new",
+              "note": "Not seen as a current risk; order visibility already factors in stocking/destocking dynamics, and any such effects are expected to play out beyond FY27 if at all."
+            },
+            {
+              "risk": "FDA audit of new peptide facility",
+              "status": "new",
+              "note": "New peptide building is subject to a future FDA audit dependent on the filing, though located within an already FDA-approved site; not seen as a gating issue."
+            },
+            {
+              "risk": "ROCE moderation during expansion cycle",
+              "status": "new",
+              "note": "Entering expansion mode with more capital deployment and longer gestation periods is expected to cause a dip in ROCE, though not necessarily in margins; guardrails will be maintained."
+            },
+            {
+              "risk": "Demand variability and customer ordering patterns",
+              "status": "no_mention",
+              "note": "Flagged as an ongoing industry exposure inherent to the CDMO business."
+            },
+            {
+              "risk": "Regulatory timelines",
+              "status": "no_mention",
+              "note": "Cited as a factor affecting revenue realization and project progression."
+            },
+            {
+              "risk": "Geopolitical developments / Middle East conflict",
+              "status": "no_mention",
+              "note": "Led to higher freight costs at end of Q4 and raw material price volatility being closely tracked; being managed to protect continuity of supply."
+            },
+            {
+              "risk": "Supply chain volatility",
+              "status": "no_mention",
+              "note": "General industry exposure; company managing raw material coverage and price volatility."
+            },
+            {
+              "risk": "Business lumpiness/uneven revenue",
+              "status": "no_mention",
+              "note": "Same lumpiness that produced a record Q4 also made Q3FY26 relatively muted; does not respect financial year boundaries; expected to continue as new high-value molecules enter mix."
+            },
+            {
+              "risk": "Execution discipline in larger capital deployment cycles",
+              "status": "no_mention",
+              "note": "As the company embarks on larger, longer-duration capex cycles, delays in customer programs, changes in development priorities or shifts in market dynamics could influence short-term performance and capital productivity."
+            },
+            {
+              "risk": "Sponsor/customer M&A",
+              "status": "no_mention",
+              "note": "M&A of biotech sponsor companies (e.g., referenced Esperion/ArchiMed situation) is viewed as natural to the business; no immediate risk seen, though outlook would be tempered if short-term challenges materialize; specific molecule/customer details cannot be disclosed under confidentiality."
+            },
+            {
+              "risk": "Global PE/VC biotech funding decline",
+              "status": "no_mention",
+              "note": "Funding decline since 2021 mainly affects early discovery-phase molecules and could affect the pipeline funnel over time, though near-to-medium-term focus (IND/Phase I onwards) not materially impacted so far."
+            },
+            {
+              "risk": "GDS business softness",
+              "status": "no_mention",
+              "note": "GDS business was softer in FY26, though good growth potential is seen ahead with resources deployed to support recovery."
+            },
+            {
+              "risk": "High-risk nature of customers' drug development for unmet medical needs impacting projections",
+              "status": "no_mention",
+              "note": "Constantly reminded of this risk impacting Neuland's projections time and again."
+            },
+            {
+              "risk": "Changing regulations and industry dynamics",
+              "status": "no_mention",
+              "note": "Number of developments in underlying industries changing the dynamics for Neuland."
+            },
+            {
+              "risk": "Individual product performance volatility",
+              "status": "no_mention",
+              "note": "Paliperidone shipment delay due to customer-end operational issues, and absence of a high-margin CMS product, significantly impacted quarter's margins."
+            },
+            {
+              "risk": "Foreign exchange fluctuations",
+              "status": "no_mention",
+              "note": "Flagged as a factor that could significantly influence business performance."
+            },
+            {
+              "risk": "Raw material cost volatility",
+              "status": "no_mention",
+              "note": "Flagged as a factor that could significantly influence business performance."
+            },
+            {
+              "risk": "U.S. reshoring of API manufacturing",
+              "status": "no_mention",
+              "note": "India-U.S. trade deal removes some overhang from tariff exemption uncertainty, but does not alleviate the potential concern of continued U.S. intent to secure API manufacturing domestically; company will monitor and strategize."
+            },
+            {
+              "risk": "Business unevenness/lumpiness",
+              "status": "no_mention",
+              "note": "Inherent uneven nature of overall business on quarter-on-quarter and year-on-year basis; large individual CMS shipment values mean small operational/logistical changes can materially affect a quarter."
+            },
+            {
+              "risk": "Working capital deterioration",
+              "status": "no_mention",
+              "note": "Higher inventories and uneven order flow led to higher receivables at quarter end; working capital at 145 days of sales."
+            },
+            {
+              "risk": "Development pipeline attrition",
+              "status": "no_mention",
+              "note": "Some projects previously worked on became unviable even as new projects (6-8) were added last quarter; company actively manages list rather than inflating numbers."
+            }
+          ],
+          "themes": [
+            {
+              "label": "Business unevenness / lumpiness",
+              "direction": "mixed",
+              "note": "Management reiterated the inherent uneven/lumpy nature of the business, cautioned against reading too much into sequential Q4-to-Q1 comparisons, and noted Q4FY26 was an exceptionally inflated quarter.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Gross margin volatility / product mix",
+              "direction": "positive",
+              "note": "Gross margin rose to 61.2% from 55.3% YoY, again attributed to business/customer mix during the quarter.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "CMS/CDMO ramp-up",
+              "direction": "positive",
+              "note": "CMS commercial revenue driven by a handful of molecules is scaling well, with order book from pipeline molecules encouraging and deeper capability-led customer engagement.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Peptide capex and innovator traction",
+              "direction": "positive",
+              "note": "Peptide plant commissioning expected next month, with multiple projects lined up and growing customer interest even before ramp-up, validating the ~2-year-old investment thesis.",
+              "section_ref": "TECH"
+            },
+            {
+              "label": "Working capital and inventory build",
+              "direction": "positive",
+              "note": "Working capital days improved sharply from 137 days at FY26 end to 84 days in Q1FY27, reflecting focus on inventory optimization and cash conversion.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Long-term growth aspiration",
+              "direction": "positive",
+              "note": "Management reiterated aspiration to grow ~20% in FY27 and FY28, citing rising customer relationship depth, larger visualized molecule opportunity sizes, and plans for bolder future capex including possible geographic/M&A diversification.",
+              "section_ref": "GUID"
+            },
+            {
+              "label": "Trade policy / tariff overhang",
+              "direction": "neutral",
+              "note": "Company continues to closely monitor the evolving geopolitical environment and global trade developments, with no material impact experienced on operations or supply chain thus far.",
+              "section_ref": "RISK"
+            }
+          ],
+          "key_takeaways": [
+            "Total income for Q1FY27 was INR650.1 crores vs INR300.6 crores in Q1FY26, a growth of 16.3%, with commercial CMS projects contributing a majority share of revenue and being the primary drivers of growth.",
+            "EBITDA for the quarter stood at INR231.1 crores with an EBITDA margin of 35.5%, aided by higher revenue base, operating leverage and favorable customer mix.",
+            "Gross margin for the quarter was 61.2% versus 55.3% in Q1FY26, a function of business mix.",
+            "Profit after tax stood at INR147.4 crores versus INR13.7 crores in Q1FY26; EPS was INR114.9 per share.",
+            "Working capital days improved from 137 days at the end of FY26 to 84 days in FY27.",
+            "Capex outflow of INR121.6 crores in Q1FY27, primarily driven by new R&D and peptide facilities; new capital investments of ~INR203 crores approved during the quarter, largely for Unit 1 capacity expansion; against total approved capex of INR1,460 crores over the last 13 quarters, INR870 crores has been spent to date.",
+            "Management reiterated its aspiration to grow at about 20% and expects FY27 & FY28 to grow that way, while declining to give specific FY27 growth guidance.",
+            "Strategic collaboration announced with Gland Pharma to create a differentiated platform in sterile APIs, combining Gland's sterile/aseptic manufacturing strengths with Neuland's complex API capabilities, in an asset-light arrangement for Neuland.",
+            "Peptide manufacturing plant is set to be commissioned next month, with multiple projects already lined up at various stages even before commissioning."
+          ],
+          "pressing_questions": [
+            "Do we feel that this margin profile is peak, particularly if we see in terms of product mix in analyzed manner? Or still we have more scope of operating leverage with CMS expected? How would you try to attract people in CMS or GDS because it's a vast TAM.",
+            "We have talked about acquiring adjacent lands and integrating them with our existing units in order to skip through the gestation period and expand without triggering greenfield approval cycle. Apart from 6, 7 acres adjacent land that we have acquired at Unit 1, we haven't heard anything else on that front. So, some color on where we are on this. Once we are done with this exercise, how much adjacent land would be able to acquire and within what time line?",
+            "Are we looking at any stock split or bonus because that question has been asked in several con calls, but never answered."
+          ]
+        },
         {
           "company": "Neuland Laboratories Ltd",
           "ticker": "NEULANDLAB",
