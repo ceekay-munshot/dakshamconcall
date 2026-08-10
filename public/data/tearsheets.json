@@ -133857,6 +133857,2896 @@
           ]
         }
       ]
+    },
+    "JINDALSTEL": {
+      "company": "Jindal Steel Ltd",
+      "ticker": "JINDALSTEL",
+      "industry": "Iron & Steel",
+      "country": "India",
+      "checked_at": "2026-08-10T23:56:49.884Z",
+      "quarters": [
+        {
+          "company": "Jindal Steel Ltd",
+          "ticker": "JINDALSTEL",
+          "industry": "Iron & Steel",
+          "country": "India",
+          "concall_date": "2026-07-31",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f0045649-d0fe-425c-b9a8-524e1b92963a.pdf",
+          "model": "anthropic.claude-sonnet-5",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-10T23:55:52.632Z",
+          "summary": "Management reiterated FY27 sales volume guidance of 10.5-11 million tonnes and expects to recover the ~300,000-tonne Q1 hot-metal shortfall from the BOF vessel shutdown in subsequent quarters; net debt/EBITDA is expected to fall below the 1.5x threshold in Q2FY27, aided by slurry pipeline commissioning (targeted first half of August, ~INR 700/ton saving from Q2), blast furnace ramp-up to 13,000 tpd by December, and an internal target of ~INR 1,000/ton controllable cost reduction, even as coking coal costs are expected to rise a further $12-15/ton in Q2.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "Consolidated revenue (sequential change)",
+                  "value": "-8%",
+                  "unit": "% QoQ",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Average selling price (ASP) improvement",
+                  "value": "7,500",
+                  "unit": "INR/ton",
+                  "period": "Q1FY27 vs Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Sales volume decline (sequential)",
+                  "value": "-15%",
+                  "unit": "% QoQ",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated adjusted EBITDA",
+                  "value": "2,667",
+                  "unit": "INR crores",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated adjusted EBITDA per ton",
+                  "value": "11,937",
+                  "unit": "INR/ton",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA per ton increase (sequential)",
+                  "value": "1,843",
+                  "unit": "INR/ton",
+                  "period": "Q1FY27 vs Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Coking coal consumption cost increase",
+                  "value": "23",
+                  "unit": "USD/ton",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Finance cost charged to P&L",
+                  "value": "548",
+                  "unit": "INR crores",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated profit after tax",
+                  "value": "844",
+                  "unit": "INR crores",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net debt",
+                  "value": "15,927",
+                  "unit": "INR crores",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net debt to EBITDA ratio",
+                  "value": "1.71x",
+                  "unit": "x",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net debt/EBITDA threshold target",
+                  "value": "1.5x",
+                  "unit": "x",
+                  "period": "Q2FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "FY27 capex plan",
+                  "value": "~8,500",
+                  "unit": "INR crores",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Q1 capex invested",
+                  "value": "~2,000",
+                  "unit": "INR crores",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cumulative expansion program spend",
+                  "value": "37,457",
+                  "unit": "INR crores",
+                  "period": "cumulative to date",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total announced capex under expansion program",
+                  "value": "47,043",
+                  "unit": "INR crores",
+                  "period": "cumulative",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Iron-bearing cost increase (Q1 QoQ)",
+                  "value": "~500",
+                  "unit": "INR/ton",
+                  "period": "Q1FY27 vs Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Middle East conflict cost impact",
+                  "value": "12-13",
+                  "unit": "USD/ton",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operating leverage cost impact from lower volumes (shutdown)",
+                  "value": "~2,000",
+                  "unit": "INR/ton",
+                  "period": "Q1FY27 vs Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Targeted controllable cost reduction",
+                  "value": "~1,000",
+                  "unit": "INR/ton",
+                  "period": "unclear",
+                  "kind": "target"
+                },
+                {
+                  "label": "Capex spend rate target",
+                  "value": "7,000-10,000",
+                  "unit": "INR crores/year",
+                  "period": "ongoing",
+                  "kind": "target"
+                },
+                {
+                  "label": "Quarter-on-quarter cost increase",
+                  "value": "5,500",
+                  "unit": "INR/ton",
+                  "period": "Q1FY27"
+                },
+                {
+                  "label": "EBITDA per ton margin expected to remain flattish",
+                  "value": "12,000",
+                  "unit": "INR/ton",
+                  "period": "Q2FY27",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Revenue and realization drivers",
+                  "points": [
+                    "Consolidated revenue sequentially was around 8% down, largely due to sales volume decline resulting from the plant maintenance shutdown.",
+                    "Revenue decline was partly offset by around INR 7,500 per ton improvement in average ASP, supported by stronger steel prices and a richer product mix."
+                  ]
+                },
+                {
+                  "label": "EBITDA drivers",
+                  "points": [
+                    "Despite 15% sequential decline in sales volume, EBITDA remained resilient, reflecting strength of product mix, higher realization, and disciplined cost management.",
+                    "EBITDA per ton improvement was driven by increase in ASP, partly offset by $23/ton increase in coking coal consumption cost (in line with prior guidance of $20-25/ton) and lower fixed cost absorption due to lower sequential volumes."
+                  ]
+                },
+                {
+                  "label": "Finance cost and depreciation",
+                  "points": [
+                    "Finance cost increased to INR 548 crores primarily due to capitalization of major expansion assets during Q4FY26 (1,050 MW Captive Power Plant, BOF-III, CRM, and other associated facilities); interest costs on these assets are now recognized through the P&L for the first full quarter.",
+                    "Depreciation expenses also increased during the quarter following capitalization of these newly commissioned assets."
+                  ]
+                },
+                {
+                  "label": "Balance sheet and leverage",
+                  "points": [
+                    "Balance sheet remains a key strength; net debt to EBITDA ratio at 1.71x, with confidence of falling below stated threshold of 1.5x during Q2FY27 supported by ramp-up of new facilities and continued focus on cash generation.",
+                    "Company aims to sustain sub-1.5x leverage through the commodity cycle, reinforcing balance sheet strength."
+                  ]
+                },
+                {
+                  "label": "Capital allocation",
+                  "points": [
+                    "Capital allocation remains disciplined; against FY27 capex plan of ~INR 8,500 crores, ~INR 2,000 crores invested in Q1.",
+                    "Cumulative spending under expansion program stands at INR 37,457 crores out of INR 47,043 crores total announced capex.",
+                    "Financial priorities going forward: driving profitable growth, maximizing returns on expanded asset base, maintaining disciplined capital allocation, generating stronger free cash flow, and preserving balance sheet strength.",
+                    "Company's capital allocation framework targets 18-20% ROCE from new projects; adding back nominal depreciation gives implied desired EBITDA run-rate from these projects."
+                  ]
+                },
+                {
+                  "label": "Cost breakdown (Q1 QoQ increase)",
+                  "points": [
+                    "Cost increase breakdown: iron-bearing cost increase ~INR 500/ton, Middle East conflict impact of $12-13/ton, coking coal cost increase of $23/ton, and operating leverage impact from plant maintenance shutdown of ~INR 2,000/ton.",
+                    "For Q2, coking coal cost increase of $12-15/ton expected, but operating leverage drag (~INR 2,000/ton in Q1) should not recur given higher production and no shutdown; Middle East conflict impact remains a watch item.",
+                    "Additional cost savings expected from slurry pipeline (~INR 700/ton from Q2), higher captive coal/iron ore mix, and Jindal port loading facility (two vessels already unloaded, one loading in progress) — quantification of port savings not yet provided."
+                  ]
+                },
+                {
+                  "label": "New leadership priorities (CFO)",
+                  "points": [
+                    "CFO priorities: maintaining capital discipline, improving return on capital employed, strengthening cash generation, preserving balance sheet strength, and creating sustainable long-term value.",
+                    "Company noted for strong integrated business model, world-class assets, captive raw material resources, disciplined capital allocation, deep adoption of theory of constraints, and growing use of AI/digital tools."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ORD",
+              "title": "Order Book & Demand",
+              "key_figures": [
+                {
+                  "label": "India crude steel production (QoQ change)",
+                  "value": "-6%",
+                  "unit": "% QoQ",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India crude steel production",
+                  "value": "42",
+                  "unit": "million tons",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India finished steel consumption (QoQ change)",
+                  "value": "-7%",
+                  "unit": "% QoQ",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India finished steel consumption",
+                  "value": "~41.5",
+                  "unit": "million tons",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "China capacity reduction",
+                  "value": "50-60",
+                  "unit": "million tons",
+                  "period": "unclear",
+                  "kind": "reported"
+                },
+                {
+                  "label": "China demand decline",
+                  "value": "100",
+                  "unit": "million tons",
+                  "period": "unclear",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India RBI GDP growth projection",
+                  "value": "6.6%",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "HRC NSR movement (QoQ)",
+                  "value": "~7,000 (up); vs Q4 average ~800 lower",
+                  "unit": "INR/ton",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "TMT/long products NSR movement (QoQ)",
+                  "value": "~4,500 (up); index down ~8,000",
+                  "unit": "INR/ton",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Price change range across products",
+                  "value": "1,000-4,000 reduction in some products; up to 5,000/ton range overall",
+                  "unit": "INR/ton",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "New board/leadership faces added",
+                  "value": "8",
+                  "unit": null,
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Old faces retained on board",
+                  "value": "2",
+                  "unit": null,
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "New senior persons joining board",
+                  "value": "6",
+                  "unit": null,
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Upper middle management team size",
+                  "value": "1,800 to 2,000",
+                  "unit": "people",
+                  "period": null,
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Demand environment",
+                  "points": [
+                    "Domestically, steel industry witnessed seasonal softness typical of the monsoon season.",
+                    "India continues to be fastest-growing major economy, supported by strong domestic demand, sustained capex, and stable macro environment.",
+                    "Post-monsoon (from end-August), construction activity expected to recover, supported by Government of India and banking sector lending for infrastructure and construction."
+                  ]
+                },
+                {
+                  "label": "Global steel market",
+                  "points": [
+                    "China announced policy reset focused on capacity swap reforms to strengthen supply discipline, viewed as a positive development that could accelerate supply-side reforms.",
+                    "Current mismatch between China capacity reduction (50-60 million tons) and demand decline (100 million tons) has created surplus in the international market.",
+                    "Resolution of geopolitical conflicts (Ukraine-Russia, Israel-Iran) expected to open opportunities for Indian steel exports as China potentially redirects focus back to exporting machinery/equipment rather than steel."
+                  ]
+                },
+                {
+                  "label": "Pricing trends",
+                  "points": [
+                    "HRC prices increased sequentially and remained firm through the quarter.",
+                    "TMT (rebar) prices opened strong but declined as construction slowed during monsoon.",
+                    "Price-input cost relationship typically has a 4-6 week lag/band, whether prices are rising or falling.",
+                    "Price cuts of INR 1,000-4,000/ton seen in some products, but prices maintained/retained in rail, rounds, specialty angles/channels, beams, structures, prefabricated structures, and specialty (quench & tempered) plates.",
+                    "Company sees itself insulated from commodity HRC import pressure via advance licenses since it focuses on value-engineered, not commodity, products."
+                  ]
+                },
+                {
+                  "label": "Seasonal dynamics and recovery potential",
+                  "points": [
+                    "Company sees itself partially insulated from monsoon weakness given multiple product segments (9 different products); weak demand in one product can be offset via others.",
+                    "Flood/waterlogging events, while undesirable, could drive future government infrastructure spending (steel/cement demand) to prevent recurrence."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "Value-added product share",
+                  "value": "66%",
+                  "unit": "% of sales",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Value-added product share (prior quarter)",
+                  "value": "61%",
+                  "unit": "% of sales",
+                  "period": "Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Product-level EBITDA range",
+                  "value": "7,000 to 25,000",
+                  "unit": "INR/ton",
+                  "period": "unclear",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Rounds value addition over rebar",
+                  "value": "5,000-6,000",
+                  "unit": "INR/ton",
+                  "period": "unclear",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Product mix and value-added strategy",
+                  "points": [
+                    "Company produces long products, flat products, and specialty flat products (plates, quenched & tempered plates) - considered one of the best product mixes in the world.",
+                    "Company is only private-sector producer of rails in India; 18-19 of 22 metro rail systems in the country already buy head-hardened rails from Jindal Steel, effectively making it a 100% supplier to Indian metro rail services for these specialty rails.",
+                    "Company produces round billets (used for rail wheel forging) - only one other company in India produces these; strategic given Government of India's push for self-reliance (Atmanirbhar) in railway wheels.",
+                    "Company is sole domestic producer of sheet piles and certain specialty heavy-section angle irons.",
+                    "As newly commissioned downstream facilities ramp up, value-added product share is expected to increase further, enhancing profitability and resilience across commodity cycles.",
+                    "Value-added product share rose to 66% of sales in Q1FY27 from 61% in Q4FY26."
+                  ]
+                },
+                {
+                  "label": "Defence and specialty steel",
+                  "points": [
+                    "Government of India's focus on defence has led company to produce specialty plates tailored for submarines, warships, and oxygen/nitrogen/hydrogen storage.",
+                    "Government has restricted imports of heat-treated (quench & tempered) plates that were previously imported into India, benefiting domestic producers like Jindal Steel."
+                  ]
+                },
+                {
+                  "label": "Unit profitability disconnect",
+                  "points": [
+                    "Analyst noted value-added and flat product share has risen consistently but EBITDA per ton has not shown commensurate improvement.",
+                    "Management explained overall EBITDA per ton is a blended figure; product-wise EBITDA (e.g., for quench & tempered plates, heavy-duty plates, head-hardened rails) is not separately published and varies widely - some products earn as high as INR 25,000/ton EBITDA, others only ~INR 7,000/ton.",
+                    "Currently about 50% of products are high-EBITDA/high-NSR and 50% are low-EBITDA; goal is to convert ~30% of the low-EBITDA volume (about 1.5-2 million tons out of 4-5 million tons) into high-EBITDA value-added products over time.",
+                    "Target is to produce at least 4 million tons out of 6 million tons of mill capacity as true value-added steel, generating greater value than cost incurred."
+                  ]
+                },
+                {
+                  "label": "Rebar vs rounds substitution",
+                  "points": [
+                    "Rebar currently not a preferred product in weak demand periods; company shifting toward rounds, which provide additional value addition of INR 5,000-6,000 versus rebar."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "TECH",
+              "title": "Product & Technology",
+              "key_figures": [
+                {
+                  "label": "Captive Power Plant capacity",
+                  "value": "1,050",
+                  "unit": "MW",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Metro rails in country buying rails from company",
+                  "value": "18 to 19",
+                  "unit": "count",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total metro rails in country",
+                  "value": "22",
+                  "unit": "count",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": []
+            },
+            {
+              "id": "MFG",
+              "title": "Manufacturing & Capacity",
+              "key_figures": [
+                {
+                  "label": "Installed crude steel making capacity",
+                  "value": "15.6",
+                  "unit": "million tons",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "FY27 production estimate (internal resources)",
+                  "value": "~11-11.5",
+                  "unit": "million tons",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Potential production with blast furnace readjustment",
+                  "value": "12.5",
+                  "unit": "million tons",
+                  "period": "unclear",
+                  "kind": "target"
+                },
+                {
+                  "label": "Angul target crude steel capacity",
+                  "value": "9",
+                  "unit": "million tons",
+                  "period": "unclear",
+                  "kind": "target"
+                },
+                {
+                  "label": "Raigarh stable capacity",
+                  "value": "3.6",
+                  "unit": "million tons",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Blast furnace #2 (Angul) design capacity",
+                  "value": "13,000",
+                  "unit": "tons/day hot metal",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Blast furnace #2 current output",
+                  "value": "11,000",
+                  "unit": "tons/day",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Blast furnace #2 ramp target (Sept)",
+                  "value": "12,000",
+                  "unit": "tons/day",
+                  "period": "September 2026",
+                  "kind": "target"
+                },
+                {
+                  "label": "Blast furnace #2 ramp target (Dec)",
+                  "value": "13,000",
+                  "unit": "tons/day",
+                  "period": "December 2026",
+                  "kind": "target"
+                },
+                {
+                  "label": "Blast furnace #1 (Angul) capacity",
+                  "value": "10,000",
+                  "unit": "tons/day",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Blast furnace #1 current output",
+                  "value": "11,000",
+                  "unit": "tons/day",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Combined Angul BF target hot metal",
+                  "value": "24,000",
+                  "unit": "tons/day",
+                  "period": "target",
+                  "kind": "target"
+                },
+                {
+                  "label": "Raigarh blast furnaces combined output",
+                  "value": "6,800 (4,200 + 2,600)",
+                  "unit": "tons/day",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Angul DRI plant capacity",
+                  "value": "5,000",
+                  "unit": "tons/day",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Target Angul steel making (post-monsoon)",
+                  "value": "~27,000",
+                  "unit": "tons/day",
+                  "period": "post-monsoon",
+                  "kind": "target"
+                },
+                {
+                  "label": "Ultimate steel making target",
+                  "value": "~30,000",
+                  "unit": "tons/day",
+                  "period": "unclear",
+                  "kind": "target"
+                },
+                {
+                  "label": "Blast furnace #2 commissioning timeline",
+                  "value": "28-30 months",
+                  "unit": "months",
+                  "period": "historical",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Comparable Tata Steel blast furnace build time",
+                  "value": "~5 years",
+                  "unit": "years",
+                  "period": "historical",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Plate production current",
+                  "value": "~2",
+                  "unit": "million tons/year",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Plate production target",
+                  "value": "2.5",
+                  "unit": "million tons/year",
+                  "period": "target",
+                  "kind": "target"
+                },
+                {
+                  "label": "Hot strip mill capacity",
+                  "value": "5-5.5",
+                  "unit": "million tons/year",
+                  "period": "current (commissioned FY24)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BOF vessel heat life",
+                  "value": "9,000-10,000",
+                  "unit": "heats",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Heat size",
+                  "value": "250",
+                  "unit": "tons/heat",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Hot metal loss from Q1 shutdown",
+                  "value": "300,000",
+                  "unit": "tons",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BOF-2 commissioning",
+                  "value": "Sep'25",
+                  "unit": null,
+                  "period": "Sep 2025",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BOF-3 commissioning",
+                  "value": "Mar'26",
+                  "unit": null,
+                  "period": "Mar 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Number of blast furnaces (Angul)",
+                  "value": "2",
+                  "unit": "count",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Number of blast furnaces (Raigarh)",
+                  "value": "2",
+                  "unit": "count",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "DRI plants (Raigarh)",
+                  "value": "10",
+                  "unit": "count",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "DRI plants (Angul)",
+                  "value": "1",
+                  "unit": "count",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Electric arc furnaces (Raigarh)",
+                  "value": "3",
+                  "unit": "count",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Electric arc furnaces (Angul)",
+                  "value": "1",
+                  "unit": "count",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Yield rate current",
+                  "value": "98%",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Yield rate target",
+                  "value": "98.5%",
+                  "unit": "%",
+                  "period": "target",
+                  "kind": "target"
+                },
+                {
+                  "label": "Number of distinct products",
+                  "value": "9",
+                  "unit": "count",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Grades developed by COO at prior company (reference)",
+                  "value": "500+",
+                  "unit": "count",
+                  "period": "historical (Tata Steel)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Blast furnace #2 ramp target (post-monsoon)",
+                  "value": "12,000",
+                  "unit": "tons per day",
+                  "period": "September 2026",
+                  "kind": "target"
+                },
+                {
+                  "label": "Blast furnace #2 ramp target (end of December)",
+                  "value": "13,000",
+                  "unit": "tons per day",
+                  "period": "December 2026",
+                  "kind": "target"
+                },
+                {
+                  "label": "Combined Angul BF target hot metal (post-monsoon)",
+                  "value": "24,000",
+                  "unit": "tons per day",
+                  "period": "post-monsoon",
+                  "kind": "target"
+                },
+                {
+                  "label": "Steel making target (post-monsoon)",
+                  "value": "27,000",
+                  "unit": "tons per day",
+                  "period": "post-monsoon",
+                  "kind": "target"
+                },
+                {
+                  "label": "Ultimate steel making target",
+                  "value": "30,000",
+                  "unit": "tons per day",
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "Time lag for input cost to adjust after price decline",
+                  "value": "4 to 6",
+                  "unit": "weeks",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Existing pellet plant capacity",
+                  "value": "6",
+                  "unit": "million tons",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Additional pellet plant capacity being added",
+                  "value": "6",
+                  "unit": "million tons",
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "Total pellet plant capacity after addition",
+                  "value": "12",
+                  "unit": "million tons",
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "Iron ore fines consumption capacity via slurry pipeline (pellet plants)",
+                  "value": "12.2 to 12.3",
+                  "unit": "million tons",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "New sinter plant capacity",
+                  "value": "5",
+                  "unit": "million tons",
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "Total iron ore fines consumption target (pellet + sinter)",
+                  "value": "17",
+                  "unit": "million tons",
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "Patratu proposed steel making plant capacity",
+                  "value": "3",
+                  "unit": "million tons",
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "Total mill capacity referenced for value-added steel target",
+                  "value": "6",
+                  "unit": "million tons",
+                  "period": null,
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Capacity utilization roadmap",
+                  "points": [
+                    "First and foremost focus is reaching 100% capacity utilization on the installed 15.6 million ton crude steel capacity.",
+                    "Company will not reach 15.6 million tons in FY27; expects to end around 11-11.5 million tons this year, with a step-ladder path via metallics (HBI, DRI, scrap) to bridge the gap toward 12.5 million tons and beyond.",
+                    "Additional metallics sourcing (HBI, DRI, scrap) required to fully utilize installed capacity given internal metallics shortfall."
+                  ]
+                },
+                {
+                  "label": "Blast furnace ramp-up",
+                  "points": [
+                    "New (BF-2) blast furnace at Angul is state-of-the-art, imported equipment, commissioned in 28-30 months versus ~5 years taken by a comparable Tata Steel furnace.",
+                    "Monsoon-related disruptions (heavy rain >100mm in 1-2 hours) affected water management and electrical grid, slowing ramp-up; expected to resume ramp from September as monsoon recedes.",
+                    "BF-1 already operating above nameplate capacity (11,000 tpd vs 10,000 tpd capacity)."
+                  ]
+                },
+                {
+                  "label": "Cost control team and levers",
+                  "points": [
+                    "Three operational specialists (Rajiv Kumar, Biju Nair, Debojyoti Roy) tasked with cost control; controllable levers include electricity, oil, coal, coke, oxygen consumption, wastage reduction, and yield improvement.",
+                    "Uncontrollable input costs include crude oil, coal prices, and iron ore prices (set predominantly by NMDC and OMC)."
+                  ]
+                },
+                {
+                  "label": "Slurry pipeline capacity math",
+                  "points": [
+                    "18-million-ton slurry pipeline capacity math: one existing 6 million ton pellet plant plus a new 6 million ton pellet plant = 12 million tons pellet capacity, consuming ~12.2-12.3 million tons of iron ore fines via pipeline; plus a new 5 million ton sinter plant, totaling ~17-18 million tons of iron ore fines consumption.",
+                    "Pipeline designed at 60% Fe / 35-40% water; if water content reduced to 30-32%, capacity could rise to 20 million tons depending on iron ore specific gravity/density.",
+                    "Company will transport about 1.5 million tons of slurry per month (~18 million tons/year), but full capacity not needed in current year as pipeline is designed for both current and future rounds of expansion."
+                  ]
+                },
+                {
+                  "label": "Refractory/shutdown management",
+                  "points": [
+                    "Q1 shutdown was driven by BOF vessel reaching heat-life limit (9,000-10,000 heats) requiring refractory change to avoid vessel puncture/safety risk; newer BOF-2 and BOF-3 pots will not require shutdown for longer given later commissioning dates."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [
+                {
+                  "label": "Jindal Steel presence in Jharkhand since",
+                  "value": "2006",
+                  "unit": null,
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Patratu rolling mills commissioned",
+                  "value": "2010",
+                  "unit": null,
+                  "period": null,
+                  "kind": "reported"
+                }
+              ],
+              "subsections": []
+            },
+            {
+              "id": "SUP",
+              "title": "Supply Chain & Operations",
+              "key_figures": [
+                {
+                  "label": "Finished goods inventory",
+                  "value": "10-11",
+                  "unit": "days of production",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Iron ore backward integration (current quarter)",
+                  "value": "~28%",
+                  "unit": "%",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Iron ore backward integration (prior quarter)",
+                  "value": "~16%",
+                  "unit": "%",
+                  "period": "prior quarter",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Iron ore backward integration (FY27 exit target)",
+                  "value": "~40%",
+                  "unit": "%",
+                  "period": "FY27 exit",
+                  "kind": "target"
+                },
+                {
+                  "label": "Captive coal mix",
+                  "value": "~50%",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Slurry pipeline capacity",
+                  "value": "18 (up to 20)",
+                  "unit": "million tons/year",
+                  "period": "target",
+                  "kind": "target"
+                },
+                {
+                  "label": "Slurry throughput planned",
+                  "value": "1.5",
+                  "unit": "million tons/month",
+                  "period": "planned",
+                  "kind": "target"
+                },
+                {
+                  "label": "Jindal port vessels unloaded",
+                  "value": "2",
+                  "unit": "count",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Jindal port vessels loading",
+                  "value": "1",
+                  "unit": "count",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Slurry pipeline capacity",
+                  "value": "18",
+                  "unit": "million tons",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Slurry pipeline potential capacity with less water",
+                  "value": "20",
+                  "unit": "million tons",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Inventory management",
+                  "points": [
+                    "Inventory maintained at less than 10-11 days of total production, described as lean and best-in-industry."
+                  ]
+                },
+                {
+                  "label": "Slurry pipeline status",
+                  "points": [
+                    "End-to-end pipeline laid; pump house and receiving station complete; communication systems in place; equipment/pump trials underway.",
+                    "Pigging trial (passing a metal pig through the pipeline) to be conducted with German equipment collaborators, followed by water trial then slurry trial.",
+                    "Expected commissioning in first half of August 2026; could slip to end of August due to monsoon rains (an uncontrollable factor).",
+                    "This is described as the longest pipeline with the largest capacity in the country."
+                  ]
+                },
+                {
+                  "label": "Backward integration and captive sourcing",
+                  "points": [
+                    "Iron ore backward integration rising sharply from ~16% in prior quarter to ~28% in Q1FY27, targeted to reach ~40% by FY27 exit, providing strategic cost benefit.",
+                    "Captive coal mix currently ~50%, expected to increase further as Utkal B1 ramps up and Utkal B2 mine comes online.",
+                    "Jindal port has started its first loading operations; two vessels already unloaded and one vessel currently loading, expected to contribute unquantified cost savings."
+                  ]
+                },
+                {
+                  "label": "Coking coal sourcing flexibility",
+                  "points": [
+                    "Indian steel mills, including peers, have been importing more coke (not just coal) from Indonesia and other countries over the last 3-4 months.",
+                    "Blast furnaces are flexible in using different coal blends; company aims to blend coal to avoid being outpriced in the market."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [
+                {
+                  "label": "Longs price correction expected in Q2",
+                  "value": "8,000",
+                  "unit": "INR",
+                  "period": "Q2FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Flats price decline expected in Q2",
+                  "value": "1,000",
+                  "unit": "INR",
+                  "period": "Q2FY27",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": []
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [
+                {
+                  "label": "Patratu land available",
+                  "value": "300+",
+                  "unit": "acres",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Patratu rolling mill capacity (existing)",
+                  "value": ">2.2",
+                  "unit": "million tons",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Proposed Patratu blast furnace capacity",
+                  "value": "2.5-2.7",
+                  "unit": "million tons",
+                  "period": "proposed",
+                  "kind": "target"
+                },
+                {
+                  "label": "Capital allocation framework target ROCE",
+                  "value": "18% to 20%",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "High EBITDA / value-added product share target of mix",
+                  "value": "50%",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "Low EBITDA product share of mix",
+                  "value": "50%",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Portion of low EBITDA products targeted to convert to high EBITDA",
+                  "value": "30%",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "Volume of low EBITDA products (base for conversion)",
+                  "value": "4 million or 5 million",
+                  "unit": "tons",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Volume targeted to convert to high EBITDA value-added products",
+                  "value": "1.5 million, 2 million",
+                  "unit": "tons",
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "Target value-added steel production out of total capacity",
+                  "value": "4",
+                  "unit": "million tons",
+                  "period": null,
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Earn and Invest (E&I) capital discipline mantra",
+                  "points": [
+                    "Management reaffirmed strict 'Earn and Invest' (E&I) philosophy: expansion funded from earnings, not incremental borrowing.",
+                    "Company will not add commodity capacity; expansion will be focused only on value-added/value-engineered products.",
+                    "Spend management approach: annual capex budget of INR 7,000-8,000 crores (potentially up to INR 10,000 crores), tied to earnings rather than a fixed tonnage target; capex will be curtailed if earnings are tight.",
+                    "Company stated it is 'not in a race' to announce large capacity additions (30/40/50 million tons) every quarter, prioritizing disciplined spend over scale."
+                  ]
+                },
+                {
+                  "label": "Jharkhand (Patratu) MoU",
+                  "points": [
+                    "MoU signed with Government of Jharkhand; company has been present in Jharkhand since 2006, having taken over the Patratu plant from Birla Group, scrapped old rolling mills, and commissioned two new state-of-the-art rolling mills in 2010 (wire rod mill and rebar/rounds mill).",
+                    "Proposal is to add a blast furnace (2.5-2.7 million tons) behind the existing mills using the 300+ acres of available land, water, and electricity infrastructure at Patratu, effectively a 'half project' since finishing facilities already exist.",
+                    "Condition of the MoU is government support/allocation of iron ore from the Jeraldaburu block (previously blocked by the Environment Ministry from 2010-2014); no investment has been committed until this iron ore access requirement is met.",
+                    "Once iron ore access is secured, company will do a thorough calculation, discuss with the board, and determine funding while adhering to the Earn & Invest mantra without burdening the balance sheet."
+                  ]
+                },
+                {
+                  "label": "Leadership transition and organizational stability",
+                  "points": [
+                    "New senior leadership introduced: MD V.R. Sharma (returning after 2019-2022 tenure), COO Rajiv Kumar (ex-Tata Steel, ex-Vedanta Aluminium CEO), CFO Sandeep Modi (ex-Hindustan Zinc CFO, 20+ years with Vedanta Group), plus recently hired CHRO Sukhjit S Pasricha (ex-IndiGo, ex-Airtel).",
+                    "Board has brought in at least eight new faces overall; six are new senior hires (CFO, CHRO, VP HR, COO, plant heads) and two are returning/existing (Sharma and Roopali Mehra).",
+                    "Additional senior hires include Debojyoti Roy (Raigarh plant head, ex-Tata Steel, ~30 years experience) and Biju Nair (Angul plant head, ex-ArcelorMittal, 30+ years experience), plus personnel brought in from group companies in Oman and Czech Republic.",
+                    "Management noted stability at the upper-middle management level (1,800-2,000 people from manager to VP level), describing this cohort as the stable driving force of the organization despite senior-level changes."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Geopolitical and macro risks",
+                  "points": [
+                    "Ukraine-Russia war (ongoing four years) and Israel-Iran conflict (ongoing one year) have shattered global economy, raised fuel prices, and contributed to a stable-with-slight-downward-trend steel consumption environment.",
+                    "Resolution of these conflicts is seen as a potential positive catalyst for steel demand recovery and export opportunities."
+                  ]
+                },
+                {
+                  "label": "China oversupply risk",
+                  "points": [
+                    "China's capacity reduction (50-60 million tons) has not kept pace with its demand decline (100 million tons), creating international market surplus; China's capacity swap reform policy could help but has not yet resolved the imbalance."
+                  ]
+                },
+                {
+                  "label": "Cost inflation risks",
+                  "points": [
+                    "Coking coal cost increased $23/ton in Q1 (within guided range) with further $12-15/ton increase expected in Q2.",
+                    "Middle East conflict contributed $12-13/ton cost impact in Q1 and remains an ongoing risk to watch.",
+                    "Iron ore, coal, coke, and oil input costs are largely uncontrollable, being set by external market dynamics (NMDC/OMC for iron ore) and geopolitical factors."
+                  ]
+                },
+                {
+                  "label": "Operational/monsoon risk",
+                  "points": [
+                    "Heavy rains disrupted water management and caused electrical grid/system failures, slowing blast furnace ramp-up during the monsoon season.",
+                    "Slurry pipeline commissioning timeline could slip from first half of August to end of August due to continued rains."
+                  ]
+                },
+                {
+                  "label": "Leadership continuity risk",
+                  "points": [
+                    "Analyst flagged concern about frequent changes in senior management potentially affecting strategic continuity; management acknowledged this is an area of concern but pointed to stability at the upper-middle management level as mitigant."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [
+                {
+                  "label": "FY27 sales volume guidance",
+                  "value": "10.5-11",
+                  "unit": "million tons",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Net debt/EBITDA target",
+                  "value": "<1.5x",
+                  "unit": "x",
+                  "period": "Q2FY27",
+                  "kind": "target"
+                },
+                {
+                  "label": "Coking coal cost increase guidance (Q1, achieved)",
+                  "value": "20-25",
+                  "unit": "USD/ton",
+                  "period": "Q1FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Coking coal cost increase (Q2 outlook)",
+                  "value": "12-15",
+                  "unit": "USD/ton",
+                  "period": "Q2FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Slurry pipeline savings",
+                  "value": "~700",
+                  "unit": "INR/ton",
+                  "period": "from Q2FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Targeted controllable cost reduction",
+                  "value": "~1,000",
+                  "unit": "INR/ton",
+                  "period": "unclear",
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Q2FY27 outlook",
+                  "points": [
+                    "Management expects to make 'a perfect balance' between price and cost movements, with input costs typically catching up/down within a 4-6 week lag, except during the monsoon exception period (mid-July to end-August).",
+                    "Cost reductions and better operations (post-shutdown) expected to largely offset realization losses from the price correction, keeping margins from deteriorating significantly.",
+                    "Q2 cost structure expected to improve given economies of scale, higher production, absence of plant shutdown, and reduced operating leverage drag versus Q1."
+                  ]
+                },
+                {
+                  "label": "Full-year outlook",
+                  "points": [
+                    "FY27 sales volume guidance of 10.5-11 million tons maintained; company will aim to increase run rate to compensate for Q1 shutdown-related volume loss.",
+                    "Company reiterated it will not chase tonnage growth but rather spend-based growth (INR 7,000-10,000 crores/year) targeted at value-added capacity only.",
+                    "Value-added product share expected to increase further as newly commissioned downstream facilities ramp up, enhancing profitability and resilience across commodity cycles."
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "Sales volume",
+              "horizon": "FY27",
+              "statement": "Full-year sales volume guidance maintained at 10.5 to 11 million tonnes; management will maintain/increase run rate to recover the shutdown-related loss",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Crude steel making capacity (Angul + Raigarh)",
+              "horizon": "unclear",
+              "statement": "Installed crude steel capacity of 15.6 million tonnes; company will not reach 15.6 MT in FY27, aiming to end around 11-11.5 million tonnes this year with a step-ladder to 12.5 million tonnes and then 13 million tonnes via metallics (HBI/DRI/scrap)",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Net debt/EBITDA ratio",
+              "horizon": "Q2FY27",
+              "statement": "Confident of achieving net debt/EBITDA ratio below stated threshold of 1.5x during Q2FY27",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "Blast furnace #2 (Angul) ramp-up",
+              "horizon": "Sep-Dec 2026",
+              "statement": "Currently at 11,000 tons/day hot metal (capacity 13,000 tpd); plan to ramp to 12,000 tpd by September (post-monsoon) and to 13,000 tpd (100% utilization) by end of December",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Combined Angul hot metal (BF1+BF2)",
+              "horizon": "unclear",
+              "statement": "Target of 24,000 tons/day hot metal from the two Angul blast furnaces put together (BF2 at 13,000 tpd + BF1 at 11,000 tpd)",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Angul steel making (post-monsoon)",
+              "horizon": "post-monsoon FY27",
+              "statement": "Aim to reach about 27,000 tons/day steel making after the monsoon and eventually 30,000 tons/day steel making",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Angul crude steel capacity target",
+              "horizon": "unclear",
+              "statement": "Aim for 9 million tonnes from Angul before adding scrap/HBI/DRI, together with 3.6 million tonnes stable from Raigarh",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Slurry pipeline commissioning",
+              "horizon": "Q2FY27 (first half of August 2026)",
+              "statement": "Slurry pipeline end-to-end laid; trials (pigging, water trial, slurry trial) ongoing; expected commissioning in first half of August, could slip to end of August due to rains; capacity 18 million tons (up to 20 million tons with lower water content)",
+              "specificity": "specific",
+              "direction": "unclear",
+              "status": "pushed_out"
+            },
+            {
+              "metric": "Slurry pipeline cost savings",
+              "horizon": "from Q2FY27 onward",
+              "statement": "Slurry pipeline expected to deliver about INR 700 per tonne benefit visible from Q2 onward",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "Capex spend rate",
+              "horizon": "per year, ongoing",
+              "statement": "Company plans to spend INR 7,000-8,000 crores, or maybe up to INR 10,000 crores per year, focused only on value-added/value-engineered capacity, not commodity capacity",
+              "specificity": "specific",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "FY27 capex plan",
+              "horizon": "FY27",
+              "statement": "FY27 capex plan of approximately INR 8,500 crores, of which roughly INR 2,000 crores invested in Q1",
+              "specificity": "specific",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Cost reduction (controllable costs)",
+              "horizon": "unclear",
+              "statement": "Roughly INR 1,000 per tonne reduction possible through controllable cost levers (electricity, oil, coal/coke consumption, oxygen consumption, yield improvement from 98% to 98.5%)",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "Coking coal cost increase (Q2FY27)",
+              "horizon": "Q2FY27",
+              "statement": "Coking coal cost increase of $12 to $15 per tonne expected in Q2, versus $23/ton increase seen in Q1 (within prior $20-25/ton guided range)",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Q2FY27 cost structure",
+              "horizon": "Q2FY27",
+              "statement": "Better cost structure expected in Q2 given economies of scale, higher production, no plant shutdown, and reduced operating leverage drag (~INR 2,000/ton in Q1)",
+              "specificity": "vague",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "Iron ore backward integration",
+              "horizon": "FY27 exit",
+              "statement": "Captive/backward-integrated iron ore share was ~16% last quarter, ~28% in Q1FY27, expected to reach ~40% on a full-year exit basis",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Captive coal mix",
+              "horizon": "unclear",
+              "statement": "Coal mix from captive mines currently ~50%, expected to increase further as Utkal B1 ramps up and Utkal B2 comes online",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Plate capacity expansion",
+              "horizon": "unclear",
+              "statement": "Plate production currently about 2 million tons/year, to be increased to about 2.5 million tons/year",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Patratu (Jharkhand) expansion via MoU",
+              "horizon": "unclear",
+              "statement": "MoU with Government of Jharkhand to add a 2.5-2.7 million ton blast furnace behind existing Patratu rolling mills (which can produce >2.2 million tons), contingent on government allocating/supporting access to Jeraldaburu iron ore block; no investment committed yet",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Value-added product mix",
+              "horizon": "unclear",
+              "statement": "Aim to produce at least 4 million tonnes out of 6 million tonnes mill capacity as true value-added steel, shifting from low-EBITDA to high-EBITDA products over time",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "100% capacity utilization",
+              "horizon": "unclear",
+              "statement": "First and foremost focus is to reach 100% capacity utilization across assets",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Production volume",
+              "horizon": "FY27",
+              "statement": "Production plan for FY27 is 11 million to 11.5 million tonnes",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Coking coal price",
+              "horizon": "Q1FY27",
+              "statement": "We expect coking coal prices to increase by $20 to $25 per tonne sequentially",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Sustenance/expansion capex",
+              "horizon": "ongoing",
+              "statement": "We will be allocating INR 7,500 crores to INR 10,000 crores to our capital expansion programs or sustenance capex",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Leverage (net debt/EBITDA)",
+              "horizon": "Q2FY27",
+              "statement": "We expect leverage metrics to normalize by Q2FY27",
+              "specificity": "vague",
+              "direction": "down",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Flat sales mix",
+              "horizon": "unclear",
+              "statement": "Flat sales will increase in times to come and move towards 70% odd as we move ahead",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Revenue growth",
+              "horizon": "FY27",
+              "statement": "Revenue is a function of a lot of other things, so we will stick with production/sales guidance for the time being",
+              "specificity": "refused",
+              "direction": "unclear",
+              "status": "no_mention"
+            },
+            {
+              "metric": "EBITDA margin",
+              "horizon": "FY27",
+              "statement": "EBITDA is a function of several things, including raw material and pricing, which remains outside our control",
+              "specificity": "refused",
+              "direction": "unclear",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Slurry pipeline savings",
+              "horizon": "upon ramp-up",
+              "statement": "Roughly about INR 700 is the savings on iron ore per tonne, translating to roughly INR 750 to INR 1,000 per tonne of steel as we ramp up",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "DRI2 project commissioning",
+              "horizon": "FY27",
+              "statement": "DRI2 is expected towards the end of the year",
+              "specificity": "vague",
+              "direction": "flat",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Power plant ramp-up",
+              "horizon": "H1FY27",
+              "statement": "The ramp-up will be complete within the first half of this year",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "Geopolitical conflicts (Russia-Ukraine war; Israel-Iran conflict)",
+              "status": "new",
+              "note": "Ongoing for last four years (Ukraine-Russia) and last one year (Israel-Iran); has shattered global economy, pushed up fuel prices; steel consumption stable with slight downward trend"
+            },
+            {
+              "risk": "Chinese steel overcapacity/oversupply",
+              "status": "new",
+              "note": "China capacity reduction only ~50-60 million tons vs demand decline of ~100 million tons, creating surplus in international market; China policy reset on capacity swap reforms seen as positive but not yet resolved"
+            },
+            {
+              "risk": "Monsoon seasonal weakness",
+              "status": "new",
+              "note": "Construction activity slows every monsoon season; India crude steel production declined 6% QoQ to 42 million tons, finished steel consumption declined 7% to ~41.5 million tons; expected to recover from end-August as monsoon recedes"
+            },
+            {
+              "risk": "Coking coal cost inflation",
+              "status": "new",
+              "note": "Coking coal consumption cost increased $23/ton in Q1, within guided $20-25/ton range; further $12-15/ton increase expected in Q2, partly linked to Chinese demand/production trends"
+            },
+            {
+              "risk": "Middle East conflict cost impact",
+              "status": "new",
+              "note": "Middle East conflict impact of around $12-13/ton on costs in Q1; still ongoing, needs to be watched"
+            },
+            {
+              "risk": "HRC/commodity import competition via advance licenses",
+              "status": "new",
+              "note": "Some players import hot rolled coil as a commodity via advance licenses (with matching exports), which doesn't materially affect overall demand-supply balance; company says it is insulated as it focuses on value-engineered products, not commodity HRC"
+            },
+            {
+              "risk": "Monsoon-related operational disruption",
+              "status": "new",
+              "note": "Heavy rain (>100mm in 1-2 hours) disrupted water management and caused electrical grid/system failures at plant, impacting blast furnace ramp-up pace"
+            },
+            {
+              "risk": "BOF vessel refractory/heat-life driven shutdown",
+              "status": "new",
+              "note": "Q1 shutdown taken due to BOF vessel reaching ~9,000-10,000 heat life limit, causing ~300,000 tonnes of hot metal loss; newer BOF-2 (commissioned Sep'25) and BOF-3 (commissioned Mar'26) pots will not need shutdown for a longer period, loss expected to be recovered in subsequent quarters"
+            },
+            {
+              "risk": "TMT/rebar price correction",
+              "status": "new",
+              "note": "TMT (rebar) prices opened strong but declined during monsoon due to lower construction demand; long product NSR down as much as INR 8,000/ton on index basis quarter-on-quarter; management expects seasonal recovery post-monsoon"
+            },
+            {
+              "risk": "Frequent senior management changes/leadership continuity",
+              "status": "new",
+              "note": "Analyst flagged concern about relatively frequent changes in senior management team; management responded that ~8 new faces have joined the board-level team but underlying upper-middle management (1,800-2,000 people) remains stable"
+            },
+            {
+              "risk": "Uncontrollable input costs (iron ore, coal, coke, oil)",
+              "status": "new",
+              "note": "Iron ore prices predominantly set by NMDC/OMC; coking coal, coke and oil prices driven by global demand-supply and geopolitical factors, largely outside company control"
+            },
+            {
+              "risk": "Environmental Ministry approval risk for Jeraldaburu iron ore mines",
+              "status": "new",
+              "note": "Company previously worked 2010-2014 to start Jeraldaburu mines but was not allowed due to Environment Ministry; now seeking government support/allocation for these mines to enable Patratu expansion"
+            },
+            {
+              "risk": "Coking coal price volatility",
+              "status": "no_mention",
+              "note": "Coking coal costs increased ~$20/tonne in Q4FY26 and guided to rise a further $20-25/tonne sequentially in Q1FY27, partially offsetting steel price recovery benefits."
+            },
+            {
+              "risk": "Iron ore price unpredictability",
+              "status": "no_mention",
+              "note": "Iron ore prices are difficult to predict on an index basis; currently moving plus/minus INR100-150 monthly."
+            },
+            {
+              "risk": "Global steel oversupply from China",
+              "status": "no_mention",
+              "note": "China's crude steel production remains resilient despite a 7% YoY demand contraction, with record exports of 119 million tonnes in CY25 signalling persistent oversupply."
+            },
+            {
+              "risk": "Middle East conflict impact on regional demand",
+              "status": "no_mention",
+              "note": "The Middle East conflict has tempered near-term regional demand, though overall global outlook remains largely resilient."
+            },
+            {
+              "risk": "Australian mining asset closure/impairment",
+              "status": "no_mention",
+              "note": "Shaft closed and reserves no longer accessible; impairment of INR 1,433 crores (standalone)/INR 834 crores (consolidated) recognized; no further write-offs expected per independent valuation."
+            },
+            {
+              "risk": "South Africa mine profitability",
+              "status": "no_mention",
+              "note": "South Africa mine operating but not EBITDA positive currently due to local issues."
+            },
+            {
+              "risk": "Near-term steel price dip",
+              "status": "no_mention",
+              "note": "A slight dip in steel prices was noted, but management feels the market is holding firm and existing contracts will continue to support pricing."
+            }
+          ],
+          "themes": [
+            {
+              "label": "Capacity expansion ramp-up",
+              "direction": "positive",
+              "note": "Blast furnace #2 at Angul ramping toward 13,000 tpd by December; slurry pipeline nearing commissioning; combined Angul+Raigarh hot metal targeted at ~24,000+6,800 tpd.",
+              "section_ref": "MFG"
+            },
+            {
+              "label": "Capex shift to asset sweating",
+              "direction": "positive",
+              "note": "Management reiterated Earn & Invest mantra, spending INR 7,000-10,000 crores/year only on value-added capacity, not chasing commodity tonnage growth.",
+              "section_ref": "STRAT"
+            },
+            {
+              "label": "Value-added product mix",
+              "direction": "positive",
+              "note": "Value-added product share rose from 61% in Q4FY26 to 66% in Q1FY27, with further increases expected as downstream facilities ramp up.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Input-cost inflation (coking coal)",
+              "direction": "negative",
+              "note": "Coking coal consumption cost rose $23/ton in Q1 (within guided range), with a further $12-15/ton increase expected in Q2, compounded by $12-13/ton Middle East conflict impact.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Pricing recovery/realization",
+              "direction": "mixed",
+              "note": "HRC prices firmed sequentially while TMT/rebar prices corrected sharply during monsoon (down up to INR 8,000/ton on index); management expects seasonal recovery post-August.",
+              "section_ref": "ORD"
+            },
+            {
+              "label": "India steel demand tailwind",
+              "direction": "mixed",
+              "note": "India crude steel production and finished steel consumption both declined 6-7% QoQ due to monsoon seasonality, but RBI projects 6.6% GDP growth in FY27 and construction demand is expected to recover from end-August.",
+              "section_ref": "ORD"
+            },
+            {
+              "label": "Leadership transition",
+              "direction": "mixed",
+              "note": "New MD, COO and CFO brought in along with several other senior hires; analysts flagged concern over frequent leadership changes, management cited stability at upper-middle management level as mitigant.",
+              "section_ref": "STRAT"
+            }
+          ],
+          "key_takeaways": [
+            "Consolidated revenue sequentially was around 8% down, largely due to the sales volume resulting from the plant maintenance shutdown, partly offset by around INR 7,500 per ton improvement in average ASP supported by stronger steel prices and a richer product mix.",
+            "The share of value-added product has increased from 61% in Q4FY26 to 66% in Q1FY27.",
+            "Despite a 15% sequential decline in sales volume, EBITDA remains resilient; Consolidated adjusted EBITDA stood at INR 2,667 crores; Consolidated adjusted EBITDA per ton increased by INR 1,843 per ton, taking it to INR 11,937 per ton.",
+            "Finance cost charged to the P&L increased to INR 548 crores, primarily due to capitalization of major expansion assets (1,050 MW Captive Power Plant, BOF-III, CRM, and other associated facilities) during Q4FY26, now recognized through the P&L for the first full quarter.",
+            "Consolidated profit after tax for the quarter stood at INR 844 crores.",
+            "Net debt stood at INR 15,927 crores, translating into a net debt to EBITDA ratio of 1.71x; company remains confident of achieving the ratio below stated threshold of 1.5x during Q2FY27.",
+            "Against FY27 capex plan of approximately INR 8,500 crores, the company invested roughly INR 2,000 crores during Q1; cumulative spending under the expansion program now stands at INR 37,457 crores out of announced capex of INR 47,043 crores.",
+            "Full-year sales volume guidance for FY27 maintained at 10.5 to 11 million tons; management intends to recover the ~300,000 tonnes hot metal loss from the Q1 BOF vessel shutdown in subsequent quarters.",
+            "New leadership team introduced: Mr. V.R. Sharma (MD, returning), Mr. Rajiv Kumar (COO, ex-Tata Steel/Vedanta), Mr. Sandeep Modi (CFO, ex-Hindustan Zinc/Vedanta), alongside existing WTDs and plant heads."
+          ],
+          "pressing_questions": [
+            "Given that the industry typically benefits from stable leadership and long-term management tenures, should investors be concerned about the impact of these transitions on strategic continuity and long-term value creation? How do you ensure that execution against long-term objectives remains unaffected?",
+            "What kind of cost savings can we expect from the management over the next couple of years with all the initiatives that may play out — coal mines commissioning, DRI plant, slurry pipeline, conveyor belt? What kind of interest cost savings can we expect from renewed relationship with financial institutions?",
+            "Our share of value-added products and flats has been going up very consistently — the only disconnect is how come our unit profitability (EBITDA per ton) is not showing that improvement?"
+          ]
+        },
+        {
+          "company": "Jindal Steel Ltd",
+          "ticker": "JINDALSTEL",
+          "industry": "Iron & Steel",
+          "country": "India",
+          "concall_date": "2026-05-06",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=544856b7-dec4-4811-be68-db687acc3fb6.pdf",
+          "model": "anthropic.claude-sonnet-5",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-10T23:48:46.795Z",
+          "summary": "Jindal Steel expects continued ramp-up of new Angul capacities to drive volume growth in FY27, with FY27 production guided at 11-11.5 million tonnes and sales at 10.5-11 million tonnes. Indian steel demand is expected to remain reasonably strong on infra and construction, steel prices are expected to remain supportive near-term though coking coal costs may stay volatile (guided up $20-25/tonne QoQ in Q1FY27), and leverage metrics are expected to normalize by Q2FY27 with capex now shifting from expansion to asset-sweating (sustenance capex of INR 7,500-10,000 crores planned).",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "Consolidated gross revenue",
+                  "value": "62,412",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated gross revenue growth",
+                  "value": "8",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated adjusted EBITDA",
+                  "value": "9,099",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Adjusted EBITDA per tonne",
+                  "value": "10,482",
+                  "unit": "INR/tonne",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Adjusted EBITDA per tonne (prior year)",
+                  "value": "11,712",
+                  "unit": "INR/tonne",
+                  "period": "FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Profit after tax",
+                  "value": "3,361",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT growth",
+                  "value": "18",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Earnings per share",
+                  "value": "33",
+                  "unit": "INR",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Final dividend recommended",
+                  "value": "2",
+                  "unit": "INR/share",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated gross revenue",
+                  "value": "19,399",
+                  "unit": "INR crores",
+                  "period": "Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated gross revenue",
+                  "value": "15,172",
+                  "unit": "INR crores",
+                  "period": "Q3FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated gross revenue growth",
+                  "value": "28",
+                  "unit": "%",
+                  "period": "Q4FY26 QoQ",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Blended ASP increase",
+                  "value": "4,743",
+                  "unit": "INR/tonne",
+                  "period": "Q4FY26 QoQ",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated adjusted EBITDA",
+                  "value": "2,647",
+                  "unit": "INR crores",
+                  "period": "Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Adjusted EBITDA per tonne",
+                  "value": "10,093",
+                  "unit": "INR/tonne",
+                  "period": "Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Profit after tax",
+                  "value": "1,041",
+                  "unit": "INR crores",
+                  "period": "Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Impairment - standalone (India, Australian asset)",
+                  "value": "1,433",
+                  "unit": "INR crores (USD 159 million)",
+                  "period": "Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Impairment - consolidated (Australian asset, WCL)",
+                  "value": "834",
+                  "unit": "INR crores (USD 93 million)",
+                  "period": "Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated net debt",
+                  "value": "16,019",
+                  "unit": "INR crores",
+                  "period": "as of 31 March 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net debt to EBITDA",
+                  "value": "1.66",
+                  "unit": "x",
+                  "period": "as of 31 March 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Debt to equity",
+                  "value": "0.43",
+                  "unit": "x",
+                  "period": "as of 31 March 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capex invested during year",
+                  "value": "9,574",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total planned capex program",
+                  "value": "47,043",
+                  "unit": "INR crores",
+                  "period": "program-to-date",
+                  "kind": "target"
+                },
+                {
+                  "label": "Capex invested up to FY25",
+                  "value": "25,924",
+                  "unit": "INR crores",
+                  "period": "cumulative up to FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Remaining capex under program",
+                  "value": "11,545",
+                  "unit": "INR crores",
+                  "period": "remaining",
+                  "kind": "target"
+                },
+                {
+                  "label": "Net debt FY22",
+                  "value": "8,876",
+                  "unit": "INR crores",
+                  "period": "FY22",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net debt increase FY22 to FY26",
+                  "value": "7,143",
+                  "unit": "INR crores",
+                  "period": "FY22-FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total capex invested in current program (FY22-FY26)",
+                  "value": "35,498",
+                  "unit": "INR crores",
+                  "period": "FY22-FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Q4 one-time start-up cost (residual)",
+                  "value": "125",
+                  "unit": "INR crores",
+                  "period": "Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Sustenance capex guidance",
+                  "value": "7,500 to 10,000",
+                  "unit": "INR crores",
+                  "period": "ongoing",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Australia mine write-down (balance sheet level)",
+                  "value": "840",
+                  "unit": "INR crores",
+                  "period": "Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Q4 volume sales referenced",
+                  "value": "2.62",
+                  "unit": "million tonnes",
+                  "period": "Q4FY26",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Revenue and margin drivers",
+                  "points": [
+                    "In addition to expansion ramp-up volumes, HRC and TMT rebar prices recovered strongly during Q4FY26, although benefits were partially offset by an increase in coking coal prices.",
+                    "Consolidated adjusted EBITDA per tonne declined YoY (INR 10,482 in FY26 vs INR 11,712 in FY25)."
+                  ]
+                },
+                {
+                  "label": "Australian asset impairment",
+                  "points": [
+                    "Until the previous quarter, the Australian assets were under care and maintenance; this quarter the shaft was closed and reserves are no longer accessible, although the license is still held.",
+                    "Management does not expect any further write-offs on Australian assets; this is represented by an independent valuation done by a reputed agency.",
+                    "The INR 1,433 crores India-level write-off is subject to income-tax benefit; the INR 834 crores figure is on the Australia balance sheet (consolidated) and is a gross number."
+                  ]
+                },
+                {
+                  "label": "Capital allocation and leverage",
+                  "points": [
+                    "With ramp-up of new capacities and corresponding improvement in operating cash flows, leverage metrics are expected to normalize by Q2FY27.",
+                    "Company remains committed to a disciplined capital structure while funding sustenance and future growth initiatives.",
+                    "From FY22 to FY26, net debt increased by INR 7,143 crores while INR 35,498 crores was invested in the capex program, reflecting strong internal accrual allocation through the capital allocation framework.",
+                    "Capex program is more or less finished; focus now shifts to asset sweating and getting returns, with future capital allocation of INR 7,500-10,000 crores towards expansion/sustenance capex."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ORD",
+              "title": "Order Book & Demand",
+              "key_figures": [
+                {
+                  "label": "Flat:Long sales mix",
+                  "value": "52:48",
+                  "unit": "%",
+                  "period": "Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Flat:Long sales mix",
+                  "value": "49:51",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Contract vs spot mix and pricing lag",
+                  "points": [
+                    "Order book has a mix of spot selling and contractual selling; typically in a rising or falling market there is a lag in the system, which is why ASP increased significantly last quarter.",
+                    "Market is seeing a slight dip but is still holding firm; existing contracts on earlier (lower) prices will continue to support the company as it moves ahead this quarter.",
+                    "Current ASPs are holding strong and are higher than what was delivered in Q4, with price increases seen sequentially every month; management does not see anything otherwise at the moment."
+                  ]
+                },
+                {
+                  "label": "Product mix shift",
+                  "points": [
+                    "Flat sales share (led by HRC) is increasing and is expected to move towards 70% over time from around current 50:50 level; downstream facilities will add more niche/value-added products supporting realization.",
+                    "Value-added product share fell QoQ (management referenced levels around 61% from 66%) as focus during ramp-up is first on capacity utilization before optimizing value-added mix; expected to normalize and improve in H2 of the year.",
+                    "Additional capacities in flats/plate segment, including heat-treated plates, are doing well and growing, which will add to the value-added mix."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "Production volume",
+                  "value": "9.25",
+                  "unit": "million tonnes",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Production volume growth",
+                  "value": "14",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Sales volume",
+                  "value": "8.68",
+                  "unit": "million tonnes",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Sales volume growth",
+                  "value": "9",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Production volume",
+                  "value": "2.65",
+                  "unit": "million tonnes",
+                  "period": "Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Production volume growth QoQ",
+                  "value": "6",
+                  "unit": "%",
+                  "period": "Q4FY26 QoQ",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Production volume growth YoY",
+                  "value": "26",
+                  "unit": "%",
+                  "period": "Q4FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Sales volume",
+                  "value": "2.62",
+                  "unit": "million tonnes",
+                  "period": "Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Sales volume growth QoQ",
+                  "value": "15",
+                  "unit": "%",
+                  "period": "Q4FY26 QoQ",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Sales volume growth YoY",
+                  "value": "23",
+                  "unit": "%",
+                  "period": "Q4FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Value-added product share",
+                  "value": "61",
+                  "unit": "%",
+                  "period": "Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Value-added product share (prior quarter)",
+                  "value": "66",
+                  "unit": "%",
+                  "period": "Q3FY26",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Volume performance drivers",
+                  "points": [
+                    "Performance reflects a strong ramp-up at Angul and improved capacity utilization across operations, including Raigarh.",
+                    "Dispatches have improved in line with the stronger demand environment.",
+                    "Company achieved a balanced sales mix across product categories with focus on optimizing realizations by moving product mix towards higher value-added products."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "TECH",
+              "title": "Product & Technology",
+              "key_figures": [
+                {
+                  "label": "S&P Global ESG score",
+                  "value": "37 to 74",
+                  "unit": "/100",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "CSA score",
+                  "value": "30 to 72",
+                  "unit": "score",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "CO2 intensity reduction target",
+                  "value": "30",
+                  "unit": "%",
+                  "period": "by 2030",
+                  "kind": "target"
+                },
+                {
+                  "label": "Renewable energy target",
+                  "value": "50",
+                  "unit": "%",
+                  "period": "by 2030",
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "AI and digital transformation",
+                  "points": [
+                    "Company making strong progress on AI and digital transformation journey, from upskilling workforce to deploying AI-powered digital agents and building smarter, increasingly autonomous plants.",
+                    "JARVIS (Jindal AI for real-time visibility, intelligence and systems) platform unifies production, sales, and business data into one thinking layer.",
+                    "Investments in robotics and end-to-end digital integrated systems aimed at ensuring business processes are safe, connected and future-ready."
+                  ]
+                },
+                {
+                  "label": "ESG roadmap",
+                  "points": [
+                    "ESG journey runs in four clear phases: through FY30 building site-level control systems and credible reporting foundations; by 2030 targeting 30% CO2 intensity reduction, 50% renewable energy and full biodiversity coverage across all sites; 2030-2040 decade to scale hydrogen circularity and CCS infrastructure; by 2047 goal is net zero emissions, zero waste and net positive biodiversity.",
+                    "S&P Global raised the company's ESG score from 37/100 to 74/100, and CSA score improved from 30 to 72 during the year."
+                  ]
+                },
+                {
+                  "label": "Product development/approvals",
+                  "points": [
+                    "HSM has performed well in terms of getting customer approvals, and the company has developed all grades needed for niche products; ramping these up in this quarter and going forward."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MFG",
+              "title": "Manufacturing & Capacity",
+              "key_figures": [
+                {
+                  "label": "Total steelmaking capacity",
+                  "value": "9.6 to 15.6",
+                  "unit": "million tonnes per annum",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Iron-making capacity increase (Angul expansion)",
+                  "value": "6.6",
+                  "unit": "million tonnes",
+                  "period": "expansion plan",
+                  "kind": "target"
+                },
+                {
+                  "label": "BF2 capacity",
+                  "value": "4.6",
+                  "unit": "million tonnes",
+                  "period": "operational",
+                  "kind": "reported"
+                },
+                {
+                  "label": "DRI2 capacity",
+                  "value": "2",
+                  "unit": "million tonnes",
+                  "period": "under construction",
+                  "kind": "target"
+                },
+                {
+                  "label": "Steelmaking capacity increase",
+                  "value": "6",
+                  "unit": "million tonnes",
+                  "period": "via BOF2 and BOF3",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BOF2 capacity",
+                  "value": "3",
+                  "unit": "million tonnes",
+                  "period": "commissioned",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BOF3 capacity",
+                  "value": "3",
+                  "unit": "million tonnes",
+                  "period": "commissioned",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cold rolling complex capacity",
+                  "value": "1.2",
+                  "unit": "million tonnes per annum",
+                  "period": "commissioned",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Shree Bhoomi Power Plant capacity",
+                  "value": "1,050",
+                  "unit": "MW",
+                  "period": "commissioned",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Power plant module size",
+                  "value": "525",
+                  "unit": "MW each (two modules)",
+                  "period": "commissioned",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total iron-making capacity",
+                  "value": "15",
+                  "unit": "million tonnes",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total crude steelmaking capacity",
+                  "value": "15.6",
+                  "unit": "million tonnes",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Rail rakes acquired",
+                  "value": "72",
+                  "unit": "rakes",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total rail rakes program",
+                  "value": "79",
+                  "unit": "rakes",
+                  "period": "program target",
+                  "kind": "target"
+                },
+                {
+                  "label": "FY27 production guidance",
+                  "value": "11 to 11.5",
+                  "unit": "million tonnes",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "FY27 sales guidance",
+                  "value": "10.5 to 11",
+                  "unit": "million tonnes",
+                  "period": "FY27",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Angul expansion progress",
+                  "points": [
+                    "Significant progress made on Angul expansion during FY26 including BF2 (4.6 mtpa, operational), DRI2 (2 mtpa, under construction), BOF2 and BOF3 (3 mtpa each), and a cold rolling complex of 1.2 mtpa enhancing product portfolio and supporting margin improvement via higher value-added products.",
+                    "Commissioned the 1,050 MW Shree Bhoomi Power Plant (two 525 MW modules).",
+                    "Coal pipe conveyor belt between the thermal coal mine in Utkal C and Angul is operational.",
+                    "Slurry pipeline from Barbil to Angul is close to completion and expected to be commissioned in Q1FY27; this is described as a challenging project."
+                  ]
+                },
+                {
+                  "label": "Capex/project pipeline and timelines",
+                  "points": [
+                    "Capex program is more or less finished; remaining key projects are DRI2 and PP2, with DRI2 expected towards the end of FY27.",
+                    "Slurry pipeline will be commissioned this quarter (Q1FY27); ports already indicated to be commissioned.",
+                    "Full utilization of slurry pipeline savings will not happen this year as utilization will increase further as other facilities (namely PP2) come online in future; savings are based on material input per tonne, not dependent on utilization level."
+                  ]
+                },
+                {
+                  "label": "Rail rakes and power ramp-up",
+                  "points": [
+                    "Rail rakes program of 79 rakes: 72 already acquired, remaining expected to be delivered in the next 2-3 months.",
+                    "Thermal captive power plant ramp-up expected to complete within H1 of this year; excess power intended to be sold in merchant market but described as not material to overall financials, providing power stability and redundancy for facilities.",
+                    "With ramp-up in steel capacities, no further excess sale of byproducts is expected going forward."
+                  ]
+                },
+                {
+                  "label": "Metallics/backward integration",
+                  "points": [
+                    "Currently have 15 million tonnes iron-making and 15.6 million tonnes crude steelmaking capacity while DRI plant is yet to be commissioned; FY27 production/sales guidance factors in current metallics availability.",
+                    "As DRI comes online (under construction), more metallics will be available and volumes will continue to ramp up in subsequent years."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [
+                {
+                  "label": "Global steel demand growth",
+                  "value": "0.3",
+                  "unit": "%",
+                  "period": "CY2026",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "Global steel demand",
+                  "value": "1.7",
+                  "unit": "billion metric tonnes",
+                  "period": "CY2026",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "Global steel demand growth",
+                  "value": "2.2",
+                  "unit": "%",
+                  "period": "CY2027",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "Global steel demand",
+                  "value": "1.762",
+                  "unit": "billion tonnes",
+                  "period": "CY2027",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "China crude steel production",
+                  "value": "950",
+                  "unit": "million metric tonnes",
+                  "period": "CY25",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "China crude steel production decline",
+                  "value": "5",
+                  "unit": "% YoY",
+                  "period": "CY25",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "China domestic steel demand contraction",
+                  "value": "7",
+                  "unit": "% YoY",
+                  "period": "CY25",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "China steel exports",
+                  "value": "119",
+                  "unit": "million tonnes",
+                  "period": "CY25",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "India domestic steel demand growth",
+                  "value": "7.4",
+                  "unit": "%",
+                  "period": "2026 projection",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "India domestic steel demand growth",
+                  "value": "9.2",
+                  "unit": "%",
+                  "period": "2027 projection",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "India finished steel consumption",
+                  "value": "164.2",
+                  "unit": "million tonnes",
+                  "period": "FY26",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "India finished steel consumption growth",
+                  "value": "8",
+                  "unit": "% YoY",
+                  "period": "FY26",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "India crude steel production growth",
+                  "value": "11",
+                  "unit": "% YoY",
+                  "period": "FY26",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "India finished steel consumption",
+                  "value": "44.6",
+                  "unit": "million tonnes",
+                  "period": "Q4FY26",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "India crude steel output",
+                  "value": "44.7",
+                  "unit": "million tonnes",
+                  "period": "Q4FY26",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "India finished steel consumption growth QoQ",
+                  "value": "10",
+                  "unit": "%",
+                  "period": "Q4FY26 vs Q3FY26",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "India crude steel production growth QoQ",
+                  "value": "5",
+                  "unit": "%",
+                  "period": "Q4FY26 vs Q3FY26",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "India net steel exports",
+                  "value": "0.1",
+                  "unit": "million tonnes",
+                  "period": "FY26",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "Safeguard duty on flat steel imports",
+                  "value": "12 to 11.5",
+                  "unit": "%",
+                  "period": "effective April 21, 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Iron ore sourcing mix - captive",
+                  "value": "40",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Iron ore sourcing mix - outside",
+                  "value": "60",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Global steel industry outlook",
+                  "points": [
+                    "Global steel industry entering a phase of measured recovery; China's demand contraction gradually decelerating while India and other developing Asia remain growth drivers.",
+                    "Developed economies including EU, US and Japan expected to return to positive growth in 2027.",
+                    "Middle East conflict has tempered near-term regional demand, though broader global outlook remains largely resilient.",
+                    "China production remains resilient despite weak demand, signalling persistent oversupply; growing gap between production and demand contraction; record exports in CY25 compensating for demand weakness primarily in real estate construction."
+                  ]
+                },
+                {
+                  "label": "India steel market outlook",
+                  "points": [
+                    "India continues to assert itself as the world's fastest-growing major steel market.",
+                    "Outlook underpinned by broad-based strength across all key steel-consuming sectors: infrastructure-led construction activity, automotive sector, broader industry capex cycle, and nationwide rail network expansion plan.",
+                    "India has become a net exporter of steel in FY26.",
+                    "No delays observed in capex execution across public and private companies despite inflationary trends in commodities; demand is expected to remain fairly healthy given the infrastructure program being rolled out."
+                  ]
+                },
+                {
+                  "label": "Market/customer strategic focus for incremental volume",
+                  "points": [
+                    "Company continues to focus on strategic markets where it has strong presence, closer to its facilities, and markets that tend to be larger in size, rather than necessarily entering brand-new markets for incremental volumes.",
+                    "Wide product portfolio and rich value-added mix allow cross-selling to existing customers, positioning the company as a 'one-stop shop' for large portions of customer portfolios."
+                  ]
+                },
+                {
+                  "label": "Raw material sourcing mix",
+                  "points": [
+                    "Iron ore pricing was more or less stable during the quarter; captive vs outside buying mix is roughly 60% outside / 40% captive."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SUP",
+              "title": "Supply Chain & Operations",
+              "key_figures": [
+                {
+                  "label": "Slurry pipeline savings (iron ore)",
+                  "value": "700",
+                  "unit": "INR/tonne of iron ore",
+                  "period": "upon ramp-up",
+                  "kind": "target"
+                },
+                {
+                  "label": "Slurry pipeline savings (steel level)",
+                  "value": "750 to 1,000",
+                  "unit": "INR/tonne of steel",
+                  "period": "upon ramp-up",
+                  "kind": "target"
+                },
+                {
+                  "label": "Coking coal price increase Q4FY26",
+                  "value": "20",
+                  "unit": "USD/tonne",
+                  "period": "Q4FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Iron ore price movement",
+                  "value": "+/- 100 to 150",
+                  "unit": "INR",
+                  "period": "monthly, current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Iron ore mix - captive vs outside sourcing (mine level)",
+                  "value": "60:40",
+                  "unit": null,
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Raw material integrated strategy",
+                  "points": [
+                    "Company continued to progress its integrated raw material strategy during the year.",
+                    "Declared preferred bidder for Thakurani-A1 iron ore block in Odisha.",
+                    "For thermal coal, awarded the Saradhapur Jalatap East coal block at the end of last year.",
+                    "Coal pipe conveyor belt between the thermal coal mine in Utkal C and Angul is operational, and the slurry pipeline from Barbil to Angul (a challenging project) is close to completion, expected to be commissioned in Q1FY27."
+                  ]
+                },
+                {
+                  "label": "Overseas mining assets",
+                  "points": [
+                    "Australian (WCL) mine has been closed (shaft closed, reserves no longer accessible, though license retained); minimal cash outflow expected going forward since a lot of people were retained.",
+                    "Mozambique mine is operating at EBITDA-positive level, supplying mined coal for captive use.",
+                    "South Africa mine is operating but not EBITDA positive currently due to local issues.",
+                    "Excluding Australia (where the large write-down was taken), rest of the overseas mines are functioning on a net EBITDA-positive basis."
+                  ]
+                },
+                {
+                  "label": "Cost trends",
+                  "points": [
+                    "Coking coal cost increased by about $20/tonne during the quarter and is guided to increase a further $20-25/tonne sequentially in Q1FY27.",
+                    "Iron ore price movements are difficult to predict on an index basis but are currently moving plus/minus INR100-150.",
+                    "One-time start-up costs mostly covered in Q3FY26; residual INR 125 crores incurred in Q4FY26, which will not recur going forward."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [
+                {
+                  "label": "Incremental volumes planned this year vs last year",
+                  "value": "2",
+                  "unit": "million tonnes",
+                  "period": "FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India market demand increase expected",
+                  "value": "9 to 9.5",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "End-market focus for flat steel",
+                  "points": [
+                    "Company maintains it is an infrastructure-led organization while ramping up facilities; focus is largely on infrastructure sector, followed by building and construction, then downstream facilities, and then automobile sector.",
+                    "Rising flat steel exposure is being directed with a focus on infra, B&C, downstream and auto end-markets in that order of priority."
+                  ]
+                },
+                {
+                  "label": "Customer approvals",
+                  "points": [
+                    "Existing HSM approvals and developed grades are considered sufficient for now, and are not expected to hold back execution plans; company is well positioned to execute going forward."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Capex strategy shift",
+                  "points": [
+                    "Management confirmed that the capex program is more or less finished and the company's focus now shifts to asset sweating and generating returns from existing assets rather than further large capacity expansion in the near term."
+                  ]
+                },
+                {
+                  "label": "Environmental clearances",
+                  "points": [
+                    "Company is looking to increase Environmental Clearance (EC) capacities for some mines; this process is underway and working fairly well, though a specific date is difficult to pin down; current capacities are considered fairly comfortable in the meantime."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Raw material cost volatility",
+                  "points": [
+                    "Coking coal prices may remain volatile even as steel prices show recovery and remain supportive in the near term.",
+                    "Coking coal prices guided to increase $20-25/tonne sequentially in Q1FY27.",
+                    "Iron ore prices are difficult to predict without an index and move on a monthly basis (currently plus/minus INR100-150)."
+                  ]
+                },
+                {
+                  "label": "Global oversupply/China",
+                  "points": [
+                    "China's crude steel production remains resilient despite weak demand, with domestic demand contracting 7% YoY in CY25, creating a growing gap that signals persistent oversupply.",
+                    "China's record steel exports of 119 million tonnes in CY25 represent surplus steel entering global markets to compensate for continuing demand weakness, primarily in real estate construction."
+                  ]
+                },
+                {
+                  "label": "Middle East conflict",
+                  "points": [
+                    "The Middle East conflict has tempered near-term regional demand, though the broader global outlook remains largely resilient."
+                  ]
+                },
+                {
+                  "label": "Australian asset closure",
+                  "points": [
+                    "Australian mine shaft has been closed and reserves are no longer accessible, resulting in an impairment; while no further write-offs are expected (per independent valuation), this reflects a resolved overseas asset risk."
+                  ]
+                },
+                {
+                  "label": "South Africa local issues",
+                  "points": [
+                    "South Africa mining operation is running but not EBITDA positive currently due to unspecified local issues."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [
+                {
+                  "label": "FY27 production guidance",
+                  "value": "11 to 11.5",
+                  "unit": "million tonnes",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "FY27 sales guidance",
+                  "value": "10.5 to 11",
+                  "unit": "million tonnes",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Q1FY27 coking coal price increase guidance",
+                  "value": "20 to 25",
+                  "unit": "USD/tonne",
+                  "period": "Q1FY27 sequential",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Sustenance/expansion capex allocation",
+                  "value": "7,500 to 10,000",
+                  "unit": "INR crores",
+                  "period": "ongoing",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Leverage normalization timeline",
+                  "value": "Q2FY27",
+                  "unit": null,
+                  "period": "Q2FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Flat sales mix target",
+                  "value": "70",
+                  "unit": "%",
+                  "period": "over time",
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Volume and demand outlook",
+                  "points": [
+                    "Continued ramp-up of new capacities at Angul expected to drive volume growth.",
+                    "Steel demand in India expected to remain reasonably strong, supported by infrastructure development and construction activity.",
+                    "Steel prices have shown recovery in recent months and are expected to remain supportive in the near term, although raw material cost, particularly coking coal, may remain volatile."
+                  ]
+                },
+                {
+                  "label": "Specific guidance declined/limited",
+                  "points": [
+                    "Management declined to give explicit revenue growth guidance for FY27, noting revenue is a function of several factors beyond production/sales volumes.",
+                    "Management declined to give explicit EBITDA margin guidance for FY27, citing raw material and pricing factors outside its control, but pointed to historically robust and consistent EBITDA performance as an indicator."
+                  ]
+                },
+                {
+                  "label": "Value-added mix and capex outlook",
+                  "points": [
+                    "Value-added product mix expected to see some movement in the first two quarters of FY27 before stabilizing in H2 as focus shifts from capacity utilization to mix optimization.",
+                    "Capex program viewed as largely complete; going forward, INR 7,500-10,000 crores will be allocated to capital expansion/sustenance capex programs.",
+                    "DRI2 and PP2 remain the two key projects left for this financial year, with DRI2 expected towards the end of the year."
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "Production volume",
+              "horizon": "FY27",
+              "statement": "Production plan for FY27 is 11 million to 11.5 million tonnes",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Sales volume",
+              "horizon": "FY27",
+              "statement": "Sales guidance for FY27 is between 10.5 million to 11 million tonnes",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Coking coal price",
+              "horizon": "Q1FY27",
+              "statement": "We expect coking coal prices to increase by $20 to $25 per tonne sequentially",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Sustenance/expansion capex",
+              "horizon": "ongoing",
+              "statement": "We will be allocating INR 7,500 crores to INR 10,000 crores to our capital expansion programs or sustenance capex",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Leverage (net debt/EBITDA)",
+              "horizon": "Q2FY27",
+              "statement": "We expect leverage metrics to normalize by Q2FY27",
+              "specificity": "vague",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "Flat sales mix",
+              "horizon": "unclear",
+              "statement": "Flat sales will increase in times to come and move towards 70% odd as we move ahead",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Revenue growth",
+              "horizon": "FY27",
+              "statement": "Revenue is a function of a lot of other things, so we will stick with production/sales guidance for the time being",
+              "specificity": "refused",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "EBITDA margin",
+              "horizon": "FY27",
+              "statement": "EBITDA is a function of several things, including raw material and pricing, which remains outside our control",
+              "specificity": "refused",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Slurry pipeline savings",
+              "horizon": "upon ramp-up",
+              "statement": "Roughly about INR 700 is the savings on iron ore per tonne, translating to roughly INR 750 to INR 1,000 per tonne of steel as we ramp up",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "DRI2 project commissioning",
+              "horizon": "FY27",
+              "statement": "DRI2 is expected towards the end of the year",
+              "specificity": "vague",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Slurry pipeline commissioning",
+              "horizon": "Q1FY27",
+              "statement": "The pipeline is expected to be commissioned in this quarter, Q1FY27",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Value-added product mix",
+              "horizon": "H2FY27",
+              "statement": "You are going to see a little bit of movement in the first two quarters of this year and then a stabilization in the second half of the year",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Power plant ramp-up",
+              "horizon": "H1FY27",
+              "statement": "The ramp-up will be complete within the first half of this year",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "Coking coal price volatility",
+              "status": "escalated",
+              "note": "Coking coal costs increased ~$20/tonne in Q4FY26 and guided to rise a further $20-25/tonne sequentially in Q1FY27, partially offsetting steel price recovery benefits."
+            },
+            {
+              "risk": "Iron ore price unpredictability",
+              "status": "stable",
+              "note": "Iron ore prices are difficult to predict on an index basis; currently moving plus/minus INR100-150 monthly."
+            },
+            {
+              "risk": "Global steel oversupply from China",
+              "status": "stable",
+              "note": "China's crude steel production remains resilient despite a 7% YoY demand contraction, with record exports of 119 million tonnes in CY25 signalling persistent oversupply."
+            },
+            {
+              "risk": "Middle East conflict impact on regional demand",
+              "status": "stable",
+              "note": "The Middle East conflict has tempered near-term regional demand, though overall global outlook remains largely resilient."
+            },
+            {
+              "risk": "Australian mining asset closure/impairment",
+              "status": "resolved",
+              "note": "Shaft closed and reserves no longer accessible; impairment of INR 1,433 crores (standalone)/INR 834 crores (consolidated) recognized; no further write-offs expected per independent valuation."
+            },
+            {
+              "risk": "South Africa mine profitability",
+              "status": "stable",
+              "note": "South Africa mine operating but not EBITDA positive currently due to local issues."
+            },
+            {
+              "risk": "Near-term steel price dip",
+              "status": "easing",
+              "note": "A slight dip in steel prices was noted, but management feels the market is holding firm and existing contracts will continue to support pricing."
+            }
+          ],
+          "themes": [
+            {
+              "label": "Capacity expansion ramp-up",
+              "direction": "positive",
+              "note": "Angul expansion took total steelmaking capacity from 9.6 to 15.6 mtpa; ramp-up continuing with BOF2/BOF3, cold rolling complex and power plant commissioned.",
+              "section_ref": "MFG"
+            },
+            {
+              "label": "Capex shift to asset sweating",
+              "direction": "neutral",
+              "note": "Capex program largely complete; focus now shifts to sweating assets with INR 7,500-10,000 crores allocated to ongoing sustenance capex rather than new expansion.",
+              "section_ref": "STRAT"
+            },
+            {
+              "label": "Value-added product mix",
+              "direction": "mixed",
+              "note": "Value-added mix fell QoQ during ramp-up as focus was first on capacity utilization; expected to stabilize and improve in H2FY27.",
+              "section_ref": "ORD"
+            },
+            {
+              "label": "Input-cost inflation (coking coal)",
+              "direction": "negative",
+              "note": "Coking coal prices rose ~$20/tonne in Q4FY26 and guided up a further $20-25/tonne sequentially in Q1FY27, partially offsetting steel price gains.",
+              "section_ref": "SUP"
+            },
+            {
+              "label": "Pricing recovery/realization",
+              "direction": "positive",
+              "note": "HRC and TMT rebar prices recovered strongly in Q4FY26, with blended ASP up INR 4,743/tonne QoQ; market holding firm despite a slight recent dip.",
+              "section_ref": "ORD"
+            },
+            {
+              "label": "Australian asset impairment",
+              "direction": "negative",
+              "note": "Australian mine shaft closed and reserves inaccessible, leading to impairments of INR 1,433 crores (standalone) and INR 834 crores (consolidated); no further write-offs expected.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "India steel demand tailwind",
+              "direction": "positive",
+              "note": "India projected as fastest-growing major steel market with demand growth of 7.4% in 2026 and 9.2% in 2027, driven by infrastructure, auto, capex cycle and rail expansion.",
+              "section_ref": "GEO"
+            }
+          ],
+          "key_takeaways": [
+            "FY26 has been a defining year for Jindal Steel, marked by significant progress across expansion projects, which have taken steelmaking capacity from 9.6 million tonnes per annum to 15.6 million tonnes per annum.",
+            "Consolidated gross revenue for FY26 was INR 62,412 crores, an increase of 8% compared to FY25; PAT was INR 3,361 crores, a growth of 18% over last year.",
+            "For Q4FY26, consolidated gross revenue was INR 19,399 crores, a growth of 28% QoQ, driven by expansion ramp-up volumes and strong recovery in HRC and TMT rebar prices, partially offset by higher coking coal prices.",
+            "An impairment of INR 1,433 crores (standalone, USD 159 million) and INR 834 crores (consolidated, USD 93 million) was recognized on the Australian assets after the shaft was closed and reserves became inaccessible; no further write-offs are expected.",
+            "As of 31 March 2026, consolidated net debt was INR 16,019 crores with net debt to EBITDA of 1.66x and debt to equity of 0.43x; leverage metrics are expected to normalize by Q2FY27.",
+            "FY27 production guidance is 11 million to 11.5 million tonnes and sales guidance is 10.5 million to 11 million tonnes; capex program is largely complete with focus shifting to asset sweating, with INR 7,500-10,000 crores planned for ongoing sustenance/expansion capex.",
+            "Q1FY27 coking coal prices are expected to increase by $20 to $25 per tonne sequentially.",
+            "India continues to assert itself as the world's fastest-growing major steel market, with domestic demand projected to expand by 7.4% in 2026 and 9.2% in 2027; India became a net exporter of steel in FY26."
+          ],
+          "pressing_questions": [
+            "Have contracts been reset on the higher realization, and what will be the impact on realization in Q1FY27, given the recent dip in steel prices?",
+            "What will be Jindal Steel's capex outlay for FY27 and FY28, and which key projects are left — will the focus now be more on asset sweating than further capacity expansion?",
+            "We had earlier indicated a shift to high throughput and lower-margin products in Q3, but even in Q4 the share of value-added products has fallen QoQ — what is the timeline to recalibrate towards higher value-added products, and what is the target value-added mix for FY27?",
+            "Any guidance on revenue growth for FY27, and what EBITDA margin can be expected for FY27?",
+            "What were the write-downs specifically in JPML and in Wollongong, and is it fair to say there will be no additional write-downs now?",
+            "What is the current position on the rail rakes program — how many have been acquired and how many remain?",
+            "On the thermal captive power plants — when is ramp-up expected, and what is the strategy on selling excess power versus captive consumption?",
+            "On raw material security (backward integration) — where does the company see itself in the next 2 years on thermal coal and iron ore?"
+          ]
+        }
+      ]
     }
   }
 }
