@@ -551,8 +551,10 @@
       "message": "Screener has no AI summary and no transcript for NRBBEARING's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "WEBELSOLAR": {
-      "status": "running",
-      "started_at": "2026-08-10T23:45:56.811Z"
+      "status": "failed",
+      "finished_at": "2026-08-10T23:46:06.410Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     }
   }
 }
