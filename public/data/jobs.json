@@ -61,8 +61,10 @@
       "source": "transcript"
     },
     "MOTHERSON": {
-      "status": "running",
-      "started_at": "2026-08-10T23:10:28.334Z"
+      "status": "failed",
+      "finished_at": "2026-08-10T23:10:39.458Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Screener has no AI summary and no transcript for MOTHERSON's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "BOSCHLTD": {
       "status": "done",
