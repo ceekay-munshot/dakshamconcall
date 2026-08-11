@@ -16191,8 +16191,1334 @@
       "ticker": "HEROMOTOCO",
       "industry": "2/3 Wheelers",
       "country": "India",
-      "checked_at": "2026-07-30T05:36:12.059Z",
+      "checked_at": "2026-08-11T22:50:28.469Z",
       "quarters": [
+        {
+          "company": "Hero MotoCorp Ltd",
+          "ticker": "HEROMOTOCO",
+          "industry": "2/3 Wheelers",
+          "country": "India",
+          "concall_date": "2026-08-11",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=eb8bdc5a-ea95-4451-a0e9-ea059e8a42fa.pdf",
+          "model": "anthropic.claude-sonnet-5",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-11T22:46:03.711Z",
+          "summary": "Hero MotoCorp delivered strong Q1 FY27 volume (+23% YoY) and revenue (+36% YoY) growth on the back of broad-based 2-wheeler industry demand (+14% YoY retail, ICE +11%, EV +67%), with momentum accelerating further into July (industry retail +28% YoY). Gross margin contracted 300bps QoQ on ~4.5% net commodity inflation, but disciplined cost management and mix improvement limited EBITDA margin decline to 120bps QoQ (13.3%); management reiterated the medium-term EBITDA margin target of 14%-16% while flagging a marginal further input-cost uptick in Q2 FY27, and continues to invest in EV/ICE capacity expansion, premium portfolio, exports and new powertrains (flex-fuel, electric motorcycles) as growth engines.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "Revenue from operations",
+                  "value": "12,999",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue growth YoY",
+                  "value": "36",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA",
+                  "value": "1,727",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin",
+                  "value": "13.3",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin decline QoQ",
+                  "value": "120",
+                  "unit": "bps",
+                  "period": "Q1 FY27 vs Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gross margin contraction QoQ",
+                  "value": "300",
+                  "unit": "bps",
+                  "period": "Q1 FY27 vs Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net commodity inflation impact",
+                  "value": "~4.5",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Profit after tax (standalone)",
+                  "value": "1,454",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated PAT",
+                  "value": "1,418",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Normalized profit last year (consolidated comparable)",
+                  "value": "~1,100",
+                  "unit": "INR crores",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "One-time gain last year (dilution of associate investment, pre-tax)",
+                  "value": "~700",
+                  "unit": "INR crores",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ICE EBITDA margin",
+                  "value": "15.9",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ICE EBITDA margin contraction QoQ",
+                  "value": "90",
+                  "unit": "bps",
+                  "period": "Q1 FY27 vs Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Other expenses reduction QoQ",
+                  "value": "14",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VIDA P&L investment",
+                  "value": "~230",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PLI benefit received",
+                  "value": "48",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PLI portfolio certification",
+                  "value": "60",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PLI portfolio certification target",
+                  "value": "100",
+                  "unit": "%",
+                  "period": "by December 2026",
+                  "kind": "target"
+                },
+                {
+                  "label": "EV revenue",
+                  "value": "660",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV revenue as % of total revenue",
+                  "value": "~5",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV EBITDA loss per unit (current quarter)",
+                  "value": "40,000",
+                  "unit": "INR per unit",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV EBITDA loss per unit (previous quarter)",
+                  "value": "50,000",
+                  "unit": "INR per unit",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "FX/realization benefit to EBITDA",
+                  "value": "25",
+                  "unit": "bps",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cumulative ICE blended price increase",
+                  "value": "4.5",
+                  "unit": "%",
+                  "period": "since end of February 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV price increase",
+                  "value": "early double-digit",
+                  "unit": "%",
+                  "period": "since end of February 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "GPC 2.0 CapEx (parts business capacity)",
+                  "value": "750",
+                  "unit": "INR crores",
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "Total volume growth YoY",
+                  "value": "23",
+                  "unit": null,
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ICE portfolio growth YoY",
+                  "value": "21",
+                  "unit": null,
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV business growth YoY",
+                  "value": "151",
+                  "unit": null,
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Mix benefit contribution to revenue growth",
+                  "value": "8",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Parts business growth YoY",
+                  "value": "over 30",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net commodity inflation impact",
+                  "value": "4.5",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VIDA P&L investment",
+                  "value": "230",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Normalized profit last year (consolidated comparable)",
+                  "value": "1,100",
+                  "unit": "INR crores",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "One-time gain last year (dilution of associate investment, pre-tax)",
+                  "value": "700",
+                  "unit": "INR crores",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV monthly capacity target",
+                  "value": "45,000",
+                  "unit": "units",
+                  "period": "before end of FY27",
+                  "kind": "target"
+                },
+                {
+                  "label": "Commodity cost impact expected Q-o-Q increase estimate",
+                  "value": "50",
+                  "unit": "bps",
+                  "period": "Q2 FY27",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Margin drivers",
+                  "points": [
+                    "Gross margin came under pressure due to conflict in West Asia triggering inflationary spikes across oil and gas, freight, foreign exchange and core raw materials including steel, aluminum and precious metals.",
+                    "Improved mix driven by higher contribution from premium variants and PAM (parts, accessories and merchandise) business helped offset gross margin pressure.",
+                    "Cost structures were rationalized by deferring noncritical operating expenses and accelerating cost savings under internal LEAP program.",
+                    "Operating scale was leveraged to drive cost efficiencies across manufacturing and supply chain operations.",
+                    "Judicious price actions were taken across select models, balancing margin protection with market momentum.",
+                    "ICE EBITDA margin held up better than overall margin, cushioned by strong operating leverage, cost savings and higher profitability in parts business."
+                  ]
+                },
+                {
+                  "label": "Consolidated results context",
+                  "points": [
+                    "Consolidated PAT of INR1,418 crores compares to a normalized profit of around INR1,100 crores last year (excluding one-time gain).",
+                    "Last year included a onetime gain of approximately INR700 crores before tax on account of dilution of company's shares of investment in associates consequent to public issue and private placement."
+                  ]
+                },
+                {
+                  "label": "EV unit economics",
+                  "points": [
+                    "Total P&L investment in VIDA business remained flat sequentially at around INR230 crores despite volume growth, due to continuous improvement in per unit economics.",
+                    "PLI benefit of INR48 crores accrued in the quarter, covering 60% of EV portfolio; expected to cover almost all products by end of December 2026.",
+                    "FY27 will be the first full year of PLI accruals, providing a structural tailwind to EV portfolio.",
+                    "Some EV models have turned gross margin positive, which will further enhance overall EV profitability going forward.",
+                    "EBITDA loss per unit in EV business improved from ~INR50,000 in previous quarter to ~INR40,000 in current quarter, reflecting improvement trajectory."
+                  ]
+                },
+                {
+                  "label": "Q2 FY27 outlook and pricing",
+                  "points": [
+                    "Marginal uptick in input cost inflation expected in Q2 FY27, to be neutralized via continued mix improvement, optimizing discretionary spends, and accelerating cost-saving programs.",
+                    "Primary focus remains on driving EBITDA growth while progressing towards medium-term EBITDA margin target range of 14%-16%.",
+                    "Investment behind growth to continue, both in capacity expansion and brand building supporting premium, scooters, EV and global business portfolio.",
+                    "Cumulative blended ICE price increase of 4.5% taken since end of February 2026 across different models/months/geographies; marginal additional ICE price increase taken in July in anticipation of commodity cost increase.",
+                    "EV price increases are in early double digits per unit, partly reflecting added functionality/differentiation rather than pure price pass-through.",
+                    "Company states it has not passed on all commodity cost increases — some areas saw less pass-through, others more; in some entry-level variants/geographies a calibrated price reduction was taken to expand market."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ORD",
+              "title": "Order Book & Demand",
+              "key_figures": [
+                {
+                  "label": "2-wheeler industry retail growth (VAHAN) YoY",
+                  "value": "14",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ICE industry retail growth YoY",
+                  "value": "11",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV industry retail growth YoY",
+                  "value": "67",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "2-wheeler industry retail growth YoY",
+                  "value": "28",
+                  "unit": "%",
+                  "period": "July 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VIDA channel inventory",
+                  "value": "2-3",
+                  "unit": "days",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Xoom/Destini channel stock vs normal",
+                  "value": "~half of normal average",
+                  "unit": null,
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Motorcycle channel stock",
+                  "value": "6",
+                  "unit": "weeks",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Retail finance penetration",
+                  "value": "~65",
+                  "unit": "%",
+                  "period": "last month",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Delhi EV inquiries growth",
+                  "value": "doubling",
+                  "unit": null,
+                  "period": "last month",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Delhi EV retail growth",
+                  "value": "near doubling",
+                  "unit": null,
+                  "period": "last month",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Delhi EV market share",
+                  "value": "16.7",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Delhi EV market rank",
+                  "value": "moved from 4th to 2nd",
+                  "unit": null,
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "H2 FY27 industry growth outlook",
+                  "value": "approaching double digit for full year",
+                  "unit": null,
+                  "period": "FY27",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Demand drivers",
+                  "points": [
+                    "Growth was broad-based, supported by improved affordability post GST rate cuts, healthy urban and rural demand, and continued acceleration in EV adoption.",
+                    "Strong retail momentum continued into Q2, with July retail growth of 28% YoY, both ICE and EV registering similar strong momentum as in Q1."
+                  ]
+                },
+                {
+                  "label": "Channel stock and pent-up demand",
+                  "points": [
+                    "VIDA has pretty much nil channel inventory (2-3 days depending on region), indicating whatever is shipped is retailed immediately, pointing to pent-up demand.",
+                    "ICE scooters (e.g., Xoom, some Destini variants) running channel stock at typically half of normal average levels, indicating depletion of channel stock alongside 87% YoY growth in ICE scooters.",
+                    "Motorcycle channel stock is at 6 weeks, described as forward-looking and not yet where the company wants to be; expect some increase over the next couple of months to prepare for festive season."
+                  ]
+                },
+                {
+                  "label": "Retail finance",
+                  "points": [
+                    "Retail finance penetration jumped to close to 65% last month, supported by easing credit conditions helping the market; expected to become even more helpful moving into festive season."
+                  ]
+                },
+                {
+                  "label": "Pricing actions and demand response",
+                  "points": [
+                    "Weighted average price increases taken, but with tactical price cuts in select variants/geographies (e.g., one variant of HF Deluxe) to boost demand and gain share among first-time buyers.",
+                    "HF Deluxe price cut in select states seeing an immediate boost in demand and increased footfalls into showrooms since implementation; Splendor portfolio growing stronger since this intervention.",
+                    "Company believes there is an unaddressed/underserved market of consumers falling off mobility that such interventions can substantially grow in certain geographies."
+                  ]
+                },
+                {
+                  "label": "Delhi EV policy proposal",
+                  "points": [
+                    "Great momentum seen in Delhi EV market ahead of the proposed Delhi EV policy (effective FY28): inquiries and retails have nearly doubled last month.",
+                    "Company preparing infrastructure — increased supplies to Delhi, activated dealerships, trained dealer service technicians, and increasing own charging network/charge points."
+                  ]
+                },
+                {
+                  "label": "Industry growth outlook",
+                  "points": [
+                    "H2 FY27 will have a high base effect from the GST-driven jump in H2 FY26 sales, so YoY growth will be lower on a base basis, but momentum still expected to yield positive H2 growth.",
+                    "Full-year FY27 industry growth plans are approaching double digits."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "Wholesale market share increase",
+                  "value": "30",
+                  "unit": "bps",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ICE overall growth YoY",
+                  "value": "21",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ICE domestic volume growth YoY",
+                  "value": "18",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ICE global business growth YoY",
+                  "value": "63",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ICE scooters market share gain",
+                  "value": "2.3",
+                  "unit": "percentage points (230 bps)",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ICE scooters market share",
+                  "value": "~7",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV wholesale growth YoY",
+                  "value": "151",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV market share gain (within 1 year)",
+                  "value": ">400",
+                  "unit": "bps",
+                  "period": "trailing 1 year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV monthly retail run-rate",
+                  "value": ">20,000",
+                  "unit": "units/month",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Global business market share expansion",
+                  "value": "110",
+                  "unit": "bps",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Parts and accessories (PAM) revenue growth YoY",
+                  "value": "30",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAM revenue growth (alt. figure)",
+                  "value": "close to 25% and beyond",
+                  "unit": "%",
+                  "period": "Q1 FY27 and July 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAM revenue growth last year",
+                  "value": "5",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Splendor volume growth YoY",
+                  "value": "15",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ICE scooters dispatch growth (approx doubling)",
+                  "value": "~2x",
+                  "unit": null,
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ICE scooters growth YoY (alt. figure cited)",
+                  "value": "87",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "100cc motorcycle market share",
+                  "value": "86",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "100cc segment market share gain",
+                  "value": "~3 (from 32% to ~33%)",
+                  "unit": "percentage points",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VAHAN market share YoY change",
+                  "value": "-150",
+                  "unit": "bps",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VIDA quarterly volume",
+                  "value": "57,000",
+                  "unit": "units",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VIDA quarterly volume growth QoQ",
+                  "value": "26",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VX2 Plus dispatch since launch",
+                  "value": "~1,000",
+                  "unit": "vehicles",
+                  "period": "since launch in quarter",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Export volume growth",
+                  "value": ">60",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Historic export growth trajectory",
+                  "value": "40+",
+                  "unit": "% YoY",
+                  "period": "last 2 years",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Growth mix and strategy",
+                  "points": [
+                    "Strategy of growing in EV, premium, global business, and scooters all performed well, contributing to a positive mix benefit of 8% of the 13% uplift between volume growth (23%) and revenue growth (36%).",
+                    "Growth in revenue going forward will increasingly come from shift to higher-value products: scooter, premium, EV and global businesses on top of volume growth.",
+                    "Strategy of focusing on fast-growing segments continued to yield results, consolidating gains in the Commuter segment as well."
+                  ]
+                },
+                {
+                  "label": "Motorcycle category dynamics",
+                  "points": [
+                    "Within motorcycles, 100cc category is also growing but 125cc-and-above categories are growing faster; Hero has outgrown the industry in 100cc, gaining 230 bps market share to reach ~86% share.",
+                    "GST-driven affordability tailwind continues to support 100cc as the first commuter purchase category for many customers.",
+                    "Higher motorcycle categories are growing faster as India urbanizes and becomes richer, and Hero has gained share there too.",
+                    "In 100cc specifically (Splendor, Passion), category expansion combined with market share expansion (segment grew from 32% to ~33%) attributed to interventions beyond product, including retail finance and other affordability measures."
+                  ]
+                },
+                {
+                  "label": "PAM business growth drivers",
+                  "points": [
+                    "PAM revenue growth of ~25%+ driven by expanded reach (deeper penetration with formats), operational efficiency initiatives, larger SKU coverage, new parts groups, and new lines of business performing well.",
+                    "Growth partly comes from eating into the gray market, but also from accessories (with traction increasing as VIDA and premium range increases) and exports business.",
+                    "New GPC 2.0 investment (CapEx of INR750 crores) announced to more than double capacity to handle parts business."
+                  ]
+                },
+                {
+                  "label": "VAHAN market share commentary",
+                  "points": [
+                    "Management noted the VAHAN market share fell 150 bps YoY in Q1 despite overall growth, in context of a question about calibrating price increases versus growth focus; management reiterated continued focus on volume growth with calibrated (not full) price pass-through of commodity costs."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "TECH",
+              "title": "Product & Technology",
+              "key_figures": [
+                {
+                  "label": "VIDA VX2 Plus IDC range",
+                  "value": "187",
+                  "unit": "km",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VIDA VX2 Plus battery capacity",
+                  "value": "4.4",
+                  "unit": "kWh",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VIDA VX2 Go battery capacity",
+                  "value": "3.1",
+                  "unit": "kWh",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VIDA VX2 Go IDC range",
+                  "value": "~120",
+                  "unit": "km",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Flex fuel range (ethanol blend capability)",
+                  "value": "20% to 85%",
+                  "unit": "ethanol content",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Flex fuel motorcycles sold since dispatch start",
+                  "value": "~5,000",
+                  "unit": "units",
+                  "period": "within 2 weeks of dispatch (from third week of July 2026)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VIDA battery range across portfolio",
+                  "value": "2.2 kWh to 4.4 kWh",
+                  "unit": "kWh",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "New product launches — ICE",
+                  "points": [
+                    "Super Splendor XTEC 2.0 launched with best-in-class mileage and silent start feature.",
+                    "Passion Plus Disc variant launched, expanding the 100cc portfolio."
+                  ]
+                },
+                {
+                  "label": "New product launches — EV (VIDA)",
+                  "points": [
+                    "Premium variant of VIDA VX2 launched with 187km IDC range and superior fast-charging capability, called VX2 Plus 4.4kWh, launched with campaign 'Hafte Mein Ek Baar' emphasizing consumers can charge just once a week; comes with twin removable battery for flexible charging.",
+                    "VX2 Go 3.1kWh variant launched in August offering ~120km IDC range, targeted at consumers with easy access to home/office charging, leveraging existing favorable VX2 styling.",
+                    "Both new VIDA variants expected to contribute significant volume going forward; company will share more detail as they stabilize in forthcoming quarters.",
+                    "VIDA now offers a full range from 2.2kWh to 4.4kWh battery options, giving consumers complete flexibility."
+                  ]
+                },
+                {
+                  "label": "Flex fuel powertrain",
+                  "points": [
+                    "Flex fuel variants introduced in June for core commuter segment's highest-selling models Splendor and HF — first in the category to do so.",
+                    "Comes with smart engine technology and components specifically designed to work at higher ethanol blends.",
+                    "Dispatches began third week of July; strong early traction with ~5,000 units sold within 2 weeks in limited outlets; company describes itself as differentiated/only player in this category currently."
+                  ]
+                },
+                {
+                  "label": "Electric motorcycle platforms",
+                  "points": [
+                    "Company continuing to advance electric motorcycle range, with more updates expected soon.",
+                    "Two motorcycle platforms were unveiled at EICMA 2025: Project Ubex — a neo-naked motorcycle concept for urban mobility, combining thrill/acceleration with city and road friendliness; and VXZ — a high-performance motorcycle developed in collaboration with Zero Motorcycles of USA, targeting adventure/aspirational high-performance consumers.",
+                    "These are new platforms, developed with learnings from the scooter platform but tailored to motorcycle-consumer needs for performance, rideability, gradability and range.",
+                    "Electric motorcycle platform products are not expected this year (FY27); timelines point to launches starting next year."
+                  ]
+                },
+                {
+                  "label": "Leadership/technology capability",
+                  "points": [
+                    "New CTO Sachin Agrawal joined in May, bringing multiple decades of experience across different powertrains, bolstering powertrain development capability.",
+                    "Anuj Dua appointed as Chief Business Officer for Premium segment; brings over 2 decades of experience across global product strategy, brand building and market expansion across geographies (9 years at Royal Enfield, 10 years earlier at Hero)."
+                  ]
+                },
+                {
+                  "label": "Premium segment product priorities (Anuj Dua)",
+                  "points": [
+                    "Immediate priorities: elevate consumer retail experience across all touchpoints (search journey to in-use journey); portfolio expansion with exciting products coming over next 12 months; focus on merchandise and accessories reflecting global trend towards mass customization/personalization.",
+                    "Continuing partnership with Harley-Davidson to be taken to next level.",
+                    "Investment in community/lifestyle engagement and MotoSports (including Dakar) paying dividends across the globe, especially India and Latin America; adventure segment cited as fastest-growing segment globally.",
+                    "Upcoming premium motorcycle models referenced by analysts include XPulse 421 and XMR 250; company confirms many models in the works, with a few refreshes launching before festive season and larger full-body-change models in upcoming quarters (the two specifically named models will not launch before festive)."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MFG",
+              "title": "Manufacturing & Capacity",
+              "key_figures": [
+                {
+                  "label": "EV monthly capacity at end of last year",
+                  "value": "15,000",
+                  "unit": "units/month",
+                  "period": "end of FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV monthly capacity current (first week of August)",
+                  "value": "~30,000",
+                  "unit": "units/month",
+                  "period": "current (Aug 2026)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV monthly capacity target",
+                  "value": "~45,000",
+                  "unit": "units/month",
+                  "period": "before end of FY27",
+                  "kind": "target"
+                },
+                {
+                  "label": "Splendor capacity addition",
+                  "value": "2,000",
+                  "unit": "units/day",
+                  "period": "current quarter",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Splendor capacity increase (monthly equivalent)",
+                  "value": "little over 50,000",
+                  "unit": "units/month",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Destini capacity increase",
+                  "value": "doubled",
+                  "unit": null,
+                  "period": "completed within the quarter",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Xoom scooter capacity increase",
+                  "value": "50",
+                  "unit": "% jump",
+                  "period": "current",
+                  "kind": "target"
+                },
+                {
+                  "label": "ICE scooter capacity addition",
+                  "value": "1,500",
+                  "unit": "units/day",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total combined capacity addition (EV + scooters)",
+                  "value": "~2,500",
+                  "unit": "units/day",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Current combined ICE+EV monthly output",
+                  "value": "~65,000",
+                  "unit": "units/month",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Planned capacity increase multiple",
+                  "value": "little more than double",
+                  "unit": null,
+                  "period": "by H2 FY27",
+                  "kind": "target"
+                },
+                {
+                  "label": "Capacity expansion completed so far",
+                  "value": "2/3",
+                  "unit": "fraction",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Remaining capacity expansion phase (VIDA second phase)",
+                  "value": "1/3",
+                  "unit": "fraction",
+                  "period": "Q4 FY27",
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "EV capacity expansion",
+                  "points": [
+                    "EV capacity has increased from 15,000/month at end of last year to close to 30,000/month currently (first week of August), with plan to reach ~45,000/month before end of FY27 — tripling capacity within the financial year as committed.",
+                    "First leg of EV capacity expansion came on stream on August 1st.",
+                    "Second phase of VIDA capacity expansion (the remaining 1/3) will come in Q4 FY27.",
+                    "Company confident in ramping production quickly given low channel stock indicating strong underlying demand."
+                  ]
+                },
+                {
+                  "label": "ICE capacity expansion",
+                  "points": [
+                    "Splendor capacity increased by 2,000/day (a little over 50,000/month increase) driven by confidence from 15% YoY growth in Splendor within the quarter — already completed to prepare for festival season.",
+                    "Destini capacity doubled and Xoom scooter capacity increased by a further 50%, both driven by confidence in scooter growth (dispatches nearly doubled YoY) and 230bps of scooter market share gain.",
+                    "ICE scooter front capacity addition of 1,500/day completed.",
+                    "Combined ICE + EV capacity addition of ~2,500/day; total output currently ~65,000/month, expected to a little more than double by H2 FY27.",
+                    "2/3 of total planned capacity expansion already completed; remaining 1/3 (second phase VIDA expansion) to complete in Q4 FY27."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [
+                {
+                  "label": "Global/export business market share expansion",
+                  "value": "110",
+                  "unit": "bps",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Export volume growth YoY",
+                  "value": ">60",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Historic export growth trajectory",
+                  "value": "40+",
+                  "unit": "% YoY",
+                  "period": "last 2 years",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Export expansion",
+                  "points": [
+                    "Company entering more markets and introducing more products: opened Germany with launch of ICE vehicles; started selling VIDA in Nepal (launched earlier in July).",
+                    "Company aims to sustain the high growth trajectory seen over the last 2 years of 40%+ YoY export growth going forward.",
+                    "Volume expansion plans keep exports growth in view; price realization and FX gain from exports contributed benefit, including a 25bps FX/higher realization contribution to EBITDA last quarter."
+                  ]
+                },
+                {
+                  "label": "Delhi market activity",
+                  "points": [
+                    "Company jumped from 4th to 2nd rank with 16.7% EV market share in Delhi, driven by doubling of inquiries and near-doubling of retails last month.",
+                    "Increased supplies to Delhi, activated all dealerships, trained dealer service technicians, and increasing own charging network/charge points ahead of proposed Delhi EV policy (FY28)."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [
+                {
+                  "label": "EV industry growth (July 2026)",
+                  "value": "more than 80",
+                  "unit": "%",
+                  "period": "July 2026",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": []
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [
+                {
+                  "label": "GPC 2.0 CapEx",
+                  "value": "750",
+                  "unit": "INR crores",
+                  "period": null,
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Leadership changes",
+                  "points": [
+                    "New CTO Sachin Agrawal joined in May 2026, bringing multiple decades of powertrain development experience.",
+                    "Anuj Dua appointed Chief Business Officer for Premium segment, with over 2 decades of 2-wheeler OEM experience (Royal Enfield, Hero), tasked with leading the premium business as the company's 'next big growth engine'."
+                  ]
+                },
+                {
+                  "label": "Parts business capacity investment",
+                  "points": [
+                    "New GPC 2.0 investment with CapEx of INR750 crores announced, more than doubling capacity to handle the parts business, supporting growth in parts, accessories and merchandise (PAM)."
+                  ]
+                },
+                {
+                  "label": "Collaboration/partnerships",
+                  "points": [
+                    "Partnership with Zero Motorcycles of USA for high-performance electric motorcycle platform (codenamed VXZ).",
+                    "Ongoing partnership with Harley-Davidson to be taken to the next level in the premium/lifestyle business."
+                  ]
+                },
+                {
+                  "label": "EV self-sustainability strategy",
+                  "points": [
+                    "4-pillar strategy to achieve EV business self-sustainability: PLI benefits (targeting 100% portfolio coverage by December 2026), scale (operating leverage from capacity ramp), BOM cost reduction/LEAP savings program, and calibrated price increases in line with industry.",
+                    "New non-product revenue streams being developed: Battery as a Service offering across the EV portfolio for accessibility; VIDA Edge connected services program as a paywall benefit unlocking connected features; extended warranty and other value-added services bundle."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Commodity and geopolitical risk",
+                  "points": [
+                    "The conflict in West Asia triggered inflationary spikes across oil and gas, freight, foreign exchange and core raw materials including steel, aluminum and precious metals, causing transitionary commodity cost pressures in Q1 FY27.",
+                    "Net commodity inflation impact of approximately 4.5% contributed to gross margin contraction of 300bps QoQ.",
+                    "A marginal further uptick in input cost inflation is expected in Q2 FY27, planned to be neutralized through mix improvement, discretionary spend optimization and cost-saving programs."
+                  ]
+                },
+                {
+                  "label": "Category/growth risk",
+                  "points": [
+                    "Sub-125cc motorcycle category growing slower than other categories despite GST tailwinds, though Hero has gained share within it.",
+                    "H2 FY27 will face a high base effect from the large jump in H2 FY26 sales post GST, resulting in lower YoY growth from a base perspective, though momentum is still expected to yield positive growth.",
+                    "VAHAN market share declined 150bps YoY in Q1, flagged by an analyst amid concerns on price increases affecting entry-level demand."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [
+                {
+                  "label": "Medium-term EBITDA margin target",
+                  "value": "14-16",
+                  "unit": "%",
+                  "period": "medium-term",
+                  "kind": "target"
+                },
+                {
+                  "label": "EV monthly capacity target",
+                  "value": "~45,000",
+                  "unit": "units/month",
+                  "period": "before end of FY27",
+                  "kind": "target"
+                },
+                {
+                  "label": "PLI portfolio coverage target",
+                  "value": "100",
+                  "unit": "%",
+                  "period": "by December 2026",
+                  "kind": "target"
+                },
+                {
+                  "label": "Full-year FY27 industry growth outlook",
+                  "value": "approaching double digit",
+                  "unit": null,
+                  "period": "FY27",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Margin outlook",
+                  "points": [
+                    "14%-16% EBITDA margin is the medium-term guidance; short-term impact from transitory commodity inflation acknowledged, with mitigation via volume and focus on absolute EBITDA growth rather than just EBITDA percent.",
+                    "Confident of returning to the 14%-16% range in the medium term, but not committing to it in the short term given current cost pressures.",
+                    "Q2 FY27 to see marginal input cost uptick, to be neutralized via mix improvement, discretionary spend optimization and cost-saving program acceleration; primary focus remains driving absolute EBITDA growth while progressing towards the medium-term margin target."
+                  ]
+                },
+                {
+                  "label": "Capacity and industry growth outlook",
+                  "points": [
+                    "EV capacity to reach ~45,000 units/month before end of FY27 (tripling from 15,000/month at start of year), with second phase VIDA expansion completing in Q4 FY27.",
+                    "2-wheeler industry (ICE + EV combined) grew ~14% in Q1 FY27; similar trajectory expected in Q2 based on July trends.",
+                    "H2 FY27 industry growth expected to be positive but lower YoY due to high base effect from H2 FY26 GST-driven sales jump; full-year FY27 industry growth plans are approaching double digits.",
+                    "PLI benefit expected to cover almost all EV products by end of December 2026, with FY27 being the first full year of PLI accruals as a structural tailwind."
+                  ]
+                },
+                {
+                  "label": "Continued investment priorities",
+                  "points": [
+                    "Investment behind growth to continue in both capacity expansion and brand building, supporting premium, scooters, EV and global business portfolio."
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "Medium-term EBITDA margin",
+              "horizon": "medium-term",
+              "statement": "14% to 16% is our guidance for the midterm; confident of going back to it in the midterm, but not in the short term.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "reiterated"
+            },
+            {
+              "metric": "EBITDA growth focus (Q2 FY27)",
+              "horizon": "Q2 FY27",
+              "statement": "Primary focus will remain on driving EBITDA growth while progressing towards our medium-term EBITDA margin target range of 14% to 16%; plan to neutralize marginal input cost uptick via mix improvement, discretionary spend optimization and cost-saving programs.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "EV monthly capacity",
+              "horizon": "FY27 (before year-end)",
+              "statement": "We should see us go to close to 45,000 per month before the end of this financial year — tripling our capacity of EV within this financial year.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "PLI portfolio coverage",
+              "horizon": "by December 2026",
+              "statement": "We expect 100% of our portfolio to be PLI compliant by December 2026.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "2-wheeler industry growth FY27",
+              "horizon": "FY27",
+              "statement": "Right now, plans are towards full year of approaching double digit as an industry growth.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "2-wheeler industry growth H2 FY27",
+              "horizon": "H2 FY27",
+              "statement": "H2 does have a base effect of big jump that happened in sales in H2 last year post GST, hence YoY growth will be lower, but we expect still a positive growth in H2.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Total ICE+EV capacity",
+              "horizon": "H2 FY27",
+              "statement": "Currently clocking 65,000 a month; capacity addition will more than -- a little more than double.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Export growth trajectory",
+              "horizon": "going forward",
+              "statement": "High growth trajectory that you saw in our exports over the last 2 years of 40% plus year-on-year — we are aiming for that kind of growth going forward.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "EV motorcycle platform launch timing",
+              "horizon": "FY28 (next year)",
+              "statement": "It's not this year. We will be looking at products coming in from the next year.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "EV business profitability/breakeven",
+              "horizon": "by end of year",
+              "statement": "We are putting all 4 levers (scale, PLI, BOM cost reduction, calibrated pricing) at the same time, and we should continue on our trajectory to look positive by the end of the year.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "GPC 2.0 capacity for parts business",
+              "horizon": null,
+              "statement": "New investment of GPC 2.0 with CapEx of INR750 crores, which pretty much more than doubles our capacity to handle parts business.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "FY27 Capex Commitment",
+              "horizon": "FY27",
+              "statement": "FY27 capex commitment: ₹1,500 cr (explicitly confirmed as in FY27).",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Medium-term Margin Guidance",
+              "horizon": "medium-term",
+              "statement": "Reiterated medium-term margin guidance of 14%–16%, but avoided committing to a precise FY27 outcome due to volatility.",
+              "specificity": "vague",
+              "direction": "flat",
+              "status": "no_mention"
+            },
+            {
+              "metric": "EV Capacity Increase",
+              "horizon": "near-term",
+              "statement": "Near-term expansion: within ~a month, capacity to be ~50% higher than last quarter.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "Commodity cost inflation (West Asia conflict driving oil/gas, freight, FX, steel, aluminum, precious metals inflation)",
+              "status": "new",
+              "note": "Net commodity inflation impact of ~4.5% caused 300bps QoQ gross margin contraction in Q1 FY27; marginal further uptick expected in Q2 FY27."
+            },
+            {
+              "risk": "Sub-125cc motorcycle category growth lagging",
+              "status": "new",
+              "note": "This category still growing but slower than 125cc-and-above and other 2-wheeler categories, despite GST tailwinds and Hero's share gains within it."
+            },
+            {
+              "risk": "High base effect in H2 FY27",
+              "status": "new",
+              "note": "H2 FY26 saw a big sales jump post GST, creating a high base that will lower YoY growth in H2 FY27 even though momentum remains positive."
+            },
+            {
+              "risk": "Market share decline (VAHAN, YoY)",
+              "status": "new",
+              "note": "VAHAN market share dropped ~150bps YoY in Q1 FY27, raised by an analyst amid concerns that price increases could be impacting entry-level demand; management maintains focus on growth via calibrated (not full) price pass-through."
+            },
+            {
+              "risk": "EV business currently loss-making at unit level",
+              "status": "new",
+              "note": "EV EBITDA loss per unit improved from ~INR50,000 to ~INR40,000 QoQ; company working towards profitability via 4-pillar strategy (scale, PLI, BOM cost reduction, calibrated pricing) targeting positive trajectory by end of year."
+            },
+            {
+              "risk": "Commodity shock since March",
+              "status": "no_mention",
+              "note": "Mitigation but near-term pressure."
+            },
+            {
+              "risk": "West Asia developments impacting commodity costs, metals, gas",
+              "status": "no_mention",
+              "note": "Plus labor cost increases."
+            },
+            {
+              "risk": "Fuel price hikes in Bangladesh/Sri Lanka",
+              "status": "no_mention",
+              "note": "Could hit demand short-term."
+            },
+            {
+              "risk": "Global container/transport costs",
+              "status": "no_mention",
+              "note": "Have been priced and passing it on so far."
+            },
+            {
+              "risk": "EPR draft notification",
+              "status": "no_mention",
+              "note": "Described as evolving; operationalization and pricing still under industry discussion."
+            },
+            {
+              "risk": "Geopolitical tensions",
+              "status": "no_mention",
+              "note": "Persistent geopolitical tensions create uncertainty."
+            },
+            {
+              "risk": "Commodity price volatility",
+              "status": "no_mention",
+              "note": "Volatility in commodity prices impacts margins."
+            },
+            {
+              "risk": "Shifting trade policies",
+              "status": "no_mention",
+              "note": "Shifting trade policies across major economies create uncertainty."
+            },
+            {
+              "risk": "Commodity Inflation",
+              "status": "no_mention",
+              "note": "Expected to be range-bound within 1% to 2% in Q3."
+            },
+            {
+              "risk": "Geopolitical and supply uncertainties",
+              "status": "no_mention",
+              "note": "Ongoing geopolitical and supply uncertainties could impact future performance."
+            }
+          ],
+          "themes": [
+            {
+              "label": "Market share recovery",
+              "direction": "mixed",
+              "note": "Wholesale market share up 30bps in Q1 with strong gains in scooters (+230bps) and EV (+400bps in a year), yet VAHAN retail market share fell ~150bps YoY.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "EV market expansion",
+              "direction": "positive",
+              "note": "EV wholesale growth of 151% YoY, VIDA quarterly volume of 57,000 units (+26% QoQ), monthly capacity tripling from 15,000 to ~45,000 by year-end, and new VX2 Plus/VX2 Go launches.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Commodity cost management",
+              "direction": "negative",
+              "note": "West Asia conflict drove ~4.5% net commodity inflation causing 300bps gross margin contraction QoQ; mitigated via mix, LEAP cost savings and calibrated pricing, with EBITDA margin decline contained to 120bps.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Product innovation",
+              "direction": "positive",
+              "note": "New launches across ICE (Super Splendor XTEC 2.0, Passion Plus Disc), flex-fuel Splendor/HF variants (first in category), and EV (VX2 Plus, VX2 Go) plus upcoming electric motorcycle platforms (Ubex, VXZ with Zero Motorcycles).",
+              "section_ref": "TECH"
+            },
+            {
+              "label": "Export tailwind",
+              "direction": "positive",
+              "note": "Export/global business grew >60% in Q1, gained 110bps market share, with new market entries (Germany ICE launch, Nepal VIDA launch) and a target to sustain 40%+ YoY growth trajectory.",
+              "section_ref": "GEO"
+            },
+            {
+              "label": "EV profitability path",
+              "direction": "positive",
+              "note": "EV EBITDA loss per unit improved from ~INR50,000 to ~INR40,000 QoQ; 4-pillar strategy (PLI, scale, BOM cost reduction, calibrated pricing) targeting positive EV profitability by year-end.",
+              "section_ref": "STRAT"
+            },
+            {
+              "label": "Premiumization strategy",
+              "direction": "positive",
+              "note": "New CBO Anuj Dua appointed for Premium business unit, described as the 'next big growth engine', with focus on retail experience, portfolio expansion, merchandise/accessories, and Harley-Davidson/MotoSports partnerships.",
+              "section_ref": "STRAT"
+            }
+          ],
+          "key_takeaways": [
+            "2-wheeler industry volumes grew 14% year-on-year in terms of VAHAN or retail sales, of which 11% was growth in ICE and 67% was in EV.",
+            "Quarter 2 also saw a strong retail growth, year-on-year retail growth in July of 28%.",
+            "Our volume grew at 23% year-on-year, and our revenue grew 36%; the extra 13% uplift came from improved price realization as well as mix, with a positive mix of 8% from EV, premium, global business and scooters.",
+            "Overall, we saw our wholesale market share increase by 30 basis points in quarter 1.",
+            "In EV, we had a wholesale growth of 151%, and this has helped us gain more than 400 basis points of market share here within 1 year.",
+            "Gross margin for the quarter came down under pressure, contracting 300 basis points quarter-on-quarter, primarily due to an approximate 4.5% net commodity inflation impact.",
+            "Our overall EBITDA margin decline was lower at 120 basis points sequentially, landing at 13.3%, thanks to disciplined cost management as reflected in a 14% sequential reduction in other expenses.",
+            "Our primary focus will remain on driving EBITDA growth while progressing towards our medium-term EBITDA margin target range of 14% to 16%."
+          ],
+          "pressing_questions": [
+            "At what point do you think that we'll calibrate this and focus more on driving growth rather than just, I mean, like taking price increases, given VAHAN market share in Q1 has dropped like 150 basis points year-on-year?",
+            "On the EV profitability. Any broad range in terms of where the breakeven volumes will land? And if you have done any cost benchmarking with competition, what are the areas where there are gaps which you need to bridge?",
+            "On an EBITDA margin basis for the EV portfolio, how far we might be from breakeven? And if the PLI comes through on the full portfolio towards the end of the year, what it potentially implies for full year EBITDA margin on the EV portfolio?"
+          ]
+        },
         {
           "company": "Hero MotoCorp Ltd",
           "ticker": "HEROMOTOCO",
@@ -18104,552 +19430,6 @@
             "Hero MotoCorp marked its entry into Europe and the U.K. markets, expanding its presence to 52 countries.",
             "The EV business delivered its highest ever quarterly market share of 11.7%, driven by Vida VX2.",
             "Hero MotoCorp expects the 2-wheeler industry to grow 8% to 10% in the second half of FY26."
-          ],
-          "pressing_questions": []
-        },
-        {
-          "company": "Hero MotoCorp Ltd",
-          "ticker": "HEROMOTOCO",
-          "industry": "2/3 Wheelers",
-          "country": "India",
-          "concall_date": "2025-08-12",
-          "source": "transcript",
-          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=28567a33-3070-4bd3-9315-fa2e16fb4ffb.pdf",
-          "model": "gpt-4o",
-          "generated_at": "2026-07-30T05:34:17.092Z",
-          "summary": "Hero MotoCorp anticipates strong growth in the upcoming festive season, driven by new product launches and increased market share in key segments.",
-          "sections": [
-            {
-              "id": "FIN",
-              "title": "Financial Performance",
-              "key_figures": [
-                {
-                  "label": "Quarterly revenue",
-                  "value": "₹ 9,579 crores",
-                  "unit": "INR",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "EBITDA",
-                  "value": "₹ 1,382 crores",
-                  "unit": "INR",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "PAT",
-                  "value": "₹ 1,126 crores",
-                  "unit": "INR",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "EBITDA margin for ICE business",
-                  "value": "16.8%",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Overall EBITDA margin",
-                  "value": "14.4%",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Average selling price increase YoY",
-                  "value": "6%",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Quarterly revenue from parts, accessories and merchandise",
-                  "value": "₹ 1,296 crores",
-                  "unit": "INR",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Consolidated PAT",
-                  "value": "₹ 1,706 crores",
-                  "unit": "INR",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Share of onetime gain",
-                  "value": "₹ 722 crores",
-                  "unit": "INR",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Investments behind EV business",
-                  "value": "₹ 189 crores",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Loan book for HFCL",
-                  "value": "₹ 54,735 crores",
-                  "unit": null,
-                  "period": null,
-                  "kind": "reported"
-                },
-                {
-                  "label": "Financing penetration in July",
-                  "value": "65%",
-                  "unit": null,
-                  "period": "July",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Quarter-on-quarter ASP decrease",
-                  "value": "₹ 1,900",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Commodity price increase",
-                  "value": "0.5%",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Financial Performance Overview",
-                  "points": [
-                    "The company recorded strong financial performance with a quarterly revenue of ₹ 9,579 crores and an EBITDA of ₹ 1,382 crores.",
-                    "The EBITDA margin for the ICE business improved to 16.8%, driven by mix improvement, price, and LEAP savings.",
-                    "Overall EBITDA margin remained flat at 14.4% after accounting for investments in the EV business.",
-                    "The average selling price increased by 6% year-on-year, driven by mix and price.",
-                    "Consolidated PAT for the quarter stood at ₹ 1,706 crores, including a one-time gain of ₹ 722 crores from the dilution of investment in associate companies."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "ORD",
-              "title": "Order Book & Demand",
-              "key_figures": [
-                {
-                  "label": "Vahan market share",
-                  "value": "30.9%",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Market share in Scooters 125cc",
-                  "value": "9.7%",
-                  "unit": null,
-                  "period": "June",
-                  "kind": "reported"
-                },
-                {
-                  "label": "EV market share",
-                  "value": "7%",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "EV market share in July",
-                  "value": "10%",
-                  "unit": null,
-                  "period": "July",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Demand Drivers",
-                  "points": [
-                    "The economic landscape is optimistic with multiyear low inflation, RBI rate cuts, and favorable monsoon expected to boost demand.",
-                    "Two-wheeler demand is expected to continue its upward trajectory as the festive season approaches."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "SEG",
-              "title": "Segment & Product Performance",
-              "key_figures": [
-                {
-                  "label": "Market share in entry 100cc Deluxe",
-                  "value": "800 bps increase",
-                  "unit": null,
-                  "period": "YoY",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Market share in Scooters 125cc",
-                  "value": "9.7%",
-                  "unit": null,
-                  "period": "June",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Premia channel stores",
-                  "value": "90 stores",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Market share in EV business",
-                  "value": "7%",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Market share in EV business in July",
-                  "value": "10%",
-                  "unit": null,
-                  "period": "July",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Dispatch growth in global business",
-                  "value": "27%",
-                  "unit": "YoY",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Segment Performance",
-                  "points": [
-                    "Hero MotoCorp gained market share in entry 100cc Deluxe, Scooters, and EV business.",
-                    "The HF Deluxe spearheaded category expansion, gaining 800 bps market share year-on-year.",
-                    "In Scooters 125cc, the company reached its highest market share in June at 9.7%, led by new Destini 125 and Xoom 125.",
-                    "The EV business reported its highest ever market share, with a quarterly market share of 7%, more than doubling year-on-year.",
-                    "The Premia channel scale-up is progressing well, reaching 90 stores by Q1 FY '26, covering more than 40% of the premium industry's footprint.",
-                    "Global business continued to gain market share, driven by gains across the majority of focus markets."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "TECH",
-              "title": "Product & Technology",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Product Launches and Innovations",
-                  "points": [
-                    "The company launched the HF Deluxe Pro with first-in-segment features.",
-                    "In the Deluxe 125cc segment, Hero MotoCorp plans to launch a new 125cc with best-in-class technology, features, and style, along with a refreshed sporty 125cc variant.",
-                    "The VIDA VX2 was launched with a pioneering Battery-as-a-Service model."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "MFG",
-              "title": "Manufacturing & Capacity",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Production and Supply Chain",
-                  "points": [
-                    "The company temporarily paused production in April '25, impacting overall dispatch and volumes during the quarter, which has since normalized.",
-                    "Supplies normalized during the quarter, and the company is covered in the short run for both ICE and EV."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "GEO",
-              "title": "Geography & Distribution",
-              "key_figures": [
-                {
-                  "label": "Premia channel stores",
-                  "value": "90 stores",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Market share in 27 towns",
-                  "value": "20%",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Top 2 position in 54 towns",
-                  "value": "54 towns",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Geographical Expansion",
-                  "points": [
-                    "The Premia channel scale-up is progressing well, reaching 90 stores by Q1 FY '26, covering more than 40% of the premium industry's footprint.",
-                    "The company achieved over 20% market share in 27 towns and secured a top 2 position in 54 towns."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "SUP",
-              "title": "Supply Chain & Operations",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Supply Chain Management",
-                  "points": [
-                    "The rare earth situation is evolving, but the company is covered in the short run for both ICE and EV and continues to work on alternatives."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "MKT",
-              "title": "Market & Customer Strategy",
-              "key_figures": [
-                {
-                  "label": "Premia channel stores",
-                  "value": "125 stores",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "VIDA network touch points",
-                  "value": "600 touch points",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "VIDA presence in cities",
-                  "value": "400 cities",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Overall sales and service touch points",
-                  "value": "more than 6,000",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Premia outlets covering premium industry",
-                  "value": "47% to 48%",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Premia outlets",
-                  "value": "close to 124-125",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Market share in entry space",
-                  "value": "67%",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Market share improvement in entry space",
-                  "value": "600 basis points",
-                  "unit": null,
-                  "period": "previous quarter",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Market share improvement in entry space",
-                  "value": "800 basis points",
-                  "unit": null,
-                  "period": "YoY",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Scooter market share",
-                  "value": "north of 6%",
-                  "unit": null,
-                  "period": "last couple of months",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Exports growth target",
-                  "value": "over 40%",
-                  "unit": null,
-                  "period": "FY26",
-                  "kind": "target"
-                },
-                {
-                  "label": "Global business revenue and volume target",
-                  "value": "10%",
-                  "unit": null,
-                  "period": "future",
-                  "kind": "target"
-                },
-                {
-                  "label": "Exports growth",
-                  "value": "40% plus",
-                  "unit": null,
-                  "period": "last year",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Retail number for EVs in July",
-                  "value": "10,000+",
-                  "unit": null,
-                  "period": "July",
-                  "kind": "reported"
-                },
-                {
-                  "label": "First-time buyers percentage",
-                  "value": "74%",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Market Strategy",
-                  "points": [
-                    "Hero MotoCorp is ramping up marketing efforts with high visibility campaigns for HF Deluxe Pro and Xtreme 250.",
-                    "The company is focusing on expanding its EV business with the launch of VIDA VX2 and the Battery-as-a-Service model."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "STRAT",
-              "title": "Strategic Initiatives & M&A",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Strategic Partnerships",
-                  "points": [
-                    "The company introduced Ms. Kausalya Nandakumar as the Chief Business Officer for the EV business, bringing nearly 2 decades of leadership experience.",
-                    "Hero MotoCorp continues to strengthen its leadership and capabilities across the organization."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "RISK",
-              "title": "Risks & External Factors",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "External Factors",
-                  "points": [
-                    "The rare earth situation is evolving, but the company is covered in the short run for both ICE and EV.",
-                    "Ongoing geopolitical and supply uncertainties are noted, but the company remains confident due to product launches and market strategies."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "GUID",
-              "title": "Guidance & Outlook",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Outlook",
-                  "points": [
-                    "Hero MotoCorp expects two-wheeler demand to continue its upward trajectory as the festive season approaches.",
-                    "The company is confident about strong growth momentum in the business, driven by new product launches and increased market share."
-                  ]
-                }
-              ]
-            }
-          ],
-          "guidance_ledger": [
-            {
-              "metric": "EBITDA margin",
-              "horizon": "short term",
-              "statement": "Margins will operate between 14% and 16%.",
-              "specificity": "specific",
-              "direction": "flat",
-              "status": "new"
-            },
-            {
-              "metric": "Industry growth",
-              "horizon": "FY26",
-              "statement": "Industry growth expected to be about 6% to 7%.",
-              "specificity": "specific",
-              "direction": "flat",
-              "status": "new"
-            }
-          ],
-          "risk_register": [
-            {
-              "risk": "Rare earth situation",
-              "status": "stable",
-              "note": "The company is covered in the short run for both ICE and EV and continues to work on alternatives."
-            },
-            {
-              "risk": "Geopolitical and supply uncertainties",
-              "status": "stable",
-              "note": "Ongoing uncertainties noted, but the company remains confident due to product launches and market strategies."
-            }
-          ],
-          "themes": [
-            {
-              "label": "Market share recovery",
-              "direction": "positive",
-              "note": "Hero MotoCorp's Vahan market share recovered to 30.9% in Q1 FY '26.",
-              "section_ref": "ORD"
-            },
-            {
-              "label": "EV business growth",
-              "direction": "positive",
-              "note": "The EV business reported its highest ever market share, with a quarterly market share of 7%.",
-              "section_ref": "SEG"
-            },
-            {
-              "label": "Product innovation",
-              "direction": "positive",
-              "note": "Launch of HF Deluxe Pro and VIDA VX2 with Battery-as-a-Service model.",
-              "section_ref": "TECH"
-            },
-            {
-              "label": "Supply chain stability",
-              "direction": "neutral",
-              "note": "The rare earth situation is evolving, but the company is covered in the short run.",
-              "section_ref": "SUP"
-            },
-            {
-              "label": "Festive season outlook",
-              "direction": "positive",
-              "note": "Two-wheeler demand is expected to continue its upward trajectory as the festive season approaches.",
-              "section_ref": "GUID"
-            }
-          ],
-          "key_takeaways": [
-            "Hero MotoCorp's Vahan market share recovered to 30.9% in Q1 FY '26, representing a sequential increase of 1%.",
-            "The company gained market share in entry 100cc Deluxe, Scooters, and EV business.",
-            "The HF Deluxe spearheaded category expansion, gaining 800 bps market share year-on-year.",
-            "In Scooters 125cc, the company reached its highest market share in June at 9.7%, led by new Destini 125 and Xoom 125.",
-            "The EV business reported its highest ever market share, with a quarterly market share of 7%, more than doubling year-on-year.",
-            "The Premia channel scale-up is progressing well, reaching 90 stores by Q1 FY '26, covering more than 40% of the premium industry's footprint.",
-            "Global business continued to gain market share, driven by gains across the majority of focus markets."
           ],
           "pressing_questions": []
         }
