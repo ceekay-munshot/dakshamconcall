@@ -695,8 +695,10 @@
       "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "FIRSTCRY": {
-      "status": "running",
-      "started_at": "2026-08-13T22:57:50.438Z"
+      "status": "failed",
+      "finished_at": "2026-08-13T22:57:55.173Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Screener has no AI summary and no transcript for FIRSTCRY's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     }
   }
 }
