@@ -73,8 +73,10 @@
       "source": "transcript"
     },
     "BHARATFORG": {
-      "status": "running",
-      "started_at": "2026-08-13T22:57:43.401Z"
+      "status": "failed",
+      "finished_at": "2026-08-13T22:57:49.135Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Screener has no AI summary and no transcript for BHARATFORG's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "BALKRISIND": {
       "status": "done",
