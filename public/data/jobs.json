@@ -581,8 +581,10 @@
       "message": "Screener has no AI summary and no transcript for GLAND's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "SAMMAANCAP": {
-      "status": "running",
-      "started_at": "2026-08-14T22:18:13.550Z"
+      "status": "failed",
+      "finished_at": "2026-08-14T22:18:19.247Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Screener has no AI summary and no transcript for SAMMAANCAP's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "KPITTECH": {
       "status": "done",
