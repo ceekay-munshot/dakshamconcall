@@ -7931,8 +7931,776 @@
       "ticker": "MARUTI",
       "industry": "Passenger Cars & Utility Vehicles",
       "country": "India",
-      "checked_at": "2026-07-30T05:20:46.457Z",
+      "checked_at": "2026-08-15T22:18:04.009Z",
       "quarters": [
+        {
+          "company": "Maruti Suzuki India Ltd",
+          "ticker": "MARUTI",
+          "industry": "Passenger Cars & Utility Vehicles",
+          "country": "India",
+          "concall_date": "2026-07-01",
+          "source": "ai_summary",
+          "source_url": "https://www.screener.in/concalls/summary/23262602/",
+          "model": "gpt-4o",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-15T22:17:34.806Z",
+          "summary": "Management described exceptional across-the-board tailwinds (post-GST reduction demand, small-car resurgence, SUV growth, export acceleration, capacity additions) but took a deliberate near-term margin hit by changing commodity settlement terms with suppliers to protect production/volumes during West Asia conflict disruption. FY growth is expected to remain supply-constrained with ~10% headroom, dependent on ramp speed of two new plants; commodity benefits expected to partially return from Q2-Q3 as settlement cycle normalizes and aluminum prices ease.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "Net sales",
+                  "value": "499.6",
+                  "unit": "INR bn",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net sales",
+                  "value": "366.2",
+                  "unit": "INR bn",
+                  "period": "Q1 FY26 (YoY comparative)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net profit",
+                  "value": "33.5",
+                  "unit": "INR bn",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net profit",
+                  "value": "37.6",
+                  "unit": "INR bn",
+                  "period": "Q1 FY26 (YoY comparative)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBIT margin",
+                  "value": "5.1",
+                  "unit": "% of net sales",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBIT margin",
+                  "value": "8.8",
+                  "unit": "% of net sales",
+                  "period": "Q4 FY25-26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total commodity impact on margin",
+                  "value": "~300",
+                  "unit": "bps adverse",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Impact from settlement cycle change",
+                  "value": "~110",
+                  "unit": "bps",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Higher gas costs impact",
+                  "value": "~20",
+                  "unit": "bps",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Unfavorable fixed-cost absorption (inventory depletion)",
+                  "value": "~30",
+                  "unit": "bps",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Adverse FX impact",
+                  "value": "~30",
+                  "unit": "bps",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Employee costs impact (seasonality)",
+                  "value": "~40",
+                  "unit": "bps",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Depreciation impact (new Kharkoda facility)",
+                  "value": "~20",
+                  "unit": "bps",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "First price hike benefit (June)",
+                  "value": "~50",
+                  "unit": "bps",
+                  "period": "Q1 FY27 (partial)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Next price hike benefit (August)",
+                  "value": "pending",
+                  "unit": null,
+                  "period": "Q2 FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Discounting level",
+                  "value": "flattish",
+                  "unit": null,
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Margin compression drivers",
+                  "points": [
+                    "Sequential margin compression driven primarily by commodities tied to the West Asia conflict.",
+                    "Of the ~300 bps total commodity impact, ~110 bps came from the temporary settlement cycle change (quarterly lag → monthly lag) for aluminum/plastics/rubber, done to relieve supplier working capital stress.",
+                    "Management characterized the settlement change as an 'extraordinary one-time measure' to support suppliers and avoid disruption; effect described as a 'double impact': higher commodity prices plus 'accelerated pass-through' into reported results.",
+                    "Other headwinds included higher gas costs (~20 bps), unfavorable fixed-cost absorption from inventory depletion (~30 bps), adverse FX (~30 bps), employee cost seasonality (~40 bps), and depreciation from the new Kharkoda facility (~20 bps)."
+                  ]
+                },
+                {
+                  "label": "Normalization and pricing actions",
+                  "points": [
+                    "Company expects to 'gradually move back to the quarterly lag… over the next few quarters', implying some benefit could flow back as the cycle normalizes.",
+                    "Calibrated two-step price increases: first hike from June (~50 bps benefit), next hike from August (details pending at time of call).",
+                    "Management: 'Most of the benefit… would flow to us in the second quarter.'",
+                    "Discounting described as 'flattish… similar levels as the previous quarter.'",
+                    "On falling aluminum prices, management noted aluminum had 'already started showing a reduction from the peak,' and given more frequent current settlement plus planned reversion to quarterly lag, benefits should start returning — expectation: 'between Q2 and Q3… benefits have to come, will come.'"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ORD",
+              "title": "Order Book & Demand",
+              "key_figures": [
+                {
+                  "label": "Domestic wholesale volume",
+                  "value": "534,000",
+                  "unit": "units",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Domestic wholesale volume growth YoY",
+                  "value": "~33",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Domestic market share",
+                  "value": "41.2",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Domestic market share change YoY",
+                  "value": "+2.3",
+                  "unit": "pp",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Small car segment growth (18% GST slab)",
+                  "value": "~34",
+                  "unit": "% YoY",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Higher-tax vehicles growth (40% GST slab)",
+                  "value": "~28",
+                  "unit": "% YoY",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "SUV growth",
+                  "value": "44.6",
+                  "unit": "% YoY",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Maruti volume in 18% GST slab",
+                  "value": "~359,000",
+                  "unit": "units",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Industry volume in 18% GST slab",
+                  "value": "~734,000",
+                  "unit": "units",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Maruti volume in 40% GST slab",
+                  "value": "~161,000",
+                  "unit": "units",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Industry volume in 40% GST slab",
+                  "value": "~470,000",
+                  "unit": "units",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Dealer inventory",
+                  "value": "~13",
+                  "unit": "days",
+                  "period": "Quarter-end Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Optimal dealer inventory (reference)",
+                  "value": "~1 month",
+                  "unit": "days",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Pending customer order book",
+                  "value": "~130,000",
+                  "unit": "units",
+                  "period": "Quarter-end Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "First-time buyers share",
+                  "value": "~54",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "First-time buyers share (prior quarter)",
+                  "value": "~51",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Customer mix - salaried",
+                  "value": "~40",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Customer mix - business",
+                  "value": "~34",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Customer mix - self-employed",
+                  "value": "~20",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Customer mix - government",
+                  "value": "~15",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Demand breadth and drivers",
+                  "points": [
+                    "Retail sales were 'broadly in line with wholesale dispatches.'",
+                    "Demand strength noted across 'both urban and upcountry markets,' with 'healthy participation from first-time buyers.'",
+                    "First-time buyers share rose to ~54% in Q1 FY27 from ~51% in Q4 FY26.",
+                    "Customer mix: ~40% salaried, ~34% business, ~20% self-employed, ~15% government.",
+                    "Segment growth breadth spans small cars (18% GST slab, +~34% YoY, Maruti ~359,000 units vs industry ~734,000 units) and higher-tax vehicles (40% GST slab, +~28% YoY, Maruti ~161,000 units vs industry ~470,000 units), alongside SUV growth of 44.6%.",
+                    "Management stated Maruti is 'close to SUV leadership in absolute numbers.'",
+                    "Dealer inventory at ~13 days is 'much below' the optimal ~1 month level, reflecting strong retail pull relative to supply.",
+                    "Pending customer order book stood at ~130,000 units at quarter-end.",
+                    "Domestic wholesale volume grew ~33% YoY to 534,000 units; domestic market share rose +2.3 pp YoY to 41.2%."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "SUV segment positioning",
+                  "points": [
+                    "SUVs grew 44.6% YoY; management noted Maruti is 'close to SUV leadership in absolute numbers.'",
+                    "Future SUV pipeline reiterated: 'by the end of the decade we'll have many more products within SUVs,' referencing 8 announced products, with one already launched ('Victorious' mentioned)."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "TECH",
+              "title": "Product & Technology",
+              "key_figures": [
+                {
+                  "label": "New Brezza early bookings",
+                  "value": "~2,000",
+                  "unit": "units/day",
+                  "period": "Launch period (early days)",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "New Brezza launch",
+                  "points": [
+                    "New Brezza (transcribed as 'brizer/brazil') positioned as a high-content, competitive compact SUV, with early bookings of ~2,000 units/day.",
+                    "1.0L turbo petrol introduced, explicitly positioned to fall in the 18% GST bracket; management frames this as improving competitiveness.",
+                    "Feature highlights include ADAS, an underbody CNG variant, and a five-star safety rating in both adult and child occupant safety.",
+                    "Management noted investor feedback influenced content: 'many of the aspects built into this [Brezza] had come from feedback from our investor partners.'",
+                    "Automatic availability clarified: 'We have an automatic version … with the higher [powertrain] option.'"
+                  ]
+                },
+                {
+                  "label": "Powertrain and EV strategy",
+                  "points": [
+                    "Powertrain strategy described as a 'multi-part range technology pathway' spanning EVs, hybrids, and hydrogen (research project), explicitly framed as portfolio carbon reduction at lowest cost and de-risking.",
+                    "Company reiterated near-term EV cadence: a second EV display at the Bharat Mobility show early next calendar year and 'a slew of EV launches,' supported by the new predominantly-EV Gujarat (Hansalpur) line."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MFG",
+              "title": "Manufacturing & Capacity",
+              "key_figures": [
+                {
+                  "label": "Kharkoda second plant capacity addition",
+                  "value": "250,000",
+                  "unit": "units/year",
+                  "period": "From May 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Hansalpur fourth manufacturing line capacity addition",
+                  "value": "250,000",
+                  "unit": "units/year",
+                  "period": "From commercial production start",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Installed capacity (Haryana + Gujarat)",
+                  "value": "~2.9 million",
+                  "unit": "units/year",
+                  "period": "Current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Hansalpur 4th line capex",
+                  "value": "~3,900",
+                  "unit": "INR crore",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Typical ramp-up time to full capacity",
+                  "value": "4 to 5 to 6",
+                  "unit": "months",
+                  "period": null,
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Ramp-up time to full capacity",
+                  "value": "four to five to six month",
+                  "unit": null,
+                  "period": null,
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Capacity ramp-up",
+                  "points": [
+                    "Kharkoda (Haryana) second plant commenced commercial production in May 2026, adding 250k units/year.",
+                    "Hansalpur (Gujarat) fourth manufacturing line commenced commercial production (announced 'yesterday' relative to the call), adding 250k units/year.",
+                    "Combined installed capacity across Haryana and Gujarat increased to ~2.9 million units/year, with ramp-up pending.",
+                    "Management avoided giving a point-in-time utilization rate as it's 'very dynamic,' but guided that ramp to full capacity typically takes 'four to five to six months.'",
+                    "The Hansalpur 4th line is 'predominantly an EV line,' with stated capex of ~₹3,900 crore."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [
+                {
+                  "label": "Export volume growth YoY",
+                  "value": "~28.6",
+                  "unit": "% YoY",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Indian PV exports excluding Maruti growth",
+                  "value": "~-8.4",
+                  "unit": "% YoY",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Maruti share of India's PV exports",
+                  "value": ">55",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Export destination countries",
+                  "value": "~120",
+                  "unit": "countries",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Export revenue",
+                  "value": "~11.5",
+                  "unit": "INR thousand crore",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Export growth and diversification",
+                  "points": [
+                    "Export volume grew ~28.6% YoY in Q1 FY27, generating export revenue of ~₹11.5 thousand crore.",
+                    "Management contrasted Maruti's export growth with the broader industry: Indian PV exports excluding Maruti declined ~8.4%.",
+                    "Management highlighted: 'one company… is exporting more cars than the rest of 16… put together,' referring to Maruti's contribution of >55% of India's PV exports in the quarter.",
+                    "Diversification across 'nearly 120 countries' helped offset Middle East disruption; South Africa, Japan, and Europe were leading destinations in Q1.",
+                    "Logistics caution flagged: shipping schedules volatile; management urged looking at quarterly trends vs monthly due to 'temporary logistical factors.'"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SUP",
+              "title": "Supply Chain & Operations",
+              "key_figures": [
+                {
+                  "label": "Production run-rate",
+                  "value": "2.5m+",
+                  "unit": "units/year",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Tier-1 suppliers",
+                  "value": "~450",
+                  "unit": "count",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Tier-2 suppliers",
+                  "value": "~2000",
+                  "unit": "count",
+                  "period": null,
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Supplier settlement cycle change",
+                  "points": [
+                    "Maruti prioritized supply-chain continuity during the West Asia conflict via temporary supplier-friendly commodity settlement changes (quarterly lag → monthly lag for aluminum/plastics/rubber), accepting a sharp near-term margin hit to protect production and volumes.",
+                    "Supplier ecosystem protection framed as a strategic lever: the settlement-cycle decision signals an operational philosophy of prioritizing production continuity at scale (2.5m+ run-rate, ~450 Tier-1 / ~2000 Tier-2 suppliers) even at the expense of short-term margins.",
+                    "Company plans to gradually move back to the quarterly lag over the next few quarters."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [
+                {
+                  "label": "Retail volume",
+                  "value": "broadly in line with wholesale dispatches",
+                  "unit": null,
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bookings for New Brezza",
+                  "value": "about 2,000 a day",
+                  "unit": null,
+                  "period": "Launch period (early days)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Export destination countries",
+                  "value": "nearly 120",
+                  "unit": null,
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Market position commentary",
+                  "points": [
+                    "Management described a rare alignment of tailwinds: 'every aspect of our business seems to be highly positive,' citing post-GST reduction demand momentum, small-car resurgence, strong SUV growth, export acceleration, and material capacity additions.",
+                    "Domestic market share rose +2.3 pp YoY to 41.2%, reflecting broad-based segment growth across GST slabs."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Geopolitical and commodity risk",
+                  "points": [
+                    "Cost spikes from 'commodity and energy and logistical cost increases… are a temporary phenomenon,' though management avoided firm commodity guidance due to volatility.",
+                    "West Asia conflict drove the commodity settlement cycle change that caused ~110 bps of the ~300 bps total commodity margin impact in the quarter."
+                  ]
+                },
+                {
+                  "label": "Regulatory cost uncertainty",
+                  "points": [
+                    "KP3 (regulatory upgrade) cost impact is 'close to finalization, still not final'; pricing/pass-through strategy will vary 'model to model… variant to variant,' with a clearer answer expected 'in the next few quarters.'"
+                  ]
+                },
+                {
+                  "label": "Logistics volatility",
+                  "points": [
+                    "Shipping schedules for exports are volatile; management urged looking at quarterly trends vs monthly due to 'temporary logistical factors.'"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [
+                {
+                  "label": "FY growth headroom",
+                  "value": "~10",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Outlook framing",
+                  "points": [
+                    "Management maintained earlier stance that FY growth is likely supply-constrained, seeing 'headroom of about 10% growth,' with upside dependent on how quickly the two new plants ramp.",
+                    "Regulatory (KP3) cost pass-through strategy expected to be clarified 'in the next few quarters.'",
+                    "Commodity benefit from settlement cycle normalization and softer aluminum prices expected 'between Q2 and Q3.'",
+                    "EV pipeline cadence reiterated: second EV display at Bharat Mobility show early next calendar year, plus 'a slew of EV launches.'"
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "FY volume growth / headroom",
+              "horizon": "FY27",
+              "statement": "Management maintained earlier stance that FY growth is likely supply-constrained; they see 'headroom of about 10% growth,' with upside dependent on how quickly the two new plants ramp.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Price hikes",
+              "horizon": "Q2 FY27",
+              "statement": "Calibrated two-step price increases: first hike from June (~50 bps benefit), next hike from August (details pending). Most of the benefit would flow in Q2.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Commodity cost normalization",
+              "horizon": "Q2-Q3 FY27",
+              "statement": "Management expects settlement cycle to gradually revert to quarterly lag over next few quarters, and expects commodity benefits (incl. falling aluminum) to flow 'between Q2 and Q3.'",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Regulatory (KP3) cost pass-through",
+              "horizon": "next few quarters",
+              "statement": "KP3 cost close to finalization but not final; pricing/pass-through will vary model to model, variant to variant, with a clearer answer expected in the next few quarters.",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "EV launch cadence",
+              "horizon": "next calendar year",
+              "statement": "Second EV display at Bharat Mobility show early next calendar year, and 'a slew of EV launches' supported by the new predominantly-EV Gujarat line.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Capacity ramp-up timeline",
+              "horizon": "next 4-6 months",
+              "statement": "Ramp to full capacity at new plants typically takes 'four to five to six months.'",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Capex",
+              "horizon": "FY27",
+              "statement": "CFO guided ~INR 14,000 cr for the year.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Revenue growth",
+              "horizon": "FY26",
+              "statement": "The company expects revenue growth of 10-12% for FY26.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "West Asia conflict / geopolitical commodity disruption",
+              "status": "new",
+              "note": "Drove supplier settlement cycle change and ~300 bps total commodity margin impact; management calls it a temporary phenomenon."
+            },
+            {
+              "risk": "Commodity cost volatility (aluminum, plastics, rubber)",
+              "status": "new",
+              "note": "Aluminum has 'already started showing a reduction from the peak'; management avoided firm commodity guidance due to volatility."
+            },
+            {
+              "risk": "Regulatory cost uncertainty (KP3)",
+              "status": "new",
+              "note": "KP3 'close to finalization, still not final'; pass-through strategy will vary by model/variant, clarity expected in coming quarters."
+            },
+            {
+              "risk": "Export logistics volatility",
+              "status": "new",
+              "note": "Shipping schedules volatile; management urged assessing quarterly rather than monthly trends due to temporary logistical factors."
+            },
+            {
+              "risk": "Supply-constrained growth",
+              "status": "new",
+              "note": "FY growth expected to be capped by supply/capacity ramp rather than demand, per management's reiterated stance."
+            },
+            {
+              "risk": "Supply issues in rare earth metals",
+              "status": "no_mention",
+              "note": "Management cited complex operating conditions."
+            },
+            {
+              "risk": "West Asia conflict affecting energy, raw materials, and logistics",
+              "status": "no_mention",
+              "note": "Management cited complex operating conditions."
+            },
+            {
+              "risk": "Operational disruptions due to account issues",
+              "status": "no_mention",
+              "note": "The specified account is disabled, which may affect operations."
+            },
+            {
+              "risk": "Supply chain challenges due to semiconductor shortages",
+              "status": "no_mention",
+              "note": "This may impact production schedules."
+            }
+          ],
+          "themes": [
+            {
+              "label": "GST reform impact",
+              "direction": "positive",
+              "note": "Post-GST reduction demand momentum drove broad-based growth across both 18% and 40% GST slabs, with small cars +~34% YoY and higher-tax vehicles +~28% YoY.",
+              "section_ref": "ORD"
+            },
+            {
+              "label": "Capacity expansion",
+              "direction": "positive",
+              "note": "Kharkoda and Hansalpur additions each bring 250k units/year, lifting installed capacity to ~2.9 million units/year, though ramp-up takes 4-6 months.",
+              "section_ref": "MFG"
+            },
+            {
+              "label": "Supply chain challenges",
+              "direction": "negative",
+              "note": "West Asia conflict prompted a temporary supplier-friendly settlement cycle change that caused ~110 bps of the ~300 bps total commodity margin hit.",
+              "section_ref": "SUP"
+            },
+            {
+              "label": "EV strategy",
+              "direction": "positive",
+              "note": "New Hansalpur line is predominantly EV (₹3,900 crore capex); company reiterated a slew of EV launches and a second Bharat Mobility EV display next year.",
+              "section_ref": "TECH"
+            },
+            {
+              "label": "Export uncertainty",
+              "direction": "mixed",
+              "note": "Exports grew ~28.6% YoY and Maruti took >55% share of India's PV exports even as logistics remained volatile and industry exports (ex-Maruti) fell ~8.4%.",
+              "section_ref": "GEO"
+            },
+            {
+              "label": "SUV growth momentum",
+              "direction": "positive",
+              "note": "SUVs grew 44.6% YoY with Maruti 'close to SUV leadership in absolute numbers'; new Brezza launch and 8-product SUV roadmap reinforce the push.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Regulatory cost pass-through",
+              "direction": "neutral",
+              "note": "KP3 regulatory cost still not finalized; pricing pass-through approach will vary by model/variant with clarity expected in coming quarters.",
+              "section_ref": "RISK"
+            }
+          ],
+          "key_takeaways": [
+            "Management described a rare alignment of tailwinds: \"every aspect of our business seems to be highly positive,\" citing post-GST reduction demand momentum, a small-car resurgence, strong SUV growth, export acceleration, and material capacity additions.",
+            "The key near-term trade-off was deliberate: Maruti prioritized supply-chain continuity during the West Asia conflict via temporary supplier-friendly commodity settlement changes, accepting a sharp near-term margin hit to protect production and volumes.",
+            "Domestic wholesale volume: 534k units in Q1, +~33% YoY; retail \"broadly in line with wholesale dispatches.\"",
+            "Market share: Domestic market share rose +2.3 pp YoY to 41.2%.",
+            "Net sales: ₹499.6 bn vs ₹366.2 bn YoY. Net profit: ₹33.5 bn vs ₹37.6 bn YoY (profit down despite sharp revenue growth). Sequential margin compression: EBIT 5.1% of net sales vs 8.8% in Q4 FY25-26.",
+            "Two major capacity additions executed in close succession: Kharkoda (Haryana) second plant adds 250k units/year (May 2026); Hansalpur (Gujarat) fourth manufacturing line adds 250k units/year. Installed capacity increased to ~2.9 million units/year.",
+            "Export volume: +~28.6% YoY in Q1; Maruti contributed >55% of India's PV exports in the quarter, while Indian PV exports excluding Maruti declined ~8.4%.",
+            "Management maintained earlier stance that FY growth is likely supply-constrained. They see \"headroom of about 10% growth,\" with upside dependent on how quickly the two new plants ramp."
+          ],
+          "pressing_questions": [
+            "Analyst query on falling aluminum prices and its impact given the settlement cycle change and expected normalization."
+          ]
+        },
         {
           "company": "Maruti Suzuki India Ltd",
           "ticker": "MARUTI",
