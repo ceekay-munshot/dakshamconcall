@@ -188033,6 +188033,1941 @@
           ]
         }
       ]
+    },
+    "HDFCBANK": {
+      "company": "HDFC Bank Ltd",
+      "ticker": "HDFCBANK",
+      "industry": "Private Sector Bank",
+      "country": "India",
+      "checked_at": "2026-08-16T22:55:21.649Z",
+      "quarters": [
+        {
+          "company": "HDFC Bank Ltd",
+          "ticker": "HDFCBANK",
+          "industry": "Private Sector Bank",
+          "country": "India",
+          "concall_date": "2026-07-24",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=509cc499-6cb1-4d9f-8de9-9c7de6c70eef.pdf",
+          "model": "gpt-4o",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-16T22:54:41.214Z",
+          "summary": "Management indicated margins should be viewed on a full-year basis rather than quarter-to-quarter, with cost-of-funds benefits (borrowing mix, CASA, deposit repricing) expected to play out gradually over the medium term; loan growth is expected to stay healthy across corporate/wholesale (~18%), MSME/business banking (22.3%), and retail (wheels, unsecured, mortgages), aided by the FCNR window and ECLGS 5.0, while profit growth is expected to be at or above balance sheet growth over the longer term and CASA/retail deposit mix improvement is targeted over a 2-3 year horizon.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "PAT growth (reported, YoY)",
+                  "value": "5",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT growth (adjusted for one-timers, YoY)",
+                  "value": "9.8",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Balance sheet growth",
+                  "value": "13-14",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net interest margin (implied)",
+                  "value": "3.4",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Borrowing mix (borrowings as % of funding)",
+                  "value": "11",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost of funds change YoY",
+                  "value": "40-50",
+                  "unit": "bps",
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost of funds change QoQ",
+                  "value": "flat, +/- a couple",
+                  "unit": "bps",
+                  "period": "QoQ",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Average system liquidity",
+                  "value": "2.08",
+                  "unit": "INR trillion",
+                  "period": "recent quarter",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Peak system liquidity",
+                  "value": "5.5",
+                  "unit": "INR trillion",
+                  "period": "recent quarter",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Trough system liquidity",
+                  "value": "-0.43",
+                  "unit": "INR trillion",
+                  "period": "recent quarter",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Retail asset mix (current)",
+                  "value": "52",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Retail asset mix (historical target level)",
+                  "value": "60",
+                  "unit": "%",
+                  "period": "historical",
+                  "kind": "reported"
+                },
+                {
+                  "label": "CASA ratio (current quarter)",
+                  "value": "34",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Wholesale deposit mix",
+                  "value": "20",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Wholesale deposit mix (prior)",
+                  "value": "17",
+                  "unit": "%",
+                  "period": "prior period",
+                  "kind": "reported"
+                },
+                {
+                  "label": "CASA ratio target (pre-merger/near-merger level)",
+                  "value": "~38 (post-merger), 40 (pre-merger)",
+                  "unit": "%",
+                  "period": "target/historical",
+                  "kind": "target"
+                },
+                {
+                  "label": "Household deposit growth (industry, FY26)",
+                  "value": "8-9",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bank's deposit growth (FY26, vs market share gain)",
+                  "value": "9.5-10",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Borrowings maturing",
+                  "value": "INR 40,000-50,000",
+                  "unit": "INR crores",
+                  "period": "next couple of years",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Rate differential: borrowings vs retail TD",
+                  "value": "100-125",
+                  "unit": "bps",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Borrowing cost",
+                  "value": ">7",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Retail TD rate (approx)",
+                  "value": "~6",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Provision coverage ratio (headline, current)",
+                  "value": "66",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Provision coverage ratio (2019, headline)",
+                  "value": "71",
+                  "unit": "%",
+                  "period": "2019",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Provision coverage ratio ex-agri (2019)",
+                  "value": "71",
+                  "unit": "%",
+                  "period": "2019",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Provision coverage ratio ex-agri (current)",
+                  "value": "70",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Unsecured book PCR",
+                  "value": "mid-70s or higher",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Standard asset provision (current, average)",
+                  "value": "40",
+                  "unit": "bps",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ECL floor - unsecured stage 1",
+                  "value": "1",
+                  "unit": "%",
+                  "period": "post-transition (Apr'27)",
+                  "kind": "target"
+                },
+                {
+                  "label": "ECL floor - stage 2 (secured/general)",
+                  "value": "5",
+                  "unit": "%",
+                  "period": "post-transition (Apr'27)",
+                  "kind": "target"
+                },
+                {
+                  "label": "Credit cards book growth",
+                  "value": "2.3",
+                  "unit": "%",
+                  "period": "current year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Credit card spends growth",
+                  "value": "13",
+                  "unit": "%",
+                  "period": "current year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Time deposit penetration among customers",
+                  "value": "14",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total customer relationships",
+                  "value": "101-102",
+                  "unit": "million",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost-to-assets ratio",
+                  "value": "1.9",
+                  "unit": "%",
+                  "period": "referenced from prior quarter context",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Retail asset mix historical target rationale (India consumption share of GDP)",
+                  "value": "60",
+                  "unit": "%",
+                  "period": "historical",
+                  "kind": "target"
+                },
+                {
+                  "label": "New branch vintage share (less than 5 years) restated",
+                  "value": "close to 40",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Margin drivers - cost of funds",
+                  "points": [
+                    "Cost of funds is the biggest margin lever; potential 40-50 bps change versus historical norms/industry, but change is gradual, not sudden.",
+                    "System liquidity needs to stabilize (average 2.08 trillion vs peak 5.5 trillion and trough -0.43 trillion in recent quarter) for rates to stabilize; policy measures like FCNR/swap window aim to reduce this volatility.",
+                    "Retail deposit costs across the industry (including HDFC Bank) have been steady/circumspect, but non-retail deposit costs remain elevated.",
+                    "Borrowing mix at 11% is not expected to settle quickly at 8-9%; industry benchmark is ~5-6%; expected to reduce via natural maturity and balance sheet growth reducing reliance on borrowings.",
+                    "CASA mix has been actively pursued; despite FY26 CASA-linked deposit growth of 9.5-10%, market share was still gained; this remains a longer-term journey, not a quarter-to-quarter shift."
+                  ]
+                },
+                {
+                  "label": "Margin drivers - asset mix",
+                  "points": [
+                    "Asset yield/margins should be assessed on a full-year basis, not quarter-to-quarter, due to timing differences in loan booking through the year.",
+                    "Retail mix at 52% is targeted to move back toward historical ~60% level, mirroring India's consumption share of GDP, as a long-term margin contributor.",
+                    "This quarter saw some mix change toward more non-retail shorter-term assets; cost of funds moderation elements are being tactically managed."
+                  ]
+                },
+                {
+                  "label": "Profit growth vs balance sheet growth",
+                  "points": [
+                    "Reported PAT growth of 5% YoY reflects high base from one-timers last year (HDB gains, floating provision/counter-cyclical buffer, contingent provision); adjusted growth was 9.8%.",
+                    "9.8% adjusted profit growth still trails balance sheet growth (13-14%); management reiterated long-term goal for profit growth to be at or above balance sheet growth, assessed on a full-year basis."
+                  ]
+                },
+                {
+                  "label": "CASA and deposit mix",
+                  "points": [
+                    "CASA ratio decline attributed to industry-wide slowdown in household deposit growth (one of lowest across deposit categories per RBI data) and bank's faster time deposit growth needed to fund higher balance sheet growth appetite.",
+                    "Wholesale/non-retail deposit mix rose to 20% this quarter from 17%, reflecting change in composition; management expects this to normalize to more stable long-term levels (as seen over past decade) rather than be a sustained trend.",
+                    "Endeavor is to move CASA back toward pre-merger/near-merger levels (~38% post-merger, 40% pre-merger).",
+                    "Approach to grow CASA is via increasing unit customer count (distribution reach, customer additions) rather than counting on household deposit growth acceleration from single digits to ~15%.",
+                    "Time deposit penetration is low (only 14% of customers have TDs with the bank), representing a large deepening opportunity alongside CASA growth - 'it's not this or that, it's both.'"
+                  ]
+                },
+                {
+                  "label": "Provision coverage / ECL transition",
+                  "points": [
+                    "Headline PCR has declined from 71% (2019) to 66% currently; largely explained by higher proportion of agriculture book (secured) in the mix - ex-agri PCR is comparable (71% then vs 70% now).",
+                    "Shorter-term PCR differences are driven by secured-unsecured mix: unsecured PCR is mid-70s or higher, secured is lower; unsecured/retail book growth (cards, personal loans) has been modest over past two years even as disbursements grow in healthy double digits.",
+                    "PCR is formulaic based on composition of book, not discretionary.",
+                    "Existing reserving process/methodology assessed as adequate for ECL transition (effective April 1, 2027); Stage 3 (NPA-equivalent) coverage adequate.",
+                    "ECL floors will increase required provisioning versus current standard asset provision of ~40 bps (unsecured stage 1 floor of 1%, stage 2 floor of 5%), but these enhancements are seen as adequately covered by existing contingent provisions and others.",
+                    "Post-transition, ongoing credit cost impact expected to be some increase but 'nothing material.'"
+                  ]
+                },
+                {
+                  "label": "Borrowings/bonds maturity profile",
+                  "points": [
+                    "Annual report shows maturity profile of borrowings; INR 40,000-50,000 crores maturing over next couple of years.",
+                    "Rate differential exists: maturing borrowings cost a little more than 7%, versus retail TD at ~6%, offering 100-125 bps benefit if borrowings are replaced with time deposits (or a mix of time and CASA)."
+                  ]
+                },
+                {
+                  "label": "Credit card metrics",
+                  "points": [
+                    "Credit cards book grew 2.3% this year while credit card spends grew 13%, indicating spending growth outpacing receivables growth.",
+                    "Total customer relationships stand at 101-102 million, with cost-to-assets ratio referenced at 1.9%."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ORD",
+              "title": "Order Book & Demand",
+              "key_figures": [
+                {
+                  "label": "Per-branch business metric (further historical, pre-FY23)",
+                  "value": "less than 200",
+                  "unit": "INR crores",
+                  "period": "historical",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total customer base",
+                  "value": "little more than 100",
+                  "unit": "million",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Household deposit growth target scenario (hypothetical)",
+                  "value": "15",
+                  "unit": "%",
+                  "period": "hypothetical",
+                  "kind": "target"
+                },
+                {
+                  "label": "Borrowing mix expected settling range (industry benchmark)",
+                  "value": "5-6",
+                  "unit": "%",
+                  "period": "industry",
+                  "kind": "target"
+                }
+              ],
+              "subsections": []
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "Corporate and wholesale segment growth",
+                  "value": "18",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Business banking (largest MSME component) growth",
+                  "value": "22.3",
+                  "unit": "%",
+                  "period": "Q1 FY27 (this year)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ECLGS 5.0 disbursement (as of June 30)",
+                  "value": "14,000",
+                  "unit": "INR crores",
+                  "period": "as of 30 June 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Mortgages disbursement growth YoY",
+                  "value": "14",
+                  "unit": "%",
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Wheels/unsecured (personal loans/business loans) disbursement growth YoY",
+                  "value": "~20",
+                  "unit": "%",
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Retail loan growth (range-bound)",
+                  "value": "7-8",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Per-branch business metric (current)",
+                  "value": "330",
+                  "unit": "INR crores per branch",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Per-branch business metric (FY23)",
+                  "value": "266",
+                  "unit": "INR crores per branch",
+                  "period": "FY23",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Branches less than 5 years old",
+                  "value": "40",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total branch network",
+                  "value": "9,700",
+                  "unit": "branches",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Growth across segments",
+                  "points": [
+                    "Corporate/wholesale segment growth of 18% continues the trajectory seen in the previous quarter.",
+                    "MSME segment showing robust growth; business banking (largest MSME component) grew 22.3% this year, topping even March quarter performance despite June typically being a softer quarter.",
+                    "Participation in ECLGS 5.0 scheme drove INR 14,000 crores in disbursements as of June 30, described as amongst the highest among participating banks due to spread of customers and portfolio quality.",
+                    "Core retail segment saw strong YoY growth in wheels business disbursements, unsecured business (personal loans/business loans) at ~20% YoY, and mortgages disbursement growth of ~14% YoY.",
+                    "New retail product lines - gold loans and micro loans (dukandar lending) - are smaller parts of the retail basket currently but growing well and contributing to diversification within retail.",
+                    "Retail loan growth has been range-bound at 7-8% and not yet showing pickup, per analyst observation; management expects wheels, unsecured, and mortgage disbursement traction to translate into growth pickup over several quarters."
+                  ]
+                },
+                {
+                  "label": "Branch productivity and vintage",
+                  "points": [
+                    "About 40% of branches (of a 9,700 branch network) are less than 5 years old, reflecting the significant branch addition undertaken in FY22-23.",
+                    "Per-branch productivity has risen to INR 330 crores currently from INR 266 crores in FY23 and less than INR 200 crores further back, indicating early-vintage branches are progressing similarly to legacy vintages as they mature (0-5, 5-10, 10-15 year vintage curve).",
+                    "Aggregate per-branch productivity of INR 330 crores considered extremely productive and best-in-class in the industry.",
+                    "Branches are a key channel for deposits as well as retail assets and SME loans; wholesale/top corporate/mid-corporate loans are centrally managed through relationships rather than branch-level."
+                  ]
+                },
+                {
+                  "label": "Savings account (SA) market share and quality acquisition",
+                  "points": [
+                    "Incremental SA market share gains have flatlined despite branch additions; management attributes this partly to industrywide slowdown in household deposit growth (lowest among deposit categories per RBI data).",
+                    "Approach to SA growth centers on increasing unit customer count via distribution and customer addition rather than relying on household deposit growth acceleration.",
+                    "Bank tightened acquisition quality over FY24-26 using algorithms/rule engines to counter a rise in mule accounts/fraudulent activity industry-wide, which slowed new account acquisition during this period as a deliberate correction.",
+                    "Management expects a step-up in acquisition volumes (unit economics) going forward with quality guardrails in place, anticipating reasonably healthy SA growth over a 1-3 year period."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "TECH",
+              "title": "Product & Technology",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "AI and digital initiatives",
+                  "points": [
+                    "Bank is reimagining digital journeys and analytics to drive new levels of adoption, expected to bring efficiencies in coming quarters.",
+                    "Bank described itself as 'on the cusp of harnessing GenAI technologies' across processes, with lighthouse programs expected to go into production during the course of the year.",
+                    "Security highlighted as a critical strategic focus, with AI being leveraged to augment defence/security mechanisms.",
+                    "Technology investment (including security and AI) will continue even as distribution investment is somewhat muted, reflecting front-loaded investment in prior years."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [
+                {
+                  "label": "FCNR mobilization in 2014 - pace pickup timing",
+                  "value": "second month",
+                  "unit": null,
+                  "period": "2014",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": []
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Leadership transition",
+                  "points": [
+                    "New part-time Chairman Rajiv Kumar has been appointed, following interim chairmanship by Keki Mistry; management indicated this brings stability and minimizes uncertainties.",
+                    "Board (GNRC) is actively working on appointing an additional Whole-Time Director (ED); conclusion and announcement expected in a short time period, no specific date given.",
+                    "CEO reappointment process is described as 'work in progress' with the GNRC and Board fully seized of the matter; necessary announcements to follow once concluded - no confirmation of RBI application status was given."
+                  ]
+                },
+                {
+                  "label": "Strategic focus areas",
+                  "points": [
+                    "Management outlined four key strategic pillars: (1) customer focus to the level of obsession, leveraging AI in journeys; (2) reducing turnaround time for product/service delivery through daily operating rhythm; (3) releasing capacity at customer-facing end to increase engagement and business momentum; (4) driving cost-to-earnings efficiencies through reduced turnaround times.",
+                    "Strategy aims to balance growth and efficiency, with potential CASA/margin benefits as a byproduct ('a bonus') rather than the primary driver.",
+                    "Focus is also on cross-sell/wallet-share gains within existing customer base via best-in-class experience, alongside new-to-bank acquisition, across retail, MSME, and eventually wholesale/capital markets segments.",
+                    "Investment phase (distribution, technology) over the past five years is now shifting to a 'harnessing' phase; distribution investment to be slightly muted going forward while technology (security, AI) investment continues.",
+                    "Returns/efficiencies from past investments (branch distribution, technology) expected to play out over the next two to three years, supporting growth-efficiency balance."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "External/macro risks",
+                  "points": [
+                    "Weather-related disruptions such as El Nino flagged as a risk; full impact expected to play out in Q3 of the financial year.",
+                    "Geopolitical situation in West Asia flagged as a risk factor, though the country/economy is seen as having weathered it reasonably well thus far.",
+                    "Competition intensity described as very high, particularly on the corporate side where spreads remain thin; bank stated it is being selective and pursuing holistic primary relationship engagement instead of purely price-based competition.",
+                    "Non-retail deposit rates remain elevated, unlike granular retail deposit rates which have been reasonably stable."
+                  ]
+                },
+                {
+                  "label": "Operational/franchise risks (past period)",
+                  "points": [
+                    "Company navigated 'certain challenges over the last four months,' described as a 'very tough period' for the institution (context: governance/leadership transition period).",
+                    "Industry-wide rise in fraudulent/mule accounts over FY24-26 required tightened acquisition guardrails, which had a near-term dampening effect on new customer acquisition."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Forward outlook themes",
+                  "points": [
+                    "Margins to be assessed on full-year basis; cost of funds benefits expected to play out in annual and strategic review plans but not in a hurry.",
+                    "Borrowing mix expected to decline toward industry levels (~5-6%) over time via natural maturity and balance sheet growth, not expected to settle quickly at 8-9%.",
+                    "Retail asset mix targeted to move back toward ~60% over time from current 52%, mirroring India's consumption share of GDP.",
+                    "CASA ratio endeavor is to move back toward pre-merger/near-merger levels (~38-40%), via increasing customer units rather than relying on household deposit growth acceleration; expected over medium to long term (next 2-3 years), current quarter's 20% wholesale mix expected to normalize.",
+                    "Profit growth targeted to be at or above balance sheet growth in the longer term (assessed on full-year, not quarterly basis).",
+                    "FCNR mobilization: bank aims for 'a very handsome' and 'significant market share' in FCNR deposits, benchmarked to its historically strong share during the 2014 FCNR(B) window, though no specific number was committed; milestones expected in July-September.",
+                    "Loan growth: management sees resilience and credit demand holding across wholesale, MSME, and retail segments; corporate/mid-market and retail expected to continue driving growth in coming quarters, though full El Nino impact yet to play out (expected Q3).",
+                    "ECL transition (effective April 1, 2027) expected to be adequately reserved for; post-transition ongoing credit cost impact expected to be some increase but 'nothing material.'",
+                    "Technology/security investment to continue; distribution investment to be comparatively muted; returns/efficiencies from past investment expected to play out over next 2-3 years."
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "Loan growth",
+              "horizon": "FY27",
+              "statement": "We see credit demand holding and resilience in the economy across wholesale, MSME and retail segments; well positioned across most business segments, though full El Nino impact yet to play out in Q3",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Corporate/wholesale loan growth",
+              "horizon": "FY27",
+              "statement": "Corporate and wholesale segment grew 18%, continuing the trajectory from previous quarter; expected to continue contributing to growth",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Business banking / MSME growth",
+              "horizon": "FY27",
+              "statement": "Business banking (largest MSME component) grew 22.3% this year, topping March quarter performance; MSME segment growing robustly",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "raised"
+            },
+            {
+              "metric": "Retail loan growth",
+              "horizon": "next several quarters",
+              "statement": "Core retail book (wheels, unsecured, mortgages) showing good YoY disbursement traction; certainly picking up over the next several quarters, though it's a journey and doesn't happen overnight",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "NIM/margin trajectory",
+              "horizon": "FY27 (full-year)",
+              "statement": "Margins should be assessed on a full-year basis; on a full-year basis the bank is well positioned with reach and customer selection to be better; cost of funds benefit expected to play out but not in a hurry",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Borrowing mix",
+              "horizon": "medium term",
+              "statement": "Borrowing mix at 11% expected to decline toward industry levels of ~5-6% via natural maturity and overall balance sheet growth reducing reliance on borrowings, not settling quickly at 8-9%",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "Retail asset mix",
+              "horizon": "long term",
+              "statement": "Retail mix targeted to move back toward ~60% from current 52%, mirroring India's consumption share of GDP",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "CASA ratio",
+              "horizon": "medium to long term (2-3 years)",
+              "statement": "Endeavor is to reach near pre-merger/around-merger levels of ~38-40% CASA, via increasing customer units; current quarter's dip to a 20% wholesale mix expected to normalize over medium to long term",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "PAT / profit growth vs balance sheet growth",
+              "horizon": "long term",
+              "statement": "In the longer term profit growth should be at or above balance sheet growth; that's still in our plans",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "FCNR deposit mobilization",
+              "horizon": "July-September 2026 / near term",
+              "statement": "Endeavor to be a significant portion of the system FCNR mobilization as in 2014-15 period; milestones expected in July, August, September; cannot put a public number to it",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Provision Coverage Ratio (PCR) post-ECL transition",
+              "horizon": "post April 2027",
+              "statement": "Coverage/reserving process and methodology assessed as adequate for ECL transition; Stage 3 coverage adequate; some enhancement expected in Stage 1/2 due to floors but adequately covered by existing contingent provisions",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Credit cost post-ECL transition",
+              "horizon": "post transition, ongoing",
+              "statement": "Some impact expected due to ECL floors (unsecured stage 1 floor 1%, stage 2 floor 5%) versus current ~40bps standard asset provision, but nothing material",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Savings account (SA) market share growth",
+              "horizon": "1-2-3 year period",
+              "statement": "Reasonably confident of reaching reasonably healthy annual momentum and quality acquisition unit value; hunch that healthy growth should be seen over a 1-3 year period",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Technology/distribution investment",
+              "horizon": "next 2-3 years",
+              "statement": "Distribution investment to be slightly muted for now, but technology investment (security, AI) will continue; returns in terms of efficiencies expected to play out over next 2-3 years",
+              "specificity": "vague",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Additional Whole-Time Director / ED appointment",
+              "horizon": "short term",
+              "statement": "Board is seized of several milestones including new ED appointment; fair amount of action will be visible in a short time period",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "CEO reappointment",
+              "horizon": "unspecified",
+              "statement": "GNRC and Board fully seized of the matter, work in progress; necessary announcements to follow once concluded",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Corporate loan growth",
+              "horizon": "FY27",
+              "statement": "We do see this sustaining as there has been demand across electronics, food processing, auto, auto ancillaries, renewable sector and semiconductors, tempered by geopolitical fallout of a couple of months",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "LCR",
+              "horizon": "ongoing",
+              "statement": "Our endeavor for LCR is to be between 110% and 120%; we are somewhere in the middle",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Cost of funds / residual TD repricing",
+              "horizon": "next few quarters",
+              "statement": "All else remaining same, there is a tendency for the repricing to factor in more, as time deposit takes 5-6 quarters to reprice",
+              "specificity": "vague",
+              "direction": "down",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Return on assets (ROA)",
+              "horizon": "next 1-3 years",
+              "statement": "Technology leadership and operating leverage will be a key driver to enhance return on assets over the next 1, 2, 3 years",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Cost-to-assets",
+              "horizon": "ongoing",
+              "statement": "Cost to assets at 1.9% is best-in-class, but there is opportunity space due to technology implementations",
+              "specificity": "vague",
+              "direction": "down",
+              "status": "no_mention"
+            },
+            {
+              "metric": "AI use cases",
+              "horizon": "near term",
+              "statement": "5 use cases already in production and 14 more in development",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "El Nino / weather-related disruptions",
+              "status": "new",
+              "note": "Flagged as a risk on the horizon; full impact expected to play out in Q3 of the financial year"
+            },
+            {
+              "risk": "Geopolitical situation in West Asia",
+              "status": "new",
+              "note": "Flagged as a risk; country/economy seen as having weathered it reasonably well so far, tempering growth outlook"
+            },
+            {
+              "risk": "Intense competition, thin corporate spreads",
+              "status": "new",
+              "note": "Competition described as very intense on corporate side with thin spreads; bank being selective, pursuing holistic primary relationship engagement"
+            },
+            {
+              "risk": "Elevated non-retail deposit rates",
+              "status": "new",
+              "note": "Non-retail deposit rates remain elevated even as granular retail rates have stayed reasonably stable"
+            },
+            {
+              "risk": "Household deposit growth slowdown / CASA-rate correlation breakdown",
+              "status": "new",
+              "note": "Household deposit growth is one of the lowest among deposit categories industry-wide per RBI data; RBI's own financial stability report notes correlation between rates and CASA is breaking down"
+            },
+            {
+              "risk": "Rise in fraudulent/mule accounts industry-wide",
+              "status": "new",
+              "note": "Industry saw a rise in mule accounts/fraudulent activity over FY24-26; bank tightened acquisition guardrails using algorithms/rule engines, which slowed new account acquisition as a deliberate correction; now transitioning to step-up phase"
+            },
+            {
+              "risk": "ECL transition impact (April 2027)",
+              "status": "new",
+              "note": "Reserving methodology assessed as adequate; some provisioning enhancement expected due to floors but not material to credit cost"
+            },
+            {
+              "risk": "Governance/leadership transition overhang",
+              "status": "new",
+              "note": "Company navigated 'certain challenges over the last four months'; new Chairman appointment (Rajiv Kumar) seen as bringing stability and minimizing uncertainties; CEO reappointment and additional ED appointment still pending resolution"
+            },
+            {
+              "risk": "Reporting on weekends flagged by analyst as investor-access issue",
+              "status": "new",
+              "note": "Analyst requested weekday reporting for better global investor participation; management explained weekend reporting is to minimize regulatory transgression risk given market-closed timing, agreed to 'give a thought'"
+            },
+            {
+              "risk": "Geopolitical situation/uncertainty",
+              "status": "no_mention",
+              "note": "Flagged as a factor that could temper corporate growth (expected fallout of a couple of months) and has paused the rate cycle, with securities market rates showing signs of rising again."
+            },
+            {
+              "risk": "System credit growth outpacing GDP-based planning assumptions",
+              "status": "no_mention",
+              "note": "Actual system growth of 13.5-13.9% (per RBI period-end data) exceeded the bank's planning assumption of 10.5-11.5% based on nominal GDP growth of ~9-9.5%, requiring calibrated, responsible growth rather than overstretching."
+            },
+            {
+              "risk": "NIM pressure from asset-liability repricing mismatch",
+              "status": "no_mention",
+              "note": "~70% floating-rate loans transmitted quickly on 125 bps of rate cuts, while deposit repricing has captured only 40-50 bps so far, and rising propensity for costlier time deposits vs CASA has added pressure."
+            },
+            {
+              "risk": "FX/treasury volume and spread compression",
+              "status": "no_mention",
+              "note": "Lower FX trading volumes and spreads this quarter due to various risks in foreign exchange trade amid geopolitical uncertainty, plus some impact of unwinding."
+            },
+            {
+              "risk": "Governance/leadership matter - former part-time Chairman resignation",
+              "status": "no_mention",
+              "note": "Board provided statements post the March 18, 2026 event; legal review committed to at the time is in process, summary to follow."
+            },
+            {
+              "risk": "Dubai branch-related matter",
+              "status": "no_mention",
+              "note": "Covered in notes to accounts; NCDRC order (March 23) noted complainants are not retail/uninformed investors and had intent to pursue high-yield, high-risk products; nothing incremental beyond this."
+            },
+            {
+              "risk": "Contingent future shocks to asset quality",
+              "status": "no_mention",
+              "note": "Provisioning buffer of ~125 bps built to absorb potential future shocks; no current stress seen in the portfolio."
+            },
+            {
+              "risk": "Third-party distribution income mix/volume softness",
+              "status": "no_mention",
+              "note": "Modest volume growth and unfavorable product mix (e.g., lower life insurance sales) impacted third-party fee realization; management does not see anything structural to read into it."
+            }
+          ],
+          "themes": [
+            {
+              "label": "NIM/margin trajectory",
+              "direction": "mixed",
+              "note": "Margins to be judged on full-year basis; cost-of-funds benefit (borrowing mix, CASA, retail asset mix shift toward 60%) expected to play out gradually, not in a hurry",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Deposit granularity/franchise",
+              "direction": "mixed",
+              "note": "CASA ratio at 34% with wholesale mix up to 20% from 17%; endeavor to move back toward pre-merger ~38-40% CASA via unit customer growth over 2-3 years; FCNR window seen as a major near-term opportunity",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Loan growth vs system",
+              "direction": "positive",
+              "note": "Corporate/wholesale grew 18%, MSME/business banking grew 22.3%, retail disbursements strong across wheels/unsecured/mortgages; credit demand holding despite geopolitical/El Nino risks",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Technology and AI investment",
+              "direction": "positive",
+              "note": "Bank on the cusp of harnessing GenAI with lighthouse programs going into production this year; technology/security investment to continue even as distribution investment is muted",
+              "section_ref": "TECH"
+            },
+            {
+              "label": "Governance/legal overhang",
+              "direction": "mixed",
+              "note": "New Chairman Rajiv Kumar appointed bringing stability after a 'very tough period'; CEO reappointment and additional ED appointment still work in progress",
+              "section_ref": "STRAT"
+            },
+            {
+              "label": "Shift from NIM to ROA focus",
+              "direction": "neutral",
+              "note": "Management stated margin base effect will wear off and is not the primary focus; strategy centers on customer service, turnaround time, and efficiency, with margin/CASA gains treated as a resulting 'bonus'",
+              "section_ref": "GUID"
+            },
+            {
+              "label": "Asset quality / provisioning",
+              "direction": "neutral",
+              "note": "PCR decline from 71% to 66% explained by higher agri book proportion; ECL transition (April 2027) seen as adequately reserved with no material ongoing credit cost impact",
+              "section_ref": "RISK"
+            }
+          ],
+          "key_takeaways": [
+            "Deposit growth continues to be relatively better than historical Q1 trends; the bank continues to gain market share both on an incremental and stock basis.",
+            "Advances have done very well over the last three-four quarters and that trajectory continues; the bank is 'on the verge of pressing the pedal' on advances growth.",
+            "Corporate and wholesale segment grew at about 18%, MSME/business banking grew at 22.3%, and ECLGS 5.0 disbursements reached close to INR 14,000 crores as of June 30.",
+            "PAT growth was reported at 5% YoY but adjusted for one-timers (HDB gains, floating/contingent provisions) was 9.8%; management expects profit growth to be at or above balance sheet growth over the longer term.",
+            "CASA ratio has declined, with wholesale deposit mix rising to 20% from 17%; management attributes this to industry-wide household deposit growth slowdown and the bank's need to fund higher balance sheet growth via time deposits; endeavor is to move back toward pre-merger CASA levels of ~38-40% over the medium to long term.",
+            "FCNR mobilization is a key opportunity; bank spent much of June on documentation/approvals and expects milestones in July-September, aiming for a significant market share as it achieved in 2014-15, though no specific number was committed.",
+            "New Chairman Rajiv Kumar has been appointed, following interim chairmanship by Keki Mistry, bringing a sense of stability; additional Whole-Time Director appointment and CEO reappointment process remain work in progress with the Board.",
+            "Provision coverage ratio (66% headline, down from 71% in 2019) is explained largely by a higher proportion of agriculture (secured) book; ex-agri PCR is comparable (70% vs 71%); ECL transition effective April 2027 is expected to be adequately reserved with no material ongoing credit cost impact."
+          ],
+          "pressing_questions": [
+            "Do you think margins have bottomed out now? What are the headwinds or tailwinds for margins and how would FCNR mobilization impact them?",
+            "HDFC Bank does require one more ED - when will we hear of that appointment?",
+            "On the SA market shares, incremental market shares have been largely flatlined despite branch additions - what should change for us to once again start seeing meaningful gains in SA market share?",
+            "With this franchise, where should we eventually see margins settling down, and what would lead to this? What are the levers available?",
+            "On FCNR deposits, what is the kind of number or market share in overall FCNR deposits that the bank would target?",
+            "On CEO reappointment, where is the process - has it already been applied to RBI or would there be a board announcement first?",
+            "Given the CASA decline and RBI's own observation that CASA-to-rate correlation is breaking down, how can the bank get back to 40% CASA levels?",
+            "Can you quantify how much bonds are maturing this year/quarter and the rate differential/benefit versus retail TD rates?",
+            "Why is interest on balances with RBI and others growing 50% QoQ / 20% QoQ - is there a one-off or refund?",
+            "On ECL, what will be the one-time impact and the ongoing credit cost impact?",
+            "With this FCNR opportunity, are we looking at an improved growth run rate this year? Any specific growth estimate/outlook target?",
+            "On PCR, post ECL transition where would the bank like coverage ratio to be maintained?",
+            "How should we benchmark the FCNR quantum raised - to outstanding deposit share or to what was raised in FCNR(B) previously?",
+            "Barring MSME, which segments are you confident will result in a pickup in loan growth from current levels, given retail growth has been range-bound at 7-8%?",
+            "How do we get comfort that you're not under-investing in the future of the business given tight cost control over the last two years?"
+          ]
+        },
+        {
+          "company": "HDFC Bank Ltd",
+          "ticker": "HDFCBANK",
+          "industry": "Private Sector Bank",
+          "country": "India",
+          "concall_date": "2026-04-24",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=a77abbbb-954a-4221-8240-67bf0da6ba1c.pdf",
+          "model": "gpt-4o",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-16T22:50:35.990Z",
+          "summary": "Management expects loan growth momentum to continue into FY27, supported by corporate demand (electronics, food processing, auto/auto ancillaries, renewables, semiconductors, acquisition/project finance) and stepped-up retail growth (wheels, personal loans, business loans, mortgages), though tempered by geopolitical uncertainty expected to last a couple of months. NIM is expected to remain range-bound near-term with focus shifting to ROA as the key metric, supported by residual TD repricing, cost efficiencies and technology-led operating leverage; deposit growth is expected to continue with increasing granularity and core retail share.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "System credit growth estimate (management's prior expectation)",
+                  "value": "10.5-11.5",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Bank loan growth",
+                  "value": "12",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bank loan growth",
+                  "value": "5.5",
+                  "unit": "%",
+                  "period": "FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Deposit growth rate",
+                  "value": "14.4",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net income growth",
+                  "value": "11",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EPS growth",
+                  "value": "10",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EPS growth",
+                  "value": "3",
+                  "unit": "%",
+                  "period": "FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Return on assets (ROA)",
+                  "value": "1.9",
+                  "unit": "%",
+                  "period": "FY26 full year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Return on assets (ROA)",
+                  "value": "1.96",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Return on assets (ROA)",
+                  "value": "1.94",
+                  "unit": "%",
+                  "period": "FY26 full year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost-to-income ratio (core basis)",
+                  "value": "39.5",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost-to-income ratio (core basis)",
+                  "value": "40.5",
+                  "unit": "%",
+                  "period": "FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capital adequacy ratio",
+                  "value": "19.7",
+                  "unit": "%",
+                  "period": "as of Mar 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gross NPA",
+                  "value": "1.15",
+                  "unit": "%",
+                  "period": "as of Mar 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Provisioning buffer",
+                  "value": "~125",
+                  "unit": "bps",
+                  "period": "as of Mar 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Deposit market share gain per year (last 5 years)",
+                  "value": "30-50",
+                  "unit": "bps",
+                  "period": "last 5 years",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Retail liabilities <INR 3 crores share of net deposit accretion",
+                  "value": "47",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Retail liabilities <INR 3 crores share of net deposit accretion",
+                  "value": "31",
+                  "unit": "%",
+                  "period": "FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Growth in <INR3 crores net incremental deposits YoY",
+                  "value": "74",
+                  "unit": "%",
+                  "period": "FY26 vs FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total deposits mobilized (full year)",
+                  "value": "3.92.7 (as stated: INR 3.9 2.7)",
+                  "unit": "INR lakh crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Quarterly deposit accretion",
+                  "value": "2.45",
+                  "unit": "INR lakh crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Retail deposit share vs total (average)",
+                  "value": "82-83",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Retail deposit share vs total (average, comparative)",
+                  "value": "84",
+                  "unit": "%",
+                  "period": "prior period",
+                  "kind": "reported"
+                },
+                {
+                  "label": "System deposit growth",
+                  "value": "11.5",
+                  "unit": "%",
+                  "period": "recent, aggregate",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Time deposit growth YoY",
+                  "value": "15.5",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Peak quarterly deposit mobilization (comparative year)",
+                  "value": "1,75,000-1,80,000",
+                  "unit": "INR crores",
+                  "period": "prior year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Corporate loan growth",
+                  "value": "13",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "LCR",
+                  "value": "114",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "LCR",
+                  "value": "116",
+                  "unit": "%",
+                  "period": "previous quarter",
+                  "kind": "reported"
+                },
+                {
+                  "label": "LCR target range",
+                  "value": "110-120",
+                  "unit": "%",
+                  "period": "ongoing",
+                  "kind": "target"
+                },
+                {
+                  "label": "Rate reduction in cycle so far",
+                  "value": "125",
+                  "unit": "bps",
+                  "period": "since Feb (rate cycle start)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Floating rate loan share",
+                  "value": "~70",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Deposit rate transmission so far",
+                  "value": "40-50",
+                  "unit": "bps",
+                  "period": "current cycle",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Full year cost growth",
+                  "value": "6.5-7",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost to assets ratio",
+                  "value": "1.9",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost of funds",
+                  "value": "4.4",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost of funds decline YoY",
+                  "value": "50",
+                  "unit": "bps",
+                  "period": "FY26 vs FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Third-party distribution fee revenue growth",
+                  "value": "3.5",
+                  "unit": "%",
+                  "period": "full year FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Retail vs wholesale balance sheet mix",
+                  "value": "53-54",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Investment yield decline",
+                  "value": "60",
+                  "unit": "bps",
+                  "period": "last two quarters",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Borrowings decline YoY",
+                  "value": "11",
+                  "unit": "%",
+                  "period": "YoY",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "NIM and returns",
+                  "points": [
+                    "Yield on assets had faster transmission than deposits on a full year basis, leading to a NIM drop.",
+                    "Despite NIM drop, ROA remained stable at 1.9% due to cost efficiencies and lower credit costs from quality growth.",
+                    "Rate cycle: policy rate cuts of 125 bps not anticipated a year ago; ~70% of loans are floating rate with immediate transmission, while deposit repricing (via time deposits) has only captured 40-50 bps of the asset repricing so far, hence pressure on NIM.",
+                    "Time deposit growth (15.5% YoY) outpaced total deposit growth (14.4%), reflecting higher propensity toward relatively higher-priced time deposits versus CASA, which along with borrowings mix shift explains part of NIM stickiness.",
+                    "Geopolitical uncertainty has paused the rate cycle; securities market indications suggest rates may be rising again, adding uncertainty to NIM trajectory going forward.",
+                    "Management stated that if borrowings decline structurally (e.g., to 6-7% of liabilities) with all else equal, NIM would improve significantly, and that borrowings mix change is a favorable lever not yet fully unlocked.",
+                    "Management now internally prioritizes ROA over NIM as the key performance metric, since ROA also captures cost and credit efficiencies and culminates in EPS growth; PPOP considered an intermediate metric that doesn't fully capture returns since higher risk can boost PPOP but get given away in credit costs below it.",
+                    "NIM is expected to remain range-bound; management will lean on efficiency levers (operating and credit side) to keep returns stable when NIM is in a small range."
+                  ]
+                },
+                {
+                  "label": "Cost efficiency and operating leverage",
+                  "points": [
+                    "Full year cost growth of ~6.5-7% is lower than top-line growth, driving cost-to-income improvement.",
+                    "Cost-to-assets ratio of ~1.9% considered best-in-class, but management sees further opportunity from technology implementations.",
+                    "Sizable multi-year technology investments (nearly $1bn) are expected to translate into operating leverage and enhanced ROA over the next 1-3 years as they are implemented across the organization."
+                  ]
+                },
+                {
+                  "label": "Deposit granularity and mix",
+                  "points": [
+                    "Focus on garnering more granular time deposits; less than INR 3 crore deposit bucket rose from 31% to 47% of net incremental deposit accretion YoY, reflecting a push toward sustainable, less volatile deposits.",
+                    "~15% of total deposits (linked to corporate and capital markets relationships) remain volatile/high-frequency in nature, moving out and returning around month/quarter ends, though full-year net incremental mobilization in this segment is being managed upward.",
+                    "Retail deposits remain steady at 80-85% of total bank deposits historically.",
+                    "Deposit gathering was concentrated in the last month of the quarter (Feb-March) versus January, which remained tight; market liquidity turned easier later in the quarter, aiding accretion.",
+                    "Quarter's deposit accretion driven by system liquidity, expanded customer base/distribution, and stronger corporate relationships (13% corporate loan growth) generating a higher share of wallet from corporate clients."
+                  ]
+                },
+                {
+                  "label": "Investment yield and treasury",
+                  "points": [
+                    "Investment yields have declined for the last two quarters due to maturing book being replaced by new book, and duration positioning changes by treasury across rate cycles; new securities added at current higher yields are a small fraction of the overall book and take time to move overall book yield.",
+                    "No material negative treasury/FX impact this quarter despite yield movements; treasury/FX income growth was modest due to lower FX trading volumes and lower spreads amid geopolitical risk, along with some impact from unwinding."
+                  ]
+                },
+                {
+                  "label": "Cost of funds and repricing outlook",
+                  "points": [
+                    "Cost of funds at ~4.4%, down ~50 bps YoY; further residual repricing benefit expected as time deposits (which take 5-6 quarters to fully reprice) continue to mature, all else being equal.",
+                    "Time deposit rates in the market have not changed for at least 4 months; bank is priced in line with competition; geopolitical developments in March have hardened rates again, adding uncertainty to further repricing benefit."
+                  ]
+                },
+                {
+                  "label": "Third-party distribution fee income",
+                  "points": [
+                    "Third-party product fee revenue growth of only ~3.5% for the full year, lagging retail asset and liability fee growth.",
+                    "Slowdown attributed to modest volume growth (following a spike entering Q4 FY25) and an unfavorable shift in product mix affecting realized commission/spreads (e.g., lower life insurance sales), rather than a structural change; RM engagement level cited as a factor, though management said there is nothing specific to read into it.",
+                    "Penetration of third-party products in the customer base remains only mid-single-digit, implying a large opportunity space."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "Retail loan book share of balance sheet",
+                  "value": "53-54",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Mortgage distribution locations",
+                  "value": "7,800 (nearing 8,000)",
+                  "unit": "locations",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Mortgage distribution locations (previously)",
+                  "value": "6,800",
+                  "unit": "locations",
+                  "period": "prior",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Business banking (MSME) growth YoY",
+                  "value": "20",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Business banking (MSME) growth target range",
+                  "value": "18-21",
+                  "unit": "%",
+                  "period": "forward",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "MSME rank #1 states",
+                  "value": "15 of 28",
+                  "unit": "states",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "MSME top-2 rank states",
+                  "value": "25 of 28",
+                  "unit": "states",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Home loan customers with active credit cards (cross-sell)",
+                  "value": "23",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Liability penetration of inherited e-HDFC home loan customers (at merger)",
+                  "value": "36",
+                  "unit": "%",
+                  "period": "at merger",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Liability penetration of e-HDFC home loan customers (current)",
+                  "value": "50 (approx., stated as 49-50%)",
+                  "unit": "%",
+                  "period": "current, 2.5 years post-merger",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Home loan disbursals with liability account opening",
+                  "value": "98",
+                  "unit": "%",
+                  "period": "recent quarters",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Stock of home loan customers paying EMI via own account",
+                  "value": "60-65",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "CASA balances from inherited e-HDFC book (at merger)",
+                  "value": "50,000",
+                  "unit": "INR crores",
+                  "period": "at merger",
+                  "kind": "reported"
+                },
+                {
+                  "label": "CASA balances from inherited e-HDFC book (current)",
+                  "value": "86,000",
+                  "unit": "INR crores",
+                  "period": "current, 2.5 years post-merger",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Average balance multiple for customers with home loan + liability relationship vs standard",
+                  "value": "2x-2.25x",
+                  "unit": "multiple",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Corporate growth drivers",
+                  "points": [
+                    "Corporate growth seen sustaining, driven by demand across sectors: electronics, food processing, auto, auto ancillaries, renewable sector, and semiconductors.",
+                    "New opportunities opening up in acquisition financing, in addition to existing project finance and supply chain financing.",
+                    "Growth may be tempered by geopolitical fallout, expected to last no more than a couple of months into the financial year."
+                  ]
+                },
+                {
+                  "label": "Retail growth drivers",
+                  "points": [
+                    "Retail growth has stepped up from last year, with improvement visible over the last 3 quarters across wheels business, personal loans, and business loans.",
+                    "Mortgage book demand has held consistent and performed well.",
+                    "Levers for retail acceleration include expanded physical distribution (mortgages now from ~7,800-8,000 locations vs 6,800 earlier), improved digital channel utilization (10-second loans in auto and personal loans), higher customer acquisition, and salary account foray creating a pre-approved base for cross-sell without compromising asset quality.",
+                    "Disbursals have increased quarter-on-quarter across retail products; bank believes it is among top two in mortgage disbursements with hardly a gap versus market leader.",
+                    "Auto loan business continues to lead the market with the largest OEM and dealer engagement, acting as feeder for retail loans.",
+                    "New gold loan business launched over the last year has built a good quality book and is expected to continue contributing.",
+                    "MSME/business banking growth expected to continue in the 18-20/21% range depending on economic developments; bank ranks #1 nationally in MSME, #1 in 15 of 28 states, and top-2 in 25 of 28 states."
+                  ]
+                },
+                {
+                  "label": "Mortgage merger synergies (HDFC Ltd merger)",
+                  "points": [
+                    "Liability penetration among inherited e-HDFC home loan customers rose from 36% at merger to ~50% of stock within 2.5 years, net of attritions and acquisitions.",
+                    "98% of all home loans disbursed now come with a liability account opened with the bank.",
+                    "60-65% of the liability-linked home loan stock pays EMI through their own account with the bank, reflecting value accretion and risk benefits of the combined relationship.",
+                    "CASA balances from the inherited book grew from INR 50,000 crores at merger to INR 86,000 crores currently.",
+                    "Average balances of customers who keep liability relationship along with home loan are 2x to 2.25x higher than standard average balances otherwise seen.",
+                    "Cross-sell 'thali' includes credit cards, home insurance, wealth accounts (SmartWealth), and digital properties (PayZapp wallet/gateway); 23% of home loan customers on stock now have active credit cards.",
+                    "Bank has the lowest NPA percentage in the industry on a home loan book of comparable size, as per management's understanding."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "TECH",
+              "title": "Product & Technology",
+              "key_figures": [
+                {
+                  "label": "Technology investment (cumulative, multi-year)",
+                  "value": "~1",
+                  "unit": "USD billion",
+                  "period": "cumulative, last 5-6 years",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Mobile app registered customer base",
+                  "value": "60",
+                  "unit": "million",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Digital adoption for payments and service transactions",
+                  "value": "97",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Digital adoption for acquisition journeys",
+                  "value": "92",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "AI use cases in production",
+                  "value": "5",
+                  "unit": "count",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "AI use cases in development",
+                  "value": "14",
+                  "unit": "count",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Digital front-end investment",
+                  "points": [
+                    "Major investment directed toward improving digital front-end customer experience: upgraded interfaces, simplified acquisition and service journeys, modernized digital platforms.",
+                    "Launched new net-banking and mobile-banking platforms during the year, plus a payment platform launched about two years ago, all operating at population scale.",
+                    "Mobile app security features include OTP-less authentication, an enhanced-security 'lock' feature, and a full-stack UPI-enabled wallet called the Zapp account, positioned as one of the most secure offerings in the country."
+                  ]
+                },
+                {
+                  "label": "Intelligence layer and AI platform",
+                  "points": [
+                    "Building an AI-ready 'intelligence layer' bringing automation and analytics to core operations, via decoupled front-end/back-end architecture through a modern API gateway and orchestration layer, supporting agent-driven AI models.",
+                    "Built a robust data foundation with a customer-level, enterprise-level single source of truth; went live with Lakehouse Architecture — a centralized, scalable data lake with reusable, enriched data marts.",
+                    "Built an in-house unified AI platform spanning the organization, enabling rapid deployment of AI agents without custom interfaces between systems; brings together enterprise search, document extraction, voice-based agents, and a full AI development lifecycle.",
+                    "Platform supports multi-foundational and open models, includes a unified evaluation model for governance, compliance, and security, with an independent risk team unit providing a second-line safeguard.",
+                    "Key AI platform components: Model Context Protocol, Agentic Studio, and Agentic Mesh — positioning the bank among a small group of Indian and global banks with such advanced in-house capabilities.",
+                    "5 AI use cases already in production and 14 more in development, aimed at improving turnaround times, first-time-right outcomes, and freeing mid/back-office capacity for customer-facing roles.",
+                    "Technology leadership expected to be a key driver enhancing return on assets over the next 1-3 years."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MFG",
+              "title": "Manufacturing & Capacity",
+              "key_figures": [
+                {
+                  "label": "Home loan stock liability penetration (interim figure)",
+                  "value": "49",
+                  "unit": "%",
+                  "period": "current, 2.5 years post-merger",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": []
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [
+                {
+                  "label": "Business banking growth range (restated)",
+                  "value": "18-20",
+                  "unit": "%",
+                  "period": "forward",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": []
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [
+                {
+                  "label": "Total distribution branches",
+                  "value": "9,700",
+                  "unit": "branches",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total customers",
+                  "value": "100",
+                  "unit": "million",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "New customer acquisition rate",
+                  "value": "6-8",
+                  "unit": "million per year",
+                  "period": "ongoing",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Customers under 30 years age",
+                  "value": "22",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Customers under 40 years age",
+                  "value": "42",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capital markets account settlements market share",
+                  "value": "35-40",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bankers to issue (escrow settlement) market share",
+                  "value": "40-50",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Trade/exports share through bank",
+                  "value": "18-20",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Imports share through bank",
+                  "value": "13-15",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Card merchant acquiring market share",
+                  "value": "35-36",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Credit card issuance market share",
+                  "value": "21-22",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Card spends market share",
+                  "value": "26-28",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "SME/MSME rank",
+                  "value": "number one",
+                  "unit": null,
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Franchise leadership positions",
+                  "points": [
+                    "Market leader in core franchise offerings such as cash management.",
+                    "Dominant salary relationship bank in the private sector.",
+                    "Among top 2 MSME banks in the country and among top 2 mortgage banks in the country.",
+                    "Top wheels bank in the country (auto/transportation financing).",
+                    "Customers acquired at 6-8 million per year forms the funnel for future growth; young customer base (22% under 30, 42% under 40) provides lifecycle engagement opportunity."
+                  ]
+                },
+                {
+                  "label": "Growth outlook vs system",
+                  "points": [
+                    "System credit growth expectation was 10.5-11.5% based on nominal GDP growth of ~9-9.5%; bank grew loans at 12%, above its own planning range but below the higher actual system growth (13.5-13.9% per RBI period-end data as of March 31).",
+                    "Management stated this dichotomy will be navigated with responsible growth, avoiding overstretching into potential future risk 'landmines'.",
+                    "Loan growth momentum (from 5.4% in FY25 to 12% in FY26) expected to continue into FY27, with confidence in continued positive trajectory absent alarm signals, though tempered by geopolitical situation."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "HDFC Limited merger",
+                  "points": [
+                    "Merger with mortgage company HDFC Limited described as an investment for the future; bank navigated the merger in a stable manner over the last 3 years despite changing economic outlook and regulatory stance, and it is expected to provide operating leverage going forward.",
+                    "Merger synergies quantified via liability penetration, CASA growth, and cross-sell metrics as detailed in Segment section."
+                  ]
+                },
+                {
+                  "label": "Governance matters",
+                  "points": [
+                    "Management addressed the resignation of the former part-time Chairman and the Dubai branch-related matter; statements were provided by the Board post the March 18, 2026 event.",
+                    "Government of India, RBI and SEBI issued statements in favor of the bank regarding these matters.",
+                    "A legal review (committed to at the time of the press communication) is in process; a summary will be provided once complete.",
+                    "Audited financial statements for the year ended March 2026 carry explanatory notes on these matters, including the Dubai branch-related matter.",
+                    "An NCDRC order dated March 23 highlighted that the complainants (in the Dubai branch matter) are not retail in nature and are not uninformed investors, and had clear intent to pursue high-yield, high-risk investment products; management stated there is nothing incremental beyond this."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Geopolitical and macro risk",
+                  "points": [
+                    "Geopolitical situation flagged as a risk to corporate growth sustaining, expected to have a fallout of not more than a couple of months into the new financial year.",
+                    "Rate cycle currently paused due to geopolitical uncertainty; securities market indications suggest rates may be rising again, adding uncertainty to NIM and cost-of-funds trajectory, depending on how the geopolitical situation, oil prices and the country's liquidity/borrowing needs settle.",
+                    "Lower FX trading volumes and spreads this quarter attributed to various risks in foreign exchange trade amid geopolitical uncertainty, along with impact of some unwinding.",
+                    "System credit growth running ahead of nominal GDP-based expectations (13.5-13.9% actual vs 10.5-11.5% planning assumption) flagged as a factor requiring calibrated, responsible growth to avoid future risk."
+                  ]
+                },
+                {
+                  "label": "Governance/legal risk",
+                  "points": [
+                    "Resignation of former part-time Chairman and Dubai branch-related matter flagged as recent events; legal review in process, to be summarized once complete.",
+                    "NCDRC order on March 23 addressed complainant profile in the Dubai branch matter, noting they pursued high-yield, high-risk investment products with clear intent."
+                  ]
+                },
+                {
+                  "label": "Asset quality (contingent risk)",
+                  "points": [
+                    "Provisioning buffer of ~125 bps built to absorb any future shocks; management noted this is contingent upon any future events that may occur, and no current stress is seen in the portfolio."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [
+                {
+                  "label": "LCR target range",
+                  "value": "110-120",
+                  "unit": "%",
+                  "period": "ongoing",
+                  "kind": "target"
+                },
+                {
+                  "label": "MSME/business banking growth range",
+                  "value": "18-21",
+                  "unit": "%",
+                  "period": "forward",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Growth guidance",
+                  "points": [
+                    "Bank expects to continue good momentum and trajectory in loan growth into FY27, calibrated to responsible growth rather than a hard benchmark against system growth, given geopolitical uncertainty; no alarm bells seen yet.",
+                    "Corporate growth (13% in FY26) expected to sustain, tempered by geopolitical fallout expected to last a couple of months.",
+                    "Retail growth expected to continue stepping up across wheels, personal loans, business loans, mortgages, gold loans and MSME/business banking (18-20/21% range)."
+                  ]
+                },
+                {
+                  "label": "Margin and returns guidance",
+                  "points": [
+                    "NIM expected to remain range-bound in the near term depending on rate cycle and geopolitical developments, with further TD repricing offering a potential positive lever, all else equal.",
+                    "Management's primary internal focus metric going forward is ROA (not NIM or PPOP), as it captures growth, cost, and credit efficiencies, culminating in consistent EPS growth.",
+                    "LCR to be managed in the 110-120% range, currently around the middle (114%)."
+                  ]
+                },
+                {
+                  "label": "Cost guidance",
+                  "points": [
+                    "Cost-to-assets ratio at ~1.9% (best-in-class) expected to see further improvement opportunities from technology implementation, supporting operating leverage over the next 1-3 years."
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "Loan growth",
+              "horizon": "FY27",
+              "statement": "We will continue to have a good momentum and trajectory in our growth, but tempered by geopolitical situation; no alarm bells as yet",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Corporate loan growth",
+              "horizon": "FY27",
+              "statement": "We do see this sustaining as there has been demand across electronics, food processing, auto, auto ancillaries, renewable sector and semiconductors, tempered by geopolitical fallout of a couple of months",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Retail loan growth",
+              "horizon": "FY27",
+              "statement": "Retail growth has stepped up and expected to continue growing across wheels, personal loans, business loans, mortgages and gold loans",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Business banking / MSME growth",
+              "horizon": "forward",
+              "statement": "Business banking growth of ~20% YoY will continue to be in that range of 18% to 20%, 21%, depending on economic developments",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "LCR",
+              "horizon": "ongoing",
+              "statement": "Our endeavor for LCR is to be between 110% and 120%; we are somewhere in the middle",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "NIM",
+              "horizon": "FY27",
+              "statement": "NIM trajectory depends on how the geopolitical situation settles, country's liquidity and borrowing needs; currently range bound",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Cost of funds / residual TD repricing",
+              "horizon": "next few quarters",
+              "statement": "All else remaining same, there is a tendency for the repricing to factor in more, as time deposit takes 5-6 quarters to reprice",
+              "specificity": "vague",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "Return on assets (ROA)",
+              "horizon": "next 1-3 years",
+              "statement": "Technology leadership and operating leverage will be a key driver to enhance return on assets over the next 1, 2, 3 years",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Cost-to-assets",
+              "horizon": "ongoing",
+              "statement": "Cost to assets at 1.9% is best-in-class, but there is opportunity space due to technology implementations",
+              "specificity": "vague",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "AI use cases",
+              "horizon": "near term",
+              "statement": "5 use cases already in production and 14 more in development",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "Geopolitical situation/uncertainty",
+              "status": "new",
+              "note": "Flagged as a factor that could temper corporate growth (expected fallout of a couple of months) and has paused the rate cycle, with securities market rates showing signs of rising again."
+            },
+            {
+              "risk": "System credit growth outpacing GDP-based planning assumptions",
+              "status": "new",
+              "note": "Actual system growth of 13.5-13.9% (per RBI period-end data) exceeded the bank's planning assumption of 10.5-11.5% based on nominal GDP growth of ~9-9.5%, requiring calibrated, responsible growth rather than overstretching."
+            },
+            {
+              "risk": "NIM pressure from asset-liability repricing mismatch",
+              "status": "stable",
+              "note": "~70% floating-rate loans transmitted quickly on 125 bps of rate cuts, while deposit repricing has captured only 40-50 bps so far, and rising propensity for costlier time deposits vs CASA has added pressure."
+            },
+            {
+              "risk": "FX/treasury volume and spread compression",
+              "status": "new",
+              "note": "Lower FX trading volumes and spreads this quarter due to various risks in foreign exchange trade amid geopolitical uncertainty, plus some impact of unwinding."
+            },
+            {
+              "risk": "Governance/leadership matter - former part-time Chairman resignation",
+              "status": "new",
+              "note": "Board provided statements post the March 18, 2026 event; legal review committed to at the time is in process, summary to follow."
+            },
+            {
+              "risk": "Dubai branch-related matter",
+              "status": "stable",
+              "note": "Covered in notes to accounts; NCDRC order (March 23) noted complainants are not retail/uninformed investors and had intent to pursue high-yield, high-risk products; nothing incremental beyond this."
+            },
+            {
+              "risk": "Contingent future shocks to asset quality",
+              "status": "stable",
+              "note": "Provisioning buffer of ~125 bps built to absorb potential future shocks; no current stress seen in the portfolio."
+            },
+            {
+              "risk": "Third-party distribution income mix/volume softness",
+              "status": "stable",
+              "note": "Modest volume growth and unfavorable product mix (e.g., lower life insurance sales) impacted third-party fee realization; management does not see anything structural to read into it."
+            }
+          ],
+          "themes": [
+            {
+              "label": "Loan growth vs system",
+              "direction": "mixed",
+              "note": "Bank grew loans 12% in FY26 (up from 5.5%), below the actual system growth of 13.5-13.9%, but management sees continued momentum into FY27 with responsible, calibrated growth.",
+              "section_ref": "MKT"
+            },
+            {
+              "label": "NIM/margin trajectory",
+              "direction": "negative",
+              "note": "NIM dropped as asset yields transmitted faster than deposit costs; expected to stay range-bound depending on rate cycle and geopolitical developments, with residual TD repricing as a potential offsetting lever.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Deposit granularity/franchise",
+              "direction": "positive",
+              "note": "Share of granular <INR3 crore deposits in net accretion rose from 31% to 47% YoY, reflecting continued build-out of a sustainable, less volatile deposit franchise.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Technology and AI investment",
+              "direction": "positive",
+              "note": "~$1bn cumulative tech investment, new digital platforms, and an in-house AI platform (5 use cases live, 14 in development) expected to drive operating leverage and ROA over the next 1-3 years.",
+              "section_ref": "TECH"
+            },
+            {
+              "label": "HDFC merger synergies",
+              "direction": "positive",
+              "note": "Liability penetration of inherited home loan customers rose from 36% to ~50% in 2.5 years, with CASA growing from INR 50,000 crores to INR 86,000 crores and strong cross-sell traction.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Governance/legal overhang",
+              "direction": "negative",
+              "note": "Former part-time Chairman's resignation and the Dubai branch matter addressed; legal review in process, NCDRC order favorable on complainant profile.",
+              "section_ref": "RISK"
+            },
+            {
+              "label": "Shift from NIM to ROA focus",
+              "direction": "neutral",
+              "note": "Management explicitly stated it is prioritizing return on assets over NIM or PPOP as the key internal performance metric, since it best captures growth, cost and credit efficiencies culminating in EPS growth.",
+              "section_ref": "GUID"
+            }
+          ],
+          "key_takeaways": [
+            "We had estimated the system credit growth to be around 10.5% to 11.5%. We did 12%, up from 5.5% last year.",
+            "Deposit growth rate at 14.4% continues to grow faster than the credit growth, which is what we've always been doing. The growth rate is better than the system growth rate yet again.",
+            "Net income growth clocked at 11%, similar to the last financial year, whilst EPS growth of 10% versus 3% last year.",
+            "The yield on assets had a faster transmission as against deposits on a full year basis, leading to a NIM drop. Despite the drop in NIMs, the return on assets continue to be stable at 1.9% due to cost efficiencies with cost-to-income declining from 40.5% to 39.5% on a core basis and focus on quality growth reflecting in lower credit costs.",
+            "The distribution nearly doubled to 9,700 branches. The number of customers nearly doubled to 100 million customers. Our tech investments more than quadrupled to around $1 billion.",
+            "We have a strong capital position at 19.7%. Our asset quality is extremely healthy at 1.15% gross NPAs. The bank has created a large provisioning buffer of almost 125 basis points to absorb any shocks in the future.",
+            "The loan deposit ratio is not a constraint. We have demonstrated our ability to gain market share on deposits every year, almost around 30 to 50 basis points over the last 5 years. Hence, it's no longer a binding constraint.",
+            "In the less than 3 crores retail liabilities, we have moved up from 31% of the net total accretion to about 47% of the total net deposit accretion for the year.",
+            "We already have 5 use cases in production and 14 more in development, improving turnaround times, first-time right outcomes, and freeing mid-office and back-office capacity for customer-facing roles."
+          ],
+          "pressing_questions": [
+            "Firstly, on the deposits. So how do you look at the deposit market share? We have done very well in this quarter but if I look at it in context of how the system itself has done, we have seen a very sharp pickup in the deposit accretion for the system overall. So how do you kind of look at the market share that HDFC Bank has been able to garner this quarter in context of system number? And any color if you can also share on what has driven this huge surge in the business numbers over the last fortnight?",
+            "So firstly, again, touching upon on the growth side. So, we indicated like we will try to grow in line with the industry average, but we are seeing industry average being upwards of 15%, we are still at 12%. So we have been below it. And next year, would we retain the guidance of growing above the industry average or would we say like we will still grow in line with the industry average because industry average itself has picked up to a very large extent? And on the deposits, how much of this is transitory in nature? And how much of this it can sustain?",
+            "My first question, Srini, is more on the guidance. I think if I heard you right, you said LDR is no longer kind of relevant or a constraint. And I also heard you saying that loan growth, you would rather focus on improving momentum rather than benchmarking the system? So is there one metric that you use internally to assess performance, which kind of captures some of these pushes and pulls you have on the different metrics that would also be helpful, I guess, for investors to track performance?",
+            "The borrowings have come off almost 11% year-on-year, but the NIM trajectory is broadly similar with what some of your peers have reported. So is that something you expected a year back, meaning borrowings come off, but NIM doesn't really get impacted or has something changed in that front? And more importantly, will a reduction in borrowings have a meaningful impact on NIM going forward?",
+            "So this number [yield on investments] is down about 60 basis points in the last two quarters and the overall yields have gone up. So why is the interest income on investment yields going down?",
+            "So I had a question on the third-party distribution fee. Actually, if I look at it on a full year basis, the growth has been hardly 3.5%. And this is lagging the overall customer growth... What is really leading to this? Is it just a slowdown or cross-sell has become more difficult or refocusing on some products?"
+          ]
+        }
+      ]
     }
   }
 }
