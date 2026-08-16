@@ -593,8 +593,10 @@
       "source": "transcript"
     },
     "SUPRIYA": {
-      "status": "running",
-      "started_at": "2026-08-16T22:24:25.513Z"
+      "status": "failed",
+      "finished_at": "2026-08-16T22:24:32.617Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Screener has no AI summary and no transcript for SUPRIYA's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "AARTIPHARM": {
       "status": "failed",
