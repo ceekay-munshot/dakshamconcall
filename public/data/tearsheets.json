@@ -176702,7 +176702,7 @@
       "ticker": "STEELCAS",
       "industry": "Castings & Forgings",
       "country": "India",
-      "checked_at": "2026-08-16T07:58:04.221Z",
+      "checked_at": "2026-08-16T08:05:10.300Z",
       "quarters": [
         {
           "company": "Steelcast Ltd",
@@ -176714,8 +176714,8 @@
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ac7e8551-f431-46f5-a929-753a6b251b3e.pdf",
           "model": "anthropic.claude-sonnet-5",
           "pipeline_version": 3,
-          "generated_at": "2026-08-16T07:57:19.321Z",
-          "summary": "Steelcast delivered Q1 FY27 revenue growth of 17% YoY with stable EBITDA margins (~28.2%), and management reiterated a targeted growth trajectory of ~20% CAGR over coming years, guiding FY27 growth of ~25-30% (volume-led), with margins expected to improve by 100-200 bps on cost pass-through and operating leverage as capacity utilization rises toward 90% by FY29 and a new Greenfield Foundry (8,500 tons, ~INR120 crore capex) is commissioned by 31st March FY28.",
+          "generated_at": "2026-08-16T08:04:27.052Z",
+          "summary": "Steelcast reported Q1 FY27 revenue growth of 17% YoY with stable EBITDA margins (~28.23%). Management guided for 25-30% volume growth in FY27, sequential quarter-on-quarter top-line improvement, EBITDA margin expansion to ~28.5-29% aided by cost pass-through and operating leverage, and a new Greenfield Foundry (8,500 tons, ~INR120 crores capex over 2 years, commissioning by 31st March FY28) to support a long-term ~20% CAGR growth trajectory, with capacity utilization targeted at 90% by FY29 on existing capacities.",
           "sections": [
             {
               "id": "FIN",
@@ -176820,10 +176820,24 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Reserves (as of March '26 balance sheet)",
+                  "label": "Expected EBITDA margin improvement",
+                  "value": "150-200",
+                  "unit": "bps",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Targeted EBITDA margin",
+                  "value": "28.5-29",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Reserves as of March '26 balance sheet",
                   "value": "120",
                   "unit": "INR crores",
-                  "period": "FY26 end",
+                  "period": "as of Mar-26",
                   "kind": "reported"
                 },
                 {
@@ -176837,82 +176851,75 @@
                   "label": "Price correction effective 1st April",
                   "value": "very minimal",
                   "unit": null,
-                  "period": "from 1st April '27",
+                  "period": "from 1st April",
                   "kind": "reported"
                 },
                 {
-                  "label": "Volume growth guidance FY27",
+                  "label": "Volume growth",
                   "value": "25",
                   "unit": "%",
                   "period": "FY27",
                   "kind": "guidance"
                 },
                 {
-                  "label": "Volume growth guidance FY27 (revised upward in Q&A)",
-                  "value": "25",
-                  "unit": "%",
-                  "period": "FY27",
+                  "label": "Operating leverage benefit",
+                  "value": "should kick in with scale increasing",
+                  "unit": null,
+                  "period": null,
                   "kind": "guidance"
                 },
                 {
-                  "label": "Operating leverage benefit expectation",
-                  "value": "expected",
+                  "label": "Sequential improvement in top line",
+                  "value": "from here on for several quarters",
                   "unit": null,
-                  "period": "future",
+                  "period": null,
                   "kind": "guidance"
                 },
                 {
-                  "label": "Sequential improvement in top line expectation",
-                  "value": "expected",
+                  "label": "Margins",
+                  "value": "will remain in guided range",
                   "unit": null,
-                  "period": "future",
+                  "period": null,
                   "kind": "guidance"
                 },
                 {
-                  "label": "Price increase effective 1st July '27",
-                  "value": "all increases",
+                  "label": "Order book growth",
+                  "value": "increase this year compared to last year",
                   "unit": null,
-                  "period": "from 1st July '27",
-                  "kind": "guidance"
-                },
-                {
-                  "label": "Price increase effective 1st April '27",
-                  "value": "very minimal",
-                  "unit": null,
-                  "period": "from 1st April '27",
+                  "period": null,
                   "kind": "reported"
                 },
                 {
-                  "label": "Price increase pass-through",
-                  "value": "all increases",
+                  "label": "Price increase",
+                  "value": "will be able to pass on everything",
                   "unit": null,
-                  "period": "future",
+                  "period": "from 1st July",
                   "kind": "guidance"
                 },
                 {
-                  "label": "Additional margin possibility from operating leverage",
-                  "value": "1-2",
+                  "label": "Natural gas price increase vs February end prices",
+                  "value": "50-55",
                   "unit": "%",
-                  "period": "FY27",
-                  "kind": "target"
+                  "period": null,
+                  "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Margin drivers and outlook",
+                  "label": "Margin drivers",
                   "points": [
-                    "Improvement in gross margins in the quarter attributed primarily to scale/higher volumes, as only a minimal price correction (effective 1st April) has come through so far; the major price correction will be effective 1st July, per the sales price variation formula with customers.",
-                    "Margins are likely to go up further because increased input costs will be compensated to the company, and operating leverage will kick in as volumes increase.",
-                    "Management indicated theoretically full-year EBITDA margin could improve by 150-200 bps to around 28.5%-29% for FY27 versus 27% in FY26, as a distinct possibility with operating leverage.",
-                    "Cost pass-through generally happens with a lag of one quarter — both for cost increases and cost reductions; this time costs are increasing so compensation will be effective 1st July."
+                    "Improvement in margins attributed to scale/higher volumes rather than price hikes, as only a minimal price correction was effective from 1st April.",
+                    "Major raw material cost pass-through will be effective from 1st July, which management expects to further support margins.",
+                    "Operating leverage expected to kick in further as volumes increase, supporting additional 1-2% margin upside making 28.5-29% a distinct possibility."
                   ]
                 },
                 {
                   "label": "Capital allocation",
                   "points": [
-                    "Company remains debt-free and intends to maintain this status; cash accruals generated over the coming two years will be used to fund the INR120 crore capex for the new Greenfield Foundry.",
-                    "Management stated the company does not need additional resources from shareholders and cited already having sufficient reserves (as of March '26 balance sheet, INR120 crores) to fund the INR120 crore investment; management noted equity dilution (e.g., via rights issue) would reduce EPS.",
-                    "An investor suggested a rights issue at a premium (~INR200-300) to fund ~60% of project cost and also suggested a bonus issue; management agreed to take the rights issue suggestion to the Board and confirmed it would take up the bonus issue suggestion at the forthcoming Board meeting."
+                    "Company is debt-free and intends to remain so.",
+                    "Cash accruals generated over the coming 2 years will be used to fund the INR120 crores capex for the new Greenfield Foundry, rather than raising external capital.",
+                    "Management declined shareholder suggestion of a rights issue, citing sufficient internal reserves (INR120 crores as of March '26) and potential EPS dilution.",
+                    "Management said it would take shareholder's bonus issue suggestion to the Board for consideration."
                   ]
                 }
               ]
@@ -176922,24 +176929,24 @@
               "title": "Order Book & Demand",
               "key_figures": [
                 {
-                  "label": "Order book (current)",
+                  "label": "Current order book",
                   "value": "140",
                   "unit": "INR crores",
-                  "period": "as on call date (Jul 2026)",
+                  "period": "as on call date",
                   "kind": "reported"
                 },
                 {
-                  "label": "Order book execution timeframe",
+                  "label": "Order booking visibility period",
                   "value": "3-4",
                   "unit": "months",
-                  "period": "current",
+                  "period": null,
                   "kind": "reported"
                 },
                 {
-                  "label": "Firm business booking period",
+                  "label": "Firm order business period",
                   "value": "3",
                   "unit": "months",
-                  "period": "current",
+                  "period": null,
                   "kind": "reported"
                 }
               ],
@@ -176947,17 +176954,18 @@
                 {
                   "label": "Order booking cadence",
                   "points": [
-                    "Company generally books orders for a forward period of about 3-4 months, with orders replenished every month; firm business booking period is about 3 months.",
-                    "There will be an increase in order book this year compared to last year, though exact prior-year figure was not available on the call.",
-                    "The current order book stands at INR140 crores as on the call date (July 2026), representing the value of orders on hand at any point in time, reflecting roughly 3-4 months of order booking rather than a fixed multi-quarter backlog."
+                    "Company generally books orders for a forward period of about 3-4 months, with orders replenished every month.",
+                    "Order book value of INR140 crores represents firm business of about 3-4 months at a time; exact YoY growth number not available on call but management indicated an increase versus last year.",
+                    "Demand visibility driven by indications from domestic and export customers of increased volumes, elevated commodity prices, rising infrastructure spending in India and abroad, and increased investment in sectors like railways."
                   ]
                 },
                 {
                   "label": "Demand drivers",
                   "points": [
-                    "Demand visibility is supported by indications from domestic and export customers of increased volumes, elevated commodity prices, rising infrastructure spending in India and abroad, and increased investment in sectors like railways.",
-                    "Across all industry sectors served, there is an increase in demand; casting and forging industries expected to do well; automobile sector growing at 10-15%.",
-                    "India is seen as relatively insulated from geopolitical issues due to large domestic consumption, though some cost pressure exists here and there."
+                    "Demand growth is a composite effect of new parts moving into serial supply and an overall increase in demand from customers across all 9 sectors served.",
+                    "All 9 sectors served have been requesting improvement in supplies and increase in orders.",
+                    "Automobile industry cited as a comparison, growing at 10-15%, indicating broader engineering industry strength.",
+                    "Despite geopolitical issues, India seen as relatively insulated due to large domestic consumption."
                   ]
                 }
               ]
@@ -176967,80 +176975,87 @@
               "title": "Segment & Product Performance",
               "key_figures": [
                 {
-                  "label": "Mining sector revenue share (current year)",
+                  "label": "Mining sector revenue share",
                   "value": "27",
                   "unit": "%",
-                  "period": "FY27",
-                  "kind": "reported"
+                  "period": "FY27 (current year)",
+                  "kind": "guidance"
                 },
                 {
-                  "label": "Earthmoving sector revenue share (current year)",
+                  "label": "Earthmoving sector revenue share",
                   "value": "43",
                   "unit": "%",
-                  "period": "FY27",
-                  "kind": "reported"
+                  "period": "FY27 (current year)",
+                  "kind": "guidance"
                 },
                 {
-                  "label": "Construction sector revenue share (current year)",
+                  "label": "Construction sector revenue share",
                   "value": "15",
                   "unit": "%",
-                  "period": "FY27",
-                  "kind": "reported"
+                  "period": "FY27 (current year)",
+                  "kind": "guidance"
                 },
                 {
                   "label": "Defense sector revenue share",
                   "value": "1",
                   "unit": "%",
-                  "period": "FY27",
-                  "kind": "reported"
+                  "period": "FY27 (current year)",
+                  "kind": "guidance"
                 },
                 {
-                  "label": "Mining equipment industry sales share (10 years ago)",
-                  "value": "84",
-                  "unit": "%",
-                  "period": "~10 years ago",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Mining equipment industry sales share (now, earlier stated)",
-                  "value": "54",
-                  "unit": "%",
-                  "period": "current (earlier in call)",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Earthmoving sales share (now, earlier stated)",
-                  "value": "36",
-                  "unit": "%",
-                  "period": "current (earlier in call)",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Construction sales share (10 years ago)",
-                  "value": "15-16",
-                  "unit": "%",
-                  "period": "~10 years ago",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Construction sales share (now, earlier stated)",
-                  "value": "20-21",
-                  "unit": "%",
-                  "period": "current (earlier in call)",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Mining, earthmoving, construction combined contribution",
+                  "label": "Mining + earthmoving + construction combined share",
                   "value": "70",
                   "unit": "%",
                   "period": "current",
                   "kind": "reported"
                 },
                 {
-                  "label": "Other 6 sectors combined contribution",
+                  "label": "Other 6 sectors combined share",
                   "value": "30",
                   "unit": "%",
                   "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Mining equipment industry share",
+                  "value": "84",
+                  "unit": "%",
+                  "period": "10 years back",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Mining equipment industry share",
+                  "value": "54",
+                  "unit": "%",
+                  "period": "current (approx)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Earthmoving share",
+                  "value": "near zero",
+                  "unit": "%",
+                  "period": "10 years back",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Earthmoving share",
+                  "value": "36",
+                  "unit": "%",
+                  "period": "current (approx)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Construction share",
+                  "value": "15-16",
+                  "unit": "%",
+                  "period": "10 years back",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Construction share",
+                  "value": "20-21",
+                  "unit": "%",
+                  "period": "current (approx)",
                   "kind": "reported"
                 },
                 {
@@ -177052,45 +177067,59 @@
                 },
                 {
                   "label": "GET revenue contribution",
-                  "value": "3.5",
-                  "unit": "%",
-                  "period": "FY27 (current year)",
-                  "kind": "guidance"
-                },
-                {
-                  "label": "GET revenue contribution",
-                  "value": "4.5-5",
-                  "unit": "%",
-                  "period": "FY29",
-                  "kind": "target"
-                },
-                {
-                  "label": "GET revenue contribution",
                   "value": "1",
                   "unit": "%",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "GET revenue contribution target (later stated)",
+                  "label": "GET revenue contribution target",
+                  "value": "3.5",
+                  "unit": "%",
+                  "period": "FY27 (current year)",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "GET revenue contribution target",
                   "value": "6",
                   "unit": "%",
                   "period": "FY29",
-                  "kind": "target"
+                  "kind": "guidance"
                 },
                 {
-                  "label": "Overseas defense component revenue share (current)",
+                  "label": "GET revenue contribution target (alt figure cited)",
+                  "value": "4.5-5",
+                  "unit": "%",
+                  "period": "FY29",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Overseas defense component revenue share",
                   "value": "1",
                   "unit": "%",
                   "period": "current",
                   "kind": "reported"
                 },
                 {
-                  "label": "Overseas defense component revenue share (potential)",
+                  "label": "Overseas defense component revenue share potential",
                   "value": "1-2",
                   "unit": "%",
-                  "period": "next few years",
-                  "kind": "target"
+                  "period": "next 3 years",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "New parts contribution to business",
+                  "value": "20",
+                  "unit": "%",
+                  "period": "next 2-3 years",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Existing parts contribution",
+                  "value": "80",
+                  "unit": "%",
+                  "period": "next 2-3 years",
+                  "kind": "guidance"
                 },
                 {
                   "label": "New parts developed",
@@ -177098,66 +177127,54 @@
                   "unit": "parts",
                   "period": "last 18-24 months",
                   "kind": "reported"
-                },
-                {
-                  "label": "New parts revenue contribution (next 2-3 years)",
-                  "value": "20",
-                  "unit": "%",
-                  "period": "next 2-3 years",
-                  "kind": "target"
-                },
-                {
-                  "label": "Existing parts revenue contribution (next 2-3 years)",
-                  "value": "80",
-                  "unit": "%",
-                  "period": "next 2-3 years",
-                  "kind": "target"
-                },
-                {
-                  "label": "Number of sectors catered to",
-                  "value": "9",
-                  "unit": "sectors",
-                  "period": "current",
-                  "kind": "reported"
                 }
               ],
               "subsections": [
                 {
                   "label": "Sector diversification / derisking",
                   "points": [
-                    "Company has broadened sector exposure over the last several years to derisk itself; mining equipment industry share dropped from 84% (10 years ago) to 54% (as first stated) and later clarified to 27% for the current year; earthmoving rose from near-zero to 36% (as first stated), later clarified to 43% for current year; construction rose from 15-16% to 20-21% (first stated), later clarified to 15% for current year.",
-                    "Defense sector currently contributes about 1% of revenue.",
-                    "Mining, earthmoving and construction together contribute about 70% of revenue currently, with the other 6 of the 9 sectors served combining for the remaining 30%.",
-                    "Growth is a composite effect of new parts going into serial supply plus increase in demand from customers across all 9 sectors.",
-                    "Diversification effort is ongoing and will continue for several years; not considered complete."
+                    "Over the last several years, company has added new industry sectors to derisk from concentration in mining, which has dropped from 84% ten years back to about 54% now.",
+                    "Earthmoving grew from near zero to about 36% currently; Construction grew from 15-16% to about 20-21% currently.",
+                    "Company caters to 9 different sectors in total (6 existing plus 3 newer ones).",
+                    "Current sector revenue split for FY27: Mining ~27%, Earthmoving ~43%, Construction ~15%, Defense ~1%; Mining+Earthmoving+Construction combined represent ~70% of revenue, with the other 6 sectors making up the remaining ~30%."
                   ]
                 },
                 {
                   "label": "Ground engaging tools (GET)",
                   "points": [
-                    "GET contribution currently less than 1% of revenue but company is in the midst of developing new parts; once approved, these will move to serial supply.",
-                    "GET was about 1% in FY26, similar to current run-rate before ramp; expected to reach 3.5% in FY27 and grow gradually to 4.5-5% by FY29 (later restated as 6% by FY29)."
+                    "Company is in the process of developing new GET parts; once approved, these will move into serial supplies.",
+                    "GET currently contributes less than 1% of revenue (1% in FY26); targeted to rise to 3.5% in FY27 and to about 6% by FY29 (also referenced as 4.5-5% in response to another question)."
                   ]
                 },
                 {
                   "label": "Defense",
                   "points": [
-                    "Defense has been given low priority over the past year as opportunities in other sectors offer better pricing and demand; defense revenue share is about 1% (including overseas defense component revenue) and may rise to 1-2% over the next few years, but no firm 3-year plan exists to scale it further.",
-                    "Management views defense as high-risk business due to single-customer dependency, despite being currently in favor in the broader market/stock market narrative.",
-                    "Trials for an Israel defense component supplied by the company are ongoing; updates expected in the coming few months."
+                    "Defense has been given a lower priority over the past year as opportunities and pricing in other sectors are seen as better; defense currently contributes only about 1% of revenue.",
+                    "Management views defense as a risky business given dependence on a single customer, despite market fanfare around the sector in India.",
+                    "Israel defense component trials are ongoing; company expects updates in the coming few months.",
+                    "No firm plan exists to significantly scale overseas defense revenue beyond 1-2% over the next 3 years."
                   ]
                 },
                 {
-                  "label": "New parts pipeline",
+                  "label": "New parts development",
                   "points": [
-                    "More than 100 new parts developed in the last 18-24 months, now moving into serial supply.",
-                    "Over the next 2-3 years, ~20% of revenue is expected to come from new parts and ~80% from existing parts driven by demand increase."
+                    "More than 100 new parts have been developed in the last 18-24 months, which will now move into serial supply.",
+                    "Increase in volumes will come from a composite effect of new parts entering serial supply plus rising demand from existing customers.",
+                    "New parts expected to contribute about 20% of business over the next 2-3 years, with existing parts contributing the remaining 80%."
                   ]
-                },
+                }
+              ]
+            },
+            {
+              "id": "TECH",
+              "title": "Product & Technology",
+              "key_figures": [],
+              "subsections": [
                 {
-                  "label": "U.S. railroad segment",
+                  "label": "New product / part development",
                   "points": [
-                    "Company has changed strategy and is not currently pursuing the U.S. railroad segment, citing better opportunities, better products and better pricing in other markets; railroad opportunity may be addressed later."
+                    "Continuous drive for new parts development; more than 100 parts developed in last 18-24 months, moving into serial supply.",
+                    "Israel defense component currently in trials; results expected in coming months."
                   ]
                 }
               ]
@@ -177167,17 +177184,17 @@
               "title": "Manufacturing & Capacity",
               "key_figures": [
                 {
-                  "label": "New Greenfield Foundry capacity",
+                  "label": "Greenfield Foundry capacity",
                   "value": "8,500",
                   "unit": "tons",
-                  "period": "post-commissioning",
+                  "period": "planned",
                   "kind": "target"
                 },
                 {
-                  "label": "Greenfield Foundry investment",
+                  "label": "Greenfield Foundry capex",
                   "value": "120",
                   "unit": "INR crores",
-                  "period": "next 2 years",
+                  "period": "over next 2 years",
                   "kind": "target"
                 },
                 {
@@ -177188,25 +177205,11 @@
                   "kind": "target"
                 },
                 {
-                  "label": "Peak revenue potential from new facility",
-                  "value": "300",
-                  "unit": "INR crores",
-                  "period": "at peak",
+                  "label": "Casting weight range for new facility",
+                  "value": "5 kg to 1,000 kg",
+                  "unit": "kg",
+                  "period": null,
                   "kind": "target"
-                },
-                {
-                  "label": "Land parcel for new facility",
-                  "value": "100,000",
-                  "unit": "square meters",
-                  "period": "current",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Distance of new facility from existing facility",
-                  "value": "12",
-                  "unit": "kilometers",
-                  "period": "current",
-                  "kind": "reported"
                 },
                 {
                   "label": "Existing capacity",
@@ -177216,107 +177219,142 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Capacity utilization FY26 (full year)",
+                  "label": "FY26 capacity utilization",
                   "value": "48",
                   "unit": "%",
                   "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Capacity utilization Q1 FY27",
-                  "value": "63",
+                  "label": "Q1 FY27 capacity utilization",
+                  "value": "63-66",
                   "unit": "%",
-                  "period": "Q1 FY27 (first stated)",
+                  "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Capacity utilization Q1 FY27 (restated, Apr-Jun)",
-                  "value": "66",
-                  "unit": "%",
-                  "period": "Q1 FY27 (Apr-May-Jun)",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Capacity utilization full-year target",
+                  "label": "Full year FY27 capacity utilization guidance",
                   "value": "63",
                   "unit": "%",
                   "period": "FY27",
-                  "kind": "target"
+                  "kind": "guidance"
                 },
                 {
-                  "label": "Capacity utilization target",
+                  "label": "Targeted capacity utilization (existing capacity)",
                   "value": "90",
                   "unit": "%",
                   "period": "FY29",
                   "kind": "target"
                 },
                 {
-                  "label": "Hybrid renewable power plant capacity",
+                  "label": "Peak revenue potential from new facility",
+                  "value": "300",
+                  "unit": "INR crores",
+                  "period": "at peak",
+                  "kind": "target"
+                },
+                {
+                  "label": "Q1 FY27 production volume",
+                  "value": "4,700",
+                  "unit": "tons",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "New land parcel for Greenfield Foundry",
+                  "value": "100,000",
+                  "unit": "square meters",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Distance of new facility from existing facility",
+                  "value": "12",
+                  "unit": "kilometers",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Hybrid renewable power plant capacity (wind+solar)",
                   "value": "2.4",
-                  "unit": "MW",
-                  "period": "under implementation",
+                  "unit": "megawatt",
+                  "period": null,
                   "kind": "reported"
                 },
                 {
                   "label": "Solar power plant capacity",
                   "value": "1.4",
-                  "unit": "MW",
-                  "period": "under implementation",
+                  "unit": "megawatt",
+                  "period": null,
                   "kind": "reported"
                 },
                 {
                   "label": "Renewable projects commissioning target",
                   "value": "31st December '26",
                   "unit": null,
-                  "period": "by Dec 2026",
+                  "period": "CY2026",
                   "kind": "target"
                 },
                 {
-                  "label": "Employee headcount increase",
+                  "label": "Employee count increase",
                   "value": "32",
-                  "unit": "employees (~3% increase)",
+                  "unit": "employees",
                   "period": "per annual report",
                   "kind": "reported"
                 },
                 {
-                  "label": "Implied sales tonnage at 63% capacity utilization",
+                  "label": "Employee count increase (%)",
+                  "value": "3",
+                  "unit": "%",
+                  "period": "per annual report",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Implied volume growth from 63% capacity utilization",
                   "value": "18,000",
                   "unit": "tons",
                   "period": "FY27",
-                  "kind": "target"
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Q1 production volume (approx, per participant)",
+                  "value": "4,000",
+                  "unit": "tons",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Greenfield Foundry expansion",
+                  "label": "Capacity expansion rationale",
                   "points": [
-                    "Board approved establishment of a Greenfield Foundry with capacity of 8,500 tons to manufacture steel castings across a wide range of applications from 5 kg to 1,000 kg, involving planned investment of approximately INR120 crores over the next 2 years.",
-                    "Internal target date to commission the plant is 31st March FY28; management is confident of achieving this; additional volumes expected for FY29 as well.",
-                    "Peak revenue potential from the new facility estimated at about INR300 crores.",
-                    "Land for the new facility (100,000 sq meters) was provided by the Government of Gujarat some months back; new facility is 12 km from the existing facility, so raw material procurement strategy will remain the same as for the existing facility.",
-                    "The 90% utilization target for FY29 pertains to the existing capacities, not the new facility; planning utilization above 90% is not advisable due to bottlenecks. New capacity is being added because existing capacity is reaching 90% utilization.",
-                    "Existing capacity stands at 29,000 tons."
+                    "Board has approved establishment of Greenfield Foundry with 8,500 tons capacity, capex of INR120 crores over the next 2 years, targeted commissioning by 31st March FY28, and casting weight range of 5 kg to 1,000 kg, to cater to growing market demand and enhance manufacturing capabilities; peak revenue potential from the new facility estimated at INR300 crores.",
+                    "Land for the new facility (100,000 sq meters) was already available, given by the Government of Gujarat some months back.",
+                    "New facility is 12 km from existing facility; raw material procurement strategy will remain the same as for the existing facility.",
+                    "Existing capacity stands at 29,000 tons, with utilization at 48% in FY26 and 63-66% in Q1 FY27 (Q1 FY27 production volume ~4,700 tons, alternately cited as ~4,000 tons by a participant); full-year FY27 utilization guided at 63%, implying about 18,000 tons of incremental volume.",
+                    "90% utilization target for FY29 is on existing capacities only; the new facility will only start contributing revenues later, and additional capacity is being created because existing utilization is reaching 90%, beyond which bottlenecks arise.",
+                    "Increasing capex viewed as a signal of how the demand scenario is playing out and how existing clients are looking to increase sourcing from the company."
                   ]
                 },
                 {
-                  "label": "Capacity utilization trend",
+                  "label": "Renewable energy / energy transition",
                   "points": [
-                    "FY26 full-year capacity utilization was 48%; Q1 FY27 utilization was 63% (later clarified as 66% for the April-May-June quarter); full-year FY27 target remains about 63%, implying about 18,000 tons of sales at that utilization level.",
-                    "Reaching 90% utilization by FY29 will trigger new projects/capacity kicking in to provide higher volumes."
-                  ]
-                },
-                {
-                  "label": "Renewable energy initiatives",
-                  "points": [
-                    "Two renewable power projects under implementation: a 2.4 MW hybrid (wind + solar) plant and a 1.4 MW solar plant, both expected to be commissioned before 31st December '26, driven by increasing production requirements and focus on reducing carbon emissions.",
-                    "Company is considering transitioning some manufacturing processes from natural gas to electricity over the next 2-3 years; at current elevated natural gas prices (about 50-55% more expensive than February end levels) there would be savings from using electricity, but long-term natural gas pricing is unpredictable so future savings cannot be guaranteed."
+                    "Two renewable power projects under implementation: a 2.4 MW hybrid (wind+solar) plant and a 1.4 MW solar plant, both expected to be commissioned before 31st December '26, as part of strengthening renewable energy footprint and reducing carbon emissions in line with increasing production requirements.",
+                    "Company is considering transitioning some manufacturing processes from natural gas to electricity-based systems over the next 2-3 years, given shortage/price volatility of natural gas, LPG etc.",
+                    "At current gas prices, there would be savings from using electricity instead of natural gas, but long-term natural gas pricing trends are unpredictable, making the switch's economics uncertain over the longer term."
                   ]
                 },
                 {
                   "label": "Workforce readiness",
                   "points": [
-                    "Employee count increased by 32 (about 3%) per the annual report; company states it is adequately staffed at all levels for current year targets and budgeted production.",
-                    "Recruitment and training for additional headcount to prepare for FY28 will begin around the middle of this year; further recruitment may occur in FY28 or FY29 depending on requirements."
+                    "Number of employees increased by only 32 (3%) per the annual report; management stated the company is adequately staffed at all levels for current year's budgeted production.",
+                    "Recruitment and training for additional headcount is planned for mid-year to prepare for FY28, with further recruitment as needed in FY28 or FY29."
+                  ]
+                },
+                {
+                  "label": "Inventory / production ramp",
+                  "points": [
+                    "Rise in inventory (WIP not yet converted to sales) attributed to the nature of the industry — when production increases, inventory piles up initially, and with a time lag of 1-2 months, inventory levels normalize; company then operates at elevated inventory levels."
                   ]
                 }
               ]
@@ -177326,39 +177364,53 @@
               "title": "Geography & Distribution",
               "key_figures": [
                 {
-                  "label": "Export share of revenue (historical range)",
+                  "label": "Historical export share range",
                   "value": "45-50",
                   "unit": "%",
                   "period": "historical/several years",
                   "kind": "reported"
                 },
                 {
-                  "label": "Export share of revenue (current year)",
+                  "label": "Export share (value basis)",
                   "value": "49-50",
                   "unit": "%",
-                  "period": "FY27",
-                  "kind": "reported"
+                  "period": "FY27 (current year)",
+                  "kind": "guidance"
                 },
                 {
-                  "label": "Domestic share of revenue (next year projection)",
+                  "label": "Domestic share guidance",
                   "value": "53",
                   "unit": "%",
                   "period": "next year",
-                  "kind": "target"
+                  "kind": "guidance"
                 },
                 {
-                  "label": "Export share of revenue (next year projection)",
+                  "label": "Export share guidance",
                   "value": "47",
                   "unit": "%",
                   "period": "next year",
-                  "kind": "target"
+                  "kind": "guidance"
                 },
                 {
-                  "label": "Export share peak (historical high)",
+                  "label": "Export share (peak, historical)",
                   "value": "60-62",
                   "unit": "%",
                   "period": "historical peak",
                   "kind": "reported"
+                },
+                {
+                  "label": "Export share (tonnage basis)",
+                  "value": "60",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Export/domestic mix assumption",
+                  "value": "50-50",
+                  "unit": "%",
+                  "period": "volume basis, going forward",
+                  "kind": "guidance"
                 },
                 {
                   "label": "U.S. and Germany combined export share",
@@ -177375,57 +177427,51 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Number of export countries (current)",
+                  "label": "Total export countries",
                   "value": "16",
                   "unit": "countries",
                   "period": "current",
                   "kind": "reported"
                 },
                 {
-                  "label": "Number of export countries (10 years ago)",
+                  "label": "Export countries (10 years back)",
                   "value": "2",
                   "unit": "countries",
-                  "period": "~10 years ago",
+                  "period": "10 years back",
                   "kind": "reported"
                 },
                 {
-                  "label": "Export volume share Q1 FY27",
-                  "value": "60",
+                  "label": "U.S./Germany export share (10 years back)",
+                  "value": "100 (only US and Germany)",
+                  "unit": "%",
+                  "period": "10 years back",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Export tonnage share Q1 (initial figure before correction)",
+                  "value": "51",
                   "unit": "%",
                   "period": "Q1 FY27",
                   "kind": "reported"
                 },
                 {
-                  "label": "Total production tonnage Q1 FY27",
-                  "value": "4,700",
-                  "unit": "tons",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Export share (value-wise, cited mid-call)",
+                  "label": "Export tonnage share Q1 (alternate figure cited)",
                   "value": "62",
                   "unit": "%",
                   "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "U.S. and Germany export share historically (10 years ago)",
-                  "value": "100",
-                  "unit": "%",
-                  "period": "~10 years ago",
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Export mix and geographic derisking",
+                  "label": "Export mix strategy",
                   "points": [
-                    "Exports have historically ranged 45-50% of revenue; in the current year expected at 49-50%, with domestic share expected to be slightly better next year (53% domestic / 47% export).",
-                    "Export mix can rise as high as 60-62% in some periods, but over the longer term settles at 45-50%; export share by value in Q1 FY27 was cited mid-call at 62%, while export volume share for Q1 FY27 was 60% of total production tonnage of 4,700 tons.",
-                    "10 years ago, company sold exclusively (100%) to U.S. and Germany, using only 2 export countries; now exports go to 16 countries, with U.S. and Germany still constituting about 70% of exports and the remaining 30% spread across 14 other countries; ongoing intent to reduce dependence on U.S. and Germany over time.",
-                    "Company confirmed it is a Tier 1 supplier for more than 98-99% of sales, supplying directly to OEMs; OEMs in India may further export a portion of what is supplied, meaning true export exposure (direct + indirect) could be slightly higher than reported, though the company does not track how much its customers re-export.",
-                    "Currency fluctuation (rupee depreciation/appreciation) is shared with the customer rather than hedged or fully retained."
+                    "Historically exports have ranged 45-50% of revenue over several years, sometimes reaching as high as 60-62%.",
+                    "For FY27, exports expected at about 49-50% on value basis; next year domestic expected to be slightly better at ~53% with exports at ~47%.",
+                    "On tonnage basis, export share was about 60-62% in Q1 FY27 (an initial figure of 51% was also cited before correction); export/domestic mix going forward assumed on a roughly 50-50 basis on volume terms.",
+                    "Company is Tier 1 supplier for more than 98-99% of sales, giving directly to OEMs; some OEMs in India may further export the supplied components, meaning true (direct+indirect) export exposure could be slightly higher than reported, though the company does not track this precisely.",
+                    "US railroad opportunity has been deprioritized in favor of pursuing better markets, products and pricing in other industrial sectors; will be revisited later.",
+                    "Company has broadened export geographies from 2 countries (US and Germany, which represented 100% of exports) 10 years back to about 16 countries currently, with intent to keep reducing dependence on US and Germany (currently ~70% combined, with the other 14 countries making up ~30%) over time."
                   ]
                 }
               ]
@@ -177435,33 +177481,27 @@
               "title": "Supply Chain & Operations",
               "key_figures": [
                 {
-                  "label": "Export tonnage share (restated by Chetan Tamboli, before correction)",
-                  "value": "51",
-                  "unit": "%",
-                  "period": "Q1 FY27",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Tier 1 supplier share of sales",
+                  "label": "Steelcast sales as Tier 1 supplier",
                   "value": "98-99",
                   "unit": "%",
-                  "period": "current",
+                  "period": null,
                   "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Inventory dynamics",
+                  "label": "Raw material sourcing",
                   "points": [
-                    "Rise in inventory not yet converted to sales is attributed to a typical pile-up of WIP when production increases; inventory normalizes with a time lag of about 1-2 months as the ramp progresses, after which operations proceed at elevated levels."
+                    "Steelcast does not use raw material from ship breaking directly, as its high-strength low-alloy and carbon steel products require cleaner scrap with very low sulfur, phosphorus and carbon.",
+                    "Company sources from downstream industries (e.g., rolling mills) that are themselves downstream of ship breaking, for locational advantage — not directly from Alang ship breaking yard.",
+                    "Raw material sourcing strategy for the new Greenfield Foundry (12 km from existing facility) will remain the same as for the existing facility."
                   ]
                 },
                 {
-                  "label": "Raw material sourcing",
+                  "label": "Fuel/energy availability",
                   "points": [
-                    "Steelcast does not use raw material from ship breaking directly; it requires high-strength, low-alloy and carbon steels with cleaner scrap (low sulfur, phosphorus, carbon), sourced from elsewhere.",
-                    "Company does source from downstream industries (e.g., rolling mills) that are adjacent to the ship-breaking ecosystem (as referenced in the Alang context in the investor presentation) for locational advantage, but not from ship-breaking scrap itself.",
-                    "Raw material procurement strategy for the new Greenfield Foundry (12 km from existing facility) will mirror the existing facility's sourcing strategy."
+                    "Energy costs have remained elevated due to global geopolitical developments and sustained pressure on fuel prices; company has ensured adequate fuel availability to support uninterrupted production.",
+                    "Natural gas prices are currently about 50-55% more expensive compared to February-end levels."
                   ]
                 }
               ]
@@ -177485,42 +177525,61 @@
                   "kind": "market_size"
                 },
                 {
-                  "label": "Automobile sector growth",
+                  "label": "Automobile industry growth rate",
                   "value": "10-15",
                   "unit": "%",
-                  "period": "current",
+                  "period": null,
                   "kind": "market_size"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Macro environment",
+                  "points": [
+                    "Global economy remained resilient despite geopolitical tensions, trade policy shifts and supply chain realignments; global GDP growth estimated at 3.3% for CY2026.",
+                    "India continues to be the fastest-growing major economy (GDP growth estimated 6.5-7% for CY2026), supported by robust domestic consumption, sustained government-led infrastructure spending, and strong policy focus on manufacturing and localization.",
+                    "Industrial activity remains strong across manufacturing, infrastructure and mining, creating a favorable demand environment for key industrial sectors.",
+                    "Government initiatives such as Make in India, PLI schemes and infrastructure investments continue to support India's long-term manufacturing and industrial growth story."
+                  ]
                 },
                 {
-                  "label": "Rights issue suggested proportion of project cost",
+                  "label": "Industry trends",
+                  "points": [
+                    "Casting and forging industry continues to benefit from strong demand across mining, earthmoving, construction, railways, defense and other industrial sectors.",
+                    "Demand fundamentals driven by strong equipment utilization in mining and construction, continued infrastructure expansion, and growing requirements for ground engaging tools, wear parts and high-performance steel castings used in excavators, loaders and heavy earthmoving machinery.",
+                    "Indian foundry industry projected to grow at a healthy pace supported by investments in transportation, energy, mining, industrial development; forging industry benefits from opportunities in automotive, defense, railways and heavy engineering sectors.",
+                    "Automobile industry cited as growing at 10-15%, seen as a positive read-through for the broader engineering/casting industry."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [
+                {
+                  "label": "Suggested rights issue financing share of project cost",
                   "value": "60",
                   "unit": "%",
                   "period": null,
                   "kind": "target"
                 },
                 {
-                  "label": "Suggested rights issue price",
+                  "label": "Illustrative share issue price suggested by investor",
                   "value": "200-300",
                   "unit": "INR",
                   "period": null,
                   "kind": "target"
                 },
                 {
-                  "label": "Illustrative project cost example for rights issue",
+                  "label": "Illustrative project cost example",
                   "value": "100",
                   "unit": "INR crores",
                   "period": null,
                   "kind": "target"
                 },
                 {
-                  "label": "Illustrative premium per share in rights issue example",
-                  "value": "200",
-                  "unit": "INR",
-                  "period": null,
-                  "kind": "target"
-                },
-                {
-                  "label": "Resulting net project cost to company after premium in example",
+                  "label": "Illustrative reduced project cost after premium (per investor's example)",
                   "value": "10",
                   "unit": "INR crores",
                   "period": null,
@@ -177529,35 +177588,11 @@
               ],
               "subsections": [
                 {
-                  "label": "Macro backdrop",
+                  "label": "Capital structure considerations",
                   "points": [
-                    "Global economy remained resilient despite geopolitical tensions, trade policy shifts and supply chain realignments; global GDP growth estimated at about 3.3% for CY2026.",
-                    "India continued to be the fastest-growing major economy, with GDP growth estimated at 6.5-7% for CY2026, supported by robust domestic consumption, sustained government-led infrastructure spending, and strong policy focus on manufacturing and localization.",
-                    "Industrial activity remains strong across manufacturing, infrastructure and mining, creating a favorable demand environment for key industrial sectors.",
-                    "Government initiatives such as Make in India, PLI schemes and infrastructure investments continue to support India's long-term manufacturing and industrial growth story."
-                  ]
-                },
-                {
-                  "label": "Industry trends",
-                  "points": [
-                    "Casting and forging industry continues to benefit from strong demand across mining, earthmoving, construction, railways, defense and other industrial sectors, supported by increased infrastructure investments, manufacturing localization and global supply chain diversification.",
-                    "Demand fundamentals remain robust, driven by strong equipment utilization in mining and construction, continued expansion in infrastructure projects, and growing requirements for ground engaging tools, wear parts and high-performance steel castings used in excavators, loaders and heavy earthmoving machinery.",
-                    "Indian foundry industry projected to grow at a healthy pace supported by investments in transportation, energy, mining and industrial development; forging industry continues to benefit from opportunities across automotive, defense, railways and heavy engineering sectors."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "STRAT",
-              "title": "Strategic Initiatives & M&A",
-              "key_figures": [],
-              "subsections": [
-                {
-                  "label": "Capital structure suggestions",
-                  "points": [
-                    "An investor suggested a rights issue (at a premium, e.g. INR200-300 per share) to fund about 60% of a hypothetical INR100 crore project cost (e.g., a premium of INR200/share reducing net project cost to the company to about INR10 crores in the illustrative example), citing improved capital efficiency; management responded that the company already has sufficient reserves and does not need additional shareholder resources, and that equity dilution would reduce EPS, but agreed to take the suggestion to the Board.",
-                    "An investor also suggested a bonus issue to improve brand equity and shareholding count; management agreed to raise this at the forthcoming Board meeting.",
-                    "An investor suggested focusing more on specific defense components to improve long-term sales productivity; management noted opportunities exist elsewhere with better economics but said any suitable defense opportunity would be pursued if it arises."
+                    "Shareholder suggested funding the INR120 crores capex via a rights issue at a premium (e.g., ~INR200-300, illustratively reducing an example INR100 crores project cost to INR10 crores of cash outlay, financing ~60% of project cost) to reduce cash burden; management responded that the company already has sufficient reserves (INR120 crores as of March '26) and does not need additional shareholder capital, and that increased equity would dilute EPS.",
+                    "Shareholder suggested a bonus issue to improve visibility, brand equity and shareholding count; management said it would take this suggestion to the Board.",
+                    "Shareholder suggested focusing on specific defense components to improve long-term sales productivity; management reiterated its view that defense is a risky, single-customer-dependent business and that better opportunities exist elsewhere, but said it would consider defense opportunities if they arise."
                   ]
                 }
               ]
@@ -177565,34 +177600,28 @@
             {
               "id": "RISK",
               "title": "Risks & External Factors",
-              "key_figures": [
-                {
-                  "label": "Natural gas price increase vs February end levels",
-                  "value": "50-55",
-                  "unit": "%",
-                  "period": "current vs Feb end",
-                  "kind": "reported"
-                }
-              ],
+              "key_figures": [],
               "subsections": [
                 {
-                  "label": "Input cost and energy cost pressure",
+                  "label": "Cost/input pressures",
                   "points": [
-                    "Energy costs have remained elevated due to global geopolitical developments and sustained pressure on fuel prices; company has ensured adequate fuel availability to support uninterrupted production.",
-                    "Increase in input cost of various raw materials and natural gas will lead to price correction on an upward basis, effective 1st July '27.",
-                    "Natural gas is currently about 50-55% more expensive than February end prices; long-term natural gas pricing remains unpredictable, creating uncertainty for potential savings from electricity transition."
+                    "Input costs of various raw materials and natural gas have increased, necessitating an upward price correction effective 1st July '27 (referenced elsewhere as 1st July, aligned with the sales price variation formula with customers).",
+                    "Cost pass-through to customers occurs with roughly a 1-quarter lag, both for increases and decreases in input costs.",
+                    "Natural gas prices are about 50-55% higher than February-end levels, adding cost pressure, though this is expected to be compensated via the pass-through formula.",
+                    "Currency fluctuation (rupee depreciation/appreciation) is shared with customers rather than fully hedged or retained by the company."
                   ]
                 },
                 {
-                  "label": "Defense business risk",
+                  "label": "Customer concentration / segment risk",
                   "points": [
-                    "Management views defense as one of the riskiest businesses because sales are made to essentially only one customer, creating high customer concentration risk; this is a reason for lower strategic priority on defense despite market/stock enthusiasm for the sector."
+                    "Defense business viewed as high risk due to dependence on a single customer, despite favorable market sentiment toward the defense sector in India.",
+                    "Company has historically been concentrated in mining, earthmoving, US and Germany export markets; ongoing diversification efforts aim to reduce this concentration risk over time."
                   ]
                 },
                 {
-                  "label": "Geopolitical / cost pass-through timing risk",
+                  "label": "Geopolitical/macro risk",
                   "points": [
-                    "Cost pass-through to customers occurs with a lag of about one quarter (both for increases and decreases), meaning margin benefits from raw material cost increases lag by a quarter before being compensated."
+                    "Geopolitical tensions, trade policy shifts and supply chain realignments continue to pose risks to the global economy, though India is seen as relatively insulated due to large domestic consumption."
                   ]
                 }
               ]
@@ -177602,15 +177631,8 @@
               "title": "Guidance & Outlook",
               "key_figures": [
                 {
-                  "label": "Revenue/volume growth guidance FY27",
-                  "value": "25",
-                  "unit": "%",
-                  "period": "FY27",
-                  "kind": "guidance"
-                },
-                {
-                  "label": "Revenue/volume growth guidance FY27 (revised upward in Q&A)",
-                  "value": "30",
+                  "label": "FY27 growth guidance",
+                  "value": "25 (revised to ~30)",
                   "unit": "%",
                   "period": "FY27",
                   "kind": "guidance"
@@ -177618,35 +177640,82 @@
                 {
                   "label": "Long-term growth CAGR target",
                   "value": "~20",
-                  "unit": "% CAGR",
+                  "unit": "%",
                   "period": "coming years",
                   "kind": "target"
                 },
                 {
-                  "label": "EBITDA margin guidance FY27 (implied)",
+                  "label": "FY27 volume growth (revised)",
+                  "value": "30",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Full year FY27 capacity utilization",
+                  "value": "63",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Targeted EBITDA margin",
                   "value": "28.5-29",
                   "unit": "%",
                   "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "GET contribution target",
+                  "value": "3.5",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "GET contribution target",
+                  "value": "6 (also cited as 4.5-5)",
+                  "unit": "%",
+                  "period": "FY29",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Capacity utilization target",
+                  "value": "90",
+                  "unit": "%",
+                  "period": "FY29",
+                  "kind": "target"
+                },
+                {
+                  "label": "Peak revenue potential from new facility",
+                  "value": "300",
+                  "unit": "INR crores",
+                  "period": "at peak",
+                  "kind": "target"
+                },
+                {
+                  "label": "New parts contribution to revenue",
+                  "value": "20",
+                  "unit": "%",
+                  "period": "next 2-3 years",
                   "kind": "guidance"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Growth guidance",
+                  "label": "Growth outlook",
                   "points": [
-                    "Management reiterated confidence in sustaining growth momentum, maintaining healthy profitability and delivering long-term value creation, targeting a growth trajectory of approximately 20% CAGR over the coming years.",
-                    "For FY27, company expects growth of 25% compared to last financial year (later revised in Q&A to 30%, as indications from most customers are very strong; management said it was initially being conservative with 25%).",
-                    "Growth expected to be volume-led, with export/domestic mix assumed on roughly 50-50 basis in volume terms.",
-                    "There will be sequential improvement in top line for several quarters going forward.",
-                    "Margins will remain in guided range with focus on driving top line; operating leverage benefit should kick in with scale increasing.",
-                    "Increasing capex should give a sense of how the demand scenario is playing out and how existing clients are looking at increasing sourcing from the company."
+                    "Management reiterated confidence in sustaining growth momentum, maintaining healthy profitability, and delivering long-term value creation, targeting a growth trajectory of approximately 20% CAGR over the coming years.",
+                    "For FY27, initially guided to 25% growth versus last financial year, later revised upward on the call to 30% given strong indications from most customers, with the 25% figure characterized as conservative.",
+                    "There will be sequential improvement in top line for several quarters going forward; margins will remain in guided range with focus on driving top line; operating leverage benefit should kick in as scale increases.",
+                    "Increasing capex viewed as a signal of the demand scenario and increasing sourcing intent from existing clients.",
+                    "FY27 growth of 25-30% guided in volume terms, with export/domestic mix assumed on a roughly 50-50 basis on a volume basis."
                   ]
                 },
                 {
-                  "label": "Margin guidance",
+                  "label": "Margin outlook",
                   "points": [
-                    "Margins are likely to go up because increased input costs will be compensated, and operating leverage will kick in as volumes increase.",
-                    "Theoretically, EBITDA margin could improve by 150-200 bps to about 28.5%-29% for FY27 versus 27% in FY26; management called this a 'distinct possibility' it is striving to achieve."
+                    "EBITDA margin could rise 150-200 bps to around 28.5-29% for FY27 versus 27% in FY26, theoretically achievable and something management will strive for, aided by cost pass-through (effective 1st July) and operating leverage."
                   ]
                 }
               ]
@@ -177654,49 +177723,41 @@
           ],
           "guidance_ledger": [
             {
-              "metric": "Revenue/Volume growth",
+              "metric": "Volume/Revenue growth",
               "horizon": "FY27",
-              "statement": "For FY27, we expect a growth of 25% compared to last financial year.",
+              "statement": "Targeting a growth of 25% compared to last financial year; later in the call revised to 30% volume growth given strong customer indications, calling 25% conservative.",
               "specificity": "specific",
               "direction": "up",
               "status": "raised"
             },
             {
-              "metric": "Revenue/Volume growth (revised)",
-              "horizon": "FY27",
-              "statement": "I did say 25%, I should have said 30% because indications from most of our customers are very strong... 30% is also a distinct possibility.",
+              "metric": "Revenue/Volume CAGR",
+              "horizon": "coming years / next 3 years",
+              "statement": "Targeting a growth trajectory of approximately 20% CAGR over the coming years.",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
-            },
-            {
-              "metric": "Revenue/Volume growth CAGR",
-              "horizon": "coming years",
-              "statement": "We remain confident in our ability to sustain growth momentum, maintain healthy profitability and deliver long-term value creation, targeting a growth trajectory of approximately 20% CAGR over the coming years.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "reiterated"
             },
             {
               "metric": "EBITDA margin",
               "horizon": "FY27",
-              "statement": "Can we expect at least 150 to 200 bps higher margin around 28.5%, 29% margin for FY27? Yes, theoretically, that should happen, and this is what we are going to strive to achieve.",
+              "statement": "EBITDA margin could see 150-200 bps improvement to around 28.5%-29% for FY27, aided by cost pass-through and operating leverage; management called this a distinct possibility they will strive to achieve.",
               "specificity": "specific",
               "direction": "up",
               "status": "raised"
             },
             {
-              "metric": "Capacity utilization",
-              "horizon": "FY27",
-              "statement": "By the end of this year, we'll do about 63%.",
+              "metric": "Capacity utilization (existing capacity)",
+              "horizon": "FY29",
+              "statement": "Plan to reach 90% capacity utilization by FY29 on existing capacities; not advisable to plan above 90% due to bottlenecks.",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
             },
             {
               "metric": "Capacity utilization",
-              "horizon": "FY29",
-              "statement": "We plan to reach 90% by FY29.",
+              "horizon": "FY27",
+              "statement": "Full year capacity utilization expected to be about 63%, versus 48% in FY26 and 63-66% in Q1 FY27.",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
@@ -177704,15 +177765,31 @@
             {
               "metric": "Greenfield Foundry commissioning",
               "horizon": "FY28",
-              "statement": "Our internal target date to commission the plant is 31st March FY28. As of now, we are quite confident of achieving this.",
+              "statement": "Internal target date to commission the new Greenfield Foundry plant is 31st March FY28; management confident of achieving this, with some additional volumes expected for FY29.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "New Greenfield Foundry capex",
+              "horizon": "next 2 years",
+              "statement": "Board approved establishment of Greenfield Foundry with 8,500 tons capacity, involving a planned investment of approximately INR120 crores over the next 2 years.",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
             },
             {
               "metric": "Peak revenue potential from new facility",
-              "horizon": "at peak post-FY28",
-              "statement": "To answer your peak question of the revenue potential from the new facility, it will be about INR300 crores.",
+              "horizon": "unspecified (post-ramp)",
+              "statement": "Peak revenue potential from the new Greenfield Foundry facility will be about INR300 crores.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Renewable power projects commissioning",
+              "horizon": "by 31st Dec '26",
+              "statement": "Two renewable power projects (2.4 MW hybrid wind+solar and 1.4 MW solar) are expected to be commissioned before 31st December '26.",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
@@ -177720,7 +177797,7 @@
             {
               "metric": "Ground engaging tools (GET) revenue contribution",
               "horizon": "FY27",
-              "statement": "In the current year, we'll do about 3.5% of the sales.",
+              "statement": "GET contribution expected to reach about 3.5% of sales in FY27, up from about 1% in FY26.",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
@@ -177728,79 +177805,79 @@
             {
               "metric": "Ground engaging tools (GET) revenue contribution",
               "horizon": "FY29",
-              "statement": "By FY29, we expect this to reach 4.5% to 5%... gradually, it will go up to about 6% in FY29.",
+              "statement": "GET contribution expected to gradually increase to about 6% by FY29 (elsewhere cited as 4.5%-5% by FY29 in response to a different question).",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
             },
             {
-              "metric": "New parts revenue contribution",
+              "metric": "New parts contribution to revenue",
               "horizon": "next 2-3 years",
-              "statement": "Roughly, we can assume about 20% of revenues coming from the new parts... over the next 2, 3 years, 20% of the business will come from new parts and 80% should come from the existing parts.",
+              "statement": "Roughly 20% of revenues expected to come from new parts over the next 2-3 years, with 80% from existing parts due to increase in demand.",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
             },
             {
-              "metric": "Overseas defense component revenue share",
+              "metric": "Overseas defense revenue share",
               "horizon": "next 3 years",
-              "statement": "Currently, we are doing about 1% that might go up to maybe 1% to 2%. But we don't have that focus over the 3-year period more than this.",
+              "statement": "Currently about 1% of revenue from overseas defense component supplies; could go up to 1%-2%, but no firm plan to scale further over a 3-year period.",
               "specificity": "vague",
               "direction": "up",
-              "status": "new"
+              "status": "lowered"
             },
             {
               "metric": "Export/domestic mix",
-              "horizon": "FY27 and next year",
-              "statement": "In the current year, we'll do exports of about, say, 49%, 50%. Next year, the domestic should be slightly better, maybe 53% and export 47%.",
+              "horizon": "FY27/next year",
+              "statement": "Export share expected at about 49-50% in FY27; next year domestic expected to be slightly better at ~53% with exports at ~47%; historically ranged 45-50%.",
               "specificity": "specific",
               "direction": "flat",
               "status": "new"
             },
             {
-              "metric": "Renewable power project commissioning",
-              "horizon": "by 31st December '26",
-              "statement": "Both projects are progressing and are expected to be commissioned before 31st December '26.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "new"
-            },
-            {
-              "metric": "Raw material/input cost price correction",
+              "metric": "Cost pass-through / price correction",
               "horizon": "effective 1st July",
-              "statement": "With increase in the input cost of various raw materials and natural gas, we would be having price correction on upward basis, and this will be effective 1st July '27... and we will be able to pass on everything, all increases.",
+              "statement": "Price correction on an upward basis for increased input costs of raw materials and natural gas will be effective 1st July; all major raw materials are part of the sales price variation formula and increases will be passed on.",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
             },
             {
-              "metric": "Natural gas to electricity transition",
-              "horizon": "next 2-3 years",
-              "statement": "Maybe over time, over 2, 3 years, instead of using natural gas as fuel, we use electricity.",
+              "metric": "Capital allocation / debt status",
+              "horizon": "coming 2 years",
+              "statement": "Company intends to remain debt-free and use cash accruals generated over the coming 2 years to fund the new capacity expansion.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Employee hiring",
+              "horizon": "FY28/FY29",
+              "statement": "Recruitment and training of additional employees planned for mid-year to prepare for FY28, with further recruitment as needed in FY28 or FY29.",
               "specificity": "vague",
-              "direction": "unclear",
+              "direction": "up",
               "status": "new"
             },
             {
               "metric": "PAT",
               "horizon": "FY27",
-              "statement": "The smart goal for our top management team is to make STEELCAST more than Rs. 100 Cr. PAT Company in FY27.",
-              "specificity": "specific",
+              "statement": "Smart goal for top management team is to make Steelcast more than ₹100 crore PAT company in FY27.",
+              "specificity": "vague",
               "direction": "up",
               "status": "no_mention"
             },
             {
-              "metric": "Sales (doubling aspiration)",
+              "metric": "Sales (doubling)",
               "horizon": "FY29",
-              "statement": "We also have an aspiration to double our sales in FY29 compared to FY26 with present capacity... theoretically, the number should be INR860 crores in FY29.",
+              "statement": "Aspiration to double sales in FY29 compared to FY26 with present capacity; theoretical number should be ₹860 crore in FY29.",
               "specificity": "specific",
               "direction": "up",
               "status": "no_mention"
             },
             {
               "metric": "Capacity expansion decision",
-              "horizon": "end of July 2026",
-              "statement": "We will decide this by end of July 2026... we will be ready with this by July 2026 end.",
+              "horizon": "end-July 2026",
+              "statement": "We will decide on capacity expansion by end of July 2026, brought forward from earlier plan of December 2026.",
               "specificity": "specific",
               "direction": "up",
               "status": "no_mention"
@@ -177808,163 +177885,168 @@
             {
               "metric": "Ground engaging tools contribution to sales",
               "horizon": "FY27",
-              "statement": "In FY26, the ground engaging tools contribution in total sales was 1.1%; in the next financial year FY27, we plan to go up to 3.8%.",
+              "statement": "Ground engaging tools contribution in total sales was 1.1% in FY26; in FY27 plan to go up to 3.8%.",
               "specificity": "specific",
               "direction": "up",
               "status": "no_mention"
             },
             {
-              "metric": "Overseas defense repeat order sales",
-              "horizon": "upon serial supply approval",
-              "statement": "If everything goes well, we could have sales for this segment in the region of INR15 crores to INR18 crores.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "no_mention"
-            },
-            {
-              "metric": "Hybrid power project annual savings",
-              "horizon": "post commissioning (June 2026)",
-              "statement": "2.4 MW hybrid power project, which is under commissioning by June 2026 and is likely to improve sustainability while generating annual savings of approximately ~ ₹3.6 crore.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "no_mention"
-            },
-            {
-              "metric": "Sector-wise and export-region revenue disclosure",
+              "metric": "Sector-wise revenue disclosure",
               "horizon": "Q1FY27",
-              "statement": "Your suggestion well taken, and we will try and implement this from first quarter of FY27.",
+              "statement": "Will try to implement more detailed sector-wise and export-region revenue breakup from Q1 of FY27.",
               "specificity": "vague",
               "direction": "unclear",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Cost pass-through / price adjustment",
+              "horizon": "coming quarters",
+              "statement": "Remaining raw material cost adjustment expected from July 1; company believes largely covered for the cost increase.",
+              "specificity": "specific",
+              "direction": "up",
               "status": "no_mention"
             }
           ],
           "risk_register": [
             {
-              "risk": "Elevated energy/fuel costs due to global geopolitical developments and sustained pressure on fuel prices",
+              "risk": "Input cost inflation (raw materials and natural gas)",
               "status": "new",
-              "note": "Energy costs have remained elevated due to global geopolitical developments and sustained pressure on fuel prices; company has ensured adequate fuel availability to support uninterrupted production."
-            },
-            {
-              "risk": "Rising raw material and natural gas input costs",
-              "status": "new",
-              "note": "Increase in input cost of various raw materials and natural gas has led to an upward price correction effective 1st July; natural gas currently about 50-55% more expensive than February end prices."
+              "note": "Input prices have increased from March onwards, with natural gas about 50-55% more expensive than February-end levels; necessitating an upward price correction effective 1st July."
             },
             {
               "risk": "Cost pass-through lag",
               "status": "new",
-              "note": "Cost increases and decreases are passed to customers with roughly a one-quarter lag; margin compensation from this cycle's cost increases is effective 1st July."
+              "note": "Price increases (and decreases) to customers occur with a roughly 1-quarter lag under the sales price variation formula, creating temporary margin timing mismatches."
             },
             {
-              "risk": "Customer concentration risk in defense business",
+              "risk": "Currency fluctuation",
               "status": "new",
-              "note": "Management views defense as one of the riskiest businesses because sales are typically to only one customer, contributing to the company's lower strategic priority on defense."
+              "note": "Rupee depreciation/appreciation is shared with customers rather than being fully retained or hedged by the company."
             },
             {
-              "risk": "Uncertain long-term natural gas pricing",
+              "risk": "Defense segment customer concentration risk",
               "status": "new",
-              "note": "Company cannot predict future natural gas prices; savings from transitioning to electricity depend on current elevated gas prices and may not hold over the longer term."
-            },
-            {
-              "risk": "Temporary inventory/WIP build-up during production ramp-up",
-              "status": "new",
-              "note": "Increase in production leads to short-term pile-up of inventory/WIP not yet converted to sales, normalizing with a 1-2 month lag."
+              "note": "Management views defense as one of the riskiest businesses due to dependence on a single customer, and has deprioritized it in favor of other sectors with better demand and pricing."
             },
             {
               "risk": "Geopolitical tensions and trade policy shifts",
               "status": "new",
-              "note": "Global economy remained resilient despite geopolitical tensions, trade policy shifts and supply chain realignments; India seen as relatively insulated due to large domestic consumption, though some cost pressure exists."
+              "note": "Global economy faces geopolitical tensions, trade policy shifts and supply chain realignments; India seen as relatively insulated due to large domestic consumption, though some cost pressure exists."
             },
             {
-              "risk": "Cyclicality of end-user industries",
+              "risk": "US railroad market opportunity deprioritized",
+              "status": "new",
+              "note": "Company has changed strategy and is not pursuing the US railroad market for now, citing better opportunities, products and pricing elsewhere; will revisit later."
+            },
+            {
+              "risk": "Historical customer/geography concentration (US & Germany, mining)",
+              "status": "new",
+              "note": "US and Germany still constitute about 70% of exports and mining ~54% of sales, down from near 100%/84% a decade ago, as company diversifies across 9 sectors and 16 export countries."
+            },
+            {
+              "risk": "Natural gas price unpredictability",
+              "status": "new",
+              "note": "Management cannot predict future natural gas pricing trends, creating uncertainty around long-term economics of transitioning from gas to electricity-based manufacturing processes."
+            },
+            {
+              "risk": "Inventory build-up during production ramp-up",
+              "status": "new",
+              "note": "Increase in production leads to temporary pile-up of inventory/WIP not yet converted to sales, normalizing with a 1-2 month lag."
+            },
+            {
+              "risk": "Geopolitical tensions (Middle East / Iran-U.S. war)",
               "status": "no_mention",
-              "note": "Company actively manages key risks arising from cyclicality of end-user industries."
+              "note": "Significantly impacted industries reliant on imported crude oil and gas (Energy, Oil & Gas, Trade, Logistics); elevated fuel and freight costs; delayed export defense orders."
+            },
+            {
+              "risk": "Raw material / commodity cost volatility",
+              "status": "no_mention",
+              "note": "Managed through agile procurement (just-in-time sourcing); raw material costs up ~10% since March 1, expected to be largely offset via price pass-through and rupee depreciation."
             },
             {
               "risk": "Foreign exchange fluctuations",
               "status": "no_mention",
-              "note": "Flagged as a key risk actively managed; rupee depreciation expected to help offset cost impact."
+              "note": "Rupee depreciation expected to help offset cost impact, given exports >60% of revenue."
             },
             {
-              "risk": "Volatility in raw material and energy costs",
+              "risk": "Cyclicality of end-user industries",
               "status": "no_mention",
-              "note": "Raw material costs up ~10% since around March 1, 2026; higher fuel prices and increased production activity raised power/energy costs."
+              "note": "Managed via diversified customer base and presence across multiple sectors/geographies."
             },
             {
-              "risk": "Geopolitical and supply chain disruptions (Middle East war/Iran-U.S. conflict)",
+              "risk": "Manufacturing cost pressure",
               "status": "no_mention",
-              "note": "Middle East war significantly impacted industries reliant on imported crude oil/gas (energy, oil & gas, trade, logistics); elevated fuel and freight costs; Iran-U.S. war delayed expected defense serial-supply orders by 1-2 quarters."
+              "note": "Manufacturing expenses increased due to higher maintenance activities, machinery repairs, and export-related obligation provisions; power/energy costs rose due to higher fuel prices and increased production."
             },
             {
               "risk": "Railroad segment component challenges",
               "status": "no_mention",
-              "note": "Company faced challenges in railroad developments and has not yet fully resolved them, though continuing to work on it while capitalizing on other sector opportunities."
+              "note": "Certain critical railroad component development challenges have not yet been fully resolved."
             },
             {
-              "risk": "Customer/geography concentration risk",
+              "risk": "Concentration risk (geography/customer)",
               "status": "no_mention",
-              "note": "Diversified customer base and presence across multiple sectors and geographies help mitigate concentration risks; analyst noted efforts made toward diversification."
-            },
-            {
-              "risk": "Manufacturing cost pressure (maintenance, machinery repairs, export obligation provisions)",
-              "status": "no_mention",
-              "note": "Manufacturing expenses increased in Q4FY26 due to higher maintenance activities, machinery repairs, and provisions related to export-related obligations."
+              "note": "Company has made efforts to diversify geographically and across industries per management commentary."
             }
           ],
           "themes": [
             {
-              "label": "Long-term growth aspiration (20% CAGR, PAT/revenue targets)",
+              "label": "Long-term growth aspiration",
               "direction": "positive",
-              "note": "Management reiterated ~20% CAGR target over coming years and raised FY27 growth guidance from 25% to a 'distinct possibility' of 30% due to strong customer indications.",
+              "note": "Management reiterated ~20% CAGR target over coming years and revised FY27 volume growth guidance from 25% to 30% given strong customer indications.",
               "section_ref": "GUID"
-            },
-            {
-              "label": "Margin normalization",
-              "direction": "positive",
-              "note": "EBITDA margin steady at 28.23% in Q1 FY27; management sees theoretical scope for 150-200 bps improvement to 28.5-29% for FY27 on operating leverage and cost pass-through.",
-              "section_ref": "FIN"
             },
             {
               "label": "Capacity expansion",
               "direction": "positive",
-              "note": "Board approved Greenfield Foundry (8,500 tons, INR120 crore capex) targeted for commissioning by 31st March FY28, with peak revenue potential of INR300 crores; existing capacity utilization targeted at 90% by FY29.",
+              "note": "Board approved Greenfield Foundry (8,500 tons, ~INR120 crores capex) commissioning by March FY28, with existing capacity utilization targeted at 90% by FY29.",
               "section_ref": "MFG"
+            },
+            {
+              "label": "Margin normalization guidance",
+              "direction": "positive",
+              "note": "EBITDA margin expected to improve 150-200 bps to ~28.5-29% in FY27 versus 27% in FY26, aided by cost pass-through and operating leverage.",
+              "section_ref": "FIN"
             },
             {
               "label": "Cost pass-through / pricing power",
               "direction": "positive",
-              "note": "Sales price variation formula allows pass-through of all major raw material and natural gas cost increases to customers, with the major correction effective 1st July and roughly a one-quarter lag.",
+              "note": "All major raw material and natural gas cost increases to be passed on to customers via sales price variation formula, effective 1st July, with ~1-quarter lag.",
               "section_ref": "RISK"
             },
             {
-              "label": "New part development pipeline",
-              "direction": "positive",
-              "note": "Over 100 new parts developed in last 18-24 months moving to serial supply; new parts expected to contribute ~20% of revenue over next 2-3 years, alongside GET ramp-up to 3.5% in FY27 and 4.5-6% by FY29.",
-              "section_ref": "SEG"
-            },
-            {
               "label": "Export-led growth",
-              "direction": "neutral",
-              "note": "Exports remain in the historical 45-50% range (49-50% this year), with U.S. and Germany still constituting ~70% of exports across 16 countries; company aims to reduce dependence on these two markets over time.",
+              "direction": "mixed",
+              "note": "Export share expected at ~49-50% in FY27 with historical range of 45-50%; US railroad deprioritized while diversification to 16 export countries reduces US/Germany concentration (still ~70%).",
               "section_ref": "GEO"
             },
             {
-              "label": "Sector diversification / derisking",
+              "label": "New part development / diversification",
               "direction": "positive",
-              "note": "Mining, earthmoving and construction combined account for ~70% of revenue with other 6 sectors at 30%; company has reduced dependence on mining equipment from 84% to much lower levels over 10 years and shifted focus away from defense and U.S. railroad toward better-priced opportunities.",
+              "note": "Over 100 new parts developed in last 18-24 months moving into serial supply; ~20% of revenue expected from new parts over next 2-3 years; sector mix diversified from mining-heavy (84% a decade ago) to more balanced across 9 sectors.",
               "section_ref": "SEG"
+            },
+            {
+              "label": "Geopolitical disruption",
+              "direction": "mixed",
+              "note": "Elevated energy costs and geopolitical tensions persist, but India and the engineering industry seen as relatively insulated due to strong domestic consumption.",
+              "section_ref": "RISK"
             }
           ],
           "key_takeaways": [
-            "Global GDP growth was estimated at 3.3% for the calendar year 2026; India GDP growth is estimated at 6.5% to 7% for the calendar year 2026.",
-            "During Q1 FY27, revenue from operation was at INR124.82 crores, a growth of 17% from INR106.69 crores in Q1 FY26. EBITDA during the quarter was at INR35.24 crores, a growth of 17.37% from INR30.02 crores in Q1 FY26. EBITDA margin was at 28.23% from 28.14% in Q1 FY26. PAT during the quarter was at INR23.71 crores, a growth of 19.26% from INR19.88 crores in Q1 FY26. PAT margin was at 19% from 18.64% in Q1 FY26.",
-            "The Board has approved the establishment of Greenfield Foundry with a capacity of 8,500 tons, involving a planned investment of approximately INR120 crores over the next 2 years, targeting commissioning by 31st March FY28.",
-            "Two renewable power projects under implementation - a 2.4-megawatt hybrid power plant (wind and solar) and 1.4 megawatt solar power plant - are expected to be commissioned before 31st December '26.",
-            "With increase in the input cost of various raw materials and natural gas, there will be a price correction on upward basis, effective 1st July '27.",
-            "The company remains confident in its ability to sustain growth momentum, maintain healthy profitability and deliver long-term value creation, targeting a growth trajectory of approximately 20% CAGR over the coming years, and for FY27, expects growth of 25% compared to last financial year (later revised to 30% in Q&A).",
-            "Order book as on current date stood at INR140 crores.",
-            "Company plans to reach 90% capacity utilization by FY29 on existing capacities; FY26 capacity utilization was 48%, and Q1 FY27 utilization was 63-66%."
+            "During Q1 FY27, the revenue from operation was at INR124.82 crores, a growth of 17% from INR106.69 crores in Q1 FY26.",
+            "EBITDA during the quarter was at INR35.24 crores, a growth of 17.37% from INR30.02 crores in Q1 FY26. EBITDA margin was at 28.23% from 28.14% in Q1 FY26.",
+            "PAT during the quarter was at INR23.71 crores, a growth of 19.26% from INR19.88 crores in Q1 FY26. PAT margin was at 19% from 18.64% in Q1 FY26.",
+            "The Board has approved the establishment of Greenfield Foundry with a capacity of 8,500 tons... involving a planned investment of approximately INR120 crores over the next 2 years.",
+            "Two renewable power projects are under implementation, a 2.4-megawatt hybrid power plant comprising of wind and solar and 1.4 megawatt solar power plant... expected to be commissioned before 31st December '26.",
+            "With increase in the input cost of various raw materials and natural gas, we would be having price correction on upward basis, and this will be effective 1st July '27.",
+            "We remain confident in our ability to sustain growth momentum, maintain healthy profitability and deliver long-term value creation, targeting a growth trajectory of approximately 20% CAGR over the coming years. And for FY27, we expect a growth of 25% compared to last financial year.",
+            "There will be a sequential improvement in top line from here on for several quarters. Margins will remain in guided range and focus is to drive top line. Operating leverage benefit should kick in with scale increasing."
           ],
-          "pressing_questions": []
+          "pressing_questions": [
+            "Sir, would you like to comment any rough range, sir, 5%, 10% range? How much... (on the quantum of price pass-through)",
+            "So this increasing pricing, what is the rough number, sir?"
+          ]
         },
         {
           "company": "Steelcast Ltd",
@@ -177976,8 +178058,8 @@
           "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=895825eb-94f8-4a22-915b-2af1edd0e1bb.pdf",
           "model": "gpt-4o",
           "pipeline_version": 3,
-          "generated_at": "2026-08-16T07:54:43.292Z",
-          "summary": "Steelcast delivered strong FY26 growth (revenue +13.33%, EBITDA +17.30%, PAT +20.31% YoY) led by export demand, and management guided to 20%+ CAGR volume/revenue growth over the next 3 years (including FY27), an aspiration of >₹100 crore PAT in FY27, doubling FY26 sales by FY29 (~₹860 crore) within present capacity, sustainable EBITDA margins of 25-26% going forward, and a capacity expansion decision by end-July 2026, amid near-term margin pressure from higher manufacturing, fuel/energy and raw material costs partly offset by price pass-throughs and rupee depreciation.",
+          "generated_at": "2026-08-16T08:01:25.043Z",
+          "summary": "Steelcast delivered strong FY26 revenue/EBITDA/PAT growth with export-led demand, but Q4FY26 saw margin pressure from higher fuel, power and manufacturing costs; management expects cost pass-through via price adjustments and rupee depreciation in coming quarters. Management guided to ~20% CAGR volume/revenue growth over the next three years (esp. FY27), an aspiration of >₹100 crore PAT in FY27, doubling of sales by FY29 (to ~₹860 crore) on present capacity, sustainable EBITDA margins of 25-26% going forward, and a capacity expansion decision by end-July 2026.",
           "sections": [
             {
               "id": "FIN",
@@ -178162,67 +178244,57 @@
                   "label": "Paid-up capital",
                   "value": "10.1",
                   "unit": "₹ crore",
-                  "period": "current",
+                  "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Number of shareholders",
+                  "label": "Shareholder base",
                   "value": "16,000",
                   "unit": "shareholders",
-                  "period": "current",
+                  "period": "FY26",
                   "kind": "reported"
                 },
                 {
-                  "label": "Historical EBITDA margin range",
-                  "value": "28-30",
+                  "label": "Q4FY26 vs Q4FY25 decline",
+                  "value": "~12",
                   "unit": "%",
-                  "period": "last several quarters",
+                  "period": "Q4FY26 vs Q4FY25",
                   "kind": "reported"
-                },
-                {
-                  "label": "Historical PAT margin range",
-                  "value": "18-20",
-                  "unit": "%",
-                  "period": "last several quarters",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Q4FY25 comparison",
-                  "value": "12",
-                  "unit": "% higher",
-                  "period": "Q4FY25 vs Q4FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "PAT aspiration",
-                  "value": "INR 101 crores to INR 115 crores",
-                  "unit": null,
-                  "period": "FY27",
-                  "kind": "target"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Cost dynamics",
+                  "label": "Cost discipline & margin pressure",
                   "points": [
-                    "Material costs were effectively managed despite commodity market volatility through agile procurement strategies such as just-in-time sourcing, ensuring stable consumption levels.",
+                    "Material costs effectively managed despite commodity volatility through agile procurement strategies such as just-in-time sourcing, ensuring stable consumption levels.",
                     "Manufacturing expenses increased due to higher maintenance activities, machinery repairs, and provisions related to export-related obligations.",
                     "Higher fuel prices coupled with increased production activity led to a rise in power and energy costs.",
                     "Other operating expenses remained largely stable, and consumption of stores and spares was managed efficiently with only marginal movement.",
-                    "Despite short-term margin pressure, the broader annual performance remains strong, underpinned by healthy growth in volumes, revenues, and overall profitability compared to the previous year."
+                    "Despite short-term margin pressure, annual performance remains strong, underpinned by healthy growth in volumes, revenues and profitability versus prior year."
+                  ]
+                },
+                {
+                  "label": "Cost pass-through / price adjustments",
+                  "points": [
+                    "Company expects to receive price adjustments from customers in subsequent quarters to compensate for elevated fuel and freight costs, especially given the Middle East situation, wherever applicable.",
+                    "These adjustments and rupee depreciation are expected to help offset the cost impact observed during the current period.",
+                    "Raw material costs have risen ~10% across the board since around March 1; impact on sales prices expected to be ~4-5%.",
+                    "Partial compensation already received effective April 1, with remaining adjustment expected from July 1; company believes it will be largely covered for this cost increase.",
+                    "Rupee depreciation expected to provide additional support, with exports contributing over 60% of revenue."
                   ]
                 },
                 {
                   "label": "Balance sheet & capital allocation",
                   "points": [
-                    "Company maintains a debt-free balance sheet with healthy cash reserves of around ₹114 crore, providing flexibility and strength to navigate uncertainties and capitalize on future opportunities.",
-                    "On bonus issue query: management stated there are several things being considered but nothing is currently on the horizon; any decision will be in the larger interest of all 16,000 shareholders."
+                    "Company maintains a debt-free balance sheet with healthy cash reserves of around ₹114 crore, providing flexibility to navigate uncertainties and capitalize on opportunities.",
+                    "On bonus issue: management stated there is nothing on the horizon currently, though several options are being considered; any action will be in the larger interest of the company's 16,000 shareholders.",
+                    "Paid-up capital stands at ₹10.1 crore."
                   ]
                 },
                 {
-                  "label": "Q4 vs prior-year quarter aberration",
+                  "label": "YoY vs QoQ comparison caveat",
                   "points": [
-                    "Management clarified that Q4FY26 was lower than Q4FY25 by about 12% on PAT/top-line but recommended comparing annual numbers and the preceding quarter rather than the same quarter of the prior year, terming such quarterly deviations as aberrations."
+                    "Management noted Q4FY26 was ~12% lower than Q4FY25 on PAT and topline, but recommended comparing annual numbers rather than quarterly, calling such quarterly movements 'aberrations'; also recommended looking at preceding quarter numbers."
                   ]
                 }
               ]
@@ -178242,28 +178314,48 @@
                   "label": "Order cycle",
                   "value": "110-120",
                   "unit": "days",
-                  "period": "current",
+                  "period": "FY26",
                   "kind": "reported"
+                },
+                {
+                  "label": "Working capital cycle",
+                  "value": "75-110",
+                  "unit": "days",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Overseas defense order potential",
+                  "value": "15-18",
+                  "unit": "₹ crore",
+                  "period": "future",
+                  "kind": "target"
                 }
               ],
               "subsections": [
                 {
                   "label": "Demand trends",
                   "points": [
-                    "Volumes improved compared to the immediate past period, though some moderation was seen versus the corresponding period of the previous year.",
+                    "Overall volumes improved compared to the immediate past period, though there was some moderation versus the corresponding period of the previous year.",
                     "Revenue trends followed a similar trajectory, with sequential growth supported by strong contributions from both export and domestic segments.",
                     "Demand continued to improve in recent months despite ongoing global uncertainties, particularly in regions affected by prolonged geopolitical tensions.",
-                    "Global demand remains steady with a gradual recovery across industrial sectors; India's infrastructure push and manufacturing growth expected to sustain demand.",
-                    "New part development orders have significantly increased in the last 4-6 weeks despite geopolitical tensions (Middle East war, prior Russia-Ukraine war)."
+                    "New part development orders have been unaffected by near-term uncertainties, geopolitical tensions, the Middle East war and the earlier Russia-Ukraine war; pace has in fact significantly increased in the last 4-6 weeks."
                   ]
                 },
                 {
                   "label": "Pricing / realizations",
                   "points": [
-                    "Realizations remain steady despite geopolitical tensions and near-term uncertainties; company has a sales price variation formula with customers allowing pass-through of cost increases (and reductions).",
-                    "Raw material costs rose approximately 10% across the board since around March 1; impact on sales prices expected to be around 4-5%.",
-                    "Partial compensation for cost increases already received effective April 1, with remaining adjustment expected from July 1; company believes it will be largely covered for the cost increase.",
-                    "Price adjustments from customers expected in coming quarters for elevated fuel and freight costs (Middle East situation); these adjustments plus rupee depreciation expected to help offset cost impact."
+                    "Realizations remain steady despite geopolitical tensions and near-term uncertainties, supported by a sales price variation formula with all customers that allows cost increases to be passed through (and cost reductions to be passed back).",
+                    "No significant effect on realizations from mix shift as utilization/growth increases."
+                  ]
+                },
+                {
+                  "label": "Overseas defense repeat orders",
+                  "points": [
+                    "Repeat orders from overseas defense relate to parts for compact vehicles generally used in ground wars.",
+                    "Prototypes and the prototype batch have been approved; company is now awaiting serial supply orders.",
+                    "If serial supplies materialize, sales potential estimated in the region of INR15-18 crore.",
+                    "Business model for defense parts will follow the same cost-plus/automatic price-adjustment formula as existing customers; working capital cycle expected to be similar (75-110 days range)."
                   ]
                 }
               ]
@@ -178272,13 +178364,6 @@
               "id": "SEG",
               "title": "Segment & Product Performance",
               "key_figures": [
-                {
-                  "label": "Exports contribution to revenue",
-                  "value": ">60",
-                  "unit": "%",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
                 {
                   "label": "Ground engaging tools contribution to total sales",
                   "value": "1.1",
@@ -178292,51 +178377,28 @@
                   "unit": "%",
                   "period": "FY27",
                   "kind": "target"
-                },
-                {
-                  "label": "Overseas defense repeat order potential",
-                  "value": "15-18",
-                  "unit": "₹ crore",
-                  "period": "future (upon serial supply approval)",
-                  "kind": "guidance"
-                },
-                {
-                  "label": "Working capital cycle",
-                  "value": "75-110",
-                  "unit": "days",
-                  "period": "current",
-                  "kind": "reported"
                 }
               ],
               "subsections": [
                 {
-                  "label": "Export vs domestic",
-                  "points": [
-                    "Export segment has clearly emerged as a stronger growth driver, consistently outperforming the domestic business across both the quarter and the full year.",
-                    "Exports contributed over 60% of revenues during the year, reaffirming strong global positioning; steady traction continued from North America and other developed markets alongside increased engagement with global OEMs driven by supply chain diversification."
-                  ]
-                },
-                {
                   "label": "Ground engaging tools",
                   "points": [
-                    "Contribution comes from existing customers; management declined to name specific customers.",
-                    "Margins in this segment are in line with company's overall margin profile."
+                    "Ground engaging tools contribution to total sales was 1.1% in FY26 and is planned to rise to 3.8% in FY27.",
+                    "Growth comes from existing customers; customer names not disclosed."
                   ]
                 },
                 {
-                  "label": "Defense segment",
+                  "label": "Railroad segment challenges",
                   "points": [
-                    "Company has shifted focus from defense to other industries (mining, earthmoving, construction, locomotives, railroad, ground engaging tools) where it sees more opportunities and strength; defense pursued only if it fits within bandwidth and capabilities.",
-                    "Repeat overseas defense orders relate to parts for compact vehicles generally used in ground wars; prototype batch has been approved and company awaits serial supply orders.",
-                    "Defense business model will follow the same cost-plus/price-adjustment formula as existing customers; working capital cycle for these products will fall within the same 75-110 day range as other business.",
-                    "Earlier supplied defense components to an overseas market; parts have been approved and company awaits orders for serial supplies, delayed due to Iran-U.S. war, expected to materialize in next 1-2 quarters."
+                    "Company faced challenges in railroad developments being worked on and has not yet fully resolved them.",
+                    "Competitive intensity in mining, earthmoving, construction and locomotives is relatively more favorable compared to railroad, so company continues to work on railroad issues while capitalizing on opportunities in these other industries."
                   ]
                 },
                 {
-                  "label": "Railroad segment",
+                  "label": "Sector diversification request",
                   "points": [
-                    "Company faced challenges in railroad developments and has not yet fully resolved them.",
-                    "Competitive intensity in mining, earthmoving, construction and locomotives is relatively more favorable compared to railroad, so company continues to work on railroad issues while capitalizing on opportunities in the other sectors."
+                    "An analyst requested a more detailed revenue breakup in upcoming presentations — sector-wise split (auto, non-auto, earthmoving, ground engaging tools, etc.) and a more granular export breakdown (e.g., North America vs other regions), ideally as a multi-year trend, to show diversification progress.",
+                    "Management said the suggestion is well taken and will try to implement it from Q1 of FY27."
                   ]
                 }
               ]
@@ -178346,8 +178408,8 @@
               "title": "Product & Technology",
               "key_figures": [
                 {
-                  "label": "Parts under development",
-                  "value": ">50",
+                  "label": "New parts under development",
+                  "value": "50+",
                   "unit": "parts",
                   "period": "current",
                   "kind": "reported"
@@ -178364,12 +178426,17 @@
                 {
                   "label": "New part development",
                   "points": [
-                    "New part development is a constant exercise; more than 50 parts are under different stages of development.",
-                    "As parts are ready, they are sent to customers for approvals which then convert into serial supplies.",
-                    "Development orders vary based on customer requirements within existing capability range of 5 kg to 2,500 kg, with no restriction to a specific weight segment.",
-                    "Major end-user industries for new parts: mining, earthmoving, construction, locomotives, railroad, ground engaging tools.",
-                    "Applications depend on which customer and geography, but confidentiality limits further disclosure of specifics.",
-                    "Data centers: according to management's knowledge, there is practically no requirement for steel castings in data centers, so no significant demand increase is expected from that trend."
+                    "New part development is a constant exercise; close to more than 50 parts are under different stages of development.",
+                    "As parts are ready, they are sent to customers for approvals, which then convert into serial supplies.",
+                    "Major end-user industries for new parts: mining, earthmoving, construction, locomotives, railroad.",
+                    "Parts vary based on customer requirements within existing capability range of 5 kg to 2,500 kg, with no restriction to a specific weight segment; depends entirely on customer needs.",
+                    "Due to confidentiality, detailed application-level disclosure was not possible."
+                  ]
+                },
+                {
+                  "label": "Data center demand assessment",
+                  "points": [
+                    "Management stated there is practically no requirement of steel castings in data centers, so no significant increase in demand is expected from data center capex trends, unlike what some large clients in other industries have indicated."
                   ]
                 }
               ]
@@ -178379,10 +178446,10 @@
               "title": "Manufacturing & Capacity",
               "key_figures": [
                 {
-                  "label": "Current capacity utilization",
+                  "label": "Current year capacity utilization",
                   "value": "63-64",
                   "unit": "%",
-                  "period": "current year",
+                  "period": "FY26",
                   "kind": "reported"
                 },
                 {
@@ -178393,7 +178460,7 @@
                   "kind": "reported"
                 },
                 {
-                  "label": "Estimated annual savings from hybrid power project",
+                  "label": "Annual savings from hybrid power project",
                   "value": "~3.6",
                   "unit": "₹ crore",
                   "period": "annual",
@@ -178404,16 +178471,15 @@
                 {
                   "label": "Capacity expansion decision timeline",
                   "points": [
-                    "Initially considering deciding on capacity expansion towards end of 2026; decision timeline moved up to end of July 2026 given increasing requirements from customers and new parts converting to serial supply.",
-                    "Company does not want to wait until December 2026 or until reaching 75% utilization; current utilization of 63-64% and strong customer indications support an earlier capex decision.",
-                    "Company is in an advanced stage of finalizing capex for capacity expansion, to be ready by end of July 2026; exact capacity increase numbers (e.g., % increase) not yet determined — 'halfway through exercises'."
+                    "Company was initially contemplating a capacity expansion decision by December 2026 but has now decided to bring the decision forward to end-July 2026, driven by increasing demand and new parts getting converted to serial supplies.",
+                    "Management does not want to wait until reaching 75% utilization levels to decide on capex; with current utilization at 63-64% and strong customer indications, company is in an advanced stage of finalizing the capex for capacity expansion.",
+                    "Exact capex numbers (including project cost and expected timeline) to be shared by end-July 2026; company is currently halfway through the exercise."
                   ]
                 },
                 {
-                  "label": "Operational efficiency",
+                  "label": "Hybrid power project",
                   "points": [
-                    "2.4 MW hybrid power project under commissioning by June 2026 expected to improve sustainability while generating annual savings of approximately ₹3.6 crore.",
-                    "Company remains focused on enhancing capacity and cost efficiency on the operational front."
+                    "2.4 MW hybrid power project is under commissioning by June 2026, expected to improve sustainability while generating annual savings of approximately ₹3.6 crore."
                   ]
                 }
               ]
@@ -178421,20 +178487,23 @@
             {
               "id": "GEO",
               "title": "Geography & Distribution",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "Export contribution to revenue",
+                  "value": ">60",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                }
+              ],
               "subsections": [
                 {
-                  "label": "Export markets",
+                  "label": "Export vs domestic performance",
                   "points": [
-                    "Steady traction continued from North America and other developed markets.",
-                    "Increased engagement with global OEMs driven by ongoing supply chain diversification ('China + 1' strategies benefiting countries like India)."
-                  ]
-                },
-                {
-                  "label": "Disclosure enhancement request",
-                  "points": [
-                    "An analyst requested a more detailed revenue breakup in future presentations — sector-wise split (auto, non-auto, earthmoving, ground engaging tools, etc.) and a more granular export breakdown (e.g., North America and other regions), ideally as a multi-year trend to show diversification progress.",
-                    "Management accepted the suggestion and said it will try to implement this from Q1FY27."
+                    "Export segment has clearly emerged as a stronger growth driver, consistently outperforming the domestic business across both the quarter and full year.",
+                    "Exports contributed over 60% of revenues during the year, reaffirming strong global positioning.",
+                    "Steady traction witnessed from North America and other developed markets, alongside increased engagement with global OEMs driven by ongoing supply chain diversification.",
+                    "'China + 1' strategies being adopted by companies are benefiting countries like India amid geopolitical tensions and supply chain realignments."
                   ]
                 }
               ]
@@ -178442,46 +178511,15 @@
             {
               "id": "MKT",
               "title": "Market & Customer Strategy",
-              "key_figures": [
-                {
-                  "label": "Global GDP growth",
-                  "value": "~3.3",
-                  "unit": "%",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "India GDP growth",
-                  "value": "7.3-7.6",
-                  "unit": "%",
-                  "period": "FY26 (estimated)",
-                  "kind": "reported"
-                }
-              ],
+              "key_figures": [],
               "subsections": [
                 {
-                  "label": "Macro backdrop",
+                  "label": "Focus industries / market strategy",
                   "points": [
-                    "Global economy demonstrated resilience despite geopolitical uncertainties, evolving trade policies and supply chain realignments, supported by investments in technology, infrastructure and industrial capacity.",
-                    "Operating environment remained dynamic due to geopolitical tensions, energy price volatility and shifting global trade flows, accelerating supply chain diversification via 'China + 1' strategies benefiting India.",
-                    "India's growth supported by strong domestic consumption, sustained infrastructure investments, and continued policy thrust on manufacturing and localisation.",
-                    "Industrial activity remained robust, driven by expansion across manufacturing, mining and infrastructure sectors — key end-user segments for Steelcast."
-                  ]
-                },
-                {
-                  "label": "Industry trends",
-                  "points": [
-                    "Global metal casting industry remains a critical enabler of industrial growth, with demand driven by construction equipment, mining, energy and engineering sectors.",
-                    "Industry expected to grow at a healthy pace, supported by infrastructure development, revival in industrial capex, and increasing investments in energy transition and renewable sectors.",
-                    "India continues to strengthen its position as a global manufacturing hub, benefiting from rising localisation, expanding export opportunities and deeper integration into global supply chains.",
-                    "Steelcast well positioned to capitalise on emerging opportunities, supported by increasing outsourcing by global OEMs, continued supply chain diversification, and rising demand for specialised, high-performance castings."
-                  ]
-                },
-                {
-                  "label": "Customer diversification",
-                  "points": [
-                    "Diversified customer base and presence across multiple sectors and geographies help mitigate concentration risks and enhance overall business resilience.",
-                    "Company acknowledged past concentration risk challenges (geography and customer) and noted significant efforts made to diversify across geographies and industries."
+                    "Company has shifted focus from defense to various other industries where it sees more opportunities and strength; defense pursued only if it fits bandwidth/capabilities.",
+                    "Core focus industries: mining, earthmoving, construction, locomotives, railroad, ground engaging tools.",
+                    "Growth expected to be driven by these five/six sectors, supporting 20%+ growth over the next three years including FY27.",
+                    "Diversified customer base and presence across multiple sectors and geographies help mitigate concentration risks and enhance business resilience."
                   ]
                 }
               ]
@@ -178496,40 +178534,37 @@
                   "points": [
                     "Company has established a comprehensive governance framework supported by strong internal control systems and audit mechanisms, with regular oversight by the Audit Committee and senior management to ensure high standards of financial discipline and transparency in reporting."
                   ]
-                },
-                {
-                  "label": "Bonus issue",
-                  "points": [
-                    "In response to a query on bonus issue given consistent surplus and long gap since last bonus, management said several options are being considered but nothing is currently decided; paid-up capital stands at ₹10.1 crore; any decision will be made in the larger interest of all 16,000 shareholders."
-                  ]
                 }
               ]
             },
             {
               "id": "RISK",
               "title": "Risks & External Factors",
-              "key_figures": [],
+              "key_figures": [
+                {
+                  "label": "Receivables period for defense orders",
+                  "value": "90-95",
+                  "unit": "days",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
               "subsections": [
                 {
-                  "label": "Key risks flagged",
+                  "label": "Geopolitical & macro risks",
                   "points": [
-                    "Cyclicality of end-user industries.",
-                    "Foreign exchange fluctuations.",
-                    "Volatility in raw material and energy costs.",
-                    "Geopolitical and supply chain disruptions.",
-                    "Middle East war has significantly impacted various industries in India, particularly those reliant on imported crude oil and gas such as Energy, Oil and Gas, Trade and Logistics; effects include impact on crude oil prices and inflation, trade and balance of payments, remittances and employment, financial markets and investor sentiment, and energy security.",
-                    "Iran-U.S. war has caused delays in expected orders for serial supplies of export defense parts.",
-                    "Elevated fuel and freight costs due to ongoing Middle East situation.",
-                    "Raw material costs rose approximately 10% across the board since around March 1, 2026."
+                    "Middle East war (Iran-U.S. conflict) has significantly impacted various industries in India, particularly those reliant on imported crude oil and gas such as Energy, Oil & Gas, Trade and Logistics.",
+                    "Effects include impact on crude oil prices, inflation, trade and balance of payments, remittances and employment, financial markets and investor sentiment, and energy security — underscoring the need for India to develop strategies to mitigate economic vulnerabilities.",
+                    "Company has so far successfully managed these disruptions and is confident of navigating future disturbances.",
+                    "Company actively manages key risks arising from cyclicality of end-user industries, foreign exchange fluctuations, volatility in raw material and energy costs, and geopolitical/supply chain disruptions.",
+                    "Orders for a previously supplied overseas defense export product are getting delayed due to the Iran-U.S. war, though expected to materialize in the next 1-2 quarters."
                   ]
                 },
                 {
-                  "label": "Mitigation",
+                  "label": "Cost pressure risk",
                   "points": [
-                    "Company has been successful so far in managing disruptions through various efforts and is confident of navigating future disturbances.",
-                    "Sales price variation formula with customers allows pass-through of cost increases (and reductions), providing an automatic cost-compensation mechanism.",
-                    "Rupee depreciation expected to provide additional support to offset cost pressures.",
-                    "Diversified customer base and presence across multiple sectors and geographies mitigate concentration risks."
+                    "Elevated fuel and freight costs, especially amid the ongoing Middle East situation, have raised near-term cost pressure.",
+                    "Raw material costs increased ~10% across the board since around March 1, impacting sales prices by an estimated 4-5%."
                   ]
                 }
               ]
@@ -178539,70 +178574,66 @@
               "title": "Guidance & Outlook",
               "key_figures": [
                 {
-                  "label": "Revenue/volume CAGR guidance",
+                  "label": "Revenue/volume CAGR target",
                   "value": "~20",
                   "unit": "%",
                   "period": "next 3 years incl. FY27",
-                  "kind": "guidance"
+                  "kind": "target"
                 },
                 {
-                  "label": "PAT aspiration",
+                  "label": "PAT target",
                   "value": ">100",
                   "unit": "₹ crore",
                   "period": "FY27",
                   "kind": "target"
                 },
                 {
-                  "label": "Sales doubling aspiration (implied revenue)",
+                  "label": "Sales target (doubling)",
                   "value": "~860",
                   "unit": "₹ crore",
                   "period": "FY29",
                   "kind": "target"
                 },
                 {
-                  "label": "Sustainable EBITDA margin guidance",
+                  "label": "Sustainable EBITDA margin range",
                   "value": "25-26",
                   "unit": "%",
-                  "period": "going forward / sustainable basis",
+                  "period": "going forward",
                   "kind": "guidance"
                 },
                 {
-                  "label": "Capacity expansion decision timeline",
-                  "value": "end of July 2026",
-                  "unit": null,
-                  "period": "FY27",
-                  "kind": "guidance"
+                  "label": "Historical EBITDA margin range",
+                  "value": "28-30",
+                  "unit": "%",
+                  "period": "recent quarters",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Historical PAT margin range",
+                  "value": "18-20",
+                  "unit": "%",
+                  "period": "recent quarters",
+                  "kind": "reported"
                 }
               ],
               "subsections": [
                 {
                   "label": "Growth outlook",
                   "points": [
-                    "Company remains confident of sustaining strong growth momentum, maintaining stable margins and delivering healthy long-term growth, with an estimated CAGR of around 20% over the next three years and particularly for FY27.",
-                    "Aspiration to double sales in FY29 compared to FY26 with present capacity (implied ~₹860 crore revenue).",
-                    "Smart goal for top management team is to make Steelcast a more than ₹100 crore PAT company in FY27 — described as an aspiration, could be ₹101 crore or ₹115 crore, goal is to be part of the '₹100 crore PAT company' group.",
-                    "20% growth guidance refers to volume growth in FY27, and this is expected to continue on a year-on-year cumulative basis through FY29."
+                    "Global demand remains steady with a gradual recovery across industrial sectors; India's infrastructure push and manufacturing growth expected to sustain demand.",
+                    "Ongoing supply chain diversification creating significant opportunities for export-oriented players like Steelcast.",
+                    "Company confident of sustaining strong growth momentum, maintaining stable margins, and delivering healthy long-term growth with an estimated CAGR of around 20% over the next three years, particularly for FY27.",
+                    "Smart goal: make Steelcast a >₹100 crore PAT company in FY27.",
+                    "Aspiration to double sales in FY29 compared to FY26 with present capacity — theoretical target number is ₹860 crore in FY29.",
+                    ">₹100 crore PAT for FY27 is described as an aspiration ('could be ₹101 crore or ₹115 crore'), reflecting desire to be part of the '₹100 crore PAT company' group, not a precise number.",
+                    "20% growth guidance referred to volume/topline growth in FY27, distinct from the PAT aspiration."
                   ]
                 },
                 {
                   "label": "Margin outlook",
                   "points": [
-                    "Historical EBITDA margins have ranged 28-30% and PAT margins 18-20% over recent quarters.",
-                    "On a sustainable, longer-term basis, management advises considering 25-26% EBITDA margin as realistic rather than the ~30% levels achieved at times.",
-                    "Clarified that this is not guidance for a 2-3% decline in FY26 margins specifically, but rather a longer-term sustainable margin expectation."
-                  ]
-                },
-                {
-                  "label": "Capex",
-                  "points": [
-                    "Capacity expansion decision to be finalized by end of July 2026 (moved up from earlier consideration of December 2026), driven by increasing demand and new parts converting to serial supply.",
-                    "Exact capacity increase quantum not yet disclosed; company is 'halfway through' exercises and will share exact numbers by end of July 2026."
-                  ]
-                },
-                {
-                  "label": "Reporting enhancement",
-                  "points": [
-                    "Management agreed to implement more granular sector-wise and export-region revenue disclosures starting Q1FY27, in response to analyst request."
+                    "Management guided to sustainable EBITDA margins of 25-26% going forward, versus 28-30% achieved in recent quarters and PAT margins of 18-20%.",
+                    "Clarified that expecting margins beyond 25-26% on a sustainable long-term basis would not be prudent, even though levels closer to 30% may be achieved at times."
                   ]
                 }
               ]
@@ -178610,9 +178641,9 @@
           ],
           "guidance_ledger": [
             {
-              "metric": "Revenue/Volume growth CAGR",
+              "metric": "Volume/Revenue CAGR",
               "horizon": "next 3 years incl. FY27",
-              "statement": "We remain confident of sustaining our strong growth momentum... with an estimated CAGR of around 20% over the next three years and particularly for FY27.",
+              "statement": "Estimated CAGR of around 20% over the next three years and particularly for FY27.",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
@@ -178620,31 +178651,31 @@
             {
               "metric": "PAT",
               "horizon": "FY27",
-              "statement": "The smart goal for our top management team is to make STEELCAST more than Rs. 100 Cr. PAT Company in FY27.",
-              "specificity": "specific",
+              "statement": "Smart goal for top management team is to make Steelcast more than ₹100 crore PAT company in FY27.",
+              "specificity": "vague",
               "direction": "up",
               "status": "new"
             },
             {
-              "metric": "Sales (doubling aspiration)",
+              "metric": "Sales (doubling)",
               "horizon": "FY29",
-              "statement": "We also have an aspiration to double our sales in FY29 compared to FY26 with present capacity... theoretically, the number should be INR860 crores in FY29.",
+              "statement": "Aspiration to double sales in FY29 compared to FY26 with present capacity; theoretical number should be ₹860 crore in FY29.",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
             },
             {
               "metric": "EBITDA margin",
-              "horizon": "sustainable/long-term",
-              "statement": "Sustained EBITDA margins of 25%, 26% is a reasonable thing to expect going forward; I would advise investors to consider 25–26% as the more realistic and sustainable EBITDA margin.",
+              "horizon": "going forward / long term",
+              "statement": "Sustained EBITDA margins of 25-26% is a reasonable thing to expect going forward; not prudent to expect margins beyond 25-26% on a sustainable basis.",
               "specificity": "specific",
               "direction": "down",
               "status": "new"
             },
             {
               "metric": "Capacity expansion decision",
-              "horizon": "end of July 2026",
-              "statement": "We will decide this by end of July 2026... we will be ready with this by July 2026 end.",
+              "horizon": "end-July 2026",
+              "statement": "We will decide on capacity expansion by end of July 2026, brought forward from earlier plan of December 2026.",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
@@ -178652,132 +178683,136 @@
             {
               "metric": "Ground engaging tools contribution to sales",
               "horizon": "FY27",
-              "statement": "In FY26, the ground engaging tools contribution in total sales was 1.1%; in the next financial year FY27, we plan to go up to 3.8%.",
+              "statement": "Ground engaging tools contribution in total sales was 1.1% in FY26; in FY27 plan to go up to 3.8%.",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
             },
             {
-              "metric": "Overseas defense repeat order sales",
-              "horizon": "upon serial supply approval",
-              "statement": "If everything goes well, we could have sales for this segment in the region of INR15 crores to INR18 crores.",
+              "metric": "Overseas defense revenue",
+              "horizon": "unspecified (future)",
+              "statement": "If serial supplies materialize, sales for this defense segment could be in the region of INR15-18 crore.",
               "specificity": "specific",
               "direction": "up",
               "status": "new"
             },
             {
-              "metric": "Hybrid power project annual savings",
-              "horizon": "post commissioning (June 2026)",
-              "statement": "2.4 MW hybrid power project, which is under commissioning by June 2026 and is likely to improve sustainability while generating annual savings of approximately ~ ₹3.6 crore.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "new"
-            },
-            {
-              "metric": "Sector-wise and export-region revenue disclosure",
+              "metric": "Sector-wise revenue disclosure",
               "horizon": "Q1FY27",
-              "statement": "Your suggestion well taken, and we will try and implement this from first quarter of FY27.",
+              "statement": "Will try to implement more detailed sector-wise and export-region revenue breakup from Q1 of FY27.",
               "specificity": "vague",
               "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Cost pass-through / price adjustment",
+              "horizon": "coming quarters",
+              "statement": "Remaining raw material cost adjustment expected from July 1; company believes largely covered for the cost increase.",
+              "specificity": "specific",
+              "direction": "up",
               "status": "new"
             }
           ],
           "risk_register": [
             {
-              "risk": "Cyclicality of end-user industries",
+              "risk": "Geopolitical tensions (Middle East / Iran-U.S. war)",
+              "status": "escalated",
+              "note": "Significantly impacted industries reliant on imported crude oil and gas (Energy, Oil & Gas, Trade, Logistics); elevated fuel and freight costs; delayed export defense orders."
+            },
+            {
+              "risk": "Raw material / commodity cost volatility",
               "status": "stable",
-              "note": "Company actively manages key risks arising from cyclicality of end-user industries."
+              "note": "Managed through agile procurement (just-in-time sourcing); raw material costs up ~10% since March 1, expected to be largely offset via price pass-through and rupee depreciation."
             },
             {
               "risk": "Foreign exchange fluctuations",
               "status": "stable",
-              "note": "Flagged as a key risk actively managed; rupee depreciation expected to help offset cost impact."
+              "note": "Rupee depreciation expected to help offset cost impact, given exports >60% of revenue."
             },
             {
-              "risk": "Volatility in raw material and energy costs",
-              "status": "escalated",
-              "note": "Raw material costs up ~10% since around March 1, 2026; higher fuel prices and increased production activity raised power/energy costs."
+              "risk": "Cyclicality of end-user industries",
+              "status": "stable",
+              "note": "Managed via diversified customer base and presence across multiple sectors/geographies."
             },
             {
-              "risk": "Geopolitical and supply chain disruptions (Middle East war/Iran-U.S. conflict)",
-              "status": "escalated",
-              "note": "Middle East war significantly impacted industries reliant on imported crude oil/gas (energy, oil & gas, trade, logistics); elevated fuel and freight costs; Iran-U.S. war delayed expected defense serial-supply orders by 1-2 quarters."
+              "risk": "Manufacturing cost pressure",
+              "status": "new",
+              "note": "Manufacturing expenses increased due to higher maintenance activities, machinery repairs, and export-related obligation provisions; power/energy costs rose due to higher fuel prices and increased production."
             },
             {
               "risk": "Railroad segment component challenges",
-              "status": "stable",
-              "note": "Company faced challenges in railroad developments and has not yet fully resolved them, though continuing to work on it while capitalizing on other sector opportunities."
+              "status": "escalated",
+              "note": "Certain critical railroad component development challenges have not yet been fully resolved."
             },
             {
-              "risk": "Customer/geography concentration risk",
+              "risk": "Concentration risk (geography/customer)",
               "status": "easing",
-              "note": "Diversified customer base and presence across multiple sectors and geographies help mitigate concentration risks; analyst noted efforts made toward diversification."
-            },
-            {
-              "risk": "Manufacturing cost pressure (maintenance, machinery repairs, export obligation provisions)",
-              "status": "new",
-              "note": "Manufacturing expenses increased in Q4FY26 due to higher maintenance activities, machinery repairs, and provisions related to export-related obligations."
+              "note": "Company has made efforts to diversify geographically and across industries per management commentary."
             }
           ],
           "themes": [
             {
               "label": "Export-led growth",
               "direction": "positive",
-              "note": "Exports contributed over 60% of FY26 revenue and outperformed domestic segment, supported by North America traction and global OEM supply chain diversification.",
-              "section_ref": "SEG"
+              "note": "Exports contributed over 60% of FY26 revenue and outperformed domestic segment, with steady traction from North America and increased OEM engagement amid supply chain diversification.",
+              "section_ref": "GEO"
             },
             {
-              "label": "Margin normalization",
+              "label": "Margin normalization guidance",
               "direction": "mixed",
-              "note": "Historical EBITDA margins of 28-30% expected to normalize to a sustainable 25-26% over the longer term, with near-term Q4 pressure from manufacturing, fuel and energy cost increases.",
-              "section_ref": "FIN"
+              "note": "Management guided to sustainable EBITDA margins of 25-26% going forward versus 28-30% achieved in recent quarters, despite Q4 margin pressure from cost increases.",
+              "section_ref": "GUID"
             },
             {
               "label": "Capacity expansion",
               "direction": "positive",
-              "note": "Capex decision timeline moved up to end of July 2026 (from Dec 2026) at 63-64% utilization, driven by strong demand indications and new parts converting to serial supply.",
+              "note": "Capex decision moved forward to end-July 2026 from earlier December 2026 plan, driven by strong demand and utilization at 63-64%.",
               "section_ref": "MFG"
-            },
-            {
-              "label": "New part development pipeline",
-              "direction": "positive",
-              "note": "Over 50 parts under development across mining, earthmoving, construction, locomotives and railroad, with pace of new development actually increasing in recent weeks despite geopolitical uncertainty.",
-              "section_ref": "TECH"
             },
             {
               "label": "Cost pass-through / pricing power",
               "direction": "positive",
-              "note": "Sales price variation formula with customers allows pass-through of raw material, fuel and freight cost increases, with rupee depreciation providing additional cushion.",
-              "section_ref": "ORD"
+              "note": "Sales price variation formula with customers allows raw material cost increases (~10% since March 1) to be largely passed through, aided by rupee depreciation.",
+              "section_ref": "FIN"
             },
             {
-              "label": "Geopolitical disruption (Middle East/Iran-U.S. war)",
+              "label": "Geopolitical disruption",
               "direction": "negative",
-              "note": "Middle East war and Iran-U.S. conflict raised fuel, freight and raw material costs (~10%) and delayed expected defense serial-supply orders by 1-2 quarters.",
+              "note": "Middle East (Iran-U.S.) war raised fuel/freight/raw material costs and delayed overseas defense serial supply orders, though management expects resolution in 1-2 quarters.",
               "section_ref": "RISK"
             },
             {
-              "label": "Long-term growth aspiration (20% CAGR, PAT/revenue targets)",
+              "label": "New part development / diversification",
               "direction": "positive",
-              "note": "Management guided to ~20% volume/revenue CAGR over 3 years, >₹100 crore PAT aspiration for FY27, and doubling FY26 sales by FY29 (~₹860 crore) within present capacity.",
+              "note": "50+ new parts under development across mining, earthmoving, construction, locomotives and railroad, with pace of development unaffected by geopolitical uncertainty and increasing in recent weeks; ground engaging tools contribution to rise from 1.1% to 3.8% in FY27.",
+              "section_ref": "TECH"
+            },
+            {
+              "label": "Long-term growth aspiration",
+              "direction": "positive",
+              "note": "20%+ CAGR target over next 3 years, >₹100 crore PAT aspiration for FY27, and doubling of sales (to ~₹860 crore) by FY29 on present capacity.",
               "section_ref": "GUID"
             }
           ],
           "key_takeaways": [
-            "During FY26, the revenue from operations was at ₹ 423.17 crore, an increase of 13.33% from ₹ 373.39 crore in FY25.",
-            "EBIDTA during the year was at ₹ 129.64 crore, a growth of 17.30% from ₹ 110.52 crore in FY25. EBIDTA margin was at 30.64%, an increase of 104 bps from 29.60% in FY25.",
-            "PAT during the year was at ₹ 86.86 crore, a growth of 20.31% from ₹ 72.20 crore in FY25. PAT margin came at 20.53%, increase of 119 bps from 19.34% in FY25.",
+            "During FY26, the revenue from operations was at ₹423.17 crore, an increase of 13.33% from ₹373.39 crore in FY25.",
+            "EBIDTA during the year was at ₹129.64 crore, a growth of 17.30% from ₹110.52 crore in FY25. EBIDTA margin was at 30.64%, an increase of 104 bps from 29.60% in FY25.",
+            "PAT during the year was at ₹86.86 crore, a growth of 20.31% from ₹72.20 crore in FY25. PAT margin came at 20.53%, increase of 119 bps from 19.34% in FY25.",
+            "During Q4FY26, the revenue from operations was at ₹112.43 crore, an increase of 15.43% from ₹97.40 crore in Q3FY26.",
             "During the year, exports contributed over 60% of revenues, reaffirming our strong global positioning.",
+            "The Company has maintained strong discipline on costs, though manufacturing expenses increased due to higher maintenance activities, machinery repairs, and provisions related to export-related obligations, and power/energy costs rose due to higher fuel prices.",
             "We continue to maintain strong financial prudence, with a debt-free balance sheet and healthy cash reserves of around ₹114 crores.",
             "We remain confident of sustaining our strong growth momentum, maintaining stable margins and delivering healthy long-term growth, with an estimated CAGR of around 20% over the next three years and particularly for FY27.",
-            "At STEELCAST, the smart goal for our top management team is to make STEELCAST more than Rs. 100 Cr. PAT Company in FY27.",
-            "We also have an aspiration to double our sales in FY29 compared to FY26 with present capacity. We were contemplating to decide on increasing capacity by Dec.26... we will decide by end July. 26."
+            "At STEELCAST, the smart goal for our top management team is to make STEELCAST more than Rs. 100 Cr. PAT Company in FY27. We also have an aspiration to double our sales in FY29 compared to FY26 with present capacity."
           ],
           "pressing_questions": [
-            "So this is what I'm trying to understand that earlier we were going to wait till 75% utilization levels, but now you are going to do it earlier. So are you trying to say that your capacity utilization will ramp up significantly in FY27 and hence, the need to put on a capex. Is that understanding right?",
-            "You mentioned an aspiration of around INR 100 crores PAT for FY27; however, based on current performance, we are already at approximately INR 87 crores... should we expect PAT growth to be higher, possibly in the range of 25% or more? Could you please share your thoughts on this?",
-            "Sir, my question is on the EBITDA margin side. Now we are doing around 28% to 30% level of margin and you are guiding going forward for '25, '26, the decline of 2%, 3% of the margin. What is the reason?",
-            "Chetan Bhai, when we see our results and surplus consistently. Any thoughts on any bonus issue? It will increase our what we call acceptance and I think bonus is not issued for quite long. Any thoughts on this, sir? And capital is just INR10.1 crores."
+            "Sir, you mentioned that a decision may be taken by June 2027 [on capex] — should we understand that you may proceed with capex earlier without necessarily waiting to reach 75% utilization levels, given the current visibility on demand?",
+            "What is the order book for FY27, if you can highlight?",
+            "So, my first question is that, let's say, you improve your utilization going forward and as the new driver of growth comes in, so do we see any impact on realization like from high value to lower value work are you doing or something like that?",
+            "Q4 of '25-'26 was almost 12% higher. What's the reason why it came down, PAT and top line of '25-'26 compared to this year compared to last year?",
+            "You mentioned an aspiration of around INR 100 crores PAT for FY27; however, based on current performance, we are already at approximately INR 87 crores... should we expect PAT growth to be higher, possibly in the range of 25% or more?",
+            "Would it be possible to include a more detailed breakup of revenues in upcoming presentations? Specifically, a sector-wise split (such as auto, non-auto, earthmoving, ground engaging tools, etc.) as well as a more granular export breakdown.",
+            "Any thoughts on any bonus issue? It will increase our what we call acceptance and I think bonus is not issued for quite long."
           ]
         }
       ]
