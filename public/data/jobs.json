@@ -599,8 +599,10 @@
       "message": "Screener has no AI summary and no transcript for SUPRIYA's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "AARTIPHARM": {
-      "status": "running",
-      "started_at": "2026-08-16T22:24:33.935Z"
+      "status": "failed",
+      "finished_at": "2026-08-16T22:24:40.034Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Screener has no AI summary and no transcript for AARTIPHARM's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "SAMHI": {
       "status": "done",
