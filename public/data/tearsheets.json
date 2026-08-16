@@ -186944,6 +186944,1095 @@
           ]
         }
       ]
+    },
+    "LTFOODS": {
+      "company": "L T Foods Ltd",
+      "ticker": "LTFOODS",
+      "industry": "Other Agricultural Products",
+      "country": "India",
+      "checked_at": "2026-08-16T22:47:19.839Z",
+      "quarters": [
+        {
+          "company": "L T Foods Ltd",
+          "ticker": "LTFOODS",
+          "industry": "Other Agricultural Products",
+          "country": "India",
+          "concall_date": "2026-08-05",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=89dd9f73-8569-4e21-aa29-4863e10df1c7.pdf",
+          "model": "anthropic.claude-sonnet-5",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-16T22:46:37.865Z",
+          "summary": "LT Foods delivered record Q1FY27 consolidated revenue of INR3,161 crores (up 26% YoY, 19% normalized), with EBITDA of INR363 crores and PAT of INR183 crores; management stated results are in line with annual estimates and the company is on track for the full year across all financial parameters. Key forward areas include continued India growth, US tariff normalization, Europe/UK investment phase turning profitable over coming quarters, organic business restructuring targeting double-digit growth/margin in ~1.5 years, and RTH/RTC capacity doubling over 3 years.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "Consolidated revenue",
+                  "value": "3,161",
+                  "unit": "INR crores",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue growth YoY (reported)",
+                  "value": "26%",
+                  "unit": "%",
+                  "period": "Q1FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue growth YoY (normalized)",
+                  "value": "19%",
+                  "unit": "%",
+                  "period": "Q1FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue growth QoQ",
+                  "value": "8%",
+                  "unit": "%",
+                  "period": "Q1FY27 QoQ",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gross profit",
+                  "value": "1,029",
+                  "unit": "INR crores",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gross profit growth YoY",
+                  "value": "19%",
+                  "unit": "%",
+                  "period": "Q1FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gross profit margin growth QoQ",
+                  "value": "13%",
+                  "unit": "%",
+                  "period": "Q1FY27 QoQ",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA",
+                  "value": "363",
+                  "unit": "INR crores",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA growth YoY",
+                  "value": "20%",
+                  "unit": "%",
+                  "period": "Q1FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA growth QoQ",
+                  "value": "21%",
+                  "unit": "%",
+                  "period": "Q1FY27 QoQ",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin",
+                  "value": "11.5%",
+                  "unit": "%",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin (prior year comparable)",
+                  "value": "12.1%",
+                  "unit": "%",
+                  "period": "Q1FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT",
+                  "value": "183",
+                  "unit": "INR crores",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT growth YoY",
+                  "value": "9%",
+                  "unit": "%",
+                  "period": "Q1FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT growth QoQ",
+                  "value": "35%",
+                  "unit": "%",
+                  "period": "Q1FY27 QoQ",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EPS",
+                  "value": "5.3",
+                  "unit": "INR/share",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EPS growth YoY",
+                  "value": "9%",
+                  "unit": "%",
+                  "period": "Q1FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Inventory days",
+                  "value": "187",
+                  "unit": "days",
+                  "period": "Q1FY27 vs 221 days YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Receivable days",
+                  "value": "26",
+                  "unit": "days",
+                  "period": "Q1FY27 vs 30 days YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Working capital days",
+                  "value": "170",
+                  "unit": "days",
+                  "period": "Q1FY27 vs 195 days YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Return on capital employed (ROCE)",
+                  "value": "21.1%",
+                  "unit": "%",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net debt-to-EBITDA",
+                  "value": "0.48x",
+                  "unit": "x",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net debt-to-equity",
+                  "value": "0.15x",
+                  "unit": "x",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Other expenses",
+                  "value": "486",
+                  "unit": "INR crores",
+                  "period": "Q1FY27 vs 419 crores YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Rice inventory",
+                  "value": "3,46,000",
+                  "unit": "tonnes",
+                  "period": "as on June 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Rice inventory average rate",
+                  "value": "56",
+                  "unit": "INR/kg (implied)",
+                  "period": "as on June 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Paddy inventory",
+                  "value": "1,64,000",
+                  "unit": "tonnes",
+                  "period": "as on June 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Paddy inventory average rate",
+                  "value": "38",
+                  "unit": "INR/kg (implied)",
+                  "period": "as on June 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Logistics cost as % of revenue",
+                  "value": "4.7%",
+                  "unit": "%",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Organic segment gross margin (current)",
+                  "value": "33%",
+                  "unit": "%",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Organic segment gross margin (prior year)",
+                  "value": "35%",
+                  "unit": "%",
+                  "period": "Q1FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Working capital optimization potential (supplier financing)",
+                  "value": "4-5",
+                  "unit": "days",
+                  "period": "forward",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Standalone gross margin",
+                  "value": "35%",
+                  "unit": null,
+                  "period": "last year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Standalone gross margin",
+                  "value": "33%",
+                  "unit": null,
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Organic segment gross margin",
+                  "value": "35%",
+                  "unit": null,
+                  "period": "last year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "US tariff rate (prior quarter)",
+                  "value": "50%",
+                  "unit": "%",
+                  "period": "prior quarter",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Margin drivers",
+                  "points": [
+                    "EBITDA margins moderated from 12.1% to 11.5% primarily due to ongoing restructuring within the organic foods segment.",
+                    "Gross margin fall on subsidiary basis driven by two factors: change in shipment/payment terms from CIF to C&I basis (with a related party US subsidiary), and drop in organic segment margins from 35% to 33%.",
+                    "Otherwise overall gross margins improved and this is reflecting in EBITDA margins as well, with EBITDA margins improving QoQ.",
+                    "US tariff reduction from 50% (last quarter) to 10% was the main reason for the QoQ improvement in GP margins, since company cannot earn margins on the tariff itself.",
+                    "Last quarter had one-off exceptional events including a damage retention charge that has phased out this quarter; logistics cost as % of revenue normalized to 4.7%."
+                  ]
+                },
+                {
+                  "label": "Other income and expense normalization",
+                  "points": [
+                    "Other income was low this quarter versus prior quarters due to a one-off income from revaluation of investments in the previous quarter; income has now normalized.",
+                    "Other expenses increased YoY from INR419 crores to INR486 crores mainly because Golden Star subsidiary is now consolidated (was not consolidated in the prior year), increasing both revenue and expense side."
+                  ]
+                },
+                {
+                  "label": "Working capital and balance sheet",
+                  "points": [
+                    "Meaningful improvement across key operating metrics: inventory days reduced from 221 to 187 days YoY; receivable days improved from 30 to 26 days YoY; overall working capital reduced from 195 to 170 days YoY.",
+                    "Supplier financing has increased interest cost but reduced working capital via lower inventory and debtor days; management believes they are near optimum level with only 4-5 days of further legroom, not a major further reduction.",
+                    "ROCE remains robust at 21.1%, demonstrating ability to generate healthy returns while continuing to invest behind future growth.",
+                    "Net debt-to-EBITDA improved to 0.48x and net debt-to-equity remained comfortable at 0.15x, providing flexibility for future expansion."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "Basmati & specialty rice segment revenue",
+                  "value": "2,845",
+                  "unit": "INR crores",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Basmati & specialty rice segment revenue growth YoY",
+                  "value": "34%",
+                  "unit": "%",
+                  "period": "Q1FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Basmati & specialty rice segment volume growth YoY",
+                  "value": "11%",
+                  "unit": "%",
+                  "period": "Q1FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Basmati & specialty rice segment EBITDA margin",
+                  "value": "13%",
+                  "unit": "%",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India revenue growth YoY",
+                  "value": "23%",
+                  "unit": "%",
+                  "period": "Q1FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India market share",
+                  "value": "23.1%",
+                  "unit": "%",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India market share (FY26 comparable)",
+                  "value": "23.7%",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India household penetration",
+                  "value": "64.4 lakh households",
+                  "unit": "households",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India household penetration increase (last year)",
+                  "value": "20 lakh",
+                  "unit": "households",
+                  "period": "last year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "International business contribution to consolidated revenue",
+                  "value": "71%",
+                  "unit": "%",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "North America growth",
+                  "value": "49%",
+                  "unit": "%",
+                  "period": "Q1FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "North America normalized growth",
+                  "value": "27%",
+                  "unit": "%",
+                  "period": "Q1FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Middle East and rest of world growth",
+                  "value": "44%",
+                  "unit": "%",
+                  "period": "Q1FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Organic Food and Ingredient business revenue",
+                  "value": "254",
+                  "unit": "INR crores",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Organic Food and Ingredient business EBITDA margin",
+                  "value": "4%",
+                  "unit": "%",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "RTH/RTC portfolio revenue growth YoY",
+                  "value": "13%",
+                  "unit": "%",
+                  "period": "Q1FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Biryani kits growth YoY",
+                  "value": "42%",
+                  "unit": "%",
+                  "period": "Q1FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India revenue volume",
+                  "value": "1,09,000",
+                  "unit": "tonnes",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "International sales volume",
+                  "value": "1,17,000",
+                  "unit": "tonnes",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India CAGR (last 3 years)",
+                  "value": "12%",
+                  "unit": "CAGR%",
+                  "period": "last 3 years",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India profit CAGR (last 3 years)",
+                  "value": "more than 30%",
+                  "unit": "CAGR%",
+                  "period": "last 3 years",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India CAGR growth (alt figure cited)",
+                  "value": "18%",
+                  "unit": "CAGR%",
+                  "period": "last 3 years",
+                  "kind": "reported"
+                },
+                {
+                  "label": "US basmati import share",
+                  "value": "more than 60%",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "E-commerce market share in India (urban)",
+                  "value": "40-plus",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Organic business EBITDA target (year-end)",
+                  "value": "INR70-80 crores",
+                  "unit": "INR crores",
+                  "period": "end of FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Organic EBITDA margin target (year-end)",
+                  "value": "7-8%",
+                  "unit": "%",
+                  "period": "end of FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "RTH breakeven revenue threshold",
+                  "value": "400",
+                  "unit": "INR crores",
+                  "period": "2-3 years",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Jasmine rice market size vs basmati (US)",
+                  "value": "3x",
+                  "unit": "multiple",
+                  "period": "current",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "Basmati and Jasmine rice growth rate range (US)",
+                  "value": "5%-10%",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Jasmine rice working capital cycle",
+                  "value": "120",
+                  "unit": "days",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India market share (historical)",
+                  "value": "30%",
+                  "unit": "%",
+                  "period": "2 years ago",
+                  "kind": "reported"
+                },
+                {
+                  "label": "India market share (intermediate)",
+                  "value": "10%",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "India market share (this quarter, alt cited)",
+                  "value": "33%",
+                  "unit": "%",
+                  "period": "Q1FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Rice business volume growth",
+                  "value": "11%",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Rice business revenue growth",
+                  "value": "32%",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "India franchise",
+                  "points": [
+                    "India growing profitably for the last 3 straight years with a CAGR of 12%, with profit growing faster than revenue at a CAGR of more than 30%.",
+                    "Basmati remains majority unbranded in India; every year more households shift to branded and trusted basmati, supporting long growth runway.",
+                    "Growth supported by continued marketing share gain and deeper household penetration (64.4 lakh households in Q1FY27, up from an increase of 20 lakh households last year); Daawat franchise strengthening.",
+                    "Leadership maintained across e-commerce and quick commerce platforms, key drivers of premiumization and consumer acquisition.",
+                    "Market share reported as improved this quarter; management attributes the appearance of declining market share over recent years partly to a Nielsen methodology reset 2-3 years back, not real share loss; company remains number 1 in strong markets like Maharashtra, Gujarat, MP and commands 40-plus share on e-commerce platforms.",
+                    "Focus on market creation — increasing overall basmati category size as basmati remains underpenetrated, and shifting loose basmati consumers to branded products, rather than just competing for existing branded share.",
+                    "Company has gained market share in the last quarter, both in channel mix and overall growth rate."
+                  ]
+                },
+                {
+                  "label": "International — North America",
+                  "points": [
+                    "International business contributed 71% of consolidated revenue, with North America maintaining leadership position with 49% growth (27% normalized).",
+                    "Royal and Golden Star continue to pull ahead as clear segment leaders behind consistent brand investments, innovation and execution across channels.",
+                    "US basmati import share now more than 60%; growing faster than the category.",
+                    "Tariff shifts created pricing volatility this year; focus is on converting dollar growth into real unit growth as pricing normalizes, while broadening reach across every price point and format.",
+                    "Golden Star (100% owned, not a JV) got consolidated this year, whereas last year it was not consolidated — this affected YoY comparability of revenue and other expenses.",
+                    "Jasmine rice market is 3x bigger than basmati in the US; different consumer bases for basmati vs Jasmine with no cannibalization; Jasmine growing slightly faster than basmati, both in 5-10% range.",
+                    "Basmati has higher EBITDA margin due to bigger working capital cycle and higher gross margins; Jasmine has higher ROIC given shorter 120-day working capital cycle; both businesses have healthy ROCE."
+                  ]
+                },
+                {
+                  "label": "Organic Food and Ingredients",
+                  "points": [
+                    "Revenue declined temporarily due to remodelling of the organic business — shift from wholesale to direct-to-retailer CPG model, plus European capacity expansion, drove cost pressure in FY26.",
+                    "Underlying demand fundamentals remain healthy; gradual normalization expected over coming quarters as business mix improves; long-term belief in global organic food market opportunity persists.",
+                    "Restructuring involved moving from selling to wholesalers to direct sales to retailers (CPG), requiring new infrastructure, organization and capex — full ramp expected to take about 1.5 years (by FY27-28).",
+                    "Two main markets for organic are Europe (biggest) followed by America; launched 'I'm Organic' under Daawat brand in e-commerce as start of organic product range expansion.",
+                    "Company charges a premium in basmati and Sona Masoori organic products versus other players in the market."
+                  ]
+                },
+                {
+                  "label": "Ready-to-Heat / Ready-to-Cook (RTH/RTC)",
+                  "points": [
+                    "RTH/RTC portfolio delivered 13% YoY revenue growth, with 42% growth in Biryani kits; represents an important strategic growth avenue.",
+                    "US RTH facility expected to become operational this quarter, which will accelerate growth in this segment in upcoming quarters.",
+                    "Breakeven for RTH expected at revenue size of INR400 crores, targeted to be achieved in 2-3 years; currently on track though US RTH facility timing has somewhat affected the pace.",
+                    "Aim to double RTH/RTC revenue in 3 years' time as new capacity comes online; achieved growth of 13% currently, with aspiration to reach 20-25% growth."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [
+                {
+                  "label": "Middle East annual revenue (estimated)",
+                  "value": "~1,000",
+                  "unit": "INR crores",
+                  "period": "cumulative, 15 years of presence",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Middle East market penetration (estimated)",
+                  "value": "2-3%",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Middle East freight rate increase",
+                  "value": "from $200 to $4,000",
+                  "unit": "USD",
+                  "period": "current disruption period",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Middle East expected growth rate",
+                  "value": "15%",
+                  "unit": "%",
+                  "period": "forward",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Geography commentary",
+                  "points": [
+                    "Europe and UK are currently in investment phase; continuously investing in capacity, cost structure and right channel mix, expecting translation into profitability over coming quarters in the medium term.",
+                    "Middle East is a tough and saturated market as a relatively new entrant (15 years present); despite regional disruption to shipping this year, demand held firm and e-commerce business took the number 1 category position; approaching market across multiple price points to build inroads.",
+                    "Rest of world is a small market in basmati consumption terms but company enjoys leadership position in most countries, solidifying position via continuous brand investments and distribution expansion.",
+                    "Middle East strategy: no plans to exit despite 15 years without major scale — remains core business; will focus on premium and mid-segment where gross margins are good, not the lower/commoditized end; mix of distributor-led and direct distribution route-to-market depending on the country; expected growth of ~15% given small base.",
+                    "Geopolitical disruption impacted Middle East and Europe/UK logistics/freight costs significantly, turning geography-level margins negative this quarter; company hopes to partly pass on costs to consumers in coming quarters. Middle East freight rate spiked from $200 to $4,000, and competitive landscape did not allow full pass-through in that market.",
+                    "Saudi/Middle East described as a very mature market with tough entry barriers and mostly a commoditized market segment; company pursuing a slow-and-steady approach over 15 years, choosing channels/products with better right to win."
+                  ]
+                },
+                {
+                  "label": "Australia entry",
+                  "points": [
+                    "Company has just opened an entity in Australia with only very small equity infused; no capex plan currently, will see how it evolves."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [
+                {
+                  "label": "US organic food tariff rate",
+                  "value": "10",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Soya CVD tariff reduction (appeal outcome)",
+                  "value": "more than 300% to 75%",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "US revenue growth (unadjusted)",
+                  "value": "29%",
+                  "unit": "%",
+                  "period": "Q1FY27 YoY",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Competitive dynamics — India basmati",
+                  "points": [
+                    "Analyst noted the rise of a 'number 3' player (Fortune plus Kohinoor) in India basmati; management focus remains on market creation — growing overall category size and converting loose basmati consumers to branded products, which is expected to support market share gains regardless of competitor moves.",
+                    "Management states it has gained market share in the last quarter both in channel mix and growth rate terms, and does not have visibility into whether other players' shares moved but reiterates strength in core markets."
+                  ]
+                },
+                {
+                  "label": "US category dynamics",
+                  "points": [
+                    "Jasmine rice category is growing in the US with no impact from duty; basmati category also growing; company's US business growing faster than the category overall for both segments."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [
+                {
+                  "label": "Convenience food (RTH) growth target range",
+                  "value": "20%-25%",
+                  "unit": "%",
+                  "period": "forward",
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "FY30 ambition",
+                  "points": [
+                    "FY30 ambition is a step change of more than doubling revenue with expanding margins, driven by reaching consumers at every price point, building distinctive brands, expanding availability and scaling organizational backbone digitally.",
+                    "Also plans to expand portfolio into adjacent categories by leveraging brand equity and distribution network.",
+                    "Three broad growth areas identified: core specialty rice (across globe), organic, and RTH/RTC (bigger in USA); RTH capacity doubled with an aim to double the ready-to-eat business in 3 years."
+                  ]
+                },
+                {
+                  "label": "Organic business remodeling",
+                  "points": [
+                    "Organic business model changed from wholesale to CPG (direct to retailer) route to market, with associated organizational and capex investment already set up in Europe."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "El Nino / weather and crop risk",
+                  "points": [
+                    "Sowing season underway with El Nino risk; some areas in deficit, some in excess; majority of basmati-grown area has alternative irrigation (canal or groundwater), so historically limited impact expected, but a little impact is likely — exact crop size projection to be clearer by mid-August.",
+                    "80-85% of basmati crop is supplied via alternative sources (canal and groundwater); 14-15% depends on rainfall.",
+                    "No red alert currently on groundwater impacting crop; some districts (about 20% of growing area) have issues, but majority districts are not a challenge; management does not expect crop size to exceed last year's, given farmers received good prices last year, so prices expected to remain firm.",
+                    "If crop is lower, inflation could follow; company plans to pass on inflation to consumers as it has historically been able to do, and does not expect impact on demand given basmati's premium/specialty positioning.",
+                    "Basmati EBITDA margin historically around 13-14%, with possible plus/minus 1% swing if crop/inflation issues occur."
+                  ]
+                },
+                {
+                  "label": "Geopolitical and freight disruption",
+                  "points": [
+                    "Geopolitical uncertainties, supply chain disruptions and freight volatility cited as challenging operating environment factors for the quarter.",
+                    "Middle East and Europe/UK logistics costs surged due to regional disruption to shipping, driving negative geography-level margins this quarter; Middle East freight rate rose from $200 to $4,000; competitive landscape prevented full cost pass-through in that market.",
+                    "Company hopes to partly pass on elevated logistics costs to consumers in coming quarters."
+                  ]
+                },
+                {
+                  "label": "US tariff uncertainty",
+                  "points": [
+                    "Standing 10% US tariff rate expired on 24th July but has continued at the same 10% rate post-expiry.",
+                    "Company had a 50% tariff impact in the prior quarter, since reduced to 10%; this was the main driver of gross margin recovery in the current quarter (cannot earn margin on tariff itself).",
+                    "Organic exports to US (rice and oilseeds) also carry a 10% duty; company is not currently exporting soya to USA, avoiding the separate high soya CVD case (previously reduced from over 300% to 75%), and is pursuing further reduction of remaining balance through court, hopeful of a win.",
+                    "Company is eligible for refund of duties from the US court ruling; partial refund received in Q1 but no income has been booked yet as discussions with customers are ongoing."
+                  ]
+                },
+                {
+                  "label": "Organic segment margin pressure",
+                  "points": [
+                    "FY26 organic business saw cost pressure from the shift in business model from wholesale to CPG and from European capacity expansion, pressuring margins temporarily."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [
+                {
+                  "label": "Basmati segment growth guidance",
+                  "value": "10-12%",
+                  "unit": "%",
+                  "period": "medium term",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "RTH segment growth guidance",
+                  "value": "15-20%",
+                  "unit": "%",
+                  "period": "medium term",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Organic segment growth guidance",
+                  "value": "10-12%",
+                  "unit": "%",
+                  "period": "medium term",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Organic business EBITDA target",
+                  "value": "INR70-80 crores",
+                  "unit": "INR crores",
+                  "period": "end of FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Organic EBITDA margin target",
+                  "value": "7-8%",
+                  "unit": "%",
+                  "period": "end of FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "RTH breakeven revenue",
+                  "value": "400",
+                  "unit": "INR crores",
+                  "period": "2-3 years",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "RTH/RTC revenue doubling target",
+                  "value": "2x",
+                  "unit": "multiple",
+                  "period": "3 years",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Middle East growth guidance",
+                  "value": "~15%",
+                  "unit": "%",
+                  "period": "forward",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "FY30 revenue ambition (India)",
+                  "value": "more than double",
+                  "unit": "multiple",
+                  "period": "FY30",
+                  "kind": "target"
+                },
+                {
+                  "label": "Organic business restructuring timeline",
+                  "value": "1.5 years",
+                  "unit": "years",
+                  "period": "forward",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Organic business full recovery target year",
+                  "value": "FY27-28",
+                  "unit": null,
+                  "period": "FY27-28",
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Full-year outlook",
+                  "points": [
+                    "Q1FY27 results are in line with annual estimates; company is on track for the full year across all financial parameters.",
+                    "Organic business expected to return to double-digit growth and double-digit margin in coming quarters, fully back by FY27-28 (about 1.5 years from now).",
+                    "RTH breakeven expected at INR400 crores revenue scale, to be achieved in 2-3 years; RTH/RTC revenue aimed to double in 3 years given new capacity coming online.",
+                    "India FY30 ambition: more than double revenue with expanding margins.",
+                    "Europe/UK investments expected to translate into profitability over coming quarters in the medium term.",
+                    "Basmati margin expected to remain around historical 13-14% EBITDA range, with plus/minus 1% variability depending on crop/inflation outcomes.",
+                    "Medium-term segment growth guidance: basmati segment 10-12%, RTH segment 15-20%, organic segment 10-12%, with organic business targeting INR70-80 crores EBITDA and 7-8% EBITDA margin by end of FY27.",
+                    "Middle East expected to grow ~15% going forward given small base."
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "Consolidated revenue/EBITDA/PAT full-year trajectory",
+              "horizon": "FY27",
+              "statement": "Q1FY27 results are in line with our annual estimates, and we are on track for the full year across all financial parameters.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Organic business EBITDA",
+              "horizon": "end of FY27",
+              "statement": "We are expecting that end of the year, for example, this organic business will be around INR70 crores to INR80 crores of EBITDA.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Organic business EBITDA margin",
+              "horizon": "end of FY27",
+              "statement": "Right now [organic EBITDA margin] is 4% will be in the range of 7% to 8% [by end of year], and going forward, it will come back to the double-digit EBITDA.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Organic business growth and margin",
+              "horizon": "FY27-28 (~1.5 years)",
+              "statement": "We are confident that the organic business, both in terms of growth and margin will be double digit in the coming quarters... we are saying 1.5 year by year '27-'28, it will be fully back.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "RTH breakeven revenue",
+              "horizon": "2-3 years",
+              "statement": "Breakeven [for RTH] will be coming at a revenue size of INR400 crores... It will take 2 to 3 years' time for achieving that number. We are on track.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "RTH/RTC revenue",
+              "horizon": "3 years",
+              "statement": "In 3 years' time, we are aiming to make our ready-to-eat business double... in 3 years' time, we wanted to double the revenue of RTH.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Basmati segment growth",
+              "horizon": "medium term",
+              "statement": "The basmati will grow in 10%, 12%.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "RTH segment growth",
+              "horizon": "medium term",
+              "statement": "The RTH because it's a small base, that will grow in 15%, 20%.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Organic segment growth",
+              "horizon": "medium term",
+              "statement": "Organic will be in the range of 10%, 12%. That's the guidance.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Basmati EBITDA margin range",
+              "horizon": "ongoing",
+              "statement": "The margin can be historically what we have seen is that basmati is around 13%, 14% EBITDA margin. So there can be a plus/minus 1% if things happen.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Middle East revenue growth",
+              "horizon": "forward (5-10 years)",
+              "statement": "The growth will be in the range of 15% as the base is small, but we will keep growing in the Middle East.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "India revenue (FY30 ambition)",
+              "horizon": "FY30",
+              "statement": "Our FY'30 ambition is a step change of more than doubling the revenue with expanding margins.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Europe/UK profitability",
+              "horizon": "medium term",
+              "statement": "We expect these investments to translate into the profitability over the coming quarters in the medium term.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Convenience food (RTH) growth acceleration",
+              "horizon": "unspecified",
+              "statement": "Can we achieve 20%-25% growth? Yes. That's what we said that the new capacity is going to start in the coming time.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Working capital optimization (supplier financing)",
+              "horizon": "forward",
+              "statement": "We hope we are at the optimum level of the supplier funding of these kinds. So yes, some legroom of 4-5 days might be there, but not a major one from this current level.",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "new"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "El Nino / weather impact on basmati crop and yield",
+              "status": "new",
+              "note": "Majority of basmati-growing area has alternative irrigation (canal/groundwater), limiting historical impact; some impact expected but exact crop size unclear until mid-August; ~20% of growing districts have issues; if crop is lower, inflation could follow, though company expects to pass this on to consumers."
+            },
+            {
+              "risk": "Geopolitical disruption and freight volatility",
+              "status": "escalated",
+              "note": "Impacted Middle East and Europe/UK logistics costs heavily, turning geography margins negative this quarter; Middle East freight rate rose from $200 to $4,000; competitive landscape prevented full pass-through."
+            },
+            {
+              "risk": "US tariff volatility",
+              "status": "easing",
+              "note": "Tariff reduced from 50% to 10% versus prior quarter, aiding margin recovery; standing 10% rate continued post its July 24 expiry; company confident of passing tariffs to consumers."
+            },
+            {
+              "risk": "Organic segment margin/business model transition",
+              "status": "escalated",
+              "note": "FY26 cost pressure from shift from wholesale to CPG model and European capacity expansion; margins temporarily lower (EBITDA margin at 4% in Q1FY27) but expected to normalize over ~1.5 years."
+            },
+            {
+              "risk": "Middle East market saturation and competitive intensity",
+              "status": "stable",
+              "note": "Tough, saturated, mature and commoditized market with high entry barriers; slow-and-steady approach after 15 years of presence; no plan to exit."
+            },
+            {
+              "risk": "India basmati competitive intensity (new entrant, e.g., Fortune/Kohinoor)",
+              "status": "stable",
+              "note": "Management focus is on market creation/converting unbranded to branded consumers rather than direct share battles; states share gained this quarter."
+            },
+            {
+              "risk": "Soya CVD duty litigation (US)",
+              "status": "stable",
+              "note": "Prior duty reduced from over 300% to 75%; balance still contested in court, company hopeful of a win; company no longer exports soya to USA."
+            }
+          ],
+          "themes": [
+            {
+              "label": "Branded basmati premiumization/market creation",
+              "direction": "positive",
+              "note": "India growth driven by shifting loose basmati consumers to branded, trusted basmati amid still-majority-unbranded market.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "US tariff headwind normalization",
+              "direction": "mixed",
+              "note": "US tariff reduced from 50% to 10% aiding margin recovery, though tariff volatility and litigation on organic/soya duties continue.",
+              "section_ref": "RISK"
+            },
+            {
+              "label": "Organic business restructuring",
+              "direction": "negative",
+              "note": "Shift from wholesale to CPG model and European capacity expansion pressured organic margins to 4% EBITDA, with double-digit recovery targeted in ~1.5 years.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Geopolitical/freight disruption",
+              "direction": "negative",
+              "note": "Middle East and Europe/UK logistics costs spiked (Middle East freight from $200 to $4,000), pressuring geography-level margins.",
+              "section_ref": "RISK"
+            },
+            {
+              "label": "RTH/RTC capacity expansion",
+              "direction": "positive",
+              "note": "US RTH facility going operational this quarter to accelerate growth; targeting revenue doubling in 3 years and breakeven at INR400 crores revenue.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "El Nino / monsoon crop risk",
+              "direction": "mixed",
+              "note": "Majority of basmati area has alternative irrigation limiting impact, but some districts affected; clarity expected by mid-August, with potential inflation pass-through if crop is short.",
+              "section_ref": "RISK"
+            },
+            {
+              "label": "Working capital efficiency",
+              "direction": "positive",
+              "note": "Inventory, receivable and overall working capital days all improved YoY, supporting ROCE of 21.1% and comfortable leverage.",
+              "section_ref": "FIN"
+            }
+          ],
+          "key_takeaways": [
+            "LT Foods has delivered another strong quarter, achieving 26.4% year-on-year growth despite a challenging operating environment marked by geopolitical uncertainties, supply chain disruptions and freight volatility.",
+            "India is a proven growth engine still in its early innings as there is a huge potential lies in front of us. The U.S. is genuinely category leader working through near-term tariff headwinds. Europe and the U.K. are in the investment phase with strong long-term potential.",
+            "The Middle East is a tough market wherein we are building inroads. Organic is a long-term bet where we have reset course and all the geographies and business segments are moving forward with full rigor.",
+            "During Q1FY27, the consolidated revenue on a year-on-year basis grew by 26%. On a normalized basis, it grew by 19%, and the revenue stood at INR3,161 crores, driven by strong demand across our key geographies and sustained momentum in our branded portfolio.",
+            "Profitability remained healthy. However, the EBITDA margins moderated from 11.5% to 12.1% primarily due to ongoing restructuring within the organic foods segment.",
+            "Our core basmati and specialty rice business continued to perform exceptionally well, delivering revenue growth of 34% year-on-year basis to INR2,845 crores... this segment EBITDA margin stood at stable 13%.",
+            "In India, the revenue grew by 23% on a year-on-year basis... Our market share reached to 23.1%, while our household penetration increased to 64.4 lakh households.",
+            "International business also continued its growth momentum and contributed 71% of our consolidated revenue, with North America maintaining the leadership position with 49% growth.",
+            "In Organic Food and Ingredient business witnessed a temporary decline in the revenue due to remodelling of the organic business. The revenue stood at INR254 crores with EBITDA margin at 4%.",
+            "Importantly, these results are in line with our annual estimates, and we are on track for the full year across all financial parameters."
+          ],
+          "pressing_questions": [
+            "I've been looking at your market share since the last 2 years in India, and it has consistently gone down from 30% to 10% to now 33%. In fact, FY26 was 23.7%, and it's now 23.1%. So any reason why this is going down? Is it because of the competitive intensity rising because of that third player coming in as someone had mentioned before on the call? Or is it something else?",
+            "We would probably have scratched just about 2% to 3% of this market. So what is our strategy in the next maybe 5 to 10 years to further make inroads here? ... Or at some point, is there a thought to maybe exiting or abandoning because we have not made further inroads even after 15 years?",
+            "So on a Q-on-Q basis, our gross and EBITDA margins have improved. So despite the elevated freight cost, we are showing an improvement in the gross margins. So what has been the major driver? And can you just quantify that what as a percentage of sales, the freight cost got elevated?",
+            "Even though there is revenue growth [in RTH/RTC], why EBITDA margin is declining? Is there any change in the target to reach for the breakeven to happen?"
+          ]
+        }
+      ]
     }
   }
 }
