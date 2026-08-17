@@ -713,8 +713,10 @@
       "message": "Screener has no AI summary and no transcript for LENSKART's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "MFSL": {
-      "status": "running",
-      "started_at": "2026-08-17T22:42:38.897Z"
+      "status": "failed",
+      "finished_at": "2026-08-17T22:42:44.839Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Screener has no AI summary and no transcript for MFSL's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "HONASA": {
       "status": "failed",
