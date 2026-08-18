@@ -455,7 +455,14 @@ async function analyzeTicker(page, context, ticker, baseStore) {
     stored.filter((q) => q.concall_date).map((q) => [q.concall_date.slice(0, 7), q])
   );
   const classifiedNewestFirst = [];
+  // Was the DISPLAYED (newest) quarter reused unchanged? If so it was already
+  // edited when it was first built as the latest quarter, so the editor pass below
+  // is redundant — skipping it makes re-runs of already-analysed companies fast and
+  // LLM-free (they only re-scrape the reported P&L / About, which is cheap).
+  const newestQ = chronological[chronological.length - 1];
+  let latestReused = false;
   for (const q of chronological) {
+    const isNewest = q === newestQ;
     const prev = q.concall_date ? storedByMonth.get(q.concall_date.slice(0, 7)) : null;
     // PIPELINE_VERSION still forces a one-time rebuild when the pipeline itself
     // improves — that is a deliberate cost, paid once per quarter, not per run.
@@ -463,6 +470,7 @@ async function analyzeTicker(page, context, ticker, baseStore) {
     if (!FORCE_REBUILD && prev && !improved && prev.pipeline_version === PIPELINE_VERSION) {
       log(`reusing stored ${T} @ ${prev.concall_date} (unchanged — no LLM call)`);
       classifiedNewestFirst.unshift(prev);
+      if (isNewest) latestReused = true;
       priorGuidance = prev.guidance_ledger || priorGuidance;
       priorRisks = prev.risk_register || priorRisks;
       if (Array.isArray(prev.themes) && prev.themes.length) priorThemes = prev.themes;
@@ -475,7 +483,7 @@ async function analyzeTicker(page, context, ticker, baseStore) {
     // model an empty document. Keep whatever is stored and move on instead.
     if (q.reused) {
       log(`skipping ${T} @ ${q.concall_date || "?"} — nothing new to read and no stored quarter matched`);
-      if (prev) classifiedNewestFirst.unshift(prev);
+      if (prev) { classifiedNewestFirst.unshift(prev); if (isNewest) latestReused = true; }
       continue;
     }
     log(`classifying ${T} @ ${q.concall_date || "?"} (${q.source})`);
@@ -510,12 +518,16 @@ async function analyzeTicker(page, context, ticker, baseStore) {
   // Governing editor pass on the DISPLAYED (latest) quarter — curate the prose,
   // preserve every figure. Historical quarters only feed the numeric trend
   // matrix, so we pay for the editor once, on the quarter whose prose is shown.
-  // editTearSheet is best-effort (returns the first-pass sections on any error).
-  if (classifiedNewestFirst[0] && process.env.TEARSHEET_EDITOR !== "0") {
+  // Skipped when the latest quarter was reused unchanged (already edited when it
+  // was first built) — that keeps a re-run over already-analysed companies fast and
+  // LLM-free. editTearSheet is best-effort (returns the first-pass sections on error).
+  if (classifiedNewestFirst[0] && !latestReused && process.env.TEARSHEET_EDITOR !== "0") {
     classifiedNewestFirst[0].sections = await editTearSheet(classifiedNewestFirst[0].sections, {
       company: scrape.company,
       ticker: T,
     });
+  } else if (latestReused) {
+    log(`editor: skipped for ${T} — latest quarter reused unchanged (already edited)`);
   }
 
   const latest = classifiedNewestFirst[0];
