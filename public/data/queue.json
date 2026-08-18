@@ -7,18 +7,30 @@
     "BHARATFORG",
     "TMPV",
     "CESC",
-    "VADILALIND",
-    "PNBHOUSING"
+    "VADILALIND"
   ],
-  "processed": 95,
+  "processed": 103,
   "stats": {
     "date": "2026-08-18",
     "discovered": 3,
     "carried_over": 7,
     "queued_total": 8,
     "processing_today": 0,
-    "pending_tomorrow": 8,
+    "pending_tomorrow": 7,
     "cap": 40,
-    "already_processed_today": 95
+    "already_processed_today": 103,
+    "added_today": 1,
+    "failed_today": 7
+  },
+  "added": 1,
+  "failed": 7,
+  "retries": {
+    "541741": 2,
+    "CONFIPET": 2,
+    "ASHOKLEY": 2,
+    "BHARATFORG": 2,
+    "TMPV": 2,
+    "CESC": 2,
+    "VADILALIND": 2
   }
 }
