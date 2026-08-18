@@ -91079,7 +91079,7 @@
       "ticker": "ACMESOLAR",
       "industry": "Power Generation",
       "country": "India",
-      "checked_at": "2026-08-04T23:29:16.302Z",
+      "checked_at": "2026-08-18T16:38:15.366Z",
       "quarters": [
         {
           "company": "ACME Solar Holdings Ltd",
@@ -91668,7 +91668,18 @@
                   "kind": "reported"
                 }
               ],
-              "subsections": []
+              "subsections": [
+                {
+                  "label": "BESS technical configuration",
+                  "points": [
+                    "In-house EPS BESS team of 50 members handles integration.",
+                    "Target BESS capacity by end of March FY27 on a daily basis is 10 GWh.",
+                    "Uncontracted BESS plant capacity is 300 MW into 2 units, scaling to 300 into 4.",
+                    "Rooftop solar addition to the grid is 6 to 7 GW.",
+                    "Typical BESS cycle discharge duration is 3 or 4 hours; one project's discharge duration was upgraded from 2 hours to 4 hours."
+                  ]
+                }
+              ]
             },
             {
               "id": "MFG",
@@ -91682,7 +91693,14 @@
                   "kind": "reported"
                 }
               ],
-              "subsections": []
+              "subsections": [
+                {
+                  "label": "Under-construction FDRE financing",
+                  "points": [
+                    "Financing secured during the quarter for 700 MW of under-construction FDRE projects."
+                  ]
+                }
+              ]
             },
             {
               "id": "GEO",
@@ -91777,7 +91795,7 @@
                 {
                   "label": "Sector demand drivers",
                   "points": [
-                    "Strong start to FY27 supported by expanding economic activity, delayed monsoons, and elevated cooling demand."
+                    "Strong start to FY27 supported by expanding economic activity, delayed monsoons, and elevated cooling demand, with India aggregate electricity demand growing 8.8% YoY to 485 billion units and peak power demand hitting a new all-time high of 271 GW in Q1 FY27 (~270 GW in July 2026)."
                   ]
                 },
                 {
@@ -91817,7 +91835,16 @@
                   "kind": "reported"
                 }
               ],
-              "subsections": []
+              "subsections": [
+                {
+                  "label": "Supply chain notes",
+                  "points": [
+                    "China export tax on batteries set at 6%, effective from January.",
+                    "PPA signed at INR6.28/unit during the quarter for a project with no change in configuration.",
+                    "Open (uncontracted) BESS capacity referenced in Q&A discussion as 1,200 MWh."
+                  ]
+                }
+              ]
             },
             {
               "id": "MKT",
@@ -91952,6 +91979,14 @@
                   "points": [
                     "Chairman noted growing EV adoption will keep increasing peak power demand for 1-2-3 hour windows, especially in evening and daytime."
                   ]
+                },
+                {
+                  "label": "Module pricing & margin variability",
+                  "points": [
+                    "Current module prices are sub-INR12, around INR11.60.",
+                    "80% of transmission line/non-module capex for SJVN FDRE project completed.",
+                    "EBITDA margin expected to vary 2-5% versus Q1 through FY27 depending on project mix and seasonality."
+                  ]
                 }
               ]
             },
@@ -91974,7 +92009,15 @@
                   "kind": "target"
                 }
               ],
-              "subsections": []
+              "subsections": [
+                {
+                  "label": "Peak power business strategic focus",
+                  "points": [
+                    "Hybrid project battery configuration offered 1 hour of battery during Q1 FY27 as a deviation from standard config.",
+                    "Company's peak power business focus is oriented toward the period beyond 2028-2029."
+                  ]
+                }
+              ]
             },
             {
               "id": "RISK",
@@ -92105,7 +92148,8 @@
                 {
                   "label": "Industry bid outlook",
                   "points": [
-                    "Company expects large bids going forward across midterm contracts, long-term peak power, RTC FDRE, CFD related to peak power, and state bids, and will continue to actively pursue such opportunities to capitalize on evolving market demand and merchant market dynamics."
+                    "Company expects large bids going forward across midterm contracts, long-term peak power, RTC FDRE, CFD related to peak power, and state bids, and will continue to actively pursue such opportunities to capitalize on evolving market demand and merchant market dynamics.",
+                    "Government-backed bids are expected to revive strongly within 6 to 9 months, and BESS short-term revenue from FY28 onwards is projected at INR2,000-2,500 crores."
                   ]
                 }
               ]
@@ -93773,7 +93817,168 @@
             "Almost 80% of our projects would be on the CTU side of the business — are we facing lag in terms of substation connectivity at the STU level or CTU level from an industry perspective?"
           ]
         }
-      ]
+      ],
+      "about": "Incorporated in 2015, ACME Solar Holdings is a renewable energy company in India with a portfolio of solar, wind, hybrid, and firm and dispatchable renewable energy (“FDRE”) projects.[1]",
+      "reported_pnl": {
+        "basis": "consolidated",
+        "periods": [
+          "Sep 2024",
+          "Dec 2024",
+          "Mar 2025",
+          "Jun 2025",
+          "Sep 2025",
+          "Dec 2025",
+          "Mar 2026",
+          "Jun 2026"
+        ],
+        "rows": [
+          {
+            "label": "Sales",
+            "values": [
+              "260",
+              "349",
+              "487",
+              "511",
+              "468",
+              "497",
+              "548",
+              "858"
+            ]
+          },
+          {
+            "label": "Expenses",
+            "values": [
+              "39",
+              "42",
+              "51",
+              "53",
+              "68",
+              "52",
+              "69",
+              "123"
+            ]
+          },
+          {
+            "label": "Operating Profit",
+            "values": [
+              "221",
+              "307",
+              "436",
+              "458",
+              "400",
+              "444",
+              "479",
+              "734"
+            ]
+          },
+          {
+            "label": "OPM %",
+            "values": [
+              "85%",
+              "88%",
+              "90%",
+              "90%",
+              "86%",
+              "89%",
+              "87%",
+              "86%"
+            ]
+          },
+          {
+            "label": "Other Income",
+            "values": [
+              "36",
+              "45",
+              "38",
+              "57",
+              "138",
+              "120",
+              "171",
+              "96"
+            ]
+          },
+          {
+            "label": "Interest",
+            "values": [
+              "178",
+              "179",
+              "206",
+              "233",
+              "265",
+              "288",
+              "337",
+              "344"
+            ]
+          },
+          {
+            "label": "Depreciation",
+            "values": [
+              "60",
+              "70",
+              "102",
+              "108",
+              "117",
+              "120",
+              "123",
+              "155"
+            ]
+          },
+          {
+            "label": "Profit before tax",
+            "values": [
+              "18",
+              "103",
+              "166",
+              "174",
+              "156",
+              "156",
+              "190",
+              "331"
+            ]
+          },
+          {
+            "label": "Tax %",
+            "values": [
+              "16%",
+              "-8%",
+              "27%",
+              "25%",
+              "26%",
+              "27%",
+              "27%",
+              "29%"
+            ]
+          },
+          {
+            "label": "Net Profit",
+            "values": [
+              "15",
+              "112",
+              "122",
+              "131",
+              "115",
+              "114",
+              "138",
+              "235"
+            ]
+          },
+          {
+            "label": "EPS in Rs",
+            "values": [
+              "0.29",
+              "1.85",
+              "2.04",
+              "2.16",
+              "1.90",
+              "1.88",
+              "2.30",
+              "3.33"
+            ]
+          }
+        ],
+        "source_url": "https://www.screener.in/company/ACMESOLAR/consolidated/#quarters",
+        "captured_at": "2026-08-18T16:35:40.759Z"
+      }
     },
     "PERSISTENT": {
       "company": "Persistent Systems Ltd",
