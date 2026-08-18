@@ -1,15 +1,36 @@
 {
   "date": "2026-08-18",
-  "pending": [],
-  "processed": 0,
+  "pending": [
+    "CONFIPET",
+    "541741",
+    "ASHOKLEY",
+    "BHARATFORG",
+    "TMPV",
+    "CESC",
+    "VADILALIND"
+  ],
+  "processed": 95,
   "stats": {
     "date": "2026-08-18",
     "discovered": 5,
     "carried_over": 0,
     "queued_total": 5,
     "processing_today": 5,
-    "pending_tomorrow": 0,
+    "pending_tomorrow": 7,
     "cap": 40,
-    "already_processed_today": 0
+    "already_processed_today": 95,
+    "added_today": 88,
+    "failed_today": 7
+  },
+  "added": 88,
+  "failed": 7,
+  "retries": {
+    "541741": 1,
+    "CONFIPET": 1,
+    "ASHOKLEY": 1,
+    "BHARATFORG": 1,
+    "TMPV": 1,
+    "CESC": 1,
+    "VADILALIND": 1
   }
 }
