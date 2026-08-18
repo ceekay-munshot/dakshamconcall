@@ -1657,6 +1657,23 @@ tr.fresh {
 }
 .ts-summary [data-lucide] { color: var(--brand-violet); flex-shrink: 0; margin-top: 2px; }
 
+/* Business "About" blurb (verbatim from Screener) — factual context, teal accent
+   to read as distinct from the violet AI-summary band. */
+.ts-about {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 11px 15px;
+  margin-bottom: 14px;
+  border-radius: var(--r-md);
+  background: rgba(20, 184, 166, 0.06);
+  border: 1px solid rgba(20, 184, 166, 0.18);
+  font-size: 13px;
+  color: var(--text-2);
+  line-height: 1.5;
+}
+.ts-about [data-lucide] { color: var(--brand-teal); flex-shrink: 0; margin-top: 1px; }
+
 .ts-firstq {
   display: inline-flex;
   align-items: center;
@@ -1801,6 +1818,48 @@ tr.fresh {
 .kchip.kc-guidance { color: var(--brand-indigo); background: rgba(99,102,241,.12); }
 .kchip.kc-target { color: var(--brand-violet); background: rgba(124,58,237,.12); }
 .kchip.kc-market { color: var(--brand-teal); background: rgba(20,184,166,.12); }
+
+/* ---- Reported quarterly P&L (verbatim from Screener, top of Financials) ---- */
+.pnl-block {
+  margin: 0 0 14px;
+  border: 1px solid rgba(99, 102, 241, 0.18);
+  border-radius: var(--r-md);
+  background: #fff;
+  overflow: hidden;
+}
+.pnl-head {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap;
+  padding: 10px 12px; border-bottom: 1px solid var(--hairline);
+  background: linear-gradient(120deg, rgba(99,102,241,.06), rgba(6,182,212,.04));
+}
+.pnl-title { display: inline-flex; align-items: center; gap: 7px; font-size: 12.5px; font-weight: 700; color: var(--text-1); }
+.pnl-title [data-lucide] { color: var(--brand-indigo); width: 16px; height: 16px; }
+.pnl-basis { font-size: 11px; color: var(--text-3); display: inline-flex; align-items: center; gap: 4px; }
+.pnl-src { display: inline-flex; align-items: center; gap: 3px; color: var(--brand-indigo); text-decoration: none; font-weight: 600; }
+.pnl-src:hover { text-decoration: underline; }
+.pnl-src [data-lucide] { width: 12px; height: 12px; }
+.pnl-scroll { overflow-x: auto; background: #fff; }
+.pnl-table { border-collapse: collapse; font-size: 12px; width: 100%; min-width: max-content; }
+.pnl-table thead th {
+  font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em;
+  color: var(--text-4); padding: 7px 12px; text-align: right; white-space: nowrap;
+  border-bottom: 1px solid var(--hairline); font-variant-numeric: tabular-nums;
+}
+.pnl-table th.pnl-label-h { text-align: left; color: var(--text-3); position: sticky; left: 0; background: #fff; }
+.pnl-table td { padding: 6px 12px; border-bottom: 1px solid rgba(100,116,139,.08); white-space: nowrap; }
+.pnl-table tr:last-child td { border-bottom: none; }
+.pnl-label {
+  text-align: left; color: var(--text-2); font-weight: 500;
+  position: sticky; left: 0; background: #fff;
+}
+.pnl-val { text-align: right; font-family: var(--font-mono); color: var(--text-2); font-variant-numeric: tabular-nums; }
+.pnl-q-latest { color: var(--text-1); }
+.pnl-table th.pnl-q-latest { color: var(--brand-violet); }
+.pnl-table td.pnl-val.pnl-q-latest { font-weight: 700; background: rgba(124, 58, 237, 0.05); }
+.pnl-table tr.pnl-key .pnl-label,
+.pnl-table tr.pnl-key .pnl-val { font-weight: 700; color: var(--text-1); }
+.pnl-note { display: flex; align-items: center; gap: 6px; font-size: 10.5px; color: var(--text-4); padding: 8px 12px; }
+.pnl-note [data-lucide] { width: 12px; height: 12px; flex-shrink: 0; }
 
 /* subsections */
 .subsecs { display: flex; flex-direction: column; gap: 10px; margin-top: 10px; }

@@ -521,11 +521,17 @@ async function analyzeTicker(page, context, ticker, baseStore) {
   const latest = classifiedNewestFirst[0];
 
   // 4) stage tearsheet + tracked + job done
+  // Company-level context from Screener (no LLM): the business "About" blurb and
+  // the reported quarterly P&L. Keep the previously stored value if this scrape
+  // didn't capture one, so a transient DOM miss never blanks the tear sheet.
+  const prevCompany = baseStore.tearsheets.companies[T] || {};
   pending.tearsheets.set(T, {
     company: scrape.company,
     ticker: T,
     industry,
     country,
+    about: scrape.about || prevCompany.about || null,
+    reported_pnl: scrape.reported_pnl || prevCompany.reported_pnl || null,
     checked_at: nowIso(), // throttles the daily stale-refresh loop
     quarters: classifiedNewestFirst,
   });

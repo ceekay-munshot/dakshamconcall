@@ -42,6 +42,7 @@ export async function exportTearSheetXlsx(model) {
   const wb = new window.ExcelJS.Workbook();
   wb.creator = "Munshot · Daksham Capital";
   buildTearSheet(wb, model);
+  buildReportedPnl(wb, model);
   buildKeyFigures(wb, model);
 
   const buf = await wb.xlsx.writeBuffer();
@@ -72,6 +73,14 @@ function buildTearSheet(wb, m) {
   const meta = [m.ticker, m.industry, m.country, m.concall_date ? fmtDate(m.concall_date) : null, m.source === "ai_summary" ? "AI summary" : m.source === "transcript" ? "Transcript" : null].filter(Boolean).join("   ·   ");
   merge(r++, meta, { font: { size: 10.5, color: { argb: MUTE } } });
   r++;
+
+  if (m.about) {
+    band(ws, r++, "About the business", NCOL);
+    const c = merge(r++, m.about, { font: { size: 10, color: { argb: "FF334155" } }, align: { indent: 1 } });
+    c.border = box();
+    ws.getRow(c.row).height = Math.min(120, 16 + Math.ceil(m.about.length / 90) * 15);
+    r++;
+  }
 
   if (m.summary) {
     band(ws, r++, "Outlook", NCOL);
@@ -190,6 +199,60 @@ function buildTearSheet(wb, m) {
     r++;
   };
   list("Key Takeaways (verbatim)", m.key_takeaways);
+}
+
+/* ---------------------------------------------------- sheet: Reported P&L -- */
+/** The reported quarterly P&L, verbatim from Screener's "Quarterly Results"
+ *  table (client ask). One row per line item, one column per quarter; latest
+ *  emphasised. Its own sheet so the 8-quarter width isn't cramped. */
+function buildReportedPnl(wb, m) {
+  const pnl = m.reported_pnl;
+  const periods = (pnl?.periods || []).filter(Boolean);
+  const rows = (pnl?.rows || []).filter((r) => r && r.label && (r.values || []).some(Boolean));
+  if (!periods.length || !rows.length) return;
+  const ncol = periods.length + 1;
+  const last = periods.length - 1;
+  const ws = wb.addWorksheet("Reported P&L", { views: [{ showGridLines: false, state: "frozen", xSplit: 1, ySplit: 2 }] });
+  ws.columns = [{ width: 26 }, ...periods.map(() => ({ width: 12 }))];
+
+  // Title
+  ws.mergeCells(1, 1, 1, ncol);
+  const t = ws.getCell(1, 1);
+  t.value = `Reported Financials · Quarterly P&L  (${pnl.basis === "standalone" ? "Standalone" : "Consolidated"}, ₹ Cr — from Screener, not the concall)`;
+  t.font = { bold: true, color: { argb: "FFFFFFFF" }, size: 11.5, name: "Calibri" };
+  t.fill = solid(V);
+  t.alignment = { vertical: "middle", indent: 1 };
+  t.border = box();
+  ws.getRow(1).height = 24;
+
+  // Period header
+  const head = ws.getRow(2);
+  head.getCell(1).value = "₹ Cr";
+  periods.forEach((p, i) => (head.getCell(2 + i).value = p));
+  head.eachCell((c, col) => {
+    c.font = { bold: true, size: 9.5, color: { argb: col === 1 ? MUTE : col - 2 === last ? V : INK } };
+    c.fill = solid(HEADFILL);
+    c.alignment = { vertical: "middle", horizontal: col === 1 ? "left" : "right", indent: col === 1 ? 1 : 0 };
+    c.border = box();
+  });
+  head.height = 18;
+
+  // Line items
+  let r = 3;
+  for (const row of rows) {
+    const key = /\b(sales|revenue|operating profit|net profit|financing profit)\b/i.test(row.label);
+    const xr = ws.getRow(r++);
+    xr.getCell(1).value = row.label;
+    row.values.forEach((v, i) => (xr.getCell(2 + i).value = clean(v)));
+    xr.eachCell((c, col) => {
+      const latest = col - 2 === last;
+      c.font = { size: 10, bold: key || col === 1, color: { argb: col === 1 || latest ? INK : "FF334155" } };
+      c.alignment = { vertical: "middle", horizontal: col === 1 ? "left" : "right", indent: col === 1 ? 1 : 0 };
+      c.border = box();
+      if (latest && col > 1) c.fill = solid("FFF5F3FF");
+    });
+    xr.height = 16;
+  }
 }
 
 /* ------------------------------------------------------------ sheet 2 ------ */
@@ -311,6 +374,20 @@ function exportCsv(m) {
   lines.push(["Munshot · Prepared for Daksham Capital"].map(esc).join(","));
   lines.push([m.company, m.ticker, m.industry || "", m.concall_date ? fmtDate(m.concall_date) : ""].map(esc).join(","));
   lines.push("");
+  if (clean(m.about)) {
+    lines.push(["About the business"].map(esc).join(","));
+    lines.push([m.about].map(esc).join(","));
+    lines.push("");
+  }
+  const pnl = m.reported_pnl;
+  const pnlPeriods = (pnl?.periods || []).filter(Boolean);
+  const pnlRows = (pnl?.rows || []).filter((r) => r && r.label && (r.values || []).some(Boolean));
+  if (pnlPeriods.length && pnlRows.length) {
+    lines.push([`Reported P&L (${pnl.basis === "standalone" ? "Standalone" : "Consolidated"}, Rs Cr — from Screener)`].map(esc).join(","));
+    lines.push(["Line item", ...pnlPeriods].map(esc).join(","));
+    pnlRows.forEach((row) => lines.push([row.label, ...row.values.map((v) => clean(v))].map(esc).join(",")));
+    lines.push("");
+  }
   if (m.mode === "multi") {
     const cols = quarterMatrix(m.quarters, "__cols__").cols;
     lines.push(["Section", "Metric", ...cols.map((c) => c.label)].map(esc).join(","));

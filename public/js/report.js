@@ -317,7 +317,13 @@ export function fileName(model, ext) {
 /** Normalise a tear-sheet quarter into a rendering model. */
 export function buildReportModel(ticker, comp, q, opts = {}) {
   const sections = (q.sections || [])
-    .filter((s) => s && (s.key_figures?.length || s.subsections?.some((x) => x.points?.length)))
+    .filter(
+      (s) =>
+        s &&
+        (s.key_figures?.length ||
+          s.subsections?.some((x) => x.points?.length) ||
+          (s.id === "FIN" && comp?.reported_pnl?.rows?.length))
+    )
     .sort((a, b) => ORDER.indexOf(a.id) - ORDER.indexOf(b.id));
   const quarters = (comp?.quarters || []).filter(Boolean);
   return {
@@ -327,6 +333,9 @@ export function buildReportModel(ticker, comp, q, opts = {}) {
     country: comp?.country || null,
     concall_date: q.concall_date || null,
     source: q.source || null,
+    // Company-level context from Screener (no LLM): business blurb + reported P&L.
+    about: comp?.about || null,
+    reported_pnl: comp?.reported_pnl || null,
     summary: q.summary || "",
     sections,
     guidance_ledger: (q.guidance_ledger || []).filter(Boolean),
@@ -450,6 +459,9 @@ function bodyBlocks(m) {
   const blocks = [];
   const push = (node) => blocks.push({ el: node });
 
+  if (m.about)
+    push(el(`<div class="rpt-block rpt-about"><div class="rpt-eyebrow">About the business</div><p>${escapeHtml(m.about)}</p></div>`));
+
   if (m.summary)
     push(el(`<div class="rpt-block rpt-summary"><div class="rpt-eyebrow">Outlook summary</div><p>${escapeHtml(m.summary)}</p></div>`));
 
@@ -498,6 +510,11 @@ function bodyBlocks(m) {
     const showKind = figs.some((f) => f.kind && f.kind !== "reported"); // hide the "Reported" noise
     // section heading (kept with its first content on the same page via ordering)
     push(el(`<div class="rpt-block rpt-keep"><div class="rpt-sec-h"><span class="rpt-sec-n">${idx + 1}</span>${escapeHtml(title)}</div></div>`));
+    // Reported P&L anchors Financials (single-call view), above the concall figures.
+    if (s.id === "FIN" && m.mode !== "multi" && m.reported_pnl) {
+      const pnlHtml = pnlTablePdf(m.reported_pnl);
+      if (pnlHtml) push(el(`<div class="rpt-block rpt-keep rpt-pnl-block">${pnlHtml}</div>`));
+    }
     // key figures: a 4-quarter matrix in "multi" mode, else the single table.
     if (m.mode === "multi") {
       const mx = quarterMatrix(m.quarters, s.id);
@@ -542,6 +559,30 @@ function kfTable(figs, cont, showKind = false) {
       </tr>`)
       .join("")}</tbody>
   </table>${cont ? `<div class="rpt-cont">continued</div>` : ""}`;
+}
+
+/** Reported quarterly P&L (verbatim from Screener) for the PDF — compact so up to
+ *  8 quarter columns fit the portrait content width. Latest column emphasised. */
+function pnlTablePdf(pnl) {
+  const periods = (pnl?.periods || []).filter(Boolean);
+  const rows = (pnl?.rows || []).filter((r) => r && r.label && (r.values || []).some(Boolean));
+  if (!periods.length || !rows.length) return "";
+  const last = periods.length - 1;
+  const basis = pnl.basis === "standalone" ? "Standalone" : "Consolidated";
+  const th = periods
+    .map((p, i) => `<th class="mxq${i === last ? " mxq-latest" : ""}">${escapeHtml(p)}</th>`)
+    .join("");
+  const body = rows
+    .map((r) => {
+      const key = /\b(sales|revenue|operating profit|net profit|financing profit)\b/i.test(r.label);
+      const cells = r.values
+        .map((v, i) => `<td class="v mxq${i === last ? " mxq-latest" : ""}">${(v ?? "").toString().trim() ? escapeHtml(v) : "·"}</td>`)
+        .join("");
+      return `<tr class="${key ? "pnl-key" : ""}"><td class="l">${escapeHtml(r.label)}</td>${cells}</tr>`;
+    })
+    .join("");
+  return `<div class="rpt-pnl-h">Reported Financials · Quarterly P&amp;L <span>${basis} · ₹ Cr</span></div>
+    <table class="rpt-kf rpt-mx rpt-pnl"><thead><tr><th></th>${th}</tr></thead><tbody>${body}</tbody></table>`;
 }
 
 /** Multi-quarter key-figure matrix: Metric + one value column per concall. */
@@ -709,6 +750,9 @@ function injectStyles() {
   .dk-report .rpt-summary { background: linear-gradient(135deg,#f5f3ff,#eef2ff); border: 1px solid #e0e7ff; border-radius: 12px; padding: 14px 16px; }
   .dk-report .rpt-eyebrow { font-size: 9.5px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #7c3aed; margin-bottom: 5px; }
   .dk-report .rpt-summary p { margin: 0; font-size: 12.5px; line-height: 1.6; color: #334155; }
+  .dk-report .rpt-about { background: #f0fdfa; border: 1px solid #ccf2ec; border-radius: 12px; padding: 12px 16px; }
+  .dk-report .rpt-about .rpt-eyebrow { color: #0d9488; }
+  .dk-report .rpt-about p { margin: 0; font-size: 12px; line-height: 1.55; color: #334155; }
 
   .dk-report .rpt-sec-h { display: flex; align-items: center; gap: 10px; font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 700; color: #0f172a; margin: 6px 0 8px; }
   .dk-report .rpt-sec-n { flex: none; width: 22px; height: 22px; border-radius: 7px; display: inline-flex; align-items: center; justify-content: center; font-size: 11px; color: #fff; background: linear-gradient(135deg,#7c3aed,#6366f1); }
@@ -740,6 +784,14 @@ function injectStyles() {
   .dk-report .k-market_size { background: #fce7f3; color: #db2777; }
   .dk-report .rpt-cont { font-size: 9px; color: #94a3b8; font-style: italic; padding: 4px 0 0; }
   .dk-report .rpt-mxnote { font-size: 9.5px; color: #94a3b8; padding: 3px 0 2px; }
+  /* Reported quarterly P&L (verbatim from Screener), top of Financials */
+  .dk-report .rpt-pnl-block { border: 1px solid #e0e7ff; border-radius: 10px; padding: 11px 13px; background: #fbfaff; }
+  .dk-report .rpt-pnl-h { font-family: 'Space Grotesk', sans-serif; font-size: 11px; font-weight: 700; color: #4f46e5; margin: 0 0 8px; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .dk-report .rpt-pnl-h span { font-size: 9px; font-weight: 600; color: #94a3b8; letter-spacing: .3px; }
+  .dk-report table.rpt-pnl { font-size: 9.5px; }
+  .dk-report table.rpt-pnl th, .dk-report table.rpt-pnl td { padding: 4px 7px; border-bottom: 1px solid #eef1f6; }
+  .dk-report table.rpt-pnl td.l { width: auto; white-space: nowrap; color: #334155; font-weight: 500; }
+  .dk-report table.rpt-pnl tr.pnl-key td { font-weight: 700; color: #0f172a; }
 
   .dk-report .rpt-sub { padding-left: 2px; }
   .dk-report .rpt-sub-label { font-size: 11px; font-weight: 700; color: #6366f1; margin-bottom: 4px; }

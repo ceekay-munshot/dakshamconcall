@@ -1294,6 +1294,12 @@ function openTearSheet(row) {
 function renderSheetBody(row, comp, q) {
   qs("#sheetScroll").innerHTML = q ? tearSheetRealHtml(q, comp, state.sheetMode) : tearSheetPendingHtml(row);
 
+  // The reported P&L runs oldest→newest; when it's wider than the modal, start it
+  // scrolled to the latest quarter (the one that matters) instead of the oldest.
+  qsa(".pnl-scroll", qs("#sheetScroll")).forEach((el) => {
+    el.scrollLeft = el.scrollWidth;
+  });
+
   const pdfBtn = qs("#sheetPdfBtn");
   if (pdfBtn) pdfBtn.addEventListener("click", () => exportPdf(row));
   const xlsxBtn = qs("#sheetXlsxBtn");
@@ -1316,6 +1322,7 @@ function tearSheetRealHtml(q, comp, mode = "single") {
     ? `<div class="ts-summary"><i data-lucide="sparkles" class="i16"></i><span>${escapeHtml(q.summary)}</span></div>`
     : "";
   return (
+    aboutBandHtml(comp?.about) +
     summary +
     themesBandHtml(q.themes) +
     guidanceBandHtml(q.guidance_ledger, isFirst) +
@@ -1324,6 +1331,55 @@ function tearSheetRealHtml(q, comp, mode = "single") {
     insightsHtml(q.key_takeaways) +
     pdfActionsHtml()
   );
+}
+
+/* A couple of lines on WHAT the business is (client ask: business context up top).
+   Lifted verbatim from Screener's "About" — factual, never an AI opinion. */
+function aboutBandHtml(about) {
+  const t = cleanField(about);
+  if (!t) return "";
+  return `<div class="ts-about"><i data-lucide="building-2" class="i16"></i><span>${escapeHtml(t)}</span></div>`;
+}
+
+/* Reported quarterly P&L, pulled straight from Screener's "Quarterly Results"
+   table (client ask: the reported statement, verbatim, so the tear sheet is a
+   one-stop view). Not concall-derived and not AI-touched — periods are shown with
+   Screener's own labels. Rendered at the top of the Financial Performance section. */
+function reportedPnlHtml(pnl) {
+  const periods = (pnl?.periods || []).filter(Boolean);
+  const rows = (pnl?.rows || []).filter((r) => r && r.label && (r.values || []).some(Boolean));
+  if (!periods.length || !rows.length) return "";
+  const last = periods.length - 1;
+  const basis = pnl.basis === "standalone" ? "Standalone" : "Consolidated";
+  const head = periods
+    .map((p, i) => `<th class="pnl-q${i === last ? " pnl-q-latest" : ""}">${escapeHtml(p)}</th>`)
+    .join("");
+  const body = rows
+    .map((r) => {
+      const key = /\b(sales|revenue|operating profit|net profit|financing profit)\b/i.test(r.label);
+      const cells = r.values
+        .map((v, i) => `<td class="pnl-val pnl-q${i === last ? " pnl-q-latest" : ""}">${cleanField(v) ? escapeHtml(v) : "—"}</td>`)
+        .join("");
+      return `<tr class="${key ? "pnl-key" : ""}"><td class="pnl-label">${escapeHtml(r.label)}</td>${cells}</tr>`;
+    })
+    .join("");
+  const src = pnl.source_url
+    ? `<a class="pnl-src" href="${escapeHtml(pnl.source_url)}" target="_blank" rel="noopener" title="Open on Screener">Screener <i data-lucide="external-link" class="i16"></i></a>`
+    : "";
+  return `
+    <div class="pnl-block">
+      <div class="pnl-head">
+        <span class="pnl-title"><i data-lucide="table-2" class="i16"></i> Reported Financials · Quarterly P&amp;L</span>
+        <span class="pnl-basis">${basis}${src ? " · " : ""}${src}</span>
+      </div>
+      <div class="pnl-scroll">
+        <table class="pnl-table">
+          <thead><tr><th class="pnl-label-h">₹ Cr</th>${head}</tr></thead>
+          <tbody>${body}</tbody>
+        </table>
+      </div>
+      <div class="pnl-note"><i data-lucide="info" class="i16"></i> Figures in ₹ Crore (margins in %, EPS in ₹). Reported numbers from Screener — not from the concall.</div>
+    </div>`;
 }
 
 /* Themes chips (each colored by direction). */
@@ -1447,7 +1503,13 @@ function riskStatusMeta(status) {
 /* The 11 sections — render only those with content. */
 function sectionsHtml(sections, sourceUrl, comp, mode = "single") {
   const list = (sections || []).filter(
-    (s) => s && (s.key_figures?.length || s.subsections?.some((x) => x.points?.length))
+    (s) =>
+      s &&
+      (s.key_figures?.length ||
+        s.subsections?.some((x) => x.points?.length) ||
+        // Keep Financial Performance if we have the reported P&L, even when the
+        // concall-derived figures are thin — the reported table is the anchor.
+        (s.id === "FIN" && comp?.reported_pnl?.rows?.length))
   );
   if (!list.length) return "";
   // Two views only: the latest call on its own, or the latest against the one
@@ -1537,13 +1599,18 @@ function sectionCardHtml(s, sourceUrl, comp, mode = "single", seen = new Set()) 
         .join("")}</div>`
     : "";
 
+  // The reported quarterly P&L anchors the Financial Performance section, above
+  // the concall-derived figures (single-call view only — the vs-previous view is
+  // its own trend matrix and the P&L already spans quarters).
+  const pnlTable = s.id === "FIN" && mode !== "multi" ? reportedPnlHtml(comp?.reported_pnl) : "";
+
   return `
     <div class="ts-section">
       <div class="ts-sec-head">
         <span class="sec-ico" style="background:${meta.grad}"><i data-lucide="${meta.icon}" class="i16"></i></span>
         <h4>${escapeHtml(s.title || meta.title)}</h4>
       </div>
-      ${figTable}${subsHtml}
+      ${pnlTable}${figTable}${subsHtml}
     </div>`;
 }
 

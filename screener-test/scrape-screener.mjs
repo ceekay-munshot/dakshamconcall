@@ -29,6 +29,10 @@ const ARTIFACTS = process.env.ARTIFACTS_DIR || "screener-test/output";
 // only very long transcript PDFs would ever hit this. The display handles
 // compactness — we preserve the full source for the classifier.
 const MAX_TEXT = 80000;
+// How many quarters of the reported P&L (Screener's "Quarterly Results" table) we
+// keep — the client asked for "the last 8". Screener lists ~13; we take the most
+// recent MAX_PNL_QUARTERS so the table stays readable on the tear sheet.
+const MAX_PNL_QUARTERS = parseInt(process.env.MAX_PNL_QUARTERS || "", 10) || 8;
 
 const log = (...a) => console.log("[scrape]", ...a);
 const warn = (...a) => console.warn("[scrape]", ...a);
@@ -286,6 +290,78 @@ async function extractIndustry(page) {
   }
 }
 
+/**
+ * Client ask (Aug 2026 review): a one-stop tear sheet needs (a) "a couple of lines
+ * about the business itself" and (b) the reported quarterly P&L "picked straight
+ * from Screener", so the analyst has the revenue/profit context without opening
+ * Screener separately. Both live on the company page we already load here, so we
+ * lift them verbatim — no LLM, no opinion. Consolidated is preferred because
+ * resolveCompanyUrl tries the /consolidated/ slug first.
+ *
+ * Returns { about, reported_pnl } — either may be null (older/again-defensive), and
+ * a null NEVER fails the scrape; the caller keeps whatever it already stored.
+ */
+async function extractCompanyProfile(page, url) {
+  try {
+    const data = await page.evaluate(() => {
+      const norm = (s) => (s || "").replace(/ /g, " ").replace(/\s+/g, " ").trim();
+
+      // (a) About: the business description blurb near the top of the page.
+      let about = null;
+      const aboutEl =
+        document.querySelector(".company-profile .about") || document.querySelector(".about");
+      if (aboutEl) {
+        const t = norm(aboutEl.innerText)
+          .replace(/\[\s*read more\s*\]/i, "")
+          .replace(/\s*read more\s*$/i, "")
+          .trim();
+        if (t) about = t;
+      }
+
+      // (b) Reported quarterly P&L: the "Quarterly Results" table, verbatim.
+      let pnl = null;
+      const table = document.querySelector("#quarters table");
+      if (table) {
+        const headThs = [...table.querySelectorAll("thead th")].map((th) => norm(th.innerText));
+        const periods = headThs.slice(1); // first header cell is the empty row-label column
+        const rows = [];
+        for (const tr of table.querySelectorAll("tbody tr")) {
+          const tds = [...tr.querySelectorAll("td")];
+          if (!tds.length) continue;
+          // Row label: strip Screener's expand "+" affordance and the nbsp.
+          const label = norm(tds[0].innerText).replace(/\s*\+\s*$/, "").trim();
+          const values = tds.slice(1).map((td) => norm(td.innerText));
+          if (!label || /^raw pdf$/i.test(label)) continue; // "Raw PDF" is a link row, not data
+          if (!values.some((v) => v)) continue; // skip an all-empty row
+          rows.push({ label, values });
+        }
+        if (periods.length && rows.length) pnl = { periods, rows };
+      }
+      return { about, pnl };
+    });
+
+    // Keep only the most recent MAX_PNL_QUARTERS columns (client: "last 8 is fine").
+    let reported_pnl = null;
+    if (data.pnl && data.pnl.periods.length) {
+      const total = data.pnl.periods.length;
+      const start = Math.max(0, total - MAX_PNL_QUARTERS);
+      reported_pnl = {
+        basis: /\/consolidated\//.test(url) ? "consolidated" : "standalone",
+        periods: data.pnl.periods.slice(start),
+        rows: data.pnl.rows
+          .filter((r) => r.values.slice(start).some((v) => v))
+          .map((r) => ({ label: r.label, values: r.values.slice(start) })),
+        source_url: url.replace(/\/+$/, "/") + "#quarters",
+        captured_at: new Date().toISOString(),
+      };
+    }
+    return { about: data.about || null, reported_pnl };
+  } catch (e) {
+    warn("company profile (about / reported P&L) extract failed", e.message);
+    return { about: null, reported_pnl: null };
+  }
+}
+
 async function openCompany(page, context, ticker) {
   const url = await resolveCompanyUrl(context, ticker);
   if (!url) throw new Error(`Could not resolve a Screener page for ${ticker}`);
@@ -302,7 +378,13 @@ async function openCompany(page, context, ticker) {
   const industry = await extractIndustry(page);
   log(`industry for ${ticker}: ${industry || "(not found — will backfill from env/tracked)"}`);
 
-  return { url, company, industry };
+  const { about, reported_pnl } = await extractCompanyProfile(page, url);
+  log(
+    `about for ${ticker}: ${about ? `"${about.slice(0, 60)}…"` : "(none)"}; ` +
+      `reported P&L: ${reported_pnl ? `${reported_pnl.periods.length} quarter(s), ${reported_pnl.basis}` : "(none)"}`
+  );
+
+  return { url, company, industry, about, reported_pnl };
 }
 
 /* ============================================================================
@@ -801,7 +883,7 @@ export async function scrapeCompany(page, context, ticker, opts = {}) {
     source_url: null,
   });
   try {
-    const { url, company, industry } = await openCompany(page, context, ticker);
+    const { url, company, industry, about, reported_pnl } = await openCompany(page, context, ticker);
     const { entries } = await findConcalls(page, ticker);
 
     // Keep only rows with a real "Mon YYYY" date — drops the "Add Missing"
@@ -940,6 +1022,10 @@ export async function scrapeCompany(page, context, ticker, opts = {}) {
       ticker,
       company,
       industry: industry || null,
+      // Company-level context lifted verbatim from the Screener company page (no
+      // LLM): a couple of lines on the business, and the reported quarterly P&L.
+      about: about || null,
+      reported_pnl: reported_pnl || null,
       concall_date: latestPrecise || latestMonth,
       source: summary.source,
       source_url: summary.source_url,
