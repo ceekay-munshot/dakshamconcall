@@ -78,34 +78,46 @@ export function candidatesFrom(payload) {
  */
 export async function discoverConcalls(opts = {}) {
   const days = opts.days ?? 2;
+  const maxPages = Math.max(1, opts.maxPages ?? 1);
   const doFetch = opts.fetchImpl || globalThis.fetch;
   const now = opts.now || new Date();
   const from = new Date(now.getTime() - days * 86400000);
 
-  const url =
-    `${BSE_API}?pageno=1&strCat=Company%20Update&strPrevDate=${yyyymmdd(from)}` +
-    `&strScrip=&strSearch=P&strToDate=${yyyymmdd(now)}&strType=C&subcategory=-1`;
+  // BSE paginates the announcements feed via `pageno` (newest first). The nightly
+  // run reads a 2-day window, where page 1 is enough. A backfill run widens `days`
+  // to cover the quarter and pages deeper (maxPages) to reach the older filings —
+  // page 1 alone only ever returns the most recent rows in the window.
+  const rows = [];
+  for (let pageno = 1; pageno <= maxPages; pageno++) {
+    const url =
+      `${BSE_API}?pageno=${pageno}&strCat=Company%20Update&strPrevDate=${yyyymmdd(from)}` +
+      `&strScrip=&strSearch=P&strToDate=${yyyymmdd(now)}&strType=C&subcategory=-1`;
 
-  const res = await doFetch(url, {
-    headers: {
-      // BSE's API rejects requests that don't look like the site's own XHR.
-      "User-Agent":
-        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
-      Referer: "https://www.bseindia.com/",
-      Accept: "application/json",
-    },
-    signal: AbortSignal.timeout(30000),
-  });
-  if (!res.ok) throw new Error(`BSE announcements ${res.status}`);
-  return candidatesFrom(await res.json());
+    const res = await doFetch(url, {
+      headers: {
+        // BSE's API rejects requests that don't look like the site's own XHR.
+        "User-Agent":
+          "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+        Referer: "https://www.bseindia.com/",
+        Accept: "application/json",
+      },
+      signal: AbortSignal.timeout(30000),
+    });
+    if (!res.ok) throw new Error(`BSE announcements ${res.status}`);
+    const payload = await res.json();
+    const pageRows = payload?.Table || payload?.table || [];
+    if (!pageRows.length) break; // past the last page in the window
+    rows.push(...pageRows);
+  }
+  return candidatesFrom({ Table: rows });
 }
 
 /* ============================================================================
    Daily queue.
-   Screener allows 80 AI summaries a day and we spend 2 per company, so the
-   client capped us at 20 companies/day: "आज कोई 40 कंपनी की AI समरी स्क्रीनर पर
-   आई तो हम 40 नहीं, 20 ही लाएंगे और बाकी 20 next day". Everything discovered
-   beyond the cap rolls forward instead of being dropped.
+   Transcript-first removed Screener's 80/day summary cap, so the limit is now
+   wall-clock throughput, not metered views. The board processes up to `cap`
+   companies per run (default 40); everything discovered beyond that rolls forward
+   instead of being dropped, so a wide backfill drains over a few runs.
    ========================================================================== */
 
 /**

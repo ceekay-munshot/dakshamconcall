@@ -37,17 +37,20 @@ const REFRESH_THROTTLE_DAYS = 3; // don't re-scrape a stale name more often than
 // How many quarters we STORE per company. Kept at 4 so history already paid for
 // is never trimmed away — we simply stop fetching more (see FETCH_QUARTERS).
 const MAX_QUARTERS = 4;
-// How many quarters a NEW fetch covers: the latest call plus one previous, both
-// from the AI summary. Client's call — 20 companies x 2 = 40 summaries/day, half
-// of Screener's 80/day cap, and the previous quarter gives the rate-of-change
-// context. Anything older we already hold stays untouched.
+// How many quarters a NEW fetch covers: the latest call plus one previous. Kept
+// deliberately small so per-company wall-clock stays low and the board can cover
+// MANY companies per run (the client wants breadth — 20-40/day). The previous
+// quarter gives the rate-of-change context; the reported quarterly P&L table
+// carries the longer quantitative trend. Anything older we already hold stays
+// untouched.
 const FETCH_QUARTERS = 2;
 // Bump when a pipeline change should force stored quarters to be rebuilt.
 // Quarters stamped with the current version are reused instead of re-classified.
 const PIPELINE_VERSION = 3;
-// Screener allows 80 AI summaries/day and we spend 2 per company, so the client
-// capped the board at 20 companies/day; the rest rolls to the next day.
-const DAILY_COMPANY_CAP = parseInt(process.env.DAILY_COMPANY_CAP || "", 10) || 20;
+// Per-run delivery target. Transcript-first removed Screener's 80/day summary cap
+// (transcripts are free and unmetered), so the client raised the board to ~40
+// companies per run; the rest rolls forward to the next run/day. Env-overridable.
+const DAILY_COMPANY_CAP = parseInt(process.env.DAILY_COMPANY_CAP || "", 10) || 40;
 // How far back the announcements feed is read (covers a weekend / a late filing).
 const DISCOVER_DAYS = parseInt(process.env.DISCOVER_DAYS || "", 10) || 2;
 // How many days a company that produced nothing keeps being re-checked. Screener
@@ -65,6 +68,22 @@ const CYCLE_RECHECK_DAYS = parseInt(process.env.CYCLE_RECHECK_DAYS || "", 10) ||
 // reuses the stored answer and measures nothing. Run it on a branch, since it
 // spends Screener views and overwrites the quarters it rebuilds.
 const FORCE_REBUILD = process.env.FORCE_REBUILD === "1";
+
+// --- Source strategy (Aug 2026 dashboard review) --------------------------
+// The client made the TRANSCRIPT the primary source: it carries the guidance +
+// operational detail they want (the Screener AI summary is "mostly just numbers"),
+// and — unlike the metered summary — it has no daily cap, which is what lets the
+// board cover 20-40 companies/day instead of ~4-5. A stored AI summary is still
+// kept and shown when we ALREADY hold one for a quarter (no extra cost); we simply
+// stop spending metered views to fetch NEW ones. Set PREFER_TRANSCRIPT=0 to
+// restore the old summary-first behaviour.
+const PREFER_TRANSCRIPT = process.env.PREFER_TRANSCRIPT !== "0";
+// Backfill knobs. The nightly cron reads only the last DISCOVER_DAYS of BSE
+// announcements (page 1). A manual "backfill" run widens the window and pages
+// deeper to pull in concalls already filed earlier this quarter; DISCOVER_RESOLVE_CAP
+// bounds how many discovered names one run resolves to tickers (a live request each).
+const DISCOVER_MAX_PAGES = parseInt(process.env.DISCOVER_MAX_PAGES || "", 10) || 1;
+const DISCOVER_RESOLVE_CAP = parseInt(process.env.DISCOVER_RESOLVE_CAP || "", 10) || 100;
 
 const log = (...a) => console.log("[analyze]", ...a);
 
@@ -147,10 +166,10 @@ function mergeQuarters(baseQuarters, newQuarters) {
   const byMonth = new Map();
   const monthKey = (q) => (q.concall_date || q.generated_at || "").slice(0, 7) || Math.random().toString();
   const day = (q) => +String(q.concall_date || "").slice(8, 10) || 1;
-  // The client's source of record is the Screener AI SUMMARY; a transcript is only
-  // a fallback for when the summary can't be read (e.g. Screener's 80/day cap).
-  // So never let a transcript re-run REPLACE a stored ai_summary quarter for the
-  // same call — that would quietly downgrade the tear sheet for a temporary reason.
+  // Transcript-first, but "use the AI summary when it's already there": once a
+  // quarter is stored as an ai_summary we keep it — a later transcript re-run must
+  // never REPLACE it for the same call. New quarters are built from the transcript;
+  // this ratchet only preserves the handful of summaries we already hold.
   const isSummary = (q) => q?.source === "ai_summary";
   for (const q of [...newQuarters, ...baseQuarters]) {
     const key = monthKey(q);
@@ -319,8 +338,10 @@ async function analyzeTicker(page, context, ticker, baseStore) {
   persistAndPush(`analyze: ${T} running`);
 
   // 2) scrape
-  // Only fetch the latest + one previous quarter, and skip any month we already
-  // hold as an ai_summary — that is what keeps us inside Screener's 80/day cap.
+  // Transcript-first: fetch the latest + one previous quarter from the (free,
+  // unmetered) transcript. A month we already hold as an ai_summary is kept as-is
+  // (never re-fetched, never downgraded); a month we hold as a transcript is not
+  // re-read when nothing newer is available.
   const storedQuarters = baseStore.tearsheets.companies[T]?.quarters || [];
   const haveSummaryMonths = storedQuarters
     .filter((q) => q.source === "ai_summary" && q.concall_date)
@@ -333,7 +354,7 @@ async function analyzeTicker(page, context, ticker, baseStore) {
   const haveTranscriptMonths = storedQuarters
     .filter((q) => q.source === "transcript" && q.concall_date)
     .map((q) => q.concall_date.slice(0, 7));
-  const scrapeOpts = { maxHistory: FETCH_QUARTERS, haveSummaryMonths, haveTranscriptMonths };
+  const scrapeOpts = { maxHistory: FETCH_QUARTERS, haveSummaryMonths, haveTranscriptMonths, skipSummary: PREFER_TRANSCRIPT };
   const scrape = await scrapeCompany(page, context, T, scrapeOpts);
 
   // Forward-running board: if the company hasn't reported the cycle everyone else
@@ -611,8 +632,11 @@ async function main() {
     let discoveredTickers = [];
     let discovered = [];
     try {
-      discovered = await discoverConcalls({ days: DISCOVER_DAYS });
-      log(`discovery: ${discovered.length} company(ies) filed a concall in the last ${DISCOVER_DAYS} day(s)`);
+      discovered = await discoverConcalls({ days: DISCOVER_DAYS, maxPages: DISCOVER_MAX_PAGES });
+      log(
+        `discovery: ${discovered.length} company(ies) filed a concall in the last ${DISCOVER_DAYS} day(s)` +
+          (DISCOVER_MAX_PAGES > 1 ? ` (backfill: up to ${DISCOVER_MAX_PAGES} pages)` : "")
+      );
     } catch (e) {
       log(`discovery skipped (${e.message}) — continuing with the tracked list`);
     }
@@ -653,8 +677,16 @@ async function main() {
     // in, then build today's work list: yesterday's leftovers first, then new
     // finds, capped at DAILY_COMPANY_CAP with the remainder rolling forward.
     if (discoveryNames.length) {
+      // Resolve newest-first, bounded: a wide backfill window can surface hundreds
+      // of filings, and each name->ticker lookup is a live request. The cap keeps a
+      // single run's resolution cost bounded; anything not reached is re-surfaced by
+      // the announcements feed on the next run (the older backlog advances as
+      // processed companies drop out of `fresh` via the isCurrent filter below).
+      const toResolve = discoveryNames.slice(0, DISCOVER_RESOLVE_CAP);
+      if (toResolve.length < discoveryNames.length)
+        log(`discovery: resolving ${toResolve.length} of ${discoveryNames.length} candidates this run (DISCOVER_RESOLVE_CAP)`);
       const resolved = [];
-      for (const c of discoveryNames) {
+      for (const c of toResolve) {
         const tk = await resolveTicker(context, c.name);
         if (tk) resolved.push(tk);
         else log(`discovery: could not resolve "${c.name}" to a Screener ticker`);

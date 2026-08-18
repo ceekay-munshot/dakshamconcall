@@ -1,7 +1,9 @@
 /**
  * scrape-screener.mjs — log into Screener.in and fetch a company's latest
- * concall analysis. PREFERS Screener's AI concall summary (already sectioned,
- * with Key Takeaways + highlighted questions); FALLS BACK to the transcript PDF.
+ * concall analysis. TRANSCRIPT-FIRST (the client's primary source: richer
+ * guidance/operational detail, and unmetered). A Screener AI summary is used only
+ * when we already hold one for a quarter, or when PREFER_TRANSCRIPT=0 restores the
+ * old summary-first behaviour.
  *
  * This is the riskiest part of the pipeline. The live DOM must be discovered
  * against the real site, so this module is deliberately DEFENSIVE:
@@ -843,6 +845,13 @@ export async function scrapeCompany(page, context, ticker, opts = {}) {
         capHit = true;
         log("latest quarter: summary capped — falling back to the transcript");
       }
+    }
+    // Transcript-first: when this quarter is ALREADY stored as an ai_summary, keep
+    // it (no re-fetch, no downgrade) — that is the "use the summary when it's
+    // already there" rule. We never spend a metered view to fetch a NEW one.
+    if (!summary && haveSummaryMonths.has((toIsoDate(latest.date) || "").slice(0, 7))) {
+      log("latest quarter: already stored as ai_summary — keeping it (no re-fetch)");
+      summary = alreadyHave("ai_summary");
     }
     if (!summary && haveTranscriptMonths.has(toIsoDate(latest.date).slice(0, 7))) {
       log("latest quarter: no summary yet and its transcript is already stored — not re-reading it");

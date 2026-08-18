@@ -37,9 +37,16 @@ on:
         required: false
         type: boolean
         default: false
+      backfill:
+        description: "Backfill this quarter: widen BSE discovery to ~100 days and page deeper to pull in concalls already filed earlier this quarter."
+        required: false
+        type: boolean
+        default: false
   schedule:
-    # Daily refresh of stale tracked companies (03:30 IST ≈ 22:00 UTC).
+    # Transcript-first has no daily summary cap, so refresh TWICE a day to clear
+    # the queue faster (≈03:30 IST and ≈15:30 IST).
     - cron: "0 22 * * *"
+    - cron: "0 10 * * *"
 
 # The commit back to the repo uses the built-in Actions token.
 permissions:
@@ -115,11 +122,15 @@ jobs:
           TICKER: ${{ github.event.inputs.ticker }}
           INDUSTRY: ${{ github.event.inputs.industry }} # optional search-API backfill
           EVENT_NAME: ${{ github.event_name }} # workflow_dispatch = force ALL; schedule = stale only
-          # Blank on the nightly cron so DAILY_COMPANY_CAP (20 delivered/day)
-          # governs, which is the client's actual target. It used to force 4 here,
-          # from before there was a daily cap — leaving it would silently hold the
-          # board to 4 companies a night. Set the input to cap a manual run.
+          # Blank on the scheduled runs so DAILY_COMPANY_CAP (~40 delivered/run)
+          # governs, which is the client's throughput target. Set the input to cap
+          # a manual run.
           MAX_PER_RUN: ${{ github.event.inputs.max_per_run }}
+          # Backfill: widen the BSE announcements window and page deeper so a manual
+          # run pulls in concalls already filed earlier this quarter. Blank on the
+          # nightly cron, which keeps the cheap 2-day, page-1 discovery.
+          DISCOVER_DAYS: ${{ github.event.inputs.backfill == 'true' && '100' || '' }}
+          DISCOVER_MAX_PAGES: ${{ github.event.inputs.backfill == 'true' && '10' || '' }}
           TARGET_BRANCH: ${{ github.ref_name }}
         run: node screener-test/analyze-company.mjs
 
