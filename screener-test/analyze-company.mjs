@@ -571,6 +571,11 @@ async function main() {
   // MAX_PER_RUN caps BOTH the tracked slice and the delivery target, so a
   // deliberately small run stays small even when discovery adds candidates.
   const maxPerRun = parseInt(process.env.MAX_PER_RUN || "", 10);
+  // A MANUAL dispatch (workflow_dispatch) with a blank ticker force-refreshes
+  // EVERY tracked company in one run — the documented intent of "force ALL" — so
+  // the per-run DAILY_COMPANY_CAP (which paces auto-discovery) must NOT cap it.
+  // Set MAX_PER_RUN to deliberately cap even a force-all run.
+  const forceAll = !single && (process.env.EVENT_NAME || "") === "workflow_dispatch";
   let tickers;
   if (single) {
     tickers = [single];
@@ -578,7 +583,6 @@ async function main() {
     // Refresh mode (blank ticker). A MANUAL dispatch force-reprocesses EVERY
     // tracked company (so new pipeline logic is applied to all); the scheduled
     // daily run only touches STALE companies (keeps the cron cheap).
-    const forceAll = (process.env.EVENT_NAME || "") === "workflow_dispatch";
     const all = (base.tracked.companies || [])
       .map((c) => (c.ticker || "").toUpperCase())
       .filter(Boolean);
@@ -744,11 +748,16 @@ async function main() {
     // to 2 metered summary views against Screener's 80/day, so 2x the cap is the
     // most we can spend chasing a target of `cap` before the quota is the binding
     // constraint anyway.
+    // force-all refreshes every tracked company (ceiling = the whole list); the
+    // scheduled/discovery path is paced by DAILY_COMPANY_CAP. An explicit
+    // MAX_PER_RUN still caps either one.
     const target = single
       ? tickers.length
       : Number.isFinite(maxPerRun) && maxPerRun > 0
-        ? Math.min(maxPerRun, DAILY_COMPANY_CAP)
-        : DAILY_COMPANY_CAP;
+        ? Math.min(maxPerRun, forceAll ? tickers.length : DAILY_COMPANY_CAP)
+        : forceAll
+          ? tickers.length
+          : DAILY_COMPANY_CAP;
     const attemptBudget = single
       ? tickers.length
       : parseInt(process.env.ATTEMPT_BUDGET || "", 10) || target * 2;
