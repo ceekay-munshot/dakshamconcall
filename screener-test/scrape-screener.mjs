@@ -2,8 +2,9 @@
  * scrape-screener.mjs — log into Screener.in and fetch a company's latest
  * concall analysis. TRANSCRIPT-FIRST (the client's primary source: richer
  * guidance/operational detail, and unmetered). A Screener AI summary is used only
- * when we already hold one for a quarter, or when PREFER_TRANSCRIPT=0 restores the
- * old summary-first behaviour.
+ * when we already hold one for a quarter, as a last-resort fallback for the LATEST
+ * quarter when no transcript is published yet (so the newest call never vanishes),
+ * or when PREFER_TRANSCRIPT=0 restores the old summary-first behaviour.
  *
  * This is the riskiest part of the pipeline. The live DOM must be discovered
  * against the real site, so this module is deliberately DEFENSIVE:
@@ -940,6 +941,18 @@ export async function scrapeCompany(page, context, ticker, opts = {}) {
       summary = alreadyHave("transcript");
     }
     if (!summary) summary = await extractTranscript(context, latest);
+    // Transcript-first, but never DROP the latest quarter: a very recent call often
+    // has no transcript published yet (only an AI summary + audio recording). Rather
+    // than fail the whole company, fall back to the metered AI summary so the newest
+    // call still appears. This is the one place transcript-first spends a summary
+    // view, and only for the LATEST quarter (history stays transcript-only), so it
+    // costs at most one view per company with a brand-new, transcript-less call — far
+    // inside the daily cap. A ScreenerRateLimitError here bubbles up as a retryable
+    // "rateLimited", handled by the caller (retried once the cap resets).
+    if (!summary && skipSummary) {
+      log("latest quarter: no transcript published yet — falling back to the AI summary so the newest call still appears");
+      summary = await extractAiSummary(page, context, latest, url);
+    }
     if (!summary) {
       await saveShot(page, `no-summary-${ticker}.png`);
       return { ticker, error: "Found concalls but could not extract an AI summary or transcript." };
