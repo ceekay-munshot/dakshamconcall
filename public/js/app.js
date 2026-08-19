@@ -749,9 +749,17 @@ function renderIcons() {
   refreshIcons();
 }
 
-/* ---- Live feed table / empty state ---- */
+/* ---- Live feed table / empty state ----
+   The toolbar (search box + range chips) and table skeleton are rendered ONCE
+   per board load; only the results — rows, count, active chip, pager — are
+   refreshed as the user types or pages, via updateFeedResults(). The search
+   <input> is therefore never rebuilt on a keystroke, so focus and the caret
+   stay put and typing stays smooth. (The old code rewrote the whole container
+   on every keystroke, which destroyed the input mid-type — hence the lag and
+   the "click again to keep typing" bug.) */
 function renderFeed(rows) {
   const container = qs("#feedContainer");
+  state.boardRows = rows;
   if (!rows.length) {
     container.innerHTML = emptyFeedHtml();
     const cta = qs("#feedEmptyCta");
@@ -760,29 +768,16 @@ function renderFeed(rows) {
     return;
   }
 
-  // Filter by the table search, then reveal in pages of 5 (no long scroll).
-  const q = (state.feedQuery || "").toLowerCase().trim();
+  // A background poll (~11s) can rebuild the feed while the user is mid-type in
+  // the filter. Remember the caret so focus can be restored after the rebuild;
+  // reading document.activeElement avoids the flag/blur race the old code had.
+  const active = document.activeElement;
+  const keepFocus = active && active.id === "feedSearch";
+  const caret = keepFocus ? active.selectionStart : null;
+
   const range = state.feedRange || "all";
-  // Recency first, then text — the counts beside each chip describe the board,
-  // so they must not be narrowed by whatever is typed in the search box.
-  const inWindow = rows.filter((r) => inRange(r.concallDate, range));
-  const filtered = q
-    ? inWindow.filter((r) => `${r.name} ${r.ticker} ${r.industry || ""}`.toLowerCase().includes(q))
-    : inWindow;
-  const shown = Math.max(5, Math.min(state.feedShown || 5, filtered.length));
-  const visible = filtered.slice(0, shown);
-  const remaining = filtered.length - visible.length;
-
-  const bodyHtml = visible.length
-    ? visible.map((r) => feedRowHtml(r)).join("")
-    : `<tr><td colspan="5" class="feed-nomatch">${
-        q
-          ? `No companies match “${escapeHtml(state.feedQuery)}”${
-              range === "all" ? "" : ` in ${rangeLabel(range).toLowerCase()}`
-            }.`
-          : `No concalls ${rangeLabel(range).toLowerCase()}.`
-      }</td></tr>`;
-
+  // The counts beside each chip describe the whole board, so they never narrow
+  // with the search text — they can be computed once, here.
   container.innerHTML = `
     <div class="feed-toolbar">
       <div class="feed-search">
@@ -794,12 +789,11 @@ function renderFeed(rows) {
       <div class="feed-ranges" role="tablist" aria-label="Concall period">
         ${FEED_RANGES.map(([key, label]) => {
           const n = rows.filter((r) => inRange(r.concallDate, key)).length;
-          const on = key === range;
-          return `<button class="feed-range ${on ? "on" : ""}" data-range="${key}" role="tab"
-            aria-selected="${on}"${n ? "" : " disabled"}>${label}<span class="fr-n">${n}</span></button>`;
+          return `<button class="feed-range" data-range="${key}" role="tab"
+            aria-selected="false"${n ? "" : " disabled"}>${label}<span class="fr-n">${n}</span></button>`;
         }).join("")}
       </div>
-      <span class="feed-count">${filtered.length} ${filtered.length === 1 ? "company" : "companies"}</span>
+      <span class="feed-count"></span>
     </div>
     <div class="feed-scroll">
       <table class="feed-table">
@@ -812,10 +806,87 @@ function renderFeed(rows) {
             <th class="hide-sm" title="Analysis source">Src</th>
           </tr>
         </thead>
-        <tbody>${bodyHtml}</tbody>
+        <tbody></tbody>
       </table>
     </div>
-    <div class="feed-foot">${
+    <div class="feed-foot"></div>`;
+
+  // Table search — filter as you type. Only the results update; the input
+  // element is left untouched, so the caret never jumps and focus is kept.
+  const search = qs("#feedSearch");
+  if (search) {
+    search.addEventListener("input", (e) => {
+      state.feedQuery = e.target.value;
+      state.feedShown = 5; // a fresh query starts at the top
+      updateFeedResults();
+    });
+  }
+
+  qsa(".feed-range", container).forEach((btn) =>
+    btn.addEventListener("click", () => {
+      state.feedRange = btn.getAttribute("data-range");
+      state.feedShown = 5; // a new window starts at the top
+      updateFeedResults();
+    })
+  );
+
+  updateFeedResults(); // fills the body/count/pager and refreshes icons
+
+  // Put the caret back if a background rebuild interrupted typing.
+  if (keepFocus && search) {
+    search.focus();
+    const pos = caret == null ? search.value.length : caret;
+    search.setSelectionRange(pos, pos);
+  }
+}
+
+/* Results-only update: refreshes the table body, the count, the active range
+   chip, and the pager — WITHOUT rebuilding the toolbar or the search <input>.
+   This is the per-keystroke / per-page hot path, so it stays cheap: it touches
+   only the parts of the DOM that actually change. */
+function updateFeedResults() {
+  const container = qs("#feedContainer");
+  if (!container) return;
+  const tbody = qs(".feed-table tbody", container);
+  if (!tbody) return; // empty-state feed has no table to update
+
+  const rows = state.boardRows || [];
+  const q = (state.feedQuery || "").toLowerCase().trim();
+  const range = state.feedRange || "all";
+  // Recency first, then text.
+  const inWindow = rows.filter((r) => inRange(r.concallDate, range));
+  const filtered = q
+    ? inWindow.filter((r) => `${r.name} ${r.ticker} ${r.industry || ""}`.toLowerCase().includes(q))
+    : inWindow;
+  const shown = Math.max(5, Math.min(state.feedShown || 5, filtered.length));
+  const visible = filtered.slice(0, shown);
+  const remaining = filtered.length - visible.length;
+
+  tbody.innerHTML = visible.length
+    ? visible.map((r) => feedRowHtml(r)).join("")
+    : `<tr><td colspan="5" class="feed-nomatch">${
+        q
+          ? `No companies match “${escapeHtml(state.feedQuery)}”${
+              range === "all" ? "" : ` in ${rangeLabel(range).toLowerCase()}`
+            }.`
+          : `No concalls ${rangeLabel(range).toLowerCase()}.`
+      }</td></tr>`;
+
+  const count = qs(".feed-count", container);
+  if (count)
+    count.textContent = `${filtered.length} ${filtered.length === 1 ? "company" : "companies"}`;
+
+  // Reflect the active period on the chips (they are never rebuilt).
+  qsa(".feed-range", container).forEach((btn) => {
+    const on = btn.getAttribute("data-range") === range;
+    btn.classList.toggle("on", on);
+    btn.setAttribute("aria-selected", on ? "true" : "false");
+  });
+
+  // Pager.
+  const foot = qs(".feed-foot", container);
+  if (foot) {
+    foot.innerHTML =
       remaining > 0
         ? `<button class="feed-more" id="feedMore"><i data-lucide="chevron-down" class="i16"></i> Show ${Math.min(
             5,
@@ -823,9 +894,22 @@ function renderFeed(rows) {
           )} more <span class="fm-rest">${remaining} left</span></button>`
         : shown > 5
         ? `<button class="feed-more ghost" id="feedLess"><i data-lucide="chevron-up" class="i16"></i> Show less</button>`
-        : ""
-    }</div>`;
+        : "";
+    const more = qs("#feedMore", foot);
+    if (more)
+      more.addEventListener("click", () => {
+        state.feedShown = shown + 5;
+        updateFeedResults();
+      });
+    const less = qs("#feedLess", foot);
+    if (less)
+      less.addEventListener("click", () => {
+        state.feedShown = 5;
+        updateFeedResults();
+      });
+  }
 
+  // Re-wire row + sector-link handlers (the body was just replaced).
   qsa(".feed-table tbody tr[data-ticker]", container).forEach((tr) => {
     tr.addEventListener("click", () => {
       const t = tr.getAttribute("data-ticker");
@@ -839,35 +923,6 @@ function renderFeed(rows) {
       goToSector(el.getAttribute("data-goto-sector"));
     })
   );
-
-  // Table search — filters + resets paging; keeps focus across re-render.
-  const search = qs("#feedSearch");
-  if (search) {
-    const wasFocused = state._feedSearchFocused;
-    search.addEventListener("input", (e) => {
-      state.feedQuery = e.target.value;
-      state.feedShown = 5;
-      state._feedSearchFocused = true;
-      renderFeed(state.boardRows);
-    });
-    search.addEventListener("blur", () => (state._feedSearchFocused = false));
-    if (wasFocused) {
-      search.focus();
-      const v = search.value;
-      search.setSelectionRange(v.length, v.length);
-    }
-  }
-  qsa(".feed-range", container).forEach((btn) =>
-    btn.addEventListener("click", () => {
-      state.feedRange = btn.getAttribute("data-range");
-      state.feedShown = 5; // a new window starts at the top
-      renderFeed(state.boardRows);
-    })
-  );
-  const more = qs("#feedMore");
-  if (more) more.addEventListener("click", () => { state.feedShown = shown + 5; renderFeed(state.boardRows); });
-  const less = qs("#feedLess");
-  if (less) less.addEventListener("click", () => { state.feedShown = 5; renderFeed(state.boardRows); });
 
   refreshIcons();
 }
