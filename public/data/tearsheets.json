@@ -37397,8 +37397,946 @@
       "ticker": "BHARATFORG",
       "industry": "Auto Components & Equipments",
       "country": "India",
-      "checked_at": "2026-07-30T05:57:09.238Z",
+      "checked_at": "2026-08-20T22:24:13.662Z",
       "quarters": [
+        {
+          "company": "Bharat Forge Ltd",
+          "ticker": "BHARATFORG",
+          "industry": "Auto Components & Equipments",
+          "country": "India",
+          "concall_date": "2026-08-01",
+          "source": "ai_summary",
+          "source_url": "https://www.screener.in/concalls/summary/23284530/",
+          "model": "anthropic.claude-sonnet-5",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-20T22:23:40.167Z",
+          "summary": "Management expects Q2 to be better than Q1 as customer discussions on price increases/volumes progress and one-time impacts fade; FY27 is expected to be \"a very good year\" with 2H stronger as interruptions fade and exports + defense deliveries ramp, and FY28 is also expected to be strong with operating leverage as growth/capacity utilization improves.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "Standalone Revenue",
+                  "value": "2,347",
+                  "unit": "₹cr",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Standalone Revenue Growth YoY",
+                  "value": "11.5",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Standalone EBITDA",
+                  "value": "614",
+                  "unit": "₹cr",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Standalone EBITDA Growth YoY",
+                  "value": "4.5",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Standalone EBITDA Margin",
+                  "value": "26.2",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Margin compression from energy/input/logistics cost escalation",
+                  "value": "~160",
+                  "unit": "bps",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Normalized EBITDA Margin (ex cost escalation)",
+                  "value": "almost 28",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Exceptional item (consultancy, BF CDP restructuring)",
+                  "value": "24",
+                  "unit": "₹cr",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated Revenue",
+                  "value": "4,640",
+                  "unit": "₹cr",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated Revenue Growth YoY",
+                  "value": "18.7",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated EBITDA",
+                  "value": "752",
+                  "unit": "₹cr",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated EBITDA Growth YoY",
+                  "value": "10.3",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated EBITDA Margin",
+                  "value": "16.2",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net Debt/Equity",
+                  "value": "0.45",
+                  "unit": "x",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Margin Compression Drivers",
+                  "points": [
+                    "Management attributed the margin compression primarily to energy, input cost, and logistics escalation, with a quantified impact of ~160 bps on EBITDA margin.",
+                    "They are 'work[ing] on the recovery of these indirect cost increases with our customers.'"
+                  ]
+                },
+                {
+                  "label": "Normalized Margin",
+                  "points": [
+                    "Management indicated that excluding the cost escalation impact, EBITDA margin would have been 'almost 28% in quarter one.'"
+                  ]
+                },
+                {
+                  "label": "Business Drivers (Standalone)",
+                  "points": [
+                    "'All-around improvement in exports' and 'strong execution in defense.'",
+                    "Q1 was 'the second straight quarter of recovery in export revenue and this momentum continues.'"
+                  ]
+                },
+                {
+                  "label": "Exceptional Item",
+                  "points": [
+                    "Exceptional item of ₹24cr related to consultancy and BF CDP restructuring."
+                  ]
+                },
+                {
+                  "label": "Balance Sheet",
+                  "points": [
+                    "Net debt/equity 0.45; management emphasized continued strength."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ORD",
+              "title": "Order Book & Demand",
+              "key_figures": [
+                {
+                  "label": "Order intake - Forging",
+                  "value": "522",
+                  "unit": "₹cr",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Order intake - Defense",
+                  "value": "681",
+                  "unit": "₹cr",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Order intake - Ferrous casting",
+                  "value": "~150",
+                  "unit": "₹cr",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Defense order book",
+                  "value": "11,196",
+                  "unit": "₹cr",
+                  "period": "end of Q1 FY27",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": []
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "Casting revenue growth YoY",
+                  "value": "20",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Casting EBITDA growth YoY",
+                  "value": "30",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Europe Revenue",
+                  "value": "1,074",
+                  "unit": "₹cr",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Europe EBITDA",
+                  "value": "30",
+                  "unit": "₹cr",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Europe EBITDA Margin",
+                  "value": "~3",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "US Revenue",
+                  "value": "461",
+                  "unit": "₹cr",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "US EBITDA",
+                  "value": "-4 (loss)",
+                  "unit": "₹cr",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Aerospace revenue base",
+                  "value": "~400",
+                  "unit": "₹cr",
+                  "period": "current/annualized",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Defense steady-state margin framework",
+                  "value": "22–23",
+                  "unit": "%",
+                  "period": "steady state annual",
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Defense (Kalyani Strategic Systems)",
+                  "points": [
+                    "Reported strong operating performance driven by 'higher realization and better product mix.'",
+                    "Margin framework (steady state): management reiterated '22–23%… on a steady state annual basis' for defense.",
+                    "Defense order book stood at ₹11,196cr at end of Q1 FY27."
+                  ]
+                },
+                {
+                  "label": "Casting (JS AutoCast / 'casting outfit')",
+                  "points": [
+                    "Casting revenue grew 20% YoY and EBITDA grew 30% YoY in Q1 FY27.",
+                    "Strategy shift toward quality of revenue: more value-add, machining, and high-volume products.",
+                    "Management expects to triple revenue run-rate vs acquisition: 'the run rate should hit that by the end of this year.'",
+                    "The Fortuna acquisition expands product offering (e.g., conrods) and strengthens local service to large engine OEMs via 'a single point of cover.'"
+                  ]
+                },
+                {
+                  "label": "Europe Operations",
+                  "points": [
+                    "Europe revenue of ₹1,074cr with EBITDA of ₹30cr (~3% margin), EBITDA positive despite a 'difficult quarter.'"
+                  ]
+                },
+                {
+                  "label": "US Operations",
+                  "points": [
+                    "US revenue of ₹461cr with EBITDA loss of ₹4cr.",
+                    "Root cause of loss: 'breakdown of a couple of presses in our steel operations' leading to disrupted production; management said it is fixed with recovery expected in Q2.",
+                    "Separately clarified: 'no production for almost three months' due to a major maintenance breakdown in steel forging."
+                  ]
+                },
+                {
+                  "label": "Aerospace Ramp",
+                  "points": [
+                    "Aerospace revenue base of ~₹400cr (current/annualized).",
+                    "Growth ambition: 'double our business in the next… two years.'",
+                    "Capacity catalyst: ring mill in Bharamati starts in Q4, expected to step-jump production; plus a new forging facility in Bharamati to support high-horsepower engines (500–5,000 HP) and power generation customers."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "TECH",
+              "title": "Product & Technology",
+              "key_figures": [
+                {
+                  "label": "Naval turbine capability range",
+                  "value": "1.25 to above 25",
+                  "unit": "MW",
+                  "period": null,
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Naval Breakthrough",
+                  "points": [
+                    "Management highlighted a step-change: from land/aerial systems into marine systems — 'big breakthrough on the marine systems.'",
+                    "Won 'a large new order for marine gas turbine generators for the Kolkata class ships' with Ministry of Defense and Naval Shipyards; described as 'the largest order we have won to date on naval systems.'",
+                    "Naval turbine capability range spans 1.25 to above 25 MW.",
+                    "Product status: 'already developed… now going into testing.'",
+                    "Value-chain expansion: historically shafting/propellers; now adding power generation and potentially 'the fight side' (as stated), aiming to cover 'the entire value stream of the naval side.'",
+                    "Additional annuity lever: turbine MRO tied up with Navy for existing and future assets: 'we have already tied up the MRO for turbines… with the Navy.'"
+                  ]
+                },
+                {
+                  "label": "ATAGS + CQB carbine production",
+                  "points": [
+                    "New defense Jasuri facility enters serial production this year, supporting ATAGS and CQB carbine deliveries.",
+                    "ATAGS delivery start depends on procedural testing/approval: 'There is still testing going on… We probably are looking at a few weeks of delay… It's a procedural issue.'",
+                    "On timeline specificity: 'the day we get the FOPM approval, we can start the clock… Then in two to three months we will start.'"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MFG",
+              "title": "Manufacturing & Capacity",
+              "key_figures": [
+                {
+                  "label": "Organic capex plan (India, FY27/near-term)",
+                  "value": "~1,800",
+                  "unit": "₹cr",
+                  "period": "FY27/near-term",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Expected asset turnover",
+                  "value": "above 1.5",
+                  "unit": "x",
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "Odisha mega-site operational timeline (post approval)",
+                  "value": "~2.5",
+                  "unit": "years",
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "US operations - no production duration due to maintenance breakdown",
+                  "value": "almost three months",
+                  "unit": null,
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Capex Plan",
+                  "points": [
+                    "Organic capex plan for India (FY27/near-term) of ~₹1,800cr, expected asset turnover above 1.5x.",
+                    "Capex spans forging, machining, heat treatment, quality control, ring rolling—positioned as multi-industry flexible assets.",
+                    "Mix: capex includes both auto and non-auto (explicitly clarified)."
+                  ]
+                },
+                {
+                  "label": "Energetics / explosives plant (Andhra Pradesh)",
+                  "points": [
+                    "Scope: 'fill shells and other propellants and energetics'; described as modular (add lines to scale).",
+                    "License: applied, not yet received."
+                  ]
+                },
+                {
+                  "label": "Odisha mega-site update",
+                  "points": [
+                    "Positioned as the 'third new mega site', intended for capabilities 'not made in India,' including large aerospace components, in a multi-modal, multi-sector complex.",
+                    "Approvals: management hopes to secure by end of year; delays due to multi-layer clearances (local/central/forest) and unexpected site constraints (e.g., high-tension lines).",
+                    "Once approved: first plant could be operational in ~2.5 years.",
+                    "Fundraise may also support this build-out ('yes')."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "US End-Market Tailwinds",
+                  "points": [
+                    "Demand drivers cited: construction, mining, data centers, power systems.",
+                    "Referenced US policy push: a 'massive plan to restart the mining economy' (training programs etc.), implying sustained demand for heavy industrial supply chains."
+                  ]
+                },
+                {
+                  "label": "Regional Demand Outlook",
+                  "points": [
+                    "India fairly strong, US very strong; Europe CV strong; PV not as strong but not weak."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SUP",
+              "title": "Supply Chain & Operations",
+              "key_figures": [
+                {
+                  "label": "Operations normalcy level",
+                  "value": "70 to 75",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Manpower Disruption",
+                  "points": [
+                    "Management called manpower the most unexpected challenge: after the Iran war and 'LPG crisis', migrant/contract labor traveled back home, which affected suppliers (not only the company directly).",
+                    "Current status: operations are 'over 70 to 75 percent of normalcy'; some migrant/casual labor still not back."
+                  ]
+                },
+                {
+                  "label": "Energy & Fuel",
+                  "points": [
+                    "Fuel switching issues occurred earlier in the quarter; now 'fuel situation is under control', though Maharashtra energy price hike remains a concern."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [
+                {
+                  "label": "Navy announcement of new ships to be built",
+                  "value": "140",
+                  "unit": "ships",
+                  "period": null,
+                  "kind": "market_size"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Management Stance",
+                  "points": [
+                    "Q1 described as 'reasonable… given the operating environment' with multiple temporary shocks."
+                  ]
+                },
+                {
+                  "label": "Demand Tailwind",
+                  "points": [
+                    "Navy announcement of '140 new ships… to be built.'"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [
+                {
+                  "label": "Proposed fundraise",
+                  "value": "up to 2,500",
+                  "unit": "₹cr",
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "Preferred minimum cash on balance sheet",
+                  "value": "at least 2,000",
+                  "unit": "₹cr",
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "German steel restructuring accounting charge",
+                  "value": "~30",
+                  "unit": "€m",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Casting revenue run-rate growth target vs acquisition",
+                  "value": "triple",
+                  "unit": null,
+                  "period": "by end of this year",
+                  "kind": "target"
+                },
+                {
+                  "label": "German steel business restructuring estimated completion",
+                  "value": "end of calendar 2027",
+                  "unit": null,
+                  "period": null,
+                  "kind": "guidance"
+                },
+                {
+                  "label": "German CDP cash outflow timing post restructuring",
+                  "value": "12",
+                  "unit": "months",
+                  "period": null,
+                  "kind": "guidance"
+                },
+                {
+                  "label": "CDP shutdown/closure timeline",
+                  "value": "second to third quarter of next year",
+                  "unit": null,
+                  "period": "calendar",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Aerospace revenue growth ambition (doubling)",
+                  "value": "double",
+                  "unit": null,
+                  "period": "next two years",
+                  "kind": "target"
+                },
+                {
+                  "label": "Aerospace forging facility power generation range",
+                  "value": "500–5,000",
+                  "unit": "HP",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "ATAGS approval to production start timeline",
+                  "value": "two to three",
+                  "unit": "months",
+                  "period": null,
+                  "kind": "guidance"
+                },
+                {
+                  "label": "New defense facility name entering serial production this year",
+                  "value": "Jasuri",
+                  "unit": null,
+                  "period": null,
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Fundraise Rationale and Use",
+                  "points": [
+                    "Proposed fundraise: up to ₹2,500cr, explicitly for growth capex in 'hardcore manufacturing' in existing + selected new adjacencies.",
+                    "Use-cases listed: large engines, power gen, semiconductor components, aerospace, and energetics (shell filling/propellants).",
+                    "Timing: capex to be completed 'over the next 18 months.'",
+                    "Rationale despite leverage capacity: management emphasized a conservative liquidity posture—prefers 'at least two thousand odd worth of cash on the balance sheet'—and optionality for India M&A (citing JSA/K-DRI success); details withheld due to NDAs."
+                  ]
+                },
+                {
+                  "label": "German steel business restructuring (BF CDP)",
+                  "points": [
+                    "Restructuring is 'on track'; estimated completion by end of calendar 2027.",
+                    "Accounting impact: ~€30m charge 'towards the… restructuring'; management stressed 'this is not a cash outflow' immediately, with cash outflow post 12 months.",
+                    "Strategic endpoint is decisive: 'post the end of the restructuring, that entity will not survive, it will not exist' and orders will be transferred (where viable) to India/other entities 'at a good margin.'",
+                    "Closure timeline was specified as 'between second to third quarter of next year… [calendar]' for CDP shutdown/closure process, implying forced migration/phase-out of relevant orders before that."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [
+                {
+                  "label": "Aluminum tariff (US, raw aluminum from Canada)",
+                  "value": "50",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "US Tariffs Risk",
+                  "points": [
+                    "Aluminum economics affected by tariffs: 'tariff on… raw aluminum is fifty percent because it all comes from Canada'; management noted this is a significant complication versus imported components at lower tariffs.",
+                    "Approach: 'write it out without making cash losses' amid 'unanticipatable tariff situation.'"
+                  ]
+                },
+                {
+                  "label": "Manpower Disruption",
+                  "points": [
+                    "Manpower disruption remains a headwind with operations only 70-75% normalized."
+                  ]
+                },
+                {
+                  "label": "Energy Costs",
+                  "points": [
+                    "Maharashtra energy price hike remains a concern."
+                  ]
+                },
+                {
+                  "label": "US Operational Disruption",
+                  "points": [
+                    "Press breakdown in US steel operations caused 'no production for almost three months.'"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [
+                {
+                  "label": "Fundraise capex completion timeline",
+                  "value": "18",
+                  "unit": "months",
+                  "period": null,
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Margin Recovery Mechanics",
+                  "points": [
+                    "Q2 expected to be better than Q1 due to customer discussions on price increases and volumes, plus one-time impacts in Q1.",
+                    "However, management cautioned reported EBITDA margin may not snap back optically to 28% because recoveries affect both revenue and cost: 'numerator goes up and the denominator goes up.'",
+                    "Key takeaway: unit economics normalize first ('margin per ton will come back'), while reported margin improves gradually."
+                  ]
+                },
+                {
+                  "label": "FY27/FY28 Outlook",
+                  "points": [
+                    "Management expects FY27 to be 'a very good year,' with 2H stronger as interruptions fade and as exports + defense deliveries ramp.",
+                    "FY28 expectation: 'based on what we see now… 28 should also be a strong year.'",
+                    "Margin levers: operating leverage expected as growth/capacity utilization improves ('Absolutely')."
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "Standalone EBITDA Margin (normalized ex cost escalation)",
+              "horizon": "Q1 FY27",
+              "statement": "Excluding the cost escalation impact, EBITDA margin would have been 'almost 28% in quarter one.'",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Q2 Margin Recovery",
+              "horizon": "Q2 FY27",
+              "statement": "Q2 expected to be better than Q1 due to customer discussions on price increases and volumes, plus one-time impacts in Q1; reported margin may not snap back optically to 28% due to pass-through accounting.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "FY27 Outlook",
+              "horizon": "FY27",
+              "statement": "Management expects FY27 to be 'a very good year,' with 2H stronger as interruptions fade and as exports + defense deliveries ramp.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "FY28 Outlook",
+              "horizon": "FY28",
+              "statement": "'Based on what we see now… 28 should also be a strong year.'",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Casting Revenue Run-Rate",
+              "horizon": "end of this year",
+              "statement": "Management expects to triple revenue run-rate vs acquisition; 'the run rate should hit that by the end of this year.'",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Defense Steady-State Margin",
+              "horizon": "steady state annual",
+              "statement": "Management reiterated '22–23%… on a steady state annual basis' for defense.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Aerospace Business Growth",
+              "horizon": "next two years",
+              "statement": "Growth ambition to 'double our business in the next… two years.'",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Organic Capex Plan (India)",
+              "horizon": "FY27/near-term",
+              "statement": "Guided ~₹1,800cr organic capex in India spanning forging, machining, heat treatment, quality control, ring rolling.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Expected Asset Turnover",
+              "horizon": null,
+              "statement": "Expected asset turnover 'above… 1.5.'",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Fundraise for Growth Capex",
+              "horizon": "next 18 months",
+              "statement": "Proposed fundraise up to ₹2,500cr for growth capex in 'hardcore manufacturing' in existing + selected new adjacencies, to be completed over the next 18 months.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "German Steel Business Restructuring (BF CDP)",
+              "horizon": "end of calendar 2027",
+              "statement": "Restructuring is 'on track'; estimated completion by end of calendar 2027; entity will not survive post-restructuring.",
+              "specificity": "specific",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "CDP Closure Timeline",
+              "horizon": "Q2-Q3 of next calendar year",
+              "statement": "Closure timeline specified as 'between second to third quarter of next year… [calendar]' for CDP shutdown/closure process.",
+              "specificity": "specific",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Odisha Mega-Site Approval and Operationalization",
+              "horizon": "end of year (approval); ~2.5 years post-approval (operational)",
+              "statement": "Management hopes to secure approvals by end of year; once approved, first plant could be operational in ~2.5 years.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "US Operations Recovery",
+              "horizon": "Q2 FY27",
+              "statement": "Press breakdown in US steel operations is fixed with recovery expected in Q2.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Manpower Normalization",
+              "horizon": "ongoing",
+              "statement": "Operations are 'over 70 to 75 percent of normalcy'; some migrant/casual labor still not back.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Aerospace Revenue",
+              "horizon": "FY26 (prior guidance)",
+              "statement": "Aerospace revenue should exceed INR 350 crores this year (prior quarter guidance); current base cited ~₹400cr.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "achieved"
+            },
+            {
+              "metric": "Fundraising for Growth",
+              "horizon": "FY26 (prior)/current",
+              "statement": "Prior guidance: raising funds up to INR 2,000 crores; current: proposed fundraise up to ₹2,500cr.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Defense Business Growth",
+              "horizon": "next year (prior)",
+              "statement": "Prior guidance: Defense business expected to grow by 30%-40% next year; current call reiterates steady-state margin framework of 22-23% without repeating explicit growth % this quarter.",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Export Recovery",
+              "horizon": "next year (prior)/current",
+              "statement": "Q1 was 'the second straight quarter of recovery in export revenue and this momentum continues.'",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "CV Sector Outlook",
+              "horizon": "Q4 and first half of next year (prior)",
+              "statement": "Europe CV strong; India fairly strong (current quarter demand commentary).",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "American Axles Contribution",
+              "horizon": "FY26 (prior)",
+              "statement": "Prior guidance: American Axles should add Rs. 1,000 crores to consolidated topline for the year; not mentioned this quarter.",
+              "specificity": "specific",
+              "direction": "unclear",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Aerospace Segment Growth",
+              "horizon": "next year",
+              "statement": "Aerospace segment to see strong growth next year.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "Energy, input cost, and logistics cost escalation",
+              "status": "new",
+              "note": "Quantified ~160 bps EBITDA margin impact; management working with customers on recovery."
+            },
+            {
+              "risk": "Manpower disruption (post Iran war/LPG crisis, migrant labor shortage)",
+              "status": "new",
+              "note": "Operations at 70-75% normalcy; affected both company and suppliers; called 'most unexpected challenge.'"
+            },
+            {
+              "risk": "Energy/fuel switching issues",
+              "status": "new",
+              "note": "'Fuel situation is under control'; Maharashtra energy price hike remains a concern."
+            },
+            {
+              "risk": "US press breakdown / production disruption",
+              "status": "new",
+              "note": "Breakdown of presses in US steel operations caused 'no production for almost three months'; fixed with recovery expected Q2."
+            },
+            {
+              "risk": "US tariffs on raw aluminum",
+              "status": "new",
+              "note": "50% tariff on raw aluminum from Canada creates significant cost complication vs imported components; 'unanticipatable tariff situation'; approach is to 'write it out without making cash losses.'"
+            },
+            {
+              "risk": "German steel business (BF CDP) structural weakness",
+              "status": "new",
+              "note": "Entity deemed unable to survive; restructuring underway with ~€30m accounting charge, orders to migrate to India/other entities."
+            },
+            {
+              "risk": "ATAGS procedural/regulatory approval delay",
+              "status": "new",
+              "note": "Delivery start delayed by 'a few weeks' pending FOPM approval; described as a procedural issue."
+            },
+            {
+              "risk": "Odisha mega-site approval delays",
+              "status": "new",
+              "note": "Multi-layer clearances (local/central/forest) and site constraints (e.g., high-tension lines) causing delay."
+            },
+            {
+              "risk": "Tariff Impact on US Aluminum Business",
+              "status": "no_mention",
+              "note": "Tariff on aluminum into the US is impacting profitability and demand."
+            },
+            {
+              "risk": "European Market Challenges",
+              "status": "no_mention",
+              "note": "European operations face challenges due to patchy demand and high costs."
+            },
+            {
+              "risk": "North American Market Uncertainty",
+              "status": "no_mention",
+              "note": "Demand uncertainty due to trade policies and constant changes."
+            },
+            {
+              "risk": "Tariff-related uncertainty",
+              "status": "no_mention",
+              "note": "Tariff-related uncertainty is impacting global outlook and order inflows."
+            }
+          ],
+          "themes": [
+            {
+              "label": "Defense Orders",
+              "direction": "positive",
+              "note": "Defense order intake ₹681cr, order book ₹11,196cr; naval breakthrough with largest-ever order for marine gas turbine generators, plus MRO tie-up with Navy.",
+              "section_ref": "ORD"
+            },
+            {
+              "label": "Aerospace Growth",
+              "direction": "positive",
+              "note": "Aerospace revenue base ~₹400cr with ambition to double business in two years; ring mill and new forging facility in Bharamati to catalyze capacity.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Export Strategy",
+              "direction": "positive",
+              "note": "Q1 marked the second straight quarter of export revenue recovery, with all-around improvement in exports continuing.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Indian Manufacturing Expansion",
+              "direction": "positive",
+              "note": "~₹1,800cr organic capex guided for India across forging, machining, heat treatment, ring rolling; new Odisha mega-site and Andhra Pradesh energetics plant planned; ₹2,500cr fundraise proposed.",
+              "section_ref": "MFG"
+            },
+            {
+              "label": "Tariff Impact",
+              "direction": "negative",
+              "note": "50% US tariff on raw aluminum from Canada creates cost complications; management aims to avoid cash losses amid 'unanticipatable tariff situation.'",
+              "section_ref": "RISK"
+            },
+            {
+              "label": "Cost Escalation & Margin Pressure",
+              "direction": "negative",
+              "note": "Energy, input cost, and logistics escalation compressed standalone EBITDA margin by ~160 bps; recovery being negotiated with customers.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "European Restructuring (BF CDP)",
+              "direction": "mixed",
+              "note": "German steel business restructuring on track for completion by end of CY2027 with ~€30m accounting charge; entity will not survive, orders to migrate to India at better margins."
+            },
+            {
+              "label": "Manpower & Operational Disruption",
+              "direction": "negative",
+              "note": "Migrant/contract labor shortage post Iran war and LPG crisis left operations at 70-75% normalcy; US press breakdown caused ~3 months of lost production, recovery expected Q2.",
+              "section_ref": "SUP"
+            }
+          ],
+          "key_takeaways": [
+            "Margin recovery is real but optical margins may lag due to pass-through accounting; focus on per-ton/per-piece contribution normalization rather than immediate headline % return to ~28%.",
+            "Defense is scaling into naval propulsion/power + MRO, shifting from project-driven revenue to a potentially more annuity-like lifecycle profile (MRO + larger per-ship content).",
+            "Europe restructuring is a deliberate exit with order migration to India, explicitly intended to eliminate a structurally weak entity and capture remaining business at \"good margin.\"",
+            "Capex is being pulled forward \"slightly ahead of demand\"; management argues demand is \"coming so fast\" that capacity must accelerate—supported by quantified capex (₹1,800cr) and targeted asset turns (>1.5x).",
+            "Multiple execution dependencies remain: ATAGS procedural approvals, manpower normalization (still only 70–75%), and US operational stability plus tariff uncertainty."
+          ],
+          "pressing_questions": []
+        },
         {
           "company": "Bharat Forge Ltd",
           "ticker": "BHARATFORG",
@@ -39004,384 +39942,169 @@
             "Near-term outlook for North American market remains uncertain, but growth in aerospace, defense, and JS Auto is expected to offset declines."
           ],
           "pressing_questions": []
-        },
-        {
-          "company": "Bharat Forge Ltd",
-          "ticker": "BHARATFORG",
-          "industry": "Auto Components & Equipments",
-          "country": "India",
-          "concall_date": "2025-08-11",
-          "source": "transcript",
-          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=274a3025-71f0-4682-a159-8813e92fd8c8.pdf",
-          "model": "gpt-4o",
-          "generated_at": "2026-07-30T05:50:37.723Z",
-          "summary": "Bharat Forge anticipates a stronger second half of FY26, driven by improved performance in aerospace and defense sectors, despite current challenges from tariffs and global uncertainties.",
-          "sections": [
-            {
-              "id": "FIN",
-              "title": "Financial Performance",
-              "key_figures": [
-                {
-                  "label": "Standalone Q1 Revenue",
-                  "value": "2,105",
-                  "unit": "crores",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Standalone Q1 Revenue Growth",
-                  "value": "-2.7",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Standalone Q1 EBITDA",
-                  "value": "588",
-                  "unit": "crores",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Standalone Q1 EBITDA Growth",
-                  "value": "-6.5",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Tariff-related Expense",
-                  "value": "14",
-                  "unit": "crores",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Consolidated Q1 Revenue",
-                  "value": "3,909",
-                  "unit": "crores",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Consolidated Q1 Revenue Growth",
-                  "value": "1.5",
-                  "unit": "%",
-                  "period": "QoQ",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Consolidated Q1 EBITDA",
-                  "value": "682",
-                  "unit": "crores",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Consolidated Q1 EBITDA Margin",
-                  "value": "17.4",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Consolidated Q1 EBITDA Margin",
-                  "value": "6.1",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "EU Aluminum Operations EBITDA",
-                  "value": "33",
-                  "unit": null,
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "American Axles Consolidated Topline Contribution",
-                  "value": "1,000",
-                  "unit": "crores",
-                  "period": "FY26",
-                  "kind": "guidance"
-                },
-                {
-                  "label": "JSA Q1 Revenue",
-                  "value": "149",
-                  "unit": "crores",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Bharat Forge Q1 Revenue",
-                  "value": "429",
-                  "unit": "crores",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Defense Q1 Revenue",
-                  "value": "269",
-                  "unit": "crores",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Artillery Order Book",
-                  "value": "4,000",
-                  "unit": "crores",
-                  "period": null,
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Tariff Impact",
-                  "points": [
-                    "The company absorbed Rs. 14 crores worth of tariff-related expenses in Q1."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "ORD",
-              "title": "Order Book & Demand",
-              "key_figures": [
-                {
-                  "label": "New Business Secured",
-                  "value": "850",
-                  "unit": "crores",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Defense RFQ Pipeline",
-                  "value": "9,000",
-                  "unit": "crores",
-                  "period": "FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "Pending Defense Order",
-                  "value": "1,400",
-                  "unit": "crores",
-                  "period": "FY26",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Defense Business",
-                  "points": [
-                    "The company has a strong RFQ pipeline in the defense sector, expecting some orders to be finalized this fiscal."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "SEG",
-              "title": "Segment & Product Performance",
-              "key_figures": [
-                {
-                  "label": "American Axles Contribution",
-                  "value": "1,000",
-                  "unit": "crores",
-                  "period": "FY26",
-                  "kind": "guidance"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Aerospace Growth",
-                  "points": [
-                    "Aerospace is expected to continue its 20% plus growth annually YOY."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "MFG",
-              "title": "Manufacturing & Capacity",
-              "key_figures": [
-                {
-                  "label": "EU Aluminum Operations Utilization",
-                  "value": "70",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                },
-                {
-                  "label": "U.S. Aluminum Business Utilization",
-                  "value": "70",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "U.S. Aluminum Business",
-                  "points": [
-                    "The U.S. aluminum business had a positive EBITDA with margins of 6.1% in Q1."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "GEO",
-              "title": "Geography & Distribution",
-              "key_figures": [
-                {
-                  "label": "Exports to U.S. from India",
-                  "value": "33",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Export Strategy",
-                  "points": [
-                    "One-third of exports from Indian manufacturing were to the United States in Q1."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "MKT",
-              "title": "Market & Customer Strategy",
-              "key_figures": [
-                {
-                  "label": "Server Market Size",
-                  "value": "20,000",
-                  "unit": "units",
-                  "period": "year",
-                  "kind": "market_size"
-                },
-                {
-                  "label": "Server Market Size",
-                  "value": "75,000",
-                  "unit": "units",
-                  "period": "year",
-                  "kind": "market_size"
-                }
-              ],
-              "subsections": []
-            },
-            {
-              "id": "RISK",
-              "title": "Risks & External Factors",
-              "key_figures": [
-                {
-                  "label": "Tariff Rate",
-                  "value": "25",
-                  "unit": "%",
-                  "period": "Q1 FY26",
-                  "kind": "reported"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Tariff Uncertainty",
-                  "points": [
-                    "Tariff-related uncertainty is a significant challenge, impacting global outlook and order inflows."
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "GUID",
-              "title": "Guidance & Outlook",
-              "key_figures": [
-                {
-                  "label": "Aerospace Growth Expectation",
-                  "value": "20",
-                  "unit": "%",
-                  "period": "annually YOY",
-                  "kind": "guidance"
-                }
-              ],
-              "subsections": [
-                {
-                  "label": "Second Half Outlook",
-                  "points": [
-                    "The second half of FY26 is expected to be better than the first half, driven by improved performance in aerospace and defense sectors."
-                  ]
-                }
-              ]
-            }
-          ],
-          "guidance_ledger": [
-            {
-              "metric": "American Axles Contribution",
-              "horizon": "FY26",
-              "statement": "American Axles should add Rs. 1,000 crores to the consolidated topline for the year.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "new"
-            },
-            {
-              "metric": "Aerospace Growth",
-              "horizon": "annually YOY",
-              "statement": "Aerospace should continue its 20% plus growth annually YOY.",
-              "specificity": "specific",
-              "direction": "up",
-              "status": "new"
-            }
-          ],
-          "risk_register": [
-            {
-              "risk": "Tariff-related uncertainty",
-              "status": "escalated",
-              "note": "Tariff-related uncertainty is impacting global outlook and order inflows."
-            }
-          ],
-          "themes": [
-            {
-              "label": "Tariff Impact",
-              "direction": "negative",
-              "note": "Tariff-related expenses and uncertainties are affecting performance and outlook.",
-              "section_ref": "RISK"
-            },
-            {
-              "label": "Aerospace Growth",
-              "direction": "positive",
-              "note": "Aerospace sector expected to grow over 20% annually YOY.",
-              "section_ref": "SEG"
-            },
-            {
-              "label": "Defense Orders",
-              "direction": "positive",
-              "note": "Strong RFQ pipeline in defense with expected order finalizations.",
-              "section_ref": "ORD"
-            },
-            {
-              "label": "U.S. Aluminum Business",
-              "direction": "positive",
-              "note": "Improved utilization and positive EBITDA in U.S. aluminum operations.",
-              "section_ref": "MFG"
-            },
-            {
-              "label": "Export Strategy",
-              "direction": "neutral",
-              "note": "Significant portion of exports directed to the U.S. market.",
-              "section_ref": "GEO"
-            }
-          ],
-          "key_takeaways": [
-            "Q1 revenue for Bharat Forge on a standalone was Rs. 2,105 crores, down by 2.7%.",
-            "Standalone EBITDA in Q1 was Rs. 588 crores, 6.5% lower due to low utilization and a different product mix.",
-            "At a consolidated level, Q1 revenue was Rs. 3,909 crores, 1.5% higher quarter-on-quarter.",
-            "The company absorbed Rs. 14 crores worth of tariff-related expense in Q1.",
-            "The U.S. aluminum business had a positive EBITDA with margins of 6.1% in Q1.",
-            "One-third of exports from Indian manufacturing were to the United States in Q1.",
-            "Aerospace is expected to continue its 20% plus growth annually YOY.",
-            "American Axles should add Rs. 1,000 crores to the consolidated topline for the year."
-          ],
-          "pressing_questions": []
         }
-      ]
+      ],
+      "about": "Bharat Forge is engaged in the manufacturing and selling of forged and machined Compoundant for auto and industry sector.(Source : 201903 Annual Report Page No: 123)",
+      "reported_pnl": {
+        "basis": "consolidated",
+        "periods": [
+          "Sep 2024",
+          "Dec 2024",
+          "Mar 2025",
+          "Jun 2025",
+          "Sep 2025",
+          "Dec 2025",
+          "Mar 2026",
+          "Jun 2026"
+        ],
+        "rows": [
+          {
+            "label": "Sales",
+            "values": [
+              "3,689",
+              "3,476",
+              "3,853",
+              "3,909",
+              "4,032",
+              "4,343",
+              "4,528",
+              "4,640"
+            ]
+          },
+          {
+            "label": "Expenses",
+            "values": [
+              "3,042",
+              "2,853",
+              "3,174",
+              "3,239",
+              "3,308",
+              "3,597",
+              "3,751",
+              "3,942"
+            ]
+          },
+          {
+            "label": "Operating Profit",
+            "values": [
+              "647",
+              "623",
+              "679",
+              "670",
+              "724",
+              "746",
+              "777",
+              "698"
+            ]
+          },
+          {
+            "label": "OPM %",
+            "values": [
+              "18%",
+              "18%",
+              "18%",
+              "17%",
+              "18%",
+              "17%",
+              "17%",
+              "15%"
+            ]
+          },
+          {
+            "label": "Other Income",
+            "values": [
+              "62",
+              "38",
+              "57",
+              "50",
+              "54",
+              "-13",
+              "-46",
+              "-301"
+            ]
+          },
+          {
+            "label": "Interest",
+            "values": [
+              "110",
+              "96",
+              "88",
+              "82",
+              "80",
+              "77",
+              "84",
+              "90"
+            ]
+          },
+          {
+            "label": "Depreciation",
+            "values": [
+              "213",
+              "218",
+              "224",
+              "226",
+              "241",
+              "249",
+              "255",
+              "263"
+            ]
+          },
+          {
+            "label": "Profit before tax",
+            "values": [
+              "385",
+              "347",
+              "424",
+              "411",
+              "457",
+              "407",
+              "392",
+              "44"
+            ]
+          },
+          {
+            "label": "Tax %",
+            "values": [
+              "37%",
+              "39%",
+              "33%",
+              "31%",
+              "34%",
+              "33%",
+              "40%",
+              "302%"
+            ]
+          },
+          {
+            "label": "Net Profit",
+            "values": [
+              "243",
+              "213",
+              "283",
+              "284",
+              "299",
+              "273",
+              "233",
+              "-90"
+            ]
+          },
+          {
+            "label": "EPS in Rs",
+            "values": [
+              "5.23",
+              "4.45",
+              "5.90",
+              "5.93",
+              "6.26",
+              "5.53",
+              "4.86",
+              "-1.88"
+            ]
+          }
+        ],
+        "source_url": "https://www.screener.in/company/BHARATFORG/consolidated/#quarters",
+        "captured_at": "2026-08-20T22:22:13.151Z"
+      }
     },
     "BALKRISIND": {
       "company": "Balkrishna Industries Ltd",
