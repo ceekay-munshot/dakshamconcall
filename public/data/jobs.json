@@ -953,8 +953,10 @@
       "source": "transcript"
     },
     "LCL": {
-      "status": "running",
-      "started_at": "2026-08-22T10:22:15.033Z"
+      "status": "failed",
+      "finished_at": "2026-08-22T10:22:23.898Z",
+      "error": "Screener daily AI-summary limit reached. [premium account] Limit exceeded - Please try again later Premium users can request 80 summaries each day.",
+      "message": "Couldn't fetch LCL's latest concall. Screener daily AI-summary limit reached. [premium account] Limit exceeded - Please try again later Premium users can request 80 summaries each day."
     },
     "CPPLUS": {
       "status": "done",
