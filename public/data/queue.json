@@ -1,15 +1,36 @@
 {
   "date": "2026-08-22",
-  "pending": [],
-  "processed": 10,
+  "pending": [
+    "SEDEMAC",
+    "CESC",
+    "VADILALIND",
+    "ASTRAZEN",
+    "544826",
+    "JNPR",
+    "GMRAIRPORT"
+  ],
+  "processed": 18,
   "stats": {
     "date": "2026-08-22",
     "discovered": 3,
     "carried_over": 5,
     "queued_total": 8,
     "processing_today": 8,
-    "pending_tomorrow": 0,
+    "pending_tomorrow": 7,
     "cap": 40,
-    "already_processed_today": 10
+    "already_processed_today": 18,
+    "added_today": 1,
+    "failed_today": 7
+  },
+  "added": 1,
+  "failed": 7,
+  "retries": {
+    "544826": 3,
+    "SEDEMAC": 5,
+    "CESC": 4,
+    "VADILALIND": 4,
+    "ASTRAZEN": 3,
+    "JNPR": 1,
+    "GMRAIRPORT": 1
   }
 }
