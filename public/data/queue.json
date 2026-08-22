@@ -1,40 +1,15 @@
 {
-  "date": "2026-08-21",
-  "pending": [
-    "KSB",
-    "LCL",
-    "544626",
-    "SEDEMAC",
-    "CESC",
-    "VADILALIND",
-    "ASTRAZEN",
-    "CONFIPET",
-    "544826"
-  ],
-  "processed": 25,
+  "date": "2026-08-22",
+  "pending": [],
+  "processed": 0,
   "stats": {
-    "date": "2026-08-21",
-    "discovered": 5,
-    "carried_over": 7,
-    "queued_total": 12,
-    "processing_today": 12,
-    "pending_tomorrow": 9,
+    "date": "2026-08-22",
+    "discovered": 1,
+    "carried_over": 9,
+    "queued_total": 10,
+    "processing_today": 10,
+    "pending_tomorrow": 0,
     "cap": 40,
-    "already_processed_today": 25,
-    "added_today": 2,
-    "failed_today": 10
-  },
-  "added": 2,
-  "failed": 10,
-  "retries": {
-    "544626": 5,
-    "544826": 1,
-    "KSB": 5,
-    "LCL": 5,
-    "SEDEMAC": 3,
-    "CESC": 2,
-    "VADILALIND": 2,
-    "ASTRAZEN": 1,
-    "CONFIPET": 1
+    "already_processed_today": 0
   }
 }
