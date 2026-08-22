@@ -1043,8 +1043,10 @@
       "source": "transcript"
     },
     "ASTRAZEN": {
-      "status": "running",
-      "started_at": "2026-08-22T10:22:53.707Z"
+      "status": "failed",
+      "finished_at": "2026-08-22T10:22:58.998Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     }
   }
 }
