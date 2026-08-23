@@ -305057,6 +305057,2400 @@
           "pressing_questions": []
         }
       ]
+    },
+    "SBILIFE": {
+      "company": "SBI Life Insurance Company Ltd",
+      "ticker": "SBILIFE",
+      "industry": "Life Insurance",
+      "country": "India",
+      "about": "SBI Life Insurance Company Ltd is engaged in the business of life insurance and annuity. It was started as a Joint-venture between State Bank of India and BNP Paribas Cardif S.A.[1]",
+      "reported_pnl": null,
+      "checked_at": "2026-08-23T10:33:25.826Z",
+      "quarters": [
+        {
+          "company": "SBI Life Insurance Company Ltd",
+          "ticker": "SBILIFE",
+          "industry": "Life Insurance",
+          "country": "India",
+          "concall_date": "2026-07-30",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=d066f482-f5e7-4274-8d43-deefa3beceab.pdf",
+          "model": "anthropic.claude-sonnet-5",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-23T10:32:49.465Z",
+          "summary": "SBI Life delivered 14% growth in Individual Rated Premium (IRP) in Q1 FY27, within its 14-15% guided range, and VoNB margin of 26.2% (lower end of the 26-28% guided band) due to a one-off higher contribution from Group Term Insurance (GTI) business, which management expects to normalize going forward, moving margin toward the upper end of the guided band as individual business mix normalizes. Management reiterated FY27 IRP growth guidance of 14-15% and margin guidance of 26-28%, expects GST drag to continue for another ~2.5 months into Q2 before running off, and plans to launch the regular pay deferred annuity product within the next quarter.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "New business premium",
+                  "value": "89.1",
+                  "unit": "INR billion",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "New business premium growth YoY",
+                  "value": "23",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Individual rated new business premium (IRP)",
+                  "value": "39.7",
+                  "unit": "INR billion",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "IRP growth YoY",
+                  "value": "14",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gross written premium (GWP)",
+                  "value": "212.9",
+                  "unit": "INR billion",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "GWP growth YoY",
+                  "value": "20",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Profit after tax (PAT)",
+                  "value": "7.2",
+                  "unit": "INR billion",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT growth YoY",
+                  "value": "22",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Value of new business (VoNB)",
+                  "value": "14.1",
+                  "unit": "INR billion",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VoNB growth YoY",
+                  "value": "29",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VoNB margin",
+                  "value": "26.2",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Indian embedded value (IEV)",
+                  "value": "852.9",
+                  "unit": "INR billion",
+                  "period": "as on June 30, 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "IEV growth YoY",
+                  "value": "15",
+                  "unit": "%",
+                  "period": "over June 2025",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Assets under management (AUM)",
+                  "value": "5.2",
+                  "unit": "INR trillion",
+                  "period": "as on June 30, 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "AUM growth YoY",
+                  "value": "10",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Solvency ratio",
+                  "value": "1.96",
+                  "unit": "ratio",
+                  "period": "as on June 30, 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Regulatory solvency requirement",
+                  "value": "1.5",
+                  "unit": "ratio",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "GST impact for the quarter",
+                  "value": "2.3",
+                  "unit": "INR billion",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VoNB excluding GST impact",
+                  "value": "14.7",
+                  "unit": "INR billion",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VoNB growth excluding GST impact",
+                  "value": "35",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VoNB margin excluding GST impact",
+                  "value": "27.4",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Opex ratio",
+                  "value": "7.7",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Opex ratio (prior year)",
+                  "value": "6.3",
+                  "unit": "%",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total cost ratio",
+                  "value": "12",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total cost ratio (prior year)",
+                  "value": "10.8",
+                  "unit": "%",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "13th month persistency",
+                  "value": "87.7",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "13th month persistency improvement",
+                  "value": "61",
+                  "unit": "bps",
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "49th month persistency",
+                  "value": "69.1",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "49th month persistency improvement",
+                  "value": "68",
+                  "unit": "bps",
+                  "period": "YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Death claim settlement ratio",
+                  "value": "98.8",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Misselling ratio",
+                  "value": "0.02",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VNB margin impact from assumption change (walk)",
+                  "value": "-40",
+                  "unit": "bps",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VNB margin impact from product mix change (walk)",
+                  "value": "-60",
+                  "unit": "bps",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operating assumption change impact (March 2026 annual review)",
+                  "value": "-20",
+                  "unit": "bps",
+                  "period": "FY26",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Margin walk drivers",
+                  "points": [
+                    "The overall APE mix during Q1 had a higher share of group business, described as lumpy, which brought down margin compared to last year.",
+                    "Group business margin is lower than individual business margin, so higher group contribution drags overall VoNB margin.",
+                    "The -60 bps product mix impact in the VNB walk is entirely on account of the one-off GTI (Group Term Insurance) business, which is invariably lower margin than company average, despite non-par and par growing and ULIP share coming down.",
+                    "No assumption change was made in Q1 FY27 itself; the -40 bps shown in the walk arises because the walk compares June last year to this year, and the actual assumption change was made as part of the annual review in March 2026.",
+                    "The March 2026 operating assumption change was negative by 20 bps; this becomes 40 bps in the YoY walk due to a base effect; the change was a normal refinement in persistency, mortality and expense assumptions; the financial assumption change was also negative, not positive.",
+                    "Company does not disclose product-wise margin breakdowns (e.g., quantified GTI-specific drag was not shared)."
+                  ]
+                },
+                {
+                  "label": "Cost / expense drivers",
+                  "points": [
+                    "GST drag has been running at similar levels (~1.1-1.5 percentage points) for the last few quarters; management does not plan to reduce expenses or commissions as they are already on the lower side, but expects product mix to offset the GST drag (as seen in FY26 where the net impact was reduced to 20-30 bps).",
+                    "GST impact is expected to continue for another roughly 2.5 months into Q2 (GST was waived from 22nd September last year) before running off on a like-for-like basis thereafter.",
+                    "Pickup in other expenses (even adjusting for GST) is attributed to two one-off/period items: (1) higher stamp duty corresponding to significantly increased sum assured (protection and rider attachments driving up sum assured), and (2) labour code impact due to number of employees, first seen in this quarter versus June 2025.",
+                    "Other expenses will continue in tandem with sum assured growth; management indicated this trend will streamline over the next three quarters as per plan."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "Individual APE",
+                  "value": "39.9",
+                  "unit": "INR billion",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Individual APE growth YoY",
+                  "value": "14",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Group new business premium",
+                  "value": "32.9",
+                  "unit": "INR billion",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Group NBP contribution to total NBP",
+                  "value": "37",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Group NBP growth YoY",
+                  "value": "41",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total APE (Individual + Group)",
+                  "value": "53.8",
+                  "unit": "INR billion",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total APE growth YoY",
+                  "value": "36",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Renewal premium",
+                  "value": "123.8",
+                  "unit": "INR billion",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Renewal premium growth YoY",
+                  "value": "17",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Renewal premium share of GWP",
+                  "value": "58",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "New policies sold",
+                  "value": "4.25",
+                  "unit": "lakh",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Lives covered",
+                  "value": "8.7",
+                  "unit": "million",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Individual new business sum assured growth YoY",
+                  "value": "46",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Group new business sum assured growth YoY",
+                  "value": "265",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Rider sum assured share of individual sum assured",
+                  "value": "39",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Participating (Par) Individual APE",
+                  "value": "2.4",
+                  "unit": "INR billion",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Par Individual APE growth YoY",
+                  "value": "35",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Par segment sum assured growth YoY",
+                  "value": "81",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Guaranteed non-par savings business",
+                  "value": "9.7",
+                  "unit": "INR billion",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Non-par savings growth YoY",
+                  "value": "27",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ULIP business",
+                  "value": "24.5",
+                  "unit": "INR billion",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ULIP contribution to APE",
+                  "value": "61",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ULIP contribution to APE (prior year)",
+                  "value": "65",
+                  "unit": "%",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ULIP contribution to APE (on IRP basis, quarter-end)",
+                  "value": "62",
+                  "unit": "%",
+                  "period": "quarter-end Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Non-ULIP contribution to APE (on IRP basis, quarter-end)",
+                  "value": "38",
+                  "unit": "%",
+                  "period": "quarter-end Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Individual protection APE",
+                  "value": "1.9",
+                  "unit": "INR billion",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Individual protection APE growth YoY",
+                  "value": "18",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Pure protection category growth (Individual APE basis)",
+                  "value": "41",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Individual sum assured growth in Protection segment",
+                  "value": "40",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Group protection APE",
+                  "value": "12.3",
+                  "unit": "INR billion",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Group protection APE growth YoY",
+                  "value": "313",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total annuity and pension new business",
+                  "value": "18.9",
+                  "unit": "INR billion",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Overall combined (individual+group) protection growth",
+                  "value": "~300",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Individual protection growth (restated)",
+                  "value": "22",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Individual protection ROP share",
+                  "value": "68",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Individual protection ROP share (prior year)",
+                  "value": "73",
+                  "unit": "%",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Individual protection non-ROP share",
+                  "value": "32",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Pure protection growth within individual protection (IRP basis)",
+                  "value": "52",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Pure protection growth (confirmed)",
+                  "value": "41",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Credit protect growth",
+                  "value": "flat",
+                  "unit": null,
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ULIP rider attachment rate",
+                  "value": "45-50",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ULIP rider attachment rate (historical progression)",
+                  "value": "35% to 45% to 50%",
+                  "unit": "%",
+                  "period": "over last ~2 years",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Product mix evolution",
+                  "points": [
+                    "All product segments recorded growth on an Individual Rated Premium basis and all key distribution channels achieved double-digit expansion.",
+                    "The increasing contribution from protection solutions and guaranteed non-par saving products reflects evolving customer preferences and strategic focus.",
+                    "Company has been strengthening its product portfolio on non-par, par and protection sides over the last 2 years, resulting in higher sales of these products while ULIP continues to sell normally; this has driven ULIP contribution down to 62% and non-ULIP up to 38% on IRP basis with majority of the increase from non-par; company's target for the full year is to maintain this kind of product mix.",
+                    "Company does not have high sum-assured ULIP products; instead rider attachment on ULIP has increased, with 45-50% of policies now sold with rider attachment, up from an initial low base 1-1.5 years ago when riders were first attached to traditional products before extending to unit-linked products; attachment improved from 35% to 45% to now ~50%, and is expected to improve or maintain from this level; riders are also being offered to existing customers.",
+                    "Rider APE (protection part of riders) is counted as part of protection business; exact rider APE quantification not available but to be shared separately.",
+                    "Participating (Par) Individual APE grew 35% YoY to INR 2.4 billion with par segment sum assured growth of 81% YoY.",
+                    "Guaranteed non-par savings business grew 27% YoY to INR 9.7 billion.",
+                    "ULIP business stood at INR 24.5 billion, contributing 61% to APE versus 65% in the prior year."
+                  ]
+                },
+                {
+                  "label": "Protection segment dynamics",
+                  "points": [
+                    "Individual protection growth of 22% is higher than the overall IRP growth of ~14.5-15% for the quarter.",
+                    "Company has been shifting focus from ROP (return of premium) to non-ROP and pure protection since last year; pure protection growth of 52% (on IRP basis, later reconfirmed as 41%) is running at a much stronger clip than ROP, though pure protection has lower ticket size than ROP, which makes overall protection growth appear more subdued versus industry peers reporting on an APE basis (~15%).",
+                    "ROP to non-ROP mix has improved to 68%/32% versus 73%/27% last year, reflecting the shift towards non-ROP and pure protection.",
+                    "Credit protect business is flat YoY but going as per planned numbers, with good uptick expected in coming quarters.",
+                    "GTI (Group Term Insurance) business is treated as a 1-year renewable contract; new premium is counted as APE, and renewal premium goes to renewal premium — the high group contribution (~25% of APE this quarter vs typical 10-12%) is a one-off lumpy item that inflates APE and depresses margin, given GTI's inherently lower margin versus individual business; management declined to comment on details of individual contracts (e.g., whether related to a certain PSU company).",
+                    "Group protection APE grew 313% YoY to INR 12.3 billion, and group new business sum assured grew 265% YoY, while individual new business sum assured grew 46% YoY; individual protection APE grew 18% YoY to INR 1.9 billion; individual sum assured growth in the protection segment was 40%; overall combined (individual+group) protection growth was ~300%; total annuity and pension new business was INR 18.9 billion; rider sum assured represented 39% of individual sum assured."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [
+                {
+                  "label": "Number of CIFs (Certified Insurance Facilitators)",
+                  "value": ">60,000",
+                  "unit": "count",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bancassurance (SBI + RRBs) contribution to total APE",
+                  "value": "47",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bancassurance Individual APE",
+                  "value": "24.5",
+                  "unit": "INR billion",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bancassurance Individual APE growth",
+                  "value": "10",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "SBI branch productivity (Individual APE per branch)",
+                  "value": "4.1",
+                  "unit": "INR million",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "SBI branch productivity growth",
+                  "value": "7",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Non-ULIP product mix improvement (SBI channel)",
+                  "value": "200",
+                  "unit": "bps",
+                  "period": "Q1 FY27 vs prior year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Agency Individual APE",
+                  "value": "13.1",
+                  "unit": "INR billion",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Agency Individual APE growth YoY",
+                  "value": "20",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Agent productivity",
+                  "value": "2",
+                  "unit": "INR lakh",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Agency channel non-ULIP share improvement",
+                  "value": "43% to 46%",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs prior year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Agency individual sum assured growth",
+                  "value": "63",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gross agents added",
+                  "value": "34,000+",
+                  "unit": "count",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "New branches added",
+                  "value": "11",
+                  "unit": "count",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Other channels (direct, corporate agents, other banks, brokers, online, web aggregators) growth",
+                  "value": "160",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Other channels contribution to total APE",
+                  "value": "28",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Banks other than SBI Group growth (total APE basis)",
+                  "value": "31",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Other banks growth (Individual NBP basis)",
+                  "value": "19",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Other banks product mix",
+                  "value": "20% ULIP / 80% non-ULIP",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Agency channel growth (quarter reiterated)",
+                  "value": "19%+",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Branches opened over last 2-3 years (agency strengthening)",
+                  "value": "100+",
+                  "unit": "count",
+                  "period": "last 2-3 years",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Channel performance drivers",
+                  "points": [
+                    "Company has focused for last 3 years on strengthening agency channel; opened more than 100 branches in last 2-3 years; agent addition and productivity have been increasing due to sustained efforts under the earlier 'Agency 2.0' program and subsequent 'Agency Next' program, resulting in strong growth in agency.",
+                    "Agency growth was strong in 2024 and 2025 too, and continued to grow last year despite a very high FY25 base; current quarter agency growth was 19%+; remaining 3 quarters expected to see even stronger contribution.",
+                    "SBI remains the company's strong point, delivering strong banca growth (~10% this quarter); company continues to explore potential on the agency side; going forward, a healthy mix of banca and agency contribution will drive overall growth.",
+                    "Other banks/partners mix is strongly tilted towards non-ULIP (20% ULIP / 80% non-ULIP in Q1).",
+                    "New corporate agency tie-up entered with J&K Bank during the quarter; business to start sometime in this quarter.",
+                    "Bancassurance (SBI + RRBs) contributed 47% of total APE, with Individual APE of INR 24.5 billion; SBI branch productivity (Individual APE per branch) rose 7% to INR 4.1 million, with non-ULIP product mix in the SBI channel improving by 200 bps YoY.",
+                    "Agency channel Individual APE grew 20% YoY to INR 13.1 billion, with agent productivity of INR 2 lakh; agency channel non-ULIP share improved from 43% to 46%; agency individual sum assured grew 63%; gross agents added exceeded 34,000 and 11 new branches were added in the quarter.",
+                    "Other channels (direct, corporate agents, other banks, brokers, online, web aggregators) grew 160% YoY, contributing 28% of total APE; banks other than the SBI Group grew 31% on total APE basis and 19% on Individual NBP basis.",
+                    "Company has more than 60,000 Certified Insurance Facilitators (CIFs)."
+                  ]
+                },
+                {
+                  "label": "Digital / operational efficiency in distribution",
+                  "points": [
+                    "99.9% of individual proposals submitted digitally.",
+                    "67% of individual proposals processed through automated underwriting."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [
+                {
+                  "label": "Total new business premium private market share",
+                  "value": "20.5",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total new business premium total market share",
+                  "value": "8.2",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Individual rated NBP private market share",
+                  "value": "22.2",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Individual rated NBP total market share",
+                  "value": "15.2",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "3-year CAGR of Individual Rated NBP (company)",
+                  "value": "14",
+                  "unit": "%",
+                  "period": "3-year CAGR",
+                  "kind": "reported"
+                },
+                {
+                  "label": "3-year CAGR of Individual Rated NBP (industry)",
+                  "value": "13",
+                  "unit": "%",
+                  "period": "3-year CAGR",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Competitive positioning",
+                  "points": [
+                    "Company retains leadership position with 22.2% private market share and 15.2% total market share on Individual Rated Premium basis; on total new business premium basis, private market share was 20.5% and total market share was 8.2%.",
+                    "Company's 3-year CAGR of Individual Rated New Business Premium (14%) outpaces the industry CAGR (13%).",
+                    "Individual protection growth (~15% on APE basis per one analyst's calculation, industry comparison basis 19%) appears weaker versus peers reporting on an APE basis; management attributes this to a deliberate mix shift toward pure term/non-ROP products with lower ticket sizes versus ROP, rather than a competitive weakness — pure protection growth itself was 41-52%.",
+                    "Company sees favorable regulatory positioning versus industry: lowest surrender ratio, lowest grievance ratio, and lowest commissions in the private industry.",
+                    "Non-par product demand: company sees strong demand for assured-benefit non-par products in India; keeps a close eye on yield movement and repriced products (improved IRR for customers in June per yield curve movement), resulting in good market traction."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [
+                {
+                  "label": "Total individual protection APE growth (industry comparison basis)",
+                  "value": "19",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Flagged headwinds",
+                  "points": [
+                    "GST impact continues to drag margins (1.1% in Q1 FY27, following 1.1% in Q3 and 1.5% in Q4 of prior periods); expected to persist for ~2.5 months into Q2 before running off on a comparable basis.",
+                    "One-off spike in other expenses due to higher stamp duty (tied to rising sum assured) and labour code impact (linked to employee headcount), first seen in Q1 FY27 versus June 2025; expected to streamline over the next 3 quarters.",
+                    "61st month persistency has declined YoY due to the 'COVID cohort' moving through the persistency curve (from 13th to 25th to 37th to 49th and now to 61st month); this cohort is expected to move away from the 61st month bucket by end of Q3, after which 61st month persistency should normalize by year-end.",
+                    "Higher, one-off GTI (Group Term Insurance) contribution to APE created a lumpy drag on overall VoNB margin this quarter; management does not expect this lumpiness to recur frequently.",
+                    "Regulatory landscape evolution is a watch item, though management views it as broadly positive and expects future regulations to benefit the industry including SBI Life, given the company's already-favorable positioning (lowest surrender ratio, lowest grievance ratio, lowest commissions versus industry)."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [
+                {
+                  "label": "VNB margin guidance range",
+                  "value": "26-28",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Reiterated guidance",
+                  "points": [
+                    "IRP growth guidance reiterated at around 14-15% for the year; company delivered on this front in Q1.",
+                    "VoNB margin guidance reiterated at 26-28% range; Q1 came in at the lower end (26.2%), with management confident margin has bottomed in Q1 and will move towards the upper end of the guided range as product mix normalizes (higher focus on individual policies) through the rest of the year.",
+                    "GST drag expected to continue for ~2.5 months into Q2 (since GST was waived from 22nd September last year), and thereafter comparisons will be like-for-like/'par-to-par'.",
+                    "Deferred annuity (regular pay) product launch expected within the next quarter; company is working on the product and will launch at an opportune time.",
+                    "Full-year target product mix: continuation of the current quarter-end mix trend (ULIP ~62%, non-ULIP ~38% on IRP basis, majority increase from non-par)."
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "Individual Rated Premium (IRP) growth",
+              "horizon": "FY27",
+              "statement": "Our growth projections for the year on IRP basis remains at 14%, 15%.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "VoNB margin",
+              "horizon": "FY27",
+              "statement": "We continue to be in the range that we guided in 26% to 28%... Going forward, as the product mix normalizes, our margin will be moving towards the upper end of our band.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "GST drag on margin",
+              "horizon": "Q2 FY27",
+              "statement": "There will be some impact for 2.5 months in the current quarter also. And then it will be on par-to-par basis.",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "Other expenses / opex",
+              "horizon": "next 3 quarters FY27",
+              "statement": "Other expenses will continue in tandem with the sum assured... it will streamline as per the plan over the next 3 quarters.",
+              "specificity": "vague",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Regular pay deferred annuity product launch",
+              "horizon": "Q2 FY27 / next quarter",
+              "statement": "Hopefully within next quarter, you will be able to see that... We are working on the product, and we'll launch the product at opportune time.",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "pushed_out"
+            },
+            {
+              "metric": "Product mix (ULIP vs non-ULIP)",
+              "horizon": "FY27",
+              "statement": "As at the end of quarter on IRP basis, ULIP contribution has come down to 62% and non-ULIP are contributing 38%... For the year also, in fact, our target is to have this kind of product mix only.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "61st month persistency",
+              "horizon": "by end of FY27",
+              "statement": "This cohort will move away from the 61st month by end of third quarter. So by end of the year, the 61st month persistency, we are expecting will be back to normal.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Credit protect growth",
+              "horizon": "coming quarters",
+              "statement": "It is flat as compared to last year. But it is going as per the planned number. So we will see some good uptick in the coming quarters.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Rider APE disclosure",
+              "horizon": "unspecified",
+              "statement": "Rider APE, we don't have right now. So we will share with you separately.",
+              "specificity": "refused",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "APE / Individual rated premium growth",
+              "horizon": "next 3-5 years",
+              "statement": "We intend to maintain the growth rate at around 14%, which has been our CAGR for the last 3 to 5 years, and we will continue to maintain this kind of growth rate in coming year also.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Opex ratio",
+              "horizon": "FY27",
+              "statement": "Next year opex will reflect the full-year GST impact (versus half-year in FY26), but it will not have much further impact as far as opex ratio is concerned for the company due to other cost-rationalization measures.",
+              "specificity": "vague",
+              "direction": "flat",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Ind AS / IFRS adoption",
+              "horizon": "April 1, 2027",
+              "statement": "The company has adopted a phased and well-governed approach to Ind AS transition and proposes to seek regulatory forbearance for an adoption from April 1, 2027, with comprehensive preparatory measures already initiated.",
+              "specificity": "specific",
+              "direction": "unclear",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Distribution mix shift (banca to agency/emerging)",
+              "horizon": "coming years",
+              "statement": "In last 2 years, we have seen approximately 3% to 4% shift from banca to agency and emerging businesses, and we expect the similar trend in coming years.",
+              "specificity": "specific",
+              "direction": "unclear",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Banca share of SBI",
+              "horizon": "long term",
+              "statement": "We are not targeting any reduction from SBI; what we are targeting is tapping additional opportunity on the agency and emerging business channel.",
+              "specificity": "vague",
+              "direction": "flat",
+              "status": "no_mention"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "GST impact on margins",
+              "status": "new",
+              "note": "GST drag of ~1.1% in Q1 FY27, in line with recent quarters (1.1% in Q3, 1.5% in Q4); expected to continue for ~2.5 months into Q2 before running off on a par-to-par basis."
+            },
+            {
+              "risk": "One-off spike in other expenses (stamp duty, labour code)",
+              "status": "new",
+              "note": "Higher stamp duty tied to rising sum assured and labour code impact (headcount-linked) drove up other expenses this quarter; expected to streamline over next 3 quarters."
+            },
+            {
+              "risk": "61st month persistency decline (COVID cohort)",
+              "status": "new",
+              "note": "COVID-era cohort has moved into the 61st month bucket causing a dip; expected to move out by end of Q3 and normalize by year-end."
+            },
+            {
+              "risk": "Lumpy/one-off GTI business dragging VoNB margin",
+              "status": "new",
+              "note": "Higher-than-usual GTI contribution to APE (~25% vs typical 10-12%) is lower margin than individual business and dragged overall VoNB margin by ~60 bps in the mix walk; management does not expect this lumpiness to recur frequently."
+            },
+            {
+              "risk": "Regulatory landscape evolution",
+              "status": "new",
+              "note": "Company awaits shape of upcoming regulations; views current positioning (lowest surrender/grievance ratios, lowest commissions) as favorable and expects future regulatory changes to be broadly positive for the industry."
+            },
+            {
+              "risk": "Geopolitical volatility impacting equity/fixed income markets and customer behavior",
+              "status": "no_mention",
+              "note": "Last two months of geopolitical events caused market volatility, but MF inflows remained robust and company sales in Feb-March were decent."
+            },
+            {
+              "risk": "Sluggish industry-wide Q4 growth",
+              "status": "no_mention",
+              "note": "Entire insurance sector had a sluggish Q4, linked to global geopolitical events; company still met ~13% annual guidance."
+            },
+            {
+              "risk": "GST cost impact on commissions and margins",
+              "status": "no_mention",
+              "note": "GST impact (from business written after Sept 22) increased opex/cost ratios and pressured VNB margin; full-year impact expected in FY27; company has offset it via product mix and interest rate benefits."
+            },
+            {
+              "risk": "Revised Labour Law / Labour Code cost impact",
+              "status": "no_mention",
+              "note": "New one-off cost item impacting FY26 operating expense ratio alongside GST."
+            },
+            {
+              "risk": "Interest rate / yield curve volatility affecting non-par pricing",
+              "status": "no_mention",
+              "note": "Current yield levels seen as not sustainable; company monitors and re-prices non-par products dynamically when it sees sustainable yield levels, balancing customer benefit."
+            },
+            {
+              "risk": "Potential mandate for open-architecture bancassurance",
+              "status": "no_mention",
+              "note": "Raised via media interview by Department of Financial Services Secretary; RBI draft guidelines in public domain (effective ~July 1) do not mention open architecture; company has no additional information but is confident in navigating any regulatory change given 25-year track record."
+            },
+            {
+              "risk": "Regulatory shift to Ind AS / IFRS 17 and Risk-Based Capital (RBC)",
+              "status": "no_mention",
+              "note": "Company preparing via phased approach and forbearance request for April 1, 2027 adoption; also monitoring RBC discussions for capital implications."
+            },
+            {
+              "risk": "Persistency drop in 61st month cohort",
+              "status": "no_mention",
+              "note": "Likely linked to ULIP policies sold during the COVID period."
+            }
+          ],
+          "themes": [
+            {
+              "label": "Margin resilience via mix optimization",
+              "direction": "mixed",
+              "note": "VoNB margin at 26.2% (lower end of 26-28% guided band) due to one-off high GTI mix; management expects margin to move toward upper end as individual mix normalizes.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "GST/regulatory cost impact",
+              "direction": "negative",
+              "note": "GST drag of ~1.1% continued in Q1 FY27, in line with prior quarters; expected to persist ~2.5 months into Q2 before running off.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Product mix shift (non-ULIP push)",
+              "direction": "positive",
+              "note": "ULIP contribution down to 61-62% from 65% a year ago, with non-par and par products gaining share; rider attachment on ULIP up to 45-50%.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Agency channel expansion",
+              "direction": "positive",
+              "note": "Agency Individual APE grew 20% YoY with 34,000+ gross agents added and 11 new branches; management expects even stronger contribution in remaining quarters.",
+              "section_ref": "GEO"
+            },
+            {
+              "label": "Protection segment momentum",
+              "direction": "positive",
+              "note": "Individual protection APE grew 18-22%, with pure protection growing 41-52% as company shifts mix from ROP to non-ROP/pure term products.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Open architecture / bancassurance regulatory risk",
+              "direction": "neutral",
+              "note": "Management views regulatory landscape as broadly positive given company's favorable positioning (lowest surrender, grievance ratios, and commissions); awaiting shape of future regulations.",
+              "section_ref": "RISK"
+            },
+            {
+              "label": "GTI-driven lumpy margin drag",
+              "direction": "negative",
+              "note": "One-off high Group Term Insurance contribution (~25% of APE vs typical 10-12%) drove a 60 bps negative product-mix impact on VoNB margin; management does not expect frequent recurrence.",
+              "section_ref": "SEG"
+            }
+          ],
+          "key_takeaways": [
+            "New business premium stands at INR89.1 billion with a growth of 23% and private market share of 20.5%.",
+            "Individual rated new business premium stands at INR39.7 billion with a growth of 14% and private market share of 22.2%.",
+            "Gross written premium stands at INR212.9 billion with a growth of 20%.",
+            "The company's profit after tax for the quarter stood at INR7.2 billion, registering a strong growth of 22% over the corresponding quarter of previous year.",
+            "Value of new business stands at INR14.1 billion with a growth of 29%. VoNB margin stands at 26.2% for the period ended June 30, 2026.",
+            "Indian embedded value for the company as on June 30, 2026, stands at INR852.9 billion.",
+            "Our assets under management stands at INR5.2 trillion with a growth of 10% over the corresponding quarter last year.",
+            "Solvency ratio of 1.96 is as against the regulatory requirement of 1.5."
+          ],
+          "pressing_questions": [
+            "Can you help provide some color on what kind of margins the GTI will contribute and where has been the overall direction of margins, given that despite GST hit, individual/ex-GTI margins appear to have improved strongly?",
+            "Can you quantify the negative 0.6% margin impact on overall VNB from GTI, and what was the positive impact in the individual business, to give color on normalized margins? (Management declined: 'We don't generally discuss product-wise margins. We don't disclose those numbers.')",
+            "Is the GTI business related to a certain PSU company, or what is the nature of this contract? (Management declined to comment on individual contracts/policies.)",
+            "Possible to quantify the rider APE? (Management: 'Rider APE, we don't have right now. So we will share with you separately.')"
+          ]
+        },
+        {
+          "company": "SBI Life Insurance Company Ltd",
+          "ticker": "SBILIFE",
+          "industry": "Life Insurance",
+          "country": "India",
+          "concall_date": "2026-04-28",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f50bc473-267d-4994-8843-16a9e3c51c51.pdf",
+          "model": "anthropic.claude-sonnet-5",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-23T10:30:19.423Z",
+          "summary": "SBI Life delivered strong FY26 growth (NBP +20%, GWP +19%, VNB +12%, VoNB margin 27.5%) despite GST and Labour Law cost impacts; management guided to continued ~14% APE/growth CAGR, VoNB margin range of 26-28% (reporting above 27%), plans to launch a deferred annuity product by Q1FY27 (June, else next quarter), and a phased Ind AS transition with regulatory forbearance sought for adoption from April 1, 2027.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "New business premium (NBP)",
+                  "value": "425.5",
+                  "unit": "INR billion",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "NBP growth",
+                  "value": "20",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Individual rated new business premium (RNBP)",
+                  "value": "219",
+                  "unit": "INR billion",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "RNBP growth",
+                  "value": "13",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gross written premium (GWP)",
+                  "value": "1,012.9",
+                  "unit": "INR billion",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "GWP growth",
+                  "value": "19",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Profit after tax (PAT)",
+                  "value": "24.7",
+                  "unit": "INR billion",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT growth",
+                  "value": "2",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT excluding GST/Labour Law impact",
+                  "value": "31.2",
+                  "unit": "INR billion",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT growth excluding impact",
+                  "value": "29",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Value of new business (VNB/VoNB)",
+                  "value": "66.7",
+                  "unit": "INR billion",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VNB growth",
+                  "value": "12",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VoNB margin",
+                  "value": "27.5",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VNB excluding GST impact",
+                  "value": "70.3",
+                  "unit": "INR billion",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VNB growth excluding GST impact",
+                  "value": "18",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VoNB margin excluding GST impact",
+                  "value": "29",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "VoNB margin improvement excluding GST",
+                  "value": "150",
+                  "unit": "bps",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Indian Embedded Value (IEV)",
+                  "value": "807.9",
+                  "unit": "INR billion",
+                  "period": "as of March 31, 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "IEV growth",
+                  "value": "15",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV excluding one-time impact",
+                  "value": "813.6",
+                  "unit": "INR billion",
+                  "period": "as of March 31, 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EV growth excluding one-time impact",
+                  "value": "16",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Return on embedded value (RoEV)",
+                  "value": "19.7",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Embedded value operating profit",
+                  "value": "138.6",
+                  "unit": "INR billion",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Assets under management (AUM)",
+                  "value": "4.9",
+                  "unit": "INR trillion",
+                  "period": "as of March 31, 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "AUM growth",
+                  "value": "9",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Solvency ratio",
+                  "value": "1.90",
+                  "unit": "x",
+                  "period": "as of March 31, 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Regulatory solvency requirement",
+                  "value": "1.50",
+                  "unit": "x",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Opex ratio",
+                  "value": "6.1",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Opex ratio (prior year)",
+                  "value": "5.3",
+                  "unit": "%",
+                  "period": "FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total cost ratio",
+                  "value": "10.6",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total cost ratio (prior year)",
+                  "value": "9.7",
+                  "unit": "%",
+                  "period": "FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Opex ratio excluding GST/Labour Code impact",
+                  "value": "5.5",
+                  "unit": "%",
+                  "period": "FY26 hypothetical",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Annualized full-year GST impact on margin if implemented from start of year",
+                  "value": "1.8-1.9",
+                  "unit": "%",
+                  "period": "hypothetical full-year FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Economic variance",
+                  "value": "3.66",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Economic variance from equity",
+                  "value": "2.15",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Persistency assumption refinement impact on VNB",
+                  "value": "50",
+                  "unit": "bps",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Opex ratio (FY24)",
+                  "value": "4.9",
+                  "unit": null,
+                  "period": "FY24",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total cost ratio (FY24)",
+                  "value": "8.9",
+                  "unit": null,
+                  "period": "FY24",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cost ratio including GST impact",
+                  "value": "10.8",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Solvency ratio target",
+                  "value": "180",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "target"
+                },
+                {
+                  "label": "Persistency variance last year",
+                  "value": "2.5 to 3",
+                  "unit": "INR billion",
+                  "period": "FY25",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "PAT and cost drivers",
+                  "points": [
+                    "Financial performance reflects the impact of GST and the revised Labour Law.",
+                    "Excluding these one-time impacts, PAT would have grown 29% to INR31.2 billion.",
+                    "Opex ratio and total cost ratio increases YoY (5.3%→6.1% and 9.7%→10.6%) are attributed to GST impact, opening more branches, higher IT spend for customer ease and processes, and spends on training agency force and CIFs.",
+                    "GST impact on commission and renewal is reflected fully for business written after 22nd September 2025; for business written prior to that date, only renewal commission GST impact is reflected — full-year impact will show up in FY27.",
+                    "Excluding GST/Labour Code impact, opex ratio would have been around 5.5% versus reported 5.3% in the prior year comparison mentioned by management.",
+                    "Management does not expect opex ratio to rise materially further; other cost-rationalization measures will offset full-year GST impact in FY27; investment in branches and IT infrastructure will continue."
+                  ]
+                },
+                {
+                  "label": "VNB Walk and margin drivers",
+                  "points": [
+                    "VNB growth of 12% was driven by both volume growth and favorable shift in product mix.",
+                    "Better product mix and benefits from interest rate movement offset the GST impact on margin, keeping margin at 27.5% despite GST impact.",
+                    "Management maintained VoNB margin guidance range of 26%-28% for the year and delivered at the higher end.",
+                    "Guidance for margin trajectory ahead is to stay within 26%-28% range with an endeavor to report above 27%.",
+                    "Management reiterated the FY27-FY28 margin guidance range when asked whether to shift it to FY27-FY29."
+                  ]
+                },
+                {
+                  "label": "Embedded Value walk and operating variance",
+                  "points": [
+                    "Strong positive operating variance was seen in the EV walk, primarily coming from mortality profit and persistency and to a lesser extent expenses.",
+                    "This positive variance is not from conservative/prudent assumptions but reflects the better quality of business being written and underwritten.",
+                    "Last year, some persistency assumptions were already capitalized, so persistency variance is slightly lower this year versus last year.",
+                    "0.2% difference between VNB assumption changes and EV operating variance is not considered significant; products currently being sold differ from the existing back book, so correlating VNB assumptions with EV operating variance directly may not be fair.",
+                    "Minor refinement was made across all assumptions including demographic, expense, and other parameters due to a marginal (50 bps) persistency assumption change, attributed partly to COVID-era ULIP business persistency drop and partly to long-term protection improvement in persistency."
+                  ]
+                },
+                {
+                  "label": "Solvency and capital",
+                  "points": [
+                    "Solvency ratio of 1.90 achieved through efficient use of capital and internal accruals; no fresh capital raised.",
+                    "Company is assessing the impact of Ind AS and Risk-Based Capital (RBC), which are being discussed at the regulatory level for introduction in the near future, and will take an appropriate call at the appropriate time."
+                  ]
+                },
+                {
+                  "label": "Persistency",
+                  "points": [
+                    "13th month persistency stands at 87.9%, an improvement of 53 basis points YoY.",
+                    "49th month persistency stands at 69.1%, an improvement of 107 basis points YoY.",
+                    "61st month persistency saw a drop, likely related to ULIP business sold during the COVID period."
+                  ]
+                },
+                {
+                  "label": "Claims and mis-selling",
+                  "points": [
+                    "Death claim settlement ratio stands at 99.4% for FY26.",
+                    "Mis-selling ratio stands at 0.02%, one of the lowest in the private industry, achieved through consistent right-selling approach."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "Annualized Premium Equivalent (APE)",
+                  "value": "242.7",
+                  "unit": "INR billion",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "APE growth",
+                  "value": "13",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Individual APE",
+                  "value": "221.1",
+                  "unit": "INR billion",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Individual APE growth",
+                  "value": "13",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Individual rated premium private market share",
+                  "value": "22.9",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Individual rated premium total market share",
+                  "value": "16.5",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Individual rated premium 3-year CAGR",
+                  "value": "12.9",
+                  "unit": "%",
+                  "period": "3-year CAGR",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Industry average 3-year CAGR (individual rated premium)",
+                  "value": "8.5",
+                  "unit": "%",
+                  "period": "3-year CAGR",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total NBP private market share",
+                  "value": "21.4",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total NBP total market share",
+                  "value": "9.3",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Group new business premium",
+                  "value": "127.7",
+                  "unit": "INR billion",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Group NBP contribution to total NBP",
+                  "value": "30",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Group NBP growth",
+                  "value": "39",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Renewal premium",
+                  "value": "587.3",
+                  "unit": "INR billion",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Renewal premium growth",
+                  "value": "19",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Renewal premium as % of GWP",
+                  "value": "58",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "New policies sold",
+                  "value": "22.2",
+                  "unit": "lakh",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Lives covered",
+                  "value": "22.7",
+                  "unit": "million",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Individual new business sum assured growth",
+                  "value": "61",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Group new business sum assured growth",
+                  "value": "34",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Rider sum assured as % of individual sum assured",
+                  "value": "31",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Guaranteed non-par savings business",
+                  "value": "42.7",
+                  "unit": "INR billion",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Guaranteed non-par contribution to individual APE",
+                  "value": "19",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ULIP business",
+                  "value": "144.2",
+                  "unit": "INR billion",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ULIP contribution to individual APE",
+                  "value": "65",
+                  "unit": "%",
+                  "period": "FY26, vs 70% last year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Protection business APE",
+                  "value": "22.4",
+                  "unit": "INR billion",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Protection contribution to APE",
+                  "value": "9",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Protection segment APE growth",
+                  "value": "10",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Individual protection APE",
+                  "value": "10.3",
+                  "unit": "INR billion",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Individual protection APE growth",
+                  "value": "24",
+                  "unit": "%",
+                  "period": "FY26 YoY vs FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Pure protection category growth (individual APE basis)",
+                  "value": "122",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Individual sum assured growth in protection segment",
+                  "value": "62",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Group protection APE",
+                  "value": "12.1",
+                  "unit": "INR billion",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Credit life APE",
+                  "value": "2.9",
+                  "unit": "INR billion",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Credit life APE growth",
+                  "value": "14",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Individual APE for participating (Par) products",
+                  "value": "17.3",
+                  "unit": "INR billion",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Par segment individual APE growth",
+                  "value": "133",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Par segment sum assured growth",
+                  "value": "166",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Par contribution (individual APE basis, later stated)",
+                  "value": "~7",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total annuity and pension new business",
+                  "value": "86.5",
+                  "unit": "INR billion",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Individual ULIP share (IRP basis, later stated)",
+                  "value": "66-34",
+                  "unit": "% ULIP-nonULIP",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Credit Life attachment ratio on home loans",
+                  "value": "~50",
+                  "unit": "%",
+                  "period": "FY26 (similar to previous years)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "SBI pure protection market share (of SBI channel)",
+                  "value": "4",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Product mix strategy",
+                  "points": [
+                    "Company continues to advance product diversification strategy through focused, well-sequenced initiatives; launches aligned to key customer needs across child plans, protection solutions and non-par guaranteed segment.",
+                    "Strategy has been to improve product mix in favor of non-ULIP products over the last couple of years, with good product launches across non-par, par and protection segments to improve profitability via healthy product mix.",
+                    "Par product growth came off a lower base last year (only a couple of products); this year new products were launched in the par category with very good customer response, driving robust growth.",
+                    "Par contribution is still small (~7% of individual APE) but management expects new non-par launch to see traction and improve non-par growth, especially if interest rates stabilize allowing re-pricing with better returns for customers.",
+                    "No higher sum assured ULIPs (e.g., 20x/30x cover) currently offered; company will look at the opportunity and decide in due course.",
+                    "New non-par product launched (in January) replaces existing non-par product and reflects current yield; company monitors interest rate volatility and re-prices dynamically when yield curve is deemed sustainable, balancing benefit passed to customers.",
+                    "On protection side, pure protection sum assured growth is significantly higher than premium share growth because pure protection carries significantly higher sum assured per policy; SBI's own protection share (4%) has remained broadly flat but mix shifted from TROP toward higher proportion of pure protection, with higher growth in number of policies and sum assured."
+                  ]
+                },
+                {
+                  "label": "Group Credit Life / GTI",
+                  "points": [
+                    "Q4 group business growth increase attributed to reduction in GTI (Group Term Insurance) business relative to Credit Life, not a genuine step-up.",
+                    "Quarterly split of Credit Life vs group business not disclosed on call; to be shared separately.",
+                    "Banca Credit Life growth of 14% viewed as reasonable, faster than bank's loan growth; attachment in home loans has increased substantially.",
+                    "Attachment ratio for Credit Life on home loans is around 50%, similar to previous years."
+                  ]
+                },
+                {
+                  "label": "Channel-wise margin disclosure declined",
+                  "points": [
+                    "Management does not disclose VNB margin by channel; commission structures are similar across channels and margin is looked at on a company-level, longer-term basis rather than by channel."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "TECH",
+              "title": "Product & Technology",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Digitalization",
+                  "points": [
+                    "Digitalization is transforming the life insurance industry, enabling enhanced services and more seamless customer experience.",
+                    "Company continues efficient usage of technology for process simplification.",
+                    "Deferred annuity product under development — company aims to launch by June (this quarter); if not, will launch in the next quarter.",
+                    "Deferred regular-pay annuity will complete the company's full suite of annuity products (single premium deferred annuity, immediate annuity, NPS annuity); expected to lower average ticket size for annuity products and increase the number of annuitants, aiding growth in number of policies (NOP) alongside protection products."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [
+                {
+                  "label": "Bancassurance CIF strength",
+                  "value": "59,000+",
+                  "unit": "CIFs",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bancassurance contribution to total APE",
+                  "value": "60",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bancassurance individual APE",
+                  "value": "141.2",
+                  "unit": "INR billion",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bancassurance individual APE growth",
+                  "value": "11",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "SBI branch productivity (individual APE)",
+                  "value": "6.0",
+                  "unit": "INR million",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "SBI branch productivity growth",
+                  "value": "10",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Agency individual APE",
+                  "value": "68.6",
+                  "unit": "INR billion",
+                  "period": "as of March 31, 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Agency individual APE growth",
+                  "value": "15",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Agent productivity",
+                  "value": "2.6",
+                  "unit": "INR lakh",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Agency channel non-ULIP share",
+                  "value": "39",
+                  "unit": "%",
+                  "period": "FY26, up from 34%",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Agency individual sum assured growth",
+                  "value": "76",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gross agents added",
+                  "value": "1,20,000+",
+                  "unit": "agents",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "New branches opened",
+                  "value": "120",
+                  "unit": "branches",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Other channels (direct, corporate agents, other bank brokers, online, web aggregators) growth",
+                  "value": "22",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Other channels contribution to total APE",
+                  "value": "11",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Banks other than SBI Group growth (total APE basis)",
+                  "value": "22",
+                  "unit": "%",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Online business channel growth",
+                  "value": "47",
+                  "unit": "%",
+                  "period": "FY26 YoY (also cited as 48-50% for full year in a later answer)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Individual proposals submitted digitally",
+                  "value": "99.7",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Individual policies processed through automated underwriting",
+                  "value": "57",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Historical shift from banca to agency/emerging channels",
+                  "value": "3-4",
+                  "unit": "%",
+                  "period": "last 2 years",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Distribution strategy",
+                  "points": [
+                    "Company leverages well-diversified multichannel distribution strategy spanning bancassurance, agency and digital platforms enabling consistent, broad-based growth across segments.",
+                    "Focus for the last 2 years has been strengthening the agency channel — opening more branches, adding more agents, improving agent productivity; contribution of agency channel in distribution mix has improved over last couple of years.",
+                    "Emerging business channel is small but growing fast with good investment and results; direct/website channel investment will continue and is expected to become a formidable force.",
+                    "Q4 industry-wide sluggishness attributed to geopolitical events; banca channel met internal budget for the year despite Q4 dip; company focuses on annual rather than quarterly/monthly numbers and met its ~13% annual growth guidance, with 3-year CAGR slightly higher.",
+                    "No confirmation of RBI communication on open-architecture bancassurance; RBI draft guidelines (public domain for a couple of months, expected effective July 1) do not mention open architecture; company confident in ability to adapt to any regulatory change given 25-year track record.",
+                    "No target to reduce SBI's contribution to distribution mix; rather, tapping additional opportunity in agency and emerging business channels, whose higher growth will organically increase their share — approximately 3-4% shift from banca to agency/emerging channels over the last 2 years, expected to continue in a similar trend.",
+                    "New agents hired are trained via a robust in-house system (not open architecture in agency); growth in agency contribution comes from both increased agent count and improved productivity; newly opened branches take time to breakeven but are on track and satisfactory; specific branch/vintage contribution numbers not disclosed.",
+                    "Own website online channel growth for the full year is in the range of 48%-50%; company will continue to focus more on this channel."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SUP",
+              "title": "Supply Chain & Operations",
+              "key_figures": [
+                {
+                  "label": "Pro forma submission to regulator",
+                  "value": "2",
+                  "unit": "financial years",
+                  "period": null,
+                  "kind": "reported"
+                }
+              ],
+              "subsections": []
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [
+                {
+                  "label": "Online business channel growth (until 9 months)",
+                  "value": "45",
+                  "unit": "%",
+                  "period": "9M FY26 YoY",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": []
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & Ind AS Transition",
+              "key_figures": [
+                {
+                  "label": "Prior year individual APE / retail growth rate",
+                  "value": "13.2",
+                  "unit": "%",
+                  "period": "FY25 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Company age",
+                  "value": "25",
+                  "unit": "years",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "GST impact on VNB margin (half year)",
+                  "value": "150",
+                  "unit": "bps",
+                  "period": "H1/half year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Full year GST impact on VNB margin (implied)",
+                  "value": "300",
+                  "unit": "bps",
+                  "period": "FY26 hypothetical full year",
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Ind AS transition",
+                  "points": [
+                    "The year marked a significant regulatory shift for the life insurance industry including GST exemptions and the regulators' announcement on transitioning to Indian Accounting Standards (Ind AS) framework, aimed at enhancing transparency and quality of financial information.",
+                    "Company has adopted a phased and well-governed approach to Ind AS transition and proposes to seek regulatory forbearance for adoption from April 1, 2027, with comprehensive preparatory measures already initiated.",
+                    "Company has submitted pro forma Ind AS financials to the regulator for the last two financial years and will be prepared to launch into the IFRS/Ind AS regime from next fiscal year onward.",
+                    "No new KPI changes anticipated to be disclosed at this point; management will observe how the framework evolves over the next 2-3 years before introducing new KPIs, given implications for business strategy.",
+                    "Company is also assessing regulatory discussions around Risk-Based Capital (RBC) for future introduction and will respond at the appropriate time."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [
+                {
+                  "label": "13th month persistency",
+                  "value": "87.9",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "49th month persistency",
+                  "value": "69.1",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "13th month persistency improvement",
+                  "value": "53",
+                  "unit": "bps",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "49th month persistency improvement",
+                  "value": "107",
+                  "unit": "bps",
+                  "period": "FY26 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Death claim settlement ratio",
+                  "value": "99.4",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Misselling ratio",
+                  "value": "0.02",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "External risk factors",
+                  "points": [
+                    "Geopolitical events over the last two months have caused volatility in equity and fixed income markets, impacting customer behavior, though mutual fund inflows remain robust and company sales growth in February and March remained decent.",
+                    "Entire insurance sector saw sluggish Q4 growth, linked to geopolitical events globally.",
+                    "GST impact (effective from business written after 22nd September) increased cost ratios and required product-mix/margin management to offset; a permanent embedded cost going forward, with full-year impact to be seen in FY27.",
+                    "Revised Labour Law/Labour Code is a new cost item impacting FY26 operating expenses.",
+                    "Volatility in yield curve makes current interest rate levels not seen as sustainable, affecting non-par product pricing decisions.",
+                    "Potential regulatory push toward open-architecture bancassurance (raised in media interview by Department of Financial Services Secretary) is being monitored; no confirmed information beyond public domain RBI draft guidelines.",
+                    "Potential future regulatory changes from Ind AS/IFRS 17 and Risk-Based Capital (RBC) framework being monitored for capital and reporting implications."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [
+                {
+                  "label": "Targeted future growth rate (APE/retail)",
+                  "value": "14",
+                  "unit": "%",
+                  "period": "next 3-5 years",
+                  "kind": "target"
+                },
+                {
+                  "label": "Historical CAGR (last 3-5 years)",
+                  "value": "14",
+                  "unit": "%",
+                  "period": "last 3-5 years",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Banca Credit Life growth (reasonable estimate)",
+                  "value": "14",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "guidance"
+                },
+                {
+                  "label": "VNB margin like-to-like starting point if GST implemented full year",
+                  "value": "26",
+                  "unit": "%",
+                  "period": "FY27 hypothetical",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Growth guidance",
+                  "points": [
+                    "Company intends to maintain APE/individual rated premium growth rate at around 14%, consistent with its 3-5 year CAGR, going forward.",
+                    "14% growth will be an optimum mix of agency growth and banca growth; management does not disclose channel-specific growth targets.",
+                    "Growth for FY26 was 13.2%, roughly in line with ~13% annual guidance despite a sluggish Q4 and market volatility."
+                  ]
+                },
+                {
+                  "label": "Margin guidance",
+                  "points": [
+                    "VoNB margin guidance range of 26%-28% reiterated for coming years, with an endeavor to report above 27%.",
+                    "Management declined to shift the margin guidance period from FY27-FY28 to FY27-FY29 when asked; reiterated FY27-FY28 guidance stands.",
+                    "Margin guidance factors in continued product-mix improvement to offset GST-related cost pressure while maintaining ~14% growth."
+                  ]
+                },
+                {
+                  "label": "Cost ratio outlook",
+                  "points": [
+                    "Opex ratio impact from GST will be a full-year effect in FY27 versus half-year in FY26, but management expects no material further increase in opex ratio beyond current levels due to other cost-rationalization measures, even as branch and IT infrastructure investment continues."
+                  ]
+                },
+                {
+                  "label": "Product launch guidance",
+                  "points": [
+                    "Deferred annuity product targeted for launch by June (Q1 FY27), or by the next quarter if delayed."
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "APE / Individual rated premium growth",
+              "horizon": "next 3-5 years",
+              "statement": "We intend to maintain the growth rate at around 14%, which has been our CAGR for the last 3 to 5 years, and we will continue to maintain this kind of growth rate in coming year also.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "VoNB margin",
+              "horizon": "FY27-FY28",
+              "statement": "We expect our margin will continue to be in a similar range that we maintain, about 26% to 28% range, and our endeavor is to report the margin above 27%.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Opex ratio",
+              "horizon": "FY27",
+              "statement": "Next year opex will reflect the full-year GST impact (versus half-year in FY26), but it will not have much further impact as far as opex ratio is concerned for the company due to other cost-rationalization measures.",
+              "specificity": "vague",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Deferred annuity product launch",
+              "horizon": "Q1 FY27 / next quarter",
+              "statement": "Our endeavor is to launch this deferred annuity product in this quarter itself. So we are aiming to go live by June, we should launch the deferred annuity. Otherwise, we'll go to the next quarter.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Ind AS / IFRS adoption",
+              "horizon": "April 1, 2027",
+              "statement": "The company has adopted a phased and well-governed approach to Ind AS transition and proposes to seek regulatory forbearance for an adoption from April 1, 2027, with comprehensive preparatory measures already initiated.",
+              "specificity": "specific",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Distribution mix shift (banca to agency/emerging)",
+              "horizon": "coming years",
+              "statement": "In last 2 years, we have seen approximately 3% to 4% shift from banca to agency and emerging businesses, and we expect the similar trend in coming years.",
+              "specificity": "specific",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Banca share of SBI",
+              "horizon": "long term",
+              "statement": "We are not targeting any reduction from SBI; what we are targeting is tapping additional opportunity on the agency and emerging business channel.",
+              "specificity": "vague",
+              "direction": "flat",
+              "status": "new"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "Geopolitical volatility impacting equity/fixed income markets and customer behavior",
+              "status": "new",
+              "note": "Last two months of geopolitical events caused market volatility, but MF inflows remained robust and company sales in Feb-March were decent."
+            },
+            {
+              "risk": "Sluggish industry-wide Q4 growth",
+              "status": "new",
+              "note": "Entire insurance sector had a sluggish Q4, linked to global geopolitical events; company still met ~13% annual guidance."
+            },
+            {
+              "risk": "GST cost impact on commissions and margins",
+              "status": "escalated",
+              "note": "GST impact (from business written after Sept 22) increased opex/cost ratios and pressured VNB margin; full-year impact expected in FY27; company has offset it via product mix and interest rate benefits."
+            },
+            {
+              "risk": "Revised Labour Law / Labour Code cost impact",
+              "status": "new",
+              "note": "New one-off cost item impacting FY26 operating expense ratio alongside GST."
+            },
+            {
+              "risk": "Interest rate / yield curve volatility affecting non-par pricing",
+              "status": "stable",
+              "note": "Current yield levels seen as not sustainable; company monitors and re-prices non-par products dynamically when it sees sustainable yield levels, balancing customer benefit."
+            },
+            {
+              "risk": "Potential mandate for open-architecture bancassurance",
+              "status": "new",
+              "note": "Raised via media interview by Department of Financial Services Secretary; RBI draft guidelines in public domain (effective ~July 1) do not mention open architecture; company has no additional information but is confident in navigating any regulatory change given 25-year track record."
+            },
+            {
+              "risk": "Regulatory shift to Ind AS / IFRS 17 and Risk-Based Capital (RBC)",
+              "status": "new",
+              "note": "Company preparing via phased approach and forbearance request for April 1, 2027 adoption; also monitoring RBC discussions for capital implications."
+            },
+            {
+              "risk": "Persistency drop in 61st month cohort",
+              "status": "new",
+              "note": "Likely linked to ULIP policies sold during the COVID period."
+            }
+          ],
+          "themes": [
+            {
+              "label": "Product mix shift (non-ULIP push)",
+              "direction": "positive",
+              "note": "Company continues shifting product mix toward non-par, par and protection segments to improve profitability, with par APE growing 133% YoY and guaranteed non-par contributing 19% of individual APE.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "GST/regulatory cost impact",
+              "direction": "negative",
+              "note": "GST (effective post-Sept 22) and revised Labour Law raised opex ratio from 5.3% to 6.1% and total cost ratio from 9.7% to 10.6%, with full-year GST impact still to come in FY27.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Margin resilience via mix optimization",
+              "direction": "positive",
+              "note": "Despite GST impact, VoNB margin held at 27.5% (29% ex-GST), with guidance maintained at 26%-28% range and endeavor to report above 27%.",
+              "section_ref": "GUID"
+            },
+            {
+              "label": "Agency channel expansion",
+              "direction": "positive",
+              "note": "120 new branches opened and 1,20,000+ agents added gross, driving 15% agency individual APE growth and improved productivity.",
+              "section_ref": "GEO"
+            },
+            {
+              "label": "Protection segment momentum",
+              "direction": "positive",
+              "note": "Pure protection category grew 122% on individual APE basis with sum assured growth of 62%, reflecting rising demand for comprehensive protection.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Ind AS/IFRS transition preparedness",
+              "direction": "neutral",
+              "note": "Company adopted a phased approach, seeking regulatory forbearance for Ind AS adoption from April 1, 2027, with pro forma financials already submitted for two years.",
+              "section_ref": "STRAT"
+            },
+            {
+              "label": "Open architecture / bancassurance regulatory risk",
+              "direction": "mixed",
+              "note": "Media reports of a push for open-architecture bancassurance are being monitored; RBI draft guidelines in public domain do not mention open architecture, and company expresses confidence in navigating any regulatory change.",
+              "section_ref": "RISK"
+            }
+          ],
+          "key_takeaways": [
+            "New business premium stands at INR425.5 billion with a growth of 20% and private market share of 21.4%.",
+            "Individual rated new business premium stands at INR219 billion, with a growth of 13% and private market share of 22.9%.",
+            "Gross written premium stands at INR1,012.9 billion, with a growth of 19%.",
+            "Profit after tax for the current year grew by 2%, standing at INR24.7 billion as compared to the previous year.",
+            "Value of new business stands at INR66.7 billion with a growth of 12%. VoNB margin stands at 27.5% for the year ended March 31, 2026.",
+            "Indian embedded value for the company as on March 31, 2026, stands at INR807.9 billion.",
+            "Our assets under management stands at INR4.9 trillion with a growth of 9% over last year.",
+            "Solvency ratio of 1.90 as against the regulatory requirement of 1.50."
+          ],
+          "pressing_questions": [
+            "Is that operating assumption changes that are kind of a negative in the VNB walk leading to some bit of a reset in persistency assumptions or are there other factors behind this marginal operating changes?",
+            "If we look back at the 10-year track record broken into two 5-year periods, what would be the expected retail APE growth or VNB/margin trajectory for the next 5 years?",
+            "On the ULIP side, are you selling the higher sum assured ULIPs (20x, 30x) or only vanilla 10x cover products, and do you plan to launch higher sum assured ULIPs this year?",
+            "Is there anything you can share regarding the Department of Financial Services Secretary's remarks on banks adopting open architecture, and what is the company's distribution strategy if such a mandate is introduced?",
+            "Has there been any communication from RBI (beyond public domain draft guidelines) about open architecture or offering more products at the bancassurance channel?",
+            "With costs and one-time impacts in this year's margin, and now moving to a more favorable product mix, should the VNB margin guidance be shifted from FY27-FY28 to FY27-FY29?",
+            "In the EV walk, how much of the strong positive operating variance is due to expenses, persistency and mortality, and why is there a divergence between EV operating variance and VNB assumption strengthening?",
+            "With solvency at 190% versus an internal working level of 180%, what are the thoughts on capital needs and how would any gap be bridged?",
+            "Can you split the economic variance between debt and equity?",
+            "What would be the VNB contribution across distribution channels if the FY23 product/channel mix and cost structure were assumed for the last two years?",
+            "What are the attachment rates for Credit Life business at SBI, and what efforts are being made to grow this relatively high-margin business given softer growth in FY26?",
+            "Can you break the operating variance into mortality, persistency, expense and other components?",
+            "What are initial thoughts on how KPIs will look for SBI Life under the IFRS/Ind AS regime?",
+            "Given the January launch of a new non-par product, how do you expect non-par as a category to move from here?",
+            "Can you provide data on online channel growth for Q4/full year and the Credit Life attachment rate on home loans?",
+            "If moving toward non-banca channels increases their mix share, would that have a negative impact on margins on a ceteris paribus basis, given banca is assumed to be a higher-margin channel?",
+            "Can you quantify how much of the opex ratio deviation (5.3% to 6.1%) is attributable to GST versus the new Labour Code?"
+          ]
+        }
+      ]
     }
   }
 }
