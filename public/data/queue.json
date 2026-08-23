@@ -1,15 +1,30 @@
 {
   "date": "2026-08-23",
-  "pending": [],
-  "processed": 9,
+  "pending": [
+    "ASTRAZEN",
+    "544826",
+    "JNPR",
+    "KMEW"
+  ],
+  "processed": 15,
   "stats": {
     "date": "2026-08-23",
     "discovered": 2,
     "carried_over": 5,
     "queued_total": 6,
     "processing_today": 6,
-    "pending_tomorrow": 0,
+    "pending_tomorrow": 4,
     "cap": 40,
-    "already_processed_today": 9
+    "already_processed_today": 15,
+    "added_today": 0,
+    "failed_today": 6
+  },
+  "added": 0,
+  "failed": 6,
+  "retries": {
+    "544826": 5,
+    "ASTRAZEN": 5,
+    "JNPR": 3,
+    "KMEW": 1
   }
 }
