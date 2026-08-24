@@ -1,15 +1,32 @@
 {
   "date": "2026-08-24",
-  "pending": [],
-  "processed": 0,
+  "pending": [
+    "JNPR",
+    "KMEW",
+    "ARVIND",
+    "CESC",
+    "VADILALIND"
+  ],
+  "processed": 10,
   "stats": {
     "date": "2026-08-24",
     "discovered": 4,
     "carried_over": 4,
     "queued_total": 8,
     "processing_today": 8,
-    "pending_tomorrow": 0,
+    "pending_tomorrow": 5,
     "cap": 40,
-    "already_processed_today": 0
+    "already_processed_today": 10,
+    "added_today": 3,
+    "failed_today": 7
+  },
+  "added": 3,
+  "failed": 7,
+  "retries": {
+    "JNPR": 4,
+    "KMEW": 2,
+    "ARVIND": 1,
+    "CESC": 1,
+    "VADILALIND": 1
   }
 }
