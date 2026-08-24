@@ -318966,6 +318966,2784 @@
           ]
         }
       ]
+    },
+    "BRIGHOTEL": {
+      "company": "Brigade Hotel Ventures Ltd",
+      "ticker": "BRIGHOTEL",
+      "industry": "Hotels & Resorts",
+      "country": "India",
+      "about": "Brigade Hotel Ventures Limited is the owner and developer of hotels in key cities in India, primarily across South India.[1]",
+      "reported_pnl": {
+        "basis": "consolidated",
+        "periods": [
+          "Sep 2024",
+          "Dec 2024",
+          "Mar 2025",
+          "Jun 2025",
+          "Sep 2025",
+          "Dec 2025",
+          "Mar 2026",
+          "Jun 2026"
+        ],
+        "rows": [
+          {
+            "label": "Sales",
+            "values": [
+              "108",
+              "124",
+              "134",
+              "124",
+              "126",
+              "139",
+              "136",
+              "127"
+            ]
+          },
+          {
+            "label": "Expenses",
+            "values": [
+              "71",
+              "81",
+              "84",
+              "83",
+              "89",
+              "91",
+              "88",
+              "85"
+            ]
+          },
+          {
+            "label": "Operating Profit",
+            "values": [
+              "37",
+              "43",
+              "50",
+              "41",
+              "37",
+              "47",
+              "49",
+              "42"
+            ]
+          },
+          {
+            "label": "OPM %",
+            "values": [
+              "35%",
+              "35%",
+              "38%",
+              "33%",
+              "30%",
+              "34%",
+              "36%",
+              "33%"
+            ]
+          },
+          {
+            "label": "Other Income",
+            "values": [
+              "0",
+              "1",
+              "1",
+              "1",
+              "4",
+              "4",
+              "9",
+              "4"
+            ]
+          },
+          {
+            "label": "Interest",
+            "values": [
+              "18",
+              "17",
+              "19",
+              "19",
+              "14",
+              "9",
+              "10",
+              "9"
+            ]
+          },
+          {
+            "label": "Depreciation",
+            "values": [
+              "11",
+              "14",
+              "14",
+              "13",
+              "14",
+              "13",
+              "14",
+              "14"
+            ]
+          },
+          {
+            "label": "Profit before tax",
+            "values": [
+              "9",
+              "13",
+              "18",
+              "10",
+              "14",
+              "29",
+              "34",
+              "23"
+            ]
+          },
+          {
+            "label": "Tax %",
+            "values": [
+              "25%",
+              "24%",
+              "27%",
+              "26%",
+              "25%",
+              "25%",
+              "26%",
+              "25%"
+            ]
+          },
+          {
+            "label": "Net Profit",
+            "values": [
+              "7",
+              "10",
+              "13",
+              "7",
+              "11",
+              "22",
+              "25",
+              "17"
+            ]
+          },
+          {
+            "label": "EPS in Rs",
+            "values": [
+              "0.19",
+              "0.30",
+              "0.40",
+              "0.22",
+              "0.24",
+              "0.53",
+              "0.60",
+              "0.42"
+            ]
+          }
+        ],
+        "source_url": "https://www.screener.in/company/BRIGHOTEL/consolidated/#quarters",
+        "captured_at": "2026-08-24T22:34:00.648Z"
+      },
+      "checked_at": "2026-08-24T22:43:37.398Z",
+      "quarters": [
+        {
+          "company": "Brigade Hotel Ventures Ltd",
+          "ticker": "BRIGHOTEL",
+          "industry": "Hotels & Resorts",
+          "country": "India",
+          "concall_date": "2026-08-11",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=fb0ca618-38ff-48ff-a2ca-2588807292f5.pdf",
+          "model": "anthropic.claude-sonnet-5",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-24T22:39:07.333Z",
+          "summary": "Q1 FY27 saw geopolitical disruption (West Asia conflict) impact international travel and MICE/F&B, but domestic demand resilience drove ADR-led RevPAR and EBITDA growth of 9%, with PAT up 140%. Management expects a buoyant pickup in Q2/Q3 (especially September) as postponed MICE events return, and reiterated confidence in achieving mid-teens like-to-like growth for FY27 despite the Q1 shortfall, aided by the WTC Chennai Courtyard launch and continued deleveraging/expansion plans through FY31.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "Total income (consolidated)",
+                  "value": "131",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total income growth YoY",
+                  "value": "5",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA (consolidated)",
+                  "value": "46",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA growth YoY",
+                  "value": "9",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin",
+                  "value": "34.8",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "GST 2.0 impact on EBITDA margin",
+                  "value": "1.6",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Profit after tax",
+                  "value": "17",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Profit after tax (prior year)",
+                  "value": "7",
+                  "unit": "INR crores",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT growth YoY",
+                  "value": "140",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ARR",
+                  "value": "7,241",
+                  "unit": "INR",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ARR growth YoY",
+                  "value": "7",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Occupancy",
+                  "value": "75.7",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Occupancy growth YoY",
+                  "value": "2",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "RevPAR",
+                  "value": "5,479",
+                  "unit": "INR",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "RevPAR growth YoY",
+                  "value": "9",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net cash position",
+                  "value": "108",
+                  "unit": "INR crores",
+                  "period": "as of 30 June 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "IPO proceeds deployed toward debt repayment",
+                  "value": "468.1",
+                  "unit": "INR crores",
+                  "period": "post-IPO",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Finance cost",
+                  "value": "8.7",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Finance cost (prior year)",
+                  "value": "18.9",
+                  "unit": "INR crores",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Finance cost reduction",
+                  "value": "over 50",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Interest savings",
+                  "value": "24",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Blended cost of debt",
+                  "value": "8.25",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Institutional debt",
+                  "value": "effectively none",
+                  "unit": null,
+                  "period": "as of 30 June 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Portfolio ARR (FY26 comparable)",
+                  "value": "6,761",
+                  "unit": "INR",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue impact from cancellations",
+                  "value": "14",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue impact as % of overall revenue",
+                  "value": "10",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "F&B contribution to overall top line",
+                  "value": "32",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total income (consolidated)",
+                  "value": "INR131 crores",
+                  "unit": "INR",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total income growth YoY",
+                  "value": "5%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA (consolidated)",
+                  "value": "INR46 crores",
+                  "unit": "INR",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA growth YoY",
+                  "value": "9%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin",
+                  "value": "34.8%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "GST 2.0 impact on EBITDA margin",
+                  "value": "1.6%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Profit after tax",
+                  "value": "INR17 crores",
+                  "unit": "INR",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Profit after tax (prior year)",
+                  "value": "INR7 crores",
+                  "unit": "INR",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT growth YoY",
+                  "value": "140%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ARR",
+                  "value": "INR7,241",
+                  "unit": "INR",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ARR growth YoY",
+                  "value": "7%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Occupancy",
+                  "value": "75.7%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Occupancy growth YoY",
+                  "value": "2%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "RevPAR",
+                  "value": "INR5,479",
+                  "unit": "INR",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "RevPAR growth YoY",
+                  "value": "9%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net cash position",
+                  "value": "INR108 crores",
+                  "unit": "INR",
+                  "period": "as of 30 June 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "IPO proceeds deployed toward debt repayment",
+                  "value": "INR468.1 crores",
+                  "unit": "INR",
+                  "period": "post-IPO",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Finance cost",
+                  "value": "INR8.7 crores",
+                  "unit": "INR",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Finance cost (prior year)",
+                  "value": "INR18.9 crores",
+                  "unit": "INR",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Finance cost reduction",
+                  "value": "over 50%",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Interest savings",
+                  "value": "INR24 crores",
+                  "unit": "INR",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Blended cost of debt",
+                  "value": "8.25%",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Portfolio ARR (FY26 comparable)",
+                  "value": "INR6,761",
+                  "unit": "INR",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue impact from cancellations",
+                  "value": "INR14 crores",
+                  "unit": "INR",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue impact as % of overall revenue",
+                  "value": "10%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "F&B contribution to overall top line",
+                  "value": "32%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Portfolio occupancy (stable)",
+                  "value": "~76%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Portfolio occupancy YoY improvement",
+                  "value": "74.5% to 76%",
+                  "unit": "%",
+                  "period": "Q1 FY26 to Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ibis Styles occupancy (year 1, half year)",
+                  "value": "40%",
+                  "unit": "%",
+                  "period": "first half year of operations",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Other hotels F&B contribution average",
+                  "value": "~30%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "FTA contribution to room arrivals",
+                  "value": "30%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "FTA contribution (previous mix)",
+                  "value": "40%",
+                  "unit": "%",
+                  "period": "prior period",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Renewable energy usage across portfolio",
+                  "value": "61%",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Renewable energy usage - top hotels",
+                  "value": "above 90%",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total planned capex",
+                  "value": "INR3,600 crores",
+                  "unit": "INR",
+                  "period": "multi-year (through expansion)",
+                  "kind": "target"
+                },
+                {
+                  "label": "Capex deployed FY26",
+                  "value": "INR400 crores",
+                  "unit": "INR",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capex planned FY27",
+                  "value": "INR500 crores",
+                  "unit": "INR",
+                  "period": "FY27",
+                  "kind": "target"
+                },
+                {
+                  "label": "Capex spent in Q1 FY27",
+                  "value": "INR53 crores",
+                  "unit": "INR",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capex on CWIP",
+                  "value": "INR45 crores",
+                  "unit": "INR",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capex on renovation",
+                  "value": "INR3.5 crores",
+                  "unit": "INR",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capex on new restaurant Project Grain",
+                  "value": "INR4 crores",
+                  "unit": "INR",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Remaining FY27 capex (next 3 quarters)",
+                  "value": "~INR350 crores",
+                  "unit": "INR",
+                  "period": "FY27 (H2/remaining quarters)",
+                  "kind": "target"
+                },
+                {
+                  "label": "Funding mix - borrowing",
+                  "value": "60%",
+                  "unit": "%",
+                  "period": "multi-year",
+                  "kind": "target"
+                },
+                {
+                  "label": "Funding mix - internal accruals",
+                  "value": "40%",
+                  "unit": "%",
+                  "period": "multi-year",
+                  "kind": "target"
+                },
+                {
+                  "label": "Internal accruals expected contribution",
+                  "value": "over INR1,000 crores",
+                  "unit": "INR",
+                  "period": "coming years",
+                  "kind": "target"
+                },
+                {
+                  "label": "Portfolio ADR threshold target",
+                  "value": "INR7,500",
+                  "unit": "INR",
+                  "period": "ongoing",
+                  "kind": "target"
+                },
+                {
+                  "label": "F&B cancellation split - F&B portion",
+                  "value": "60",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Drivers of profit growth",
+                  "points": [
+                    "ADR up 7%, occupancy up 2%, RevPAR and EBITDA both up 9%, PAT up 140% from INR7 crores to INR17 crores.",
+                    "RevPAR growth was rate-led rather than occupancy-led, reflecting quality/positioning of assets rather than a favourable demand cycle.",
+                    "Finance cost fell over 50% YoY (INR18.9 crores to INR8.7 crores) and was the single biggest driver of PAT more than doubling this quarter.",
+                    "For FY26 as a whole, interest savings were of the order of INR24 crores at a blended cost of debt of ~8.25%."
+                  ]
+                },
+                {
+                  "label": "Balance sheet/deleveraging",
+                  "points": [
+                    "Deployed INR468.1 crores of IPO proceeds towards debt repayment, leaving effectively no institutional debt on the books.",
+                    "Net cash position of ~INR108 crores as at 30 June 2026, reflecting continued strengthening of balance sheet."
+                  ]
+                },
+                {
+                  "label": "Cancellation impact",
+                  "points": [
+                    "INR14 crores impact from cancellations, ~10% of overall revenue, driven mainly by MICE event cancellation/postponement.",
+                    "Of the INR14 crores cancellation impact, roughly 60% was related to F&B and the balance to rooms; rooms were quickly replaced with domestic corporate business but F&B business could not be replaced."
+                  ]
+                },
+                {
+                  "label": "Revenue mix",
+                  "points": [
+                    "F&B contributes about 32% of overall top line.",
+                    "MICE contribution to room bookings is roughly 15% to 18% of business on a portfolio level, varying hotel to hotel."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "Bangalore ARR growth",
+                  "value": "3",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bangalore occupancy growth",
+                  "value": "8",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bangalore RevPAR growth",
+                  "value": "10",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bangalore occupancy (example asset)",
+                  "value": "84",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Portfolio occupancy (stable)",
+                  "value": "~76",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Portfolio occupancy YoY improvement",
+                  "value": "74.5 to 76",
+                  "unit": "%",
+                  "period": "Q1 FY26 to Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Hotels with occupancy above 80%",
+                  "value": "5 of 9",
+                  "unit": "count",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ibis Styles occupancy (year 1, half year)",
+                  "value": "40",
+                  "unit": "%",
+                  "period": "first half year of operations",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ibis Styles occupancy (year 2)",
+                  "value": "70s",
+                  "unit": "%",
+                  "period": "second year of operations",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Kochi ARR (Q1 FY26)",
+                  "value": "4,200",
+                  "unit": "INR",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Kochi ARR (Q1 FY27)",
+                  "value": "4,650",
+                  "unit": "INR",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Kochi occupancy (Q1 FY26)",
+                  "value": "71",
+                  "unit": "%",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Kochi occupancy (recent, Q2 trend)",
+                  "value": "high 60s",
+                  "unit": "%",
+                  "period": "Q2 FY27 (in progress)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Kochi ADR growth expectation",
+                  "value": "minimum 10",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Sheraton Grand ADR difference",
+                  "value": "INR500 lower",
+                  "unit": "INR",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Sheraton Grand rooms:F&B revenue split",
+                  "value": "approximately 50-50",
+                  "unit": null,
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Other hotels F&B contribution average",
+                  "value": "~30",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "FTA contribution to room arrivals",
+                  "value": "30",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "FTA contribution (previous mix)",
+                  "value": "40",
+                  "unit": "%",
+                  "period": "prior period",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Bangalore market strategy",
+                  "points": [
+                    "Focus over here is to maintain occupancy now and focus on positioning only; ADR increase expected over coming three quarters.",
+                    "Strategy included contacting domestic businesses via locally negotiated rates, focusing on staycations since MICE business over weekends was reduced, and focusing on social events and weddings to displace lost foreign travel business."
+                  ]
+                },
+                {
+                  "label": "Portfolio occupancy dynamics",
+                  "points": [
+                    "Five of nine hotels have occupancy above 80%, indicating scope to grow occupancy from the remaining four hotels.",
+                    "ibis Styles (launched about a year ago) showing occupancy ramp from 40% in its first half-year to 70s in its second year, described as a normal ramp curve for a new hotel.",
+                    "Future growth is a play of both ARR and occupancy; when market mix dips (e.g., international business decreasing), management plays between occupancy and ADR to show overall RevPAR increase; booking window has significantly reduced making quarter-ahead forecasting harder, requiring more agile decisions."
+                  ]
+                },
+                {
+                  "label": "Kochi rebrand impact",
+                  "points": [
+                    "Kochi (Four Points by Sheraton rebranded to Courtyard by Marriott) saw rate increase to INR4,650 but a big dip in occupancy due to reduction in crew business (partly due to West Asia crisis) and due to rebranding requiring name changes in GDS systems.",
+                    "Since dip occurred in the rebranding quarter, Q2 is showing positive signs with occupancy already back to high 60s, expected to trend into 70s; minimum 10% ADR growth expected this year.",
+                    "Apart from Courtyard Kochi, every other property showed an increase in occupancy; Courtyard's dip pulled down the average portfolio occupancy number."
+                  ]
+                },
+                {
+                  "label": "F&B/MICE impact by property",
+                  "points": [
+                    "Largest F&B impact was at Sheraton Grand given its large banqueting capacity and 50-50 rooms:F&B revenue split; other hotels averaging ~30% F&B contribution saw a lesser impact.",
+                    "Across the country, the larger the MICE/catering capacity, the larger the impact from event cancellations/postponements."
+                  ]
+                },
+                {
+                  "label": "FTA mix and travel behavior",
+                  "points": [
+                    "FTA contribution to room arrivals dropped from a previous 60-40 domestic-foreign mix to now about 30% FTA (10% reduction).",
+                    "FTAs typically pay a better/higher ADR than domestic companies, which put some pressure on overall ADR as FTA mix declined."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MFG",
+              "title": "Manufacturing & Capacity",
+              "key_figures": [
+                {
+                  "label": "Renewable energy usage across portfolio",
+                  "value": "61",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Renewable energy usage - top hotels",
+                  "value": "above 90",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Sustainability",
+                  "points": [
+                    "Company now uses renewable energy for 61% of total energy needs across the portfolio, with several hotels already operating above 90% renewable energy usage, a metric tracked and improved as part of broader operating discipline."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [
+                {
+                  "label": "Bangalore ARR growth",
+                  "value": "3%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bangalore occupancy growth",
+                  "value": "8%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bangalore RevPAR growth",
+                  "value": "10%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bangalore occupancy (example asset)",
+                  "value": "84%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Kochi ARR (Q1 FY26)",
+                  "value": "INR4,200",
+                  "unit": "INR",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Kochi ARR (Q1 FY27)",
+                  "value": "INR4,650",
+                  "unit": "INR",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Kochi occupancy (Q1 FY26)",
+                  "value": "71%",
+                  "unit": "%",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Kochi ADR growth expectation",
+                  "value": "minimum 10%",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "WTC Chennai expected starting ADR",
+                  "value": "9,000",
+                  "unit": "INR",
+                  "period": "first 12 months of operations",
+                  "kind": "target"
+                },
+                {
+                  "label": "WTC Chennai expected stabilized occupancy",
+                  "value": "80",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "target"
+                }
+              ],
+              "subsections": []
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [
+                {
+                  "label": "Renovated bar and restaurant month-over-month growth",
+                  "value": "at least 100",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "MICE contribution to room bookings",
+                  "value": "15 to 18",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                }
+              ],
+              "subsections": []
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [
+                {
+                  "label": "Total keys under development",
+                  "value": "1,700",
+                  "unit": "keys",
+                  "period": "by FY31",
+                  "kind": "target"
+                },
+                {
+                  "label": "Portfolio keys expansion target",
+                  "value": "3,300",
+                  "unit": "keys",
+                  "period": "by FY31",
+                  "kind": "target"
+                },
+                {
+                  "label": "Current portfolio keys",
+                  "value": "1,600",
+                  "unit": "keys",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Luxury/upper-upscale mix (current)",
+                  "value": "14",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Luxury/upper-upscale mix target FY29",
+                  "value": "31",
+                  "unit": "%",
+                  "period": "FY29",
+                  "kind": "target"
+                },
+                {
+                  "label": "Luxury/upper-upscale mix target FY31",
+                  "value": "38",
+                  "unit": "%",
+                  "period": "FY31",
+                  "kind": "target"
+                },
+                {
+                  "label": "Total planned capex",
+                  "value": "3,600",
+                  "unit": "INR crores",
+                  "period": "multi-year (through expansion)",
+                  "kind": "target"
+                },
+                {
+                  "label": "Capex deployed FY26",
+                  "value": "400",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capex planned FY27",
+                  "value": "500",
+                  "unit": "INR crores",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Capex spent in Q1 FY27",
+                  "value": "53",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capex on CWIP",
+                  "value": "45",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capex on renovation",
+                  "value": "3.5",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capex on new restaurant Project Grain",
+                  "value": "4",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Remaining FY27 capex (next 3 quarters)",
+                  "value": "~350",
+                  "unit": "INR crores",
+                  "period": "FY27 (H2/remaining quarters)",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Funding mix - borrowing",
+                  "value": "60",
+                  "unit": "%",
+                  "period": "multi-year",
+                  "kind": "target"
+                },
+                {
+                  "label": "Funding mix - internal accruals",
+                  "value": "40",
+                  "unit": "%",
+                  "period": "multi-year",
+                  "kind": "target"
+                },
+                {
+                  "label": "Internal accruals expected contribution",
+                  "value": "over 1,000",
+                  "unit": "INR crores",
+                  "period": "coming years",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "WTC Chennai Courtyard key count",
+                  "value": "45",
+                  "unit": "keys",
+                  "period": "upon launch",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Luxury/upper-upscale mix (current)",
+                  "value": "14%",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Luxury/upper-upscale mix target FY29",
+                  "value": "31%",
+                  "unit": "%",
+                  "period": "FY29",
+                  "kind": "target"
+                },
+                {
+                  "label": "Luxury/upper-upscale mix target FY31",
+                  "value": "38%",
+                  "unit": "%",
+                  "period": "FY31",
+                  "kind": "target"
+                },
+                {
+                  "label": "Expected commissioning year for JW Marriott and Thiruvananthapuram hotels",
+                  "value": "2030",
+                  "unit": null,
+                  "period": "FY30",
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Portfolio expansion plan",
+                  "points": [
+                    "Clear growth runway with additional 1,700 keys under development, set to expand portfolio to 3,300 keys by FY31.",
+                    "Expansion anchored by brands like Grand Hyatt, InterContinental, JW Marriott, and Ritz-Carlton across Bangalore, Chennai, Hyderabad, and Kochi.",
+                    "This will lift luxury and upper upscale mix from 14% today to 31% by FY29 and 38% by FY31, positioning BHVL in the segment with strongest pricing power and demand-supply mismatch."
+                  ]
+                },
+                {
+                  "label": "New hotel launch - WTC Chennai Courtyard",
+                  "points": [
+                    "Launch of Courtyard by Marriott Chennai in the World Trade Center, a 45-key hotel, planned in Q3 (October) of FY27, strengthening footprint in a high-demand business district.",
+                    "Expected minimum starting ADR of INR9,000, growing in coming months; expected to stabilize quickly with stabilized occupancy of about 80% due to captive demand from walking-distance corporate tenants in World Trade Centre.",
+                    "Management is speaking to tenants in World Trade Centre to secure captive demand for the hotel all year round."
+                  ]
+                },
+                {
+                  "label": "Live project status updates",
+                  "points": [
+                    "Both Fairfield properties are under construction and well underway.",
+                    "Grand Hyatt (originally slated for FY28) will see a slight delay pending a few approvals.",
+                    "InterContinental hotel at Brigade Gateway is part of a mixed-use township, with dependency underway.",
+                    "Ritz-Carlton Vaikom is well underway; designs have been finalized.",
+                    "JW Marriott Chennai — excavation should start soon; the hotel is under approval.",
+                    "Trivandrum (Thiruvananthapuram) hotel is under design development, pending some information before finalizing design; still in planning phase.",
+                    "Tumkur Road property in Bangalore has made good progress; management is awaiting approvals to get started.",
+                    "Both JW Marriott and Thiruvananthapuram hotels expected to be commissioned by 2030."
+                  ]
+                },
+                {
+                  "label": "Capex phasing",
+                  "points": [
+                    "Of INR3,600 crores planned capex for expansion, INR400 crores already invested in FY26, with another INR500 crores expected in FY27.",
+                    "In Q1 FY27, ~INR53 crores was spent (INR45 crores CWIP, INR3.5 crores renovation, INR4 crores for new restaurant Project Grain); balance of FY27 capex (~INR350 crores) to be spent over the next three quarters, mainly in H2."
+                  ]
+                },
+                {
+                  "label": "Funding strategy",
+                  "points": [
+                    "Funding mix deliberately balanced: broadly 60% through borrowing and 40% through internal accruals.",
+                    "Internal accruals expected to contribute over INR1,000 crores across coming years as ARR grows, new assets ramp up, and operating leverage plays its role."
+                  ]
+                },
+                {
+                  "label": "M&A/acquisition",
+                  "points": [
+                    "Part of IPO proceeds is earmarked for a hotel acquisition; company is under discussion and hoping to conclude a transaction in FY27, subject to due diligence."
+                  ]
+                },
+                {
+                  "label": "Leadership changes and corporate milestones",
+                  "points": [
+                    "Manoj Agarwal, former COO, has resigned; replaced by Mr. Vinay Gupta, who joins as CEO of Brigade Hotel Ventures Limited. Vinay Gupta was previously GM of the company's first property, Grand Mercure Bangalore, and has since worked with Accor, SAMHI and InterGlobe, along with his own entrepreneurial venture.",
+                    "On 5th August, hosted 10th Annual General Meeting, the first as a listed company; Chairman Mr. M.R. Jaishankar and MD Ms. Nirupa Shankar shared insights on performance and strategic priorities.",
+                    "Strengthened engagement with investor/analyst community via an in-person interaction at a Bangalore property followed by site visits to select properties.",
+                    "Recognitions: MD Nirupa Shankar named to Fortune India's 100 Most Powerful Women list for second consecutive year and recognized by Business Today among India's most powerful women in 2025; Vineet Verma recognized among India's top 50 great people managers by Great Manager Institute in 2026.",
+                    "Property-level recognitions: Shine Spa at Sheraton Grand Bangalore Brigade Gateway awarded best hotel spa for South by Global Spa Magazine; Cafe G at Holiday Inn Chennai OMR IT Expressway and Grand Mercure Ahmedabad GIFT City honoured on IHC London and IIHM Hospitality Honours List for 2026."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Geopolitical/macro headwinds",
+                  "points": [
+                    "The conflict in West Asia remained the dominant factor through April and June; airspace disruptions and rerouting pushed up fares and journey times on several international/connecting routes.",
+                    "Energy and fuel costs stayed elevated and inflationary pressures persisted through the quarter.",
+                    "For an industry running on discretionary travel and event planning, a geopolitical shock of this nature is bound to have an impact.",
+                    "Booking window has significantly reduced, making it hard to forecast for the entire quarter, requiring more agile revenue management decisions."
+                  ]
+                },
+                {
+                  "label": "MICE/F&B softness",
+                  "points": [
+                    "F&B side saw performance impacted due to cancellation and postponement of large MICE events, not just for the company's hotels but across the entire city.",
+                    "MICE activity was soft on account of a comparatively dry event calendar during the quarter, worsened by geopolitical tensions.",
+                    "Management views this as temporary event-driven softness rather than a structural change in demand; large-scale MICE events come every alternate year, and Q4 FY27 is expected to be an aero show year benefiting MICE."
+                  ]
+                },
+                {
+                  "label": "FTA mix decline",
+                  "points": [
+                    "FTA contribution to room arrivals declined from a previous 60-40 domestic-foreign mix to about 30% FTA; FTAs typically pay higher ADR, so the mix shift put some pressure on ADR."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [
+                {
+                  "label": "Q2/September pickup expectation",
+                  "value": "buoyant",
+                  "unit": null,
+                  "period": "Q2 FY27/September",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Growth target FY27",
+                  "value": "mid-teens",
+                  "unit": "%",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Portfolio ADR threshold target",
+                  "value": "7,500",
+                  "unit": "INR",
+                  "period": "ongoing",
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Near-term outlook",
+                  "points": [
+                    "Better pickup seen in July and a very healthy pickup expected in September; buoyancy in the market with MICE events coming back, supporting the view that events were postponed rather than fully cancelled.",
+                    "Upcoming quarter (Q2 FY27) should be a lot more buoyant than Q1 FY27.",
+                    "Hopeful of making up lost revenue from Q1 in the second half of the year; Q4 FY27 looking extremely healthy as it is an aero show year with more MICE events.",
+                    "WTC Courtyard by Marriott Chennai launch, while a small hotel, should add to overall growth guidelines."
+                  ]
+                },
+                {
+                  "label": "Mid-teens growth reiteration",
+                  "points": [
+                    "Company has tried to maintain like-to-like growth in the mid-teens range; top line grew 5% in Q1 but this was impacted by the INR14 crores cancellation hit (~10% of top line) — absent that impact, mid-teens growth would have been achieved.",
+                    "Remaining part of the year looking good with buoyant bookings and larger MICE inquiries, especially in September; management putting in every effort to achieve mid-teens growth for FY27."
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "Capex FY27",
+              "horizon": "FY27",
+              "statement": "Expect to invest another INR500 crores in FY27 on the expansion capex plan",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "raised"
+            },
+            {
+              "metric": "Total planned capex",
+              "horizon": "multi-year (through FY31 expansion)",
+              "statement": "INR3,600 crores planned capex for expansion, of which INR400 crores already invested in FY26",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "lowered"
+            },
+            {
+              "metric": "Portfolio keys expansion",
+              "horizon": "FY31",
+              "statement": "Additional 1,700 keys under development, set to expand portfolio to 3,300 keys by FY31",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Luxury/upper-upscale mix",
+              "horizon": "FY29",
+              "statement": "Luxury and upper upscale mix to rise from 14% today to 31% by FY29",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Luxury/upper-upscale mix",
+              "horizon": "FY31",
+              "statement": "Luxury and upper upscale mix to rise to 38% by FY31",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Internal accruals contribution",
+              "horizon": "coming years",
+              "statement": "Internal accruals expected to contribute over INR1,000 crores across the coming years as ARR grows, new assets ramp up, and operating leverage plays its role",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "FY27 revenue growth (like-to-like)",
+              "horizon": "FY27",
+              "statement": "Company has tried to maintain a like-to-like growth of mid-teens range for FY27 and believes it will be able to do that, aided by strong H2 pickup",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Q2/Q3 FY27 demand momentum",
+              "horizon": "Q2-Q3 FY27",
+              "statement": "Seeing a better pickup in July and a very healthy pickup in September; upcoming quarter should be a lot more buoyant than Q1 FY27",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Q4 FY27 outlook",
+              "horizon": "Q4 FY27",
+              "statement": "Q4 of FY27 is looking extremely healthy because it is one of those aero show years with a lot of MICE events",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Kochi ADR growth",
+              "horizon": "FY27",
+              "statement": "Believe at least a minimum of 10% ADR growth this year for the Kochi (Courtyard by Marriott) property",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Bangalore ADR growth",
+              "horizon": "coming three quarters",
+              "statement": "Market becoming stronger as months go by; will have an increase in ADR over the coming three quarters in Bangalore",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Portfolio ADR threshold",
+              "horizon": "unspecified",
+              "statement": "Actively working to ensure overall ADR crosses the INR7,500 mark, not just for the portfolio but for individual hotels as well, to negate GST impact",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "WTC Chennai Courtyard opening",
+              "horizon": "Q3 FY27 (October)",
+              "statement": "Courtyard by Marriott in WTC Chennai planned to launch in October/Q3 of FY27",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "WTC Chennai Courtyard ADR/occupancy",
+              "horizon": "first 12 months",
+              "statement": "Expect a minimum starting ADR of INR9,000 growing in coming months, with stabilized occupancy of about 80% due to captive demand",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Grand Hyatt commissioning",
+              "horizon": "FY28 (delayed)",
+              "statement": "Slight delay in Grand Hyatt originally slated for FY28 due to pending approvals",
+              "specificity": "vague",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "JW Marriott and Thiruvananthapuram commissioning",
+              "horizon": "2030",
+              "statement": "Both JW Marriott and Thiruvananthapuram hotels should be commissioned by 2030",
+              "specificity": "vague",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Hotel acquisition",
+              "horizon": "FY27",
+              "statement": "Hoping to conclude a hotel acquisition transaction (funded from IPO proceeds) in FY27, subject to due diligence",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "New restaurant Project Grain revenue reporting",
+              "horizon": "next quarter",
+              "statement": "Would give it another quarter before starting to report numbers on the newly renovated bar/restaurant, having seen at least 100% month-on-month growth since opening",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Portfolio average ADR",
+              "horizon": "FY29",
+              "statement": "Operating portfolio ARR stands at approx. INR7,500; as more luxury properties are commissioned through FY29 and beyond, this is projected to exceed INR10,000 for an average ADR by FY29",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Portfolio average ADR",
+              "horizon": "FY31",
+              "statement": "Projected to surpass INR14,000 by FY31, nearly double of what it is today",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "EBITDA margin (sustainable/normalized)",
+              "horizon": "ongoing",
+              "statement": "If not hit by one-off cases (input tax credit, property tax) and GST, EBITDA margin would have hit about 37.5% to 38%, in line with plan",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Courtyard by Marriott Chennai opening",
+              "horizon": "FY27",
+              "statement": "Targeting Q3 opening for the Courtyard by Marriott in Chennai, World Trade Center",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Kochi hotel rebrand (Four Points to Courtyard by Marriott)",
+              "horizon": "next quarter",
+              "statement": "Plan to upgrade Kochi hotel from Four Points by Sheraton to Courtyard by Marriott brand in coming quarter to improve ADRs and profitability further; upgrade is in process and should happen very soon",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Portfolio occupancy",
+              "horizon": "unspecified",
+              "statement": "Believe there is gap to move average portfolio occupancy from 78% to somewhere in mid-to-low 80s",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Hotels above INR7,500 ADR threshold",
+              "horizon": "unspecified",
+              "statement": "Goal is to bring all sub-INR7,500 hotels above INR7,500 so GST hit is not there in coming years; only one or two hotels will take time to breach that mark",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Domestic:International (FTA) business mix",
+              "horizon": "stabilized/unspecified",
+              "statement": "Ratio currently around 75:25 domestic:FTA, expected to go back to 30% FTA on a stabilized basis once conflict situation normalizes",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "MICE/large event bookings recovery",
+              "horizon": "later part of the year",
+              "statement": "Hopefully cancelled MICE/large events should come back at a later part in the year once things stabilize, but hard to predict what will return",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "no_mention"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "West Asia geopolitical conflict / airspace disruptions",
+              "status": "new",
+              "note": "Remained dominant factor through April-June, pushing up fares/journey times and elevating energy/fuel costs; impacted foreign travel and MICE demand."
+            },
+            {
+              "risk": "MICE/F&B event cancellations and postponements",
+              "status": "new",
+              "note": "Large MICE events cancelled/postponed across the city (not just company hotels), leading to INR14 crores revenue impact (~10% of top line); viewed as temporary event-driven softness, not structural."
+            },
+            {
+              "risk": "FTA mix decline",
+              "status": "new",
+              "note": "FTA contribution to room arrivals dropped from 40% to 30%, pressuring ADR since FTAs pay higher rates than domestic guests."
+            },
+            {
+              "risk": "Reduced booking window / forecasting difficulty",
+              "status": "new",
+              "note": "Booking window has significantly reduced, making it hard to forecast for the entire quarter, requiring more agile revenue management decisions."
+            },
+            {
+              "risk": "Kochi rebrand transition disruption",
+              "status": "new",
+              "note": "Occupancy dip at Courtyard Kochi due to reduced crew business and GDS system name changes during rebranding, though recovering in Q2."
+            },
+            {
+              "risk": "GST 2.0 margin impact",
+              "status": "new",
+              "note": "GST 2.0 had a 1.6% impact on EBITDA margin during the quarter; company working to push all hotels above INR7,500 ADR to negate this impact."
+            },
+            {
+              "risk": "Approval delays for pipeline projects",
+              "status": "new",
+              "note": "Grand Hyatt (originally FY28) delayed due to pending approvals; Tumkur Road and JW Marriott properties also awaiting approvals."
+            },
+            {
+              "risk": "Geopolitical war/conflict impacting international travel and F&B/MICE business",
+              "status": "no_mention",
+              "note": "Led to cancellations worth INR7-8 crores in Q4 FY26 (about 5% of quarter business), concentrated in events dependent on foreign travellers; similar cancellations of INR7-8 crores expected in Apr-Jun; greatest impact seen in March; international mix reduced from historical 70:30 to current 73:27 domestic:international."
+            },
+            {
+              "risk": "GST 2.0 impact on margins",
+              "status": "no_mention",
+              "note": "Impacted EBITDA margin by 1.4% in Q4 FY26 and 0.8% for FY26; arises from room nights sold below INR7,500 requiring GST input credit reversal; ~30% of revenue currently from such room nights, gradually reducing as ADR increases."
+            },
+            {
+              "risk": "Gas supply disruption (CNG/PNG)",
+              "status": "no_mention",
+              "note": "Disruption during March and partially continuing; managed via alternative fuel sources and electric induction cooking with no restaurant closures; situation has since been restored."
+            },
+            {
+              "risk": "One-off cost impacts (input tax credit, property tax)",
+              "status": "no_mention",
+              "note": "Additional one-time property tax hit of ~INR6 crores and input tax credit that could not be utilized impacted EBITDA margin for the year; excluding these, EBITDA margin would have been ~37.5-38%."
+            },
+            {
+              "risk": "Bangalore market demand compression due to absence of major event (Aero show)",
+              "status": "no_mention",
+              "note": "Absence of last year's Aero show plus March cancellations led to lower-paying groups filling demand and a lesser ADR increase for Bangalore hotels in Q4; described as one-off, with improvement seen from April onwards."
+            }
+          ],
+          "themes": [
+            {
+              "label": "Domestic demand resilience",
+              "direction": "positive",
+              "note": "Domestic corporate travel, weddings, and social events largely absorbed the shock of the West Asia crisis, holding up corporate budgets and pricing.",
+              "section_ref": "RISK"
+            },
+            {
+              "label": "Geopolitical/war disruption",
+              "direction": "negative",
+              "note": "West Asia conflict caused airspace disruptions, fare increases, reduced FTA mix (40%→30%), and INR14 crores revenue impact from MICE cancellations.",
+              "section_ref": "RISK"
+            },
+            {
+              "label": "GST 2.0 margin impact",
+              "direction": "negative",
+              "note": "GST 2.0 had a 1.6% impact on EBITDA margin during the quarter; company pushing hotels above INR7,500 ADR to negate this.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "ADR-led growth and premiumization",
+              "direction": "positive",
+              "note": "RevPAR growth this quarter was rate-led rather than occupancy-led, with ADR up 7% to INR7,241; portfolio ADR target to cross INR7,500.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Capacity expansion via rebranding and new builds",
+              "direction": "positive",
+              "note": "Kochi rebranded from Four Points to Courtyard by Marriott; WTC Chennai Courtyard launching Q3 FY27; pipeline to grow portfolio from 1,600 to 3,300 keys by FY31.",
+              "section_ref": "STRAT"
+            },
+            {
+              "label": "Disciplined capital allocation",
+              "direction": "positive",
+              "note": "Deployed INR468.1 crores of IPO proceeds to debt repayment leaving effectively no institutional debt and net cash of INR108 crores; funding mix balanced 60% debt/40% internal accruals.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Build vs acquire strategy",
+              "direction": "neutral",
+              "note": "Part of IPO proceeds earmarked for a hotel acquisition; company under discussion, hoping to conclude a transaction in FY27 subject to due diligence.",
+              "section_ref": "STRAT"
+            }
+          ],
+          "key_takeaways": [
+            "Consolidated EBITDA increased by 9% year-on-year to INR46 crores with EBITDA margin at 34.8%. GST 2.0 had an impact of 1.6% on the EBITDA margin during the quarter.",
+            "Profit after tax stood at INR17 crores as against INR7 crores in Q1 FY26, registering a 140% year-on-year growth.",
+            "ARR for the quarter was INR7,241 up 7% year-on-year, while occupancy stood at 75.7%. This resulted in RevPAR of INR5,479 representing a 9% year-on-year increase.",
+            "As of 30th June 2026, we had a net cash position of INR108 crores reflecting the continued strengthening of our balance sheet.",
+            "Finance cost for Q1 FY27 fell to INR8.7 crores from INR18.9 crores in Q1 FY26, a reduction of over 50%, the single biggest driver of PAT more than doubling this quarter.",
+            "Development pipeline entails a total Capex of approximately INR3,600 crores to build out ~1,700 upcoming keys by FY30 taking portfolio from 1,600 keys to 3,300 keys.",
+            "We had an impact of almost INR14 crores which was about 10% of our overall revenue due to West Asia crisis; better pickup seen in July and a very healthy pickup expected in September.",
+            "Leadership movement: Manoj Agarwal, former COO, has resigned and will be replaced by Mr. Vinay Gupta as CEO of Brigade Hotel Ventures Limited."
+          ],
+          "pressing_questions": []
+        },
+        {
+          "company": "Brigade Hotel Ventures Ltd",
+          "ticker": "BRIGHOTEL",
+          "industry": "Hotels & Resorts",
+          "country": "India",
+          "concall_date": "2026-05-05",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=5cfae73b-186a-42d8-8eb8-fc62d7bd5975.pdf",
+          "model": "anthropic.claude-sonnet-5",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-24T22:36:26.930Z",
+          "summary": "Management described FY'26 as a steady and encouraging year for India's hospitality sector on strong domestic demand, with Q4 total income up 8% YoY and EBITDA up 13% YoY to INR58 crores (39.7% margin). Near-term outlook flags war/geopolitical disruption and GST 2.0 impacting margins, but domestic demand resilience, ADR growth, upcoming rebranding (Kochi to Courtyard by Marriott) and new Chennai OMR property launch in FY'27, plus a large planned capex of ~INR3,600 crores, underpin a positive demand and ARR growth outlook through FY29-FY31.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "Total income growth",
+                  "value": "8",
+                  "unit": "% YoY",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ARR growth",
+                  "value": "7",
+                  "unit": "% YoY",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "RevPAR growth",
+                  "value": "6",
+                  "unit": "% YoY",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA",
+                  "value": "58",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA growth",
+                  "value": "13",
+                  "unit": "% YoY",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin",
+                  "value": "39.7",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Utilities as % of operating revenue",
+                  "value": "5",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Utilities as % of operating revenue",
+                  "value": "5.4",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated total income",
+                  "value": "146",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated total income",
+                  "value": "135",
+                  "unit": "INR crores",
+                  "period": "Q4 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated EBITDA",
+                  "value": "58",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated EBITDA",
+                  "value": "51",
+                  "unit": "INR crores",
+                  "period": "Q4 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "GST 2.0 impact on EBITDA margin",
+                  "value": "1.4",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT",
+                  "value": "25",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT",
+                  "value": "13",
+                  "unit": "INR crores",
+                  "period": "Q4 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated income",
+                  "value": "543",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated income",
+                  "value": "471",
+                  "unit": "INR crores",
+                  "period": "FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consolidated income growth",
+                  "value": "15",
+                  "unit": "% YoY",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA",
+                  "value": "192",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA",
+                  "value": "167",
+                  "unit": "INR crores",
+                  "period": "FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA growth",
+                  "value": "15",
+                  "unit": "% YoY",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Additional property tax expense impact on EBITDA",
+                  "value": "6",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operational EBITDA growth excluding property tax impact",
+                  "value": "19",
+                  "unit": "% YoY",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "GST 2.0 impact on EBITDA margin",
+                  "value": "0.8",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT",
+                  "value": "65",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT",
+                  "value": "24",
+                  "unit": "INR crores",
+                  "period": "FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net cash position",
+                  "value": "110",
+                  "unit": "INR crores",
+                  "period": "As of 31 March 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Payroll cost as % of P&L",
+                  "value": "19",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Utilities cost",
+                  "value": "5.5",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Hypothetical EBITDA margin excluding one-offs and GST",
+                  "value": "37.5-38",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Creditors reversal in other income",
+                  "value": "4.7",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Planned capex",
+                  "value": "3,600",
+                  "unit": "INR crores",
+                  "period": "multi-year",
+                  "kind": "target"
+                },
+                {
+                  "label": "Capex already invested",
+                  "value": "400",
+                  "unit": "INR crores",
+                  "period": "by FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capex funded via borrowings",
+                  "value": "60",
+                  "unit": "%",
+                  "period": "multi-year",
+                  "kind": "target"
+                },
+                {
+                  "label": "Internal accruals expected",
+                  "value": "over 1,000",
+                  "unit": "INR crores",
+                  "period": "coming years",
+                  "kind": "target"
+                },
+                {
+                  "label": "Interest costs reduction impact on net profitability",
+                  "value": "reduced",
+                  "unit": null,
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Interest on fixed deposit",
+                  "value": "increased",
+                  "unit": null,
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "F&B revenue decline",
+                  "value": "3",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue growth (quarterly, blended)",
+                  "value": "2",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ADR growth",
+                  "value": "7",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Room revenue growth",
+                  "value": "7",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operational revenue growth (full year)",
+                  "value": "12",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Cost efficiency drivers",
+                  "points": [
+                    "Performance driven by continued focus on cost efficiency and productivity-led initiatives across the portfolio.",
+                    "Interest costs have reduced due to loan repayments, positively impacting net profitability.",
+                    "Other income increase driven by interest on fixed deposits kept with the bank and INR4.7 crores towards creditors reversal which is no longer payable."
+                  ]
+                },
+                {
+                  "label": "GST 2.0 and one-off impacts on margin",
+                  "points": [
+                    "GST 2.0 resulted in a 1.4% impact on EBITDA margin for Q4 FY26 and 0.8% impact for FY26.",
+                    "FY26 EBITDA was impacted by additional property tax expenses of around INR6 crores; excluding this, operational EBITDA would have grown 19% YoY.",
+                    "Excluding one-off cases (input tax credit not utilized, one-time property tax hit) and GST impact, EBITDA margin for the quarter would have been about 37.5% to 38%, in line with plan.",
+                    "Payroll costs are sub-20% at 19%, utilities only 5.5% for the year, and admin & general costs are under control — all healthy operating metrics."
+                  ]
+                },
+                {
+                  "label": "Capital allocation",
+                  "points": [
+                    "Planned capex of approximately INR3,600 crores, of which INR400 crores already invested by FY26, to be funded through a balanced mix of debt and internal accruals.",
+                    "Around 60% of capex will be financed through borrowings with the remainder supported by internal cash generation.",
+                    "Internal accruals expected to contribute over INR1,000 crores in coming years, driven by steady ARR growth and operating leverage as new assets ramp up."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ORD",
+              "title": "Order Book & Demand",
+              "key_figures": [
+                {
+                  "label": "Domestic business contribution",
+                  "value": "73",
+                  "unit": "%",
+                  "period": "Q4 FY26 (current)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "International business contribution",
+                  "value": "27",
+                  "unit": "%",
+                  "period": "Q4 FY26 (current)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Stabilized domestic:international mix historically",
+                  "value": "70:30",
+                  "unit": "ratio",
+                  "period": "historical",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Current stabilized FTA business share",
+                  "value": "25",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Transient (retail) business share",
+                  "value": "50",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Negotiated/contracted business share",
+                  "value": "25",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Group business share",
+                  "value": "15",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Other/miscellaneous crew business share",
+                  "value": "10",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "OTA share of retail business",
+                  "value": "60",
+                  "unit": "% of retail",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "OTA share of overall occupancy",
+                  "value": "30",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cancellations due to war/geopolitical disruption",
+                  "value": "7-8",
+                  "unit": "INR crores",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cancellations as % of quarter business",
+                  "value": "5",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cancellations expected in near term (Apr-Jun)",
+                  "value": "7-8",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27 (Apr-Jun)",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Demand mix and resilience",
+                  "points": [
+                    "Domestic demand has remained resilient and continues to anchor growth amid global uncertainties and geopolitical developments affecting international travel.",
+                    "Domestic business quickly replaced international travel demand even during the war conflict; occupancy did not drop and ADR climbed up.",
+                    "Once the war conflict ends, gradual increase in international business expected, but domestic demand is confident to continue regardless.",
+                    "It will always be good to maintain a healthy ~75:25 domestic:FTA mix because FTA business helps maximize ADR yield."
+                  ]
+                },
+                {
+                  "label": "War impact on F&B and cancellations",
+                  "points": [
+                    "F&B revenue saw slight QoQ decline of about 3% due to cancellations worth INR7-8 crores (about 5% of quarter business), linked to larger events dependent on foreign travellers and international travel.",
+                    "Company was able to make up some of the loss with domestic business, but not enough to increase F&B revenue.",
+                    "Greatest impact was seen in March; similar cancellations of INR7-8 crores expected in April-June, being offset with more domestic business.",
+                    "Uncertain whether MICE/large events cancelled will return later in the year or be permanently lost; management hopeful they will come back once things stabilize."
+                  ]
+                },
+                {
+                  "label": "Revenue vs RevPAR growth bridge",
+                  "points": [
+                    "RevPAR growth of 6% (Q4) driven by ADR growth of 7% while occupancy was maintained; overall revenue growth was lower (2%) due to F&B revenue decline of ~3% YoY from large cancellations.",
+                    "Room revenue increased 7% for the quarter; full-year revenue growth was 12%."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "ARR (Average Room Rate)",
+                  "value": "8,066",
+                  "unit": "INR",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ARR (Average Room Rate)",
+                  "value": "7,548",
+                  "unit": "INR",
+                  "period": "Q4 FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Occupancy",
+                  "value": "78",
+                  "unit": "%",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "RevPAR",
+                  "value": "6,295",
+                  "unit": "INR",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "RevPAR growth",
+                  "value": "6",
+                  "unit": "% YoY",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ARR (Average Room Rate)",
+                  "value": "7,453",
+                  "unit": "INR",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ARR (Average Room Rate)",
+                  "value": "6,696",
+                  "unit": "INR",
+                  "period": "FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Occupancy",
+                  "value": "76.1",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "RevPAR",
+                  "value": "5,670",
+                  "unit": "INR",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "RevPAR growth",
+                  "value": "10",
+                  "unit": "% YoY",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bangalore hotels ADR growth",
+                  "value": "13",
+                  "unit": "% YoY",
+                  "period": "FY26 full year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bangalore hotels RevPAR growth",
+                  "value": "12",
+                  "unit": "% YoY",
+                  "period": "FY26 full year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bangalore hotels ADR growth (quarter)",
+                  "value": "4",
+                  "unit": "% YoY",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bangalore hotels RevPAR growth (quarter)",
+                  "value": "5",
+                  "unit": "% YoY",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Hotels averaging ADR above INR7,500",
+                  "value": "3",
+                  "unit": "hotels",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue from room nights sold below INR7,500",
+                  "value": "30",
+                  "unit": "% of total revenue",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Hotels with occupancy in mid-80s (Q4)",
+                  "value": "5 of 9",
+                  "unit": "hotels",
+                  "period": "Q4 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Portfolio ARR (operating)",
+                  "value": "7,500",
+                  "unit": "INR approx",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Projected portfolio ADR",
+                  "value": "10,000+",
+                  "unit": "INR",
+                  "period": "FY29",
+                  "kind": "target"
+                },
+                {
+                  "label": "Projected portfolio ADR",
+                  "value": "14,000+",
+                  "unit": "INR",
+                  "period": "FY31",
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Bangalore market dynamics",
+                  "points": [
+                    "Last year's Aero show created very high demand days and a compressed market in Bangalore; this year that big event was absent, though other events supported January-February performance.",
+                    "March faced occupancy pressure in Bangalore because of war-related cancellations, requiring lower-paying groups to fill demand, resulting in a lesser ADR increase compared to other markets for the quarter.",
+                    "This was described as a one-off; April onwards Bangalore market is again seeing good increase."
+                  ]
+                },
+                {
+                  "label": "Occupancy vs ADR strategy",
+                  "points": [
+                    "Occupancy held at 78% for the quarter with room to move average portfolio occupancy from 78% to mid-to-low 80s (5 of 9 hotels already had occupancies in mid-80s in Q4).",
+                    "Three of nine hotels are already above INR7,500 ADR; others are borderline (some days above, some below); one or two hotels will take longer to breach that threshold.",
+                    "Strategy is to increase ADR via revenue management (room rate inclusions, value-adds like laundry, complimentary breakfast, complimentary pickup) without compromising occupancy.",
+                    "Portfolio's strategic locations in key business districts with minimal/low new supply allow maximizing ADR during high-demand periods while maintaining occupancy during compression periods."
+                  ]
+                },
+                {
+                  "label": "Segment mix",
+                  "points": [
+                    "Business mix breakdown: 50% transient (retail), 25% negotiated/contracted, 15% group, 10% miscellaneous/crew and other business.",
+                    "Of the 50% retail, 60% (i.e., 30% of overall occupancy) comes from OTAs."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MFG",
+              "title": "Manufacturing & Capacity",
+              "key_figures": [
+                {
+                  "label": "Renewable energy adoption",
+                  "value": "61",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Renewable energy usage at some hotels",
+                  "value": "90+",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Chennai OMR new hotel keys",
+                  "value": "45",
+                  "unit": "keys",
+                  "period": "FY27",
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Rebranding and new development",
+                  "points": [
+                    "Kochi hotel to be upgraded from Four Points by Sheraton brand to Courtyard by Marriott brand in coming quarter, expected to improve ADRs and profitability further; upgrade already in process.",
+                    "In FY27, will launch Courtyard by Marriott in Chennai, World Trade Center, a 45-key hotel complementing existing presence in the high-demand business district of OMR in Chennai; opening targeted for Q3, expected to take a couple of quarters to stabilize."
+                  ]
+                },
+                {
+                  "label": "Renewable energy adoption",
+                  "points": [
+                    "Company is actively advancing adoption of renewable energy, currently at 61% with some hotels exceeding 90% usage."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [
+                {
+                  "label": "Bangalore hotels current ADR range",
+                  "value": "9,000-9,500",
+                  "unit": "INR per room",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Tier-2 market hotels ADR (Mysore, Kochi, Gift City) impact on overall ADR",
+                  "value": "7,500",
+                  "unit": "INR approx",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Gift City positioning",
+                  "points": [
+                    "Brigade is one of the only few hotels currently in Gift City with a liquor license (only two or three such hotels).",
+                    "One competing hotel announcement exists with movement on the ground, but it's just starting; no other supply expected in Gift City for at least the next three to four years.",
+                    "Company plans to invest capex to add two or three more F&B/restaurant options in Gift City to capitalize on being one of the few hotels there (currently only one F&B option)."
+                  ]
+                },
+                {
+                  "label": "Portfolio market mix",
+                  "points": [
+                    "Bangalore hotels average around INR9,000-9,500 per room, while other hotels in tier-2 markets like Mysore, Kochi, and Gift City bring down overall portfolio ADR to about INR7,500.",
+                    "Goal is to bring all sub-INR7,500 hotels above that threshold to avoid GST impact in coming years."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SUP",
+              "title": "Supply Chain & Operations",
+              "key_figures": [
+                {
+                  "label": "Hotels running on PNG",
+                  "value": "4",
+                  "unit": "hotels",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Gas supply disruption management",
+                  "points": [
+                    "4 of the hotels run on PNG and the rest are LPG dependent; during disruptions in March and continuing to some extent, alternative fuel sources and electric induction cooking were used.",
+                    "Menus were restructured/redefined to take in alternative items; no restaurant was closed and all restaurants performed as per normal schedule.",
+                    "Gas supply situation has since been restored; alternative arrangements (inductions) now in place across many hotels, so no regular F&B servicing issue exists going forward.",
+                    "There was no lapse in kitchen operations; no hotel ran out of gas supply despite reduced CNG line supply."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [
+                {
+                  "label": "Hotels currently above INR7,500 ARR threshold",
+                  "value": "2",
+                  "unit": "hotels",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Hotels previously below INR7,500 ARR threshold",
+                  "value": "7 of 9",
+                  "unit": "hotels",
+                  "period": "prior period",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Timeframe for no new supply in Gift City",
+                  "value": "3 to 4",
+                  "unit": "years",
+                  "period": "next 3-4 years",
+                  "kind": "target"
+                },
+                {
+                  "label": "Number of hotels with liquor license in Gift City",
+                  "value": "2 or 3",
+                  "unit": "hotels",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Build vs. acquire strategy",
+                  "points": [
+                    "Company's strategy has always been to acquire land (buy outright or lease) and then develop, since there are very few players in the hotel construction space — a niche segment where only half a dozen to a dozen players in the country can build hotels at scale.",
+                    "Company believes its USP is the ability to build efficient hotels on time and within costs, with a positive cost impact compared to the rest of the market.",
+                    "As a listed entity, more acquisition opportunities are coming; company is open to acquiring assets, though acquiring comes at a much higher cost per key for a builder.",
+                    "Company weighs pros and cons of getting a hotel to market via acquisition (e.g., refurbish/rebrand to bring to market quicker) versus building from scratch; acquisition opportunities are being explored but no asset has been finalized yet — this remains a key focus for the year."
+                  ]
+                },
+                {
+                  "label": "Recognitions",
+                  "points": [
+                    "'By the Blue' restaurant at Grand Mercure Bangalore hotel awarded 'Best Newcomer Hotel Restaurant' at the Food Connoisseurs India Award 2025 (February 2026).",
+                    "Sheraton Grand Bangalore at Brigade Gateway honored with 'Business Hotel of the Year' at the Satte Awards 2026.",
+                    "Persian Terrace at Sheraton Grand Bangalore at Brigade Gateway won restaurant serving best 'Middle Eastern cuisine' at the Food Connoisseur India Award 2025 (February 2026)."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [
+                {
+                  "label": "Stabilized FTA business share (target)",
+                  "value": "30",
+                  "unit": "%",
+                  "period": "target",
+                  "kind": "target"
+                },
+                {
+                  "label": "Stabilized domestic:international mix (target)",
+                  "value": "75:25",
+                  "unit": "ratio",
+                  "period": "target",
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Acquisition exploration",
+                  "points": [
+                    "Company is in the market looking at various acquisition options but yet to narrow down on an asset; this is one of the key focus areas for the year.",
+                    "CSR contribution towards skill development from the corporate office continues as part of community engagement and social responsibility initiatives."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Geopolitical/war impact",
+                  "points": [
+                    "War/geopolitical disruption led to cancellations worth INR7-8 crores in Q4 FY26 (about 5% of quarter business), concentrated in larger events dependent on foreign travellers and international travel.",
+                    "Greatest impact seen in March; similar cancellations of INR7-8 crores expected in April-June being offset with domestic business.",
+                    "Impact reduced international mix from historical 70:30 domestic:international ratio to current 73:27 (domestic:international)."
+                  ]
+                },
+                {
+                  "label": "GST 2.0 impact",
+                  "points": [
+                    "GST 2.0 impacted EBITDA margin by 1.4% in Q4 FY26 and 0.8% for FY26.",
+                    "GST impact arises on the basis of daily room nights sold below INR7,500 requiring reversal of GST input credit, applicable even in hotels averaging above INR7,500 threshold on some room nights.",
+                    "Currently around 30% of total revenue comes from room nights selling below INR7,500; this is gradually reducing as ADR increases across hotels."
+                  ]
+                },
+                {
+                  "label": "Gas supply disruption",
+                  "points": [
+                    "Gas supply issues occurred during last month of March with some continuation, but did not cause major disruption due to use of alternative fuel sources (electric induction) and menu adjustments.",
+                    "Situation has since been restored."
+                  ]
+                },
+                {
+                  "label": "One-off cost impacts",
+                  "points": [
+                    "Additional one-time property tax hit and input tax credit that could not be utilized impacted EBITDA margin for the year."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [
+                {
+                  "label": "Portfolio ARR (operating)",
+                  "value": "7,500",
+                  "unit": "INR approx",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Projected average ADR",
+                  "value": "10,000+",
+                  "unit": "INR",
+                  "period": "by FY29",
+                  "kind": "target"
+                },
+                {
+                  "label": "Projected average ADR",
+                  "value": "14,000+",
+                  "unit": "INR",
+                  "period": "by FY31",
+                  "kind": "target"
+                },
+                {
+                  "label": "Planned capex",
+                  "value": "3,600",
+                  "unit": "INR crores",
+                  "period": "multi-year",
+                  "kind": "target"
+                },
+                {
+                  "label": "Internal accruals expected",
+                  "value": "over 1,000",
+                  "unit": "INR crores",
+                  "period": "coming years",
+                  "kind": "target"
+                },
+                {
+                  "label": "Sustainable EBITDA margin (excluding one-offs)",
+                  "value": "37.5-38",
+                  "unit": "%",
+                  "period": "ongoing",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Chennai Courtyard by Marriott opening",
+                  "value": "Q3",
+                  "unit": null,
+                  "period": "FY27",
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Forward outlook",
+                  "points": [
+                    "Demand visibility remains robust and management is positive about the year ahead.",
+                    "As more luxury properties are commissioned through FY29 and beyond, portfolio average ADR is projected to exceed INR10,000 by FY29 and surpass INR14,000 by FY31, nearly double current levels.",
+                    "EBITDA margin expected to increase once ARR increases, as sub-INR7,500 hotels are brought above that threshold, negating GST impact in coming years.",
+                    "Once ARRs increase further (occupancy already stable, growth coming from ADR), higher EBITDA margins are expected."
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "Portfolio average ADR",
+              "horizon": "FY29",
+              "statement": "Operating portfolio ARR stands at approx. INR7,500; as more luxury properties are commissioned through FY29 and beyond, this is projected to exceed INR10,000 for an average ADR by FY29",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Portfolio average ADR",
+              "horizon": "FY31",
+              "statement": "Projected to surpass INR14,000 by FY31, nearly double of what it is today",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Capex",
+              "horizon": "multi-year",
+              "statement": "Planned capex of approximately INR3,600 crores, of which INR400 crores has already been invested by FY26, funded through a balanced mix of debt (~60%) and internal accruals",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Internal accruals",
+              "horizon": "coming years",
+              "statement": "Expect internal accruals to contribute over INR1,000 crores in the coming years, driven by steady ARR growth and operating leverage as new assets ramp up",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "EBITDA margin (sustainable/normalized)",
+              "horizon": "ongoing",
+              "statement": "If not hit by one-off cases (input tax credit, property tax) and GST, EBITDA margin would have hit about 37.5% to 38%, in line with plan",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Courtyard by Marriott Chennai opening",
+              "horizon": "FY27",
+              "statement": "Targeting Q3 opening for the Courtyard by Marriott in Chennai, World Trade Center",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Kochi hotel rebrand (Four Points to Courtyard by Marriott)",
+              "horizon": "next quarter",
+              "statement": "Plan to upgrade Kochi hotel from Four Points by Sheraton to Courtyard by Marriott brand in coming quarter to improve ADRs and profitability further; upgrade is in process and should happen very soon",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Portfolio occupancy",
+              "horizon": "unspecified",
+              "statement": "Believe there is gap to move average portfolio occupancy from 78% to somewhere in mid-to-low 80s",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Hotels above INR7,500 ADR threshold",
+              "horizon": "unspecified",
+              "statement": "Goal is to bring all sub-INR7,500 hotels above INR7,500 so GST hit is not there in coming years; only one or two hotels will take time to breach that mark",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Domestic:International (FTA) business mix",
+              "horizon": "stabilized/unspecified",
+              "statement": "Ratio currently around 75:25 domestic:FTA, expected to go back to 30% FTA on a stabilized basis once conflict situation normalizes",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "MICE/large event bookings recovery",
+              "horizon": "later part of the year",
+              "statement": "Hopefully cancelled MICE/large events should come back at a later part in the year once things stabilize, but hard to predict what will return",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "new"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "Geopolitical war/conflict impacting international travel and F&B/MICE business",
+              "status": "new",
+              "note": "Led to cancellations worth INR7-8 crores in Q4 FY26 (about 5% of quarter business), concentrated in events dependent on foreign travellers; similar cancellations of INR7-8 crores expected in Apr-Jun; greatest impact seen in March; international mix reduced from historical 70:30 to current 73:27 domestic:international."
+            },
+            {
+              "risk": "GST 2.0 impact on margins",
+              "status": "new",
+              "note": "Impacted EBITDA margin by 1.4% in Q4 FY26 and 0.8% for FY26; arises from room nights sold below INR7,500 requiring GST input credit reversal; ~30% of revenue currently from such room nights, gradually reducing as ADR increases."
+            },
+            {
+              "risk": "Gas supply disruption (CNG/PNG)",
+              "status": "easing",
+              "note": "Disruption during March and partially continuing; managed via alternative fuel sources and electric induction cooking with no restaurant closures; situation has since been restored."
+            },
+            {
+              "risk": "One-off cost impacts (input tax credit, property tax)",
+              "status": "new",
+              "note": "Additional one-time property tax hit of ~INR6 crores and input tax credit that could not be utilized impacted EBITDA margin for the year; excluding these, EBITDA margin would have been ~37.5-38%."
+            },
+            {
+              "risk": "Bangalore market demand compression due to absence of major event (Aero show)",
+              "status": "new",
+              "note": "Absence of last year's Aero show plus March cancellations led to lower-paying groups filling demand and a lesser ADR increase for Bangalore hotels in Q4; described as one-off, with improvement seen from April onwards."
+            }
+          ],
+          "themes": [
+            {
+              "label": "Domestic demand resilience",
+              "direction": "positive",
+              "note": "Domestic demand remained resilient and anchored growth despite global uncertainties, geopolitical developments, and reduced international travel.",
+              "section_ref": "ORD"
+            },
+            {
+              "label": "Geopolitical/war disruption",
+              "direction": "negative",
+              "note": "War conflict led to INR7-8 crore cancellations in Q4 and similar expected in Q1 FY27, mainly impacting F&B and large events dependent on foreign travellers.",
+              "section_ref": "RISK"
+            },
+            {
+              "label": "GST 2.0 margin impact",
+              "direction": "negative",
+              "note": "GST 2.0 impacted EBITDA margin by 1.4% in Q4 and 0.8% for FY26, tied to room nights sold below INR7,500 ARR threshold.",
+              "section_ref": "RISK"
+            },
+            {
+              "label": "ADR-led growth and premiumization",
+              "direction": "positive",
+              "note": "RevPAR growth driven primarily by ADR growth (7% in Q4) while occupancy held steady; portfolio ADR projected to exceed INR10,000 by FY29 and INR14,000 by FY31.",
+              "section_ref": "GUID"
+            },
+            {
+              "label": "Capacity expansion via rebranding and new builds",
+              "direction": "positive",
+              "note": "Kochi hotel rebrand to Courtyard by Marriott and new 45-key Courtyard by Marriott in Chennai OMR planned for FY27 to strengthen portfolio.",
+              "section_ref": "MFG"
+            },
+            {
+              "label": "Disciplined capital allocation",
+              "direction": "neutral",
+              "note": "Planned capex of ~INR3,600 crores funded ~60% via borrowings and remainder via internal accruals expected to exceed INR1,000 crores in coming years.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Build vs acquire strategy",
+              "direction": "mixed",
+              "note": "Company's core strength is building hotels efficiently on time and cost, but is exploring acquisition opportunities as a listed entity, weighing higher per-key cost of acquisitions against speed to market.",
+              "section_ref": "MKT"
+            }
+          ],
+          "key_takeaways": [
+            "For the quarter, total income grew by 8% year-on-year, led by 7% increase in ARR, and occupancy remained relatively stable resulting in a 6% growth in RevPAR.",
+            "EBITDA increased by 13% year-on-year to INR58 crores, translating into an EBITDA margin of 39.7%.",
+            "Utilities as a percentage of operating revenues stood at 5% for the quarter and 5.4% for the whole year of FY '26.",
+            "Interest costs have reduced due to loan repayments, positively impacting the net profitability.",
+            "We are actively advancing adoption of renewable energy, which is currently at 61% with some hotels exceeding 90% usage.",
+            "In the coming quarter, we plan to upgrade our hotel at Kochi from a 'Four Points by Sheraton' brand to a 'Courtyard by Marriott' brand.",
+            "In FY '27, we will further strengthen the base with the launch of the Courtyard by Marriott in Chennai, World Trade Center, a 45-key hotel that complements our existing presence in high-demand business district of OMR in Chennai.",
+            "Our planned capex of approximately INR3,600 crores, of which INR400 crores has already been invested by FY '26, will be funded through a balanced mix of debt and internal accruals.",
+            "We project this to exceed INR10,000 for an average ADR by FY '29 and surpass INR14,000 by FY31, nearly double of what it is today.",
+            "Looking ahead, demand visibility remains robust and we are positive about the year ahead."
+          ],
+          "pressing_questions": [
+            "So, out of that, do you expect any business to be lost permanently, or do you expect some of it to come back in the upcoming quarters?",
+            "Can we expect like in further quarters for the industry to see, you know, the some of the events getting just postponed and in further quarters kind of bump up due to that, or like these events are kind of they're gone forever and no bump up we should expect?"
+          ]
+        }
+      ]
     }
   }
 }
