@@ -1085,8 +1085,10 @@
       "source": "transcript"
     },
     "KMEW": {
-      "status": "running",
-      "started_at": "2026-08-25T22:21:32.799Z"
+      "status": "failed",
+      "finished_at": "2026-08-25T22:21:40.895Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "ERIS": {
       "status": "done",
