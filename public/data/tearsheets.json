@@ -353811,6 +353811,1070 @@
           ]
         }
       ]
+    },
+    "MANIPALHOS": {
+      "company": "Manipal Health Enterprises Ltd",
+      "ticker": "MANIPALHOS",
+      "industry": "Hospital",
+      "country": "India",
+      "about": "Incorporated in 2010, Manipal Health Enterprises Limited is a healthcare service providers, operating a large network of multi-specialty hospitals, clinics, and diagnostic centres across the country.[1]",
+      "reported_pnl": {
+        "basis": "consolidated",
+        "periods": [
+          "Jun 2025",
+          "Mar 2026",
+          "Jun 2026"
+        ],
+        "rows": [
+          {
+            "label": "Sales",
+            "values": [
+              "2,238",
+              "2,882",
+              "3,091"
+            ]
+          },
+          {
+            "label": "Expenses",
+            "values": [
+              "1,651",
+              "2,191",
+              "2,354"
+            ]
+          },
+          {
+            "label": "Operating Profit",
+            "values": [
+              "586",
+              "691",
+              "737"
+            ]
+          },
+          {
+            "label": "OPM %",
+            "values": [
+              "26%",
+              "24%",
+              "24%"
+            ]
+          },
+          {
+            "label": "Other Income",
+            "values": [
+              "30",
+              "27",
+              "59"
+            ]
+          },
+          {
+            "label": "Interest",
+            "values": [
+              "132",
+              "289",
+              "293"
+            ]
+          },
+          {
+            "label": "Depreciation",
+            "values": [
+              "141",
+              "185",
+              "187"
+            ]
+          },
+          {
+            "label": "Profit before tax",
+            "values": [
+              "344",
+              "244",
+              "315"
+            ]
+          },
+          {
+            "label": "Tax %",
+            "values": [
+              "26%",
+              "24%",
+              "23%"
+            ]
+          },
+          {
+            "label": "Net Profit",
+            "values": [
+              "254",
+              "187",
+              "243"
+            ]
+          },
+          {
+            "label": "EPS in Rs",
+            "values": [
+              "2.17",
+              "1.51",
+              "1.96"
+            ]
+          }
+        ],
+        "source_url": "https://www.screener.in/company/MANIPALHOS/consolidated/#quarters",
+        "captured_at": "2026-08-27T20:55:59.267Z"
+      },
+      "checked_at": "2026-08-27T21:01:23.067Z",
+      "quarters": [
+        {
+          "company": "Manipal Health Enterprises Ltd",
+          "ticker": "MANIPALHOS",
+          "industry": "Hospital",
+          "country": "India",
+          "concall_date": "2026-08-27",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=88cd2e13-6e03-4f81-9e99-45ca2102afc2.pdf",
+          "model": "anthropic.claude-sonnet-5",
+          "pipeline_version": 3,
+          "generated_at": "2026-08-27T20:59:57.314Z",
+          "summary": "Q1 FY27 was Manipal Health Enterprises' inaugural earnings call post-IPO, reporting volume-led revenue growth of over 38% YoY to INR3,091 crores and network EBITDA growth of over 26% (30%+ excluding a one-off gain in the prior year). Management guided to continued growth via bed capacity additions (~1,000 beds planned for FY27 including Electronic City, Nashik, Raipur and Kinder), ramp-up of Bengaluru greenfields, Sahyadri integration over an 18-month playbook, deleveraged balance sheet (net debt/EBITDA to fall to 0.9x post IPO debt repayment in Q2), and INR4,000 crores capex over the next 3-4 years to add 3,000 beds, while keeping an eye on inorganic opportunities in Kerala, NCR and Hyderabad.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "Revenue",
+                  "value": "3,091",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue growth YoY",
+                  "value": "38%+",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Network EBITDA",
+                  "value": "749",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Network EBITDA growth YoY",
+                  "value": "26%+",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA growth YoY excl. one-off gain",
+                  "value": "30%+",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operating margin ex-Sahyadri",
+                  "value": "25",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operating margin ex-Sahyadri (prior year)",
+                  "value": "26.5",
+                  "unit": "%",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Network-level operating margin incl. Sahyadri",
+                  "value": "24.2",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "One-off gain (Medica pre-acquisition contract reversal)",
+                  "value": "15",
+                  "unit": "INR crores",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Impact of one-off gain removal on margin",
+                  "value": "0.6",
+                  "unit": "% pts",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Margin dip ex-one-off (like-for-like)",
+                  "value": "0.9",
+                  "unit": "% pts",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Greenfield doctor cost impact on network margin",
+                  "value": "0.5",
+                  "unit": "% pts",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Greenfield EBITDA margin (Bengaluru greenfields)",
+                  "value": "13",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net debt to EBITDA (current)",
+                  "value": "2.8x",
+                  "unit": "x",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net debt to EBITDA (post IPO debt repayment)",
+                  "value": "0.9x",
+                  "unit": "x",
+                  "period": "Q1 FY27 level, post Q2 repayment",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Comfortable leverage range (industry average)",
+                  "value": "1.5x-2x",
+                  "unit": "x",
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "Capex plan (next 3-4 years, for 3,000 beds)",
+                  "value": "4,000",
+                  "unit": "INR crores",
+                  "period": "next 3-4 years",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Capex guidance (current fiscal)",
+                  "value": "2,000",
+                  "unit": "INR crores",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Capex spent",
+                  "value": "900",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "FY26 EBITDA (referenced by analyst)",
+                  "value": "2,600",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total licensed bed capacity",
+                  "value": "13,000+",
+                  "unit": "beds",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Standalone core growth",
+                  "value": "23%",
+                  "unit": null,
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Margin dip drivers (ex-Sahyadri)",
+                  "points": [
+                    "The ex-Sahyadri margin dip from 26.5% (Q1 FY26) to 25% (Q1 FY27) is explained by two one-off factors: a one-off material cost benefit/reversal of INR15 crores relating to a pre-acquisition contract in Medica in Q1 FY26 (0.6% impact), and greenfield doctor costs in Kanakapura and Yelahanka (Bengaluru greenfields), which are fully staffed with doctors early in their life cycle (0.5% impact for the network).",
+                    "Some slowness in scheme patients' collections across the sector also contributed marginally to the margin dip; management does not view these as operational issues or a sustainable trend, but as one-offs that will resolve as greenfields ramp up and collections normalize through the year."
+                  ]
+                },
+                {
+                  "label": "Capital allocation & leverage",
+                  "points": [
+                    "Net debt to EBITDA is currently 2.8x; post repayment of debt in Q2 FY27 (trigger already initiated post IPO funds receipt), net debt/EBITDA will fall to 0.9x at Q1 level.",
+                    "Company is comfortable operating at industry-average leverage of 1.5x-2x and would only go higher for an opportunity that cannot be missed.",
+                    "Company plans to spend ~INR4,000 crores of capex over the next 3-4 years to add 3,000 beds (including Mumbai/Juhu greenfield).",
+                    "Current-year capex guidance is ~INR2,000 crores due to greenfields and brownfields coming up; INR900 crores already spent in Q1, front-ending capex to capture the benefit/leverage for the full year."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "Inpatient (IP) volume growth",
+                  "value": "39",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Outpatient (OP) volume growth",
+                  "value": "26",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Average occupancy (network)",
+                  "value": "65",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Occupancy increase YoY",
+                  "value": "290",
+                  "unit": "bps",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ALOS (Average Length of Stay, network)",
+                  "value": "2.7",
+                  "unit": "days",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ARPOB ex-Sahyadri",
+                  "value": "77,200",
+                  "unit": "INR per day",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "ARPOB growth ex-Sahyadri YoY",
+                  "value": "9",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Digital revenue",
+                  "value": "710",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Digital revenue as % of overall revenue",
+                  "value": "23",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "CoE (Centres of Excellence) revenue contribution",
+                  "value": "65",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "IP revenue growth in CoE specialties",
+                  "value": "45",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "CONGO-R mix growth rate",
+                  "value": "45",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Oncology proportion of network mix (prior year)",
+                  "value": "10.8",
+                  "unit": "%",
+                  "period": "FY26 (last year)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Oncology proportion of network mix (current)",
+                  "value": "12.2",
+                  "unit": "%",
+                  "period": "Q1 FY27 / network level",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Sahyadri revenue",
+                  "value": "332",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Sahyadri revenue growth YoY",
+                  "value": "13%+",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Sahyadri EBITDA",
+                  "value": "58",
+                  "unit": "INR crores",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Sahyadri EBITDA growth YoY",
+                  "value": "19%",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Sahyadri EBITDA margin",
+                  "value": "17.5",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Sahyadri ARPOB",
+                  "value": "45,000",
+                  "unit": "INR per day",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Sahyadri ARPOB growth YoY",
+                  "value": "15",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Sahyadri occupancy",
+                  "value": "63",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Sahyadri ALOS reduction YoY",
+                  "value": "8",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Sahyadri ALOS",
+                  "value": "2.8",
+                  "unit": "days",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Interoperable clinicians across Pune network (Sahyadri + Manipal)",
+                  "value": "58",
+                  "unit": "clinicians",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Sahyadri digital revenue penetration",
+                  "value": "22%-23%",
+                  "unit": "% of revenue",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "AMRI growth YoY",
+                  "value": "17",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Medica growth YoY",
+                  "value": "15",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "East region (AMRI+Medica+Columbia Asia) overall top-line growth",
+                  "value": "17",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "East region cash and TPA business growth",
+                  "value": "22",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "E-pharmacy orders processed",
+                  "value": "15,000+",
+                  "unit": "orders",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "E-pharmacy coverage",
+                  "value": "23 hospitals across 4 metro cities",
+                  "unit": null,
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Telehealth virtual consultations",
+                  "value": "17,000+",
+                  "unit": "consultations",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Chatbot (MAI) interactions",
+                  "value": "9,600+",
+                  "unit": "interactions",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "International patient revenue growth YoY",
+                  "value": "55",
+                  "unit": "%",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "International patients as % of overall revenue",
+                  "value": "3",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Government payer mix (institutional)",
+                  "value": "14",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Kinder Hospital current revenue run rate",
+                  "value": "3-4",
+                  "unit": "INR crores per month",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Kinder Hospital annualized revenue (approx.)",
+                  "value": "22",
+                  "unit": "INR crores",
+                  "period": "current (annualized)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Sahyadri EBITDA margin (referenced in growth drivers discussion)",
+                  "value": "17",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Volume-led growth philosophy",
+                  "points": [
+                    "Growth was driven by volumes — more patients accessing care — which management considers a sustainable model for growth in care delivery, rather than a price-led (ARPOB/ALOS-led) growth strategy pursued by some peers."
+                  ]
+                },
+                {
+                  "label": "Centres of Excellence (CoE) / CONGO-R mix",
+                  "points": [
+                    "Six CoE specialties — Cardiac Sciences, Oncology, Neurology, Gastroenterology, Orthopaedics, Renal Sciences — continue to be a key growth driver with rising revenue contribution.",
+                    "Oncology is among the fastest-growing components of the CONGO-R mix, growing nationally and not only in Delhi NCR; three greenfields commissioned in Bengaluru in the last 12 months all have comprehensive oncology facilities, supporting national oncology capacity.",
+                    "CONGO mix complexity difference (not contribution) is the advantage Manipal has over Sahyadri — moving up complexity of CONGO cases in Sahyadri is the exact playbook being deployed, expected to positively impact ARPOB and other financial parameters."
+                  ]
+                },
+                {
+                  "label": "Sahyadri integration progress",
+                  "points": [
+                    "Integration playbook follows a fixed process taking about 16-18 months.",
+                    "Regional HR structure has been put in place, mirroring the structure used for other clusters/regions.",
+                    "In three key metros (Bengaluru, Kolkata, Pune) interoperability of clinicians has increased — 58 clinicians now move across both Sahyadri and Manipal brands across the nine Pune hospitals (7 ex-Sahyadri, 2 ex-Manipal).",
+                    "Full brand rechristening into Manipal typically takes 14-16 months from integration date; the Manipal element has already been introduced into the Sahyadri logo/brand.",
+                    "Digital penetration in Sahyadri is at an early stage (22-23% of revenue) and management is bullish on digital channels.",
+                    "Other initiatives include business development in upcountry markets, internal conversion efficiency processes, infrastructure upgrades to bring hospitals up to Manipal systems, and a service strategy being put together for Sahyadri.",
+                    "Volume-led growth, clinical enhancement, and operating efficiencies drove Sahyadri's EBITDA margin improvement to ~17.5% in Q1; turnaround to network-level margin will take time but priorities are in place.",
+                    "Length of stay improvement (8% reduction to 2.8 days) in Sahyadri came through operating efficiencies despite increasing case complexity."
+                  ]
+                },
+                {
+                  "label": "East region (AMRI/Medica/Columbia Asia)",
+                  "points": [
+                    "AMRI grew 17% and Medica grew 15% YoY; management runs East as one state and Calcutta as one city combining AMRI, Medica, and Columbia Asia.",
+                    "Cash and TPA business in East grew 22% despite overall East growth of 17%, as government scheme business has been flat.",
+                    "A transition is underway where the current government scheme may get rechristened to a national scheme, causing a slowdown in government mix; hospitals are in discussion with authorities and expect to hear on the way forward shortly.",
+                    "In the interim, brand equity is being used to attract cash and TPA patients.",
+                    "Investments in East include added doctors/clinical talent; Dhakuria facility to add extra beds with a fully integrated oncology program coming on stream next quarter."
+                  ]
+                },
+                {
+                  "label": "Out-of-hospital / digital initiatives",
+                  "points": [
+                    "E-pharmacy, telehealth, and Manipal AI (MAI) chatbot initiatives were highlighted as part of out-of-hospital earnings, contributing to overall digital revenue of INR710 crores (23% of overall revenue) in Q1 FY27."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "TECH",
+              "title": "Product & Technology",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Clinical technology investments",
+                  "points": [
+                    "Installed a linear accelerator and a PET-CT at the Nashik hospital.",
+                    "Introduced optical coherence tomography at the flagship MHB Old Airport Road facility in Bangalore and two other Bangalore locations.",
+                    "Commissioned an AI-assisted neuro biplane cath lab at the Mukundapur facility in Kolkata, supporting a newly launched interventional radiology program for the region."
+                  ]
+                },
+                {
+                  "label": "Clinical milestones",
+                  "points": [
+                    "Whitefield hospital (Bangalore) performed the world's first robotic pancreatic surgery on a 1-month-old infant.",
+                    "Vijayawada hospital (Andhra Pradesh) performed the state's first emergency living-donor liver transplant.",
+                    "Kanakapura (South Bangalore) and Yelahanka (North Bangalore) greenfield facilities, both in their first year of operations, completed their first robotic renal transplants."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MFG",
+              "title": "Manufacturing & Capacity",
+              "key_figures": [
+                {
+                  "label": "Nashik brownfield bed addition",
+                  "value": "103",
+                  "unit": "beds",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Nashik total licensed bed capacity (post addition)",
+                  "value": "307",
+                  "unit": "beds",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "50th hospital (Electronic City, Bangalore) bed addition",
+                  "value": "~300",
+                  "unit": "beds",
+                  "period": "July 2026 (Q2 FY27)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bangalore total licensed bed capacity (post 50th hospital)",
+                  "value": "~3,000",
+                  "unit": "beds",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Number of Manipal facilities in Bangalore",
+                  "value": "13",
+                  "unit": "facilities",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Kinder Hospital (Whitefield) bed addition",
+                  "value": "100",
+                  "unit": "beds",
+                  "period": "pending transaction close",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Ahilya Nagar bed addition planned",
+                  "value": "~80",
+                  "unit": "beds",
+                  "period": "FY28",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "FY27 planned bed addition (company target)",
+                  "value": "~1,000",
+                  "unit": "beds",
+                  "period": "FY27",
+                  "kind": "target"
+                },
+                {
+                  "label": "Kanakapura greenfield break-even timeline",
+                  "value": "5",
+                  "unit": "months of operations",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Yelahanka greenfield break-even timeline",
+                  "value": "2",
+                  "unit": "months of operations",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "New bed capacity coming on stream (near term)",
+                  "value": "1,000-plus, 2,000-plus",
+                  "unit": "beds",
+                  "period": "current",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Bengaluru greenfield hospitals commissioned in last 10 months",
+                  "value": "three",
+                  "unit": null,
+                  "period": "last 10 months",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Greenfield & brownfield pipeline",
+                  "points": [
+                    "Nashik hospital commissioned a brownfield capacity addition of 103 beds along with a newly installed linear accelerator and PET-CT, increasing its overall licensed bed capacity to 307 beds.",
+                    "50th hospital launched in July 2026 in Electronic City, Bangalore, along promised timelines, adding ~300 beds and marking the 13th Manipal facility in Bangalore, taking city-wide licensed capacity to nearly 3,000 beds.",
+                    "Kinder Hospital acquisition in Whitefield, Bangalore adds 100 beds; deal is pending completion of a couple of conditions precedent (CPs), expected to close in the next 60 days; asset comes with land and building included, meaning no rental leakage during remodeling.",
+                    "Kinder Hospital will be temporarily closed for a few months for renovation/remodeling from a women-and-children facility into a multispecialty facility (minus transplants, which will remain at the Whitefield hub); remodeling expected to take about 6-7 months / 8-9 month project timeline.",
+                    "Raipur is the next large greenfield expected to come on stream towards the end of FY27 (Q4 FY27); Juhu (Mumbai) and Wakad (Pune) are subsequent greenfields in the pipeline.",
+                    "Sahyadri network capacity expansion: Deccan Gymkhana undergoing expansion with an entire new tower being added; Hadapsar adding beds; Wakad (North Pune) greenfield started; Nashik added oncology capacity (100+ beds, LINAC, PET-CT); Ahilya Nagar introducing oncology capabilities, expected to add ~80 beds in FY28.",
+                    "Two Bengaluru greenfields (Kanakapura in South Bangalore, Yelahanka in North Bangalore) are in their first year of operations; Kanakapura broke even at EBITDA level in its fifth month, Yelahanka broke even in its second month — both ahead of internal expectations, delivering 13% EBITDA margin in Q1, ahead of plan."
+                  ]
+                },
+                {
+                  "label": "Sub-100-bed hospital model rationale",
+                  "points": [
+                    "Management noted that while an ideal minimum size for an independent multispecialty hospital would be 250-300 beds, Manipal has successfully run multiple sub-100/150-bed hospitals historically (the original Columbia Asia model was largely sub-100-bedded, moved from secondary to tertiary care).",
+                    "Kinder's 100-bed addition is viewed as capacity addition within an already well-served Whitefield micro-market (two existing large multispecialty hospitals), providing a 'running start'; the facility will offer full multispecialty services (cath lab, CT, MRI, theatres) barring transplants, which remain centralized at the Whitefield hub."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Kinder Hospital acquisition",
+                  "points": [
+                    "Company announced a transaction to acquire the entire business operations and assets of Kinder Hospital in the Whitefield area of Bangalore, adding 100 beds; deal is not being pursued for Kinder's existing women-and-children/infertility business, which management called 'frankly irrelevant' to the rationale — the acquisition is purely about capacity addition in the high-growth Whitefield micro-market where Manipal already runs two large, high-performing multispecialty hospitals (Whitefield and Varthur).",
+                    "Manipal already has infertility capability in its existing Whitefield hospital, so Kinder's infertility/obs-gynae specialty will not be retained; the hospital will be temporarily closed for renovation and reopened as a multispecialty extension of the existing Whitefield/Varthur quaternary care capability.",
+                    "Transaction includes land and building, eliminating rental costs during and after remodeling; expected to close within next 60 days pending CPs."
+                  ]
+                },
+                {
+                  "label": "Sahyadri acquisition integration philosophy",
+                  "points": [
+                    "Management follows a set 'playbook' for acquisitions/integration that has worked in past acquisitions (AMRI, Medica, Columbia Asia), involving capital investment, advanced technology, doctor interoperability, conversion efficiencies, CONGO mix improvement and service standards — being applied to Sahyadri.",
+                    "Sahyadri came in as an under-managed asset with low EBITDA margin (17% now vs 25% for ex-Sahyadri network); management has confidence in replicating the past turnaround playbook."
+                  ]
+                },
+                {
+                  "label": "Corporate structure / focus",
+                  "points": [
+                    "Despite a regulatory change permitting for-profit entities to run medical colleges (and a peer entering that business), management has no plans to bring medical college operations into the listed entity; intends to remain focused on providing tertiary/quaternary brick-and-mortar hospital care and remain a specialty provider with high-acuity Centres of Excellence focus."
+                  ]
+                },
+                {
+                  "label": "Inorganic growth aspirations",
+                  "points": [
+                    "Company has keen interest to expand into Kerala as and when an opportunity arises, further expand presence in NCR, and look at Hyderabad — inorganic opportunities viewed as an additional growth lever beyond existing committed capacity expansion."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Collections / payer mix",
+                  "points": [
+                    "Scheme patients' collections have been a little slow across the whole sector in Q1, contributing marginally to the margin dip; expected to improve as the year progresses.",
+                    "Government/institutional payer mix (~14%) tends to be associated with a higher ALOS.",
+                    "In the East region, a transition is underway where the current government scheme may be rechristened into a national scheme, causing a slowdown in government-mix growth; timeline for resolution is uncertain but hospitals are in discussion with authorities and expect an update shortly."
+                  ]
+                },
+                {
+                  "label": "Greenfield ramp-up costs",
+                  "points": [
+                    "Greenfield doctor costs at Kanakapura and Yelahanka (Bengaluru) are elevated in the early part of their operational life as they are fully staffed with doctors, temporarily dragging down composite network margin by about 0.5 percentage points."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [
+                {
+                  "label": "Planned bed additions",
+                  "value": "~1,000",
+                  "unit": "beds",
+                  "period": "FY27",
+                  "kind": "target"
+                },
+                {
+                  "label": "Capex over next 3-4 years",
+                  "value": "4,000",
+                  "unit": "INR crores",
+                  "period": "next 3-4 years",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Capex for current fiscal year",
+                  "value": "2,000",
+                  "unit": "INR crores",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Target net debt/EBITDA post repayment",
+                  "value": "0.9x",
+                  "unit": "x",
+                  "period": "post Q2 FY27 repayment",
+                  "kind": "target"
+                },
+                {
+                  "label": "Comfortable leverage range",
+                  "value": "1.5x-2x",
+                  "unit": "x",
+                  "period": null,
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Growth levers outlined by management",
+                  "points": [
+                    "Largest bed capacity in the country (13,000+ beds), with 1,000+/2,000+ beds coming on stream in a short period, providing headroom for capacity-led growth.",
+                    "Low ALOS combined with 65% occupancy provides headroom to grow occupancy further within the current network before needing new capacity.",
+                    "CONGO-R / Centres of Excellence high-acuity mix continuing to grow as a key margin and growth lever.",
+                    "Sahyadri margin improvement lever — from 17% currently towards ex-Sahyadri network margin of 25%.",
+                    "Ramp-up of greenfields — three already commissioned in Bengaluru in the last 10 months, plus Raipur (end of FY27), followed by Juhu (Mumbai) and Wakad (Pune).",
+                    "Continued operating efficiency improvements in material cost, length of stay, conversion efficiencies, and digital revenue.",
+                    "Deleveraged balance sheet post-IPO (0.9x net debt/EBITDA) provides ability to raise funds for expansion into new geographies (Kerala, NCR, Hyderabad) as an inorganic lever, separate from the other organic levers.",
+                    "Management declined to guide to a specific core network growth number or specific margin target/timeline, characterizing current trends (volume-led growth, CONGO-R mix, ARPOB improvement) as secular tailwinds rather than one-offs.",
+                    "Several hospitals in the portfolio already operate at >30-32% margin, indicating room for the broader network to converge upward, though no specific number or timeline was given.",
+                    "For FY27, three major bed-capacity initiatives are expected: Electronic City (~300 beds, Q2 FY27), Nashik (103 beds, already added), and Raipur (Q4 FY27); Kinder (100 beds) might also come into FY27 if accelerated. Ahilya Nagar (~80 beds) is expected in FY28."
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "Bed additions",
+              "horizon": "FY27",
+              "statement": "Company laid out a plan to add about 1,000 beds in fiscal '27, in a staggered/phased manner via Electronic City (~300 beds), Nashik (103 beds already added), Raipur (Q4 FY27), and potentially Kinder (100 beds) if accelerated.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Ahilya Nagar bed addition",
+              "horizon": "FY28",
+              "statement": "Ahilya Nagar could add about close to 80 beds in FY28.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Capex",
+              "horizon": "next 3-4 years",
+              "statement": "As the company adds 3,000 beds over the next 3-4 years (including Mumbai greenfield), it will spend around INR4,000 crores of capex.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Capex",
+              "horizon": "FY27",
+              "statement": "Current year, company will end up spending almost INR2,000 crores of capex because of greenfields and brownfields coming up; INR900 crores already spent in Q1.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Net debt to EBITDA",
+              "horizon": "Q2 FY27",
+              "statement": "Once debt is repaid in Quarter 2 (trigger already initiated post IPO funds), net debt to EBITDA will go down to 0.9x at quarter 1 level.",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "Leverage comfort level",
+              "horizon": "ongoing",
+              "statement": "Company is fairly comfortable operating at industry-average leverage of 1.5x to 2x; would only go higher due to an opportunity that cannot be missed.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Core network growth (ex-Sahyadri)",
+              "horizon": "FY27 remaining quarters",
+              "statement": "Not guiding to a specific core network growth number, but Q1 trends (volume-led growth, CONGO-R mix, ARPOB improvement) are secular tailwinds expected to sustain, not one-offs.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Portfolio margin expansion",
+              "horizon": "next 1-1.5 years",
+              "statement": "Management does not want to indicate a specific number or timeline for margin expansion, but greenfields ramping up and Sahyadri improvement are expected to pull up composite portfolio margin toward levels seen in mature hospitals (>30-32% margin in several hospitals).",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Sahyadri EBITDA margin convergence to network average",
+              "horizon": "16-18 months (from acquisition)",
+              "statement": "Integration process takes about 16 to 18 months; reaching network-level EBITDA margin is 'sometime away' but expected to progress via operational efficiencies, clinical talent, out-of-hospital initiatives, and business development.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Sahyadri brand rechristening timeline",
+              "horizon": "14-16 months from integration",
+              "statement": "Full-fledged rechristening into Manipal brand usually takes about 14 to 16 months from the day of integration; dates are being decided.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "East region scheme transition resolution",
+              "horizon": "few months to few quarters",
+              "statement": "Transition of scheme mix (current scheme to national scheme) is 'on the anvil'; hospitals are in discussion with authorities and should hear from them very shortly on the way forward.",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Inorganic expansion",
+              "horizon": "unspecified",
+              "statement": "Company has keen interest to expand to Kerala as and when an opportunity arises, further expand presence in NCR, and look at Hyderabad — as inorganic growth opportunities.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Kinder Hospital remodeling timeline",
+              "horizon": "6-9 months",
+              "statement": "Kinder Hospital will be temporarily closed for a few months for renovations (an 8-9 month project) before reopening as a multispecialty facility; transfer expected within next 60 days pending CPs.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "Scheme/institutional patient collections slow across the sector",
+              "status": "stable",
+              "note": "Scheme patients' collections have been a little slow in Q1 as the whole sector has been talking about; expected to improve as the year progresses."
+            },
+            {
+              "risk": "Greenfield ramp-up costs (doctor cost) dragging composite margin",
+              "status": "stable",
+              "note": "Greenfield doctor costs at Kanakapura and Yelahanka added about 0.5 percentage points drag on network margin as facilities are fully staffed with doctors early in life; expected to normalize as greenfields ramp up."
+            },
+            {
+              "risk": "Government scheme mix transition in East region",
+              "status": "new",
+              "note": "East region government scheme may get rechristened from the current scheme to a national scheme, causing a slowdown in the government payer mix; matter is on the anvil with authorities and should get closed shortly."
+            },
+            {
+              "risk": "Government/institutional payer mix associated with higher ALOS",
+              "status": "stable",
+              "note": "Institutional/government payer mix (~14%) tends to be associated with a higher average length of stay compared to cash/insurance patients."
+            }
+          ],
+          "themes": [
+            {
+              "label": "Volume-led growth",
+              "direction": "positive",
+              "note": "Growth was driven by volumes — more patients accessing care — considered by management a sustainable model versus price-led (ARPOB/ALOS) growth.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Sahyadri integration",
+              "direction": "positive",
+              "note": "Sahyadri EBITDA margin improved to ~17.5% in Q1 through doctor interoperability, conversion efficiencies, CONGO mix and service standards, on an 16-18 month integration playbook.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Greenfield ramp-up",
+              "direction": "positive",
+              "note": "Bengaluru greenfields (Kanakapura, Yelahanka) broke even ahead of plan and delivered 13% EBITDA margin in Q1, though early doctor costs dented composite margin by 0.5pp.",
+              "section_ref": "MFG"
+            },
+            {
+              "label": "Capacity expansion / bed additions",
+              "direction": "positive",
+              "note": "~1,000 beds targeted for FY27 via Electronic City, Nashik, Raipur and Kinder; INR4,000 crores capex planned over next 3-4 years for 3,000 beds.",
+              "section_ref": "MFG"
+            },
+            {
+              "label": "CONGO-R / high-acuity mix",
+              "direction": "positive",
+              "note": "Centres of Excellence revenue contribution rose to 65% with 45% IP revenue growth; oncology mix rising from 10.8% to 12.2% at network level.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Deleveraging post-IPO",
+              "direction": "positive",
+              "note": "Net debt/EBITDA to fall from 2.8x to 0.9x post Q2 FY27 debt repayment, providing headroom for further expansion including inorganic opportunities.",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Payer mix / scheme collections",
+              "direction": "negative",
+              "note": "Slow scheme patient collections sector-wide and a pending government scheme transition in the East region are near-term headwinds being monitored.",
+              "section_ref": "RISK"
+            }
+          ],
+          "key_takeaways": [
+            "Our Q1 revenue of INR3,091 crores represents a growth of over 38% year-on-year. Our network EBITDA was INR749 crores, a growth of over 26% over last year. Excluding a one-off gain that we had in the first quarter of last year, the growth is over 30%.",
+            "Our operating margin excluding Sahyadri was 25%, and at a network level that includes Sahyadri Hospitals, is at 24.2% for the quarter.",
+            "Our inpatient volumes grew by about 39%, and OP volumes by 26% over Q1 of last year. Average occupancy across our network was 65%, a 290 bps increase over Q1 of last year, while we maintained an industry-leading ALOS of just 2.7 days.",
+            "Our digital revenue grew significantly and contributed about INR710 crores during the quarter, representing about 23% of our overall revenue.",
+            "Our Centres of Excellence... continue to be a key growth driver, their revenue contribution rising to about 65% in Q1 of FY27. During this quarter, IP revenues across these specialties grew by 45%.",
+            "Sahyadri reported revenue of INR332 crores in Quarter 1, a growth of over 13% compared to last year. EBITDA for the quarter was INR58 crores, a growth of about 19% year-on-year.",
+            "We launched our 50th hospital along the promised timelines in the last month, in the month of July, and it added about 300 beds more to our licensed capacity.",
+            "The company announced a transaction to acquire the entire business operations and assets of Kinder Hospital in the Whitefield area of Bangalore."
+          ],
+          "pressing_questions": []
+        }
+      ]
     }
   }
 }
