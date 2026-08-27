@@ -1,15 +1,30 @@
 {
   "date": "2026-08-27",
-  "pending": [],
-  "processed": 0,
+  "pending": [
+    "ENRIN",
+    "MILKYMIST",
+    "WELSPUNLIV",
+    "JNPR"
+  ],
+  "processed": 8,
   "stats": {
     "date": "2026-08-27",
     "discovered": 2,
     "carried_over": 6,
     "queued_total": 8,
     "processing_today": 8,
-    "pending_tomorrow": 0,
+    "pending_tomorrow": 4,
     "cap": 40,
-    "already_processed_today": 0
+    "already_processed_today": 8,
+    "added_today": 1,
+    "failed_today": 7
+  },
+  "added": 1,
+  "failed": 7,
+  "retries": {
+    "ENRIN": 3,
+    "MILKYMIST": 2,
+    "WELSPUNLIV": 2,
+    "JNPR": 1
   }
 }
