@@ -1,15 +1,38 @@
 {
   "date": "2026-08-28",
-  "pending": [],
-  "processed": 0,
+  "pending": [
+    "ENRIN",
+    "MILKYMIST",
+    "JNPR",
+    "RANEHOLDIN",
+    "RML",
+    "NLCINDIA",
+    "CESC",
+    "VADILALIND"
+  ],
+  "processed": 10,
   "stats": {
     "date": "2026-08-28",
     "discovered": 2,
     "carried_over": 8,
     "queued_total": 10,
     "processing_today": 10,
-    "pending_tomorrow": 0,
+    "pending_tomorrow": 8,
     "cap": 40,
-    "already_processed_today": 0
+    "already_processed_today": 10,
+    "added_today": 2,
+    "failed_today": 8
+  },
+  "added": 2,
+  "failed": 8,
+  "retries": {
+    "ENRIN": 5,
+    "MILKYMIST": 4,
+    "JNPR": 3,
+    "RANEHOLDIN": 2,
+    "RML": 2,
+    "NLCINDIA": 2,
+    "CESC": 2,
+    "VADILALIND": 2
   }
 }
