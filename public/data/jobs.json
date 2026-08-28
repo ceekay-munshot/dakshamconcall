@@ -1217,8 +1217,10 @@
       "source": "transcript"
     },
     "RANEHOLDIN": {
-      "status": "running",
-      "started_at": "2026-08-28T21:07:07.429Z"
+      "status": "failed",
+      "finished_at": "2026-08-28T21:07:16.596Z",
+      "error": "Screener daily AI-summary limit reached. [premium account] Limit exceeded - Please try again later Premium users can request 80 summaries each day.",
+      "message": "Couldn't fetch RANEHOLDIN's latest concall. Screener daily AI-summary limit reached. [premium account] Limit exceeded - Please try again later Premium users can request 80 summaries each day."
     },
     "RML": {
       "status": "failed",
