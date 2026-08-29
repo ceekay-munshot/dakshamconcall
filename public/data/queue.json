@@ -1,34 +1,15 @@
 {
   "date": "2026-08-29",
-  "pending": [
-    "JNPR",
-    "RANEHOLDIN",
-    "RML",
-    "NLCINDIA",
-    "CESC",
-    "VADILALIND"
-  ],
+  "pending": [],
   "processed": 7,
   "stats": {
     "date": "2026-08-29",
-    "discovered": 0,
-    "carried_over": 7,
+    "discovered": 1,
+    "carried_over": 6,
     "queued_total": 7,
     "processing_today": 7,
-    "pending_tomorrow": 6,
+    "pending_tomorrow": 0,
     "cap": 40,
-    "already_processed_today": 7,
-    "added_today": 0,
-    "failed_today": 7
-  },
-  "added": 0,
-  "failed": 7,
-  "retries": {
-    "JNPR": 5,
-    "RANEHOLDIN": 4,
-    "RML": 4,
-    "NLCINDIA": 4,
-    "CESC": 4,
-    "VADILALIND": 4
+    "already_processed_today": 7
   }
 }
