@@ -1,15 +1,26 @@
 {
   "date": "2026-08-30",
-  "pending": [],
-  "processed": 0,
+  "pending": [
+    "CESC",
+    "VADILALIND"
+  ],
+  "processed": 4,
   "stats": {
     "date": "2026-08-30",
     "discovered": 2,
     "carried_over": 0,
     "queued_total": 2,
     "processing_today": 2,
-    "pending_tomorrow": 0,
+    "pending_tomorrow": 2,
     "cap": 40,
-    "already_processed_today": 0
+    "already_processed_today": 4,
+    "added_today": 2,
+    "failed_today": 2
+  },
+  "added": 2,
+  "failed": 2,
+  "retries": {
+    "CESC": 1,
+    "VADILALIND": 1
   }
 }
