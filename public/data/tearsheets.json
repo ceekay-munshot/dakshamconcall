@@ -383730,6 +383730,1533 @@
           ]
         }
       ]
+    },
+    "JNPR": {
+      "company": "Juniper Green Energy Ltd",
+      "ticker": "JNPR",
+      "industry": "Power Generation",
+      "country": "India",
+      "about": "Incorporated in 2011, Juniper Green Energy Limited is one of India's leading renewable energy independent power producers (IPPs), engaged in developing, building, operating, and maintaining utility-scale renewable energy projects.[1]",
+      "reported_pnl": {
+        "basis": "consolidated",
+        "periods": [
+          "Jun 2025",
+          "Mar 2026",
+          "Jun 2026"
+        ],
+        "rows": [
+          {
+            "label": "Sales",
+            "values": [
+              "161",
+              "213",
+              "291"
+            ]
+          },
+          {
+            "label": "Expenses",
+            "values": [
+              "23",
+              "30",
+              "30"
+            ]
+          },
+          {
+            "label": "Operating Profit",
+            "values": [
+              "138",
+              "183",
+              "261"
+            ]
+          },
+          {
+            "label": "OPM %",
+            "values": [
+              "86%",
+              "86%",
+              "90%"
+            ]
+          },
+          {
+            "label": "Other Income",
+            "values": [
+              "21",
+              "31",
+              "33"
+            ]
+          },
+          {
+            "label": "Interest",
+            "values": [
+              "79",
+              "119",
+              "176"
+            ]
+          },
+          {
+            "label": "Depreciation",
+            "values": [
+              "50",
+              "67",
+              "75"
+            ]
+          },
+          {
+            "label": "Profit before tax",
+            "values": [
+              "29",
+              "28",
+              "44"
+            ]
+          },
+          {
+            "label": "Tax %",
+            "values": [
+              "26%",
+              "23%",
+              "24%"
+            ]
+          },
+          {
+            "label": "Net Profit",
+            "values": [
+              "22",
+              "22",
+              "33"
+            ]
+          },
+          {
+            "label": "EPS in Rs",
+            "values": [
+              "0.44",
+              "0.44",
+              "0.68"
+            ]
+          }
+        ],
+        "source_url": "https://www.screener.in/company/JNPR/consolidated/#quarters",
+        "captured_at": "2026-09-01T23:58:16.493Z"
+      },
+      "checked_at": "2026-09-02T00:03:46.878Z",
+      "quarters": [
+        {
+          "company": "Juniper Green Energy Ltd",
+          "ticker": "JNPR",
+          "industry": "Power Generation",
+          "country": "India",
+          "concall_date": "2026-09-01",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b97d3ebc-f0b5-41d4-ae8f-3953b221f8e2.pdf",
+          "model": "anthropic.claude-sonnet-5",
+          "pipeline_version": 3,
+          "generated_at": "2026-09-02T00:02:11.742Z",
+          "summary": "Juniper Green Energy delivered its first quarterly results as a listed company with record revenue, EBITDA and quarterly commissioning; management remains on track to commission 2 GW for FY27, targeting 4.5 GWh of BESS by June 2027 and 10 GWh by March 2028, with run-rate EBITDA guidance of ~INR 2,700-2,750 crore for the ~4 GW FY27 exit portfolio and ~INR 4,500 crore for the ~6 GW FY28 exit portfolio.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "Total income",
+                  "value": "324",
+                  "unit": "INR crore",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total income (prior year)",
+                  "value": "181",
+                  "unit": "INR crore",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total income growth YoY",
+                  "value": "79",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA",
+                  "value": "294",
+                  "unit": "INR crore",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA (prior year)",
+                  "value": "159",
+                  "unit": "INR crore",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA growth YoY",
+                  "value": "86",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin",
+                  "value": "91",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin improvement YoY",
+                  "value": "~300",
+                  "unit": "bps",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operating income",
+                  "value": "291",
+                  "unit": "INR crore",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operating income growth YoY",
+                  "value": "81",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operating EBITDA",
+                  "value": "261",
+                  "unit": "INR crore",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operating EBITDA growth YoY",
+                  "value": "89",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operating EBITDA margin",
+                  "value": "90",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operating EBITDA margin increase YoY",
+                  "value": "400",
+                  "unit": "bps",
+                  "period": "Q1 FY27 vs Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Profit after tax (PAT)",
+                  "value": "33",
+                  "unit": "INR crore",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "PAT growth YoY",
+                  "value": "54",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cash PAT (PAT + depreciation)",
+                  "value": "108",
+                  "unit": "INR crore",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cash PAT growth YoY",
+                  "value": "50",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Days receivable outstanding",
+                  "value": "19",
+                  "unit": "days",
+                  "period": "as on June 30, 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total net debt outstanding",
+                  "value": "11,217",
+                  "unit": "INR crore",
+                  "period": "as on June 30, 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net debt for operating projects",
+                  "value": "7,183",
+                  "unit": "INR crore",
+                  "period": "as on June 30, 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Refinancing completed",
+                  "value": "1,700+",
+                  "unit": "INR crore",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Refinancing weighted average interest rate",
+                  "value": "<8",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Weighted average cost of debt (operational portfolio)",
+                  "value": "~8.5",
+                  "unit": "%",
+                  "period": "as on June 30, 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net worth",
+                  "value": "3,463",
+                  "unit": "INR crore",
+                  "period": "as on June 30, 2026 (pre-IPO)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net debt-to-equity",
+                  "value": "3.24x",
+                  "unit": "x",
+                  "period": "as on June 30, 2026 (pre-IPO)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "IPO proceeds raised (primary)",
+                  "value": "1,800",
+                  "unit": "INR crore",
+                  "period": "IPO",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Net worth post-IPO",
+                  "value": "5,200",
+                  "unit": "INR crore",
+                  "period": "post-IPO",
+                  "kind": "reported"
+                },
+                {
+                  "label": "One-time refinancing cost impacting PAT",
+                  "value": "18",
+                  "unit": "INR crore",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total Capex as on 30 June",
+                  "value": "16,000",
+                  "unit": "INR crore",
+                  "period": "as on June 30, 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Projected total Capex by March '27",
+                  "value": "22,000",
+                  "unit": "INR crore",
+                  "period": "by March 2027",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Record Quarter Highlights",
+                  "points": [
+                    "First set of results presented as a listed company",
+                    "Delivered highest ever quarterly revenue and EBITDA and highest ever renewable capacity commissioned in a single quarter",
+                    "IPO raised INR 1,800 crore primary, strengthening balance sheet post-IPO (net worth increased from INR 3,463 crore to INR 5,200 crore)"
+                  ]
+                },
+                {
+                  "label": "Refinancing & Debt",
+                  "points": [
+                    "Completed refinancing of more than INR 1,700 crore across three projects at a weighted average interest rate of less than 8%",
+                    "Weighted average cost of debt for operational portfolio now around 8.5%",
+                    "One-time refinancing cost of INR 18 crore impacted PAT in the quarter; PAT would have been higher (adjusted for tax) without this one-off"
+                  ]
+                },
+                {
+                  "label": "Depreciation Policy Change",
+                  "points": [
+                    "Depreciation policy has been aligned to market practice as followed by other companies, based on an assessment/estimate done by the company"
+                  ]
+                },
+                {
+                  "label": "Capex Plan",
+                  "points": [
+                    "Total Capex as on 30 June 2026 is around INR 16,000 crore",
+                    "This is expected to increase to around INR 22,000 crore by March '27, including capacity of around 3,900 MW being commissioned by March '27 and CWIP for capacity coming in subsequent quarters"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ORD",
+              "title": "Order Book & Demand",
+              "key_figures": [
+                {
+                  "label": "Total portfolio capacity",
+                  "value": "~11,200",
+                  "unit": "MW",
+                  "period": "as on date",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BESS portfolio (total)",
+                  "value": "~9",
+                  "unit": "GWh",
+                  "period": "as on date",
+                  "kind": "reported"
+                },
+                {
+                  "label": "FDRE and wind-solar hybrid share of portfolio",
+                  "value": "84",
+                  "unit": "%",
+                  "period": "as on date",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Blended weighted average tariff (portfolio)",
+                  "value": "INR 3.7",
+                  "unit": "INR/unit",
+                  "period": "as on date",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Operational plus PPA-signed capacity",
+                  "value": "6.2+",
+                  "unit": "GW",
+                  "period": "as on date",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total PPA portfolio (peak)",
+                  "value": "~6",
+                  "unit": "GW",
+                  "period": "as on date",
+                  "kind": "reported"
+                },
+                {
+                  "label": "LOA portfolio (peak)",
+                  "value": "~5",
+                  "unit": "GW",
+                  "period": "as on date",
+                  "kind": "reported"
+                },
+                {
+                  "label": "SECI Firm and Dispatchable RE round-the-clock (thermal mimic) tender won",
+                  "value": "870",
+                  "unit": "MW",
+                  "period": "post Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Thermal mimic tender BESS component",
+                  "value": "2,200",
+                  "unit": "MWh",
+                  "period": "post Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Thermal mimic contracted capacity",
+                  "value": "230",
+                  "unit": "MW",
+                  "period": "post Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Thermal mimic tender tariff",
+                  "value": "INR 5.26",
+                  "unit": "INR/unit",
+                  "period": "post Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "GUVNL wind project won",
+                  "value": "50",
+                  "unit": "MW",
+                  "period": "post Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "GUVNL wind tariff",
+                  "value": "INR 3.51",
+                  "unit": "INR/unit",
+                  "period": "post Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "SJVN FDRE PPA signed",
+                  "value": "50",
+                  "unit": "MW",
+                  "period": "post Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "SJVN FDRE PPA tariff",
+                  "value": "4.25",
+                  "unit": "INR/unit",
+                  "period": "post Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Remaining FDRE capacity to convert LOA to PPA",
+                  "value": "550",
+                  "unit": "MW",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "FDRE capacity in advanced discussion (confirmed buyer)",
+                  "value": "350",
+                  "unit": "MW",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Hybrid project in advanced discussion",
+                  "value": "150",
+                  "unit": "MW",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Thermal mimic expected near-term capacity",
+                  "value": "1",
+                  "unit": "GW peak",
+                  "period": "near-term",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Thermal mimic expected BESS",
+                  "value": "2.2",
+                  "unit": "GWh",
+                  "period": "near-term",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Total expected LOA-to-PPA conversion (next few months)",
+                  "value": ">2 GW peak + ~4 GWh BESS",
+                  "unit": null,
+                  "period": "next few months",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Historical load-following tender tariff",
+                  "value": "~INR 5.50",
+                  "unit": "INR/unit",
+                  "period": "prior tenders",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Thermal mimic tender expected overall CUF",
+                  "value": "~75",
+                  "unit": "%",
+                  "period": "annual",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Peak Power / FDRE Traction",
+                  "points": [
+                    "Strong traction for peak power because many states are struggling with peak demand gaps",
+                    "Many FDRE PPAs and bid-out BESS capacity have not materialized industry-wide, giving Juniper an edge given it has delivered on FDRE commitments",
+                    "Won SECI thermal mimic tender (870 MW/2,200 MWh, 230 MW contracted, tariff INR 5.26) – LOA already received",
+                    "Won 50 MW GUVNL wind project at INR 3.51/unit",
+                    "Signed 50 MW SJVN FDRE PPA at INR 4.25/unit"
+                  ]
+                },
+                {
+                  "label": "LOA to PPA Conversion Outlook",
+                  "points": [
+                    "550 MW of FDRE capacity remaining for LOA-to-PPA conversion",
+                    "350 MW in advanced discussions with confirmed buyer interest from procurers",
+                    "150 MW hybrid project also in advanced discussion",
+                    "Thermal mimic (1 GW peak + 2.2 GWh) expected to convert fast given attractive tariff relative to thermal tariffs",
+                    "Combined expected conversion: >2 GW peak plus ~4 GWh BESS in the next few months"
+                  ]
+                },
+                {
+                  "label": "SECI Demand Aggregation Policy Change",
+                  "points": [
+                    "Government has asked SECI to conduct bids only after aggregating demand from DISCOMs, which management believes could improve LOA-to-PPA conversion by reducing 'DISCOM shopping' behavior seen in earlier tenders where different tariffs were discovered due to multiple entities bidding",
+                    "May reduce total number of tenders happening versus multiple entities tendering independently, but should improve conversion quality"
+                  ]
+                },
+                {
+                  "label": "Thermal Mimic Tender Design",
+                  "points": [
+                    "Tender designed to replicate a thermal plant's round-the-clock output profile through solar, wind and storage combined",
+                    "Tariff meaningfully below thermal power cost",
+                    "Tender covers a wider geographic scope than earlier state-specific load-following tenders and requires 12-hour peak power provision",
+                    "Expected overall CUF of ~75% for the project, comparable to typical thermal plant CUF of 70-80%, which removes prior transmission-charge waiver ambiguity issues that arose from lower renewable CUF (~30%)",
+                    "CUF requirement was reduced to below 60% during daytime per last-minute tender changes, aligning with thermal plant expectations",
+                    "Earlier load-following tenders (state-specific, tariff ~INR 5.50) did not gain traction due to narrower scope and lack of all-night peak power provision; battery prices at that time were not favorable for managing 24-hour profiles"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "Fleet-wide CUF",
+                  "value": "30.2",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Fleet-wide CUF (prior year)",
+                  "value": "28.2",
+                  "unit": "%",
+                  "period": "Q1 FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Generation growth",
+                  "value": "72",
+                  "unit": "%",
+                  "period": "Q1 FY27 YoY",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Generation volume",
+                  "value": "944",
+                  "unit": "million units",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Wind portfolio capacity",
+                  "value": "190",
+                  "unit": "MW",
+                  "period": "as on date",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Wind portfolio weighted average CUF",
+                  "value": "49.9",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Plant availability",
+                  "value": "98.8",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Grid availability",
+                  "value": "99.6",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capacity commissioned in quarter (total)",
+                  "value": "601",
+                  "unit": "MW peak",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Solar commissioned in quarter",
+                  "value": "458",
+                  "unit": "MW peak",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Wind commissioned in quarter",
+                  "value": "143",
+                  "unit": "MW",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Battery commissioned in quarter",
+                  "value": "400",
+                  "unit": "MWh",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cumulative capacity commissioned (April to date)",
+                  "value": ">760",
+                  "unit": "MW",
+                  "period": "April 2026 to date",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Cumulative BESS commissioned (April to date)",
+                  "value": "~400",
+                  "unit": "MWh",
+                  "period": "April 2026 to date",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Sites (cumulative commissioning)",
+                  "value": "8",
+                  "unit": "sites",
+                  "period": "April 2026 to date",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Off-takers rated A and above (% of contracted capacity)",
+                  "value": "98",
+                  "unit": "%",
+                  "period": "as on date",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Portfolio secured through long-term PPAs",
+                  "value": "98",
+                  "unit": "%",
+                  "period": "as on date",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Typical PPA tenure",
+                  "value": "25",
+                  "unit": "years",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Run-rate EBITDA for capacity commissioned as on date (2,575 MW)",
+                  "value": "1,620",
+                  "unit": "INR crore",
+                  "period": "as on date",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Run-rate EBITDA for March '26 capacity",
+                  "value": "1,050",
+                  "unit": "INR crore",
+                  "period": "March 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Capacity commissioned as on date basis for run-rate EBITDA",
+                  "value": "2,575",
+                  "unit": "MW",
+                  "period": "as on date",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Curtailment impact",
+                  "value": "2-2.5",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "TGNA merchant plant capacity (Bikaner)",
+                  "value": "50",
+                  "unit": "MW",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Battery at Bikaner TGNA plant (current)",
+                  "value": "100",
+                  "unit": "MWh",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Battery at Bikaner TGNA plant (planned, doubling)",
+                  "value": "200",
+                  "unit": "MWh",
+                  "period": "within a month",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "BESS returns expectation for new FDRE/hybrid tenders",
+                  "value": "higher teens",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Merchant BESS - firm capacity running as merchant long-term",
+                  "value": "1.5",
+                  "unit": "GW/GWh",
+                  "period": "next 1-2 years",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Additional BESS to be added by December 2026",
+                  "value": "~700",
+                  "unit": "MWh",
+                  "period": "by December 2026",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Current BESS operational capacity (as referenced by analyst)",
+                  "value": "~503",
+                  "unit": "MWh",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Operational Performance",
+                  "points": [
+                    "Highest ever quarterly renewable capacity commissioned in a single quarter",
+                    "Commissioned India's first FDRE project under the SJVN FDRE tender during the quarter — a first for the country and proof point for the company's growth model",
+                    "BESS assets performing well with round-trip efficiency of approximately 91% and state of health of around 99.6%, reflecting quality of BESS operations capability"
+                  ]
+                },
+                {
+                  "label": "Portfolio Quality",
+                  "points": [
+                    "98% of contracted capacity is with off-takers rated A and above",
+                    "98% of portfolio secured through long-term PPAs typically running for 25 years",
+                    "Days receivable outstanding at 19 days as on June 30, among the lowest in the sector, reflecting strength of off-takers"
+                  ]
+                },
+                {
+                  "label": "Run-rate EBITDA Trend",
+                  "points": [
+                    "Run-rate EBITDA for the 2,575 MW commissioned as on date stands at INR 1,620 crore, up from INR 1,050 crore for the capacity commissioned as of March '26, reflecting improving unit economics as more capacity comes online"
+                  ]
+                },
+                {
+                  "label": "Curtailment Management",
+                  "points": [
+                    "Curtailment largely restricted to TGNA (temporary grid connectivity) capacity — a 50 MW merchant plant in Bikaner with an existing 100 MWh battery that mitigated curtailment",
+                    "This battery will double to 200 MWh within a month to fully eliminate curtailment on this capacity",
+                    "Some FDRE capacity on TGNA also experiences curtailment, currently offset by an existing 400 MWh battery with further addition expected by October",
+                    "Overall curtailment impact estimated at 2% to 2.5%, unrelated to CUF performance which came in at 30.2% for the fleet"
+                  ]
+                },
+                {
+                  "label": "BESS Economics",
+                  "points": [
+                    "BESS revenue is not tracked as a standalone line item as batteries are bundled into FDRE/hybrid/thermal-mimic contracts under a common tariff, making it difficult to isolate BESS-specific revenue",
+                    "Returns on newer FDRE/hybrid tenders are in the higher teens on an overall basis; early FDRE tenders had significantly higher returns as an early mover",
+                    "Standalone BESS (pure merchant/transmission-element) not being pursued meaningfully currently due to lower returns; opportunistic merchant BESS will be pursued",
+                    "Of the 4.5 GWh being installed by June '27, 1.5 GW/GWh is not linked to any specific project and will run as merchant for the next 1-2 years",
+                    "An additional ~700 MWh is expected to be added by December 2026 (in stages) on top of the current ~500 MWh, and this will also run merchant, with some later moving into a PPA by June",
+                    "Margins on merchant BESS this year improved: daytime charging tariffs have fallen from ~INR 2.50 (previously) to INR 1-1.30; sale side average was ~INR 8 for full year '25 but this year includes sales on HPDAM market (cap up to INR 20), expected to push full-year sale numbers higher, though weather will play a role"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "TECH",
+              "title": "Product & Technology",
+              "key_figures": [
+                {
+                  "label": "Container price (batches closed ~Jan '26, ~2-2.5 GWh)",
+                  "value": "$59-60",
+                  "unit": "$/kWh (container)",
+                  "period": "January 2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Container price peak (subsequent months, lithium carbonate driven)",
+                  "value": "$68-70",
+                  "unit": "$/kWh (container)",
+                  "period": "recent months",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Container price current",
+                  "value": "$65-68",
+                  "unit": "$/kWh (container)",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "All-in battery price (BOS + tax + duty) for lower-priced batch",
+                  "value": "~$100",
+                  "unit": "$/kWh",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Container price for batches closed a couple months back",
+                  "value": "~$68",
+                  "unit": "$/kWh (container)",
+                  "period": "a couple of months back",
+                  "kind": "reported"
+                },
+                {
+                  "label": "All-in price for that batch",
+                  "value": "~$110",
+                  "unit": "$/kWh",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BESS LTSA coverage period",
+                  "value": "15-20",
+                  "unit": "years",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Double-cycle battery life",
+                  "value": "15",
+                  "unit": "years",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Single-cycle battery life",
+                  "value": "20",
+                  "unit": "years",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Historical battery price (2023)",
+                  "value": ">$300",
+                  "unit": "$/kWh",
+                  "period": "2023",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Battery price mid-transition",
+                  "value": "$150-160",
+                  "unit": "$/kWh",
+                  "period": "transition period",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Non-DCR module price closed",
+                  "value": "INR 12.1-12.2",
+                  "unit": "INR/watt peak",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "DCR module price assumed for thermal mimic tender",
+                  "value": "~INR 17",
+                  "unit": "INR/watt peak",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BESS ordered capacity",
+                  "value": "4,000",
+                  "unit": "megawatt-hour",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BESS operational capacity",
+                  "value": "503",
+                  "unit": "megawatt-hour",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "BESS expected capacity by June 2027",
+                  "value": "4.5",
+                  "unit": "gigawatt-hours",
+                  "period": "by June 2027",
+                  "kind": "target"
+                },
+                {
+                  "label": "BESS expected capacity by March 2028",
+                  "value": "10",
+                  "unit": "gigawatt-hours",
+                  "period": "by March 2028",
+                  "kind": "target"
+                },
+                {
+                  "label": "BESS merchant capacity expected",
+                  "value": "1.5",
+                  "unit": "gigawatt",
+                  "period": "next couple of years",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Daytime tariff for battery charging (historical, last year or before)",
+                  "value": "2.50",
+                  "unit": "INR",
+                  "period": "prior years",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Daytime tariff for battery charging (current range)",
+                  "value": "1-1.30",
+                  "unit": "INR",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Average full year sale price of power (FY25)",
+                  "value": "8",
+                  "unit": "INR",
+                  "period": "FY25",
+                  "kind": "reported"
+                },
+                {
+                  "label": "HPDAM market price ceiling",
+                  "value": "20",
+                  "unit": "INR",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Expected buying price for battery charging going forward",
+                  "value": "1-1.50",
+                  "unit": "INR",
+                  "period": "current",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Surplus power generation expected during day for Thermal Mimic project",
+                  "value": "1-2",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "BESS Sourcing Strategy",
+                  "points": [
+                    "Company has adopted a fully integrated BESS solution approach (container + PCS + EMS from a single entity), differing from the more fragmented Indian industry approach where container, PCS and EMS integration are sourced separately",
+                    "This mirrors how BESS procurement happens globally (e.g., in the West)",
+                    "Limited players offer this fully integrated solution in India: Envision (which owns AESC, a leading cell manufacturer), Sungrow (world's largest integrator); Fluence has exited the market; company is also in talks with CATL and others",
+                    "Full 4.5 GWh contracted to date is entirely from Envision (AESC cells, Envision containers, PCS, and EMS integration done via Envision-owned company 'Universe', a large renewable data analytics company)",
+                    "LTSA with supplier covers both warranties and O&M for 15-20 years depending on battery life/cycle type",
+                    "Flexible throughput warranty: double-cycle (C/2) batteries get 15-year life; single-cycle (C/4) batteries get 20-year life"
+                  ]
+                },
+                {
+                  "label": "Battery Pricing Trend & Technology Evolution",
+                  "points": [
+                    "Container prices for ~2-2.5 GWh of batteries closed around January 2026 were $59-60/kWh; prices later rose to $68-70/kWh (lithium carbonate driven) before cooling to $65-68/kWh currently",
+                    "All-in price (BOS + tax + duty) around $100/kWh for the lower-priced batch and ~$110/kWh for a batch closed a couple months back at ~$68 container price",
+                    "Technology evolution: initial FDRE model (2023) used wind+solar overbuild due to battery prices >$300/kWh; as prices fell to $150-160/kWh, wind capacity was halved, solar kept steady, and battery capacity increased to 1.5x contracted capacity with C/2 (double-charge) batteries; as prices fell further to ~$100/kWh, wind was reduced to a small capacity, solar increased, and battery capacity doubled with a C/4 (single-charge, discharging 4 hours at night plus 2+2 peak hours) design offering buyer flexibility on discharge timing",
+                    "At current battery prices (~$100-108/kWh), solar+battery matches or beats solar+wind+battery returns, making solar+battery preferable operationally since it's easier to execute without losing returns; wind is added in current tenders (like thermal mimic) primarily to accentuate returns rather than as a technical necessity"
+                  ]
+                },
+                {
+                  "label": "Module Pricing",
+                  "points": [
+                    "Non-DCR module prices closed at INR 12.1-12.2 per watt peak, driven down by a supply glut in both China and India",
+                    "Company's current capacity (apart from the thermal mimic tender) does not require DCR modules and it is not currently buying DCR",
+                    "DCR module price assumed for thermal mimic tender is around INR 17 per watt peak"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MFG",
+              "title": "Manufacturing & Capacity",
+              "key_figures": [
+                {
+                  "label": "India installed renewable power generation capacity",
+                  "value": "~290",
+                  "unit": "GW",
+                  "period": "current",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "Land banked for pipeline",
+                  "value": "14,000+",
+                  "unit": "acres",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Identified wind turbine locations",
+                  "value": "200+",
+                  "unit": "locations",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Surplus connectivity over pipeline",
+                  "value": ">4.5",
+                  "unit": "GW",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Further connectivity available for BESS installation",
+                  "value": ">20",
+                  "unit": "GWh",
+                  "period": "current (for future bids)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Target capacity commissioning this quarter",
+                  "value": "250-300",
+                  "unit": "MW",
+                  "period": "Q2 FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Full year capacity commissioning target",
+                  "value": "2",
+                  "unit": "GW",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "BESS target",
+                  "value": "~4.5",
+                  "unit": "GWh",
+                  "period": "by June 2027",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "BESS target",
+                  "value": "10",
+                  "unit": "GWh",
+                  "period": "by March 2028",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "FY28 exit capacity target",
+                  "value": "~6",
+                  "unit": "GW",
+                  "period": "FY28",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "FY27 exit capacity target",
+                  "value": "~4",
+                  "unit": "GW",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Substation with remaining capacity (grid completion by December)",
+                  "value": "300",
+                  "unit": "MW",
+                  "period": "expected by December 2026",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Grid & Connectivity Risk Assessment",
+                  "points": [
+                    "Balance ~300 MW for this quarter is primarily on STUs with projects nearly complete — no grid issue there",
+                    "Balance ~1 GW is largely on CTU but substations are mostly already operational",
+                    "One substation with ~300 MW of capacity is operational but the overall system under completion should be done by December — no major risk to 2 GW target seen from grid slippage",
+                    "Connectivity, land and financing for the pipeline are largely tied up and execution is progressing well across sites"
+                  ]
+                },
+                {
+                  "label": "TGNA Strategy",
+                  "points": [
+                    "Where transmission is delayed, the company plans to commission batteries first (leveraging favorable current tariffs and arbitrage) and run on merchant, then add renewable capacity once GNA is available, per government clarity allowing merchant sale",
+                    "Evacuation infrastructure for FDRE projects largely built by company itself; civil work, boundary work and piling proceed ahead of structure and module installation which is deferred until GNA is ready",
+                    "Under TGNA, batteries or a limited renewable-to-battery-absorption capacity will be commissioned first"
+                  ]
+                },
+                {
+                  "label": "Execution Capability",
+                  "points": [
+                    "In-house EPC team runs end-to-end parallel execution across multiple sites and states at both STU and CTU levels — described as a core differentiator",
+                    "Over 14,000 acres of land banked for under-construction and awarded pipeline",
+                    "More than 200 identified wind turbine installation locations"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [
+                {
+                  "label": "Thermal mimic project location",
+                  "value": "Rajasthan",
+                  "unit": null,
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Surplus connectivity for thermal mimic/related project",
+                  "value": "4,500",
+                  "unit": "MW",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Thermal Mimic Site",
+                  "points": [
+                    "Grid connectivity for the thermal mimic order is already available in Rajasthan",
+                    "~4,500 MW of surplus connectivity is available, allowing the company to plan commissioning per PPA requirement once signed"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "IPO Milestone",
+                  "points": [
+                    "Company raised INR 1,800 crore through its IPO, described as a significant milestone; this is the company's first earnings call as a listed company",
+                    "IPO strengthened balance sheet, taking net worth from INR 3,463 crore (pre-IPO, as on 30 June) to INR 5,200 crore post-IPO"
+                  ]
+                },
+                {
+                  "label": "Corporate Structure",
+                  "points": [
+                    "Company maintains a simple, straightforward holding-company structure with individual projects executed through separate SPVs, a typical structure for infrastructure businesses",
+                    "Each SPV is used to sign PPAs and secure project financing in a ring-fenced environment; whenever the company wins a tender for connectivity and PPA, it is done through a separate SPV structure",
+                    "No explicit plan discussed to consolidate or rationalize subsidiaries beyond this standard SPV-based approach"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Grid/Transmission Risk",
+                  "points": [
+                    "Risk of delays in transmission (CTU-level) potentially affecting the 2 GW FY27 capacity addition plan; management believes this risk is manageable since most substations are already operational or near completion by December",
+                    "TGNA (temporary connectivity) capacity is exposed to curtailment; mitigated via battery deployment"
+                  ]
+                },
+                {
+                  "label": "Curtailment",
+                  "points": [
+                    "Curtailment of 2-2.5% currently experienced, restricted to TGNA capacity (50 MW Bikaner plant and some FDRE capacity on TGNA); expected to be fully eliminated with additional battery installations"
+                  ]
+                },
+                {
+                  "label": "Battery/Commodity Price Volatility",
+                  "points": [
+                    "Lithium carbonate price movements have driven battery container prices up (from $59-60 to $68-70/kWh) before cooling to $65-68/kWh, indicating exposure to raw material price volatility"
+                  ]
+                },
+                {
+                  "label": "Tender/Policy Uncertainty",
+                  "points": [
+                    "Earlier load-following tenders faced tariff and structural issues (state-specific scope, no all-night peak power) which limited execution; new demand-aggregation policy by government for SECI tenders could reduce number of tenders even as it improves conversion",
+                    "Removal of transmission-charge waivers for renewable projects with CUF below certain thresholds could have previously created disputes; new thermal mimic-style tenders with ~75% CUF address this transmission charge waiver ambiguity"
+                  ]
+                },
+                {
+                  "label": "One-time Financial Items",
+                  "points": [
+                    "INR 18 crore one-time refinancing cost impacted PAT in the quarter"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [
+                {
+                  "label": "Q2 FY27 capacity commissioning target",
+                  "value": "250-300",
+                  "unit": "MW",
+                  "period": "Q2 FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "FY27 full year capacity commissioning target",
+                  "value": "2",
+                  "unit": "GW",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "BESS installed capacity target",
+                  "value": "~4.5",
+                  "unit": "GWh",
+                  "period": "by June 2027",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "BESS installed capacity target",
+                  "value": "10",
+                  "unit": "GWh",
+                  "period": "by March 2028",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "FY27 run-rate EBITDA (for ~4 GW capacity)",
+                  "value": "2,700-2,750",
+                  "unit": "INR crore",
+                  "period": "FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "FY28 run-rate EBITDA (for ~6 GW capacity)",
+                  "value": "4,500",
+                  "unit": "INR crore",
+                  "period": "FY28",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Expected LOA-to-PPA conversion",
+                  "value": ">2 GW peak + ~4 GWh BESS",
+                  "unit": null,
+                  "period": "next few months",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Projected total Capex by March '27",
+                  "value": "22,000",
+                  "unit": "INR crore",
+                  "period": "by March 2027",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Capacity & BESS Targets",
+                  "points": [
+                    "Firmly on track to deliver 2 GW commissioning guidance for FY27; connectivity, land and financing largely tied up",
+                    "Targeting 250-300 MW of additional capacity commissioning this quarter",
+                    "On track for ~4.5 GWh BESS installed capacity by June '27 and 10 GWh by March '28"
+                  ]
+                },
+                {
+                  "label": "EBITDA Guidance",
+                  "points": [
+                    "FY27 run-rate EBITDA guided at ~INR 2,700-2,750 crore for a portfolio reaching close to 4 GW",
+                    "FY28 run-rate EBITDA guided at ~INR 4,500 crore for a portfolio reaching close to 6 GW"
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "Capacity commissioning",
+              "horizon": "Q2 FY27",
+              "statement": "Targeting another 250 to 300 megawatts of capacity this quarter",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Capacity commissioning",
+              "horizon": "FY27",
+              "statement": "Overall 2 gigawatts for the full year; remain firmly on track to deliver against this guidance",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "BESS installed capacity",
+              "horizon": "by June '27",
+              "statement": "Remain on track for our target of approximately 4.5 gigawatt-hours of installed capacity by June '27",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "BESS installed capacity",
+              "horizon": "by March '28",
+              "statement": "10 gigawatt-hours by March '28",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Run-rate EBITDA",
+              "horizon": "FY27",
+              "statement": "By FY27, we will be looking at capacity which will be close to 4 gigawatts. The run rate EBITDA for that capacity sits at around INR 2,700 crores, 2,750",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Run-rate EBITDA",
+              "horizon": "FY28",
+              "statement": "FY28, we are looking at close to 6 gigawatt capacity being commissioned. The run rate EBITDA for that is close to INR 4,500 crores",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Total Capex",
+              "horizon": "by March '27",
+              "statement": "By March '27 this amount will increase to around INR 22,000 crores, which includes the capacity of around 3,900 MW getting commissioned by March '27 and CWIP for capacity coming in subsequent quarters",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "LOA to PPA conversion",
+              "horizon": "next few months",
+              "statement": "Overall, this will be almost more than 2 gigawatts of peak capacity plus around 4 gigawatt-hours of BESS capacity that is something we are looking at doing in the next few months",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Merchant BESS capacity duration",
+              "horizon": "next 1-2 years",
+              "statement": "1.5 gigawatt of the 4.5 GWh will be running fully as merchant for the next 1 to 2 years",
+              "specificity": "specific",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Additional BESS capacity",
+              "horizon": "by December 2026",
+              "statement": "There is close to 700 megawatt-hours which is expected to add on to the 500 megawatt-hours which is there right now by December of this year, in stages",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Bikaner TGNA battery capacity",
+              "horizon": "within a month",
+              "statement": "This 100 megawatt-hour will double to 200 in a month's time",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "FDRE BESS addition at TGNA",
+              "horizon": "by October",
+              "statement": "There is another further addition that will probably get completed by October",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "Transmission/grid connectivity delays affecting 2 GW FY27 capacity addition plan",
+              "status": "stable",
+              "note": "Management believes balance capacity is largely on operational or near-complete substations; system completion expected by December, no major risk to 2 GW target seen"
+            },
+            {
+              "risk": "Curtailment on TGNA (temporary connectivity) capacity",
+              "status": "stable",
+              "note": "Currently 2-2.5% curtailment impact, restricted to 50 MW Bikaner merchant plant and some FDRE capacity on TGNA; being mitigated via battery capacity doubling and additions"
+            },
+            {
+              "risk": "Battery/commodity (lithium carbonate) price volatility",
+              "status": "easing",
+              "note": "Container prices rose from $59-60 to $68-70/kWh due to lithium carbonate but have since cooled to $65-68/kWh"
+            },
+            {
+              "risk": "Tender/DISCOM demand uncertainty and shopping behavior",
+              "status": "easing",
+              "note": "New government policy requiring SECI to aggregate demand before floating bids expected to reduce DISCOM 'shopping' and improve LOA-to-PPA conversion, though it may reduce total tender volume"
+            },
+            {
+              "risk": "Historical load-following tender structural issues",
+              "status": "resolved",
+              "note": "Earlier load-following tenders were state-specific and did not provide all-night peak power, limiting uptake; new thermal mimic tender design addresses these gaps with broader flexibility and ~75% CUF"
+            },
+            {
+              "risk": "Transmission charge waiver ambiguity for low-CUF renewable projects",
+              "status": "easing",
+              "note": "New thermal mimic-style tenders with ~75% CUF align with thermal plant CUF expectations, removing the waiver dispute risk associated with lower CUF renewable projects"
+            },
+            {
+              "risk": "One-time refinancing cost impact on PAT",
+              "status": "resolved",
+              "note": "INR 18 crore one-time refinancing cost impacted PAT this quarter; described as a one-off"
+            }
+          ],
+          "themes": [
+            {
+              "label": "Capacity commissioning momentum",
+              "direction": "positive",
+              "note": "Highest ever quarterly commissioning of 601 MW peak plus 400 MWh BESS; on track for 2 GW FY27 guidance",
+              "section_ref": "MFG"
+            },
+            {
+              "label": "BESS scale-up",
+              "direction": "positive",
+              "note": "Targeting 4.5 GWh by June '27 and 10 GWh by March '28, with falling battery prices enabling solar+battery solutions to match or beat solar+wind+battery returns",
+              "section_ref": "TECH"
+            },
+            {
+              "label": "FDRE/Thermal mimic demand tailwind",
+              "direction": "positive",
+              "note": "Won SECI thermal mimic tender (870 MW/2,200 MWh) and other FDRE/wind PPAs, with strong DISCOM interest for peak/round-the-clock power",
+              "section_ref": "ORD"
+            },
+            {
+              "label": "Grid connectivity/transmission risk",
+              "direction": "mixed",
+              "note": "Some TGNA-related curtailment (2-2.5%) but management sees no major risk to 2 GW FY27 target from grid delays given substations largely operational",
+              "section_ref": "RISK"
+            },
+            {
+              "label": "Balance sheet strengthening post-IPO",
+              "direction": "positive",
+              "note": "IPO raised INR 1,800 crore, lifting net worth from INR 3,463 crore to INR 5,200 crore and reducing leverage; refinancing lowered cost of debt to ~8.5%",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Margin expansion",
+              "direction": "positive",
+              "note": "EBITDA margin improved to 91% (+300 bps YoY) and operating EBITDA margin to 90% (+400 bps YoY) on record revenue growth",
+              "section_ref": "FIN"
+            },
+            {
+              "label": "Portfolio credit quality",
+              "direction": "positive",
+              "note": "98% of contracted capacity with A-rated or above off-takers and 98% under 25-year long-term PPAs; days receivable outstanding at a tight 19 days",
+              "section_ref": "SEG"
+            }
+          ],
+          "key_takeaways": [
+            "On behalf of the team, I would want to start by thanking our shareholders and new investors for the trust you have placed in us. Our IPO, through which we raised, INR 1,800 crores, was a significant milestone",
+            "This has been a milestone quarter for us. The first set of results we are presenting to you as a listed company. We have delivered our highest ever quarterly revenue and EBITDA and the highest ever renewable capacity that we have commissioned in a single quarter",
+            "Fleet-wide CUF for Q1 FY27 came in at 30.2%, up from 28.2% in the same quarter last year. Generation has grown by 72% to 944 million units",
+            "We commissioned 601 megawatt peak in the quarter alone. 458 megawatt peak of solar and 143 megawatts of wind, our highest ever quarterly commissioning",
+            "During this quarter, we commissioned India's first FDRE project under the SJVN FDRE tender, a genuine first for the country and a proof point for the model we have built our growth around",
+            "Total income for Q1 FY27 grew to INR 324 crores, which is 79% year-on-year increase from the last year number of INR 181 crores. Our EBITDA also grew 86% year-on-year to INR 294 crores versus INR 159 crores last year, and this takes to our EBITDA margin to 91%, an improvement of roughly 300 basis points year-on-year",
+            "Our total, our total PPA portfolio is roughly 6 gigawatts peak, right? And our LOA portfolio is roughly around 5 gigawatts peak now",
+            "Put together, as on date, our total portfolio now stands at close to 11,200 megawatts of capacity plus nearly 9 gigawatt-hours of BESS. With FDRE and wind-solar hybrid projects making up 84% of our portfolio and a blended weighted average tariff of INR 3.7"
+          ],
+          "pressing_questions": [
+            "Do you see any risk on account of delays in transmission coming in which can hurt your plan for 2,000 megawatts?",
+            "As a strategy, while substation may be ready, the whole grid may not be ready. Would you be open to setting it up under the TGNA route or would you like to wait for full GNA?",
+            "Can you also talk about your experience of any curtailment during the quarter and how much it would have impacted your revenue?",
+            "Following the IPO, does management intend to rationalize or say consolidate the current 56 subsidiaries? And then what is the roadmap for simplifying the corporate structure as more SPVs become operational?",
+            "With BESS becoming a much larger part of the portfolio, could you help us understand the economics of these BESS projects, particularly the expected returns or margins, the revenue model, and whether you see BESS becoming a meaningful contributor to your EBITDA over the next 2-3 years?",
+            "What is the kind of capacity that we expect to operate on a merchant basis for FY27 and FY28?",
+            "Regarding the Thermal Mimic project, how should one think about operational challenges there, and would there be some surplus power generation which you'll need to sell to grid or something that you'll need to buy from the grid?"
+          ]
+        }
+      ]
     }
   }
 }
