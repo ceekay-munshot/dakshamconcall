@@ -1,15 +1,34 @@
 {
   "date": "2026-09-02",
-  "pending": [],
-  "processed": 5,
+  "pending": [
+    "PTCIL",
+    "CESC",
+    "VADILALIND",
+    "IRIS",
+    "BLEL",
+    "RPGLIFE"
+  ],
+  "processed": 12,
   "stats": {
     "date": "2026-09-02",
     "discovered": 4,
     "carried_over": 3,
     "queued_total": 7,
     "processing_today": 7,
-    "pending_tomorrow": 0,
+    "pending_tomorrow": 6,
     "cap": 40,
-    "already_processed_today": 5
+    "already_processed_today": 12,
+    "added_today": 1,
+    "failed_today": 6
+  },
+  "added": 1,
+  "failed": 6,
+  "retries": {
+    "PTCIL": 2,
+    "CESC": 2,
+    "VADILALIND": 2,
+    "IRIS": 1,
+    "BLEL": 1,
+    "RPGLIFE": 1
   }
 }
