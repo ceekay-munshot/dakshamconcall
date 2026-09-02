@@ -1,15 +1,28 @@
 {
   "date": "2026-09-02",
-  "pending": [],
-  "processed": 0,
+  "pending": [
+    "PTCIL",
+    "CESC",
+    "VADILALIND"
+  ],
+  "processed": 5,
   "stats": {
     "date": "2026-09-02",
     "discovered": 3,
     "carried_over": 0,
     "queued_total": 3,
     "processing_today": 3,
-    "pending_tomorrow": 0,
+    "pending_tomorrow": 3,
     "cap": 40,
-    "already_processed_today": 0
+    "already_processed_today": 5,
+    "added_today": 2,
+    "failed_today": 3
+  },
+  "added": 2,
+  "failed": 3,
+  "retries": {
+    "PTCIL": 1,
+    "CESC": 1,
+    "VADILALIND": 1
   }
 }
