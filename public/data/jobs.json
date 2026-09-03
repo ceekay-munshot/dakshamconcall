@@ -157,8 +157,10 @@
       "source": "transcript"
     },
     "CESC": {
-      "status": "running",
-      "started_at": "2026-09-03T23:45:34.334Z"
+      "status": "failed",
+      "finished_at": "2026-09-03T23:45:39.565Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Screener has no AI summary and no transcript for CESC's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "ULTRACEMCO": {
       "status": "done",
