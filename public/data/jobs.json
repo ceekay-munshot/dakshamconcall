@@ -1331,8 +1331,10 @@
       "source": "transcript"
     },
     "IRIS": {
-      "status": "running",
-      "started_at": "2026-09-04T23:39:21.801Z"
+      "status": "failed",
+      "finished_at": "2026-09-04T23:39:28.064Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "BLEL": {
       "status": "failed",
