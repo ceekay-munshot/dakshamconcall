@@ -31,8 +31,10 @@
       "message": "Couldn't fetch 544626's latest concall. Screener daily AI-summary limit reached. [premium account] Limit exceeded - Please try again later Premium users can request 80 summaries each day."
     },
     "544670": {
-      "status": "running",
-      "started_at": "2026-09-05T13:16:56.891Z"
+      "status": "failed",
+      "finished_at": "2026-09-05T13:17:01.894Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Screener has no AI summary and no transcript for 544670's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "544793": {
       "status": "done",
