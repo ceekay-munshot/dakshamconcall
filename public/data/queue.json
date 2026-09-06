@@ -1,15 +1,34 @@
 {
   "date": "2026-09-06",
-  "pending": [],
-  "processed": 0,
+  "pending": [
+    "GAJA",
+    "FISCHER",
+    "544670",
+    "544518",
+    "CESC",
+    "VADILALIND"
+  ],
+  "processed": 11,
   "stats": {
     "date": "2026-09-06",
     "discovered": 3,
     "carried_over": 6,
     "queued_total": 9,
     "processing_today": 9,
-    "pending_tomorrow": 0,
+    "pending_tomorrow": 6,
     "cap": 40,
-    "already_processed_today": 0
+    "already_processed_today": 11,
+    "added_today": 2,
+    "failed_today": 9
+  },
+  "added": 2,
+  "failed": 9,
+  "retries": {
+    "544518": 1,
+    "544670": 2,
+    "GAJA": 3,
+    "FISCHER": 3,
+    "CESC": 1,
+    "VADILALIND": 1
   }
 }
