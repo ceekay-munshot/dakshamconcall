@@ -1,15 +1,34 @@
 {
   "date": "2026-09-07",
-  "pending": [],
-  "processed": 8,
+  "pending": [
+    "544670",
+    "544518",
+    "CESC",
+    "VADILALIND",
+    "530627",
+    "FOSECOIND"
+  ],
+  "processed": 18,
   "stats": {
     "date": "2026-09-07",
     "discovered": 3,
     "carried_over": 7,
     "queued_total": 10,
     "processing_today": 10,
-    "pending_tomorrow": 0,
+    "pending_tomorrow": 6,
     "cap": 40,
-    "already_processed_today": 8
+    "already_processed_today": 18,
+    "added_today": 2,
+    "failed_today": 8
+  },
+  "added": 2,
+  "failed": 8,
+  "retries": {
+    "530627": 2,
+    "544518": 4,
+    "544670": 5,
+    "CESC": 4,
+    "VADILALIND": 4,
+    "FOSECOIND": 1
   }
 }
