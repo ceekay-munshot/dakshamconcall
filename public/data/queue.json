@@ -1,15 +1,28 @@
 {
   "date": "2026-09-09",
-  "pending": [],
-  "processed": 0,
+  "pending": [
+    "530627",
+    "FOSECOIND",
+    "ETHOSLTD"
+  ],
+  "processed": 7,
   "stats": {
     "date": "2026-09-09",
     "discovered": 2,
     "carried_over": 5,
     "queued_total": 7,
     "processing_today": 7,
-    "pending_tomorrow": 0,
+    "pending_tomorrow": 3,
     "cap": 40,
-    "already_processed_today": 0
+    "already_processed_today": 7,
+    "added_today": 1,
+    "failed_today": 6
+  },
+  "added": 1,
+  "failed": 6,
+  "retries": {
+    "530627": 4,
+    "FOSECOIND": 3,
+    "ETHOSLTD": 1
   }
 }
