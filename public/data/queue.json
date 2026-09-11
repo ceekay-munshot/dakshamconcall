@@ -1,15 +1,36 @@
 {
   "date": "2026-09-11",
-  "pending": [],
-  "processed": 0,
+  "pending": [
+    "ETHOSLTD",
+    "544826",
+    "CESC",
+    "VADILALIND",
+    "BAJEL",
+    "544681",
+    "544670"
+  ],
+  "processed": 12,
   "stats": {
     "date": "2026-09-11",
     "discovered": 5,
     "carried_over": 7,
     "queued_total": 12,
     "processing_today": 12,
-    "pending_tomorrow": 0,
+    "pending_tomorrow": 7,
     "cap": 40,
-    "already_processed_today": 0
+    "already_processed_today": 12,
+    "added_today": 5,
+    "failed_today": 7
+  },
+  "added": 5,
+  "failed": 7,
+  "retries": {
+    "544670": 3,
+    "544681": 3,
+    "544826": 4,
+    "ETHOSLTD": 5,
+    "CESC": 4,
+    "VADILALIND": 4,
+    "BAJEL": 3
   }
 }
