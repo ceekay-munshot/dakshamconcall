@@ -1,15 +1,30 @@
 {
   "date": "2026-09-12",
-  "pending": [],
-  "processed": 0,
+  "pending": [
+    "BAJEL",
+    "544681",
+    "544670",
+    "PRSMJOHNSN"
+  ],
+  "processed": 7,
   "stats": {
     "date": "2026-09-12",
     "discovered": 0,
     "carried_over": 7,
     "queued_total": 7,
     "processing_today": 7,
-    "pending_tomorrow": 0,
+    "pending_tomorrow": 4,
     "cap": 40,
-    "already_processed_today": 0
+    "already_processed_today": 7,
+    "added_today": 0,
+    "failed_today": 7
+  },
+  "added": 0,
+  "failed": 7,
+  "retries": {
+    "544670": 5,
+    "544681": 5,
+    "BAJEL": 5,
+    "PRSMJOHNSN": 2
   }
 }
