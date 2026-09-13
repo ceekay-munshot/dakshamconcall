@@ -1,15 +1,28 @@
 {
   "date": "2026-09-13",
-  "pending": [],
-  "processed": 8,
+  "pending": [
+    "PRSMJOHNSN",
+    "CESC",
+    "VADILALIND"
+  ],
+  "processed": 11,
   "stats": {
     "date": "2026-09-13",
     "discovered": 0,
     "carried_over": 3,
     "queued_total": 3,
     "processing_today": 3,
-    "pending_tomorrow": 0,
+    "pending_tomorrow": 3,
     "cap": 40,
-    "already_processed_today": 8
+    "already_processed_today": 11,
+    "added_today": 0,
+    "failed_today": 3
+  },
+  "added": 0,
+  "failed": 3,
+  "retries": {
+    "PRSMJOHNSN": 4,
+    "CESC": 2,
+    "VADILALIND": 2
   }
 }
