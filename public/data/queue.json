@@ -1,15 +1,32 @@
 {
   "date": "2026-09-15",
-  "pending": [],
-  "processed": 0,
+  "pending": [
+    "CESC",
+    "VADILALIND",
+    "ITCHOTELS",
+    "NATIONALUM",
+    "ARVIND"
+  ],
+  "processed": 6,
   "stats": {
     "date": "2026-09-15",
     "discovered": 3,
     "carried_over": 5,
     "queued_total": 6,
     "processing_today": 6,
-    "pending_tomorrow": 0,
+    "pending_tomorrow": 5,
     "cap": 40,
-    "already_processed_today": 0
+    "already_processed_today": 6,
+    "added_today": 0,
+    "failed_today": 6
+  },
+  "added": 0,
+  "failed": 6,
+  "retries": {
+    "CESC": 4,
+    "VADILALIND": 4,
+    "ITCHOTELS": 2,
+    "NATIONALUM": 2,
+    "ARVIND": 1
   }
 }
