@@ -1,15 +1,28 @@
 {
   "date": "2026-09-15",
-  "pending": [],
-  "processed": 15,
+  "pending": [
+    "ITCHOTELS",
+    "NATIONALUM",
+    "544151"
+  ],
+  "processed": 25,
   "stats": {
     "date": "2026-09-15",
     "discovered": 6,
     "carried_over": 4,
     "queued_total": 10,
     "processing_today": 10,
-    "pending_tomorrow": 0,
+    "pending_tomorrow": 3,
     "cap": 40,
-    "already_processed_today": 15
+    "already_processed_today": 25,
+    "added_today": 5,
+    "failed_today": 5
+  },
+  "added": 5,
+  "failed": 5,
+  "retries": {
+    "544151": 1,
+    "ITCHOTELS": 4,
+    "NATIONALUM": 4
   }
 }
