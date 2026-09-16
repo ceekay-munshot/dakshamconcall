@@ -1,15 +1,36 @@
 {
   "date": "2026-09-16",
-  "pending": [],
-  "processed": 0,
+  "pending": [
+    "ITCHOTELS",
+    "NATIONALUM",
+    "544151",
+    "RBLBANK",
+    "544684",
+    "CESC",
+    "VADILALIND"
+  ],
+  "processed": 12,
   "stats": {
     "date": "2026-09-16",
     "discovered": 7,
     "carried_over": 3,
     "queued_total": 10,
     "processing_today": 10,
-    "pending_tomorrow": 0,
+    "pending_tomorrow": 7,
     "cap": 40,
-    "already_processed_today": 0
+    "already_processed_today": 12,
+    "added_today": 5,
+    "failed_today": 7
+  },
+  "added": 5,
+  "failed": 7,
+  "retries": {
+    "544151": 2,
+    "544684": 1,
+    "ITCHOTELS": 5,
+    "NATIONALUM": 5,
+    "RBLBANK": 1,
+    "CESC": 1,
+    "VADILALIND": 1
   }
 }
