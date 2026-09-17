@@ -1,36 +1,15 @@
 {
   "date": "2026-09-17",
-  "pending": [
-    "544151",
-    "RBLBANK",
-    "544684",
-    "CESC",
-    "VADILALIND",
-    "HTEL",
-    "SYMBIOTEC"
-  ],
+  "pending": [],
   "processed": 22,
   "stats": {
     "date": "2026-09-17",
-    "discovered": 5,
-    "carried_over": 5,
+    "discovered": 3,
+    "carried_over": 7,
     "queued_total": 10,
     "processing_today": 10,
-    "pending_tomorrow": 7,
+    "pending_tomorrow": 0,
     "cap": 40,
-    "already_processed_today": 22,
-    "added_today": 3,
-    "failed_today": 7
-  },
-  "added": 3,
-  "failed": 7,
-  "retries": {
-    "544151": 4,
-    "544684": 3,
-    "RBLBANK": 3,
-    "CESC": 3,
-    "VADILALIND": 3,
-    "HTEL": 1,
-    "SYMBIOTEC": 1
+    "already_processed_today": 22
   }
 }
