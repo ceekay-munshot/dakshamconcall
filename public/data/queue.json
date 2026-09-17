@@ -1,15 +1,32 @@
 {
   "date": "2026-09-17",
-  "pending": [],
-  "processed": 0,
+  "pending": [
+    "544151",
+    "RBLBANK",
+    "544684",
+    "CESC",
+    "VADILALIND"
+  ],
+  "processed": 12,
   "stats": {
     "date": "2026-09-17",
     "discovered": 6,
     "carried_over": 7,
     "queued_total": 12,
     "processing_today": 12,
-    "pending_tomorrow": 0,
+    "pending_tomorrow": 5,
     "cap": 40,
-    "already_processed_today": 0
+    "already_processed_today": 12,
+    "added_today": 5,
+    "failed_today": 7
+  },
+  "added": 5,
+  "failed": 7,
+  "retries": {
+    "544151": 3,
+    "544684": 2,
+    "RBLBANK": 2,
+    "CESC": 2,
+    "VADILALIND": 2
   }
 }
