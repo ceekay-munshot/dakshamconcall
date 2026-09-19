@@ -1,15 +1,32 @@
 {
   "date": "2026-09-19",
-  "pending": [],
-  "processed": 0,
+  "pending": [
+    "HTEL",
+    "SYMBIOTEC",
+    "SAIL",
+    "CESC",
+    "VADILALIND"
+  ],
+  "processed": 15,
   "stats": {
     "date": "2026-09-19",
     "discovered": 4,
     "carried_over": 2,
     "queued_total": 6,
     "processing_today": 6,
-    "pending_tomorrow": 0,
+    "pending_tomorrow": 5,
     "cap": 40,
-    "already_processed_today": 0
+    "already_processed_today": 15,
+    "added_today": 10,
+    "failed_today": 5
+  },
+  "added": 10,
+  "failed": 5,
+  "retries": {
+    "HTEL": 5,
+    "SYMBIOTEC": 5,
+    "SAIL": 1,
+    "CESC": 1,
+    "VADILALIND": 1
   }
 }
