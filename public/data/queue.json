@@ -1,15 +1,28 @@
 {
   "date": "2026-09-19",
-  "pending": [],
-  "processed": 15,
+  "pending": [
+    "SAIL",
+    "CESC",
+    "VADILALIND"
+  ],
+  "processed": 22,
   "stats": {
     "date": "2026-09-19",
     "discovered": 2,
     "carried_over": 5,
     "queued_total": 7,
     "processing_today": 7,
-    "pending_tomorrow": 0,
+    "pending_tomorrow": 3,
     "cap": 40,
-    "already_processed_today": 15
+    "already_processed_today": 22,
+    "added_today": 2,
+    "failed_today": 5
+  },
+  "added": 2,
+  "failed": 5,
+  "retries": {
+    "SAIL": 2,
+    "CESC": 2,
+    "VADILALIND": 2
   }
 }
