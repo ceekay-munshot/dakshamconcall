@@ -1,15 +1,24 @@
 {
   "date": "2026-09-22",
-  "pending": [],
-  "processed": 0,
+  "pending": [
+    "FERMENTA"
+  ],
+  "processed": 4,
   "stats": {
     "date": "2026-09-22",
     "discovered": 1,
     "carried_over": 4,
     "queued_total": 4,
     "processing_today": 4,
-    "pending_tomorrow": 0,
+    "pending_tomorrow": 1,
     "cap": 40,
-    "already_processed_today": 0
+    "already_processed_today": 4,
+    "added_today": 0,
+    "failed_today": 4
+  },
+  "added": 0,
+  "failed": 4,
+  "retries": {
+    "FERMENTA": 2
   }
 }
