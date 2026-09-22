@@ -1,15 +1,32 @@
 {
   "date": "2026-09-22",
-  "pending": [],
-  "processed": 4,
+  "pending": [
+    "FERMENTA",
+    "544150",
+    "ESDS",
+    "CESC",
+    "VADILALIND"
+  ],
+  "processed": 19,
   "stats": {
     "date": "2026-09-22",
     "discovered": 5,
     "carried_over": 1,
     "queued_total": 6,
     "processing_today": 6,
-    "pending_tomorrow": 0,
+    "pending_tomorrow": 5,
     "cap": 40,
-    "already_processed_today": 4
+    "already_processed_today": 19,
+    "added_today": 10,
+    "failed_today": 5
+  },
+  "added": 10,
+  "failed": 5,
+  "retries": {
+    "544150": 1,
+    "FERMENTA": 3,
+    "ESDS": 1,
+    "CESC": 1,
+    "VADILALIND": 1
   }
 }
