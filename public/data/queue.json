@@ -1,15 +1,36 @@
 {
   "date": "2026-09-22",
-  "pending": [],
-  "processed": 19,
+  "pending": [
+    "FERMENTA",
+    "544150",
+    "ESDS",
+    "CESC",
+    "VADILALIND",
+    "BHAGCHEM",
+    "MUKKA"
+  ],
+  "processed": 28,
   "stats": {
     "date": "2026-09-22",
     "discovered": 4,
     "carried_over": 5,
     "queued_total": 9,
     "processing_today": 9,
-    "pending_tomorrow": 0,
+    "pending_tomorrow": 7,
     "cap": 40,
-    "already_processed_today": 19
+    "already_processed_today": 28,
+    "added_today": 2,
+    "failed_today": 7
+  },
+  "added": 2,
+  "failed": 7,
+  "retries": {
+    "544150": 2,
+    "FERMENTA": 4,
+    "ESDS": 2,
+    "CESC": 2,
+    "VADILALIND": 2,
+    "BHAGCHEM": 1,
+    "MUKKA": 1
   }
 }
