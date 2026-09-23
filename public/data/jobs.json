@@ -1895,8 +1895,10 @@
       "source": "transcript"
     },
     "MUKKA": {
-      "status": "running",
-      "started_at": "2026-09-23T00:28:52.880Z"
+      "status": "failed",
+      "finished_at": "2026-09-23T00:28:59.136Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Screener has no AI summary and no transcript for MUKKA's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     }
   }
 }
