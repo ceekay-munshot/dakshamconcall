@@ -1901,8 +1901,10 @@
       "message": "Screener has no AI summary and no transcript for MUKKA's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "NAMOEWASTE": {
-      "status": "running",
-      "started_at": "2026-10-10T16:17:13.747Z"
+      "status": "failed",
+      "finished_at": "2026-10-10T16:17:20.016Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     }
   }
 }
