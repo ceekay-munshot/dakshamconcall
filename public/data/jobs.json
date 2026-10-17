@@ -1517,8 +1517,10 @@
       "source": "transcript"
     },
     "TATATECH": {
-      "status": "running",
-      "started_at": "2026-10-17T23:44:14.578Z"
+      "status": "failed",
+      "finished_at": "2026-10-17T23:44:23.407Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Screener has no AI summary and no transcript for TATATECH's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "UJJIVANSFB": {
       "status": "done",
