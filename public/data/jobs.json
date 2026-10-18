@@ -851,8 +851,10 @@
       "source": "transcript"
     },
     "YESBANK": {
-      "status": "running",
-      "started_at": "2026-10-18T23:53:11.962Z"
+      "status": "failed",
+      "finished_at": "2026-10-18T23:53:17.127Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Screener has no AI summary and no transcript for YESBANK's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "LTFOODS": {
       "status": "done",
