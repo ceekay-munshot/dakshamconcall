@@ -1775,8 +1775,10 @@
       "source": "transcript"
     },
     "MONOLITH": {
-      "status": "running",
-      "started_at": "2026-10-20T14:45:19.695Z"
+      "status": "failed",
+      "finished_at": "2026-10-20T14:45:26.380Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "STYLAMIND": {
       "status": "done",
