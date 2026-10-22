@@ -1499,8 +1499,10 @@
       "source": "transcript"
     },
     "ROSSARI": {
-      "status": "running",
-      "started_at": "2026-10-22T00:25:41.011Z"
+      "status": "failed",
+      "finished_at": "2026-10-22T00:25:49.572Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Screener has no AI summary and no transcript for ROSSARI's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "ETERNAL": {
       "status": "done",
