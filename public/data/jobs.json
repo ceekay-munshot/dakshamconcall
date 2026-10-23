@@ -1655,8 +1655,10 @@
       "source": "transcript"
     },
     "SOUTHBANK": {
-      "status": "running",
-      "started_at": "2026-10-23T14:59:02.126Z"
+      "status": "failed",
+      "finished_at": "2026-10-23T14:59:07.886Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "RATEGAIN": {
       "status": "done",
