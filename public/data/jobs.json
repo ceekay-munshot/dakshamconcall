@@ -1295,8 +1295,10 @@
       "source": "transcript"
     },
     "MAHLOG": {
-      "status": "running",
-      "started_at": "2026-10-24T13:53:44.111Z"
+      "status": "failed",
+      "finished_at": "2026-10-24T13:54:00.165Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Screener has no AI summary and no transcript for MAHLOG's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "SASKEN": {
       "status": "done",
