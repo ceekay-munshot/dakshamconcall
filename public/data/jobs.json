@@ -503,8 +503,10 @@
       "message": "Screener has no AI summary and no transcript for GESHIP's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "PERSISTENT": {
-      "status": "running",
-      "started_at": "2026-10-26T16:45:10.055Z"
+      "status": "failed",
+      "finished_at": "2026-10-26T16:45:20.625Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "SBCL": {
       "status": "failed",
