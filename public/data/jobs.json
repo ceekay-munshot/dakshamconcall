@@ -869,8 +869,10 @@
       "source": "transcript"
     },
     "HDFCBANK": {
-      "status": "running",
-      "started_at": "2026-10-26T16:50:22.627Z"
+      "status": "failed",
+      "finished_at": "2026-10-26T16:50:28.388Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "GOKEX": {
       "status": "done",
