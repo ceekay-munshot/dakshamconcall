@@ -1913,8 +1913,10 @@
       "message": "Screener has no AI summary and no transcript for HBLENGINE's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "APSISAERO": {
-      "status": "running",
-      "started_at": "2026-10-27T15:53:21.269Z"
+      "status": "failed",
+      "finished_at": "2026-10-27T15:53:26.671Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     }
   }
 }
