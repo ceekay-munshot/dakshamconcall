@@ -983,8 +983,10 @@
       "message": "Screener has no AI summary and no transcript for GLOBECIVIL's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "SCHAEFFLER": {
-      "status": "running",
-      "started_at": "2026-10-27T15:49:57.503Z"
+      "status": "failed",
+      "finished_at": "2026-10-27T15:50:09.622Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "SANGHVIMOV": {
       "status": "done",
