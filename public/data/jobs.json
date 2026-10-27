@@ -1745,8 +1745,10 @@
       "source": "transcript"
     },
     "TECHM": {
-      "status": "running",
-      "started_at": "2026-10-27T01:13:22.321Z"
+      "status": "failed",
+      "finished_at": "2026-10-27T01:13:29.089Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "GSPCROP": {
       "status": "done",
