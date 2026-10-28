@@ -1223,8 +1223,10 @@
       "source": "transcript"
     },
     "TCS": {
-      "status": "running",
-      "started_at": "2026-10-28T16:34:58.995Z"
+      "status": "failed",
+      "finished_at": "2026-10-28T16:35:05.254Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "WELSPUNLIV": {
       "status": "done",
