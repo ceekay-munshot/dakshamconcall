@@ -354901,10 +354901,1419 @@
           }
         ],
         "source_url": "https://www.screener.in/company/METROPOLIS/consolidated/#quarters",
-        "captured_at": "2026-08-27T20:34:30.610Z"
+        "captured_at": "2026-10-29T01:35:43.238Z"
       },
-      "checked_at": "2026-08-27T20:49:25.231Z",
+      "checked_at": "2026-10-29T01:51:26.046Z",
       "quarters": [
+        {
+          "company": "Metropolis Healthcare Ltd",
+          "ticker": "METROPOLIS",
+          "industry": "Healthcare Service Provider",
+          "country": "India",
+          "concall_date": "2026-09-02",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=20838c50-7407-4e1e-bd49-60e875d77312.pdf",
+          "model": "anthropic.claude-sonnet-5",
+          "pipeline_version": 3,
+          "generated_at": "2026-10-29T01:50:32.834Z",
+          "summary": "Management reiterated its medium-term revenue growth guidance of 14%-15% (having delivered 17% in the latest quarter) and an EBITDA margin ambition of moving from 24.4% to 27%-28% over the next 2-3 years, underpinned by network densification (center-to-lab ratio moving from 1:24 to 1:35), a planned 100-mini-hub radiology/beyond-diagnostics rollout, continued specialty and genomics mix improvement, and an active M&A playbook including the ongoing Core Diagnostics turnaround.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "Revenue",
+                  "value": "1,646",
+                  "unit": "INR crores",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue CAGR (3-year)",
+                  "value": "17.6%",
+                  "unit": "%",
+                  "period": "3-year (through FY26)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Revenue CAGR",
+                  "value": "23.6%",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA CAGR (3-year)",
+                  "value": "18.6%",
+                  "unit": "%",
+                  "period": "3-year (through FY26)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA CAGR",
+                  "value": "23%",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin (reported)",
+                  "value": "24.4%",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin (organic)",
+                  "value": "25.9%",
+                  "unit": "%",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Margin dilution from Core acquisition",
+                  "value": "1.5",
+                  "unit": "percentage points",
+                  "period": "FY26",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Annual price increase (historical)",
+                  "value": "2-3%",
+                  "unit": "%",
+                  "period": "historical/annual",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Employees",
+                  "value": "6,000",
+                  "unit": "people",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Productivity per employee growth",
+                  "value": "15%",
+                  "unit": "%",
+                  "period": "last year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Dividend payout",
+                  "value": "22%",
+                  "unit": "% of PAT",
+                  "period": "last year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Bonus issue ratio",
+                  "value": "3:1",
+                  "unit": null,
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Gross margin",
+                  "value": "78-80%",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "P&L Growth & Margin Trajectory",
+                  "points": [
+                    "Last three years revenue CAGR of 17.6%, with FY26 alone at 23.6%.",
+                    "EBITDA CAGR of about 18.6% over three years, with FY26 at 23%; PAT grew at very similar numbers.",
+                    "Reported EBITDA margin of 24.4% in FY26 versus organic EBITDA margin of 25.9%, the gap driven by the breakeven-margin Core Diagnostics acquisition, which suppressed margin by about 1.5 percentage points; as Core's losses have turned to profit, this gap will keep narrowing.",
+                    "Growth has been largely volume-led; price increases have historically run about 2%-3% a year, with additional revenue-per-patient gains coming from product mix change."
+                  ]
+                },
+                {
+                  "label": "Capital Allocation & Shareholder Returns",
+                  "points": [
+                    "No private equity overhang; cap table is fairly diversified across promoter and institutional holding.",
+                    "Recently completed a 3:1 bonus issue.",
+                    "Paid a dividend of about 22% of PAT last year.",
+                    "Core Diagnostics was acquired at a lower price reflecting its breakeven margin, since management believed it could turn the business around to a 20%-25% margin in three to four years, creating value for Metropolis shareholders rather than paying that value to Core's existing shareholders."
+                  ]
+                },
+                {
+                  "label": "People & Productivity",
+                  "points": [
+                    "Organization has about 6,000 employees; productivity per employee was up about 15% last year.",
+                    "Runs the MiLES program for employee skilling and certifications."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ORD",
+              "title": "Order Book & Demand",
+              "key_figures": [
+                {
+                  "label": "Diagnostics industry size (current)",
+                  "value": "11",
+                  "unit": "USD billion",
+                  "period": "current",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "Diagnostics industry size (projected)",
+                  "value": "28.5",
+                  "unit": "USD billion",
+                  "period": "next 8 years",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "Industry CAGR (projected)",
+                  "value": "11%",
+                  "unit": "%",
+                  "period": "next 8 years",
+                  "kind": "market_size"
+                },
+                {
+                  "label": "Share of Indians ever diagnosed",
+                  "value": "<6%",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Share of mortality from non-communicable diseases",
+                  "value": "60%",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "B2B client partners per lab",
+                  "value": "50",
+                  "unit": "client partners",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Owned centers concentrated in top towns",
+                  "value": "7-8",
+                  "unit": "towns",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Consumer footfall during peak morning hours (6:30-10:30/11am)",
+                  "value": "80-90%",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Home collection service coverage (pincodes)",
+                  "value": "2,200-odd",
+                  "unit": "pincodes",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Market Structure & Demand Drivers",
+                  "points": [
+                    "Industry is largely unorganized; organizing gradually rather than through a sudden shift, driven by three factors: preference for branded diagnostics as patients go to better-known hospitals/doctors, growing need for specialized tests beyond metros as hospitals expand into Tier 2/3/4 towns, and rising test complexity as diseases require more sophisticated diagnostics (e.g., cholesterol -> lipid profile -> lipoprotein A/apolipoprotein A and B).",
+                    "Less than 6% of Indians have ever been diagnosed, implying a large latent demand as affordability and access increase.",
+                    "60% of mortality now comes from non-communicable diseases (cholesterol, diabetes, heart issues), alongside acute infections (fever, typhoid, viral infections, H1N1) and the fastest-growing areas of oncology and neurology/brain diseases; Metropolis plays across all these categories.",
+                    "Diagnostics industry is currently about $11 billion and projected to grow to $28.5 billion over the next 8 years at an 11% CAGR."
+                  ]
+                },
+                {
+                  "label": "Pricing",
+                  "points": [
+                    "Historical price increases of about 2%-3% per year, with incremental revenue-per-patient gains from product mix change.",
+                    "Management is not contemplating a price increase in the near term; will do so when the market is conducive to absorb more on price.",
+                    "CGHS price benefit that boosted some peers from Q3 of last year will start fading from Q3 onwards this year; Metropolis did not benefit much from this given its historically low/negligible CGHS business."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SEG",
+              "title": "Segment & Product Performance",
+              "key_figures": [
+                {
+                  "label": "B2C revenue share",
+                  "value": "57%",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Specialty revenue share (per Ameera Shah)",
+                  "value": "42%",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Specialty revenue share (per Surendran Chemmenkotil)",
+                  "value": "40%",
+                  "unit": "%",
+                  "period": "this year (FY27)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Specialty tests in oncology/neurology/nephrology/allergy",
+                  "value": "2,200+",
+                  "unit": "tests",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Specialty tests added",
+                  "value": "380",
+                  "unit": "tests",
+                  "period": "last year and current quarter",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Specialty tests added (alt count)",
+                  "value": "~400",
+                  "unit": "tests",
+                  "period": "last 15 months",
+                  "kind": "reported"
+                },
+                {
+                  "label": "TruHealth revenue share",
+                  "value": "~20%",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Home collection revenue share",
+                  "value": "11-12%",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Digital revenue share",
+                  "value": "25%",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "B2C growth",
+                  "value": "18%",
+                  "unit": "%",
+                  "period": "last quarter (Q1 FY27)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "B2B growth",
+                  "value": "15%",
+                  "unit": "%",
+                  "period": "last quarter (Q1 FY27)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "B2B specialty revenue target",
+                  "value": "45%",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "TruHealth revenue share (current, per Mohan Menon)",
+                  "value": "18%",
+                  "unit": "%",
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Channel Mix (B2C vs B2B)",
+                  "points": [
+                    "B2C (patient-facing) contributes 57% of revenue and grew about 18% in the last quarter (Q1 FY27); B2B (sample-only) keeps labs full across roughly 4,500 test varieties and grew about 15% last quarter, aided by Core Diagnostics' test menu addition.",
+                    "B2C revenue largely comes through company-owned centers, giving significant influence over customer experience and, management believes, industry-leading NPS scores.",
+                    "B2B volumes ensure minimum throughput to keep processing every test variety; the bigger brand-building and profitability opportunity sits with B2C."
+                  ]
+                },
+                {
+                  "label": "Specialty",
+                  "points": [
+                    "Specialty contributes approximately 42% of business per Ameera Shah (40% per Surendran Chemmenkotil for this year), with a goal to keep growing disproportionately.",
+                    "Portfolio spans about 2,200+ tests across oncology, neurology, nephrology and allergy; roughly 380 new specialty tests were added in the last year and this quarter (separately described as ~400 tests added over the last 15 months).",
+                    "Specialty prescriptions typically carry accompanying routine tests, so winning the specialty prescription pulls in the routine basket as well.",
+                    "B2B specialty mix, aided by Core Diagnostics' oncology menu, is on a path to 45% of revenue."
+                  ]
+                },
+                {
+                  "label": "TruHealth (Wellness/Illness Bundles)",
+                  "points": [
+                    "TruHealth (illness and wellness bundles) is about 20% of business (18% per Mohan Menon currently), with growth so far concentrated in metro/Tier-1 cities but gradually extending to Tier 2 and beyond.",
+                    "Being made more consumer-friendly by adding radiology, doctor consultation, diet consulting and obesity-adjacency services, leveraging existing test records to personalize the health journey.",
+                    "Recently launched a diet-consultation service where nutrition advice is prescribed based on a patient's own blood work (e.g., sodium, electrolyte levels) rather than generic online advice, tailored also by cuisine/cultural preference.",
+                    "Also launched a 'vitals' check-up — a non-invasive full body composition test (body fat, BMI, lean mass) feeding into nutrition recommendations — intended to make the business more recurring as diabetes/obesity/nutrition patients return more frequently."
+                  ]
+                },
+                {
+                  "label": "Digital / Home Collection",
+                  "points": [
+                    "25% of business comes from digital initiatives (app, website, customer data platform).",
+                    "Home collection is about 11%-12% of revenue, servicing around 2,200 pincodes; digital/D2C customers have a lower acquisition cost and about 2x the lifetime value of customers acquired through offline channels because they are more engaged and transact more frequently."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "TECH",
+              "title": "Product & Technology",
+              "key_figures": [
+                {
+                  "label": "Test menu size",
+                  "value": "4,500",
+                  "unit": "test varieties",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "EQAS quality score",
+                  "value": "99.99%",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "CAP accreditation since",
+                  "value": "2005",
+                  "unit": "year",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Genomics revenue growth",
+                  "value": "2x",
+                  "unit": "x",
+                  "period": "last 1 year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "CAP-accredited genomics labs",
+                  "value": "2",
+                  "unit": "labs",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "AI-driven call resolution time target",
+                  "value": "50%",
+                  "unit": "% of current time",
+                  "period": null,
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Minimum quality accuracy required in pathology",
+                  "value": "99%",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Quality & Accreditation",
+                  "points": [
+                    "Accredited by CAP (College of American Pathologists) since 2005, with facilities externally audited via monthly blind 'external proficiency testing' samples.",
+                    "Current EQAS score of 99.99%, placing Metropolis among the top 1% of labs globally on quality; management notes 90% accuracy is not sufficient in pathology because results near a clinical cutoff require precision to guide treatment decisions.",
+                    "About 149 steps have been counted that must go correctly even for a simple test like blood sugar, encompassing cold-chain transport, staff execution, and IT/data transcription."
+                  ]
+                },
+                {
+                  "label": "Genomics & R&D",
+                  "points": [
+                    "Genomics revenue grew 2x in the last year, supported by an in-house team of onboarded medical geneticists and genetic counsellors and a dedicated clinician-support vertical that lets clinicians interpret complex reports.",
+                    "Uses the NovaSeq X System, described as the best-available, highest-throughput genomics instrument in the country.",
+                    "Operates 2 CAP-accredited genomics labs (one West, one North) — the only lab chain in India with this distinction.",
+                    "Offers 'orthogonal testing' spanning histopathology through genomics under one roof, enabling confirmatory testing.",
+                    "Precision medicine applications span oncology, neurology and reproductive medicine (e.g., diagnosing recurrent pregnancy loss beyond basic karyotyping).",
+                    "New test launches include a blood-based Alzheimer's risk test (replacing the earlier difficult spinal-fluid-based test) and a hereditary cancer panel.",
+                    "Core Diagnostics acquisition added an oncology-focused test menu and specialist network now being made available across Metropolis's broader channel base."
+                  ]
+                },
+                {
+                  "label": "Digital & AI Roadmap",
+                  "points": [
+                    "Pre-COVID operations were largely manual; COVID accelerated digitization of B2C web/app and home-visit booking, and B2B partner portals for hospitals, labs and doctors.",
+                    "Planned AI initiatives include report summarization (with a deliberately cautious, accuracy-first approach versus generic tools like ChatGPT/Claude), AI-assisted diet guidance, and a 'Talk to an Expert' feature letting clinicians reach Metropolis doctors directly via the app.",
+                    "Partner portals are being customized by customer type, e.g., giving doctors visibility into disease trends to aid diagnosis.",
+                    "Backend focus on automating processes and using AI to cut call tickets, targeting resolving customer calls in 50% of the current time.",
+                    "Technology development is shifting from vendor-dependent to an in-house team, with AI shrinking development time and expected to raise the number of projects the team can take on this year, with results flowing through next year."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MFG",
+              "title": "Manufacturing & Capacity (Lab Network)",
+              "key_figures": [
+                {
+                  "label": "Laboratories",
+                  "value": "209",
+                  "unit": "labs",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Collection centers",
+                  "value": "5,000+",
+                  "unit": "centers",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Domestic towns covered",
+                  "value": "750",
+                  "unit": "towns",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Owned centers",
+                  "value": "700-750",
+                  "unit": "centers",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Center-to-lab ratio (current)",
+                  "value": "1:24",
+                  "unit": "ratio",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Center-to-lab ratio (target)",
+                  "value": "1:35",
+                  "unit": "ratio",
+                  "period": "next 2-3 years",
+                  "kind": "target"
+                },
+                {
+                  "label": "Mini hubs planned (total)",
+                  "value": "100",
+                  "unit": "hubs",
+                  "period": "next couple of years / next 3 years",
+                  "kind": "target"
+                },
+                {
+                  "label": "Mini hubs - version A (upgrade/new split)",
+                  "value": "50 upgraded / remaining new",
+                  "unit": "hubs",
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "Mini hubs - version B (upgrade/new split)",
+                  "value": "50 upgraded / 15 new",
+                  "unit": "hubs",
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "Capex per mini hub",
+                  "value": "35-40",
+                  "unit": "INR lakhs",
+                  "period": null,
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Mini hub rollout phase 1",
+                  "value": "50",
+                  "unit": "centers",
+                  "period": "year 1",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Quarterly center additions",
+                  "value": "250-300",
+                  "unit": "centers/quarter",
+                  "period": "ongoing",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Potential owned-center expansion",
+                  "value": "1,000",
+                  "unit": "centers",
+                  "period": "next couple of years",
+                  "kind": "target"
+                },
+                {
+                  "label": "Quality-control steps required for a routine blood sugar test",
+                  "value": "149",
+                  "unit": "steps",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Sample collection-to-report turnaround time",
+                  "value": "6",
+                  "unit": "hours",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Centers with productivity upside opportunity",
+                  "value": "800 to 1,000",
+                  "unit": "centers",
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "Productivity increase of mini hub center after corporate business integration",
+                  "value": "2x or 3x",
+                  "unit": null,
+                  "period": null,
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Lab & Collection Network",
+                  "points": [
+                    "Operates 209 laboratories and 5,000+ collection centers across 750 towns in India, plus 5 international markets with owned labs.",
+                    "About 700-750 centers are company-owned, concentrated in the top 7-8 towns; consumer footfall is concentrated 6:30am-10:30/11am (80-90% of volume), prompting plans to use real estate for allied services for the rest of the day.",
+                    "Strategy is to deepen presence within the existing 750 towns before opening new towns, since Tier 3 markets are already covered by existing labs and primarily need more collection centers.",
+                    "Sample collection-to-report turnaround time is about 6 hours.",
+                    "Quarterly center additions run about 250-300 centers."
+                  ]
+                },
+                {
+                  "label": "Center-to-Lab Ratio & Productivity",
+                  "points": [
+                    "Current ratio is about 1 lab to 24 collection centers/B2B partners; plan is to move this to 1:35 via more franchise and direct collection centers, alongside productivity initiatives across the existing 5,000 centers.",
+                    "About 800 to 1,000 centers are seen as having productivity upside opportunity."
+                  ]
+                },
+                {
+                  "label": "Beyond-Diagnostics / Mini Hubs (Radiology)",
+                  "points": [
+                    "Plans to convert about 100 centers into 'mini hubs' offering basic radiology (X-ray, ultrasound, 2D echo, TMT, DEXA scan) alongside pathology, to serve radiology prescriptions and corporate health checks.",
+                    "Of the 100, about 50 are upgrades of existing centers chosen for their geographic fit to serve corporate/retail clients; the remainder (described elsewhere as 15 new centers) will be newly built.",
+                    "Capex of about INR35-40 lakhs per mini hub (X-ray, ultrasound, treadmill, and in some locations DEXA scan) is expected to roughly double or triple center productivity once corporate business is layered on, with minimal incremental capex.",
+                    "Rollout will start with an initial 50-center experiment in year 1, followed by the next roughly 50 centers in another year, after validating location, services and customer experience.",
+                    "Separately, owned centers could expand from 700-800 today to about 1,000 over the next couple of years as more allied services (consultations, vitals, etc.) are added using the same real estate."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GEO",
+              "title": "Geography & Distribution",
+              "key_figures": [
+                {
+                  "label": "Region revenue split - West",
+                  "value": "50%",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Region revenue split - South",
+                  "value": "27%",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Region revenue split - North",
+                  "value": "18%",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Region revenue split - East",
+                  "value": "5%",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "North India contribution (prior year)",
+                  "value": "7-8%",
+                  "unit": "%",
+                  "period": "prior year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "North India contribution increase",
+                  "value": "10",
+                  "unit": "percentage points",
+                  "period": "over the past year",
+                  "kind": "reported"
+                },
+                {
+                  "label": "International labs",
+                  "value": "24",
+                  "unit": "labs",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "International markets with own labs",
+                  "value": "5",
+                  "unit": "countries",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Samples routed to India from international ops",
+                  "value": "30-40%",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "International market ranking in Ghana, Uganda, Tanzania",
+                  "value": "Top 3",
+                  "unit": null,
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Domestic Regional Mix",
+                  "points": [
+                    "Revenue by region: West ~50%, South ~27%, North ~18%, East ~5%.",
+                    "North India contribution rose from about 7%-8% a year ago to its current level (an increase of about 10 percentage points), aided by acquisitions used as a base to scale North India quickly; North India was the fastest-growing region in Q1."
+                  ]
+                },
+                {
+                  "label": "International Operations",
+                  "points": [
+                    "Operates its own labs in 5 international markets (24 labs in total), which together with India form an integrated network — these countries send about 30%-40% of their samples to India to use Metropolis's India-based assets for specialized testing; other countries outsource specialized testing to Metropolis without Metropolis having local labs there.",
+                    "Is the clear market leader in Kenya and Zambia (took time to establish given a longer change-management journey); ranks among the Top 3 operators in Ghana, Uganda and Tanzania.",
+                    "Each international market has a strong local leadership team built over 5-8 years, minimizing the India management time required; international operations are self-funded, with no capital flowing from India to these markets — growth is funded by locally generated profits."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "SUP",
+              "title": "Supply Chain & Operations",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Operational Automation",
+                  "points": [
+                    "Plans to automate receivables management and automate supply chain/vendor processes to improve productivity and working-capital days.",
+                    "Margin and working-capital improvement is also supported by vendor consolidation and platform standardization."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "MKT",
+              "title": "Market & Customer Strategy",
+              "key_figures": [
+                {
+                  "label": "Prescribing specialists",
+                  "value": "30,000",
+                  "unit": "specialists",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Medical advisory board",
+                  "value": "60",
+                  "unit": "experts",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Typical industry lab report accuracy (competitors)",
+                  "value": "90%",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Share of specialized tests outsourced by hospital chains",
+                  "value": "20%-30%",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Digital channel customer lifetime value multiple vs offline",
+                  "value": "2x",
+                  "unit": "x",
+                  "period": "current",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Share of healthcare market that is illness-driven",
+                  "value": "95%",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Share of population that is well/preventive-care focused",
+                  "value": "5%",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Doctor & Customer Network",
+                  "points": [
+                    "Works with about 30,000 prescribing specialists (high-end specialists such as gastroenterologists, neurologists, gynaecologists, oncologists, excluding GPs), backed by a broader doctor database, a medical advisory board of about 60 experts, and a range of counsellors, molecular pathologists and bioinformaticians.",
+                    "Every leading hospital chain is a Metropolis customer; hospitals are generally generalists in treatment and outsource the top 20%-30% of specialized pathology tests because they lack the full range of tests, specialist pathologists, expertise and machines in-house.",
+                    "Brand trust in diagnostics is built doctor-by-doctor and test-by-test; management considers scaling trust across 4,500 test varieties while maintaining ~99% quality (versus a more typical ~90%) as the industry's real moat, given the difficulty of consistently delivering precise, real-time results within about a 6-hour sample-to-report window.",
+                    "Word-of-mouth from satisfied doctors and patients is viewed as the most important (and unreplaceable) marketing channel in healthcare."
+                  ]
+                },
+                {
+                  "label": "Competitive Position",
+                  "points": [
+                    "Various competitors have entered diagnostics over time — health-tech players, other pharma companies, hospital-run labs — but Metropolis's market share in key cities such as Mumbai, Chennai and Pune has remained intact, and management says it is in fact improving in these towns.",
+                    "Vision is to become a broader 'health partner' beyond diagnostics, given that ~95% of healthcare interactions are illness-driven rather than wellness check-based (only ~5% of the population is well/preventive-care focused), with plans for scientifically-led (not commercially pushed) allied services, potentially via subscription-style engagement models; specific services are still being finalized."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [
+                {
+                  "label": "Total acquisitions to date",
+                  "value": "25-odd",
+                  "unit": "acquisitions",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Core Diagnostics EBITDA (1 year post-acquisition)",
+                  "value": "high single-digit",
+                  "unit": "%",
+                  "period": "1 year post-acquisition",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Core Diagnostics test menu",
+                  "value": "~350",
+                  "unit": "tests",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Core Diagnostics-connected oncologists",
+                  "value": "~2,000",
+                  "unit": "doctors",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Core Diagnostics margin target",
+                  "value": "20-25%",
+                  "unit": "%",
+                  "period": "3-4 years from acquisition",
+                  "kind": "target"
+                },
+                {
+                  "label": "Core Diagnostics year-3 EBITDA target",
+                  "value": "company-level EBITDA",
+                  "unit": null,
+                  "period": "year 3 post-acquisition",
+                  "kind": "target"
+                },
+                {
+                  "label": "Company operating history",
+                  "value": "45",
+                  "unit": "years",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Mini hub rollout phase 2 (next year)",
+                  "value": "50",
+                  "unit": null,
+                  "period": "year 2",
+                  "kind": "target"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "M&A Playbook",
+                  "points": [
+                    "Metropolis is itself an amalgamation of about 25-odd acquired companies; management has built a clear, repeatable playbook for integration regardless of deal size or geography — examples include Hitech (larger business) and Core Diagnostics (skill-set acquisition in oncology).",
+                    "Acquisitions are targeted either in geographies where Metropolis is not significantly present, or to acquire skill sets that would otherwise take a long time to build organically, plus adjacency opportunities.",
+                    "Only clean businesses with good market credibility, a track record of good service, and uncompromised quality are considered for acquisition.",
+                    "Acquisitions remain a key future growth lever and are incremental to the 14%-15% medium-term revenue guidance, which does not include acquisition-led growth.",
+                    "Company has 45 years of operating history."
+                  ]
+                },
+                {
+                  "label": "Core Diagnostics Turnaround",
+                  "points": [
+                    "Core Diagnostics was loss-making/breakeven at acquisition; one year after acquisition it has moved to high single-digit EBITDA margin, with management guiding toward company-level EBITDA margins by year 3.",
+                    "Core's oncology-focused test menu (~350 tests) and network of about 2,000 connected oncologists are now being distributed through Metropolis's wider B2B and B2C channels, broadening reach for specialty/oncology testing; when Core's specialty tests are prescribed, the accompanying full routine prescription now also flows to Metropolis rather than being split elsewhere."
+                  ]
+                },
+                {
+                  "label": "Beyond-Diagnostics Exploration",
+                  "points": [
+                    "Management is evaluating allied, asset-light healthcare services beyond core diagnostics (e.g., consultations, diet/obesity services) to deepen patient engagement, but has not yet named specific new service lines as they are still being finalized."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [],
+              "subsections": [
+                {
+                  "label": "Headwinds Flagged",
+                  "points": [
+                    "CGHS price benefit that boosted some peers from Q3 of last year will start fading from Q3 onwards this year; Metropolis did not get much benefit from this given its historically low/negligible CGHS exposure.",
+                    "Competition from health-tech players, other pharma companies and hospital-run labs in key cities continues, though management says market share in Mumbai, Chennai and Pune has remained intact and is improving.",
+                    "Margin dilution of about 1.5 percentage points from the breakeven-margin Core Diagnostics acquisition, expected to narrow as Core's losses turn to profit.",
+                    "Industry transition from unorganized to organized is gradual rather than a sudden shift, which tempers the pace of category-wide re-rating.",
+                    "Historical period (first 5-6 years as a public company) included COVID-driven stock volatility, rumors about promoters wanting to sell, and CEO/leadership changes, which management says have now been resolved with the team in full control of internal execution."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [
+                {
+                  "label": "Revenue growth (medium-term)",
+                  "value": "14-15%",
+                  "unit": "%",
+                  "period": "medium-term/FY27",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Revenue growth achieved (Q1)",
+                  "value": "17%",
+                  "unit": "%",
+                  "period": "Q1 FY27",
+                  "kind": "reported"
+                },
+                {
+                  "label": "EBITDA margin target",
+                  "value": "27-28%",
+                  "unit": "%",
+                  "period": "next 2-3 years",
+                  "kind": "target"
+                },
+                {
+                  "label": "TruHealth mix target",
+                  "value": "25%",
+                  "unit": "%",
+                  "period": "next 2-3 years",
+                  "kind": "target"
+                },
+                {
+                  "label": "Specialty (B2B) revenue target",
+                  "value": "45%",
+                  "unit": "%",
+                  "period": null,
+                  "kind": "target"
+                },
+                {
+                  "label": "Mini hubs target",
+                  "value": "100",
+                  "unit": "hubs",
+                  "period": "next 2-3 years",
+                  "kind": "target"
+                },
+                {
+                  "label": "Capex per mini hub",
+                  "value": "35-40",
+                  "unit": "INR lakhs",
+                  "period": null,
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Working capital target",
+                  "value": "single digit (days)",
+                  "unit": null,
+                  "period": "medium-term",
+                  "kind": "target"
+                },
+                {
+                  "label": "Historical 5-year revenue CAGR",
+                  "value": "12-13%",
+                  "unit": "%",
+                  "period": "last 5 years",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Growth Guidance",
+                  "points": [
+                    "Medium-term revenue growth guidance reiterated at 14%-15%, built without assuming any price increase and without the CGHS pricing benefit (which Metropolis largely did not receive); delivered 17% growth in the most recent quarter (Q1) on a broad-based basis across B2C/B2B, specialty, TruHealth and all four regions.",
+                    "Management believes growth should be faster than the historical 5-year CAGR of about 12%-13%, aided by network/center utilization improvements, Tier 3 opportunity, specialty growth, and (incremental to the 14%-15% guidance) acquisitions.",
+                    "FY28 growth outlook, including any potential price increase and contribution from the radiology/mini-hub business, will be clarified closer to the end of this fiscal year once there is more visibility on pricing opportunity and growth accelerators."
+                  ]
+                },
+                {
+                  "label": "Margin & Capital Guidance",
+                  "points": [
+                    "EBITDA margin ambition is to move from 24.4% to 27%-28% over the next 2-3 years, driven by mix shift toward specialty/genomics, digitalization/automation productivity, higher center-to-lab utilization, vendor consolidation and platform standardization.",
+                    "TruHealth mix is targeted to reach 25% over the next 2-3 years, with mini hubs targeted to reach 100 over the same period and B2B specialty revenue targeted at 45%.",
+                    "Working capital aspiration is to move from double-digit to single-digit days via automation of receivables and supply chain.",
+                    "Company intends to remain capital-investment-light, improve asset turnover via center productivity, and maintain regular dividend payouts while improving return on capital employed."
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "Revenue growth (medium-term)",
+              "horizon": "medium-term (FY27+)",
+              "statement": "We clearly believe that 14%-15% is definitely the guidance that we've given on the basis of best estimate at that point of time; we clearly see that the days ahead, the growth should be faster than what we have done in the past.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Q1 FY27 revenue growth delivered",
+              "horizon": "Q1 FY27",
+              "statement": "We delivered 17% in the last quarter.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "EBITDA margin ambition",
+              "horizon": "next 2-3 years",
+              "statement": "The ambition is to improve our EBITDA margin from 24.4% to 27% to 28%.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Center-to-lab ratio",
+              "horizon": "next 2-3 years",
+              "statement": "We plan to take this ratio from 1:24 to 1:35.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "TruHealth revenue mix",
+              "horizon": "next 2-3 years",
+              "statement": "TruHealth from 18% needs to move to 25%, and we have some levers already aligned on that.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "lowered"
+            },
+            {
+              "metric": "Specialty revenue contribution (B2B)",
+              "horizon": null,
+              "statement": "That has the way to go to 45% of the revenue.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "raised"
+            },
+            {
+              "metric": "Mini hubs / radiology centers",
+              "horizon": "next couple of years / next 3 years",
+              "statement": "We'll come up with about 100 labs in the next couple of years — 100 mini hubs in the next couple of years; of the 100, about 50 are upgrading existing centers, and remaining we will set up brand new centers; we will experiment with first maybe 50 centers in year 1, and then maybe do the next 50 centers in another year or so.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Capex per mini hub/radiology center",
+              "horizon": "near-term",
+              "statement": "Roughly about INR35 lakhs-INR40 lakhs per investment would be good enough for us to run a good mini hub.",
+              "specificity": "specific",
+              "direction": "unclear",
+              "status": "lowered"
+            },
+            {
+              "metric": "Core Diagnostics EBITDA margin turnaround",
+              "horizon": "3-4 years from acquisition",
+              "statement": "Maybe year 3 we will be close to the company levels of EBITDA.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "lowered"
+            },
+            {
+              "metric": "Working capital days",
+              "horizon": "medium-term",
+              "statement": "Our aspiration is to take our working capital to a single digit from currently the double-digit working capital.",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "new"
+            },
+            {
+              "metric": "Price increase",
+              "horizon": "near-to-medium term",
+              "statement": "The 14%-15% guidance we suggested is without any price increase; not contemplating a price increase at this stage, will do so when market is conducive.",
+              "specificity": "vague",
+              "direction": "flat",
+              "status": "reiterated"
+            },
+            {
+              "metric": "FY28 revenue growth guidance",
+              "horizon": "FY28",
+              "statement": "The best time to answer this question is by the time we end this year, we get more clarity about what's the opportunities on price side and some of the accelerators that we talked about in terms available with us; we will be ready with those.",
+              "specificity": "refused",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Acquisition-led growth (incremental to base guidance)",
+              "horizon": "ongoing",
+              "statement": "Acquisition, of course, will more add on the 14%-15% guidance that we provided, doesn't include acquisitions.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "International business expansion",
+              "horizon": "next couple of years",
+              "statement": "We want to go further deeper. At this point of time, that's what the plan looks like for the next couple of years.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "reiterated"
+            },
+            {
+              "metric": "Network center additions pace",
+              "horizon": "ongoing",
+              "statement": "There is a regular addition of 250 to 300 centers every quarter. We have a plan to further accelerate this.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "North India growth/market share",
+              "horizon": "ongoing",
+              "statement": "In Q1, I think North India was the fastest growing region for Metropolis.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Revenue growth (FY27)",
+              "horizon": "FY27",
+              "statement": "We believe that we can sustain revenue growth outlook of 14%-15% for the year, which we expect to be primarily driven by volume growth",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "EBITDA margin improvement (FY27)",
+              "horizon": "FY27",
+              "statement": "We expect an improvement of 100-150 basis points on EBITDA during the current financial year",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Group EBITDA margin",
+              "horizon": "this year and next year",
+              "statement": "Over this year and the next year, we remain focused on achieving an EBITDA margin of 27%-28%",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Revenue CAGR (medium-term)",
+              "horizon": "medium-term",
+              "statement": "We continue to maintain that our medium-term CAGR guidance is about 14%-15%",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Patient volume growth contribution",
+              "horizon": "medium-term",
+              "statement": "Out of this 14%-15%, about 9%-10% will come from patient volume growth, and the remaining will come from the product mix",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Specialty contribution",
+              "horizon": "FY27",
+              "statement": "We aim to increase contribution of this [Specialty] portfolio to 45% from the current 40%",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Center expansion (Tier-2/Tier-3)",
+              "horizon": "FY27",
+              "statement": "We aim to open approximately 400-500 centers in Tier-2 and Tier-3 towns this year",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Center additions (net, FY27)",
+              "horizon": "FY27",
+              "statement": "Remain on track to add more than 500 centers during the current financial year",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "TruHealth mix / growth",
+              "horizon": "ongoing",
+              "statement": "We don't really have any particular targets for individual packages or individual things, but overall, as a TruHealth portfolio, we certainly believe that we will keep innovating new products and new options and keep growing it in multiple markets",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "North India revenue and market share",
+              "horizon": "over time",
+              "statement": "We remain confident of further increasing revenues and market share from North over time",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Organic Revenue Growth",
+              "horizon": "FY26 (achieved)",
+              "statement": "Delivered organic revenue growth of 13.7%, better than stated guidance of 12% to 13%",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Organic EBITDA Margin",
+              "horizon": "FY26 (achieved)",
+              "statement": "Organic margins expanded by around 140 basis points to 25.9%",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Core Diagnostics EBITDA Margin (Q4 milestone)",
+              "horizon": "Q4FY26 (achieved)",
+              "statement": "Committed that within 4 quarters of acquisition, would move from negative 2% EBITDA to high-single-digit EBITDA in Q4 - completed this mission",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Mini hubs network",
+              "horizon": "next 3 years",
+              "statement": "Building a network of 100 mini hubs over the next 3 years (50 upgraded, 50 new)",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Collection centers added",
+              "horizon": "3-year horizon",
+              "statement": "Expand asset-light collection center network by adding 1,500 more centers",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Lab-to-center ratio",
+              "horizon": "3-year horizon",
+              "statement": "Taking lab-to-center ratio to 1:35 from current 1:24",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Lab-to-center ratio",
+              "horizon": "next 18 months",
+              "statement": "Move ratio closer to 30:1 in many markets depending on cluster maturity",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Center productivity",
+              "horizon": "3-year horizon",
+              "statement": "Enhancing center productivity of existing centers by 20% over 3 years",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "FY27 EBITDA margin improvement",
+              "horizon": "FY27",
+              "statement": "We'll definitely be looking at about 125 to 150 bps improvement in the coming year",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "FY27 patient volume growth",
+              "horizon": "FY27",
+              "statement": "About 8% to 9% of patient volume growth is what we are estimating for the coming fiscal for sure, and the remaining 5% will be coming from the realization",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "CGHS price benefit fading for peers from Q3 FY27",
+              "status": "new",
+              "note": "Some other operators got a huge benefit from CGHS rate increases last Q3 which will start fading from Q3 onwards; Metropolis did not have that benefit given negligible CGHS business."
+            },
+            {
+              "risk": "Competition from health-tech, pharma and hospital-run labs in key cities",
+              "status": "new",
+              "note": "Various competitors have entered at different points of time, but share of the market in key towns like Mumbai, Chennai, Pune remains intact and is reportedly improving."
+            },
+            {
+              "risk": "Margin dilution from Core Diagnostics acquisition",
+              "status": "new",
+              "note": "Suppressed organic margin by about 1.5 percentage points; as Core's losses have turned to profit, the gap will keep narrowing."
+            },
+            {
+              "risk": "Pace of industry formalization (unorganized to organized)",
+              "status": "new",
+              "note": "Industry is organizing gradually, not through one sudden shift, tempering the speed of category-wide re-rating."
+            },
+            {
+              "risk": "Legacy leadership/governance disruptions (COVID, CEO change, rumors)",
+              "status": "new",
+              "note": "First five-six years as a public company included COVID-driven volatility, rumors of promoter sale intent, and leadership changes; management states the team now has full control of internal execution pain points."
+            },
+            {
+              "risk": "Weather/climate unpredictability affecting disease patterns and testing demand",
+              "status": "no_mention",
+              "note": "Management cited climate change and unpredictable weather as making growth difficult to precisely predict quarter-to-quarter."
+            },
+            {
+              "risk": "Geopolitical situation and raw material (RM) cost pressures",
+              "status": "no_mention",
+              "note": "Raised by an analyst as a potential drag on margin guidance alongside Tier-2/Tier-3 expansion; management said further town/lab expansion has been halted to limit cost exposure."
+            },
+            {
+              "risk": "Core Diagnostics lower margin profile dragging consolidated margins",
+              "status": "no_mention",
+              "note": "Core currently at high single-digit (~8%) EBITDA margin versus company average; targeted to reach ~25% in 3-4 years from acquisition."
+            },
+            {
+              "risk": "Employee increment timing shift (July to April) impacting margins",
+              "status": "no_mention",
+              "note": "Advancing annual employee increments from July to April this year impacted margin despite overall organic margin expansion."
+            },
+            {
+              "risk": "CGHS one-time pricing benefit non-recurrence",
+              "status": "no_mention",
+              "note": "CGHS price increase was a one-time industry benefit that helped peers more than Metropolis (only ~1% of business); this benefit will not accrue next year."
+            },
+            {
+              "risk": "GLP-1 impact difficult to isolate / early-stage trend",
+              "status": "no_mention",
+              "note": "Difficult to separate GLP-1-specific test contribution from general organic growth; still early days as the trend plays out over time."
+            },
+            {
+              "risk": "No price increase taken in Q4 FY26 due to GST reasons",
+              "status": "no_mention",
+              "note": "Left price lever as an opportunity for growth later in the year; no price hike currently planned for FY27 either, though management would act if needed."
+            },
+            {
+              "risk": "Insignificant insurance-driven test volumes",
+              "status": "no_mention",
+              "note": "Company is just building its portfolio in the insurance segment; volumes remain very insignificant currently."
+            },
+            {
+              "risk": "Limited quality M&A targets",
+              "status": "no_mention",
+              "note": "Many of the ~3 lakh labs in India (90%+ single labs) available for acquisition may not meet Metropolis's quality standards, constraining inorganic growth to selective deals."
+            },
+            {
+              "risk": "Ongoing competitive intensity",
+              "status": "no_mention",
+              "note": "Competition will always be there in diagnostics, but management believes the structural runway is strong without an unreasonable or disruptive competitive environment."
+            },
+            {
+              "risk": "Lack of third-party data on organized shift",
+              "status": "no_mention",
+              "note": "No third-party data available to confirm the industry shift from unorganized to organized players; management view based on on-ground sense only."
+            }
+          ],
+          "themes": [
+            {
+              "label": "Margin expansion / operating leverage",
+              "direction": "positive",
+              "note": "Ambition to raise EBITDA margin from 24.4% to 27%-28% over the next 2-3 years via mix, density and productivity.",
+              "section_ref": "GUID"
+            },
+            {
+              "label": "M&A integration playbook",
+              "direction": "positive",
+              "note": "25-odd acquisitions integrated via a repeatable playbook; Core Diagnostics turned from breakeven/loss to high single-digit EBITDA within a year, targeting company-level margins by year 3.",
+              "section_ref": "STRAT"
+            },
+            {
+              "label": "Network productivity shift (capex to throughput)",
+              "direction": "positive",
+              "note": "Focus shifting from adding new labs to improving center-to-lab ratio (1:24 to 1:35) and mini-hub utilization rather than more lab capex.",
+              "section_ref": "MFG"
+            },
+            {
+              "label": "Specialty & genomics mix improvement",
+              "direction": "positive",
+              "note": "Specialty at ~40-42% of revenue with a path to 45% in B2B; genomics revenue doubled year-on-year.",
+              "section_ref": "SEG"
+            },
+            {
+              "label": "Digital/D2C scale-up",
+              "direction": "positive",
+              "note": "25% of business from digital initiatives; AI used for report summarization and call-ticket reduction; home collection and app-led engagement growing.",
+              "section_ref": "TECH"
+            },
+            {
+              "label": "Tier 2/3 outpacing Tier 1 growth",
+              "direction": "positive",
+              "note": "Specialty and TruHealth demand expanding into Tier 2/3 towns as hospitals and specialists move there; North India contribution rose from ~7-8% to ~18%.",
+              "section_ref": "GEO"
+            },
+            {
+              "label": "Pricing discipline amid GST constraints",
+              "direction": "neutral",
+              "note": "No price increase contemplated near-term; 14%-15% medium-term growth guidance is built without assuming any price hike.",
+              "section_ref": "GUID"
+            }
+          ],
+          "key_takeaways": [
+            "We ended last year with a revenue of INR1,646 crores, which is coming from B2C and B2B... West contributes about 50%, South 27%, North 18%, and East 5%.",
+            "Metropolis has approximately, I think 42%, if I'm not mistaken, of our business coming from specialty.",
+            "We've had a 17.6% CAGR from a revenue perspective... and of course, in FY'26, we had 23.6% CAGR. Our EBITDA has also grown at about 18.6% CAGR for three years and last year was 23%.",
+            "Currently where we are at about $11 billion, we're expecting over the next eight years this should move to approximately $28.5 billion at about 11% CAGR.",
+            "We clearly believe that 14%-15% is definitely the guidance that we've given on the basis of best estimate at that point of time... but we saw Q1 at 17%.",
+            "The ambition is to improve our EBITDA margin from 24.4% to 27% to 28%.",
+            "We'll come up with about 100 labs in the next couple of years -- 100 mini hubs in the next couple of years.",
+            "1 year after acquisition, this is high single-digit EBITDA and we are now... maybe year 3 we will be close to the company levels of EBITDA."
+          ],
+          "pressing_questions": [
+            "In your presentation you have mentioned that you have identified 100 labs or centers that you plan to set up a radiology business and other services. What kind of capex you have planned and what one should expect the revenue contribution in next 2 years to 3 years from these new businesses?",
+            "My second question on the growth guidance where you have highlighted for FY27, how one should look at FY28 assuming at some point of time you will take a price hike and the radiology business kicks in?"
+          ]
+        },
         {
           "company": "Metropolis Healthcare Ltd",
           "ticker": "METROPOLIS",
