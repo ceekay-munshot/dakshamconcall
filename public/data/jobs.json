@@ -1505,8 +1505,10 @@
       "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "ETERNAL": {
-      "status": "running",
-      "started_at": "2026-10-29T16:44:07.678Z"
+      "status": "failed",
+      "finished_at": "2026-10-29T16:44:13.036Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "SYNGENE": {
       "status": "failed",
