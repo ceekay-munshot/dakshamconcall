@@ -737,8 +737,10 @@
       "message": "Screener has no AI summary and no transcript for SHARDAMOTR's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "THELEELA": {
-      "status": "running",
-      "started_at": "2026-10-30T16:38:25.820Z"
+      "status": "failed",
+      "finished_at": "2026-10-30T16:38:51.795Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "GODREJCP": {
       "status": "failed",
