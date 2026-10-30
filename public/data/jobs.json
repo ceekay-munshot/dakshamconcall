@@ -395,8 +395,10 @@
       "message": "Screener has no AI summary and no transcript for JKTYRE's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "CAMS": {
-      "status": "running",
-      "started_at": "2026-10-30T01:35:03.193Z"
+      "status": "failed",
+      "finished_at": "2026-10-30T01:35:08.321Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Screener has no AI summary and no transcript for CAMS's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "POWERICA": {
       "status": "failed",
