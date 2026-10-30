@@ -851,8 +851,10 @@
       "source": "transcript"
     },
     "YESBANK": {
-      "status": "running",
-      "started_at": "2026-10-30T01:39:44.495Z"
+      "status": "failed",
+      "finished_at": "2026-10-30T01:39:51.943Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "LTFOODS": {
       "status": "done",
