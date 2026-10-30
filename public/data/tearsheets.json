@@ -382308,10 +382308,704 @@
           }
         ],
         "source_url": "https://www.screener.in/company/FORTIS/consolidated/#quarters",
-        "captured_at": "2026-09-01T14:56:23.749Z"
+        "captured_at": "2026-10-30T16:44:48.930Z"
       },
-      "checked_at": "2026-09-01T15:07:30.172Z",
+      "checked_at": "2026-10-30T16:48:20.067Z",
       "quarters": [
+        {
+          "company": "Fortis Healthcare Ltd",
+          "ticker": "FORTIS",
+          "industry": "Hospital",
+          "country": "India",
+          "concall_date": "2026-09-10",
+          "source": "transcript",
+          "source_url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=75cc9d36-7c45-4fd2-97f6-b586b422f7fa.pdf",
+          "model": "anthropic.claude-sonnet-5",
+          "pipeline_version": 3,
+          "generated_at": "2026-10-30T16:47:53.677Z",
+          "summary": "Fortis Healthcare and IHH held an investor/analyst call to address the Delhi High Court's order directing a forensic audit covering the FHHPL promoter entity's evolution (2018-2026), the IHH/NTK acquisition and RHT fund utilization, and the role of FHL and 17 banks/financial institutions in share dissipation, with a 6-month reporting timeline; management stated the order does not change Fortis's strategic, operational, capex, bed-expansion or M&A plans, and IHH reaffirmed its commitment to raise its stake to 50%-plus and infuse capital as needed.",
+          "sections": [
+            {
+              "id": "FIN",
+              "title": "Financial Performance",
+              "key_figures": [
+                {
+                  "label": "Legal expenditure (last year)",
+                  "value": "~25",
+                  "unit": "INR crore",
+                  "period": "FY26 (last year)",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Legal expenditure budget (this year)",
+                  "value": "similar to ~25 crore",
+                  "unit": "INR crore",
+                  "period": "FY27 (this year)",
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Balance sheet impact from forensic audit matter",
+                  "value": "zero",
+                  "unit": null,
+                  "period": "current",
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Legal Expenses & Provisioning",
+                  "points": [
+                    "No provisioning is required as no liability has been fixed by the court order; it is described as a fact-finding exercise to be carried out through a forensic auditor.",
+                    "Balance sheet impact from the matter is assessed as zero; however, the company will continue to incur legal expenditure due to the ongoing legal battle, as it has for many years.",
+                    "Last year's legal expenditure was roughly INR25 crore, driven by intense court hearings; this year's amount is difficult to predict but a similar amount can be budgeted, depending on the intensity of the case.",
+                    "The cost of the current forensic audit (per the court order) is to be borne by Daiichi Sankyo, not Fortis; the cost of an earlier forensic audit conducted around the time of IHH's involvement was not a substantial sum (exact figure not readily available)."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STRAT",
+              "title": "Strategic Initiatives & M&A",
+              "key_figures": [
+                {
+                  "label": "IHH target stake in Fortis",
+                  "value": "50%+",
+                  "unit": "%",
+                  "period": "next 3-5 years",
+                  "kind": "target"
+                },
+                {
+                  "label": "MTO completion delay",
+                  "value": "~7",
+                  "unit": "years",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "IHH stake acquired via sale of shareholding by Singh brothers",
+                  "value": "31%",
+                  "unit": "%",
+                  "period": "2018",
+                  "kind": "reported"
+                },
+                {
+                  "label": "IHH planned stake increase in Fortis (as referenced in question)",
+                  "value": "51%",
+                  "unit": "%",
+                  "period": "next 3-5 years",
+                  "kind": "target"
+                },
+                {
+                  "label": "Years since IHH came on board managing Fortis operations",
+                  "value": "8",
+                  "unit": "years",
+                  "period": null,
+                  "kind": "reported"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "IHH Stake & Capital Commitment",
+                  "points": [
+                    "IHH's commitment to increase its stake in Fortis to 50%-plus continues unchanged despite the court order.",
+                    "IHH remains willing to infuse capital into Fortis as needed for growth and capex, within the purview of applicable law, on a year-on-year basis.",
+                    "The current court order does not change IHH's timeline or intent regarding the stake increase or capital commitment.",
+                    "The MTO (mandatory tender offer) was completed last year after approximately 7 years of delay, following permission from SEBI post the Supreme Court ruling; the delay was attributed in part to Daiichi's actions.",
+                    "IHH reiterated it is fully committed to backing Fortis as the growth engine for its India platform."
+                  ]
+                },
+                {
+                  "label": "Gleneagles-Fortis Integration",
+                  "points": [
+                    "IHH will continue to look at merging Gleneagles and Fortis at the appropriate time; this plan is unaffected by the current court order."
+                  ]
+                },
+                {
+                  "label": "Original IHH/NTK Acquisition Process (2018)",
+                  "points": [
+                    "The process that led to IHH's acquisition of a controlling stake was run by then-independent directors (appointed amid activist investor pressure) and was described as a fair, transparent, competitive process involving multiple bidders.",
+                    "IHH acquired its stake via a primary issuance (preferential allotment), not via purchase of secondary/open-market shares from the erstwhile promoters.",
+                    "The capital raised was used to fund the buyback of healthcare assets held in the RHT Health Trust (a Singapore-listed REIT), as the company was under financial stress from rental outgo at the time.",
+                    "All necessary public disclosures, regulatory approvals and shareholder approvals were completed for both the IHH/NTK transaction and the RHT transaction; the RHT entity was governed by MAS/SGX listing regulations in Singapore and its lenders (large Singapore banks) were paid out as part of the asset buyback.",
+                    "The Singh brothers' (erstwhile promoters) holding in the company had fallen to negligible levels by February 2018 after banks attached and liquidated their pledged shares in the open market; the company had no role in these share transfers, which were handled by the registrar, and no compliance-officer clearance was required under the rules at that time (such a rule now exists for promoter transfers)."
+                  ]
+                },
+                {
+                  "label": "M&A & Growth Plans",
+                  "points": [
+                    "Brownfield expansion, bed expansion and M&A plans remain unaffected by the court order and continue as previously disclosed.",
+                    "Growth capex is being funded mainly through internal accruals.",
+                    "The company is actively continuing to pursue M&A opportunities that have been under evaluation for the last few months, in addition to previously disclosed plans."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RISK",
+              "title": "Risks & External Factors",
+              "key_figures": [
+                {
+                  "label": "Forensic audit review period (FHHPL reconstruction)",
+                  "value": "2018-2026",
+                  "unit": null,
+                  "period": "2018-2026",
+                  "kind": "reported"
+                },
+                {
+                  "label": "Banks and financial institutions under audit scope",
+                  "value": "17",
+                  "unit": "banks/FIs",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Length of Delhi High Court order",
+                  "value": "200",
+                  "unit": "pages",
+                  "period": null,
+                  "kind": "reported"
+                },
+                {
+                  "label": "Timeline for legal team to decide on next steps based on legal advice",
+                  "value": "5, 10",
+                  "unit": "days",
+                  "period": null,
+                  "kind": "guidance"
+                },
+                {
+                  "label": "Timeframe referenced for IHH's continued investment commitment irrespective of audit outcome",
+                  "value": "6 to 12",
+                  "unit": "months",
+                  "period": null,
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Delhi High Court Forensic Audit Order",
+                  "points": [
+                    "A 200-page order by the Delhi High Court directs the appointment of a forensic auditor and defines the scope of the audit.",
+                    "Scope item 1: reconstruction of the complex evolution of FHHPL (the erstwhile promoter entity, unrelated to FHL itself) during 2018-2026, examining allegations that shares held by erstwhile promoters (the key assets meant to cover the Daiichi arbitral award) were divested to third parties rather than to IHH/NTK.",
+                    "Scope item 2: examination of the acquisition of the controlling stake in FHL by IHH/NTK, including approvals and filings, and the subsequent utilization of investment amounts to acquire healthcare assets from RHT Health Trust in Singapore; management notes these were primary-issuance shares, not purchased shares, and expressed surprise this was included in scope.",
+                    "Scope item 3: examination of any role of FHL and its officers/key managerial personnel in processing or approving the unencumbered share-dissipation transaction of the erstwhile promoters; management believes the company had no role, as this was a matter between the erstwhile promoters and the concerned banks.",
+                    "Scope item 4: examination of the role of all 17 banks and financial institutions in the dissipation of the said assets.",
+                    "The Supreme Court had previously stated that, as far as the IHH/NTK primary-infusion transaction was concerned, it found nothing requiring probe and considered it in the normal course of business; the High Court judge nonetheless felt a wider inquiry was appropriate, including this transaction, which management calls a new development with no clear rationale given and contradictions in the court's statements.",
+                    "Management states the company has conducted its own internal investigation and review of records (all predating IHH's involvement) and is confident the outcome of the forensic exercise will be in its favor, with no significant or material adverse result expected at this juncture, though it would be premature to comment definitively.",
+                    "Legal teams are currently reviewing the judgment and consulting with external and internal counsel to determine next steps, including whether to challenge aspects of the order."
+                  ]
+                },
+                {
+                  "label": "Daiichi Sankyo Litigation",
+                  "points": [
+                    "Ongoing litigation in India relates to Daiichi Sankyo's attempts to enforce an arbitral award against the erstwhile promoters (Singh brothers); Fortis states it was neither a judgment debtor nor a garnishee in these proceedings.",
+                    "Management believes Daiichi, frustrated at being unable to recover dues from the erstwhile promoters, may be pursuing Fortis as an entity perceived to have deeper pockets.",
+                    "No management-level discussions have taken place between Fortis/IHH and Daiichi Sankyo to resolve the matter; both sides currently appear set to continue dealing with it through the courts.",
+                    "Fortis is not currently pursuing counter-litigation against Daiichi since the matter is sub judice, but is considering what actions it can take to protect the company's interests.",
+                    "IHH separately opened a legal front against Daiichi in Japan because of the Indian court cases; this matter is sub judice with a hearing scheduled for the following week; IHH states Daiichi's actions have been \"fairly unfair\" and have cost time from an MTO perspective, delaying IHH's ability to consolidate Fortis."
+                  ]
+                },
+                {
+                  "label": "Operational & Reputational Risk",
+                  "points": [
+                    "Management states hospital operations, patient experience and clinical services remain insulated from the legal and shareholding-level issues; patients are described as more concerned with service delivery than with shareholding or legal matters.",
+                    "Some employee communication is considered necessary whenever there is public news about the organization; the company states it maintains high corporate governance standards and transparency with investors, employees and patients since IHH took over.",
+                    "Rising competitive intensity (in North India and other regions) was flagged by an analyst as a concern layered on top of the legal distraction; management says this requires stepping up engagement with internal and external stakeholders but does not see it as constraining current growth, doctor-retention or M&A plans.",
+                    "Management has not observed any issues with employee, doctor, or patient perception arising from the forensic audit announcement to date."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GUID",
+              "title": "Guidance & Outlook",
+              "key_figures": [
+                {
+                  "label": "Auditor questionnaire issuance timeline",
+                  "value": "4",
+                  "unit": "weeks",
+                  "period": "from date of order",
+                  "kind": "target"
+                },
+                {
+                  "label": "Company response period to questionnaire",
+                  "value": "2",
+                  "unit": "weeks",
+                  "period": "following questionnaire issuance",
+                  "kind": "target"
+                },
+                {
+                  "label": "Forensic audit report completion timeline",
+                  "value": "6",
+                  "unit": "months",
+                  "period": "from date of order",
+                  "kind": "target"
+                },
+                {
+                  "label": "IHH target stake in Fortis",
+                  "value": "50%+",
+                  "unit": "%",
+                  "period": "next 3-5 years",
+                  "kind": "target"
+                },
+                {
+                  "label": "Legal expenditure budget",
+                  "value": "similar to ~25 crore",
+                  "unit": "INR crore",
+                  "period": "FY27",
+                  "kind": "guidance"
+                }
+              ],
+              "subsections": [
+                {
+                  "label": "Forensic Audit Timeline & Process",
+                  "points": [
+                    "Management expects developments within the court-fixed six-month timeline, followed by a few more months for any resulting actions to be taken.",
+                    "Post-audit, assuming no material finding, this is expected to be the final stop for this line of investigation and litigation, unless something new develops.",
+                    "Legal teams are reviewing the judgment and consulting senior lawyers, with next steps expected to be determined over the next 5-10 days / couple of weeks."
+                  ]
+                },
+                {
+                  "label": "Unaffected Strategic/Operational Plans",
+                  "points": [
+                    "Brownfield expansion, bed expansion, and M&A plans are unaffected by the court order and will continue as previously disclosed, funded mainly via internal accruals.",
+                    "IHH confirmed it is not restricted from pursuing other corporate actions, including capital infusion into Fortis, during the six-month audit period.",
+                    "IHH's commitment to raise its stake in Fortis towards 50%-plus continues unchanged, as does its intent to eventually merge Gleneagles and Fortis at the appropriate time."
+                  ]
+                },
+                {
+                  "label": "Worst-Case Outcome",
+                  "points": [
+                    "Management declined to speculate in detail on the worst-case scenario, stating it would be premature to comment, but reiterated confidence that Fortis has been in compliance with law at all times and does not foresee any significant or material adverse result from the audit."
+                  ]
+                }
+              ]
+            }
+          ],
+          "guidance_ledger": [
+            {
+              "metric": "Forensic audit completion timeline",
+              "horizon": "6 months from order date",
+              "statement": "Court-ordered timeline: auditor to issue an information-requisition questionnaire within 4 weeks, company to respond within 2 weeks, and auditor to submit its report within 6 months.",
+              "specificity": "specific",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Legal expenditure",
+              "horizon": "FY27 (this year)",
+              "statement": "Legal expenditure is expected to be similar to last year's ~INR25 crore, depending on the intensity of the case; difficult to predict precisely.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "IHH stake in Fortis",
+              "horizon": "next 3-5 years",
+              "statement": "IHH's commitment to increase its stake in Fortis to 50%-plus continues unchanged; commitment to infuse capital into Fortis as needed for growth/capex also continues.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "new"
+            },
+            {
+              "metric": "Gleneagles-Fortis merger",
+              "horizon": "unclear / at the appropriate time",
+              "statement": "IHH will continue to look at merging Gleneagles and Fortis at the appropriate time.",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Brownfield expansion, bed addition, and M&A plans",
+              "horizon": "ongoing",
+              "statement": "Management reiterated that current brownfield expansion, bed expansion, and M&A plans are unaffected by the court order and will continue as previously disclosed, funded mainly via internal accruals.",
+              "specificity": "vague",
+              "direction": "flat",
+              "status": "new"
+            },
+            {
+              "metric": "Worst-case outcome from forensic audit",
+              "horizon": "post 6-month audit",
+              "statement": "Management does not foresee any significant or material adverse result from the forensic audit, given its belief that Fortis has been in compliance with law at all times; declined to speculate further on the worst-case scenario as premature.",
+              "specificity": "vague",
+              "direction": "unclear",
+              "status": "new"
+            },
+            {
+              "metric": "Hospital EBITDA margin target (FY28)",
+              "horizon": "FY28",
+              "statement": "25% margin guidance maintained, aspiring to achieve 25% EBITDA margin after running the ESOP cost; overall in two years' time confident of reaching 25%.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Hospital EBITDA margin improvement (FY27)",
+              "horizon": "FY27",
+              "statement": "Original guidance of around 150-200 bps margin expansion maintained (ex-ESOP); guidance and target does not change due to brownfield facilities coming online and FMRI/Manesar ramp-up.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "ESOP charge",
+              "horizon": "FY27-FY29",
+              "statement": "ESOP charge expected around INR 40 crore per quarter for remaining FY27 (if employee count stays same), falling to around INR 30 crore per quarter thereafter, and around INR 25 crore per quarter in the third year.",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Bed expansion (FY27 remaining quarters)",
+              "horizon": "FY27",
+              "statement": "Expecting to operationalize another 400 beds in the remaining 3 quarters of the year, with major contribution from FMRI (200 beds) pending occupancy certificate expected soon.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Manesar and Greater Noida EBITDA margin",
+              "horizon": "FY27 year-end",
+              "statement": "Both hospitals expected to be in mid-teens EBITDA margin by year-end, if not higher.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Manesar oncology commissioning",
+              "horizon": "By end of CY2026",
+              "statement": "Radiation oncology equipment under installation at Manesar, expected to be commissioned by November/end of calendar year, transforming hospital into comprehensive oncology center.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Oncology division growth",
+              "horizon": "forward",
+              "statement": "Oncology growth expected to be in the range of 10%-12% going forward (down from earlier 23%-24%/27%), driven by chemo pricing headwinds but supported by radiation and surgical oncology expansion.",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Hospital occupancy improvement",
+              "horizon": "forward",
+              "statement": "Levers (new units ramp-up, BG Road improvement) expected to ramp up occupancy by another 2-3 percentage points going forward.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "FMRI EBITDA margin",
+              "horizon": "next 1-2 years",
+              "statement": "FMRI already operating at around 25% EBITDA margin; with new beds, initial margin impact minimal, expected improvement over time as network expands and talent is added.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Capex guidance (ex-acquisitions)",
+              "horizon": "FY27",
+              "statement": "Without acquisitions, company will consume around 50% of EBITDA for growth capex (brownfield expansion, 2000-bed plan), plus investments in proton therapy, robotic surgery and other tech capabilities.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Proton facility capex",
+              "horizon": "unclear",
+              "statement": "Proton facility at Gurgaon flagship hospital under finalization, capex expected in the range of INR 252-odd crores.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Diagnostics (Agilus) revenue growth",
+              "horizon": "FY27 remaining",
+              "statement": "Guidance continues to be maintained for double-digit revenue growth; expecting revenue growth around 12%-13% for remaining time.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Diagnostics (Agilus) EBITDA margin",
+              "horizon": "FY27 remaining",
+              "statement": "EBITDA margin should be in the range of 24%-25% for the remaining time.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Agilus B2C revenue mix",
+              "horizon": "next few quarters",
+              "statement": "B2C ratio expected to move from 53% to at least 55% and 58% in next few quarters/times from now.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Gleneagles O&M stabilization",
+              "horizon": "2-4 quarters",
+              "statement": "Expectation that it should take at least 2-3 quarters or maybe around 4 quarters before Gleneagles operations can be considered fully stabilized to Fortis standard.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Inorganic growth / M&A",
+              "horizon": "unclear",
+              "statement": "Company is actively pursuing some deals; will continue to evaluate inorganic growth opportunities aligned with cluster strategy with potential for meaningful synergies; expected to be in focus clusters.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Hospital business revenue growth",
+              "horizon": "FY27",
+              "statement": "Revenue-wise, we are well poised to see on hospital side, 15% plus revenue growth.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Diagnostics EBITDA margin",
+              "horizon": "FY26",
+              "statement": "As we had guided earlier, this year, we said that we'll be around 22% to 23% in terms of EBITDA. So we are there.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Diagnostics EBITDA margin",
+              "horizon": "FY27",
+              "statement": "For the coming year as well, we'll be around 23% to 24% kind of EBITDA margins.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Diagnostics revenue growth",
+              "horizon": "FY27",
+              "statement": "We'll definitely improve and touch about double digits this year is what we are hoping.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Diagnostics volume/value mix",
+              "horizon": "FY27",
+              "statement": "We expect that next year, it would be similar about 70% coming from volume and 30% coming from value.",
+              "specificity": "specific",
+              "direction": "flat",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Jaipur hospital revenue growth",
+              "horizon": "FY27",
+              "statement": "We expect the Jaipur to grow around 15% plus next financial year with EBITDA margin in the range of 13%, 14%.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "FMRI new tower bed opening",
+              "horizon": "FY27",
+              "statement": "In the current financial year, our target -- our plan is to open around 100 beds. But if the occupancy ramps up fast, we can open all the beds also.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Brownfield bed addition",
+              "horizon": "next 4 years",
+              "statement": "Over the next 4 years, we plan to ramp up bed capacity further through brownfield expansion by adding around 1,800 beds.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Brownfield bed addition",
+              "horizon": "FY27",
+              "statement": "We expect to add capacity of more than 400 beds with a new tower at FMRI expected to be operationalized within weeks and balanced bed addition at Noida, Manesar and Amritsar as well as FHKI Kolkata coming during the year.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "Brownfield bed commissioning",
+              "horizon": "FY27",
+              "statement": "Next year, we are targeting around 500-plus bed expansion, commissioning of 500-plus beds on the brownfield side.",
+              "specificity": "specific",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "IHH stake increase and equity infusion",
+              "horizon": "unclear",
+              "statement": "There is a plan to increase their stake to 50%, and they have also mentioned some amount around INR10,000 crores fresh equity infusion in the company for meeting the growth aspirations... no specific time line I can give you, but it will happen over a period of time as and when the companies need the capital.",
+              "specificity": "vague",
+              "direction": "up",
+              "status": "no_mention"
+            },
+            {
+              "metric": "FY28 bed capacity guidance revision",
+              "horizon": "FY28-29",
+              "statement": "In the January PPT, we have dedicated 465 beds for FY28. Now in the latest PPT, we are guiding 173 beds... that 300 bed deviation is largely now in FY29 (mainly Shalimar Bagh due to approval issues).",
+              "specificity": "specific",
+              "direction": "down",
+              "status": "no_mention"
+            }
+          ],
+          "risk_register": [
+            {
+              "risk": "Delhi High Court forensic audit (scope covers FHHPL evolution 2018-2026, IHH/NTK acquisition and RHT fund utilization, role of FHL/KMPs in share dissipation, and role of 17 banks/FIs)",
+              "status": "new",
+              "note": "200-page order directs appointment of a forensic auditor with a 6-month reporting timeline; management states no significant/material adverse outcome is foreseen and no provisioning is required, as no liability has been fixed."
+            },
+            {
+              "risk": "Daiichi Sankyo litigation (India execution proceedings)",
+              "status": "new",
+              "note": "Daiichi is seen as driving the broader scope of inquiry out of frustration at being unable to recover its arbitral award from erstwhile promoters; Fortis states it was neither judgment debtor nor garnishee; matter remains sub judice with no management-level discussions held."
+            },
+            {
+              "risk": "IHH-Daiichi litigation in Japan",
+              "status": "new",
+              "note": "Separate legal front opened by IHH against Daiichi in Japan remains sub judice with a hearing scheduled for the following week; management declined to comment on outcome, though the dispute has delayed IHH's ability to consolidate Fortis (MTO delayed ~7 years)."
+            },
+            {
+              "risk": "Ongoing legal/litigation expenses",
+              "status": "new",
+              "note": "Legal expenditure of roughly INR25 crore incurred last year is expected to continue at a similar level this year, depending on case intensity."
+            },
+            {
+              "risk": "Operational/reputational distraction from legal matters",
+              "status": "new",
+              "note": "Management states hospital operations, patient experience and clinical services remain insulated from legal and shareholding issues; some employee communication required when matters become public."
+            },
+            {
+              "risk": "Competitive intensity (PE-backed platforms)",
+              "status": "new",
+              "note": "Analyst flagged rising competitive intensity in North India and elsewhere alongside the legal distraction; management says it must step up stakeholder engagement but does not see it as constraining growth, doctor-retention or M&A plans."
+            },
+            {
+              "risk": "CGHS/ECHS chemo drug pricing mechanism (30% discount on MRP)",
+              "status": "no_mention",
+              "note": "Impacting oncology/chemo business in Punjab (large ECHS beneficiary base) and NCR (large CGHS beneficiary base); oncology growth down from 23-24% to about 5%, expected to stabilize at 10-12% going forward."
+            },
+            {
+              "risk": "Doctor poaching / attrition in micro markets",
+              "status": "no_mention",
+              "note": "Periodic poaching activity occurs, particularly when new hospitals open in a local geography (e.g., Noida); not considered a broad regional trend; supply of clinical talent has improved significantly due to increased medical college seats ~15 years back."
+            },
+            {
+              "risk": "Legal costs from Delhi High Court hearings",
+              "status": "no_mention",
+              "note": "Intense hearings in ongoing Delhi High Court matter in current and prior quarter have burdened profitability."
+            },
+            {
+              "risk": "Provision for doubtful debts",
+              "status": "no_mention",
+              "note": "Provision has slightly increased this quarter due to delays in collections from government payors and some TPAs; team working to plug the gap."
+            },
+            {
+              "risk": "New unit ramp-up drag on margins",
+              "status": "no_mention",
+              "note": "New units (Manesar, Greater Noida, Bengaluru, etc.) in ramp-up stage contributed negatively by 0.4% to overall EBITDA margin currently, expected to turn to +1% positive contribution as they mature."
+            },
+            {
+              "risk": "Gleneagles O&M not yet fully stabilized",
+              "status": "no_mention",
+              "note": "Operations improving but not yet at Fortis standard; expected to take 2-4 quarters to fully stabilize."
+            },
+            {
+              "risk": "Manesar and Greater Noida sub-10% margins",
+              "status": "no_mention",
+              "note": "Cited as one of the reasons for muted consolidated margins this quarter; expected to reach mid-teens EBITDA by year-end."
+            },
+            {
+              "risk": "Diagnostics business growth slower than industry",
+              "status": "no_mention",
+              "note": "Agilus reported 9-10% growth vs industry ~15%, attributed to prior brand change and stagnant period, now stabilizing under new leadership."
+            },
+            {
+              "risk": "International patient business slowdown",
+              "status": "no_mention",
+              "note": "International business growth slowed to ~11% YoY in Q4 FY26 from 18-20% for the full year, contributing to occupancy drops at FMRI, BG Road, Faridabad; company is diversifying to Africa and other markets to mitigate."
+            },
+            {
+              "risk": "CGHS/ECHS onco drug price capping",
+              "status": "no_mention",
+              "note": "Drug price cap at 30% of MRP under CGHS/ECHS led to revenue/occupancy drop mainly in Punjab region hospitals; no clarity on resolution timeline; impact on margin limited since capped-price business wasn't profitable anyway."
+            },
+            {
+              "risk": "Intense regional competition (BG Road)",
+              "status": "no_mention",
+              "note": "BG Road occupancy at 55% versus 63-64% regional benchmark due to competitive intensity and lower government-business mix; on management's radar for improvement."
+            },
+            {
+              "risk": "Doctor cost/attrition",
+              "status": "no_mention",
+              "note": "Slight increase in doctor costs noted; management does not expect further major increases and is comfortable with the clinician pool."
+            },
+            {
+              "risk": "Regulatory/approval delays",
+              "status": "no_mention",
+              "note": "Shalimar Bagh brownfield expansion delayed pending resolution of approval-related issues, pushing ~300 beds of capacity from FY28 to FY29."
+            },
+            {
+              "risk": "PE-backed competitive intensity and valuations",
+              "status": "no_mention",
+              "note": "Management flagged rising PE-backed platform competition and asset-light models in Indian hospital sector, with concerns about valuations being driven by such transactions."
+            }
+          ],
+          "themes": [
+            {
+              "label": "IHH parent support / capital infusion",
+              "direction": "positive",
+              "note": "IHH reaffirmed full commitment to Fortis, including raising its stake to 50%-plus and infusing capital for growth needs, unaffected by the court order.",
+              "section_ref": "STRAT"
+            },
+            {
+              "label": "Legal/regulatory overhang (forensic audit)",
+              "direction": "negative",
+              "note": "Delhi High Court ordered a forensic audit into FHHPL's evolution and the IHH/NTK acquisition, creating a legal overhang, though management sees no material adverse impact.",
+              "section_ref": "RISK"
+            },
+            {
+              "label": "Daiichi Sankyo litigation",
+              "direction": "negative",
+              "note": "Ongoing Daiichi Sankyo litigation in India and Japan continues, with the forensic audit viewed by management as linked to Daiichi's inability to recover dues from erstwhile promoters.",
+              "section_ref": "RISK"
+            },
+            {
+              "label": "Capacity expansion / brownfield",
+              "direction": "neutral",
+              "note": "Management reiterated that brownfield expansion, bed addition and M&A plans remain unaffected by the court order and continue as previously disclosed.",
+              "section_ref": "STRAT"
+            },
+            {
+              "label": "Competitive intensity (PE-backed platforms)",
+              "direction": "mixed",
+              "note": "Rising competitive intensity in North India and elsewhere was flagged alongside the legal distraction, though management does not see it constraining growth plans.",
+              "section_ref": "RISK"
+            }
+          ],
+          "key_takeaways": [
+            "the current order in no way changes, limits, or impedes any of our strategic or operational plans, including those related to our investment, capex, bed expansion, and our initiatives on the M&A front.",
+            "in 4 weeks the auditor needs to send its questionnaire of the information requisition, followed by 2 weeks to respond, and then 6 months to come up with a report.",
+            "we believe Fortis has been in complete compliance with the law at all the times. And hence, at this juncture, we don't foresee any significant or material adverse results from the audit.",
+            "Our commitment to take our stake up to, you know, 50%-plus continues... we are happy to put capital into Fortis, should the need arise.",
+            "there is no need for any, you know, provisioning... no liability has been fixed. It is just like a fact-finding exercise, which High Court wants to do through forensic auditor... balancing impact is zero.",
+            "last year, for example, it was around INR25 crores roughly [legal expenditure]... this year it is difficult to predict, but similar amount one can budget.",
+            "this forensic audit thing in the court order itself it was mentioned that it is to be borne by Daiichi.",
+            "the operations are completely insulated from the goings-on in the legal and shareholding level."
+          ],
+          "pressing_questions": [
+            "What is the worst-case scenario outcome that could potentially arise from this forensic audit?",
+            "Why did the judge include the IHH/NTK acquisition in the audit scope despite the Supreme Court having previously indicated no issue with that transaction?",
+            "Will Fortis take steps to challenge the High Court order, particularly the inclusion of the IHH transaction, or will it proceed with the forensic audit across the full scope as ordered?",
+            "Does the current court order have any bearing on, or risk of prolonging, the parallel Daiichi litigation in Japan?"
+          ]
+        },
         {
           "company": "Fortis Healthcare Ltd",
           "ticker": "FORTIS",
