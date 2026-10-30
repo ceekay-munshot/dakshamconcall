@@ -617,8 +617,10 @@
       "source": "transcript"
     },
     "AEQUS": {
-      "status": "running",
-      "started_at": "2026-10-30T16:37:17.669Z"
+      "status": "failed",
+      "finished_at": "2026-10-30T16:37:23.316Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "COFORGE": {
       "status": "failed",
