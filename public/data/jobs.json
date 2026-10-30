@@ -97,8 +97,10 @@
       "source": "ai_summary"
     },
     "INFY": {
-      "status": "running",
-      "started_at": "2026-10-30T16:33:09.124Z"
+      "status": "failed",
+      "finished_at": "2026-10-30T16:33:16.926Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "MARUTI": {
       "status": "failed",
