@@ -1397,8 +1397,10 @@
       "message": "Screener has no AI summary and no transcript for RPGLIFE's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "BAJAJCON": {
-      "status": "running",
-      "started_at": "2026-10-30T16:48:35.669Z"
+      "status": "failed",
+      "finished_at": "2026-10-30T16:48:41.811Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "MPHASIS": {
       "status": "done",
