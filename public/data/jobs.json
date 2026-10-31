@@ -1589,8 +1589,10 @@
       "message": "Screener has no AI summary and no transcript for NATIONALUM's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "STYRENIX": {
-      "status": "running",
-      "started_at": "2026-10-31T01:34:23.641Z"
+      "status": "failed",
+      "finished_at": "2026-10-31T01:34:32.527Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Screener has no AI summary and no transcript for STYRENIX's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "JSWCEMENT": {
       "status": "done",
