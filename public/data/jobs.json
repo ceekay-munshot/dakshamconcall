@@ -1205,8 +1205,10 @@
       "source": "transcript"
     },
     "GLOBUSSPR": {
-      "status": "running",
-      "started_at": "2026-10-31T01:31:17.111Z"
+      "status": "failed",
+      "finished_at": "2026-10-31T01:31:25.998Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Screener has no AI summary and no transcript for GLOBUSSPR's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "MILKYMIST": {
       "status": "failed",
