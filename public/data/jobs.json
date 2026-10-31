@@ -1643,8 +1643,10 @@
       "source": "transcript"
     },
     "POLICYBZR": {
-      "status": "running",
-      "started_at": "2026-10-31T01:35:22.097Z"
+      "status": "failed",
+      "finished_at": "2026-10-31T01:35:31.038Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Screener has no AI summary and no transcript for POLICYBZR's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "REFEX": {
       "status": "done",
