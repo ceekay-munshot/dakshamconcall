@@ -887,8 +887,10 @@
       "source": "transcript"
     },
     "INDIAMART": {
-      "status": "running",
-      "started_at": "2026-11-01T00:45:02.115Z"
+      "status": "failed",
+      "finished_at": "2026-11-01T00:45:08.079Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "JUNIPER": {
       "status": "failed",
