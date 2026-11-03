@@ -1301,8 +1301,10 @@
       "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "SASKEN": {
-      "status": "running",
-      "started_at": "2026-11-03T17:54:44.349Z"
+      "status": "failed",
+      "finished_at": "2026-11-03T17:54:55.360Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "CYIENT": {
       "status": "failed",
