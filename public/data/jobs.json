@@ -1163,8 +1163,10 @@
       "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "BRIGHOTEL": {
-      "status": "running",
-      "started_at": "2026-11-03T17:50:53.882Z"
+      "status": "failed",
+      "finished_at": "2026-11-03T17:51:02.062Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "ACE": {
       "status": "done",
