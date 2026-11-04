@@ -1925,8 +1925,10 @@
       "message": "Screener has no AI summary and no transcript for EPL's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "ASKAUTOLTD": {
-      "status": "running",
-      "started_at": "2026-11-04T17:47:38.339Z"
+      "status": "failed",
+      "finished_at": "2026-11-04T17:47:46.870Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Screener has no AI summary and no transcript for ASKAUTOLTD's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     }
   }
 }
