@@ -1241,8 +1241,10 @@
       "message": "Screener has no AI summary and no transcript for AXISBANK's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "PARADEEP": {
-      "status": "running",
-      "started_at": "2026-11-05T18:02:49.930Z"
+      "status": "failed",
+      "finished_at": "2026-11-05T18:02:58.652Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Screener has no AI summary and no transcript for PARADEEP's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "METROPOLIS": {
       "status": "done",
