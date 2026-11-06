@@ -623,8 +623,10 @@
       "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "COFORGE": {
-      "status": "running",
-      "started_at": "2026-11-06T02:12:12.988Z"
+      "status": "failed",
+      "finished_at": "2026-11-06T02:12:18.146Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "NRBBEARING": {
       "status": "done",
