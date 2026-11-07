@@ -851,8 +851,10 @@
       "message": "Screener has no AI summary and no transcript for MPSLTD's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "YESBANK": {
-      "status": "running",
-      "started_at": "2026-11-07T01:40:25.291Z"
+      "status": "failed",
+      "finished_at": "2026-11-07T01:40:30.760Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "LTFOODS": {
       "status": "failed",
