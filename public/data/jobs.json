@@ -187,8 +187,10 @@
       "source": "transcript"
     },
     "TMCV": {
-      "status": "running",
-      "started_at": "2026-11-07T16:08:36.875Z"
+      "status": "failed",
+      "finished_at": "2026-11-07T16:08:42.319Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "TMPV": {
       "status": "done",
