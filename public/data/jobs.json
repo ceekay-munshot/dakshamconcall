@@ -175,8 +175,10 @@
       "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "SONACOMS": {
-      "status": "running",
-      "started_at": "2026-11-08T01:02:22.762Z"
+      "status": "failed",
+      "finished_at": "2026-11-08T01:02:29.408Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "UNOMINDA": {
       "status": "done",
