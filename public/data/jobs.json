@@ -229,8 +229,10 @@
       "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "FIVESTAR": {
-      "status": "running",
-      "started_at": "2026-11-08T01:03:26.349Z"
+      "status": "failed",
+      "finished_at": "2026-11-08T01:03:31.538Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "NEULANDLAB": {
       "status": "failed",
