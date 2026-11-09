@@ -569,8 +569,10 @@
       "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "MOLDTECH": {
-      "status": "running",
-      "started_at": "2026-11-09T20:32:46.541Z"
+      "status": "failed",
+      "finished_at": "2026-11-09T20:32:52.046Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "EMBDL": {
       "status": "failed",
