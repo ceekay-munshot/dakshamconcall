@@ -169,8 +169,10 @@
       "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "APOLLOTYRE": {
-      "status": "running",
-      "started_at": "2026-11-10T17:32:15.432Z"
+      "status": "failed",
+      "finished_at": "2026-11-10T17:32:20.867Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "SONACOMS": {
       "status": "failed",
