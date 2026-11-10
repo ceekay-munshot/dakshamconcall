@@ -217,8 +217,10 @@
       "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "BPCL": {
-      "status": "running",
-      "started_at": "2026-11-10T17:33:08.850Z"
+      "status": "failed",
+      "finished_at": "2026-11-10T17:33:14.681Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "JKCEMENT": {
       "status": "failed",
