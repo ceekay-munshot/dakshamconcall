@@ -437,8 +437,10 @@
       "message": "Screener has no AI summary and no transcript for KIRLOSENG's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "RAYMONDLSL": {
-      "status": "running",
-      "started_at": "2026-11-11T17:48:11.987Z"
+      "status": "failed",
+      "finished_at": "2026-11-11T17:48:18.940Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "SBIFUNDS": {
       "status": "failed",
