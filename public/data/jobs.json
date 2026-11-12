@@ -749,8 +749,10 @@
       "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "PYRAMID": {
-      "status": "running",
-      "started_at": "2026-11-12T18:05:55.639Z"
+      "status": "failed",
+      "finished_at": "2026-11-12T18:06:01.174Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "RELIGARE": {
       "status": "failed",
