@@ -341,8 +341,10 @@
       "message": "Couldn't fetch AJANTPHARM's latest concall. Screener daily AI-summary limit reached. Limit exceeded - Please try again later Premium users can request 80 summaries each day."
     },
     "TATACAP": {
-      "status": "running",
-      "started_at": "2026-11-12T17:59:29.403Z"
+      "status": "failed",
+      "finished_at": "2026-11-12T17:59:35.159Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "INOXINDIA": {
       "status": "failed",
