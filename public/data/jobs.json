@@ -629,8 +629,10 @@
       "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "NRBBEARING": {
-      "status": "running",
-      "started_at": "2026-11-13T17:39:10.856Z"
+      "status": "failed",
+      "finished_at": "2026-11-13T17:39:16.052Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "WEBELSOLAR": {
       "status": "failed",
