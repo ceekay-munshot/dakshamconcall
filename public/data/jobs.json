@@ -491,8 +491,10 @@
       "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "NYKAA": {
-      "status": "running",
-      "started_at": "2026-11-13T17:36:36.714Z"
+      "status": "failed",
+      "finished_at": "2026-11-13T17:36:42.278Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "GESHIP": {
       "status": "failed",
