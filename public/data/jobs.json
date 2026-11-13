@@ -413,8 +413,10 @@
       "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "CLEANMAX": {
-      "status": "running",
-      "started_at": "2026-11-13T02:25:35.536Z"
+      "status": "failed",
+      "finished_at": "2026-11-13T02:25:41.835Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "AUTOAXLES": {
       "status": "done",
