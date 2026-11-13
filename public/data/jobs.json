@@ -563,8 +563,10 @@
       "message": "Screener has no AI summary and no transcript for COHANCE's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "IXIGO": {
-      "status": "running",
-      "started_at": "2026-11-13T17:38:25.736Z"
+      "status": "failed",
+      "finished_at": "2026-11-13T17:38:31.658Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "MOLDTECH": {
       "status": "failed",
