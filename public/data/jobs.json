@@ -443,8 +443,10 @@
       "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "SBIFUNDS": {
-      "status": "running",
-      "started_at": "2026-11-14T02:02:25.700Z"
+      "status": "failed",
+      "finished_at": "2026-11-14T02:02:31.724Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "TORNTPOWER": {
       "status": "failed",
