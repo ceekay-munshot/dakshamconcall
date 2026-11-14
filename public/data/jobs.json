@@ -743,8 +743,10 @@
       "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "GODREJCP": {
-      "status": "running",
-      "started_at": "2026-11-14T16:31:56.084Z"
+      "status": "failed",
+      "finished_at": "2026-11-14T16:32:02.170Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "PYRAMID": {
       "status": "failed",
