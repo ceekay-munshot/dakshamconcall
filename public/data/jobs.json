@@ -575,8 +575,10 @@
       "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "EMBDL": {
-      "status": "running",
-      "started_at": "2026-11-14T16:33:30.764Z"
+      "status": "failed",
+      "finished_at": "2026-11-14T16:33:36.748Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "AEROPLANE": {
       "status": "failed",
