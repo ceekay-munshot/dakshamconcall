@@ -467,8 +467,10 @@
       "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "ORIENTCEM": {
-      "status": "running",
-      "started_at": "2026-11-14T16:27:38.232Z"
+      "status": "failed",
+      "finished_at": "2026-11-14T16:27:43.844Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "OLAELEC": {
       "status": "failed",
