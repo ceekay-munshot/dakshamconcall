@@ -145,8 +145,10 @@
       "source": "transcript"
     },
     "MOTHERSON": {
-      "status": "running",
-      "started_at": "2026-11-14T01:58:04.355Z"
+      "status": "failed",
+      "finished_at": "2026-11-14T01:58:09.730Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "BOSCHLTD": {
       "status": "failed",
