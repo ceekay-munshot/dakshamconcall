@@ -851,8 +851,10 @@
       "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "YESBANK": {
-      "status": "running",
-      "started_at": "2026-11-15T01:38:16.875Z"
+      "status": "failed",
+      "finished_at": "2026-11-15T01:38:22.089Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "LTFOODS": {
       "status": "failed",
