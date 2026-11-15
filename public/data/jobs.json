@@ -193,8 +193,10 @@
       "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "TMPV": {
-      "status": "running",
-      "started_at": "2026-11-15T16:51:47.295Z"
+      "status": "failed",
+      "finished_at": "2026-11-15T16:51:53.109Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "DEVYANI": {
       "status": "failed",
