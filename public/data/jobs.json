@@ -839,8 +839,10 @@
       "message": "Screener has no AI summary and no transcript for VADILALIND's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "STEELCAS": {
-      "status": "running",
-      "started_at": "2026-11-15T16:58:55.262Z"
+      "status": "failed",
+      "finished_at": "2026-11-15T16:59:03.888Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Screener has no AI summary and no transcript for STEELCAS's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "MPSLTD": {
       "status": "failed",
