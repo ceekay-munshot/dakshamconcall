@@ -103,8 +103,10 @@
       "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "MARUTI": {
-      "status": "running",
-      "started_at": "2026-11-15T01:29:56.242Z"
+      "status": "failed",
+      "finished_at": "2026-11-15T01:30:01.407Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "M&M": {
       "status": "failed",
