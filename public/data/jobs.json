@@ -767,8 +767,10 @@
       "message": "Screener has no AI summary and no transcript for GUJENERGY's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "JASH": {
-      "status": "running",
-      "started_at": "2026-11-16T20:11:47.052Z"
+      "status": "failed",
+      "finished_at": "2026-11-16T20:11:52.677Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "PARKHOTELS": {
       "status": "done",
