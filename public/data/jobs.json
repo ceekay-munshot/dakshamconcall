@@ -881,8 +881,10 @@
       "source": "transcript"
     },
     "POWERINDIA": {
-      "status": "running",
-      "started_at": "2026-11-16T01:42:27.075Z"
+      "status": "failed",
+      "finished_at": "2026-11-16T01:42:35.998Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Screener has no AI summary and no transcript for POWERINDIA's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "INDIAMART": {
       "status": "failed",
