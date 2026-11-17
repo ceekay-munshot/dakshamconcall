@@ -97,8 +97,10 @@
       "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "INFY": {
-      "status": "running",
-      "started_at": "2026-11-17T18:58:05.469Z"
+      "status": "failed",
+      "finished_at": "2026-11-17T18:58:11.915Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "MARUTI": {
       "status": "failed",
