@@ -611,8 +611,10 @@
       "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "UNIPARTS": {
-      "status": "running",
-      "started_at": "2026-11-18T18:49:13.562Z"
+      "status": "failed",
+      "finished_at": "2026-11-18T18:49:18.940Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "AEQUS": {
       "status": "failed",
