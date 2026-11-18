@@ -277,8 +277,10 @@
       "message": "Analysis failed for NTPC. Please retry."
     },
     "PINELABS": {
-      "status": "running",
-      "started_at": "2026-11-18T03:20:04.175Z"
+      "status": "failed",
+      "finished_at": "2026-11-18T03:20:09.562Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "KEC": {
       "status": "failed",
