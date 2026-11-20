@@ -701,8 +701,10 @@
       "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "DEEDEV": {
-      "status": "running",
-      "started_at": "2026-11-20T18:35:35.596Z"
+      "status": "failed",
+      "finished_at": "2026-11-20T18:35:41.228Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "MAXESTATES": {
       "status": "failed",
