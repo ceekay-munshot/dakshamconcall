@@ -473,8 +473,10 @@
       "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "OLAELEC": {
-      "status": "running",
-      "started_at": "2026-11-20T18:33:40.601Z"
+      "status": "failed",
+      "finished_at": "2026-11-20T18:33:46.315Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "ORKLAINDIA": {
       "status": "failed",
