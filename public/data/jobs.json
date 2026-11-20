@@ -109,8 +109,10 @@
       "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "M&M": {
-      "status": "running",
-      "started_at": "2026-11-20T02:49:12.902Z"
+      "status": "failed",
+      "finished_at": "2026-11-20T02:49:19.508Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "BAJAJ-AUTO": {
       "status": "failed",
