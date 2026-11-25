@@ -665,8 +665,10 @@
       "source": "transcript"
     },
     "SAMMAANCAP": {
-      "status": "running",
-      "started_at": "2026-11-25T04:55:39.847Z"
+      "status": "failed",
+      "finished_at": "2026-11-25T04:55:49.609Z",
+      "error": "Found concalls but could not extract an AI summary or transcript.",
+      "message": "Screener has no AI summary and no transcript for SAMMAANCAP's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "KPITTECH": {
       "status": "failed",
