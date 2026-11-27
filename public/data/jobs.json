@@ -695,8 +695,10 @@
       "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "GREAVESCOT": {
-      "status": "running",
-      "started_at": "2026-11-27T04:04:49.936Z"
+      "status": "failed",
+      "finished_at": "2026-11-27T04:04:56.132Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "DEEDEV": {
       "status": "failed",
