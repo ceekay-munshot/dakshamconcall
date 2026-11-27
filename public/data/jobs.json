@@ -839,8 +839,10 @@
       "message": "Screener has no AI summary and no transcript for VADILALIND's latest concall yet. We'll keep checking — it appears here automatically once either is published."
     },
     "STEELCAS": {
-      "status": "running",
-      "started_at": "2026-11-27T04:05:40.947Z"
+      "status": "failed",
+      "finished_at": "2026-11-27T04:05:47.007Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "MPSLTD": {
       "status": "failed",
