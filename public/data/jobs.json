@@ -665,8 +665,10 @@
       "source": "transcript"
     },
     "SAMMAANCAP": {
-      "status": "running",
-      "started_at": "2026-11-28T03:50:56.888Z"
+      "status": "failed",
+      "finished_at": "2026-11-28T03:51:02.254Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "KPITTECH": {
       "status": "failed",
