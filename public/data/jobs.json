@@ -857,8 +857,10 @@
       "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "LTFOODS": {
-      "status": "running",
-      "started_at": "2026-11-28T03:51:17.973Z"
+      "status": "failed",
+      "finished_at": "2026-11-28T03:51:23.178Z",
+      "error": "no_current_quarter",
+      "message": "Sorry, can't find Q1 on Screener. Please search for a different company."
     },
     "NATCOPHARM": {
       "status": "done",
